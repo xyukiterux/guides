@@ -1,0 +1,322 @@
+{
+ "dragon-slayer": {
+  "slug": "dragon-slayer",
+  "name": "Dragon Slayer",
+  "desc": "Recruited with promises of glory, your first challenge is to defeat General Velgar.",
+  "objectives": "11 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-fs2": {
+  "slug": "ftue-fs2",
+  "name": "First Steps",
+  "desc": "Begin your adventure.",
+  "objectives": "1 objective",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-gs": {
+  "slug": "ftue-gs",
+  "name": "First Steps",
+  "desc": "Begin your adventure.",
+  "objectives": "3 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-q1": {
+  "slug": "ftue-q1",
+  "name": "First Steps",
+  "desc": "Begin your adventure. ",
+  "objectives": "3 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-q7": {
+  "slug": "ftue-q7",
+  "name": "First Steps",
+  "desc": "Begin your adventure. ",
+  "objectives": "1 objective",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-rtftj": {
+  "slug": "ftue-rtftj",
+  "name": "Getting Started",
+  "desc": "Doric wants to teach you some survival basics. ",
+  "objectives": "3 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-rc": {
+  "slug": "ftue-rc",
+  "name": "Ratcatcher",
+  "desc": "Vannaka wants to teach you the basics of hunting, fighting and cooking. ",
+  "objectives": "2 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-q5": {
+  "slug": "ftue-q5",
+  "name": "Ratcatcher",
+  "desc": "Vannaka wants you to prove yourself in combat. ",
+  "objectives": "2 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-q2": {
+  "slug": "ftue-q2",
+  "name": "Right Tool for the Job",
+  "desc": "Doric wants to teach you the fundamentals. ",
+  "objectives": "2 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-rm-prt1": {
+  "slug": "ftue-rm-prt1",
+  "name": "Rune Mysteries",
+  "desc": "Zanik wants you to learn the basics of crafting runes.",
+  "objectives": "2 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-rm-prt2": {
+  "slug": "ftue-rm-prt2",
+  "name": "Rune Mysteries",
+  "desc": "Zanik wants you to learn the basics of crafting runes.",
+  "objectives": "3 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-q4": {
+  "slug": "ftue-q4",
+  "name": "Rune Mysteries",
+  "desc": "Learn the basics of crafting runes. ",
+  "objectives": "3 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "ftue-q3": {
+  "slug": "ftue-q3",
+  "name": "Seeking Shelter",
+  "desc": "Zanik wants to teach you some survival basics.",
+  "objectives": "3 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "deathquestmain": {
+  "slug": "deathquestmain",
+  "name": "Withering Heights",
+  "desc": "Put an end to the horror of Fellhollow, by defeating Imaru, the soul-devourer.",
+  "objectives": "16 objectives",
+  "region": "",
+  "group": "Main Quests"
+ },
+ "amelodyremebered": {
+  "slug": "amelodyremebered",
+  "name": "A Melody Remembered",
+  "desc": "A jewellery box in Ghornfell plays a haunting melody, but it cannot complete its song.",
+  "objectives": "2 objectives",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "eldergarou": {
+  "slug": "eldergarou",
+  "name": "A Room with a Garou",
+  "desc": "An elder garou wants you to build a home that his late wife would be proud of.",
+  "objectives": "1 objective",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "animalmagnetism": {
+  "slug": "animalmagnetism",
+  "name": "Animal Magnetism",
+  "desc": "Create the Ava's Accumulator",
+  "objectives": "4 objectives",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "brinkofextinction": {
+  "slug": "brinkofextinction",
+  "name": "Brink of Extinction",
+  "desc": "Help Zi to become a real KotHaar",
+  "objectives": "9 objectives",
+  "region": "Umbral Sands",
+  "group": "Side Quests"
+ },
+ "contact": {
+  "slug": "contact",
+  "name": "Contact!",
+  "desc": "Work with Avisk to find a potential shortcut to Fuzan's Volcano",
+  "objectives": "10 objectives",
+  "region": "Umbral Sands",
+  "group": "Side Quests"
+ },
+ "cooksassistant": {
+  "slug": "cooksassistant",
+  "name": "Cook's Assistant",
+  "desc": "Help Slopfinger in Ghornfell bake a memorable cake for Manktongue.",
+  "objectives": "5 objectives",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "dog-days": {
+  "slug": "dog-days",
+  "name": "Dog Days",
+  "desc": "Investigate the Garou and their rituals.",
+  "objectives": "6 objectives",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "fh-collectorscalling": {
+  "slug": "fh-collectorscalling",
+  "name": "Doric's Quest",
+  "desc": "Doric is looking for rare weapons in Fellhollow. ",
+  "objectives": "4 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "fh-ghostquest": {
+  "slug": "fh-ghostquest",
+  "name": "Even More Restless Ghosts",
+  "desc": "Help Zanik lay some spirits to rest by finding them and completing their unfinished business. ",
+  "objectives": "5 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "goblin-diplomacy": {
+  "slug": "goblin-diplomacy",
+  "name": "Goblin Diplomacy",
+  "desc": "Zanik needs you to stop a prophecy before it's too late.",
+  "objectives": "7 objectives",
+  "region": "Brynmoor",
+  "group": "Side Quests"
+ },
+ "granite-mauled": {
+  "slug": "granite-mauled",
+  "name": "Granite Mauled",
+  "desc": "Uncover the secrets of Ashien's Watch.",
+  "objectives": "3 objectives",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "ftue-farm": {
+  "slug": "ftue-farm",
+  "name": "Growing Pains",
+  "desc": "Learn the basics of the Farming skill from the Wise Old Man. ",
+  "objectives": "3 objectives",
+  "region": "Brynmoor",
+  "group": "Side Quests"
+ },
+ "hearstrings": {
+  "slug": "hearstrings",
+  "name": "Heartstrings",
+  "desc": "Follow an elven bard's trail of memory, and discover a harmonious weapon.",
+  "objectives": "1 objective",
+  "region": "Ghornfell",
+  "group": "Side Quests"
+ },
+ "highlighting-the-problem": {
+  "slug": "highlighting-the-problem",
+  "name": "Highlighting the Problem",
+  "desc": "Explore the RuneCrafting Guild to discover the means to craft a powerful magical weapon.",
+  "objectives": "4 objectives",
+  "region": "Brynmoor",
+  "group": "Side Quests"
+ },
+ "fh-lettersforthedead": {
+  "slug": "fh-lettersforthedead",
+  "name": "Letters For The Dead",
+  "desc": "Postie Pete needs some help finding and delivering some stolen letters around Bleakfields Valley in Fellhollow.",
+  "objectives": "5 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "fh-mirrormirror": {
+  "slug": "fh-mirrormirror",
+  "name": "Mirror Mirror",
+  "desc": "Help free a mysterious figure from their mirror prison.",
+  "objectives": "3 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "restless-ghosts": {
+  "slug": "restless-ghosts",
+  "name": "Restless Ghosts",
+  "desc": "Lay to rest the spirits of the lost expedition members.",
+  "objectives": "2 objectives",
+  "region": "Brynmoor",
+  "group": "Side Quests"
+ },
+ "fh-witherward": {
+  "slug": "fh-witherward",
+  "name": "Seeking Salvation",
+  "desc": "Find the statues to gain entrance to the vault and uncover the secrets that lie within. ",
+  "objectives": "3 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "greatbodyrobbery": {
+  "slug": "greatbodyrobbery",
+  "name": "The Great Body Robbery",
+  "desc": "Assist Dr Fenkenstrain in acquiring a new body. FOR SCIENCE!",
+  "objectives": "13 objectives",
+  "region": "",
+  "group": "Side Quests"
+ },
+ "fh-witherbeast": {
+  "slug": "fh-witherbeast",
+  "name": "The Wild Hunt",
+  "desc": "Help Vannaka safeguard Fellhollow's nature spirits, by hunting them down, in willow groves, and collecting their hearts. ",
+  "objectives": "3 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "fh-nightofthespectralboom": {
+  "slug": "fh-nightofthespectralboom",
+  "name": "Things That Go Boom In The Night",
+  "desc": "Gather spectral chinchompa skulls so that Vannaka can help the land heal. ",
+  "objectives": "2 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "fh-whatremainsiswritten": {
+  "slug": "fh-whatremainsiswritten",
+  "name": "What Remains is Written",
+  "desc": "Find stolen knowledge and return it to its owner. I'm sure nothing bad will happen because of it.",
+  "objectives": "7 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "x-marks-the-spot": {
+  "slug": "x-marks-the-spot",
+  "name": "X marks the Spot",
+  "desc": "Locate the buried treasure.",
+  "objectives": "0 objectives",
+  "region": "Fellhollow",
+  "group": "Side Quests"
+ },
+ "scarecrow-scavenging": {
+  "slug": "scarecrow-scavenging",
+  "name": "Scarecrow Scavenging",
+  "desc": "",
+  "objectives": "0 objectives",
+  "region": "",
+  "group": "Side Quests"
+ },
+ "mapping-the-sands-i": {
+  "slug": "mapping-the-sands-i",
+  "name": "Mapping the Sands I",
+  "desc": "Discover Moon Sprites on top of tall locations around the Alcarrid Camp to map the Umbral Sands.",
+  "objectives": "6 objectives",
+  "region": "Umbral Sands",
+  "group": "Side Quests"
+ },
+ "mapping-the-sands-ii": {
+  "slug": "mapping-the-sands-ii",
+  "name": "Mapping the Sands II",
+  "desc": "Discover Moon Sprites on top of tall locations around all of the Umbral Sands.",
+  "objectives": "10 objectives",
+  "region": "Umbral Sands",
+  "group": "Side Quests"
+ }
+}

@@ -1,0 +1,1845 @@
+[
+ {
+  "unlocks": [],
+  "name": "Rune Helm",
+  "url": "",
+  "category": "armor",
+  "ingredients": [
+   {
+    "qty": 3,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 3,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 1,
+    "name": "Vis Cloth"
+   },
+   {
+    "qty": 1,
+    "name": "Harmonised Compound"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Armour Bench"
+  ],
+  "stats": "Weight 8.0 Melee defence 24 Ranged defence 22 Magic defence 21 Set bonus -33% Block Stamina Cost Set bonus +50% Crit Chance After Blocking Set bonus +25% Damage To Staggered Targets Crafting XP 100 XP Station Artisan",
+  "effects": "A sturdy rune helm built to withstand the chaos of close combat.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_helm",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune armour",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Helm",
+   "desc": "A sturdy rune helm built to withstand the chaos of close combat.",
+   "item_type": "Melee Armour",
+   "weight": "8.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune Helm is a power level 8 armour piece.",
+   "journal": [
+    {
+     "title": "",
+     "text": "It is perhaps fitting that the first pieces of rune equipment were worn by the creator of runes themselves, Guthix. Of course, rune metal is not made of runes, and indeed has no actual connection to runes at all, but Guthix, for all his many qualities, was not the greatest of wordsmiths. The god journeyed deep into Ashenfall, where he discovered the Wellspring and the strange metal that glistened nearby from the rocks. It has a soft blue-ish hue that was both subtle and entrancing in different ways and he became intrigued. Using techniques he had learned from the dwarves, Guthix attempted to fashion the metal into equipment, yet it resisted his every effort and refused to be anything more than a strange, glittery sort of ore. There was magic there, in the ore. It resisted pickaxes, it repelled weaponry, it practically jeered at Guthix, telling him that it was the most interesting metal around. Yet no matter what he tried, he could not tame it. Until he discovered luminite, and then everything changed."
+    }
+   ]
+  },
+  "_search": "rune helm rune armour a sturdy rune helm built to withstand the chaos of close combat. rune helm is a power level 8 armour piece. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Platebody",
+  "url": "",
+  "category": "armor",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 6,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 2,
+    "name": "Vis Cloth"
+   },
+   {
+    "qty": 2,
+    "name": "Harmonised Compound"
+   },
+   {
+    "qty": 2,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Armour Bench"
+  ],
+  "stats": "Weight 16.0 Melee defence 60 Ranged defence 54 Magic defence 53 Set bonus -33% Block Stamina Cost Set bonus +50% Crit Chance After Blocking Set bonus +25% Damage To Staggered Targets Crafting XP 100 XP Station Artisan",
+  "effects": "Thick rune plates forged into armour for the strongest of warriors.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_platebody",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune armour",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Platebody",
+   "desc": "Thick rune plates forged into armour for the strongest of warriors.",
+   "item_type": "Melee Armour",
+   "weight": "16.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune Platebody is a power level 8 armour piece that can be crafted on the Armour Bench. To unlock the recipe, players need to have Rune Bar crafted.",
+   "journal": [
+    {
+     "title": "",
+     "text": "It is perhaps fitting that the first pieces of rune equipment were worn by the creator of runes themselves, Guthix. Of course, rune metal is not made of runes, and indeed has no actual connection to runes at all, but Guthix, for all his many qualities, was not the greatest of wordsmiths. Luminite, somehow, limited the metal's reaction to other metals, but only within the smelting phase. It allowed the construction of bars, which in turn allowed the construction of plates which could be fitted together to form armour. It took several weeks, for Guthix's blacksmithing skills had long fallen to atrophy, but the god was able to fashion himself a full suit of rune metal. Just in time for the Dweller to attack."
+    }
+   ]
+  },
+  "_search": "rune platebody rune armour thick rune plates forged into armour for the strongest of warriors. rune platebody is a power level 8 armour piece that can be crafted on the armour bench. to unlock the recipe, players need to have rune bar crafted. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Platelegs",
+  "url": "",
+  "category": "armor",
+  "ingredients": [
+   {
+    "qty": 4,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 4,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 1,
+    "name": "Vis Cloth"
+   },
+   {
+    "qty": 1,
+    "name": "Harmonised Compound"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Armour Bench"
+  ],
+  "stats": "Weight 12 Melee defence 36 Ranged defence 33 Magic defence 32 Set bonus -33% Block Stamina Cost Set bonus +50% Crit Chance After Blocking Set bonus +25% Damage To Staggered Targets Crafting XP 100 XP Station Artisan",
+  "effects": "Durable rune platelegs designed for warriors who spend more time fighting than running.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_platelegs",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune armour",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Platelegs",
+   "desc": "Durable rune platelegs designed for warriors who spend more time fighting than running.",
+   "item_type": "Melee Armour",
+   "weight": "12",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune Platelegs are a power level 8 armour piece.",
+   "journal": [
+    {
+     "title": "",
+     "text": "It is perhaps fitting that the first pieces of rune equipment were worn by the creator of runes themselves, Guthix. Of course, rune metal is not made of runes, and indeed has no actual connection to runes at all, but Guthix, for all his many qualities, was not the greatest of wordsmiths. The Dweller was a beast that had nestled into the Wellspring and the energies had transformed it into something more than it was. What had previously been nothing but an unpleasantly large arthropod, was now a great lumbering beast full of hunger and fury. The anima had twisted it into something resembling th e colossi and it roared out of the Wellspring straight for the god of balance. Yet, for all his desires for a peaceful existence, Guthix had the warrior's heart and he was more than a match for the Dweller. Though the battle shattered mountains and diverted rivers, the Dweller soon found itself sliced in twain by the god's terrible sword. He cast the body into the deepest depths of the ocean, in fear that it might one day return."
+    }
+   ]
+  },
+  "_search": "rune platelegs rune armour durable rune platelegs designed for warriors who spend more time fighting than running. rune platelegs are a power level 8 armour piece. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Shield",
+  "url": "",
+  "category": "weapons-tools",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 3,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 10.0 Block 72 Durability 1900 Crafting XP 100 XP Station Artisan",
+  "effects": "A rune shield forged to endure punishment that would leave lesser metal in pieces.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_shield",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune equipment",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Shield",
+   "desc": "A rune shield forged to endure punishment that would leave lesser metal in pieces.",
+   "item_type": "Basic Item",
+   "weight": "10.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Kuldra was too wise to miss this pattern. She would often treat herself, opening her mouths in sequence. She would enjoy how much her troops looked like moles, poking their heads in and out of their holes. }}",
+   "journal": [
+    {
+     "title": "",
+     "text": "Nobody likes a meeting with their manager, and nowhere is that truer than in Kuldra's Tower. Kuldra would summon her troops to her chamber, and those troops would do their best to look attentive while cowering behind their shields. An onlooker might have enjoyed how the troops would poke their heads above when Kuldra's mouths were closed, and then duck behind when they were open. Kuldra was too wise to miss this pattern. She would often treat herself, opening her mouths in sequence. She would enjoy how much her troops looked like moles, poking their heads in and out of their holes."
+    }
+   ]
+  },
+  "_search": "rune shield rune equipment a rune shield forged to endure punishment that would leave lesser metal in pieces. kuldra was too wise to miss this pattern. she would often treat herself, opening her mouths in sequence. she would enjoy how much her troops looked like moles, poking their heads in and out of their holes. }} power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Pickaxe",
+  "url": "",
+  "category": "tools",
+  "ingredients": [
+   {
+    "qty": 5,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 4,
+    "name": "Magic Logs"
+   },
+   {
+    "qty": 3,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 5.0 Base damage 98 Block 72 Durability 2700 Damage type Crush Crafting XP 100 XP Station Artisan",
+  "effects": "A masterfully forged pickaxe of pure runite, capable of breaking through even the toughest stone with ease.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_pickaxe",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune tools",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Pickaxe",
+   "desc": "A masterfully forged pickaxe of pure runite, capable of breaking through even the toughest stone with ease.",
+   "item_type": "Tool",
+   "weight": "5.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune Pickaxe is a power level 8 pickaxe that can be crafted at a blacksmith's bench. It can mine the same ores as the previous tiers, dealing 98 damage to minable ores, and 196 with a critical swing.",
+   "journal": [
+    {
+     "title": "",
+     "text": "If you fancy a giggle, watch an amateur try to mine runite. Grab a chair, pull yourself a dwarven stout, and watch the carnage. Runite, you see, actively repels a pickaxe. It twinkles with magic, and that magic - perhaps through some kind of geological evolutionary step - resists any attempt to mine it. Artlessly swing a pickaxe at a clump of runite and the pickaxe will bounce backwards, boomeranging towards the miner's head. There's a reason why field medics are posted at dwarven mines. The secret is that runite is soft. Not as soft as clay or gold, perhaps, but softer than most metals. You don't need to swing your pickaxe hard or fast. All that is needed is some finesse and patience. Better still, a runite pickaxe will disrupt the magical fields around the ore, pushing the ore out of the rock."
+    }
+   ]
+  },
+  "_search": "rune pickaxe rune tools a masterfully forged pickaxe of pure runite, capable of breaking through even the toughest stone with ease. rune pickaxe is a power level 8 pickaxe that can be crafted at a blacksmith's bench. it can mine the same ores as the previous tiers, dealing 98 damage to minable ores, and 196 with a critical swing. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Logging Axe",
+  "url": "",
+  "category": "tools",
+  "ingredients": [
+   {
+    "qty": 5,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 6,
+    "name": "Yew Logs"
+   },
+   {
+    "qty": 2,
+    "name": "Vis Fibres"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 5.0 Base damage 95 Block 72 Combo 1 Durability 2700 Special action Overhead Chop Damage type Slash Crafting XP 100 XP Station Artisan",
+  "effects": "Crafted from durable runite, this axe bites deeply into timber and stands up to years of hard use.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_logging_axe",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune tools",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Logging Axe",
+   "desc": "Crafted from durable runite, this axe bites deeply into timber and stands up to years of hard use.",
+   "item_type": "Tool",
+   "weight": "5.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune Logging Axe is a power level 8 logging axe that can cut Magic Trees.",
+   "journal": [
+    {
+     "title": "",
+     "text": "To a tree, a human with a rune logging axe is their final boss. You are the ultimate test; the nemesis that they have been training for. They have been stretching their branches and aggressively photosynthesising for this moment. They have been fantastising about taking you down, so that they can be talked about in groves for centuries. 'The Lumberjack Ripper', they think. 'That's what they will call me.'"
+    }
+   ]
+  },
+  "_search": "rune logging axe rune tools crafted from durable runite, this axe bites deeply into timber and stands up to years of hard use. rune logging axe is a power level 8 logging axe that can cut magic trees. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Sword",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 3,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 2,
+    "name": "Vis Fibres"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 15.0 Base damage 108-196 Block 72 Combo 5 Durability 1900 Special action Barge Damage type Slash Crafting XP 100 XP Station Artisan",
+  "effects": "A finely balanced rune sword, renowned for its strength, precision, and reliability in battle.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_sword",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune weapons",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Sword",
+   "desc": "A finely balanced rune sword, renowned for its strength, precision, and reliability in battle.",
+   "item_type": "Melee Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The rune sword is a power level 8 one-handed melee weapon.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Runite is not readily available to everyone in Kuldra's army. Kuldra preferred that it - alongside magic wood - was reserved to the upper reaches of her army. It is easy to look at her chaos of heads and think that she somehow represents disorder, but Kuldra instilled hierarchy in her troops. You needed to earn your place at the top of her troops, and she was consistent in what earned that place. You had to be inconspicuous enough to never draw her attention, and you needed to avoid anyone who might draw that attention. Suffer fools, and you suffer with them. Stand within metres of them, and you suffer even more dearly."
+    }
+   ]
+  },
+  "_search": "rune sword rune weapons a finely balanced rune sword, renowned for its strength, precision, and reliability in battle. the rune sword is a power level 8 one-handed melee weapon. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Dagger",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 5,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 4,
+    "name": "Harmonised Compound"
+   },
+   {
+    "qty": 2,
+    "name": "Vis Fibres"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 5.0 Base damage 69-177 Block 72 Combo 7 Durability 1900 Damage type Stab Crafting XP 100 XP Station Artisan",
+  "effects": "A razor-sharp rune dagger prized for its speed, precision, and deadly effectiveness.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_dagger",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune weapons",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Dagger",
+   "desc": "A razor-sharp rune dagger prized for its speed, precision, and deadly effectiveness.",
+   "item_type": "Melee Weapon",
+   "weight": "5.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Rune Dagger is a power level 8 one-handed melee weapon.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Kuldra's generals were prone to a spot of gallows humour. In the evenings, over a drink or two, they would argue about Kuldra's heads and which of them they would prefer to be killed by. Their tone would only be half-joking. They had all been in the presence of Kuldra when she was displeased, and saw the looks of those who had displeased her. They knew (from the expressions of the damned) which head caused the slowest, most painful death. The poison head was the one they wished to avoid. They carried a rune dagger in their boots, in the event that they fell foul of it. It was better to die by one's own hand than perish by Kuldra's poison."
+    }
+   ]
+  },
+  "_search": "rune dagger rune weapons a razor-sharp rune dagger prized for its speed, precision, and deadly effectiveness. the rune dagger is a power level 8 one-handed melee weapon. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Mace",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 5,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 6,
+    "name": "Magic Logs"
+   },
+   {
+    "qty": 3,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 15.0 Base damage 133-236 Block 72 Combo 5 Durability 1900 Damage type Crush Crafting XP 100 XP Station Artisan",
+  "effects": "A sturdy rune mace, designed to crush armour and bone alike with devastating force.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_mace",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune weapons",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Mace",
+   "desc": "A sturdy rune mace, designed to crush armour and bone alike with devastating force.",
+   "item_type": "Melee Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Rune Mace is a power level 8 one-handed melee weapon.",
+   "journal": [
+    {
+     "title": "",
+     "text": "It's not hard to see why a place in Kuldra's army was tempting for a goblin. Back in Brynmoor or Ghornfell, the diet was dirty water and rats. Your armour would be stolen from the weakest goblin you could find, and your weapon was likely to be a femur bone (with any luck, not your own) or a bronze sword that was more rust than bronze. In Kuldra's army, it was entirely possible to be promoted to wield rune armour or weapons (Kuldra was at least wise enough to know that goblins shouldn't be given sharp weapons, so most of the time they would wield a mace). Goblins became, well, liabilities. They were used to whacking each other and doing barely any damage at all. It was culturally engrained to boff each other on the head as a kind of wake up call. But a rune mace would make that wake up call rather messy, and a playful thwack would lead to arms flying off."
+    }
+   ]
+  },
+  "_search": "rune mace rune weapons a sturdy rune mace, designed to crush armour and bone alike with devastating force. the rune mace is a power level 8 one-handed melee weapon. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Greatsword",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 8,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 3,
+    "name": "Black Dragon Leather"
+   },
+   {
+    "qty": 2,
+    "name": "Vis Fibres"
+   },
+   {
+    "qty": 2,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 25.0 Base damage 147-255 Block 72 Combo 4 Durability 1900 Special action Whirlwind Slash Damage type Slash Crafting XP 100 XP Station Artisan",
+  "effects": "A massive two-handed blade forged from runite. Few can wield such a weapon effectively, but fewer still can stand against it.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_greatsword",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune weapons",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Greatsword",
+   "desc": "A massive two-handed blade forged from runite. Few can wield such a weapon effectively, but fewer still can stand against it.",
+   "item_type": "Melee Weapon",
+   "weight": "25.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The rune greatswordis a power level 8 two-handed melee weapon that can be crafted with a blacksmith's bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Kuldra's army is such a disparate mix of creeds and motivations that it's a miracle that everyone hasn't ended up killing each other. I mean, some friendly fire certainly happens, but the fear of Kuldra almost always wins in the end. If there is going to be any collateral damage, Kuldra would prefer that it comes from her. She made an example once, to show her position. A garou thane, fondly known as The Muggathug, had a habit of slaying the black dragons. She would leap into the black dragon nests, lop off a head with her rune greatsword and then boil the head in a kitchen pot. The resulting skull would be painted in garou tribal colours and then nestled on her head. Muggathug liked having a different helmet for every day of the week. Kuldra felt that The Muggathug was encroaching on her territory. She commanded that The Muggathug attended her, before she bit off The Muggathug's head, boiled it in a mixture of ice and fire, and tasked her smiths with making a ring for her. Muggathug's skull became the centrepiece of a solitaire ring that Kuldra wore on those days where she needed to be a little dressier."
+    }
+   ]
+  },
+  "_search": "rune greatsword rune weapons a massive two-handed blade forged from runite. few can wield such a weapon effectively, but fewer still can stand against it. the rune greatswordis a power level 8 two-handed melee weapon that can be crafted with a blacksmith's bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Crossbow",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 12,
+    "name": "Magic Logs"
+   },
+   {
+    "qty": 4,
+    "name": "Vis Fibres"
+   },
+   {
+    "qty": 1,
+    "name": "Rune Crossbow Limbs"
+   },
+   {
+    "qty": 1,
+    "name": "Dragonstone"
+   },
+   {
+    "qty": 1,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 10.0 Base damage 88 Block 5 Durability 1900 Damage type Ranged Crafting XP 40 XP Station Artisan",
+  "effects": "A precision-engineered rune crossbow that delivers powerful, accurate shots at range.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_crossbow",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune weapons",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Crossbow",
+   "desc": "A precision-engineered rune crossbow that delivers powerful, accurate shots at range.",
+   "item_type": "Ranged Weapon",
+   "weight": "10.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "A rune crossbow is a power level 8 crossbow crafted with a fletching bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Guard duty in Kuldra's Tower was a thankless task. Few could or would approach the tower, as inaccessible as it was. But the shifts were called and there was always a small group of crossbow-wielders posted to the entrance to the tower, waiting for the unlikely approach of an enemy. But while it was boring, you still had to be on your toes. Kuldra's Tower was prone to crumble and breaking, particularly at the entrance where the guards were posted. Well-prepared guards would make their own grapple-bolts, coiled and ready by their feet. If their seat started to spiral away into the anima ether, they would socket the grapple-bolt and hope that their shot was good enough to find purchase in the rock. If not, well, they would find out what it feels like to anima-shift at a fatal rate."
+    }
+   ]
+  },
+  "_search": "rune crossbow rune weapons a precision-engineered rune crossbow that delivers powerful, accurate shots at range. a rune crossbow is a power level 8 crossbow crafted with a fletching bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Arrow",
+  "url": "",
+  "category": "ammo",
+  "ingredients": [
+   {
+    "qty": 1,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 1,
+    "name": "Magic Logs"
+   },
+   {
+    "qty": 1,
+    "name": "Feathers"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 0.0 Base damage +42-101 Damage type Arrow Crafting XP 100 XP Station Artisan",
+  "effects": "Rune arrows are prized for their exceptional flight and striking power.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_arrow",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune ammunition",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Arrow",
+   "desc": "Rune arrows are prized for their exceptional flight and striking power.",
+   "item_type": "Arrow",
+   "weight": "0.0",
+   "stack": "999",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune arrows are a power level 8 ammunition that are crafted at a fletching bench, and can be used to craft rune barbed arrow, poisoned rune arrow, and rune fire arrow",
+   "journal": [
+    {
+     "title": "",
+     "text": "You might think that rune is the last metal you would use for an arrow. Rune is a magical metal, and it has diamagnetic properties (meaning that it repels other metals, sometimes with force). You don't want to be aiming at a garou berserker, only to watch the arrow arc away from them. As Vannaka would say, 'your problem is that you're thinking like an amateur'. Archers don't actually WANT arrows to hit other metals: they want to slip into the gaps between armour, puncturing an armpit or neck. The best archers also love a trick-shot, hitting an opponent through a sea of allies. The trick is to use the diamagnetism to your benefit, and that - again, to quote Vannaka - 'comes from the hardest skill of all. Practice'."
+    }
+   ]
+  },
+  "_search": "rune arrow rune ammunition rune arrows are prized for their exceptional flight and striking power. rune arrows are a power level 8 ammunition that are crafted at a fletching bench, and can be used to craft rune barbed arrow, poisoned rune arrow, and rune fire arrow power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Fire Arrow",
+  "url": "",
+  "category": "ammo",
+  "ingredients": [
+   {
+    "qty": 33,
+    "name": "Rune Arrow"
+   },
+   {
+    "qty": 1,
+    "name": "Fire Oil"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 0.0 Base damage +42-101 Damage type Fire Crafting XP 40 XP Station Artisan",
+  "effects": "Arrows with tips forged from runite coated in fire oil.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_fire_arrow",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune ammunition",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Fire Arrow",
+   "desc": "Arrows with tips forged from runite coated in fire oil.",
+   "item_type": "Arrow",
+   "weight": "0.0",
+   "stack": "999",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune fire arrows are a power level 8 ammunition that can be crafted with a fletching bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "The rune fire arrow is central to a story about the knight commander, Sir Leigh. In his will, Sir Leigh requested a full-boat burning. He wanted to be pushed out to sea, towards the mainland where he was born, and an archer was to set the pyre alight with a rune fire arrow. Sat at his desk, writing the will, it would have sounded like a fantastic idea to Sir Leigh. But in reality it was very different. Rune, you see, has repulsive properties. It is diamagnetic. So when Sir Leigh was laid to rest in his gold armour atop a raft, and the archer tried to aim for the pyre-wood beneath him, the rune arrows would not hit. Dozens upon dozens of arrows were fired, and they all deviated from their path thanks to the runic properties. By the time a boat was sent out with a man holding a lit torch, two seagulls and one shark had been set alight."
+    }
+   ]
+  },
+  "_search": "rune fire arrow rune ammunition arrows with tips forged from runite coated in fire oil. rune fire arrows are a power level 8 ammunition that can be crafted with a fletching bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Poisoned Rune Arrow",
+  "url": "",
+  "category": "ammo",
+  "ingredients": [
+   {
+    "qty": 33,
+    "name": "Rune Arrow"
+   },
+   {
+    "qty": 1,
+    "name": "Weapon Poison"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 0.0 Base damage +42-101 Damage type Arrow Crafting XP 40 XP Station Artisan",
+  "effects": "Arrows with tips forged from runite coated in poison.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_poisoned_rune_arrow",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune ammunition",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Poisoned Rune Arrow",
+   "desc": "Arrows with tips forged from runite coated in poison.",
+   "item_type": "Arrow",
+   "weight": "0.0",
+   "stack": "999",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Poisoned rune arrows are a power level 8 ammunition that are crafted with a fletching bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Rune poison arrows were often called 'overkill arrows' by the garou in Kuldra's Tower. If the sharp rune metal didn't kill you, then the magical resonance in the arrow would. There was almost no need for the poison on top of that. You had to truly hate someone to make a rune poison arrow."
+    }
+   ]
+  },
+  "_search": "poisoned rune arrow rune ammunition arrows with tips forged from runite coated in poison. poisoned rune arrows are a power level 8 ammunition that are crafted with a fletching bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Barbed Arrow",
+  "url": "",
+  "category": "ammo",
+  "ingredients": [
+   {
+    "qty": 33,
+    "name": "Rune Arrow"
+   },
+   {
+    "qty": 1,
+    "name": "Weapon Barbs"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 0.0 Base damage +42-101 Damage type Arrow Crafting XP 40 XP Station Artisan",
+  "effects": "Lacerating arrows with tips forged from runite.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_barbed_arrow",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune ammunition",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Barbed Arrow",
+   "desc": "Lacerating arrows with tips forged from runite.",
+   "item_type": "Arrow",
+   "weight": "0.0",
+   "stack": "999",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune barbed arrows are a power level 8 ammunition that can be crafted with a fletching bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Possibly the cruelest use of runite is making barbed arrows. The metal applies a force against anything that tries to touch it, which makes removing a barbed arrow painful. You are just as likely to send it further into the wound than remove it. Some areas of Ashenfall banned their usage a long time ago, but that won't be a consideration if you're fighting Kuldra."
+    }
+   ]
+  },
+  "_search": "rune barbed arrow rune ammunition lacerating arrows with tips forged from runite. rune barbed arrows are a power level 8 ammunition that can be crafted with a fletching bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Bolt",
+  "url": "",
+  "category": "ammo",
+  "ingredients": [
+   {
+    "qty": 1,
+    "name": "Rune Bar"
+   },
+   {
+    "qty": 1,
+    "name": "Feathers"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 0.0 Base damage 76 Damage type Bolt Crafting XP 60 XP Station Artisan",
+  "effects": "Carefully forged rune crossbow bolts that hit hard and fly true.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_bolt",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune ammunition",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Bolt",
+   "desc": "Carefully forged rune crossbow bolts that hit hard and fly true.",
+   "item_type": "Ammo",
+   "weight": "0.0",
+   "stack": "999",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune bolts are a power level 8 ammunition crafted at a fletching bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "You may have wondered where the phrase 'out of the blue' or 'a bolt from the blue' comes from. Its origins are actually from Misthalin, from the humans who made their way through the mountains to Isafdar. On arrival, they would be ambushed by roving elves, some of whom would fire rune arrows and bolts. Elves are a stealthy bunch, so the first thing a human soldier might know about the ambush would be an arc of blue (the 'blue' being the rune metal). The soldiers would worry about being shot by 'a bolt from the blue', which is where the saying originated. Also see 'the thin blue line' and 'screaming blue murder'."
+    }
+   ]
+  },
+  "_search": "rune bolt rune ammunition carefully forged rune crossbow bolts that hit hard and fly true. rune bolts are a power level 8 ammunition crafted at a fletching bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Enchanted Rune Bolt",
+  "url": "",
+  "category": "ammo",
+  "ingredients": [
+   {
+    "qty": 33,
+    "name": "Rune Bolt"
+   },
+   {
+    "qty": 1,
+    "name": "Diamond"
+   },
+   {
+    "qty": 10,
+    "name": "Air Rune"
+   },
+   {
+    "qty": 15,
+    "name": "Astral Rune"
+   }
+  ],
+  "stations": [
+   "Fletching Bench"
+  ],
+  "stats": "Weight 0.0 Base damage 76 Damage type Bolt Crafting XP 60 XP Station Artisan",
+  "effects": "Rune bolts infused with magical energy and a diamond tip. Their targets rarely appreciate the distinction. Has a chance to pierce through several enemies at once.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_enchanted_rune_bolt",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Rune ammunition",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Enchanted Rune Bolt",
+   "desc": "Rune bolts infused with magical energy and a diamond tip. Their targets rarely appreciate the distinction. Has a chance to pierce through several enemies at once.",
+   "item_type": "Ammo",
+   "weight": "0.0",
+   "stack": "999",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Enchanted rune bolts are a power level 8 ammunition crafted at a fletching bench.",
+   "journal": [
+    {
+     "title": "",
+     "text": "You can argue the semantics, but rune is already enchanted. It has inherent magical properties, which means that 'enchanting' it is a complicated process. It's like cursing a spell, or summoning a rune: you're just smooshing magic together and hoping nothing bad happens. And, as the Wise Old Man says, 'hoping nothing bad happens is basically inviting the bad into your bedchambers'. We'd have worded it differently, but you get the idea."
+    }
+   ]
+  },
+  "_search": "enchanted rune bolt rune ammunition rune bolts infused with magical energy and a diamond tip. their targets rarely appreciate the distinction. has a chance to pierce through several enemies at once. enchanted rune bolts are a power level 8 ammunition crafted at a fletching bench. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Rune Bar",
+  "url": "",
+  "category": "materials",
+  "ingredients": [
+   {
+    "qty": 3,
+    "name": "Runite Ore"
+   },
+   {
+    "qty": 3,
+    "name": "Luminite Ore"
+   }
+  ],
+  "stations": [
+   "Blast Furnace"
+  ],
+  "stats": "Weight 4.5 Crafting XP 20 XP Station Artisan",
+  "effects": "A magically resonant metal used for crafting weapons and armour.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_rune_bar",
+  "_icon_file": "",
+  "_power": "",
+  "_category_label": "Runite tier materials",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Rune Bar",
+   "desc": "A magically resonant metal used for crafting weapons and armour.",
+   "item_type": "Processed Material",
+   "weight": "4.5",
+   "stack": "99",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Rune bars are a processed material created with three Runite Ore and three Luminite Ore inside a blast furnace.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Merchants often refer to rune bars as 'one in a thousand bars'. The term has arisen because, 99.9% of the time, rune bars are unremarkable. They are safe to store in chests, banks and inventories and you could leave them there for decades without something remarkable happening. But there is always that one in a thousand. Nobody has worked out why, but - on occassion - a rune bar misbehaves. You might come back to a pile of rune bars and find that one ringleader has caused them to rearrange into a henge. Rune bars have been know to spontaneously combust, fire like a cannonball from a backpack or convert back to a rune bar after being made into gauntlets. It happens frequently enough that merchants will eye a rune bar with suspicion."
+    }
+   ]
+  },
+  "_search": "rune bar runite tier materials a magically resonant metal used for crafting weapons and armour. rune bars are a processed material created with three runite ore and three luminite ore inside a blast furnace.",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Runite Ore",
+  "url": "",
+  "category": "materials",
+  "ingredients": [],
+  "stations": [],
+  "stats": "Weight 2.7",
+  "effects": "",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_runite_ore",
+  "_icon_file": "",
+  "_power": "",
+  "_category_label": "Runite tier materials",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Runite Ore",
+   "item_type": "Basic Material",
+   "weight": "2.7",
+   "stack": "99",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Runite ore is a basic Mining material mined from Runite Ore Nodes, which can be found all over the Scorned Wilderness region. Three ores can be smelted along 3 pieces of Luminite Ore in a blast furnace to produce Rune Bars.",
+   "journal": [
+    {
+     "title": "",
+     "text": "You might be surpised to hear that runite, as an ore, is soft. Like gold it is easily marked. Thank our ancestors that they didn't immediately toss the ore into a bin, though. They tinkered with alloys, working with luminite ore in the combustion process to create something remarkable. You can see why they persisted. Runite ore has some funky properties - repelling materials, occasionally floating, spinning when you sing to it - that makes it an ore with clear potential."
+    }
+   ]
+  },
+  "_search": "runite ore runite tier materials runite ore is a basic mining material mined from runite ore nodes, which can be found all over the scorned wilderness region. three ores can be smelted along 3 pieces of luminite ore in a blast furnace to produce rune bars.",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Luminite Ore",
+  "url": "",
+  "category": "materials",
+  "ingredients": [],
+  "stations": [],
+  "stats": "",
+  "effects": "Mined from luminite deposits. A catalysing material that can help to make rare metals.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_luminite_ore",
+  "_icon_file": "",
+  "_power": "",
+  "_category_label": "Runite tier materials",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Luminite Ore",
+   "desc": "Mined from luminite deposits. A catalysing material that can help to make rare metals.",
+   "item_type": "Processed Material",
+   "stack": "99",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "Luminite Ore is a Mining material that can be mined from Luminite Deposits, which are found within the Scorned Wilderness.",
+   "journal": [
+    {
+     "title": "",
+     "text": "You'd struggle to find a better catalyst than luminite ore. If it was a person it would be the life of the party, the guest who dances on the table, gets everyone enjoying themselves, and then promptly passes out upstairs. It burns brightly but briefly, enabling other ores - like runite - to realise their potential."
+    }
+   ]
+  },
+  "_search": "luminite ore runite tier materials mined from luminite deposits. a catalysing material that can help to make rare metals. luminite ore is a mining material that can be mined from luminite deposits, which are found within the scorned wilderness.",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Ash Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Ash Logs"
+   },
+   {
+    "qty": 3,
+    "name": "Rune Essence"
+   },
+   {
+    "qty": 1,
+    "name": "Coarse Thread"
+   }
+  ],
+  "stations": [
+   "Crafting Table"
+  ],
+  "stats": "Weight 15.0 Combo 4 Durability 900 Crafting XP 20 XP Station Artisan",
+  "effects": "A simple wand carved from ash wood. Every mage starts somewhere.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_ash_wand",
+  "_icon_file": "",
+  "_power": "2",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Ash Wand",
+   "desc": "A simple wand carved from ash wood. Every mage starts somewhere.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Ash wand is a power level 2 magic weapon. It can be crafted at a crafting table using 6 ash logs, 3 rune essence, and 1 coarse thread.",
+   "journal": [
+    {
+     "title": "",
+     "text": "In Brynmoor, the wand will forever be associated with Holly Arnuld. She applied to every wizard to become their apprentice, but was turned down on account of her having a single arm. She would craft runes and concoct potions, displaying her skill and speed - faster than most other apprentices. The wizards would fill their eyes with pity and put a hand to her shoulder. \"But can you hold a staff, lassie?\", they would say. \"I need to know that I can rely on you for all things.\" Holly would not wield a staff. She believed them to be showy and unnecessary. They were as performative as a peacock's tail. Instead, she kept a sliver of staff in her sleeve. This was her ash wand, discretely socketed and ready. She found work as a scullery maid for a noblewoman. She was travelling in their entourage when they were attacked by enough goblins to overwhelm the guards. The goblins were on the brink of killing the noblewoman when Holly pulled her wand from the stitching in her sleeve. She whipped the goblins from their feet with air magic. Every time they tried to get back on their feet, she put them to the floor again. They stumbled and stood, stumbled and stood, until finally she tumbled them off a cliff. Holly was given a full purse and the contacts of a friend of the nobelwoman. She was enrolled in a school of magic. Her specialism? Well, she put all her efforts into the merit of wands."
+    }
+   ]
+  },
+  "_search": "ash wand wands a simple wand carved from ash wood. every mage starts somewhere. the ash wand is a power level 2 magic weapon. it can be crafted at a crafting table using 6 ash logs, 3 rune essence, and 1 coarse thread. power level 2",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Oak Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Oak Logs"
+   },
+   {
+    "qty": 3,
+    "name": "Anima-Infused Bark"
+   },
+   {
+    "qty": 2,
+    "name": "Wool Thread"
+   }
+  ],
+  "stations": [
+   "Mystic Forge"
+  ],
+  "stats": "Weight 15.0 Combo 4 Crafting XP 20 XP Station Artisan",
+  "effects": "A sturdy oak wand that offers reliability far beyond its humble appearance.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_oak_wand",
+  "_icon_file": "",
+  "_power": "3",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Oak Wand",
+   "desc": "A sturdy oak wand that offers reliability far beyond its humble appearance.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Oak wand is a power level 3 magic weapon. It can be crafted at a mystic forge using 6 oak logs, 3 anima-infused bark, and 2 wool thread.",
+   "journal": [
+    {
+     "title": "",
+     "text": "There was a room in the Brynmoor School of Magic that every new student visited at least once. The students' purposes differed, of course: some students wanted to see if it was merely myth; others wanted to simply observe it; a few wanted to go a little further... The room was Arnuld's Sanctum. In the centre of the circular room was a single pedestal with an oak wand. From a distance, it looked like it floated, but step closer and it would be clear that it was supported with a stand of glass. There were no inscriptions on the pedestal, no decorations on the walls. The room lacked any detailing, outside of a single sprig of holly, etched onto the lower-half of the wand. No one had been able to grasp the oak wand to take it. Any fool who tried would be overcome by the sensation that they were on fire. They would drop to the floor, contorting in an effort to remove flames that were not there. Only the stupid and self-worthy would attempt it, and there was always a crowd of third- and fourth-years to watch and laugh at them. When the School of Magic fell to fire (which had nothing to do with the wand), no one had the presence of mind to visit the Sanctum. Fire surged up the pedestal, and the wand's magical protection dropped. Embracing the fire, the wand was consumed, as if it were finally with its own kind. Then the pedestal dropped and something opened."
+    }
+   ]
+  },
+  "_search": "oak wand wands a sturdy oak wand that offers reliability far beyond its humble appearance. the oak wand is a power level 3 magic weapon. it can be crafted at a mystic forge using 6 oak logs, 3 anima-infused bark, and 2 wool thread. power level 3",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Blightwood Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Blightwood"
+   },
+   {
+    "qty": 3,
+    "name": "Wild Anima"
+   },
+   {
+    "qty": 2,
+    "name": "Swamp Thread"
+   },
+   {
+    "qty": 2,
+    "name": "Vault Shard"
+   }
+  ],
+  "stations": [
+   "Mystic Forge"
+  ],
+  "stats": "Weight 15.0 Combo 4 Durability 1300 Crafting XP 20 XP Station Artisan",
+  "effects": "Fashioned from blightwood, its magic feels unsettlingly eager to obey.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_blightwood_wand",
+  "_icon_file": "",
+  "_power": "4",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Blightwood Wand",
+   "desc": "Fashioned from blightwood, its magic feels unsettlingly eager to obey.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Blightwood wand is a power level 4 magic weapon. It can be crafted at a mystic forge using 6 blightwood, 3 wild anima, 2 swamp thread, and 2 vault shard.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Holly Arnuld travelled the world in search of materials for her wands. She would freely talk about the misadventures - making wands out of jade vines, for one - but would rarely talk about her successes. It was hard to know whether she was humble or unwilling to reveal her secrets. One of those misadventures was in Bloodblight. She found a tree in the swamps with twigs that looked uncannily like wands. She wouldn't need to process the twigs much beyond snapping them from the tree. They glowed with magic, as if already prepared for their role. Holly would treat this as a lesson to her students: perfection is an enemy. If something is flawless then it is hiding its flaw from you. Holly plucked a wand-twig from the tree and weighed it in her palm. But she could not shake the wand: it was stuck there. She was cursed to hold it in her palm, presumably forever if the blightwood tree had its way. Holly was a sage enough wizard to remove the curse eventually, but it took some weeks to arrive at the solution. In the intervening period, she taught her lessons with a stony-face, grumpy temper, and a blightwood wand in her palm. She would point it threateningly at any student who dared to glance at her curse."
+    }
+   ]
+  },
+  "_search": "blightwood wand wands fashioned from blightwood, its magic feels unsettlingly eager to obey. the blightwood wand is a power level 4 magic weapon. it can be crafted at a mystic forge using 6 blightwood, 3 wild anima, 2 swamp thread, and 2 vault shard. power level 4",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Splitbark Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 6,
+    "name": "Hollow Bark"
+   },
+   {
+    "qty": 3,
+    "name": "Sacred Oil"
+   },
+   {
+    "qty": 2,
+    "name": "Fine Thread"
+   },
+   {
+    "qty": 3,
+    "name": "Vault Shard"
+   }
+  ],
+  "stations": [
+   "Mystic Forge"
+  ],
+  "stats": "Weight 15.0 Combo 4 Durability 1300 Crafting XP 20 XP Station Artisan",
+  "effects": "Crafted from enchanted splitbark, balancing resilience with arcane potential.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_splitbark_wand",
+  "_icon_file": "",
+  "_power": "5",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Splitbark Wand",
+   "desc": "Crafted from enchanted splitbark, balancing resilience with arcane potential.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Splitbark wand is a power level 5 magic weapon. It can be crafted at a mystic forge using 6 hollow bark, 3 sacred oil, 2 fine thread, and 3 vault shard.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Brynmoor's School of Magic was little more than scattered rubble. There is very little as flammable as a wizards' school, thick as it is with books, potions and staves. Rescue parties saved who and what they could, but seven casualties were tallied. They were mostly wizards whose luck had run out, who were practicing spells that left them incapacitated. They were in the midst of astral projection or alterations of the mind when the fire swept through. Under the rubble, however, the rescue parties found something unusual. There was a room that wasn't on any plans, located beneath Arnuld's Sanctum. It wasn't particularly large: only a handful of wizards could have stood upright within it. But in that room was a plaque, lacquered to protect it from fire. On it was written \"You have passed my trial. I have underestimated my fellow wizards. Take what is earned - Holly Arnuld\". On the walls, around the plaque, was row upon row of wands. Splitbark and maple wands in their hundreds."
+    }
+   ]
+  },
+  "_search": "splitbark wand wands crafted from enchanted splitbark, balancing resilience with arcane potential. the splitbark wand is a power level 5 magic weapon. it can be crafted at a mystic forge using 6 hollow bark, 3 sacred oil, 2 fine thread, and 3 vault shard. power level 5",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Maple Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 8,
+    "name": "Maple Logs"
+   },
+   {
+    "qty": 3,
+    "name": "Mithril Bar"
+   },
+   {
+    "qty": 2,
+    "name": "Glass Vessel"
+   },
+   {
+    "qty": 8,
+    "name": "Infernal Fragment"
+   }
+  ],
+  "stations": [
+   "Mystic Forge"
+  ],
+  "stats": "Weight 15.0 Combo 4 Durability 1600 Crafting XP 20 XP Station Artisan",
+  "effects": "A finely crafted maple wand, prized for its natural affinity with magic.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_maple_wand",
+  "_icon_file": "",
+  "_power": "6",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Maple Wand",
+   "desc": "A finely crafted maple wand, prized for its natural affinity with magic.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Maple wand is a power level 6 magic weapon. It can be crafted at a mystic forge using 8 maple logs, 3 mithril bar, 2 glass vessel, and 8 infernal fragment.",
+   "journal": [
+    {
+     "title": "",
+     "text": "The Brynmoor School of Magic fell to fire, and it didn't rally in another location. The school, it was said, had been losing money, and the wizards saw the fire as an opportunity to count their insurance money and cut any further losses. The students were left to apprentice elsewhere, if they could find the work, or practice their magic in other, ill-thought-out manners. Upon the death of a foremost wizard, an old dean of the School of Magic, a chest was wheeled out. Inside were hundreds of sticks, wrapped in cloth. The wizard's family believed them to be incense sticks or diffusers - scented with holly berries, as per a decoration on the stick's base. The family sold them for a single gold piece each. A poster was attached to the front of the chest with the words 'Fire Sale - Incense Sticks' . It is hard to describe the carnage that followed. The sticks were not incense but splitbark and maple wands, and those wands were intensely powerful. They were infused not with the smell of holly berries, but with the elements of fire, water, air and earth. When lit, they reacted explosively, and when held, they fired chaotically. Brynmoor was alight that night, and everyone had a different story of what happened to them, from stoves encased in rock to clothes blown clean off by air magic. Most of the wands were discarded or destroyed. But a few found their way into the hands of commoners - those who were not allowed, or could not afford, to practice magic. Street urchins, scullery maids, chimney sweeps. Each of them had the beginnings of magic in their hands."
+    }
+   ]
+  },
+  "_search": "maple wand wands a finely crafted maple wand, prized for its natural affinity with magic. the maple wand is a power level 6 magic weapon. it can be crafted at a mystic forge using 8 maple logs, 3 mithril bar, 2 glass vessel, and 8 infernal fragment. power level 6",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Master Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 8,
+    "name": "Yew Logs"
+   },
+   {
+    "qty": 3,
+    "name": "Refined Obsidian"
+   },
+   {
+    "qty": 2,
+    "name": "Infinity Cloth"
+   },
+   {
+    "qty": 2,
+    "name": "Dragonstone"
+   },
+   {
+    "qty": 2,
+    "name": "Gypsum Wax"
+   }
+  ],
+  "stations": [
+   "Mystic Forge"
+  ],
+  "stats": "Weight 15.0 Combo 4 Durability 1500 Crafting XP 20 XP Station Artisan",
+  "effects": "A wand worthy of an accomplished spellcaster. Mastery is not included.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_master_wand",
+  "_icon_file": "",
+  "_power": "7",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Master Wand",
+   "desc": "A wand worthy of an accomplished spellcaster. Mastery is not included.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Master wand is a power level 7 magic weapon. It can be crafted at a mystic forge using 8 yew logs, 3 refined obsidian, 2 infinity cloth, 2 dragonstone, and 2 gypsum wax.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Holly Arnuld was buried with a Master Wand on her chest and her hand clasping it. Her last wishes, found in her desk, made it clear that the wand was to be placed as close to her heart as possible. A few other preparations were to be made, like the timing of the funeral, and her closest companions made them. As Holly was lowered into the ground at her funeral, her friends, fellow teachers and class raised their wands to the sky. It was respectful and somber, as was Brynmoor tradition. Just as the congregation was looking to disperse, the coffin shook, and the seams around the lid brightened. The coffin blew open and a flurry of fire spells exploded from the Master Wand. A nearby tree was set alight. Students had to use their jackets to stamp out fires on the lawn. Everyone claimed to hear cackling from the coffin, yet - when a brave teacher stooped over to have a look - Holly was still in repose, blackened a little with soot. It turned out that Holly was buried with a magical mechanism on her chest, timed to trigger at the end of the funeral. The cackling was the whirring and sputtering of the mechanism. The machine acted as a catalyst for the wand, and - well - you know the rest."
+    }
+   ]
+  },
+  "_search": "master wand wands a wand worthy of an accomplished spellcaster. mastery is not included. the master wand is a power level 7 magic weapon. it can be crafted at a mystic forge using 8 yew logs, 3 refined obsidian, 2 infinity cloth, 2 dragonstone, and 2 gypsum wax. power level 7",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Ancestral Wand",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 8,
+    "name": "Magic Logs"
+   },
+   {
+    "qty": 5,
+    "name": "Harmonised Compound"
+   },
+   {
+    "qty": 2,
+    "name": "Vis Cloth"
+   },
+   {
+    "qty": 2,
+    "name": "Dragonstone"
+   },
+   {
+    "qty": 2,
+    "name": "Draconic Vis Wax"
+   }
+  ],
+  "stations": [
+   "Mystic Forge"
+  ],
+  "stats": "Weight 15.0 Combo 4 Durability 1750 Crafting XP 20 XP Station Artisan",
+  "effects": "Forgotten magic lingers within this wand, waiting for a capable hand to awaken it.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_ancestral_wand",
+  "_icon_file": "",
+  "_power": "8",
+  "_category_label": "Wands",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Ancestral Wand",
+   "desc": "Forgotten magic lingers within this wand, waiting for a capable hand to awaken it.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Ancestral wand is a power level 8 magic weapon. It can be crafted at a mystic forge using 8 magic logs, 5 harmonised compound, 2 vis cloth, 2 dragonstone, and 2 draconic vis wax.",
+   "journal": [
+    {
+     "title": "",
+     "text": "Holly Arnuld , the famed 'wand wizard', only had one blood relative, yet she found out about this relative's existence entirely by accident. Frustrated at final-year students stealing her wands, Holly determined to discover a failsafe. She would create a spell that would respect the Bond of Blood: a spell that could be applied to her favourite wands to ensure only she used them. If someone without her blood tried to hold her Ancestral Wand, for example, then they would feel a burning pain. The magic worked, but not quite as intended. 'Perfection is the enemy', as she would say. Her Ancestral Wand was bound to Arnuld blood, but it had not chosen Holly as the one who should wield it. There was another Arnuld out there, in the wilds, and the Ancestral Wand stubbornly decided that it belonged to THEM. Holly hated that the next step was borrowed from a child's fairy tale, but there was no other choice. She invited people to come up and try to hold the wand. If they could do so without feeling pain, then she would recognise them as a relative and bequeath half of her estate. Hundreds of townsfolk tried, until a young orphan held the wand with no after-effect. Holly took her under her wing. The Ancestral Wand had a new owner. Holly Arnuld tinkered with the Bond of Blood spell over the years, creating a variant that would eventually be used in her memorial chamber: Arnuld's Sanctum."
+    }
+   ]
+  },
+  "_search": "ancestral wand wands forgotten magic lingers within this wand, waiting for a capable hand to awaken it. the ancestral wand is a power level 8 magic weapon. it can be crafted at a mystic forge using 8 magic logs, 5 harmonised compound, 2 vis cloth, 2 dragonstone, and 2 draconic vis wax. power level 8",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Kuldra's Wrath",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [],
+  "stations": [],
+  "stats": "Weight 15.0 Block 5 Combo 4 Durability 1750 Special effect Deals increased DAMAGE to DRAGONS Damage type Magic",
+  "effects": "A masterfully crafted wand, infused with the fury of Kuldra - channeling arcane power with terrifying efficiency.",
+  "obtain": "Uncraftable. Dropped via Queenslayer's Reward Pack, received once for defeating Kuldra and completing Regicide.",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_kuldra_s_wrath",
+  "_icon_file": "",
+  "_power": "9",
+  "_category_label": "Wands (raid drop)",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Kuldra's Wrath",
+   "desc": "A masterfully crafted wand, infused with the fury of Kuldra - channeling arcane power with terrifying efficiency.",
+   "item_type": "Magic Weapon",
+   "weight": "15.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Kuldra's Wrath is a power level 9 wand.",
+   "journal": [
+    {
+     "title": "",
+     "text": "When Kuldra was no bigger than a terrorbird, the dragonkin Viika would play with her. They had bonded - the dragon and the seer. It is hard to imagine that this was the same Kuldra whose five heads would eventually loom over Ashenfall. Their early relationship had but one frosty moment. Viika's eyes glazed over and they grabbed a stick and thrust it into Kuldra's paw. Kuldra screamed and tried to rip the stick out, but it was a splinter that her teeth couldn't reach. It had retreated too far into her body. The playmates were pulled apart, with Viika screaming fragmented nonsense about \"bringing a weapon to the world\" and \"I did what must be done, yet also did not\". Kuldra was confused about the sudden betrayal. She retreated into the pile of rags that she had made into a nest. Later, Viika approached Kuldra with an upturned palm, their thoughts more lucid. They asked Kuldra for forgiveness, and Kuldra gave it happily. But while they returned to being friends, Kuldra was unable to remove the splinter. It itched and ached as it pushed further into her bloodstream."
+    }
+   ]
+  },
+  "_search": "kuldra's wrath wands (raid drop) a masterfully crafted wand, infused with the fury of kuldra - channeling arcane power with terrifying efficiency. the kuldra's wrath is a power level 9 wand. power level 9",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Abysmal Whip",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 1,
+    "name": "Abyssal Spine"
+   },
+   {
+    "qty": 3,
+    "name": "Shrapnel"
+   },
+   {
+    "qty": 3,
+    "name": "Swamp Thread"
+   },
+   {
+    "qty": 3,
+    "name": "Adhesive"
+   },
+   {
+    "qty": 4,
+    "name": "Vault Shard"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 4.5 Base damage 44 - 76 Block 5 Combo 5 Durability 1,300 Special effect ATTACKS build up BLEED on enemies (25) Damage type Slash Crafting XP 100 XP Station Artisan",
+  "effects": "It's... not quite finished.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_abysmal_whip",
+  "_icon_file": "",
+  "_power": "4",
+  "_category_label": "Melee weapons",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Abysmal Whip",
+   "desc": "It's... not quite finished.",
+   "item_type": "Melee Weapon",
+   "weight": "4.5",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The abysmal whip is a power level 4 one-handed melee weapon that can be created at a blacksmith's bench. The recipe, Abyssal Remains, can be acquired by killing an Abyssal Demon. It can be ascended at a mystic forge with ascension cores. Note, if you ascend the Abysmal Whip to power level 8, and upgrade it to the Abyssal Whip, it will be brought down to Power Level 7.",
+   "journal": [
+    {
+     "title": "",
+     "text": "We've all heard of it. We've all wanted it... the Legendary Abyssal Whip! The fabled weapon that heroes and adventurers have been seeking for an age! You have taken it one step further. You have asked the question, \"How hard could it be to make your own?\". All you need is a spine from an Abyssal Demon! It comes pre-segmented and it's made from some of the hardiest organic material known to mortalkind. You just need to kill the demon, twist the shoulder, sever a tendon, and Io - your very own Abyssal Whip... right? Wrong. Turns out, it's a bit more involved than you expected, and this \"weapon\" demonstrates that all too well. Still, not all is lost. Perhaps there is a way, a method, to turn this... \"thing\" into something that lives up to it's legend."
+    }
+   ]
+  },
+  "_search": "abysmal whip melee weapons it's... not quite finished. the abysmal whip is a power level 4 one-handed melee weapon that can be created at a blacksmith's bench. the recipe, abyssal remains, can be acquired by killing an abyssal demon. it can be ascended at a mystic forge with ascension cores. note, if you ascend the abysmal whip to power level 8, and upgrade it to the abyssal whip, it will be brought down to power level 7. power level 4",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Abyssal Whip",
+  "url": "",
+  "category": "weapons",
+  "ingredients": [
+   {
+    "qty": 1,
+    "name": "Abysmal Whip"
+   },
+   {
+    "qty": 6,
+    "name": "Demonic Oil"
+   },
+   {
+    "qty": 6,
+    "name": "Scorch Leather"
+   },
+   {
+    "qty": 6,
+    "name": "Cursed Essence"
+   },
+   {
+    "qty": 4,
+    "name": "Dragonstone"
+   }
+  ],
+  "stations": [
+   "Blacksmith's Bench"
+  ],
+  "stats": "Weight 4.5 Base damage 100 - 175 Block 5 Combo 5 Durability 1600 Special effect * Abyssal Snare (50)\nLaunches DEMONIC ENERGY that homes in on a target, dealing DAMAGE and KNOCKING them DOWN\n* Barbed Attacks' \nbuild up Bleed on Enemies. (25)\n* Reckless \nCan BLOCK using UNARMED BLOCK Special action Abyssal Snare (50 Special Attack) Damage type Slash Crafting XP 100 XP Station Artisan",
+  "effects": "A brutal weapon crafted from the spine of a terrifying Abyssal Demon.",
+  "obtain": "",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_abyssal_whip",
+  "_icon_file": "",
+  "_power": "7",
+  "_category_label": "Melee weapons (masterwork)",
+  "_has_recipe": true,
+  "wiki": {
+   "wiki_title": "Abyssal Whip",
+   "desc": "A brutal weapon crafted from the spine of a terrifying Abyssal Demon.",
+   "item_type": "Melee Weapon",
+   "weight": "4.5",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The abyssal whip is a power level 7 one-handed masterwork melee weapon that can be created at a blacksmith's bench. To create this, it requires the Abysmal Whip to be wielded when interacting with a dragonkin statue near the Fight Cave. It is located directly North, in the lava. Note, the method to getting the recipe is currently bugged.",
+   "journal": [
+    {
+     "title": "",
+     "text": "The abyssal demon is a foul beast. A single one can massacre a village before the warning bell can even sound. Crafting a weapon from their remains symbolizes triumph against adversity or perhaps just hubris in its purest form. Infused with the hate of the demon, each whip crack generates unbearable pain. Victims find themselves overcome with suffering as the agony seeps into the wounds the whips leave behind. It is said that the whip even feeds on that misery, growing stronger with each life taken. The hate imbues the weapon with a desire to inflict more pain, and it grows stronger each time such a wish is granted. Or, so the legends say. Only one Wild Knight has ever chosen to wield the whip in vengeance against the demon for a fallen sibling. Her name is dust in the wind of history, but there are still creatures that hide in the shadows, afraid of the crack of her whip."
+    }
+   ]
+  },
+  "_search": "abyssal whip melee weapons (masterwork) a brutal weapon crafted from the spine of a terrifying abyssal demon. the abyssal whip is a power level 7 one-handed masterwork melee weapon that can be created at a blacksmith's bench. to create this, it requires the abysmal whip to be wielded when interacting with a dragonkin statue near the fight cave. it is located directly north, in the lava. note, the method to getting the recipe is currently bugged. power level 7",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Dragon Kiteshield",
+  "url": "",
+  "category": "weapons-tools",
+  "ingredients": [],
+  "stations": [],
+  "stats": "Weight 10.0",
+  "effects": "A dragon-forged kiteshield built to stand firm against overwhelming odds.",
+  "obtain": "Quest reward from Regicide Reward Pack (completing Regicide).",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_dragon_kiteshield",
+  "_icon_file": "",
+  "_power": "9",
+  "_category_label": "Raid rewards",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Dragon Kiteshield",
+   "desc": "A dragon-forged kiteshield built to stand firm against overwhelming odds.",
+   "item_type": "Shield",
+   "weight": "10.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The dragon kiteshield is a power level 9 shield that can be obtained during the Scorned Wilderness raid. The shield is one of the rewards for completing the Regicide quest, and is also a potential loot from the Queenslayer's Reward Pack. Unlike many other armour pieces in the game, this shield is both uncraftable and has a passive full durability.",
+   "journal": [
+    {
+     "title": "",
+     "text": "A five-headed dragon and a hidden island took spot #1 and #2 respectively, but the presence of dragon metal was the third most surprising thing that Zilyana found on Ashenfall. Dragon metal meant a sequence of things to the icyene. It meant that the dragonkin had not only lived here, but lived here long enough to create their own dragons and combine their dragonfire with orikalkum. She noted it as something that she wanted to investigate further - once the malevolent dragon-queen was stopped, of course."
+    }
+   ]
+  },
+  "_search": "dragon kiteshield raid rewards a dragon-forged kiteshield built to stand firm against overwhelming odds. the dragon kiteshield is a power level 9 shield that can be obtained during the scorned wilderness raid. the shield is one of the rewards for completing the regicide quest, and is also a potential loot from the queenslayer's reward pack. unlike many other armour pieces in the game, this shield is both uncraftable and has a passive full durability. power level 9",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Dragonslayer's Cape",
+  "url": "",
+  "category": "armor",
+  "ingredients": [],
+  "stations": [
+   "Armour Bench|mat1=|mat1qty=|output1=Dragonslayer's Cape|output1qty=1|output1pic=Dragonslayer's Cape"
+  ],
+  "stats": "Weight 0.0 Melee defence 2 Ranged defence 2 Magic defence 2",
+  "effects": "Awarded to those who have faced Queen Kuldra and Emerged victorious. Few Capes carry greater prestige.",
+  "obtain": "Quest reward from Regicide Reward Pack (completing Regicide).",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_dragonslayer_s_cape",
+  "_icon_file": "",
+  "_power": "",
+  "_category_label": "Raid rewards",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Dragonslayer's Cape",
+   "desc": "Awarded to those who have faced Queen Kuldra and Emerged victorious. Few Capes carry greater prestige.",
+   "item_type": "Cape",
+   "weight": "0.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Dragonslayer's Cape is a prestigious back slot item crafted at the Armour Bench following the defeat of Queen Kuldra in the Regicide quest. Featuring a deep purple drape with intricate gold trim, its centerpiece tapestry depicts Queen Kuldra perched atop floating, shattered landmasses.",
+   "journal": [
+    {
+     "title": "",
+     "text": "A seer once dreamed about brave warriors who walked across Ashenfall in another time. An age both past and present, where the rules of the world were different. These great heroes challenged and slew an echo of Velgar, saving a land that never was. While the seer’s memory of that dream fades with each passing moment, she was able to embroider the event into a cape, so that all might know of these legends from another time."
+    }
+   ]
+  },
+  "_search": "dragonslayer's cape raid rewards awarded to those who have faced queen kuldra and emerged victorious. few capes carry greater prestige. the dragonslayer's cape is a prestigious back slot item crafted at the armour bench following the defeat of queen kuldra in the regicide quest. featuring a deep purple drape with intricate gold trim, its centerpiece tapestry depicts queen kuldra perched atop floating, shattered landmasses.",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Queenslayer's Reward Pack",
+  "url": "",
+  "category": "other",
+  "ingredients": [],
+  "stations": [],
+  "stats": "Weight 0.0",
+  "effects": "Contains the spoils of your battle against Kuldra.",
+  "obtain": "Given once by Commander Zilyana after handing over Kuldra's Head, following Kuldra's defeat in the Scorned Wilderness raid.",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_queenslayer_s_reward_pack",
+  "_icon_file": "",
+  "_power": "",
+  "_category_label": "Raid rewards",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Queenslayer's Reward Pack",
+   "desc": "Contains the spoils of your battle against Kuldra.",
+   "item_type": "Resource",
+   "weight": "0.0",
+   "stack": "99",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Queenslayer's Reward Pack is a reward pack given to you after defeating Kuldra, the God-Eater in the Scorned Wilderness raid. To acquire this item, players must hand in Kuldra's Head to Commander Zilyana and players can acquire this reward pack multiple times by completing multiple raid runs."
+  },
+  "_search": "queenslayer's reward pack raid rewards contains the spoils of your battle against kuldra. the queenslayer's reward pack is a reward pack given to you after defeating kuldra, the god-eater in the scorned wilderness raid. to acquire this item, players must hand in kuldra's head to commander zilyana and players can acquire this reward pack multiple times by completing multiple raid runs.",
+  "_1_0": true
+ },
+ {
+  "unlocks": [],
+  "name": "Regicide Reward Pack",
+  "url": "",
+  "category": "other",
+  "ingredients": [],
+  "stations": [],
+  "stats": "Weight 0.0",
+  "effects": "A reward pack for completing Regicide.",
+  "obtain": "Quest reward for completing Regicide (defeating Kuldra). Contains Dragon Kiteshield, Dragonslayer's Cape and a Queenslayer's Reward Pack.",
+  "unlock": "",
+  "unlock_links": [],
+  "uses": [],
+  "set_bonus": "",
+  "catalog_only": false,
+  "icon_url": "",
+  "icon_source": "",
+  "key": "w10_regicide_reward_pack",
+  "_icon_file": "",
+  "_power": "",
+  "_category_label": "Raid rewards",
+  "_has_recipe": false,
+  "wiki": {
+   "wiki_title": "Regicide Reward Pack",
+   "desc": "A reward pack for completing Regicide.",
+   "item_type": "Container",
+   "weight": "0.0",
+   "release": "15 September 2026",
+   "update": "Our 1.0 Release is live!",
+   "lead": "The Regicide Reward Pack is a reward for completing the Regicide quest, containing the Dragonslayer's Cape, Dragon Kiteshield, and Queenslayer's Reward Pack."
+  },
+  "_search": "regicide reward pack raid rewards a reward pack for completing regicide. the regicide reward pack is a reward for completing the regicide quest, containing the dragonslayer's cape, dragon kiteshield, and queenslayer's reward pack.",
+  "_1_0": true
+ }
+]

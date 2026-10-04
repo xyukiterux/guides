@@ -1,0 +1,135 @@
+[
+ {
+  "id": "dragon-wolf",
+  "old": "BOSS",
+  "title": "Dragon Wolf",
+  "how": "exact",
+  "via": "dragon wolf"
+ },
+ {
+  "id": "shardbound-lesser-demon",
+  "old": "BOSS",
+  "title": "Shardbound Lesser Demon",
+  "how": "exact",
+  "via": "shardbound lesser demon"
+ },
+ {
+  "id": "zogre",
+  "old": "BOSS",
+  "title": "Zogre",
+  "how": "exact",
+  "via": "zogre"
+ },
+ {
+  "id": "abyssaldemon",
+  "old": "BOSS",
+  "title": "Abyssal Demon",
+  "how": "exact",
+  "via": "abyssaldemon"
+ },
+ {
+  "id": "houndmaster-rexiton",
+  "old": "BOSS",
+  "title": "Houndmaster Rexiton",
+  "how": "exact",
+  "via": "houndmaster rexiton"
+ },
+ {
+  "id": "lesserdemon-character-02",
+  "old": "BOSS",
+  "title": "Lesser Demon",
+  "how": "exact",
+  "via": "lesserdemon"
+ },
+ {
+  "id": "blackknighttitan-character-02",
+  "old": "BOSS",
+  "title": "Black Knight Titan",
+  "how": "exact",
+  "via": "blackknighttitan"
+ },
+ {
+  "id": "blightscale",
+  "old": "BOSS",
+  "title": "Blightscale",
+  "how": "exact",
+  "via": "blightscale"
+ },
+ {
+  "id": "rat-master-skrexis",
+  "old": "BOSS",
+  "title": "Rat Master Skrexis",
+  "how": "exact",
+  "via": "rat master skrexis"
+ },
+ {
+  "id": "summoner-flament",
+  "old": "BOSS",
+  "title": "Summoner Flament",
+  "how": "exact",
+  "via": "summoner flament"
+ },
+ {
+  "id": "desert-devil-kebbit",
+  "old": "Desert Devil Kebbit",
+  "title": "Desert Devil Kebbit",
+  "how": "exact",
+  "via": "Desert Devil Kebbit"
+ },
+ {
+  "id": "kalphite-guardian-hatchling",
+  "old": "Kalphite Guardian Hatchling",
+  "title": "Kalphite Guardian",
+  "how": "tokens",
+  "via": "Kalphite Guardian Hatchling"
+ },
+ {
+  "id": "kalphite-soldier-hatchling",
+  "old": "Kalphite Soldier Hatchling",
+  "title": "Kalphite Soldier",
+  "how": "tokens",
+  "via": "Kalphite Soldier Hatchling"
+ },
+ {
+  "id": "kalphite-worker-hatchling",
+  "old": "Kalphite Worker Hatchling",
+  "title": "Kalphite Worker",
+  "how": "tokens",
+  "via": "Kalphite Worker Hatchling"
+ },
+ {
+  "id": "kothaar-hur",
+  "old": "Kot Haar Hur",
+  "title": "KotHaar-Hur",
+  "how": "exact",
+  "via": "Kot Haar Hur"
+ },
+ {
+  "id": "kothaar-ket",
+  "old": "Kot Haar Ket",
+  "title": "KotHaar-Ket",
+  "how": "exact",
+  "via": "Kot Haar Ket"
+ },
+ {
+  "id": "kothaar-xil",
+  "old": "Kot Haar Xil",
+  "title": "KotHaar-Xil",
+  "how": "exact",
+  "via": "Kot Haar Xil"
+ },
+ {
+  "id": "vault-corruptor",
+  "old": "BOSS",
+  "title": "Vault Corruptor",
+  "how": "exact",
+  "via": "vault corruptor"
+ },
+ {
+  "id": "vault-striker",
+  "old": "BOSS",
+  "title": "Vault Striker",
+  "how": "exact",
+  "via": "vault striker"
+ }
+]

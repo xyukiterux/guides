@@ -1,0 +1,23 @@
+{
+ "name": "Helldivers 2 Field Manual",
+ "short_name": "HD2 Manual",
+ "description": "Tier lists, loadouts, enemy weak points and a stratagem trainer.",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#0b0d10",
+ "theme_color": "#0b0d10",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

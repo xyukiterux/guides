@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palworld Complete Guide</title>
+<meta name="description" content="Offline Palworld guide: every Pal, item, recipe, technology and boss, a level-by-level playthrough, and a breeding calculator built from the wiki's structured data.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand"><span class="dot"></span><div><h1>Palworld Guide</h1><small>Offline &middot; data-driven</small></div></div>
+    <div class="searchbox">
+      <input id="globalsearch" type="text" placeholder="Search Pals, items, bosses...">
+      <div id="search-results"></div>
+    </div>
+    <nav class="navlist" id="navlist"></nav>
+    <div id="nav-active-holder"></div>
+  </aside>
+  <main id="main"><p>Loading...</p></main>
+</div>
+
+<script src="data/meta.js"></script>
+<script src="data/pals.js"></script>
+<script src="data/breeding.js"></script>
+<script src="data/items.js"></script>
+<script src="data/structures.js"></script>
+<script src="data/recipes.js"></script>
+<script src="data/technology.js"></script>
+<script src="data/passives.js"></script>
+<script src="data/actives.js"></script>
+<script src="data/locations.js"></script>
+<script src="data/merchants.js"></script>
+<script src="data/humans.js"></script>
+<script src="data/bosses.js"></script>
+<script src="data/guide.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/depth.js" data-tilt=".card,.tile,.statbox" data-accent="#7c9be0" data-intensity="0.5" defer></script>
+</body>
+</html>

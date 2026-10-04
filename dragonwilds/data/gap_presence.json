@@ -1,0 +1,524 @@
+{
+ "item_363": {
+  "id": "vestigezombieaxe",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_364": {
+  "id": "adventurerscape",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_365": {
+  "id": "agilitybronzemedal",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_366": {
+  "id": "agilitygoldmedal",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_367": {
+  "id": "agilitysilvermedal",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_368": {
+  "id": "amulet",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_369": {
+  "id": "amulets",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_371": {
+  "id": "held_animaorb",
+  "in_game": true,
+  "has_icon": false,
+  "asset": "ITEM_AnimaOrb.uasset"
+ },
+ "item_372": {
+  "id": "antishockpotion",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_375": {
+  "id": "ascensioncore8",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_376": {
+  "id": "ascensioncores",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_378": {
+  "id": "ascensionshard8",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_379": {
+  "id": "ascensionshards",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_380": {
+  "id": "ashlongbow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_384": {
+  "id": "azureleather",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_385": {
+  "id": "beastlybloodsausage",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_388": {
+  "id": "berryjam",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_389": {
+  "id": "beverages",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_391": {
+  "id": "shroomskewer",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_392": {
+  "id": "blackknightbrute",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_393": {
+  "id": "blackknightcrossbow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_395": {
+  "id": "blackknighthoundmaster",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_396": {
+  "id": "blackknightmelee",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_397": {
+  "id": "blackknightsniper",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_398": {
+  "id": "blackknightsword",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_402": {
+  "id": "bluedragonblood",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_404": {
+  "id": "bluritedeposit",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_406": {
+  "id": "bonebodkinarrow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_407": {
+  "id": "bonebroadheadarrow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_408": {
+  "id": "bronzebroadheadarrow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_409": {
+  "id": "bronzebrutalarrow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_410": {
+  "id": "bronzenails",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_411": {
+  "id": "bubbleandsqueak",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_418": {
+  "id": "wildreflexesinfusioncooling",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_420": {
+  "id": "vestigeheadshadowscale",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_421": {
+  "id": "vestigelegshoplite",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_422": {
+  "id": "vestigeheadhoplite",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_423": {
+  "id": "vestigedaggerwolfbane",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_426": {
+  "id": "menaphitecape",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_427": {
+  "id": "desertsole",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_428": {
+  "id": "vestige_name_bow_elidnis",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_441": {
+  "id": "enchantedadamantbolts",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_442": {
+  "id": "examine",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_451": {
+  "id": "meal_filling",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_452": {
+  "id": "vestigeshortbowskeleton",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_457": {
+  "id": "gamepie",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_475": {
+  "id": "highwargodbanner",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_477": {
+  "id": "meal_iconic",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_481": {
+  "id": "infinitynet",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_482": {
+  "id": "investigate",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_483": {
+  "id": "ironbroadheadarrow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_484": {
+  "id": "ironbrutalarrow",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_486": {
+  "id": "juicybrisket",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_492": {
+  "id": "lesserantishockpotion",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_499": {
+  "id": "loyalhellhound",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_506": {
+  "id": "mithrildeposit",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_513": {
+  "id": "patch",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_515": {
+  "id": "vestige_name_sword_obsidian",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_517": {
+  "id": "vestigebodyhoplite",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_521": {
+  "id": "purifyingwater",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_523": {
+  "id": "kebbitkebab",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_525": {
+  "id": "recipebook",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_530": {
+  "id": "ring",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_531": {
+  "id": "rings",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_532": {
+  "id": "royalthanecloak",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_536": {
+  "id": "salvage",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_537": {
+  "id": "sandstoneboulder",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_538": {
+  "id": "sandwich",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_541": {
+  "id": "search",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_542": {
+  "id": "birdfillet",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_543": {
+  "id": "searedfarmsteak",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_544": {
+  "id": "searedgamesteak",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_549": {
+  "id": "meal_simple",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_550": {
+  "id": "skeletonarcherhood",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_551": {
+  "id": "vestigebodyranger",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_557": {
+  "id": "meal_solid",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_558": {
+  "id": "vestigestaffskeleton",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_560": {
+  "id": "vestige_name_fuzan_shield",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_563": {
+  "id": "tarnishedblackmetal",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_566": {
+  "id": "thammarith",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_569": {
+  "id": "toktzxilul",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_574": {
+  "id": "trinkets",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_579": {
+  "id": "varrockhotpot",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_580": {
+  "id": "weakantishockpotion",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_583": {
+  "id": "wildreflexesinfusion",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_584": {
+  "id": "willowstaff",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ },
+ "item_588": {
+  "id": "zamoraksword",
+  "in_game": false,
+  "has_icon": false,
+  "asset": null
+ }
+}

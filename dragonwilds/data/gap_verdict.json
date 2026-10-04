@@ -1,0 +1,350 @@
+{
+ "item_363": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigezombieaxe"
+ },
+ "item_364": {
+  "verdict": "absent-from-game",
+  "game_id": "adventurerscape"
+ },
+ "item_365": {
+  "verdict": "absent-from-game",
+  "game_id": "agilitybronzemedal"
+ },
+ "item_366": {
+  "verdict": "absent-from-game",
+  "game_id": "agilitygoldmedal"
+ },
+ "item_367": {
+  "verdict": "absent-from-game",
+  "game_id": "agilitysilvermedal"
+ },
+ "item_368": {
+  "verdict": "grouping",
+  "game_id": "amulet"
+ },
+ "item_369": {
+  "verdict": "grouping",
+  "game_id": "amulets"
+ },
+ "item_371": {
+  "verdict": "in-game-no-icon",
+  "game_id": "held_animaorb"
+ },
+ "item_372": {
+  "verdict": "absent-from-game",
+  "game_id": "antishockpotion"
+ },
+ "item_375": {
+  "verdict": "absent-from-game",
+  "game_id": "ascensioncore8"
+ },
+ "item_376": {
+  "verdict": "grouping",
+  "game_id": "ascensioncores"
+ },
+ "item_378": {
+  "verdict": "absent-from-game",
+  "game_id": "ascensionshard8"
+ },
+ "item_379": {
+  "verdict": "grouping",
+  "game_id": "ascensionshards"
+ },
+ "item_380": {
+  "verdict": "absent-from-game",
+  "game_id": "ashlongbow"
+ },
+ "item_384": {
+  "verdict": "absent-from-game",
+  "game_id": "azureleather"
+ },
+ "item_385": {
+  "verdict": "absent-from-game",
+  "game_id": "beastlybloodsausage"
+ },
+ "item_388": {
+  "verdict": "absent-from-game",
+  "game_id": "berryjam"
+ },
+ "item_389": {
+  "verdict": "grouping",
+  "game_id": "beverages"
+ },
+ "item_391": {
+  "verdict": "absent-from-game",
+  "game_id": "shroomskewer"
+ },
+ "item_392": {
+  "verdict": "absent-from-game",
+  "game_id": "blackknightbrute"
+ },
+ "item_393": {
+  "verdict": "absent-from-game",
+  "game_id": "blackknightcrossbow"
+ },
+ "item_395": {
+  "verdict": "absent-from-game",
+  "game_id": "blackknighthoundmaster"
+ },
+ "item_396": {
+  "verdict": "absent-from-game",
+  "game_id": "blackknightmelee"
+ },
+ "item_397": {
+  "verdict": "absent-from-game",
+  "game_id": "blackknightsniper"
+ },
+ "item_398": {
+  "verdict": "absent-from-game",
+  "game_id": "blackknightsword"
+ },
+ "item_402": {
+  "verdict": "absent-from-game",
+  "game_id": "bluedragonblood"
+ },
+ "item_404": {
+  "verdict": "absent-from-game",
+  "game_id": "bluritedeposit"
+ },
+ "item_406": {
+  "verdict": "absent-from-game",
+  "game_id": "bonebodkinarrow"
+ },
+ "item_407": {
+  "verdict": "absent-from-game",
+  "game_id": "bonebroadheadarrow"
+ },
+ "item_408": {
+  "verdict": "absent-from-game",
+  "game_id": "bronzebroadheadarrow"
+ },
+ "item_409": {
+  "verdict": "absent-from-game",
+  "game_id": "bronzebrutalarrow"
+ },
+ "item_410": {
+  "verdict": "absent-from-game",
+  "game_id": "bronzenails"
+ },
+ "item_411": {
+  "verdict": "absent-from-game",
+  "game_id": "bubbleandsqueak"
+ },
+ "item_418": {
+  "verdict": "absent-from-game",
+  "game_id": "wildreflexesinfusioncooling"
+ },
+ "item_420": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigeheadshadowscale"
+ },
+ "item_421": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigelegshoplite"
+ },
+ "item_422": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigeheadhoplite"
+ },
+ "item_423": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigedaggerwolfbane"
+ },
+ "item_426": {
+  "verdict": "absent-from-game",
+  "game_id": "menaphitecape"
+ },
+ "item_427": {
+  "verdict": "absent-from-game",
+  "game_id": "desertsole"
+ },
+ "item_428": {
+  "verdict": "absent-from-game",
+  "game_id": "vestige_name_bow_elidnis"
+ },
+ "item_441": {
+  "verdict": "absent-from-game",
+  "game_id": "enchantedadamantbolts"
+ },
+ "item_442": {
+  "verdict": "not-an-item",
+  "game_id": "examine"
+ },
+ "item_451": {
+  "verdict": "grouping",
+  "game_id": "meal_filling"
+ },
+ "item_452": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigeshortbowskeleton"
+ },
+ "item_457": {
+  "verdict": "absent-from-game",
+  "game_id": "gamepie"
+ },
+ "item_475": {
+  "verdict": "absent-from-game",
+  "game_id": "highwargodbanner"
+ },
+ "item_477": {
+  "verdict": "grouping",
+  "game_id": "meal_iconic"
+ },
+ "item_481": {
+  "verdict": "absent-from-game",
+  "game_id": "infinitynet"
+ },
+ "item_482": {
+  "verdict": "not-an-item",
+  "game_id": "investigate"
+ },
+ "item_483": {
+  "verdict": "absent-from-game",
+  "game_id": "ironbroadheadarrow"
+ },
+ "item_484": {
+  "verdict": "absent-from-game",
+  "game_id": "ironbrutalarrow"
+ },
+ "item_486": {
+  "verdict": "absent-from-game",
+  "game_id": "juicybrisket"
+ },
+ "item_492": {
+  "verdict": "absent-from-game",
+  "game_id": "lesserantishockpotion"
+ },
+ "item_499": {
+  "verdict": "absent-from-game",
+  "game_id": "loyalhellhound"
+ },
+ "item_506": {
+  "verdict": "absent-from-game",
+  "game_id": "mithrildeposit"
+ },
+ "item_513": {
+  "verdict": "not-an-item",
+  "game_id": "patch"
+ },
+ "item_515": {
+  "verdict": "absent-from-game",
+  "game_id": "vestige_name_sword_obsidian"
+ },
+ "item_517": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigebodyhoplite"
+ },
+ "item_521": {
+  "verdict": "absent-from-game",
+  "game_id": "purifyingwater"
+ },
+ "item_523": {
+  "verdict": "absent-from-game",
+  "game_id": "kebbitkebab"
+ },
+ "item_525": {
+  "verdict": "grouping",
+  "game_id": "recipebook"
+ },
+ "item_530": {
+  "verdict": "grouping",
+  "game_id": "ring"
+ },
+ "item_531": {
+  "verdict": "grouping",
+  "game_id": "rings"
+ },
+ "item_532": {
+  "verdict": "absent-from-game",
+  "game_id": "royalthanecloak"
+ },
+ "item_536": {
+  "verdict": "not-an-item",
+  "game_id": "salvage"
+ },
+ "item_537": {
+  "verdict": "absent-from-game",
+  "game_id": "sandstoneboulder"
+ },
+ "item_538": {
+  "verdict": "absent-from-game",
+  "game_id": "sandwich"
+ },
+ "item_541": {
+  "verdict": "not-an-item",
+  "game_id": "search"
+ },
+ "item_542": {
+  "verdict": "absent-from-game",
+  "game_id": "birdfillet"
+ },
+ "item_543": {
+  "verdict": "absent-from-game",
+  "game_id": "searedfarmsteak"
+ },
+ "item_544": {
+  "verdict": "absent-from-game",
+  "game_id": "searedgamesteak"
+ },
+ "item_549": {
+  "verdict": "grouping",
+  "game_id": "meal_simple"
+ },
+ "item_550": {
+  "verdict": "absent-from-game",
+  "game_id": "skeletonarcherhood"
+ },
+ "item_551": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigebodyranger"
+ },
+ "item_557": {
+  "verdict": "grouping",
+  "game_id": "meal_solid"
+ },
+ "item_558": {
+  "verdict": "absent-from-game",
+  "game_id": "vestigestaffskeleton"
+ },
+ "item_560": {
+  "verdict": "absent-from-game",
+  "game_id": "vestige_name_fuzan_shield"
+ },
+ "item_563": {
+  "verdict": "absent-from-game",
+  "game_id": "tarnishedblackmetal"
+ },
+ "item_566": {
+  "verdict": "absent-from-game",
+  "game_id": "thammarith"
+ },
+ "item_569": {
+  "verdict": "absent-from-game",
+  "game_id": "toktzxilul"
+ },
+ "item_574": {
+  "verdict": "grouping",
+  "game_id": "trinkets"
+ },
+ "item_579": {
+  "verdict": "absent-from-game",
+  "game_id": "varrockhotpot"
+ },
+ "item_580": {
+  "verdict": "absent-from-game",
+  "game_id": "weakantishockpotion"
+ },
+ "item_583": {
+  "verdict": "absent-from-game",
+  "game_id": "wildreflexesinfusion"
+ },
+ "item_584": {
+  "verdict": "absent-from-game",
+  "game_id": "willowstaff"
+ },
+ "item_588": {
+  "verdict": "absent-from-game",
+  "game_id": "zamoraksword"
+ }
+}

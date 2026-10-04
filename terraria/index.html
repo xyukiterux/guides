@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Terraria — Complete Guide</title>
+<meta name="description" content="Offline complete Terraria 1.4.4.x guide: full playthrough, ores & pickaxes, class setups, every item and recipe, bosses, NPCs and biomes.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="navToggle" class="navToggle" aria-label="Toggle menu">☰</button>
+  <div class="brand">
+    <span class="brandIcon" aria-hidden="true">⛏</span>
+    <span class="brandText">Terraria <em>Complete Guide</em></span>
+  </div>
+  <div class="searchWrap">
+    <input id="searchBox" type="search" placeholder="Search items, bosses, recipes, NPCs, sections..." autocomplete="off">
+    <div id="searchResults" class="searchResults" hidden></div>
+  </div>
+</header>
+
+<div class="layout">
+  <nav id="sidebar" class="sidebar">
+    <div class="navGroup">
+      <div class="navGroupTitle">Guide</div>
+      <a href="#/overview" data-route="overview">Overview</a>
+      <a href="#/playthrough" data-route="playthrough">Full Playthrough</a>
+      <a href="#/progression" data-route="progression">Ores &amp; Pickaxes</a>
+      <a href="#/classes" data-route="classes">Class Setups</a>
+      <a href="#/bosses" data-route="bosses">Bosses &amp; Events</a>
+      <a href="#/biomes" data-route="biomes">Biomes</a>
+      <a href="#/npcs" data-route="npcs">NPCs &amp; Happiness</a>
+      <a href="#/pylons" data-route="pylons">Pylons</a>
+    </div>
+    <div class="navGroup">
+      <div class="navGroupTitle">Database</div>
+      <a href="#/items" data-route="items">Items <span id="navItemCount" class="navCount"></span></a>
+      <a href="#/recipes" data-route="recipes">Recipes <span id="navRecipeCount" class="navCount"></span></a>
+      <a href="#/modifiers" data-route="modifiers">Reforge Modifiers</a>
+    </div>
+    <div class="navFoot" id="navFoot"></div>
+  </nav>
+
+  <main id="content" class="content" tabindex="-1"></main>
+</div>
+
+<script src="data/items.js"></script>
+<script src="data/recipes.js"></script>
+<script src="data/drops.js"></script>
+<script src="data/npcs.js"></script>
+<script src="data/modifiers.js"></script>
+<script src="data/progression.js"></script>
+<script src="data/classes.js"></script>
+<script src="data/bosses.js"></script>
+<script src="data/playthrough.js"></script>
+<script src="data/biomes.js"></script>
+<script src="data/happiness.js"></script>
+<script src="data/pylons.js"></script>
+<script src="data/manifest.js"></script>
+<script src="app.js"></script>
+<script src="depth.js" data-tilt=".card" data-accent="#7c9be0" data-intensity="0.5" defer></script>
+</body>
+</html>

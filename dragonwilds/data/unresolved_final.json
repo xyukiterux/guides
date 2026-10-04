@@ -1,0 +1,611 @@
+[
+ {
+  "key": "item_363",
+  "name": "A Broken Axe",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigezombieaxe",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_364",
+  "name": "Adventurers Cape",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/adventurerscape",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_365",
+  "name": "Agility Bronze Medal",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/agilitybronzemedal",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_366",
+  "name": "Agility Gold Medal",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/agilitygoldmedal",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_367",
+  "name": "Agility Silver Medal",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/agilitysilvermedal",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_368",
+  "name": "Amulet",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/amulet",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_369",
+  "name": "Amulets",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/amulets",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_371",
+  "name": "Anima Orb",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/held_animaorb",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_372",
+  "name": "Antishock Potion",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/antishockpotion",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_375",
+  "name": "Ascension Core 8",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ascensioncore8",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_376",
+  "name": "Ascension Cores",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ascensioncores",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_378",
+  "name": "Ascension Shard 8",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ascensionshard8",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_379",
+  "name": "Ascension Shards",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ascensionshards",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_380",
+  "name": "Ash Longbow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ashlongbow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_384",
+  "name": "Azure Leather",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/azureleather",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_385",
+  "name": "Beastly Blood Sausage",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/beastlybloodsausage",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_388",
+  "name": "Berry Jam",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/berryjam",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_389",
+  "name": "Beverages",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/beverages",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_391",
+  "name": "Bittercap Mushroom Skewer",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/shroomskewer",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_392",
+  "name": "Black Knight Brute",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/blackknightbrute",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_393",
+  "name": "Black Knight (Crossbow)",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/blackknightcrossbow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_395",
+  "name": "Black Knight Houndmaster",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/blackknighthoundmaster",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_396",
+  "name": "Black Knight (Melee)",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/blackknightmelee",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_397",
+  "name": "BlackKnightSniper",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/blackknightsniper",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_398",
+  "name": "Black Knight Sword",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/blackknightsword",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_402",
+  "name": "Blue Dragon Blood",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bluedragonblood",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_404",
+  "name": "Blurite Deposit",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bluritedeposit",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_406",
+  "name": "Bone Bodkin Arrow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bonebodkinarrow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_407",
+  "name": "Bone Broadhead Arrow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bonebroadheadarrow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_408",
+  "name": "Bronze Broadhead Arrow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bronzebroadheadarrow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_409",
+  "name": "Bronze Brutal Arrow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bronzebrutalarrow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_410",
+  "name": "Bronze Nails",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bronzenails",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_411",
+  "name": "Bubble & Squeak",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/bubbleandsqueak",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_418",
+  "name": "Cooling Wild Reflexes Infusion",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/wildreflexesinfusioncooling",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_420",
+  "name": "Corpselike Cowl",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigeheadshadowscale",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_421",
+  "name": "Corroded Spiked Poleyn",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigelegshoplite",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_422",
+  "name": "Corrupted Chainmail Links",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigeheadhoplite",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_423",
+  "name": "Crude Canine Carving",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigedaggerwolfbane",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_426",
+  "name": "Desert Cape",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/menaphitecape",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_427",
+  "name": "Desert Sole",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/desertsole",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_428",
+  "name": "Dew Daubed Bow String",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestige_name_bow_elidnis",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_441",
+  "name": "Enchanted Adamant Bolt",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/enchantedadamantbolts",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_442",
+  "name": "Examine",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/examine",
+  "reason": "not-an-item"
+ },
+ {
+  "key": "item_451",
+  "name": "Filling Meals",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/meal_filling",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_452",
+  "name": "Fletcher's Fingerbones",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigeshortbowskeleton",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_457",
+  "name": "Game Pie",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/gamepie",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_475",
+  "name": "High War God Banner",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/highwargodbanner",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_477",
+  "name": "Iconic Meals",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/meal_iconic",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_481",
+  "name": "Infinity Net",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/infinitynet",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_482",
+  "name": "Investigate",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/investigate",
+  "reason": "not-an-item"
+ },
+ {
+  "key": "item_483",
+  "name": "Iron Broadhead Arrow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ironbroadheadarrow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_484",
+  "name": "Iron Brutal Arrow",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ironbrutalarrow",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_486",
+  "name": "Juicy Brisket",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/juicybrisket",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_492",
+  "name": "Lesser Antishock Potion",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/lesserantishockpotion",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_499",
+  "name": "Loyal Hellhound",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/loyalhellhound",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_506",
+  "name": "Mithril Deposit",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/mithrildeposit",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_513",
+  "name": "Patch",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/patch",
+  "reason": "not-an-item"
+ },
+ {
+  "key": "item_515",
+  "name": "Piercing Obsidian Construct",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestige_name_sword_obsidian",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_517",
+  "name": "Pitted Breastplate Buckle",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigebodyhoplite",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_521",
+  "name": "Purifiying Water",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/purifyingwater",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_523",
+  "name": "Rat Steak",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/kebbitkebab",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_525",
+  "name": "Recipe Book",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/recipebook",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_530",
+  "name": "Ring",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/ring",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_531",
+  "name": "Rings",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/rings",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_532",
+  "name": "Royal Thane Cloak",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/royalthanecloak",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_536",
+  "name": "Salvage",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/salvage",
+  "reason": "not-an-item"
+ },
+ {
+  "key": "item_537",
+  "name": "Sandstone Boulder",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/sandstoneboulder",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_538",
+  "name": "Sandwich",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/sandwich",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_541",
+  "name": "Search",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/search",
+  "reason": "not-an-item"
+ },
+ {
+  "key": "item_542",
+  "name": "Seared Bird Steak",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/birdfillet",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_543",
+  "name": "Seared Farm Steak",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/searedfarmsteak",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_544",
+  "name": "Seared Game Steak",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/searedgamesteak",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_549",
+  "name": "Simple Meals",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/meal_simple",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_550",
+  "name": "Skeleton Archer Hood",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/skeletonarcherhood",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_551",
+  "name": "Slightly Chafing Chestguard",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigebodyranger",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_557",
+  "name": "Solid Meals",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/meal_solid",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_558",
+  "name": "Spinters of a Skeletal Staff",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestigestaffskeleton",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_560",
+  "name": "Sulphurous Sliver",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/vestige_name_fuzan_shield",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_563",
+  "name": "Tarnished Black Metal",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/tarnishedblackmetal",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_566",
+  "name": "Thammarith",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/thammarith",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_569",
+  "name": "TokTz-Xil-Ul",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/toktzxilul",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_574",
+  "name": "Trinkets",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/trinkets",
+  "reason": "grouping"
+ },
+ {
+  "key": "item_579",
+  "name": "Varrock Hotpot",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/varrockhotpot",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_580",
+  "name": "Weak Antishock Potion",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/weakantishockpotion",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_583",
+  "name": "Wild Reflexes Infusion",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/wildreflexesinfusion",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_584",
+  "name": "Willow Battlestaff",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/willowstaff",
+  "reason": "no-published-art"
+ },
+ {
+  "key": "item_588",
+  "name": "Zamorak Sword",
+  "category": "catalog-additions",
+  "url": "https://metabot.gg/en/dragonwilds/items/zamoraksword",
+  "reason": "no-published-art"
+ }
+]
