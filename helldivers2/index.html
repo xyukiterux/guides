@@ -176,6 +176,13 @@ details>div{padding:0 16px 14px;color:#cdcdc8}
 .tstats div{background:var(--well);border:1px solid var(--line);border-radius:10px;padding:6px 14px;min-width:84px}
 .tstats b{display:block;font-family:var(--head);font-size:1.4rem;color:var(--y)}
 .tstats span{font-size:.68rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+details.dd{background:none;border:0;margin:0}
+details.dd>summary{padding:8px 12px;border-radius:8px;background:rgba(255,210,31,.08);border:1px solid rgba(255,210,31,.3);color:var(--y);font-family:var(--head);letter-spacing:.08em;font-size:.85rem;text-transform:uppercase;justify-content:center;gap:8px}
+details.dd>summary::after{content:"▼";transition:transform .2s}
+details.dd[open]>summary::after{content:"▼";transform:rotate(180deg)}
+details.dd>summary:hover{background:rgba(255,210,31,.16)}
+details.dd>summary::-webkit-details-marker{display:none}
+details.dd>div{padding:10px 0 0;display:flex;flex-direction:column;gap:10px;color:inherit}
 .more{margin-top:10px}.more summary{padding:8px 12px;font-size:.85rem}
 .foot{margin-top:50px;color:var(--dim);font-size:.78rem;border-top:1px solid var(--line);padding-top:14px}
 /* ================= SUPER EARTH THEME (10-04) ================= */
@@ -504,10 +511,10 @@ R.ship = () => `<div class="sec"><h2>Ship Modules</h2><p>Permanent upgrades boug
 let WBV='order';
 // the evidence behind a rank: every item with our tier, how many are S/A, loadout use, and researched reasons
 function wbEvidence(w){ const e=w.evidence||{}; const its=arr(e.items);
-  return `${its.length?`<div class="pills" style="margin-top:8px">${its.map(i=>`<span class="pill" data-card="${findKey(i.name)||''}" style="cursor:pointer">${tierBox(i.tier)} ${esc(i.name)}</span>`).join('')}</div>`:''}
-  <p class="small" style="margin:6px 0 0"><b style="color:var(--y)">${e.top||0} of ${its.length}</b> items are S or A tier · used in <b style="color:var(--y)">${e.loadouts||0} of ${arr(D.loadouts).length}</b> loadouts in this guide</p>
+  return `<p class="small" style="margin:6px 0 0"><b style="color:var(--y)">${e.top||0} of ${its.length}</b> items are S or A tier · used in <b style="color:var(--y)">${e.loadouts||0} of ${arr(D.loadouts).length}</b> loadouts in this guide</p>
+  <details class="dd" style="margin-top:8px"><summary>Show the evidence</summary><div>${its.length?`<div class="pills">${its.map(i=>`<span class="pill" data-card="${findKey(i.name)||''}" style="cursor:pointer">${tierBox(i.tier)} ${esc(i.name)}</span>`).join('')}</div>`:''}
   ${arr(w.reasons).length?`<ul class="small" style="margin:8px 0 0;padding-left:18px">${arr(w.reasons).map(r=>`<li><b>${esc(r.name)}:</b> ${esc(r.text)}</li>`).join('')}</ul>`:''}
-  ${w.value_note?`<p class="small" style="margin:6px 0 0;color:var(--tC)">💰 ${esc(w.value_note)}</p>`:''}${w.skip_if?`<p class="small muted" style="margin:4px 0 0">Skip if: ${esc(w.skip_if)}</p>`:''}`; }
+  ${w.value_note?`<p class="small" style="margin:6px 0 0;color:var(--tC)">💰 ${esc(w.value_note)}</p>`:''}${w.skip_if?`<p class="small muted" style="margin:4px 0 0">Skip if: ${esc(w.skip_if)}</p>`:''}</div></details>`; }
 R.warbonds = () => { const W=arr(D.warbonds); const ranked=W.filter(w=>w.rank).sort((a,b)=>a.rank-b.rank); const rest=W.filter(w=>!w.rank&&!/mobilize/i.test(w.name));
   const wtile=w=>`<div class="tile" data-card="${w._k}" style="width:150px">${w.img?`<img src="${w.img}" alt="" loading="lazy" style="width:134px;height:70px;object-fit:cover;border-radius:6px">`:`<div class="ph">${esc(w.name.charAt(0))}</div>`}<span>${w.rank?`<b style="color:var(--y)">#${w.rank}</b> `:''}${esc(w.name)}</span></div>`;
   const card=w=>`<div class="card link" data-card="${w._k}" style="display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start">
@@ -530,8 +537,8 @@ function playerCard(p,i,n){ const L=p.loadout||{}; const st=arr(L.stratagems);
     <h3 style="font-size:1.25rem;margin-top:6px">${esc(p.role)}</h3><p class="small muted" style="margin:0">${esc(p.job||'')}</p></div></div>
     <div class="slots">${[0,1,2,3].map(k=>{ const o=objOf(st[k]); return `<div class="sslot" ${o?`data-card="${o._k}"`:''}>${img(o)||'<span style="height:44px"></span>'}<span>${esc(st[k]||'—')}</span></div>`; }).join('')}</div>
     <div class="gear">${gi('Primary',L.primary)}${gi('Secondary',L.secondary)}${gi('Grenade',L.throwable)}${gi('Armor',L.armor_passive)}${gi('Booster',L.booster)}</div>
-    ${arr(p.why).length?`<div><b class="small" style="font-family:var(--head);letter-spacing:.08em;color:var(--y)">WHY THIS, NOT THAT</b>
-      <ul class="small" style="margin:6px 0 0;padding-left:18px">${arr(p.why).map(w=>`<li style="margin-bottom:5px"><b>${ref(w.pick)}</b>${w.instead_of?` <span class="muted">over ${esc(w.instead_of)}</span>`:''}: ${esc(w.reason)}</li>`).join('')}</ul></div>`:''}
+    ${arr(p.why).length?`<details class="dd"><summary>Why this, not that</summary><div>
+      <ul class="small" style="margin:6px 0 0;padding-left:18px">${arr(p.why).map(w=>`<li style="margin-bottom:5px"><b>${ref(w.pick)}</b>${w.instead_of?` <span class="muted">over ${esc(w.instead_of)}</span>`:''}: ${esc(w.reason)}</li>`).join('')}</ul></div></details>`:''}
     ${p.highest_unlock_level?`<p class="small" style="margin:0"><span class="pill y">Unlocks at level ${esc(p.highest_unlock_level)}</span></p>`:''}
     ${arr(p.needs_warbond).length?`<p class="small" style="margin:0;color:var(--bug)">🔒 Needs: ${esc(arr(p.needs_warbond).join(', '))}</p>`:''}
     ${arr(p.upgrade_if_you_own_it).length?`<p class="small" style="margin:0;color:var(--tC)">⬆ If you own it: ${esc(arr(p.upgrade_if_you_own_it).join(' · '))}</p>`:''}</div>`; }
@@ -561,6 +568,7 @@ function farmCard(f){ const L=f.loadout||{}; const st=arr(L.stratagems).filter(x
     <div class="pills"><span class="pill y">${esc(f.goal)}</span>${f.faction_recommended?fpill(String(f.faction_recommended).split(/[ ,(]/)[0]):''}
     <span class="pill" style="border-color:${wcol};color:${wcol}">${works.startsWith('yes')?'✓ Works on 7.x':works.startsWith('no')?'✗ Patched':'⚠ Not confirmed on 7.x'}</span></div></div></div>
     <p style="margin:0;font-weight:600">${esc(f.summary)}</p>
+    <details class="dd"><summary>Show route</summary><div>
     <dl class="kv" style="margin:2px 0">${f.mission_type?`<dt>Mission</dt><dd>${esc(f.mission_type)}</dd>`:''}${f.difficulty?`<dt>Difficulty</dt><dd>${esc(f.difficulty)}</dd>`:''}${f.map_traits?`<dt>Map</dt><dd>${esc(f.map_traits)}</dd>`:''}</dl>
     ${f.operation_trick?`<div class="note" style="margin:0"><b>The trick:</b> ${esc(f.operation_trick)}</div>`:''}
     ${st.length?`<div class="slots">${st.slice(0,4).map(n=>{ const o=objOf(String(n).split(/ \(| or /)[0]); return `<div class="sslot" ${o?`data-card="${o._k}"`:''}>${img(o)||'<span style="height:44px;display:grid;place-items:center;color:var(--dim)">?</span>'}<span>${esc(n)}</span></div>`; }).join('')}</div>`:''}
@@ -570,7 +578,7 @@ function farmCard(f){ const L=f.loadout||{}; const st=arr(L.stratagems).filter(x
     ${Y.length?`<div class="small"><b style="color:var(--y)">Payout:</b> ${Y.map(([k,v])=>`${k?`<b>${esc(k.replace(/_/g,' '))}:</b> `:''}${esc(v)}`).join(' · ')}</div>`:''}
     <p class="small" style="margin:0;color:${wcol}">${esc(f.still_works||'')}</p>
     ${f.caveats?`<p class="small muted" style="margin:0">⚠ ${esc(arr(f.caveats).join(' '))}</p>`:''}
-    ${arr(f.sources).length?`<p class="small muted" style="margin:0">Sources: ${arr(f.sources).map(s=>typeof s==='string'?esc(s):s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name||'link')}</a>`:esc(s.name||'')).join(' · ')}</p>`:''}</div>`; }
+    ${arr(f.sources).length?`<p class="small muted" style="margin:0">Sources: ${arr(f.sources).map(s=>typeof s==='string'?esc(s):s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name||'link')}</a>`:esc(s.name||'')).join(' · ')}</p>`:''}</div></details></div>`; }
 R.farming = () => { const S=arr(D.farm_strategies); const goals=[...new Set(S.map(f=>f.goal))];
   const f=S.filter(x=>!FG||x.goal===FG);
   return `<div class="sec"><h2>Farming Guide</h2><p>Real farm routes players use: which mission, which trick, and the exact loadout to bring. Each route says whether it still works after the latest patch.</p></div>
