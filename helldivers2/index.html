@@ -326,7 +326,7 @@ const PAGES = [
   {id:'home',t:'Briefing',ic:'★'},
   {grp:'Arsenal'},
   {id:'loadouts',t:'Best Loadouts',ic:'▦',n:()=>arr(D.loadouts).length},
-  {id:'squad',t:'Squad Planner',ic:'👥'},
+  {id:'squad',t:'Squad Planner',ic:'👥',need:()=>arr(D.squad_plans).length},
   {id:'weapons',t:'All Weapons',ic:'⌖',n:()=>arr(D.primaries).length+arr(D.secondaries).length+arr(D.throwables).length},
   {id:'stratagems',t:'All Stratagems',ic:'⇣',n:()=>arr(D.stratagems).length},
   {id:'vehicles',t:'Vehicles & Mechs',ic:'⛟',n:()=>arr(D.stratagems).filter(s=>/vehicle|exosuit/i.test(s.type||'')).length},
@@ -339,14 +339,14 @@ const PAGES = [
   {grp:'Ship & Shop'},
   {id:'ship',t:'Ship Modules',ic:'⛭',n:()=>arr(D.ship_modules).length},
   {id:'warbonds',t:'Warbond Tier List',ic:'✦',n:()=>arr(D.warbonds).length},
-  {id:'farming',t:'Farming Guide',ic:'⛏',n:()=>arr(D.farm_strategies).length},
+  {id:'farming',t:'Farming Guide',ic:'⛏',n:()=>arr(D.farm_strategies).length,need:()=>arr(D.farm_strategies).length},
   {id:'economy',t:'Currencies & Difficulty',ic:'¤'},
   {grp:'Extras'},
   {id:'trainer',t:'Stratagem Trainer',ic:'⌨'},
   {id:'settings',t:'Settings & Controls',ic:'☰'},
   {id:'sources',t:'Sources',ic:'§'},
 ];
-function navHtml(){ return PAGES.map(p=>p.grp?`<div class="grp">${p.grp}</div>`:`<a href="#${p.id}" data-p="${p.id}"><span>${p.ic}</span>${p.t}${p.n?`<span class="n">${p.n()||''}</span>`:''}</a>`).join(''); }
+function navHtml(){ return PAGES.filter(p=>!p.need||p.need()).map(p=>p.grp?`<div class="grp">${p.grp}</div>`:`<a href="#${p.id}" data-p="${p.id}"><span>${p.ic}</span>${p.t}${p.n?`<span class="n">${p.n()||''}</span>`:''}</a>`).join(''); }
 
 const R = {};
 R.home = () => {
