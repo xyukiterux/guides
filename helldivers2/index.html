@@ -414,10 +414,17 @@ R.armor = () => `<div class="sec"><h2>Armor Weight Classes</h2><p>The class deci
   ${tierList(arr(D.boosters),o=>o.tier)}
   <div class="grid" style="margin-top:12px">${arr(D.boosters).slice().sort((a,b)=>TIERS.indexOf(tierOf(a.tier))-TIERS.indexOf(tierOf(b.tier))).map(b=>`<div class="card"><h3>${img(b)} ${esc(b.name)} ${tierBox(b.tier)}</h3><p>${esc(b.effect)}</p>${b.notes?`<p class="muted small">${esc(b.notes)}</p>`:''}</div>`).join('')}</div>`;
 
+// loadout levels: difficulty band (in-game names) + the player level its stratagems need
+const BANDS=[['1-3',1,3],['4-6',4,6],['7-10',7,10]];
+const diffName = n => (arr(D.difficulties).find(d=>+d.level===n)||{}).name||'';
+const bandLabel = b => { const x=BANDS.find(z=>z[0]===b); return x?`Difficulty ${x[1]}-${x[2]} · ${diffName(x[1])} to ${diffName(x[2])}`:`Difficulty ${b}`; };
+const loLevel = l => Math.max(1,...arr(l.stratagems).map(n=>+((objOf(n)||{}).unlock_level)||0));
+const loName = l => String(l.name||'').replace(/ (Beginner|Mid|Helldive)(?=:)/,'');
+const misName = m => /^(beginner low level|general|high-difficulty general)$/i.test(m||'')?'General':m;
 function loCard(l){
   const s=arr(l.stratagems);
   const gi=(lab,n)=>{ const o=objOf(n); return `<div class="gitem" ${o?`data-card="${o._k}"`:''}>${img(o)||'<span style="width:40px"></span>'}<div style="min-width:0"><span>${lab}</span><b>${esc(n||'—')}</b></div></div>`; };
-  return `<div class="card lo drop" id="lo-${slug(l.name)}"><div class="head"><div><h3>${esc(l.name)}</h3><div class="pills">${fpill(l.faction||'Any')}${l.difficulty?`<span class="pill">Diff ${esc(l.difficulty)}</span>`:''}${l.mission_focus?`<span class="pill">${esc(l.mission_focus)}</span>`:''}${l.team_role?`<span class="pill y">${esc(l.team_role)}</span>`:''}</div></div></div>
+  return `<div class="card lo drop" id="lo-${slug(l.name)}"><div class="head"><div><h3>${esc(loName(l))}</h3><div class="pills">${fpill(l.faction||'Any')}${l.difficulty?`<span class="pill">Difficulty ${esc(l.difficulty)}</span>`:''}<span class="pill y" title="The highest player level any of its stratagems needs">Player level ${loLevel(l)}+</span>${l.mission_focus?`<span class="pill">${esc(misName(l.mission_focus))}</span>`:''}${l.team_role?`<span class="pill y">${esc(l.team_role)}</span>`:''}</div></div></div>
   <div class="slots">${[0,1,2,3].map(i=>{ const o=objOf(s[i]); return `<div class="sslot" ${o?`data-card="${o._k}"`:''}>${img(o)||'<span style="height:44px"></span>'}<span>${esc(s[i]||'—')}</span></div>`; }).join('')}</div>
   <div class="gear">${gi('Primary',l.primary)}${gi('Secondary',l.secondary)}${gi('Grenade',l.throwable)}${gi('Armor',l.armor_passive)}${gi('Booster',l.booster)}</div>
   <p class="small" style="margin:0;color:#d7d5cc">${esc(l.why)}</p></div>`;
@@ -425,15 +432,16 @@ function loCard(l){
 let LF={fac:'',mis:'',dif:''};
 R.loadouts = () => {
   const L=arr(D.loadouts);
-  const mis=[...new Set(L.map(l=>l.mission_focus).filter(Boolean))].sort();
-  const dif=[...new Set(L.map(l=>l.difficulty).filter(Boolean))].sort();
-  const f=L.filter(l=>(!LF.fac||fcls(l.faction)===LF.fac||(LF.fac&&fcls(l.faction)==='any'))&&(!LF.mis||l.mission_focus===LF.mis)&&(!LF.dif||l.difficulty===LF.dif));
+  const mis=[...new Set(L.map(l=>misName(l.mission_focus)).filter(Boolean))].sort();
+  const f=L.filter(l=>(!LF.fac||fcls(l.faction)===LF.fac||(LF.fac&&fcls(l.faction)==='any'))&&(!LF.mis||misName(l.mission_focus)===LF.mis)&&(!LF.dif||l.difficulty===LF.dif))
+    .sort((a,b)=>loLevel(a)-loLevel(b));
+  const groups=BANDS.map(b=>[b[0],f.filter(l=>l.difficulty===b[0])]).filter(g=>g[1].length);
   const teams=arr(D.team_comps);
-  return `<div class="sec"><h2>Loadouts</h2><p>Pick your faction first, then the mission. Tap any slot to see why that item is in the build.</p></div>
+  return `<div class="sec"><h2>Best Loadouts</h2><p>Pick your faction and difficulty. Each build shows the player level you need for its stratagems. Tap any slot to see why it's in the build.</p></div>
   <div class="tabs" data-set="LFAC">${[['','All'],['bug','Terminids'],['bot','Automatons'],['squid','Illuminate']].map(([k,l])=>`<button data-v="${k}" class="${k} ${LF.fac===k?'on':''}">${l}</button>`).join('')}</div>
-  <div class="filters"><select data-lf="mis"><option value="">Any mission</option>${mis.map(m=>`<option ${LF.mis===m?'selected':''}>${esc(m)}</option>`).join('')}</select>
-  <select data-lf="dif"><option value="">Any difficulty</option>${dif.map(m=>`<option ${LF.dif===m?'selected':''}>${esc(m)}</option>`).join('')}</select><span class="muted small">${f.length} builds</span></div>
-  <div class="grid wide">${f.map(loCard).join('')||'<p class="muted">No build matches those filters.</p>'}</div>
+  <div class="tabs" data-set="LDIF">${[['','All levels'],...BANDS.map(b=>[b[0],'Difficulty '+b[0]])].map(([k,l])=>`<button data-v="${k}" class="${LF.dif===k?'on':''}">${l}</button>`).join('')}</div>
+  <div class="filters"><select data-lf="mis"><option value="">Any mission</option>${mis.map(m=>`<option ${LF.mis===m?'selected':''}>${esc(m)}</option>`).join('')}</select><span class="muted small">${f.length} builds · sorted by the player level you need</span></div>
+  ${groups.map(([b,ls])=>`<div class="sec"><h2 style="font-size:1.3rem">${esc(bandLabel(b))}</h2></div><div class="grid wide">${ls.map(loCard).join('')}</div>`).join('')||'<p class="muted">No build matches those filters.</p>'}
   ${teams.length?`<div class="sec"><h2>4-Player Squad Setups</h2><p>Split the jobs so nobody brings the same thing. Tap a build to jump to it.</p></div><div class="grid wide">${teams.filter(t=>!LF.fac||fcls(t.faction)===LF.fac).map(t=>`<div class="card"><h3>${fpill(t.faction)} ${esc(t.name||'Squad of four')}</h3>${arr(t.members).map((m,i)=>{ if(typeof m==='string'){ const nm=m.replace(/\s*\([^)]*\)\s*$/,''); const role=(m.match(/\(([^)]*)\)\s*$/)||[])[1]; return `<p class="small">👤 ${i+1}. <a href="javascript:void 0" data-jump="lo-${slug(nm)}">${esc(nm)}</a>${role?` <span class="pill y">${esc(role)}</span>`:''}</p>`; } return `<p class="small"><b>${esc(m.role)}:</b> ${esc(arr(m.stratagems).join(', '))}</p>`; }).join('')}${t.note||t.notes?`<p class="muted small">${esc(t.note||t.notes)}</p>`:''}</div>`).join('')}</div>`:''}`;
 };
 let EFAC='';
@@ -614,7 +622,7 @@ function cardHtml(k){
   const e=IDX[k]; if(!e) return '<p>Not found.</p>'; const o=e.o;
   const head=`${o.img?`<img class="mimg" src="${o.img}" alt="">`:''}<div class="pills"><span class="pill y">${esc(e.label)}</span>${o.category?`<span class="pill">${esc(o.category)}</span>`:''}${o.type?`<span class="pill">${esc(o.type)}</span>`:''}${o.faction?fpill(o.faction):''}</div><h2 style="margin-top:6px">${esc(o.name)}</h2>`;
   const used = arr(D.loadouts).filter(l=>[l.primary,l.secondary,l.throwable,l.armor_passive,l.booster,...arr(l.stratagems)].some(x=>x&&findKey(x)===k));
-  const usedHtml = used.length?`<h3 style="margin-top:16px">Used in ${used.length} loadout${used.length>1?'s':''}</h3><div class="pills">${used.map(l=>`<span class="pill ${fcls(l.faction)}">${esc(l.name)}</span>`).join('')}</div>`:'';
+  const usedHtml = used.length?`<h3 style="margin-top:16px">Used in ${used.length} loadout${used.length>1?'s':''}</h3><div class="pills">${used.map(l=>`<span class="pill ${fcls(l.faction)}">${esc(loName(l))}</span>`).join('')}</div>`:'';
   if(e.kind==='weapon') return head+`<div style="display:flex;gap:10px;align-items:center">${tierBox(o.tier)}<span class="muted">Tier</span></div>
     <dl class="kv"><dt>Damage</dt><dd>${val(o.damage)}</dd><dt>Armor pen</dt><dd>${val(o.armor_pen)}</dd><dt>Magazine</dt><dd>${val(o.mag)}</dd><dt>Fire rate</dt><dd>${val(o.fire_rate)}</dd><dt>From</dt><dd>${val(o.warbond)}</dd><dt>Best vs</dt><dd>${arr(o.best_vs).map(fpill).join(' ')||'—'}</dd></dl>
     ${arr(o.traits).length?`<div class="pills">${arr(o.traits).map(t=>`<span class="pill">${esc(t)}</span>`).join('')}</div>`:''}<p>${esc(clean(o.notes))}</p>`+usedHtml;
@@ -664,7 +672,7 @@ document.addEventListener('click',ev=>{
   const h=ev.target.closest('[data-hit]'); if(h){ goHit(h.dataset.hit); return; }
   const th=ev.target.closest('th[data-sort]'); if(th){ const i=+th.dataset.sort; SORT={k:i,dir:SORT.k===i?-SORT.dir:1}; rerender(); return; }
   const tb=ev.target.closest('.tabs[data-set] button'); if(tb){ const set=tb.parentElement.dataset.set, v=tb.dataset.v;
-    if(set==='WTAB'){WTAB=v;WF={cat:'',pen:'',fac:WF.fac};SORT={k:null,dir:1};} if(set==='WVIEW')WVIEW=v; if(set==='SFAC')SFAC=v; if(set==='SVIEW')SVIEW=v; if(set==='LFAC')LF.fac=v; if(set==='EFAC')EFAC=v; if(set==='TMODE'){TR.mode=v;TR.cur=null;TR.end=0;clearInterval(TR.timer);TR.timer=null;} rerender(); return; }
+    if(set==='WTAB'){WTAB=v;WF={cat:'',pen:'',fac:WF.fac};SORT={k:null,dir:1};} if(set==='WVIEW')WVIEW=v; if(set==='SFAC')SFAC=v; if(set==='SVIEW')SVIEW=v; if(set==='LFAC')LF.fac=v; if(set==='LDIF')LF.dif=v; if(set==='EFAC')EFAC=v; if(set==='TMODE'){TR.mode=v;TR.cur=null;TR.end=0;clearInterval(TR.timer);TR.timer=null;} rerender(); return; }
   const ef=ev.target.closest('[data-efac]'); if(ef) EFAC=ef.dataset.efac;
   const lf=ev.target.closest('[data-lfac]'); if(lf) LF.fac=lf.dataset.lfac;
   const pk=ev.target.closest('.pad button'); if(pk){ trKey(pk.dataset.k); return; }
