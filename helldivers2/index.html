@@ -393,6 +393,14 @@ function tableOf(rows, cols){
   ${rows.map(o=>`<tr>${cols.map(c=>c[0]==='Name'?`<td class="nm" data-card="${o._k}"><span style="display:flex;gap:8px;align-items:center">${img(o)}${esc(o.name)}</span></td>`:`<td>${c[1](o)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 let SFAC='overall', SVIEW='tier', STYPE='';
+function byLevel(list){
+  const lv=[...new Set(list.map(o=>o.unlock_level).filter(x=>x!=null))].sort((a,b)=>a-b);
+  const row=(lab,its,note)=>its.length?`<div class="trow"><div class="lab" style="background:var(--y);font-size:${String(lab).length>2?'.8rem':'1.3rem'};text-align:center;line-height:1.1">${lab}</div><div class="items">${its.map(tile).join('')}${note?`<p class="small muted" style="flex-basis:100%;margin:2px 0 0">${note}</p>`:''}</div></div>`:'';
+  const wb=list.filter(o=>o.unlock_level==null&&!/campaign/i.test((o.department||'')+(o.cost_req||'')));
+  const cr=list.filter(o=>o.unlock_level==null&&/campaign/i.test((o.department||'')+(o.cost_req||'')));
+  return `<div class="note">Stratagems unlock as your player level goes up, then you buy them with Requisition. The level is the earliest you can get it.</div>
+  <div class="tierlist">${lv.map(n=>row('LVL<br>'+n,list.filter(o=>o.unlock_level===n))).join('')}
+  ${row('WAR<br>BOND',wb,'Bought with Medals from a warbond, not unlocked by level.')}${row('MAJOR<br>ORDER',cr,'Given out as a reward for winning a campaign or Major Order.')}</div>`; }
 R.stratagems = () => {
   const tf = o => SFAC==='overall'?o.tier_overall:(o.tier_by_faction||{})[SFAC];
   const types=[...new Set(arr(D.stratagems).map(o=>o.type).filter(Boolean))].sort();
@@ -400,8 +408,8 @@ R.stratagems = () => {
   return `<div class="sec"><h2>Stratagem Tier List</h2><p>Switch faction to see how rankings change. Arrow codes are the inputs you press while holding the stratagem key.</p></div>
   <div class="tabs" data-set="SFAC">${[['overall','Overall',''],['Terminids','Terminids','bug'],['Automatons','Automatons','bot'],['Illuminate','Illuminate','squid']].map(([k,l,c])=>`<button data-v="${k}" class="${c} ${SFAC===k?'on':''}">${l}</button>`).join('')}</div>
   <div class="filters"><select data-sf="type"><option value="">All types</option>${types.map(t=>`<option ${STYPE===t?'selected':''}>${esc(t)}</option>`).join('')}</select>
-  <span class="tabs" data-set="SVIEW" style="margin:0"><button data-v="tier" class="${SVIEW==='tier'?'on':''}">Tiers</button><button data-v="table" class="${SVIEW==='table'?'on':''}">Table</button></span></div>
-  ${SVIEW==='tier'?tierList(list,tf,o=>o.type):tableOf(list,[['Tier',o=>tierBox(tf(o)),o=>TIERS.indexOf(tierOf(tf(o)))+(tierOf(tf(o))==='U'?9:0)],['Name',null,o=>o.name],['Type',o=>val(o.type),o=>o.type],['Input',o=>arrowsHtml(o.input),null],['Cooldown',o=>o.cooldown_s!=null?esc(o.cooldown_s)+'s':val(null),o=>+o.cooldown_s||0],['Uses',o=>val(o.uses),null],['Unlock lvl',o=>val(o.unlock_level),o=>+o.unlock_level||0],['Cost',o=>val(o.cost_req),o=>+String(o.cost_req||'').replace(/\D/g,'')||0]])}
+  <span class="tabs" data-set="SVIEW" style="margin:0"><button data-v="tier" class="${SVIEW==='tier'?'on':''}">Tiers</button><button data-v="table" class="${SVIEW==='table'?'on':''}">Table</button><button data-v="level" class="${SVIEW==='level'?'on':''}">By unlock level</button></span></div>
+  ${SVIEW==='level'?byLevel(list):SVIEW==='tier'?tierList(list,tf,o=>o.type):tableOf(list,[['Tier',o=>tierBox(tf(o)),o=>TIERS.indexOf(tierOf(tf(o)))+(tierOf(tf(o))==='U'?9:0)],['Name',null,o=>o.name],['Type',o=>val(o.type),o=>o.type],['Input',o=>arrowsHtml(o.input),null],['Cooldown',o=>o.cooldown_s!=null?esc(o.cooldown_s)+'s':val(null),o=>+o.cooldown_s||0],['Uses',o=>val(o.uses),null],['Unlock lvl',o=>val(o.unlock_level),o=>+o.unlock_level||0],['Cost',o=>val(o.cost_req),o=>+String(o.cost_req||'').replace(/\D/g,'')||0]])}
   ${arr(D.mission_stratagems).length?`<div class="sec"><h2>Mission Stratagems</h2><p>Always available, no slot needed.</p></div><div class="tablewrap"><table><thead><tr><th>Name</th><th>Input</th><th>What it does</th></tr></thead><tbody>${arr(D.mission_stratagems).map(m=>`<tr><td><b>${esc(m.name)}</b></td><td>${arrowsHtml(m.input)}</td><td>${esc(m.purpose)}</td></tr>`).join('')}</tbody></table></div>`:''}`;
 };
 R.armor = () => `<div class="sec"><h2>Armor Weight Classes</h2><p>The class decides armor vs. speed. The passive matters more than the look.</p></div>
@@ -418,30 +426,52 @@ R.armor = () => `<div class="sec"><h2>Armor Weight Classes</h2><p>The class deci
 const BANDS=[['1-3',1,3],['4-6',4,6],['7-10',7,10]];
 const diffName = n => (arr(D.difficulties).find(d=>+d.level===n)||{}).name||'';
 const bandLabel = b => { const x=BANDS.find(z=>z[0]===b); return x?`Difficulty ${x[1]}-${x[2]} · ${diffName(x[1])} to ${diffName(x[2])}`:`Difficulty ${b}`; };
-const loLevel = l => Math.max(1,...arr(l.stratagems).map(n=>+((objOf(n)||{}).unlock_level)||0));
+// Where an item comes from: a player level (stratagems), a warbond (medals; paid unless free), or a campaign reward.
+const FREE_WB = /mobilize|starter/i;
+function itemReq(o){ if(!o) return null;
+  if(o.unlock_level!=null) return {level:+o.unlock_level};
+  const dep=String(o.department||o.warbond||'');
+  if(/campaign/i.test(dep)||/campaign/i.test(o.cost_req||'')) return {other:'Campaign reward'};
+  if(!dep||FREE_WB.test(dep)||/unknown/i.test(dep)) return null;
+  if(/superstore/i.test(dep)) return {other:'Superstore'};
+  if(/super citizen/i.test(dep)) return {other:'Super Citizen Edition'};
+  return {warbond:dep.replace(/\s*P\d+\s*$/,'').replace(/\s*\(.*\)\s*$/,'')}; }
+const LOREQ={};
+function loReq(l){ const k=l.name; if(LOREQ[k]) return LOREQ[k];
+  const r={level:1,needs:new Set()};
+  [...arr(l.stratagems),l.primary,l.secondary,l.throwable,l.booster].forEach(n=>{ const q=itemReq(n&&objOf(n)); if(!q) return;
+    if(q.level) r.level=Math.max(r.level,q.level); if(q.warbond) r.needs.add(q.warbond+' warbond'); if(q.other) r.needs.add(q.other); });
+  return LOREQ[k]=r; }
+const loLevel = l => loReq(l).level;
+const LVBANDS=[[1,4],[5,9],[10,14],[15,19],[20,150]];
+const lvLabel = b => b[1]>=150?`Level ${b[0]}+`:`Level ${b[0]}-${b[1]}`;
 const loName = l => String(l.name||'').replace(/ (Beginner|Mid|Helldive)(?=:)/,'');
 const misName = m => /^(beginner low level|general|high-difficulty general)$/i.test(m||'')?'General':m;
 function loCard(l){
   const s=arr(l.stratagems);
   const gi=(lab,n)=>{ const o=objOf(n); return `<div class="gitem" ${o?`data-card="${o._k}"`:''}>${img(o)||'<span style="width:40px"></span>'}<div style="min-width:0"><span>${lab}</span><b>${esc(n||'—')}</b></div></div>`; };
-  return `<div class="card lo drop" id="lo-${slug(l.name)}"><div class="head"><div><h3>${esc(loName(l))}</h3><div class="pills">${fpill(l.faction||'Any')}${l.difficulty?`<span class="pill">Difficulty ${esc(l.difficulty)}</span>`:''}<span class="pill y" title="The highest player level any of its stratagems needs">Player level ${loLevel(l)}+</span>${l.mission_focus?`<span class="pill">${esc(misName(l.mission_focus))}</span>`:''}${l.team_role?`<span class="pill y">${esc(l.team_role)}</span>`:''}</div></div></div>
+  return `<div class="card lo drop" id="lo-${slug(l.name)}"><div class="head"><div><h3>${esc(loName(l))}</h3><div class="pills">${fpill(l.faction||'Any')}${l.difficulty?`<span class="pill">Difficulty ${esc(l.difficulty)}</span>`:''}<span class="pill y" title="The highest player level any of its stratagems needs">Unlocks at level ${loLevel(l)}</span>${l.mission_focus?`<span class="pill">${esc(misName(l.mission_focus))}</span>`:''}${l.team_role?`<span class="pill y">${esc(l.team_role)}</span>`:''}</div></div></div>
   <div class="slots">${[0,1,2,3].map(i=>{ const o=objOf(s[i]); return `<div class="sslot" ${o?`data-card="${o._k}"`:''}>${img(o)||'<span style="height:44px"></span>'}<span>${esc(s[i]||'—')}</span></div>`; }).join('')}</div>
   <div class="gear">${gi('Primary',l.primary)}${gi('Secondary',l.secondary)}${gi('Grenade',l.throwable)}${gi('Armor',l.armor_passive)}${gi('Booster',l.booster)}</div>
+  ${loReq(l).needs.size?`<p class="small" style="margin:0;color:var(--bug)">🔒 Also needs: ${esc([...loReq(l).needs].join(', '))}</p>`:'<p class="small" style="margin:0;color:var(--tC)">✓ Everything unlocks by level or free warbond</p>'}
   <p class="small" style="margin:0;color:#d7d5cc">${esc(l.why)}</p></div>`;
 }
-let LF={fac:'',mis:'',dif:''};
+let LF={fac:'',mis:'',dif:'',lv:'',free:false};
 R.loadouts = () => {
   const L=arr(D.loadouts);
   const mis=[...new Set(L.map(l=>misName(l.mission_focus)).filter(Boolean))].sort();
-  const f=L.filter(l=>(!LF.fac||fcls(l.faction)===LF.fac||(LF.fac&&fcls(l.faction)==='any'))&&(!LF.mis||misName(l.mission_focus)===LF.mis)&&(!LF.dif||l.difficulty===LF.dif))
-    .sort((a,b)=>loLevel(a)-loLevel(b));
-  const groups=BANDS.map(b=>[b[0],f.filter(l=>l.difficulty===b[0])]).filter(g=>g[1].length);
+  const myMax=LF.lv===''?999:LVBANDS[+LF.lv][1];
+  const f=L.filter(l=>(!LF.fac||fcls(l.faction)===LF.fac||(LF.fac&&fcls(l.faction)==='any'))&&(!LF.mis||misName(l.mission_focus)===LF.mis)&&(!LF.dif||l.difficulty===LF.dif)
+      &&loLevel(l)<=myMax&&(!LF.free||!loReq(l).needs.size))
+    .sort((a,b)=>loLevel(a)-loLevel(b)||String(a.difficulty).localeCompare(String(b.difficulty),undefined,{numeric:true}));
+  const groups=LVBANDS.map(b=>[b,f.filter(l=>loLevel(l)>=b[0]&&loLevel(l)<=b[1])]).filter(g=>g[1].length);
   const teams=arr(D.team_comps);
-  return `<div class="sec"><h2>Best Loadouts</h2><p>Pick your faction and difficulty. Each build shows the player level you need for its stratagems. Tap any slot to see why it's in the build.</p></div>
+  return `<div class="sec"><h2>Best Loadouts</h2><p>Pick your player level to see only builds you can unlock. Stratagems unlock by level; some guns and gear come from warbonds instead, and each build says so. Tap any slot to see why it's in the build.</p></div>
   <div class="tabs" data-set="LFAC">${[['','All'],['bug','Terminids'],['bot','Automatons'],['squid','Illuminate']].map(([k,l])=>`<button data-v="${k}" class="${k} ${LF.fac===k?'on':''}">${l}</button>`).join('')}</div>
-  <div class="tabs" data-set="LDIF">${[['','All levels'],...BANDS.map(b=>[b[0],'Difficulty '+b[0]])].map(([k,l])=>`<button data-v="${k}" class="${LF.dif===k?'on':''}">${l}</button>`).join('')}</div>
-  <div class="filters"><select data-lf="mis"><option value="">Any mission</option>${mis.map(m=>`<option ${LF.mis===m?'selected':''}>${esc(m)}</option>`).join('')}</select><span class="muted small">${f.length} builds · sorted by the player level you need</span></div>
-  ${groups.map(([b,ls])=>`<div class="sec"><h2 style="font-size:1.3rem">${esc(bandLabel(b))}</h2></div><div class="grid wide">${ls.map(loCard).join('')}</div>`).join('')||'<p class="muted">No build matches those filters.</p>'}
+  <div class="filters"><b class="small" style="font-family:var(--head);letter-spacing:.08em">MY LEVEL:</b><span class="tabs" data-set="LLV" style="margin:0">${[['','Any'],...LVBANDS.map((b,i)=>[String(i),lvLabel(b)])].map(([k,l])=>`<button data-v="${k}" class="${LF.lv===k?'on':''}">${l}</button>`).join('')}</span></div>
+  <div class="filters"><select data-lf="dif"><option value="">Any difficulty</option>${BANDS.map(b=>`<option value="${b[0]}" ${LF.dif===b[0]?'selected':''}>${esc(bandLabel(b[0]))}</option>`).join('')}</select>
+  <select data-lf="mis"><option value="">Any mission</option>${mis.map(m=>`<option ${LF.mis===m?'selected':''}>${esc(m)}</option>`).join('')}</select><button class="chip" data-lfree="1" style="${LF.free?'border-color:var(--tC);color:var(--tC)':''}">${LF.free?'✓ ':''}No paid warbonds</button><span class="muted small">${f.length} builds</span></div>
+  ${groups.map(([b,ls])=>`<div class="sec"><h2 style="font-size:1.3rem">Unlocks at ${esc(lvLabel(b))}</h2></div><div class="grid wide">${ls.map(loCard).join('')}</div>`).join('')||'<p class="muted">No build matches those filters. Try a higher level or turn off "No paid warbonds".</p>'}
   ${teams.length?`<div class="sec"><h2>4-Player Squad Setups</h2><p>Split the jobs so nobody brings the same thing. Tap a build to jump to it.</p></div><div class="grid wide">${teams.filter(t=>!LF.fac||fcls(t.faction)===LF.fac).map(t=>`<div class="card"><h3>${fpill(t.faction)} ${esc(t.name||'Squad of four')}</h3>${arr(t.members).map((m,i)=>{ if(typeof m==='string'){ const nm=m.replace(/\s*\([^)]*\)\s*$/,''); const role=(m.match(/\(([^)]*)\)\s*$/)||[])[1]; return `<p class="small">👤 ${i+1}. <a href="javascript:void 0" data-jump="lo-${slug(nm)}">${esc(nm)}</a>${role?` <span class="pill y">${esc(role)}</span>`:''}</p>`; } return `<p class="small"><b>${esc(m.role)}:</b> ${esc(arr(m.stratagems).join(', '))}</p>`; }).join('')}${t.note||t.notes?`<p class="muted small">${esc(t.note||t.notes)}</p>`:''}</div>`).join('')}</div>`:''}`;
 };
 let EFAC='';
@@ -672,8 +702,9 @@ document.addEventListener('click',ev=>{
   const h=ev.target.closest('[data-hit]'); if(h){ goHit(h.dataset.hit); return; }
   const th=ev.target.closest('th[data-sort]'); if(th){ const i=+th.dataset.sort; SORT={k:i,dir:SORT.k===i?-SORT.dir:1}; rerender(); return; }
   const tb=ev.target.closest('.tabs[data-set] button'); if(tb){ const set=tb.parentElement.dataset.set, v=tb.dataset.v;
-    if(set==='WTAB'){WTAB=v;WF={cat:'',pen:'',fac:WF.fac};SORT={k:null,dir:1};} if(set==='WVIEW')WVIEW=v; if(set==='SFAC')SFAC=v; if(set==='SVIEW')SVIEW=v; if(set==='LFAC')LF.fac=v; if(set==='LDIF')LF.dif=v; if(set==='EFAC')EFAC=v; if(set==='TMODE'){TR.mode=v;TR.cur=null;TR.end=0;clearInterval(TR.timer);TR.timer=null;} rerender(); return; }
+    if(set==='WTAB'){WTAB=v;WF={cat:'',pen:'',fac:WF.fac};SORT={k:null,dir:1};} if(set==='WVIEW')WVIEW=v; if(set==='SFAC')SFAC=v; if(set==='SVIEW')SVIEW=v; if(set==='LFAC')LF.fac=v; if(set==='LLV')LF.lv=v; if(set==='EFAC')EFAC=v; if(set==='TMODE'){TR.mode=v;TR.cur=null;TR.end=0;clearInterval(TR.timer);TR.timer=null;} rerender(); return; }
   const ef=ev.target.closest('[data-efac]'); if(ef) EFAC=ef.dataset.efac;
+  if(ev.target.closest('[data-lfree]')){ LF.free=!LF.free; rerender(); return; }
   const lf=ev.target.closest('[data-lfac]'); if(lf) LF.fac=lf.dataset.lfac;
   const pk=ev.target.closest('.pad button'); if(pk){ trKey(pk.dataset.k); return; }
   if(ev.target.id==='trSkip'){ if(TR.mode==='rush'){ trStartRush(); } else { TR.streak=0; trNext(); } return; }
