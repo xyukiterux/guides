@@ -2,29 +2,44 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Game Guides</title><meta name="description" content="Free, complete game guides that open on any phone or PC. No sign-in.">
 <meta property="og:title" content="Game Guides"><meta property="og:description" content="Free, complete game guides: tier lists, loadouts, bosses, recipes. Opens on any phone.">
-<meta name="theme-color" content="#0e1117"><link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0e1117"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="helldivers2/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0e1117;--p:#171c25;--l:rgba(255,255,255,.09);--ink:#ecebe6;--mu:#9a9c9f}
-*{box-sizing:border-box}html{background:#0e1117}body{margin:0;min-height:100vh;background:radial-gradient(900px 500px at 15% -10%,rgba(124,155,224,.14),transparent 60%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.w{max-width:1100px;margin:0 auto;padding:clamp(28px,6vw,64px) 16px 60px}
-h1{font-family:"Bahnschrift","Roboto Condensed","Arial Narrow",sans-serif;font-size:clamp(2.2rem,7vw,3.6rem);letter-spacing:.03em;margin:0;text-transform:uppercase}
-.sub{color:var(--mu);max-width:640px;margin:8px 0 30px}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.g{position:relative;display:flex;flex-direction:column;gap:6px;padding:22px;border-radius:16px;background:var(--p);border:1px solid var(--l);color:var(--ink);text-decoration:none;overflow:hidden;transition:transform .15s,border-color .15s}
-.g::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--c)}
-.g:hover{transform:translateY(-3px);border-color:var(--c)}
-.g b{font-family:"Bahnschrift","Roboto Condensed",sans-serif;font-size:1.5rem;letter-spacing:.02em}
-.g .k{color:var(--c);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
-.g p{margin:0;color:#c9c9c4;font-size:.93rem;flex:1}.g .go{color:var(--c);font-weight:600;font-size:.9rem;margin-top:8px}
-.tip{margin-top:34px;padding:14px 16px;border:1px solid var(--l);border-radius:12px;color:var(--mu);font-size:.88rem}
+*{box-sizing:border-box}html{background:#0e1117}body{margin:0;min-height:100vh;background:radial-gradient(900px 500px at 15% -10%,rgba(124,155,224,.16),transparent 60%),radial-gradient(800px 500px at 100% 110%,rgba(255,210,31,.08),transparent 60%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{margin:0 auto;padding:clamp(28px,5vw,56px) clamp(16px,4vw,48px) 60px}
+.bubble{font-family:"Fredoka","Arial Rounded MT Bold",system-ui,sans-serif;font-weight:700;color:#fff;-webkit-text-stroke:1px rgba(0,0,0,.25);text-shadow:0 3px 0 rgba(0,0,0,.35),0 0 24px var(--c,#7c9be0)}
+h1.bubble{font-size:clamp(2.6rem,8vw,4.6rem);margin:0;line-height:1;--c:#7c9be0}
+.sub{color:var(--mu);max-width:680px;margin:10px 0 30px;font-size:1.05rem}
+.grid{display:grid;gap:clamp(16px,2vw,26px);grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.g{position:relative;display:block;aspect-ratio:16/9;min-height:240px;border-radius:26px;overflow:hidden;isolation:isolate;color:var(--ink);text-decoration:none;background:var(--p);box-shadow:0 10px 30px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,255,255,.06);transition:transform .25s cubic-bezier(.2,.8,.2,1.2),box-shadow .25s;animation:up .5s both}
+.g:nth-child(2){animation-delay:.07s}.g:nth-child(3){animation-delay:.14s}.g:nth-child(4){animation-delay:.21s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+.g .art{position:absolute;inset:0;z-index:-2;background:var(--art,none) center/cover no-repeat,linear-gradient(135deg,var(--c),#141820);transform:scale(1.02);transition:transform .5s}
+.g::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(12,15,22,.95) 0%,rgba(12,15,22,.55) 45%,rgba(12,15,22,.05) 75%)}
+.g:hover,.g:focus-visible{transform:translateY(-6px) scale(1.015);box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 0 3px var(--c),0 0 40px color-mix(in srgb,var(--c) 40%,transparent);outline:none}
+.g:hover .art{transform:scale(1.09)}
+.g .body{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;display:flex;flex-direction:column;gap:4px}
+.g .bubble{font-size:clamp(1.9rem,3vw,2.8rem);line-height:1.05}
+.g .k{color:var(--c);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.g p{margin:0;color:#d4d6dc;font-size:.92rem;max-width:560px;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.g .go{align-self:flex-start;margin-top:8px;padding:7px 16px;border-radius:999px;background:var(--c);color:#141820;font:700 .9rem "Fredoka",system-ui,sans-serif;box-shadow:0 3px 0 rgba(0,0,0,.35);transition:transform .15s}
+.g:hover .go{transform:translateY(-2px) scale(1.05)}
+.tip{margin-top:34px;padding:14px 16px;border:1px solid var(--l);border-radius:14px;color:var(--mu);font-size:.88rem;background:rgba(255,255,255,.02)}
 .f{margin-top:30px;color:#6c7076;font-size:.78rem}
+@media (prefers-reduced-motion:reduce){.g,.g .art,.g .go{transition:none;animation:none}}
 </style></head><body><div class="w">
-<h1>Game Guides</h1><p class="sub">Complete guides for the games we play: tier lists, builds, bosses, recipes and step-by-step walkthroughs. Free, no sign-in, works on any phone or PC.</p>
-<div class="grid"><a class="g" href="helldivers2/" style="--c:#ffd21f"><span class="k">Field Manual</span>
-<b>Helldivers 2</b><p>Weapon and stratagem tier lists, loadouts for every faction and mission, enemy weak points, and a stratagem trainer.</p><span class="go">Open guide →</span></a><a class="g" href="terraria/" style="--c:#8fbf8a"><span class="k">Complete Guide</span>
-<b>Terraria</b><p>Boss order, every item and recipe, ores, and a step-by-step playthrough.</p><span class="go">Open guide →</span></a><a class="g" href="palworld/" style="--c:#7c9be0"><span class="k">Complete Guide</span>
-<b>Palworld</b><p>Every Pal, breeding calculator, items, tech, bosses and locations.</p><span class="go">Open guide →</span></a><a class="g" href="dragonwilds/" style="--c:#e3b35c"><span class="k">Complete Handbook</span>
-<b>RuneScape: Dragonwilds</b><p>Quests, items, crafting, bosses and the world, chapter by chapter.</p><span class="go">Open guide →</span></a></div>
+<h1 class="bubble">Game Guides</h1><p class="sub">Complete guides for the games we play: tier lists, builds, bosses, recipes and step-by-step walkthroughs. Free, no sign-in, works on any phone or PC.</p>
+<div class="grid"><a class="g" href="helldivers2/" style="--c:#ffd21f;--art:url('art/helldivers2.jpg');"><span class="art"></span>
+<span class="body"><span class="k">Field Manual</span><b class="bubble">Helldivers 2</b><p>Best loadouts by player level, a squad planner for 1-4 players, every weapon and enemy, warbond buy order, farm routes and videos.</p>
+<span class="go">Open guide →</span></span></a><a class="g" href="terraria/" style="--c:#8fbf8a;--art:url('art/terraria.jpg');"><span class="art"></span>
+<span class="body"><span class="k">Complete Guide</span><b class="bubble">Terraria</b><p>Boss order, every item and recipe, ores, and a step-by-step playthrough.</p>
+<span class="go">Open guide →</span></span></a><a class="g" href="palworld/" style="--c:#7c9be0;--art:url('art/palworld.jpg');"><span class="art"></span>
+<span class="body"><span class="k">Complete Guide</span><b class="bubble">Palworld</b><p>Every Pal, breeding calculator, items, tech, bosses and locations.</p>
+<span class="go">Open guide →</span></span></a><a class="g" href="dragonwilds/" style="--c:#e3b35c;--art:url('art/dragonwilds.jpg');"><span class="art"></span>
+<span class="body"><span class="k">Complete Handbook</span><b class="bubble">RuneScape: Dragonwilds</b><p>Quests, items, crafting, bosses and the world, chapter by chapter.</p>
+<span class="go">Open guide →</span></span></a></div>
 <div class="tip"><b>Use it like an app:</b> open a guide on your phone, then tap <b>Share → Add to Home Screen</b> (iPhone) or <b>⋮ → Install app / Add to Home screen</b> (Android).</div>
 <p class="f">Fan-made guides. Not affiliated with any game publisher. Game names and assets belong to their owners.</p>
 </div></body></html>
