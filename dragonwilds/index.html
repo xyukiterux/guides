@@ -219,7 +219,8 @@
 .guide-page .data-table th{background:rgba(0,0,0,.06)}
 .guide-page .wiki-table th{background:rgba(0,0,0,.06)}
 
-</style></head><body><div class="app">
+</style><!--guide-theme--><link rel="stylesheet" href="theme.css">
+</head><body><div class="app">
 <header class="topbar"><div class="brand"><div class="brand-mark">DW</div><div><small>RUNESCAPE: DRAGONWILDS</small><strong>Complete Guide — Offline</strong></div></div>
 <div class="top-actions"><button class="nav-btn active" data-view="home">Home</button><button class="nav-btn" data-view="handbook">Handbook</button><button class="nav-btn" data-view="dictionary">Dictionary</button><button class="nav-btn" data-view="bestiary">Bestiary</button><button class="nav-btn" data-view="quests">Quests</button><button class="nav-btn" data-view="skills">Skills</button><button class="nav-btn" data-view="atlas">Atlas</button><button class="nav-btn" data-view="almanac">Almanac</button><button class="qs-btn" id="qsBtn">⌕ Search <kbd>Ctrl</kbd><kbd>K</kbd></button></div></header>
 <main>
@@ -1265,4 +1266,5 @@ wireDocLinks(document.getElementById('view-home'));
 route();
 
 document.getElementById('jumpUpdate').onclick = () => { setView('handbook'); openHb('hb-update'); };
-</script><script src="depth.js" data-tilt=".item-card,.codex-card,.atlas-card,.quest,.stat,.section-card" data-accent="#60d6bd" data-intensity="0.5" defer></script></body></html>
+</script><script src="depth.js" data-tilt=".item-card,.codex-card,.atlas-card,.quest,.stat,.section-card" data-accent="#60d6bd" data-intensity="0.5" defer></script><!--guide-theme--><script src="theme.js" defer></script>
+</body></html>

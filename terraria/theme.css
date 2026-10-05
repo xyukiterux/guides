@@ -1,0 +1,17 @@
+/* guide-theme (GameGuides/_kit/theme.py) */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');
+:root{--gt-acc:#8fbf8a}
+.content{max-width:none!important;width:100%}
+.content p,.content li{max-width:120ch}
+.gt-bubble,.content h1{font-family:"Fredoka","Arial Rounded MT Bold",system-ui,sans-serif!important;font-weight:700!important;letter-spacing:.2px}
+.gt-hero{position:relative;isolation:isolate;overflow:hidden;border-radius:26px;min-height:clamp(220px,26vw,380px);display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(18px,3vw,36px);margin:0 0 22px;background:#000 url('hero.jpg') center/cover no-repeat;
+  box-shadow:0 14px 40px rgba(0,0,0,.4),0 0 0 2px color-mix(in srgb,var(--gt-acc) 45%,transparent);animation:gt-up .5s both}
+.gt-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(12,15,22,.95) 5%,rgba(12,15,22,.45) 55%,rgba(12,15,22,.1)),linear-gradient(90deg,rgba(12,15,22,.7),transparent 65%)}
+.gt-hero .gt-k{color:var(--gt-acc);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.gt-hero .gt-bubble{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1;color:#fff;-webkit-text-stroke:1px rgba(0,0,0,.25);text-shadow:0 4px 0 rgba(0,0,0,.35),0 0 30px var(--gt-acc);margin:4px 0 0}
+
+@keyframes gt-up{from{opacity:0;transform:translateY(16px)}}
+.content .card,.content .tile,.content .statbox,.content .stat,.content .panel{transition:transform .2s,box-shadow .2s,border-color .2s}
+.content .card:hover,.content .tile:hover,.content .statbox:hover{border-color:var(--gt-acc)!important;box-shadow:0 10px 28px rgba(0,0,0,.35),0 0 22px color-mix(in srgb,var(--gt-acc) 30%,transparent)}
+@media (prefers-reduced-motion:reduce){.gt-hero{animation:none}}
