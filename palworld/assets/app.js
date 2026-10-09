@@ -191,13 +191,22 @@
     });
   }
 
+  function versionCheckText(v) {
+    if (!v) return "";
+    var links = (v.sources || []).map(function (s) {
+      return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a>";
+    }).join(" &middot; ");
+    return ' <span id="versionCheck"><b>Patch re-checked ' + esc(v.checkedOn) + ":</b> " + esc(v.note || "") +
+      (links ? " Sources: " + links + "." : "") + "</span>";
+  }
+
   function versionLine() {
     var m = PW.meta;
     return '<div class="verscheck">Last checked against <b>palworld.wiki.gg</b> (Cargo API) on ' +
       esc(m.fetchedAt.split(" ")[0]) + " &middot; game version <b>" + esc(m.version) +
       "</b> (released " + esc(m.versionDate) + ") &middot; " +
       m.counts.pals + " Pals, " + m.counts.items + " items, " + m.counts.recipes + " recipes, " +
-      m.counts.technology + " technologies indexed.</div>";
+      m.counts.technology + " technologies indexed." + versionCheckText(m.versionCheck) + "</div>";
   }
 
   function page(title, bodyHtml) {

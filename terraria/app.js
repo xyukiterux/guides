@@ -117,13 +117,23 @@
   // ------------------------------------------------------------------ routes --
   var routes = {};
 
+  function versionCheckLine(v) {
+    if (!v) return "";
+    var links = (v.sources || []).map(function (s) {
+      return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a>";
+    }).join(" &middot; ");
+    return '<div class="sourceLine" id="versionCheck"><b>Patch re-checked ' + esc(v.checkedOn) + ": the latest version is " +
+      esc(v.latest) + " (" + esc(v.latestDate) + ").</b> " + esc(v.note || "") + (links ? " Sources: " + links + "." : "") + "</div>";
+  }
+
   routes.overview = function () {
     var m = G.manifest || {};
     return (
       "<h1>Terraria &mdash; Complete Guide</h1>" +
       '<p class="lede">A full offline reference for vanilla Desktop Terraria: a start-to-Moon-Lord playthrough, ore/pickaxe progression, ' +
       "class setups for every stage, every boss and event, and a searchable database of every item and recipe in the game.</p>" +
-      '<div class="sourceLine">Last checked against ' + esc(m.source || "terraria.wiki.gg") + " on " + esc(m.builtOn || "?") + ", game version " + esc(m.gameVersion || "?") + ".</div>" +
+      '<div class="sourceLine">Data pulled from ' + esc(m.source || "terraria.wiki.gg") + " on " + esc(m.builtOn || "?") + ", game version " + esc(m.gameVersion || "?") + ".</div>" +
+      versionCheckLine(m.versionCheck) +
       "<div class=\"grid\">" +
       statCard("Items", (G.items || []).length, "#/items") +
       statCard("Recipes", (G.recipes || []).length, "#/recipes") +
@@ -539,7 +549,7 @@
     document.getElementById("navItemCount").textContent = (G.items || []).length;
     document.getElementById("navRecipeCount").textContent = (G.recipes || []).length;
     var m = G.manifest || {};
-    document.getElementById("navFoot").textContent = "Checked " + (m.builtOn || "") + " · " + (m.gameVersion || "");
+    document.getElementById("navFoot").textContent = "Checked " + ((m.versionCheck && m.versionCheck.checkedOn) || m.builtOn || "") + " · " + (m.gameVersion || "");
   }
 
   window.addEventListener("hashchange", render);
