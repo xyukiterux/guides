@@ -218,6 +218,16 @@
 .guide-page .count-note,.guide-page .sources{color:#5d5548}
 .guide-page .data-table th{background:rgba(0,0,0,.06)}
 .guide-page .wiki-table th{background:rgba(0,0,0,.06)}
+/* phones (push 10-09): base.css hides .top-actions at <= 850 px, which left phones with no nav and no search.
+   Show it as a second, swipeable row of the sticky top bar instead, Search first and pinned at the left edge. */
+@media (max-width:850px){
+.topbar{flex-wrap:wrap;align-items:center;row-gap:10px;padding:10px 12px}
+.top-actions{display:flex;flex-wrap:nowrap;order:2;flex:1 0 100%;max-width:none;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:6px;padding-bottom:2px}
+.top-actions::-webkit-scrollbar{display:none}
+.top-actions .qs-btn{order:-1;position:sticky;left:0;z-index:1;flex:0 0 auto;padding:8px 12px;color:#fff;border-color:var(--teal);box-shadow:6px 0 10px var(--bg)}
+.top-actions .qs-btn kbd{display:none}
+.top-actions .nav-btn{flex:0 0 auto;padding:8px 11px;font-size:13px;min-height:36px}
+}
 
 </style><!--guide-theme--><link rel="stylesheet" href="theme.css">
 </head><body><div class="app">
@@ -227,7 +237,7 @@
 <section id="view-home" class="view active">
 <section class="hero"><div><div class="eyebrow">THE COMPLETE GUIDE · GAME VERSION 1.0.0.5 · 25 SEPTEMBER 2026 · FOURTH EDITION · AUDITED AGAINST THE LIVE 1.0 WIKI</div>
 <h1>Dragonwilds<br>Complete Guide</h1>
-<p>Start to finish: how the game works, what to do at every power level, every region, every quest walkthrough, every skill's unlocks and training, base building, bosses (including Kuldra and the Scorned Wilderness raid), where every material comes from, and the full Runite / Rune / Wand tier the 1.0 launch added. Every record and picture is inside this one file and works offline.</p>
+<p>Start to finish: how the game works, what to do at every power level, every region, every quest walkthrough, every skill's unlocks and training, base building, bosses (including Kuldra and the Scorned Wilderness raid), where every material comes from, and the full Runite / Rune / Wand tier the 1.0 launch added. Every record and picture ships with the guide itself, nothing is fetched from another site, and a downloaded copy works offline. The large tables load the first time you open the section that uses them.</p>
 <p class="offline-note"><b>Last checked against dragonwilds.runescape.wiki on 25 September 2026, game version 1.0.0.5.</b> This is the fourth edition: the third edition (7 Sept 2026) was built before the 15 Sept 1.0 launch from pre-release wiki pages and Jagex announcement posts. Every wiki page this guide draws on was re-pulled live for this edition; see CHANGES.md for what the audit found and corrected.</p>
 <div class="icon-strip"><button class="download-btn" data-jump="handbook">Open the Handbook</button> <button class="download-btn" id="jumpUpdate">The Scorned Wilderness raid</button></div>
 <div class="icon-strip"><button class="feature-icon" data-item-name="Adamant Greatsword"><img src="icons/item_1357.webp" alt="Adamant Greatsword" loading="lazy" decoding="async"><span>Adamant Greatsword</span></button><button class="feature-icon" data-item-name="Yew Longbow"><img src="icons/item_1536.webp" alt="Yew Longbow" loading="lazy" decoding="async"><span>Yew Longbow</span></button><button class="feature-icon" data-item-name="Master's Staff"><img src="icons/item_1451.webp" alt="Master's Staff" loading="lazy" decoding="async"><span>Master's Staff</span></button><button class="feature-icon" data-item-name="Gypsum Wax"><img src="icons/item_1186.webp" alt="Gypsum Wax" loading="lazy" decoding="async"><span>Gypsum Wax</span></button><button class="feature-icon" data-item-name="Irit"><img src="icons/item_1195.webp" alt="Irit" loading="lazy" decoding="async"><span>Irit</span></button><button class="feature-icon" data-item-name="Desert Cloth"><img src="icons/item_1127.webp" alt="Desert Cloth" loading="lazy" decoding="async"><span>Desert Cloth</span></button></div></div>
@@ -244,7 +254,7 @@
 <p class="offline-note">1,306 distinct pictures and 1,376 wiki articles are embedded in this HTML file. Press <b>Ctrl+K</b> anywhere to search every section at once — including the description text.</p>
 </div></section>
 
-<div class="section-head"><div><div class="kicker">WHAT IS IN HERE</div><h2>Eight sections, one file</h2>
+<div class="section-head"><div><div class="kicker">WHAT IS IN HERE</div><h2>Eight sections, one guide</h2>
 <p>The Handbook is the guide. The other sections are the reference it links into.</p></div></div>
 <div class="section-cards">
   <button class="section-card" data-jump="handbook"><span class="big">44</span><b>Handbook</b><small>How the game works, what to do at each power level, every region, skills 1–99, base building, quests in order, bosses including Kuldra, the Scorned Wilderness raid, supplies, merchants.</small></button>
@@ -889,7 +899,7 @@ let qsSel = 0, qsHits = [];
 function qsRender(term) {
   const t = term.trim().toLowerCase();
   const box = $('#qsResults');
-  if (!t) { qsHits = []; box.innerHTML = `<div class="qs-empty">Search every item, creature, quest, skill unlock, spell, status effect, mount and achievement in this file.</div>`; return; }
+  if (!t) { qsHits = []; box.innerHTML = `<div class="qs-empty">Search every item, creature, quest, skill unlock, spell, status effect, mount and achievement in this guide.</div>`; return; }
   if (!lazyHave(SEARCH_NEEDS)) {
     // the first search pulls the item, world and handbook tables; the typed term is re-run when they land
     qsHits = []; box.innerHTML = `<div class="qs-empty qs-loading">Loading the search index…</div>`;
