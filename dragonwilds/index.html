@@ -346,10 +346,8 @@
 <div class="qs-results" id="qsResults"></div></div></div>
 <div id="itemModal" class="modal-backdrop"><div class="modal" id="modalContent"></div></div>
 <script src="js/img.js?v=cb188f05f5"></script>
-<script src="js/items.js?v=448d04cb00"></script>
 <script src="js/codex.js?v=f2f5a09d18"></script>
-<script src="js/guide.js?v=8db7727cac"></script>
-<script src="js/hb.js?v=75adb6cba1"></script>
+<script>const LAZY_SRC={"items":"js/items.js?v=448d04cb00","guide":"js/guide.js?v=8db7727cac","hb":"js/hb.js?v=75adb6cba1"};const HOME_COV=[["resources",299,299],["consumables",266,266],["catalog-additions",226,142],["armor-jewellery",217,217],["weapons-tools",195,193],["buildings",145,144],["recipes",104,104],["key-items",91,91],["weapons",15,0],["ammo",6,0],["armor",4,0],["materials",3,0],["tools",2,0],["other",2,0]];</script>
 <script>
 /* ============================================================
    Dragonwilds Field Atlas — offline app
@@ -393,17 +391,68 @@ function itemArt(it, cls) {
     : `<div class="item-glyph" title="No published art">${CAT_GLYPH[it.category] || '❓'}</div>`;
 }
 
-/* ---------------- indexes ---------------- */
-const BY_KEY = new Map(ITEMS.map(i => [i.key, i]));
-const BY_NAME = new Map();
-const BY_LOOSE = new Map();
+/* ---------------- lazy data tables ----------------
+   ITEMS (~3.9 MB), GUIDE (~2.2 MB) and HB (~1 MB) are not loaded with the page. Each arrives the first time a view,
+   a deep link or the quick search needs it (LAZY_SRC is written by build.py with a ?v=<content hash>). A <script>
+   tag, not fetch(), so the guide still works opened as a local file. IMG and CODEX are small and load up front. */
+const LAZY_HAVE = { items: () => typeof ITEMS !== 'undefined', guide: () => typeof GUIDE !== 'undefined', hb: () => typeof HB !== 'undefined' };
+const LAZY_LABEL = { items: 'item tables', guide: 'world and quest data', hb: 'handbook' };
+const LAZY_P = {};
+let lazyPending = 0;
+const lazyList = ns => ns.map(n => LAZY_LABEL[n]).join(', ').replace(/, ([^,]*)$/, ' and $1');
+function lazyHave(names) { return names.every(n => LAZY_HAVE[n]()); }
+function lazyNote(text, isError) {
+  let el = document.getElementById('lazyNote');
+  if (!el) {
+    el = document.createElement('div'); el.id = 'lazyNote'; el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite');
+    el.style.cssText = 'position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:9999;padding:8px 16px;border-radius:999px;font:600 13px/1.3 system-ui,sans-serif;background:#0e1117;color:#e8edf5;border:1px solid #60d6bd;box-shadow:0 6px 24px rgba(0,0,0,.45);max-width:calc(100vw - 32px);text-align:center';
+    document.body.appendChild(el);
+  }
+  el.textContent = text;
+  el.style.borderColor = isError ? '#e07070' : '#60d6bd';
+  el.hidden = !text;
+}
+function lazyLoad(names) {
+  const want = names.filter(n => !LAZY_HAVE[n]());
+  if (!want.length) { if (names.includes('items') && !BY_KEY.size) indexItems(); return Promise.resolve(); }
+  lazyPending++;
+  lazyNote('Loading the ' + lazyList(want) + '…');
+  return Promise.all(want.map(n => LAZY_P[n] || (LAZY_P[n] = new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src = LAZY_SRC[n];
+    s.onload = () => res();
+    s.onerror = () => { delete LAZY_P[n]; s.remove(); rej(new Error(LAZY_SRC[n])); };
+    document.head.appendChild(s);
+  })))).then(() => {
+    if (names.includes('items') && !BY_KEY.size) indexItems();
+    if (--lazyPending === 0) lazyNote('');
+  }, err => {
+    lazyPending--;
+    lazyNote('Could not load the ' + lazyList(want) + '. Check the connection and tap again.', true);
+    throw err;
+  });
+}
+// run fn now if its tables are here, otherwise once they arrive (the call is replayed with the same arguments)
+function lazyGuard(fn, names) {
+  return function (...a) {
+    if (lazyHave(names)) { if (names.includes('items') && !BY_KEY.size) indexItems(); return fn.apply(this, a); }
+    lazyLoad(names).then(() => fn.apply(this, a), () => { });
+  };
+}
+
+/* ---------------- indexes (built when ITEMS arrives) ---------------- */
+let BY_KEY = new Map(), BY_NAME = new Map(), BY_LOOSE = new Map();
 const loose = n => String(n).toLowerCase().replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9]+/g, '').replace(/s$/, '');
-ITEMS.forEach(i => {
-  const k = i.name.trim().toLowerCase();
-  if (!BY_NAME.has(k)) BY_NAME.set(k, i);
-  const l = loose(i.name);
-  if (!BY_LOOSE.has(l)) BY_LOOSE.set(l, i);
-});
+function indexItems() {
+  BY_KEY = new Map(ITEMS.map(i => [i.key, i]));
+  BY_NAME = new Map(); BY_LOOSE = new Map();
+  ITEMS.forEach(i => {
+    const k = i.name.trim().toLowerCase();
+    if (!BY_NAME.has(k)) BY_NAME.set(k, i);
+    const l = loose(i.name);
+    if (!BY_LOOSE.has(l)) BY_LOOSE.set(l, i);
+  });
+}
 function findItem(x) {
   return BY_KEY.get(x) || BY_NAME.get(String(x).trim().toLowerCase()) || BY_LOOSE.get(loose(x)) || null;
 }
@@ -841,6 +890,13 @@ function qsRender(term) {
   const t = term.trim().toLowerCase();
   const box = $('#qsResults');
   if (!t) { qsHits = []; box.innerHTML = `<div class="qs-empty">Search every item, creature, quest, skill unlock, spell, status effect, mount and achievement in this file.</div>`; return; }
+  if (!lazyHave(SEARCH_NEEDS)) {
+    // the first search pulls the item, world and handbook tables; the typed term is re-run when they land
+    qsHits = []; box.innerHTML = `<div class="qs-empty qs-loading">Loading the search index…</div>`;
+    lazyLoad(SEARCH_NEEDS).then(() => { if ($('#qsBackdrop').classList.contains('open')) qsRender($('#qsInput').value); },
+      () => { box.innerHTML = `<div class="qs-empty">Could not load the search index. Check the connection and type again.</div>`; });
+    return;
+  }
   const ix = buildSearchIndex();
   const starts = [], has = [];
   for (const e of ix) {
@@ -861,26 +917,23 @@ function qsRender(term) {
   $$('#qsResults .qs-row').forEach(b => b.onclick = () => qsGo(+b.dataset.i));
 }
 function qsGo(i) { const e = qsHits[i]; if (!e) return; qsClose(); e.go(); }
-function qsOpen() { $('#qsBackdrop').classList.add('open'); $('#qsInput').value = ''; qsRender(''); $('#qsInput').focus(); document.body.style.overflow = 'hidden'; }
+const SEARCH_NEEDS = ['items', 'guide', 'hb'];
+function qsOpen() { lazyLoad(SEARCH_NEEDS).catch(() => { }); $('#qsBackdrop').classList.add('open'); $('#qsInput').value = ''; qsRender(''); $('#qsInput').focus(); document.body.style.overflow = 'hidden'; }
 function qsClose() { $('#qsBackdrop').classList.remove('open'); document.body.style.overflow = ''; }
 
 /* ============================================================
    HOME
    ============================================================ */
 function renderHome() {
-  const withArt = ITEMS.filter(i => i.im >= 0).length;
+  // the home view never loads ITEMS: build.py writes the item/art/recipe counts into the page and the per-category
+  // coverage into HOME_COV ([category, records, with art], largest first)
   const el = $('#coverage');
   if (!el || el.dataset.built) return;
   el.dataset.built = '1';
-  const cats = {};
-  ITEMS.forEach(i => { (cats[i.category] ||= { n: 0, a: 0 }).n++; if (i.im >= 0) cats[i.category].a++; });
-  el.innerHTML = Object.entries(cats).sort((a, b) => b[1].n - a[1].n).map(([c, v]) =>
+  el.innerHTML = HOME_COV.map(([c, n, a]) =>
     `<div class="cov-row"><span>${esc(CAT_LABELS[c] || c)}</span>
-      <span class="cov-bar"><i style="width:${(v.a / v.n * 100).toFixed(1)}%"></i></span>
-      <span>${v.a}/${v.n}</span></div>`).join('');
-  $('#statItems').textContent = ITEMS.length.toLocaleString();
-  $('#statArt').textContent = withArt.toLocaleString();
-  $('#statRecipes').textContent = ITEMS.filter(i => i._has_recipe).length.toLocaleString();
+      <span class="cov-bar"><i style="width:${(a / n * 100).toFixed(1)}%"></i></span>
+      <span>${a}/${n}</span></div>`).join('');
 }
 
 const RENDER = {
@@ -951,7 +1004,7 @@ window.addEventListener('hashchange', () => route());
 })();
 
 renderHome();
-route();
+// (routing runs once, at the end of guide_app.js, after the lazy-data guards are installed)
 
 /* ============================================================
    Third edition: quests (full walkthroughs), bestiary detail,
@@ -960,11 +1013,12 @@ route();
    Runs after app.js in the same script scope.
    ============================================================ */
 VIEWS.push('atlas', 'handbook');
-state.atlasPane = 'regions'; state.atlasQ = ''; state.hbPage = HB.order[0][0]; state.questType = 'all'; state.questRegion = 'all';
+state.atlasPane = 'regions'; state.atlasQ = ''; state.hbPage = '';  /* '' = the first chapter (HB loads with the Handbook) */ state.questType = 'all'; state.questRegion = 'all';
 
 const QTYPE_LABEL = { primary: 'Primary', secondary: 'Secondary', tutorial: 'Tutorial', activity: 'Activity', removed: 'Removed', tertiary: 'Tertiary' };
-const BEAST_BY_NAME = new Map(Object.keys(GUIDE.monsters).map(k => [napos(k).toLowerCase(), k]));
+let BEAST_BY_NAME = null;  // built on first use: GUIDE loads lazily
 function findBeast(name) {
+  BEAST_BY_NAME ||= new Map(Object.keys(GUIDE.monsters).map(k => [napos(k).toLowerCase(), k]));
   const k = napos(name).trim().toLowerCase();
   return GUIDE.monsters[BEAST_BY_NAME.get(k)] || GUIDE.monsters[BEAST_BY_NAME.get(k.replace(/s$/, ''))] || null;
 }
@@ -1034,7 +1088,7 @@ function showModal() {
 }
 function wireDocLinks(root) {
   $$('img[data-im]', root).forEach(i => { i.src = IMG[+i.dataset.im] || ''; i.removeAttribute('data-im'); });
-  $$('[data-open]', root).forEach(b => b.onclick = () => { const t = findItem(b.dataset.open); if (t) openItem(t.key); });
+  $$('[data-open]', root).forEach(b => b.onclick = () => openItem(b.dataset.open));  // openItem waits for ITEMS
   $$('a.wl', root).forEach(a => a.onclick = e => { e.preventDefault(); openDoc(a.dataset.kind, a.dataset.id); });
   $$('.hb-jump', root).forEach(a => a.onclick = () => { setView('handbook'); openHb(a.dataset.page); });
 }
@@ -1261,6 +1315,30 @@ buildSearchIndex = function () {
   SEARCH_INDEX = ix;
   return ix;
 };
+/* ---------------- lazy data guards ----------------
+   Every way into a view or a record waits for the tables it reads. The home view needs none of them. */
+const VIEW_NEEDS = {
+  dictionary: ['items', 'guide'], bestiary: ['guide'], quests: ['guide'], skills: ['items'], almanac: ['items'],
+  atlas: ['guide'], handbook: ['hb']
+};
+renderItems = lazyGuard(renderItems, VIEW_NEEDS.dictionary);
+renderBestiary = lazyGuard(renderBestiary, VIEW_NEEDS.bestiary);
+renderQuests = lazyGuard(renderQuests, VIEW_NEEDS.quests);
+renderSkills = lazyGuard(renderSkills, VIEW_NEEDS.skills);
+renderAlmanac = lazyGuard(renderAlmanac, VIEW_NEEDS.almanac);
+renderAtlas = lazyGuard(renderAtlas, VIEW_NEEDS.atlas);
+renderHandbook = lazyGuard(renderHandbook, VIEW_NEEDS.handbook);
+Object.assign(RENDER, {
+  dictionary: renderItems, bestiary: renderBestiary, quests: renderQuests, skills: renderSkills,
+  almanac: renderAlmanac, atlas: renderAtlas, handbook: renderHandbook
+});
+openItem = lazyGuard(openItem, ['items', 'guide']);
+openDoc = lazyGuard(openDoc, ['guide', 'items']);
+openBeast = lazyGuard(openBeast, ['guide', 'items']);
+openHb = lazyGuard(openHb, ['hb']);
+openQuest2 = lazyGuard(openQuest2, ['guide']);
+openQuest = openQuest2;
+
 $$('[data-jump]').forEach(b => b.addEventListener('click', () => setView(b.dataset.jump)));
 wireDocLinks(document.getElementById('view-home'));
 route();
