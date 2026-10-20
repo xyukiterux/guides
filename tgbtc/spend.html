@@ -1,0 +1,260 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TGBTC — Pull &amp; spend: the numbers</title><meta name="description" content="Income, pity math, value per dollar and dated spending plans."><style>
+:root{--ink:#19202b;--panel:#242d3b;--panel2:#2b3545;--paper:#ece6dc;--muted:#a39e95;--acc:#e0475a;--gold:#e3b35c;--matcha:#8fbf8a;--ai:#7c9be0;--line:rgba(255,255,255,.08);
+--pull:#3ddc84;--save:#f5b942;--skip:#ff5c6c;--sit:#7aa2ff}
+*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.5 system-ui,Segoe UI,sans-serif;overflow-x:hidden}
+.wrap{max-width:1150px;margin:0 auto;padding:16px 16px 60px}h1,h2,h3{font-family:Georgia,serif;margin:0}
+h1{font-size:clamp(1.7rem,5vw,2.7rem);line-height:1.15}h2{margin:34px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--acc);font-size:1.3rem}h3{margin:18px 0 6px;font-size:1.05rem;color:var(--gold)}
+a{color:var(--ai)}p{margin:8px 0}
+.k{color:var(--acc);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.hero{background:radial-gradient(circle at 85% 10%,rgba(224,71,90,.35),transparent 45%),linear-gradient(135deg,#3a1a24,#19202b 70%);border-radius:20px;padding:22px;border:1px solid var(--line)}
+.hero p{color:#cfc8bd;margin:8px 0 0;max-width:780px}
+.strip{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px 14px;margin:0 0 12px;font-size:.9rem}
+.strip b{color:var(--gold)}.strip .big{font-size:1.15rem;font-weight:800;color:#fff}
+.strip details{flex-basis:100%}.strip summary{cursor:pointer;color:var(--ai)}
+.strip input,.strip select{background:var(--ink);color:var(--paper);border:1px solid var(--line);border-radius:8px;padding:4px 6px;font:inherit}
+.trust{font-size:.78rem;color:var(--muted);margin:10px 0 0}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:10px}
+.tldr{background:var(--panel);border-left:5px solid var(--gold);border-radius:12px;padding:12px 16px;margin-top:14px}
+.tldr ul{margin:6px 0 0;padding-left:20px}.tldr li{margin:4px 0}
+.note{color:var(--muted);font-size:.85rem}
+.warn{border-left:4px solid var(--acc)}.good{border-left:4px solid var(--matcha)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px;margin-top:16px}
+.door{display:block;text-decoration:none;color:var(--paper);background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;border-top:4px solid var(--c,var(--acc))}
+.door:hover{border-color:var(--c,var(--acc))}.door b{display:block;font-size:1.05rem;color:#fff}.door span{display:block;color:var(--muted);font-size:.86rem;margin-top:4px}
+.door i{font-style:normal;font-size:1.4rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:10px}
+.tile{display:block;text-decoration:none;color:var(--paper);background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px}
+.tile:hover{border-color:var(--acc)}.tile b{display:block}.tile span{color:var(--muted);font-size:.8rem}
+.ev{list-style:none;margin:0;padding:0}.ev li{display:grid;grid-template-columns:76px 1fr auto;gap:4px 10px;align-items:start;padding:8px 0;border-bottom:1px solid var(--line)}
+.ev .dd{font-weight:800;color:var(--gold);font-size:.85rem;line-height:1.25}.ev .dd small{display:block;color:var(--muted);font-weight:400}
+.ev .cd{font-size:.78rem;color:var(--muted);text-align:right;white-space:nowrap}.ev .cd.now{color:var(--pull);font-weight:700}
+.ev .t b{color:#fff}.ev .t .dsc{display:block;color:var(--muted);font-size:.84rem}
+.ev li.past{opacity:.45}
+@media(max-width:520px){.ev li{grid-template-columns:62px 1fr}.ev .cd{grid-column:2;text-align:left}}
+.kind{display:inline-block;font-size:.66rem;font-weight:800;border-radius:5px;padding:0 5px;margin-right:4px;vertical-align:1px;background:var(--panel2);color:var(--paper);border:1px solid var(--line)}
+.kind.money{background:#3d3214;color:var(--gold)}.kind.banner{background:#3a1a24;color:#ff9aa6}.kind.shop{background:#1e3324;color:var(--pull)}.kind.war{background:#1e2a44;color:var(--ai)}.kind.free{background:#203a2c;color:#bff0cf}.kind.cap{background:#2b2b2b;color:#ccc}
+.verdicts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:12px}
+.verdict{--c:var(--sit);background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:64px 1fr;gap:4px 12px}
+.verdict[data-v=pull]{--c:var(--pull)}.verdict[data-v=save]{--c:var(--save)}.verdict[data-v=skip]{--c:var(--skip)}
+.verdict>img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--c)}
+.verdict h3{margin:0;color:#fff;font-size:1rem}.verdict .pill{display:inline-block;font-weight:900;font-size:.8rem;letter-spacing:.06em;border-radius:999px;padding:1px 10px;margin:4px 0;color:#111;background:var(--c)}
+.verdict .body{grid-column:1/-1}.verdict .reason{margin:4px 0}.verdict .ifs{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.85rem}
+.verdict .ifs ul{margin:2px 0;padding-left:18px}.verdict .ifs b{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.verdict .ev2{font-size:.78rem;color:var(--muted);margin-top:6px}
+@media(max-width:420px){.verdict .ifs{grid-template-columns:1fr}}
+.metastrip{display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.rank{display:flex;align-items:center;gap:8px;background:var(--panel2);border-radius:999px;padding:4px 12px 4px 4px;font-weight:700}
+.rank img{width:40px;height:40px;border-radius:50%;object-fit:cover}.rank small{color:var(--muted);font-weight:400}
+.gt{color:var(--muted);font-weight:900}
+.team{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.u{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px;width:128px;text-align:center}
+.u img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--acc)}
+.u b{display:block;font-size:.8rem;margin-top:4px;line-height:1.25}.u>span{color:var(--muted);font-size:.74rem;display:block;margin-top:2px}
+.u.bk{border-style:dashed}.u.bk img{border-color:var(--gold)}.u.have img{border-color:var(--matcha)}.u.miss{opacity:.8}.u.miss img{border-color:#666;filter:grayscale(.5)}
+@media(max-width:420px){.u{width:calc(50% - 5px)}}
+.attr{display:inline-block;border-radius:5px;padding:0 5px;font-size:.62rem;font-weight:800;margin-left:4px;vertical-align:1px}
+.a-STR{background:#d9534f;color:#fff}.a-SPD{background:#4a8fe0;color:#fff}.a-SKL{background:#5cb85c;color:#111}.a-PSY{background:#9b6bd6;color:#fff}.a-WIT{background:#c9a227;color:#111}.a-DST{background:#111;color:#fff;border:1px solid #888}
+.s{display:inline-block;font-size:.62rem;font-weight:700;border-radius:4px;padding:0 4px;margin-left:3px;vertical-align:2px;border:1px solid var(--line);color:var(--muted);text-decoration:none;white-space:nowrap;line-height:1.35;cursor:help}
+.s.v{color:#ff9aa6;border-color:rgba(255,154,166,.35);cursor:pointer}.s.i{color:var(--save);border-color:rgba(245,185,66,.35)}.s.u{color:var(--skip);border-color:rgba(255,92,108,.35);width:auto;padding:0 4px;text-align:left;background:none;border-radius:4px;display:inline-block}.s.d{color:var(--ai);border-color:rgba(124,155,224,.35)}.s.w{color:var(--matcha)}.s.r{color:#7fd6c2;border-color:rgba(127,214,194,.4)}
+table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:12px;overflow:hidden;margin-top:8px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:.92rem}th{background:var(--panel2);color:var(--gold)}
+td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+.tw{overflow-x:auto;max-width:100%}
+@media(max-width:640px){table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}table.stack thead{display:none}
+table.stack tr{border-bottom:2px solid var(--ink)}table.stack td{border:0;padding:4px 12px}table.stack td::before{content:attr(data-l);display:block;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}}
+.flow{display:flex;flex-direction:column;align-items:stretch;gap:0;margin-top:10px}
+.fstep{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;position:relative}
+.fstep b{color:#fff}.fstep .q{color:var(--gold);font-weight:800}
+.farrow{text-align:center;color:var(--acc);font-size:1.3rem;line-height:1.3}
+.fork{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fork>div{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:.92rem}
+.fork .y{border-top:3px solid var(--pull)}.fork .n{border-top:3px solid var(--skip)}.fork b.l{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.fork .y b.l{color:var(--pull)}.fork .n b.l{color:var(--skip)}
+@media(max-width:520px){.fork{grid-template-columns:1fr}}
+ol.steps{margin:6px 0 0;padding-left:22px}ol.steps li{margin:6px 0}
+ul.tight{margin:6px 0 0;padding-left:20px}ul.tight li{margin:4px 0}
+ul.check{list-style:none;padding-left:0;margin:6px 0}ul.check li{padding-left:26px;position:relative;margin:6px 0}
+ul.check li::before{content:"\2610";position:absolute;left:2px;color:var(--gold);font-size:1.05rem;line-height:1.3}
+.phase{border-top:4px solid var(--c);}.p1{--c:var(--pull)}.p2{--c:var(--save)}.p3{--c:var(--acc)}
+.big{font-size:1.6rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums}
+.stat{background:var(--panel2);border-radius:12px;padding:10px 12px}.stat span{display:block;color:var(--muted);font-size:.8rem}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.toc a{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:4px 11px;text-decoration:none;color:var(--paper);font-size:.85rem}
+.tl{list-style:none;margin:10px 0 0;padding:0 0 0 18px;border-left:3px solid var(--panel2)}
+.tl li{position:relative;margin:0 0 12px;padding:8px 12px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.tl li::before{content:"";position:absolute;left:-27px;top:14px;width:13px;height:13px;border-radius:50%;background:var(--panel2);border:3px solid var(--muted)}
+.tl li.cur{border-color:var(--pull)}.tl li.cur::before{border-color:var(--pull);background:var(--pull)}
+.tl li.past{opacity:.5}.tl .dd{font-weight:800;color:var(--gold)}.tl .cd{float:right;font-size:.78rem;color:var(--muted)}
+.tl .sv{display:block;font-size:.84rem;color:var(--matcha);margin-top:3px}
+.tl li.milestone{background:linear-gradient(90deg,rgba(224,71,90,.18),var(--panel) 60%)}
+.legend{font-size:.8rem;color:var(--muted)}
+footer{margin-top:40px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:12px}
+</style><style>.gnav{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 14px;background:rgba(25,32,43,.95);border-bottom:1px solid rgba(255,255,255,.08);font:600 14px system-ui,sans-serif}.gnav a{color:#ece6dc;text-decoration:none;padding:6px 12px;border-radius:999px;background:#2b3545;border:1px solid rgba(255,255,255,.08)}.gnav a:hover{border-color:#e0475a}.gnav a.on{background:#e0475a;color:#fff}.gnav a.back{background:none;color:#ff7c8c}@media(max-width:700px){table{display:block;max-width:100%;overflow-x:auto}img{max-width:100%}}</style></head><body><nav class="gnav"><a href="index.html">Home</a><a href="path.html">Path</a><a href="spend.html" class=on>Pull & spend</a><a href="calendar.html">Calendar</a><a href="guildwar.html">Guild war</a><a href="meta.html">Meta teams</a><a href="tiers.html">Tier list</a><a href="tips.html">Tips</a><a href="videos.html">Videos</a><a href="handbook.html">Handbook</a><a href="early-tiers.html">Unlimited tiers</a></nav><div class="wrap">
+<div class="strip"><span>Your server: <span class="big">Day <span data-sday>8</span></span></span>
+<span>Daily reset (05:00 server time) in <b data-reset>…</b></span>
+<details><summary>Not your server? Set its day 1 and time zone</summary>
+<p class="note">Day 1 default = Mon Oct 12 2026 (the NA relaunch server this guide was built on). Reset is 05:00 server time <span class="s d" title="game data: future_plan §header; Const reset">data</span>. The UTC offset is an
+<b>assumption</b> (−5); read the server clock in game and change it. Saved only in this browser.</p>
+<label>Server day 1: <input type="date" id="tg-open"></label>
+<label>Server UTC offset: <select id="tg-utc"><option value="-10">UTC-10</option><option value="-9">UTC-9</option><option value="-8">UTC-8</option><option value="-7">UTC-7</option><option value="-6">UTC-6</option><option value="-5">UTC-5</option><option value="-4">UTC-4</option><option value="-3">UTC-3</option><option value="-2">UTC-2</option><option value="-1">UTC-1</option><option value="0">UTC+0</option><option value="1">UTC+1</option><option value="2">UTC+2</option><option value="3">UTC+3</option><option value="4">UTC+4</option><option value="5">UTC+5</option><option value="6">UTC+6</option><option value="7">UTC+7</option><option value="8">UTC+8</option><option value="9">UTC+9</option><option value="10">UTC+10</option><option value="11">UTC+11</option><option value="12">UTC+12</option></select></label>
+<button onclick="tgSet()" style="background:var(--acc);color:#fff;border:0;border-radius:8px;padding:5px 12px;font-weight:700">Save</button></details></div>
+<div class="hero"><div class="k">Pull &amp; spend · the numbers</div><h1>What to pull, what to buy, and when</h1>
+<p>Income, pull costs, pity, copy rates, and the best value per dollar — with the exact rebate windows where a purchase pays twice.</p>
+<div class="toc"><a href="#rules">Rules</a><a href="#costs">Pull costs &amp; pity</a><a href="#income">Income</a><a href="#diamonds">Diamond priority</a><a href="#shops">Shops</a><a href="#value">$ value table</a><a href="#creators">Creator verdicts</a><a href="#timelines">F2P timelines</a><a href="#tiers">$0 / $20 / $100 plans</a><a href="#windows">Rebate windows</a></div>
+<p class="trust">Updated <b>2026-10-19</b> · game data: EU build 2026-09-22 (every skill effect resolved) · creator videos up to 2026-10-19 · balance patch 2026-10-14 included. Source chips: <span class="s d">data</span> game files · <a class="s v">&#9654; video</a> creator video · <span class="s i">inferred</span> our reasoning · <span class="s w">web</span> web article · <span class="s r">player report (in game)</span> seen in game by a player · <span class="s u">check in game</span> not in any source. Hover or tap a chip for the exact key.</p></div>
+
+<aside class="tldr"><b>Money rules</b><ul>
+<li><b>If you only buy one thing:</b> the Endless Trials Pass #1 ($4.99 ≈ 12,400 banner value, 2,485 per $) <span class="s d" title="game data: EndlessTrialsPass">data</span>.</li>
+<li><b>Spend real money only inside a rebate window</b>, so the purchase also climbs a top-up ladder. Novice Rebate 1 is days 1–7; on this server (day 8 now) the current one is Novice Rebate 2 (days 8–14); next is days 15–21; then 19–25, 26–32 and the big one, <b>days 34–55</b>.</li>
+<li><b>Never</b> buy plain Diamonds (80 per $1; 240 with the one-time triple first top-up — about $100 for 24,000 per Shi, still the worst deal <a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=35s" title="video: Shi 0:35" target="_blank" rel="noopener">&#9654; Shi 0:35</a>), the $14.99 Limited-time Sign-in (374 per $), or the Wheel of Fortune bundles (the wheel runs in 21-day cycles <span class="s d" title="game data: Wheel_1..6">data</span>; take free spins; the ticket-only buy is optional — see the creator table).</li>
+<li><b>Don't hold money for Black Friday/Thanksgiving</b> — no such event exists anywhere in the game data <span class="s d" title="game data: en.json: 0 hits">data</span>.</li>
+<li><b>Planning $100 for one event? Make it Christmas</b>: buy the passes and contract Nov 14 – Dec 5 so they stack with the Diamond Rebate; the Christmas sign-in comes ~Dec 12.</li>
+</ul></aside>
+
+<h2 id="rules">F2P pulling rules</h2>
+<ol class="steps">
+<li><b>Never start a banner you can't finish.</b> Pity counters don't carry between banners <span class="s d" title="game data: G_gacha">data</span>.</li>
+<li><b>Skip any unit with a shop date.</b> A server-day banner's unit enters a shop the day after the banner ends (Juzo: banner 8–14 → shop 15; Uta: 15–28 → 29) <span class="s d" title="game data: HeroBase shop_time">data</span>.</li>
+<li><b>What each star buys.</b> 1 copy = the 0★ kit (passive 1). <b>1★ (one dupe) unlocks passive 2</b> — usually the faction buff, the best value per copy. 3★ unlocks passive 3, 4★ the Power Burst passive, 6★ the upgraded active <span class="s d" title="game data: Const:HeroPassiveSkillUnlock=[0,1,3,4], RoleStarPreview_*">data</span>. One creator's rule of thumb is 1 copy or 6★, nothing in between <a class="s v" href="https://www.youtube.com/watch?v=L3LDg1CR4-0" title="video: Zeketta" target="_blank" rel="noopener">&#9654; Zeketta</a> — treat that as opinion: 1★ and 3★ are real power spikes.</li>
+<li><b>Carnival only in blocks of 100.</b> With Diamonds that's 60,000 per block (600 a pull, double a limited pull), so use tickets; on a new server skip Carnival 1–2 unless they hold a unit you lack <a class="s v" href="https://www.youtube.com/watch?v=adyaFXzIMIw" title="video: Shi" target="_blank" rel="noopener">&#9654; Shi</a>. A limited unit is cheaper to star up than a Carnival one <a class="s v" href="https://www.youtube.com/watch?v=LAEVrN636iU&t=466s" title="video: Kitcat 7:46" target="_blank" rel="noopener">&#9654; Kitcat 7:46</a>.</li>
+<li><b>Pass every pull through the test:</b> exclusive limited, your faction (or a 0★ buff for any team), useful at 0★, no shop date, and you can reach pity. Full test in the <a href="handbook.html">Handbook</a>.</li>
+<li><b>Day-one pulls carry nerf risk.</b> The 10-14 patch cut Nutcracker, Natsu Jason and others <a class="s v" href="https://www.youtube.com/watch?v=iyvRr5HdkWA" title="video: Aslan 10-14" target="_blank" rel="noopener">&#9654; Aslan 10-14</a>.</li>
+</ol>
+
+<h2 id="costs">Pull costs, pity and copies</h2>
+<div class="tw"><table class="stack"><thead><tr><th>Recruitment</th><th>Cost per pull</th><th>Guarantee</th><th>Use it?</th></tr></thead><tbody>
+<tr><td data-l="Recruitment">Limited / exclusive banner</td><td data-l="Cost" class="n">300 Diamonds or 1 Event Summon Ticket</td><td data-l="Guarantee">Pick at 200 (normal) or 300 (holiday/anniversary; chests at 100 and 200) <span class="s d" title="game data: G_gacha type 2/3">data</span></td><td data-l="Use">Only to pity, only if it passes the test</td></tr>
+<tr><td data-l="Recruitment">Carnival Recruitment</td><td data-l="Cost" class="n">1 Carnival ticket or 600 Diamonds</td><td data-l="Guarantee">1% featured; every 100 pulls a chest. Season 1 / 2026 pools: 30% featured · 30% pick-any chest · 24% Star-Up · 16% Refinement <span class="s d" title="game data: Gacha_Season_RuleDesc_1_4_1, SeasonGachaTest1">data</span>. Season 2: 24% featured · 12% Star-Up · 12% Refinement · no pick-any chest <span class="s d" title="game data: SeasonGachaTest2">data</span>. Read the chest odds in game.</td><td data-l="Use">Tickets, 100 at a time</td></tr>
+<tr><td data-l="Recruitment">Legacy Custom, calendar (meta units, ends ~Oct 29)</td><td data-l="Cost" class="n">300</td><td data-l="Guarantee">Pick at 200 = 60,000 per guaranteed copy; lists Nutcracker, Natsu Jason, Maid Toka <span class="s r" title="player report: seen live on the NA relaunch server">player report (in game)</span>; not in the 09-22 data</td><td data-l="Use">1★ team-buff dupes first</td></tr>
+<tr><td data-l="Recruitment">Legacy Custom, novice (selector)</td><td data-l="Cost" class="n">300</td><td data-l="Guarantee">Pull 100 chest (10% your pick) · pull 200 you choose <span class="s d" title="game data: OptionalGacha_beginner">data</span></td><td data-l="Use">Only with 60,000 ready</td></tr>
+<tr><td data-l="Recruitment">Base / standard portal</td><td data-l="Cost" class="n">Summon Ticket</td><td data-l="Guarantee">—</td><td data-l="Use">Tickets only, never Diamonds <a class="s v" href="https://www.youtube.com/watch?v=L3LDg1CR4-0" title="video: Zeketta" target="_blank" rel="noopener">&#9654; Zeketta</a></td></tr>
+</tbody></table></div>
+<div class="grid3" style="margin-top:12px">
+ <div class="stat"><span>Featured within 100 Carnival pulls</span><div class="big">≈ 75%</div><span>63% from the 1% rate + the 30% chest <span class="s i" title="inference: 1−0.99¹⁰⁰ plus chest">inferred</span></span></div>
+ <div class="stat"><span>Copies per 300 limited pulls</span><div class="big">≈ 4</div><span>"average" <a class="s v" href="https://www.youtube.com/watch?v=mUkOqrgfb6k" title="video: Aslan" target="_blank" rel="noopener">&#9654; Aslan</a></span></div>
+ <div class="stat"><span>Pulls for SSS on a new limited</span><div class="big">600–800</div><span>plus Panacean crystals <a class="s v" href="https://www.youtube.com/watch?v=XYHizErWw6M" title="video: Aslan" target="_blank" rel="noopener">&#9654; Aslan</a></span></div>
+</div>
+
+<h2 id="income">Income per day</h2>
+<p class="note"><b>VIP:</b> VIP levels come from real-money top-ups (Aslan reached VIP 6 with the monthly contract plus growth funds <a class="s v" href="https://www.youtube.com/watch?v=fqOQHno-roU" title="video: Aslan" target="_blank" rel="noopener">&#9654; Aslan</a>); the VIP 5 threshold isn't in the data, so check the VIP screen. A $0 account stays VIP 0.</p>
+<div class="tw"><table class="stack"><thead><tr><th>Source</th><th>VIP 0</th><th>VIP 5</th><th>Source</th></tr></thead><tbody>
+<tr><td data-l="Source">Free Monthly Pass</td><td data-l="VIP 0" class="n">100</td><td data-l="VIP 5" class="n">100</td><td data-l="Key"><span class="s d" title="game data: FreeLoginMonth">data</span></td></tr>
+<tr><td data-l="Source">Wishing Sign-in (avg)</td><td data-l="VIP 0" class="n">≈ 187</td><td data-l="VIP 5" class="n">≈ 187</td><td data-l="Key"><span class="s d" title="game data: WishingSign">data</span></td></tr>
+<tr><td data-l="Source">Diamond Spring (stake 500, avg return 1,020 on 24 h; 1,315 on 48 h)</td><td data-l="VIP 0" class="n">+520</td><td data-l="VIP 5" class="n">+1,040 (2 exchanges)</td><td data-l="Key"><span class="s d" title="game data: Const:DiamondInvest*">data</span></td></tr>
+<tr><td data-l="Source">Weekend Surprise Sign-In (2 tickets/week)</td><td data-l="VIP 0" class="n">≈ 86</td><td data-l="VIP 5" class="n">≈ 86</td><td data-l="Key"><span class="s d" title="game data: WeekendSignReward_3">data</span></td></tr>
+<tr><td data-l="Source"><b>Recurring total</b></td><td data-l="VIP 0" class="n"><b>≈ 893/day</b></td><td data-l="VIP 5" class="n"><b>≈ 1,413/day</b></td><td data-l="Key"></td></tr>
+<tr><td data-l="Source">Org boss kill (Mon/Fri) + mission chests</td><td data-l="VIP 0" colspan="2">500–700 per kill, ~200 from chests</td><td data-l="Key"><a class="s v" href="https://www.youtube.com/watch?v=adyaFXzIMIw" title="video: Shi" target="_blank" rel="noopener">&#9654; Shi</a></td></tr>
+<tr><td data-l="Source">Strong Enemy Assault first / 3★ clears</td><td data-l="VIP 0" colspan="2">1,000 each, one time</td><td data-l="Key"><a class="s v" href="https://www.youtube.com/watch?v=Y08edPZvRFQ" title="video: Aslan" target="_blank" rel="noopener">&#9654; Aslan</a></td></tr>
+<tr><td data-l="Source">Arena: first time reaching rank 1</td><td data-l="VIP 0" colspan="2">1,500 one time</td><td data-l="Key"><a class="s v" href="https://www.youtube.com/watch?v=L3LDg1CR4-0" title="video: Zeketta" target="_blank" rel="noopener">&#9654; Zeketta</a></td></tr>
+<tr><td data-l="Source">Guild war: fill a stronghold's reward bar</td><td data-l="VIP 0" colspan="2">1,000 / 2,000 / 3,000 to every member of the holding org</td><td data-l="Key"><span class="s d" title="game data: GVG reward tables (gvg_carnival §0)">data</span></td></tr>
+<tr><td data-l="Source">Holiday free sign-ins</td><td data-l="VIP 0" colspan="2">600 + 8 tickets each (≈ 3,000 banner value)</td><td data-l="Key"><span class="s d" title="game data: 2025 holiday sign-ins">data</span></td></tr>
+</tbody></table></div>
+<p class="note">Daily quests, mail and codes aren't in the data <span class="s u" title="unknown: measure: bank day 9 − bank day 2, ÷ 7">check in game</span>. Diamond Spring: always take the 48-hour option when you'll be away a day — highest average return <a class="s v" href="https://www.youtube.com/watch?v=adyaFXzIMIw" title="video: Shi" target="_blank" rel="noopener">&#9654; Shi</a>.</p>
+
+<h2 id="diamonds">Where Diamonds go (in this order)</h2>
+<ol class="steps">
+<li><b>The bank</b> for one banner that passes the test, to its pity (60,000 or 90,000).</li>
+<li><b>Guild-war charges</b> on war day: the first 9 extra attacks cost 690 Diamonds total (50/50/50/80/80/80/100/100/100) — cheaper than reviving <span class="s d" title="game data: Const:GVGAtkTimesCost">data</span>.</li>
+<li><b>Diamond Spring stake</b> (it pays back with profit).</li>
+<li>Arena refills only on a fresh server if you're chasing a rank reward <a class="s v" href="https://www.youtube.com/watch?v=L3LDg1CR4-0" title="video: Zeketta" target="_blank" rel="noopener">&#9654; Zeketta</a> — Shi disagrees and says save everything <a class="s v" href="https://www.youtube.com/watch?v=adyaFXzIMIw" title="video: Shi" target="_blank" rel="noopener">&#9654; Shi</a>. Default: don't.</li>
+</ol>
+<p><b>Never:</b> Carnival pulls with Diamonds · base-portal pulls · revives in guild war unless your org calls a push · starting a banner below pity.</p>
+
+<h2 id="shops">Shop priorities</h2>
+<div class="grid2">
+<div class="box"><h3>Unit shop (days 15 / 19 / 29 / 43 / 75 / 90)</h3><ol class="steps"><li>Uta [Rescue] — day 43</li><li>Hideyoshi [Best Friend] — day 75</li><li>Nishiki [Orochi] — day 75 (second carry, ban insurance)</li><li>Kiyoko Aura — day 43 (guild-war only: +40% stats in Stronghold Takeover)</li><li>Ayato [Black Rabbit] — day 75 (Aogiri team 2)</li></ol><p class="note">These are listed for a shop in the data; which shop, what currency and the price <span class="s u" title="unknown: unconfirmed">check in game</span>. Save the likely one (Crystal Exchange) from day 1. Some entries also carry a calendar date (Black Rabbit 2026-11-09 = day 29; Hideyoshi 2025-12-29, already past) <span class="s d" title="game data: HeroBase shop_time real_time">data</span> — which rule applies on a new server is unknown, so check the shop tabs every week.</p></div>
+<div class="box"><h3>Carnival Exchange</h3><ol class="steps"><li>The season unit's Ability Sphere — only if you own that unit</li><li>Super / Advanced Potential Box, then Potential Essence</li><li>Limit Crystal ×10 (main carry)</li><li>Cell Promoter, Cell Evolution Eukaryote</li><li>Last: stones, batteries, sweep coupons</li></ol><p class="note">Tokens carry over between Carnivals <span class="s d" title="game data: Season_RuleDesc_1_4">data</span>.</p></div>
+<div class="box"><h3>Revival Point shop (guild war)</h3><p>Panacean Star-Up Crystal first <span class="s d" title="game data: ShopGVGSeason1_Item_1..8">data</span>. Revives you pay for also earn points.</p></div>
+<div class="box"><h3>Org &amp; other</h3><ul class="tight"><li>Org auction cells: <b>bid, don't buy out</b> <a class="s v" href="https://www.youtube.com/watch?v=adyaFXzIMIw" title="video: Shi" target="_blank" rel="noopener">&#9654; Shi</a></li><li>Random shop: check daily, buy Summon Tickets <a class="s v" href="https://www.youtube.com/watch?v=L3LDg1CR4-0" title="video: Zeketta" target="_blank" rel="noopener">&#9654; Zeketta</a></li><li>Crystal shop: turns unused SSR dupes into a unit you choose <a class="s v" href="https://www.youtube.com/watch?v=L3LDg1CR4-0" title="video: Zeketta" target="_blank" rel="noopener">&#9654; Zeketta</a></li><li>Arena shop: PvP currency buys permanent characters <a class="s w" href="https://www.bluestacks.com/blog/updates/tokyo-ghoul-break-the-chains/tgbc-global-version-relaunch-en.html" title="web: BlueStacks 2025-11" target="_blank" rel="noopener">web</a></li></ul></div>
+</div>
+
+<h2 id="value">Real-money value, best first</h2>
+<p class="note">"Banner value" = Diamonds + 300 per Event Summon Ticket. Prices marked <span class="s u" title="unknown: price">check in game</span> weren't in the data — check the shop.</p>
+<div class="tw"><table class="stack"><thead><tr><th>#</th><th>Purchase</th><th>Price</th><th>Banner value</th><th>Per $1</th><th>When</th></tr></thead><tbody>
+<tr><td data-l="#">1</td><td data-l="Purchase">Holiday sign-in <i>if</i> it carries 80 fragments of a usable unit (Halloween 2025 pattern)</td><td data-l="Price" class="n">$9.99</td><td data-l="Value" class="n">8,400 + a whole unit</td><td data-l="Per $">best</td><td data-l="When">Halloween <span class="s i" title="inference: if repeated">inferred</span></td></tr>
+<tr><td data-l="#">2</td><td data-l="Purchase">Endless Trials Pass #1</td><td data-l="Price" class="n">$4.99</td><td data-l="Value" class="n">12,400</td><td data-l="Per $" class="n">2,485</td><td data-l="When">Chain Level 70+</td></tr>
+<tr><td data-l="#">3</td><td data-l="Purchase">Chain Level Pass #1</td><td data-l="Price" class="n">$4.99</td><td data-l="Value" class="n">11,800</td><td data-l="Per $" class="n">2,365</td><td data-l="When">any time</td></tr>
+<tr><td data-l="#">4</td><td data-l="Purchase">Endless Trials Pass #2</td><td data-l="Price" class="n">$9.99</td><td data-l="Value" class="n">18,800</td><td data-l="Per $" class="n">1,882</td><td data-l="When">progress-gated</td></tr>
+<tr><td data-l="#">5</td><td data-l="Purchase">Monthly Login Contract (800 + 300/day × 28)</td><td data-l="Price"><span class="s u" title="unknown: price">check in game</span></td><td data-l="Value" class="n">9,200 / 28 days</td><td data-l="Per $" class="n">1,844 at $4.99</td><td data-l="When">days 34–55 first</td></tr>
+<tr><td data-l="#">6</td><td data-l="Purchase">Endless Trials #3 · Chain Level #2 · #3 · Endless Trials #4</td><td data-l="Price" class="n">$14.99 · $9.99 · $14.99 · $19.99</td><td data-l="Value" class="n">25,200 · 16,100 · 21,600 · 31,600</td><td data-l="Per $" class="n">1,441–1,681</td><td data-l="When">progress-gated</td></tr>
+<tr><td data-l="#">7</td><td data-l="Purchase">Limited-Time Weekly Pass (600 + 500/day × 7)</td><td data-l="Price" class="n">$2.99</td><td data-l="Value" class="n">4,100</td><td data-l="Per $" class="n">1,371</td><td data-l="When">days 1–28 only</td></tr>
+<tr><td data-l="#">7b</td><td data-l="Purchase">Novice Limited-Time Sign-In, paid track (4,200 + 26 tickets + SSR Selection Card + 60 Limit Crystals)</td><td data-l="Price" class="n">$9.99</td><td data-l="Value" class="n">12,000 + a card</td><td data-l="Per $" class="n">~1,201</td><td data-l="When"><b>ends day 14 (Sun Oct 25)</b></td></tr>
+<tr><td data-l="#">8</td><td data-l="Purchase">Premium Monthly Contract (18,400 + premium shop)</td><td data-l="Price"><span class="s u" title="unknown: price">check in game</span></td><td data-l="Value" class="n">18,400 / 28 days</td><td data-l="Per $" class="n">≈ 920–1,227</td><td data-l="When">—</td></tr>
+<tr><td data-l="#">9</td><td data-l="Purchase">New Year sign-in (2,400 + 28 tickets + 130 Limit Crystals)</td><td data-l="Price" class="n">$9.99</td><td data-l="Value" class="n">10,800</td><td data-l="Per $" class="n">1,081</td><td data-l="When">~day 76+</td></tr>
+<tr><td data-l="#">10</td><td data-l="Purchase">Halloween / Christmas / Anniversary sign-ins</td><td data-l="Price" class="n">$9.99</td><td data-l="Value" class="n">8,100–8,400</td><td data-l="Per $" class="n">811–841</td><td data-l="When">holidays</td></tr>
+<tr><td data-l="#">✕</td><td data-l="Purchase">Limited-time Sign-in (launch-era selector)</td><td data-l="Price" class="n">$14.99</td><td data-l="Value" class="n">5,600</td><td data-l="Per $" class="n">374</td><td data-l="When">skip</td></tr>
+<tr><td data-l="#">✕</td><td data-l="Purchase">Plain Diamond top-up</td><td data-l="Price">any</td><td data-l="Value">—</td><td data-l="Per $" class="n">80</td><td data-l="When">never</td></tr>
+</tbody></table></div>
+<p class="note">Values from the reward tables <span class="s d" title="game data: future_plan §3b: EndlessTrialsPass, ChainLevelPass01, MonthCard_Reward_*, LimitWeekCard_Rocket202609, 2025 holiday sign-ins">data</span>. The creators' "growth funds" are most likely these one-time progress passes <span class="s i" title="inference: same shape: one-time, tiered, instant gems">inferred</span>.</p>
+
+<h2 id="creators">What creators say is worth buying</h2>
+<p class="note">From the two spending-guide videos and Aslan's 3-month account, transcribed. Prices are the ones they say out loud; anything only shown on screen stays <span class="s u" title="unknown: check in game">check in game</span>.</p>
+<div class="tw"><table class="stack"><thead><tr><th>Offer</th><th>Price (spoken)</th><th>Verdict</th><th>Source</th></tr></thead><tbody>
+<tr><td data-l="Offer"><b>Monthly login contracts</b> (two kinds; they stack, buying one twice adds days)</td><td data-l="Price"><span class="s u" title="unknown: price">check in game</span></td><td data-l="Verdict"><b>Best value in the game</b> — Aslan's only monthly buy (VIP 6 in 3 months)</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=207s" title="video: Shi 3:27" target="_blank" rel="noopener">&#9654; Shi 3:27</a> <a class="s v" href="https://www.youtube.com/watch?v=fqOQHno-roU&t=261s" title="video: Aslan 4:21" target="_blank" rel="noopener">&#9654; Aslan 4:21</a></td></tr>
+<tr><td data-l="Offer"><b>Growth funds</b> (one-time, tiered)</td><td data-l="Price">tiered</td><td data-l="Verdict"><b>Buy</b>: most gems instantly per dollar</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=279s" title="video: Shi 4:39" target="_blank" rel="noopener">&#9654; Shi 4:39</a> <a class="s v" href="https://www.youtube.com/watch?v=VqzVB_RRJtA&t=266s" title="video: Spectre 4:26" target="_blank" rel="noopener">&#9654; Spectre 4:26</a></td></tr>
+<tr><td data-l="Offer">Carnival Pass</td><td data-l="Price" class="n">~$20</td><td data-l="Verdict">Buy if you're a mid spender (lots of tickets)</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=174s" title="video: Shi 2:54" target="_blank" rel="noopener">&#9654; Shi 2:54</a> <a class="s v" href="https://www.youtube.com/watch?v=VqzVB_RRJtA&t=231s" title="video: Spectre 3:51" target="_blank" rel="noopener">&#9654; Spectre 3:51</a></td></tr>
+<tr><td data-l="Offer">Chain Campaign boost packs</td><td data-l="Price" class="n">$5 · $5 · $10 …</td><td data-l="Verdict">Most tickets per dollar (regular tickets); "$25 for a hundred pulls and some diamonds" is great for dolphins</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=651s" title="video: Shi 10:51" target="_blank" rel="noopener">&#9654; Shi 10:51</a> <a class="s v" href="https://www.youtube.com/watch?v=VqzVB_RRJtA&t=266s" title="video: Spectre 4:26" target="_blank" rel="noopener">&#9654; Spectre 4:26</a></td></tr>
+<tr><td data-l="Offer">Event wheel <b>ticket only</b></td><td data-l="Price" class="n">~$0.30/day</td><td data-l="Verdict">Good; buy right after the countdown resets. Earns <b>no VIP points</b>. Never the wheel bundles</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=413s" title="video: Shi 6:53" target="_blank" rel="noopener">&#9654; Shi 6:53</a></td></tr>
+<tr><td data-l="Offer">Cell Creation packs</td><td data-l="Price" class="n">$5 · $10 tiers</td><td data-l="Verdict">Only if you need one specific cell; value drops above $10</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=619s" title="video: Shi 10:19" target="_blank" rel="noopener">&#9654; Shi 10:19</a></td></tr>
+<tr><td data-l="Offer">Paid Diamond Spring</td><td data-l="Price" class="n">$5 → 1k, $5 → 2.5k</td><td data-l="Verdict">Mediocre; whales only</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=517s" title="video: Shi 8:37" target="_blank" rel="noopener">&#9654; Shi 8:37</a></td></tr>
+<tr><td data-l="Offer">✕ Diamond top-up tab</td><td data-l="Price" class="n">~$100 → 24,000</td><td data-l="Verdict"><b>Never</b> (that's with the triple first top-up)</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=35s" title="video: Shi 0:35" target="_blank" rel="noopener">&#9654; Shi 0:35</a></td></tr>
+<tr><td data-l="Offer">✕ $50 character pack</td><td data-l="Price" class="n">$50</td><td data-l="Verdict"><b>Never</b></td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=241s" title="video: Shi 4:01" target="_blank" rel="noopener">&#9654; Shi 4:01</a></td></tr>
+<tr><td data-l="Offer">✕ Advancement packs page</td><td data-l="Price" class="n">$10 · $20 (~4,000) · $40</td><td data-l="Verdict"><b>Never</b> — "such bad value for every single pack"</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=341s" title="video: Shi 5:41" target="_blank" rel="noopener">&#9654; Shi 5:41</a></td></tr>
+<tr><td data-l="Offer">✕ First top-up $20 tiers</td><td data-l="Price" class="n">$20 → ~4,500</td><td data-l="Verdict"><b>Never</b></td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=712s" title="video: Shi 11:52" target="_blank" rel="noopener">&#9654; Shi 11:52</a></td></tr>
+<tr><td data-l="Offer">✕ Gem pulls on regular banners</td><td data-l="Price">—</td><td data-l="Verdict"><b>Never</b></td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=m0mqpbo3sT8&t=681s" title="video: Shi 11:21" target="_blank" rel="noopener">&#9654; Shi 11:21</a></td></tr>
+<tr><td data-l="Offer">✕ Panaceas or Force Talents with Diamonds</td><td data-l="Price">—</td><td data-l="Verdict"><b>Never</b> as F2P/light spender; get Panaceas from Carnival chests</td><td data-l="Source"><a class="s v" href="https://www.youtube.com/watch?v=fqOQHno-roU&t=457s" title="video: Aslan 7:37" target="_blank" rel="noopener">&#9654; Aslan 7:37</a></td></tr>
+</tbody></table></div>
+
+<h2 id="timelines">Real F2P timelines</h2>
+<div class="box"><ul class="tight">
+<li><b>Kitcat (VIP 0 the whole time):</b> day 18 — Arima 1★ from 71 Carnival pulls <a class="s v" href="https://www.youtube.com/watch?v=8xLey7VfCgQ&t=0s" title="video: 0:00" target="_blank" rel="noopener">&#9654; 0:00</a>; day 31 — Urie 5★ from ~300 pulls after saving ~30,000 <a class="s v" href="https://www.youtube.com/watch?v=dlUA3Rbhk0U&t=402s" title="video: 6:42" target="_blank" rel="noopener">&#9654; 6:42</a> <a class="s v" href="https://www.youtube.com/watch?v=dlUA3Rbhk0U&t=907s" title="video: 15:07" target="_blank" rel="noopener">&#9654; 15:07</a>; day 75 — 1.1M CP <a class="s v" href="https://www.youtube.com/watch?v=LAEVrN636iU&t=504s" title="video: 8:24" target="_blank" rel="noopener">&#9654; 8:24</a>; day 150 — ~1.3–1.4M CP, 10 Panaceas from 200 pulls <a class="s v" href="https://www.youtube.com/watch?v=GbmbT8RXyY8&t=0s" title="video: 0:00" target="_blank" rel="noopener">&#9654; 0:00</a> <a class="s v" href="https://www.youtube.com/watch?v=GbmbT8RXyY8&t=370s" title="video: 6:10" target="_blank" rel="noopener">&#9654; 6:10</a>.</li>
+<li><b>Aslan (new server):</b> day 3 — 200k CP and 38,000 Diamonds saved <a class="s v" href="https://www.youtube.com/watch?v=yyDHSrv7ejQ&t=1219s" title="video: 20:19" target="_blank" rel="noopener">&#9654; 20:19</a>; day 7 — 300k CP <a class="s v" href="https://www.youtube.com/watch?v=DRgmi53L3ho&t=325s" title="video: 5:25" target="_blank" rel="noopener">&#9654; 5:25</a>. His one regret: 50–60k Diamonds on a non-Carnival SSR whose 2nd copy took 180 pulls <a class="s v" href="https://www.youtube.com/watch?v=DRgmi53L3ho&t=99s" title="video: 1:39" target="_blank" rel="noopener">&#9654; 1:39</a>.</li>
+<li><b>Zoltan, 465 days 100% F2P:</b> 255,589 Diamonds + 434 tickets saved ≈ 1,285 pulls (~1,400 with Carnival tickets); 5th in CP on his server <a class="s v" href="https://www.youtube.com/watch?v=ivfXPf4WE3o&t=730s" title="video: 12:10" target="_blank" rel="noopener">&#9654; 12:10</a>.</li>
+<li><b>Free Diamonds people forget:</b> bind your account (+500) <a class="s v" href="https://www.youtube.com/watch?v=yyDHSrv7ejQ&t=124s" title="video: 2:04" target="_blank" rel="noopener">&#9654; 2:04</a>; Chain Campaign pays 100 per stage <a class="s v" href="https://www.youtube.com/watch?v=fqOQHno-roU&t=553s" title="video: 9:13" target="_blank" rel="noopener">&#9654; 9:13</a>; Diamond Spring on 48 h always comes back positive <a class="s v" href="https://www.youtube.com/watch?v=VqzVB_RRJtA&t=166s" title="video: 2:46" target="_blank" rel="noopener">&#9654; 2:46</a>.</li>
+</ul></div>
+
+<h2 id="tiers">Three budgets, dated</h2>
+<div class="grid3">
+<div class="box phase p1"><h3>$0</h3><ul class="tight"><li>Bank everything; claim every free track.</li><li>A $0 account is VIP 0: ~60,000 by day 50 and ~90,000 by day 85 <span class="s i" title="inference: recurring + one-time progress, future_plan §4">inferred</span> — after Christmas, so your 300-pity target is <b>New Year</b> (Uta [New Year], ~day 91–98).</li><li>At most one banner before New Year.</li><li>Shop units on days 43 and 75 are your upgrades — if the listed shop entries are sold.</li></ul></div>
+<div class="box phase p2"><h3>~$20 a month</h3><ul class="tight">
+<li><b>Month 1</b> (buy inside Novice Rebate 2, days 8–14 = now to Oct 25, or Novice Rebate 3, days 15–21 = Oct 26 – Nov 1): Chain Level Pass #1 $4.99 + Endless Trials #1 $4.99 (it appears from day 14 at Chain Level 70 <span class="s d" title="game data: EndlessTrialsPass server_start 14">data</span>, so in practice inside Rebate 3) + Weekly Pass ×2 $5.98 — or the Halloween sign-in instead of the Weekly Passes if it carries a full unit.</li>
+<li><b>Month 2</b> (Nov 14 – Dec 5): Monthly Contract (if ≤ $4.99) + Endless Trials #2 $9.99.</li>
+<li><b>Month 3</b>: Contract + Christmas sign-in $9.99 + New Year Welcome $4.99.</li>
+<li><b>Month 4</b>: Contract + Chain Level Pass #2 $9.99.</li></ul></div>
+<div class="box phase p3"><h3>~$100 for one event: Christmas</h3><ol class="steps" style="font-size:.9rem">
+<li>Endless Trials #2 — $9.99 → 18,800</li><li>Monthly Contract ×2 — ~$9.98 <span class="s u" title="unknown: price">check in game</span> → ≈ 14,500 by Dec 26 (first cycle 9,200 if bought Nov 14; the second, stacked Dec 12, pays 800 + 300 × 15 days before the banner ends)</li><li>Chain Level Pass #2 — $9.99 → 16,100</li><li>Endless Trials #3 — $14.99 → 25,200</li><li>Chain Level Pass #3 — $14.99 → 21,600</li><li>Endless Trials #4 — $19.99 → 31,600</li><li>Christmas sign-in — $9.99 → 8,400 (on sale ~Dec 12, <b>outside</b> the rebate window)</li></ol>
+<p><b>$89.92 → ≈ 136,200 banner value (~454 pulls) by Dec 26</b>: 18,800 + 14,500 + 16,100 + 25,200 + 21,600 + 31,600 + 8,400. Buy the passes and the first contract between <b>Nov 14 and Dec 5</b> (Diamond Rebate stacks) and climb the passes by Dec 12. The same $100 as a plain top-up buys ~27 pulls.</p></div>
+</div>
+
+<h2 id="windows">Rebate windows: buy inside these</h2>
+<div class="box"><ul class="ev"><li data-s="1" data-e="7"><div class="dd"><span class="dt">Mon Oct 12 – Sun Oct 18</span><small>Day 1–7</small></div><div class="t"><span class="kind money">MONEY</span><b>Wish Rebate (Nutcracker, tiers as low as $9.99)</b><span class="s d">confirmed</span><span class="dsc">Closed as day 8 began. No Nutcracker rerun is scheduled in the data; a creator calls her non-exclusive <a class="s v" href="https://www.youtube.com/watch?v=XYHizErWw6M" title="video: Aslan 09-15" target="_blank" rel="noopener">&#9654; Aslan 09-15</a>, so a return is possible <span class="s i" title="inference: creator remark; no rerun in the data">inferred</span>.</span></div><div class="cd"></div></li><li data-s="1" data-e="7"><div class="dd"><span class="dt">Mon Oct 12 – Sun Oct 18</span><small>Day 1–7</small></div><div class="t"><span class="kind money">MONEY</span><b>Novice Rebate Phase 1 (top-up ladder)</b><span class="s d">confirmed</span><span class="dsc">Buy day-1 passes inside it <span class="s d" title="game data: LvReward_new_1">data</span>. Spend real money only inside a rebate window.</span></div><div class="cd"></div></li><li data-s="8" data-e="14"><div class="dd"><span class="dt">Mon Oct 19 – Sun Oct 25</span><small>Day 8–14</small></div><div class="t"><span class="kind money">MONEY</span><b>Novice Rebate Phase 2 (top-up ladder)</b><span class="s d">confirmed</span><span class="dsc">133 Event Summon Tickets across 12 tiers <span class="s d" title="game data: LvReward_new_2">data</span>. Spend real money only inside a rebate window.</span></div><div class="cd"></div></li><li data-s="15" data-e="21"><div class="dd"><span class="dt">Mon Oct 26 – Sun Nov 1</span><small>Day 15–21</small></div><div class="t"><span class="kind money">MONEY</span><b>Novice Rebate Phase 3 (top-up ladder)</b><span class="s d">confirmed</span><span class="dsc">133 Event Summon Tickets + 1,200 Limit Crystals + 1,200 Crimson Crystals <span class="s d" title="game data: LvReward_new_3">data</span>.</span></div><div class="cd"></div></li><li data-s="19" data-e="25"><div class="dd"><span class="dt">Fri Oct 30 – Thu Nov 5</span><small>Day 19–25</small></div><div class="t"><span class="kind money">MONEY</span><b>Carnival Support Project (top-up ladder)</b><span class="s d">confirmed</span><span class="dsc">187 Carnival Summon Tickets + 265 Exclusive Treasure Box keys; needs Chain Level 50 <span class="s d" title="game data: LvReward_04, Season_Rebate_Task_01..20">data</span>.</span></div><div class="cd"></div></li><li data-s="26" data-e="32"><div class="dd"><span class="dt">Fri Nov 6 – Thu Nov 12</span><small>Day 26–32</small></div><div class="t"><span class="kind money">MONEY</span><b>Novice Rebate Phase 4 (top-up ladder)</b><span class="s d">confirmed</span><span class="dsc">133 tickets; top tier = Random Rainbow Potential <span class="s d" title="game data: LvReward_new_4">data</span>.</span></div><div class="cd"></div></li><li data-s="34" data-e="55"><div class="dd"><span class="dt">Sat Nov 14 – Sat Dec 5</span><small>Day 34–55</small></div><div class="t"><span class="kind money">MONEY</span><b>Diamond Rebate Project: THE best spend window</b><span class="s d">confirmed</span><span class="dsc">151,500 Diamonds over 19 tiers, 1,000 at tier 1 <span class="s d" title="game data: LvReward_Act01">data</span>. Put passes and the Monthly Contract here. Tier thresholds <span class="s u" title="unknown: not in data">check in game</span>.</span><span class="sv">Have ready: Planned purchases</span></div><div class="cd"></div></li><li data-s="58" data-e="58"><div class="dd"><span class="dt">Tue Dec 8</span><small>Day 58</small></div><div class="t"><span class="kind money">MONEY</span><b>Bank checkpoint: 60,000 (one 200-pity banner)</b><span class="s i">inferred</span><span class="dsc">With one-time progress income: VIP 5 ≈ day 30–40, VIP 0 ≈ day 50. Recurring income alone: VIP 5 ≈ day 50, VIP 0 ≈ day 75.</span><span class="sv">Have ready: 60,000</span></div><div class="cd"></div></li></ul></div>
+<footer>Unofficial fan guide · not affiliated with Sui Ishida, Shueisha, KOMOE or Funcat · built from the game's own files plus creator videos · every number carries its source chip.</footer></div><script>
+(function(){
+var DAY=864e5;
+function cfg(){var o='2026-10-12',z=-5;try{var a=localStorage.getItem('tg-open');if(a)o=a;var b=localStorage.getItem('tg-utc');if(b!==null&&b!=='')z=+b;}catch(e){}return{o:o,z:z};}
+function d1(c){var p=c.o.split('-').map(Number);return Date.UTC(p[0],p[1]-1,p[2],5)-c.z*36e5;}  /* day 1 counted from the 05:00 reset */
+function sday(c){return Math.floor((Date.now()-d1(c))/DAY)+1;}
+function dstart(c,n){return d1(c)+(n-1)*DAY;}
+function fmt(ms){if(ms<=0)return '';var d=Math.floor(ms/DAY),h=Math.floor(ms%DAY/36e5),m=Math.floor(ms%36e5/6e4),s=Math.floor(ms%6e4/1e3);return d?d+'d '+h+'h':(h?h+'h '+m+'m':m+'m '+s+'s');}
+var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function fdate(ms,c){var t=new Date(ms+c.z*36e5);return WD[t.getUTCDay()]+' '+MON[t.getUTCMonth()]+' '+t.getUTCDate();}
+function tick(){
+ var c=cfg(),now=Date.now(),day=sday(c);
+ document.querySelectorAll('[data-sday]').forEach(function(e){e.textContent=day;});
+ var nr=d1(c);while(nr<=now)nr+=DAY;
+ document.querySelectorAll('[data-reset]').forEach(function(e){e.textContent=fmt(nr-now);});
+ document.querySelectorAll('[data-s]').forEach(function(e){
+  var s=e.getAttribute('data-abs-s')?Date.parse(e.getAttribute('data-abs-s')):dstart(c,+e.getAttribute('data-s'));
+  var en=e.getAttribute('data-abs-e')?Date.parse(e.getAttribute('data-abs-e')):dstart(c,+e.getAttribute('data-e')+1);
+  var dd=e.querySelector('.dd .dt');if(dd)dd.textContent=fdate(s,c)+(en-s>DAY*1.5?' – '+fdate(en-DAY,c):'');
+  var cd=e.querySelector('.cd');e.classList.toggle('past',now>=en);e.classList.toggle('cur',now>=s&&now<en);
+  if(cd){cd.classList.toggle('now',now>=s&&now<en);cd.textContent=now<s?'in '+fmt(s-now):(now<en?'LIVE · ends in '+fmt(en-now):'ended');}
+ });
+ document.querySelectorAll('[data-dl]').forEach(function(e){var t=Date.parse(e.getAttribute('data-dl'));e.textContent=t>now?fmt(t-now):'ended';});
+}
+window.tgSet=function(){var o=document.getElementById('tg-open'),z=document.getElementById('tg-utc');try{if(o&&o.value)localStorage.setItem('tg-open',o.value);if(z)localStorage.setItem('tg-utc',z.value);}catch(e){}tick();filt();};
+function filt(){var l=document.querySelector('[data-upcoming]');if(!l)return;var n=+l.getAttribute('data-upcoming'),i=0;
+ l.querySelectorAll('li').forEach(function(li){var past=li.classList.contains('past');li.style.display=(!past&&i<n)?'':'none';if(!past)i++;});}
+document.addEventListener('DOMContentLoaded',function(){var c=cfg(),o=document.getElementById('tg-open'),z=document.getElementById('tg-utc');if(o)o.value=c.o;if(z)z.value=String(c.z);tick();filt();setInterval(tick,1000);});
+})();
+</script></body></html>
