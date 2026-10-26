@@ -1,0 +1,2667 @@
+{
+ "as_of": "October 19, 2026",
+ "updated": "October 26, 2026",
+ "names": {
+  "1001": "Rize [Binge Eater]",
+  "1004": "Shu [Gourmet]",
+  "1010": "Kureo",
+  "1012": "Yakumo [Jason]",
+  "1018": "Kurona",
+  "1020": "Tatara",
+  "1026": "Enji",
+  "1036": "Naki [Crybaby]",
+  "1052": "Toka [Rabbit]",
+  "1075": "Iwao",
+  "1089": "Toka [Anteiku]",
+  "1090": "Uta [Rescue]",
+  "1102": "Haise [Mentor]",
+  "1103": "Juzo [False Girl]",
+  "1114": "Nishiki [Orochi]",
+  "1116": "Urie",
+  "1122": "Yakumo [Torture]",
+  "1123": "Juzo [Scorpion]",
+  "1127": "Hideyoshi",
+  "1137": "Naki [Prisoner]",
+  "1142": "Sen",
+  "1143": "Roma [Anteiku]",
+  "1144": "Hinami [Hina Matsuri]",
+  "1147": "Ayato [Wings of Ardor]",
+  "1148": "Rize [Valentine's Day]",
+  "1150": "Haise [Sealed Memory]",
+  "1155": "Ayato [Black Rabbit]",
+  "1161": "Ayato [1.5th Anniversary]",
+  "1162": "Toka [June Bride]",
+  "1166": "Akira [June Bride]",
+  "1168": "Ken [√A]",
+  "1169": "Shirazu",
+  "1170": "Mitsuki",
+  "1171": "Rize [Seaside]",
+  "1173": "Yoshimura [Readiness]",
+  "1174": "Nutcracker",
+  "1175": "Yakumo [Natsu Matsuri]",
+  "1177": "Roma [Mad Clown]",
+  "1178": "Toka [Maid Costume]",
+  "1179": "Miza",
+  "1006": "Ayato [Rebelwing]",
+  "1050": "Arima [CCG's Reaper]",
+  "1072": "Amon [Dojima Kai]",
+  "1077": "Shu [Mr.MM]",
+  "1083": "Juzo [Pet Boy]",
+  "1092": "Tatara [Revenge]",
+  "1128": "Toka [1st Anniversary]",
+  "1134": "Uta [The Past]",
+  "1135": "Noro",
+  "1136": "Kiyoko",
+  "1146": "Arima [Invincible]",
+  "1160": "Toka [Flame Strike]",
+  "1165": "Naki [1.5th Anniversary]"
+ },
+ "start": [
+  {
+   "step": "Join an active organization on day 1.",
+   "more": [
+    "Only the top 8 organizations in that week's Weekly Challenge can enter guild war."
+   ],
+   "source": "October 19 article \"Planner by server day\", \"If you read nothing else\""
+  },
+  {
+   "step": "Play No Organization, and stay with it.",
+   "more": [
+    "Nutcracker comes from the Wish Rebate, Sen is free, and the free No Org units all power her up.",
+    "Aogiri is just as strong but needs Black Rabbit (Carnival) and Miza (not limited; her rate-up guarantees her at 200 pulls).",
+    "Both beat Anteiku and CCG after the October 14 patch."
+   ],
+   "source": "October 19 article \"Planner by server day\", \"If you read nothing else\"; October 19 article \"Meta teams\", section 4"
+  },
+  {
+   "step": "Claim every free unit, then build the free team.",
+   "more": [
+    "Sign-in units by server day: Enji (day 1), Yakumo [Jason] (day 5), Kureo (day 9), Kurona (day 13). If you start late, you miss some.",
+    "Sen: Unlimited Recruitment, in your first 14 days after you register.",
+    "Day-14 SSR Selection Card: take Naki [Crybaby]. Day-28 card: Shu [Gourmet].",
+    "Rize [Binge Eater]: free mission chain."
+   ],
+   "link": [
+    "See the free team",
+    "#best-teams"
+   ],
+   "source": "October 19 article \"Meta teams\", section 2 \"F2P starter teams\""
+  },
+  {
+   "step": "Save Diamonds and tickets for one banner you can finish.",
+   "more": [
+    "Limited units need 300 pulls (90,000 Diamonds) to guarantee. Non-limited rate-ups, such as Miza, guarantee at 200 pulls (60,000).",
+    "Pity doesn't carry over, so never start a banner you can't finish.",
+    "Pull only for an exclusive unit in your faction (or a 0★ buff for any team) with no shop date.",
+    "Christmas (about day 62–76) if you can have 90,000 by then; otherwise Uta [New Year] (about day 91–98).",
+    "Halloween Hinami is the live limited banner on established servers (October 25 – November 8, 300 pulls). She may reach this server around October 27. Skip her unless you play Anteiku. (unconfirmed date)"
+   ],
+   "source": "October 19 article \"Planner by server day\", \"If you read nothing else\"; October 19 article \"Pull and spend\", \"F2P pulling rules\"; Research notes of October 26, 2026 (checked by an independent fact-check), sections E (E-14) and F (F-03, F-18, F-23)"
+  },
+  {
+   "step": "Skip banners whose unit comes to a shop later.",
+   "more": [
+    "Shop dates in the game data: Juzo [CCG Maverick] day 15, Uta [Mask-Maker] day 29, Hideyoshi and Nishiki day 75.",
+    "If the shop sells them, buy Uta [Rescue] (day 43) first, then Hideyoshi (day 75).",
+    "Which shop and the price are not confirmed. Check the shop tabs every week."
+   ],
+   "source": "October 19 article \"Planner by server day\", \"Shop units on day 43 and day 75\"; October 19 article \"Pull and spend\", \"Shop priorities\""
+  },
+  {
+   "step": "Spend real money only inside a rebate window.",
+   "more": [
+    "A rebate window makes each purchase pay twice. The best one is the Diamond Rebate, server days 34–55.",
+    "Never buy plain Diamonds: you get only 80 per $1."
+   ],
+   "link": [
+    "See what to buy",
+    "#buy"
+   ],
+   "source": "October 19 article \"Pull and spend\", \"Money rules\""
+  }
+ ],
+ "teams": [
+  {
+   "id": "guild-war",
+   "kind": "mode",
+   "title": "Guild War",
+   "play": [
+    {
+     "text": "Build one strong team. It attacks strongholds and it is also your defense team.",
+     "tip": true
+    },
+    {
+     "text": "Your other two teams are 1–2 characters each, used only to grab free tiles.",
+     "tip": true
+    },
+    {
+     "text": "Common mistake: three medium teams that all attack. That wastes attacks.",
+     "tip": true
+    },
+    {
+     "text": "Stronghold that never seems to die? Test a 1–2 character attack before you use a full team.",
+     "tip": true
+    }
+   ],
+   "rows": [
+    {
+     "label": "Strong team · free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "Every No Org skill makes Nutcracker attack again for free, so four No Org units hit over and over.",
+      "All free except Nutcracker (Wish Rebate, days 1–7). No Nutcracker? Use your best SSR.",
+      "From day 43, put Kiyoko in the back-up slot: +40% stats and a death save for every ally, in Stronghold Takeover only.",
+      "Source: research notes of October 26, 2026, section A6."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Strong team · meta (Aogiri)",
+     "units": [
+      "1155",
+      "1175",
+      "1179",
+      "1036",
+      "1166"
+     ],
+     "why": [
+      "Black Rabbit is DST, so he beats every attribute. Miza strips shields every turn.",
+      "Line-up order: Naki last, then Black Rabbit, then Yakumo [Natsu Matsuri].",
+      "Yakumo [Natsu Matsuri] was weakened on October 14. Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
+      "Source: research notes of October 26, 2026, section A6."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "Guild tip: attacking a free tile with any team claims it, so a strong team spent there is a wasted attack.",
+    "Guild tip example: the opponent pushes and takes a tile; your one-character team on the free tile next to it grabs it.",
+    "Only the top 8 organizations in the Weekly Challenge can enter. The check is Saturday 10:00.",
+    "Each player brings 3 teams. You get 10 attack charges, plus 1 every 20 minutes. Spend them.",
+    "Lost HP comes back only slowly between fights (a win in a Hospital's area refunds 25% of the HP lost). Healing can't raise HP above the HP a unit started the fight with. Whether this hits defenders, attackers or both is unconfirmed. Either way, burst wins attacks.",
+    "A Police Station flips its whole area when you take it: the best free tile to grab.",
+    "Tower breakers to test on a stronghold that won't die: Shu [Mr.MM] or Toka [Anteiku] with Yakumo [Jason]. Shu needs 1★ for his damage cut and 3★ for his shield; Toka needs 1★ for lifesteal and 3★ for her death save. Meta: Black Rabbit with Miza or Naki [1.5th Anniversary]. (unconfirmed)",
+    "Practice in Takeover Simulation (Organization menu) before Saturday. (creator tip)",
+    "If the game refuses a 1-character team, make your tile team from your 5 weakest units.",
+    "Buy extra attack charges before you pay for revives: each of the first 9 charges costs less than one revive after the 5th.",
+    "NPC defenders switch off your passives for 1–2 turns. Bring skill burst.",
+    "Anteiku (Toka [Maid Costume], Yoshimura [Readiness], Toka [June Bride], Hinami [Hina Matsuri]; back-up Akira [June Bride]) was the October 19 article's best defense team. Creators now call Anteiku weaker. (creator tip)"
+   ],
+   "sources": [
+    "Guild tips: experienced guild play (given October 26, 2026)",
+    "Research notes of October 26, 2026 (checked by an independent fact-check), sections A0–A8",
+    "October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 2 \"Starter Team 1\"",
+    "October 19 article \"Guild war and Carnival\", \"The teams\""
+   ],
+   "disagree": "Sources disagree: the October 19 article (October 19 article \"Meta teams\" section 2, October 19 article \"Guild war and Carnival\") suggests three full teams, with Teams 2 and 3 on defense. Creators also suggest walls of weak garrison teams. This page follows the guild tip: one strong team that attacks and defends, plus two small tile-grabbing teams.",
+   "article": "legacy/guildwar.html"
+  },
+  {
+   "id": "pve",
+   "kind": "mode",
+   "title": "Story and PvE",
+   "play": [
+    {
+     "text": "Merge skill cards to Lv3 before you cast."
+    },
+    {
+     "text": "Cast Sen, Rize and Kurona first; cast Nutcracker last."
+    },
+    {
+     "text": "Enemy that heals? Bring Yakumo [Jason]: his Lethal stops all healing."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "Every No Org skill makes Nutcracker attack again for free (a 240% hit), so four No Org units hit over and over.",
+      "Sen gives +4% per No Org unit, even at 0★. Naki heals from the back-up slot.",
+      "Get Nutcracker to 1★ first: +30% No Org stats and every hit crits.",
+      "Source: research notes of October 26, 2026, section D (D-01, D-07)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Stronger account",
+     "units": [
+      "1174",
+      "1171",
+      "1142",
+      "1127",
+      "1177"
+     ],
+     "why": [
+      "The example roster from the October 19 article.",
+      "Use Kurona until you get Hideyoshi (+15% basic stats to every ally).",
+      "Source: October 19 article \"Meta teams\", section 2 \"Team 1 · No Org meta core\" (the article's example roster)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "No Nutcracker? Carry with Rize [Valentine's Day], Uta [Rescue] or Juzo [Pet Boy].",
+    "Chain Campaign is the best early gem source. Kill the final boss within 2 turns to clear the earlier stages too.",
+    "Abyssal Battlefield: you bring 1 character and it counts as full stars. Nutcracker is your best."
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section D",
+    "October 19 article \"Meta teams\", section 2 \"Starter Team 1\" and \"Team 1 · No Org meta core\"",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": "Sources disagree: the research notes (section D, D-06) give a late-game team of Nutcracker, Nishiki [Orochi], Rize [Seaside], Roma [Mad Clown] and Hideyoshi, with back-up Akira [June Bride], and other notes list 5 field units. This card shows the October 19 article's team as 4 on the field plus 1 back-up, the shape creator videos use.",
+   "article": "legacy/meta.html"
+  },
+  {
+   "id": "arena",
+   "kind": "mode",
+   "title": "Arena",
+   "play": [
+    {
+     "text": "Cast Sen first: after her next skill, your team is immune to debuffs for one turn."
+    },
+    {
+     "text": "Merge cards to Lv3 before you cast. A Lv3 cast clears control effects."
+    },
+    {
+     "text": "Against Toka [Maid Costume], hit her with Rize and Naki. Full Weak stuns her and stops her counters."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1036",
+      "1018"
+     ],
+     "why": [
+      "Rize and Naki are SKL, so they beat the SPD meta units (Toka [Maid Costume], Yakumo [Natsu Matsuri]).",
+      "Naki moves to the field. Kurona fills the back-up slot.",
+      "Source: research notes of October 26, 2026, section B3 (B-25, B-28)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta (all units)",
+     "units": [
+      "1174",
+      "1127",
+      "1142",
+      "1114",
+      "1166"
+     ],
+     "why": [
+      "The top No Org team in creator videos. No Org is still called number one after the October 14 patch.",
+      "Back-up: Akira if you go second, Roma [Mad Clown] if you go first.",
+      "Akira [June Bride] came only from a gift-pack chain that has ended.",
+      "Source: October 19 article \"Meta teams\", section 4 \"Endgame team per faction\", No Organization."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "Toka [Maid Costume] counters every skill you cast for 280%. Above 50% HP, one hit takes at most 45% of her HP, so plan on 3 or more hits. Don't cast Nutcracker while she holds Patience.",
+    "Yakumo [Natsu Matsuri]: focus him with SKL units before his 4th Festival Point.",
+    "You get 5 free fights a day; they refresh at 05:00. Higher CP moves first.",
+    "On a new server, rush Arena early: first-time rank 1 pays 1,500 Diamonds. (creator tip)",
+    "Swaps: Rize [Valentine's Day] for Nishiki; Uta [The Past]; Rize [Seaside]."
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section B3",
+    "October 19 article \"Meta teams\", section 1 \"Meta B · No Organization\"",
+    "October 19 article \"Meta teams\", section 3 \"Beat Toka [Maid Costume]\""
+   ],
+   "disagree": "Sources disagree: the research notes also list a mixed meta team built from skill text (Toka [Maid Costume], Nishiki [Orochi], Rize [Seaside], Juzo [False Girl], Roma [Mad Clown]; back-up Miza). This card shows the No Org team from creator videos.",
+   "article": "legacy/meta.html"
+  },
+  {
+   "id": "carnival",
+   "kind": "mode",
+   "title": "Carnival Arena",
+   "play": [
+    {
+     "text": "You bring 3 teams; the best of 3 fights wins."
+    },
+    {
+     "text": "Spend all 10 tickets every day before 21:00."
+    },
+    {
+     "text": "Put your Carnival Tokens into one Paragon team: the one you use most here."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Team 1 · free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "Team 1 is your free No Org team.",
+      "Team 2: Yakumo [Jason], Shu [Gourmet], Kureo, Enji and your best SSR. All four are STR, so add an SKL unit if you own one.",
+      "Team 3: your leftovers. A 1-character team is allowed here; use it as a sacrifice against their best team. (unconfirmed)",
+      "Source: research notes of October 26, 2026, section B2 (B-13, B-15, B-17)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta · No Org",
+     "units": [
+      "1174",
+      "1114",
+      "1171",
+      "1177",
+      "1166"
+     ],
+     "why": [
+      "The source lists six units; a team is 4 on the field plus 1 back-up, so Hideyoshi is left out. Use him in place of any field unit you lack.",
+      "Aogiri meta (pick 4 + 1 of these): Black Rabbit, Ayato [Wings of Ardor], Ayato [1.5th Anniversary], Yakumo [Natsu Matsuri], Noro, with Miza in back-up.",
+      "Anteiku meta (pick 4 + 1 of these): Toka [Maid Costume], Ken [√A], Toka [Flame Strike], Yoshimura [Readiness], Toka [June Bride], with Toka [1st Anniversary] in back-up.",
+      "Source: research notes of October 26, 2026, section B2 (B-18)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "To enter, reach Arena Gold 5 before Monday 05:00 of Carnival week.",
+    "Carnival Arena is an auto fight against saved line-ups. Build teams the AI plays well: one strong area-attack unit per team. (creator tip)",
+    "Put your 2 strongest teams against their 2 weakest; you only need 2 wins. (unconfirmed)",
+    "Region Breakthrough: HP carries over between fights, so start with full teams. Use the 3 free sweeps each day, and clear as deep as you can before Monday 05:00.",
+    "Recruitment: pull only in blocks of 100. Each 100 pulls gives a chest.",
+    "Do the weekly quests: about 2,000 Tokens and 1,050 Diamonds a week.",
+    "On a new server, creators skip the first two Carnivals and save. (creator tip)",
+    "Carnival 1 on the NA relaunch server most likely starts Friday, October 30 (server day 19). (unconfirmed)",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), sections B1 and B2",
+    "October 19 article \"Guild war and Carnival\", Carnival section"
+   ],
+   "disagree": "Sources disagree: the October 19 article said to keep your best team for the end in Region Breakthrough. The game rules (HP carries over) and the research notes say to start with full teams.",
+   "article": "legacy/guildwar.html"
+  },
+  {
+   "id": "trial-noorg",
+   "kind": "mode",
+   "title": "Tower Trials: No Org trial",
+   "play": [
+    {
+     "text": "Faction trials only let in that faction, so field four No Org units."
+    },
+    {
+     "text": "Attribute trials only let in that attribute; PSY, WIT and DST units can enter any."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1001",
+      "1174",
+      "1142",
+      "1018",
+      "1004"
+     ],
+     "why": [
+      "All No Org, so every cast triggers Nutcracker.",
+      "Shu goes in back-up once you have him. Naki is Aogiri and can't enter.",
+      "Source: October 19 article \"Meta teams\", section 5 \"Endless Trial (Tower)\"."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Stronger account",
+     "units": [
+      "1174",
+      "1171",
+      "1142",
+      "1001",
+      "1177"
+     ],
+     "why": [
+      "All No Org. Kurona can replace Rize [Binge Eater].",
+      "Source: October 19 article \"Meta teams\", section 5 \"PvE: team per mode\" (the article's example roster)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "The October 19 article calls this mode Endless Trial.",
+    "Fights last at most 20 rounds.",
+    "STR trial: Nutcracker, Yakumo [Jason], Kureo, Enji, Shu [Gourmet].",
+    "SKL trial: Rize [Binge Eater], Naki [Crybaby]. SPD trial: Sen, Kurona, Toka [Rabbit].",
+    "Aogiri, CCG and Anteiku trials are your weakest: fill them with leveled spares."
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section D (Tower Trials)",
+    "October 19 article \"Meta teams\", section 5 \"Endless Trial (Tower)\""
+   ],
+   "disagree": "Sources disagree: the \"Tower Trials\" table in the research notes on meta teams lists some units with other attributes (for example Nutcracker as SPD). The game data and the October 19 article list Nutcracker as STR.",
+   "article": "legacy/meta.html"
+  },
+  {
+   "id": "boss-bin",
+   "kind": "boss",
+   "title": "Elder & Younger Bin",
+   "mode": "Event Conquest",
+   "play": [
+    {
+     "text": "Bring CCG units: the brothers take 30% more damage from CCG."
+    },
+    {
+     "text": "Keep Younger Bin Weak. Weak cancels his Warding and stops him reviving Elder."
+    },
+    {
+     "text": "Stuns and skill-level cuts don't work on either brother."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1010",
+      "1174",
+      "1142",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Kureo is the free CCG unit. He is STR, so he beats the SKL version.",
+      "Against the STR version, swap in Juzo [Scorpion] (SPD, day-43 shop).",
+      "Source: research notes of October 26, 2026, section C1 (C-04)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1102",
+      "1169",
+      "1150",
+      "1103",
+      "1170"
+     ],
+     "why": [
+      "All CCG, for the +30%.",
+      "SKL boss: STR CCG (Kureo, Shirazu). STR boss: SPD (Haise [Mentor], Urie). PSY boss: WIT (Haise [Sealed Memory], Arima [Invincible]).",
+      "Source: research notes of October 26, 2026, section C1 (C-05)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "Elder can't die while Younger lives; he stays at 1 HP.",
+    "When Younger drops under 50%, 40%, 35% and 30% HP, Elder hits your whole team for 500%.",
+    "Sources disagree on two points. Kill order: burst Younger from full to 0 in one turn (October 19 article), or push Elder to 1 HP first and then kill Younger (game data; unconfirmed). Stuns: the October 19 article says to save a stun to finish Elder, but the game data says both brothers are immune to disables.",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C1",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "elder-younger-bin"
+  },
+  {
+   "id": "boss-owl",
+   "kind": "boss",
+   "title": "One-Eyed Owl",
+   "mode": "Conquest and Formidable",
+   "play": [
+    {
+     "text": "Shield your team every enemy turn: his turn-start hit does +500% to units without a shield."
+    },
+    {
+     "text": "Kill the parts and adds first: while 3 allies live, he takes 90% less damage."
+    },
+    {
+     "text": "Keep Lethal on him. It blocks his heal, and while he has a debuff he can't reset your skill levels."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1004",
+      "1012",
+      "1174",
+      "1142",
+      "1036"
+     ],
+     "why": [
+      "Shu [Gourmet]'s Stance gives the whole team a shield.",
+      "Yakumo [Jason] puts Lethal on the boss.",
+      "Source: research notes of October 26, 2026, section C2 (C-08)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1089",
+      "1143",
+      "1173",
+      "1168",
+      "1166"
+     ],
+     "why": [
+      "Toka [Anteiku] shields the team every turn. Roma [Anteiku] gets +30% in PvE.",
+      "Akira [June Bride] adds shields from the back-up slot.",
+      "Source: research notes of October 26, 2026, section C2 (C-09)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "He heals 50% of his max HP at the start of his turn unless something stops healing.",
+    "From turn 2, his Hatred target takes 1,500%.",
+    "Below 30% HP he stacks Barriers. Strip them with cheap hits that hit many times.",
+    "Sweep Owl Hard every day for Crimson Crystals. (creator tip)",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C2",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "one-eyed-owl"
+  },
+  {
+   "id": "boss-world1",
+   "kind": "boss",
+   "title": "World Boss 1: Bin Brothers (STR)",
+   "mode": "World Boss",
+   "play": [
+    {
+     "text": "SPD units beat it, and PSY and WIT units also deal 50% more."
+    },
+    {
+     "text": "Use only Lv2 and Lv3 cards: Lv1 skills and Ultimates deal 50% less."
+    },
+    {
+     "text": "Open with SPD hits: each one cuts its DEF by 15% (up to 5 times)."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1018",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Sen and Kurona are SPD, so they beat the boss.",
+      "It hits your lowest-HP unit every turn; Naki's back-up heal helps. Kureo also works in back-up.",
+      "Source: research notes of October 26, 2026, section C3 (C-14)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1174",
+      "1114",
+      "1127",
+      "1148",
+      "1179"
+     ],
+     "why": [
+      "Nishiki [Orochi] and Hideyoshi are PSY, so they deal 50% more.",
+      "Rize [Valentine's Day] is SPD. Toka [Maid Costume] (SPD) works in her place.",
+      "Source: research notes of October 26, 2026, section C3 (C-15)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "World Bosses can't be killed. You are ranked by the damage you deal.",
+    "You get 3 tries a day, and quitting a bad hand is free.",
+    "Weak and debuffs don't land on World Bosses.",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C3",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "world-glo1"
+  },
+  {
+   "id": "boss-world2",
+   "kind": "boss",
+   "title": "World Boss 2: Tatara (SKL)",
+   "mode": "World Boss",
+   "play": [
+    {
+     "text": "STR units beat it, and PSY and WIT units also deal 50% more."
+    },
+    {
+     "text": "It shields itself for 20% of the damage it took last turn."
+    },
+    {
+     "text": "When that shield ends, it hits your highest-ATK unit for 260% and adds Lethal."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1004",
+      "1142",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Nutcracker and Shu [Gourmet] are STR.",
+      "Shu's Stance shields the whole team.",
+      "Source: research notes of October 26, 2026, section C4 (C-18)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1174",
+      "1177",
+      "1114",
+      "1127",
+      "1179"
+     ],
+     "why": [
+      "Roma [Mad Clown] cuts enemy shield gain by 40%, so its shield is smaller.",
+      "Miza strips its shield every turn, which also sets off the 260% hit. Use her only when you can take that hit.",
+      "Source: research notes of October 26, 2026, section C4 (C-17, C-19)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "World Bosses can't be killed. You are ranked by the damage you deal.",
+    "You get 3 tries a day, and quitting a bad hand is free.",
+    "Weak and debuffs don't land on World Bosses.",
+    "Use only Lv2 and Lv3 cards: Lv1 skills and Ultimates deal 50% less.",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C4",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "world-glo2"
+  },
+  {
+   "id": "boss-world3",
+   "kind": "boss",
+   "title": "World Boss 3: Kureo Mado (SPD)",
+   "mode": "World Boss",
+   "play": [
+    {
+     "text": "SKL units beat it, and PSY and WIT units also deal 50% more."
+    },
+    {
+     "text": "It hits back for 180% at any attacker with a debuff. Cast Sen first, then attack in her one turn of debuff immunity."
+    },
+    {
+     "text": "Don't let anyone die: each death sets off a 160% hit and a stun."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1142",
+      "1001",
+      "1174",
+      "1090",
+      "1036"
+     ],
+     "why": [
+      "Rize [Binge Eater], Uta [Rescue] and Naki are SKL, so they beat the boss.",
+      "No Uta [Rescue] yet (day-43 shop)? Use Kurona.",
+      "Source: research notes of October 26, 2026, section C5 (C-22)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1171",
+      "1114",
+      "1127",
+      "1174",
+      "1179"
+     ],
+     "why": [
+      "Rize [Seaside] is SKL. Nishiki [Orochi] and Hideyoshi are PSY.",
+      "Miza at 3★ cleanses your team when she enters. Akira [June Bride] also works in back-up.",
+      "Source: research notes of October 26, 2026, section C5 (C-23)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "It gains 10% ATK and lowers your DEF by 10% each turn (up to 3 times), so use your Lv3 cards on turns 1 and 2.",
+    "World Bosses can't be killed. You are ranked by the damage you deal.",
+    "You get 3 tries a day, and quitting a bad hand is free.",
+    "Weak and debuffs don't land on World Bosses.",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C5",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "world-glo3"
+  },
+  {
+   "id": "boss-org",
+   "kind": "boss",
+   "title": "Organization Boss: Yoshimura",
+   "mode": "Organization",
+   "play": [
+    {
+     "text": "Kill his minions first: each minion death deals 150% of its max HP to him."
+    },
+    {
+     "text": "His Fragile Attack makes every hit crit, except on a unit in a Stance (Shu [Gourmet])."
+    },
+    {
+     "text": "His attribute changes by phase. Swap in units that beat it."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1004",
+      "1036"
+     ],
+     "why": [
+      "Shu [Gourmet] holds the Stance.",
+      "Swap the back-up for Kureo when STR beats the current phase.",
+      "Source: research notes of October 26, 2026, section C6 (C-28)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1174",
+      "1114",
+      "1171",
+      "1177",
+      "1166"
+     ],
+     "why": [
+      "The No Org meta core, with Akira [June Bride] in back-up.",
+      "Source: research notes of October 26, 2026, section C6 (C-29)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "You get 3 fights a day. The Knockback phase resets on Monday and Friday.",
+    "Weak can't land while he has minions. Once it lands, he takes 50% more damage.",
+    "Some phases put Lethal on your whole team. Drop healers then.",
+    "A No Org-only team gets +20% dispatch progress. That bonus isn't fight damage, so send spare No Org units on dispatch instead of building the fight team around it.",
+    "Good assists: Renji (SPD, back-up), Nico, Sen, Uta, Hideyoshi. (creator tip)",
+    "A kill pays 500–700 gems. (creator tip)",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C6"
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "yoshimura-union"
+  },
+  {
+   "id": "boss-weekly",
+   "kind": "boss",
+   "title": "Weekly Challenge",
+   "mode": "Organization",
+   "play": [
+    {
+     "text": "You get 5 turns, and only your best run counts."
+    },
+    {
+     "text": "Use units that beat its attribute: that damage scores the most."
+    },
+    {
+     "text": "Hit hard while it is above 50% HP, and use area attacks (+50%)."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "Your free team. Nutcracker's free extra attacks are triggered skills.",
+      "Each triggered skill makes the boss take 20% more damage (up to 5 times).",
+      "Source: research notes of October 26, 2026, section C7 (C-33)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1174",
+      "1148",
+      "1114",
+      "1127",
+      "1166"
+     ],
+     "why": [
+      "Nutcracker's extra attacks plus two PSY units.",
+      "A Black Rabbit Aogiri team with area attacks also works.",
+      "Source: research notes of October 26, 2026, section C7 (C-33)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "Your organization's rank here decides guild-war entry: only the top 8 get in.",
+    "Each borrowed unit cuts your score by 20%. Borrow only a unit that adds more than 25% damage.",
+    "It deals 50% more to units with a debuff and takes 50% less from Ultimates.",
+    "Which game skills belong to this boss comes from research, not from the game screen. (unconfirmed)",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C7"
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "union-trigger"
+  },
+  {
+   "id": "boss-capture",
+   "kind": "boss",
+   "title": "Capture Simulation boss",
+   "mode": "Capture Simulation",
+   "play": [
+    {
+     "text": "Shield first: it takes 20% more from shielded attackers and hits unshielded units 20% harder."
+    },
+    {
+     "text": "Use Lv2 and Lv3 cards from units that beat its attribute (+30%)."
+    },
+    {
+     "text": "Your score is your best single fight, so restart a bad opening."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1004",
+      "1174",
+      "1142",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Shu [Gourmet]'s Stance shields the team.",
+      "Nutcracker at 1★ always crits.",
+      "Source: research notes of October 26, 2026, section C8 (C-36)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1089",
+      "1143",
+      "1168",
+      "1173",
+      "1166"
+     ],
+     "why": [
+      "Toka [Anteiku] shields the team every turn.",
+      "The source also lists Uta [Rescue]; leave him out to keep 4 on the field plus 1 back-up.",
+      "Source: research notes of October 26, 2026, section C8 (C-37)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "Its Weak bar caps at 4. Full Weak means it takes 30% more.",
+    "After its first skill each turn, all your units gain 1 Weak.",
+    "Uta [Rescue] and Akira aren't Anteiku, so they switch off Toka [Anteiku]'s all-Anteiku bonus.",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C8",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html",
+   "lab": "capture-field"
+  },
+  {
+   "id": "boss-noro",
+   "kind": "boss",
+   "title": "Formidable Noro",
+   "mode": "Formidable",
+   "play": [
+    {
+     "text": "Bring Aogiri: he takes 50% less damage from everyone else."
+    },
+    {
+     "text": "Kill him within 4 turns. On turn 5 he hits for 2,000% and turns off your passives."
+    },
+    {
+     "text": "He is SKL, so STR Aogiri units beat him."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1012",
+      "1036",
+      "1122",
+      "1020",
+      "1137"
+     ],
+     "why": [
+      "Yakumo [Jason] is the only free STR Aogiri unit. The others add the Aogiri bonus only.",
+      "Yakumo [Torture] and Tatara come from the day-43 shop.",
+      "Source: research notes of October 26, 2026, section C9 (C-40)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1155",
+      "1147",
+      "1161",
+      "1175",
+      "1179"
+     ],
+     "why": [
+      "All Aogiri. Ayato [1.5th Anniversary] is STR.",
+      "Source: research notes of October 26, 2026, section C9 (C-40)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "He revives twice. Remove his Rift with single-target hits that aren't skills.",
+    "He counters the first skill you cast each turn.",
+    "Add any STR Aogiri unit you own: Ayato [Rebelwing], Tatara [Revenge], Ayato [1.5th Anniversary].",
+    "Creators put LR cells on Noro and Naki. (creator tip)",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C9",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html"
+  },
+  {
+   "id": "boss-centipede",
+   "kind": "boss",
+   "title": "Formidable Centipede Kaneki",
+   "mode": "Formidable",
+   "play": [
+    {
+     "text": "Attributes don't matter: he ignores attribute advantage."
+    },
+    {
+     "text": "Bring CCG: he takes 30% more from CCG and 30% less from Aogiri."
+    },
+    {
+     "text": "Break his part first, and finish him before his 5th turn."
+    }
+   ],
+   "rows": [
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1010",
+      "1123",
+      "1075",
+      "1116",
+      "1036"
+     ],
+     "why": [
+      "Four CCG units on the field, Naki in back-up. The source also lists Nutcracker; she is mostly idle in a CCG team, so she is left out.",
+      "Juzo [Scorpion] and Iwao come from the day-43 shop.",
+      "Source: research notes of October 26, 2026, section C9 (C-39)."
+     ],
+     "backup": true
+    },
+    {
+     "label": "Meta",
+     "units": [
+      "1102",
+      "1169",
+      "1150",
+      "1116",
+      "1170"
+     ],
+     "why": [
+      "All CCG. He targets PSY units first, so don't bring a PSY carry.",
+      "Source: research notes of October 26, 2026, section C9 (C-39)."
+     ],
+     "backup": true
+    }
+   ],
+   "more": [
+    "He Disrupts your team at the start.",
+    "While he isn't Disrupted, he charges up a Lethal attack, so Disrupt him.",
+    "Pop his Hardshell with a cheap hit.",
+    "These teams come from skill text and creator advice. None has been tested in a fight here. (unconfirmed)"
+   ],
+   "sources": [
+    "Research notes of October 26, 2026 (checked by an independent fact-check), section C9",
+    "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
+   ],
+   "disagree": null,
+   "article": "legacy/meta.html"
+  }
+ ],
+ "guild_tip": "Guild tip (from experienced guild play)",
+ "howto": {
+  "home": [
+   {
+    "text": "Play No Organization, and build one strong team first."
+   },
+   {
+    "text": "Guild War: one strong team, plus two 1–2 character teams that only grab free tiles.",
+    "tip": true
+   },
+   {
+    "text": "Save 90,000 Diamonds for one limited banner you can finish (300 pulls)."
+   },
+   {
+    "text": "Spend real money only inside a rebate window."
+   }
+  ],
+  "best-teams": [
+   {
+    "text": "Build one strong team first: the free team below works for story, arena and guild war."
+   },
+   {
+    "text": "Guild War: one strong team, plus two 1–2 character teams that only grab free tiles.",
+    "tip": true
+   },
+   {
+    "text": "Every team is 4 on the field plus 1 back-up."
+   },
+   {
+    "text": "Merge skill cards to Lv3 before you cast."
+   }
+  ],
+  "buy": [
+   {
+    "text": "Spend real money only inside a rebate window; the best is server days 34–55."
+   },
+   {
+    "text": "If you buy only one thing, buy the Endless Trials Pass #1."
+   },
+   {
+    "text": "Never buy plain Diamonds."
+   }
+  ],
+  "tiers": [
+   {
+    "text": "S: build your team around it. A: strong in the right team."
+   },
+   {
+    "text": "B: useful, with limits. C: level only. D: skip."
+   },
+   {
+    "text": "Some C units are in the free team (Rize [Binge Eater], Kurona). Keep using them there."
+   },
+   {
+    "text": "Use \"At 0★\" for units you own one copy of; \"At full stars\" for Abyssal Battlefield."
+   }
+  ],
+  "characters": [
+   {
+    "text": "Level only your main team (5–6 units, back-up included)."
+   },
+   {
+    "text": "A second copy (1★) is the best upgrade: it unlocks the second passive."
+   },
+   {
+    "text": "3★ and 4★ add more passives; 6★ upgrades the active skill."
+   },
+   {
+    "text": "Put Limit Crystals into your main carry."
+   }
+  ],
+  "teams": [
+   {
+    "text": "Start from a line-up on Best teams."
+   },
+   {
+    "text": "Use 4 on the field plus 1 back-up."
+   },
+   {
+    "text": "The back-up only uses passives marked \"[Effective also in back-up state]\"."
+   },
+   {
+    "text": "One character can't be in two teams."
+   }
+  ],
+  "bosses": [
+   {
+    "text": "Bring attributes that beat the boss: STR beats SKL, SKL beats SPD, SPD beats STR."
+   },
+   {
+    "text": "Merge skill cards to Lv3 before you cast."
+   },
+   {
+    "text": "Stun and full Weak stop counters; Disruption does not."
+   }
+  ],
+  "spend": [
+   {
+    "text": "Never start a banner you can't finish: pity doesn't carry over."
+   },
+   {
+    "text": "Limited banners guarantee the unit at 300 pulls: bank 90,000 Diamonds first."
+   },
+   {
+    "text": "Diamond Spring: take the 48-hour option when you'll be away a day."
+   }
+  ],
+  "progression": [
+   {
+    "text": "Level only your main team (5–6 units, back-up included)."
+   },
+   {
+    "text": "A second copy (1★) is the best upgrade: it unlocks the second passive."
+   },
+   {
+    "text": "3★ and 4★ add more passives; 6★ upgrades the active skill."
+   },
+   {
+    "text": "Put Limit Crystals into your main carry."
+   }
+  ]
+ },
+ "howto_sources": {
+  "home": "October 19 article \"Planner by server day\", \"If you read nothing else\"; Guild tips: experienced guild play (given October 26, 2026); Research notes of October 26, 2026 (checked by an independent fact-check), section E (E-14)",
+  "best-teams": "October 19 article \"Meta teams\", sections 0 and 5; Guild tips: experienced guild play (given October 26, 2026)",
+  "buy": "October 19 article \"Pull and spend\", \"Money rules\"",
+  "tiers": "October 19 article \"Tier list\", tier headings and intro; Research notes of October 26, 2026 (checked by an independent fact-check), sections A6 and D",
+  "characters": "October 19 article \"Pull and spend\", \"F2P pulling rules\" and \"Carnival Exchange\"; Research notes of October 26, 2026 (checked by an independent fact-check), section E (E-01)",
+  "teams": "October 19 article \"Meta teams\", section 0 and section 2",
+  "bosses": "October 19 article \"Meta teams\", section 0 \"Read this first\"; Research notes of October 26, 2026 (checked by an independent fact-check), section C",
+  "spend": "October 19 article \"Pull and spend\", \"F2P pulling rules\" and \"Income per day\"; Research notes of October 26, 2026 (checked by an independent fact-check), section E (E-14, E-15)",
+  "progression": "October 19 article \"Pull and spend\", \"F2P pulling rules\" and \"Carnival Exchange\"; Research notes of October 26, 2026 (checked by an independent fact-check), section E (E-01)"
+ },
+ "no_team": [
+  {
+   "name": "Event Conquest Tatara",
+   "tip": "Use only units that beat his attribute: STR CCG against SKL, SKL CCG against SPD, WIT CCG against PSY. Other attributes set off a 220% counter."
+  },
+  {
+   "name": "Conquest Nutcracker",
+   "tip": "She is WIT and takes 30% more from CCG and 30% less from everyone else. Bring PSY CCG units: Arima [CCG's Reaper], Juzo [False Girl] or Amon [Dojima Kai]."
+  },
+  {
+   "name": "Conquest Orochi",
+   "tip": "He is DST, so only DST units beat him (Black Rabbit, Ken [√A]). His skills switch off your passives for 1–2 turns."
+  },
+  {
+   "name": "Conquest Yamori",
+   "tip": "Fill his Weak bar first: one version takes 90% less from attack skills until it is Weak."
+  },
+  {
+   "name": "Boss Challenge (character events)",
+   "tip": "Bring the required unit (you can borrow it), fill Weak, then burst. Don't overfill Weak."
+  },
+  {
+   "name": "Co-op War",
+   "tip": "Never cast Lv1 skills (70% less damage). It hits everyone for 25% of max HP each turn through shields, so bring max HP and heals."
+  }
+ ],
+ "no_team_source": "Research notes of October 26, 2026 (checked by an independent fact-check), section C9",
+ "tier_disagree": "Sources disagree: the tier list rates each unit on its own, and some free units land in C. The free teams on Best teams still use them (Rize [Binge Eater], Kurona, Shu [Gourmet], Yakumo [Jason], Kureo). They cost nothing, and the No Org ones (Rize, Kurona, Shu) make Nutcracker attack again.",
+ "buy": {
+  "must": [
+   {
+    "name": "Endless Trials Pass #1",
+    "price": "$4.99",
+    "why": "The best value per dollar.",
+    "math": "12,400 banner value, 2,485 per $1. Appears at Chain Level 70.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "Chain Level Pass #1",
+    "price": "$4.99",
+    "why": "Nearly as good, and you can buy it any time.",
+    "math": "11,800 banner value, 2,365 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "Monthly Login Contract",
+    "price": "About $4.99",
+    "why": "Creators' favorite monthly buy; buy it in days 34–55.",
+    "math": "800 + 300 a day for 28 days = 9,200 banner value: 1,844 per $1. Check the price in game. Two kinds; they stack.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\"; October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Holiday sign-in (Halloween, Christmas, Anniversary)",
+    "price": "$9.99",
+    "why": "Must buy only when it gives a whole unit you will use; otherwise it is only fair value.",
+    "math": "Halloween 2025 gave 20 free + 80 paid fragments of Arima [Halloween]: 8,400 banner value plus a whole unit. Without a whole unit: 8,100–8,400 banner value, 811–841 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   }
+  ],
+  "good": [
+   {
+    "name": "Endless Trials Pass #2",
+    "price": "$9.99",
+    "why": "Good value once you reach it.",
+    "math": "18,800 banner value, 1,882 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "Later progress passes",
+    "price": "$9.99–$19.99",
+    "why": "Still good value as you progress.",
+    "math": "Endless Trials #3 $14.99 (25,200), Chain Level #2 $9.99 (16,100), Chain Level #3 $14.99 (21,600), Endless Trials #4 $19.99 (31,600): 1,441–1,681 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "Limited-Time Weekly Pass",
+    "price": "$2.99",
+    "why": "Cheap; sold only in server days 1–28.",
+    "math": "600 + 500 a day for 7 days = 4,100 banner value, 1,371 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "Premium Monthly Contract",
+    "price": "Check in game",
+    "why": "Fair value.",
+    "math": "18,400 over 28 days: about 920–1,227 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "New Year sign-in",
+    "price": "$9.99",
+    "why": "Fair value, around day 76 and later.",
+    "math": "2,400 Diamonds + 28 tickets + 130 Limit Crystals = 10,800 banner value, 1,081 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "Carnival Pass",
+    "price": "About $20",
+    "why": "For mid spenders: lots of Carnival tickets.",
+    "math": "Creator verdict (Shi, Spectre).",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Chain Campaign boost packs",
+    "price": "$5, $5, $10",
+    "why": "The most tickets per dollar.",
+    "math": "\"$25 for a hundred pulls and some diamonds\" (Shi). Regular tickets.",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Event wheel ticket only",
+    "price": "About $0.30 a day",
+    "why": "Buy it right after the countdown resets.",
+    "math": "It earns no VIP points. Never buy the wheel bundles.",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Cell Creation packs",
+    "price": "$5 or $10",
+    "why": "Only if you need one specific cell.",
+    "math": "Value drops above $10.",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   }
+  ],
+  "gone": [
+   {
+    "name": "Novice Limited-Time Sign-In (paid track)",
+    "price": "$9.99",
+    "why": "Gone after server day 14 (sold only in server days 1–14).",
+    "math": "4,200 Diamonds + 26 tickets + an SSR Selection Card + 60 Limit Crystals: about 1,201 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   }
+  ],
+  "skip": [
+   {
+    "name": "Plain Diamond top-up",
+    "price": "Any",
+    "why": "The worst deal: 80 Diamonds per $1.",
+    "math": "Even with the one-time triple first top-up, about $100 buys 24,000. About $90 of passes buys about 136,200 banner value.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\"; October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Limited-time Sign-in (launch-era selector)",
+    "price": "$14.99",
+    "why": "Poor value.",
+    "math": "5,600 banner value, 374 per $1.",
+    "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
+   },
+   {
+    "name": "$50 character pack",
+    "price": "$50",
+    "why": "Never worth it.",
+    "math": "Creator verdict (Shi).",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Advancement packs",
+    "price": "$10, $20, $40",
+    "why": "Poor value.",
+    "math": "\"Such bad value for every single pack\" (Shi). $20 gives about 4,000.",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "First top-up tiers",
+    "price": "$20",
+    "why": "Poor value.",
+    "math": "$20 gives about 4,500.",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Paid Diamond Spring",
+    "price": "$5",
+    "why": "Mediocre; only for big spenders.",
+    "math": "$5 → 1,000 or $5 → 2,500.",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   },
+   {
+    "name": "Wheel of Fortune bundles",
+    "price": "Varies",
+    "why": "Take the free spins only.",
+    "math": "The wheel runs in 21-day cycles.",
+    "source": "October 19 article \"Pull and spend\", \"Money rules\""
+   },
+   {
+    "name": "Panaceas or Force Talents with Diamonds",
+    "price": "Diamonds",
+    "why": "Get Panaceas from Carnival chests instead.",
+    "math": "Creator verdict (Aslan).",
+    "source": "October 19 article \"Pull and spend\", \"What creators say is worth buying\""
+   }
+  ]
+ },
+ "buy_rules": [
+  "Banner value = Diamonds + 300 for each Event Summon Ticket.",
+  "Buy inside a rebate window: Novice Rebate days 1–7, 8–14, 15–21 and 26–32; Carnival Support days 19–25; the Diamond Rebate (the best) days 34–55.",
+  "There is no Black Friday or Thanksgiving event in the game data, so don't wait for one.",
+  "$100 for one event? Make it Christmas: about $90 of passes and contracts bought Nov 14 – Dec 5 gives about 136,200 banner value (about 454 pulls) by Dec 26."
+ ],
+ "tiers": [
+  {
+   "id": "1155",
+   "name": "Ayato [Black Rabbit]",
+   "faction": "aogiri",
+   "attribute": "DST",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ 180% AoE every turn start (non-active, never countered), −15% DEF/+10% taken; marks enemies with Capture (−40% lifesteal), which turns into Limit (passives disabled) once enough damage is recorded; 3+ Aogiri applies Capture at battle start. 1★ Aogiri +18%. DST beats every attribute.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1103",
+   "name": "Juzo [False Girl]",
+   "faction": "ccg",
+   "attribute": "PSY",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ 200% AoE + 6% heal every 4 stacks (4 per own active); 1★ ALL allies +16% all stats (any faction).",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1114",
+   "name": "Nishiki [Orochi]",
+   "faction": "noorg",
+   "attribute": "PSY",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ after an enemy casts an active, strips up to 4 of their buffs/stances (takes Maid Toka's Fully Prepared off her), gaining 1 Kagune Activation stack per effect removed; at 4 stacks he fires 270% at the top-ATK enemy (+2 Weak). 1★ No Org +20% all stats +20% dmg.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1178",
+   "name": "Toka [Maid Costume]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ AoE active; holds Patience through your turn and counters EVERY active you cast for 280% (ignores DEF, triple crit), halving that caster's next non-active hit; skill level +1 each turn. 1★ Anteiku +30%, and above 50% HP no single hit can take more than 45% of her max HP (30% lifesteal below 50%). 3★ Courtesy on your top-ATK unit (−6% stats, −10% dmg) + Lethal each turn. Stun her (Weak from SKL/DST hits) or strip Patience to stop the counters; Disruption does not.",
+   "get": "limited banner ended 2026-10-13; no rerun in data · in the live calendar Legacy Custom banner until ~Oct 29 (player report)"
+  },
+  {
+   "id": "1174",
+   "name": "Nutcracker",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ 240% Bonus-Attack (ignores DEF) after EVERY No Org active + team heal 20% of dmg. 1★ No Org +30%, all allies always crit (Battle Adaptation) and take −40% extra damage. 3★ Offensive Mark; executes below 1% HP through death-immunity. She is STR, so Maid Toka and Natsu Jason (SPD) restrict her.",
+   "get": "Wish Rebate (closed) · in the live calendar Legacy Custom banner until ~Oct 29 (player report)"
+  },
+  {
+   "id": "1179",
+   "name": "Miza",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ back-up: strips enemy shields + 10% current HP each turn (cap 100% her HP); 1★ Aogiri +20%; 3★ 500% entry + Lethal.",
+   "get": "rate-up banner (not limited) live until 2026-10-27 (pity 200)"
+  },
+  {
+   "id": "1161",
+   "name": "Ayato [1.5th Anniversary]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ free active on lowest-HP enemy every turn + all allies +20% active/+30% non-active dmg.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1169",
+   "name": "Shirazu",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ Lv2 active recast on lowest-HP enemy + control/Weak cleanse at 2 stacks; 1★ CCG +24% +15% active dmg.",
+   "get": "past limited banner; no rerun in data"
+  },
+  {
+   "id": "1102",
+   "name": "Haise [Mentor]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ makes the top-ATK CCG ally cast the same-level active on your target (+10%) and cleanses — a free extra active per cast; 1★ CCG +24%.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins) · listed for a shop around day 75 (unconfirmed; the entry's date predates his release, so it may be a placeholder)"
+  },
+  {
+   "id": "1166",
+   "name": "Akira [June Bride]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ back-up: clears Weak each turn, raises all Lv1 skills to Lv2, +15% active dmg, 20% shields; 1★ allies +18%, enemies -18% (back-up).",
+   "get": "June Bride gift-pack chain (2026-06-23 to 07-07, ended); no shop entry"
+  },
+  {
+   "id": "1173",
+   "name": "Yoshimura [Readiness]",
+   "faction": "anteiku",
+   "attribute": "PSY",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★ Grudge extra dmg; 3★ +18% all stats to all allies.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1150",
+   "name": "Haise [Sealed Memory]",
+   "faction": "ccg",
+   "attribute": "WIT",
+   "t0": "A",
+   "tf": "S",
+   "why": "Enemy −6% stats/−15% dmg/lifesteal 0 & no shields per cast. 1★ CCG +16%, and allies' Command cuts all extra damage taken to 1 (strong into Natsu Jason). The star preview maps both passives to 1★ — check in-game.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1168",
+   "name": "Ken [√A]",
+   "faction": "anteiku",
+   "attribute": "DST",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★ 200% AoE + shield strip every 3 enemy actives; 1★ all allies +12%.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1160",
+   "name": "Toka [Flame Strike]",
+   "faction": "anteiku",
+   "attribute": "PSY",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★ Immortal for 2 turns (HP can't drop below 1), then Vigor; 150% AoE whenever any character takes fatal damage. 1★ Anteiku +30% max HP / +20% dmg.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1147",
+   "name": "Ayato [Wings of Ardor]",
+   "faction": "aogiri",
+   "attribute": "WIT",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★ triple pursuit after Aogiri actives; 1★ Aogiri +16%.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1146",
+   "name": "Arima [Invincible]",
+   "faction": "ccg",
+   "attribute": "WIT",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ Gaze + 180% pursuit after own active; 1★ CCG +12%.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1177",
+   "name": "Roma [Mad Clown]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "S",
+   "why": "All passives back-up tagged. 0★ Fortress: −40% enemy shields, and an ally who loses a shield clears Weak, drops Control effects and turns Control-immune; Carnival stacks before every active. 1★ all allies +18% stats +30% CRIT/CRIT DMG.",
+   "get": "past limited banner; no rerun in data"
+  },
+  {
+   "id": "1175",
+   "name": "Yakumo [Natsu Matsuri]",
+   "faction": "aogiri",
+   "attribute": "SPD",
+   "t0": "S",
+   "tf": "S",
+   "why": "0★ +1 Festival Point after ANY unit acts; at 4 he fires Bash (enemy DEF ×0.5) + Rapid Combo AoE, both non-active so they can't be countered. 1★ Aogiri +16%, and with 3+ Aogiri every enemy starts in Turmoil (−10% stats, extra damage fixed to 1 for turn 1). Creator tests call him the hard counter to Anteiku (Aslan, 2026-08).",
+   "get": "past limited banner; no rerun in data · in the live calendar Legacy Custom banner until ~Oct 29 (player report)"
+  },
+  {
+   "id": "1171",
+   "name": "Rize [Seaside]",
+   "faction": "noorg",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★ 15% shield, +30% ATK, soaks 50% of single-target hits on allies + 150% counter; 1★ No Org +30%.",
+   "get": "past limited banner; no rerun in data"
+  },
+  {
+   "id": "1162",
+   "name": "Toka [June Bride]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★ Lv2 active at battle start + Anteiku effect; 1★ Anteiku +24%.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1116",
+   "name": "Urie",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ Blade Boost stacks from CCG actives; 1★ +5% stats per CCG ally, and Weak/control immunity only while Kagune Edge Ascension is active (10 stacks).",
+   "get": "in the novice Legacy selector (closes as server day 15 begins) · Unlimited Recruitment pool (days 1-14)"
+  },
+  {
+   "id": "1170",
+   "name": "Mitsuki",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ back-up: 400% ATK on entry vs marked top-ATK enemy; 1★ CCG +20% stats/PEN/CRIT DMG (back-up).",
+   "get": "in the novice Legacy selector (closes as server day 15 begins) · Unlimited Recruitment pool (days 1-14)"
+  },
+  {
+   "id": "1124",
+   "name": "Yoshimura [Cleaner]",
+   "faction": "noorg",
+   "attribute": "PSY",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ 180% AoE at max stacks + skill-level up; 3★ all allies +5% basic stats per No Org ally.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1129",
+   "name": "Ken [1st Anniversary]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ all-Anteiku buff; 1★ 210% hit on the lowest-HP enemy every turn end, plus 320% AoE if that target ends below 60% HP.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1158",
+   "name": "Tatara [Easter]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ back-up: 220% AoE + 2 Weak on entry; 1★ Aogiri +20%/+8% ATK (back-up).",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1135",
+   "name": "Noro",
+   "faction": "aogiri",
+   "attribute": "WIT",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ 140% AoE + debuff at every enemy turn start.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1127",
+   "name": "Hideyoshi",
+   "faction": "noorg",
+   "attribute": "PSY",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ +15% basic stats to ALL allies at battle start (no faction lock).",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1143",
+   "name": "Roma [Anteiku]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ 'In PvE battles' Anteiku +30% basic stats + next-dmg +30% . PvE only.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1148",
+   "name": "Rize [Valentine's Day]",
+   "faction": "noorg",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ 160% Bond Attack after every No Org active; 1★ No Org +16%.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1142",
+   "name": "Sen",
+   "faction": "noorg",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ +4% basic stats & block to ALL allies per No Org ally, own skill-level up, team debuff immunity after next active ; active heals all.",
+   "get": "Free: Unlimited Recruitment · in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1141",
+   "name": "Toka [New Year]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ 140% AoE every turn + Bell Chime detonation.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1145",
+   "name": "Uta [New Year]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ back-up tagged: No Org actives get PEN/ATK/dmg by skill level; 1★ No Org +16% (back-up).",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1144",
+   "name": "Hinami [Hina Matsuri]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ every turn all allies +10% dmg/-15% taken; at full HP top-ATK ally skill-level up.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1149",
+   "name": "Nishiki [Anteiku]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ back-up & Assistance tagged stack buff; 1★ Anteiku +16%.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins) · Unlimited Recruitment pool (days 1-14)"
+  },
+  {
+   "id": "1140",
+   "name": "Rize [Christmas]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ raises allies' skill levels after No Org skills; 1★ 280% Blessing hits.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1138",
+   "name": "Juzo [Halloween]",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ Misfortune stacks → control; 1★ +4% per CCG to all allies + skill-level ups.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1139",
+   "name": "Arima [Halloween]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "A",
+   "why": "Back-up tagged; 210% AoE on entry; +12% all allies (order unresolved).",
+   "get": "no source in data"
+  },
+  {
+   "id": "1128",
+   "name": "Toka [1st Anniversary]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "A",
+   "tf": "A",
+   "why": "Back-up tagged; 60% next-hit reduction for all-Anteiku teams.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1122",
+   "name": "Yakumo [Torture]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ Aogiri +16% basic stats and +20% dmg while on field — big for a 0★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1090",
+   "name": "Uta [Rescue]",
+   "faction": "noorg",
+   "attribute": "SKL",
+   "t0": "A",
+   "tf": "B",
+   "why": "0★ +4% all-ally basic stats per No Org/Anteiku incl. back-up (max +20%).",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1172",
+   "name": "Saiko [Neet Investigator]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "A",
+   "why": "0★ tank: immune to debuffs and Weak, +12% DEF, extra damage taken per round capped at 20% max HP; after her first action she heals 30% and stays debuff/Weak immune. Her 1★ (CCG +20%) and 3★ work in PvE only.",
+   "get": "past limited banner; no rerun in data"
+  },
+  {
+   "id": "1165",
+   "name": "Naki [1.5th Anniversary]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "A",
+   "why": "1★ 'In Stronghold Takeover' +20% (x2 for Aogiri) + shield strip/-30% lifesteal before actives.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1134",
+   "name": "Uta [The Past]",
+   "faction": "noorg",
+   "attribute": "PSY",
+   "t0": "B",
+   "tf": "A",
+   "why": "180% pursuit when monitored enemies cast; team +5% w/ No Org (order unresolved).",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1120",
+   "name": "Yoshimura [Owl (Anteiku)]",
+   "faction": "anteiku",
+   "attribute": "WIT",
+   "t0": "B",
+   "tf": "B",
+   "why": "Team Combined Force + DEF shred.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1125",
+   "name": "Arima [Second Owl Raid]",
+   "faction": "ccg",
+   "attribute": "WIT",
+   "t0": "B",
+   "tf": "A",
+   "why": "0★ +20% dmg vs max-stack targets.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1164",
+   "name": "Eto [3M Downloads]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ +5% DEF per Aogiri ally.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1071",
+   "name": "Yakumo [Warrior]",
+   "faction": "aogiri",
+   "attribute": "WIT",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ +3% target max HP per stack (cap 150% ATK) — good vs bosses.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1072",
+   "name": "Amon [Dojima Kai]",
+   "faction": "ccg",
+   "attribute": "PSY",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ 140% AoE + debuff every turn; 1★ DEF shred per CCG ally.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1137",
+   "name": "Naki [Prisoner]",
+   "faction": "aogiri",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "A",
+   "why": "Back-up tagged; 1★ +4% all stats per Aogiri ally.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1133",
+   "name": "Nishiki [Taiikusai]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "Passion stacks from Anteiku AoE skills.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1058",
+   "name": "Ayato [Wings of Power-seeker]",
+   "faction": "aogiri",
+   "attribute": "PSY",
+   "t0": "B",
+   "tf": "A",
+   "why": "0★ 180% bonus attack after each active by another Aogiri ally + skill-level drain.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1079",
+   "name": "Ken [Natsu Matsuri]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "+3% per Anteiku team buff (order unresolved).",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1083",
+   "name": "Juzo [Pet Boy]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "A",
+   "why": "0★ 150% ATK extra dmg on marked targets; 1★ 180% bonus + team +10% stats x2.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1123",
+   "name": "Juzo [Scorpion]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ all-CCG team +20% ATK +8% PEN.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1132",
+   "name": "Toka [Taiikusai]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ enemy ATK/DEF/dmg -10%.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1075",
+   "name": "Iwao",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "A",
+   "why": "CCG +20% basic stats while present + damage redirect (passive order unresolved).",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1078",
+   "name": "Toka [Natsu Matsuri]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "B",
+   "why": "Back-up tagged +12% all allies (order unresolved).",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1092",
+   "name": "Tatara [Revenge]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ death-save on top-ATK Aogiri.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1098",
+   "name": "Ayato [Tanabata]",
+   "faction": "aogiri",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ +10% all-ally stats per turn from Wish stacks.",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1099",
+   "name": "Hinami [Tanabata]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "Back-up tagged, all-Anteiku buffs (order unresolved).",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1101",
+   "name": "Arima [Half Year Anniversary]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ 130% AoE after actives with Discharge.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1074",
+   "name": "Yukinori [Arata proto (Rampage)]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ Warning→Disarm control; 160% AoE at 1★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1091",
+   "name": "Yoshitoki [Chief]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ 15% splash on Vulnerable targets for CCG hits.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1104",
+   "name": "Ayato [Easter]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "B",
+   "why": "Detonate +15% dmg (order unresolved).",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1073",
+   "name": "Kureo [Fueguchi Ni]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "All passives back-up tagged: 5% max-HP shields on CCG actives.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1089",
+   "name": "Toka [Anteiku]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ team shield 10% of her max HP every turn + debuff immunity for shielded Anteiku.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1077",
+   "name": "Shu [Mr.MM]",
+   "faction": "noorg",
+   "attribute": "SPD",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ lifesteal storage; 1★ up to 60% DR + cleanse.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1084",
+   "name": "Sen [Novelist]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "0★ Sharpen on top-ATK ally (cleanse + 10% ATK); team skill-level ramp at 1★.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1080",
+   "name": "Ken [Combat Outfit]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "B",
+   "tf": "B",
+   "why": "All passives back-up tagged (Fear; +30% Aogiri dmg at 3★).",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1036",
+   "name": "Naki [Crybaby]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "B",
+   "tf": "C",
+   "why": "0★ heal (8% max HP to allies hit last turn) is back-up tagged and 1★ PEN is back-up too: the best FREE back-up. Low stats cap it.",
+   "get": "Free: SSR Selection Card day 14 · Unlimited Recruitment pool (days 1-14)",
+   "note": "Rated B at one copy and C at full stars, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1056",
+   "name": "Shu [Bloody Feast]",
+   "faction": "anteiku",
+   "attribute": "PSY",
+   "t0": "C",
+   "tf": "B",
+   "why": "0★ Blood stacks from Anteiku/No Org actives → ignore DR; team +10% at 1★ if all Anteiku/No Org.",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1121",
+   "name": "Kosuke [Chi She]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "B",
+   "why": "Every passive is Breakthrough-only ('In Blockade Breakthrough'): S-tier there, near-useless elsewhere.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1005",
+   "name": "Toka [Flamewing]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "B",
+   "why": "0★ only charms the highest-HP ally; Adoration damage (4% max HP per stack) needs 1★.",
+   "get": "in the novice Legacy selector (closes as server day 15 begins)"
+  },
+  {
+   "id": "1136",
+   "name": "Kiyoko",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "B",
+   "why": "0★, from back-up: 'In Stronghold Takeover, +40% all allies basic stats' + first-fatal-hit save. S-tier in guild war only; she replaces your guild-war back-up there.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1065",
+   "name": "Ken [Centipede Rampage]",
+   "faction": "aogiri",
+   "attribute": "WIT",
+   "t0": "C",
+   "tf": "B",
+   "why": "Collapse/Crazy stacks (passive order unresolved).",
+   "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1100",
+   "name": "Amon [Half Year Anniversary]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "B",
+   "why": "Aim stacks.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1105",
+   "name": "Toka [Easter]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "B",
+   "why": "Capability ATK ramp.",
+   "get": "listed for a shop around day 40 (unconfirmed)"
+  },
+  {
+   "id": "1050",
+   "name": "Arima [CCG's Reaper]",
+   "faction": "ccg",
+   "attribute": "PSY",
+   "t0": "C",
+   "tf": "B",
+   "why": "0★ is a one-time death-save; team shield (20% of dmg) at 1★.",
+   "get": "listed for a shop around day 19 (unconfirmed) · Carnival recruitment"
+  },
+  {
+   "id": "1055",
+   "name": "Hinami [Growing Teenage Girl]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "B",
+   "why": "0★ +20% HP all allies; Determination cleanse+heal at 1★.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1020",
+   "name": "Tatara",
+   "faction": "aogiri",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "B",
+   "why": "170% AoE each turn end + heal, Aogiri +15% (passive order unresolved — check in-game star preview).",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1081",
+   "name": "Renji [Reliable Partner]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "B",
+   "why": "Caps Anteiku damage at 30% max HP while Overwatch.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1016",
+   "name": "Yoshimura [Non-Killing Owl]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ Flaming Blood stacks + self cleanse; stat buff at 1★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1017",
+   "name": "Eto [Bandaged Mysteries]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "B",
+   "why": "0★ +15% all-ally dmg after first skill each turn; Aogiri extras at 1★/3★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1087",
+   "name": "Ken [Christmas]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "Numb/Incapacitation chain.",
+   "get": "listed for a shop around day 19 (unconfirmed)"
+  },
+  {
+   "id": "1088",
+   "name": "Hinami [Christmas]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "C",
+   "why": "Small Inspire buffs.",
+   "get": "listed for a shop around day 19 (unconfirmed)"
+  },
+  {
+   "id": "1006",
+   "name": "Ayato [Rebelwing]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ 130% AoE every turn start is real but launch stats; stars add only self crit/ATK.",
+   "get": "banner server days 26-42"
+  },
+  {
+   "id": "1025",
+   "name": "Uta [Mask-Maker]",
+   "faction": "noorg",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ 200% ATK hit on a random enemy each turn end; ATK buff 1★.",
+   "get": "listed for a shop around day 29 (unconfirmed) · banner server days 15-28"
+  },
+  {
+   "id": "1004",
+   "name": "Shu [Gourmet]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ whole-team shield (100% of the caster's ATK) whenever an ally uses a Stance skill; 1★ adds a 175% retaliation after Provoking Stance. Only F2P taunt early.",
+   "get": "Free: SSR Selection Card day 28 · Unlimited Recruitment pool (days 1-14)",
+   "note": "Rated C on its own, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1012",
+   "name": "Yakumo [Jason]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "Active applies Lethal — the only free anti-heal; 0★ passive is just +15% PEN.",
+   "get": "Free: beginner sign-in day 5 · standard summons",
+   "note": "Rated C on its own, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1018",
+   "name": "Kurona",
+   "faction": "noorg",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ +4% dmg per self buff (max 16%); 1★ team +3%/turn x4. Free No Org unit, used in the free team.",
+   "get": "Free: beginner sign-in day 13 · standard summons",
+   "note": "Rated C on its own, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1019",
+   "name": "Nashiro [Spotless Shroud]",
+   "faction": "noorg",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ +4% dmg per target debuff; DEF shred at 1★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1011",
+   "name": "Hinami [Fledgling Butterfly]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ heals all allies 150% ATK after a skill — usable sustain, low stats.",
+   "get": "listed for a shop around day 15 (unconfirmed)"
+  },
+  {
+   "id": "1026",
+   "name": "Enji",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ +4% team dmg per Weak caused (x4).",
+   "get": "Free: beginner sign-in day 1 · standard summons",
+   "note": "Rated C on its own, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1037",
+   "name": "Nico [Ladyboy in Love]",
+   "faction": "aogiri",
+   "attribute": "SPD",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ Aogiri +5%/2% max-HP extra dmg; active cleanses the team.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1010",
+   "name": "Kureo",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ +10% team dmg vs Aogiri works from back-up (tagged) — niche back-up vs Aogiri bosses/PvP.",
+   "get": "Free: beginner sign-in day 9 · standard summons",
+   "note": "Rated C on its own, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1015",
+   "name": "Yukinori [Arata proto]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ +10% dmg/-10% taken for 1 turn after first skill; shield at 1★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1060",
+   "name": "Amon [Twinblades of Justice]",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ team +6% PEN on crit (x2).",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1001",
+   "name": "Rize [Binge Eater]",
+   "faction": "noorg",
+   "attribute": "SKL",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ only gives herself +10% dmg/+15% lifesteal while buffed; the 1★ team ATK buff is tiny (3% x3). Free No Org unit, used in the free team until shop units arrive.",
+   "get": "Free: Full-Stars Rize mission chain · standard summons",
+   "note": "Rated C on its own, but it is free and part of the free teams on Best teams. Keep using it there until you have something better."
+  },
+  {
+   "id": "1021",
+   "name": "Matasaka [Shachi]",
+   "faction": "noorg",
+   "attribute": "WIT",
+   "t0": "D",
+   "tf": "C",
+   "why": "Rage mark +40% dmg vs marked target.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1002",
+   "name": "Arima [Lightning God]",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "C",
+   "tf": "C",
+   "why": "0★ active Slice disables the target's passives for 1 turn (that switches off a Maid Toka counter); Thunder needs 5 CCG actives for one guaranteed crit. Low launch stats.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1052",
+   "name": "Toka [Rabbit]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "C",
+   "why": "0★ target dmg -5% stacks.",
+   "get": "paid new-player pack (\"Toka Kirishima [Rabbit] Pack\"; price not in data) or the Promotion Pass paid track (days 1–14)"
+  },
+  {
+   "id": "1013",
+   "name": "Akira [Father's Will]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "C",
+   "why": "0★ small DEF/lifesteal; buff removal is 1★.",
+   "get": "listed for a shop around day 90 (unconfirmed)"
+  },
+  {
+   "id": "1003",
+   "name": "Juzo [CCG Maverick]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "C",
+   "why": "0★ is a self-only +10% stat cycle; the AoE bonus-attack needs 1★.",
+   "get": "listed for a shop around day 15 (unconfirmed) · banner server days 8-14"
+  },
+  {
+   "id": "1014",
+   "name": "Renji [Taciturn Warrior]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "C",
+   "why": "0★ +15% max HP to SPD allies (back-up tagged); ATK buff 1★.",
+   "get": "listed for a shop around day 43 (unconfirmed)"
+  },
+  {
+   "id": "1007",
+   "name": "Ken [Awaken]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "C",
+   "why": "0★ self lifesteal only; its banner closed (server days 1-7).",
+   "get": "listed for a shop around day 75 (unconfirmed)"
+  },
+  {
+   "id": "1040",
+   "name": "Ryoko [Daughter Protector]",
+   "faction": "anteiku",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "C",
+   "why": "1★ Anteiku ATK +15% back-up tagged.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1032",
+   "name": "Iwao [Arata proto]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "D",
+   "why": "Small self shield on stance.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1031",
+   "name": "Itori [Helter Skelter]",
+   "faction": "noorg",
+   "attribute": "STR",
+   "t0": "D",
+   "tf": "C",
+   "why": "0★ +15% STR allies' stats.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1035",
+   "name": "Kori [Shining New Star]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "D",
+   "why": "Works only below 50% HP.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1076",
+   "name": "Toka [Blazewing]",
+   "faction": "anteiku",
+   "attribute": "STR",
+   "t0": "D",
+   "tf": "D",
+   "why": "180% only after an active kill.",
+   "get": "SSR Selection Card"
+  },
+  {
+   "id": "1033",
+   "name": "Take [Absolute Strength]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "D",
+   "why": "Blood Rage needs targets <50% HP.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1042",
+   "name": "Ayumu [Long-haired Ghoul Investigator]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "D",
+   "why": "Tiny +5% to rank investigators.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1043",
+   "name": "Chu [Envoy of Vengeance]",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "D",
+   "tf": "D",
+   "why": "One-turn +25% at 3★.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1046",
+   "name": "Kyoji [Warden]",
+   "faction": "ccg",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "D",
+   "why": "Conditional +3% stacks.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1023",
+   "name": "Kosuke [Red Tongue Hitman]",
+   "faction": "ccg",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "D",
+   "why": "0★ Scorched only on <50% HP targets.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1027",
+   "name": "Kaya [Black Dog]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "D",
+   "why": "0★ +5% Anteiku stats only.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1038",
+   "name": "Elder [Tail Brothers]",
+   "faction": "aogiri",
+   "attribute": "STR",
+   "t0": "D",
+   "tf": "D",
+   "why": "Needs Younger Bin.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1039",
+   "name": "Younger [Tail Brothers]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "D",
+   "why": "Needs Elder Bin.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1041",
+   "name": "Mogan [Battleground Gentleman]",
+   "faction": "ccg",
+   "attribute": "STR",
+   "t0": "D",
+   "tf": "D",
+   "why": "Slow charge-up.",
+   "get": "Unlimited Recruitment pool (days 1-14) · standard summons"
+  },
+  {
+   "id": "1030",
+   "name": "Noro [Quick Revival]",
+   "faction": "aogiri",
+   "attribute": "SPD",
+   "t0": "D",
+   "tf": "D",
+   "why": "Caps big hits at 30% HP and counters 180%.",
+   "get": "no source in data"
+  },
+  {
+   "id": "1053",
+   "name": "Gagi [Naki's Sidekick]",
+   "faction": "aogiri",
+   "attribute": "SKL",
+   "t0": "D",
+   "tf": "D",
+   "why": "SR, x0.29.",
+   "get": "no source in data"
+  }
+ ],
+ "tier_labels": {
+  "S": "Build around it",
+  "A": "Strong in the right team",
+  "B": "Useful, with limits",
+  "C": "Level only",
+  "D": "Skip"
+ },
+ "factions": {
+  "noorg": "No Org",
+  "aogiri": "Aogiri",
+  "anteiku": "Anteiku",
+  "ccg": "CCG"
+ },
+ "tier_source": "October 19 article \"Tier list\""
+}

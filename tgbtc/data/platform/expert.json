@@ -635,9 +635,9 @@
   "encounters": [
     {
       "id": "elder-younger-bin",
-      "name": "Elder & Younger Bin — ActCru2",
-      "mode": "Event boss",
-      "status": "research needed — theory rotation",
+      "name": "Elder & Younger Bin",
+      "mode": "Event Conquest",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -663,10 +663,10 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
@@ -691,10 +691,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -705,19 +705,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "one-eyed-owl",
-      "name": "One-Eyed Owl — SCru2",
-      "mode": "Formidable / Superb Conquest",
-      "status": "research needed — theory rotation",
+      "name": "One-Eyed Owl",
+      "mode": "Conquest and Formidable",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -748,10 +748,10 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
@@ -776,10 +776,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -790,19 +790,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "world-glo1",
-      "name": "World Boss Glo1 — identity unconfirmed",
+      "name": "World Boss 1: Bin Brothers (STR)",
       "mode": "World Boss",
-      "status": "research needed — theory rotation",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -823,17 +823,17 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
-          "action": "Identify the restricting attribute from the current boss screen; attack to test the DEF-related reduction stack.",
+          "action": "The boss is STR, so open with SPD hits: each one lowers its DEF.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Attribute mapping must match current client."
+          "condition": "Check the attribute on the boss screen."
         },
         {
           "phase": "turn 2",
@@ -851,10 +851,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -865,19 +865,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "world-glo2",
-      "name": "World Boss Glo2 — shield response",
+      "name": "World Boss 2: Tatara (SKL)",
       "mode": "World Boss",
-      "status": "research needed — theory rotation",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -903,38 +903,38 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
           "action": "Record incoming shield magnitude after dealing damage; avoid assuming all attributes have the same value.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Current boss must have Glo2 skill set."
+          "condition": "Only if the boss uses these skills."
         },
         {
           "phase": "turn 2",
           "action": "Test whether buff removal affects the shield, and whether removal triggers the stated retaliation.",
           "actor_id": "1114",
           "skill_id": "1114_p1",
-          "condition": "Orochi passive availability and boss immunity need confirmation."
+          "condition": "Check that Nishiki [Orochi] has this passive and the boss is not immune."
         },
         {
           "phase": "turn 3+",
           "action": "Track Lethal on highest-ATK ally before relying on healing.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Shield break/disappearance triggers retaliation in the archived description."
+          "condition": "When its shield breaks or ends, it hits back."
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -945,19 +945,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "world-glo3",
-      "name": "World Boss Glo3 — debuff retaliation",
+      "name": "World Boss 3: Kureo Mado (SPD)",
       "mode": "World Boss",
-      "status": "research needed — theory rotation",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -983,10 +983,10 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
@@ -1011,10 +1011,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -1025,19 +1025,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "yoshimura-union",
-      "name": "Yoshimura — Uni01 skill family",
-      "mode": "Organization boss",
-      "status": "research needed — theory rotation",
+      "name": "Organization Boss: Yoshimura",
+      "mode": "Organization",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -1063,10 +1063,10 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
@@ -1091,10 +1091,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -1106,19 +1106,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "capture-field",
-      "name": "Capture Simulation Field — mechanic family",
+      "name": "Capture Simulation boss",
       "mode": "Capture Simulation",
-      "status": "research needed — theory rotation",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -1144,10 +1144,10 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
@@ -1172,10 +1172,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -1186,19 +1186,19 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     },
     {
       "id": "union-trigger",
-      "name": "Organization UniC1 — triggered-skill window",
-      "mode": "Organization boss",
-      "status": "research needed — theory rotation",
+      "name": "Weekly Challenge",
+      "mode": "Organization",
+      "status": "untested plan",
       "source": "data/research/boss_skills.txt",
       "source_refs": [
         "boss-skills",
@@ -1224,24 +1224,24 @@
       "rotation": [
         {
           "phase": "prebattle",
-          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "action": "Check that the boss skills below match the difficulty you picked. Note your CP, stars, cells and starting cards.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Required; instance mapping is not verified."
+          "condition": "Always, before the fight."
         },
         {
           "phase": "turn 1",
           "action": "Record whether a triggered skill adds the damage-taken stack.",
           "actor_id": "1174",
           "skill_id": "1174_p1",
-          "condition": "Nutcracker engine requires a No Organization ally active and a matching encounter modifier."
+          "condition": "Nutcracker needs a No Org ally to cast first."
         },
         {
           "phase": "turn 2",
           "action": "Compare the same active at zero and accumulated stacks; verify the five-stack cap.",
           "actor_id": "1142",
           "skill_id": "1142_v1s1",
-          "condition": "Requires matching UniC1_p14; no numeric damage prediction."
+          "condition": "Only if the boss has this skill. No damage number is promised."
         },
         {
           "phase": "turn 3+",
@@ -1252,10 +1252,10 @@
         },
         {
           "phase": "failsafe",
-          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "action": "If the boss does something different, stop following this plan and write down what happened. Keep auto and manual fights apart.",
           "actor_id": null,
           "skill_id": null,
-          "condition": "Mismatch, immunity, missing card or failed trigger."
+          "condition": "The boss is immune, a card is missing, or a skill does not trigger."
         }
       ],
       "team_ids": [
@@ -1267,13 +1267,13 @@
       "difficulty": null,
       "turn_cap": null,
       "test_required": [
-        "Current boss identity and difficulty screenshot",
-        "Confirm each listed passive is active together",
-        "Record team, CP, stars, cell effects and potential",
-        "Capture full card/ultimate order and phase transitions",
-        "Repeat with same setup; document failed attempts and auto/manual difference"
+        "A screenshot of the boss and difficulty",
+        "Which of the listed skills it really uses",
+        "Your team, CP, stars, cells and potentials",
+        "What you cast each turn, and when the phases change",
+        "A second try with the same team, including failed tries and auto versus manual"
       ],
-      "expected_result": "No damage or clear guarantee; experimental plan only."
+      "expected_result": "No damage or clear is promised."
     }
   ],
   "cells": [
@@ -3540,8 +3540,8 @@
     {
       "id": "historical-kaneki",
       "name": "Ken Kaneki banner",
-      "status": "historical user observation",
-      "region": "unconfirmed",
+      "status": "Past banner (player report)",
+      "region": null,
       "date": null,
       "sequence": 1,
       "source": "data/research/banner_tracking_seed.json",
@@ -3551,9 +3551,9 @@
     },
     {
       "id": "historical-juzo",
-      "name": "Green Juzo banner",
-      "status": "historical user observation",
-      "region": "unconfirmed",
+      "name": "Juzo banner (players call it \"Green Juzo\"; exact version not recorded)",
+      "status": "Past banner (player report)",
+      "region": null,
       "date": null,
       "sequence": 2,
       "source": "data/research/banner_tracking_seed.json",
@@ -3562,40 +3562,28 @@
       ]
     },
     {
-      "id": "next-unknown",
-      "name": "Next after Green Juzo: unknown",
-      "status": "unknown",
-      "region": "all",
-      "date": null,
-      "sequence": 3,
-      "source": "data/research/banner_tracking_seed.json",
-      "source_refs": [
-        "banner-seed"
-      ]
-    },
-    {
       "id": "halloween-hinami",
       "name": "Halloween Hinami Fueguchi",
-      "status": "archived fan-database upcoming listing; current status unverified",
-      "region": "unconfirmed",
+      "status": "Live limited banner",
+      "region": "established servers",
       "date": null,
-      "source": "https://tkgbtc.com/heroes",
+      "source": "Research notes of October 26, 2026, section F (F-03, F-18)",
       "source_refs": [
         "banner-seed"
       ],
-      "note": "Not evidence that this is the next banner on your server."
+      "note": "October 25 – November 8, 2026. Guaranteed at 300 pulls (90,000 Diamonds). It may reach the NA relaunch server around October 27."
     }
   ],
   "progression": [
     {
       "id": "day-1",
       "day": 1,
-      "name": "Establish your account",
+      "name": "Set up your account",
       "actions": [
-        "Confirm region, server creation date and available event screens.",
-        "Progress Chain; preserve flexible diamonds until the exact guarantee and target are known."
+        "Join an active organization and check your region and server start date.",
+        "Play Chain Campaign. Save Diamonds until you know which banner you will finish."
       ],
-      "status": "editorial checklist",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3605,12 +3593,12 @@
     {
       "id": "day-3",
       "day": 3,
-      "name": "Build one working core",
+      "name": "Build one working team",
       "actions": [
-        "Read innate passives and faction conditions before distributing resources.",
-        "Record owned units and star levels; use the roster-aware team templates."
+        "Read each unit's innate passive and faction buff before you spend anything.",
+        "Mark the units and stars you own; then copy a team from Best teams."
       ],
-      "status": "editorial checklist",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3620,12 +3608,12 @@
     {
       "id": "day-7",
       "day": 7,
-      "name": "Check expiring beginner events",
+      "name": "Check beginner events before they end",
       "actions": [
-        "Archived Wish Rebate used server days 1–7; check your actual timer.",
-        "Do not assume Nutcracker remains purchasable after the offer closes."
+        "The Wish Rebate (Nutcracker) ran on server days 1–7 on the NA relaunch server. Check your own timer.",
+        "Nutcracker may not come back after the offer closes."
       ],
-      "status": "historical server window; verify",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3635,12 +3623,12 @@
     {
       "id": "day-14",
       "day": 14,
-      "name": "Check selectors before closure",
+      "name": "Use your selectors",
       "actions": [
-        "Archived novice recruitment closed after day 14.",
-        "Unlimited recruitment timing may use account age; inspect the timer rather than the calendar."
+        "Novice recruitment closed after server day 14 on the NA relaunch server.",
+        "Unlimited Recruitment may follow your account age; check its timer."
       ],
-      "status": "historical window; account/server ambiguity",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3650,12 +3638,12 @@
     {
       "id": "day-28",
       "day": 28,
-      "name": "Reassess team investment",
+      "name": "Check your team investment",
       "actions": [
-        "Archived sign-in guidance referenced SSR Selection Card day 28. Verify current rewards.",
-        "Prioritize useful passive unlocks over spreading stars evenly."
+        "The second SSR Selection Card came on day 28 in the old guide: take Shu [Gourmet]. Check your rewards.",
+        "Unlock useful passives before you spread stars around."
       ],
-      "status": "historical reward; verify",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3663,13 +3651,13 @@
       "unlock_claim": false
     },
     {
-      "id": "day-45",
-      "day": 45,
-      "name": "Review current shop inventory",
+      "id": "day-43",
+      "day": 43,
+      "name": "Check the day-43 shop",
       "actions": [
-        "Raw shop-time hints at day 43 are unconfirmed. Only plan an acquisition after price and eligibility appear in your client."
+        "Shop units such as Uta [Rescue] and Kiyoko may appear around day 43. Buy only once the price shows in your game."
       ],
-      "status": "historical shop hint; not confirmed",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3679,11 +3667,11 @@
     {
       "id": "day-75",
       "day": 75,
-      "name": "Review faction upgrades",
+      "name": "Check the day-75 shop",
       "actions": [
-        "Orochi, Hideyoshi and other units had archived day-75 shop hints. Availability and affordability are unknown."
+        "Nishiki [Orochi], Hideyoshi and others may appear in a shop around day 75. Price and availability are not known."
       ],
-      "status": "historical shop hint; not confirmed",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3693,27 +3681,12 @@
     {
       "id": "day-90",
       "day": 90,
-      "name": "Audit recurring rewards",
+      "name": "Review your teams",
       "actions": [
-        "Recheck boss teams, daily limits and current event rules.",
-        "Compare logged results at unchanged investment before replacing the core."
+        "Recheck boss teams, daily limits and event rules.",
+        "Compare your logged fights before you replace your main team."
       ],
-      "status": "editorial checkpoint",
-      "source": "data/research/stage_teams.md",
-      "source_refs": [
-        "stage-teams"
-      ],
-      "unlock_claim": false
-    },
-    {
-      "id": "day-120",
-      "day": 120,
-      "name": "Update the research snapshot",
-      "actions": [
-        "Reconfirm banner economics and catalog changes.",
-        "Keep historical data separate from current account evidence."
-      ],
-      "status": "editorial checkpoint",
+      "status": "checklist",
       "source": "data/research/stage_teams.md",
       "source_refs": [
         "stage-teams"
@@ -3723,78 +3696,85 @@
   ],
   "sources": [
     {
+      "id": "research-1026",
+      "name": "Strategy research notes, checked by an independent fact-check (teams, bosses, live banner)",
+      "url": null,
+      "date": "2026-10-26",
+      "status": "main source for Best teams; kept with the guide source files, not published"
+    },
+    {
       "id": "stage-teams",
-      "name": "Archived stage and faction research",
+      "name": "Stage and faction research notes",
       "url": "data/research/stage_teams.md",
       "date": "2026-10-19",
-      "status": "archived; current server confirmation required"
+      "status": "research notes; check your server"
     },
     {
       "id": "boss-skills",
-      "name": "Extracted boss skill text",
+      "name": "Boss skill text from the game files",
       "url": "data/research/boss_skills.txt",
       "date": "2026-09-22",
-      "status": "archived game text; encounter mapping incomplete"
+      "status": "game text; not every skill is matched to a boss"
     },
     {
       "id": "localization",
-      "name": "English client localization",
+      "name": "English game text",
       "url": "data/raw/en.json",
       "date": "2026-09-22",
-      "status": "archived game data"
+      "status": "game data"
     },
     {
       "id": "coffee-video",
       "name": "StillAliveGG coffee recipes",
       "url": "https://www.youtube.com/watch?v=abb-Mo7R5zc",
       "date": null,
-      "status": "archived creator source"
+      "status": "creator video"
     },
     {
       "id": "cell-catalog",
       "name": "Kees LR cell catalog",
       "url": "https://gluttony.dev/heroes/",
       "date": "2026-10-25",
-      "status": "page reachable; full dataset unavailable via retrieval"
+      "status": "site opens, but the full list could not be read"
     },
     {
       "id": "banner-seed",
-      "name": "Packaged banner observations",
+      "name": "Banner notes from players",
       "url": "data/research/banner_tracking_seed.json",
       "date": "2026-10-25",
-      "status": "historical observations; dates and region unknown"
+      "status": "past banners; dates and region unknown"
     }
   ],
   "unknowns": [
     {
       "id": "lr-catalog",
-      "name": "Full LR catalog import",
-      "status": "blocked by missing source records",
-      "detail": "Pack reports 105 community LR cells, but imports zero complete records. Four reference leads are preserved, not counted as verified effects."
+      "name": "Full LR cell list",
+      "status": "missing",
+      "detail": "Community lists name 105 LR cells, but no full records were found. Four are listed as leads only."
     },
     {
       "id": "boss-testing",
-      "name": "Combat validation",
-      "status": "evidence required",
-      "detail": "Eight experiment dockets provided. Zero rotations independently combat-tested; no damage or solo-clear guarantees."
+      "name": "Tested fights",
+      "status": "not tested",
+      "detail": "None of the 8 Boss Lab plans has been tested in a real fight. No damage numbers are promised."
     },
     {
       "id": "field-slots",
-      "name": "Mode-specific roster constraints",
-      "status": "conflicting archive",
-      "detail": "Research alternates four and five field units. Use candidate pools and confirm selected mode limits."
+      "name": "Team size in each mode",
+      "status": "sources disagree",
+      "detail": "Some sources list 5 units on the field. This guide uses 4 on the field plus 1 back-up; check the team screen in each mode."
     },
     {
       "id": "coffee-buffs",
       "name": "Coffee combat bonuses",
-      "status": "not established",
-      "detail": "24 recipe cards and 32 assets are different counts. Supplied evidence supports collection and Organization Supply, not combat buffs."
+      "status": "none known",
+      "detail": "Coffee is for the illustration collection and Organization Supply. No combat bonus is known."
     },
     {
       "id": "live-banners",
-      "name": "Current store and next banner",
-      "status": "unknown",
-      "detail": "Requires current region/server-specific notices or screenshots; no future date inferred."
+      "name": "Shop and banners on your server",
+      "status": "check in game",
+      "detail": "Banners and shop items differ by server. Dates on this guide come from established servers and fan data."
     }
   ]
 }

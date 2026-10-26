@@ -79,8 +79,8 @@
     const money=n=>new Intl.NumberFormat(undefined,{style:'currency',currency:['USD','EUR','JPY'].includes(values.currency)?values.currency:'USD'}).format(n);
     const fmt=n=>new Intl.NumberFormat(undefined,{maximumFractionDigits:2}).format(n);
     const clear=n=>n.replaceChildren();
-    const info=(parent,text)=>parent.append(el('p',text,'muted'));
-    const panel=(title,intro)=>{const p=el('section',undefined,'panel economy-panel');p.append(el('h2',title,'section-title'));if(intro)info(p,intro);container.append(p);return p;};
+    const info=(parent,text)=>{const d=el('details',undefined,'more');d.append(el('summary','More details'),el('p',text,'muted'));parent.append(d);};
+    const panel=(title,intro,extra)=>{const p=el('section',undefined,'panel economy-panel');p.append(el('h2',title,'section-title'));if(intro)p.append(el('p',intro,'muted'));if(extra)info(p,extra);container.append(p);return p;};
     const fields=parent=>append(parent,el('div',undefined,'grid economy-fields')).lastElementChild;
     function field(parent,key,label,type='number',attrs={}) {
       const wrap=el('label',undefined,'field'), input=el('input');
@@ -102,11 +102,11 @@
     function output(node,text,error=false){clear(node);node.append(el('p',text,error?'notice':'metric'));}
     function save(){try{localStorage.setItem(STORAGE,JSON.stringify({version:1,values}));}catch(_){disabledStorage=true;}}
     function observed(parent,prefix){
-      const f=fields(parent);field(f,prefix+'Source','Evidence note / screenshot filename','text',{maxlength:'1000',placeholder:'Your client screenshot or source; not verified by this tool'});
-      field(f,prefix+'Date','Observation date','date');
+      const f=fields(parent);field(f,prefix+'Source','Note (for example a screenshot name)','text',{maxlength:'1000',placeholder:'Your screenshot or source (this tool does not check it)'});
+      field(f,prefix+'Date','Date you checked','date');
     }
     container.replaceChildren();
-    const head=panel('Spend with a plan','Zero-spend is the starting option. These tools calculate your inputs; they do not know your current shop, payout table, banner rules or live prices.');
+    const head=panel('Spend with a plan','These tools only calculate what you enter. Spending nothing is a fine plan.','They do not know your current shop, payout table, banner rules or live prices.');
     const settings=fields(head);
     field(settings,'region','Your server / region','text',{maxlength:'80'});
     select(settings,'currency','Cash currency (no conversion)',[['USD','USD'],['EUR','EUR'],['JPY','JPY']]);
@@ -115,35 +115,35 @@
     for(const amount of [0,5,10,20,50,100]){const b=el('button',String(amount),'button');b.type='button';b.addEventListener('click',()=>{values.budget=String(amount);inputs.budget.value=String(amount);save();update();});presets.append(b);}head.append(presets);
     info(head,'Budget presets are amounts in the selected currency. Changing currency does not convert existing prices. Start at 0; purchases are optional. Nothing is purchased or sent from this page.');
     const storageStatus=result(head);
-    const springPanel=panel('48-hour Diamond Spring','Enter the stake and TOTAL diamonds returned, including your original stake. No payout is prefilled: the 500 → 530 example belongs to tests, not to a claimed live reward.');
+    const springPanel=panel('48-hour Diamond Spring','Enter your stake and the TOTAL Diamonds returned, including the stake.','No payout is filled in for you: read both numbers from your game.');
     const springFields=fields(springPanel);
     field(springFields,'springStake','Diamonds staked');field(springFields,'springPayout','Total diamonds returned');field(springFields,'springStart','Stake start (your local time)','datetime-local');
     observed(springPanel,'spring');const springResult=result(springPanel), timerResult=result(springPanel);
     info(springPanel,'ROI = (total returned − stake) ÷ stake × 100. The timer adds exactly 48 elapsed hours; it does not assume a second daily collection or any VIP perk. Compare the locked stake with the resources needed for your next guarantee.');
-    const pullPanel=panel('Banner budget & chance','Enter this exact banner’s client rules. Rate calculations assume independent pulls with a constant target-unit rate; they exclude pity, rate changes and shared-pool ambiguity.');
+    const pullPanel=panel('Banner budget & chance','Enter this banner’s rules from the game screen.','The chance assumes every pull has the same rate. It ignores pity and rate changes.');
     const pullFields=fields(pullPanel);
-    field(pullFields,'pullCost','Diamonds per pull');field(pullFields,'threshold','Client guarantee threshold (pulls)','number',{step:'1'});field(pullFields,'pullsDone','Eligible pulls already made','number',{step:'1'});field(pullFields,'balance','Available diamonds');field(pullFields,'tickets','Eligible tickets (1 pull each)','number',{step:'1'});
-    field(pullPanel,'pityConfirmed','I checked that this threshold guarantees my target and these pulls/tickets count','checkbox');observed(pullPanel,'pity');const pityResult=result(pullPanel);
-    const probabilityFields=fields(pullPanel);field(probabilityFields,'rate','Target-unit rate (%)','number',{max:'100'});field(probabilityFields,'chancePulls','Number of independent pulls','number',{step:'1'});const probabilityResult=result(pullPanel);
+    field(pullFields,'pullCost','Diamonds per pull');field(pullFields,'threshold','Pulls to the guarantee (from the game screen)','number',{step:'1'});field(pullFields,'pullsDone','Eligible pulls already made','number',{step:'1'});field(pullFields,'balance','Available diamonds');field(pullFields,'tickets','Eligible tickets (1 pull each)','number',{step:'1'});
+    field(pullPanel,'pityConfirmed','I checked in game that this guarantee gives my unit and that these pulls and tickets count','checkbox');observed(pullPanel,'pity');const pityResult=result(pullPanel);
+    const probabilityFields=fields(pullPanel);field(probabilityFields,'rate','Target-unit rate (%)','number',{max:'100'});field(probabilityFields,'chancePulls','Number of pulls','number',{step:'1'});const probabilityResult=result(pullPanel);
     info(pullPanel,'This is a first-copy / one-guarantee calculation. Star upgrades may require different materials or additional copies. No carry-over, selected-unit guarantee or ticket eligibility is assumed. A probability is never a promise.');
-    const packsPanel=panel('Compare your observed offers','Compare the same region, currency and observation date. Enter TOTAL collectible diamonds, not a daily reward, and only assign ticket value when it is useful for the same goal. Random rewards and non-diamond items are excluded.');
+    const packsPanel=panel('Compare offers you see','Enter the TOTAL Diamonds you can collect, not a daily reward.','Compare the same region, currency and date. Only give tickets a value when they help the same goal. Random rewards and non-Diamond items are left out.');
     const packResults={};
     for(const p of ['offerA','offerB']){
       const box=el('section',undefined,'panel');packsPanel.append(box);box.append(el('h3',p==='offerA'?'Offer A':'Offer B'));
-      const fs=fields(box);field(fs,p+'Name','Offer name','text',{maxlength:'100'});field(fs,p+'Price','Cash price');field(fs,p+'Diamonds','Total collectible diamonds');field(fs,p+'Tickets','Eligible tickets','number',{step:'1'});field(fs,p+'TicketValue','Assumed diamond utility per ticket');field(fs,p+'Days','Days to collect total rewards','number',{step:'1',min:'1'});field(fs,p+'Cap','Purchase cap for this window','number',{step:'1',min:'1'});field(fs,p+'Quantity','Copies in your plan','number',{step:'1'});field(fs,p+'Region','Observed server / region','text',{maxlength:'80'});field(box,p+'Recurring','Recurring / subscription (price entered is one billing period)','checkbox');observed(box,p);packResults[p]=result(box);
+      const fs=fields(box);field(fs,p+'Name','Offer name','text',{maxlength:'100'});field(fs,p+'Price','Cash price');field(fs,p+'Diamonds','Total collectible diamonds');field(fs,p+'Tickets','Eligible tickets','number',{step:'1'});field(fs,p+'TicketValue','Diamonds you count per ticket');field(fs,p+'Days','Days to collect total rewards','number',{step:'1',min:'1'});field(fs,p+'Cap','Purchase cap for this window','number',{step:'1',min:'1'});field(fs,p+'Quantity','Copies in your plan','number',{step:'1'});field(fs,p+'Region','Server or region','text',{maxlength:'80'});field(box,p+'Recurring','Recurring / subscription (price entered is one billing period)','checkbox');observed(box,p);packResults[p]=result(box);
     }
     const packSummary=result(packsPanel);
-    info(packsPanel,'Diamond-equivalent utility is your assumption, not an exchange guarantee. A recurring plan here counts only the entered number of billing periods; it does not cancel automatically. Uncollected daily rewards reduce actual value. First-purchase bonuses and caps must be included from your client screen.');
-    const forecastPanel=panel('Savings forecast','Use net daily income after your usual costs. This is a simple estimate with no assumed events, investment compounding or guaranteed future income.');
+    info(packsPanel,'Diamond-equivalent utility is your assumption, not an exchange guarantee. A recurring plan here counts only the entered number of billing periods; it does not cancel automatically. Uncollected daily rewards reduce actual value. First-purchase bonuses and caps must be included from your game screen.');
+    const forecastPanel=panel('Savings forecast','Use your daily income after your usual costs.','This is a simple estimate with no assumed events, investment compounding or guaranteed future income.');
     const forecastFields=fields(forecastPanel);field(forecastFields,'forecastBalance','Current diamond balance');field(forecastFields,'dailyIncome','Estimated net diamonds per day');field(forecastFields,'target','Target diamond balance');const forecastResult=result(forecastPanel);
     const controls=el('div',undefined,'economy-controls');
     const reset=el('button','Clear calculator observations','button');reset.type='button';reset.addEventListener('click',()=>{try{localStorage.removeItem(STORAGE);}catch(_){}values=Object.assign({},defaults);for(const [k,input]of Object.entries(inputs)){if(input.type==='checkbox')input.checked=values[k];else input.value=values[k];}update();});controls.append(reset);container.append(controls);
     function update(){
-      output(storageStatus,disabledStorage?'Browser storage is unavailable; calculations still work, but observations are not saved.':'Observations stay in this browser. Region: '+values.region+'. Use Clear calculator observations to delete them.');
-      if(values.springStake===''&&values.springPayout==='')output(springResult,'Enter your client payout table to calculate net return.');
+      output(storageStatus,disabledStorage?'Browser storage is unavailable; calculations still work, but observations are not saved.':'Observations stay in this browser. Region: '+(!values.region||values.region==='Unspecified'?'not set':values.region)+'. Use Clear calculator observations to delete them.');
+      if(values.springStake===''&&values.springPayout==='')output(springResult,'Enter both numbers from your game to see the net return.');
       else try{const r=spring(values.springStake,values.springPayout);output(springResult,(r.net>=0?'+':'')+fmt(r.net)+' diamonds · '+r.roi.toFixed(2)+'% return per 48-hour cycle.');}catch(e){output(springResult,e.message,true);}
-      if(!values.springStart)output(timerResult,'No stake start time saved.');else try{const t=maturity(values.springStart),due=new Date(t.dueUTC);output(timerResult,'48-hour mark: '+due.toLocaleString()+' (UTC: '+t.dueUTC+'). '+(Date.now()>=due.getTime()?'Elapsed — check your client for collection.':'Collection rules still depend on your client.'));}catch(e){output(timerResult,e.message,true);}
-      if(!values.pityConfirmed)output(pityResult,'Guarantee budget is disabled until you confirm this banner’s target guarantee and eligible pulls.');
+      if(!values.springStart)output(timerResult,'No stake start time saved.');else try{const t=maturity(values.springStart),due=new Date(t.dueUTC);output(timerResult,'48-hour mark: '+due.toLocaleString()+' (UTC: '+t.dueUTC+'). '+(Date.now()>=due.getTime()?'Time is up. Collect it in the game.':'Check the collection rules in the game.'));}catch(e){output(timerResult,e.message,true);}
+      if(!values.pityConfirmed)output(pityResult,'Tick the box above to see the budget for the guarantee.');
       else try{const r=pity(values.pullCost,values.threshold,values.pullsDone,values.balance,values.tickets);output(pityResult,r.remaining+' pulls remaining · '+r.ticketsUsed+' eligible tickets used · '+fmt(r.required)+' diamonds required · '+fmt(r.shortfall)+' shortfall. Conditional on the rules you entered.');}catch(e){output(pityResult,e.message,true);}
       if(values.rate===''&&values.chancePulls==='')output(probabilityResult,'Enter a target-unit rate and pull count for a probability estimate.');
       else try{const r=chance(values.rate,values.chancePulls);output(probabilityResult,(r.probability*100).toFixed(2)+'% chance of at least one target in '+r.pulls+' independent pulls (pity excluded).');}catch(e){output(probabilityResult,e.message,true);}
@@ -151,12 +151,12 @@
       for(const p of ['offerA','offerB']){
         try{
           const q=number(values[p+'Quantity'],'Planned copies',{integer:true});
-          if(values[p+'Price']===''&&values[p+'Diamonds']===''&&q===0){output(packResults[p],'No observed offer entered.');continue;}
+          if(values[p+'Price']===''&&values[p+'Diamonds']===''&&q===0){output(packResults[p],'No offer entered yet.');continue;}
           const r=comparePack({price:values[p+'Price'],diamonds:values[p+'Diamonds'],tickets:values[p+'Tickets'],ticketValue:values[p+'TicketValue'],durationDays:values[p+'Days'],maxPurchases:values[p+'Cap']});
           if(q>r.maxPurchases)throw new Error('Planned copies exceed this offer’s entered purchase cap.');
           if(q>0){selected++;total+=q*r.price;utility+=q*r.utility;}
           const hasEvidence=values[p+'Source'].trim()&&values[p+'Date'];
-          output(packResults[p],money(r.pricePer1000)+' per 1,000 assumed diamond-equivalents · '+fmt(r.utility)+' total per purchase · collected over '+r.durationDays+' days. '+(values[p+'Recurring']?'Recurring billing. ':'One-time offer as entered. ')+(hasEvidence?'User evidence recorded; not independently verified.':'Evidence missing: add source and observation date.'));
+          output(packResults[p],money(r.pricePer1000)+' per 1,000 assumed diamond-equivalents · '+fmt(r.utility)+' total per purchase · collected over '+r.durationDays+' days. '+(values[p+'Recurring']?'Recurring billing. ':'One-time offer as entered. ')+(hasEvidence?'Note saved. This tool does not check it.':'Add a note and the date you checked.'));
           valid.push({p,r});
         }catch(e){if(Number(values[p+'Quantity'])>0)invalidSelected=true;output(packResults[p],e.message,true);}
       }
