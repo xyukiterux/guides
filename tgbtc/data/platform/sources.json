@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-10-25",
+  "full_ledger_path": "data/platform_inputs/SOURCE_LEDGER.md",
+  "policy": "Current client > official notices > dated extracted game data > fan database > creator evidence > theory",
+  "sources": [
+    {
+      "as_of": "2026-10-25",
+      "confidence": "fan_database_snapshot",
+      "id": "S01",
+      "title": "Fan roster snapshot",
+      "url": "https://tkgbtc.com/heroes"
+    },
+    {
+      "as_of": "2026-09-22",
+      "confidence": "game_extract",
+      "id": "S11",
+      "path": "data/raw/en.json",
+      "title": "Game localization"
+    },
+    {
+      "as_of": "2026-09-22",
+      "confidence": "game_extract",
+      "id": "S12",
+      "path": "data/raw/_hero-data_HeroBase.json",
+      "title": "HeroBase + RoleModel"
+    },
+    {
+      "as_of": "2026-10-19",
+      "confidence": "archived_guide",
+      "id": "S13",
+      "path": "data/raw/units.json",
+      "title": "Original curated guide"
+    },
+    {
+      "as_of": "2026-09-22",
+      "confidence": "game_extract_synthesis",
+      "id": "S14",
+      "path": "data/research/resolved_kits.json",
+      "title": "Resolved ability text"
+    },
+    {
+      "as_of": "2026-09-22",
+      "confidence": "archived_guide",
+      "id": "original-modes",
+      "path": "data/raw/modes.json",
+      "title": "Original mode workflows"
+    }
+  ]
+}

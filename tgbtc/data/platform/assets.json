@@ -1,0 +1,2362 @@
+[
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/banner_110.png",
+    "present": true,
+    "sha256": "9cbbc7d18a5162b69b3b909a2f1f5ad95c9b95d4dfd6d88427e2f3c857311a18",
+    "source_url": "https://tkgbtc.com/announcement-banners/Announcement_110_big.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/cells/Atk.png",
+    "present": true,
+    "sha256": "3b3efbe1e8ab0a6728e9c4342e711ee5942b76810fea4b93122211dab3250c65",
+    "source_url": "https://tkgbtc.com/cells-icon/Equip_Atk.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/cells/Def.png",
+    "present": true,
+    "sha256": "ecb67e9343d4d9176a352f58b2739cc9e6b1bb62cfb84b4ac7e3f4ccba851234",
+    "source_url": "https://tkgbtc.com/cells-icon/Equip_Def.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/cells/Hp.png",
+    "present": true,
+    "sha256": "e77c81524c3c09b844c73625285aaa1727ed6803a3883b3675d889806210847d",
+    "source_url": "https://tkgbtc.com/cells-icon/Equip_Hp.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22000.png",
+    "present": true,
+    "sha256": "0d62fdb0c14e66970315e7a724dbc43b512337f04287044e632c7ba5bc202931",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=414s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22001.png",
+    "present": true,
+    "sha256": "0d48754e683a5c6cb75ef5828bd5ac1cb6f767a060f2b3d1bcc8cb8664ffba76",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=111s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22002.png",
+    "present": true,
+    "sha256": "9c44bf03d80807ae5f1f7844e0b9f54d778e424eec4204366714fb3f04543fa5",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=192s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22003.png",
+    "present": true,
+    "sha256": "cd84e141e51666a29259bb5acc7e78310cea662f93f374864a3c9e4edc995f92",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=111s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22004.png",
+    "present": true,
+    "sha256": "51442591780614ff9aeee500ab980ce380f71a2e1986c411d5526389df4872ea",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=141s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22005.png",
+    "present": true,
+    "sha256": "fe216f45f5a206c22083a08019e6c9ed0d5e1374183a792490abccb5cbea5d5e",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=150s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22006.png",
+    "present": true,
+    "sha256": "8196906e81341ab42ec67ba4120f889ee9a12e09366f350224ac9b551501e26f",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=168s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22008.png",
+    "present": true,
+    "sha256": "b274ca175e467110378f62e9f45bf95de60ceacb64ed07bd7b159e4cc75fb238",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=111s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22009.png",
+    "present": true,
+    "sha256": "3301ba05d5d30b71bb0033a5cca7976b355807610ca8c1c0fe9d2dfa8a59f44c",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=129s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22010.png",
+    "present": true,
+    "sha256": "9287956f3fda97a5d4719fabf0e42ac0502e9f0087323e897cd61ae46c252cf0",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=141s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22011.png",
+    "present": true,
+    "sha256": "5b681370afcef9b460302c285820e2b1cb866d7ea270178302441c09a43643a2",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=144s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22012.png",
+    "present": true,
+    "sha256": "5515dcd32df7ec3e7ad4bc219abdf2e3b85f3713324581170c5a587467e801b6",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=150s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22013.png",
+    "present": true,
+    "sha256": "80504d5118d5f281167dd533266e60bff9f159690dccabc672f63290e0cb4def",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=153s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22014.png",
+    "present": true,
+    "sha256": "dea029066780dec6c04d186a09553a9ba4ba6a848f21b1e5fdf4549089bf24c9",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=159s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22015.png",
+    "present": true,
+    "sha256": "35603d8a5e6538534e101140dbc6aae6a3b27d8c0357fd6a972056ef8a283da8",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=162s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22016.png",
+    "present": true,
+    "sha256": "ac2804e0bf3da6aed64fd5d92b81deb1ce07e18b5e9421c3bb31e0c124e0fd1e",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=168s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22017.png",
+    "present": true,
+    "sha256": "2ebf5199dd663f30c6fbcd064f88e5ca4e2a23be7bc31046f5d2826288bc32e0",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=174s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22018.png",
+    "present": true,
+    "sha256": "91ce323a7eb7aebf367fb363b5ecc032a010bfbdb686cfe219e838b2c0d6b2b0",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=180s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22019.png",
+    "present": true,
+    "sha256": "a1ad289e7a933cb560d157092b8817df6d5e8da203aacfbfd0705ea59e2d9647",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=186s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22020.png",
+    "present": true,
+    "sha256": "ea6fb0ab8cea4921857c36ef28dd811f30398ec15bb7593d96cc3bc2155c384a",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=192s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22021.png",
+    "present": true,
+    "sha256": "865d3f1b65d607e5fa4b1292accc2c6a289fd8a4d8c814b0f41d4953de8204ae",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=195s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22022.png",
+    "present": true,
+    "sha256": "29fd49651462144dbf07485ad9ffcd4919261824373e913dd77c565ae66ba4bb",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=204s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22023.png",
+    "present": true,
+    "sha256": "f63abab9e320b68714e522c14d8943e81a89b3de5d9e4d5e2389b4b7b0efba2f",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=207s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22024.png",
+    "present": true,
+    "sha256": "68614e41631523344573941d41d788f022c5dd15f39820446fc5bdcb552f6322",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=213s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22025.png",
+    "present": true,
+    "sha256": "ae498587c8e3d09b6da92a142cc7c986c47f4bcee21017c0b3f2f954f279224e",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=216s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22026.png",
+    "present": true,
+    "sha256": "e5fbd4173b446e225fff55c5afc76b49d89ff376937fb05e2dce5e46aec3de10",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=222s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22027.png",
+    "present": true,
+    "sha256": "27897b4d9e24f9afe42c3b37c02b6355bde2ec7bfe208b523066829299135e91",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=225s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22028.png",
+    "present": true,
+    "sha256": "6370ee93e54aabbac14c358b79b6ae245e7ccb799ec5d12bc6823192c2907497",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=228s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22029.png",
+    "present": true,
+    "sha256": "676321c3a06dc57cef43ba26d9e5790441004596d33101c5a612b4a5813d795c",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=234s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22030.png",
+    "present": true,
+    "sha256": "16503ce1f2e090d9776fbe06e325c3bd32f1e696367b3b625344f8096604e50d",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=237s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/coffee/22031.png",
+    "present": true,
+    "sha256": "a81a16589daec9042ca4de9e9d10446e6a2bc9d6a7e9839c557fefa41e24f561",
+    "source_url": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=249s"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/20054.png",
+    "present": true,
+    "sha256": "d64ab85ba418e7ef234220fcb7d9513dea6767ce3c1c995fdd08d2dadb6d7a1a",
+    "source_url": "https://tkgbtc.com/ui-items/20054.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/20059.png",
+    "present": true,
+    "sha256": "c2f7ff86eefd479f13ee2f854356365a2941d67b194098e426605eecb9653cd4",
+    "source_url": "https://tkgbtc.com/ui-items/20059.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/20128.png",
+    "present": true,
+    "sha256": "dfc2c7cfa2a112a68f3ace0224d9f5fc22797b351b297aa0a9fc5118973bc516",
+    "source_url": "https://tkgbtc.com/ui-items/20128.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/20203.png",
+    "present": true,
+    "sha256": "182321731af6a7ae071a962ae14500fbe6724e193eef10be5b62db84d6474b06",
+    "source_url": "https://tkgbtc.com/ui-items/20203.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/20235.png",
+    "present": true,
+    "sha256": "429b9ff8a88782e642828f6ef44a8d76e1c32a28d793943cd7a8f5b2519cfd93",
+    "source_url": "https://tkgbtc.com/ui-items/20235.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/20792.png",
+    "present": true,
+    "sha256": "67342fd865e87637209de550dc4ccd379ab1cdd50dbfc9f7acc08fcb03cb0dcc",
+    "source_url": "https://tkgbtc.com/ui-items/20792.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/21001.png",
+    "present": true,
+    "sha256": "a9791f2f7f2181aea98e8f727ca3e441b1df761a3ba506510281d78ad988e767",
+    "source_url": "https://tkgbtc.com/ui-items/21001.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/21104.png",
+    "present": true,
+    "sha256": "8368faa6e81d0dda3858da30da2f8b150ebe3374ca0ddf9c460e1415c2ccd207",
+    "source_url": "https://tkgbtc.com/ui-items/21104.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/21105.png",
+    "present": true,
+    "sha256": "1b6c8920e7fde6340d1e2f713be6eefd82ec759495a80957289bcfd7a8aa4edb",
+    "source_url": "https://tkgbtc.com/ui-items/21105.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/21106.png",
+    "present": true,
+    "sha256": "dc054570b86fa931e725af166b902a789c6e938c10f0cb35bf18ea3c3a290126",
+    "source_url": "https://tkgbtc.com/ui-items/21106.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/21134.png",
+    "present": true,
+    "sha256": "c81dd06da425831b6de5e7ad092c22aad3a2e65a2fc168d468524d26eb287400",
+    "source_url": "https://tkgbtc.com/ui-items/21134.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/21135.png",
+    "present": true,
+    "sha256": "d97d1ca2cb4632ea54986cbfe908d34c0c9f2468be5aebac9e396050c32b16dc",
+    "source_url": "https://tkgbtc.com/ui-items/21135.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/items/30000.png",
+    "present": true,
+    "sha256": "58c773a32ba76df08ffaa09295891dadd73aec8fc82f3aab2d65e3cd490b7b03",
+    "source_url": "https://tkgbtc.com/ui-items/30000.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1001.png",
+    "present": true,
+    "sha256": "c66472f87aac13d27e03a3caa6d5b9e86f9519df1d939c483995adfe53cdf903",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1001.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1002.png",
+    "present": true,
+    "sha256": "1c102e0d0173dd55014ae24aa917b5bc3b48de678524d5b8a7d7f1c7cf06434e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1002.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1003.png",
+    "present": true,
+    "sha256": "73776c39bf49d1a8bcc91088c5ac3f7fa05a5949d50c0eb0658d8f1ffe4d883d",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1003.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1004.png",
+    "present": true,
+    "sha256": "2f7ea3e577ded46e8e283c778dc797411220efe7262ef61676457aa72a12cfca",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1004.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1005.png",
+    "present": true,
+    "sha256": "85903439745ee534b0cf4fbc01a2240e532e7777b1e81ea9189173cd44db2888",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1005.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1006.png",
+    "present": true,
+    "sha256": "ff1de4578e59e09d28033378076b4a615e77cf00762196432ed507b8bec45d2d",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1006.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1007.png",
+    "present": true,
+    "sha256": "2a3a4908f1159253aa1d7518f08aa005a16bb2e1600629ec7633796aeda08829",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1007.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1010.png",
+    "present": true,
+    "sha256": "431ab541bb1db77fe9e6cf4fa890387e885e4808d6a246c94156b74be62bdd68",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1010.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1011.png",
+    "present": true,
+    "sha256": "54486ef6638686b61c2bfa111b87d33ad5947c1413177a172babc8a8c0b99227",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1011.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1012.png",
+    "present": true,
+    "sha256": "47490736d5c580af8ba72758f96c6055d28b4a6fea3859825c967ecbf0f8146a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1012.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1013.png",
+    "present": true,
+    "sha256": "151287c0a552d47a6a3809c84db15f90e4420b561333fb7bf5584d0071514d80",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1013.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1014.png",
+    "present": true,
+    "sha256": "b9320afe4ae7c14ef1ea1c68402f92c119a4540f365f75294100e0b81b46a1bd",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1014.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1015.png",
+    "present": true,
+    "sha256": "685ab51d40a55658baab79721c396bf46af490e951efe8531ebb3ace7c35cced",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1015.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1016.png",
+    "present": true,
+    "sha256": "6eb9bafa5e9e9ff028c679b96298ce8abf63d0f3651d78f98b162d1de0c551a8",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1016.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1017.png",
+    "present": true,
+    "sha256": "9824dd5a9623e140552c6211362fffb8c765c78ac1acfe0a5e029a2a9a8b34ee",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1017.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1018.png",
+    "present": true,
+    "sha256": "fb430187c2273af734ba57153c6bb4bc5def327a38027c499535556d6e2c8335",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1018.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1019.png",
+    "present": true,
+    "sha256": "d9a7b6c56dbd033ed94fc815849a30bc53a0d948b61bd550d5c6ab1f481c6e08",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1019.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1020.png",
+    "present": true,
+    "sha256": "b92929c1afea7616aae0d92d43cba445090d21357d5e78648d2c0ffa29d25727",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1020.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1021.png",
+    "present": true,
+    "sha256": "9da9642019b3cd57833e22465804c78a58bffde3078412657dffa077ef72910e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1021.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1023.png",
+    "present": true,
+    "sha256": "87cd6fb82fb6b403e20b4cd5a900e74cedc9ee033e106623ce2ec10a893ff846",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1023.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1025.png",
+    "present": true,
+    "sha256": "be049f17dd9c0f6e62b02320d2fd10a06c9dd87c36c754dfdb5f25d6e376d9a8",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1025.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1026.png",
+    "present": true,
+    "sha256": "0cbd1711fef861d9a46f8b64a55456698c7a8ecb61747604382b76fd634d868c",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1026.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1027.png",
+    "present": true,
+    "sha256": "cec55a9d74e5b4c5eb47b5d0e4226e1a1efc59c590c6ea6b7c1a23e9f278bbba",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1027.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1030.png",
+    "present": true,
+    "sha256": "8b9504e538eb82dc4f03f20f2ff4834fb421b81f9e86140a3cfcd6e138e58193",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1030.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1031.png",
+    "present": true,
+    "sha256": "54f0a2cf9077373ed3bf2afc3b736c98ba5317e4be7c59748bdd53e235311b99",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1031.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1032.png",
+    "present": true,
+    "sha256": "7cd00ee2710796ff0491116bb244a2027a0c60f821df8a0191a069d559c0b4dd",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1032.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1033.png",
+    "present": true,
+    "sha256": "a84e7f0ac8538dbc0b6232cc139b4153cd1d5e655d1067495e1ae563570a3f5f",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1033.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1035.png",
+    "present": true,
+    "sha256": "414d132a6b9824533f89030a17ce786eaae96eeb29b90db60ed4ffaeb1b69540",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1035.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1036.png",
+    "present": true,
+    "sha256": "4dcf46d5d151416e0850ab858f6cf58ee74925bc85ff0447ffaec4cfc04f885d",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1036.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1037.png",
+    "present": true,
+    "sha256": "69a618b1925b83bc037a1bd46c3a0f5b808f2f6e83c4cb924179358f352f4d30",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1037.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1038.png",
+    "present": true,
+    "sha256": "16719209ccd8e7266231ec95d88fe542369904314cc46fa7410617c12e0ea28a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1038.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1039.png",
+    "present": true,
+    "sha256": "91ca7a2db4c2c5621e08a240ec715fd7284cfc8d51a1580b9c0e96335c86b01e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1039.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1040.png",
+    "present": true,
+    "sha256": "e980591a9ae78bb229a2bd1f99c2ac8dbd7f954d242ca1c5ca4f68017cc8a39a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1040.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1041.png",
+    "present": true,
+    "sha256": "1d685604f9b907e4624d76120749843bc374a1953f45f7fdbe33e8f4aac51d04",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1041.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1042.png",
+    "present": true,
+    "sha256": "cf446e0562bb34d44ddeff6e7b22238467e30b48f11c1c6765a93ab801eff8a9",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1042.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1043.png",
+    "present": true,
+    "sha256": "c5dc73973111969c6a7d5e17fb704bb4e342aabb0cd98de237f2669d7ccaa72e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1043.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1046.png",
+    "present": true,
+    "sha256": "ec3845f64b6b5fa7887774c41ba80a265a60dd4bc081467dfaecb9130ff11ea3",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1046.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1050.png",
+    "present": true,
+    "sha256": "fb5b1a8869e3ea31a9e99efa059bd3e1651162c24708707b90275b39d9dcedbd",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1050.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1052.png",
+    "present": true,
+    "sha256": "aeef23d11884f01c66662337fda9112c37315c13be7120b75c6e5d9b89704019",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1052.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1055.png",
+    "present": true,
+    "sha256": "8191c482c31fefee8d7df5c457d0c7200514476534740d0ff59665f16edb39c1",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1055.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1056.png",
+    "present": true,
+    "sha256": "bd58b23096377a034b27087670e4701237dbdb68244e3d65f683a5da7d8bcb96",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1056.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1058.png",
+    "present": true,
+    "sha256": "6bb5c399d8f36700097aca0b1f2483cdd9af9edea02c3ad8fe1503f6026d9c45",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1058.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1060.png",
+    "present": true,
+    "sha256": "be3ff766ba59bcf7847755d45afeeb27e1259ca854b52921bc1570d0a589e7bc",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1060.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1065.png",
+    "present": true,
+    "sha256": "9e8c4c102ff9e8d150d8e8e181247c48c15e054c841a09ab4756c40c7741309f",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1065.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1071.png",
+    "present": true,
+    "sha256": "4f1b9ce1c05d8e569007625044fff43a5855a6740b30cf5932d062f7637df224",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1071.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1072.png",
+    "present": true,
+    "sha256": "14d76f0e31cf2d1fe9ef2061e26d1d69423747c7c4474362883632adb8bc54d0",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1072.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1073.png",
+    "present": true,
+    "sha256": "52c59ffada79718352ce7a32a9238041caaada33a5aec51c52ad34cb3c24f4e7",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1073.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1074.png",
+    "present": true,
+    "sha256": "dcf2308813fdcb5a4e15e6c47aa362277483c033250259e0a67928bc8d6edf50",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1074.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1075.png",
+    "present": true,
+    "sha256": "76d2637dc7b80e0f406b15ffec531ff40b828bb6aac1d5594a94c3d3388f5be2",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1075.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1076.png",
+    "present": true,
+    "sha256": "7b68d9190b108827dfe82f32c14e045667915ca60075afb1b3c2af5f76ec6fb1",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1076.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1077.png",
+    "present": true,
+    "sha256": "3a2249a87d706801141366e9b08d557ea564dc1a7ddf4dc2cf226072179b16f0",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1077.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1078.png",
+    "present": true,
+    "sha256": "10fede06457f0c86c0dc388169c43a0dfde2f7ecf3c76e3b85916829c13e6e3a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1078.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1079.png",
+    "present": true,
+    "sha256": "a71888f5b3765b28bbb7c2877fb27b41567fe736a2d678faef2ec59eb089def5",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1079.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1080.png",
+    "present": true,
+    "sha256": "8840a141421dd44279be399d7eb07bdf372b3caa348921d44994221600b2a397",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1080.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1081.png",
+    "present": true,
+    "sha256": "66ea31c44db0006f9b7db58e4babd04494f76db6d5f3f52e6ca6bce9e376cf8b",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1081.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1083.png",
+    "present": true,
+    "sha256": "03ebf82893c7b2b0b2711a1244cb612068e6e4ecf56f07ec5e442db5a3cbe3ff",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1083.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1084.png",
+    "present": true,
+    "sha256": "1948e73fe0afd154bc1fc4fbe956bbcef97406ca44214b156825a547a08027aa",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1084.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1087.png",
+    "present": true,
+    "sha256": "50729171726c1796ebcf37fe9c6f06c86e4931eb0c0ecf791ffe075e2627a709",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1087.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1088.png",
+    "present": true,
+    "sha256": "6125994f38789b06b4776257d43437834a1bb6032e887e8ce0381a2f99fdb637",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1088.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1089.png",
+    "present": true,
+    "sha256": "66eae12e2f576aa63a55411b1f91874475b0c2221cf12753355c675cc3a00328",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1089.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1090.png",
+    "present": true,
+    "sha256": "854056e59b842c358868420c7e9a404f28127020b70e6a43083d86bdf4fdb90e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1090.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1091.png",
+    "present": true,
+    "sha256": "ec081f725ff2f080c0bb6ff0a2779cab1e17ea5556e4b3bbf21b8dcd9ab4f773",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1091.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1092.png",
+    "present": true,
+    "sha256": "1dc4daf17a95d411764ba23fceeb80d50e5c46c80f3a0fca334afee334dff6f3",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1092.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1098.png",
+    "present": true,
+    "sha256": "a4593357a807a17c2b359f0981d9447b090746d9b5a679ab166e9371e5b6e937",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1098.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1099.png",
+    "present": true,
+    "sha256": "10ae326233aa133ef86416bb73cfa74d321618882fdee7ac6d923f97a2c9a8c6",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1099.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1100.png",
+    "present": true,
+    "sha256": "6891b26f61628d79f1d19550788c0da7f522a07db5b17803e6c2c443fbdc4d0e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1100.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1101.png",
+    "present": true,
+    "sha256": "23ace67ca61053b30b13c829841f808e341cf95d604b2eb48a42424cf968d42c",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1101.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1102.png",
+    "present": true,
+    "sha256": "57079c7462aa37d4109790743ce8d8432db8ca97787af3eef11272d7036f5b89",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1102.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1103.png",
+    "present": true,
+    "sha256": "ed6c3303df6266d163eb4bbd4b3c9967419fb30662e9dce67bf031df7432ef1c",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1103.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1104.png",
+    "present": true,
+    "sha256": "02931c383cdf34db469004d693a9172133655a6ce1aa5e2d71d49e1384bddf5e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1104.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1105.png",
+    "present": true,
+    "sha256": "7dc107839278cbaa34f44e0b905d7516b01555818e224d10c222fb8eb5b33fc8",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1105.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1114.png",
+    "present": true,
+    "sha256": "1c8c177300d7cc53853ccfe72899fdce423910821ef1aee96c1fd9baf2f73bbd",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1114.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1116.png",
+    "present": true,
+    "sha256": "578c92868753d36b491187520bd2cb166d6cddbef3aad16a9b3674d2bf949e0c",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1116.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1120.png",
+    "present": true,
+    "sha256": "4d0504e7b868c5d9c4f437710a4a387ca95b26975ebb3ff2fc1124efc24a8422",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1120.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1121.png",
+    "present": true,
+    "sha256": "825c70acb80ddb94e74db2802e63bbb8227884f1cc875c5ab6807b383f824108",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1121.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1122.png",
+    "present": true,
+    "sha256": "7081b3f5b04bf7fd0e1c23cf536b408f19fcf32532ca4eb03421de4d7462983b",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1122.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1123.png",
+    "present": true,
+    "sha256": "19d375faa91773d9252e19e2f7572b3dc5f943b8ec0e375210b850bf3a0e6b45",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1123.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1124.png",
+    "present": true,
+    "sha256": "5675fd7d28211679a1bc3aec7c8471c4895352f6f773e1746373dd205a6e3b65",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1124.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1125.png",
+    "present": true,
+    "sha256": "7c642a7f43bdc540894002b6550b4715e6ef03ef6c3f7dd52788916ed2657711",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1125.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1127.png",
+    "present": true,
+    "sha256": "943b12fe6992be138b92f0f1b466a1add8f4379f57379b40c2a402987d462a09",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1127.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1128.png",
+    "present": true,
+    "sha256": "2fcf8e803ac6567f9c5d87a9f4d9207696757c7b7f9ba0cd8d600ffc2b95c678",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1128.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1129.png",
+    "present": true,
+    "sha256": "545043375a7794dc5c77b6de8529643bbc3612cf2d6267fe63c7d7003e7e918d",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1129.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1132.png",
+    "present": true,
+    "sha256": "848f8fa84732bd474fd5806dbb32ab83ef2a9e8d0922234813a0426acb112d3e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1132.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1133.png",
+    "present": true,
+    "sha256": "65e1e4a4eccee92afc64cf2313f5ba78b93d4f017f39305d12c91c1c9e0bca65",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1133.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1134.png",
+    "present": true,
+    "sha256": "a63e9933956b6d7a4839760d9aaee672c76c80e38a526e8ef7c03cc4813e5670",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1134.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1135.png",
+    "present": true,
+    "sha256": "688e90ae846f4e840f8335dcde928b56bdbc9a9d963d7651330edfa618142d10",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1135.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1136.png",
+    "present": true,
+    "sha256": "4ad90e996fde06389a6b6d3585fb978692e7d37874d7b41dfb310243adfbc537",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1136.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1137.png",
+    "present": true,
+    "sha256": "4471ff1ab0c659872102f2ba14867bcc44452d2389471c536eba01da89f5eb02",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1137.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1138.png",
+    "present": true,
+    "sha256": "624c121d1ec02c67e2c301a3c8ff030e5fcc238836ae874a9e0db87ed28fb5e3",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1138.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1139.png",
+    "present": true,
+    "sha256": "6f1184364f4bcb76fdaabdad0c0688f2a6378c55be1e48a681077e4e7593fe7b",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1139.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1140.png",
+    "present": true,
+    "sha256": "2e9bbbfdd1ee6ee2de29173fc04aa8e2f674d8889c978c69e743806695a17a51",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1140.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1141.png",
+    "present": true,
+    "sha256": "3a65c8002e7d91a7d1e55c8dcbbcd7e1726033ae4f6b73a647cbec286c17f498",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1141.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1142.png",
+    "present": true,
+    "sha256": "83b4135e372c1b72c6cf290362d58f3a02152185bfb005c62a8ef4161da72f22",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1142.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1143.png",
+    "present": true,
+    "sha256": "cdd73964324fc66c6c29d6b68bc5a8eed782bb9a29326cc471e44a1077b6648d",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1143.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1144.png",
+    "present": true,
+    "sha256": "90ba22c17b94029784a2f6482cd8629356f987a3192a56214436acf6a37dd9e5",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1144.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1145.png",
+    "present": true,
+    "sha256": "3589a94d55ef070dc6335937df36146d7a600e51138eef9e663f01eb68bd8987",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1145.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1146.png",
+    "present": true,
+    "sha256": "95cd172337d8e5a16097f0b828d94c8c0c56a2b09177dd03b3f457964a48e21e",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1146.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1147.png",
+    "present": true,
+    "sha256": "7e6f52aa8dfeb55b4c950bff7d92e0110c4169aa401318ade5dae25efe7f5270",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1147.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1148.png",
+    "present": true,
+    "sha256": "bd414573ec6f265f7d30d599b65097541c26eb92c2766f67eb12be827eb9e126",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1148.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1149.png",
+    "present": true,
+    "sha256": "af0f489b89dde7ff8ccfffe593fd60c15cc222ba708983008782e5a8e621cb1d",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1149.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1150.png",
+    "present": true,
+    "sha256": "814609a55b35a85511073f2c616785b5a3350b116ad3fc242e217750ff24cb03",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1150.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1155.png",
+    "present": true,
+    "sha256": "19437b2a679785d80aaf9f01df303616cbf6489a79064319a7ddca094779eb6a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1155.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1158.png",
+    "present": true,
+    "sha256": "85360c1dcd2afb66046c1cd7dc8b6877929620004f8a13e4956884eb7525fca3",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1158.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1160.png",
+    "present": true,
+    "sha256": "305398a18124ba1f4fabbcf878a2a9cb5ac9be3e06d2c8aa3ddecf41511106c6",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1160.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1161.png",
+    "present": true,
+    "sha256": "ab77eb719ca4bc2a9b138127478ccaab43b8b3897985e5ad54a6fefd95539fb5",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1161.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1162.png",
+    "present": true,
+    "sha256": "b1f3a3b368c2b7618e9262944645f8a978096358b0e89f3e0dd939e21926f9c9",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1162.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1164.png",
+    "present": true,
+    "sha256": "68fee97d874e8356119f5ccc8976f6ebdd01db818234bf3a34decbfa8bd1f06a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1164.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1165.png",
+    "present": true,
+    "sha256": "dbeadaaa5805f999b934526daa854e254d5ed0b1b74292010637d3d54e23d3da",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1165.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1166.png",
+    "present": true,
+    "sha256": "4d213f022f9b317c223eb2b32c3be70e580999614c2d242e8b28d0e79e76045c",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1166.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1168.png",
+    "present": true,
+    "sha256": "dd05ed6bae8ff8191a2ee93f482940dcaa127ec6fb5ce1b7236cf1ae5c176943",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1168.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1169.png",
+    "present": true,
+    "sha256": "ded40424ace656f190460005c9e7e607ac93ceafdd31c684e5c66613c1023af3",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1169.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1170.png",
+    "present": true,
+    "sha256": "0d7a48a890070ea39766b695d9011c407314eca8305e86b5cf72c864aae8455a",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1170.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1171.png",
+    "present": true,
+    "sha256": "3ca426de189a5a30a093821d18148535f6278158fa9bb280996abf6d6c310071",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1171.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1172.png",
+    "present": true,
+    "sha256": "19060d3cb829aa9bff4c652295d2893323a49d03c8c05f248a27a8c1c264cd23",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1172.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1173.png",
+    "present": true,
+    "sha256": "0fdc1fe940b654b73a6855b4ed94351a4d6621823d7dc28dfc0b1f424114c403",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1173.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1174.png",
+    "present": true,
+    "sha256": "fa1ca5c182b0e7db8b6f6b30bb21cfe8453361929d33aba8e9ffffbdc887f5a6",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1174.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1175.png",
+    "present": true,
+    "sha256": "e07dca4f00311a0c1e683072eff57e3d72c7b93470ec6a922abe0b0b48126318",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1175.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1177.png",
+    "present": true,
+    "sha256": "523b9e4706001d62707b3beea140d9ae39b7d28b0fd76c3dddc7ea3a8ba7f5ab",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1177.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1178.png",
+    "present": true,
+    "sha256": "1fe0f7a741324561bdd87c5d99e201626d4cd9692575a029b6fde5b9f7a5986b",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1178.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/orbs/1179.png",
+    "present": true,
+    "sha256": "a72dd399777af98f215336a54cb03026b2bbf69adaaa0aa7b8c7f923b62082a4",
+    "source_url": "https://tkgbtc.com/orb-icon/Equip_HE_UR_1179.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/types/T0.png",
+    "present": true,
+    "sha256": "f8c262e3380b614814358b4606beaba0dd11e52601bcf831ade23fa7bd88dd39",
+    "source_url": "https://tkgbtc.com/hero-types/kagune_T0.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/types/T1.png",
+    "present": true,
+    "sha256": "f0b23c95d347c9cbd7610b0e504a636c8df0d8ecfe0b24c613f8ec746b9bfacc",
+    "source_url": "https://tkgbtc.com/hero-types/kagune_T1.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/types/T2.png",
+    "present": true,
+    "sha256": "7904a09aa383fc5cff80b8979a398b14932f71795fb8e8bd7d5516967ee5b491",
+    "source_url": "https://tkgbtc.com/hero-types/kagune_T2.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/types/T3.png",
+    "present": true,
+    "sha256": "0195eb59b2c1c038464b172cf9ae5e5b3a17834f76f06846875bcc2d028b9706",
+    "source_url": "https://tkgbtc.com/hero-types/kagune_T3.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/types/T4.png",
+    "present": true,
+    "sha256": "03116e9870385d5f9f8b635e5f010ea963d14dfd7e15c9556a32531da8937e6b",
+    "source_url": "https://tkgbtc.com/hero-types/kagune_T4.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/types/T5.png",
+    "present": true,
+    "sha256": "3ede75c720bb55d1ca999181ad12b6aed0e3d0cc1f796624a95647f8bce534d3",
+    "source_url": "https://tkgbtc.com/hero-types/kagune_T5.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1001.png",
+    "present": true,
+    "sha256": "6a2cebb282e589baf2d0fc0dcc51a51b48ec803eea0d0988c99e2154057876a3",
+    "source_url": "https://tkgbtc.com/pic_head/1001_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1002.png",
+    "present": true,
+    "sha256": "d74fac4e713b2632d09988d891153697e641909317e49b938733a2289170afa5",
+    "source_url": "https://tkgbtc.com/pic_head/1002_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1003.png",
+    "present": true,
+    "sha256": "752c32c557ee2daff5a8ad4364e2a649131bfd831eae03e63e9a8906fdb0dacf",
+    "source_url": "https://tkgbtc.com/pic_head/1003_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1004.png",
+    "present": true,
+    "sha256": "52664e7517e82a51334cde489a2a957e22dd408cf72a7a64f06bf7a1db484316",
+    "source_url": "https://tkgbtc.com/pic_head/1004_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1005.png",
+    "present": true,
+    "sha256": "7979648f7d76a199e608b3bbac6dd2d616d82c45766bb4b042c4b40589668e1e",
+    "source_url": "https://tkgbtc.com/pic_head/1005_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1006.png",
+    "present": true,
+    "sha256": "9785a65918a7474170c75618435401c79ac3e8b6b1eb63ba206d5a97a5c425cc",
+    "source_url": "https://tkgbtc.com/pic_head/1006_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1007.png",
+    "present": true,
+    "sha256": "22c48958986d17c696d263ad889d98d1f3b9a720ce997c70bf17a28ce09a86d1",
+    "source_url": "https://tkgbtc.com/pic_head/1007_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1010.png",
+    "present": true,
+    "sha256": "08b6fe12e087d734ffd51a787e7bc875bb96b23a90fb7b6908429b4571fef839",
+    "source_url": "https://tkgbtc.com/pic_head/1010_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1011.png",
+    "present": true,
+    "sha256": "11a9c85f242b7ac9c6273c10e35cd32607d8311b8a3274aa4b0dcce0cd398a2f",
+    "source_url": "https://tkgbtc.com/pic_head/1011_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1012.png",
+    "present": true,
+    "sha256": "de3eef812849114c03d650385733bb8e844919e800c9e958d4182719eb118050",
+    "source_url": "https://tkgbtc.com/pic_head/1012_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1013.png",
+    "present": true,
+    "sha256": "cb063e662d17ee1fdd3718f5b091f331b3daf711bf07f57cbcc748a1d0a3eab7",
+    "source_url": "https://tkgbtc.com/pic_head/1013_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1014.png",
+    "present": true,
+    "sha256": "0c1e5661a3fd1e4e210ad6a91ce0d12d46da1e48843de25a5266aad46bedaedc",
+    "source_url": "https://tkgbtc.com/pic_head/1014_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1015.png",
+    "present": true,
+    "sha256": "df851ff8c283750034709f5a2f7d2e310cc364cb944b1242fb8ce8b6a9fdd79c",
+    "source_url": "https://tkgbtc.com/pic_head/1015_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1016.png",
+    "present": true,
+    "sha256": "6f0433afecbc20f1e658a8e3b6d99f17df73d814787ed128f42be8932c89e1bc",
+    "source_url": "https://tkgbtc.com/pic_head/1016_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1017.png",
+    "present": true,
+    "sha256": "e456ff2623feaf2af1009aba2fd9e9d3237de4bdb009c39bfea59e16f8066153",
+    "source_url": "https://tkgbtc.com/pic_head/1017_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1018.png",
+    "present": true,
+    "sha256": "500c737a03538534547b11138832317fc6dd874c16f684fe9f10b8ad4c8e4341",
+    "source_url": "https://tkgbtc.com/pic_head/1018_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1019.png",
+    "present": true,
+    "sha256": "f15094c67e3934705b63ee42ea9fbc34e77043d343553f093713110cd8412b7e",
+    "source_url": "https://tkgbtc.com/pic_head/1019_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1020.png",
+    "present": true,
+    "sha256": "c3e61ad600c5b03e380597f9e089cf708fbece4af9ee969ab4504e73fbb81384",
+    "source_url": "https://tkgbtc.com/pic_head/1020_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1021.png",
+    "present": true,
+    "sha256": "8f1105aeae6ea6538f6d456eab334a4817cb4c85b62c4d18539629ff049bd8a1",
+    "source_url": "https://tkgbtc.com/pic_head/1021_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1023.png",
+    "present": true,
+    "sha256": "2ec8751d7e5c184d49eee1d3882d7d17ec1a607ff7016d9c414cb28ee9989403",
+    "source_url": "https://tkgbtc.com/pic_head/1023_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1025.png",
+    "present": true,
+    "sha256": "09fa23f76bca905d92347985d95d28209141cc24c70fd6e04ae7a9b09e93aa29",
+    "source_url": "https://tkgbtc.com/pic_head/1025_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1026.png",
+    "present": true,
+    "sha256": "f3c9677cfe029a5b426a134572791b9facb51471035c5ccac2c60402a35dbed2",
+    "source_url": "https://tkgbtc.com/pic_head/1026_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1027.png",
+    "present": true,
+    "sha256": "36a1308f7d2f7b427874bed1e4fd38d5182244991ba74d2e24123c0a7c111a59",
+    "source_url": "https://tkgbtc.com/pic_head/1027_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1030.png",
+    "present": true,
+    "sha256": "67970aa361a5a94087967f72cf5e574dc3059e5fd863a92a8fbfe3bcaf86744d",
+    "source_url": "https://tkgbtc.com/pic_head/1030_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1031.png",
+    "present": true,
+    "sha256": "cfe10368a024131716fddaf65dc9c9ab0f5eab4d572c823b7f9affd59bb8de7c",
+    "source_url": "https://tkgbtc.com/pic_head/1031_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1032.png",
+    "present": true,
+    "sha256": "f4e248e1f384419dffbd0a868ba0edee99444c4a10dfb508b2f963e89a205ffd",
+    "source_url": "https://tkgbtc.com/pic_head/1032_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1033.png",
+    "present": true,
+    "sha256": "4fccab5313451e0b320f1af8e5755d5ebfd407a84caa7884629978ff5685dabe",
+    "source_url": "https://tkgbtc.com/pic_head/1033_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1035.png",
+    "present": true,
+    "sha256": "2e8b563735b7783073d03be675493e3d7fc4002f1e102d3cb098e83d5215741e",
+    "source_url": "https://tkgbtc.com/pic_head/1035_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1036.png",
+    "present": true,
+    "sha256": "353f479aecd4610930c57c4d34cdce2f86c099ac74d6bfea2f86cff6ae679f5a",
+    "source_url": "https://tkgbtc.com/pic_head/1036_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1037.png",
+    "present": true,
+    "sha256": "607514e73839dbeae84027f2e177a154a6cb539fdc5b7cf290f33e88733d760b",
+    "source_url": "https://tkgbtc.com/pic_head/1037_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1038.png",
+    "present": true,
+    "sha256": "1aeb883c2cd4beee73081f12381bcae7321fbc99347f374ffbb83a6b578b0bd7",
+    "source_url": "https://tkgbtc.com/pic_head/1038_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1039.png",
+    "present": true,
+    "sha256": "03243ebc9e78944f20b74e8d42c775bbbefc64ceb1db209c956074d92150cb9a",
+    "source_url": "https://tkgbtc.com/pic_head/1039_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1040.png",
+    "present": true,
+    "sha256": "d5c2f74eeaa0487ef7046aa28eed27a5afa1a3e3d4c9416b884df5f17656d330",
+    "source_url": "https://tkgbtc.com/pic_head/1040_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1041.png",
+    "present": true,
+    "sha256": "f425bbab10c7b4eba8c82a9ea164fee37fe6cde8ab628ffdabf06a0b0aeae33d",
+    "source_url": "https://tkgbtc.com/pic_head/1041_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1042.png",
+    "present": true,
+    "sha256": "f900de0c66302a28f7752255cc098efcc425d6c1f311b9043f93a2296117872c",
+    "source_url": "https://tkgbtc.com/pic_head/1042_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1043.png",
+    "present": true,
+    "sha256": "f5e6c4f5e823bc2e160bd7544eceb6a343ed3bc0a306537ada8c0f347dc17713",
+    "source_url": "https://tkgbtc.com/pic_head/1043_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1046.png",
+    "present": true,
+    "sha256": "80498ca3f87b63a0c96ca42abcd3a63d206d240745f3c3aef9adcbe1f59fc1a6",
+    "source_url": "https://tkgbtc.com/pic_head/1046_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1050.png",
+    "present": true,
+    "sha256": "7ea3314b1f5b9c21a937c028a9f44f2063edaeaec848437229dacad64707ca0a",
+    "source_url": "https://tkgbtc.com/pic_head/1050_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1052.png",
+    "present": true,
+    "sha256": "2127515bc165df4d86923a06cdd0a73ff25ef5b8163f31bbcf98e53a566fdcfc",
+    "source_url": "https://tkgbtc.com/pic_head/1052_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1053.png",
+    "present": true,
+    "sha256": "408be4a2e7ae79e4821b144d0d110e97493f32f23df27139fa7062ccd50cf58e",
+    "source_url": "https://tkgbtc.com/pic_head/1053_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1055.png",
+    "present": true,
+    "sha256": "0b8f92cf3653aa5fa7d5b1a3d36096941046558208b3333d68e323df0d805f4a",
+    "source_url": "https://tkgbtc.com/pic_head/1055_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1056.png",
+    "present": true,
+    "sha256": "94c231cdaf930a4d20a373497aeeae8735de50105a18dba90e4cbb2cbb7d4678",
+    "source_url": "https://tkgbtc.com/pic_head/1056_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1058.png",
+    "present": true,
+    "sha256": "d0109fe1f4b6fc8455dd9723a554111401c5a472ca2b79c0250157334cd288aa",
+    "source_url": "https://tkgbtc.com/pic_head/1058_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1060.png",
+    "present": true,
+    "sha256": "1ec95ec372f07f24e1ae4872bcd27ce3119c259418e60372d5934091e88936d7",
+    "source_url": "https://tkgbtc.com/pic_head/1060_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1065.png",
+    "present": true,
+    "sha256": "4fd3fd5cba49aa652a3c5dbe6b973779599724ba492a939ef7b80442a48ce442",
+    "source_url": "https://tkgbtc.com/pic_head/1065_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1071.png",
+    "present": true,
+    "sha256": "75ec23f40f026478953ca98829f88536d377bfe4227854a0d811a58ad2aeff25",
+    "source_url": "https://tkgbtc.com/pic_head/1071_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1072.png",
+    "present": true,
+    "sha256": "3d0cc835b546f4a2aec96f65154288fa07aac7060f6c7b9fb60beedcf89be340",
+    "source_url": "https://tkgbtc.com/pic_head/1072_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1073.png",
+    "present": true,
+    "sha256": "90f0c6cc93f3b1b5d8e552e7c92a1fe17315ff409e5c34c643029c69d9099804",
+    "source_url": "https://tkgbtc.com/pic_head/1073_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1074.png",
+    "present": true,
+    "sha256": "421c8041f2d9c1ad6cf86ae619c41beace03a1b73d292dfd1dda5479e2ff2db1",
+    "source_url": "https://tkgbtc.com/pic_head/1074_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1075.png",
+    "present": true,
+    "sha256": "0f3132d2ae99fceab027662cafa36fce7679a75c0df67bd1867e9bcd6caba7f3",
+    "source_url": "https://tkgbtc.com/pic_head/1075_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1076.png",
+    "present": true,
+    "sha256": "9418656e62a9389136c5e946e80d026f3e3f4502071164d4ff98ace1aa6f6895",
+    "source_url": "https://tkgbtc.com/pic_head/1076_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1077.png",
+    "present": true,
+    "sha256": "cc7b5f4a0384d665509189bc930ba21eedc428ae6e43c242a186c82dcc33a1e3",
+    "source_url": "https://tkgbtc.com/pic_head/1077_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1078.png",
+    "present": true,
+    "sha256": "d417c8100eb7828a074ecf01fe4dfa5394c973a5612d94025ec56cb5a85c307f",
+    "source_url": "https://tkgbtc.com/pic_head/1078_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1079.png",
+    "present": true,
+    "sha256": "856a160b00fd4b06511e016aa1a79a8adba06ccd9c3bd39252d8a9913f650b5b",
+    "source_url": "https://tkgbtc.com/pic_head/1079_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1080.png",
+    "present": true,
+    "sha256": "d7d031d799ed366c26201fd784d36be03067eb68961d6b181acba84576490f57",
+    "source_url": "https://tkgbtc.com/pic_head/1080_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1081.png",
+    "present": true,
+    "sha256": "1cb11932e5234852549d7725f25cdac77c5196b67ca711d85cab2fff20e8393a",
+    "source_url": "https://tkgbtc.com/pic_head/1081_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1083.png",
+    "present": true,
+    "sha256": "ba47e106c4e83423c1efa6605682f4d2ec83225d924fc743baba7f0488de1e6c",
+    "source_url": "https://tkgbtc.com/pic_head/1083_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1084.png",
+    "present": true,
+    "sha256": "2d3b933e326a4180b82e127c3cc2f2a65b6a1af283d39146be408e235815ee31",
+    "source_url": "https://tkgbtc.com/pic_head/1084_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1087.png",
+    "present": true,
+    "sha256": "cc61e8fd4368bfe1e6c9ccb3a7c1f5160c8b728c9311e2b3daaee88f63ecb201",
+    "source_url": "https://tkgbtc.com/pic_head/1087_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1088.png",
+    "present": true,
+    "sha256": "d6e2747bf54f3d16d74b6675c0ea6d8b96f50a7db2b2f275da50d42bc7296d7d",
+    "source_url": "https://tkgbtc.com/pic_head/1088_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1089.png",
+    "present": true,
+    "sha256": "7c620590f460fc006228515bdc14b09461f442045e088d6e5b7e43f1a42aef10",
+    "source_url": "https://tkgbtc.com/pic_head/1089_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1090.png",
+    "present": true,
+    "sha256": "ce50456baced218a3e45aa7e5fabdae730d1a44a8032b632c5f1e5012fbd701d",
+    "source_url": "https://tkgbtc.com/pic_head/1090_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1091.png",
+    "present": true,
+    "sha256": "a85d9db6740e799810046d65316522eee4bab45e06df22b1dd232948513fce6a",
+    "source_url": "https://tkgbtc.com/pic_head/1091_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1092.png",
+    "present": true,
+    "sha256": "ce507639da5ca11f011081e51c79b13e9764e70ea714a4c234bb24d1c1887aac",
+    "source_url": "https://tkgbtc.com/pic_head/1092_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1098.png",
+    "present": true,
+    "sha256": "f8f97cffaa8f1d2d0162b23b835d7a78be2d597bec1fb53f58dec182e7f16799",
+    "source_url": "https://tkgbtc.com/pic_head/1098_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1099.png",
+    "present": true,
+    "sha256": "eb25b6bed8fe5766c5b9b731e9ba18c08adaab9a890f139b9f7c72bb56330af9",
+    "source_url": "https://tkgbtc.com/pic_head/1099_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1100.png",
+    "present": true,
+    "sha256": "46ea04fc4f82faa710742b38e136dbf8a4d483ee1b056f435a68893bf6064925",
+    "source_url": "https://tkgbtc.com/pic_head/1100_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1101.png",
+    "present": true,
+    "sha256": "7584d8b1795755ce23934d24ac3ae9a3dc1641291852aa3196da87c8a9029640",
+    "source_url": "https://tkgbtc.com/pic_head/1101_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1102.png",
+    "present": true,
+    "sha256": "def8e2b4cc8aa5cb08921d31b7dee5771a812ac3ed76f16dfe95cdc9e48592ba",
+    "source_url": "https://tkgbtc.com/pic_head/1102_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1103.png",
+    "present": true,
+    "sha256": "30643d0a06cb8b1c0b32fa3976ceef28ce3b04db6ea42faf22ec166e115753fa",
+    "source_url": "https://tkgbtc.com/pic_head/1103_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1104.png",
+    "present": true,
+    "sha256": "7d3d46ed53ed1b11dd9d131064582d7308b7b3295526c9c01526e3903be6b9c3",
+    "source_url": "https://tkgbtc.com/pic_head/1104_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1105.png",
+    "present": true,
+    "sha256": "98baebf98607588d8181210a38cf2c7792c25aa6f91e5352521ad5a0dbe63ef3",
+    "source_url": "https://tkgbtc.com/pic_head/1105_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1114.png",
+    "present": true,
+    "sha256": "a456c0c0043d115bc7dd00fdf6a7a89142061e7d9d2ec530b407b0769ab40699",
+    "source_url": "https://tkgbtc.com/pic_head/1114_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1116.png",
+    "present": true,
+    "sha256": "1e585caf18662258fb63214b4293ddbb0a9609f6d5fdd182d148a597f8ec5e4a",
+    "source_url": "https://tkgbtc.com/pic_head/1116_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1120.png",
+    "present": true,
+    "sha256": "a1f798ae955444a13b395ddce9d7fe01566f0b47dc81b1b0eca8ee1c1947b4ea",
+    "source_url": "https://tkgbtc.com/pic_head/1120_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1121.png",
+    "present": true,
+    "sha256": "4003299a79209155ed8a7c84b3cbff8e4a553c143253e03726e17ae16c706005",
+    "source_url": "https://tkgbtc.com/pic_head/1121_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1122.png",
+    "present": true,
+    "sha256": "5829712cc4cbc705d4ce6e5f270b174a409ace8ac5fd4dfa9bac124695306254",
+    "source_url": "https://tkgbtc.com/pic_head/1122_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1123.png",
+    "present": true,
+    "sha256": "48b0d883f2decad85bc1a6ca08ce85f99f4fbae5a2148d475299c969bf8bda8c",
+    "source_url": "https://tkgbtc.com/pic_head/1123_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1124.png",
+    "present": true,
+    "sha256": "2ac44d95687392032926229a7f229fe06ac8a376609197a1a287c06ae9aed920",
+    "source_url": "https://tkgbtc.com/pic_head/1124_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1125.png",
+    "present": true,
+    "sha256": "9e1d7eec8d26b25118a8336d6dfc4960415d913a03a3c45c3bfa45fc6ddf976d",
+    "source_url": "https://tkgbtc.com/pic_head/1125_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1127.png",
+    "present": true,
+    "sha256": "bff7b651543455552a3e784411ee24fa7e7d442b326587867fe21103de4728a5",
+    "source_url": "https://tkgbtc.com/pic_head/1127_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1128.png",
+    "present": true,
+    "sha256": "57e17befcd3a77efaa235c8ba8b43782e8a6bf66e15770d4ac1900bfadf6adcc",
+    "source_url": "https://tkgbtc.com/pic_head/1128_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1129.png",
+    "present": true,
+    "sha256": "398428f709e68e629599c131d670142e28344c01965fd0e44db9b7d7d8392470",
+    "source_url": "https://tkgbtc.com/pic_head/1129_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1132.png",
+    "present": true,
+    "sha256": "6c4e93b7616f18f6f4a69413e860120fdfb89963cdbdc76fc15f58dc507f6017",
+    "source_url": "https://tkgbtc.com/pic_head/1132_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1133.png",
+    "present": true,
+    "sha256": "cf63bc3bc51fdccceaaf5f976f3e1f52915f71b7c75b830b60fe8bda0fa5dcb1",
+    "source_url": "https://tkgbtc.com/pic_head/1133_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1134.png",
+    "present": true,
+    "sha256": "85e7f3cff4014d380563305b14c9058e7e81e4c7e84cb32bfc142103939374ff",
+    "source_url": "https://tkgbtc.com/pic_head/1134_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1135.png",
+    "present": true,
+    "sha256": "f8efb5e50bb161cf955520d2804a9d3145331f78d8cb37688e21594f5d62213e",
+    "source_url": "https://tkgbtc.com/pic_head/1135_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1136.png",
+    "present": true,
+    "sha256": "beba5054a727fd74e40afaba40793561e16835c581605b453bd659e48e6c9ba9",
+    "source_url": "https://tkgbtc.com/pic_head/1136_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1137.png",
+    "present": true,
+    "sha256": "c0ff71f69e081a11c8e5778f981a98b9df570ea499e0913f5474c53f69c03e11",
+    "source_url": "https://tkgbtc.com/pic_head/1137_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1138.png",
+    "present": true,
+    "sha256": "2cfb88a6fe183d3da9c19b0dffa0fefa97226a3a29560f3b4a3b56d98b47d630",
+    "source_url": "https://tkgbtc.com/pic_head/1138_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1139.png",
+    "present": true,
+    "sha256": "626d68541e0ef01da4dbf5c33a61e0720a8d0af5e3591551b1d9e85f340a79a1",
+    "source_url": "https://tkgbtc.com/pic_head/1139_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1140.png",
+    "present": true,
+    "sha256": "fa4c464d5dc2ffb174c670d5b75a161d6e5a9568c32e6ef9b88316f7bf2b9182",
+    "source_url": "https://tkgbtc.com/pic_head/1140_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1141.png",
+    "present": true,
+    "sha256": "7670f03691e7419a0ad34c96369f9af55911ba17acb02813e6dd2cb860031434",
+    "source_url": "https://tkgbtc.com/pic_head/1141_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1142.png",
+    "present": true,
+    "sha256": "df47fb17fba91078accdcd3f57b4935190c4551eafb9d6382e27c4e85ace8e68",
+    "source_url": "https://tkgbtc.com/pic_head/1142_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1143.png",
+    "present": true,
+    "sha256": "c43008253768a48ec4f230f2e320a2930470ff4b70c90a30dad54122b078b36f",
+    "source_url": "https://tkgbtc.com/pic_head/1143_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1144.png",
+    "present": true,
+    "sha256": "1ab43c8df7e18a7903048fb7c1dfbea27032c956a6846fb107bf9e954ccc8836",
+    "source_url": "https://tkgbtc.com/pic_head/1144_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1145.png",
+    "present": true,
+    "sha256": "a68a5352136c496660f35c0d900cfc2544b3201d263d216fc669d731d72c1180",
+    "source_url": "https://tkgbtc.com/pic_head/1145_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1146.png",
+    "present": true,
+    "sha256": "75feea65be7b82c29ea9b91f48649d3e692bc0bd6b0fb78219b0b4994e8936d3",
+    "source_url": "https://tkgbtc.com/pic_head/1146_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1147.png",
+    "present": true,
+    "sha256": "cab0794c475d7971efe468951b1508bf541313b9bd28d648b9a56395f38dbbcf",
+    "source_url": "https://tkgbtc.com/pic_head/1147_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1148.png",
+    "present": true,
+    "sha256": "728e4da55ab0821b9d1e1b184903996251823dfd1e26c1eff1c702296ba687cd",
+    "source_url": "https://tkgbtc.com/pic_head/1148_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1149.png",
+    "present": true,
+    "sha256": "7eed0a8e8d41b1caba6a2977be5cf3850d8e619983b8f04d3d9838f93e833388",
+    "source_url": "https://tkgbtc.com/pic_head/1149_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1150.png",
+    "present": true,
+    "sha256": "506285334b1651d6f889f627d5d5acde859e9f91b1dbe82018eec17d6cd2886f",
+    "source_url": "https://tkgbtc.com/pic_head/1150_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1155.png",
+    "present": true,
+    "sha256": "9eda5d288d4383c1e170405b795a49511d546c1e3c45b8d37a8ba3c0df05a43b",
+    "source_url": "https://tkgbtc.com/pic_head/1155_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1158.png",
+    "present": true,
+    "sha256": "202b6cca9edc4089afec3080b3bd1b4f77d0efca299f3caf0dc504e6b26020bb",
+    "source_url": "https://tkgbtc.com/pic_head/1158_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1160.png",
+    "present": true,
+    "sha256": "4889cff144d44889e85900588f801067962f8b187586d11829a17d56cd5fb889",
+    "source_url": "https://tkgbtc.com/pic_head/1160_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1161.png",
+    "present": true,
+    "sha256": "69003107efbddfdb05682a2b8e9965710c890bff9bc4d81706ac0c81fc8b1a47",
+    "source_url": "https://tkgbtc.com/pic_head/1161_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1162.png",
+    "present": true,
+    "sha256": "50067d43b3d6b516ce8bfc3a7ac6639f00d22142f3ed4f431b0e69f783d78dc4",
+    "source_url": "https://tkgbtc.com/pic_head/1162_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1164.png",
+    "present": true,
+    "sha256": "69065db66231f26e53e3bd55396eb07993bef14e0cd3cbef9708c853cfa726f3",
+    "source_url": "https://tkgbtc.com/pic_head/1164_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1165.png",
+    "present": true,
+    "sha256": "0f092c0f665a7026ac5158a338ee8e3709a50b0407203f73b1aca7cdc35c8e0a",
+    "source_url": "https://tkgbtc.com/pic_head/1165_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1166.png",
+    "present": true,
+    "sha256": "191a43a7d1aa0398680873fd6a02cd8fae58fad9433a089fde3c4d2148ceb690",
+    "source_url": "https://tkgbtc.com/pic_head/1166_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1168.png",
+    "present": true,
+    "sha256": "ac6fdefc9b6a7b0ece44126be6f31865b9de5f4b1e623390088f148b16097fad",
+    "source_url": "https://tkgbtc.com/pic_head/1168_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1169.png",
+    "present": true,
+    "sha256": "55bf496225002b0d1277f00afd9ef2b9f3db945af623837df8df6584e87caa60",
+    "source_url": "https://tkgbtc.com/pic_head/1169_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1170.png",
+    "present": true,
+    "sha256": "154549fc7c64f93fffb46cc6afd37a2c499fb5943880eb2973d1cab3e3714621",
+    "source_url": "https://tkgbtc.com/pic_head/1170_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1171.png",
+    "present": true,
+    "sha256": "6c3c9717e6baf10ef471c080c7fd5676e8c305669dcdb0496a72a51a110e19fe",
+    "source_url": "https://tkgbtc.com/pic_head/1171_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1172.png",
+    "present": true,
+    "sha256": "e8c3e35e341fd52d9ed68842d7ed865f1bce576e629b3bfd9504d16a29565024",
+    "source_url": "https://tkgbtc.com/pic_head/1172_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1173.png",
+    "present": true,
+    "sha256": "e50497d9e66a591d56dc6b8fca6604cfc49cf64be49ac2ddde2f81dd18ec9e80",
+    "source_url": "https://tkgbtc.com/pic_head/1173_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1174.png",
+    "present": true,
+    "sha256": "51616f1ccd2f7dbdce725cd21c64e1e030854017c62e478470aca1a34c4721fc",
+    "source_url": "https://tkgbtc.com/pic_head/1174_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1175.png",
+    "present": true,
+    "sha256": "cf7630776b0d9ff971f853c1d39b9ab851f6ae303eea621e8356e0861c86c602",
+    "source_url": "https://tkgbtc.com/pic_head/1175_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1177.png",
+    "present": true,
+    "sha256": "09530b46eb8fe851d8b7e9f3a5d00911c4d45325c65988c651249a710302cb95",
+    "source_url": "https://tkgbtc.com/pic_head/1177_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1178.png",
+    "present": true,
+    "sha256": "b326675e21740962280cb62b8b37dc372d422629adebb42142b2093d09fe75a2",
+    "source_url": "https://tkgbtc.com/pic_head/1178_head.png"
+  },
+  {
+    "credit": "Tokyo Ghoul: Break the Chains artwork; source archive from tkgbtc.com",
+    "license": "not established by archive; rights review required for public distribution",
+    "path": "assets/units/1179.png",
+    "present": true,
+    "sha256": "28f8e139f4c97edf7b1e89aaa3609d67ae95c0ab1879378bceb76dfe5c62d1df",
+    "source_url": "https://tkgbtc.com/pic_head/1179_head.png"
+  }
+]

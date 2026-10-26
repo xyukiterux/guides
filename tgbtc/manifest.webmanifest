@@ -1,23 +1,21 @@
 {
- "name": "Tokyo Ghoul: Break the Chains - F2P Guide",
- "short_name": "TGBC Guide",
- "description": "F2P leaderboard guide for the new relaunch server.",
- "start_url": "./",
- "scope": "./",
- "display": "standalone",
- "background_color": "#19202b",
- "theme_color": "#19202b",
- "icons": [
-  {
-   "src": "icon-192.png",
-   "sizes": "192x192",
-   "type": "image/png"
-  },
-  {
-   "src": "icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "any maskable"
-  }
- ]
+  "name": "Tokyo Ghoul \u00b7 Field Guide",
+  "short_name": "Field Guide",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0d14",
+  "theme_color": "#0b0d14",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

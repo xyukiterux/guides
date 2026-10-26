@@ -1,0 +1,437 @@
+{
+  "source": "Original 14-mode guide with implementation schema for missing tactics",
+  "modes": [
+    {
+      "id": "chain",
+      "name": "Chain Campaign",
+      "kind": "Main progression + idle farm",
+      "unlock": "From the start",
+      "why": "Its Depth unlocks other modes (Assignments, World Boss at Depth 15, Unlimited Recruitment milestones) and raises idle-farm income.",
+      "steps": [
+        "Clear Normal, Elite and Boss levels on each Depth map, then claim the level rewards to open the next Depth.",
+        "Kill the Elite directly to chain-clear every Normal level after it; kill the Boss directly to chain-clear the whole Depth.",
+        "Kill all enemies within the turn limit to trigger a Chain and clear related levels at once; tap the map chest to claim them.",
+        "After Auto-Battle unlocks, spend Chain Licenses (1 per battle; they reset to 10 daily at 05:00).",
+        "Tap the Idle Farming chest before it hits its cap.",
+        "Open Fragment Chests as they finish; higher Depth gives better chests (UR chests start above Depth 60)."
+      ],
+      "team": "Team 1 (Nutcracker carry, Naki back-up).",
+      "tip": "Don't spend Diamonds to skip chest timers.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "exploration",
+      "name": "Exploration (story maps)",
+      "kind": "Story",
+      "unlock": "Story progress",
+      "steps": [
+        "Walk the map, fight enemies and open Treasure Caskets for points.",
+        "Watch HP: characters in an Exploration team don't recover lost HP after battles.",
+        "Finish the main goal quests to finalize the map and get its rewards.",
+        "At 20% Exploration Progress, use Sweep Coupons to collect all Map Rewards instantly."
+      ],
+      "team": "Team 1; swap a fresh unit in if HP runs low.",
+      "tip": "Free Stages have 3-star goals; star totals pay Diamonds. Reverse Mode replays the story from the enemy side with its own 3-star goals.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "conquest",
+      "name": "Conquest Battle (bosses) and Formidable",
+      "kind": "Boss dungeon (co-op)",
+      "unlock": "Story progress; Formidable after clearing [Yamori] Conquest - Abyss",
+      "why": "Drops Modification materials for UR cells (each Modification path has its own boss).",
+      "steps": [
+        "Read the boss's characteristics, then set a team that answers them.",
+        "Strike the boss's weak points during the fight for extra rewards.",
+        "Invite other players to fight together if you can't solo it.",
+        "Only spend attempts you can win: Conquest Coupons are deducted only on victory, and a failed start costs just 1 Stamina.",
+        "For Formidable bosses (no Stamina cost), clear them in order; server-wide clear counts unlock bonus rewards."
+      ],
+      "team": "Team 1. Bring Yakumo [Jason] against bosses that heal.",
+      "tip": "Farm the boss of the Modification path you chose for Nutcracker's cells (then Rize's).",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "biography",
+      "name": "Force Challenge (Biography)",
+      "kind": "3-stage dungeon",
+      "unlock": "Story progress",
+      "steps": [
+        "Pick your team first: it's locked for the whole run.",
+        "Fight 3 stages in a row; HP carries over between them.",
+        "Expect enemies to gain random passive skills.",
+        "Clear as many stages as you can: more stages mean better Finalization Rewards.",
+        "Don't fear failing: a loss costs only 1 Stamina."
+      ],
+      "team": "Team 1. Naki's back-up healing (8% max HP each turn to allies hit last turn) helps HP last across 3 stages.",
+      "tip": "Half-cost Stamina on new servers (days 1-28) covers Biography.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "breakout",
+      "name": "Blockade Breakthrough",
+      "kind": "Daily dungeon",
+      "unlock": "Chain Campaign progress",
+      "steps": [
+        "Pick the day's buff effects; they can't be changed after you confirm.",
+        "Clear stages in order; every owned character can take part.",
+        "Rotate units: lost HP is not restored, and no healing goes above a unit's pre-fight HP.",
+        "Respawns (revive one unit to 100%) only come with a Monthly Login Contract.",
+        "Come back daily: it resets every day. Spend tokens in the Blockade Breakthrough Shop.",
+        "Use your VIP manual reset attempts (VIP levels unlock them) to replay stages for a second round of rewards."
+      ],
+      "team": "Use all 3 teams' units so fresh HP is always available.",
+      "tip": "Sweep unlocks at a set Chain Campaign Depth.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "assignments",
+      "name": "Assignments (Bounty and Urgent)",
+      "kind": "Dispatch + co-op boss",
+      "unlock": "Chain Campaign Depth",
+      "steps": [
+        "Dispatch eligible characters to Bounty Assignments and wait out the timer.",
+        "Fight the battle-type Bounty and Boss Assignments directly.",
+        "Meet the bonus goals for extra rewards; they don't block completion.",
+        "After 5-7 Bounty Assignments, an Urgent Assignment (co-op boss) may trigger; the first successful run pays Conquest Rewards.",
+        "Ask friends or strangers to help on Urgent Assignments after your first try.",
+        "Around the 9th-16th Bounty, an Assignment Sale can appear : buy only the Gold-priced items and skip the Diamond-priced ones."
+      ],
+      "team": "Any eligible characters for dispatch; team 1 for battles.",
+      "tip": "Urgent Assignment tier rises with Depth (A at 20-35, S at 36-50).",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "rogue",
+      "name": "Abyssal Battlefield (weekly rogue-like)",
+      "kind": "Weekly run",
+      "unlock": "Weekly event; Chain Level 130 and server day 40+",
+      "steps": [
+        "Choose 1 character to bring in. Units below full stars are treated as full stars, so bring your best kit, not your highest star.",
+        "Move 1 grid at a time; you can't go back after a grid's event.",
+        "After each normal-map win, pick 1 buff (re-roll with simulation coins).",
+        "Beat each normal map's final boss to advance; after 3 normal maps, 3 hard maps open (no buffs there).",
+        "Don't quit mid-battle: losing or exiting fails the run.",
+        "Collect Abyss Coins from moves, battles, bosses and chests."
+      ],
+      "team": "Nutcracker or Sen: units are treated as full stars here, so you see their 1-star and 3-star passives working.",
+      "tip": "Collect Abyss Coins every week; the run fails if you lose or quit mid-battle.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "region",
+      "name": "Region Breakthrough (Carnival)",
+      "kind": "Seasonal dungeon",
+      "unlock": "Carnival",
+      "steps": [
+        "Save a lineup; it's locked and HP carries between fights.",
+        "Tap enemy groups to see their info and add them to the fight (the 5th and later wait in back-up).",
+        "Win to gain Extermination progress; clear all bosses and reach 100% to clear the stage.",
+        "Clear at least 1 stage each week to get the weekly reward (settles Monday 05:00, server time).",
+        "Push far: clearing more than 7 stages in a week sets your max challengeable stage to 9 next week (6-7 -> 7, 3-5 -> 4, 0-2 -> 2)."
+      ],
+      "team": "Team 1; pull smaller enemy groups first.",
+      "tip": "Enemies gain Fixed Modifiers (rotate weekly) and Regional Modifiers by stage number.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "Tower Trials",
+      "kind": "Climb",
+      "unlock": "Progress",
+      "steps": [
+        "Pick the right trial: STR/SKL/SPD trials only take that type (PSY, WIT and DST go anywhere); faction trials only take that faction.",
+        "Clear main stages in order; some unlock EX stages.",
+        "Check each stage's special rules before fighting.",
+        "On hard Elite stages, open other players' clear teams in the stage details and copy them."
+      ],
+      "team": "No Organization trial: Rize, Nutcracker, Sen and Kurona on the field, Shu in back-up. PSY, WIT and DST units fill any attribute trial, but none of your free units is one: field STR units in STR trials (Nutcracker, Shu [Gourmet], Yakumo [Jason], Kureo, Enji), SPD units in SPD trials (Kurona, Sen) and SKL units in SKL trials (Rize, Naki).",
+      "tip": "Each stage pays once; there's no reason to retry a cleared stage.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "annihilation",
+      "name": "Stronghold Annihilation",
+      "kind": "Organization war (top 3 only)",
+      "unlock": "Opens with the Carnival; only the top 3 Organizations from the weekly Stronghold Takeover",
+      "steps": [
+        "Set your lineups and study the map during the Preparation Phase.",
+        "Send a team at a stronghold; each battle uses 1 team.",
+        "Check each stronghold's required CP and attack the highest-level one your team qualifies for.",
+        "Defeat defenders for Annihilation Points; rewards follow the rankings.",
+        "Rotate teams: lost HP is not restored right away, and fallen units recover slowly (Diamonds or Quick Recovery Potions revive instantly)."
+      ],
+      "team": "Teams 1, 2 and 3 from the guild-war table; team 1 for the high-CP strongholds.",
+      "tip": "Only revive with Diamonds when your Organization calls a push.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "worldboss",
+      "name": "World Boss",
+      "kind": "Damage race",
+      "unlock": "Chain Campaign Depth 15",
+      "steps": [
+        "Attack daily: you get 3 attempts a day, and every challenge pays a reward.",
+        "Aim for damage milestones; single-battle and accumulated damage both pay.",
+        "Remember the boss can't be killed; it leaves after a while and the top 100 get ranking rewards."
+      ],
+      "team": "Team 1 with your highest damage.",
+      "tip": "Quitting halfway doesn't use an attempt.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "twin",
+      "name": "Twin Campaign",
+      "kind": "2-player co-op",
+      "unlock": "Progress",
+      "steps": [
+        "Team up with a partner; each of you deploys one squad.",
+        "Win both battles to clear a floor (if your progress matches, either player can run both).",
+        "Wait for the floor's chests to unlock in sequence.",
+        "Clear a floor fully (boss + all chests) for a permanent stat buff."
+      ],
+      "team": "Team 1.",
+      "tip": "Pair with an Organization mate at the same floor.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "encounter",
+      "name": "Encounter",
+      "kind": "3-player team ranking",
+      "unlock": "Progress",
+      "steps": [
+        "Form a 3-player team (locked until Monday 05:00).",
+        "Fight 3 times with 3 different lineups; a unit used in one lineup can't join another that round.",
+        "Win for chests and points; your lineups can be attacked by other teams and lose you points."
+      ],
+      "team": "Teams 1, 2 and 3 exactly as in the guild-war table.",
+      "tip": "This is why building 3 teams early pays off.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    },
+    {
+      "id": "snipe",
+      "name": "Strong Enemy Assault",
+      "kind": "Character-locked stages",
+      "unlock": "Event",
+      "steps": [
+        "Check each stage's required characters and level them first.",
+        "Pick the stage order you like.",
+        "Meet the 3 star conditions in one attempt; your best single attempt counts.",
+        "Fail freely: a loss costs only 1 energy."
+      ],
+      "team": "As the stage requires.",
+      "tip": "Star totals open star chests.",
+      "source_type": "existing_guide",
+      "verification": "player/client confirmation required",
+      "boss_rotations": [],
+      "team_variants": {
+        "f2p": null,
+        "low_spend": null,
+        "high_end": null,
+        "one_unit_clear": null
+      },
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ]
+    }
+  ]
+}

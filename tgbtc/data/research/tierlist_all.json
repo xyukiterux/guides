@@ -1,0 +1,4415 @@
+{
+ "_source": "EU datamine 2026-09-22 (tk/d); roster = GameGuides/tgbtc/data/raw/units.json (121 released units). Tiers are relative to the whole roster; tier_0star = what the unit does at 0 stars on this F2P account, tier_full = at 3★+.",
+ "_rules": "Innate/1★/3★ mapping follows units.json (innate.py logic: passive whose name is not unlocked by RoleStarPreview _1/_3). star_order_uncertain=true means the names did not resolve and the guide rule (passive 1 innate, 2 at 1★, 3 at 3★) is used - check the in-game star preview. backup_ok = any passive tagged [Effective also in back-up state]; backup_ok_at_0star = the innate one is tagged.",
+ "units": [
+  {
+   "id": "1001",
+   "name": "Rize Kamishiro [Binge Eater]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "SPD",
+   "role": "Single-target DPS (self-sustain)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.93,
+   "how_to_get": [
+    "free: Full-Stars Rize mission chain (CombatTarget_Mission)",
+    "standard pool (DrawCard1)"
+   ],
+   "zero_star": "[Boost] When you are buffed, increase your Lifesteal Rate by 15% and damage by 10%.",
+   "one_star": "[Group ATK Boost] When your turn ends, if you used skill, all allied characters' ATK-related stats increase by 3%, up to 3 times.",
+   "three_star": "[CRIT DMG Boost] Deal 30% more CRIT DMG when landing a CRIT",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.93; 0★ only gives itself +10% dmg/+15% lifesteal while buffed; the 1★ team ATK buff is tiny (3% x3). Free No Organization filler until shop units arrive.",
+   "data_keys": [
+    "SkillDesc_1001_p1/p2/p3",
+    "RoleStarPreview_1001_1/_3",
+    "HeroBase 1001 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1002",
+   "name": "Kisho Arima [Lightning God]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SKL",
+   "role": "Single-target DPS (CCG crit)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.12,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Thunder] When an allied CCG character uses an active skill, gain 1 stack of (effect) (up to 5 stacks).",
+   "one_star": "[Basic Stats Boost] For each allied CCG character, increase all allied characters' Basic stats by 5%, up to 20%.",
+   "three_star": "[Bonus-Attack] When your turn ends, deal (effect) damage equal to 190% of ATK to the enemy with the lowest HP.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "team stat buff"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.12 but no source in data; 0★ Thunder needs 5 CCG actives for one guaranteed crit.",
+   "data_keys": [
+    "SkillDesc_1002_p1/p2/p3",
+    "RoleStarPreview_1002_1/_3",
+    "HeroBase 1002 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1003",
+   "name": "Juzo Suzuya [CCG Maverick]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SPD",
+   "role": "AoE DPS (Death Mark)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.06,
+   "how_to_get": [
+    "launch-schedule banner server days 8-14 (HeroGacha02_Hin -> hero_gacha05_juzo)",
+    "shop day 15 (HeroBase 1003 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Stats Boost] When your turn starts, gain 1 stack of (effect). When the Boost Mark reaches 3, consume all Boost Marks to grant yourself 10% increased stats for 2 turns.",
+   "one_star": "[Bonus-Attack] When the target with Death Mark dies, add 1 (effect) to yourself, and immediately cause (effect) damage equal to 180% of ATK to all enemies.",
+   "three_star": "[DEF-Related Stats Weakening] When an enemy character is marked with Death Mark, reduce the target's DEF-related stats by 20%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.06 launch unit; 0★ is a self-only +10% stat cycle; the AoE bonus-attack needs 1★.",
+   "data_keys": [
+    "SkillDesc_1003_p1/p2/p3",
+    "RoleStarPreview_1003_1/_3",
+    "HeroBase 1003 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1004",
+   "name": "Shu Tsukiyama [Gourmet]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "STR",
+   "role": "Provoke tank",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.97,
+   "how_to_get": [
+    "free: SSR Selection Card day 28 (ActSign_Rocket202609_28 -> item 20058)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Group Shield] After entering Provoking Stance, retaliate against the next active skill with 175% ATK damage.",
+   "one_star": "[Retaliation] When an allied character uses Stance skill, grant all allied characters a shield equal to 100% of the caster's ATK for 1 turn.",
+   "three_star": "[ATK-Related Stats Boost] When you gain a Shield, restore 12% of your lost HP, once per turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "bond/co-op/pursuit",
+    "provoke tank",
+    "shield",
+    "heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.97; 0★ retaliates 175% once after Provoking Stance; the team shield needs 1★. Only F2P taunt early.",
+   "data_keys": [
+    "SkillDesc_1004_p1/p2/p3",
+    "RoleStarPreview_1004_1/_3",
+    "HeroBase 1004 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1005",
+   "name": "Toka Kirishima [Flamewing]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku charm/bruiser",
+   "rarity": "SSR",
+   "release": "2025-02-08",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha13_val, 2025-02-08); no rerun in data"
+   ],
+   "zero_star": "[Charm] When battle starts, grant the allied character with the highest max HP (effect) for 3 turns.",
+   "one_star": "[Adoration] When battle starts, apply 1 stack of (effect) to all enemies.",
+   "three_star": "[Basic Stats Boost] For each Anteiku Characters on your side, increase basic stats by 5%, up to 20%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.46; 0★ only charms the highest-HP ally; Adoration damage (4% max HP per stack) needs 1★.",
+   "data_keys": [
+    "SkillDesc_1005_p1/p2/p3",
+    "RoleStarPreview_1005_1/_3",
+    "HeroBase 1005 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1006",
+   "name": "Ayato Kirishima [Rebelwing]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "AoE DPS (turn-start)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.08,
+   "how_to_get": [
+    "launch-schedule banner server days 26-42 (HeroGacha04_Reb)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)"
+   ],
+   "zero_star": "[Surprise Attack] When your turn starts, deals damage to all enemies equal to 130% of ATK, and applies (effect) for 1 turn.",
+   "one_star": "[CRIT Rate Boost] When your turn starts, increase your CRIT Rate by 20% for 1 turn.",
+   "three_star": "[ATK-Related Stats Boost] Increases ATK-related stats by 20% for the first 3 turns of a battle.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x1.08; 0★ 130% AoE every turn start is real but launch stats; stars add only self crit/ATK.",
+   "data_keys": [
+    "SkillDesc_1006_p1/p2/p3",
+    "RoleStarPreview_1006_1/_3",
+    "HeroBase 1006 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1007",
+   "name": "Ken Kaneki [Awaken]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SPD",
+   "role": "Single-target DPS (lifesteal)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.01,
+   "how_to_get": [
+    "launch-schedule banner server days 1-7 (HeroGacha01_Kei, closed)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 75 (HeroBase 1007 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Lifesteal Boost] Stays in (effect) state when your HP is above 70%. Meanwhile triples Lifesteal when damage is dealt.",
+   "one_star": "[Skill Level Up] Taking no damage in the previous turn increases Skill Levels when your turn starts.",
+   "three_star": "[Attack Boost] Receiving healing grants 1 (effect) effect.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "heal",
+    "skill-level ramp"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.01; 0★ self lifesteal only; its banner closed (server days 1-7).",
+   "data_keys": [
+    "SkillDesc_1007_p1/p2/p3",
+    "RoleStarPreview_1007_1/_3",
+    "HeroBase 1007 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1010",
+   "name": "Kureo Mado [Quinque Maniac]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SPD",
+   "role": "AoE DPS / anti-Aogiri",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "free: beginner sign-in day 9",
+    "standard pool (DrawCard1)"
+   ],
+   "zero_star": "[DMG Boost] Increases DMG of your characters to Aogiri Tree characters by 10%.",
+   "one_star": "[Energy Intaking] Gains 20% Energy when a character dies in battle.",
+   "three_star": "[Energy Boost] When a battle begins, your characters gain 5% more Energy on using a skill for 3 turns.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.94; 0★ +10% team dmg vs Aogiri works from back-up (tagged) - niche back-up vs Aogiri bosses/PvP.",
+   "data_keys": [
+    "SkillDesc_1010_p1/p2/p3",
+    "RoleStarPreview_1010_1/_3",
+    "HeroBase 1010 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1011",
+   "name": "Hinami Fueguchi [Fledgling Butterfly]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Healer",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "shop day 15 (HeroBase 1011 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Restoration Boost] When your turn ends, if you used a skill during that turn, Heal all your allies for 150% of your ATK.",
+   "one_star": "[Dispel] When your current HP is above 80%, your healing dealt increases by 30% and your damage dealt increases by 20%.",
+   "three_star": "[HP Restoration] When your turn starts, heals your character with the highest Weak value for 40% of their lost HP, clears all Weak values, and increases their basic stats by 15% for 1 tur",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.95; 0★ heals all allies 150% ATK after a skill - usable sustain, low stats.",
+   "data_keys": [
+    "SkillDesc_1011_p1/p2/p3",
+    "RoleStarPreview_1011_1/_3",
+    "HeroBase 1011 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1012",
+   "name": "Yakumo Omori [Jason]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "PSY",
+   "role": "Anti-heal single-target",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.96,
+   "how_to_get": [
+    "free: beginner sign-in day 5",
+    "standard pool (DrawCard1)"
+   ],
+   "zero_star": "[Block Ignoring] Increases your PEN Rate by 15% when dealing damage",
+   "one_star": "[ATK/DEF Boost] When your turn ends, for each Lethal effect on enemies, your whole team deals 4% more DMG and takes 5% less DMG for 2 turns.",
+   "three_star": "[DMG Boost] Deals 15% increased damage to enemies affected by Lethal.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "anti-heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.96; active applies Lethal (BuffDesc Lethal: unable to trigger healing) - the only free anti-heal; 0★ passive is just +15% PEN.",
+   "data_keys": [
+    "SkillDesc_1012_p1/p2/p3",
+    "RoleStarPreview_1012_1/_3",
+    "HeroBase 1012 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1013",
+   "name": "Akira Mado [Father's Will]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "PSY",
+   "role": "AoE / buff-strip",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.09,
+   "how_to_get": [
+    "shop day 90 (HeroBase 1013 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[DEF-Related Stats Boost] Taking damage within 1 turn after battle starts increases all allied characters’ DEF-Related stats by 10% for the turn.",
+   "one_star": "[Buff Removal] When enemy’s turn starts, each enemy Character removes 1 buff, and the Character with the highest ATK removes all buffs.",
+   "three_star": "[Retaliation] Being attacked by enemies affected by debuffs triggers Retaliation, dealing (effect) damage equal to 140% of ATK.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "bond/co-op/pursuit",
+    "heal"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.09; 0★ small DEF/lifesteal; buff removal is 1★; shop day 90 only.",
+   "data_keys": [
+    "SkillDesc_1013_p1/p2/p3",
+    "RoleStarPreview_1013_1/_3",
+    "HeroBase 1013 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1014",
+   "name": "Renji Yomo [Taciturn Warrior]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Back-up buffer (SPD HP)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.03,
+   "how_to_get": [
+    "shop day 43 (HeroBase 1014 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[HP Boost] Increases allied SPD character(s)' Max HP by 15%.",
+   "one_star": "[ATK-Related Stats Boost] All allied characters' ATK-related stats increase by 10%.",
+   "three_star": "[Weaken] Before an enemy character casts a skill, reduces all their stats by 3% for the remainder of the turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.03; 0★ +15% max HP to SPD allies (back-up tagged); ATK buff 1★. Shop day 43.",
+   "data_keys": [
+    "SkillDesc_1014_p1/p2/p3",
+    "RoleStarPreview_1014_1/_3",
+    "HeroBase 1014 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1015",
+   "name": "Yukinori Shinohara [Arata proto]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "PSY",
+   "role": "Support (dmg/def)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[ATK/DEF Boost] Casting a skill for the 1st time during your turn causes all allied characters to deal 10% increased damage and take 10% reduced damage for 1 turn.",
+   "one_star": "[Shield] When battle starts, grants all allied characters a shield of 10% Max HP for 1 turn.",
+   "three_star": "[Group Boost] If all allied characters are SKL characters, their Max HP and damage dealt are increased by 15% and 10% respectively when battle starts.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "shield"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.94; 0★ +10% dmg/-10% taken for 1 turn after first skill; shield at 1★.",
+   "data_keys": [
+    "SkillDesc_1015_p1/p2/p3",
+    "RoleStarPreview_1015_1/_3",
+    "HeroBase 1015 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1016",
+   "name": "Yoshimura [Non-Killing Owl]",
+   "factions": [
+    "Anteiku",
+    "Clowns"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku HP bruiser",
+   "rarity": "SSR",
+   "release": "2024-12-12",
+   "stat_multiplier": 1.17,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 43 (HeroBase 1016 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha06_yos, 2024-12-12); no rerun in data"
+   ],
+   "zero_star": "[Max HP Boost] When allied Anteiku Characters use a skill, increase your skill level, or receive damage, you will be given the effect of (effect) for 3 turns, and remove all debuffs.",
+   "one_star": "[ATK/DEF Boost] When an allied Anteiku Character uses an Active Skill in Flaming Blood, increases basic stats by 6% and reduces their damage taken by 5%, limited to 3 times for each char",
+   "three_star": "[Weak Reduction] When you gain [Flaming Blood], your Weak will be cleared. If you are already in Flaming Blood state, your Weak will be cleared and your skill level will be increased.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "skill-level ramp",
+    "debuff cleanse"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x1.17; 0★ Flaming Blood stacks + self cleanse; stat buff at 1★.",
+   "data_keys": [
+    "SkillDesc_1016_p1/p2/p3",
+    "RoleStarPreview_1016_1/_3",
+    "HeroBase 1016 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1017",
+   "name": "Eto [Bandaged Mysteries]",
+   "factions": [
+    "Aogiri Tree",
+    "Clowns"
+   ],
+   "attribute": "WIT",
+   "role": "Team dmg support (Aogiri)",
+   "rarity": "SSR",
+   "release": "2025-01-17",
+   "stat_multiplier": 1.17,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1017 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha11_eto, 2025-01-17); no rerun in data"
+   ],
+   "zero_star": "[DMG Boost] Casting a skill for the 1st time during your turn causes all allied characters to deal 15% increased damage for 1 turn.",
+   "one_star": "[Additional Damage] When battle starts, grant the following effects to all allied Aogiri Tree Characters: When your turn starts, reduce your DEF by 5% for 1 turn, and you deal 10% additional",
+   "three_star": "[ATK-Related Stats Boost] When Eto is on the field, each time your team uses a Special Skill, ATK-related stats of all allied Aogiri Tree Characters will increase by 1.5%, up to 12%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.17; 0★ +15% all-ally dmg after first skill each turn; Aogiri extras at 1★/3★.",
+   "data_keys": [
+    "SkillDesc_1017_p1/p2/p3",
+    "RoleStarPreview_1017_1/_3",
+    "HeroBase 1017 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1018",
+   "name": "Kurona Yasuhisa [Inky Shroud]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "SPD",
+   "role": "Single-target DPS (buff-scaling)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.96,
+   "how_to_get": [
+    "free: beginner sign-in day 13",
+    "standard pool (DrawCard1)"
+   ],
+   "zero_star": "[DMG Boost] Increases your damage dealt by 4% for every buff on self. Up to 16%.",
+   "one_star": "[Basic Stats Boost] When your turn starts, increase all allies' basic stats by 3%.",
+   "three_star": "[Penetration Boost] When dealing damage, increases PEN Rate by 15%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "team stat buff"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.96; 0★ +4% dmg per self buff (max 16%); 1★ team +3%/turn x4. Free No Organization filler.",
+   "data_keys": [
+    "SkillDesc_1018_p1/p2/p3",
+    "RoleStarPreview_1018_1/_3",
+    "HeroBase 1018 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1019",
+   "name": "Nashiro Yasuhisa [Spotless Shroud]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "SPD",
+   "role": "Single-target DPS",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.96,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[DMG Boost] Increases your damage dealt by 4% for every debuff on the target.",
+   "one_star": "[DEF-Related Stats Weakening] When your turn starts, reduces all enemies' DEF-Related stats by 5%, stacking up to 3 times.",
+   "three_star": "[CRIT DMG Boost] When dealing damage, increases CRIT DMG by 40%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.96; 0★ +4% dmg per target debuff; DEF shred at 1★.",
+   "data_keys": [
+    "SkillDesc_1019_p1/p2/p3",
+    "RoleStarPreview_1019_1/_3",
+    "HeroBase 1019 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1020",
+   "name": "Tatara [Wordless Avenger]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "AoE + heal (Aogiri)",
+   "rarity": "SSR",
+   "release": "2025-02-23",
+   "stat_multiplier": 1.28,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1020 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha14_1020, 2025-02-23); no rerun in data"
+   ],
+   "zero_star": "[Revenge] Start of battle: gain 3 (effect). \\nStart of your turn: remove 1 Resilience, gain 1 (effect), all allied Aogiri Tree characters +5% basic stats per Resilience removed (ma",
+   "one_star": "[Bonus-Attack] When your turn ends, deal 170% of ATK-DMG to all enemies and heal all allies for 10% of the damage dealt.",
+   "three_star": "[Agitation] When an allied Aogiri Tree character's HP first drops below 60%, grant that character (effect) for 1 turn.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.28; 170% AoE each turn end + heal, Aogiri +15% (passive order unresolved - check in-game star preview).",
+   "data_keys": [
+    "SkillDesc_1020_p1/p2/p3",
+    "RoleStarPreview_1020_1/_3",
+    "HeroBase 1020 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1021",
+   "name": "Matasaka Kamishiro [Shachi]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "SKL",
+   "role": "Single-target bruiser",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.43,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Rage] When dealing or taking damage, apply (effect) to the target for 2 turns.",
+   "one_star": "[Boost] When your character uses active skills to cause a CRIT, your PEN Rate and Block Chance are increased by 3%, stacking up to 4 times.",
+   "three_star": "[ATK & DEF Weakening] When your turn starts, reduces the ATK-related stats and the DEF-related stats by 8% for all enemies for 1 turn",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.43 but no source; Rage mark +40% dmg vs marked target.",
+   "data_keys": [
+    "SkillDesc_1021_p1/p2/p3",
+    "RoleStarPreview_1021_1/_3",
+    "HeroBase 1021 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1023",
+   "name": "Kosuke Hoji [Red Tongue Hitman]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "PSY",
+   "role": "Debuff DPS",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Scorched] Dealing damage to targets below 50% HP inflicts them with (effect) for 2 turns, stacking up to 2 times.",
+   "one_star": "[ATK/DEF Boost] For every 2 debuffs on all enemies, allied characters will deal 3% more damage and taken 3% less damage.",
+   "three_star": "[Debuff Spreading] When your turn starts, randomly copy 1 debuff on the enemy target and spread it to another random enemy",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.94; 0★ Scorched only on <50% HP targets.",
+   "data_keys": [
+    "SkillDesc_1023_p1/p2/p3",
+    "RoleStarPreview_1023_1/_3",
+    "HeroBase 1023 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1025",
+   "name": "Uta [Mask-Maker]",
+   "factions": [
+    "No Organization",
+    "Clowns"
+   ],
+   "attribute": "WIT",
+   "role": "Buffer (skill level)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.98,
+   "how_to_get": [
+    "launch-schedule banner server days 15-28 (HeroGacha03_Uta)",
+    "shop day 29 (HeroBase 1025 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Lone Wolf] When your turn ends, deal 200% ATK damage to a random enemy.",
+   "one_star": "[ATK-Related Stats Boost] When battle starts, your Character with the highest ATK gains the following effect: when your turn starts, increase ATK-related stats by 10%, up to 30%.",
+   "three_star": "[Immunity] Becomes immune to Weak and debuff effects for yourself",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.98; 0★ 200% ATK hit on a random enemy each turn end; ATK buff 1★. Launch banner server days 15-28.",
+   "data_keys": [
+    "SkillDesc_1025_p1/p2/p3",
+    "RoleStarPreview_1025_1/_3",
+    "HeroBase 1025 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1026",
+   "name": "Enji Koma [Devil Ape]",
+   "factions": [
+    "Anteiku",
+    "Clowns"
+   ],
+   "attribute": "PSY",
+   "role": "AoE debuffer (Weak)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "free: beginner sign-in day 1",
+    "standard pool (DrawCard1)"
+   ],
+   "zero_star": "[DMG Boost] When an allied character causes Weak, increases the damage dealt by all our allies by 4%.",
+   "one_star": "[Random Debuff] When your active skill causes damage, it will randomly apply one of the following effects to the target for 1 turn: reducing the damage dealt by 8%, increasing the damage",
+   "three_star": "[Basic Stats Boost] Each time an allied character deals damage to an enemy restricted by self with an active skill, basic stats of self increase by 3% for 2 turns, stacking up to 5 times.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.95; 0★ +4% team dmg per Weak caused (x4); free beginner sign-in day 1.",
+   "data_keys": [
+    "SkillDesc_1026_p1/p2/p3",
+    "RoleStarPreview_1026_1/_3",
+    "HeroBase 1026 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1027",
+   "name": "Kaya Irimi [Black Dog]",
+   "factions": [
+    "Anteiku",
+    "Clowns"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku AoE",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Basic Stats Boost] Increases allied Anteiku characters' basic stats by 5%.",
+   "one_star": "[Bonus-Attack] Deals damage equal to 100% of ATK to an enemy target immediately after an allied Anteiku character applies Weak effect to it.",
+   "three_star": "[CRIT Resistance Weakening] All enemies' CRIT Resistance is reduced by 1% for every 4% of your CRIT Rate.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.94; 0★ +5% Anteiku stats only.",
+   "data_keys": [
+    "SkillDesc_1027_p1/p2/p3",
+    "RoleStarPreview_1027_1/_3",
+    "HeroBase 1027 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1030",
+   "name": "Noro [Quick Revival]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri tank/counter",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.91,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Retaliation] When taking single-time damage that exceeds 30% of HP, nullifies the excess part and deals damage equal to 180% of ATK to the attacker.",
+   "one_star": "[ATK-Related Stats Boost] For each Aogiri Tree character on your side, your basic stats increase by 3%, capped at 12%; for each debuff all enemies have, self's attack-related abilities increase by",
+   "three_star": "[Basic Stats Boost] When your turn starts, grants your Aogiri Tree characters 4% increased basic stats for 1 turn if oneself took damage in the previous turn, with this effect doubled for on",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.91; caps big hits at 30% HP and counters 180%; no source.",
+   "data_keys": [
+    "SkillDesc_1030_p1/p2/p3",
+    "RoleStarPreview_1030_1/_3",
+    "HeroBase 1030 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1031",
+   "name": "Itori [Helter Skelter]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "WIT",
+   "role": "STR buffer",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.96,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Basic Stats Boost] Increases allied STR character(s)' basic stats by 15%.",
+   "one_star": "[Skill Level Up] When battle starts, increase the skill level of all our STR Characters, and give all your STR Characters an effect of increasing ATK-related stats by 10% for 2 turns.",
+   "three_star": "[Weak Immunity] After casting a skill, all allies will be immune to Weak for 1 turn, and all allies’ next damage is increased by 20%",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "skill-level ramp"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x0.96; 0★ +15% STR allies' stats; no live source.",
+   "data_keys": [
+    "SkillDesc_1031_p1/p2/p3",
+    "RoleStarPreview_1031_1/_3",
+    "HeroBase 1031 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1032",
+   "name": "Iwao Kuroiwa [Arata proto]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "Provoke tank (CCG)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.97,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Shield] Entering or exiting a Provoking Stance shields self for 8% of Max HP for 1 turn.",
+   "one_star": "[Group CRIT Weakening] Every skill used reduces CRIT Rate by 4% and CRIT DMG by 8% for all enemies over 2 turns.",
+   "three_star": "[Lock HP Lost] Cannot be dealt more than 35% of Max HP in one skill attack.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "provoke tank",
+    "shield"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.97; small self shield on stance; no source.",
+   "data_keys": [
+    "SkillDesc_1032_p1/p2/p3",
+    "RoleStarPreview_1032_1/_3",
+    "HeroBase 1032 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1033",
+   "name": "Take Hirako [Absolute Strength]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "Execute DPS",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Attacking Blood Rage Applying] Dealing DMG to enemies with lower than 50% HP applies (effect) to you over 2 turns.",
+   "one_star": "[Additional DMG] Each time affected by Blood Rage, the enemy with the lowest HP will be dealt damage of 150% ATK",
+   "three_star": "[Attacked Blood Rage Applying] Taking damage has a 10% chance of applying (effect) to you for 2 turns.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.95; Blood Rage needs targets <50% HP.",
+   "data_keys": [
+    "SkillDesc_1033_p1/p2/p3",
+    "RoleStarPreview_1033_1/_3",
+    "HeroBase 1033 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1035",
+   "name": "Kori Ui [Shining New Star]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SKL",
+   "role": "Low-HP DPS",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.96,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Random Attack] Being below 50% HP when your turn starts damages a random enemy for 150% of ATK, shielding you for 80% of the damage dealt for 1 turn.",
+   "one_star": "[Adversity] Deals 20% more damage when your HP is lower than 50%.",
+   "three_star": "[Survival Boost] Taking damage grants you a shield equal to 20% of the damage taken for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "shield"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.96; works only below 50% HP.",
+   "data_keys": [
+    "SkillDesc_1035_p1/p2/p3",
+    "RoleStarPreview_1035_1/_3",
+    "HeroBase 1035 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1036",
+   "name": "Naki [Crybaby]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "STR",
+   "role": "Back-up healer",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "free: SSR Selection Card day 14 (ActSign_Rocket202609_14 -> item 20058)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[HP Restoration] When your turn starts, allied characters that took damage in the last turn Restore 8% of their Max HP.",
+   "one_star": "[Penetration Boost] Allies gain 10% bonus PEN Rate when dealing damage to targets whose attribute does not restrict them.",
+   "three_star": "[DMG Boost] [Applicable only to PVP] Increases DMG dealt by 15% if your remaining HP percentage is higher than that of the target.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "heal"
+   ],
+   "tier_0star": "B",
+   "tier_full": "C",
+   "reason": "x0.94, but 0★ heal (8% max HP to allies hit last turn) is back-up tagged and 1★ PEN is back-up too: the best FREE back-up. Low stats cap it.",
+   "data_keys": [
+    "SkillDesc_1036_p1/p2/p3",
+    "RoleStarPreview_1036_1/_3",
+    "HeroBase 1036 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1037",
+   "name": "Nico [Ladyboy in Love]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "WIT",
+   "role": "Aogiri dmg/cleanse support",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Additional Damage] Allied Aogiri Tree characters deal additional damage equal to 5% of their Max HP when using single target ATK skills, and deal additional damage equal to 2% of their Max ",
+   "one_star": "[Basic Stats Boost] Increases allied Aogiri Tree characters' basic stats by 2% for each allied Aogiri Tree character present.",
+   "three_star": "[Restoration Boost] Increases Restoration Rate by 2% for every 4% of lost HP.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.95; 0★ Aogiri +5%/2% max-HP extra dmg; active cleanses the team.",
+   "data_keys": [
+    "SkillDesc_1037_p1/p2/p3",
+    "RoleStarPreview_1037_1/_3",
+    "HeroBase 1037 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1038",
+   "name": "Elder Bin [Tail Brothers]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri support (pair)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Basic Stats Boost] When a battle begins, enhances basic stats of Bin Brothers by 8% if Younger Bin is in battle",
+   "one_star": "[DMG Boost] Increases damage dealt by allied Aogiri Tree characters by 5%.",
+   "three_star": "[Group ATK Boost] Casting an skill increases ATK-related stats by 3% for all allies for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.94; needs Younger Bin.",
+   "data_keys": [
+    "SkillDesc_1038_p1/p2/p3",
+    "RoleStarPreview_1038_1/_3",
+    "HeroBase 1038 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1039",
+   "name": "Younger Bin [Tail Brothers]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri support (pair)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Skill Level Up] When battle starts, levels up skills of Bin Brothers if Elder Bin is present.",
+   "one_star": "[Basic Stats Boost] Increases basic stats of allied Aogiri Tree characters by 5%.",
+   "three_star": "[Group Defense Weakening] Casting an skill reduces DEF-related stats by 3% for all enemies for 1 turn.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.94; needs Elder Bin.",
+   "data_keys": [
+    "SkillDesc_1039_p1/p2/p3",
+    "RoleStarPreview_1039_1/_3",
+    "HeroBase 1039 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1040",
+   "name": "Ryoko Fueguchi [Daughter Protector]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Anteiku stance/back-up buff",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.0,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Bonus Attack] When your turn ends, deals damage equal to 200% of ATK to a random enemy if you've triggered Aegis in the last turn or you are the only surviving member of your team.",
+   "one_star": "[Group ATK Boost] Increases ATK-related stats of your Anteiku Characters by 15%, and Lifesteal by 10%, and increases damage by 20% when HP is above 80%.",
+   "three_star": "[Lock HP Lost] Retains 1 HP when your Anteiku Characters receive CRIT damage for the first time",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "provoke tank",
+    "heal"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.00; 1★ Anteiku ATK +15% back-up tagged; no source.",
+   "data_keys": [
+    "SkillDesc_1040_p1/p2/p3",
+    "RoleStarPreview_1040_1/_3",
+    "HeroBase 1040 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1041",
+   "name": "Mogan Tanakamaru [Battleground Gentleman]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "ST DPS (charge)",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.92,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Charge-Up] At the end of your turn, grants (effect) if you have used a skill, stacking up to 3 times.",
+   "one_star": "[Charge-Up Burst] When your turn starts, deals DMG equal to 150% of ATK to the enemy with the lowest HP if you have 3 or more Charged-Ups.",
+   "three_star": "[Penetration Boost] Every Charged-Up increases your PEN Rate by 4%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.92; slow charge-up.",
+   "data_keys": [
+    "SkillDesc_1041_p1/p2/p3",
+    "RoleStarPreview_1041_1/_3",
+    "HeroBase 1041 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1042",
+   "name": "Ayumu Hogi [Long-haired Ghoul Investigator]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "CCG shield support",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Basic Stats Boost] Increases the basic stats of allied CCG Lower Rank Investigators and CCG Higher Rank Investigators by 5%.",
+   "one_star": "[Survival Boost] Each time an allied CCG Lower Rank Investigator or Higher Rank Investigator is killed, all allied characters gain a shield of 10% Max HP.",
+   "three_star": "[DMG Resist] Increases shielded allied characters' basic stats by 3% and reduces their damage taken by 5%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "shield",
+    "team stat buff"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.95; tiny +5% to rank investigators.",
+   "data_keys": [
+    "SkillDesc_1042_p1/p2/p3",
+    "RoleStarPreview_1042_1/_3",
+    "HeroBase 1042 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1043",
+   "name": "Chu Hachikawa [Envoy of Vengeance]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SKL",
+   "role": "AoE opener",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Charge-Up] After using a skill, applies (effect) to self if the skill has dealt damage to a character with more than 80% HP, stacking up to 3 times.",
+   "one_star": "[Block Chance Reduction] All enemies' Block Chance is reduced by 1% for every 3% of PEN Rate.",
+   "three_star": "[DMG Boost] When battle starts, your damage dealt is increased by 25% for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.95; one-turn +25% at 3★.",
+   "data_keys": [
+    "SkillDesc_1043_p1/p2/p3",
+    "RoleStarPreview_1043_1/_3",
+    "HeroBase 1043 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1046",
+   "name": "Kyoji Misaka [Warden]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "PSY",
+   "role": "CCG support",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.95,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Basic Stats Boost] Increases allied CCG Lower Rank Investigators' and CCG Higher Rank Investigators' basic stats by 3% each time an enemy is affected by Weak or disabling effects.",
+   "one_star": "[ATK/DEF Boost] Increases DEF-related stats by 3% for every allied character alive.",
+   "three_star": "[DMG Boost] Increases damage dealt to immobilized enemies by 20%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "turn/speed control"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.95; conditional +3% stacks.",
+   "data_keys": [
+    "SkillDesc_1046_p1/p2/p3",
+    "RoleStarPreview_1046_1/_3",
+    "HeroBase 1046 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1050",
+   "name": "Kisho Arima [CCG's Reaper]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "AoE + shield (CCG)",
+   "rarity": "SSR",
+   "release": "2024-09-25",
+   "stat_multiplier": 1.33,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 19 (HeroBase 1050 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Unyielding] Taking fatal damage for the first time fixes self to 1 HP, causing itself to raise a shield to absorb all damage taken for 1 turn.",
+   "one_star": "[Group Shield] Your dealing damage grants all allies a Shield equal to 20% of the damage dealt for 2 turns",
+   "three_star": "[Basic Stats Boost] When your turn starts, increase all shielded characters' basic stats by 4%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "shield"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.33 Carnival; 0★ is a one-time death-save; team shield (20% of dmg) at 1★. Shop day 19 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1050_p1/p2/p3",
+    "RoleStarPreview_1050_1/_3",
+    "HeroBase 1050 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1052",
+   "name": "Toka Kirishima [Rabbit]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SKL",
+   "role": "Anteiku AoE debuffer",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.11,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[DMG Boost] When your Anteiku Character deals damage to an enemy target, reduces the target’s damage dealt by 5% for 2 turn(max 3 stacks).",
+   "one_star": "[CRIT Boost] For everydebuff on all enemies, increase your CRIT Rate and CRIT DMG by 5%, up to 30%.",
+   "three_star": "[ATK Weakening] Increases your Anteiku characters' CRIT Rate by 12% and CRIT DMG by 10%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "D",
+   "tier_full": "C",
+   "reason": "x1.11; 0★ target dmg -5% stacks; no source.",
+   "data_keys": [
+    "SkillDesc_1052_p1/p2/p3",
+    "RoleStarPreview_1052_1/_3",
+    "HeroBase 1052 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1053",
+   "name": "Gagi [Naki's Sidekick]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "SR filler",
+   "rarity": "2",
+   "release": "launch",
+   "stat_multiplier": 0.29,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[DMG Boost] Death of an allied character increases all allied characters' damage by 20% for 2 turns.",
+   "one_star": "[DMG Decrease] All allies take 15% reduced damage when Gagi, Guge and Naki are all present.",
+   "three_star": "[CRIT DMG Boost] Aogiri Tree characters deals 30% more CRIT DMG when landing a CRIT.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "SR, x0.29.",
+   "data_keys": [
+    "SkillDesc_1053_p1/p2/p3",
+    "RoleStarPreview_1053_1/_3",
+    "HeroBase 1053 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1055",
+   "name": "Hinami Fueguchi [Growing Teenage Girl]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Anteiku HP/cleanse support",
+   "rarity": "SSR",
+   "release": "2025-02-08",
+   "stat_multiplier": 1.3,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Anteiku Boost] When battle starts, boosts HP related stats by 20% for all allies.",
+   "one_star": "[Determination] When your turn starts, apply 1 stack of (effect) to all allied Anteiku Characters, up to 3 stacks.",
+   "three_star": "[Basic Stats Boost] When your character is granted Determination, their basic stats increase by 5%, up to 15%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "heal",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.30; 0★ +20% HP all allies; Determination cleanse+heal at 1★; no live source.",
+   "data_keys": [
+    "SkillDesc_1055_p1/p2/p3",
+    "RoleStarPreview_1055_1/_3",
+    "HeroBase 1055 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1056",
+   "name": "Shu Tsukiyama [Bloody Feast]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SKL",
+   "role": "ST burst (Anteiku/NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-04-28",
+   "stat_multiplier": 1.55,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1056 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Blood] After an allied Anteiku or No Organization character uses an active skill, grant yourself 1 (effect).",
+   "one_star": "[Group Basic Stats Boost] For each Anteiku or No Organization character on the field, increase your basic stats by 4%, up to 16%.",
+   "three_star": "[DMG Boost] Upon reaching maximum Blood, gain 15% CRIT Rate, 30% CRIT DMG, and 10% ATK for 2 turns.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "team stat buff"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.55 Carnival; 0★ Blood stacks from Anteiku/NoOrg actives -> ignore DR; team +10% at 1★ if all Anteiku/NoOrg.",
+   "data_keys": [
+    "SkillDesc_1056_p1/p2/p3",
+    "RoleStarPreview_1056_1/_3",
+    "HeroBase 1056 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1058",
+   "name": "Ayato Kirishima [Wings of Power-seeker]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri pursuit DPS",
+   "rarity": "SSR",
+   "release": "2024-09-25",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1058 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Bonus-Attack] After another allied Aogiri Tree character uses an active skill, launch a bonus attack on an enemy target, dealing 180% ATK damage, granting the target 15% increased dama",
+   "one_star": "[Basic stats Increase] When battle starts, grant 2 stacks of (effect) to all allies.",
+   "three_star": "[DMG Amplification] When dealing damage with a non-active skill, increases your own ATK-related abilities by 15% and prevents the target from gaining Shield effects while reducing their CRIT",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "bond/co-op/pursuit",
+    "shield"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.46 Carnival; 0★ 180% bonus attack after every other Aogiri active + skill-level drain.",
+   "data_keys": [
+    "SkillDesc_1058_p1/p2/p3",
+    "RoleStarPreview_1058_1/_3",
+    "HeroBase 1058 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1060",
+   "name": "Kohtaro Amon [Twinblades of Justice]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SKL",
+   "role": "Crit support",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.94,
+   "how_to_get": [
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "standard pool (DrawCard1)",
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Penetration Boost] After landing a CRIT, all allies will be given the effect of increasing PEN Rate by 6% for 2 turns.",
+   "one_star": "[DMG Boost] When our character kills an enemy, the character will be given the effect of increasing the damage dealt by 10% for 2 turns.",
+   "three_star": "[CRIT DMG Boost] Increases 30% CRIT DMG of CCG Higher Rank Investigator and CCG Lower Rank Investigator.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x0.94; 0★ team +6% PEN on crit (x2).",
+   "data_keys": [
+    "SkillDesc_1060_p1/p2/p3",
+    "RoleStarPreview_1060_1/_3",
+    "HeroBase 1060 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1065",
+   "name": "Ken Kaneki [Centipede Rampage]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri debuff DPS",
+   "rarity": "SSR",
+   "release": "2024-09-25",
+   "stat_multiplier": 1.44,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1065 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Sanity Collapse] When your Aogiri Tree Character deals damage to an enemy, it grants the target 1 stack of (effect), capped at 4 stacks.",
+   "one_star": "[Skill Levels Increased] When an enemy character is applied Collapse, your basic stats increase by 5%, up to 20%.",
+   "three_star": "[Debuff Boost] When dealing damage, remove 1 buff from the target, and only grant 1 debuff to yourself.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "skill-level ramp"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.44 Carnival; Collapse/Crazy stacks (passive order unresolved).",
+   "data_keys": [
+    "SkillDesc_1065_p1/p2/p3",
+    "RoleStarPreview_1065_1/_3",
+    "HeroBase 1065 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1071",
+   "name": "Yakumo Omori [Warrior]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SKL",
+   "role": "Max-HP% DPS",
+   "rarity": "SSR",
+   "release": "2024-09-25",
+   "stat_multiplier": 1.51,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1071 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Oppressed] After an allied character deals damage, gain 1 stack of (effect), up to 4 stacks.",
+   "one_star": "[DMG Boost] When you defeat an enemy using an active skill, immediately deal (effect) damage equal to 220% of your ATK to the enemy with the lowest HP and grant yourself 20% damage r",
+   "three_star": "[ATK-Related Stats Boost] When a character dies, grant yourself 10% of their ATK. If an allied character dies, grant yourself an additional 10% increase in ATK-Related stats for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.51 Carnival; 0★ +3% target max HP per stack (cap 150% ATK) - good vs bosses.",
+   "data_keys": [
+    "SkillDesc_1071_p1/p2/p3",
+    "RoleStarPreview_1071_1/_3",
+    "HeroBase 1071 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1072",
+   "name": "Kohtaro Amon [Dojima Kai]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "AoE turn-start DPS (CCG)",
+   "rarity": "SSR",
+   "release": "2024-09-25",
+   "stat_multiplier": 1.49,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1072 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Sprint] When your turn starts, deal damage equal to 140% of ATK to all enemies and inflict (effect) to the targets for 3 turns.",
+   "one_star": "[Vigorous] When battle starts, grant yourself 2 stacks of (effect). For each allied CCG character, gain 1 additional stack of (effect).",
+   "three_star": "[Group Boost] Immune your character to debuffs that reduce related stats. When an allied CCG character deals damage to enemies with more than 70% HP, grant all allied CCG characters a ",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.49 Carnival; 0★ 140% AoE + debuff every turn; 1★ DEF shred per CCG ally.",
+   "data_keys": [
+    "SkillDesc_1072_p1/p2/p3",
+    "RoleStarPreview_1072_1/_3",
+    "HeroBase 1072 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1073",
+   "name": "Kureo Mado [Fueguchi Ni]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "WIT",
+   "role": "Back-up shield support (CCG)",
+   "rarity": "SSR",
+   "release": "2025-03-31",
+   "stat_multiplier": 1.39,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Shield Boost] When an allied CCG character uses an active skill, grant all allied Character a shield equal to 5% of their max HP for 2 turns.",
+   "one_star": "[CCG Boost] Increases the CRIT Rate of allied CCG characters by 15% and CRIT DMG by 20%.",
+   "three_star": "[Prevention] When your turn ends, grant all allied CCG characters (effect) for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "shield"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.39; all passives back-up tagged: 5% max-HP shields on CCG actives; no live source.",
+   "data_keys": [
+    "SkillDesc_1073_p1/p2/p3",
+    "RoleStarPreview_1073_1/_3",
+    "HeroBase 1073 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1074",
+   "name": "Yukinori Shinohara [Arata proto (Rampage)]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "PSY",
+   "role": "CCG control/AoE",
+   "rarity": "SSR",
+   "release": "2025-04-25",
+   "stat_multiplier": 1.44,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1074 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha19_1074, 2025-04-25); no rerun in data"
+   ],
+   "zero_star": "[Warning] After an allied CCG character takes damage, inflict the attacker 1 (effect), up to 4 stacks.",
+   "one_star": "[Bonus-Attack] When your turn ends, if all characters who used active skills this turn are alliedCCG characters, increase your max HP by 5% and damage dealt by 4% (capped at 5 stacks), ",
+   "three_star": "[Weaken] Each time an enemy gains 1 (effect), decrease all enemies' ATK and DEF by 2%, up to 16%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "turn/speed control"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.44; 0★ Warning->Disarm control; 160% AoE at 1★. Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1074_p1/p2/p3",
+    "RoleStarPreview_1074_1/_3",
+    "HeroBase 1074 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1075",
+   "name": "Iwao Kuroiwa [Arata proto (Rampage)]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "WIT",
+   "role": "CCG tank/buffer",
+   "rarity": "SSR",
+   "release": "2025-08-23",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1075 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha28_1075, 2025-08-23); no rerun in data"
+   ],
+   "zero_star": "[Covering] While present, increases the basic stats of allied CCG characters by 20%.",
+   "one_star": "[Stats Enhancement] At the start of battle, grants 1 (effect) effect to allied CCG characters, up to 3 stacks.",
+   "three_star": "[Additional Attack] At the end of your turn, deals (effect) damage equal to 180% of attack to the enemy target with the highest attack, and additionally deals damage equal to 15% of your shi",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "provoke tank",
+    "shield",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.45; CCG +20% basic stats while present + damage redirect (passive order unresolved). Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1075_p1/p2/p3",
+    "RoleStarPreview_1075_1/_3",
+    "HeroBase 1075 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1076",
+   "name": "Toka Kirishima [Blazewing]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SKL",
+   "role": "Execute DPS",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 0.96,
+   "how_to_get": [
+    "SSR Character Selection Card (item 20058; growth sign-in days 14/28)"
+   ],
+   "zero_star": "[Bonus-Attack] When you successfully kill an enemy with an active skill, deal 180% ATK damage to the enemy with the lowest current HP percentage.",
+   "one_star": "[DMG Boost] Increases 20% more damage dealt to targets with HP lower than 30%",
+   "three_star": "[ATK-Related Stats Boost] When your other character dies, Increases ATK-Related stats by 5%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "D",
+   "tier_full": "D",
+   "reason": "x0.96; 180% only after an active kill.",
+   "data_keys": [
+    "SkillDesc_1076_p1/p2/p3",
+    "RoleStarPreview_1076_1/_3",
+    "HeroBase 1076 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1077",
+   "name": "Shu Tsukiyama [Mr.MM]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "STR",
+   "role": "Self-sustain tank (NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-03-16",
+   "stat_multiplier": 1.38,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1077 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha16_1077, 2025-03-16); no rerun in data"
+   ],
+   "zero_star": "[Bloodthirsty] When the battle starts, grant yourself (effect). When you deal damage and lifesteal, 100% of the lifesteal amount is stored in (effect).",
+   "one_star": "[Lifesteal Boost] For every 5% of your current HP lost, reduce damage taken by 6%, up to 60%.",
+   "three_star": "[Shield] [Effective also in Assistance] Increase HP-related stats by 15%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "shield",
+    "heal",
+    "debuff cleanse"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.38; 0★ lifesteal storage; 1★ up to 60% DR + cleanse. Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1077_p1/p2/p3",
+    "RoleStarPreview_1077_1/_3",
+    "HeroBase 1077 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1078",
+   "name": "Toka Kirishima [Natsu Matsuri]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Anteiku AoE + back-up buff",
+   "rarity": "SSR",
+   "release": "2025-08-09",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "shop day 75 (HeroBase 1078 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Damage Boost] When battle starts, grants all allies (effect). When your turn starts, grants all allies 1 stack of (effect), up to 3 stacks.",
+   "one_star": "[Additional Attack] When an ally character deals damage, grant self 1 (effect) effect (max 4 stacks).",
+   "three_star": "[Basic Stats Boost] [Effective even in back-up position] Increase all allies' Basic Stats by 12%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "bond/co-op/pursuit",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.45; back-up tagged +12% all allies (order unresolved); shop 75 only.",
+   "data_keys": [
+    "SkillDesc_1078_p1/p2/p3",
+    "RoleStarPreview_1078_1/_3",
+    "HeroBase 1078 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1079",
+   "name": "Ken Kaneki [Natsu Matsuri]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku bruiser",
+   "rarity": "SSR",
+   "release": "2025-08-09",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 75 (HeroBase 1079 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha27_1079, 2025-08-09); no rerun in data"
+   ],
+   "zero_star": "[Fortitude] For each Anteiku character in the entire ally team, basic ability values of the entire ally team increase by 3%, up to a maximum of 12%.",
+   "one_star": "[Fight Hard] At the start of the your turn, if self does not have the (effect) effect, grant self 4 (effect) (max 4 stacks).",
+   "three_star": "[Additional Attack] At the start of the your turn, if self's current HP is below 50%, immediately deal damage equal to 180% of ATK to the enemy character with the highest ATK.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.46; +3% per Anteiku team buff (order unresolved).",
+   "data_keys": [
+    "SkillDesc_1079_p1/p2/p3",
+    "RoleStarPreview_1079_1/_3",
+    "HeroBase 1079 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1080",
+   "name": "Ken Kaneki [Combat Outfit]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "WIT",
+   "role": "Aogiri back-up debuffer",
+   "rarity": "SSR",
+   "release": "2025-01-29",
+   "stat_multiplier": 1.18,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 75 (HeroBase 1080 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha12_fit, 2025-01-29); no rerun in data"
+   ],
+   "zero_star": "[Fear] When allied characters attack, apply (effect) to the target.",
+   "one_star": "[Aogiri Tree Boost] When your turn starts, if all allied characters who used an active skill in the previous turn are Aogiri Tree characters, increase all allies' ATK by 10% for 1 turn",
+   "three_star": "[Smash] Allied Aogiri Tree characters deal an additional 30% damage to enemies with Fear.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "skill-level ramp"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.18 but all passives back-up tagged (Fear; +30% Aogiri dmg at 3★).",
+   "data_keys": [
+    "SkillDesc_1080_p1/p2/p3",
+    "RoleStarPreview_1080_1/_3",
+    "HeroBase 1080 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1081",
+   "name": "Renji Yomo [Reliable Partner]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "PSY",
+   "role": "Anteiku tank",
+   "rarity": "SSR",
+   "release": "2025-01-03",
+   "stat_multiplier": 1.18,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 43 (HeroBase 1081 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha10_yomo, 2025-01-03); no rerun in data"
+   ],
+   "zero_star": "[Lockdown] When battle starts, apply (effect) effect to the enemy target with the highest ATK.",
+   "one_star": "[Wall of Overwatch] When your HP first drops below 40%, grant yourself (effect) for 1 turn.",
+   "three_star": "[Fortify] When your turn starts, if your Character triggered Overwatch in the previous turn, grant your Anteiku Character with the lowest HP the effect of reducing damage taken by ",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "team stat buff"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.18; caps Anteiku damage at 30% max HP while Overwatch.",
+   "data_keys": [
+    "SkillDesc_1081_p1/p2/p3",
+    "RoleStarPreview_1081_1/_3",
+    "HeroBase 1081 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1083",
+   "name": "Juzo Suzuya [Pet Boy]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "PSY",
+   "role": "Bonus-attack DPS (NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-05-22",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1083 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha21_1083, 2025-05-22); no rerun in data"
+   ],
+   "zero_star": "[Dismember] When (effect) of the enemy character reaches the limit, grants them (effect) for 2 turns.",
+   "one_star": "[Bonus-Attack] When an enemy obtains (effect), instantly deals (effect) damage equal to 180% of ATK to them.",
+   "three_star": "[DEF Reduction] [Effective also in Assistance] Taking damage heals self for 20% of the damage taken.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "heal"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.46; 0★ 150% ATK extra dmg on marked targets; 1★ 180% bonus + team +10% stats x2. Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1083_p1/p2/p3",
+    "RoleStarPreview_1083_1/_3",
+    "HeroBase 1083 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1084",
+   "name": "Sen Takatsuki [Novelist]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "WIT",
+   "role": "Skill-level buffer (NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-03-02",
+   "stat_multiplier": 1.34,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha15_1084, 2025-03-02); no rerun in data"
+   ],
+   "zero_star": "[Sharpen] When the battle starts, grant the allied character with the highest ATK (effect).",
+   "one_star": "[Revelation Surge] After any allied character uses a skill, grant yourself 1 (effect).",
+   "three_star": "[Skill Boost] When a character with (effect) uses an active skill, grant them additional effects based on their skill level:\\nLv 1: Increases ATK by 15%.\\nLv 2: Increases ATK by 15%, i",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "skill-level ramp",
+    "debuff cleanse"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.34; 0★ Sharpen on top-ATK ally (cleanse + 10% ATK); team skill-level ramp at 1★.",
+   "data_keys": [
+    "SkillDesc_1084_p1/p2/p3",
+    "RoleStarPreview_1084_1/_3",
+    "HeroBase 1084 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1087",
+   "name": "Ken Kaneki [Christmas]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "PSY",
+   "role": "Control DPS",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.17,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 19 (HeroBase 1087 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha09_chrisken, 2024-12-20); no rerun in data"
+   ],
+   "zero_star": "[Incapacitation Boost] When dealing damage to an Incapacitated target, it will be CRIT and will not remove the target's Incapacitation.",
+   "one_star": "[Numb Reaction] When you take damage, increase all allies’ ATK-related stats by 4% for 2 turns.",
+   "three_star": "[Incapacitation Strike] When your turn ends, deal 180% of your ATK damage to a random enemy target affected by Numb or Incapacitation, and reduce the target’s ATK-related stats by 15% for 2 turn",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x1.17; Numb/Incapacitation chain.",
+   "data_keys": [
+    "SkillDesc_1087_p1/p2/p3",
+    "RoleStarPreview_1087_1/_3",
+    "HeroBase 1087 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1088",
+   "name": "Hinami Fueguchi [Christmas]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku support",
+   "rarity": "SSR",
+   "release": "launch",
+   "stat_multiplier": 1.11,
+   "how_to_get": [
+    "shop day 19 (HeroBase 1088 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Inspire] When your Character is granted with Inspire, increases the Character’s damage dealt by 2% and reduces damage taken by 3%.",
+   "one_star": "[Encourage] When your Character is granted with Inspire or your Anteiku Character deals damage, give the Character 1 stack of Encourage, up to 3 stacks.",
+   "three_star": "[HP Restoration] When your Character’s Encourage is removed, the Character is granted with Weak Immunity for 1 turn and heal 15% of the Character's max HP",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "heal"
+   ],
+   "tier_0star": "C",
+   "tier_full": "C",
+   "reason": "x1.11; small Inspire buffs.",
+   "data_keys": [
+    "SkillDesc_1088_p1/p2/p3",
+    "RoleStarPreview_1088_1/_3",
+    "HeroBase 1088 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1089",
+   "name": "Toka Kirishima [Anteiku]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Shield support (Anteiku)",
+   "rarity": "SSR",
+   "release": "2025-03-28",
+   "stat_multiplier": 1.39,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1089 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha17_1089, 2025-03-28); no rerun in data"
+   ],
+   "zero_star": "[Shelter] When your turn starts, based on your max HP, grant all allied characters a shield equal to 10% of your max HP for 1 turn.",
+   "one_star": "[Unity] For every 10% of your lost HP, increase your Lifesteal Rate and damage dealt by 5%, up to 30%.",
+   "three_star": "[Struggle] When you first take fatal damage, retain 1 HP and gain 3 stacks of (effect).",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "shield",
+    "heal",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.39; 0★ team shield 10% of her max HP every turn + debuff immunity for shielded Anteiku. Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1089_p1/p2/p3",
+    "RoleStarPreview_1089_1/_3",
+    "HeroBase 1089 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1090",
+   "name": "Uta [Rescue]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "WIT",
+   "role": "Team buffer incl. back-up (NoOrg/Anteiku)",
+   "rarity": "SSR",
+   "release": "2025-07-12",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1090 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha25_1090, 2025-07-12); no rerun in data"
+   ],
+   "zero_star": "[Arcane] When the battle starts, grants all allied No Organization and Anteiku characters (effect).",
+   "one_star": "[Encircle] After using an active skill, inflict a number of (effect) to the enemy target equal to the user's active skill level.",
+   "three_star": "[Stats Boost] Grant yourself immunity to all debuffs and Weak effects. When an allied character takes damage and their HP falls below 50%, increase their skill level.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": true,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "B",
+   "reason": "x1.45; 0★ +4% all-ally basic stats per NoOrg/Anteiku incl. back-up (max +20%). Shop day 43 (unconfirmed) + Unlimited pool.",
+   "data_keys": [
+    "SkillDesc_1090_p1/p2/p3",
+    "RoleStarPreview_1090_1/_3",
+    "HeroBase 1090 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1091",
+   "name": "Yoshitoki Washu [Chief]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "WIT",
+   "role": "CCG AoE splash buffer",
+   "rarity": "SSR",
+   "release": "2025-06-05",
+   "stat_multiplier": 1.42,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1091 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha22_1091, 2025-06-05); no rerun in data"
+   ],
+   "zero_star": "[Vulnerability Strike] When allied CCG character deals damage to an enemy target with (effect), they inflict additional damage equal to 15% of that damage to all enemies.",
+   "one_star": "[Shield Boost] Each time you gain 5 shields, your skill level increases. This effect can trigger once per turn.",
+   "three_star": "[Full-Scale Attack] When allied CCG characters attack, they gain 1 stack of (effect), capped at 6 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "skill-level ramp",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.42; 0★ 15% splash on Vulnerable targets for CCG hits.",
+   "data_keys": [
+    "SkillDesc_1091_p1/p2/p3",
+    "RoleStarPreview_1091_1/_3",
+    "HeroBase 1091 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1092",
+   "name": "Tatara [Revenge]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "STR",
+   "role": "Aogiri buffer/death-save",
+   "rarity": "SSR",
+   "release": "2025-05-31",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Blood Feud] When the battle starts, grant allied Aogiri Tree character with highest ATK (effect).",
+   "one_star": "[Basic Stats Boost] When the battle starts, increase all allied Aogiri Tree characters' basic stats by 20% for 2 turns.",
+   "three_star": "[Revenge Power] The damage taken from a single skill will not exceed 40% of the character’s max HP.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.45; 0★ death-save on top-ATK Aogiri; no live source.",
+   "data_keys": [
+    "SkillDesc_1092_p1/p2/p3",
+    "RoleStarPreview_1092_1/_3",
+    "HeroBase 1092 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1098",
+   "name": "Ayato Kirishima [Tanabata]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "STR",
+   "role": "Aogiri AoE buffer",
+   "rarity": "SSR",
+   "release": "2025-06-28",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "shop day 75 (HeroBase 1098 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Wish] When the battle starts, grant yourself 3 stacks of (effect).",
+   "one_star": "[Shield Protection] When your turn ends, all buffed allied characters gain a shield equal to 8% of their max HP for 1 turn.",
+   "three_star": "[ATK Boost] [Effective also in Assistance] After an allied character uses an active skill, increase your ATK by 8% for 1 turn, up to 2 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.45; 0★ +10% all-ally stats per turn from Wish stacks; no live source.",
+   "data_keys": [
+    "SkillDesc_1098_p1/p2/p3",
+    "RoleStarPreview_1098_1/_3",
+    "HeroBase 1098 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1099",
+   "name": "Hinami Fueguchi [Tanabata]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Anteiku back-up support",
+   "rarity": "SSR",
+   "release": "2025-06-28",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 75 (HeroBase 1099 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha24_1099, 2025-06-28); no rerun in data"
+   ],
+   "zero_star": "[Blessing] [Also Effective in Back-up State] When the battle starts, if all allied characters on the field are Anteiku, grant all allied character (effect).",
+   "one_star": "[Auspice] [Also Effective in Back-up State] When your turn starts, grant all allied characters (effect) for 1 turn, and grant the allied character with the lowest HP percentage (ef",
+   "three_star": "[Origami Robe] [Also Effective in Back-up State] When your turn ends, if all characters who used skills this turn are Anteiku, grant all allied characters (effect) for 1 turn.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.45; back-up tagged, all-Anteiku buffs (order unresolved).",
+   "data_keys": [
+    "SkillDesc_1099_p1/p2/p3",
+    "RoleStarPreview_1099_1/_3",
+    "HeroBase 1099 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1104",
+   "name": "Ayato Kirishima [Easter]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SKL",
+   "role": "Aogiri AoE debuffer",
+   "rarity": "SSR",
+   "release": "2025-04-11",
+   "stat_multiplier": 1.41,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 75 (HeroBase 1104 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha18_1104, 2025-04-11); no rerun in data"
+   ],
+   "zero_star": "[Breathless] After using an active skill, inflict (effect) on all enemies for 2 turns.",
+   "one_star": "[Detonate] When the battle starts, increase all Aogiri Tree characters' ATK by 15% for 3 turns.",
+   "three_star": "[Weakening] When an enemy's HP drops below 60% for the first time, reduce the target's DEF-Related stats by 10% for 2 turns.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.41; Detonate +15% dmg (order unresolved).",
+   "data_keys": [
+    "SkillDesc_1104_p1/p2/p3",
+    "RoleStarPreview_1104_1/_3",
+    "HeroBase 1104 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1105",
+   "name": "Toka Kirishima [Easter]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SPD",
+   "role": "Anteiku buff DPS",
+   "rarity": "SSR",
+   "release": "2025-04-11",
+   "stat_multiplier": 1.41,
+   "how_to_get": [
+    "shop day 40 (HeroBase 1105 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Capability Burst] After allied Anteiku characters use an active skill, they gain 1 (effect), up to 3 times per character.",
+   "one_star": "[Buff Boost] For each buff gained by all allied characters, increase damage dealt by 2%, up to 20%.",
+   "three_star": "[Bonus-Attack Burst] When you attack while under Capability or Capability Burst, increase your ATK by 10% for 2 turns, up to 3 times, and deal additional damage equal to 120% of ATK to the ta",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.41; Capability ATK ramp; shop day 40 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1105_p1/p2/p3",
+    "RoleStarPreview_1105_1/_3",
+    "HeroBase 1105 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1100",
+   "name": "Kohtaro Amon [Half Year Anniversary]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SPD",
+   "role": "ST DPS (Aim)",
+   "rarity": "SSR",
+   "release": "2025-05-08",
+   "stat_multiplier": 1.44,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Attack Boost] When your turn starts, increase your ATK-related stats by 5%, up to 15%.",
+   "one_star": "[Attack Boost] For each stack of Aim you have, increase all allied characters' ATK by 1%, up to 12%.",
+   "three_star": "[DMG Increase] [Effective also in Assistance] Increase damage dealt to targets with higher HP than yourself by 15%, and grant yourself a shield equal to 15% of the damage dealt.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "shield",
+    "skill-level ramp"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.44; Aim stacks; no source.",
+   "data_keys": [
+    "SkillDesc_1100_p1/p2/p3",
+    "RoleStarPreview_1100_1/_3",
+    "HeroBase 1100 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1101",
+   "name": "Kisho Arima [Half Year Anniversary]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SKL",
+   "role": "CCG AoE (Discharge)",
+   "rarity": "SSR",
+   "release": "2025-05-08",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha20_1101, 2025-05-08); no rerun in data"
+   ],
+   "zero_star": "[ATK Boost] After allied CCG characters dealing damage, grant themselves 1 (effect), up to 3 stacks.",
+   "one_star": "[Aftershock Effect] When dealing damage, inflict the target (effect) for 2 turns.",
+   "three_star": "[Increase Basic Stats] Each time Energy Storage is gained, increase your basic stats by 3%, up to 9%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.45; 0★ 130% AoE after actives with Discharge.",
+   "data_keys": [
+    "SkillDesc_1101_p1/p2/p3",
+    "RoleStarPreview_1101_1/_3",
+    "HeroBase 1101 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1120",
+   "name": "Yoshimura [Owl (Anteiku)]",
+   "factions": [
+    "Anteiku",
+    "Clowns"
+   ],
+   "attribute": "SPD",
+   "role": "Anteiku AoE tank-buffer",
+   "rarity": "SSR",
+   "release": "2025-06-02",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1120 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Combined Force] When the battle starts, grant all allied characters (effect) for 2 turns.When you gain any buff other than Combined Force, grant yourself (effect) for 1 turn, up to 3 tim",
+   "one_star": "[Warpath] When your turn starts, grant yourself 1 (effect). When Warpath reaches 3 stacks, increase your skill level, remove all your debuffs, and grant yourself debuff immunity fo",
+   "three_star": "[Warding] When your turn starts, grant yourself a shield equal to 3% of max HP for 1 turn for each allied Anteiku characters on the field.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "bond/co-op/pursuit",
+    "shield",
+    "skill-level ramp"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.56 Carnival; team Combined Force + DEF shred.",
+   "data_keys": [
+    "SkillDesc_1120_p1/p2/p3",
+    "RoleStarPreview_1120_1/_3",
+    "HeroBase 1120 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1122",
+   "name": "Yakumo Omori [Torture]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri buffer DPS",
+   "rarity": "SSR",
+   "release": "2025-06-19",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1122 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha23_1122, 2025-06-19); no rerun in data"
+   ],
+   "zero_star": "[Horror] At the start of battle, if all characters on your field are Aogiri Tree characters, grant all enemies the (effect) effect.",
+   "one_star": "[Torment] When allied characters attack, inflict (effect) on the enemy target for 1 turn.",
+   "three_star": "[Aogiri Tree Boost] When you deal damage to targets with less than 60% HP, inflict (effect) on the target for 2 turns and increase Pen Rate of all allied Aogiri Tree characters by 10% for 2 ",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.46; 0★ Aogiri +16% basic stats and +20% dmg while on field - big for a 0★. Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1122_p1/p2/p3",
+    "RoleStarPreview_1122_1/_3",
+    "HeroBase 1122 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1123",
+   "name": "Juzo Suzuya [Scorpion1/56]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "PSY",
+   "role": "CCG mono buffer",
+   "rarity": "SSR",
+   "release": "2025-07-26",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1123 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha26_1123, 2025-07-26); no rerun in data"
+   ],
+   "zero_star": "[Poison Scorpion] When the battle starts, if all allied characters are CCG characters, increases all allied characters' ATK by 20% and Pen Rate by 8%.",
+   "one_star": "[Clean-up] When an allied CCG character deals damage, inflict (effect) to the target, up to 4 stacks.",
+   "three_star": "[Cowardice] When dealing damage, inflict (effect) to the target for 2 turns.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "skill-level ramp",
+    "turn/speed control"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.46; 0★ all-CCG team +20% ATK +8% PEN.",
+   "data_keys": [
+    "SkillDesc_1123_p1/p2/p3",
+    "RoleStarPreview_1123_1/_3",
+    "HeroBase 1123 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1125",
+   "name": "Kisho Arima [Second Owl Raid]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SPD",
+   "role": "CCG ST DPS",
+   "rarity": "SSR",
+   "release": "2025-07-07",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1125 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Vanquish] When the battle starts, grant yourself (effect). When an allied CCG character uses an active skill, inflict the target 1 (effect), up to 4 stacks.",
+   "one_star": "[Combat Boost] For each allied CCG character on the field, increase your ATK-Related stats by 3%, up to 12%.",
+   "three_star": "[Triumph] When you deal CRIT DMG, grant all allied characters (effect) for 1 turn, and grant yourself a 1-turn effect that evades one active skill.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.56 Carnival; 0★ +20% dmg vs max-stack targets.",
+   "data_keys": [
+    "SkillDesc_1125_p1/p2/p3",
+    "RoleStarPreview_1125_1/_3",
+    "HeroBase 1125 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1134",
+   "name": "Uta [The Past]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "SPD",
+   "role": "Pursuit DPS (NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-08-11",
+   "stat_multiplier": 1.61,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1134 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Monitor] At the start of your turn, grant all enemies 1 (effect) effect, with a maximum of 3.",
+   "one_star": "[Surprise Attack] At the start of battle, grant self (effect) effect, and increase own attack-related abilities by 15%, damage dealt by non-active skills increased by 20%.",
+   "three_star": "[Damage Immunity] When own current HP falls below 50% for the first time, grant self immunity to all damage for 1 turn, remove and gain immunity to all debuffs for 1 turn, and immediately ",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "bond/co-op/pursuit",
+    "debuff cleanse"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.61 Carnival; 180% pursuit when monitored enemies cast; team +5% w/ NoOrg (order unresolved).",
+   "data_keys": [
+    "SkillDesc_1134_p1/p2/p3",
+    "RoleStarPreview_1134_1/_3",
+    "HeroBase 1134 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1132",
+   "name": "Touka Kirishima [Taiikusai]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "PSY",
+   "role": "Anteiku debuffer",
+   "rarity": "SSR",
+   "release": "2025-09-06",
+   "stat_multiplier": 1.46,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Stats Boost] After an allied character acts, grants that character 1 (effect).",
+   "one_star": "[Sportsmanship] [Effective also in Aid state] After taking damage, grants self the (effect) effect for 1 turn, up to 4 stacks.",
+   "three_star": "[Additional Attack] For every 4 (effect) obtained by allied characters on the field, increase self's skill level.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "heal"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.46; 0★ enemy ATK/DEF/dmg -10%; no source.",
+   "data_keys": [
+    "SkillDesc_1132_p1/p2/p3",
+    "RoleStarPreview_1132_1/_3",
+    "HeroBase 1132 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1133",
+   "name": "Nishiki Nishio [Taiikusai]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SPD",
+   "role": "Anteiku AoE buffer",
+   "rarity": "SSR",
+   "release": "2025-09-06",
+   "stat_multiplier": 1.47,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha29_1133, 2025-09-06); no rerun in data"
+   ],
+   "zero_star": "[Passion] After any allied Anteiku character uses an AoE skill, gains 1 stack of (effect).",
+   "one_star": "[Anteiku Boost] For each (effect) gained, reduces damage taken by allied Anteiku characters by 3%, stacking up to 5 times.",
+   "three_star": "[Damage Boost] For each Anteiku character on your field, increases basic stats of all allied Anteiku characters by 4% and the caster’s ATK by 5%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.47; Passion stacks from Anteiku AoE skills.",
+   "data_keys": [
+    "SkillDesc_1133_p1/p2/p3",
+    "RoleStarPreview_1133_1/_3",
+    "HeroBase 1133 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1135",
+   "name": "Noro [Overpower]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "AoE DoT (Aogiri)",
+   "rarity": "SSR",
+   "release": "2025-09-15",
+   "stat_multiplier": 1.59,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1135 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Blood Wither] At the start of the enemy’s turn, applies (effect) and deals damage to all enemies equal to 140% of ATK.",
+   "one_star": "[Undying Dominion] At the start of battle, gains 1 stack of (effect) for 2 turns, and all allied Aogiri Tree characters gain (effect) for 2 turns.",
+   "three_star": "[Stats Boost] For each (effect) stack on all enemies, increases damage dealt by 4% and reduces damage taken by 4%, capped at 32%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.59 Carnival; 0★ 140% AoE + debuff at every enemy turn start.",
+   "data_keys": [
+    "SkillDesc_1135_p1/p2/p3",
+    "RoleStarPreview_1135_1/_3",
+    "HeroBase 1135 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1136",
+   "name": "Kiyoko Aura [Special Class Ghoul Investigator]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "WIT",
+   "role": "Stronghold Takeover specialist",
+   "rarity": "SSR",
+   "release": "2025-09-20",
+   "stat_multiplier": 1.45,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1136 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha30_1136, 2025-09-20); no rerun in data"
+   ],
+   "zero_star": "[Perseverance] In Stronghold Takeover, increases all allies’ basic stats by 40%.",
+   "one_star": "[Level Up] In Stronghold Takeover, when your turn starts, raises the skill level of the ally with the highest ATK.",
+   "three_star": "[Assistance Tactic] [Effective also in Assistance]  When your turn starts, reduces damage taken by the ally with the lowest HP by 5% and increases their max HP by 8% for 2 turns, up to 2 sta",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "heal",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.45; 'In Stronghold Takeover, +40% all allies basic stats' + death-save, back-up tagged (SkillDesc_1136_p1/p2): S-tier in guild war only.",
+   "data_keys": [
+    "SkillDesc_1136_p1/p2/p3",
+    "RoleStarPreview_1136_1/_3",
+    "HeroBase 1136 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1137",
+   "name": "Naki [Prisoner]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "WIT",
+   "role": "Aogiri back-up buffer",
+   "rarity": "SSR",
+   "release": "2025-10-04",
+   "stat_multiplier": 1.49,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1137 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha31_1137, 2025-10-04); no rerun in data"
+   ],
+   "zero_star": "[Prison Cage] When battle starts, grants (effect) to all Aogiri Tree allies for 2 turns.",
+   "one_star": "[Aogiri Tree Boost] For each Aogiri Tree ally on the field, increases all stats of all allies by 4%.",
+   "three_star": "[All Char Stats Enhancement] When an ally with (effect) dies, increases HP-related stats of all allies by 5% for 2 turns, up to 4 stacks.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "skill-level ramp"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.49; back-up tagged; 1★ +4% all stats per Aogiri ally.",
+   "data_keys": [
+    "SkillDesc_1137_p1/p2/p3",
+    "RoleStarPreview_1137_1/_3",
+    "HeroBase 1137 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1138",
+   "name": "Juzo Suzuya [Halloween]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SPD",
+   "role": "CCG AoE crit",
+   "rarity": "SSR",
+   "release": "2025-10-18",
+   "stat_multiplier": 1.53,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha32_1138, 2025-10-18); no rerun in data"
+   ],
+   "zero_star": "[Misfortune] After an allied CCG character deals damage, inflicts 1 stack of (effect) on the target, up to 4 stacks.",
+   "one_star": "[CCG All Boost] For each allied CCG character on the field, increases all allies’ basic stats by 4%.",
+   "three_star": "[Charged Strike] When an enemy with (effect) dies, gains 1 (effect) for each stack of (effect) on the target, and deals damage equal to 160% of ATK to all enemies.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.53; 0★ Misfortune stacks -> control; 1★ +4% per CCG to all allies + skill-level ups.",
+   "data_keys": [
+    "SkillDesc_1138_p1/p2/p3",
+    "RoleStarPreview_1138_1/_3",
+    "HeroBase 1138 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1139",
+   "name": "Kisho Arima [Halloween]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "STR",
+   "role": "CCG back-up nuker",
+   "rarity": "SSR",
+   "release": "2025-10-18",
+   "stat_multiplier": 1.53,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Cursed Candy] When enemy’s turn ends, inflicts (effect) on all enemies. When the caster enters the field as a back-up, for each (effect) stack on the enemy, increases ATK-related stats",
+   "one_star": "[Delicious Candy] When battle and your turn start, grants 2 stacks of (effect) to all allies, up to 3 stacks.",
+   "three_star": "[All Char Stats Boost] When increases all allies’ basic stats by 12% and additionally increases ally CCG characters’ stats by 4%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.53; back-up tagged; 210% AoE on entry; +12% all allies (order unresolved).",
+   "data_keys": [
+    "SkillDesc_1139_p1/p2/p3",
+    "RoleStarPreview_1139_1/_3",
+    "HeroBase 1139 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1124",
+   "name": "Yoshimura [Cleaner]",
+   "factions": [
+    "No Organization",
+    "Clowns"
+   ],
+   "attribute": "SPD",
+   "role": "Non-active-skill buffer (NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-10-20",
+   "stat_multiplier": 1.61,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1124 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Perseverance Pursuit] After using an active skill, gains (effect) equal to the skill level, up to 6 stacks.",
+   "one_star": "[Battle Spirit] When your turn starts, the caster gains 1 Battle Spirit. After an allied character triggers a non-active skill, that character gains 1 (effect) for 1 turn, and the caster",
+   "three_star": "[No Organization Team Boost] For each No Organization ally, basic stats of all allies increase by 5%, and PEN Rate is increased by 6%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.61 Carnival; 0★ 180% AoE at max stacks + skill-level up; 3★ NoOrg +5% per ally. Shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1124_p1/p2/p3",
+    "RoleStarPreview_1124_1/_3",
+    "HeroBase 1124 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1128",
+   "name": "Toka Kirishima [1st Anniversary]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Anteiku back-up damage-reducer",
+   "rarity": "SSR",
+   "release": "2025-11-1 ",
+   "stat_multiplier": 1.53,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha33_1128, 2025-11-01); no rerun in data"
+   ],
+   "zero_star": "[Anteiku Boost] When the battle starts and your turn ends, if all allied characters belong to Anteiku, all allies gain the following 3 effects for 1 turn: The next damage taken from acti",
+   "one_star": "[All Stats Boost] For each Anteiku character on our field, increases all allies' basic stats by 4% and HP-related stats by 5%.",
+   "three_star": "[All DEF Boost] For each buff allied Anteiku characters have, increases all allies’ DEF-related stats by 3%, up to 24%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.53; back-up tagged; 60% next-hit reduction for all-Anteiku teams.",
+   "data_keys": [
+    "SkillDesc_1128_p1/p2/p3",
+    "RoleStarPreview_1128_1/_3",
+    "HeroBase 1128 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1129",
+   "name": "Ken Kaneki [1st Anniversary]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SPD",
+   "role": "Anteiku pursuit DPS",
+   "rarity": "SSR",
+   "release": "2025-11-15",
+   "stat_multiplier": 1.6,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha34_1129, 2025-11-15); no rerun in data"
+   ],
+   "zero_star": "[Stats Enhancement] When the battle starts, if all allied characters on the field are Anteiku, grant all allied characters (effect); otherwise, self gains (effect).",
+   "one_star": "[Absolute Pursuit] When your turn ends, deals (effect) damage equal to 210% ATK to the enemy with the lowest HP percentage.",
+   "three_star": "[Power Boost] When self has (effect), deals extra damage equal to 8% of Max HP when using an active skill to attack.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.60; 0★ all-Anteiku buff; 1★ 210% + 320% AoE pursuit every turn end.",
+   "data_keys": [
+    "SkillDesc_1129_p1/p2/p3",
+    "RoleStarPreview_1129_1/_3",
+    "HeroBase 1129 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1127",
+   "name": "Hideyoshi Nagachika [Best Friend]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "WIT",
+   "role": "Universal buffer",
+   "rarity": "SSR",
+   "release": "2025-11-24",
+   "stat_multiplier": 1.59,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1127 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Friendly Partner] When the battle starts, gains (effect) and increases all allies' basic stats by 15%.",
+   "one_star": "[Devotion] When the allied character with the highest ATK has their HP drop below 50% for the first time, grants the target (effect) and self (effect), lasting until the end of the ",
+   "three_star": "[Courage] During your turn, upon using a skill for the first time, grants (effect) to all allies, up to 3 times.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": true,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.59 Carnival; 0★ +15% basic stats to ALL allies at battle start (no faction lock). Shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1127_p1/p2/p3",
+    "RoleStarPreview_1127_1/_3",
+    "HeroBase 1127 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1121",
+   "name": "Kosuke Hoji [Chi She]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "WIT",
+   "role": "Blockade Breakthrough specialist",
+   "rarity": "SSR",
+   "release": "2025-11-29",
+   "stat_multiplier": 1.52,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1121 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha35_1121, 2025-11-29); no rerun in data"
+   ],
+   "zero_star": "[Basic Stats Boost] In Blockade Breakthrough, increases allies' basic stats by 20% and advanced stats by 15%.",
+   "one_star": "[Attribute Enhancement] In Blockade Breakthrough, when battle and your turn starts, grants 1 stack of (effect) to all allies, up to 2 stacks.",
+   "three_star": "[ATK Enhancement] During Blockade Breakthrough, when the battle starts, all allies recover to full HP, ignoring HP loss from the previous battle.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "shield"
+   ],
+   "tier_0star": "C",
+   "tier_full": "B",
+   "reason": "x1.52; every passive is Breakthrough-only ('In Blockade Breakthrough', SkillDesc_1121_p1..p3): S-tier there, near-useless elsewhere.",
+   "data_keys": [
+    "SkillDesc_1121_p1/p2/p3",
+    "RoleStarPreview_1121_1/_3",
+    "HeroBase 1121 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1140",
+   "name": "Rize Kamishiro [Christmas]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "STR",
+   "role": "Skill-level ramp (NoOrg)",
+   "rarity": "SSR",
+   "release": "2025-12-13",
+   "stat_multiplier": 1.54,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha36_1140, 2025-12-13); no rerun in data"
+   ],
+   "zero_star": "[Skill Levels Increased] After a No Organization ally uses a skill, increases the skill level of the allies on action slots.",
+   "one_star": "[Blessing Power] After a No Organization ally uses an active skill, gains 1 stack of (effect).",
+   "three_star": "[No Organization Boost] For each No Organization ally, increases Basic Stats of all No Organization allies by 5% and self’s PEN Rate by 5%.",
+   "star_order_uncertain": true,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.54; skill-level ups for NoOrg (order unresolved); 1★ 280% Blessing hits.",
+   "data_keys": [
+    "SkillDesc_1140_p1/p2/p3",
+    "RoleStarPreview_1140_1/_3",
+    "HeroBase 1140 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1141",
+   "name": "Toka Kirishima [New Year]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SPD",
+   "role": "AoE turn-start DPS (Anteiku)",
+   "rarity": "SSR",
+   "release": "2025-12-27",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha37_1141, 2025-12-27); no rerun in data"
+   ],
+   "zero_star": "[Enhanced Pursuit] When your turn starts, applies (effect) to all enemies and deals 140% ATK damage to all enemies.",
+   "one_star": "[Anteiku Boost] For each Anteiku ally on the field, increases all allies' basic stats by 4% and self’s stats by an additional 2%.",
+   "three_star": "[HP Boost] When Bell Chime is detonated, grants all allies 1 stack of (effect), up to 4 stacks, and grants all enemies 1 stack of (effect), up to 4 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.56; 0★ 140% AoE every turn + Bell Chime detonation.",
+   "data_keys": [
+    "SkillDesc_1141_p1/p2/p3",
+    "RoleStarPreview_1141_1/_3",
+    "HeroBase 1141 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1146",
+   "name": "Kisho Arima [Invincible Investigator]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "SPD",
+   "role": "CCG UR AoE",
+   "rarity": "UR",
+   "release": "2025-12-29",
+   "stat_multiplier": 1.73,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1146 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Gaze of the Strong] When the battle and your turn start, applies (effect) to the enemy with the highest ATK.",
+   "one_star": "[Weapon Boost] When the battle starts, increases basic stats of all allied CCG characters by 12%.",
+   "three_star": "[Weaken] When dealing damage, reducing the target's Crit DEF by 10% for 1 turn, up to 3 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "bond/co-op/pursuit",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.73 UR Carnival; 0★ Gaze + 180% pursuit after own active; 1★ CCG +12%.",
+   "data_keys": [
+    "SkillDesc_1146_p1/p2/p3",
+    "RoleStarPreview_1146_1/_3",
+    "HeroBase 1146 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1145",
+   "name": "Uta [New Year]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "WIT",
+   "role": "Back-up buffer (NoOrg)",
+   "rarity": "SSR",
+   "release": "2026-01-10",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha38_1145, 2026-01-10); no rerun in data"
+   ],
+   "zero_star": "[No Organization Boost] When an allied No Organization character uses an active skill, grants the character the following effects for 1 turn based on the skill level: Lv.1 - Increases PEN Rate b",
+   "one_star": "[Basic Stats Boost] Increases basic stats of allied No Organization characters by 16% and Block Rate by 12%.",
+   "three_star": "[Damage Boost] When your turn starts, heals the ally with the lowest HP percentage for 10% of max HP, and reduces damage taken from the next active skill by 50% for the target.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "heal",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.56; 0★ back-up tagged: NoOrg actives get PEN/ATK/dmg by skill level; 1★ NoOrg +16% (back-up).",
+   "data_keys": [
+    "SkillDesc_1145_p1/p2/p3",
+    "RoleStarPreview_1145_1/_3",
+    "HeroBase 1145 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1142",
+   "name": "Sen Takatsuki [Elegant Deception]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "WIT",
+   "role": "Buffer/healer (NoOrg)",
+   "rarity": "SSR",
+   "release": "2026-01-24",
+   "stat_multiplier": 1.57,
+   "how_to_get": [
+    "free: Unlimited Recruitment (ActUnlimitedGacha_1, days 1-14) pull",
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "past limited banner (hero_gacha41_1142, 2026-01-24); no rerun in data"
+   ],
+   "zero_star": "[Skill Levels Increased] For each No Organization ally, increases all allies’ Basic Stats by 4% and Block Rate by 4%.",
+   "one_star": "[Basic Stats increased] After an ally takes damage from a single-target active skill, increases that ally’s basic stats by 5% for 1 turn.",
+   "three_star": "[Creation] After healing an ally, gains 1 stack of (effect), up to 4 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": true,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "heal",
+    "skill-level ramp",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.57; 0★ +4% basic stats & block to ALL allies per NoOrg ally, own skill-level up, team debuff immunity after next active (SkillDesc_1142_p1); active heals all.",
+   "data_keys": [
+    "SkillDesc_1142_p1/p2/p3",
+    "RoleStarPreview_1142_1/_3",
+    "HeroBase 1142 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1143",
+   "name": "Roma Hoito [Anteiku]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Anteiku PvE buffer",
+   "rarity": "SSR",
+   "release": "2026-01-17",
+   "stat_multiplier": 1.58,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "shop day 43 (HeroBase 1143 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha40_1143, 2026-01-17); no rerun in data"
+   ],
+   "zero_star": "[Basic Stats Boost] In PvE battles, increases basic stats of allied Anteiku characters by 30%.",
+   "one_star": "[Damage Boost] [Effective also in Assistance] When your turn starts, increases active skill damage by 5%, bonus damage by 6%, and non-active skill damage by 10% for 2 turns for the ally",
+   "three_star": "[Slowdown] After taking damage, inflicts (effect) on the target for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.58; 0★ 'In PvE battles' Anteiku +30% basic stats + next-dmg +30% (SkillDesc_1143_p1). PvE only. Shop day 43 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1143_p1/p2/p3",
+    "RoleStarPreview_1143_1/_3",
+    "HeroBase 1143 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1147",
+   "name": "Ayato Kirishima [Wings of Ardor]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri UR pursuit",
+   "rarity": "UR",
+   "release": "2026-02-02",
+   "stat_multiplier": 1.74,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1147 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Forceful Pursuit] For 1 turn, after an allied Aogiri Tree character uses an active skill, trigger (effect), (effect), and (effect) in sequence against enemies.",
+   "one_star": "[Battle Frenzy] Increases the basic stats of allied Aogiri Tree characters by 16%.",
+   "three_star": "[DMG Amplification] After you use an active skill or take damage from 2 active skills, allied Aogiri Tree characters gain 10% increased damage dealt and 10% reduced damage taken for 2 turns,",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "bond/co-op/pursuit",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.74 UR Carnival; 0★ triple pursuit after Aogiri actives; 1★ Aogiri +16%.",
+   "data_keys": [
+    "SkillDesc_1147_p1/p2/p3",
+    "RoleStarPreview_1147_1/_3",
+    "HeroBase 1147 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1148",
+   "name": "Rize Kamishiro [Valentine's Day]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "STR",
+   "role": "Bond-attack DPS (NoOrg)",
+   "rarity": "SSR",
+   "release": "2026-02-07",
+   "stat_multiplier": 1.58,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha42_1148, 2026-02-07); no rerun in data"
+   ],
+   "zero_star": "[Bond Attack] After an allied No Organization character uses an active skill, immediately triggers a Bond Attack on the enemy target, dealing (effect) damage equal to 160% of ATK.",
+   "one_star": "[No Organization Boost] Increases the Basic Stats of allied No Organization characters by 16% and CRIT DEF by 15%.",
+   "three_star": "[DMG Decrease] When battle starts, gains 1 stack of (effect). While (effect) is active, reduces damage taken and extra damage taken by 25%, and increases CRIT DEF by 20%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "bond/co-op/pursuit",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.58; 0★ 160% Bond Attack after every NoOrg active; 1★ NoOrg +16%.",
+   "data_keys": [
+    "SkillDesc_1148_p1/p2/p3",
+    "RoleStarPreview_1148_1/_3",
+    "HeroBase 1148 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1164",
+   "name": "Eto [3M Downloads]",
+   "factions": [
+    "Aogiri Tree",
+    "Clowns"
+   ],
+   "attribute": "WIT",
+   "role": "Aogiri defensive support",
+   "rarity": "SSR",
+   "release": "2026-04-14",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (HeroGacha47_1164, 2026-04-14); no rerun in data"
+   ],
+   "zero_star": "[Aogiri Tree Boost] When the caster is present, for each allied Aogiri Tree character, increases all allies' DEF-related stats by 5% and reduces extra damage taken by 8%.",
+   "one_star": "[Resolve] When your turn starts, grants self (effect) for 1 turn; When taking damage, grants self (effect) for 1 turn.",
+   "three_star": "[Camouflage] When your HP or the HP of the allied Aogiri Tree character with the highest ATK first drops below 50%, grants the target (effect) for 2 turns; When (effect) is removed, g",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "team stat buff"
+   ],
+   "tier_0star": "B",
+   "tier_full": "B",
+   "reason": "x1.56; 0★ +5% DEF per Aogiri ally.",
+   "data_keys": [
+    "SkillDesc_1164_p1/p2/p3",
+    "RoleStarPreview_1164_1/_3",
+    "HeroBase 1164 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1144",
+   "name": "Hinami Fueguchi [Hina Matsuri]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Universal turn buffer",
+   "rarity": "SSR",
+   "release": "2026-03-03",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha44_1144, 2026-03-03); no rerun in data"
+   ],
+   "zero_star": "[Increase DMG] When your turn starts, increases all allies' damage dealt by 10% and reduces damage taken by 15% for 1 turn.",
+   "one_star": "[Growth] When battle starts, immediately casts your Lv.1 active skill to increase all allied Anteiku characters' basic stats by 20%.",
+   "three_star": "[Aegis] When another ally takes fatal damage for the first time, preserves 1 HP for them, grants all allies a shield equal to 15% of your Max HP for 1 turn, and gains (effect) fo",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "shield",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.56; 0★ every turn all allies +10% dmg/-15% taken; at full HP top-ATK ally skill-level up.",
+   "data_keys": [
+    "SkillDesc_1144_p1/p2/p3",
+    "RoleStarPreview_1144_1/_3",
+    "HeroBase 1144 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1149",
+   "name": "Nishiki Nishio [Anteiku]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "WIT",
+   "role": "Back-up support (Anteiku)",
+   "rarity": "SSR",
+   "release": "2026-02-21",
+   "stat_multiplier": 1.56,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "Legacy Custom Recruitment pool (OptionalGacha_13, server day 33+ gate; no future date in data)",
+    "past limited banner (hero_gacha43_1149, 2026-02-21); no rerun in data"
+   ],
+   "zero_star": "[Vitality] [Effective also in Assistance] When battle starts, grants all allies 3 stacks of (effect).",
+   "one_star": "[Anteiku Boost] When battle starts, increases Basic Stats by 16% and Max HP by 8% for all allied Anteiku characters, and grants all allies a shield for 1 turn equal to 15% of your max HP",
+   "three_star": "[Ability Growth] When your turn ends, grant all allies (effect), up to 2 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "shield"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.56; 0★ back-up & Assistance tagged stack buff; 1★ Anteiku +16%.",
+   "data_keys": [
+    "SkillDesc_1149_p1/p2/p3",
+    "RoleStarPreview_1149_1/_3",
+    "HeroBase 1149 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1160",
+   "name": "Toka Kirishima [Flame Strike]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "SPD",
+   "role": "Anteiku UR AoE",
+   "rarity": "UR",
+   "release": "2026-03-09",
+   "stat_multiplier": 1.76,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1160 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Immortal] When the battle starts, gain (effect) for 2 turns. When (effect) expires, gain (effect).",
+   "one_star": "[Overall Boost] When the battle starts, all allied Anteiku characters gain (effect).",
+   "three_star": "[Immortal Combo] When your turn starts, if you have (effect), skill level increases, and you become immune to all debuffs and Weak effects.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "skill-level ramp",
+    "debuff cleanse"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.76 UR Carnival; 0★ 150% AoE whenever anyone takes fatal dmg.",
+   "data_keys": [
+    "SkillDesc_1160_p1/p2/p3",
+    "RoleStarPreview_1160_1/_3",
+    "HeroBase 1160 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1158",
+   "name": "Tatara [Easter]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "STR",
+   "role": "Back-up AoE (Aogiri)",
+   "rarity": "SSR",
+   "release": "2026-03-31",
+   "stat_multiplier": 1.6,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha46_1158, 2026-03-31); no rerun in data"
+   ],
+   "zero_star": "[Blood Sacrifice] When your turn starts, the ally with the highest ATK gains 1 (effect), up to 3 stacks, and 1 random debuff is removed.",
+   "one_star": "[Aogiri Tree Boost] All Aogiri Tree allies gain +20% basic stats and +8% ATK-related stats.",
+   "three_star": "[Aogiri Tree Intervene] When the enemy’s turn starts, shield all Aogiri Tree allies for 1 turn based on 300% of your initial ATK.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "debuff cleanse"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.60; 0★ back-up: 220% AoE + 2 Weak on entry; 1★ Aogiri +20%/+8% ATK (back-up).",
+   "data_keys": [
+    "SkillDesc_1158_p1/p2/p3",
+    "RoleStarPreview_1158_1/_3",
+    "HeroBase 1158 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1168",
+   "name": "Ken Kaneki [√A]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku AoE burst",
+   "rarity": "SSR",
+   "release": "2026-04-13",
+   "stat_multiplier": 1.78,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1168 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Oblivion] After an enemy uses an Active Skill, gain 1 stack of (effect).",
+   "one_star": "[Anteiku Boost] All allies gain +12% to all stats, and the character gains an extra +16% to ATK-related stats and damage dealt.",
+   "three_star": "[Desperation] When your turn starts, if any ally is below 50% HP, remove all your debuffs and Weak effects, and gain (effect) for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "shield",
+    "skill-level ramp"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.78 Carnival; 0★ 200% AoE + shield strip every 3 enemy actives; 1★ all allies +12%.",
+   "data_keys": [
+    "SkillDesc_1168_p1/p2/p3",
+    "RoleStarPreview_1168_1/_3",
+    "HeroBase 1168 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1165",
+   "name": "Naki [1.5th Anniversary]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "WIT",
+   "role": "Stronghold specialist (Aogiri)",
+   "rarity": "SSR",
+   "release": "2026-04-28",
+   "stat_multiplier": 1.62,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Skill Level Up] [Effective also in Assistance] When battle starts, increase your ATK by 10%.",
+   "one_star": "[Stats Boost] In Stronghold Takeover, allies are immune to all (effect) effects and gain +20% to base stats.",
+   "three_star": "[Resilience] In Stronghold Clash, when battle starts, immediately cast a Lv.1 active skill.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "heal",
+    "anti-heal",
+    "skill-level ramp",
+    "debuff cleanse"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.62; 1★ 'In Stronghold Takeover' +20% (x2 for Aogiri) + shield strip/-30% lifesteal before actives.",
+   "data_keys": [
+    "SkillDesc_1165_p1/p2/p3",
+    "RoleStarPreview_1165_1/_3",
+    "HeroBase 1165 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1161",
+   "name": "Ayato Kirishima [1.5th Anniversary]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri tempo DPS",
+   "rarity": "SSR",
+   "release": "2026-04-28",
+   "stat_multiplier": 1.68,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha48_1161, 2026-04-28); no rerun in data"
+   ],
+   "zero_star": "[Initiate] When your turn starts, immediately cast an active skill on the enemy with the lowest HP percentage, based on your highest skill level in the skill zone (minimum Lv.1).",
+   "one_star": "[Aogiri Tree Boost] For each Aogiri Tree ally on the field, all allies gain +5% to base stats, and your active skill damage +5%.",
+   "three_star": "[Retaliation] When an enemy with (effect) uses an active skill, grant that enemy (effect).",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "S",
+   "tier_full": "A",
+   "reason": "x1.68; 0★ free active on lowest-HP enemy every turn + all allies +20% active/+30% non-active dmg.",
+   "data_keys": [
+    "SkillDesc_1161_p1/p2/p3",
+    "RoleStarPreview_1161_1/_3",
+    "HeroBase 1161 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1102",
+   "name": "Haise Sasaki [Mentor]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "SPD",
+   "role": "CCG skill-copy engine",
+   "rarity": "SSR",
+   "release": "2026-05-12",
+   "stat_multiplier": 1.63,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "shop day 75 (HeroBase 1102 shop_time; UNCONFIRMED - may be a Crystal Exchange)",
+    "past limited banner (hero_gacha49_1102, 2026-05-12); no rerun in data"
+   ],
+   "zero_star": "[CCG Pursuit] When you use an active skill, you will randomly remove 1 debuffs on your team, and according to the level of the active skill you use this time, immediately make other CC",
+   "one_star": "[CCG Boost] While you are on the field, allied CCG characters gain the following effects: Basic stats increase by 24%; when taking damage, Max HP increases by 10% for 1 turn, stackin",
+   "three_star": "[Flash] When our turn starts, we immediately consume all the sure-kill skills and sure-kill skill cards, increase our skill level, and obtain 1 (effect), which can only be stacke",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "heal",
+    "skill-level ramp",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.63; 0★ makes the top-ATK CCG ally cast the same-level active on your target (+10%) and cleanses - a free extra active per cast; 1★ CCG +24%. Shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1102_p1/p2/p3",
+    "RoleStarPreview_1102_1/_3",
+    "HeroBase 1102 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1116",
+   "name": "Urie Kuki [Squad Leader]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "STR",
+   "role": "CCG carry (kagune stacks)",
+   "rarity": "SSR",
+   "release": "2026-05-26",
+   "stat_multiplier": 1.64,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha50_1116, 2026-05-26); no rerun in data"
+   ],
+   "zero_star": "[Enhanced Kagune Edge] After an allied CCG character casts an active skill, gain stacks of (effect) equal to the skill's level, up to 10 stacks.",
+   "one_star": "[Mass Immunity] Each time there are 1 CCG characters on our side, the basic ability value of all our team will be increased by 5%, and the damage and additional damage received will be r",
+   "three_star": "[Powerful Pursuit] When our character receives fatal damage, he will immediately gain 3 (effect).",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.64; 0★ Blade Boost stacks from CCG actives; 1★ +5% per CCG team + Weak/control immunity. Unlimited pool.",
+   "data_keys": [
+    "SkillDesc_1116_p1/p2/p3",
+    "RoleStarPreview_1116_1/_3",
+    "HeroBase 1116 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1114",
+   "name": "Nishiki Nishio [Orochi]",
+   "factions": [
+    "No Organization",
+    ":re"
+   ],
+   "attribute": "SKL",
+   "role": "ST burst + buff strip (NoOrg)",
+   "rarity": "SSR",
+   "release": "2026-05-18",
+   "stat_multiplier": 1.8,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1114 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Restraint Attack] After an enemy casts an active skill, remove up to 4 buffs or stance effects from the target.",
+   "one_star": "[No Organization Boost] Increase all ability values ​​of our No Organization characters by 20%, and increase the damage caused by ourselves by 20%.",
+   "three_star": "[Disordered Action] After casting an active skill, if the target's HP is below 80%, deal extra damage equal to 300% of ATK.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "turn/speed control"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.80; 0★ strips up to 4 buffs/stances per enemy active and fires 270% at the top-ATK enemy; 1★ NoOrg +20% all stats +20% dmg. Carnival; shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1114_p1/p2/p3",
+    "RoleStarPreview_1114_1/_3",
+    "HeroBase 1114 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1150",
+   "name": "Haise Sasaki [Sealed Memory]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "STR",
+   "role": "CCG debuff commander",
+   "rarity": "SSR",
+   "release": "2026-06-22",
+   "stat_multiplier": 1.81,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1150 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "",
+   "one_star": "[Command] Before other CCG allies cast an active skill, gain 1 stack of (effect), up to 4 stacks.",
+   "three_star": "[Disorder] Each time you remove 1 (effect), all allies' ATK increases by 3%, and you gain 1 (effect), up to 8 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "heal",
+    "anti-heal"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.81 Carnival; enemy -6% stats/-15% dmg/lifesteal 0 & no shields per cast; CCG +16% (star preview maps both p1/p2 to 1★ - check in-game).",
+   "data_keys": [
+    "SkillDesc_1150_p1/p2/p3",
+    "RoleStarPreview_1150_1/_3",
+    "HeroBase 1150 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1170",
+   "name": "Toru Mitsuki [Cowardly Investigator]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "WIT",
+   "role": "CCG back-up nuker",
+   "rarity": "SSR",
+   "release": "2026-06-09",
+   "stat_multiplier": 1.64,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Unlimited Recruitment pool (UnlimitedGacha_1, days 1-14)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha51_1170, 2026-06-09); no rerun in data"
+   ],
+   "zero_star": "[Severing Edge] When the battle starts, apply (effect) to the enemy with the highest initial ATK.",
+   "one_star": "[CCG All Boost] Allied CCG characters' basic stats +20%, PEN Rate and CRIT DMG +20%.",
+   "three_star": "[Edge Armor] When the battle starts, grants all allies 3 stacks of (effect).",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.64; 0★ back-up: 400% ATK on entry vs marked top-ATK enemy; 1★ CCG +20% stats/PEN/CRIT DMG (back-up). Unlimited pool.",
+   "data_keys": [
+    "SkillDesc_1170_p1/p2/p3",
+    "RoleStarPreview_1170_1/_3",
+    "HeroBase 1170 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1162",
+   "name": "Toka Kirishima [June Bride]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku AoE buffer",
+   "rarity": "SSR",
+   "release": "2026-06-23",
+   "stat_multiplier": 1.67,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "Legacy pickable: novice Legacy Custom Recruitment (OptionalGacha_beginner, days 1-14, 300 dia/pull, choose at pull 200)",
+    "past limited banner (hero_gacha52_1162, 2026-06-23); no rerun in data"
+   ],
+   "zero_star": "[Tactical Support] At the start of battle, all Anteiku allies gain (effect). Then you immediately cast a Level 2 active skill.",
+   "one_star": "[Anteiku Ability Enhanced] All Anteiku allies' basic stats increase by 24%. For each Anteiku ally on the field, your ATK-related stats increase by 8%.",
+   "three_star": "[Collapse Strike] When our turn starts or after one of our characters acts, you gain 1 (effect), up to 4 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "heal",
+    "skill-level ramp",
+    "debuff cleanse"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.67; 0★ Lv2 active at battle start + Anteiku effect; 1★ Anteiku +24%.",
+   "data_keys": [
+    "SkillDesc_1162_p1/p2/p3",
+    "RoleStarPreview_1162_1/_3",
+    "HeroBase 1162 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1166",
+   "name": "Akira Mado [June Bride]",
+   "factions": [
+    "CCG"
+   ],
+   "attribute": "WIT",
+   "role": "Universal back-up buffer",
+   "rarity": "SSR",
+   "release": "2026-06-23",
+   "stat_multiplier": 1.62,
+   "how_to_get": [
+    "no current source in data (past/unscheduled banner only)"
+   ],
+   "zero_star": "[Skill Level Up] When our turn starts, clear all Weak values and remove all Weak effects from all allies.",
+   "one_star": "[All Skills Enhanced] All allies' basic stats increase by 18%, and all enemies' basic stats decrease by 18%.",
+   "three_star": "[Blessing] When one of our characters' skill level increases or that character takes active skill damage, that character gains 1 (effect), up to 8 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "skill-level ramp",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.62; 0★ back-up: clears Weak each turn, raises all Lv1 skills to Lv2, +15% active dmg, 20% shields; 1★ allies +18%, enemies -18% (back-up).",
+   "data_keys": [
+    "SkillDesc_1166_p1/p2/p3",
+    "RoleStarPreview_1166_1/_3",
+    "HeroBase 1166 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1169",
+   "name": "Ginshi Shirazu [Delinquent Youth]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "SKL",
+   "role": "CCG recast engine",
+   "rarity": "SSR",
+   "release": "2026-07-07",
+   "stat_multiplier": 1.68,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "past limited banner (hero_gacha53_1169, 2026-07-07); no rerun in data"
+   ],
+   "zero_star": "[Ability Amplification] The allied character gains 1 stack of (effect) for 1 turn after casting an active skill attack or taking damage exceeding 35% of their Max HP, up to 3 stacks.",
+   "one_star": "[CCG All Boost] All allied CCG characters gain 24% increased basic stats and 15% boosted active skill damage, and this character gains 20% increased extra damage.",
+   "three_star": "[All-unit Combo] After an ally casts an active skill, randomly clear 1 debuff from that unit.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "shield",
+    "skill-level ramp"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.68; 0★ Lv2 active recast on lowest-HP enemy + control/Weak cleanse at 2 stacks; 1★ CCG +24% +15% active dmg.",
+   "data_keys": [
+    "SkillDesc_1169_p1/p2/p3",
+    "RoleStarPreview_1169_1/_3",
+    "HeroBase 1169 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1171",
+   "name": "Rize Kamishiro [Seaside Carnival Party]",
+   "factions": [
+    "No Organization"
+   ],
+   "attribute": "SPD",
+   "role": "Counter tank (NoOrg)",
+   "rarity": "SSR",
+   "release": "2026-07-21",
+   "stat_multiplier": 1.68,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "past limited banner (hero_gacha54_1171, 2026-07-21); no rerun in data"
+   ],
+   "zero_star": "[Counter] When our turn starts, gain a Shield equal to 15% of Max HP for 1 turn and increase ATK by 30%.",
+   "one_star": "[No Organization Boost] While you are on the field, allied No Organization characters gain the following effects: Basic stats increase by 30%.",
+   "three_star": "[Wave Strike] After an allied character casts a non-active skill, gain 1 stack of (effect), up to 4 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "bond/co-op/pursuit",
+    "provoke tank",
+    "shield",
+    "skill-level ramp",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.68; 0★ 15% shield, +30% ATK, soaks 50% of single-target hits on allies + 150% counter; 1★ NoOrg +30%.",
+   "data_keys": [
+    "SkillDesc_1171_p1/p2/p3",
+    "RoleStarPreview_1171_1/_3",
+    "HeroBase 1171 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1173",
+   "name": "Yoshimura [Owl of Readiness]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Universal UR buffer",
+   "rarity": "UR",
+   "release": "2026-07-27",
+   "stat_multiplier": 1.82,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1173 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Grudge] At the start of battle, all allied characters gain 15% DEF for 1 turn, and you and the allied character with the lowest Max HP gain the (effect) effect.",
+   "one_star": "[Outrage] After an allied character with the (effect) effect takes action, you gain 1 stack of (effect), up to 4 stacks.",
+   "three_star": "[Fury Strike] Increase all stats of allied characters by 18%, and increase your own attack-related stats and damage dealt by 16%.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "heal"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.82 UR Carnival; 0★ Grudge extra dmg; 3★ +18% all stats to all allies. Shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1173_p1/p2/p3",
+    "RoleStarPreview_1173_1/_3",
+    "HeroBase 1173 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1172",
+   "name": "Saiko Yonebayashi [Neet Investigator]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "WIT",
+   "role": "CCG PvE buffer",
+   "rarity": "SSR",
+   "release": "2026-08-04",
+   "stat_multiplier": 1.67,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "past limited banner (hero_gacha55_1172, 2026-08-04); no rerun in data"
+   ],
+   "zero_star": "[Sated] [Effective also in Aid state]When the battle begins, gain yourself (effect) effect, after taking action for the first time, is to restore yourself to the maximum HP 30% l",
+   "one_star": "[CCG Boost] In PVE, all allied CCG characters gain +20% basic stats and +15% ATK-related attributes.",
+   "three_star": "[Assisted Kill] [Effective also in Assistance]  In PVE, the ally with the highest initial ATK gains +12% ATK.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke"
+   ],
+   "tier_0star": "B",
+   "tier_full": "A",
+   "reason": "x1.67; 0★ only self-heal; 1★ CCG +20% (PvE).",
+   "data_keys": [
+    "SkillDesc_1172_p1/p2/p3",
+    "RoleStarPreview_1172_1/_3",
+    "HeroBase 1172 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1175",
+   "name": "Yakumo Omori [Natsu Matsuri]",
+   "factions": [
+    "Aogiri Tree"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri AoE combo",
+   "rarity": "SSR",
+   "release": "2026-08-18",
+   "stat_multiplier": 1.69,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "past limited banner (hero_gacha56_1175, 2026-08-18); no rerun in data"
+   ],
+   "zero_star": "[Rapid Combo] Gain 1 stack of (effect) after any unit acts, up to 4 stacks.",
+   "one_star": "[Aogiri Tree Boost] Increase all stats of Aogiri Tree allies by 16% and ATK-related stats of self and the ally with the highest ATK by 12%.",
+   "three_star": "[Burst Bash] After you take action, increase the skill damage of every Aogiri Tree ally by 10%, up to 4 stacks.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "A",
+   "tier_full": "A",
+   "reason": "x1.69; 0★ two extra casts every 4 unit actions; 1★ Aogiri +16%.",
+   "data_keys": [
+    "SkillDesc_1175_p1/p2/p3",
+    "RoleStarPreview_1175_1/_3",
+    "HeroBase 1175 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1177",
+   "name": "Roma Hoito [Mad Clown]",
+   "factions": [
+    "No Organization",
+    "Clowns",
+    ":re"
+   ],
+   "attribute": "WIT",
+   "role": "Universal back-up buffer",
+   "rarity": "SSR",
+   "release": "2026-09-01",
+   "stat_multiplier": 1.7,
+   "how_to_get": [
+    "Wish Rebate pick (days 1-7, closed)",
+    "past limited banner (hero_gacha57_1177, 2026-09-01); no rerun in data"
+   ],
+   "zero_star": "[Fortress] At the start of battle, grants allied characters 1 (effect) effect and reduces the amount of shield gained by enemy characters by 40%.",
+   "one_star": "[Carnival] Increases all allied characters' Basic Stats by 18% and their CRIT Rate and CRIT DMG by 30%.",
+   "three_star": "[Attention] When battle starts, apply (effect) to the ally with the highest base ATK.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "team stat buff"
+   ],
+   "tier_0star": "A",
+   "tier_full": "S",
+   "reason": "x1.70; all passives back-up tagged; 0★ only Fortress (-40% enemy shields, stacks); 1★ all allies +18% stats +30% CRIT/CRIT DMG.",
+   "data_keys": [
+    "SkillDesc_1177_p1/p2/p3",
+    "RoleStarPreview_1177_1/_3",
+    "HeroBase 1177 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1103",
+   "name": "Juzo Suzuya [False Girl]",
+   "factions": [
+    "CCG",
+    ":re"
+   ],
+   "attribute": "SPD",
+   "role": "AoE carry + team buff",
+   "rarity": "SSR",
+   "release": "2026-08-31",
+   "stat_multiplier": 1.84,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1103 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Focused Strike] After using an active skill, gains 4 (effect). When an allied character takes a single instance of damage exceeding 20% of their own Max HP, the user gains 1 (effect).",
+   "one_star": "[All-Enhance] Increases all stats of allied characters by 16% and the user's damage dealt by 20%.",
+   "three_star": "[Warm-up] When battle starts, allies gain (effect). After an ally takes action, grants 1 stack of (effect) to the caster; you gain an extra stack of (effect) after taking action, s",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "shield",
+    "heal"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.84; 0★ 200% AoE + 6% heal every 4 stacks (4 per own active); 1★ ALL allies +16% all stats (any faction). Carnival; shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1103_p1/p2/p3",
+    "RoleStarPreview_1103_1/_3",
+    "HeroBase 1103 atk/def/hp_factor, shop_time"
+   ]
+  },
+  {
+   "id": "1174",
+   "name": "Nutcracker [Thirst for Beauty]",
+   "factions": [
+    "No Organization",
+    ":re"
+   ],
+   "attribute": "SPD",
+   "role": "NoOrg pursuit carry",
+   "rarity": "SSR",
+   "release": "2026-09-15",
+   "stat_multiplier": 1.69,
+   "how_to_get": [
+    "Wish Rebate (WishRebate_Rocket202609, server_start 1/server_finish 8 => days 1-7, CLOSED by day 8 unless already bought)",
+    "past limited banner (hero_gacha58_1174, 2026-09-15); no rerun in data"
+   ],
+   "zero_star": "[Pierce] After a No Organization allied character acts, gain (effect).",
+   "one_star": "[Tactical Enhancement] Increase No Organization allied characters' basic stats by 30%.",
+   "three_star": "[Offensive] At the start of battle, grant (effect) to No Organization allied characters.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE",
+    "bond/co-op/pursuit",
+    "heal",
+    "skill-level ramp"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.69; 0★ 240% Bonus-Attack after EVERY NoOrg active + team heal 20% of dmg (SkillDesc_1174_p1); 1★ NoOrg +30% (SkillDesc_1174_p2).",
+   "data_keys": [
+    "SkillDesc_1174_p1/p2/p3",
+    "RoleStarPreview_1174_1/_3",
+    "HeroBase 1174 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1178",
+   "name": "Toka Kirishima [School Festival Maid Costume]",
+   "factions": [
+    "Anteiku"
+   ],
+   "attribute": "STR",
+   "role": "Anteiku counter carry",
+   "rarity": "SSR",
+   "release": "2026-09-29",
+   "stat_multiplier": 1.71,
+   "how_to_get": [
+    "limited banner HeroGacha59_1178 ended 2026-10-13"
+   ],
+   "zero_star": "[Fully Prepared] At the start of battle and at the end of our turn, gain (effect).",
+   "one_star": "[Anteiku Boost] Increase allied Anteiku characters' basic stats by 30%. For each Anteiku character on our field, increase your DEF by 5% and Max HP by 8%.",
+   "three_star": "[Courtesy] At the start of battle, apply (effect) to the enemy with the highest initial ATK.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "single-target nuke",
+    "AoE",
+    "bond/co-op/pursuit",
+    "heal",
+    "anti-heal",
+    "skill-level ramp",
+    "turn/speed control",
+    "team stat buff"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.71; 0★ 280% counter on every enemy active + skill-level up each turn; 1★ Anteiku +30%.",
+   "data_keys": [
+    "SkillDesc_1178_p1/p2/p3",
+    "RoleStarPreview_1178_1/_3",
+    "HeroBase 1178 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1179",
+   "name": "Miza Kusakari [Triple Blade]",
+   "factions": [
+    "Aogiri Tree",
+    ":re"
+   ],
+   "attribute": "WIT",
+   "role": "Back-up shield-breaker (Aogiri)",
+   "rarity": "SSR",
+   "release": "2026-10-13",
+   "stat_multiplier": 1.69,
+   "how_to_get": [
+    "exclusive limited banner HeroGacha60_1179 2026-10-13 -> 2026-10-27 (live now, pity 200)"
+   ],
+   "zero_star": "[Weaken] At the start of battle, apply (effect) to enemy characters. At the start of our turn, remove enemy shields, immediately deal extra damage equal to 10% of their current HP",
+   "one_star": "[Aogiri TreeStats Boost] Allied Aogiri Tree characters' basic stats increase by 20%. When an enemy character gains (effect), grant (effect) to the ally with the highest initial ATK.",
+   "three_star": "[Lockdown] At the start of battle, reduce the enemy with the highest initial ATK to skill level 1 and apply (effect).",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": true,
+   "backup_ok_at_0star": true,
+   "kit_tags": [
+    "single-target nuke",
+    "shield",
+    "anti-heal",
+    "turn/speed control",
+    "debuff cleanse",
+    "team stat buff"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.69; 0★ back-up: strips enemy shields + 10% current HP each turn (cap 100% her HP); 1★ Aogiri +20%; 3★ 500% entry + Lethal.",
+   "data_keys": [
+    "SkillDesc_1179_p1/p2/p3",
+    "RoleStarPreview_1179_1/_3",
+    "HeroBase 1179 atk/def/hp_factor"
+   ]
+  },
+  {
+   "id": "1155",
+   "name": "Ayato Kirishima [Black Rabbit]",
+   "factions": [
+    "Aogiri Tree",
+    ":re"
+   ],
+   "attribute": "SPD",
+   "role": "Aogiri AoE carry",
+   "rarity": "SSR",
+   "release": "2026-10-05",
+   "stat_multiplier": 1.87,
+   "how_to_get": [
+    "Carnival recruitment pool (SeasonGacha*, Carnival Summon Tickets)",
+    "shop day 75 (HeroBase 1155 shop_time; UNCONFIRMED - may be a Crystal Exchange)"
+   ],
+   "zero_star": "[Strafe] At the start of battle, if there are 3 or more Aogiri Tree characters on our field, apply (effect) to all enemies.",
+   "one_star": "[All Char Stats Enhancement] Increase all stats of allied Aogiri Tree characters by 18%. At the start of our turn, increase allied Aogiri Tree characters' Max HP by 20% for 1 turn.",
+   "three_star": "[Aim] At the start of battle, reduce enemy characters' ATK by 18% and PEN Rate by 18% for 1 turn.",
+   "star_order_uncertain": false,
+   "faction_buff_at_0star": false,
+   "backup_ok": false,
+   "backup_ok_at_0star": false,
+   "kit_tags": [
+    "AoE"
+   ],
+   "tier_0star": "S",
+   "tier_full": "S",
+   "reason": "x1.87 (highest); 0★ 180% AoE every turn start, -15% DEF/+10% taken (needs 3+ Aogiri); 1★ Aogiri +18%. Carnival; shop day 75 (unconfirmed).",
+   "data_keys": [
+    "SkillDesc_1155_p1/p2/p3",
+    "RoleStarPreview_1155_1/_3",
+    "HeroBase 1155 atk/def/hp_factor, shop_time"
+   ]
+  }
+ ]
+}

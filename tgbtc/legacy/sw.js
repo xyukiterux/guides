@@ -1,0 +1,1 @@
+/* Archived worker disabled. New Field Guide owns scoped caching. */

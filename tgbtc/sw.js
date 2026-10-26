@@ -1,4 +1,15 @@
-const C='tgbtc2-2026-10-19-214826-2049381';
-self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(["./", "manifest.webmanifest", "icon-192.png", "index.html", "path.html", "spend.html", "calendar.html", "guildwar.html", "meta.html", "tiers.html", "tips.html", "coffee.html", "videos.html", "handbook.html", "early-tiers.html"])));self.skipWaiting();});
-self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))));self.clients.claim();});
-self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).then(r=>{const cp=r.clone();caches.open(C).then(c=>c.put(e.request,cp));return r;}).catch(()=>caches.match(e.request)));});
+const CACHE='tgbtc-field-a1c15c442de0f526';
+const PREFIX='tgbtc-field-';
+const CORE=["./", "index.html", "app.js", "style.css", "economy.js", "data.js", "manifest.webmanifest", "icon-192.png"];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)));});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
+self.addEventListener('fetch',e=>{
+ const u=new URL(e.request.url);
+ if(e.request.method!=='GET'||u.origin!==self.location.origin||!u.pathname.startsWith(new URL(self.registration.scope).pathname))return;
+ if(u.pathname.includes('/legacy/')||u.pathname.includes('/data/'))return;
+ e.respondWith(fetch(e.request).then(r=>{if(r.ok&&r.type==='basic'){const copy=r.clone();e.waitUntil(caches.open(CACHE).then(c=>c.put(e.request,copy)));}return r;}).catch(async()=>{
+  const cache=await caches.open(CACHE);const cached=await cache.match(e.request);if(cached)return cached;
+  if(e.request.mode==='navigate')return cache.match('index.html');
+  return new Response('Not available offline',{status:503,statusText:'Offline'});
+ }));
+});

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-25",
+  "user_observation_relaunch_server": [
+    {
+      "sequence": 1,
+      "name": "Ken Kaneki banner",
+      "status": "user-reported historical order",
+      "date": null,
+      "server_region": "unconfirmed"
+    },
+    {
+      "sequence": 2,
+      "name": "Green Juzo banner",
+      "status": "user-reported historical order",
+      "date": null,
+      "server_region": "unconfirmed"
+    }
+  ],
+  "next_after_green_juzo": {
+    "name": null,
+    "date": null,
+    "status": "UNKNOWN_DO_NOT_GUESS"
+  },
+  "global_fan_database_upcoming": {
+    "name": "Halloween Hinami Fueguchi",
+    "status": "coming soon according to database",
+    "date": null,
+    "source": "https://tkgbtc.com/heroes",
+    "not_proof_of_next_relaunch_server_banner": true
+  },
+  "banner_fields": [
+    "region",
+    "server_creation_date",
+    "server_age_days",
+    "chain_level",
+    "character_id",
+    "banner_type",
+    "observed_start_utc",
+    "observed_end_utc",
+    "recruitment_currency",
+    "pity_policy",
+    "guarantee",
+    "rarity_rates",
+    "verified_source",
+    "source_date",
+    "certainty"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "as_of": "2026-10-25",
+  "public_reference": "https://gluttony.dev/heroes/",
+  "public_count_reported": 105,
+  "actually_imported_lr_cell_records": 0,
+  "why_no_full_dump": "Only browsable public page found; neither a downloadable data export nor allowed licensed bulk reproduction was confirmed. Implement extraction where permitted and validate against game data.",
+  "reference_examples": [
+    {
+      "character": "Awaken Ken Kaneki",
+      "cell": "Assault Cell [Awaken]",
+      "mode": "Weekly Challenge",
+      "summary": "Site describes Frenzy and restrained-attribute boost; verify exact level text",
+      "verification": "secondary source"
+    },
+    {
+      "character": "CCG Maverick Juzo Suzuya",
+      "cell": "Regeneration Cell [CCG Maverick]",
+      "mode": "Force Challenge",
+      "summary": "Site describes faction stats and team healing; verify exact text",
+      "verification": "secondary source"
+    },
+    {
+      "character": "Gourmet Shu Tsukiyama",
+      "cell": "Bulwark Cell [Gourmet]",
+      "mode": "No Organization",
+      "summary": "Site describes a faction-based shield interaction; verify exact text",
+      "verification": "secondary source"
+    },
+    {
+      "character": "Mask-Maker Uta",
+      "cell": "Assault Cell [Mask-Maker]",
+      "mode": "PvE",
+      "summary": "Site describes energy card use and next active-skill damage support; verify exact text",
+      "verification": "secondary source"
+    }
+  ],
+  "new_record_schema": [
+    "cell_id",
+    "name",
+    "rarity",
+    "character_id",
+    "type",
+    "effect_full",
+    "ability_level",
+    "source",
+    "verified_at",
+    "mode_restriction",
+    "role",
+    "alternatives",
+    "cost",
+    "image",
+    "confidence"
+  ]
+}

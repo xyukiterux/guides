@@ -1,0 +1,3800 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-25",
+  "game_data_date": "2026-09-22",
+  "teams": [
+    {
+      "id": "early-noorg",
+      "name": "Early No Organization engine",
+      "unit_ids": [
+        "1174",
+        "1142",
+        "1001",
+        "1018",
+        "1004"
+      ],
+      "reserve_candidates": [
+        "1036"
+      ],
+      "mode": "Chain / early PvE",
+      "notes": "Use only if Nutcracker is already owned. Sen provides an innate faction-count buff. Naki has a back-up-tagged heal. Extra field candidate is optional; no claim of a universal five-unit mode.",
+      "star_requirements": {
+        "1174": "0★ engine; faction +30% requires 1★"
+      },
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1174",
+          "name": "Nutcracker [Thirst for Beauty]",
+          "innate": "[0★] [Pierce] After a No Organization allied character acts, gain [Observation]. After a No Organization allied character uses an active skill, perform a Bonus-Attack on the enemy target, dealing [Pierce] damage equal to 240% of ATK, and restore HP equal to 20% of the damage dealt to allied characters, up to 200% of the caster's ATK. When [Observation] stacks reach 6, gain [Underbelly Insight] effect. || *Pierce: Ignores DEF, dealing extra damage equal to 60% of ATK. *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Underbelly Insight: CRIT DMG +50%, extra damage dealt +60%.",
+          "one_star": "[1★] [Tactical Enhancement] Increase No Organization allied characters' basic stats by 30%. At the start of battle, grant [Tactical Advantage] to allied characters. Each time you gain 1 [Observation], grant 1 [Battle Adaptation] to allied characters. || *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Battle Adaptation: DEF-related stats +5%. While having this effect, attacks always crit. Up to 6 stacks. *Tactical Advantage: Max HP +20%, extra damage taken -40%. When HP first drops below 50%, increase DEF by 50% for 1 turn and gain a shield equal to 15% of Max HP.",
+          "three_star": "[3★] [Offensive] At the start of battle, grant [Offensive Mark] to No Organization allied characters. The effect of [Offensive Mark] on you is doubled. At the start of our turn, increase your next 2 non-active skill damage by 80%. If your HP is full, upgrade your skill level. || *Offensive Mark: Damage dealt +15%, PEN Rate +10%. When attacking enemies with HP ratio below 30%, ATK +25%. After attacking, instantly kill enemies with HP ratio below 1% and prevent any death immunity effects."
+        },
+        {
+          "id": "1142",
+          "name": "Sen Takatsuki [Elegant Deception]",
+          "innate": "[0★] [Skill Levels Increased] For each No Organization ally, increases all allies’ Basic Stats by 4% and Block Rate by 4%. When the battle starts, raises own skill level. After using the next active skill, grants all allies immunity to all debuffs for 1 turn",
+          "one_star": "[1★] [Basic Stats increased] After an ally takes damage from a single-target active skill, increases that ally’s basic stats by 5% for 1 turn. If the ally’s current HP is below 50% at this time, immediately heals self for 10% of Max HP",
+          "three_star": "[3★] [Creation] After healing an ally, gains 1 stack of [Creation], up to 4 stacks. When Creation reaches max stacks, dispels all Creation stacks and grants all allies [Meditation] for 1 turn || *Creation: CRIT RES increased by 10%, CRIT DEF increased by 15%. Restores 8% of missing HP when this effect is dispelled Meditation: Reduce damage taken by 40% for the next hit. Clear when the enemy turn ends or after taking damage. Once cleared, grant the affected character a 6% increase to basic stats for 2 turns, up to 12%."
+        },
+        {
+          "id": "1001",
+          "name": "Rize Kamishiro [Binge Eater]",
+          "innate": "[0★] [Boost] When you are buffed, increase your Lifesteal Rate by 15% and damage by 10%.",
+          "one_star": "[1★] [Group ATK Boost] When your turn ends, if you used skill, all allied characters' ATK-related stats increase by 3%, up to 3 times.",
+          "three_star": "[3★] [CRIT DMG Boost] Deal 30% more CRIT DMG when landing a CRIT"
+        },
+        {
+          "id": "1018",
+          "name": "Kurona Yasuhisa [Inky Shroud]",
+          "innate": "[0★] [DMG Boost] Increases your damage dealt by 4% for every buff on self. Up to 16%.",
+          "one_star": "[1★] [Basic Stats Boost] When your turn starts, increase all allies' basic stats by 3%. Stacks up to 4 times.",
+          "three_star": "[3★] [Penetration Boost] When dealing damage, increases PEN Rate by 15%."
+        },
+        {
+          "id": "1004",
+          "name": "Shu Tsukiyama [Gourmet]",
+          "innate": "[0★] [Group Shield] When an allied character uses Stance skill, grant all allied characters a shield equal to 100% of the caster's ATK for 1 turn.",
+          "one_star": "[1★] [Retaliation] After entering Provoking Stance, retaliate against the next active skill with 175% ATK damage.",
+          "three_star": "[3★] [ATK-Related Stats Boost] When you gain a Shield, restore 12% of your lost HP, once per turn."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "early-fallback",
+      "name": "No Nutcracker fallback",
+      "unit_ids": [
+        "1148",
+        "1142",
+        "1090",
+        "1001",
+        "1018"
+      ],
+      "reserve_candidates": [
+        "1036",
+        "1145"
+      ],
+      "mode": "Early PvE",
+      "notes": "Rize [Valentine] is a conditional substitute if owned, not a free guaranteed unit. If absent, use owned Juzo [Pet Boy] 1083 as the carry candidate. Do not spend for a closed novice selector.",
+      "star_requirements": {},
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1148",
+          "name": "Rize Kamishiro [Valentine's Day]",
+          "innate": "[0★] [Bond Attack] After an allied No Organization character uses an active skill, immediately triggers a Bond Attack on the enemy target, dealing [Temptation] damage equal to 160% of ATK. Prevent the target from increasing Weak value for 1 turn. || *Temptation: Ignores DEF, increases Max HP by 30% of the damage dealt this time. The HP increase cannot exceed 40% of Basic Max HP",
+          "one_star": "[1★] [No Organization Boost] Increases the Basic Stats of allied No Organization characters by 16% and CRIT DEF by 15%. After performing a Co-Op Attack, gains [Infatuation] for 1 turn. At 3 [Infatuation] stacks, gain [Charm] effect. [Infatuation] stacks up to 3 times. || *Infatuation: Reduces active skill damage of all enemies by 10% *Charm: Draws all attacks to you and increases DEF-related stats by 10%. Removes the effect when taking active skill damage and applies Disruption to the target. *Disruption: Makes the target(s)' active skill ineffective for 1 turn.",
+          "three_star": "[3★] [DMG Decrease] When battle starts, gains 1 stack of [Infatuation]. While [Infatuation] is active, reduces damage taken and extra damage taken by 25%, and increases CRIT DEF by 20%. If damage taken in a turn exceeds 30% of Max HP: grants all allies 20% increased CRIT DEF for 1 turn, reduces damage taken from the next active skill by 50%, and clears all Weak stacks. Triggers 1 time per turn. || *Infatuation: Reduces active skill damage of all enemies by 10%"
+        },
+        {
+          "id": "1142",
+          "name": "Sen Takatsuki [Elegant Deception]",
+          "innate": "[0★] [Skill Levels Increased] For each No Organization ally, increases all allies’ Basic Stats by 4% and Block Rate by 4%. When the battle starts, raises own skill level. After using the next active skill, grants all allies immunity to all debuffs for 1 turn",
+          "one_star": "[1★] [Basic Stats increased] After an ally takes damage from a single-target active skill, increases that ally’s basic stats by 5% for 1 turn. If the ally’s current HP is below 50% at this time, immediately heals self for 10% of Max HP",
+          "three_star": "[3★] [Creation] After healing an ally, gains 1 stack of [Creation], up to 4 stacks. When Creation reaches max stacks, dispels all Creation stacks and grants all allies [Meditation] for 1 turn || *Creation: CRIT RES increased by 10%, CRIT DEF increased by 15%. Restores 8% of missing HP when this effect is dispelled Meditation: Reduce damage taken by 40% for the next hit. Clear when the enemy turn ends or after taking damage. Once cleared, grant the affected character a 6% increase to basic stats for 2 turns, up to 12%."
+        },
+        {
+          "id": "1090",
+          "name": "Uta [Rescue]",
+          "innate": "[0★] [Arcane] When the battle starts, grants all allied No Organization and Anteiku characters [Arcane]. For each No Organization or Anteiku character on the team (including Back-up character), increase all allied characters' basic stats by 4%, up to 20%. || *Arcane: For each buff on yourself, increase ATK by 4%, up to 12%. When attacking a target with debuffs, increase your damage dealt by 5% for every 2 debuffs, up to 10%.",
+          "one_star": "[1★] [Encircle] After using an active skill, inflict a number of [Brittle] to the enemy target equal to the user's active skill level. When your turn starts, if only Anteiku or No Organization characters used skills last turn, inflict all enemies [Encircle] for 1 turn. || *Brittle: Reduces Crit Resist by 10% and Crit DEF by 6% for 2 turns, up to 3 stacks. *Encircle: When taking damage, increase your damage taken by 6% for 1 turn, up to 2 stacks.",
+          "three_star": "[3★] [Stats Boost] Grant yourself immunity to all debuffs and Weak effects. When an allied character takes damage and their HP falls below 50%, increase their skill level. Each character can trigger this effect once."
+        },
+        {
+          "id": "1001",
+          "name": "Rize Kamishiro [Binge Eater]",
+          "innate": "[0★] [Boost] When you are buffed, increase your Lifesteal Rate by 15% and damage by 10%.",
+          "one_star": "[1★] [Group ATK Boost] When your turn ends, if you used skill, all allied characters' ATK-related stats increase by 3%, up to 3 times.",
+          "three_star": "[3★] [CRIT DMG Boost] Deal 30% more CRIT DMG when landing a CRIT"
+        },
+        {
+          "id": "1018",
+          "name": "Kurona Yasuhisa [Inky Shroud]",
+          "innate": "[0★] [DMG Boost] Increases your damage dealt by 4% for every buff on self. Up to 16%.",
+          "one_star": "[1★] [Basic Stats Boost] When your turn starts, increase all allies' basic stats by 3%. Stacks up to 4 times.",
+          "three_star": "[3★] [Penetration Boost] When dealing damage, increases PEN Rate by 15%."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "mid-noorg",
+      "name": "No Organization progression",
+      "unit_ids": [
+        "1174",
+        "1142",
+        "1090",
+        "1083",
+        "1001"
+      ],
+      "reserve_candidates": [
+        "1036",
+        "1145"
+      ],
+      "mode": "Midgame PvE",
+      "notes": "Uta [Rescue] and Sen supply innate faction-count buffs. Historical shop-day hints are unconfirmed and not an acquisition promise.",
+      "star_requirements": {},
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1174",
+          "name": "Nutcracker [Thirst for Beauty]",
+          "innate": "[0★] [Pierce] After a No Organization allied character acts, gain [Observation]. After a No Organization allied character uses an active skill, perform a Bonus-Attack on the enemy target, dealing [Pierce] damage equal to 240% of ATK, and restore HP equal to 20% of the damage dealt to allied characters, up to 200% of the caster's ATK. When [Observation] stacks reach 6, gain [Underbelly Insight] effect. || *Pierce: Ignores DEF, dealing extra damage equal to 60% of ATK. *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Underbelly Insight: CRIT DMG +50%, extra damage dealt +60%.",
+          "one_star": "[1★] [Tactical Enhancement] Increase No Organization allied characters' basic stats by 30%. At the start of battle, grant [Tactical Advantage] to allied characters. Each time you gain 1 [Observation], grant 1 [Battle Adaptation] to allied characters. || *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Battle Adaptation: DEF-related stats +5%. While having this effect, attacks always crit. Up to 6 stacks. *Tactical Advantage: Max HP +20%, extra damage taken -40%. When HP first drops below 50%, increase DEF by 50% for 1 turn and gain a shield equal to 15% of Max HP.",
+          "three_star": "[3★] [Offensive] At the start of battle, grant [Offensive Mark] to No Organization allied characters. The effect of [Offensive Mark] on you is doubled. At the start of our turn, increase your next 2 non-active skill damage by 80%. If your HP is full, upgrade your skill level. || *Offensive Mark: Damage dealt +15%, PEN Rate +10%. When attacking enemies with HP ratio below 30%, ATK +25%. After attacking, instantly kill enemies with HP ratio below 1% and prevent any death immunity effects."
+        },
+        {
+          "id": "1142",
+          "name": "Sen Takatsuki [Elegant Deception]",
+          "innate": "[0★] [Skill Levels Increased] For each No Organization ally, increases all allies’ Basic Stats by 4% and Block Rate by 4%. When the battle starts, raises own skill level. After using the next active skill, grants all allies immunity to all debuffs for 1 turn",
+          "one_star": "[1★] [Basic Stats increased] After an ally takes damage from a single-target active skill, increases that ally’s basic stats by 5% for 1 turn. If the ally’s current HP is below 50% at this time, immediately heals self for 10% of Max HP",
+          "three_star": "[3★] [Creation] After healing an ally, gains 1 stack of [Creation], up to 4 stacks. When Creation reaches max stacks, dispels all Creation stacks and grants all allies [Meditation] for 1 turn || *Creation: CRIT RES increased by 10%, CRIT DEF increased by 15%. Restores 8% of missing HP when this effect is dispelled Meditation: Reduce damage taken by 40% for the next hit. Clear when the enemy turn ends or after taking damage. Once cleared, grant the affected character a 6% increase to basic stats for 2 turns, up to 12%."
+        },
+        {
+          "id": "1090",
+          "name": "Uta [Rescue]",
+          "innate": "[0★] [Arcane] When the battle starts, grants all allied No Organization and Anteiku characters [Arcane]. For each No Organization or Anteiku character on the team (including Back-up character), increase all allied characters' basic stats by 4%, up to 20%. || *Arcane: For each buff on yourself, increase ATK by 4%, up to 12%. When attacking a target with debuffs, increase your damage dealt by 5% for every 2 debuffs, up to 10%.",
+          "one_star": "[1★] [Encircle] After using an active skill, inflict a number of [Brittle] to the enemy target equal to the user's active skill level. When your turn starts, if only Anteiku or No Organization characters used skills last turn, inflict all enemies [Encircle] for 1 turn. || *Brittle: Reduces Crit Resist by 10% and Crit DEF by 6% for 2 turns, up to 3 stacks. *Encircle: When taking damage, increase your damage taken by 6% for 1 turn, up to 2 stacks.",
+          "three_star": "[3★] [Stats Boost] Grant yourself immunity to all debuffs and Weak effects. When an allied character takes damage and their HP falls below 50%, increase their skill level. Each character can trigger this effect once."
+        },
+        {
+          "id": "1083",
+          "name": "Juzo Suzuya [Pet Boy]",
+          "innate": "[0★] [Dismember] When [Sever] of the enemy character reaches the limit, grants them [Dismember] for 2 turns. Characters with [Dismember] take extra damage equal to 150% of the attacker’s ATK. || *Sever: Reduces DEF by 2%. *Dismember: Reduces DEF-related stats by 15%. When removed, removes all stacks of Sever from the carrier.",
+          "one_star": "[1★] [Bonus-Attack] When an enemy obtains [Dismember], instantly deals [Blade] damage equal to 180% of ATK to them. When dealing damage to enemies with [Dismember], increases the stats of all allies by 10% for 2 turns, stacking up to 2 times. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy *Dismember: Reduces DEF-related stats by 15%. When removed, removes all stacks of Sever from the carrier.",
+          "three_star": "[3★] [DEF Reduction] [Effective also in Assistance] Taking damage heals self for 20% of the damage taken. When your turn starts, reduces all enemies’ DEF by 10% for 2 turns, stacking up to 2 times."
+        },
+        {
+          "id": "1001",
+          "name": "Rize Kamishiro [Binge Eater]",
+          "innate": "[0★] [Boost] When you are buffed, increase your Lifesteal Rate by 15% and damage by 10%.",
+          "one_star": "[1★] [Group ATK Boost] When your turn ends, if you used skill, all allied characters' ATK-related stats increase by 3%, up to 3 times.",
+          "three_star": "[3★] [CRIT DMG Boost] Deal 30% more CRIT DMG when landing a CRIT"
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "late-noorg",
+      "name": "No Organization sustained damage",
+      "unit_ids": [
+        "1174",
+        "1114",
+        "1171",
+        "1177",
+        "1127"
+      ],
+      "reserve_candidates": [
+        "1166",
+        "1145"
+      ],
+      "mode": "Endgame / matchup dependent",
+      "notes": "Premium ownership-dependent research lineup. Follow-up engine, buff removal and single-target protection must be tested against boss immunities.",
+      "star_requirements": {
+        "1174": "1★ for +30% faction stats",
+        "1114": "1★ for faction buff",
+        "1171": "1★ for faction buff",
+        "1177": "1★ for team passive"
+      },
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1174",
+          "name": "Nutcracker [Thirst for Beauty]",
+          "innate": "[0★] [Pierce] After a No Organization allied character acts, gain [Observation]. After a No Organization allied character uses an active skill, perform a Bonus-Attack on the enemy target, dealing [Pierce] damage equal to 240% of ATK, and restore HP equal to 20% of the damage dealt to allied characters, up to 200% of the caster's ATK. When [Observation] stacks reach 6, gain [Underbelly Insight] effect. || *Pierce: Ignores DEF, dealing extra damage equal to 60% of ATK. *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Underbelly Insight: CRIT DMG +50%, extra damage dealt +60%.",
+          "one_star": "[1★] [Tactical Enhancement] Increase No Organization allied characters' basic stats by 30%. At the start of battle, grant [Tactical Advantage] to allied characters. Each time you gain 1 [Observation], grant 1 [Battle Adaptation] to allied characters. || *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Battle Adaptation: DEF-related stats +5%. While having this effect, attacks always crit. Up to 6 stacks. *Tactical Advantage: Max HP +20%, extra damage taken -40%. When HP first drops below 50%, increase DEF by 50% for 1 turn and gain a shield equal to 15% of Max HP.",
+          "three_star": "[3★] [Offensive] At the start of battle, grant [Offensive Mark] to No Organization allied characters. The effect of [Offensive Mark] on you is doubled. At the start of our turn, increase your next 2 non-active skill damage by 80%. If your HP is full, upgrade your skill level. || *Offensive Mark: Damage dealt +15%, PEN Rate +10%. When attacking enemies with HP ratio below 30%, ATK +25%. After attacking, instantly kill enemies with HP ratio below 1% and prevent any death immunity effects."
+        },
+        {
+          "id": "1114",
+          "name": "Nishiki Nishio [Orochi]",
+          "innate": "[0★] [Restraint Attack] After an enemy casts an active skill, remove up to 4 buffs or stance effects from the target. Gain 1 stack of [Kagune Activation] for each effect removed. At 4 stacks of [Kagune Activation], remove all self's debuffs and immobilize effects, then unleash a Kagune Restraint Attack on the enemy with the highest ATK, dealing [Ultra-Weak] damage equal to 270% of ATK. Consume all [Kagune Activation] afterward || *Ultra-Weak: This damage applies 2 additional Weak to targets hit. The targets affected by Weak take 25% more damage *Kagune Activation: Single instance of damage taken cannot exceed 35% of Max HP. Basic stats +3%, non-active skill damage +5%",
+          "one_star": "[1★] [No Organization Boost] Increase all ability values ​​of our No Organization characters by 20%, and increase the damage caused by ourselves by 20%. When our turn starts, we will gain 2 pieces of [Kagune Activation]. Within the 2 turn, [Steal] will be 6% of the current attack power of all enemies, and can only be superimposed 2 times. || *Steal: Transfers the target's reduced stats to the caster. *Kagune Activation: Single instance of damage taken cannot exceed 35% of Max HP. Basic stats +3%, non-active skill damage +5%",
+          "three_star": "[3★] [Disordered Action] After casting an active skill, if the target's HP is below 80%, deal extra damage equal to 300% of ATK. If the target's HP drops below 40% after this hit, inflict [Disordered Action] on the target for 1 turn || *Disordered Action: Unable to act, basic stats -6%, damage taken from the first active skill each turn +50%."
+        },
+        {
+          "id": "1171",
+          "name": "Rize Kamishiro [Seaside Carnival Party]",
+          "innate": "[0★] [Counter] When our turn starts, gain a Shield equal to 15% of Max HP for 1 turn and increase ATK by 30%. When an allied character is attacked by a single-target active skill, if you have a Shield, you take 50% of the damage taken by other allied characters then, regardless of whether you have a Shield, counterattack the attacker, dealing [Wave] damage equal to 150% ATK. After each counterattack, non-active skill damage dealt by all allied characters increases by 15% for 1 turn, up to 3 stacks || *Wave: Skill multiplier increases by 60% if the target carries a Shield. If the target has no Shield, ignore the target's DEF and Block Chance, and grant all allies a Shield equal to 20% of the damage dealt for 1 turn",
+          "one_star": "[1★] [No Organization Boost] While you are on the field, allied No Organization characters gain the following effects: Basic stats increase by 30%. When HP is above 40%, ATK increases by 10% and extra damage dealt increases by 18%. When HP is below 60%, DEF-related stats increase by 30%, and damage taken and extra damage taken decrease by 20%. Every 2 active skill uses, your skill level increases",
+          "three_star": "[3★] [Wave Strike] After an allied character casts a non-active skill, gain 1 stack of [Wave Strike], up to 4 stacks. No Organization allies gain the following effects based on the number of [Wave Strike] stacks: At 1 stack, damage taken from a single skill cannot exceed 40% of the unit's Max HP. At 2 stacks, all stats increase by 6%. At 3 stacks, when dealing damage, the character's ATK becomes 1.2x for the duration of that skill. At 4 stacks, single-target skills deal extra damage equal to 80% ATK and that skill's damage increases by 25% || *Wave Strike: Increases all allies' DEF and Max HP by 10%, increases your Max HP by 6%, and increases non-active skill damage by 10%"
+        },
+        {
+          "id": "1177",
+          "name": "Roma Hoito [Mad Clown]",
+          "innate": "[0★] [Fortress] [Effective also in back-up state] At the start of battle, grants allied characters 1 [Fortress] effect and reduces the amount of shield gained by enemy characters by 40%. Before an allied character uses an active skill, they gain [Carnival] equal in quantity to the skill's level for 1 turn. Stacks up to 3 times. || *Fortress: While shielded, increases DEF by 25%; this effect is doubled after the shield is lost. When the user loses a shield, clears their Weak value, removes Control effects, and grants immunity to Control effects until the start of the allied turn. *Carnival: Increase ATK by 5% and Crit Rate by 5%",
+          "one_star": "[1★] [Carnival] [Effective also in back-up state] Increases all allied characters' Basic Stats by 18% and their CRIT Rate and CRIT DMG by 30%. Their PEN Rate cannot be reduced below its base value. After an allied character takes action, increases all allied characters' ATK by 10%, active skill damage by 20%, and non-active skill damage by 12% for 1 turn. Stacks up to 2 times.",
+          "three_star": "[3★] [Attention] [Effective also in back-up state] When battle starts, apply [Attention] to the ally with the highest base ATK. When HP of the [Attention] bearer first drops below 40%, gain a shield equal to 20% of the caster's Max HP for 1 turn. When the [Attention] bearer dies, the ally with the highest base ATK gain [Attention] || *Attention: When your turn starts, if HP is above 50%, raise your skill level. If HP is below 50%, dispel this debuff, become immune to Heal Block for 1 turn, and gain a shield equal to 10% of your Max HP for 1 turn"
+        },
+        {
+          "id": "1127",
+          "name": "Hideyoshi Nagachika [Best Friend]",
+          "innate": "[0★] [Friendly Partner] When the battle starts, gains [Friendly Partner] and increases all allies' basic stats by 15%. When self gains [Efficiency Boost], all allies deal 5% more damage for 2 turns, up to 4 times. || *Friendly Partner: When the battle starts, if there are allied characters with different tags from your own, gain the tag that appears most frequently among those allied characters with different tags. *Efficiency Boost: After an allied character uses an active skill, this effect is removed to allow the ally to reuse the skill. The reused skill deals 40% of the original damage.",
+          "one_star": "[1★] [Devotion] When the allied character with the highest ATK has their HP drop below 50% for the first time, grants the target [Shelter] and self [Devotion], lasting until the end of the turn. || *Shelter: Reduces damage taken by 30% *Devotion: When an allied character with [Shelter] takes damage, bears 50% of that damage. If the character with [Shelter] dies, loses 50% of max HP, removes [Devotion], and revives the character.",
+          "three_star": "[3★] [Courage] During your turn, upon using a skill for the first time, grants [Rise] to all allies, up to 3 times. When [Rise] reaches 3 stacks, grants [Courage] to all allies and raises the skill levels. || *Rise: Increases damage dealt by 5% and PEN Rate by 5% *Courage: When attacking, inflict additional damage equal to 140% of your ATK."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "ccg",
+      "name": "CCG recast candidates",
+      "unit_ids": [
+        "1102",
+        "1169",
+        "1150",
+        "1103",
+        "1116"
+      ],
+      "reserve_candidates": [
+        "1170",
+        "1010"
+      ],
+      "mode": "CCG / PvP or PvE by enemy",
+      "notes": "Haise [Mentor] and Shirazu support recasting; select skills based on the actual opponent. This is an archived candidate pool, not a current leaderboard ranking.",
+      "star_requirements": {
+        "1102": "1★ CCG +24%",
+        "1169": "1★ CCG +24%",
+        "1103": "1★ all-allies buff"
+      },
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1102",
+          "name": "Haise Sasaki [Mentor]",
+          "innate": "[0★] [CCG Pursuit] When you use an active skill, you will randomly remove 1 debuffs on your team, and according to the level of the active skill you use this time, immediately make other CCG characters with the highest initial attack power on your team release active skills of the same level on your active skill target, and increase the damage caused by this active skill 10%",
+          "one_star": "[1★] [CCG Boost] While you are on the field, allied CCG characters gain the following effects: Basic stats increase by 24%; when taking damage, Max HP increases by 10% for 1 turn, stacking up to 4 times; when dealing damage, the target's ATK decreases by 4% for 1 turn, stacking up to 4 times; when using active skills of Lv.2 or above, DMG dealt increases by 15% and PEN Rate increases by 10%",
+          "three_star": "[3★] [Flash] When our turn starts, we immediately consume all the sure-kill skills and sure-kill skill cards, increase our skill level, and obtain 1 [Flash], which can only be stacked 3 times. If our health value is not less than 80%, we will additionally increase the skill level of ourselves and our character with the highest initial attack power. || *Flash: All ability values ​​are increased by 4%, all skill damage received by all allies is reduced by 12%, and additional damage received by all allies is reduced by 18%"
+        },
+        {
+          "id": "1169",
+          "name": "Ginshi Shirazu [Delinquent Youth]",
+          "innate": "[0★] [Ability Amplification] The allied character gains 1 stack of [Ability Amplification] for 1 turn after casting an active skill attack or taking damage exceeding 35% of their Max HP, up to 3 stacks. When the allied character reaches 2 stacks of [Ability Amplification], immediately remove their control and Weak effects, then instantly cast a Lv.2 active skill on the enemy with the lowest HP percentage. || *Ability Amplification: All basic stats +5%, damage dealt +4%. Grants Skill Amplification for 5 turns when this effect expires *Skill Amplification: All stats +3%, active skill damage +6%, up to 5 stacks",
+          "one_star": "[1★] [CCG All Boost] All allied CCG characters gain 24% increased basic stats and 15% boosted active skill damage, and this character gains 20% increased extra damage. When battle starts, allied CCG characters take 30% less damage for 1 turn; this effect doubles when their HP drops below 60%. When this effect expires, all allies gain a shield equal to 60% of their own missing HP for 1 turn.",
+          "three_star": "[3★] [All-unit Combo] After an ally casts an active skill, randomly clear 1 debuff from that unit. When your turn starts, if every active skill cast by our team last turn was an offensive skill, all allies will recast their offensive active skills at the same level immediately after their next active skill attack"
+        },
+        {
+          "id": "1150",
+          "name": "Haise Sasaki [Sealed Memory]",
+          "innate": "[0★] [Command] Before other CCG allies cast an active skill, gain 1 stack of [Command], up to 4 stacks. Before you cast an active skill, if you have [Command], remove all stacks of [Command]. Apply the following effects to all enemies in sequence: All stats reduced by 6%; Damage dealt reduced by 15%; Lifesteal set to 0 and shield acquisition disabled; If HP percentage is below 1%, the target is instantly defeated and no death immunity effects are triggered. || *Command: Basic stats increase by 4%. When this effect ends, gain a shield equal to 10% of your Max HP for 1 turn.",
+          "one_star": "[1★] [Command] All CCG allies' basic stats increase by 16%, your ATK increases by 8%, and damage dealt increases by 12%. When our turn starts, you gain 1 [Command], and all other allies gain 2 [Command] effects for 1 turn. || *Command: Basic stats increase by 4%. When this effect ends, gain a shield equal to 10% of your Max HP for 1 turn. *Command: All basic stats increase by 3%. This effect doubles when your HP falls below 20%. All extra damage taken is reduced to 1. This effect wears off once the damage reduction takes place",
+          "three_star": "[3★] [Disorder] Each time you remove 1 [Command], all allies' ATK increases by 3%, and you gain 1 [Disorder], up to 8 stacks. When your [Disorder] first reaches 8 stacks, you gain the following effects for 1 turn: if your HP ratio is above 50%, damage dealt increases by 50%; if your HP ratio is below 50%, you become immune to all damage. || *Command: Basic stats increase by 4%. When this effect ends, gain a shield equal to 10% of your Max HP for 1 turn. *Disorder: ATK-related stats increase by 4%, damage taken increases by 5%, and when dealing damage, deal additional damage equal to 40% of your ATK."
+        },
+        {
+          "id": "1103",
+          "name": "Juzo Suzuya [False Girl]",
+          "innate": "[0★] [Focused Strike] After using an active skill, gains 4 [Concentration]. When an allied character takes a single instance of damage exceeding 20% of their own Max HP, the user gains 1 [Concentration]. Each time the user gains 4 [Concentration], deals [Ultra-Judgment] damage equal to 200% of ATK to all enemies and restores HP equal to 6% of the applier's Max HP to other allied characters. This effect is unaffected by Restoration Rate. || *Ultra-Judgment: Increases this skill's ATK by 50% and ignores 30% of the target's Damage Reduction effect. *Concentration: DEF +5%, Block Chance +3%, non-active skill damage +3%, up to 12 stacks, lasts until the enemy's turn ends.",
+          "one_star": "[1★] [All-Enhance] Increases all stats of allied characters by 16% and the user's damage dealt by 20%. The first time an allied character's HP falls below 30%, grants them a shield equal to 15% of their Max HP and increases their DEF by 40% for 1 turn. At the start of battle, increases the damage of the user's next active skill by 20%.",
+          "three_star": "[3★] [Warm-up] When battle starts, allies gain [Coordination]. After an ally takes action, grants 1 stack of [Killing Intent] to the caster; you gain an extra stack of [Killing Intent] after taking action, stacking up to 5 times. At 5 stacks of [Killing Intent], gain [Morale] || *Coordination: After an active skill attack, deal additional damage equal to 60% of the caster's ATK to all enemies. *Killing Intent: Increase basic stats of all allies by 4% and PEN Rate by 5% *Morale: All stats +8%, ATK +15%. Attacks ignore 30% of the target's Block Chance"
+        },
+        {
+          "id": "1116",
+          "name": "Urie Kuki [Squad Leader]",
+          "innate": "[0★] [Enhanced Kagune Edge] After an allied CCG character casts an active skill, gain stacks of [Enhanced Kagune Edge] equal to the skill's level, up to 10 stacks. At 10 stacks, consume all [Enhanced Kagune Edge] and gain [Kagune Edge Ascension] for 5 turns. Cannot gain [Enhanced Kagune Edge] during [Kagune Edge Ascension] || *Enhanced Kagune Edge: Critical hit damage is increased 6%, all our attack power is increased 2%, and block rate is increased 3% *Kagune Edge Ascension: The critical hit damage of all our team members is increased by 60%, and the basic ability value is increased by 25%. When our character releases a single skill attack, it will cause additional damage of the carrier's critical hit damage 40%. When releasing all skills to attack, it will cause additional damage of the carrier's critical hit damage 15%.",
+          "one_star": "[1★] [Mass Immunity] Each time there are 1 CCG characters on our side, the basic ability value of all our team will be increased by 5%, and the damage and additional damage received will be reduced by 4%. When we obtain [Kagune Edge Ascension], our team will be relieved and immune to all blocking effects and weak effects. The immunity effect lasts for 1 turns. || *Kagune Edge Ascension: The critical hit damage of all our team members is increased by 60%, and the basic ability value is increased by 25%. When our character releases a single skill attack, it will cause additional damage of the carrier's critical hit damage 40%. When releasing all skills to attack, it will cause additional damage of the carrier's critical hit damage 15%.",
+          "three_star": "[3★] [Powerful Pursuit] When our character receives fatal damage, he will immediately gain 3 [Enhanced Kagune Edge]. If he is already in [Kagune Edge Ascension], he will immediately cause [Ultra-Rift Slash] damage with attack power 280% to the enemy with the highest attack power. This damage ignores all damage reduction effects on the target. || *Enhanced Kagune Edge: Critical hit damage is increased 6%, all our attack power is increased 2%, and block rate is increased 3% *Kagune Edge Ascension: The critical hit damage of all our team members is increased by 60%, and the basic ability value is increased by 25%. When our character releases a single skill attack, it will cause additional damage of the carrier's critical hit damage 40%. When releasing all skills to attack, it will cause additional damage of the carrier's critical hit damage 15%. *Ultra-Rift Slash: This skill cannot CRIT, causing DMG Increase 30% and additional damage of CRIT DMG50%. When you have He Blade Breakthrough, the target's DEF will be regarded as 0"
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "aogiri",
+      "name": "Aogiri pursuit candidates",
+      "unit_ids": [
+        "1155",
+        "1147",
+        "1161",
+        "1175",
+        "1135"
+      ],
+      "reserve_candidates": [
+        "1179",
+        "1036"
+      ],
+      "mode": "Aogiri / multi-target",
+      "notes": "Black Rabbit needs the specified Aogiri count for his passive. Check phase bans before GvG or championship use; event rules can exclude him.",
+      "star_requirements": {
+        "1155": "Innate pursuit needs 3+ Aogiri; faction buff at 1★"
+      },
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1155",
+          "name": "Ayato Kirishima [Black Rabbit]",
+          "innate": "[0★] [Strafe] At the start of battle, if there are 3 or more Aogiri Tree characters on our field, apply [Capture] to all enemies. At the start of our turn, deal 180% [Strafe] damage to all enemies, increase damage dealt to enemies with [Capture] by 50%, apply [Capture] to enemies without [Capture], and reduce the target's DEF by 15% and increase their damage taken by 10% for 1 turn. || *Capture: CRIT Rate -20%, CRIT DMG -40%, Lifesteal -40%. Record 50% of damage dealt. When the recorded value reaches 200% of the caster's initial HP, remove the Capture effect and grant yourself the Limit effect. *Limit: Lifesteal and Restoration Rate become 0. Passive skills are disabled. Removed after any character on the field acts 4 times. *Strafe: This skill's ATK +80%.",
+          "one_star": "[1★] [All Char Stats Enhancement] Increase all stats of allied Aogiri Tree characters by 18%. At the start of our turn, increase allied Aogiri Tree characters' Max HP by 20% for 1 turn. When an enemy character gains [Limit], increase your ATK by 6%, up to 18%. When your HP first drops below 50%, gain [Unyielding] for 1 turn. || *Unyielding: Immune to all damage. When removed, gain the Desperate Instinct effect for 1 turn. *Desperate Instinct: While there is an enemy character with the Limit effect on the field, your HP cannot drop below 1. *Limit: Lifesteal and Restoration Rate become 0. Passive skills are disabled. Removed after any character on the field acts 4 times.",
+          "three_star": "[3★] [Aim] At the start of battle, reduce enemy characters' ATK by 18% and PEN Rate by 18% for 1 turn. At the start of our turn, gain 1 [Calibration]. When an allied Aogiri Tree character uses an active skill, gain 1 [Calibration], up to 3 stacks. When your [Calibration] reaches 2 stacks, gain [Reload] for 1 turn, and your next non-active skill damage increases by 20%. || *Calibration: ATK +6%, active skill damage +5%. *Reload: Damage dealt +20%, active skill coefficient +10%. When removed, remove all Calibration effects."
+        },
+        {
+          "id": "1147",
+          "name": "Ayato Kirishima [Wings of Ardor]",
+          "innate": "[0★] [Forceful Pursuit] For 1 turn, after an allied Aogiri Tree character uses an active skill, trigger [Swift Pursuit], [Vigorous Pursuit], and [Destruction Pursuit] in sequence against enemies. When all 3 pursuit effects are triggered, increase your skill level || *Swift Pursuit: Deals 130% ATK damage, and makes the target take 15% increased damage for 1 turn. Ignores DEF *Vigorous Pursuit: Deals 150% ATK damage (ignoring DEF), and deals extra damage equal to 80% ATK *Destruction Pursuit: Targets all enemies, deals 180% ATK damage (ignoring DEF), and deals extra damage equal to 80% ATK",
+          "one_star": "[1★] [Battle Frenzy] Increases the basic stats of allied Aogiri Tree characters by 16%. When the battle starts, if your team consists solely of Aogiri Tree characters, inflicts [Weakness Corrosion] upon all enemies and grants all allies [Battle Frenzy] || *Weakness Corrosion: Reduces all stats by 4% and active skill damage dealt by 15% *Battle Frenzy: Before using an active skill, randomly dispels 1 of the debuffs on self. If you have no debuffs, this skill inflicts an additional 1 Weak. Weak effect can be triggered once per turn",
+          "three_star": "[3★] [DMG Amplification] After you use an active skill or take damage from 2 active skills, allied Aogiri Tree characters gain 10% increased damage dealt and 10% reduced damage taken for 2 turns, up to 2 stacks"
+        },
+        {
+          "id": "1161",
+          "name": "Ayato Kirishima [1.5th Anniversary]",
+          "innate": "[0★] [Initiate] When your turn starts, immediately cast an active skill on the enemy with the lowest HP percentage, based on your highest skill level in the skill zone (minimum Lv.1). Grant all allies a 20% damage boost to their active skill and a 30% damage boost to their non-active skill for 1 turn",
+          "one_star": "[1★] [Aogiri Tree Boost] For each Aogiri Tree ally on the field, all allies gain +5% to base stats, and your active skill damage +5%. When your turn starts or when you cast an active skill, all Aogiri Tree allies gain +6% to base stats and +5% damage dealt. Stacks up to 3 times",
+          "three_star": "[3★] [Retaliation] When an enemy with [Weakness Erosion] uses an active skill, grant that enemy [Disruption]. When an enemy with Disruption uses an active skill, immediately counter and suppress them, dealing [Weakness Snipe] damage equal to 200% of your ATK || *Disruption: Makes the target(s)' active skill ineffective for 1 turn. *Weakness Snipe: Crit Rate doubled, damage dealt to targets with Weakness Erosion increased by 80% *Weakness Erosion: All stats reduced by 6%, Lifesteal and Restoration Rate reduced by 40%, Extra Damage reduced by 10%. Max 2 stacks"
+        },
+        {
+          "id": "1175",
+          "name": "Yakumo Omori [Natsu Matsuri]",
+          "innate": "[0★] [Rapid Combo] Gain 1 stack of [Festival Point] after any unit acts, up to 4 stacks. At 4 [Festival Point] stacks, clear all [Festival Point] stacks and cast [Bash] and [Rapid Combo] in sequence.[Ultra-Rapid Combo] || *Festival Point: Increase other allied characters' damage dealt by 5% *Bash: For 1 turn, when all enemies are attacked, their DEF becomes 0.5 times its current value. Deals damage equal to 140% of ATK to all enemies, plus additional damage equal to 100% of own ATK. *Rapid Combo: Deal 200% ATK damage to all enemies. Crit Rate triples and Crit DMG increases by 40%. Deal 100% ATK extra damage. For every 70% increase to Crit DMG, increases the extra damage multiplier by 20%, up to 120% *Super Combo: Reduce all stats of all enemies by 8%, up to 2 stacks. Deal 280% ATK damage to all enemies. This skill is guaranteed to hit critically for 50% more Crit DMG, as well as 280% ATK extra damage",
+          "one_star": "[1★] [Aogiri Tree Boost] Increase all stats of Aogiri Tree allies by 16% and ATK-related stats of self and the ally with the highest ATK by 12%. When battle starts, if there are 3 or more allied Aogiri Tree allies on the field, inflict [Turmoil] on all enemies for 1 turn || *Confusion: Reduce all stats by 10%. Extra damage dealt is fixed to 1 point",
+          "three_star": "[3★] [Burst Bash] After you take action, increase the skill damage of every Aogiri Tree ally by 10%, up to 4 stacks. Whenever an enemy acts, reduce the PEN Rate and Block Chance of all enemies by 8%, up to 4 stacks. Cast your Lv.2 skill instantly when the above buffs reach 4 stacks for the first time"
+        },
+        {
+          "id": "1135",
+          "name": "Noro [Overpower]",
+          "innate": "[0★] [Blood Wither] At the start of the enemy’s turn, applies [Blood Wither] and deals damage to all enemies equal to 140% of ATK. || *Blood Wither: Before the caster uses a skill, takes damage equal to 250% of the caster’s ATK, stacking up to 2 times. If the caster’s HP is below 50%, applies 1 additional stack. This effect is removed when the caster dies.",
+          "one_star": "[1★] [Undying Dominion] At the start of battle, gains 1 stack of [Undying Dominion] for 2 turns, and all allied Aogiri Tree characters gain [Blood Guardian] for 2 turns. || *Undying Domination: Damage taken from a skill cannot exceed 35% of max HP. In the enemy’s turn, when total damage taken reaches 50% of max HP, the next active skill damage taken will be reduced to 1 for 1 turn. When this effect is removed, applies 2 stacks of Blood Wither to all enemies, increases all stats of the caster by 20%, and raises the skill level. *Blood Guardian: Increases basic stats by 5% and reduces damage taken by 10%. When this effect ends or the caster dies, increases the caster’s ATK-related stats by 10%.",
+          "three_star": "[3★] [Stats Boost] For each [Blood Wither] stack on all enemies, increases damage dealt by 4% and reduces damage taken by 4%, capped at 32%. When an enemy’s HP first drops below 40%, increases all allies' ATK by 4%, stacking up to 4 times. || *Blood Wither: Before the caster uses a skill, takes damage equal to 250% of the caster’s ATK, stacking up to 2 times. If the caster’s HP is below 50%, applies 1 additional stack. This effect is removed when the caster dies."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "anteiku",
+      "name": "Anteiku PvE candidates",
+      "unit_ids": [
+        "1143",
+        "1168",
+        "1173",
+        "1089",
+        "1090"
+      ],
+      "reserve_candidates": [
+        "1099",
+        "1078"
+      ],
+      "mode": "Anteiku PvE",
+      "notes": "Roma [Anteiku] bonus is PvE-only. Do not treat it as an arena stat buff.",
+      "star_requirements": {
+        "1173": "3★ for the all-allies passive"
+      },
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1143",
+          "name": "Roma Hoito [Anteiku]",
+          "innate": "[0★] [Basic Stats Boost] In PvE battles, increases basic stats of allied Anteiku characters by 30%. After using an active skill, increases the next damage dealt by allied Anteiku characters by 30%, up to 2 stacks",
+          "one_star": "[1★] [Damage Boost] [Effective also in Assistance] When your turn starts, increases active skill damage by 5%, bonus damage by 6%, and non-active skill damage by 10% for 2 turns for the ally with the highest initial ATK, up to 2 stacks",
+          "three_star": "[3★] [Slowdown] After taking damage, inflicts [Slowdown] on the target for 1 turn. When allies attack enemies with [Slowdown], lowers the target’s skill level || *Slowdown: Damage dealt reduced by 20%. Using an active skill increases Weak by 1, triggering 1 time per turn"
+        },
+        {
+          "id": "1168",
+          "name": "Ken Kaneki [√A]",
+          "innate": "[0★] [Oblivion] After an enemy uses an Active Skill, gain 1 stack of [Gaze]. At 3 [Gaze] stacks, remove all shields from all enemies, immediately deal [Oblivion] damage equal to 200% of ATK to all enemies, then remove all your [Gaze] stacks. When you apply a Control or Weak effect to an enemy, increase your Skill Level. Trigger once per turn max || Gaze: DEF‑related stats increase by 3% *Oblivion: For every 2% HP you are missing, CRIT Rate of this attack increases by 6%, and CRIT DMG by 1.5%. This skill cannot trigger lifesteal, and deals extra damage equal to 130% lifesteal rate",
+          "one_star": "[1★] [Anteiku Boost] All allies gain +12% to all stats, and the character gains an extra +16% to ATK-related stats and damage dealt. When an ally takes damage, increase that ally's Max HP by 5% for 1 turn. Stacks up to 3 times",
+          "three_star": "[3★] [Desperation] When your turn starts, if any ally is below 50% HP, remove all your debuffs and Weak effects, and gain [Desperation] for 1 turn. When you take damage, if you have [Desperation], absorb 50% of the damage taken, then at the end of your next turn, take damage equal to the absorbed amount. Before you die, deal [Oblivion] damage equal to 220% of ATK to all enemies. || *Ultra-Desperation: Draws all attacks to you, reducing damage taken and extra damage taken by 20% during the effect, and grants immunity to debuffs and Weak. *Oblivion: For every 2% HP you are missing, CRIT Rate of this attack increases by 6%, and CRIT DMG by 1.5%. This skill cannot trigger lifesteal, and deals extra damage equal to 130% lifesteal rate"
+        },
+        {
+          "id": "1173",
+          "name": "Yoshimura [Owl of Readiness]",
+          "innate": "[0★] [Grudge] At the start of battle, all allied characters gain 15% DEF for 1 turn, and you and the allied character with the lowest Max HP gain the [Grudge] effect. At the end of your side's turn, 1 allied character without the [Grudge] effect gains the [Grudge] effect. When an allied character attacks, if it has the [Grudge] effect, it deals additional damage to the target equal to 100% of the recorded value of [Grudge]. || *Grudge: When taking damage, absorb 30% of the damage taken and store the absorbed value as Grudge stacks. The stored value cannot exceed 100% of the bearer's base Max HP",
+          "one_star": "[1★] [Outrage] After an allied character with the [Grudge] effect takes action, you gain 1 stack of [Outrage], up to 4 stacks. This increases all allied characters' DEF and Block Chance by 4%, up to 16%, and causes that character to recover HP equal to 8% of their Max HP. This effect is not affected by Recovery Rate. || *Grudge: When taking damage, absorb 30% of the damage taken and store the absorbed value as Grudge stacks. The stored value cannot exceed 100% of the bearer's base Max HP *Outrage: Increases Max HP by 6% and reduces damage taken from skills by 3%",
+          "three_star": "[3★] [Fury Strike] Increase all stats of allied characters by 18%, and increase your own attack-related stats and damage dealt by 16%. When your HP falls below 70%, 50%, and 30% for the first time, immediately cast your Level 1, Level 2, and Level 3 Active Skills. When your [Outrage] effect reaches 4 stacks, immediately deal [Blood Surge] damage equal to 190% of your ATK to all enemies. || *Outrage: Increases Max HP by 6% and reduces damage taken from skills by 3% *Blood Surge: If the enemy's HP percentage is not higher than yours, this skill's damage increases by 150%. If the enemy's HP percentage is not lower than yours, this skill additionally deals bonus damage equal to 6% of your Max HP."
+        },
+        {
+          "id": "1089",
+          "name": "Toka Kirishima [Anteiku]",
+          "innate": "[0★] [Shelter] When your turn starts, based on your max HP, grant all allied characters a shield equal to 10% of your max HP for 1 turn. Additionally, grant yourself a shield equal to 20% of your lost HP for 1 turn. When allied Anteiku characters have a shield, they are immune to debuffs and take 10% less damage.",
+          "one_star": "[1★] [Unity] For every 10% of your lost HP, increase your Lifesteal Rate and damage dealt by 5%, up to 30%. When all allied characters are Anteiku characters, increase all allied characters' basic stats by 10% and grant yourself [Unity]. || *Unity: When another allied Anteiku character deals damage, grant the holder a shield equal to 10% of the damage dealt for 1 turn.",
+          "three_star": "[3★] [Struggle] When you first take fatal damage, retain 1 HP and gain 3 stacks of [Struggle]. While [Struggle] is active, increase your ATK-Related stats by 10% and damage dealt by 15%. || *Struggle: Prevents HP from dropping below 1. Removed upon taking damage, then increases all allied characters' basic stats by 5% for 2 turns."
+        },
+        {
+          "id": "1090",
+          "name": "Uta [Rescue]",
+          "innate": "[0★] [Arcane] When the battle starts, grants all allied No Organization and Anteiku characters [Arcane]. For each No Organization or Anteiku character on the team (including Back-up character), increase all allied characters' basic stats by 4%, up to 20%. || *Arcane: For each buff on yourself, increase ATK by 4%, up to 12%. When attacking a target with debuffs, increase your damage dealt by 5% for every 2 debuffs, up to 10%.",
+          "one_star": "[1★] [Encircle] After using an active skill, inflict a number of [Brittle] to the enemy target equal to the user's active skill level. When your turn starts, if only Anteiku or No Organization characters used skills last turn, inflict all enemies [Encircle] for 1 turn. || *Brittle: Reduces Crit Resist by 10% and Crit DEF by 6% for 2 turns, up to 3 stacks. *Encircle: When taking damage, increase your damage taken by 6% for 1 turn, up to 2 stacks.",
+          "three_star": "[3★] [Stats Boost] Grant yourself immunity to all debuffs and Weak effects. When an allied character takes damage and their HP falls below 50%, increase their skill level. Each character can trigger this effect once."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "gvg",
+      "name": "Stronghold survival specialists",
+      "unit_ids": [
+        "1136",
+        "1122",
+        "1077",
+        "1012",
+        "1083"
+      ],
+      "reserve_candidates": [
+        "1165",
+        "1036"
+      ],
+      "mode": "Stronghold Takeover / conditional",
+      "notes": "Kiyoko is a Stronghold Takeover specialist. Confirm whether the same rule applies to the exact Global event. Persistent HP and team locks matter more than a universal tier.",
+      "star_requirements": {
+        "1165": "1★ for specialist team buff"
+      },
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1136",
+          "name": "Kiyoko Aura [Special Class Ghoul Investigator]",
+          "innate": "[0★] [Perseverance] [Effective also in back-up state] In Stronghold Takeover, increases all allies’ basic stats by 40%. When any ally takes fatal damage for the first time, their HP is retained at 1.",
+          "one_star": "[1★] [Level Up] [Effective also in back-up state] In Stronghold Takeover, when your turn starts, raises the skill level of the ally with the highest ATK. When the caster dies, heals all allies for 50% of Max HP.",
+          "three_star": "[3★] [Assistance Tactic] [Effective also in Assistance] [Effective also in back-up state] When your turn starts, reduces damage taken by the ally with the lowest HP by 5% and increases their max HP by 8% for 2 turns, up to 2 stacks. Increases damage dealt by the ally with the highest ATK by 5% and PEN Rate by 5% for 2 turns, up to 2 stacks."
+        },
+        {
+          "id": "1122",
+          "name": "Yakumo Omori [Torture]",
+          "innate": "[0★] [Horror] At the start of battle, if all characters on your field are Aogiri Tree characters, grant all enemies the [Horror] effect. When you are on the field, increase basic stats of your Aogiri Tree characters by 16% and their damage dealt by 20%. || *Horror: DEF decreased by 10%; when attacked, grants self DEF-related abilities decreased by 5% for 1 turn.",
+          "one_star": "[1★] [Torment] When allied characters attack, inflict [Torment] on the enemy target for 1 turn. Each time you attack, inflict 1 [Torment], up to 3 stacks. When the enemy’s [Torment] reaches the maximum, immediately deal 180% [Underbelly] damage to that enemy. This effect can trigger once per turn. || *Torment: Reduces Block Chance by 5%, DMG dealt by 5%, Regeneration Rate by 5%, and Max HP by 3%. *Underbelly: If the target is debuffed, this damage will be increased by 15%",
+          "three_star": "[3★] [Aogiri Tree Boost] When you deal damage to targets with less than 60% HP, inflict [Desperation] on the target for 2 turns and increase Pen Rate of all allied Aogiri Tree characters by 10% for 2 turns. || Desperation: When allied characters take damage, you take damage equal to 20% of that damage dealt."
+        },
+        {
+          "id": "1077",
+          "name": "Shu Tsukiyama [Mr.MM]",
+          "innate": "[0★] [Bloodthirsty] When the battle starts, grant yourself [Blood Pool]. When you deal damage and lifesteal, 100% of the lifesteal amount is stored in [Blood Pool]. If your HP is full, any excess is doubled and stored in [Blood Pool]. The storage limit for [Blood Pool] is 30% of your max HP at the start of the battle. Once [Blood Pool] is full, you gain [Bloodthirsty]. || *Blood Pool: Increase HP-related stats by 10%. *Bloodthirsty: When dealing damage, deal additional damage equal to 15% of your max HP, and inflict the target with a 15% Max HP reduction for 1 turn.",
+          "one_star": "[1★] [Lifesteal Boost] For every 5% of your current HP lost, reduce damage taken by 6%, up to 60%. After taking damage, remove all debuffs and grant yourself a 10% Lifesteal Rate increase for 1 turn, up to 3 times.",
+          "three_star": "[3★] [Shield] [Effective also in Assistance] Increase HP-related stats by 15%. When each turn starts, grant yourself a shield equal to 30% of your lost HP for 1 turn."
+        },
+        {
+          "id": "1012",
+          "name": "Yakumo Omori [Jason]",
+          "innate": "[0★] [Block Ignoring] Increases your PEN Rate by 15% when dealing damage",
+          "one_star": "[1★] [ATK/DEF Boost] When your turn ends, for each Lethal effect on enemies, your whole team deals 4% more DMG and takes 5% less DMG for 2 turns.",
+          "three_star": "[3★] [DMG Boost] Deals 15% increased damage to enemies affected by Lethal."
+        },
+        {
+          "id": "1083",
+          "name": "Juzo Suzuya [Pet Boy]",
+          "innate": "[0★] [Dismember] When [Sever] of the enemy character reaches the limit, grants them [Dismember] for 2 turns. Characters with [Dismember] take extra damage equal to 150% of the attacker’s ATK. || *Sever: Reduces DEF by 2%. *Dismember: Reduces DEF-related stats by 15%. When removed, removes all stacks of Sever from the carrier.",
+          "one_star": "[1★] [Bonus-Attack] When an enemy obtains [Dismember], instantly deals [Blade] damage equal to 180% of ATK to them. When dealing damage to enemies with [Dismember], increases the stats of all allies by 10% for 2 turns, stacking up to 2 times. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy *Dismember: Reduces DEF-related stats by 15%. When removed, removes all stacks of Sever from the carrier.",
+          "three_star": "[3★] [DEF Reduction] [Effective also in Assistance] Taking damage heals self for 20% of the damage taken. When your turn starts, reduces all enemies’ DEF by 10% for 2 turns, stacking up to 2 times."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "antiheal",
+      "name": "Anti-heal toolkit",
+      "unit_ids": [
+        "1012",
+        "1004",
+        "1010",
+        "1026"
+      ],
+      "reserve_candidates": [
+        "1036"
+      ],
+      "mode": "Healing enemy / early PvE",
+      "notes": "Yakumo [Jason] applies Lethal; only useful when the enemy is not immune. This is a low-investment candidate composition, not a proven boss clear.",
+      "star_requirements": {},
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1012",
+          "name": "Yakumo Omori [Jason]",
+          "innate": "[0★] [Block Ignoring] Increases your PEN Rate by 15% when dealing damage",
+          "one_star": "[1★] [ATK/DEF Boost] When your turn ends, for each Lethal effect on enemies, your whole team deals 4% more DMG and takes 5% less DMG for 2 turns.",
+          "three_star": "[3★] [DMG Boost] Deals 15% increased damage to enemies affected by Lethal."
+        },
+        {
+          "id": "1004",
+          "name": "Shu Tsukiyama [Gourmet]",
+          "innate": "[0★] [Group Shield] When an allied character uses Stance skill, grant all allied characters a shield equal to 100% of the caster's ATK for 1 turn.",
+          "one_star": "[1★] [Retaliation] After entering Provoking Stance, retaliate against the next active skill with 175% ATK damage.",
+          "three_star": "[3★] [ATK-Related Stats Boost] When you gain a Shield, restore 12% of your lost HP, once per turn."
+        },
+        {
+          "id": "1010",
+          "name": "Kureo Mado [Quinque Maniac]",
+          "innate": "[0★] [DMG Boost] [Effective also in back-up state] Increases DMG of your characters to Aogiri Tree characters by 10%.",
+          "one_star": "[1★] [Energy Intaking] Gains 20% Energy when a character dies in battle.",
+          "three_star": "[3★] [Energy Boost] When a battle begins, your characters gain 5% more Energy on using a skill for 3 turns."
+        },
+        {
+          "id": "1026",
+          "name": "Enji Koma [Devil Ape]",
+          "innate": "[0★] [DMG Boost] When an allied character causes Weak, increases the damage dealt by all our allies by 4%. Limited to 4 times.",
+          "one_star": "[1★] [Random Debuff] When your active skill causes damage, it will randomly apply one of the following effects to the target for 1 turn: reducing the damage dealt by 8%, increasing the damage taken by 8%, or reducing the skill level. Stacked up to 2 times.",
+          "three_star": "[3★] [Basic Stats Boost] [Effective also in back-up state] Each time an allied character deals damage to an enemy restricted by self with an active skill, basic stats of self increase by 3% for 2 turns, stacking up to 5 times."
+        }
+      ],
+      "tested": false
+    },
+    {
+      "id": "breakthrough",
+      "name": "Blockade support toolkit",
+      "unit_ids": [
+        "1121",
+        "1174",
+        "1142",
+        "1090"
+      ],
+      "reserve_candidates": [
+        "1036"
+      ],
+      "mode": "Blockade Breakthrough",
+      "notes": "Kosuke Hoji [Chi She] passives are Breakthrough-only. His back-up-tagged mechanics should not be assumed to work in other modes.",
+      "star_requirements": {},
+      "slot_rule": "Candidate pool from archived research. Confirm 4/5 field slots and reserve rules in the selected mode; reserve candidates are optional.",
+      "status": "community / kit-derived; not combat tested here",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "budget": "ownership dependent; historical acquisition is not a current offer",
+      "members": [
+        {
+          "id": "1121",
+          "name": "Kosuke Hoji [Chi She]",
+          "innate": "[0★] [Basic Stats Boost] [Effective also in back-up state] In Blockade Breakthrough, increases allies' basic stats by 20% and advanced stats by 15%. Stats of all allies cannot be reduced below the base value. When your turn starts, removes all buffs and stances of enemies.",
+          "one_star": "[1★] [Attribute Enhancement] [Effective also in back-up state] In Blockade Breakthrough, when battle and your turn starts, grants 1 stack of [Formation] to all allies, up to 2 stacks. After an enemy casts skills, for every 4 stacks of Formation on allies, reduces all enemies' ATK by 15% for 1 turn, up to 5 stacks. || *Formation: Increases all stats by 6% and active skill damage by 15%.",
+          "three_star": "[3★] [ATK Enhancement] [Effective also in back-up state] During Blockade Breakthrough, when the battle starts, all allies recover to full HP, ignoring HP loss from the previous battle. Additionally, all allies will have their HP fixed at 1 when taking fatal damage for 1 turn.Grant Shield of 50% of the damage taken when your Character takes damage.When allied characters attack with an active skill, deals extra damage equal to 15% of the target’s Max HP, capped at 200% the attacker’s ATK."
+        },
+        {
+          "id": "1174",
+          "name": "Nutcracker [Thirst for Beauty]",
+          "innate": "[0★] [Pierce] After a No Organization allied character acts, gain [Observation]. After a No Organization allied character uses an active skill, perform a Bonus-Attack on the enemy target, dealing [Pierce] damage equal to 240% of ATK, and restore HP equal to 20% of the damage dealt to allied characters, up to 200% of the caster's ATK. When [Observation] stacks reach 6, gain [Underbelly Insight] effect. || *Pierce: Ignores DEF, dealing extra damage equal to 60% of ATK. *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Underbelly Insight: CRIT DMG +50%, extra damage dealt +60%.",
+          "one_star": "[1★] [Tactical Enhancement] Increase No Organization allied characters' basic stats by 30%. At the start of battle, grant [Tactical Advantage] to allied characters. Each time you gain 1 [Observation], grant 1 [Battle Adaptation] to allied characters. || *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Battle Adaptation: DEF-related stats +5%. While having this effect, attacks always crit. Up to 6 stacks. *Tactical Advantage: Max HP +20%, extra damage taken -40%. When HP first drops below 50%, increase DEF by 50% for 1 turn and gain a shield equal to 15% of Max HP.",
+          "three_star": "[3★] [Offensive] At the start of battle, grant [Offensive Mark] to No Organization allied characters. The effect of [Offensive Mark] on you is doubled. At the start of our turn, increase your next 2 non-active skill damage by 80%. If your HP is full, upgrade your skill level. || *Offensive Mark: Damage dealt +15%, PEN Rate +10%. When attacking enemies with HP ratio below 30%, ATK +25%. After attacking, instantly kill enemies with HP ratio below 1% and prevent any death immunity effects."
+        },
+        {
+          "id": "1142",
+          "name": "Sen Takatsuki [Elegant Deception]",
+          "innate": "[0★] [Skill Levels Increased] For each No Organization ally, increases all allies’ Basic Stats by 4% and Block Rate by 4%. When the battle starts, raises own skill level. After using the next active skill, grants all allies immunity to all debuffs for 1 turn",
+          "one_star": "[1★] [Basic Stats increased] After an ally takes damage from a single-target active skill, increases that ally’s basic stats by 5% for 1 turn. If the ally’s current HP is below 50% at this time, immediately heals self for 10% of Max HP",
+          "three_star": "[3★] [Creation] After healing an ally, gains 1 stack of [Creation], up to 4 stacks. When Creation reaches max stacks, dispels all Creation stacks and grants all allies [Meditation] for 1 turn || *Creation: CRIT RES increased by 10%, CRIT DEF increased by 15%. Restores 8% of missing HP when this effect is dispelled Meditation: Reduce damage taken by 40% for the next hit. Clear when the enemy turn ends or after taking damage. Once cleared, grant the affected character a 6% increase to basic stats for 2 turns, up to 12%."
+        },
+        {
+          "id": "1090",
+          "name": "Uta [Rescue]",
+          "innate": "[0★] [Arcane] When the battle starts, grants all allied No Organization and Anteiku characters [Arcane]. For each No Organization or Anteiku character on the team (including Back-up character), increase all allied characters' basic stats by 4%, up to 20%. || *Arcane: For each buff on yourself, increase ATK by 4%, up to 12%. When attacking a target with debuffs, increase your damage dealt by 5% for every 2 debuffs, up to 10%.",
+          "one_star": "[1★] [Encircle] After using an active skill, inflict a number of [Brittle] to the enemy target equal to the user's active skill level. When your turn starts, if only Anteiku or No Organization characters used skills last turn, inflict all enemies [Encircle] for 1 turn. || *Brittle: Reduces Crit Resist by 10% and Crit DEF by 6% for 2 turns, up to 3 stacks. *Encircle: When taking damage, increase your damage taken by 6% for 1 turn, up to 2 stacks.",
+          "three_star": "[3★] [Stats Boost] Grant yourself immunity to all debuffs and Weak effects. When an allied character takes damage and their HP falls below 50%, increase their skill level. Each character can trigger this effect once."
+        }
+      ],
+      "tested": false
+    }
+  ],
+  "encounters": [
+    {
+      "id": "elder-younger-bin",
+      "name": "Elder & Younger Bin — ActCru2",
+      "mode": "Event boss",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "ActCru2_b1p14",
+          "name": "Agonal State",
+          "text": "Taking fatal damage when Younger Bin is alive brings you to 1 HP, applying [Agonal State] to you. [Agonal State] is removed when you're the only survivor in your team. || *Agonal Status: Unable to take action. Immune to damage."
+        },
+        {
+          "source_key": "ActCru2_b2p5",
+          "name": "Warding",
+          "text": "Elder Bin's HP dropping to below 50% for the first time causes you to enter Warding Stance. When Warding Stance is active, the damage of all attacks against Elder Bin is reduced to 1, and you take 30% reduced damage. Weak effect cancels the Stance."
+        },
+        {
+          "source_key": "ActCru2_b2p6",
+          "name": "Resurrection",
+          "text": "If Elder Bin is in Agonal state when your turn starts, you gain [Resurrection State]. When [Resurrection State] is active, if unaffected by Weak effect at the start of your turn, your [Resurrection State] will be removed and Elder Bin will be resurrected with 50% HP remaining, take 50% less damage and deal 100% more damage for 2 turns, and his Agonal state will be removed. Triggers only once || *Resurrection State: Reduces non-critical damage taken by 30%. Increases critical damage taken by 20%."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Inspect Elder Bin HP and reserve Weak application for Warding / Resurrection. Do not assume disabling immunity prevents the separately described Weak trigger.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Only if these passives match the active event."
+        },
+        {
+          "phase": "phase trigger",
+          "action": "When Warding appears, apply enough Weak to cancel it. If Elder is Agonal, test Weak on Younger before his next turn to prevent the described resurrection.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Weak-cap and actor skill must be confirmed in client."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Finish the paired mechanic while logging whether Elder exits Agonal after Younger falls.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "No fixed lethal order is promised without a combat log."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "ccg"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "one-eyed-owl",
+      "name": "One-Eyed Owl — SCru2",
+      "mode": "Formidable / Superb Conquest",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "SCru2_p2",
+          "name": "Preemptive strike",
+          "text": "When your turn starts, deals damage to all enemies equal to 180% of ATK, and increase damage dealt to enemies without Shield by 500%."
+        },
+        {
+          "source_key": "SCru2_p3",
+          "name": "Gather Power",
+          "text": "When your turn ends, enter [Gather Power] state, and gain the [Panic] effect when an allied Character dies. || *Gather Power: The next Active Skill will deal 500% more damage. *Panic: Remove the effect of Gather Power, increase damage taken by 15% for 1 turn"
+        },
+        {
+          "source_key": "SCru2_p7",
+          "name": "Disorder",
+          "text": "When all Parts die, gains [Disorder]. || Disorder: Immobilized, damage taken increased by 30% for 1 turn"
+        },
+        {
+          "source_key": "SCru2_p22",
+          "name": "Stress Barrier",
+          "text": "When the HP of the One-Eyed Owl drops below 30% for the first time, grant yourself 3 stacks of [Barrier] || *Barrier: DEF increased by 500%, and 1 stack of Barrier is removed when receiving damage."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Test a shield before the preemptive attack; prioritize a part if its death cancels Gather Power.",
+          "actor_id": "1089",
+          "skill_id": "1089_p1",
+          "condition": "Only if Toka [Anteiku] shield triggers in the recorded setup; exact timing requires testing."
+        },
+        {
+          "phase": "phase trigger",
+          "action": "When all parts are defeated, test the Disorder damage window. Track barriers below 30% HP before committing high-value attacks.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Only when the selected difficulty has the listed part/barrier passives."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Compare damage with parts alive versus the Disorder turn; repeat with the same cards and investment.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Do not combine alternative difficulty effects without confirmation."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "anteiku"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "world-glo1",
+      "name": "World Boss Glo1 — identity unconfirmed",
+      "mode": "World Boss",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "Glo1_p1",
+          "name": "Bonus-Attack",
+          "text": "When your turn starts, deal 220% ATK damage to enemy target with the lowest percentage of HP, and additionally deal damage equals to 5% of target’s max HP."
+        },
+        {
+          "source_key": "Glo1_p2",
+          "name": "Restrict Underbelly",
+          "text": "When receiving damage from restricting Attribute, you will be granted an effect of 15% reduction in DEF-related stats. Stacking up to 5 times."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Identify the restricting attribute from the current boss screen; attack to test the DEF-related reduction stack.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Attribute mapping must match current client."
+        },
+        {
+          "phase": "turn 2",
+          "action": "Record damage before and after a restriction stack, keeping card level constant.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Control for crits and other buffs."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Protect the lowest-HP ally against the documented start-of-turn follow-up.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "No survival threshold can be predicted without stats."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "late-noorg"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "world-glo2",
+      "name": "World Boss Glo2 — shield response",
+      "mode": "World Boss",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "Glo2_p1",
+          "name": "Shield Effect",
+          "text": "When your turn ends, grant self a shield equal to 20% of the total damage received in the previous turn. Lasts for 1 turn."
+        },
+        {
+          "source_key": "Glo2_p2",
+          "name": "Shield Retaliation",
+          "text": "After the shield effect disappears or breaks, deal 260% of the enemy's ATK to the target with the highest ATK, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects."
+        },
+        {
+          "source_key": "Glo2_p3",
+          "name": "Restriction Boost",
+          "text": "When receiving damage from restricted Attribute, you will be granted an effect of 5% increase in ATK-related stats. Stacking up to 5 times."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Record incoming shield magnitude after dealing damage; avoid assuming all attributes have the same value.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Current boss must have Glo2 skill set."
+        },
+        {
+          "phase": "turn 2",
+          "action": "Test whether buff removal affects the shield, and whether removal triggers the stated retaliation.",
+          "actor_id": "1114",
+          "skill_id": "1114_p1",
+          "condition": "Orochi passive availability and boss immunity need confirmation."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Track Lethal on highest-ATK ally before relying on healing.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Shield break/disappearance triggers retaliation in the archived description."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "late-noorg"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "world-glo3",
+      "name": "World Boss Glo3 — debuff retaliation",
+      "mode": "World Boss",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "Glo3_p1",
+          "name": "Attack Boost",
+          "text": "When your turn starts, you will be granted an effect of increase in ATK-related stats by 10% and enemies will be granted an effect of reduction in DEF-related stats by 10%. Stacking up to 3 times."
+        },
+        {
+          "source_key": "Glo3_p2",
+          "name": "Debuff Retaliation",
+          "text": "When taking active Skill damage, if the attacker has debuffs, Retaliate the target, causing [Underbelly] damage equal to 180% of your ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%"
+        },
+        {
+          "source_key": "Glo3_p3",
+          "name": "Disabling Boost",
+          "text": "When any enemy target dies, deal damage of 160% ATK to the enemy target with the highest ATK, applying [Stun] for 1 turn. || *Stunned: Unable to take any actions."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Log the boss stat stack and which allies receive debuffs.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Current skill text must match."
+        },
+        {
+          "phase": "turn 2",
+          "action": "Compare attacking with a cleansed actor versus a debuffed actor; record retaliation.",
+          "actor_id": "1169",
+          "skill_id": "1169_p1",
+          "condition": "Shirazu cleanse timing must be confirmed; do not assume it precedes every hit."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Preserve low-HP allies to avoid the kill-trigger attack and Stun chain.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "No exact damage threshold available."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "ccg"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "yoshimura-union",
+      "name": "Yoshimura — Uni01 skill family",
+      "mode": "Organization boss",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "1016_Uni01_n1s1",
+          "name": "Sweeping Slash",
+          "text": "Deals [Blade] damage to all enemies equal to 220% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy"
+        },
+        {
+          "source_key": "1016_Uni01_n3s1",
+          "name": "Sweeping",
+          "text": "Deals [Impale] damage equal to 200% of ATK to all enemies, granting your other allies a Shield of 15% of the damage dealt for 1 turn. || *Impale: This damage ignores the target's DEF."
+        },
+        {
+          "source_key": "1016_Uni01_n5s1",
+          "name": "Fragile Attack",
+          "text": "Deals [Smite] damage equal to 300% of ATK to the enemy target, applying [Fragile Mark] to the target for 2 turns if the target is not in any Stances. || *Smite: Ignores DEF and Block Chance for this damage *Fragile Mark: Damage taken is always considered as CRIT"
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Identify which of this skill family is equipped in the current phase; these are not a confirmed sequential move script.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Match name and skill text in the current encounter."
+        },
+        {
+          "phase": "turn 2",
+          "action": "If Fragile Mark is present, compare Stance protection versus no Stance before the targeted attack.",
+          "actor_id": "1004",
+          "skill_id": "1004_v1s1",
+          "condition": "Shu [Gourmet] stance interaction is a hypothesis requiring a log."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Log shields after Impale and test safe removal options.",
+          "actor_id": "1114",
+          "skill_id": "1114_p1",
+          "condition": "Only if boss shields can be dispelled."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "late-noorg",
+        "antiheal"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "capture-field",
+      "name": "Capture Simulation Field — mechanic family",
+      "mode": "Capture Simulation",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "GVEBoss_p2",
+          "name": "Level Overpower",
+          "text": "Damage taken from Level-1 skills reduced by 30%."
+        },
+        {
+          "source_key": "GVEBoss_p3",
+          "name": "Basic stats increased",
+          "text": "When battle starts, increases basic stats by 8%. If afflicted with all stats reduction effects, removes this basic stats boost, and takes 15% extra damage when attacked."
+        },
+        {
+          "source_key": "GVEBoss_p9",
+          "name": "Damage increased",
+          "text": "Deals 20% increased damage to enemies without a shield, and takes 20% increased damage from enemies with a shield."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Confirm which modifiers are active; compare Lv.1 and merged skill damage with all other factors fixed.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Modifiers are alternatives until current encounter confirms them."
+        },
+        {
+          "phase": "turn 2",
+          "action": "Test an all-stats reduction effect to remove Basic stats increased, if present.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Record exact debuff and whether boss is immune."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "If shield conditional damage is active, compare shielded and unshielded attacks.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Control crit and skill level."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "anteiku"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    },
+    {
+      "id": "union-trigger",
+      "name": "Organization UniC1 — triggered-skill window",
+      "mode": "Organization boss",
+      "status": "research needed — theory rotation",
+      "source": "data/research/boss_skills.txt",
+      "source_refs": [
+        "boss-skills",
+        "stage-teams"
+      ],
+      "mechanics": [
+        {
+          "source_key": "UniC1_p13",
+          "name": "Weak",
+          "text": "Changes your Weak cap to 6 as battle starts. Weak effect increases the skill level of all Skills of 1 random enemy instead of Stunning you."
+        },
+        {
+          "source_key": "UniC1_p14",
+          "name": "DMG Increase",
+          "text": "When an enemy target uses a triggered Skill, grants self with an effect of a 20% increase in damage taken, stacking up to 5 times."
+        },
+        {
+          "source_key": "UniC1_p15",
+          "name": "Retaliation",
+          "text": "When your turn starts, grant yourself a 15% increase in ATK-related stats,stacking up to 3 times, and deal [Blood Piercer] damage of 120% ATK to an random debuffed enemy || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns."
+        }
+      ],
+      "rotation": [
+        {
+          "phase": "prebattle",
+          "action": "Match these exact skill keys/effects to the selected difficulty before using this plan. Record server, build, CP, stars, cells, potential, turn cap and initial cards.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Required; instance mapping is not verified."
+        },
+        {
+          "phase": "turn 1",
+          "action": "Record whether a triggered skill adds the damage-taken stack.",
+          "actor_id": "1174",
+          "skill_id": "1174_p1",
+          "condition": "Nutcracker engine requires a No Organization ally active and a matching encounter modifier."
+        },
+        {
+          "phase": "turn 2",
+          "action": "Compare the same active at zero and accumulated stacks; verify the five-stack cap.",
+          "actor_id": "1142",
+          "skill_id": "1142_v1s1",
+          "condition": "Requires matching UniC1_p14; no numeric damage prediction."
+        },
+        {
+          "phase": "turn 3+",
+          "action": "Track the boss ATK stack and debuffed-target retaliation; stop if survival prevents a fair comparison.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Keep investment and cards documented."
+        },
+        {
+          "phase": "failsafe",
+          "action": "If the client effect or turn behavior differs, stop this rotation and save the discrepancy. Record manual vs auto runs separately.",
+          "actor_id": null,
+          "skill_id": null,
+          "condition": "Mismatch, immunity, missing card or failed trigger."
+        }
+      ],
+      "team_ids": [
+        "early-noorg",
+        "late-noorg"
+      ],
+      "tested": false,
+      "damage": null,
+      "difficulty": null,
+      "turn_cap": null,
+      "test_required": [
+        "Current boss identity and difficulty screenshot",
+        "Confirm each listed passive is active together",
+        "Record team, CP, stars, cell effects and potential",
+        "Capture full card/ultimate order and phase transitions",
+        "Repeat with same setup; document failed attempts and auto/manual difference"
+      ],
+      "expected_result": "No damage or clear guarantee; experimental plan only."
+    }
+  ],
+  "cells": [
+    {
+      "id": "Atk_N",
+      "name": "Assault Cell",
+      "rarity": "N",
+      "type": "Assault",
+      "attribute": null,
+      "effect_full": "Attack-focused Rc Cell that slightly increases ATK when equipped on a character",
+      "source_key": "tid#EquipName_Atk_N",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_R",
+      "name": "Assault Cell",
+      "rarity": "R",
+      "type": "Assault",
+      "attribute": null,
+      "effect_full": "Attack-focused Rc Cell that increases ATK when equipped on a character",
+      "source_key": "tid#EquipName_Atk_R",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SR",
+      "name": "Assault Cell",
+      "rarity": "SR",
+      "type": "Assault",
+      "attribute": null,
+      "effect_full": "Attack-focused Rc Cell that greatly increases ATK when equipped on a character",
+      "source_key": "tid#EquipName_Atk_SR",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SSR",
+      "name": "Assault Cell",
+      "rarity": "SSR",
+      "type": "Assault",
+      "attribute": null,
+      "effect_full": "Attack-focused Rc Cell that massively increases ATK when equipped on a character",
+      "source_key": "tid#EquipName_Atk_SSR",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_N_T0",
+      "name": "Assault Cell- STR",
+      "rarity": "N",
+      "type": "Assault",
+      "attribute": "STR",
+      "effect_full": "Attack-focused Rc Cell that slightly increases ATK when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Atk_N_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_N_T1",
+      "name": "Assault Cell - SKL",
+      "rarity": "N",
+      "type": "Assault",
+      "attribute": "SKL",
+      "effect_full": "Attack-focused Rc Cell that slightly increases ATK when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Atk_N_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_N_T2",
+      "name": "Assault Cell - SPD",
+      "rarity": "N",
+      "type": "Assault",
+      "attribute": "SPD",
+      "effect_full": "Attack-focused Rc Cell that slightly increases ATK when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Atk_N_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_N_T3",
+      "name": "Assault Cell - PSY",
+      "rarity": "N",
+      "type": "Assault",
+      "attribute": "PSY",
+      "effect_full": "Attack-focused Rc Cell that slightly increases ATK when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Atk_N_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_N_T4",
+      "name": "Assault Cell - WIT",
+      "rarity": "N",
+      "type": "Assault",
+      "attribute": "WIT",
+      "effect_full": "Attack-focused Rc Cell that slightly increases ATK when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Atk_N_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_R_T0",
+      "name": "Assault Cell- STR",
+      "rarity": "R",
+      "type": "Assault",
+      "attribute": "STR",
+      "effect_full": "Attack-focused Rc Cell that increases ATK when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Atk_R_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_R_T1",
+      "name": "Assault Cell - SKL",
+      "rarity": "R",
+      "type": "Assault",
+      "attribute": "SKL",
+      "effect_full": "Attack-focused Rc Cell that increases ATK when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Atk_R_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_R_T2",
+      "name": "Assault Cell - SPD",
+      "rarity": "R",
+      "type": "Assault",
+      "attribute": "SPD",
+      "effect_full": "Attack-focused Rc Cell that increases ATK when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Atk_R_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_R_T3",
+      "name": "Assault Cell - PSY",
+      "rarity": "R",
+      "type": "Assault",
+      "attribute": "PSY",
+      "effect_full": "Attack-focused Rc Cell that increases ATK when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Atk_R_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_R_T4",
+      "name": "Assault Cell - WIT",
+      "rarity": "R",
+      "type": "Assault",
+      "attribute": "WIT",
+      "effect_full": "Attack-focused Rc Cell that increases ATK when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Atk_R_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SR_T0",
+      "name": "Assault Cell- STR",
+      "rarity": "SR",
+      "type": "Assault",
+      "attribute": "STR",
+      "effect_full": "Attack-focused Rc Cell that greatly increases ATK when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Atk_SR_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SR_T1",
+      "name": "Assault Cell - SKL",
+      "rarity": "SR",
+      "type": "Assault",
+      "attribute": "SKL",
+      "effect_full": "Attack-focused Rc Cell that greatly increases ATK when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Atk_SR_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SR_T2",
+      "name": "Assault Cell - SPD",
+      "rarity": "SR",
+      "type": "Assault",
+      "attribute": "SPD",
+      "effect_full": "Attack-focused Rc Cell that greatly increases ATK when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Atk_SR_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SR_T3",
+      "name": "Assault Cell - PSY",
+      "rarity": "SR",
+      "type": "Assault",
+      "attribute": "PSY",
+      "effect_full": "Attack-focused Rc Cell that greatly increases ATK when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Atk_SR_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SR_T4",
+      "name": "Assault Cell - WIT",
+      "rarity": "SR",
+      "type": "Assault",
+      "attribute": "WIT",
+      "effect_full": "Attack-focused Rc Cell that greatly increases ATK when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Atk_SR_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SSR_T0",
+      "name": "Assault Cell- STR",
+      "rarity": "SSR",
+      "type": "Assault",
+      "attribute": "STR",
+      "effect_full": "Attack-focused Rc Cell that massively increases ATK when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Atk_SSR_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SSR_T1",
+      "name": "Assault Cell - SKL",
+      "rarity": "SSR",
+      "type": "Assault",
+      "attribute": "SKL",
+      "effect_full": "Attack-focused Rc Cell that massively increases ATK when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Atk_SSR_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SSR_T2",
+      "name": "Assault Cell - SPD",
+      "rarity": "SSR",
+      "type": "Assault",
+      "attribute": "SPD",
+      "effect_full": "Attack-focused Rc Cell that massively increases ATK when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Atk_SSR_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SSR_T3",
+      "name": "Assault Cell - PSY",
+      "rarity": "SSR",
+      "type": "Assault",
+      "attribute": "PSY",
+      "effect_full": "Attack-focused Rc Cell that massively increases ATK when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Atk_SSR_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Atk_SSR_T4",
+      "name": "Assault Cell - WIT",
+      "rarity": "SSR",
+      "type": "Assault",
+      "attribute": "WIT",
+      "effect_full": "Attack-focused Rc Cell that massively increases ATK when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Atk_SSR_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Atk.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_N",
+      "name": "Bulwark Cell",
+      "rarity": "N",
+      "type": "Bulwark",
+      "attribute": null,
+      "effect_full": "Defense-focused Rc Cell that slightly increases DEF when equipped on a character",
+      "source_key": "tid#EquipName_Def_N",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_R",
+      "name": "Bulwark Cell",
+      "rarity": "R",
+      "type": "Bulwark",
+      "attribute": null,
+      "effect_full": "Defense-focused Rc Cell that increases DEF when equipped on a character",
+      "source_key": "tid#EquipName_Def_R",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SR",
+      "name": "Bulwark Cell",
+      "rarity": "SR",
+      "type": "Bulwark",
+      "attribute": null,
+      "effect_full": "Defense-focused Rc Cell that greatly increases DEF when equipped on a character",
+      "source_key": "tid#EquipName_Def_SR",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SSR",
+      "name": "Bulwark Cell",
+      "rarity": "SSR",
+      "type": "Bulwark",
+      "attribute": null,
+      "effect_full": "Defense-focused Rc Cell that massively increases DEF when equipped on a character",
+      "source_key": "tid#EquipName_Def_SSR",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_N_T0",
+      "name": "Bulwark Cell - STR",
+      "rarity": "N",
+      "type": "Bulwark",
+      "attribute": "STR",
+      "effect_full": "Defense-focused Rc Cell that slightly increases DEF when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Def_N_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_N_T1",
+      "name": "Bulwark Cell - SKL",
+      "rarity": "N",
+      "type": "Bulwark",
+      "attribute": "SKL",
+      "effect_full": "Defense-focused Rc Cell that slightly increases DEF when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Def_N_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_N_T2",
+      "name": "Bulwark Cell - SPD",
+      "rarity": "N",
+      "type": "Bulwark",
+      "attribute": "SPD",
+      "effect_full": "Defense-focused Rc Cell that slightly increases DEF when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Def_N_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_N_T3",
+      "name": "Bulwark Cell - PSY",
+      "rarity": "N",
+      "type": "Bulwark",
+      "attribute": "PSY",
+      "effect_full": "Defense-focused Rc Cell that slightly increases DEF when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Def_N_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_N_T4",
+      "name": "Bulwark Cell - WIT",
+      "rarity": "N",
+      "type": "Bulwark",
+      "attribute": "WIT",
+      "effect_full": "Defense-focused Rc Cell that slightly increases DEF when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Def_N_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_R_T0",
+      "name": "Bulwark Cell - STR",
+      "rarity": "R",
+      "type": "Bulwark",
+      "attribute": "STR",
+      "effect_full": "Defense-focused Rc Cell that increases DEF when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Def_R_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_R_T1",
+      "name": "Bulwark Cell - SKL",
+      "rarity": "R",
+      "type": "Bulwark",
+      "attribute": "SKL",
+      "effect_full": "Defense-focused Rc Cell that increases DEF when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Def_R_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_R_T2",
+      "name": "Bulwark Cell - SPD",
+      "rarity": "R",
+      "type": "Bulwark",
+      "attribute": "SPD",
+      "effect_full": "Defense-focused Rc Cell that increases DEF when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Def_R_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_R_T3",
+      "name": "Bulwark Cell - PSY",
+      "rarity": "R",
+      "type": "Bulwark",
+      "attribute": "PSY",
+      "effect_full": "Defense-focused Rc Cell that increases DEF when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Def_R_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_R_T4",
+      "name": "Bulwark Cell - WIT",
+      "rarity": "R",
+      "type": "Bulwark",
+      "attribute": "WIT",
+      "effect_full": "Defense-focused Rc Cell that increases DEF when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Def_R_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SR_T0",
+      "name": "Bulwark Cell - STR",
+      "rarity": "SR",
+      "type": "Bulwark",
+      "attribute": "STR",
+      "effect_full": "Defense-focused Rc Cell that greatly increases DEF when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Def_SR_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SR_T1",
+      "name": "Bulwark Cell - SKL",
+      "rarity": "SR",
+      "type": "Bulwark",
+      "attribute": "SKL",
+      "effect_full": "Defense-focused Rc Cell that greatly increases DEF when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Def_SR_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SR_T2",
+      "name": "Bulwark Cell - SPD",
+      "rarity": "SR",
+      "type": "Bulwark",
+      "attribute": "SPD",
+      "effect_full": "Defense-focused Rc Cell that greatly increases DEF when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Def_SR_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SR_T3",
+      "name": "Bulwark Cell - PSY",
+      "rarity": "SR",
+      "type": "Bulwark",
+      "attribute": "PSY",
+      "effect_full": "Defense-focused Rc Cell that greatly increases DEF when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Def_SR_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SR_T4",
+      "name": "Bulwark Cell - WIT",
+      "rarity": "SR",
+      "type": "Bulwark",
+      "attribute": "WIT",
+      "effect_full": "Defense-focused Rc Cell that greatly increases DEF when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Def_SR_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SSR_T0",
+      "name": "Bulwark Cell - STR",
+      "rarity": "SSR",
+      "type": "Bulwark",
+      "attribute": "STR",
+      "effect_full": "Defense-focused Rc Cell that massively increases DEF when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Def_SSR_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SSR_T1",
+      "name": "Bulwark Cell - SKL",
+      "rarity": "SSR",
+      "type": "Bulwark",
+      "attribute": "SKL",
+      "effect_full": "Defense-focused Rc Cell that massively increases DEF when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Def_SSR_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SSR_T2",
+      "name": "Bulwark Cell - SPD",
+      "rarity": "SSR",
+      "type": "Bulwark",
+      "attribute": "SPD",
+      "effect_full": "Defense-focused Rc Cell that massively increases DEF when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Def_SSR_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SSR_T3",
+      "name": "Bulwark Cell - PSY",
+      "rarity": "SSR",
+      "type": "Bulwark",
+      "attribute": "PSY",
+      "effect_full": "Defense-focused Rc Cell that massively increases DEF when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Def_SSR_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Def_SSR_T4",
+      "name": "Bulwark Cell - WIT",
+      "rarity": "SSR",
+      "type": "Bulwark",
+      "attribute": "WIT",
+      "effect_full": "Defense-focused Rc Cell that massively increases DEF when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Def_SSR_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Def.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_N",
+      "name": "Regeneration Cell",
+      "rarity": "N",
+      "type": "Regeneration",
+      "attribute": null,
+      "effect_full": "Survival-focused Rc Cell that slightly increases HP when equipped on a character",
+      "source_key": "tid#EquipName_Hp_N",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_R",
+      "name": "Regeneration Cell",
+      "rarity": "R",
+      "type": "Regeneration",
+      "attribute": null,
+      "effect_full": "Survival-focused Rc Cell that increases HP when equipped on a character",
+      "source_key": "tid#EquipName_Hp_R",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SR",
+      "name": "Regeneration Cell",
+      "rarity": "SR",
+      "type": "Regeneration",
+      "attribute": null,
+      "effect_full": "Survival-focused Rc Cell that greatly increases HP when equipped on a character",
+      "source_key": "tid#EquipName_Hp_SR",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SSR",
+      "name": "Regeneration Cell",
+      "rarity": "SSR",
+      "type": "Regeneration",
+      "attribute": null,
+      "effect_full": "Survival-focused Rc Cell that massively increases HP when equipped on a character",
+      "source_key": "tid#EquipName_Hp_SSR",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_N_T0",
+      "name": "Regeneration Cell - STR",
+      "rarity": "N",
+      "type": "Regeneration",
+      "attribute": "STR",
+      "effect_full": "Survival-focused Rc Cell that slightly increases HP when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Hp_N_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_N_T1",
+      "name": "Regeneration Cell - SKL",
+      "rarity": "N",
+      "type": "Regeneration",
+      "attribute": "SKL",
+      "effect_full": "Survival-focused Rc Cell that slightly increases HP when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Hp_N_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_N_T2",
+      "name": "Regeneration Cell - SPD",
+      "rarity": "N",
+      "type": "Regeneration",
+      "attribute": "SPD",
+      "effect_full": "Survival-focused Rc Cell that slightly increases HP when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Hp_N_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_N_T3",
+      "name": "Regeneration Cell - PSY",
+      "rarity": "N",
+      "type": "Regeneration",
+      "attribute": "PSY",
+      "effect_full": "Survival-focused Rc Cell that slightly increases HP when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Hp_N_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_N_T4",
+      "name": "Regeneration Cell - WIT",
+      "rarity": "N",
+      "type": "Regeneration",
+      "attribute": "WIT",
+      "effect_full": "Survival-focused Rc Cell that slightly increases HP when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Hp_N_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_R_T0",
+      "name": "Regeneration Cell - STR",
+      "rarity": "R",
+      "type": "Regeneration",
+      "attribute": "STR",
+      "effect_full": "Survival-focused Rc Cell that increases HP when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Hp_R_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_R_T1",
+      "name": "Regeneration Cell - SKL",
+      "rarity": "R",
+      "type": "Regeneration",
+      "attribute": "SKL",
+      "effect_full": "Survival-focused Rc Cell that increases HP when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Hp_R_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_R_T2",
+      "name": "Regeneration Cell - SPD",
+      "rarity": "R",
+      "type": "Regeneration",
+      "attribute": "SPD",
+      "effect_full": "Survival-focused Rc Cell that increases HP when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Hp_R_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_R_T3",
+      "name": "Regeneration Cell - PSY",
+      "rarity": "R",
+      "type": "Regeneration",
+      "attribute": "PSY",
+      "effect_full": "Survival-focused Rc Cell that increases HP when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Hp_R_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_R_T4",
+      "name": "Regeneration Cell - WIT",
+      "rarity": "R",
+      "type": "Regeneration",
+      "attribute": "WIT",
+      "effect_full": "Survival-focused Rc Cell that increases HP when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Hp_R_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SR_T0",
+      "name": "Regeneration Cell - STR",
+      "rarity": "SR",
+      "type": "Regeneration",
+      "attribute": "STR",
+      "effect_full": "Survival-focused Rc Cell that greatly increases HP when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Hp_SR_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SR_T1",
+      "name": "Regeneration Cell - SKL",
+      "rarity": "SR",
+      "type": "Regeneration",
+      "attribute": "SKL",
+      "effect_full": "Survival-focused Rc Cell that greatly increases HP when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Hp_SR_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SR_T2",
+      "name": "Regeneration Cell - SPD",
+      "rarity": "SR",
+      "type": "Regeneration",
+      "attribute": "SPD",
+      "effect_full": "Survival-focused Rc Cell that greatly increases HP when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Hp_SR_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SR_T3",
+      "name": "Regeneration Cell - PSY",
+      "rarity": "SR",
+      "type": "Regeneration",
+      "attribute": "PSY",
+      "effect_full": "Survival-focused Rc Cell that greatly increases HP when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Hp_SR_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SR_T4",
+      "name": "Regeneration Cell - WIT",
+      "rarity": "SR",
+      "type": "Regeneration",
+      "attribute": "WIT",
+      "effect_full": "Survival-focused Rc Cell that greatly increases HP when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Hp_SR_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SSR_T0",
+      "name": "Regeneration Cell - STR",
+      "rarity": "SSR",
+      "type": "Regeneration",
+      "attribute": "STR",
+      "effect_full": "Survival-focused Rc Cell that massively increases HP when equipped on a character. Grants additional effects when equipped on a STR character.",
+      "source_key": "tid#EquipName_Hp_SSR_T0",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SSR_T1",
+      "name": "Regeneration Cell - SKL",
+      "rarity": "SSR",
+      "type": "Regeneration",
+      "attribute": "SKL",
+      "effect_full": "Survival-focused Rc Cell that massively increases HP when equipped on a character. Grants additional effects when equipped on a SPD character.",
+      "source_key": "tid#EquipName_Hp_SSR_T1",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SSR_T2",
+      "name": "Regeneration Cell - SPD",
+      "rarity": "SSR",
+      "type": "Regeneration",
+      "attribute": "SPD",
+      "effect_full": "Survival-focused Rc Cell that massively increases HP when equipped on a character. Grants additional effects when equipped on a SKL character.",
+      "source_key": "tid#EquipName_Hp_SSR_T2",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "attribute text conflict — verify client",
+      "attribute_conflict": true,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SSR_T3",
+      "name": "Regeneration Cell - PSY",
+      "rarity": "SSR",
+      "type": "Regeneration",
+      "attribute": "PSY",
+      "effect_full": "Survival-focused Rc Cell that massively increases HP when equipped on a character. Grants additional effects when equipped on a PSY character.",
+      "source_key": "tid#EquipName_Hp_SSR_T3",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "Hp_SSR_T4",
+      "name": "Regeneration Cell - WIT",
+      "rarity": "SSR",
+      "type": "Regeneration",
+      "attribute": "WIT",
+      "effect_full": "Survival-focused Rc Cell that massively increases HP when equipped on a character. Grants additional effects when equipped on a WIT character.",
+      "source_key": "tid#EquipName_Hp_SSR_T4",
+      "source": "data/raw/en.json",
+      "source_refs": [
+        "localization"
+      ],
+      "status": "archived localization; effect values unverified",
+      "attribute_conflict": false,
+      "image": "assets/cells/Hp.png",
+      "character_id": null,
+      "acquisition": null,
+      "ability_level": null,
+      "mode_restriction": null
+    },
+    {
+      "id": "lr-reference-1005",
+      "name": "Assault Cell [Awaken]",
+      "rarity": "LR",
+      "type": "Assault",
+      "attribute": null,
+      "effect_full": null,
+      "summary": "Frenzy / restricting-attribute boost reference",
+      "character_id": "1005",
+      "mode_restriction": null,
+      "context": "Weekly Challenge",
+      "source": "https://gluttony.dev/heroes/",
+      "source_refs": [
+        "cell-catalog"
+      ],
+      "status": "reference lead only — full effect and identity need verification",
+      "image": null,
+      "acquisition": null,
+      "ability_level": null
+    },
+    {
+      "id": "lr-reference-1003",
+      "name": "Regeneration Cell [CCG Maverick]",
+      "rarity": "LR",
+      "type": "Regeneration",
+      "attribute": null,
+      "effect_full": null,
+      "summary": "Faction stats and healing reference",
+      "character_id": "1003",
+      "mode_restriction": null,
+      "context": "Force Challenge",
+      "source": "https://gluttony.dev/heroes/",
+      "source_refs": [
+        "cell-catalog"
+      ],
+      "status": "reference lead only — full effect and identity need verification",
+      "image": null,
+      "acquisition": null,
+      "ability_level": null
+    },
+    {
+      "id": "lr-reference-1004",
+      "name": "Bulwark Cell [Gourmet]",
+      "rarity": "LR",
+      "type": "Bulwark",
+      "attribute": null,
+      "effect_full": null,
+      "summary": "Faction-based shield reference",
+      "character_id": "1004",
+      "mode_restriction": null,
+      "context": "No Organization",
+      "source": "https://gluttony.dev/heroes/",
+      "source_refs": [
+        "cell-catalog"
+      ],
+      "status": "reference lead only — full effect and identity need verification",
+      "image": null,
+      "acquisition": null,
+      "ability_level": null
+    },
+    {
+      "id": "lr-reference-1025",
+      "name": "Assault Cell [Mask-Maker]",
+      "rarity": "LR",
+      "type": "Assault",
+      "attribute": null,
+      "effect_full": null,
+      "summary": "Energy-card and next-active support reference",
+      "character_id": "1025",
+      "mode_restriction": null,
+      "context": "PvE",
+      "source": "https://gluttony.dev/heroes/",
+      "source_refs": [
+        "cell-catalog"
+      ],
+      "status": "reference lead only — full effect and identity need verification",
+      "image": null,
+      "acquisition": null,
+      "ability_level": null
+    }
+  ],
+  "coffee": [
+    {
+      "id": "22008",
+      "name": "Iced Latte",
+      "image": "assets/coffee/22008.png",
+      "temperature": "iced",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 5,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Milk"
+        }
+      ],
+      "description": "A classic latte concocted with the freshest milk and refreshing iced pure coffee.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=111s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22009",
+      "name": "Frappuccino",
+      "image": "assets/coffee/22009.png",
+      "temperature": "iced",
+      "tags": [
+        "frappuccino"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 5,
+          "name": "Milk"
+        }
+      ],
+      "description": "Icy pure coffee coupled with pure snow top.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=129s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22010",
+      "name": "Mocha Frappuccino",
+      "image": "assets/coffee/22010.png",
+      "temperature": "iced",
+      "tags": [
+        "mocha",
+        "frappuccino"
+      ],
+      "ingredients": [
+        {
+          "quantity": 5,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Chocolate"
+        }
+      ],
+      "description": "Thick and rich creamy snow top coupled with aromatic mocha, dessert lovers' favorite.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=141s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22011",
+      "name": "Iced Mocha",
+      "image": "assets/coffee/22011.png",
+      "temperature": "iced",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 5,
+          "name": "Chocolate"
+        }
+      ],
+      "description": "Refreshing iced coffee with a chocolate aroma.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=144s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22012",
+      "name": "Iced Almond-Flavored Latte",
+      "image": "assets/coffee/22012.png",
+      "temperature": "iced",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Milk"
+        },
+        {
+          "quantity": 1,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "Icy latte sprinkled with crispy and aromatic almonds to achieve divine mouthfeel.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=150s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22013",
+      "name": "Iced Oat-Flavored Latte",
+      "image": "assets/coffee/22013.png",
+      "temperature": "iced",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Milk"
+        },
+        {
+          "quantity": 4,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "The plain mouthfeel of oat is moderated by latte's sweetness to achieve an amazing balance.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=153s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22014",
+      "name": "Iced Hazelnut-Flavored Latte",
+      "image": "assets/coffee/22014.png",
+      "temperature": "iced",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 1,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "The rich flavor of hazelnut flows into your heart with the cheese foam topping.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=159s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22015",
+      "name": "Mocha Frappuccino with Almond",
+      "image": "assets/coffee/22015.png",
+      "temperature": "iced",
+      "tags": [
+        "mocha",
+        "frappuccino"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 4,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "Contains not only thin crispy almond bits but also plenty of cocoa; can be deemed a carnival for taste buds.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=162s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22016",
+      "name": "Iced Vanilla-Flavored Latte",
+      "image": "assets/coffee/22016.png",
+      "temperature": "iced",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Milk"
+        },
+        {
+          "quantity": 1,
+          "name": "Spice"
+        }
+      ],
+      "description": "Vanilla-flavored latte. It also features exquisite latte art.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=168s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22017",
+      "name": "Frappuccino Latte with Caramel",
+      "image": "assets/coffee/22017.png",
+      "temperature": "iced",
+      "tags": [
+        "latte",
+        "frappuccino"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Milk"
+        },
+        {
+          "quantity": 4,
+          "name": "Spice"
+        }
+      ],
+      "description": "Frappuccino with caramel sauce on top tastes even sweeter.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=174s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22018",
+      "name": "Iced Caramel-Flavored Mocha",
+      "image": "assets/coffee/22018.png",
+      "temperature": "iced",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 1,
+          "name": "Spice"
+        }
+      ],
+      "description": "A clash between caramel and mocha unleashes the aroma.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=180s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22019",
+      "name": "Mocha Frappuccino with Cinnamon",
+      "image": "assets/coffee/22019.png",
+      "temperature": "iced",
+      "tags": [
+        "mocha",
+        "frappuccino"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Iced Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 4,
+          "name": "Spice"
+        }
+      ],
+      "description": "Spiced coffee with a unique flavor.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=186s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22020",
+      "name": "Cappuccino",
+      "image": "assets/coffee/22020.png",
+      "temperature": "hot",
+      "tags": [],
+      "ingredients": [
+        {
+          "quantity": 5,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Milk"
+        }
+      ],
+      "description": "One of the most classic traditional coffees, very popular.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=192s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22021",
+      "name": "Hot Latte",
+      "image": "assets/coffee/22021.png",
+      "temperature": "hot",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 5,
+          "name": "Milk"
+        }
+      ],
+      "description": "A classic latte concocted with the freshest milk and hot coffee.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=195s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22022",
+      "name": "Hot Mocha",
+      "image": "assets/coffee/22022.png",
+      "temperature": "hot",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 5,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Chocolate"
+        }
+      ],
+      "description": "Mocha of a pristine flavor, meant to bring the purest warmth.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=204s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22023",
+      "name": "White Mocha",
+      "image": "assets/coffee/22023.png",
+      "temperature": "hot",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 5,
+          "name": "Chocolate"
+        }
+      ],
+      "description": "Mocha concocted with white chocolate boasts doubled sweetness.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=207s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22024",
+      "name": "Hot Oat-Flavored Latte",
+      "image": "assets/coffee/22024.png",
+      "temperature": "hot",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Milk"
+        },
+        {
+          "quantity": 1,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "The plain mouthfeel of oat is moderated by latte's sweetness to achieve an amazing balance.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=213s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22025",
+      "name": "Hot Almond-Flavored Latte",
+      "image": "assets/coffee/22025.png",
+      "temperature": "hot",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Milk"
+        },
+        {
+          "quantity": 4,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "Warm coffee tinged with the faint bitterness of almond boasts a distinctive flavor.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=216s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22026",
+      "name": "Hot Hazelnut-Flavored Mocha",
+      "image": "assets/coffee/22026.png",
+      "temperature": "hot",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 1,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "Warm mocha amplifies the aroma of hazelnuts. It can attract people from far away.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=222s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22027",
+      "name": "Hot Almond-Flavored Mocha",
+      "image": "assets/coffee/22027.png",
+      "temperature": "hot",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 4,
+          "name": "Dried Nuts"
+        }
+      ],
+      "description": "Coffee, cocoa, sliced almonds. The various kinds of mouthfeel are intoxicating.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=225s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22028",
+      "name": "Hot Caramel Macchiato",
+      "image": "assets/coffee/22028.png",
+      "temperature": "hot",
+      "tags": [],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Milk"
+        },
+        {
+          "quantity": 1,
+          "name": "Spice"
+        }
+      ],
+      "description": "One of the most classic traditional coffees, very popular.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=228s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22029",
+      "name": "Hot Vanilla-Flavored Latte",
+      "image": "assets/coffee/22029.png",
+      "temperature": "hot",
+      "tags": [
+        "latte"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Milk"
+        },
+        {
+          "quantity": 4,
+          "name": "Spice"
+        }
+      ],
+      "description": "The beautiful latte art shows the maker's goodwill.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=234s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22030",
+      "name": "Maple Syrup Mocha",
+      "image": "assets/coffee/22030.png",
+      "temperature": "hot",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 4,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 1,
+          "name": "Spice"
+        }
+      ],
+      "description": "Mocha flavored with maple syrup.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=237s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    },
+    {
+      "id": "22031",
+      "name": "Hot Cinnamon-Flavored Mocha",
+      "image": "assets/coffee/22031.png",
+      "temperature": "hot",
+      "tags": [
+        "mocha"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "name": "Hot Coffee"
+        },
+        {
+          "quantity": 1,
+          "name": "Chocolate"
+        },
+        {
+          "quantity": 4,
+          "name": "Spice"
+        }
+      ],
+      "description": "Spiced coffee with a unique taste. You may adjust its strength as you please.",
+      "source": "https://www.youtube.com/watch?v=abb-Mo7R5zc&t=249s",
+      "source_refs": [
+        "coffee-video",
+        "localization"
+      ],
+      "status": "archived recipe; rarity random",
+      "buff": null,
+      "use": "Illustration collection and Organization Supply; no combat buff established by supplied source."
+    }
+  ],
+  "banners": [
+    {
+      "id": "historical-kaneki",
+      "name": "Ken Kaneki banner",
+      "status": "historical user observation",
+      "region": "unconfirmed",
+      "date": null,
+      "sequence": 1,
+      "source": "data/research/banner_tracking_seed.json",
+      "source_refs": [
+        "banner-seed"
+      ]
+    },
+    {
+      "id": "historical-juzo",
+      "name": "Green Juzo banner",
+      "status": "historical user observation",
+      "region": "unconfirmed",
+      "date": null,
+      "sequence": 2,
+      "source": "data/research/banner_tracking_seed.json",
+      "source_refs": [
+        "banner-seed"
+      ]
+    },
+    {
+      "id": "next-unknown",
+      "name": "Next after Green Juzo: unknown",
+      "status": "unknown",
+      "region": "all",
+      "date": null,
+      "sequence": 3,
+      "source": "data/research/banner_tracking_seed.json",
+      "source_refs": [
+        "banner-seed"
+      ]
+    },
+    {
+      "id": "halloween-hinami",
+      "name": "Halloween Hinami Fueguchi",
+      "status": "archived fan-database upcoming listing; current status unverified",
+      "region": "unconfirmed",
+      "date": null,
+      "source": "https://tkgbtc.com/heroes",
+      "source_refs": [
+        "banner-seed"
+      ],
+      "note": "Not evidence that this is the next banner on your server."
+    }
+  ],
+  "progression": [
+    {
+      "id": "day-1",
+      "day": 1,
+      "name": "Establish your account",
+      "actions": [
+        "Confirm region, server creation date and available event screens.",
+        "Progress Chain; preserve flexible diamonds until the exact guarantee and target are known."
+      ],
+      "status": "editorial checklist",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-3",
+      "day": 3,
+      "name": "Build one working core",
+      "actions": [
+        "Read innate passives and faction conditions before distributing resources.",
+        "Record owned units and star levels; use the roster-aware team templates."
+      ],
+      "status": "editorial checklist",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-7",
+      "day": 7,
+      "name": "Check expiring beginner events",
+      "actions": [
+        "Archived Wish Rebate used server days 1–7; check your actual timer.",
+        "Do not assume Nutcracker remains purchasable after the offer closes."
+      ],
+      "status": "historical server window; verify",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-14",
+      "day": 14,
+      "name": "Check selectors before closure",
+      "actions": [
+        "Archived novice recruitment closed after day 14.",
+        "Unlimited recruitment timing may use account age; inspect the timer rather than the calendar."
+      ],
+      "status": "historical window; account/server ambiguity",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-28",
+      "day": 28,
+      "name": "Reassess team investment",
+      "actions": [
+        "Archived sign-in guidance referenced SSR Selection Card day 28. Verify current rewards.",
+        "Prioritize useful passive unlocks over spreading stars evenly."
+      ],
+      "status": "historical reward; verify",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-45",
+      "day": 45,
+      "name": "Review current shop inventory",
+      "actions": [
+        "Raw shop-time hints at day 43 are unconfirmed. Only plan an acquisition after price and eligibility appear in your client."
+      ],
+      "status": "historical shop hint; not confirmed",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-75",
+      "day": 75,
+      "name": "Review faction upgrades",
+      "actions": [
+        "Orochi, Hideyoshi and other units had archived day-75 shop hints. Availability and affordability are unknown."
+      ],
+      "status": "historical shop hint; not confirmed",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-90",
+      "day": 90,
+      "name": "Audit recurring rewards",
+      "actions": [
+        "Recheck boss teams, daily limits and current event rules.",
+        "Compare logged results at unchanged investment before replacing the core."
+      ],
+      "status": "editorial checkpoint",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    },
+    {
+      "id": "day-120",
+      "day": 120,
+      "name": "Update the research snapshot",
+      "actions": [
+        "Reconfirm banner economics and catalog changes.",
+        "Keep historical data separate from current account evidence."
+      ],
+      "status": "editorial checkpoint",
+      "source": "data/research/stage_teams.md",
+      "source_refs": [
+        "stage-teams"
+      ],
+      "unlock_claim": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "stage-teams",
+      "name": "Archived stage and faction research",
+      "url": "data/research/stage_teams.md",
+      "date": "2026-10-19",
+      "status": "archived; current server confirmation required"
+    },
+    {
+      "id": "boss-skills",
+      "name": "Extracted boss skill text",
+      "url": "data/research/boss_skills.txt",
+      "date": "2026-09-22",
+      "status": "archived game text; encounter mapping incomplete"
+    },
+    {
+      "id": "localization",
+      "name": "English client localization",
+      "url": "data/raw/en.json",
+      "date": "2026-09-22",
+      "status": "archived game data"
+    },
+    {
+      "id": "coffee-video",
+      "name": "StillAliveGG coffee recipes",
+      "url": "https://www.youtube.com/watch?v=abb-Mo7R5zc",
+      "date": null,
+      "status": "archived creator source"
+    },
+    {
+      "id": "cell-catalog",
+      "name": "Kees LR cell catalog",
+      "url": "https://gluttony.dev/heroes/",
+      "date": "2026-10-25",
+      "status": "page reachable; full dataset unavailable via retrieval"
+    },
+    {
+      "id": "banner-seed",
+      "name": "Packaged banner observations",
+      "url": "data/research/banner_tracking_seed.json",
+      "date": "2026-10-25",
+      "status": "historical observations; dates and region unknown"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "lr-catalog",
+      "name": "Full LR catalog import",
+      "status": "blocked by missing source records",
+      "detail": "Pack reports 105 community LR cells, but imports zero complete records. Four reference leads are preserved, not counted as verified effects."
+    },
+    {
+      "id": "boss-testing",
+      "name": "Combat validation",
+      "status": "evidence required",
+      "detail": "Eight experiment dockets provided. Zero rotations independently combat-tested; no damage or solo-clear guarantees."
+    },
+    {
+      "id": "field-slots",
+      "name": "Mode-specific roster constraints",
+      "status": "conflicting archive",
+      "detail": "Research alternates four and five field units. Use candidate pools and confirm selected mode limits."
+    },
+    {
+      "id": "coffee-buffs",
+      "name": "Coffee combat bonuses",
+      "status": "not established",
+      "detail": "24 recipe cards and 32 assets are different counts. Supplied evidence supports collection and Organization Supply, not combat buffs."
+    },
+    {
+      "id": "live-banners",
+      "name": "Current store and next banner",
+      "status": "unknown",
+      "detail": "Requires current region/server-specific notices or screenshots; no future date inferred."
+    }
+  ]
+}

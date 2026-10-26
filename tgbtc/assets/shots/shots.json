@@ -1,0 +1,96 @@
+{
+  "generated": "2026-10-19",
+  "note": "Frames extracted headless with yt-dlp + ffmpeg from public YouTube videos. Credit the channel when shown. Most source streams are 480p, so frames are 854x480. The crackdown notice is from a 1080p stream scaled to 1280 wide.",
+  "shots": [
+    {
+      "file": "gvg_map_overview.jpg",
+      "mode": "Stronghold Takeover (server GvG)",
+      "source_video": "YQLYKELW5Bo",
+      "url": "https://www.youtube.com/watch?v=YQLYKELW5Bo&t=210",
+      "timestamp": "3:30",
+      "channel": "Aslan",
+      "upload_date": "2026-03-14",
+      "caption": "Stronghold Takeover hex map early in a busy war. Three organizations' territory shows as pink, cyan and purple, with attack lines running from their Initial Strongholds. The streamer webcam covers the bottom-right corner."
+    },
+    {
+      "file": "gvg_map_attack_queues.jpg",
+      "mode": "Stronghold Takeover",
+      "source_video": "dp-VgjXd4b0",
+      "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=30",
+      "timestamp": "0:30",
+      "channel": "The Spectre",
+      "upload_date": "2026-01-04",
+      "caption": "Map view with the Team Status panel (3 teams, Team 1 attacking). Flag icons give the number of queued attackers and their countdown timers. Green lines are your own org's attack routes. Two hospital special tiles sit at the right edge."
+    },
+    {
+      "file": "gvg_tier3_stronghold.jpg",
+      "mode": "Stronghold Takeover",
+      "source_video": "dp-VgjXd4b0",
+      "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=1677",
+      "timestamp": "27:57",
+      "channel": "The Spectre",
+      "upload_date": "2026-01-04",
+      "caption": "Centre of the map: the 1250-point top-tier stronghold, ringed by blocked (no-entry) tiles, with 150/75-point strongholds nearby. Team 3 has dropped to 561,028 CP after losing members, and its status is Idle."
+    },
+    {
+      "file": "gvg_garrison_defense_teams.jpg",
+      "mode": "Stronghold Takeover",
+      "source_video": "dp-VgjXd4b0",
+      "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=60",
+      "timestamp": "1:00",
+      "channel": "The Spectre",
+      "upload_date": "2026-01-04",
+      "caption": "Stronghold (28,72) info panel: Garrisoned Troops 2/10 with two stacked player defense teams (1.37M and 1.57M CP), and the banner 'Defenders of the Stronghold successfully resisted the attack'. The Withdraw Team and Reinforce Team buttons are visible."
+    },
+    {
+      "file": "gvg_battle_status_worn_defender.jpg",
+      "mode": "Stronghold Takeover",
+      "source_video": "dp-VgjXd4b0",
+      "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=540",
+      "timestamp": "9:00",
+      "channel": "The Spectre",
+      "upload_date": "2026-01-04",
+      "caption": "Battle Status: only 2 characters are left on the defense team (dead defenders do not come back between fights) against a full 1,566,311 CP attack team. The log reads 'defeated ... and successfully pierced the Defense' and '... sent Team to Garrison'."
+    },
+    {
+      "file": "gvg_team_status_reviving.jpg",
+      "mode": "Stronghold Takeover",
+      "source_video": "dp-VgjXd4b0",
+      "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=480",
+      "timestamp": "8:00",
+      "channel": "The Spectre",
+      "upload_date": "2026-01-04",
+      "caption": "Team Status mid-war: Teams 2 and 3 show 'Reviving...', each with a Quick Resurrection button (paid with diamonds or potions, and the cost climbs). The attack-attempt counter (0/11) and the stronghold-point total are at the top and bottom."
+    },
+    {
+      "file": "gvg_final_ranking.jpg",
+      "mode": "Stronghold Takeover",
+      "source_video": "dp-VgjXd4b0",
+      "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=1692",
+      "timestamp": "28:12",
+      "channel": "The Spectre",
+      "upload_date": "2026-01-04",
+      "caption": "Ranking List near the end of the war: Forced 2 Pay 12,663 pts (12 strongholds held), BR0THERH00D 8,149, Phantom 3,820. Rank rewards are shown on the right."
+    },
+    {
+      "file": "annihilation_chain_kills.jpg",
+      "mode": "Stronghold Annihilation (Saturday PvE-style org event)",
+      "source_video": "goHzAK1R-mY",
+      "url": "https://www.youtube.com/watch?v=goHzAK1R-mY&t=300",
+      "timestamp": "5:00",
+      "channel": "Aslan",
+      "upload_date": "2026-04-19",
+      "caption": "Lv.3 Stronghold 001 Battle Status: Defenders Left 6,454, with fixed 1,100,000 CP NPC defenders facing the streamer's 1,652,740 CP Anteiku team. The kill feed reads 'defeated 81 / 13 / 52 teams of defenders in a row'. Org point ranking is on the left."
+    },
+    {
+      "file": "official_crackdown_notice.jpg",
+      "mode": "In-game announcement",
+      "source_video": "6dPypcHQcC0",
+      "url": "https://www.youtube.com/watch?v=6dPypcHQcC0&t=9",
+      "timestamp": "0:09",
+      "channel": "Boss Break the Chains",
+      "upload_date": "2026-08-24",
+      "caption": "Official 'Continued Crackdown on Violations and Recent Penalties' notice. Illegally obtained resources are deducted and upgrades rolled back, listed accounts get permanent bans or 30-day suspensions, and this batch is disqualified from the season's Global Stronghold War."
+    }
+  ]
+}
