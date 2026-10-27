@@ -482,6 +482,7 @@ const P = [
  [/^(.+) · your fight$/, '$1 · sua luta', '$1 · tu pelea'],
  [/^Unlock: (.+)$/s, 'Desbloqueio: %1', 'Desbloqueo: %1'],[/^Team note from the old guide: (.+)$/s, 'Nota de equipe do guia antigo: %1', 'Nota de equipo de la guía antigua: %1'],
  [/^Attribute: (.+)$/, 'Atributo: $1', 'Atributo: $1'],
+ [/^Ability sphere for (.+)$/s, 'Esfera de habilidade de $1', 'Esfera de habilidad de $1'],
  [/^(.+) · Date not recorded$/, '$1 · data não registrada', '$1 · fecha sin registrar'],
  [/^Character · (.+)$/, 'Personagem · $1', 'Personaje · $1'],[/^Video · (.+)$/, 'Vídeo · $1', 'Video · $1'],
  [/^Import rejected: (.+)$/, 'Importação recusada: %1', 'Importación rechazada: %1'],
@@ -514,7 +515,7 @@ function tr(s) {
 }
 
 const SKIP = 'script,style,textarea,.lang-switch,.lang-offer,.uname,[data-no-i18n]';
-const ATTRS = ['placeholder', 'aria-label', 'title'];
+const ATTRS = ['placeholder', 'aria-label', 'title', 'alt'];
 const done = new WeakMap();
 function textNode(n) {
  const v = n.nodeValue; if (done.get(n) === v) return;

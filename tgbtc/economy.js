@@ -49,21 +49,24 @@
     return {startUTC:start.toISOString(),dueUTC:new Date(start.getTime()+48*60*60*1000).toISOString()};
   }
   const defaults = {
-    region:'Unconfirmed',currency:'USD',budget:'0',springStake:'',springPayout:'',springStart:'',springSource:'',springDate:'',
+    region:'',currency:'USD',budget:'0',springStake:'',springPayout:'',springStart:'',springSource:'',springDate:'',
     pullCost:'',threshold:'',pullsDone:'0',balance:'0',tickets:'0',rate:'',chancePulls:'',pityConfirmed:false,pitySource:'',pityDate:'',
     forecastBalance:'0',dailyIncome:'',target:'',
-    offerAName:'Offer A',offerAPrice:'',offerADiamonds:'',offerATickets:'0',offerATicketValue:'0',offerADays:'1',offerACap:'1',offerAQuantity:'0',offerASource:'',offerADate:'',offerARegion:'Unconfirmed',offerARecurring:false,
-    offerBName:'Offer B',offerBPrice:'',offerBDiamonds:'',offerBTickets:'0',offerBTicketValue:'0',offerBDays:'1',offerBCap:'1',offerBQuantity:'0',offerBSource:'',offerBDate:'',offerBRegion:'Unconfirmed',offerBRecurring:false
+    offerAName:'',offerAPrice:'',offerADiamonds:'',offerATickets:'0',offerATicketValue:'0',offerADays:'1',offerACap:'1',offerAQuantity:'0',offerASource:'',offerADate:'',offerARegion:'',offerARecurring:false,
+    offerBName:'',offerBPrice:'',offerBDiamonds:'',offerBTickets:'0',offerBTicketValue:'0',offerBDays:'1',offerBCap:'1',offerBQuantity:'0',offerBSource:'',offerBDate:'',offerBRegion:'',offerBRecurring:false
   };
+  // Old builds stored English placeholder words as values; they now mean "not entered" (an empty field with a translated placeholder).
+  const PLACEHOLDER_VALUES = ['Unspecified','Unconfirmed','Offer A','Offer B'];
+  const blankIfPlaceholder = v => PLACEHOLDER_VALUES.includes(v.trim()) ? '' : v;
   function readStored(profile) {
     const state = Object.assign({},defaults);
-    if(profile && typeof profile.region==='string') state.region=profile.region;
+    if(profile && typeof profile.region==='string') state.region=blankIfPlaceholder(profile.region);
     try {
       const stored=JSON.parse(localStorage.getItem(STORAGE)||'null');
       if(stored && stored.version===1 && stored.values && typeof stored.values==='object') {
         for(const key of Object.keys(defaults)) {
           const value=stored.values[key];
-          if(typeof defaults[key]==='boolean' ? typeof value==='boolean' : typeof value==='string' && value.length<2000) state[key]=value;
+          if(typeof defaults[key]==='boolean' ? typeof value==='boolean' : typeof value==='string' && value.length<2000) state[key]=/Region$|^region$|Name$/.test(key)?blankIfPlaceholder(value):value;
         }
       }
     } catch (_) { /* Corrupt or unavailable storage must not stop calculators. */ }
@@ -78,9 +81,11 @@
     const append=(parent,...children)=>{children.forEach(c=>parent.append(c));return parent;};
     // In Portuguese and Spanish, numbers follow that language (90.000; US$4,99), whatever the browser locale is.
     const L=(typeof window!=='undefined'&&window.TGI18N)?window.TGI18N.lang:'en',LOC=L==='pt'?'pt-BR':L==='es'?'es':undefined;
+    // Spanish Intl leaves 4-digit numbers ungrouped (1767,83); the guide text groups them (1.767,83), so grouping is forced.
+    const NF=(o)=>{try{return new Intl.NumberFormat(LOC,LOC?Object.assign({useGrouping:'always'},o):o);}catch(_){return new Intl.NumberFormat(LOC,o);}};
     const money=n=>{const cur=['USD','EUR','JPY'].includes(values.currency)?values.currency:'USD';
-      return LOC&&cur==='USD'?(n<0?'-':'')+'US$'+new Intl.NumberFormat(LOC,{minimumFractionDigits:2,maximumFractionDigits:2}).format(Math.abs(n)):new Intl.NumberFormat(LOC,{style:'currency',currency:cur}).format(n);};
-    const fmt=n=>new Intl.NumberFormat(LOC,{maximumFractionDigits:2}).format(n);
+      return LOC&&cur==='USD'?(n<0?'-':'')+'US$'+NF({minimumFractionDigits:2,maximumFractionDigits:2}).format(Math.abs(n)):NF({style:'currency',currency:cur}).format(n);};
+    const fmt=n=>NF({maximumFractionDigits:2}).format(n);
     const clear=n=>n.replaceChildren();
     const info=(parent,text)=>{const d=el('details',undefined,'more');d.append(el('summary','More details'),el('p',text,'muted'));parent.append(d);};
     const panel=(title,intro,extra)=>{const p=el('section',undefined,'panel economy-panel');p.append(el('h2',title,'section-title'));if(intro)p.append(el('p',intro,'muted'));if(extra)info(p,extra);container.append(p);return p;};
@@ -111,7 +116,7 @@
     container.replaceChildren();
     const head=panel('Spend with a plan','These tools only calculate what you enter. Spending nothing is a fine plan.','They do not know your current shop, payout table, banner rules or live prices.');
     const settings=fields(head);
-    field(settings,'region','Your server / region','text',{maxlength:'80'});
+    field(settings,'region','Your server / region','text',{maxlength:'80',placeholder:'Region not set'});
     select(settings,'currency','Cash currency (no conversion)',[['USD','USD'],['EUR','EUR'],['JPY','JPY']]);
     field(settings,'budget','Optional cash budget','number');
     const presets=el('div',undefined,'economy-presets');
@@ -133,7 +138,7 @@
     const packResults={};
     for(const p of ['offerA','offerB']){
       const box=el('section',undefined,'panel');packsPanel.append(box);box.append(el('h3',p==='offerA'?'Offer A':'Offer B'));
-      const fs=fields(box);field(fs,p+'Name','Offer name','text',{maxlength:'100'});field(fs,p+'Price','Cash price');field(fs,p+'Diamonds','Total collectible diamonds');field(fs,p+'Tickets','Eligible tickets','number',{step:'1'});field(fs,p+'TicketValue','Diamonds you count per ticket');field(fs,p+'Days','Days to collect total rewards','number',{step:'1',min:'1'});field(fs,p+'Cap','Purchase cap for this window','number',{step:'1',min:'1'});field(fs,p+'Quantity','Copies in your plan','number',{step:'1'});field(fs,p+'Region','Server or region','text',{maxlength:'80'});field(box,p+'Recurring','Recurring / subscription (price entered is one billing period)','checkbox');observed(box,p);packResults[p]=result(box);
+      const fs=fields(box);field(fs,p+'Name','Offer name','text',{maxlength:'100',placeholder:p==='offerA'?'Offer A':'Offer B'});field(fs,p+'Price','Cash price');field(fs,p+'Diamonds','Total collectible diamonds');field(fs,p+'Tickets','Eligible tickets','number',{step:'1'});field(fs,p+'TicketValue','Diamonds you count per ticket');field(fs,p+'Days','Days to collect total rewards','number',{step:'1',min:'1'});field(fs,p+'Cap','Purchase cap for this window','number',{step:'1',min:'1'});field(fs,p+'Quantity','Copies in your plan','number',{step:'1'});field(fs,p+'Region','Server or region','text',{maxlength:'80',placeholder:'Region not set'});field(box,p+'Recurring','Recurring / subscription (price entered is one billing period)','checkbox');observed(box,p);packResults[p]=result(box);
     }
     const packSummary=result(packsPanel);
     info(packsPanel,'Diamond-equivalent utility is your assumption, not an exchange guarantee. A recurring plan here counts only the entered number of billing periods; it does not cancel automatically. Uncollected daily rewards reduce actual value. First-purchase bonuses and caps must be included from your game screen.');
@@ -142,7 +147,7 @@
     const controls=el('div',undefined,'economy-controls');
     const reset=el('button','Clear calculator observations','button');reset.type='button';reset.addEventListener('click',()=>{try{localStorage.removeItem(STORAGE);}catch(_){}values=Object.assign({},defaults);for(const [k,input]of Object.entries(inputs)){if(input.type==='checkbox')input.checked=values[k];else input.value=values[k];}update();});controls.append(reset);container.append(controls);
     function update(){
-      output(storageStatus,disabledStorage?'Browser storage is unavailable; calculations still work, but observations are not saved.':'Observations stay in this browser. Region: '+(!values.region||values.region==='Unspecified'?'not set':values.region)+'. Use Clear calculator observations to delete them.');
+      output(storageStatus,disabledStorage?'Browser storage is unavailable; calculations still work, but observations are not saved.':'Observations stay in this browser. Region: '+(!values.region.trim()?'not set':values.region.trim())+'. Use Clear calculator observations to delete them.');
       if(values.springStake===''&&values.springPayout==='')output(springResult,'Enter both numbers from your game to see the net return.');
       else try{const r=spring(values.springStake,values.springPayout);output(springResult,(r.net>=0?'+':'')+fmt(r.net)+' diamonds · '+r.roi.toFixed(2)+'% return per 48-hour cycle.');}catch(e){output(springResult,e.message,true);}
       if(!values.springStart)output(timerResult,'No stake start time saved.');else try{const t=maturity(values.springStart),due=new Date(t.dueUTC);output(timerResult,'48-hour mark: '+due.toLocaleString()+' (UTC: '+t.dueUTC+'). '+(Date.now()>=due.getTime()?'Time is up. Collect it in the game.':'Check the collection rules in the game.'));}catch(e){output(timerResult,e.message,true);}
