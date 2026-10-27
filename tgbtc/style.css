@@ -102,3 +102,27 @@ details.more>summary{font-size:17px}
 .faction-card{border-top:3px solid var(--gold)}.faction-card .no-team{margin-top:14px}
 .best-row .row-label a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
 .order-kind{font-size:15px;color:var(--gold);font-weight:700;margin:6px 0 4px}
+/* Round 7: Meta teams picker, fight list, challenge catalog, recommender */
+.guide-tiles{margin-bottom:10px}
+.faction-picker{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:8px 0 22px;max-width:860px}
+.faction-pick{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);min-height:44px;font-size:17px;font-weight:700;text-align:center}
+.faction-pick img,.faction-pick .missing{width:72px;height:72px;object-fit:contain;border-radius:50%;background:radial-gradient(ellipse at bottom,#51304780,transparent 75%)}
+.faction-pick:hover{border-color:var(--red)}.faction-pick.on{border-color:var(--red);background:#2a1a26;box-shadow:inset 0 -3px 0 var(--red)}
+.faction-view{max-width:980px}.faction-view>h2{margin-top:10px}
+.team-slot{margin:14px 0 4px;padding-top:8px;border-top:1px solid var(--line)}.team-slot .team-row{margin-top:2px;padding-top:0;border-top:0}
+.kind-label{font-size:15px;font-weight:700;margin:6px 0 0;color:var(--cyan)}.kind-label.derived{color:var(--gold)}
+.slot-where{font-size:15px;color:var(--muted);margin:10px 0 0;text-transform:uppercase;letter-spacing:1px}
+.meta-group{font-size:19px;margin:22px 0 6px;color:var(--ink)}
+.meta-items details.meta-item{margin:8px 0;padding:12px 15px}
+.meta-item>summary{font-size:17px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.meta-item>summary .tag{margin:0;font-size:15px}
+.meta-title{font-weight:700}.meta-tip{font-size:17px;color:#c9cdd8;margin:12px 0 6px}
+.meta-links{margin:24px 0 8px}.challenge .rule{margin:12px 0 4px;font-size:17px}.plan h3{margin:16px 0 6px}
+ol.attack-order{padding-left:24px;line-height:1.6;font-size:17px}ol.attack-order li{margin-bottom:6px}
+.watch a{font-size:17px}
+.rec-type{display:flex;gap:10px;align-items:end;max-width:720px}.rec-type .field{flex:1;margin:0}
+.own-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;margin:12px 0}
+.own-pick{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;border:1px solid var(--line);border-radius:8px;background:#10141e;color:var(--ink);font-size:15px;text-align:center;cursor:pointer;margin:0}
+.own-pick img,.own-pick .missing{width:60px;height:60px;object-fit:contain;border-radius:50%}.own-pick:has(input:checked){border-color:var(--cyan);background:#16262c}
+.rec-results{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:980px}.rec{padding:16px}.rec-head{font-size:17px;margin:0 0 4px}.rec-count{font-size:15px;color:var(--cyan);margin:0 0 8px;font-weight:700}
+.units.mini .unit.miss{opacity:.45;border-style:dashed}.units.mini .unit.have{border-color:#35565d}.swap{color:var(--gold)}
+@media(max-width:540px){.faction-picker{gap:6px}.faction-pick{padding:10px 2px;font-size:15px}.faction-pick img,.faction-pick .missing{width:48px;height:48px}.rec-type{flex-direction:column;align-items:stretch}.own-grid{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}}
