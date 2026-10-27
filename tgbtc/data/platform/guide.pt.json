@@ -145,7 +145,7 @@
    "step": "Gaste dinheiro real só dentro de uma janela de rebate.",
    "more": [
     "Uma janela de rebate faz cada compra render duas vezes. A melhor é o Diamond Rebate, dias 34–55 do servidor.",
-    "Nunca compre Diamonds avulsos: você recebe só 80 por $1."
+    "Nunca compre Diamonds avulsos: você recebe só 80 por US$1."
    ],
    "link": [
     "Veja o que comprar",
@@ -1700,7 +1700,7 @@
      }
     }
    ],
-   "none": "Nenhuma equipe Anteiku free-to-play nas fontes: o artigo de 19 de outubro diz que as unidades Anteiku grátis sozinhas não formam uma equipe de verdade (Enji é grátis; Toka [Rabbit] vem de um pacote pago para novos jogadores). Equipes meta › Anteiku › Starter monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado)."
+   "none": "Nenhuma equipe Anteiku free-to-play nas fontes: o artigo de 19 de outubro diz que as unidades Anteiku grátis sozinhas não formam uma equipe de verdade (Enji é grátis; Toka [Rabbit] vem de um pacote pago para novos jogadores). Equipes meta › Anteiku › Inicial monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado)."
   },
   {
    "id": "ccg",
@@ -1739,7 +1739,7 @@
      }
     }
    ],
-   "none": "Nenhuma equipe CCG free-to-play nas fontes: o artigo de 19 de outubro diz que Kureo mais uma unidade CCG não é uma equipe de verdade. Equipes meta › CCG › Starter monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado)."
+   "none": "Nenhuma equipe CCG free-to-play nas fontes: o artigo de 19 de outubro diz que Kureo mais uma unidade CCG não é uma equipe de verdade. Equipes meta › CCG › Inicial monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado)."
   }
  ],
  "derived_label": "(deduzido das habilidades — não testado)",
@@ -1797,7 +1797,7 @@
     ],
     "why": [
      "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-     "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+     "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
      "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
     ],
     "team_kind": "derived",
@@ -1818,7 +1818,7 @@
     "backup": true,
     "covers": []
    },
-   "budget_note": "Nenhuma equipe CCG free-to-play nas fontes: o artigo de 19 de outubro diz que Kureo mais uma unidade CCG não é uma equipe de verdade. Equipes meta › CCG › Starter monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado).",
+   "budget_note": "Nenhuma equipe CCG free-to-play nas fontes: o artigo de 19 de outubro diz que Kureo mais uma unidade CCG não é uma equipe de verdade. Equipes meta › CCG › Inicial monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado).",
    "icon": "1102",
    "items": [
     {
@@ -1838,7 +1838,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -2155,7 +2155,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -2572,7 +2572,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -3054,8 +3054,8 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "mid": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres.",
-      "endgame": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres."
+      "mid": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres.",
+      "endgame": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres."
      }
     },
     {
@@ -3243,7 +3243,7 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "starter": "Starter e Mid: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
+      "starter": "Inicial e Intermediário: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
      }
     },
     {
@@ -3263,7 +3263,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -3477,7 +3477,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -3690,7 +3690,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -3903,7 +3903,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -4116,7 +4116,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -4329,7 +4329,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -4542,7 +4542,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -4755,7 +4755,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -4979,7 +4979,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -5277,7 +5277,7 @@
     },
     {
      "id": "trial",
-     "group": "Trials",
+     "group": "Provas",
      "title": "Tower Trials: trial CCG",
      "tip": "Só unidades CCG podem entrar neste desafio.",
      "rows": [
@@ -5292,7 +5292,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -5505,7 +5505,7 @@
        ],
        "why": [
         "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+        "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -5681,7 +5681,7 @@
     {
      "id": "mid",
      "name": "Mid",
-     "blurb": "Equipes Starter melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
+     "blurb": "Equipes do nível Inicial melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
      "rows": [
       {
        "label": "Loja do dia 75",
@@ -5792,7 +5792,7 @@
         "1170"
        ],
        "why": [
-        "Urie e Mitsuki vêm do pool grátis nos seus primeiros 14 dias (pulls aleatórios); o resto são as unidades Starter de loja.",
+        "Urie e Mitsuki vêm do pool grátis nos seus primeiros 14 dias (pulls aleatórios); o resto são as unidades de loja do nível Inicial.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -6322,7 +6322,7 @@
         "1036"
        ],
        "why": [
-        "Hideyoshi é unidade da loja do dia 75 (não confirmado); o resto é a equipe Starter grátis. As notas de pesquisa listam ele como melhoria do dia 75 (stage_teams.md, seção 2).",
+        "Hideyoshi é unidade da loja do dia 75 (não confirmado); o resto é a equipe Inicial grátis. As notas de pesquisa listam ele como melhoria do dia 75 (stage_teams.md, seção 2).",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -6735,7 +6735,7 @@
         "1036"
        ],
        "why": [
-        "Hideyoshi é unidade da loja do dia 75 (não confirmado); o resto é a equipe Starter grátis. As notas de pesquisa listam ele como melhoria do dia 75 (stage_teams.md, seção 2).",
+        "Hideyoshi é unidade da loja do dia 75 (não confirmado); o resto é a equipe Inicial grátis. As notas de pesquisa listam ele como melhoria do dia 75 (stage_teams.md, seção 2).",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -7613,8 +7613,8 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "mid": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres.",
-      "endgame": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres."
+      "mid": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres.",
+      "endgame": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres."
      }
     },
     {
@@ -7771,7 +7771,7 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "starter": "Starter e Mid: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
+      "starter": "Inicial e Intermediário: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
      }
     },
     {
@@ -10552,7 +10552,7 @@
     },
     {
      "id": "trial",
-     "group": "Trials",
+     "group": "Provas",
      "title": "Tower Trials: trial No Org",
      "tip": "Só unidades No Org podem entrar neste desafio.",
      "rows": [
@@ -11109,7 +11109,7 @@
     {
      "id": "mid",
      "name": "Mid",
-     "blurb": "Equipes Starter melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
+     "blurb": "Equipes do nível Inicial melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
      "rows": [
       {
        "label": "Hideyoshi",
@@ -11121,7 +11121,7 @@
         "1036"
        ],
        "why": [
-        "Hideyoshi é unidade da loja do dia 75 (não confirmado); o resto é a equipe Starter grátis. As notas de pesquisa listam ele como melhoria do dia 75 (stage_teams.md, seção 2).",
+        "Hideyoshi é unidade da loja do dia 75 (não confirmado); o resto é a equipe Inicial grátis. As notas de pesquisa listam ele como melhoria do dia 75 (stage_teams.md, seção 2).",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -11730,7 +11730,7 @@
     "backup": true,
     "covers": []
    },
-   "budget_note": "Nenhuma equipe Anteiku free-to-play nas fontes: o artigo de 19 de outubro diz que as unidades Anteiku grátis sozinhas não formam uma equipe de verdade (Enji é grátis; Toka [Rabbit] vem de um pacote pago para novos jogadores). Equipes meta › Anteiku › Starter monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado).",
+   "budget_note": "Nenhuma equipe Anteiku free-to-play nas fontes: o artigo de 19 de outubro diz que as unidades Anteiku grátis sozinhas não formam uma equipe de verdade (Enji é grátis; Toka [Rabbit] vem de um pacote pago para novos jogadores). Equipes meta › Anteiku › Inicial monta equipes com as unidades grátis e de loja (deduzido das habilidades — não testado).",
    "icon": "1178",
    "items": [
     {
@@ -11849,7 +11849,7 @@
         "1036"
        ],
        "why": [
-        "Yoshimura [Readiness] é unidade da loja do dia 75 (não confirmado); o resto é a equipe Starter de loja.",
+        "Yoshimura [Readiness] é unidade da loja do dia 75 (não confirmado); o resto é a equipe Inicial de loja.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -12168,7 +12168,7 @@
         "1036"
        ],
        "why": [
-        "Yoshimura [Readiness] é unidade da loja do dia 75 (não confirmado); o resto é a equipe Starter de loja.",
+        "Yoshimura [Readiness] é unidade da loja do dia 75 (não confirmado); o resto é a equipe Inicial de loja.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -12971,8 +12971,8 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "mid": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres.",
-      "endgame": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres."
+      "mid": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres.",
+      "endgame": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres."
      }
     },
     {
@@ -13161,7 +13161,7 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "starter": "Starter e Mid: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
+      "starter": "Inicial e Intermediário: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
      }
     },
     {
@@ -15093,7 +15093,7 @@
     },
     {
      "id": "trial",
-     "group": "Trials",
+     "group": "Provas",
      "title": "Tower Trials: trial Anteiku",
      "tip": "Só unidades Anteiku podem entrar neste desafio.",
      "rows": [
@@ -15603,7 +15603,7 @@
     {
      "id": "mid",
      "name": "Mid",
-     "blurb": "Equipes Starter melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
+     "blurb": "Equipes do nível Inicial melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
      "rows": [
       {
        "label": "Yoshimura",
@@ -15615,7 +15615,7 @@
         "1036"
        ],
        "why": [
-        "Yoshimura [Readiness] é unidade da loja do dia 75 (não confirmado); o resto é a equipe Starter de loja.",
+        "Yoshimura [Readiness] é unidade da loja do dia 75 (não confirmado); o resto é a equipe Inicial de loja.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -16224,7 +16224,7 @@
         "1036"
        ],
        "why": [
-        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Starter.",
+        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Inicial.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -16516,7 +16516,7 @@
         "1036"
        ],
        "why": [
-        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Starter.",
+        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Inicial.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -17032,7 +17032,7 @@
         "1136"
        ],
        "why": [
-        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Starter.",
+        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Inicial.",
         "A partir do dia 43, Kiyoko no back-up dá a todos os aliados +40% de atributos no Stronghold Takeover (notas de pesquisa, seção A6, para a equipe forte grátis). Usá-la com esta equipe é decisão nossa.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
@@ -17273,8 +17273,8 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "mid": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres.",
-      "endgame": "Mid e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades Starter reservas para os tiles livres."
+      "mid": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres.",
+      "endgame": "Intermediário e Endgame: a mesma ideia. Guarde as unidades novas para a sua equipe forte e mande as unidades reservas do nível Inicial para os tiles livres."
      }
     },
     {
@@ -17463,7 +17463,7 @@
      "card": "guild-war",
      "extra": null,
      "tier_notes": {
-      "starter": "Starter e Mid: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
+      "starter": "Inicial e Intermediário: sua equipe forte é a sua muralha. Monte uma muralha só se a sua organização pedir. (dica de guild)"
      }
     },
     {
@@ -19187,7 +19187,7 @@
     },
     {
      "id": "trial",
-     "group": "Trials",
+     "group": "Provas",
      "title": "Tower Trials: trial Aogiri",
      "tip": "Só unidades Aogiri podem entrar neste desafio.",
      "rows": [
@@ -19521,7 +19521,7 @@
     {
      "id": "mid",
      "name": "Mid",
-     "blurb": "Equipes Starter melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
+     "blurb": "Equipes do nível Inicial melhoradas 1–2 unidades por vez: pool do gacha, loja do dia 75 ou um pacote barato.",
      "rows": [
       {
        "label": "Black Rabbit",
@@ -19533,7 +19533,7 @@
         "1036"
        ],
        "why": [
-        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Starter.",
+        "Black Rabbit é unidade da loja do dia 75 (não confirmado); todo o resto vem da equipe Inicial.",
         "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
        ],
        "team_kind": "derived",
@@ -20012,7 +20012,7 @@
    "title": "Tower Trials: trial No Org",
    "rule": "Só unidades No Org podem entrar.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Melhor: formação No Org",
@@ -20230,7 +20230,7 @@
    "title": "Tower Trials: trial Aogiri",
    "rule": "Só unidades Aogiri podem entrar.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Loja do dia 43",
@@ -20419,7 +20419,7 @@
    "title": "Tower Trials: trial Anteiku",
    "rule": "Só unidades Anteiku podem entrar.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Grátis",
@@ -20627,7 +20627,7 @@
    "title": "Tower Trials: trial CCG",
    "rule": "Só unidades CCG podem entrar.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Grátis",
@@ -20640,7 +20640,7 @@
      ],
      "why": [
       "Kureo é presente de login. Iwao, Juzo [Scorpion], Shinohara [Rampage] e Yoshitoki são unidades de loja (dia 43; não confirmado).",
-      "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Mid.",
+      "Tudo CCG, então Juzo [Scorpion] dá a todos os aliados +20% de ATK. Urie (a escolha das notas de pesquisa para Centipede) sai num pull aleatório do pool, então ele fica para o Intermediário.",
       "(deduzido das habilidades — não testado) Nenhuma fonte traz esta equipe; ela foi montada a partir do texto das skills das unidades."
      ],
      "team_kind": "derived",
@@ -20841,7 +20841,7 @@
    "title": "Tower Trials: trial :re",
    "rule": "Só unidades :re podem entrar.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Só :re",
@@ -20888,7 +20888,7 @@
    "title": "Tower Trials: trial STR",
    "rule": "Só unidades STR, mais qualquer unidade PSY, WIT ou DST.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Equipe STR",
@@ -20934,7 +20934,7 @@
    "title": "Tower Trials: trial SKL",
    "rule": "Só unidades SKL, mais qualquer unidade PSY, WIT ou DST.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Equipe econômica",
@@ -20978,7 +20978,7 @@
    "title": "Tower Trials: trial SPD",
    "rule": "Só unidades SPD, mais qualquer unidade PSY, WIT ou DST.",
    "rule_source": "texto do jogo Tower_RuleDesc_1_1",
-   "group": "Trials",
+   "group": "Provas",
    "rows": [
     {
      "label": "Equipe econômica",

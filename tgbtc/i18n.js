@@ -37,7 +37,13 @@ const T = [
 ['Faction','Facção','Facción'],['All factions','Todas as facções','Todas las facciones'],['All','Todas','Todas'],['Show','Mostrar','Mostrar'],
 ['Banners','Banners','Banners'],['Banners →','Banners →','Banners →'],['Best teams →','Melhores equipes →','Mejores equipos →'],
 ['Unknown','Desconhecido','Desconocido'],['Delete','Excluir','Borrar'],
-['Game text on this page is in English (copied from the game files).','O texto do jogo nesta página está em inglês (copiado dos arquivos do jogo).','El texto del juego en esta página está en inglés (copiado de los archivos del juego).'],
+['Skill text on this page is in English, copied from the game files. Everything else is translated.','O texto das skills nesta página está em inglês, copiado dos arquivos do jogo. Todo o resto está traduzido.','El texto de las habilidades en esta página está en inglés, copiado de los archivos del juego. Todo lo demás está traducido.'],
+['Star upgrade text on this page is in English, copied from the game files. Everything else is translated.','O texto das melhorias de estrela nesta página está em inglês, copiado dos arquivos do jogo. Todo o resto está traduzido.','El texto de las mejoras de estrella en esta página está en inglés, copiado de los archivos del juego. Todo lo demás está traducido.'],
+['Boss skill names and skill text are in English, copied from the game files. The plan and the fight log are translated.','Os nomes e textos das skills dos chefes estão em inglês, copiados dos arquivos do jogo. O plano e o registro de luta estão traduzidos.','Los nombres y textos de las habilidades de los jefes están en inglés, copiados de los archivos del juego. El plan y el registro de pelea están traducidos.'],
+['Cell names and effects are in English, copied from the game files. Everything else is translated.','Os nomes e efeitos das cells estão em inglês, copiados dos arquivos do jogo. Todo o resto está traduzido.','Los nombres y efectos de las cells están en inglés, copiados de los archivos del juego. Todo lo demás está traducido.'],
+['Recipe names, ingredients and descriptions are in English, copied from the game files. Everything else is translated.','Os nomes, ingredientes e descrições das receitas estão em inglês, copiados dos arquivos do jogo. Todo o resto está traduzido.','Los nombres, ingredientes y descripciones de las recetas están en inglés, copiados de los archivos del juego. Todo lo demás está traducido.'],
+['Video titles are shown as their creators wrote them. The summaries are translated.','Os títulos dos vídeos aparecem como os criadores escreveram. Os resumos estão traduzidos.','Los títulos de los videos aparecen como los escribieron sus creadores. Los resúmenes están traducidos.'],
+
 // home
 ['Know your roster.','Conheça seus personagens.','Conoce a tus personajes.'],['Break the chains.','Quebre as correntes.','Rompe las cadenas.'],
 ['A guide for every player: what to do first, which teams to build and what to buy.','Um guia para todo jogador: o que fazer primeiro, quais equipes montar e o que comprar.','Una guía para cada jugador: qué hacer primero, qué equipos armar y qué comprar.'],
@@ -152,7 +158,7 @@ const T = [
 ['Mark as owned','Marcar como meu','Marcar como mío'],['This character is not released yet.','Este personagem ainda não foi lançado.','Este personaje aún no ha salido.'],
 ['★ Favorited','★ Favorito','★ Favorito'],['☆ Favorite','☆ Favoritar','☆ Favorito'],['CHARACTER','PERSONAGEM','PERSONAJE'],
 ['Attribute unknown','Atributo desconhecido','Atributo desconocido'],['Your star level','Seu nível de estrelas','Tu nivel de estrellas'],
-['Character sections','Seções do personagem','Secciones del personaje'],['Overview','Resumo','Resumen'],['Build','Build','Build'],
+['Character sections','Seções do personagem','Secciones del personaje'],['Overview','Resumo','Resumen'],['Build','Melhorias','Mejoras'],
 ['How to obtain','Como obter','Cómo obtener'],['Videos','Vídeos','Videos'],['Skills & passives','Habilidades e passivas','Habilidades y pasivas'],
 ['Game data, September 22, 2026','Dados do jogo, 22 de setembro de 2026','Datos del juego, 22 de septiembre de 2026'],
 ['Active skill · levels & 6★ change','Habilidade ativa · níveis e mudança no 6★','Habilidad activa · niveles y cambio en 6★'],
@@ -176,7 +182,7 @@ const T = [
 ['Unknown: check in game','Desconhecido: confira no jogo','Desconocido: revisa en el juego'],
 ['Check your game: these routes may differ on your server.','Confira no seu jogo: estas rotas podem ser diferentes no seu servidor.','Revisa tu juego: estas vías pueden ser distintas en tu servidor.'],
 ['No route is confirmed for your server yet. Check the shop, banners and events in game.','Nenhuma rota confirmada para o seu servidor ainda. Confira a loja, os banners e os eventos no jogo.','Aún no hay una vía confirmada para tu servidor. Revisa la tienda, los banners y los eventos en el juego.'],
-['Routes with no data yet','Rotas ainda sem dados','Vías aún sin datos'],['Notes from the old guide','Notas do guia antigo (em inglês)','Notas de la guía antigua (en inglés)'],
+['Routes with no data yet','Rotas ainda sem dados','Vías aún sin datos'],['Notes from the old guide','Notas do guia antigo','Notas de la guía antigua'],
 ['The old guide has no note on how to get this character.','O guia antigo não tem nota sobre como conseguir este personagem.','La guía antigua no tiene notas sobre cómo conseguir este personaje.'],
 ['Open team builder','Abrir montador de equipes','Abrir creador de equipos'],
 ['These videos match the name in their title or topic. They may cover a different version.','Estes vídeos têm o nome no título ou no tema. Podem tratar de outra versão.','Estos videos tienen el nombre en su título o tema. Pueden tratar otra versión.'],
@@ -415,6 +421,9 @@ const T = [
 ['Assumed diamond value per ticket','Valor presumido em Diamonds por ticket','Valor supuesto en Diamonds por ticket'],['Collection days','Dias de coleta','Días de recogida'],['Purchase cap','Limite de compras','Límite de compras'],
 ['Current balance','Saldo atual','Saldo actual'],['Net daily income','Renda diária líquida','Ingresos diarios netos'],['Target','Meta','Objetivo'],['Planned copies','Cópias planejadas','Copias planeadas'],['Cash budget','Orçamento em dinheiro','Presupuesto en dinero'],
 // language offer
+// level tabs and page labels (round 13)
+['Starter','Inicial','Inicial'],['Mid','Intermediário','Intermedio'],['Endgame','Endgame','Endgame'],['Trials','Provas','Pruebas'],
+['unknown','desconhecido','desconocido'],
 ['Language','Idioma','Idioma'],
 ];
 const COL = {pt: 1, es: 2};
@@ -434,7 +443,7 @@ const P = [
  [/^Tokyo Ghoul · (.+)$/, 'Tokyo Ghoul · %1', 'Tokyo Ghoul · %1'],
  [/^Source: (.+)$/s, 'Fonte: $1', 'Fuente: $1'],
  [/^Source of the tags: (.+)$/s, 'Fonte das etiquetas: $1', 'Fuente de las etiquetas: $1'],
- [/^Date: (.+)$/, 'Data: $1', 'Fecha: $1'],[/^Region: (.+)$/, 'Região: $1', 'Región: $1'],
+ [/^Date: (.+)$/, 'Data: $1', 'Fecha: $1'],[/^Region: (.+)$/, 'Região: %1', 'Región: %1'],
  [/^(.+) · day (\d+) · (\d+) owned →$/, '%1 · dia $2 · $3 na coleção →', '%1 · día $2 · $3 en tu colección →'],
  [/^Your server: (.+) · day (\d+)\.$/, 'Seu servidor: %1 · dia $2.', 'Tu servidor: %1 · día $2.'],
  [/^Day (\d+) · (.+)$/, 'Dia $1 · %2', 'Día $1 · %2'],[/^DAY (\d+)$/, 'DIA $1', 'DÍA $1'],
@@ -456,7 +465,7 @@ const P = [
  [/^Watch: (.+) ↗$/s, 'Assistir: $1 ↗', 'Ver: $1 ↗'],
  [/^Nobody has tested this order in a fight\. (.+)$/s, 'Ninguém testou esta ordem numa luta. $1', 'Nadie ha probado este orden en una pelea. $1'],
  [/^Prices as of (.+)\.$/, 'Preços de $1.', 'Precios del $1.'],
- [/^How to get: (.+?) \((Starter|Mid|Endgame)\)(?:\. Window over\? (.+))?$/s, m => pick('Como conseguir: ', 'Cómo conseguir: ') + m[1] + ' (' + m[2] + ')' + (m[3] ? pick('. Janela encerrada? ', '. ¿Ventana cerrada? ') + m[3] : '')],
+ [/^How to get: (.+?) \((Starter|Mid|Endgame)\)(?:\. Window over\? (.+))?$/s, m => pick('Como conseguir: ', 'Cómo conseguir: ') + m[1] + ' (' + tr(m[2]) + ')' + (m[3] ? pick('. Janela encerrada? ', '. ¿Ventana cerrada? ') + m[3] : '')],
  [/^How to get: (.+)$/s, 'Como conseguir: $1', 'Cómo conseguir: $1'],[/^How to get it: (.+)$/s, 'Como conseguir: %1', 'Cómo conseguir: %1'],
  [/^From the tier list: (.+)$/s, 'Pela tier list: $1', 'Según la tier list: $1'],
  [/^At 0★ and at full stars \(([SABCD])\), (.+)\.$/, m => pick('Com 0★ e com estrelas máximas (', 'Con 0★ y con estrellas máximas (') + m[1] + '), ' + adv(m[2]) + '.'],
@@ -467,9 +476,11 @@ const P = [
  [/^(.+) — source URL unavailable$/, '$1 — link da fonte indisponível', '$1 — enlace de la fuente no disponible'],
  [/^Field faction counts: (.+)$/, 'Facções em campo: %1', 'Facciones en el campo: %1'],
  [/^Missing from your recorded collection: (.+)$/s, 'Fora da sua coleção registrada: %1', 'Fuera de tu colección registrada: %1'],
- [/^When: (.+)$/s, 'Quando: $1', 'Cuándo: $1'],[/^Uses: (.+)$/, 'Usa: $1', 'Usa: $1'],
+ [/^1 character has no portrait yet and shows a placeholder instead: (.+) \(not released; the game files have no art for it\)\.$/, '1 personagem ainda não tem retrato e mostra um marcador no lugar: $1 (não lançado; os arquivos do jogo não têm arte para ele).', '1 personaje aún no tiene retrato y muestra un marcador en su lugar: $1 (no lanzado; los archivos del juego no tienen arte para él).'],
+ [/^(\d+) characters have no portrait yet and show a placeholder instead\.$/, '$1 personagens ainda não têm retrato e mostram um marcador no lugar.', '$1 personajes aún no tienen retrato y muestran un marcador en su lugar.'],
+ [/^When: (.+)$/s, 'Quando: %1', 'Cuándo: %1'],[/^Uses: (.+)$/, 'Usa: $1', 'Usa: $1'],
  [/^(.+) · your fight$/, '$1 · sua luta', '$1 · tu pelea'],
- [/^Unlock: (.+)$/s, 'Desbloqueio: $1', 'Desbloqueo: $1'],[/^Team note from the old guide: (.+)$/s, 'Nota de equipe do guia antigo: $1', 'Nota de equipo de la guía antigua: $1'],
+ [/^Unlock: (.+)$/s, 'Desbloqueio: %1', 'Desbloqueo: %1'],[/^Team note from the old guide: (.+)$/s, 'Nota de equipe do guia antigo: %1', 'Nota de equipo de la guía antigua: %1'],
  [/^Attribute: (.+)$/, 'Atributo: $1', 'Atributo: $1'],
  [/^(.+) · Date not recorded$/, '$1 · data não registrada', '$1 · fecha sin registrar'],
  [/^Character · (.+)$/, 'Personagem · $1', 'Personaje · $1'],[/^Video · (.+)$/, 'Vídeo · $1', 'Video · $1'],
@@ -571,7 +582,7 @@ function ready(start) {
  const go = () => { try { mountUI(); } catch (e) { console.error(e); } if (lang !== 'en') observe(); start(); };
  if (lang === 'en') return go();
  const s = document.createElement('script'); s.src = 'data.' + lang + '.js';
- s.onload = () => { const pack = (window.TGDATA_I18N || {})[lang]; if (pack && pack.guide && window.TGDATA) window.TGDATA.guide = pack.guide; go(); };
+ s.onload = () => { const pack = (window.TGDATA_I18N || {})[lang]; if (pack && pack.guide && window.TGDATA) window.TGDATA.guide = pack.guide; if (pack && pack.strings) for (const k in pack.strings) if (!D.has(k)) D.set(k, pack.strings[k]); go(); };
  s.onerror = () => { lang = 'en'; document.documentElement.lang = 'en'; D.clear(); go(); };
  document.head.append(s);
 }

@@ -76,8 +76,11 @@
     const inputs={};
     const el=(tag,text,cls)=>{const n=doc.createElement(tag); if(text!==undefined)n.textContent=String(text); if(cls)n.className=cls;return n;};
     const append=(parent,...children)=>{children.forEach(c=>parent.append(c));return parent;};
-    const money=n=>new Intl.NumberFormat(undefined,{style:'currency',currency:['USD','EUR','JPY'].includes(values.currency)?values.currency:'USD'}).format(n);
-    const fmt=n=>new Intl.NumberFormat(undefined,{maximumFractionDigits:2}).format(n);
+    // In Portuguese and Spanish, numbers follow that language (90.000; US$4,99), whatever the browser locale is.
+    const L=(typeof window!=='undefined'&&window.TGI18N)?window.TGI18N.lang:'en',LOC=L==='pt'?'pt-BR':L==='es'?'es':undefined;
+    const money=n=>{const cur=['USD','EUR','JPY'].includes(values.currency)?values.currency:'USD';
+      return LOC&&cur==='USD'?(n<0?'-':'')+'US$'+new Intl.NumberFormat(LOC,{minimumFractionDigits:2,maximumFractionDigits:2}).format(Math.abs(n)):new Intl.NumberFormat(LOC,{style:'currency',currency:cur}).format(n);};
+    const fmt=n=>new Intl.NumberFormat(LOC,{maximumFractionDigits:2}).format(n);
     const clear=n=>n.replaceChildren();
     const info=(parent,text)=>{const d=el('details',undefined,'more');d.append(el('summary','More details'),el('p',text,'muted'));parent.append(d);};
     const panel=(title,intro,extra)=>{const p=el('section',undefined,'panel economy-panel');p.append(el('h2',title,'section-title'));if(intro)p.append(el('p',intro,'muted'));if(extra)info(p,extra);container.append(p);return p;};
