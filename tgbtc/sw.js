@@ -1,4 +1,4 @@
-const CACHE='tgbtc-field-bdfa8098443eebe6';
+const CACHE='tgbtc-field-c5dd4ba00e93ff97';
 const PREFIX='tgbtc-field-';
 const CORE=["./", "index.html", "app.js", "i18n.js", "style.css", "economy.js", "data.js", "data.pt.js", "data.es.js", "manifest.webmanifest", "icon-192.png"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)));});
