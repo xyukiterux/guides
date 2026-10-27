@@ -127,7 +127,7 @@
     "Limited units need 300 pulls (90,000 Diamonds) to guarantee. Non-limited rate-ups, such as Miza, guarantee at 200 pulls (60,000).",
     "Pity doesn't carry over, so never start a banner you can't finish.",
     "Pull only for an exclusive unit in your faction (or a 0★ buff for any team) with no shop date.",
-    "Christmas (about day 62–76) if you can have 90,000 by then; otherwise Uta [New Year] (about day 91–98).",
+    "On older servers, Christmas units came around day 62–76 and Uta [New Year] around day 91–98. Your server's dates may differ.",
     "Halloween Hinami is the live limited banner on established servers (October 25 – November 8, 300 pulls). She may reach this server around October 27. Skip her unless you play Anteiku. (unconfirmed date)"
    ],
    "source": "October 19 article \"Planner by server day\", \"If you read nothing else\"; October 19 article \"Pull and spend\", \"F2P pulling rules\"; Research notes of October 26, 2026 (checked by an independent fact-check), sections E (E-14) and F (F-03, F-18, F-23)"
@@ -142,10 +142,10 @@
    "source": "October 19 article \"Planner by server day\", \"Shop units on day 43 and day 75\"; October 19 article \"Pull and spend\", \"Shop priorities\""
   },
   {
-   "step": "Spend real money only inside a rebate window.",
+   "step": "You don't have to spend. If you do, buy inside a rebate window.",
    "more": [
     "A rebate window makes each purchase pay twice. The best one is the Diamond Rebate, server days 34–55.",
-    "Never buy plain Diamonds: you get only 80 per $1."
+    "Plain Diamonds are the worst value: 80 per $1 (October 19 price)."
    ],
    "link": [
     "See what to buy",
@@ -188,9 +188,9 @@
       "1166"
      ],
      "why": [
-      "Black Rabbit is DST, so he beats every attribute. Miza strips shields every turn.",
-      "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
-      "Yakumo [Natsu Matsuri] was weakened on October 14. Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
+      "Black Rabbit is DST, so he beats every attribute except another DST. Miza strips shields every turn.",
+      "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
+      "Yakumo [Natsu Matsuri] was weakened on October 14 (creator report). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
       "Source: research notes of October 26, 2026, section A6."
      ],
      "backup": true,
@@ -198,12 +198,12 @@
       "kind": "derived",
       "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
       "steps": [
-       "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-       "Naki first: her hit lowers the target's skill levels.",
+       "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+       "Naki first: his hit lowers the target's skill levels.",
        "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
        "Miza's skill on the biggest threat: it ignores shields and DEF.",
        "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-       "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+       "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
       ],
       "note": null
      },
@@ -233,7 +233,7 @@
        "Sen first: her first skill makes your team immune to debuffs for one turn.",
        "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
        "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-       "Naki heals from the back-up slot on her own: nothing to cast."
+       "Naki heals from the back-up slot on his own: nothing to cast."
       ],
       "note": null
      }
@@ -333,7 +333,7 @@
        "Sen first: her first skill makes your team immune to debuffs for one turn.",
        "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
        "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-       "Naki heals from the back-up slot on her own: nothing to cast."
+       "Naki heals from the back-up slot on his own: nothing to cast."
       ],
       "note": null
      }
@@ -514,7 +514,7 @@
        "Sen first: her first skill makes your team immune to debuffs for one turn.",
        "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
        "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-       "Naki heals from the back-up slot on her own: nothing to cast."
+       "Naki heals from the back-up slot on his own: nothing to cast."
       ],
       "note": "Carnival Arena fights on auto, so the game casts for you there. Use this order where you play by hand."
      }
@@ -1581,7 +1581,7 @@
        "Sen first: her first skill makes your team immune to debuffs for one turn.",
        "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
        "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-       "Naki heals from the back-up slot on her own: nothing to cast."
+       "Naki heals from the back-up slot on his own: nothing to cast."
       ],
       "note": null
      }
@@ -1604,11 +1604,11 @@
       "1166"
      ],
      "why": [
-      "Black Rabbit is DST, so he beats every attribute. His turn-start hit can't be countered.",
-      "Miza strips shields and chips 10% HP before Black Rabbit fires.",
+      "Black Rabbit is DST, so he beats every attribute except another DST. His turn-start hit is not an active skill, so counters that answer active skills don't fire.",
+      "Miza strips shields and chips 10% of current HP (at most 100% of her own starting HP) at turn start, alongside Black Rabbit's hit.",
       "Best for: Guild War attacks and Formidable Noro (he takes 50% less from non-Aogiri units).",
-      "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
-      "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+      "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
+      "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
       "Swaps: Noro for Miza; no Yakumo [Natsu Matsuri]? Use Hideyoshi or Eto in his place.",
       "Creators don't name the Naki version; [Crybaby] is our best guess. (unconfirmed)",
       "Source: October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 4 \"Endgame team per faction\"."
@@ -1618,12 +1618,12 @@
       "kind": "derived",
       "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
       "steps": [
-       "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-       "Naki first: her hit lowers the target's skill levels.",
+       "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+       "Naki first: his hit lowers the target's skill levels.",
        "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
        "Miza's skill on the biggest threat: it ignores shields and DEF.",
        "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-       "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+       "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
       ],
       "note": null
      }
@@ -1651,7 +1651,7 @@
       "steps": [
        "Tatara first: 275% to all, and it lowers their skill levels.",
        "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-       "Naki on the same target: her hit lowers its skill levels.",
+       "Naki on the same target: his hit lowers its skill levels.",
        "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
        "Naki [Prisoner] works from back-up: nothing to cast."
       ],
@@ -5492,7 +5492,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Free units only: sign-in gifts, selection cards, missions and the in-game shop (price not confirmed).",
+     "blurb": "Free and low-cost units: sign-in gifts, selection cards, missions and shop units (shop price not confirmed).",
      "rows": [
       {
        "label": "Day-43 shop",
@@ -6200,7 +6200,7 @@
       "Sen first: her first skill makes your team immune to debuffs for one turn.",
       "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
       "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-      "Naki heals from the back-up slot on her own: nothing to cast."
+      "Naki heals from the back-up slot on his own: nothing to cast."
      ],
      "note": null
     },
@@ -6542,7 +6542,7 @@
          "Sen first: her first skill makes your team immune to debuffs for one turn.",
          "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
          "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-         "Naki heals from the back-up slot on her own: nothing to cast."
+         "Naki heals from the back-up slot on his own: nothing to cast."
         ],
         "note": null
        },
@@ -7388,7 +7388,7 @@
          "Sen first: her first skill makes your team immune to debuffs for one turn.",
          "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
          "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-         "Naki heals from the back-up slot on her own: nothing to cast."
+         "Naki heals from the back-up slot on his own: nothing to cast."
         ],
         "note": null
        },
@@ -10469,7 +10469,7 @@
          "Sen first: her first skill makes your team immune to debuffs for one turn.",
          "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
          "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-         "Naki heals from the back-up slot on her own: nothing to cast."
+         "Naki heals from the back-up slot on his own: nothing to cast."
         ],
         "note": null
        },
@@ -10844,7 +10844,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Free units only: sign-in gifts, selection cards, missions and the in-game shop (price not confirmed).",
+     "blurb": "Free and low-cost units: sign-in gifts, selection cards, missions and shop units (shop price not confirmed).",
      "rows": [
       {
        "label": "Free now",
@@ -11570,7 +11570,7 @@
          "Sen first: her first skill makes your team immune to debuffs for one turn.",
          "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
          "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-         "Naki heals from the back-up slot on her own: nothing to cast."
+         "Naki heals from the back-up slot on his own: nothing to cast."
         ],
         "note": null
        },
@@ -15302,7 +15302,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Free units only: sign-in gifts, selection cards, missions and the in-game shop (price not confirmed).",
+     "blurb": "Free and low-cost units: sign-in gifts, selection cards, missions and shop units (shop price not confirmed).",
      "rows": [
       {
        "label": "Early shop",
@@ -16065,11 +16065,11 @@
      "1166"
     ],
     "why": [
-     "Black Rabbit is DST, so he beats every attribute. His turn-start hit can't be countered.",
-     "Miza strips shields and chips 10% HP before Black Rabbit fires.",
+     "Black Rabbit is DST, so he beats every attribute except another DST. His turn-start hit is not an active skill, so counters that answer active skills don't fire.",
+     "Miza strips shields and chips 10% of current HP (at most 100% of her own starting HP) at turn start, alongside Black Rabbit's hit.",
      "Best for: Guild War attacks and Formidable Noro (he takes 50% less from non-Aogiri units).",
-     "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
-     "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+     "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
+     "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
      "Swaps: Noro for Miza; no Yakumo [Natsu Matsuri]? Use Hideyoshi or Eto in his place.",
      "Creators don't name the Naki version; [Crybaby] is our best guess. (unconfirmed)",
      "Source: October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 4 \"Endgame team per faction\"."
@@ -16080,12 +16080,12 @@
      "kind": "derived",
      "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
      "steps": [
-      "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-      "Naki first: her hit lowers the target's skill levels.",
+      "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+      "Naki first: his hit lowers the target's skill levels.",
       "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
       "Miza's skill on the biggest threat: it ignores shields and DEF.",
       "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-      "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+      "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
      ],
      "note": null
     },
@@ -16120,7 +16120,7 @@
      "steps": [
       "Tatara first: 275% to all, and it lowers their skill levels.",
       "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-      "Naki on the same target: her hit lowers its skill levels.",
+      "Naki on the same target: his hit lowers its skill levels.",
       "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
       "Naki [Prisoner] works from back-up: nothing to cast."
      ],
@@ -16162,7 +16162,7 @@
         "steps": [
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -16319,11 +16319,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit is DST, so he beats every attribute. His turn-start hit can't be countered.",
-        "Miza strips shields and chips 10% HP before Black Rabbit fires.",
+        "Black Rabbit is DST, so he beats every attribute except another DST. His turn-start hit is not an active skill, so counters that answer active skills don't fire.",
+        "Miza strips shields and chips 10% of current HP (at most 100% of her own starting HP) at turn start, alongside Black Rabbit's hit.",
         "Best for: Guild War attacks and Formidable Noro (he takes 50% less from non-Aogiri units).",
-        "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
-        "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+        "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
+        "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
         "Swaps: Noro for Miza; no Yakumo [Natsu Matsuri]? Use Hideyoshi or Eto in his place.",
         "Creators don't name the Naki version; [Crybaby] is our best guess. (unconfirmed)",
         "Source: October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 4 \"Endgame team per faction\"."
@@ -16334,12 +16334,12 @@
         "kind": "derived",
         "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
         "steps": [
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-         "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+         "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
         ],
         "note": null
        },
@@ -16454,7 +16454,7 @@
         "steps": [
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -16611,11 +16611,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit is DST, so he beats every attribute. His turn-start hit can't be countered.",
-        "Miza strips shields and chips 10% HP before Black Rabbit fires.",
+        "Black Rabbit is DST, so he beats every attribute except another DST. His turn-start hit is not an active skill, so counters that answer active skills don't fire.",
+        "Miza strips shields and chips 10% of current HP (at most 100% of her own starting HP) at turn start, alongside Black Rabbit's hit.",
         "Best for: Guild War attacks and Formidable Noro (he takes 50% less from non-Aogiri units).",
-        "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
-        "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+        "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
+        "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
         "Swaps: Noro for Miza; no Yakumo [Natsu Matsuri]? Use Hideyoshi or Eto in his place.",
         "Creators don't name the Naki version; [Crybaby] is our best guess. (unconfirmed)",
         "Source: October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 4 \"Endgame team per faction\"."
@@ -16626,12 +16626,12 @@
         "kind": "derived",
         "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
         "steps": [
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-         "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+         "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
         ],
         "note": null
        },
@@ -16741,7 +16741,7 @@
         "kind": "derived",
         "source": "Skill text used: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
         "steps": [
-         "Turn start is automatic: Black Rabbit hits everyone for 180%, and Miza (back-up) strips their shields and chips 10% of their HP.",
+         "Turn start is automatic: Black Rabbit hits everyone for 180%, and Miza (back-up) strips their shields and chips 10% of their current HP.",
          "Ayato [1.5th Anniversary] also casts a free skill on the lowest-HP enemy every turn start.",
          "Black Rabbit's skill: 265% to all.",
          "Ayato [Wings of Ardor] next: after each Aogiri cast he fires three pursuit hits.",
@@ -16847,7 +16847,7 @@
         "steps": [
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -16964,7 +16964,7 @@
         "steps": [
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Kiyoko works from back-up: in Stronghold Takeover every ally gets +40% stats and one death save (day-43 shop listing, unconfirmed)."
         ],
@@ -17132,9 +17132,9 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit is DST, so he beats every attribute. Miza strips shields every turn.",
-        "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
-        "Yakumo [Natsu Matsuri] was weakened on October 14. Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
+        "Black Rabbit is DST, so he beats every attribute except another DST. Miza strips shields every turn.",
+        "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
+        "Yakumo [Natsu Matsuri] was weakened on October 14 (creator report). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
         "Source: research notes of October 26, 2026, section A6."
        ],
        "team_kind": "sourced",
@@ -17143,12 +17143,12 @@
         "kind": "derived",
         "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
         "steps": [
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-         "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+         "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
         ],
         "note": null
        },
@@ -17380,7 +17380,7 @@
         "source": "Skill text used: SkillDesc_1165_p2, Skill_EntryDesc_245/246, SkillDesc_1092_p1, SkillDesc_1164_p1; the five units are from research notes of October 26, 2026, section A5, \"Live forever\" defenses (Aogiri cap stack).",
         "steps": [
          "Naki [1.5th Anniversary] (1★): +40% stats for Aogiri allies, Stronghold only.",
-         "Noro caps each enemy skill at 35% of his HP and turns their next hit into 1.",
+         "Noro (1★), first 2 turns: no enemy skill takes more than 35% of his max HP, and once he loses half his HP in one enemy turn their next active hit deals 1.",
          "Tatara [Revenge] keeps the top-ATK Aogiri ally alive once at 1 HP.",
          "Eto [3M Downloads] raises everyone's DEF for each Aogiri unit.",
          "Tatara in back-up."
@@ -17498,7 +17498,7 @@
          "Burst Younger in one turn when you can: each HP step he loses sets off Elder's 500% hit.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -17571,8 +17571,8 @@
         "steps": [
          "Keep Younger Bin Weak all fight: Weak cancels his Warding and stops Elder's revive.",
          "Burst Younger in one turn when you can: each HP step he loses sets off Elder's 500% hit.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -17688,7 +17688,7 @@
          "Hit the parts and adds first: while 3 allies live, he takes 90% less.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -17761,8 +17761,8 @@
         "steps": [
          "Shield the team before his turn: units without a shield take +500%.",
          "Hit the parts and adds first: while 3 allies live, he takes 90% less.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -17878,7 +17878,7 @@
          "SPD hits cut its DEF by 15% each (up to 5 times): land them early.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -17951,8 +17951,8 @@
         "steps": [
          "Use Lv2 and Lv3 cards only: Lv1 skills and the Ultimate deal 50% less here.",
          "SPD hits cut its DEF by 15% each (up to 5 times): land them early.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -18068,7 +18068,7 @@
          "When its shield ends, it hits your highest-ATK unit for 260% and adds Lethal.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -18141,8 +18141,8 @@
         "steps": [
          "Use Lv2 and Lv3 cards only: Lv1 skills and the Ultimate deal 50% less here.",
          "When its shield ends, it hits your highest-ATK unit for 260% and adds Lethal.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -18258,7 +18258,7 @@
          "Keep everyone alive: each death sets off a 160% hit and a stun.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -18331,8 +18331,8 @@
         "steps": [
          "Spend your Lv3 cards on turns 1 and 2: it gets stronger every turn.",
          "Keep everyone alive: each death sets off a 160% hit and a stun.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -18448,7 +18448,7 @@
          "With the minions gone, fill his Weak bar: he then takes 50% more.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -18521,8 +18521,8 @@
         "steps": [
          "Kill the minions first: each minion death deals 150% of its max HP to him.",
          "With the minions gone, fill his Weak bar: he then takes 50% more.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -18638,7 +18638,7 @@
          "Skip the Ultimate here: it deals 50% less.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -18711,8 +18711,8 @@
         "steps": [
          "You get 5 turns: spend Lv3 cards early, while it is above 50% HP.",
          "Skip the Ultimate here: it deals 50% less.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -18828,7 +18828,7 @@
          "Save your biggest card for its full-Weak turn: it takes 30% more.",
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -18901,8 +18901,8 @@
         "steps": [
          "Shield first: it takes 20% more from shielded attackers.",
          "Save your biggest card for its full-Weak turn: it takes 30% more.",
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK."
@@ -19215,7 +19215,7 @@
         "steps": [
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -19287,7 +19287,7 @@
         "kind": "derived",
         "source": "Skill text used: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
         "steps": [
-         "Turn start is automatic: Black Rabbit hits everyone for 180%, and Miza (back-up) strips their shields and chips 10% of their HP.",
+         "Turn start is automatic: Black Rabbit hits everyone for 180%, and Miza (back-up) strips their shields and chips 10% of their current HP.",
          "Ayato [1.5th Anniversary] also casts a free skill on the lowest-HP enemy every turn start.",
          "Black Rabbit's skill: 265% to all.",
          "Ayato [Wings of Ardor] next: after each Aogiri cast he fires three pursuit hits.",
@@ -19377,7 +19377,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Free units only: sign-in gifts, selection cards, missions and the in-game shop (price not confirmed).",
+     "blurb": "Free and low-cost units: sign-in gifts, selection cards, missions and shop units (shop price not confirmed).",
      "rows": [
       {
        "label": "Day-43 shop",
@@ -19403,7 +19403,7 @@
         "steps": [
          "Tatara first: 275% to all, and it lowers their skill levels.",
          "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-         "Naki on the same target: her hit lowers its skill levels.",
+         "Naki on the same target: his hit lowers its skill levels.",
          "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
          "Naki [Prisoner] works from back-up: nothing to cast."
         ],
@@ -19750,11 +19750,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit is DST, so he beats every attribute. His turn-start hit can't be countered.",
-        "Miza strips shields and chips 10% HP before Black Rabbit fires.",
+        "Black Rabbit is DST, so he beats every attribute except another DST. His turn-start hit is not an active skill, so counters that answer active skills don't fire.",
+        "Miza strips shields and chips 10% of current HP (at most 100% of her own starting HP) at turn start, alongside Black Rabbit's hit.",
         "Best for: Guild War attacks and Formidable Noro (he takes 50% less from non-Aogiri units).",
-        "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
-        "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+        "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in Global Pinnacle Championship season 1 (creator report).",
+        "Naki's LR cell: creators say it gives your highest-ATK unit an extra attack. In the game text that is Naki [Prisoner]'s LR cell (it makes your highest-ATK Aogiri ally cast too); Naki [Crybaby]'s LR cell instead lowers the target's skill level in PvP. Check which cell you have.",
         "Swaps: Noro for Miza; no Yakumo [Natsu Matsuri]? Use Hideyoshi or Eto in his place.",
         "Creators don't name the Naki version; [Crybaby] is our best guess. (unconfirmed)",
         "Source: October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 4 \"Endgame team per faction\"."
@@ -19765,12 +19765,12 @@
         "kind": "derived",
         "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
         "steps": [
-         "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
-         "Naki first: her hit lowers the target's skill levels.",
+         "Turn start is automatic: Miza strips enemy shields and chips 10% of their current HP (at most 100% of her own starting HP), and Black Rabbit hits everyone for 180%.",
+         "Naki first: his hit lowers the target's skill levels.",
          "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
          "Miza's skill on the biggest threat: it ignores shields and DEF.",
          "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
-         "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+         "Akira [June Bride] works from back-up: she clears Weak every turn. If your next skills remove no Weak effect, she also raises Lv1 cards to Lv2."
         ],
         "note": null
        },
@@ -19870,7 +19870,7 @@
         "source": "Skill text used: SkillDesc_1165_p2, Skill_EntryDesc_245/246, SkillDesc_1092_p1, SkillDesc_1164_p1; the five units are from research notes of October 26, 2026, section A5, \"Live forever\" defenses (Aogiri cap stack).",
         "steps": [
          "Naki [1.5th Anniversary] (1★): +40% stats for Aogiri allies, Stronghold only.",
-         "Noro caps each enemy skill at 35% of his HP and turns their next hit into 1.",
+         "Noro (1★), first 2 turns: no enemy skill takes more than 35% of his max HP, and once he loses half his HP in one enemy turn their next active hit deals 1.",
          "Tatara [Revenge] keeps the top-ATK Aogiri ally alive once at 1 HP.",
          "Eto [3M Downloads] raises everyone's DEF for each Aogiri unit.",
          "Tatara in back-up."
@@ -20256,7 +20256,7 @@
       "steps": [
        "Tatara first: 275% to all, and it lowers their skill levels.",
        "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
-       "Naki on the same target: her hit lowers its skill levels.",
+       "Naki on the same target: his hit lowers its skill levels.",
        "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
        "Naki [Prisoner] works from back-up: nothing to cast."
       ],
@@ -20328,7 +20328,7 @@
       "kind": "derived",
       "source": "Skill text used: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
       "steps": [
-       "Turn start is automatic: Black Rabbit hits everyone for 180%, and Miza (back-up) strips their shields and chips 10% of their HP.",
+       "Turn start is automatic: Black Rabbit hits everyone for 180%, and Miza (back-up) strips their shields and chips 10% of their current HP.",
        "Ayato [1.5th Anniversary] also casts a free skill on the lowest-HP enemy every turn start.",
        "Black Rabbit's skill: 265% to all.",
        "Ayato [Wings of Ardor] next: after each Aogiri cast he fires three pursuit hits.",
@@ -21685,7 +21685,7 @@
        "Sen first: her first skill makes your team immune to debuffs for one turn.",
        "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
        "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
-       "Naki heals from the back-up slot on her own: nothing to cast."
+       "Naki heals from the back-up slot on his own: nothing to cast."
       ],
       "note": null
      },
@@ -21766,7 +21766,7 @@
     "text": "Save 90,000 Diamonds for one limited banner you can finish (300 pulls)."
    },
    {
-    "text": "Spend real money only inside a rebate window."
+    "text": "You never have to spend money. If you do, buy inside a rebate window."
    }
   ],
   "best-teams": [
@@ -21786,13 +21786,13 @@
   ],
   "buy": [
    {
-    "text": "Spend real money only inside a rebate window; the best is server days 34–55."
+    "text": "You never have to spend money: the Starter teams use free and shop units."
    },
    {
-    "text": "If you buy only one thing, buy the Endless Trials Pass #1."
+    "text": "If you spend, buy inside a rebate window; the best is server days 34–55."
    },
    {
-    "text": "Never buy plain Diamonds."
+    "text": "The Endless Trials Pass #1 gave the most per $1 on October 19. Plain Diamonds gave the least."
    }
   ],
   "tiers": [
@@ -21933,13 +21933,13 @@
     "name": "Monthly Login Contract",
     "price": "About $4.99",
     "why": "Creators' favorite monthly buy; buy it in days 34–55.",
-    "math": "800 + 300 a day for 28 days = 9,200 banner value: 1,844 per $1. Check the price in game. Two kinds; they stack.",
+    "math": "800 + 300 a day for 28 days = 9,200 banner value: 1,844 per $1, only if you claim all 28 days. Check the price in game. Two kinds; they stack.",
     "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\"; October 19 article \"Pull and spend\", \"What creators say is worth buying\""
    },
    {
     "name": "Holiday sign-in (Halloween, Christmas, Anniversary)",
     "price": "$9.99",
-    "why": "Must buy only when it gives a whole unit you will use; otherwise it is only fair value.",
+    "why": "Worth it only when it gives a whole unit you will use; otherwise it is only fair value.",
     "math": "Halloween 2025 gave 20 free + 80 paid fragments of Arima [Halloween]: 8,400 banner value plus a whole unit. Without a whole unit: 8,100–8,400 banner value, 811–841 per $1.",
     "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\""
    }
@@ -22023,7 +22023,7 @@
     "name": "Plain Diamond top-up",
     "price": "Any",
     "why": "The worst deal: 80 Diamonds per $1.",
-    "math": "Even with the one-time triple first top-up, about $100 buys 24,000. About $90 of passes buys about 136,200 banner value.",
+    "math": "Even with the one-time triple first top-up (240 per $1), about $100 buys 24,000.",
     "source": "October 19 article \"Pull and spend\", \"Real-money value, best first\"; October 19 article \"Pull and spend\", \"What creators say is worth buying\""
    },
    {
@@ -22078,10 +22078,10 @@
   ]
  },
  "buy_rules": [
-  "Banner value = Diamonds + 300 for each Event Summon Ticket.",
+  "Spending $0 is fine. These are October 19 prices: check the shop before you buy.",
+  "Banner value = Diamonds + 300 for each Event Summon Ticket. A ticket counts only on the banners it works on, so compare Diamonds and tickets separately (Tools page).",
   "Buy inside a rebate window: Novice Rebate days 1–7, 8–14, 15–21 and 26–32; Carnival Support days 19–25; the Diamond Rebate (the best) days 34–55.",
-  "There is no Black Friday or Thanksgiving event in the game data, so don't wait for one.",
-  "$100 for one event? Make it Christmas: about $90 of passes and contracts bought Nov 14 – Dec 5 gives about 136,200 banner value (about 454 pulls) by Dec 26."
+  "There is no Black Friday or Thanksgiving event in the game data, so don't wait for one."
  ],
  "tiers": [
   {
@@ -22091,7 +22091,7 @@
    "attribute": "DST",
    "t0": "S",
    "tf": "S",
-   "why": "0★ 180% AoE every turn start (non-active, never countered), −15% DEF/+10% taken; marks enemies with Capture (−40% lifesteal), which turns into Limit (passives disabled) once enough damage is recorded; 3+ Aogiri applies Capture at battle start. 1★ Aogiri +18%. DST beats every attribute.",
+   "why": "0★ 180% AoE every turn start (non-active, so active-skill counters don't fire), −15% DEF/+10% taken; marks enemies with Capture (−40% lifesteal), which turns into Limit (passives disabled) once enough damage is recorded; 3+ Aogiri applies Capture at battle start. 1★ Aogiri +18%. DST beats every attribute except another DST.",
    "get": "listed for a shop around day 75 (unconfirmed) · Carnival recruitment"
   },
   {
@@ -22181,7 +22181,7 @@
    "attribute": "SKL",
    "t0": "S",
    "tf": "S",
-   "why": "0★ back-up: clears Weak each turn, raises all Lv1 skills to Lv2, +15% active dmg, 20% shields; 1★ allies +18%, enemies -18% (back-up).",
+   "why": "0★ back-up: clears Weak each turn and gives 20% shields after your next skills; if those skills remove no Weak effect, also raises all Lv1 skills to Lv2 and +15% active dmg; 1★ allies +18%, enemies -18% (back-up).",
    "get": "June Bride gift-pack chain (2026-06-23 to 07-07, ended); no shop entry"
   },
   {

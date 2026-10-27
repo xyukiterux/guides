@@ -23,7 +23,7 @@ const T = [
 ['Team builder','Montador de equipes','Creador de equipos'],['Boss Lab','Boss Lab','Boss Lab'],['Tools','Ferramentas','Herramientas'],
 ['More','Mais','Más'],['Teams','Equipes','Equipos'],['Buy','Comprar','Comprar'],['Tiers','Tiers','Tiers'],['Meta','Meta','Meta'],
 ['My account','Minha conta','Mi cuenta'],['Skip to content','Pular para o conteúdo','Saltar al contenido'],
-['GUIDE UPDATED','GUIA ATUALIZADO','GUÍA ACTUALIZADA'],['OCTOBER 26, 2026','26 DE OUTUBRO DE 2026','26 DE OCTUBRE DE 2026'],
+['GUIDE UPDATED','GUIA ATUALIZADO','GUÍA ACTUALIZADA'],['OCTOBER 27, 2026','27 DE OUTUBRO DE 2026','27 DE OCTUBRE DE 2026'],
 ['Set your server →','Defina seu servidor →','Elige tu servidor →'],
 ['UNOFFICIAL FAN PROJECT · LOCAL-FIRST','PROJETO DE FÃ NÃO OFICIAL · SEUS DADOS FICAM NO APARELHO','PROYECTO DE FANS NO OFICIAL · TUS DATOS SE QUEDAN EN TU DISPOSITIVO'],
 ['Sources and full articles ↗','Fontes e artigos completos ↗','Fuentes y artículos completos ↗'],
@@ -53,7 +53,7 @@ const T = [
 ['Pick your faction: a team for every fight','Escolha sua facção: uma equipe para cada luta','Elige tu facción: un equipo para cada pelea'],
 ['What should I run?','O que devo usar?','¿Qué debo usar?'],['Tick what you own, get teams','Marque o que você tem e receba equipes','Marca lo que tienes y recibe equipos'],
 ['The team for each mode and boss','A equipe para cada modo e chefe','El equipo para cada modo y jefe'],
-['Must buy, good and skip','Obrigatório, bom e pular','Imprescindible, bueno y saltar'],['Every unit, S to D','Todas as unidades, de S a D','Todas las unidades, de S a D'],
+['Top picks, good and skip','Mais indicados, bom e pular','Más recomendados, bueno y saltar'],['121 rated units, S to D','121 unidades avaliadas, de S a D','121 unidades valoradas, de S a D'],
 ['Tools and library','Ferramentas e biblioteca','Herramientas y biblioteca'],['All 143, with skills','Todos os 143, com habilidades','Los 143, con habilidades'],
 ['Build and save teams','Monte e salve equipes','Arma y guarda equipos'],['Boss skills and plans','Habilidades e planos dos chefes','Habilidades y planes de jefes'],
 ['Live banner and history','Banner ativo e histórico','Banner activo e historial'],['Diamond and pull math','Contas de Diamonds e pulls','Cálculos de Diamonds y pulls'],
@@ -69,7 +69,7 @@ const T = [
 ['Your collection','Sua coleção','Tu colección'],['Mark what you own','Marque o que você tem','Marca lo que tienes'],
 ['Mark your characters and stars, then build teams from them.','Marque seus personagens e estrelas e monte equipes com eles.','Marca tus personajes y estrellas y arma equipos con ellos.'],
 ['Open your account →','Abrir sua conta →','Abrir tu cuenta →'],
-['Guide updated October 26, 2026. Prices as of October 19: check the in-game shop before you spend.','Guia atualizado em 26 de outubro de 2026. Preços de 19 de outubro: confira a loja do jogo antes de gastar.','Guía actualizada el 26 de octubre de 2026. Precios del 19 de octubre: revisa la tienda del juego antes de gastar.'],
+['Guide updated October 27, 2026. Prices as of October 19: check the in-game shop before you spend.','Guia atualizado em 27 de outubro de 2026. Preços de 19 de outubro: confira a loja do jogo antes de gastar.','Guía actualizada el 27 de octubre de 2026. Precios del 19 de octubre: revisa la tienda del juego antes de gastar.'],
 ['Teams and boss tips: research of October 26, 2026. Game data: EU build of September 22, 2026.','Equipes e dicas de chefes: pesquisa de 26 de outubro de 2026. Dados do jogo: versão EU de 22 de setembro de 2026.','Equipos y consejos de jefes: investigación del 26 de octubre de 2026. Datos del juego: versión EU del 22 de septiembre de 2026.'],
 ['Banners, prices and availability change by server, so confirm them in your game.','Banners, preços e disponibilidade mudam por servidor; confirme no seu jogo.','Los banners, precios y disponibilidad cambian según el servidor; confírmalos en tu juego.'],
 ['The old full articles are on the','Os artigos completos antigos (em inglês) estão na','Los artículos completos antiguos (en inglés) están en la'],
@@ -123,17 +123,17 @@ const T = [
 ['Suggested swap:','Troca sugerida:','Cambio sugerido:'],['No close swap in your roster.','Nenhuma troca parecida entre os seus personagens.','No hay un cambio parecido entre tus personajes.'],
 ['(sourced)','(com fonte)','(con fuente)'],['(worked out from skills — not tested)','(deduzido das habilidades — não testado)','(deducido de las habilidades — no probado)'],
 // buy
-['WHAT TO BUY','O QUE COMPRAR','QUÉ COMPRAR'],['Must buy, good, and skip.','Obrigatório, bom e pular.','Imprescindible, bueno y saltar.'],
+['WHAT TO BUY','O QUE COMPRAR','QUÉ COMPRAR'],['Top picks, good, and skip.','Mais indicados, bom e pular.','Más recomendados, bueno y saltar.'],
 ['Check the in-game shop before you spend.','Confira a loja do jogo antes de gastar.','Revisa la tienda del juego antes de gastar.'],
-['Must buy','Compra obrigatória','Imprescindible'],['Good','Bom','Bueno'],['Skip','Não compre','No compres'],
+['Top picks if you spend','Mais indicados, se for gastar','Más recomendados, si gastas'],['Choose screenshots','Escolher capturas','Elegir capturas'],['How to spend','Como gastar','Cómo gastar'],['Good','Bom','Bueno'],['Skip','Não compre','No compres'],
 ['Gone on older servers','Já saiu nos servidores antigos','Ya no está en servidores antiguos'],['How the value math works','Como funciona a conta de valor','Cómo funciona el cálculo de valor'],
 ['Full article: pull and spend →','Artigo completo (em inglês): pulls e gastos →','Artículo completo (en inglés): pulls y gastos →'],
 // tier list
-['TIER LIST','TIER LIST','TIER LIST'],['Every unit, ranked S to D.','Todas as unidades, de S a D.','Todas las unidades, de S a D.'],
+['TIER LIST','TIER LIST','TIER LIST'],['All 121 rated units, S to D.','As 121 unidades avaliadas, de S a D.','Las 121 unidades valoradas, de S a D.'],
 ['Tap a unit to see why. “At 0★” means one copy; “At full stars” means fully upgraded.','Toque numa unidade para ver o porquê. “Com 0★” é uma cópia; “Com estrelas máximas” é totalmente melhorada.','Toca una unidad para ver por qué. “Con 0★” es una copia; “Con estrellas máximas” es totalmente mejorada.'],
 ['Ratings come from the game’s own skill text and stats (EU data of September 22, 2026) plus creator videos. They may lag the October 14 patch.','As notas vêm dos próprios textos de habilidade e atributos do jogo (dados EU de 22 de setembro de 2026) e de vídeos de criadores. Podem não refletir o patch de 14 de outubro.','Las notas salen de los textos de habilidad y estadísticas del propio juego (datos EU del 22 de septiembre de 2026) y de videos de creadores. Pueden no reflejar el parche del 14 de octubre.'],
 ['Use “At full stars” for the weekly Abyssal Battlefield, which treats your unit as full stars.','Use “Com estrelas máximas” no Abyssal Battlefield semanal, que trata sua unidade como se tivesse todas as estrelas.','Usa “Con estrellas máximas” para el Abyssal Battlefield semanal, que trata tu unidad como si tuviera todas las estrellas.'],
-['Attributes: STR beats SKL, SKL beats SPD, SPD beats STR. PSY and WIT beat each other. DST beats everything.','Atributos: STR vence SKL, SKL vence SPD, SPD vence STR. PSY e WIT vencem um ao outro. DST vence todos.','Atributos: STR gana a SKL, SKL gana a SPD, SPD gana a STR. PSY y WIT se ganan entre sí. DST gana a todos.'],
+['Attributes: STR beats SKL, SKL beats SPD, SPD beats STR. PSY and WIT beat each other. DST beats every other attribute; only DST beats DST. Some fights switch attribute advantage off.','Atributos: STR vence SKL, SKL vence SPD, SPD vence STR. PSY e WIT vencem um ao outro. DST vence todos os outros atributos; só DST vence DST. Algumas lutas desligam a vantagem de atributo.','Atributos: STR gana a SKL, SKL gana a SPD, SPD gana a STR. PSY y WIT se ganan entre sí. DST gana a todos los demás atributos; solo DST gana a DST. Algunos combates desactivan la ventaja de atributo.'],
 ['Full article: tier list →','Artigo completo (em inglês): tier list →','Artículo completo (en inglés): tier list →'],
 ['Rating','Nota','Nota'],['At 0★','Com 0★','Con 0★'],['At full stars','Com estrelas máximas','Con estrellas máximas'],
 ['Free team','Equipe grátis','Equipo gratis'],['Why (kit numbers)','Por quê (números do kit)','Por qué (números del kit)'],
@@ -425,12 +425,43 @@ const T = [
 ['Starter','Inicial','Inicial'],['Mid','Intermediário','Intermedio'],['Endgame','Endgame','Endgame'],['Trials','Provas','Pruebas'],
 ['unknown','desconhecido','desconocido'],
 ['Language','Idioma','Idioma'],
+// GPT-audit port (10-27): exact versions, complete-team filter, stats, review request, calculator additions
+['The game data does not confirm which star unlocks some of these passives. Check the star preview in game.','Os dados do jogo não confirmam em qual estrela algumas destas passivas são liberadas. Confira a prévia de estrelas no jogo.','Los datos del juego no confirman con qué estrella se desbloquean algunas de estas pasivas. Revisa la vista previa de estrellas en el juego.'],
+['The game data does not confirm which star unlocks each passive of this unit, so the “At 0★” rating may be off.','Os dados do jogo não confirmam em qual estrela cada passiva desta unidade é liberada, então a nota “Com 0★” pode estar errada.','Los datos del juego no confirman con qué estrella se desbloquea cada pasiva de esta unidad, así que la nota “Con 0★” puede fallar.'],
+['Only teams I fully own','Só equipes que tenho completas','Solo equipos que tengo completos'],
+['None of these teams is complete in your collection yet. Untick “Only teams I fully own” to see close matches.','Nenhuma destas equipes está completa na sua coleção ainda. Desmarque “Só equipes que tenho completas” para ver as mais próximas.','Ninguno de estos equipos está completo en tu colección todavía. Desmarca “Solo equipos que tengo completos” para ver los más cercanos.'],
+['Your stats (optional)','Seus status (opcional)','Tus estadísticas (opcional)'],
+['Optional. Copy them from the character screen in game. They are saved with your collection and added to a review request; the guide does not rank teams by them.','Opcional. Copie da tela do personagem no jogo. Eles ficam salvos com a sua coleção e entram no pedido de análise; o guia não classifica equipes por eles.','Opcional. Cópialas de la pantalla del personaje en el juego. Se guardan con tu colección y se añaden a la solicitud de revisión; la guía no ordena equipos según ellas.'],
+['Enter a whole number, or leave it empty.','Digite um número inteiro ou deixe em branco.','Escribe un número entero o déjalo vacío.'],
+['Ask someone to check your teams','Peça para alguém conferir suas equipes','Pide a alguien que revise tus equipos'],
+['Want a second opinion? This gathers your owned characters, stars, stats and notes into text you can send to a guildmate or helper. The guide does not read screenshots; you can preview them here, then attach them yourself.','Quer uma segunda opinião? Isto junta seus personagens, estrelas, status e notas num texto para enviar a alguém da guild ou a quem for ajudar. O guia não lê capturas de tela; você pode vê-las aqui e depois anexá-las você mesmo.','¿Quieres una segunda opinión? Esto reúne tus personajes, estrellas, estadísticas y notas en un texto para enviar a alguien de tu guild o a quien te ayude. La guía no lee capturas de pantalla; puedes verlas aquí y luego adjuntarlas tú.'],
+['Screenshots (up to 6, preview only)','Capturas de tela (até 6, só para ver)','Capturas de pantalla (hasta 6, solo para ver)'],
+['Clear screenshots','Limpar capturas','Borrar capturas'],
+['What do you need help with?','Com o que você precisa de ajuda?','¿Con qué necesitas ayuda?'],
+['Mode, enemy team, your budget, what you want to beat…','Modo, equipe inimiga, seu orçamento, o que você quer vencer…','Modo, equipo enemigo, tu presupuesto, lo que quieres vencer…'],
+['Copy review request','Copiar pedido de análise','Copiar solicitud de revisión'],
+['Review request text','Texto do pedido de análise','Texto de la solicitud de revisión'],
+['Copied. Paste it with your screenshots to a guildmate or helper.','Copiado. Cole junto com suas capturas para alguém da guild ou quem for ajudar.','Copiado. Pégalo junto con tus capturas para alguien de tu guild o quien te ayude.'],
+['Select the text below and copy it.','Selecione o texto abaixo e copie.','Selecciona el texto de abajo y cópialo.'],
+['Please check my Tokyo Ghoul: Break the Chains teams.','Você pode conferir minhas equipes de Tokyo Ghoul: Break the Chains?','¿Puedes revisar mis equipos de Tokyo Ghoul: Break the Chains?'],
+['Server','Servidor','Servidor'],['day','dia','día'],['Characters I own','Personagens que tenho','Personajes que tengo'],
+['none marked yet','nenhum marcado ainda','ninguno marcado todavía'],['What I need','O que eu preciso','Lo que necesito'],
+['I will attach my screenshots separately.','Vou anexar minhas capturas separadamente.','Adjuntaré mis capturas por separado.'],
+['Compare your own offers →','Compare as suas ofertas →','Compara tus propias ofertas →'],
+['Login rewards you will really get','Recompensas de login que você vai receber de fato','Recompensas de login que recibirás de verdad'],
+['For a login contract or sign-in track: count only the days you will actually claim.','Para um contrato de login ou trilha de login: conte só os dias em que você vai mesmo resgatar.','Para un contrato de login o un registro diario: cuenta solo los días que de verdad vas a reclamar.'],
+['A missed day is usually lost, not added at the end. Check the claim rules and the end date in game.','Um dia perdido costuma ficar perdido, não vai para o final. Confira as regras de resgate e a data de término no jogo.','Un día perdido suele perderse, no se añade al final. Revisa las reglas de reclamo y la fecha de fin en el juego.'],
+['Diamonds you get at once','Diamonds que você recebe na hora','Diamonds que recibes al momento'],['Diamonds per claimed day','Diamonds por dia resgatado','Diamonds por día reclamado'],
+['Days in the contract','Dias do contrato','Días del contrato'],['Days you will claim','Dias que você vai resgatar','Días que vas a reclamar'],
+['Enter the rewards and the days from your game.','Digite as recompensas e os dias do seu jogo.','Escribe las recompensas y los días de tu juego.'],
+['Days you will claim cannot be more than the days in the contract.','Os dias que você vai resgatar não podem passar dos dias do contrato.','Los días que vas a reclamar no pueden superar los días del contrato.'],
+['Diamonds only (no tickets): none in this offer.','Só Diamonds (sem tickets): esta oferta não tem.','Solo Diamonds (sin tickets): esta oferta no tiene.'],
 ];
 const COL = {pt: 1, es: 2};
 const D = new Map();
 if (lang !== 'en') for (const r of T) D.set(r[0], r[COL[lang]]);
 
-const FIELDS = ['Stake','Total returned','Cost per pull','Guarantee threshold','Eligible pulls already made','Available diamonds','Eligible tickets','Target rate','Number of pulls','Pack price','Pack diamonds','Pack tickets','Assumed diamond value per ticket','Collection days','Purchase cap','Current balance','Net daily income','Target','Planned copies','Cash budget'].join('|');
+const FIELDS = ['Stake','Total returned','Cost per pull','Guarantee threshold','Eligible pulls already made','Available diamonds','Eligible tickets','Target rate','Number of pulls','Pack price','Pack diamonds','Pack tickets','Assumed diamond value per ticket','Collection days','Purchase cap','Current balance','Net daily income','Target','Planned copies','Cash budget','Diamonds you get at once','Diamonds per claimed day','Days in the contract','Days you will claim'].join('|');
 const pick = (pt, es) => lang === 'pt' ? pt : es;
 const WHY = s => s.split(', ').map(w => ({'same faction': pick('mesma facção', 'misma facción'), 'same attribute': pick('mesmo atributo', 'mismo atributo'), 'same role': pick('mesma função', 'mismo rol')})[w] || w).join(', ');
 const ADVICE = {'build your team around it': ['monte sua equipe em volta dela', 'arma tu equipo alrededor de ella'], 'it is strong in the right team': ['ela é forte na equipe certa', 'es fuerte en el equipo adecuado'], 'it is useful but limited': ['ela é útil, mas limitada', 'es útil pero limitada'], 'only level it': ['só suba o nível dela', 'solo súbela de nivel'], 'skip it': ['pule', 'sáltala']};
@@ -439,6 +470,14 @@ const or = s => s.replace(/ or /g, pick(' ou ', ' o '));
 /* [pattern, Português, Español]: "$1" keeps a captured piece as is, "%1" translates it through the table first;
    a function gets (match, tr). Captured pieces are names, numbers or text already translated in the data. */
 const P = [
+ [/^Passive (\d) · unlock star not confirmed$/, 'Passiva $1 · estrela de liberação não confirmada', 'Pasiva $1 · estrella de desbloqueo sin confirmar'],
+ [/^Back-up: none of (.+)’s skills say they work from back-up, so this slot only helps once it enters the field\.$/, 'Back-up: nenhuma skill de $1 diz que funciona no back-up, então esta vaga só ajuda quando entra em campo.', 'Back-up: ninguna habilidad de $1 dice que funcione desde el back-up, así que esta casilla solo ayuda cuando entra al campo.'],
+ [/^Passive stars not confirmed for (.+): check the star preview in game\.$/, 'Estrelas das passivas não confirmadas para $1: confira a prévia de estrelas no jogo.', 'Estrellas de las pasivas sin confirmar para $1: revisa la vista previa de estrellas en el juego.'],
+ [/^Which version of (.+)\?$/, 'Qual versão de $1?', '¿Qué versión de $1?'],
+ [/^(\d+) screenshot\(s\) shown here only\. They are not saved or sent\.$/, '$1 captura(s) só nesta tela. Elas não são salvas nem enviadas.', '$1 captura(s) solo en esta pantalla. No se guardan ni se envían.'],
+ [/^You collect (.+) of (.+) diamonds · (.+) lost to missed days\.$/, 'Você recebe $1 de $2 Diamonds · $3 perdidos em dias sem resgate.', 'Recibes $1 de $2 Diamonds · $3 perdidos por días sin reclamar.'],
+ [/^Diamonds only \(no tickets\): (.+) per 1 ([A-Z]{3}) · (.+) per 1,000 Diamonds\.$/, 'Só Diamonds (sem tickets): $1 por 1 $2 · $3 por 1.000 Diamonds.', 'Solo Diamonds (sin tickets): $1 por 1 $2 · $3 por 1.000 Diamonds.'],
+ [new RegExp('^(' + FIELDS + ') is too large\\.$'), '%1: valor grande demais.', '%1: valor demasiado grande.'],
  [/^(.+) · (\d{4}-\d{2}-\d{2})$/, '%1 · $2', '%1 · $2'], [/^(.+) · no date$/, '%1 · sem data', '%1 · sin fecha'],
  [/^Tokyo Ghoul · (.+)$/, 'Tokyo Ghoul · %1', 'Tokyo Ghoul · %1'],
  [/^Source: (.+)$/s, 'Fonte: $1', 'Fuente: $1'],
@@ -493,7 +532,7 @@ const P = [
  [/^48-hour mark: (.+) \(UTC: (.+)\)\. (.+)$/, 'Marca de 48 horas: $1 (UTC: $2). %3', 'Marca de 48 horas: $1 (UTC: $2). %3'],
  [/^(\d+) pulls remaining · (\d+) eligible tickets used · (.+) diamonds required · (.+) shortfall\. Conditional on the rules you entered\.$/, '$1 pulls restantes · $2 tickets válidos usados · $3 Diamonds necessários · faltam $4. Depende das regras que você digitou.', '$1 pulls restantes · $2 tickets válidos usados · $3 Diamonds necesarios · faltan $4. Depende de las reglas que introdujiste.'],
  [/^(.+)% chance of at least one target in (\d+) independent pulls \(pity excluded\)\.$/, '$1% de chance de pelo menos uma unidade alvo em $2 pulls independentes (sem pity).', '$1% de probabilidad de al menos una unidad objetivo en $2 pulls independientes (sin pity).'],
- [/^(.+) per 1,000 assumed diamond-equivalents · (.+) total per purchase · collected over (\d+) days\. (Recurring billing\. |One-time offer as entered\. )(.+)$/, m => m[1] + pick(' por 1.000 Diamonds equivalentes presumidos · ', ' por 1.000 Diamonds equivalentes supuestos · ') + m[2] + pick(' no total por compra · coletados em ', ' en total por compra · recogidos en ') + m[3] + pick(' dias. ', ' días. ') + (m[4].startsWith('R') ? pick('Cobrança recorrente. ', 'Cobro recurrente. ') : pick('Oferta única, como digitada. ', 'Oferta única, tal como se introdujo. ')) + (m[5].startsWith('Note') ? pick('Nota salva. Esta ferramenta não a confere.', 'Nota guardada. Esta herramienta no la comprueba.') : pick('Adicione uma nota e a data em que conferiu.', 'Añade una nota y la fecha en que lo revisaste.'))],
+ [/^(.+) per 1,000 assumed diamond-equivalents · (.+) total per purchase · collected over (\d+) (days?)\. (Recurring billing\. |One-time offer as entered\. )(.+)$/, m => m[1] + pick(' por 1.000 Diamonds equivalentes presumidos · ', ' por 1.000 Diamonds equivalentes supuestos · ') + m[2] + pick(' no total por compra · coletados em ', ' en total por compra · recogidos en ') + m[3] + (m[4] === 'day' ? pick(' dia. ', ' día. ') : pick(' dias. ', ' días. ')) + (m[5].startsWith('R') ? pick('Cobrança recorrente. ', 'Cobro recurrente. ') : pick('Oferta única, como digitada. ', 'Oferta única, tal como se introdujo. ')) + (m[6].startsWith('Note') ? pick('Nota salva. Esta ferramenta não a confere.', 'Nota guardada. Esta herramienta no la comprueba.') : pick('Adicione uma nota e a data em que conferiu.', 'Añade una nota y la fecha en que lo revisaste.'))],
  [/^(Plan: (.+) \/ (.+) budget · (.+) assumed diamond-equivalents\. (?:Over budget by (.+)\.|Unspent budget: (.+)\.)|Zero-purchase plan: (.+)\. No paid offer selected\.)( Compare cost per 1,000 above only after checking reward eligibility and caps\.| Offers have different or missing region\/date\/ticket assumptions; no best-value ranking is shown\.)?$/, m =>
    (m[7] !== undefined ? pick('Plano sem compras: ', 'Plan sin compras: ') + m[7] + pick('. Nenhuma oferta paga escolhida.', '. Ninguna oferta de pago elegida.')
     : pick('Plano: ', 'Plan: ') + m[2] + ' / ' + m[3] + pick(' de orçamento · ', ' de presupuesto · ') + m[4] + pick(' Diamonds equivalentes presumidos. ', ' Diamonds equivalentes supuestos. ') + (m[5] !== undefined ? pick('Acima do orçamento em ', 'Por encima del presupuesto en ') + m[5] + '.' : pick('Orçamento não gasto: ', 'Presupuesto sin gastar: ') + m[6] + '.'))

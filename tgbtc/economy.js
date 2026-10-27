@@ -7,10 +7,11 @@
   'use strict';
   const STORAGE = 'tgbtc-economy-v1';
   function number(value, name, options = {}) {
-    if (value === '' || value === null || value === undefined || typeof value === 'boolean') throw new Error(name + ' is required.');
+    if ((typeof value === 'string' && value.trim() === '') || value === null || value === undefined || typeof value === 'boolean') throw new Error(name + ' is required.');
     const n = Number(value);
     if (!Number.isFinite(n) || n < 0 || (options.positive && n <= 0) || (options.integer && !Number.isInteger(n)))
       throw new Error(name + ' must be a ' + (options.positive ? 'positive' : 'non-negative') + (options.integer ? ' whole number.' : ' number.'));
+    if (n > 1e12) throw new Error(name + ' is too large.');
     return n;
   }
   function spring(stake, payout) {
@@ -36,7 +37,16 @@
     const maxPurchases = number(pack.maxPurchases, 'Purchase cap', {positive:true,integer:true});
     const utility = diamonds+tickets*ticketValue;
     if (utility <= 0) throw new Error('Pack must contain a positive diamond or ticket utility.');
-    return {price,utility,diamonds,tickets,ticketValue,durationDays:days,maxPurchases,pricePer1000:price/utility*1000,utilityPerCurrency:utility/price,utilityPerCollectionDay:utility/days};
+    return {price,utility,diamonds,tickets,ticketValue,durationDays:days,maxPurchases,pricePer1000:price/utility*1000,utilityPerCurrency:utility/price,utilityPerCollectionDay:utility/days,
+      // Actual Diamonds only (tickets left out): what one unit of cash buys, and what one Diamond costs.
+      diamondsPerCurrency:diamonds/price,pricePer1000Diamonds:diamonds>0?price/diamonds*1000:null};
+  }
+  // Login rewards: count only the days you will really claim; a missed day is lost, not delayed.
+  function loginRewards(upfront, daily, claimDays, totalDays) {
+    const u = number(upfront, 'Diamonds you get at once'), d = number(daily, 'Diamonds per claimed day');
+    const n = number(totalDays, 'Days in the contract', {integer:true,positive:true}), c = number(claimDays, 'Days you will claim', {integer:true});
+    if (c > n) throw new Error('Days you will claim cannot be more than the days in the contract.');
+    return {collectible:u+d*c, missed:d*(n-c), full:u+d*n};
   }
   function forecast(balance, daily, target) {
     const b=number(balance,'Current balance'), d=number(daily,'Net daily income'), t=number(target,'Target');
@@ -51,7 +61,7 @@
   const defaults = {
     region:'',currency:'USD',budget:'0',springStake:'',springPayout:'',springStart:'',springSource:'',springDate:'',
     pullCost:'',threshold:'',pullsDone:'0',balance:'0',tickets:'0',rate:'',chancePulls:'',pityConfirmed:false,pitySource:'',pityDate:'',
-    forecastBalance:'0',dailyIncome:'',target:'',
+    forecastBalance:'0',dailyIncome:'',target:'',loginUpfront:'',loginDaily:'',loginTotal:'',loginClaim:'',
     offerAName:'',offerAPrice:'',offerADiamonds:'',offerATickets:'0',offerATicketValue:'0',offerADays:'1',offerACap:'1',offerAQuantity:'0',offerASource:'',offerADate:'',offerARegion:'',offerARecurring:false,
     offerBName:'',offerBPrice:'',offerBDiamonds:'',offerBTickets:'0',offerBTicketValue:'0',offerBDays:'1',offerBCap:'1',offerBQuantity:'0',offerBSource:'',offerBDate:'',offerBRegion:'',offerBRecurring:false
   };
@@ -83,7 +93,7 @@
     const L=(typeof window!=='undefined'&&window.TGI18N)?window.TGI18N.lang:'en',LOC=L==='pt'?'pt-BR':L==='es'?'es':undefined;
     // Spanish Intl leaves 4-digit numbers ungrouped (1767,83); the guide text groups them (1.767,83), so grouping is forced.
     const NF=(o)=>{try{return new Intl.NumberFormat(LOC,LOC?Object.assign({useGrouping:'always'},o):o);}catch(_){return new Intl.NumberFormat(LOC,o);}};
-    const money=n=>{const cur=['USD','EUR','JPY'].includes(values.currency)?values.currency:'USD';
+    const money=n=>{const cur=['USD','EUR','JPY','BRL'].includes(values.currency)?values.currency:'USD';
       return LOC&&cur==='USD'?(n<0?'-':'')+'US$'+NF({minimumFractionDigits:2,maximumFractionDigits:2}).format(Math.abs(n)):NF({style:'currency',currency:cur}).format(n);};
     const fmt=n=>NF({maximumFractionDigits:2}).format(n);
     const clear=n=>n.replaceChildren();
@@ -117,7 +127,7 @@
     const head=panel('Spend with a plan','These tools only calculate what you enter. Spending nothing is a fine plan.','They do not know your current shop, payout table, banner rules or live prices.');
     const settings=fields(head);
     field(settings,'region','Your server / region','text',{maxlength:'80',placeholder:'Region not set'});
-    select(settings,'currency','Cash currency (no conversion)',[['USD','USD'],['EUR','EUR'],['JPY','JPY']]);
+    select(settings,'currency','Cash currency (no conversion)',[['USD','USD'],['EUR','EUR'],['JPY','JPY'],['BRL','BRL']]);
     field(settings,'budget','Optional cash budget','number');
     const presets=el('div',undefined,'economy-presets');
     for(const amount of [0,5,10,20,50,100]){const b=el('button',String(amount),'button');b.type='button';b.addEventListener('click',()=>{values.budget=String(amount);inputs.budget.value=String(amount);save();update();});presets.append(b);}head.append(presets);
@@ -142,6 +152,8 @@
     }
     const packSummary=result(packsPanel);
     info(packsPanel,'Diamond-equivalent utility is your assumption, not an exchange guarantee. A recurring plan here counts only the entered number of billing periods; it does not cancel automatically. Uncollected daily rewards reduce actual value. First-purchase bonuses and caps must be included from your game screen.');
+    const loginPanel=panel('Login rewards you will really get','For a login contract or sign-in track: count only the days you will actually claim.','A missed day is usually lost, not added at the end. Check the claim rules and the end date in game.');
+    const loginFields=fields(loginPanel);field(loginFields,'loginUpfront','Diamonds you get at once');field(loginFields,'loginDaily','Diamonds per claimed day');field(loginFields,'loginTotal','Days in the contract','number',{step:'1',min:'1'});field(loginFields,'loginClaim','Days you will claim','number',{step:'1'});const loginResult=result(loginPanel);
     const forecastPanel=panel('Savings forecast','Use your daily income after your usual costs.','This is a simple estimate with no assumed events, investment compounding or guaranteed future income.');
     const forecastFields=fields(forecastPanel);field(forecastFields,'forecastBalance','Current diamond balance');field(forecastFields,'dailyIncome','Estimated net diamonds per day');field(forecastFields,'target','Target diamond balance');const forecastResult=result(forecastPanel);
     const controls=el('div',undefined,'economy-controls');
@@ -164,7 +176,8 @@
           if(q>r.maxPurchases)throw new Error('Planned copies exceed this offer’s entered purchase cap.');
           if(q>0){selected++;total+=q*r.price;utility+=q*r.utility;}
           const hasEvidence=values[p+'Source'].trim()&&values[p+'Date'];
-          output(packResults[p],money(r.pricePer1000)+' per 1,000 assumed diamond-equivalents · '+fmt(r.utility)+' total per purchase · collected over '+r.durationDays+' days. '+(values[p+'Recurring']?'Recurring billing. ':'One-time offer as entered. ')+(hasEvidence?'Note saved. This tool does not check it.':'Add a note and the date you checked.'));
+          output(packResults[p],money(r.pricePer1000)+' per 1,000 assumed diamond-equivalents · '+fmt(r.utility)+' total per purchase · collected over '+r.durationDays+(r.durationDays===1?' day. ':' days. ')+(values[p+'Recurring']?'Recurring billing. ':'One-time offer as entered. ')+(hasEvidence?'Note saved. This tool does not check it.':'Add a note and the date you checked.'));
+          packResults[p].append(el('p',r.pricePer1000Diamonds===null?'Diamonds only (no tickets): none in this offer.':'Diamonds only (no tickets): '+fmt(r.diamondsPerCurrency)+' per 1 '+(['USD','EUR','JPY','BRL'].includes(values.currency)?values.currency:'USD')+' · '+money(r.pricePer1000Diamonds)+' per 1,000 Diamonds.','muted'));
           valid.push({p,r});
         }catch(e){if(Number(values[p+'Quantity'])>0)invalidSelected=true;output(packResults[p],e.message,true);}
       }
@@ -173,15 +186,17 @@
         if(invalidSelected)output(packSummary,'Cannot total this plan: fix the selected offer errors.',true);
         else {
           let text=selected?'Plan: '+money(total)+' / '+money(b)+' budget · '+fmt(utility)+' assumed diamond-equivalents. '+(total>b?'Over budget by '+money(total-b)+'.':'Unspent budget: '+money(b-total)+'.'):'Zero-purchase plan: '+money(0)+'. No paid offer selected.';
-          if(valid.length===2){const comparable=values.offerARegion===values.offerBRegion&&values.offerADate&&values.offerADate===values.offerBDate&&values.offerATicketValue===values.offerBTicketValue; text+=comparable?' Compare cost per 1,000 above only after checking reward eligibility and caps.':' Offers have different or missing region/date/ticket assumptions; no best-value ranking is shown.';}
+          if(valid.length===2){const comparable=values.offerARegion.trim()!==''&&values.offerARegion===values.offerBRegion&&values.offerADate&&values.offerADate===values.offerBDate&&values.offerATicketValue===values.offerBTicketValue; text+=comparable?' Compare cost per 1,000 above only after checking reward eligibility and caps.':' Offers have different or missing region/date/ticket assumptions; no best-value ranking is shown.';}
           output(packSummary,text,total>b);
         }
       }catch(e){output(packSummary,e.message,true);}
+      if(values.loginUpfront===''&&values.loginDaily==='')output(loginResult,'Enter the rewards and the days from your game.');
+      else try{const r=loginRewards(values.loginUpfront,values.loginDaily,values.loginClaim,values.loginTotal);output(loginResult,'You collect '+fmt(r.collectible)+' of '+fmt(r.full)+' diamonds · '+fmt(r.missed)+' lost to missed days.');}catch(e){output(loginResult,e.message,true);}
       if(values.dailyIncome===''&&values.target==='')output(forecastResult,'Enter your income estimate and target.');
       else try{const r=forecast(values.forecastBalance,values.dailyIncome,values.target);output(forecastResult,r.days===null?'Target cannot be reached with zero net daily income.':r.days===0?'Your entered balance already meets the target.':fmt(r.gap)+' diamonds needed · approximately '+r.days+' days at this constant income.');}catch(e){output(forecastResult,e.message,true);}
     }
     update();
     return {refresh:update};
   }
-  return {spring,pity,chance,comparePack,forecast,maturity,mount};
+  return {spring,pity,chance,comparePack,loginRewards,forecast,maturity,mount};
 });

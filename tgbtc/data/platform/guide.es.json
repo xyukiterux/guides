@@ -127,7 +127,7 @@
     "Las unidades limitadas necesitan 300 pulls (90.000 Diamonds) para garantizarse. Los rate-ups no limitados, como Miza, garantizan en 200 pulls (60.000).",
     "El pity no se transfiere, así que nunca empieces un banner que no puedas terminar.",
     "Haz pulls solo por una unidad exclusiva de tu facción (o un buff 0★ para cualquier equipo) que no tenga fecha en tienda.",
-    "Navidad (hacia los días 62–76) si puedes tener 90.000 para entonces; si no, Uta [New Year] (hacia los días 91–98).",
+    "En servidores más antiguos, las unidades de Navidad llegaron hacia los días 62–76 y Uta [New Year] hacia los días 91–98. Las fechas de tu servidor pueden cambiar.",
     "Halloween Hinami es el banner limitado activo en los servidores antiguos (25 de octubre – 8 de noviembre, 300 pulls). Puede llegar a este servidor hacia el 27 de octubre. Sáltala salvo que juegues Anteiku. (fecha no confirmada)"
    ],
    "source": "artículo \"Planner by server day\" del 19 de octubre, \"If you read nothing else\"; artículo \"Pull and spend\" del 19 de octubre, \"F2P pulling rules\"; Notas de investigación del 26 de octubre de 2026 (revisadas por una verificación de datos independiente), secciones E (E-14) y F (F-03, F-18, F-23)"
@@ -142,10 +142,10 @@
    "source": "artículo \"Planner by server day\" del 19 de octubre, \"Shop units on day 43 and day 75\"; artículo \"Pull and spend\" del 19 de octubre, \"Shop priorities\""
   },
   {
-   "step": "Gasta dinero real solo dentro de una ventana de rebate.",
+   "step": "No tienes que gastar. Si gastas, compra dentro de una ventana de rebate.",
    "more": [
     "Una ventana de rebate hace que cada compra rinda el doble. La mejor es el Diamond Rebate, días 34–55 del servidor.",
-    "Nunca compres Diamonds sueltos: solo recibes 80 por US$1."
+    "Los Diamonds sueltos son el peor valor: 80 por US$1 (precio del 19 de octubre)."
    ],
    "link": [
     "Ver qué comprar",
@@ -188,9 +188,9 @@
       "1166"
      ],
      "why": [
-      "Black Rabbit es DST, así que gana a todos los atributos. Miza quita escudos cada turno.",
-      "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
-      "Yakumo [Natsu Matsuri] fue debilitado el 14 de octubre. Black Rabbit y Miza están prohibidos en el Global Pinnacle Championship.",
+      "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Miza quita escudos cada turno.",
+      "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
+      "Yakumo [Natsu Matsuri] fue debilitado el 14 de octubre (informe de creador). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
       "Fuente: notas de investigación del 26 de octubre de 2026, sección A6."
      ],
      "backup": true,
@@ -198,12 +198,12 @@
       "kind": "derived",
       "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
       "steps": [
-       "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+       "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
        "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
        "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
        "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
        "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-       "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+       "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
       ],
       "note": null
      },
@@ -233,7 +233,7 @@
        "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
        "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
        "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-       "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+       "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
       ],
       "note": null
      }
@@ -333,7 +333,7 @@
        "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
        "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
        "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-       "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+       "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
       ],
       "note": null
      }
@@ -514,7 +514,7 @@
        "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
        "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
        "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-       "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+       "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
       ],
       "note": "En Carnival Arena los combates son en auto, así que allí el juego lanza las habilidades por ti. Usa este orden donde juegas en manual."
      }
@@ -1581,7 +1581,7 @@
        "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
        "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
        "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-       "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+       "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
       ],
       "note": null
      }
@@ -1604,11 +1604,11 @@
       "1166"
      ],
      "why": [
-      "Black Rabbit es DST, así que le gana a todos los atributos. Su golpe al inicio del turno no se puede contraatacar.",
-      "Miza quita los escudos y resta un 10% de HP antes de que ataque Black Rabbit.",
+      "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
+      "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
       "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
-      "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en el Global Pinnacle Championship.",
-      "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
+      "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
+      "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
       "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
       "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
       "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
@@ -1618,12 +1618,12 @@
       "kind": "derived",
       "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
       "steps": [
-       "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+       "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
        "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
        "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
        "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
        "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-       "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+       "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
       ],
       "note": null
      }
@@ -5492,7 +5492,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Solo unidades gratis: regalos de login, selection cards, misiones y la tienda del juego (precio no confirmado).",
+     "blurb": "Unidades gratis y baratas: regalos de login, selection cards, misiones y unidades de la tienda (precio en la tienda no confirmado).",
      "rows": [
       {
        "label": "Tienda del día 43",
@@ -6200,7 +6200,7 @@
       "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
       "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
       "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-      "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+      "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
      ],
      "note": null
     },
@@ -6542,7 +6542,7 @@
          "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
          "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
          "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-         "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+         "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
         ],
         "note": null
        },
@@ -7388,7 +7388,7 @@
          "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
          "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
          "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-         "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+         "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
         ],
         "note": null
        },
@@ -10469,7 +10469,7 @@
          "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
          "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
          "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-         "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+         "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
         ],
         "note": null
        },
@@ -10844,7 +10844,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Solo unidades gratis: regalos de login, selection cards, misiones y la tienda del juego (precio no confirmado).",
+     "blurb": "Unidades gratis y baratas: regalos de login, selection cards, misiones y unidades de la tienda (precio en la tienda no confirmado).",
      "rows": [
       {
        "label": "Gratis ahora",
@@ -11570,7 +11570,7 @@
          "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
          "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
          "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-         "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+         "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
         ],
         "note": null
        },
@@ -15302,7 +15302,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Solo unidades gratis: regalos de login, selection cards, misiones y la tienda del juego (precio no confirmado).",
+     "blurb": "Unidades gratis y baratas: regalos de login, selection cards, misiones y unidades de la tienda (precio en la tienda no confirmado).",
      "rows": [
       {
        "label": "Tienda inicial",
@@ -16065,11 +16065,11 @@
      "1166"
     ],
     "why": [
-     "Black Rabbit es DST, así que le gana a todos los atributos. Su golpe al inicio del turno no se puede contraatacar.",
-     "Miza quita los escudos y resta un 10% de HP antes de que ataque Black Rabbit.",
+     "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
+     "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
      "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
-     "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en el Global Pinnacle Championship.",
-     "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
+     "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
+     "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
      "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
      "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
      "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
@@ -16080,12 +16080,12 @@
      "kind": "derived",
      "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
      "steps": [
-      "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+      "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
       "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
       "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
       "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
       "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-      "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+      "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
      ],
      "note": null
     },
@@ -16319,11 +16319,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit es DST, así que le gana a todos los atributos. Su golpe al inicio del turno no se puede contraatacar.",
-        "Miza quita los escudos y resta un 10% de HP antes de que ataque Black Rabbit.",
+        "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
+        "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
         "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
-        "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en el Global Pinnacle Championship.",
-        "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
+        "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
+        "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
         "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
@@ -16334,12 +16334,12 @@
         "kind": "derived",
         "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
         "steps": [
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
          "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
         ],
         "note": null
        },
@@ -16611,11 +16611,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit es DST, así que le gana a todos los atributos. Su golpe al inicio del turno no se puede contraatacar.",
-        "Miza quita los escudos y resta un 10% de HP antes de que ataque Black Rabbit.",
+        "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
+        "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
         "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
-        "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en el Global Pinnacle Championship.",
-        "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
+        "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
+        "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
         "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
@@ -16626,12 +16626,12 @@
         "kind": "derived",
         "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
         "steps": [
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
          "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
         ],
         "note": null
        },
@@ -16741,7 +16741,7 @@
         "kind": "derived",
         "source": "Textos de habilidad usados: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
         "steps": [
-         "El inicio del turno es automático: Black Rabbit golpea a todos con 180%, y Miza (back-up) les quita los escudos y les resta un 10% de HP.",
+         "El inicio del turno es automático: Black Rabbit golpea a todos con 180%, y Miza (back-up) les quita los escudos y les resta un 10% del HP actual.",
          "Ayato [1.5th Anniversary] también lanza una habilidad gratis contra el enemigo con menos HP al inicio de cada turno.",
          "Habilidad de Black Rabbit: 265% a todos.",
          "Ayato [Wings of Ardor] después: tras cada habilidad de Aogiri lanza tres golpes de persecución.",
@@ -17132,9 +17132,9 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit es DST, así que gana a todos los atributos. Miza quita escudos cada turno.",
-        "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
-        "Yakumo [Natsu Matsuri] fue debilitado el 14 de octubre. Black Rabbit y Miza están prohibidos en el Global Pinnacle Championship.",
+        "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Miza quita escudos cada turno.",
+        "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
+        "Yakumo [Natsu Matsuri] fue debilitado el 14 de octubre (informe de creador). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
         "Fuente: notas de investigación del 26 de octubre de 2026, sección A6."
        ],
        "team_kind": "sourced",
@@ -17143,12 +17143,12 @@
         "kind": "derived",
         "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
         "steps": [
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
          "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
         ],
         "note": null
        },
@@ -17380,7 +17380,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1165_p2, Skill_EntryDesc_245/246, SkillDesc_1092_p1, SkillDesc_1164_p1; las cinco unidades vienen de las notas de investigación del 26 de octubre de 2026, sección A5, defensas \"Live forever\" (acumulación de límites Aogiri).",
         "steps": [
          "Naki [1.5th Anniversary] (1★): +40% de estadísticas para los aliados Aogiri, solo en Stronghold.",
-         "Noro limita cada habilidad enemiga al 35% de su HP y convierte su siguiente golpe en 1.",
+         "Noro (1★), los 2 primeros turnos: ninguna habilidad enemiga le quita más del 35% de su HP máximo, y si pierde la mitad de su HP en un turno enemigo, el siguiente golpe activo enemigo hace 1.",
          "Tatara [Revenge] mantiene con vida una vez, con 1 HP, al aliado Aogiri con más ATK.",
          "Eto [3M Downloads] sube la DEF de todos por cada unidad Aogiri.",
          "Tatara en el back-up."
@@ -17571,7 +17571,7 @@
         "steps": [
          "Mantén a Younger Bin en Weak todo el combate: Weak anula su Warding e impide el revive de Elder.",
          "Haz burst a Younger en un solo turno cuando puedas: cada tramo de HP que pierde activa el golpe de 500% de Elder.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -17761,7 +17761,7 @@
         "steps": [
          "Pon escudo al equipo antes de su turno: las unidades sin escudo reciben +500%.",
          "Golpea primero las partes y los adds: mientras sigan vivos 3 aliados suyos, recibe un 90% menos.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -17951,7 +17951,7 @@
         "steps": [
          "Usa solo cartas Lv2 y Lv3: las habilidades Lv1 y el Ultimate hacen un 50% menos aquí.",
          "Cada golpe SPD le baja la DEF un 15% (hasta 5 veces): mételos pronto.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -18141,7 +18141,7 @@
         "steps": [
          "Usa solo cartas Lv2 y Lv3: las habilidades Lv1 y el Ultimate hacen un 50% menos aquí.",
          "Cuando se le acaba el escudo, golpea a tu unidad con más ATK con 260% y le aplica Lethal.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -18331,7 +18331,7 @@
         "steps": [
          "Gasta tus cartas Lv3 en los turnos 1 y 2: se hace más fuerte cada turno.",
          "Mantén a todos con vida: cada muerte activa un golpe de 160% y un stun.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -18521,7 +18521,7 @@
         "steps": [
          "Mata primero a los esbirros: cada esbirro que muere le hace un daño igual al 150% de su propio HP máximo.",
          "Sin los esbirros, llena su barra de Weak: entonces recibe un 50% más.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -18711,7 +18711,7 @@
         "steps": [
          "Tienes 5 turnos: gasta las cartas Lv3 pronto, mientras esté por encima del 50% de HP.",
          "No uses el Ultimate aquí: hace un 50% menos.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -18901,7 +18901,7 @@
         "steps": [
          "Escudo primero: recibe un 20% más de los atacantes con escudo.",
          "Guarda tu carta más fuerte para su turno de Weak completo: recibe un 30% más.",
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
@@ -19287,7 +19287,7 @@
         "kind": "derived",
         "source": "Textos de habilidad usados: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
         "steps": [
-         "El inicio del turno es automático: Black Rabbit golpea a todos con 180%, y Miza (back-up) les quita los escudos y les resta un 10% de HP.",
+         "El inicio del turno es automático: Black Rabbit golpea a todos con 180%, y Miza (back-up) les quita los escudos y les resta un 10% del HP actual.",
          "Ayato [1.5th Anniversary] también lanza una habilidad gratis contra el enemigo con menos HP al inicio de cada turno.",
          "Habilidad de Black Rabbit: 265% a todos.",
          "Ayato [Wings of Ardor] después: tras cada habilidad de Aogiri lanza tres golpes de persecución.",
@@ -19377,7 +19377,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Solo unidades gratis: regalos de login, selection cards, misiones y la tienda del juego (precio no confirmado).",
+     "blurb": "Unidades gratis y baratas: regalos de login, selection cards, misiones y unidades de la tienda (precio en la tienda no confirmado).",
      "rows": [
       {
        "label": "Tienda del día 43",
@@ -19750,11 +19750,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit es DST, así que le gana a todos los atributos. Su golpe al inicio del turno no se puede contraatacar.",
-        "Miza quita los escudos y resta un 10% de HP antes de que ataque Black Rabbit.",
+        "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
+        "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
         "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
-        "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en el Global Pinnacle Championship.",
-        "Orden de las casillas (consejo de creador): Naki en la última casilla, luego Black Rabbit y luego Yakumo [Natsu Matsuri], para que la LR cell de Naki dé un ataque extra a tu unidad con más ATK. Es su posición, no el orden en que lanzan.",
+        "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
+        "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
         "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
@@ -19765,12 +19765,12 @@
         "kind": "derived",
         "source": "Textos de habilidad usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" viene del artículo del 19 de octubre, sección 1.",
         "steps": [
-         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% de HP, y Black Rabbit golpea a todos con 180%.",
+         "El inicio del turno es automático: Miza quita los escudos enemigos y les resta un 10% del HP actual (como máximo el 100% de su propio HP inicial), y Black Rabbit golpea a todos con 180%.",
          "Naki primero: su golpe baja los niveles de habilidad del objetivo.",
          "La habilidad de Black Rabbit después (265% a todos). Con 3★, cada habilidad de Aogiri lo potencia.",
          "La habilidad de Miza sobre la mayor amenaza: ignora escudos y DEF.",
          "Yakumo [Natsu Matsuri] al final: su combo doble se activa solo cada 4 acciones. Dale tu ATK más alto.",
-         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno y sube las cartas Lv1 a Lv2."
+         "Akira [June Bride] funciona desde el back-up: quita el Weak cada turno. Si las siguientes habilidades del equipo no quitan ningún efecto Weak, también sube las cartas Lv1 a Lv2."
         ],
         "note": null
        },
@@ -19870,7 +19870,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1165_p2, Skill_EntryDesc_245/246, SkillDesc_1092_p1, SkillDesc_1164_p1; las cinco unidades vienen de las notas de investigación del 26 de octubre de 2026, sección A5, defensas \"Live forever\" (acumulación de límites Aogiri).",
         "steps": [
          "Naki [1.5th Anniversary] (1★): +40% de estadísticas para los aliados Aogiri, solo en Stronghold.",
-         "Noro limita cada habilidad enemiga al 35% de su HP y convierte su siguiente golpe en 1.",
+         "Noro (1★), los 2 primeros turnos: ninguna habilidad enemiga le quita más del 35% de su HP máximo, y si pierde la mitad de su HP en un turno enemigo, el siguiente golpe activo enemigo hace 1.",
          "Tatara [Revenge] mantiene con vida una vez, con 1 HP, al aliado Aogiri con más ATK.",
          "Eto [3M Downloads] sube la DEF de todos por cada unidad Aogiri.",
          "Tatara en el back-up."
@@ -20328,7 +20328,7 @@
       "kind": "derived",
       "source": "Textos de habilidad usados: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
       "steps": [
-       "El inicio del turno es automático: Black Rabbit golpea a todos con 180%, y Miza (back-up) les quita los escudos y les resta un 10% de HP.",
+       "El inicio del turno es automático: Black Rabbit golpea a todos con 180%, y Miza (back-up) les quita los escudos y les resta un 10% del HP actual.",
        "Ayato [1.5th Anniversary] también lanza una habilidad gratis contra el enemigo con menos HP al inicio de cada turno.",
        "Habilidad de Black Rabbit: 265% a todos.",
        "Ayato [Wings of Ardor] después: tras cada habilidad de Aogiri lanza tres golpes de persecución.",
@@ -21685,7 +21685,7 @@
        "Sen primero: su primera habilidad hace a tu equipo inmune a debuffs durante un turno.",
        "Rize [Binge Eater] y Kurona después: cada habilidad suya activa el golpe gratis de 240% de Nutcracker.",
        "Nutcracker al final, y solo cuando ninguna Toka [Maid Costume] tenga Patience.",
-       "Naki cura sola desde el hueco de back-up: no hay que lanzar nada."
+       "Naki cura solo desde el hueco de back-up: no hay que lanzar nada."
       ],
       "note": null
      },
@@ -21766,7 +21766,7 @@
     "text": "Ahorra 90.000 Diamonds para un banner limitado que puedas terminar (300 pulls)."
    },
    {
-    "text": "Gasta dinero real solo dentro de una ventana de rebate."
+    "text": "Nunca tienes que gastar dinero. Si gastas, compra dentro de una ventana de rebate."
    }
   ],
   "best-teams": [
@@ -21786,13 +21786,13 @@
   ],
   "buy": [
    {
-    "text": "Gasta dinero real solo dentro de una ventana de rebate; la mejor es en los días 34–55 del servidor."
+    "text": "Nunca tienes que gastar dinero: los equipos del nivel Inicial usan unidades gratis y de la tienda."
    },
    {
-    "text": "Si compras una sola cosa, compra el Endless Trials Pass #1."
+    "text": "Si gastas, compra dentro de una ventana de rebate; la mejor es en los días 34–55 del servidor."
    },
    {
-    "text": "Nunca compres Diamonds sueltos."
+    "text": "El 19 de octubre, el Endless Trials Pass #1 era lo que más daba por US$1. Los Diamonds sueltos eran lo que menos daba."
    }
   ],
   "tiers": [
@@ -21933,13 +21933,13 @@
     "name": "Monthly Login Contract",
     "price": "Unos US$4,99",
     "why": "La compra mensual favorita de los creadores; cómprala en los días 34–55.",
-    "math": "800 + 300 al día durante 28 días = 9.200 de valor de banner: 1.844 por US$1. Revisa el precio en el juego. Hay dos tipos y se acumulan.",
+    "math": "800 + 300 al día durante 28 días = 9.200 de valor de banner: 1.844 por US$1, solo si reclamas los 28 días. Revisa el precio en el juego. Hay dos tipos y se acumulan.",
     "source": "artículo \"Pull and spend\" del 19 de octubre, \"Real-money value, best first\"; artículo \"Pull and spend\" del 19 de octubre, \"What creators say is worth buying\""
    },
    {
     "name": "Inicio de sesión de evento (Halloween, Navidad, aniversario)",
     "price": "US$9,99",
-    "why": "Compra obligada solo si da una unidad completa que vayas a usar; si no, es solo valor justo.",
+    "why": "Vale la pena solo si da una unidad completa que vayas a usar; si no, es solo valor justo.",
     "math": "Halloween 2025 dio 20 fragmentos gratis + 80 de pago de Arima [Halloween]: 8.400 de valor de banner más una unidad completa. Sin una unidad completa: 8.100–8.400 de valor de banner, 811–841 por US$1.",
     "source": "artículo \"Pull and spend\" del 19 de octubre, \"Real-money value, best first\""
    }
@@ -22023,7 +22023,7 @@
     "name": "Recarga suelta de Diamonds",
     "price": "Cualquiera",
     "why": "La peor compra: 80 Diamonds por US$1.",
-    "math": "Incluso con la primera recarga triple (una sola vez), unos US$100 compran 24.000. Unos US$90 en pases compran unos 136.200 de valor de banner.",
+    "math": "Incluso con la primera recarga triple (una sola vez, 240 por US$1), unos US$100 compran 24.000.",
     "source": "artículo \"Pull and spend\" del 19 de octubre, \"Real-money value, best first\"; artículo \"Pull and spend\" del 19 de octubre, \"What creators say is worth buying\""
    },
    {
@@ -22078,10 +22078,10 @@
   ]
  },
  "buy_rules": [
-  "Valor de banner = Diamonds + 300 por cada Event Summon Ticket.",
+  "No gastar nada (US$0) también vale. Son precios del 19 de octubre: revisa la tienda antes de comprar.",
+  "Valor de banner = Diamonds + 300 por cada Event Summon Ticket. Un ticket solo cuenta en los banners donde funciona, así que compara Diamonds y tickets por separado (página Herramientas).",
   "Compra dentro de una ventana de rebate: Novice Rebate los días 1–7, 8–14, 15–21 y 26–32; Carnival Support los días 19–25; el Diamond Rebate (el mejor) los días 34–55.",
-  "No hay evento de Black Friday ni de Thanksgiving en los datos del juego, así que no esperes uno.",
-  "¿US$100 para un solo evento? Que sea Navidad: unos US$90 en pases y contratos comprados del 14/11 al 5/12 dan unos 136.200 de valor de banner (unos 454 pulls) para el 26/12."
+  "No hay evento de Black Friday ni de Thanksgiving en los datos del juego, así que no esperes uno."
  ],
  "tiers": [
   {
@@ -22091,7 +22091,7 @@
    "attribute": "DST",
    "t0": "S",
    "tf": "S",
-   "why": "0★ 180% en área al inicio de cada turno (no activo, nunca contraatacado), −15% de DEF/+10% de daño recibido; marca a los enemigos con Capture (−40% de robo de vida), que se convierte en Limit (pasivas desactivadas) cuando se registra suficiente daño; con 3 o más Aogiri aplica Capture al inicio de la batalla. 1★ Aogiri +18%. DST le gana a todos los atributos.",
+   "why": "0★ 180% en área al inicio de cada turno (no activo, así que los contraataques a habilidades activas no saltan), −15% de DEF/+10% de daño recibido; marca a los enemigos con Capture (−40% de robo de vida), que se convierte en Limit (pasivas desactivadas) cuando se registra suficiente daño; con 3 o más Aogiri aplica Capture al inicio de la batalla. 1★ Aogiri +18%. DST le gana a todos los atributos, salvo a otro DST.",
    "get": "aparece para una tienda alrededor del día 75 (sin confirmar) · reclutamiento de Carnival"
   },
   {
@@ -22181,7 +22181,7 @@
    "attribute": "SKL",
    "t0": "S",
    "tf": "S",
-   "why": "0★ back-up: quita el Weak cada turno, sube todas las habilidades Lv1 a Lv2, +15% de daño de la activa, escudos del 20%; 1★ aliados +18%, enemigos -18% (back-up).",
+   "why": "0★ back-up: quita el Weak cada turno y da escudos del 20% tras las siguientes habilidades; si esas habilidades no quitan ningún efecto Weak, también sube todas las habilidades Lv1 a Lv2 y +15% de daño de la activa; 1★ aliados +18%, enemigos -18% (back-up).",
    "get": "Cadena de paquetes de regalo June Bride (23/06 al 07/07/2026, terminada); sin entrada en la tienda"
   },
   {

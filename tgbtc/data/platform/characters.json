@@ -258,7 +258,7 @@
       "passives": [
         {
           "name": "Thunder",
-          "text": "When an allied CCG character uses an active skill, gain 1 stack of (effect) (up to 5 stacks). When the Thunder stack limit is reached, the active skill will always score a CRIT and increase CRIT DMG by 30%. After dealing damage, lose 5 stacks of Thunder.",
+          "text": "When an allied CCG character uses an active skill, gain 1 stack of [Thunder] (up to 5 stacks). When the Thunder stack limit is reached, the active skill will always score a CRIT and increase CRIT DMG by 30%. After dealing damage, lose 5 stacks of Thunder. || *Thunder: Increases damage dealt by Active Skills by 7%",
           "when": "Active at 0★"
         },
         {
@@ -268,7 +268,7 @@
         },
         {
           "name": "Bonus-Attack",
-          "text": "When your turn ends, deal (effect) damage equal to 190% of ATK to the enemy with the lowest HP.",
+          "text": "When your turn ends, deal [Blade] damage equal to 190% of ATK to the enemy with the lowest HP. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy",
           "when": "Unlocks at 3★"
         }
       ],
@@ -402,12 +402,12 @@
         {
           "check": true,
           "name": "Stats Boost",
-          "text": "When your turn starts, gain 1 stack of (effect). When the Boost Mark reaches 3, consume all Boost Marks to grant yourself 10% increased stats for 2 turns. During this time, you cannot gain additional Boost Mark.",
+          "text": "When your turn starts, gain 1 stack of [Boost Mark]. When the Boost Mark reaches 3, consume all Boost Marks to grant yourself 10% increased stats for 2 turns. During this time, you cannot gain additional Boost Mark. || *Boost Mark: Increases basic stats by 3%.",
           "when": "Check in-game star preview"
         },
         {
           "name": "Bonus-Attack",
-          "text": "When the target with Death Mark dies, add 1 (effect) to yourself, and immediately cause (effect) damage equal to 180% of ATK to all enemies.",
+          "text": "When the target with Death Mark dies, add 1 [Boost Mark] to yourself, and immediately cause [Death] damage equal to 180% of ATK to all enemies. || *Boost Mark: Increases basic stats by 3%. *Death: This damage deal 30% more damage to the enemy with HP below 25%",
           "when": "Unlocks at 1★"
         },
         {
@@ -687,17 +687,17 @@
       "passives": [
         {
           "name": "Charm",
-          "text": "When battle starts, grant the allied character with the highest max HP (effect) for 3 turns.",
+          "text": "When battle starts, grant the allied character with the highest max HP [Charm] for 3 turns. || *Charm: Reduces damage taken by 40%. All attacks are directed to yourself, so when damaged, you gain a Shield equal to 25% of the damage taken and the shield amount gained is recorded. When you cause damage, you  inflict additional damage equal to 50% of the shield amount gained by this effect",
           "when": "Active at 0★"
         },
         {
           "name": "Adoration",
-          "text": "When battle starts, apply 1 stack of (effect) to all enemies. When allied Anteiku Character deals damage, inflict the target 1 stack of Adoration. For each stack of Adoration, the target takes an additional 4% of the attacker's max HP as damage",
+          "text": "When battle starts, apply 1 stack of [Adoration] to all enemies. When allied Anteiku Character deals damage, inflict the target 1 stack of Adoration. For each stack of Adoration, the target takes an additional 4% of the attacker's max HP as damage || *Adoration: Increase damage taken by 5% for 2 turns, stacking up to 3 times",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Basic Stats Boost",
-          "text": "For each Anteiku Characters on your side, increase basic stats by 5%, up to 20%. When battle starts, if all allies are Anteiku Characters, grant (effect) to caster and any allies with Charm. Characters with Enchanting are immune to the Weak effect.",
+          "text": "For each Anteiku Characters on your side, increase basic stats by 5%, up to 20%. When battle starts, if all allies are Anteiku Characters, grant [Enchanting] to caster and any allies with Charm. Characters with Enchanting are immune to the Weak effect. || *Enchanting: Max HP +5%. After dealing damage, increase your Max HP by 2%, up to a maximum of 10%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -831,7 +831,7 @@
       "passives": [
         {
           "name": "Surprise Attack",
-          "text": "When your turn starts, deals damage to all enemies equal to 130% of ATK, and applies (effect) for 1 turn.",
+          "text": "When your turn starts, deals damage to all enemies equal to 130% of ATK, and applies [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.",
           "when": "Active at 0★"
         },
         {
@@ -976,7 +976,7 @@
         {
           "check": true,
           "name": "Lifesteal Boost",
-          "text": "Stays in (effect) state when your HP is above 70%. Meanwhile triples Lifesteal when damage is dealt.",
+          "text": "Stays in [Blood Rage] state when your HP is above 70%. Meanwhile triples Lifesteal when damage is dealt. || *Blood Rage: Increases damage dealt by 0.5% for each 1% remaining HP you have.",
           "when": "Check in-game star preview"
         },
         {
@@ -987,7 +987,7 @@
         {
           "check": true,
           "name": "Attack Boost",
-          "text": "Receiving healing grants 1 (effect) effect.",
+          "text": "Receiving healing grants 1 [Frenzy] effect. || *Frenzy: Increases ATK-Related stats by 3%, stacking up to 3 times.",
           "when": "Check in-game star preview"
         }
       ],
@@ -1730,7 +1730,7 @@
         },
         {
           "name": "Retaliation",
-          "text": "Being attacked by enemies affected by debuffs triggers Retaliation, dealing (effect) damage equal to 140% of ATK.",
+          "text": "Being attacked by enemies affected by debuffs triggers Retaliation, dealing [Impale] damage equal to 140% of ATK. || *Impale: This damage ignores the target's DEF.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -2145,7 +2145,7 @@
         {
           "check": true,
           "name": "Max HP Boost",
-          "text": "When allied Anteiku Characters use a skill, increase your skill level, or receive damage, you will be given the effect of (effect) for 3 turns, and remove all debuffs. Stacks up to 6 times.",
+          "text": "When allied Anteiku Characters use a skill, increase your skill level, or receive damage, you will be given the effect of [Accumulation] for 3 turns, and remove all debuffs. Stacks up to 6 times. || *Accumulation: Max HP increased by 3%",
           "when": "Check in-game star preview"
         },
         {
@@ -2715,7 +2715,7 @@
         {
           "check": true,
           "name": "Revenge",
-          "text": "Start of battle: gain 3 (effect). \\nStart of your turn: remove 1 Resilience, gain 1 (effect), all allied Aogiri Tree characters +5% basic stats per Resilience removed (max 15%). \\n3 Burst: gain (effect).\\nEnemy turn: if Revenge is active, remove Revenge & all Burst, gain 3 (effect).",
+          "text": "Start of battle: gain 3 [Resilience]. \\nStart of your turn: remove 1 Resilience, gain 1 [Burst], all allied Aogiri Tree characters +5% basic stats per Resilience removed (max 15%). \\n3 Burst: gain [Revenge].\\nEnemy turn: if Revenge is active, remove Revenge & all Burst, gain 3 [Resilience]. || *Resilience: Increases DEF-Related Stats of allied Aogiri Tree characters by 8%. *Burst: Increases damage dealt by allied Aogiri Tree characters by 10%. *Revenge: Increases all stats of allied Aogiri Tree characters by 6%.",
           "when": "Check in-game star preview"
         },
         {
@@ -2727,7 +2727,7 @@
         {
           "check": true,
           "name": "Agitation",
-          "text": "When an allied Aogiri Tree character's HP first drops below 60%, grant that character (effect) for 1 turn. Characters with Agitation take fixed damage of 1; Agitation is removed after taking damage. After an allied character has Agitation removed, their DEF increases by 20% and damage taken decreases by 20% for 1 turn.",
+          "text": "When an allied Aogiri Tree character's HP first drops below 60%, grant that character [Agitation] for 1 turn. Characters with Agitation take fixed damage of 1; Agitation is removed after taking damage. After an allied character has Agitation removed, their DEF increases by 20% and damage taken decreases by 20% for 1 turn. || *Agitation: When your turn starts, restores 20% of the affected character's max HP and removes Agitation.",
           "when": "Check in-game star preview"
         }
       ],
@@ -2859,7 +2859,7 @@
         {
           "check": true,
           "name": "Rage",
-          "text": "When dealing or taking damage, apply (effect) to the target for 2 turns. Your damage dealt to the target with Rage Mark increases by 40%, your damage taken from the target with Rage Mark reduces by 30%",
+          "text": "When dealing or taking damage, apply [Rage Mark] to the target for 2 turns. Your damage dealt to the target with Rage Mark increases by 40%, your damage taken from the target with Rage Mark reduces by 30% || *Rage Mark: Take 30% more damage from the applier and deal 20% less damage to the applier",
           "when": "Check in-game star preview"
         },
         {
@@ -3087,7 +3087,7 @@
       "passives": [
         {
           "name": "Scorched",
-          "text": "Dealing damage to targets below 50% HP inflicts them with (effect) for 2 turns, stacking up to 2 times.",
+          "text": "Dealing damage to targets below 50% HP inflicts them with [Scorched] for 2 turns, stacking up to 2 times. || *Scorched: Take damage equal to 15% of the applier's ATK when a turn begins.",
           "when": "Active at 0★"
         },
         {
@@ -4257,7 +4257,7 @@
         {
           "check": true,
           "name": "Attacking Blood Rage Applying",
-          "text": "Dealing DMG to enemies with lower than 50% HP applies (effect) to you over 2 turns.",
+          "text": "Dealing DMG to enemies with lower than 50% HP applies [Blood Rage] to you over 2 turns. || *Blood Rage: Increases damage dealt by 0.5% for each 1% remaining HP you have.",
           "when": "Check in-game star preview"
         },
         {
@@ -4268,7 +4268,7 @@
         {
           "check": true,
           "name": "Attacked Blood Rage Applying",
-          "text": "Taking damage has a 10% chance of applying (effect) to you for 2 turns.",
+          "text": "Taking damage has a 10% chance of applying [Blood Rage] to you for 2 turns. || *Blood Rage: Increases damage dealt by 0.5% for each 1% remaining HP you have.",
           "when": "Check in-game star preview"
         }
       ],
@@ -5338,7 +5338,7 @@
         {
           "check": true,
           "name": "Charge-Up",
-          "text": "At the end of your turn, grants (effect) if you have used a skill, stacking up to 3 times.",
+          "text": "At the end of your turn, grants [Charge-Up] if you have used a skill, stacking up to 3 times. || *Charge-Up: Basic stats increase by 6%.",
           "when": "Check in-game star preview"
         },
         {
@@ -5623,7 +5623,7 @@
       "passives": [
         {
           "name": "Charge-Up",
-          "text": "After using a skill, applies (effect) to self if the skill has dealt damage to a character with more than 80% HP, stacking up to 3 times.",
+          "text": "After using a skill, applies [Charge-Up] to self if the skill has dealt damage to a character with more than 80% HP, stacking up to 3 times. || *Charge-Up: Basic stats increase by 6%.",
           "when": "Active at 0★"
         },
         {
@@ -6850,7 +6850,7 @@
         },
         {
           "name": "Determination",
-          "text": "When your turn starts, apply 1 stack of (effect) to all allied Anteiku Characters, up to 3 stacks. When an allied character reaches 3 stacks of Determination, remove all debuffs and Weak effects, restore 60% of their Max HP, and increase all stats by 10% for 3 turns.",
+          "text": "When your turn starts, apply 1 stack of [Determination] to all allied Anteiku Characters, up to 3 stacks. When an allied character reaches 3 stacks of Determination, remove all debuffs and Weak effects, restore 60% of their Max HP, and increase all stats by 10% for 3 turns. || *Determination: Increases damage dealt by 5%",
           "when": "Unlocks at 1★"
         },
         {
@@ -6986,7 +6986,7 @@
       "passives": [
         {
           "name": "Blood",
-          "text": "After an allied Anteiku or No Organization character uses an active skill, grant yourself 1 (effect). If you have any buffs, gain an additional stack of (effect), up to 5 stacks. Upon reaching the maximum Blood, makes the active skill ignore the target’s Damage Taken Reduction, and inflicts (effect) on the target for 2 turns, then remove all Blood.",
+          "text": "After an allied Anteiku or No Organization character uses an active skill, grant yourself 1 [Blood]. If you have any buffs, gain an additional stack of [Blood], up to 5 stacks. Upon reaching the maximum Blood, makes the active skill ignore the target’s Damage Taken Reduction, and inflicts [Breathless] on the target for 2 turns, then remove all Blood. || *Blood: When using an active skill to deal damage, inflicts extra damage equal to 5% of the damage dealt. *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%.",
           "when": "Active at 0★"
         },
         {
@@ -6996,7 +6996,7 @@
         },
         {
           "name": "DMG Boost",
-          "text": "Upon reaching maximum Blood, gain 15% CRIT Rate, 30% CRIT DMG, and 10% ATK for 2 turns. This effect can trigger once per turn. For every 5 Blood removed, reduce damage taken by 5%, up to 20%. When killing an enemy with an active skill, gain 2 (effect) if you have fewer than 2 Blood.",
+          "text": "Upon reaching maximum Blood, gain 15% CRIT Rate, 30% CRIT DMG, and 10% ATK for 2 turns. This effect can trigger once per turn. For every 5 Blood removed, reduce damage taken by 5%, up to 20%. When killing an enemy with an active skill, gain 2 [Blood] if you have fewer than 2 Blood. || *Blood: When using an active skill to deal damage, inflicts extra damage equal to 5% of the damage dealt.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -7128,12 +7128,12 @@
       "passives": [
         {
           "name": "Bonus-Attack",
-          "text": "After another allied Aogiri Tree character uses an active skill, launch a bonus attack on an enemy target, dealing 180% ATK damage, granting the target 15% increased damage taken for 2 turns, and reducing the target's skill level. When pursuing an attack on a target with Despair, grant all allies 1 stack of (effect), capped at 4 stacks.",
+          "text": "After another allied Aogiri Tree character uses an active skill, launch a bonus attack on an enemy target, dealing 180% ATK damage, granting the target 15% increased damage taken for 2 turns, and reducing the target's skill level. When pursuing an attack on a target with Despair, grant all allies 1 stack of [Momentum Gathering], capped at 4 stacks. || *Momentum Gathering: Damage taken reduced by 4%.",
           "when": "Active at 0★"
         },
         {
           "name": "Basic stats Increase",
-          "text": "When battle starts, grant 2 stacks of (effect) to all allies. If all Characters on the field are Aogiri Tree Characters, grant an additional 2 stacks of (effect) to all allies. When your turn starts, all allies with 4 stacks of Momentum Gathering will have all Momentum Gatherings removed, and grant the Character an effect that increases Basic stats by 15% for 2 turns. Double the effect for yourself.",
+          "text": "When battle starts, grant 2 stacks of [Momentum Gathering] to all allies. If all Characters on the field are Aogiri Tree Characters, grant an additional 2 stacks of [Momentum Gathering] to all allies. When your turn starts, all allies with 4 stacks of Momentum Gathering will have all Momentum Gatherings removed, and grant the Character an effect that increases Basic stats by 15% for 2 turns. Double the effect for yourself. || *Momentum Gathering: Damage taken reduced by 4%.",
           "when": "Unlocks at 1★"
         },
         {
@@ -7670,7 +7670,7 @@
         {
           "check": true,
           "name": "Sanity Collapse",
-          "text": "When your Aogiri Tree Character deals damage to an enemy, it grants the target 1 stack of (effect), capped at 4 stacks. When an enemy target has 4 stacks of Collapse, grant the target (effect) for 1 turn.",
+          "text": "When your Aogiri Tree Character deals damage to an enemy, it grants the target 1 stack of [Collapse], capped at 4 stacks. When an enemy target has 4 stacks of Collapse, grant the target [Crazy] for 1 turn. || *Collapse: DEF-related stats reduced by 4% *Crazy: Damage taken increases by 20%. The removal costs your 30% Max HP. Damage taken won't exceed 400% of caster's ATK. Removes all Collapses",
           "when": "Check in-game star preview"
         },
         {
@@ -8243,12 +8243,12 @@
       "passives": [
         {
           "name": "Oppressed",
-          "text": "After an allied character deals damage, gain 1 stack of (effect), up to 4 stacks. At 4 stacks, gain (effect). When dealing damage, if you have (effect) or the target's HP is below 60%, each stack of (effect) deals additional damage equal to 3% of the target's max HP. Additional damage per stack cannot exceed 150% of the user's ATK.",
+          "text": "After an allied character deals damage, gain 1 stack of [Oppressed], up to 4 stacks. At 4 stacks, gain [Engulf]. When dealing damage, if you have [Engulf] or the target's HP is below 60%, each stack of [Oppressed] deals additional damage equal to 3% of the target's max HP. Additional damage per stack cannot exceed 150% of the user's ATK. || *Oppress: Increases Pen Rate by 3%. *Engulf: Increases damage by 20%. After dealing damage, this effect is removed, along with all Oppress effects.",
           "when": "Active at 0★"
         },
         {
           "name": "DMG Boost",
-          "text": "When you defeat an enemy using an active skill, immediately deal (effect) damage equal to 220% of your ATK to the enemy with the lowest HP and grant yourself 20% damage reduction for 1 turn, up to 3 times. This attack is considered an active skill.",
+          "text": "When you defeat an enemy using an active skill, immediately deal [Crush] damage equal to 220% of your ATK to the enemy with the lowest HP and grant yourself 20% damage reduction for 1 turn, up to 3 times. This attack is considered an active skill. || *Crush: When this skill deals damage, it increases the skill coefficient by 80% of the current Pen Rate .",
           "when": "Unlocks at 1★"
         },
         {
@@ -8384,12 +8384,12 @@
       "passives": [
         {
           "name": "Sprint",
-          "text": "When your turn starts, deal damage equal to 140% of ATK to all enemies and inflict (effect) to the targets for 3 turns.",
+          "text": "When your turn starts, deal damage equal to 140% of ATK to all enemies and inflict [Impaired] to the targets for 3 turns. || *Impaired: Max HP reduced by 8%, BLK Chance reduced by 5%",
           "when": "Active at 0★"
         },
         {
           "name": "Vigorous",
-          "text": "When battle starts, grant yourself 2 stacks of (effect). For each allied CCG character, gain 1 additional stack of (effect). For each stack of Vigorous, reduce all enemies' DEF by 5%.",
+          "text": "When battle starts, grant yourself 2 stacks of [Vigorous]. For each allied CCG character, gain 1 additional stack of [Vigorous]. For each stack of Vigorous, reduce all enemies' DEF by 5%. || *Vigorous: Increases ATK by 4% and reduces damage taken by 4%",
           "when": "Unlocks at 1★"
         },
         {
@@ -8535,7 +8535,7 @@
         },
         {
           "name": "Prevention",
-          "text": "[Effective also in back-up state] When your turn ends, grant all allied CCG characters (effect) for 1 turn. If a character with Prevention receives a debuff, the Prevention is removed, and the character becomes immune to that debuff. Then, grant that character a shield equal to 10% of their max HP for 2 turns.",
+          "text": "[Effective also in back-up state] When your turn ends, grant all allied CCG characters [Prevention] for 1 turn. If a character with Prevention receives a debuff, the Prevention is removed, and the character becomes immune to that debuff. Then, grant that character a shield equal to 10% of their max HP for 2 turns. || *Prevention: When enemy's turn ends, increase your DEF by 5%, up to 20%.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -8667,17 +8667,17 @@
       "passives": [
         {
           "name": "Warning",
-          "text": "After an allied CCG character takes damage, inflict the attacker 1 (effect), up to 4 stacks. Upon reaching the stack limit, inflict (effect) on the target. When an enemy affected by Disarm uses an active skill, remove Disarm and all Warnings, and inflict that character (effect) for 2 turns.",
+          "text": "After an allied CCG character takes damage, inflict the attacker 1 [Warning], up to 4 stacks. Upon reaching the stack limit, inflict [Disarm] on the target. When an enemy affected by Disarm uses an active skill, remove Disarm and all Warnings, and inflict that character [Exhaustion] for 2 turns. || *Warning: Reduce damage dealt by 5%. *Disarm: Reduce ATK-related stats by 10% and increase damage taken by 20%. *Exhaustion: Immobilized. When the effect removes, reduce your active skill damage by 50% for 1 turn.",
           "when": "Active at 0★"
         },
         {
           "name": "Bonus-Attack",
-          "text": "When your turn ends, if all characters who used active skills this turn are alliedCCG characters, increase your max HP by 5% and damage dealt by 4% (capped at 5 stacks), then deal damage equal to 160% of ATK to all enemies and grant each target 1 stack of (effect).",
+          "text": "When your turn ends, if all characters who used active skills this turn are alliedCCG characters, increase your max HP by 5% and damage dealt by 4% (capped at 5 stacks), then deal damage equal to 160% of ATK to all enemies and grant each target 1 stack of [Warning]. || *Warning: Reduce damage dealt by 5%.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Weaken",
-          "text": "Each time an enemy gains 1 (effect), decrease all enemies' ATK and DEF by 2%, up to 16%. When an enemy remove (effect), reduce that enemy's all stats by 10% for 1 turn.",
+          "text": "Each time an enemy gains 1 [Warning], decrease all enemies' ATK and DEF by 2%, up to 16%. When an enemy remove [Disarm], reduce that enemy's all stats by 10% for 1 turn. || *Warning: Reduce damage dealt by 5%. *Disarm: Reduce ATK-related stats by 10% and increase damage taken by 20%.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -8815,13 +8815,13 @@
         {
           "check": true,
           "name": "Stats Enhancement",
-          "text": "At the start of battle, grants 1 (effect) effect to allied CCG characters, up to 3 stacks. When allied CCG characters use active skills, additionally grants that character 1 (effect) effect. For every 2 (effect) effects that all allied characters have obtained, grants self 1 (effect) effect, up to 6 stacks.",
+          "text": "At the start of battle, grants 1 [Arm] effect to allied CCG characters, up to 3 stacks. When allied CCG characters use active skills, additionally grants that character 1 [Arm] effect. For every 2 [Arm] effects that all allied characters have obtained, grants self 1 [Preparation] effect, up to 6 stacks. || *Arm: Increases ATK by 5% and DEF by 5%. *Preparation: At the start of your turn, for each Preparation hold, increases your max HP by 4% for 1 turn, up to 24%.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Additional Attack",
-          "text": "At the end of your turn, deals (effect) damage equal to 180% of attack to the enemy target with the highest attack, and additionally deals damage equal to 15% of your shield amount to that target. The additional damage cannot exceed 400% of your attack. When your HP first drops below 50%, grants yourself the (effect) effect and fixes your next damage taken to 1 (once per battle).",
+          "text": "At the end of your turn, deals [Power Attack] damage equal to 180% of attack to the enemy target with the highest attack, and additionally deals damage equal to 15% of your shield amount to that target. The additional damage cannot exceed 400% of your attack. When your HP first drops below 50%, grants yourself the [Potent Tactic] effect and fixes your next damage taken to 1 (once per battle). || *Power Attack: Ignores the target's Block Chance when attacking, and reduces the target's ATK by 15% for 1 turn. *Potent Tactic: At the start of your turn, restores 20% of lost HP. When taking damage, reduces the attacker's base stats by 3% (max 5 stacks), lasting until the battle ends.",
           "when": "Check in-game star preview"
         }
       ],
@@ -9093,7 +9093,7 @@
       "passives": [
         {
           "name": "Bloodthirsty",
-          "text": "When the battle starts, grant yourself (effect). When you deal damage and lifesteal, 100% of the lifesteal amount is stored in (effect). If your HP is full, any excess is doubled and stored in (effect). The storage limit for (effect) is 30% of your max HP at the start of the battle. Once (effect) is full, you gain (effect).",
+          "text": "When the battle starts, grant yourself [Blood Pool]. When you deal damage and lifesteal, 100% of the lifesteal amount is stored in [Blood Pool]. If your HP is full, any excess is doubled and stored in [Blood Pool]. The storage limit for [Blood Pool] is 30% of your max HP at the start of the battle. Once [Blood Pool] is full, you gain [Bloodthirsty]. || *Blood Pool: Increase HP-related stats by 10%. *Bloodthirsty: When dealing damage, deal additional damage equal to 15% of your max HP, and inflict the target with a 15% Max HP reduction for 1 turn.",
           "when": "Active at 0★"
         },
         {
@@ -9235,19 +9235,19 @@
         {
           "check": true,
           "name": "Damage Boost",
-          "text": "[Effective also in back-up state] When battle starts, grants all allies (effect). When your turn starts, grants all allies 1 stack of (effect), up to 3 stacks.",
+          "text": "[Effective also in back-up state] When battle starts, grants all allies [Passion]. When your turn starts, grants all allies 1 stack of [Spirit], up to 3 stacks. || *Passion: Damage dealt increased by 8%, HP-related abilities increased by 8% *Spirit: All allies' ATK increased by 4%.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Additional Attack",
-          "text": "When an ally character deals damage, grant self 1 (effect) effect (max 4 stacks). When (effect) reaches max stacks, instantly launches a pursuit attack against all enemies, dealing (effect) damage equal to 120% of ATK. If only 1 enemy exists on the field, increase the skill coefficient of this pursuit attack by 50%. After the pursuit attack, remove all (effect) effects from self.#",
+          "text": "When an ally character deals damage, grant self 1 [Stimulation] effect (max 4 stacks). When [Stimulation] reaches max stacks, instantly launches a pursuit attack against all enemies, dealing [Smite] damage equal to 120% of ATK. If only 1 enemy exists on the field, increase the skill coefficient of this pursuit attack by 50%. After the pursuit attack, remove all [Stimulation] effects from self.# || *Stimulation: ATK increased by 3%. *Smite: Ignores DEF and Block Chance for this damage",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Basic Stats Boost",
-          "text": "[Effective even in back-up position] Increase all allies' Basic Stats by 12%. At the start of battle, grant all allies the (effect) effect. When an ally character is defeated, reduce all enemies' ATK by 8% for 1 turn.",
+          "text": "[Effective even in back-up position] Increase all allies' Basic Stats by 12%. At the start of battle, grant all allies the [Unity] effect. When an ally character is defeated, reduce all enemies' ATK by 8% for 1 turn. || *Unity: Damage taken reduced by 8%, with an additional 8% reduction for non-active skill damage. After self takes 3 instances of active skill damage, reduce the next active skill damage taken by 40%",
           "when": "Check in-game star preview"
         }
       ],
@@ -9379,13 +9379,13 @@
         {
           "check": true,
           "name": "Fortitude",
-          "text": "For each Anteiku character in the entire ally team, basic ability values of the entire ally team increase by 3%, up to a maximum of 12%. At the start of battle, grant self (effect) effect for 2 turns, and grant ally Anteiku characters (effect) effect. If all ally characters are Anteiku, additionally grant self (effect) effect",
+          "text": "For each Anteiku character in the entire ally team, basic ability values of the entire ally team increase by 3%, up to a maximum of 12%. At the start of battle, grant self [Fortitude] effect for 2 turns, and grant ally Anteiku characters [Resist] effect. If all ally characters are Anteiku, additionally grant self [Obstruct] effect || *Fortitude: HP-related abilities increased by 15%, defense-related abilities increased by 10%, and put self into provocation stance, diverting all attacks to self. During Fortitude, immune to debuff effects and Weak effect. *Resist: Attack-related abilities increased by 5%. For every 5% reduction in current HP, ATK additionally increases by 2%, up to a maximum of 12%. *Obstruct: For every 4% reduction in current HP, defense and block rate increase by 1%, up to a maximum of 15% *Provoke: Draws all attacks to you.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Fight Hard",
-          "text": "At the start of the your turn, if self does not have the (effect) effect, grant self 4 (effect) (max 4 stacks). When taking active skill damage, convert 1 (effect) effect on self into 1 (effect) effect and grant it to the attacker (max 4 stacks).",
+          "text": "At the start of the your turn, if self does not have the [Fight Hard] effect, grant self 4 [Fight Hard] (max 4 stacks). When taking active skill damage, convert 1 [Fight Hard] effect on self into 1 [Decline] effect and grant it to the attacker (max 4 stacks). || *Fight Hard: PEN Rate increased by 4%, damage dealt increased by 5%. *Decline: All ability values reduced by 2%",
           "when": "Check in-game star preview"
         },
         {
@@ -9522,7 +9522,7 @@
       "passives": [
         {
           "name": "Fear",
-          "text": "[Effective also in back-up state] When allied characters attack, apply (effect) to the target. When an enemy with Fear uses active skills, apply (effect) to them. When an enemy dies, apply (effect) to all enemies",
+          "text": "[Effective also in back-up state] When allied characters attack, apply [Fear] to the target. When an enemy with Fear uses active skills, apply [Disruption] to them. When an enemy dies, apply [Fear] to all enemies || *Disruption: Makes the target(s)' active skill ineffective for 1 turn. *Fear: Basic stats are reduced by 12% for 1 turn.",
           "when": "Active at 0★"
         },
         {
@@ -9664,18 +9664,18 @@
         {
           "check": true,
           "name": "Lockdown",
-          "text": "When battle starts, apply (effect) effect to the enemy target with the highest ATK. When the target with Lockdown uses the Active Skill or takes damage from an Active Skill, all allies’ basic stats are increased by 2%, up to 8%.",
+          "text": "When battle starts, apply [Lockdown] effect to the enemy target with the highest ATK. When the target with Lockdown uses the Active Skill or takes damage from an Active Skill, all allies’ basic stats are increased by 2%, up to 8%. || *Lockdown: Reduce ATK of the Character affected by Lockdown by 20%, reduce damage dealt by Level 2 Skills by 30%, and reduce damage dealt by Level 3 Skills by 50%.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Wall of Overwatch",
-          "text": "When your HP first drops below 40%, grant yourself (effect) for 1 turn. If you already have Overwatch, grant yourself the effect that the next damage taken is fixed at 1. When you are affected by Overwatch, The max damage taken by allied Anteiku Characters from a single Skill doesn’t exceed 30% of their max HP",
+          "text": "When your HP first drops below 40%, grant yourself [Overwatch] for 1 turn. If you already have Overwatch, grant yourself the effect that the next damage taken is fixed at 1. When you are affected by Overwatch, The max damage taken by allied Anteiku Characters from a single Skill doesn’t exceed 30% of their max HP || *Overwatch: Grant Shield of 10% of the damage taken when your Character takes damage",
           "when": "Check in-game star preview"
         },
         {
           "name": "Fortify",
-          "text": "When your turn starts, if your Character triggered Overwatch in the previous turn, grant your Anteiku Character with the lowest HP the effect of reducing damage taken by 20% in 1 turn, and grant yourself (effect).",
+          "text": "When your turn starts, if your Character triggered Overwatch in the previous turn, grant your Anteiku Character with the lowest HP the effect of reducing damage taken by 20% in 1 turn, and grant yourself [Fortify]. || *Fortify: Increase the damage of Active Skills of your Anteiku Characters by 15%. Dismissed after it takes effect.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -9806,12 +9806,12 @@
       "passives": [
         {
           "name": "Dismember",
-          "text": "When (effect) of the enemy character reaches the limit, grants them (effect) for 2 turns. Characters with (effect) take extra damage equal to 150% of the attacker’s ATK.",
+          "text": "When [Sever] of the enemy character reaches the limit, grants them [Dismember] for 2 turns. Characters with [Dismember] take extra damage equal to 150% of the attacker’s ATK. || *Sever: Reduces DEF by 2%. *Dismember: Reduces DEF-related stats by 15%. When removed, removes all stacks of Sever from the carrier.",
           "when": "Active at 0★"
         },
         {
           "name": "Bonus-Attack",
-          "text": "When an enemy obtains (effect), instantly deals (effect) damage equal to 180% of ATK to them. When dealing damage to enemies with (effect), increases the stats of all allies by 10% for 2 turns, stacking up to 2 times.",
+          "text": "When an enemy obtains [Dismember], instantly deals [Blade] damage equal to 180% of ATK to them. When dealing damage to enemies with [Dismember], increases the stats of all allies by 10% for 2 turns, stacking up to 2 times. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy *Dismember: Reduces DEF-related stats by 15%. When removed, removes all stacks of Sever from the carrier.",
           "when": "Unlocks at 1★"
         },
         {
@@ -9947,17 +9947,17 @@
       "passives": [
         {
           "name": "Sharpen",
-          "text": "When the battle starts, grant the allied character with the highest ATK (effect). Before using active skill, characters with (effect) will remove all debuffs and gain a 10% increase in ATK-related stats for 1 turn. When a character with (effect) dies, the allied character with the highest ATK will receive (effect).",
+          "text": "When the battle starts, grant the allied character with the highest ATK [Sharpen]. Before using active skill, characters with [Sharpen] will remove all debuffs and gain a 10% increase in ATK-related stats for 1 turn. When a character with [Sharpen] dies, the allied character with the highest ATK will receive [Sharpen]. || *Sharpen: When your turn starts, increase affected character's skill level.",
           "when": "Active at 0★"
         },
         {
           "name": "Revelation Surge",
-          "text": "After any allied character uses a skill, grant yourself 1 (effect). Upon using your active skill, grant (effect) equal to your skill level. When (effect) reaches 3, remove all (effect) and increase the skill level of all allies.",
+          "text": "After any allied character uses a skill, grant yourself 1 [Revelation]. Upon using your active skill, grant [Revelation] equal to your skill level. When [Revelation] reaches 3, remove all [Revelation] and increase the skill level of all allies. || *Revelation: Upon removal, increase all allied characters' MAX HP by 1.5%, up to 15%.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Skill Boost",
-          "text": "When a character with (effect) uses an active skill, grant them additional effects based on their skill level:\\nLv 1: Increases ATK by 15%.\\nLv 2: Increases ATK by 15%, increases PEN Rate by 10%.\\nLv 3: Increases ATK by 20%, increases PEN Rate by 10%.",
+          "text": "When a character with [Sharpen] uses an active skill, grant them additional effects based on their skill level:\\nLv 1: Increases ATK by 15%.\\nLv 2: Increases ATK by 15%, increases PEN Rate by 10%.\\nLv 3: Increases ATK by 20%, increases PEN Rate by 10%. || *Sharpen: When your turn starts, increase affected character's skill level.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -10375,12 +10375,12 @@
         },
         {
           "name": "Unity",
-          "text": "For every 10% of your lost HP, increase your Lifesteal Rate and damage dealt by 5%, up to 30%. When all allied characters are Anteiku characters, increase all allied characters' basic stats by 10% and grant yourself (effect).",
+          "text": "For every 10% of your lost HP, increase your Lifesteal Rate and damage dealt by 5%, up to 30%. When all allied characters are Anteiku characters, increase all allied characters' basic stats by 10% and grant yourself [Unity]. || *Unity: When another allied Anteiku character deals damage, grant the holder a shield equal to 10% of the damage dealt for 1 turn.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Struggle",
-          "text": "When you first take fatal damage, retain 1 HP and gain 3 stacks of (effect). While (effect) is active, increase your ATK-Related stats by 10% and damage dealt by 15%.",
+          "text": "When you first take fatal damage, retain 1 HP and gain 3 stacks of [Struggle]. While [Struggle] is active, increase your ATK-Related stats by 10% and damage dealt by 15%. || *Struggle: Prevents HP from dropping below 1. Removed upon taking damage, then increases all allied characters' basic stats by 5% for 2 turns.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -10510,12 +10510,12 @@
       "passives": [
         {
           "name": "Arcane",
-          "text": "When the battle starts, grants all allied No Organization and Anteiku characters (effect). For each No Organization or Anteiku character on the team (including Back-up character), increase all allied characters' basic stats by 4%, up to 20%.",
+          "text": "When the battle starts, grants all allied No Organization and Anteiku characters [Arcane]. For each No Organization or Anteiku character on the team (including Back-up character), increase all allied characters' basic stats by 4%, up to 20%. || *Arcane: For each buff on yourself, increase ATK by 4%, up to 12%. When attacking a target with debuffs, increase your damage dealt by 5% for every 2 debuffs, up to 10%.",
           "when": "Active at 0★"
         },
         {
           "name": "Encircle",
-          "text": "After using an active skill, inflict a number of (effect) to the enemy target equal to the user's active skill level. When your turn starts, if only Anteiku or No Organization characters used skills last turn, inflict all enemies (effect) for 1 turn.",
+          "text": "After using an active skill, inflict a number of [Brittle] to the enemy target equal to the user's active skill level. When your turn starts, if only Anteiku or No Organization characters used skills last turn, inflict all enemies [Encircle] for 1 turn. || *Brittle: Reduces Crit Resist by 10% and Crit DEF by 6% for 2 turns, up to 3 stacks. *Encircle: When taking damage, increase your damage taken by 6% for 1 turn, up to 2 stacks.",
           "when": "Unlocks at 1★"
         },
         {
@@ -10651,7 +10651,7 @@
       "passives": [
         {
           "name": "Vulnerability Strike",
-          "text": "When allied CCG character deals damage to an enemy target with (effect), they inflict additional damage equal to 15% of that damage to all enemies. This additional damage cannot exceed 200% of the attacker’s ATK. When an enemy with (effect) dies, grant (effect) for 1 turn to a random enemy without Vulnerability, then deal damage equal to 200% of the highest ATK among all allied characters to all enemies.",
+          "text": "When allied CCG character deals damage to an enemy target with [Vulnerability], they inflict additional damage equal to 15% of that damage to all enemies. This additional damage cannot exceed 200% of the attacker’s ATK. When an enemy with [Vulnerability] dies, grant [Vulnerability] for 1 turn to a random enemy without Vulnerability, then deal damage equal to 200% of the highest ATK among all allied characters to all enemies. || *Vulnerability: Reduces DEF-related stats by 10% and increases damage taken by 15%.",
           "when": "Active at 0★"
         },
         {
@@ -10661,7 +10661,7 @@
         },
         {
           "name": "Full-Scale Attack",
-          "text": "When allied CCG characters attack, they gain 1 stack of (effect), capped at 6 stacks. When (effect) reaches 6 stacks, remove all debuffs from all your characters and grant all your characters (effect) for 2 turns.",
+          "text": "When allied CCG characters attack, they gain 1 stack of [Command], capped at 6 stacks. When [Command] reaches 6 stacks, remove all debuffs from all your characters and grant all your characters [Full-Scale Attack] for 2 turns. || *Command: Reduces damage taken by 3%. *Full-Scale Attack: Increases ATK-Related stats by 10%, grants immunity to Disruption, Lethal, and Disabling effects, and increases damage dealt by 20%, and lifts all commands when Full-Scale Attack is removed.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -10792,7 +10792,7 @@
       "passives": [
         {
           "name": "Blood Feud",
-          "text": "When the battle starts, grant allied Aogiri Tree character with highest ATK (effect). When a character with Overawe takes fatal damage for the first time, prevent death, leaving them with 1 HP, and grant them (effect) for 1 turn.",
+          "text": "When the battle starts, grant allied Aogiri Tree character with highest ATK [Overawe]. When a character with Overawe takes fatal damage for the first time, prevent death, leaving them with 1 HP, and grant them [Blood Feud] for 1 turn. || *Overawe: Active skill damage is increased by 10%. If Blood Feud is active, active skill damage is increased by an extra 10%. Blood Feud: HP is fixed at 1. After using an active skill, automatically casts a Lv.1 version of the same skill on the same target (this extra cast does not trigger Blood Feud again). When Blood Feud ends, the user dies instantly (Resurrection cannot be triggered).",
           "when": "Active at 0★"
         },
         {
@@ -10934,7 +10934,7 @@
       "passives": [
         {
           "name": "Wish",
-          "text": "When the battle starts, grant yourself 3 stacks of (effect). When your turn starts, consume 1 Wish and increase all allied characters' basic stats by 10% for 2 turns. When all Wish stacks are consumed, grant all allied characters (effect) for 1 turn, then grant yourself 3 stacks of (effect).",
+          "text": "When the battle starts, grant yourself 3 stacks of [Wish]. When your turn starts, consume 1 Wish and increase all allied characters' basic stats by 10% for 2 turns. When all Wish stacks are consumed, grant all allied characters [Fulfillment] for 1 turn, then grant yourself 3 stacks of [Wish]. || *Wish: Reduces damage taken by 10%. *Fulfillment: Increases damage dealt by 20%. When taking damage, the amount received will not exceed 50% of your max HP.",
           "when": "Active at 0★"
         },
         {
@@ -11076,18 +11076,18 @@
         {
           "check": true,
           "name": "Blessing",
-          "text": "[Also Effective in Back-up State] When the battle starts, if all allied characters on the field are Anteiku, grant all allied character (effect).",
+          "text": "[Also Effective in Back-up State] When the battle starts, if all allied characters on the field are Anteiku, grant all allied character [Blessing]. || *Blessing: Increases ATK by 10% and Pen Rate by 10%. For each buff you gain, increases Max HP and DEF by 1.5%, up to 9%. When you have 5 or more buffs, increases all your stats by 8%.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Auspice",
-          "text": "[Also Effective in Back-up State] When your turn starts, grant all allied characters (effect) for 1 turn, and grant the allied character with the lowest HP percentage (effect) for 1 turn.",
+          "text": "[Also Effective in Back-up State] When your turn starts, grant all allied characters [Auspice] for 1 turn, and grant the allied character with the lowest HP percentage [Exorcism Ritual] for 1 turn. || *Auspice: When using an active skill, increases damage dealt by 5% per skill level. When using a lv.2 skill or higher, increases PEN Rate by 10%. *Exorcism Ritual: Removes all debuffs and restores 10% Max HP. After taking damage, increase your basic stats by 3% for 1 turn, up to 3 stacks.",
           "when": "Check in-game star preview"
         },
         {
           "name": "Origami Robe",
-          "text": "[Also Effective in Back-up State] When your turn ends, if all characters who used skills this turn are Anteiku, grant all allied characters (effect) for 1 turn.",
+          "text": "[Also Effective in Back-up State] When your turn ends, if all characters who used skills this turn are Anteiku, grant all allied characters [Origami Robe] for 1 turn. || *Origami Robe: Reduces damage taken by 10%. When taking CRIT DMG, reduces that damage by an additional 10%. Each time you take damage, increases your ATK by 3% for 1 turn, up to 3 times.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -11219,13 +11219,13 @@
         {
           "check": true,
           "name": "Attack Boost",
-          "text": "When your turn starts, increase your ATK-related stats by 5%, up to 15%. After an allied character uses an active skill, gain 1 (effect), up to 12 stacks. When dealing damage, if the Aim effect is stacked to the limit, deal additional damage equal to 30% of the current damage to the target. For every 3 stacks of (effect), increase your skill level.",
+          "text": "When your turn starts, increase your ATK-related stats by 5%, up to 15%. After an allied character uses an active skill, gain 1 [Aim], up to 12 stacks. When dealing damage, if the Aim effect is stacked to the limit, deal additional damage equal to 30% of the current damage to the target. For every 3 stacks of [Aim], increase your skill level. || *Aim: Increase damage by 4%.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Attack Boost",
-          "text": "For each stack of Aim you have, increase all allied characters' ATK by 1%, up to 12%. When your turn ends, deal (effect) damage equal to 220% of your ATK to the enemy with the highest HP.",
+          "text": "For each stack of Aim you have, increase all allied characters' ATK by 1%, up to 12%. When your turn ends, deal [Cleave] damage equal to 220% of your ATK to the enemy with the highest HP. || *Cleave: For every 5% more Max HP the target has compared to you, increase the damage of this skill by 2%, up to 100%.",
           "when": "Check in-game star preview"
         },
         {
@@ -11362,12 +11362,12 @@
       "passives": [
         {
           "name": "ATK Boost",
-          "text": "After allied CCG characters dealing damage, grant themselves 1 (effect), up to 3 stacks. When the limit is reached, it converts into 3 (effect). After using an active skill, if you has Discharge, deal 130% (effect) damage to all enemies, then remove 1 Discharge. While having Discharge, Energy Storage cannot be gained.",
+          "text": "After allied CCG characters dealing damage, grant themselves 1 [Energy Storage], up to 3 stacks. When the limit is reached, it converts into 3 [Discharge]. After using an active skill, if you has Discharge, deal 130% [Electric Shock] damage to all enemies, then remove 1 Discharge. While having Discharge, Energy Storage cannot be gained. || *Energy Storage: Increase ATK by 3%. *Discharge: Increase your ATK-Related stats by 5% for 2 turns. *Electric Shock: When dealing damage, also deal bonus damage equal to 100% Pen Rate.",
           "when": "Active at 0★"
         },
         {
           "name": "Aftershock Effect",
-          "text": "When dealing damage, inflict the target (effect) for 2 turns. When dealing damage to an enemy with Electrified, if you have Discharge, this skill will additionally deal damage equal to 50% of ATK to all enemies.",
+          "text": "When dealing damage, inflict the target [Electrified] for 2 turns. When dealing damage to an enemy with Electrified, if you have Discharge, this skill will additionally deal damage equal to 50% of ATK to all enemies. || *Electrified: When taking damage, take additional damage equal to 80% of the attacker's ATK.",
           "when": "Unlocks at 1★"
         },
         {
@@ -11518,7 +11518,7 @@
         },
         {
           "name": "Flash",
-          "text": "When our turn starts, we immediately consume all the sure-kill skills and sure-kill skill cards, increase our skill level, and obtain 1 (effect), which can only be stacked 3 times. If our health value is not less than 80%, we will additionally increase the skill level of ourselves and our character with the highest initial attack power.",
+          "text": "When our turn starts, we immediately consume all the sure-kill skills and sure-kill skill cards, increase our skill level, and obtain 1 [Flash], which can only be stacked 3 times. If our health value is not less than 80%, we will additionally increase the skill level of ourselves and our character with the highest initial attack power. || *Flash: All ability values ​​are increased by 4%, all skill damage received by all allies is reduced by 12%, and additional damage received by all allies is reduced by 18%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -11653,7 +11653,7 @@
       "passives": [
         {
           "name": "Focused Strike",
-          "text": "After using an active skill, gains 4 (effect). When an allied character takes a single instance of damage exceeding 20% of their own Max HP, the user gains 1 (effect). Each time the user gains 4 (effect), deals (effect) damage equal to 200% of ATK to all enemies and restores HP equal to 6% of the applier's Max HP to other allied characters. This effect is unaffected by Restoration Rate.",
+          "text": "After using an active skill, gains 4 [Concentration]. When an allied character takes a single instance of damage exceeding 20% of their own Max HP, the user gains 1 [Concentration]. Each time the user gains 4 [Concentration], deals [Ultra-Judgment] damage equal to 200% of ATK to all enemies and restores HP equal to 6% of the applier's Max HP to other allied characters. This effect is unaffected by Restoration Rate. || *Ultra-Judgment: Increases this skill's ATK by 50% and ignores 30% of the target's Damage Reduction effect. *Concentration: DEF +5%, Block Chance +3%, non-active skill damage +3%, up to 12 stacks, lasts until the enemy's turn ends.",
           "when": "Active at 0★"
         },
         {
@@ -11663,7 +11663,7 @@
         },
         {
           "name": "Warm-up",
-          "text": "When battle starts, allies gain (effect). After an ally takes action, grants 1 stack of (effect) to the caster; you gain an extra stack of (effect) after taking action, stacking up to 5 times. At 5 stacks of (effect), gain (effect)",
+          "text": "When battle starts, allies gain [Coordination]. After an ally takes action, grants 1 stack of [Killing Intent] to the caster; you gain an extra stack of [Killing Intent] after taking action, stacking up to 5 times. At 5 stacks of [Killing Intent], gain [Morale] || *Coordination: After an active skill attack, deal additional damage equal to 60% of the caster's ATK to all enemies. *Killing Intent: Increase basic stats of all allies by 4% and PEN Rate by 5% *Morale: All stats +8%, ATK +15%. Attacks ignore 30% of the target's Block Chance",
           "when": "Unlocks at 3★"
         }
       ],
@@ -11796,7 +11796,7 @@
         {
           "check": true,
           "name": "Breathless",
-          "text": "After using an active skill, inflict (effect) on all enemies for 2 turns. Increase all allied characters' damage to enemies with Detonate by 15%.",
+          "text": "After using an active skill, inflict [Breathless] on all enemies for 2 turns. Increase all allied characters' damage to enemies with Detonate by 15%. || *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%.",
           "when": "Check in-game star preview"
         },
         {
@@ -11938,7 +11938,7 @@
       "passives": [
         {
           "name": "Capability Burst",
-          "text": "After allied Anteiku characters use an active skill, they gain 1 (effect), up to 3 times per character. For every 3 Capability gained by all allied characters, increase their ATK by 5%, up to 20%. When an allied character reaches the Capability limit, remove all of that character’s Capability and grant them (effect).",
+          "text": "After allied Anteiku characters use an active skill, they gain 1 [Capability], up to 3 times per character. For every 3 Capability gained by all allied characters, increase their ATK by 5%, up to 20%. When an allied character reaches the Capability limit, remove all of that character’s Capability and grant them [Capability Burst]. || *Capability: Increases damage dealt by 3%, and reduce damage taken by 3%. *Capability Burst: Increases damage dealt by 10%, and reduce damage taken by 10%. When your turn starts, increase basic stats by 5% for 1 turn.",
           "when": "Active at 0★"
         },
         {
@@ -12081,17 +12081,17 @@
       "passives": [
         {
           "name": "Restraint Attack",
-          "text": "After an enemy casts an active skill, remove up to 4 buffs or stance effects from the target. Gain 1 stack of (effect) for each effect removed. At 4 stacks of (effect), remove all self's debuffs and immobilize effects, then unleash a Kagune Restraint Attack on the enemy with the highest ATK, dealing (effect) damage equal to 270% of ATK. Consume all (effect) afterward",
+          "text": "After an enemy casts an active skill, remove up to 4 buffs or stance effects from the target. Gain 1 stack of [Kagune Activation] for each effect removed. At 4 stacks of [Kagune Activation], remove all self's debuffs and immobilize effects, then unleash a Kagune Restraint Attack on the enemy with the highest ATK, dealing [Ultra-Weak] damage equal to 270% of ATK. Consume all [Kagune Activation] afterward || *Ultra-Weak: This damage applies 2 additional Weak to targets hit. The targets affected by Weak take 25% more damage *Kagune Activation: Single instance of damage taken cannot exceed 35% of Max HP. Basic stats +3%, non-active skill damage +5%",
           "when": "Active at 0★"
         },
         {
           "name": "No Organization Boost",
-          "text": "Increase all ability values ​​of our No Organization characters by 20%, and increase the damage caused by ourselves by 20%. When our turn starts, we will gain 2 pieces of (effect). Within the 2 turn, (effect) will be 6% of the current attack power of all enemies, and can only be superimposed 2 times.",
+          "text": "Increase all ability values ​​of our No Organization characters by 20%, and increase the damage caused by ourselves by 20%. When our turn starts, we will gain 2 pieces of [Kagune Activation]. Within the 2 turn, [Steal] will be 6% of the current attack power of all enemies, and can only be superimposed 2 times. || *Steal: Transfers the target's reduced stats to the caster. *Kagune Activation: Single instance of damage taken cannot exceed 35% of Max HP. Basic stats +3%, non-active skill damage +5%",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Disordered Action",
-          "text": "After casting an active skill, if the target's HP is below 80%, deal extra damage equal to 300% of ATK. If the target's HP drops below 40% after this hit, inflict (effect) on the target for 1 turn",
+          "text": "After casting an active skill, if the target's HP is below 80%, deal extra damage equal to 300% of ATK. If the target's HP drops below 40% after this hit, inflict [Disordered Action] on the target for 1 turn || *Disordered Action: Unable to act, basic stats -6%, damage taken from the first active skill each turn +50%.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -12225,17 +12225,17 @@
       "passives": [
         {
           "name": "Enhanced Kagune Edge",
-          "text": "After an allied CCG character casts an active skill, gain stacks of (effect) equal to the skill's level, up to 10 stacks. At 10 stacks, consume all (effect) and gain (effect) for 5 turns. Cannot gain (effect) during (effect)",
+          "text": "After an allied CCG character casts an active skill, gain stacks of [Enhanced Kagune Edge] equal to the skill's level, up to 10 stacks. At 10 stacks, consume all [Enhanced Kagune Edge] and gain [Kagune Edge Ascension] for 5 turns. Cannot gain [Enhanced Kagune Edge] during [Kagune Edge Ascension] || *Enhanced Kagune Edge: Critical hit damage is increased 6%, all our attack power is increased 2%, and block rate is increased 3% *Kagune Edge Ascension: The critical hit damage of all our team members is increased by 60%, and the basic ability value is increased by 25%. When our character releases a single skill attack, it will cause additional damage of the carrier's critical hit damage 40%. When releasing all skills to attack, it will cause additional damage of the carrier's critical hit damage 15%.",
           "when": "Active at 0★"
         },
         {
           "name": "Mass Immunity",
-          "text": "Each time there are 1 CCG characters on our side, the basic ability value of all our team will be increased by 5%, and the damage and additional damage received will be reduced by 4%. When we obtain (effect), our team will be relieved and immune to all blocking effects and weak effects. The immunity effect lasts for 1 turns.",
+          "text": "Each time there are 1 CCG characters on our side, the basic ability value of all our team will be increased by 5%, and the damage and additional damage received will be reduced by 4%. When we obtain [Kagune Edge Ascension], our team will be relieved and immune to all blocking effects and weak effects. The immunity effect lasts for 1 turns. || *Kagune Edge Ascension: The critical hit damage of all our team members is increased by 60%, and the basic ability value is increased by 25%. When our character releases a single skill attack, it will cause additional damage of the carrier's critical hit damage 40%. When releasing all skills to attack, it will cause additional damage of the carrier's critical hit damage 15%.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Powerful Pursuit",
-          "text": "When our character receives fatal damage, he will immediately gain 3 (effect). If he is already in (effect), he will immediately cause (effect) damage with attack power 280% to the enemy with the highest attack power. This damage ignores all damage reduction effects on the target.",
+          "text": "When our character receives fatal damage, he will immediately gain 3 [Enhanced Kagune Edge]. If he is already in [Kagune Edge Ascension], he will immediately cause [Ultra-Rift Slash] damage with attack power 280% to the enemy with the highest attack power. This damage ignores all damage reduction effects on the target. || *Enhanced Kagune Edge: Critical hit damage is increased 6%, all our attack power is increased 2%, and block rate is increased 3% *Kagune Edge Ascension: The critical hit damage of all our team members is increased by 60%, and the basic ability value is increased by 25%. When our character releases a single skill attack, it will cause additional damage of the carrier's critical hit damage 40%. When releasing all skills to attack, it will cause additional damage of the carrier's critical hit damage 15%. *Ultra-Rift Slash: This skill cannot CRIT, causing DMG Increase 30% and additional damage of CRIT DMG50%. When you have He Blade Breakthrough, the target's DEF will be regarded as 0",
           "when": "Unlocks at 3★"
         }
       ],
@@ -12367,12 +12367,12 @@
       "passives": [
         {
           "name": "Combined Force",
-          "text": "When the battle starts, grant all allied characters (effect) for 2 turns.When you gain any buff other than Combined Force, grant yourself (effect) for 1 turn, up to 3 times. When attacking, for each Combined Force you have, reduce the target’s DEF by 3% for this skill.",
+          "text": "When the battle starts, grant all allied characters [Determination] for 2 turns.When you gain any buff other than Combined Force, grant yourself [Combined Force] for 1 turn, up to 3 times. When attacking, for each Combined Force you have, reduce the target’s DEF by 3% for this skill. || *Determination: Reduces damage taken by 15%. If already under Determination when gained again, grants Fighting Spirit for 3 turns. *Combined Force: Increase PEN Rate by 3%.",
           "when": "Active at 0★"
         },
         {
           "name": "Warpath",
-          "text": "When your turn starts, grant yourself 1 (effect). When Warpath reaches 3 stacks, increase your skill level, remove all your debuffs, and grant yourself debuff immunity for 1 turn. Afterwards, when your turn starts, reduce Warpath by 1 stack; when only 1 stack remains, Warpath will increase again.",
+          "text": "When your turn starts, grant yourself 1 [Warpath]. When Warpath reaches 3 stacks, increase your skill level, remove all your debuffs, and grant yourself debuff immunity for 1 turn. Afterwards, when your turn starts, reduce Warpath by 1 stack; when only 1 stack remains, Warpath will increase again. || *Warpath: Increases all stats by 3%.",
           "when": "Unlocks at 1★"
         },
         {
@@ -12515,7 +12515,7 @@
         {
           "check": true,
           "name": "Attribute Enhancement",
-          "text": "[Effective also in back-up state] In Blockade Breakthrough, when battle and your turn starts, grants 1 stack of (effect) to all allies, up to 2 stacks. After an enemy casts skills, for every 4 stacks of Formation on allies, reduces all enemies' ATK by 15% for 1 turn, up to 5 stacks.",
+          "text": "[Effective also in back-up state] In Blockade Breakthrough, when battle and your turn starts, grants 1 stack of [Formation] to all allies, up to 2 stacks. After an enemy casts skills, for every 4 stacks of Formation on allies, reduces all enemies' ATK by 15% for 1 turn, up to 5 stacks. || *Formation: Increases all stats by 6% and active skill damage by 15%.",
           "when": "Check in-game star preview"
         },
         {
@@ -12653,17 +12653,17 @@
       "passives": [
         {
           "name": "Horror",
-          "text": "At the start of battle, if all characters on your field are Aogiri Tree characters, grant all enemies the (effect) effect. When you are on the field, increase basic stats of your Aogiri Tree characters by 16% and their damage dealt by 20%.",
+          "text": "At the start of battle, if all characters on your field are Aogiri Tree characters, grant all enemies the [Horror] effect. When you are on the field, increase basic stats of your Aogiri Tree characters by 16% and their damage dealt by 20%. || *Horror: DEF decreased by 10%; when attacked, grants self DEF-related abilities decreased by 5% for 1 turn.",
           "when": "Active at 0★"
         },
         {
           "name": "Torment",
-          "text": "When allied characters attack, inflict (effect) on the enemy target for 1 turn. Each time you attack, inflict 1 (effect), up to 3 stacks. When the enemy’s (effect) reaches the maximum, immediately deal 180% (effect) damage to that enemy. This effect can trigger once per turn.",
+          "text": "When allied characters attack, inflict [Torment] on the enemy target for 1 turn. Each time you attack, inflict 1 [Torment], up to 3 stacks. When the enemy’s [Torment] reaches the maximum, immediately deal 180% [Underbelly] damage to that enemy. This effect can trigger once per turn. || *Torment: Reduces Block Chance by 5%, DMG dealt by 5%, Regeneration Rate by 5%, and Max HP by 3%. *Underbelly: If the target is debuffed, this damage will be increased by 15%",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Aogiri Tree Boost",
-          "text": "When you deal damage to targets with less than 60% HP, inflict (effect) on the target for 2 turns and increase Pen Rate of all allied Aogiri Tree characters by 10% for 2 turns.",
+          "text": "When you deal damage to targets with less than 60% HP, inflict [Desperation] on the target for 2 turns and increase Pen Rate of all allied Aogiri Tree characters by 10% for 2 turns. || Desperation: When allied characters take damage, you take damage equal to 20% of that damage dealt.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -12794,17 +12794,17 @@
       "passives": [
         {
           "name": "Poison Scorpion",
-          "text": "When the battle starts, if all allied characters are CCG characters, increases all allied characters' ATK by 20% and Pen Rate by 8%. When your turn, grant yourself 1 (effect), up to 3 stacks.",
+          "text": "When the battle starts, if all allied characters are CCG characters, increases all allied characters' ATK by 20% and Pen Rate by 8%. When your turn, grant yourself 1 [Poison Scorpion], up to 3 stacks. || *Poison Scorpion: After using an active skill, consumes 1 Poison Scorpion to immediately launch a Bonus-Attack on the same target, dealing 160% ATK damage and applying 1 stack of Weak. Can only trigger once per skill.",
           "when": "Active at 0★"
         },
         {
           "name": "Clean-up",
-          "text": "When an allied CCG character deals damage, inflict (effect) to the target, up to 4 stacks. At max stacks, inflict (effect) for 2 turns and increases your skill level. Skill level increase can only trigger once per turn.",
+          "text": "When an allied CCG character deals damage, inflict [Hunt] to the target, up to 4 stacks. At max stacks, inflict [Clean-up] for 2 turns and increases your skill level. Skill level increase can only trigger once per turn. || *Hunt: Reduce Restoration Rate by 20%, Regeneration Rate and Lifesteal Rate by 12%, and Max HP by 4%. *Clean-up: When taking damage from CCG characters, increase damage taken by 15%. If affected by Weak, takes 20% extra damage. When removed, clears all Hunt effects.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Cowardice",
-          "text": "When dealing damage, inflict (effect) to the target for 2 turns. If an enemy is immobilized, immediately deals 160% (effect) damage to that enemy.",
+          "text": "When dealing damage, inflict [Cowardice] to the target for 2 turns. If an enemy is immobilized, immediately deals 160% [Death] damage to that enemy. || *Cowardice: Reduces Block Chance by 8%. If affected by Weak, decrease DEF-related stats by 8%. *Death: This damage deal 30% more damage to the enemy with HP below 25%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -12936,12 +12936,12 @@
       "passives": [
         {
           "name": "Perseverance Pursuit",
-          "text": "After using an active skill, gains (effect) equal to the skill level, up to 6 stacks. When (effect) reaches the max stack, raises the skill level, deals damage equal to 180% of ATK to all enemies, and removes all (effect) effects. This damage can only trigger once per turn.",
+          "text": "After using an active skill, gains [Perseverance] equal to the skill level, up to 6 stacks. When [Perseverance] reaches the max stack, raises the skill level, deals damage equal to 180% of ATK to all enemies, and removes all [Perseverance] effects. This damage can only trigger once per turn. || *Perseverance: Increases CRIT DEF of all allied characters by 6%.",
           "when": "Active at 0★"
         },
         {
           "name": "Battle Spirit",
-          "text": "When your turn starts, the caster gains 1 Battle Spirit. After an allied character triggers a non-active skill, that character gains 1 (effect) for 1 turn, and the caster gains 1 (effect). For each (effect) gained in 1 turn, all allied characters deal 5% more non-active skill damage this turn, up to 25%.",
+          "text": "When your turn starts, the caster gains 1 Battle Spirit. After an allied character triggers a non-active skill, that character gains 1 [Battle Spirit] for 1 turn, and the caster gains 1 [Perseverance]. For each [Perseverance] gained in 1 turn, all allied characters deal 5% more non-active skill damage this turn, up to 25%. || *Battle Spirit: Lifesteal Rate increased by 5%, and CRIT Rate for the next active skill increased by 40%. Stacks up to 4 times, removed after triggering. *Perseverance: Increases CRIT DEF of all allied characters by 6%.",
           "when": "Unlocks at 1★"
         },
         {
@@ -13077,7 +13077,7 @@
       "passives": [
         {
           "name": "Vanquish",
-          "text": "When the battle starts, grant yourself (effect). When an allied CCG character uses an active skill, inflict the target 1 (effect), up to 4 stacks. Increase damage dealt to targets with max stacks of (effect) by 20%, and remove all stacks of (effect) from them after attacking.",
+          "text": "When the battle starts, grant yourself [Vanquish]. When an allied CCG character uses an active skill, inflict the target 1 [Insight], up to 4 stacks. Increase damage dealt to targets with max stacks of [Insight] by 20%, and remove all stacks of [Insight] from them after attacking. || *Vanquish: Increase your ATK by 5% and Pen Rate by 8%. When attacking an enemy with Insight, increase your ATK by an additional 5%, and deal extra damage equal to 150% of your ATK. *Insight: Increase damage taken by 4%, and reduce CRIT DEF by 5%.",
           "when": "Active at 0★"
         },
         {
@@ -13087,7 +13087,7 @@
         },
         {
           "name": "Triumph",
-          "text": "When you deal CRIT DMG, grant all allied characters (effect) for 1 turn, and grant yourself a 1-turn effect that evades one active skill. This effect can trigger only once per turn.",
+          "text": "When you deal CRIT DMG, grant all allied characters [Triumph] for 1 turn, and grant yourself a 1-turn effect that evades one active skill. This effect can trigger only once per turn. || *Triumph: Increases ATK-Related stats by 8% and Lifesteal Rate by 12%. When your HP is above 70%, you are immune to debuffs and crowd control effects, and all your stats cannot be reduced below their base values.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -13218,17 +13218,17 @@
       "passives": [
         {
           "name": "Friendly Partner",
-          "text": "When the battle starts, gains (effect) and increases all allies' basic stats by 15%. When self gains (effect), all allies deal 5% more damage for 2 turns, up to 4 times.",
+          "text": "When the battle starts, gains [Friendly Partner] and increases all allies' basic stats by 15%. When self gains [Efficiency Boost], all allies deal 5% more damage for 2 turns, up to 4 times. || *Friendly Partner: When the battle starts, if there are allied characters with different tags from your own, gain the tag that appears most frequently among those allied characters with different tags. *Efficiency Boost: After an allied character uses an active skill, this effect is removed to allow the ally to reuse the skill. The reused skill deals 40% of the original damage.",
           "when": "Active at 0★"
         },
         {
           "name": "Devotion",
-          "text": "When the allied character with the highest ATK has their HP drop below 50% for the first time, grants the target (effect) and self (effect), lasting until the end of the turn.",
+          "text": "When the allied character with the highest ATK has their HP drop below 50% for the first time, grants the target [Shelter] and self [Devotion], lasting until the end of the turn. || *Shelter: Reduces damage taken by 30% *Devotion: When an allied character with [Shelter] takes damage, bears 50% of that damage. If the character with [Shelter] dies, loses 50% of max HP, removes [Devotion], and revives the character.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Courage",
-          "text": "During your turn, upon using a skill for the first time, grants (effect) to all allies, up to 3 times. When (effect) reaches 3 stacks, grants (effect) to all allies and raises the skill levels.",
+          "text": "During your turn, upon using a skill for the first time, grants [Rise] to all allies, up to 3 times. When [Rise] reaches 3 stacks, grants [Courage] to all allies and raises the skill levels. || *Rise: Increases damage dealt by 5% and PEN Rate by 5% *Courage: When attacking, inflict additional damage equal to 140% of your ATK.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -13502,17 +13502,17 @@
       "passives": [
         {
           "name": "Stats Enhancement",
-          "text": "When the battle starts, if all allied characters on the field are Anteiku, grant all allied characters (effect); otherwise, self gains (effect).",
+          "text": "When the battle starts, if all allied characters on the field are Anteiku, grant all allied characters [Enhancement Power]; otherwise, self gains [Bestowal Power]. || *Enhancement Power: Increases basic stats by 16% and DEF-related stats by 15%, and when your turn starts, heals self for 12% of max HP. *Bestowal Power: For every 10% of HP, increases ATK by 2%. When dealing damage, deals extra damage equal to 80% of ATK, and gains the ability to enjoy all the effects granted to specific characters (Aogiri Tree).",
           "when": "Active at 0★"
         },
         {
           "name": "Absolute Pursuit",
-          "text": "When your turn ends, deals (effect) damage equal to 210% ATK to the enemy with the lowest HP percentage. If the target's HP is less than 60% after taking the damage, deals (effect) damage equal to 320% ATK to all enemies.",
+          "text": "When your turn ends, deals [Impale] damage equal to 210% ATK to the enemy with the lowest HP percentage. If the target's HP is less than 60% after taking the damage, deals [Truth] damage equal to 320% ATK to all enemies. || *Impale: This damage ignores the target's DEF. *Truth: This damage ignores the sharing effect, the target's shield, and the additional DMG Reduction.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Power Boost",
-          "text": "When self has (effect), deals extra damage equal to 8% of Max HP when using an active skill to attack. When self has (effect), increases ATK by 12% when using an active skill to attack.",
+          "text": "When self has [Enhancement Power], deals extra damage equal to 8% of Max HP when using an active skill to attack. When self has [Bestowal Power], increases ATK by 12% when using an active skill to attack. || *Enhancement Power: Increases basic stats by 16% and DEF-related stats by 15%, and when your turn starts, heals self for 12% of max HP. *Bestowal Power: For every 10% of HP, increases ATK by 2%. When dealing damage, deals extra damage equal to 80% of ATK, and gains the ability to enjoy all the effects granted to specific characters (Aogiri Tree).",
           "when": "Unlocks at 3★"
         }
       ],
@@ -13643,17 +13643,17 @@
       "passives": [
         {
           "name": "Stats Boost",
-          "text": "After an allied character acts, grants that character 1 (effect). After an enemy acts, grant the target (effect). At the start of the enemy's turn, grants all enemies with (effect) the following effects for 1 turn: 10% reduced ATK, 10% reduced DEF, and 10% reduced damage dealt. Then removes the (effect) effect from the targets.",
+          "text": "After an allied character acts, grants that character 1 [Rapport]. After an enemy acts, grant the target [Shake]. At the start of the enemy's turn, grants all enemies with [Shake] the following effects for 1 turn: 10% reduced ATK, 10% reduced DEF, and 10% reduced damage dealt. Then removes the [Shake] effect from the targets. || *Rapport: Increases basic stats by 4% and deals extra damage equal to 30% of ATK to enemies with debuffs, stacking up to 4 times. *Shake: Reduces ATK by 6%. When this effect is removed, lowers the skill level of the caster.",
           "when": "Active at 0★"
         },
         {
           "name": "Sportsmanship",
-          "text": "[Effective also in Aid state] After taking damage, grants self the (effect) effect for 1 turn, up to 4 stacks. When the effect reaches the max stack limit, restore 20% of self's lost HP.",
+          "text": "[Effective also in Aid state] After taking damage, grants self the [Sportsmanship] effect for 1 turn, up to 4 stacks. When the effect reaches the max stack limit, restore 20% of self's lost HP. || *Sportsmanship: Increases DEF by 10% and CRIT DEF by 12%. The caster cannot take damage for more than 50% of Max HP in one attack.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Additional Attack",
-          "text": "For every 4 (effect) obtained by allied characters on the field, increase self's skill level. For every 2 (effect) obtained by enemy characters, deal (effect) damage equal to 270% of ATK to a random enemy, and reduce the target's damage dealt by their next active skill by 30%.",
+          "text": "For every 4 [Rapport] obtained by allied characters on the field, increase self's skill level. For every 2 [Shake] obtained by enemy characters, deal [Ultra-Underbelly] damage equal to 270% of ATK to a random enemy, and reduce the target's damage dealt by their next active skill by 30%. || *Rapport: Increases basic stats by 4% and deals extra damage equal to 30% of ATK to enemies with debuffs, stacking up to 4 times. *Shake: Reduces ATK by 6%. When this effect is removed, lowers the skill level of the caster. *Ultra-Underbelly: If the target is debuffed, this damage will be increased by 25%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -13785,12 +13785,12 @@
         {
           "check": true,
           "name": "Passion",
-          "text": "After any allied Anteiku character uses an AoE skill, gains 1 stack of (effect). At the start of your turn, if the caster has (effect), removes all (effect) stacks. Based on the number of (effect) stacks removed, all allied Anteiku characters gain the following effects for 1 turn: 1 stack removed: increases CRIT DEF by 25%; 2 stacks removed: increases damage dealt by 15%; 3 stacks removed: Deals extra damage equal to 8% of the total damage dealt.",
+          "text": "After any allied Anteiku character uses an AoE skill, gains 1 stack of [Passion]. At the start of your turn, if the caster has [Passion], removes all [Passion] stacks. Based on the number of [Passion] stacks removed, all allied Anteiku characters gain the following effects for 1 turn: 1 stack removed: increases CRIT DEF by 25%; 2 stacks removed: increases damage dealt by 15%; 3 stacks removed: Deals extra damage equal to 8% of the total damage dealt. || *Passion: Increases CRIT DEF by 5%.",
           "when": "Check in-game star preview"
         },
         {
           "name": "Anteiku Boost",
-          "text": "For each (effect) gained, reduces damage taken by allied Anteiku characters by 3%, stacking up to 5 times. For each (effect) effect removed, increases active skill damage of allied Anteiku characters by 3%, stacking up to 5 times. When both effects reach their limits, raises the skill level.",
+          "text": "For each [Passion] gained, reduces damage taken by allied Anteiku characters by 3%, stacking up to 5 times. For each [Passion] effect removed, increases active skill damage of allied Anteiku characters by 3%, stacking up to 5 times. When both effects reach their limits, raises the skill level. || *Passion: Increases CRIT DEF by 5%.",
           "when": "Unlocks at 1★"
         },
         {
@@ -13927,19 +13927,19 @@
         {
           "check": true,
           "name": "Monitor",
-          "text": "At the start of your turn, grant all enemies 1 (effect) effect, with a maximum of 3. After an enemy target with (effect) uses an active skill, self immediately launches a pursuit attack on that target, dealing (effect) damage equal to 180% of attack power, and increases own max HP by 8% for 1 turn",
+          "text": "At the start of your turn, grant all enemies 1 [Monitor] effect, with a maximum of 3. After an enemy target with [Monitor] uses an active skill, self immediately launches a pursuit attack on that target, dealing [Impale] damage equal to 180% of attack power, and increases own max HP by 8% for 1 turn || *Monitor: When taking damage, take additional damage equal to 40% of the attack power of the caster of Monitor, lasting for 2 turns *Impale: This damage ignores the target's DEF.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Surprise Attack",
-          "text": "At the start of battle, grant self (effect) effect, and increase own attack-related abilities by 15%, damage dealt by non-active skills increased by 20%. If there are other non-organization characters on the ally team, increase basic ability values of the entire ally team by 5% and HP-related abilities by 5%, and this effect is doubled for self",
+          "text": "At the start of battle, grant self [Surprise Attack] effect, and increase own attack-related abilities by 15%, damage dealt by non-active skills increased by 20%. If there are other non-organization characters on the ally team, increase basic ability values of the entire ally team by 5% and HP-related abilities by 5%, and this effect is doubled for self || *Surprise Attack: When unleashing an active skill, immediately pursue the target of this skill, dealing 160% ATK damage, and reducing the target's max HP by 12% for 1 turn. The reduced max HP of the target will be added to self, with the increased value not exceeding 18% of self's base max HP.",
           "when": "Check in-game star preview"
         },
         {
           "check": true,
           "name": "Damage Immunity",
-          "text": "When own current HP falls below 50% for the first time, grant self immunity to all damage for 1 turn, remove and gain immunity to all debuffs for 1 turn, and immediately grant all enemies (effect) effect for 2 turns, while granting self (effect) effect for 2 turns",
+          "text": "When own current HP falls below 50% for the first time, grant self immunity to all damage for 1 turn, remove and gain immunity to all debuffs for 1 turn, and immediately grant all enemies [Monitor] effect for 2 turns, while granting self [Invade] effect for 2 turns || *Monitor: When taking damage, take additional damage equal to 40% of the attack power of the caster of Monitor, lasting for 2 turns *Invade: All ability values increased by 5%, attack power increased by 10%, lifesteal rate increased by 30%; when attacking, remove all buffs and stance effects from the target",
           "when": "Check in-game star preview"
         }
       ],
@@ -14070,17 +14070,17 @@
       "passives": [
         {
           "name": "Blood Wither",
-          "text": "At the start of the enemy’s turn, applies (effect) and deals damage to all enemies equal to 140% of ATK.",
+          "text": "At the start of the enemy’s turn, applies [Blood Wither] and deals damage to all enemies equal to 140% of ATK. || *Blood Wither: Before the caster uses a skill, takes damage equal to 250% of the caster’s ATK, stacking up to 2 times. If the caster’s HP is below 50%, applies 1 additional stack. This effect is removed when the caster dies.",
           "when": "Active at 0★"
         },
         {
           "name": "Undying Dominion",
-          "text": "At the start of battle, gains 1 stack of (effect) for 2 turns, and all allied Aogiri Tree characters gain (effect) for 2 turns.",
+          "text": "At the start of battle, gains 1 stack of [Undying Dominion] for 2 turns, and all allied Aogiri Tree characters gain [Blood Guardian] for 2 turns. || *Undying Domination: Damage taken from a skill cannot exceed 35% of max HP. In the enemy’s turn, when total damage taken reaches 50% of max HP, the next active skill damage taken will be reduced to 1 for 1 turn. When this effect is removed, applies 2 stacks of Blood Wither to all enemies, increases all stats of the caster by 20%, and raises the skill level. *Blood Guardian: Increases basic stats by 5% and reduces damage taken by 10%. When this effect ends or the caster dies, increases the caster’s ATK-related stats by 10%.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Stats Boost",
-          "text": "For each (effect) stack on all enemies, increases damage dealt by 4% and reduces damage taken by 4%, capped at 32%. When an enemy’s HP first drops below 40%, increases all allies' ATK by 4%, stacking up to 4 times.",
+          "text": "For each [Blood Wither] stack on all enemies, increases damage dealt by 4% and reduces damage taken by 4%, capped at 32%. When an enemy’s HP first drops below 40%, increases all allies' ATK by 4%, stacking up to 4 times. || *Blood Wither: Before the caster uses a skill, takes damage equal to 250% of the caster’s ATK, stacking up to 2 times. If the caster’s HP is below 50%, applies 1 additional stack. This effect is removed when the caster dies.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -14356,7 +14356,7 @@
         {
           "check": true,
           "name": "Prison Cage",
-          "text": "[Effective also in back-up state] When battle starts, grants (effect) to all Aogiri Tree allies for 2 turns. After an Aogiri Tree ally uses a non-active skill, inflicts 1 stack of (effect) on the target, up to 2 stacks. When Prison Cage reaches max stacks, grants the target an effect that prevents skill level increases for 2 turns.",
+          "text": "[Effective also in back-up state] When battle starts, grants [Cage Break] to all Aogiri Tree allies for 2 turns. After an Aogiri Tree ally uses a non-active skill, inflicts 1 stack of [Prison Cage] on the target, up to 2 stacks. When Prison Cage reaches max stacks, grants the target an effect that prevents skill level increases for 2 turns. || *Cage Break: Increases damage dealt by 20% and damage from non-active skills by an extra 20%. When this effect is removed, raises the skill level of the caster. *Prison Cage: Reduces basic stats by 8%.",
           "when": "Check in-game star preview"
         },
         {
@@ -14367,7 +14367,7 @@
         {
           "check": true,
           "name": "All Char Stats Enhancement",
-          "text": "[Effective also in back-up state] When an ally with (effect) dies, increases HP-related stats of all allies by 5% for 2 turns, up to 4 stacks. When the caster is present, increases ATK and PEN Rate of all Aogiri Tree allies by 5%.",
+          "text": "[Effective also in back-up state] When an ally with [Cage Break] dies, increases HP-related stats of all allies by 5% for 2 turns, up to 4 stacks. When the caster is present, increases ATK and PEN Rate of all Aogiri Tree allies by 5%. || *Cage Break: Increases damage dealt by 20% and damage from non-active skills by an extra 20%. When this effect is removed, raises the skill level of the caster.",
           "when": "Check in-game star preview"
         }
       ],
@@ -14498,17 +14498,17 @@
       "passives": [
         {
           "name": "Misfortune",
-          "text": "After an allied CCG character deals damage, inflicts 1 stack of (effect) on the target, up to 4 stacks. When an enemy takes damage, if they have 4 stacks of (effect), applies (effect) to them for 1 turn.",
+          "text": "After an allied CCG character deals damage, inflicts 1 stack of [Misfortune] on the target, up to 4 stacks. When an enemy takes damage, if they have 4 stacks of [Misfortune], applies [Death Curse] to them for 1 turn. || *Misfortune: Takes 10% more damage from the caster. *Death Curse: Reduces all stats by 30%. Removing this effect also clears all Misfortune effects on the target.",
           "when": "Active at 0★"
         },
         {
           "name": "CCG All Boost",
-          "text": "For each allied CCG character on the field, increases all allies’ basic stats by 4%. Additionally increases the caster’s CRIT DMG by 15%. The caster’s attacks against enemies with (effect) are guaranteed to hit critically. After an allied CCG character attacks a target with (effect), raises the character’s skill level and grants the target 1 Weak. Triggers once per character per turn.",
+          "text": "For each allied CCG character on the field, increases all allies’ basic stats by 4%. Additionally increases the caster’s CRIT DMG by 15%. The caster’s attacks against enemies with [Misfortune] are guaranteed to hit critically. After an allied CCG character attacks a target with [Death Curse], raises the character’s skill level and grants the target 1 Weak. Triggers once per character per turn. || *Misfortune: Takes 10% more damage from the caster. *Death Curse: Reduces all stats by 30%. Removing this effect also clears all Misfortune effects on the target.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Charged Strike",
-          "text": "When an enemy with (effect) dies, gains 1 (effect) for each stack of (effect) on the target, and deals damage equal to 160% of ATK to all enemies.",
+          "text": "When an enemy with [Misfortune] dies, gains 1 [Misfortune Accumulation] for each stack of [Misfortune] on the target, and deals damage equal to 160% of ATK to all enemies. || *Misfortune: Takes 10% more damage from the caster. *Misfortune Accumulation: Increases basic stats by 3% and non-active skill damage by 5%, up to 4 stacks, lasting 1 turn.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -14640,12 +14640,12 @@
         {
           "check": true,
           "name": "Cursed Candy",
-          "text": "[Effective also in back-up state] When enemy’s turn ends, inflicts (effect) on all enemies. When the caster enters the field as a back-up, for each (effect) stack on the enemy, increases ATK-related stats by 10%, up to 40% and deals (effect) damage equal to 210% of ATK to all enemies.",
+          "text": "[Effective also in back-up state] When enemy’s turn ends, inflicts [Cursed Candy] on all enemies. When the caster enters the field as a back-up, for each [Cursed Candy] stack on the enemy, increases ATK-related stats by 10%, up to 40% and deals [Trick-or-Treat] damage equal to 210% of ATK to all enemies. || *Cursed Candy: Reduces all stats by 3%, up to 2 stacks. *Trick-or-Treat: For each Cursed Candy removed from the target character, the character takes additional damage equal to 10% of their remaining HP. (Damage up to 100% of your MAX HP)",
           "when": "Check in-game star preview"
         },
         {
           "name": "Delicious Candy",
-          "text": "[Effective also in back-up state] When battle and your turn start, grants 2 stacks of (effect) to all allies, up to 3 stacks. Before an ally uses a skill, clears 1 stack of (effect) and grants 1 (effect). When an ally is inflicted with a debuff, if they have (effect), clears 1 stack of (effect) to resist the debuff.",
+          "text": "[Effective also in back-up state] When battle and your turn start, grants 2 stacks of [Delicious Candy] to all allies, up to 3 stacks. Before an ally uses a skill, clears 1 stack of [Delicious Candy] and grants 1 [Trickster]. When an ally is inflicted with a debuff, if they have [Delicious Candy], clears 1 stack of [Delicious Candy] to resist the debuff. || *Delicious Candy: Reduces damage taken by 3% and increases CRIT DEF by 5%. When this effect expires or is removed, grants the character a shield equal to 5% of their max HP for 1 turn. *Trickster: Increases CRIT DMG by 10%, up to 3 times.",
           "when": "Unlocks at 1★"
         },
         {
@@ -14788,13 +14788,13 @@
         },
         {
           "name": "Blessing Power",
-          "text": "After a No Organization ally uses an active skill, gains 1 stack of (effect). When (effect) reaches 5 stacks, immediately deals 280% ATK damage to the enemy with the lowest HP, removes all (effect) stacks, and all allies gain (effect) for 1 turn.",
+          "text": "After a No Organization ally uses an active skill, gains 1 stack of [Blessing]. When [Blessing] reaches 5 stacks, immediately deals 280% ATK damage to the enemy with the lowest HP, removes all [Blessing] stacks, and all allies gain [Ability Boost] for 1 turn. || *Blessing: Increases damage dealt and Block Chance by 4%. *Capability Boost: Increases all stats by 4%. Heals self for 8% of max HP upon actions.",
           "when": "Unlocks at 1★"
         },
         {
           "check": true,
           "name": "No Organization Boost",
-          "text": "For each No Organization ally, increases Basic Stats of all No Organization allies by 5% and self’s PEN Rate by 5%. For each (effect) you have, increases DEF-related stats of all allies by 5%, up to 30%. When you are defeated, all allies gain (effect) for 5 turns.",
+          "text": "For each No Organization ally, increases Basic Stats of all No Organization allies by 5% and self’s PEN Rate by 5%. For each [Blessing] you have, increases DEF-related stats of all allies by 5%, up to 30%. When you are defeated, all allies gain [Ability Boost] for 5 turns. || *Blessing: Increases damage dealt and Block Chance by 4%. *Capability Boost: Increases all stats by 4%. Heals self for 8% of max HP upon actions.",
           "when": "Check in-game star preview"
         }
       ],
@@ -14925,7 +14925,7 @@
       "passives": [
         {
           "name": "Enhanced Pursuit",
-          "text": "When your turn starts, applies (effect) to all enemies and deals 140% ATK damage to all enemies. When your turn ends, detonates all (effect) effects on enemies, dealing damage equal to the recorded value of (effect) to targets with (effect).",
+          "text": "When your turn starts, applies [Bell Chime] to all enemies and deals 140% ATK damage to all enemies. When your turn ends, detonates all [Bell Chime] effects on enemies, dealing damage equal to the recorded value of [Bell Chime] to targets with [Bell Chime]. || *Bell Chime: Reduces Block Rate by 10% and Crit DEF by 15%. Records 50% of the damage taken when attacked, capped at 500% of the caster's basic ATK.",
           "when": "Active at 0★"
         },
         {
@@ -14935,7 +14935,7 @@
         },
         {
           "name": "HP Boost",
-          "text": "When Bell Chime is detonated, grants all allies 1 stack of (effect), up to 4 stacks, and grants all enemies 1 stack of (effect), up to 4 stacks.",
+          "text": "When Bell Chime is detonated, grants all allies 1 stack of [Resonance], up to 4 stacks, and grants all enemies 1 stack of [Shockwave], up to 4 stacks. || *Resonance: Increases Restoration Rate by 10% and Lifesteal Rate by 6%. Heals self for 10% of HP lost at the end of the user's turn. *Shockwave: Deals damage equal to 4% of the user's max HP when the user's turn starts, capped at 200% of the caster's ATK.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -15078,7 +15078,7 @@
         },
         {
           "name": "Creation",
-          "text": "After healing an ally, gains 1 stack of (effect), up to 4 stacks. When Creation reaches max stacks, dispels all Creation stacks and grants all allies (effect) for 1 turn",
+          "text": "After healing an ally, gains 1 stack of [Creation], up to 4 stacks. When Creation reaches max stacks, dispels all Creation stacks and grants all allies [Meditation] for 1 turn || *Creation: CRIT RES increased by 10%, CRIT DEF increased by 15%. Restores 8% of missing HP when this effect is dispelled Meditation: Reduce damage taken by 40% for the next hit. Clear when the enemy turn ends or after taking damage. Once cleared, grant the affected character a 6% increase to basic stats for 2 turns, up to 12%.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -15219,7 +15219,7 @@
         },
         {
           "name": "Slowdown",
-          "text": "After taking damage, inflicts (effect) on the target for 1 turn. When allies attack enemies with (effect), lowers the target’s skill level",
+          "text": "After taking damage, inflicts [Slowdown] on the target for 1 turn. When allies attack enemies with [Slowdown], lowers the target’s skill level || *Slowdown: Damage dealt reduced by 20%. Using an active skill increases Weak by 1, triggering 1 time per turn",
           "when": "Unlocks at 3★"
         }
       ],
@@ -15355,12 +15355,12 @@
         },
         {
           "name": "Growth",
-          "text": "When battle starts, immediately casts your Lv.1 active skill to increase all allied Anteiku characters' basic stats by 20%. When the enemy's turn starts, gains (effect), up to 3 stacks. When 3 stacks of (effect) are accumulated or you are defeated, grants all allies (effect).",
+          "text": "When battle starts, immediately casts your Lv.1 active skill to increase all allied Anteiku characters' basic stats by 20%. When the enemy's turn starts, gains [Growth], up to 3 stacks. When 3 stacks of [Growth] are accumulated or you are defeated, grants all allies [Blessing]. || *Growth: Increases DEF by 8% and Block Rate by 8%. *Blessing: All stats +6%; While this effect is active, the number of allied action slots will not drop below 3.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Aegis",
-          "text": "When another ally takes fatal damage for the first time, preserves 1 HP for them, grants all allies a shield equal to 15% of your Max HP for 1 turn, and gains (effect) for 1 turn.",
+          "text": "When another ally takes fatal damage for the first time, preserves 1 HP for them, grants all allies a shield equal to 15% of your Max HP for 1 turn, and gains [Confrontation] for 1 turn. || *Confrontation: All allies take 30% less damage from AoE skills; When other allies take damage, takes 80% of the damage dealt.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -15495,7 +15495,7 @@
         },
         {
           "name": "Basic Stats Boost",
-          "text": "[Effective also in back-up state] Increases basic stats of allied No Organization characters by 16% and Block Rate by 12%. When battle starts, grants (effect) to allied No Organization characters.",
+          "text": "[Effective also in back-up state] Increases basic stats of allied No Organization characters by 16% and Block Rate by 12%. When battle starts, grants [Premeditation] to allied No Organization characters. || *Premeditation: Deals extra damage equal to 8% of the caster's initial max HP when attacking.",
           "when": "Unlocks at 1★"
         },
         {
@@ -15632,17 +15632,17 @@
       "passives": [
         {
           "name": "Gaze of the Strong",
-          "text": "When the battle and your turn start, applies (effect) to the enemy with the highest ATK. After self uses an active skill, launches a pursuit attack dealing 180% ATK damage to enemies afflicted with Gaze.",
+          "text": "When the battle and your turn start, applies [Gaze of the Strong] to the enemy with the highest ATK. After self uses an active skill, launches a pursuit attack dealing 180% ATK damage to enemies afflicted with Gaze. || *Gaze of the Strong: Reduces all stats by 4% and ATK-related stats by 12%. Lowers the target's skill level to 1 when your turn starts.",
           "when": "Active at 0★"
         },
         {
           "name": "Weapon Boost",
-          "text": "When the battle starts, increases basic stats of all allied CCG characters by 12%. For each CCG character on the field, increases self's stats by 4%. When an enemy's HP first drops below 50%, grants the user 1 stack of (effect), up to 4 stacks. When self first gains 2 stacks of Weapon Boost, increases self's skill level",
+          "text": "When the battle starts, increases basic stats of all allied CCG characters by 12%. For each CCG character on the field, increases self's stats by 4%. When an enemy's HP first drops below 50%, grants the user 1 stack of [Weapon Boost], up to 4 stacks. When self first gains 2 stacks of Weapon Boost, increases self's skill level || *Weapon Boost: Increases ATK by 4% and Crit Rate by 4%.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Weaken",
-          "text": "When dealing damage, reducing the target's Crit DEF by 10% for 1 turn, up to 3 stacks. When your turn ends, if self has used an active skill this turn, applies (effect) to all enemies for 1 turn.",
+          "text": "When dealing damage, reducing the target's Crit DEF by 10% for 1 turn, up to 3 stacks. When your turn ends, if self has used an active skill this turn, applies [Electrocution] to all enemies for 1 turn. || *Electrocution: Unable to trigger all healing effects. Takes 6% more damage for 1 turn after attacking, up to 4 stacks.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -15776,12 +15776,12 @@
       "passives": [
         {
           "name": "Forceful Pursuit",
-          "text": "For 1 turn, after an allied Aogiri Tree character uses an active skill, trigger (effect), (effect), and (effect) in sequence against enemies. When all 3 pursuit effects are triggered, increase your skill level",
+          "text": "For 1 turn, after an allied Aogiri Tree character uses an active skill, trigger [Swift Pursuit], [Vigorous Pursuit], and [Destruction Pursuit] in sequence against enemies. When all 3 pursuit effects are triggered, increase your skill level || *Swift Pursuit: Deals 130% ATK damage, and makes the target take 15% increased damage for 1 turn. Ignores DEF *Vigorous Pursuit: Deals 150% ATK damage (ignoring DEF), and deals extra damage equal to 80% ATK *Destruction Pursuit: Targets all enemies, deals 180% ATK damage (ignoring DEF), and deals extra damage equal to 80% ATK",
           "when": "Active at 0★"
         },
         {
           "name": "Battle Frenzy",
-          "text": "Increases the basic stats of allied Aogiri Tree characters by 16%. When the battle starts, if your team consists solely of Aogiri Tree characters, inflicts (effect) upon all enemies and grants all allies (effect)",
+          "text": "Increases the basic stats of allied Aogiri Tree characters by 16%. When the battle starts, if your team consists solely of Aogiri Tree characters, inflicts [Weakness Corrosion] upon all enemies and grants all allies [Battle Frenzy] || *Weakness Corrosion: Reduces all stats by 4% and active skill damage dealt by 15% *Battle Frenzy: Before using an active skill, randomly dispels 1 of the debuffs on self. If you have no debuffs, this skill inflicts an additional 1 Weak. Weak effect can be triggered once per turn",
           "when": "Unlocks at 1★"
         },
         {
@@ -15919,17 +15919,17 @@
       "passives": [
         {
           "name": "Bond Attack",
-          "text": "After an allied No Organization character uses an active skill, immediately triggers a Bond Attack on the enemy target, dealing (effect) damage equal to 160% of ATK. Prevent the target from increasing Weak value for 1 turn.",
+          "text": "After an allied No Organization character uses an active skill, immediately triggers a Bond Attack on the enemy target, dealing [Temptation] damage equal to 160% of ATK. Prevent the target from increasing Weak value for 1 turn. || *Temptation: Ignores DEF, increases Max HP by 30% of the damage dealt this time. The HP increase cannot exceed 40% of Basic Max HP",
           "when": "Active at 0★"
         },
         {
           "name": "No Organization Boost",
-          "text": "Increases the Basic Stats of allied No Organization characters by 16% and CRIT DEF by 15%. After performing a Co-Op Attack, gains (effect) for 1 turn. At 3 (effect) stacks, gain (effect) effect. (effect) stacks up to 3 times.",
+          "text": "Increases the Basic Stats of allied No Organization characters by 16% and CRIT DEF by 15%. After performing a Co-Op Attack, gains [Infatuation] for 1 turn. At 3 [Infatuation] stacks, gain [Charm] effect. [Infatuation] stacks up to 3 times. || *Infatuation: Reduces active skill damage of all enemies by 10% *Charm: Draws all attacks to you and increases DEF-related stats by 10%. Removes the effect when taking active skill damage and applies Disruption to the target. *Disruption: Makes the target(s)' active skill ineffective for 1 turn.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "DMG Decrease",
-          "text": "When battle starts, gains 1 stack of (effect). While (effect) is active, reduces damage taken and extra damage taken by 25%, and increases CRIT DEF by 20%. If damage taken in a turn exceeds 30% of Max HP: grants all allies 20% increased CRIT DEF for 1 turn, reduces damage taken from the next active skill by 50%, and clears all Weak stacks. Triggers 1 time per turn.",
+          "text": "When battle starts, gains 1 stack of [Infatuation]. While [Infatuation] is active, reduces damage taken and extra damage taken by 25%, and increases CRIT DEF by 20%. If damage taken in a turn exceeds 30% of Max HP: grants all allies 20% increased CRIT DEF for 1 turn, reduces damage taken from the next active skill by 50%, and clears all Weak stacks. Triggers 1 time per turn. || *Infatuation: Reduces active skill damage of all enemies by 10%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -16060,7 +16060,7 @@
       "passives": [
         {
           "name": "Vitality",
-          "text": "[Effective also in back-up state] [Effective also in Assistance] When battle starts, grants all allies 3 stacks of (effect). When your turn starts, remove 1 stack of (effect) for allies with (effect) and they gain 1 stack of (effect).",
+          "text": "[Effective also in back-up state] [Effective also in Assistance] When battle starts, grants all allies 3 stacks of [Welcome]. When your turn starts, remove 1 stack of [Welcome] for allies with [Welcome] and they gain 1 stack of [High Morale]. || *Welcome: Max HP +3%; Regeneration Rate +3%. *High Morale: Damage Dealt +5%; Crit Damage +6%.",
           "when": "Active at 0★"
         },
         {
@@ -16070,7 +16070,7 @@
         },
         {
           "name": "Ability Growth",
-          "text": "When your turn ends, grant all allies (effect), up to 2 stacks. If you used an active skill this turn, reduces all enemies' Max HP by 10% for 2 turns.",
+          "text": "When your turn ends, grant all allies [Ability Growth], up to 2 stacks. If you used an active skill this turn, reduces all enemies' Max HP by 10% for 2 turns. || *Ability Growth: Basic Stats +4%; CRIT DEF +5%; Lifesteal Rate +8%.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -16203,17 +16203,17 @@
       "passives": [
         {
           "name": "Command",
-          "text": "Before other CCG allies cast an active skill, gain 1 stack of (effect), up to 4 stacks. Before you cast an active skill, if you have (effect), remove all stacks of (effect). Apply the following effects to all enemies in sequence: All stats reduced by 6%; Damage dealt reduced by 15%; Lifesteal set to 0 and shield acquisition disabled; If HP percentage is below 1%, the target is instantly defeated and no death immunity effects are triggered.",
+          "text": "Before other CCG allies cast an active skill, gain 1 stack of [Command], up to 4 stacks. Before you cast an active skill, if you have [Command], remove all stacks of [Command]. Apply the following effects to all enemies in sequence: All stats reduced by 6%; Damage dealt reduced by 15%; Lifesteal set to 0 and shield acquisition disabled; If HP percentage is below 1%, the target is instantly defeated and no death immunity effects are triggered. || *Command: Basic stats increase by 4%. When this effect ends, gain a shield equal to 10% of your Max HP for 1 turn.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Command",
-          "text": "All CCG allies' basic stats increase by 16%, your ATK increases by 8%, and damage dealt increases by 12%. When our turn starts, you gain 1 (effect), and all other allies gain 2 (effect) effects for 1 turn.",
+          "text": "All CCG allies' basic stats increase by 16%, your ATK increases by 8%, and damage dealt increases by 12%. When our turn starts, you gain 1 [Command], and all other allies gain 2 [Command] effects for 1 turn. || *Command: Basic stats increase by 4%. When this effect ends, gain a shield equal to 10% of your Max HP for 1 turn. *Command: All basic stats increase by 3%. This effect doubles when your HP falls below 20%. All extra damage taken is reduced to 1. This effect wears off once the damage reduction takes place",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Disorder",
-          "text": "Each time you remove 1 (effect), all allies' ATK increases by 3%, and you gain 1 (effect), up to 8 stacks. When your (effect) first reaches 8 stacks, you gain the following effects for 1 turn: if your HP ratio is above 50%, damage dealt increases by 50%; if your HP ratio is below 50%, you become immune to all damage.",
+          "text": "Each time you remove 1 [Command], all allies' ATK increases by 3%, and you gain 1 [Disorder], up to 8 stacks. When your [Disorder] first reaches 8 stacks, you gain the following effects for 1 turn: if your HP ratio is above 50%, damage dealt increases by 50%; if your HP ratio is below 50%, you become immune to all damage. || *Command: Basic stats increase by 4%. When this effect ends, gain a shield equal to 10% of your Max HP for 1 turn. *Disorder: ATK-related stats increase by 4%, damage taken increases by 5%, and when dealing damage, deal additional damage equal to 40% of your ATK.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -16347,17 +16347,17 @@
       "passives": [
         {
           "name": "Strafe",
-          "text": "At the start of battle, if there are 3 or more Aogiri Tree characters on our field, apply (effect) to all enemies. At the start of our turn, deal 180% (effect) damage to all enemies, increase damage dealt to enemies with (effect) by 50%, apply (effect) to enemies without (effect), and reduce the target's DEF by 15% and increase their damage taken by 10% for 1 turn.",
+          "text": "At the start of battle, if there are 3 or more Aogiri Tree characters on our field, apply [Capture] to all enemies. At the start of our turn, deal 180% [Strafe] damage to all enemies, increase damage dealt to enemies with [Capture] by 50%, apply [Capture] to enemies without [Capture], and reduce the target's DEF by 15% and increase their damage taken by 10% for 1 turn. || *Capture: CRIT Rate -20%, CRIT DMG -40%, Lifesteal -40%. Record 50% of damage dealt. When the recorded value reaches 200% of the caster's initial HP, remove the Capture effect and grant yourself the Limit effect. *Limit: Lifesteal and Restoration Rate become 0. Passive skills are disabled. Removed after any character on the field acts 4 times. *Strafe: This skill's ATK +80%.",
           "when": "Active at 0★"
         },
         {
           "name": "All Char Stats Enhancement",
-          "text": "Increase all stats of allied Aogiri Tree characters by 18%. At the start of our turn, increase allied Aogiri Tree characters' Max HP by 20% for 1 turn. When an enemy character gains (effect), increase your ATK by 6%, up to 18%. When your HP first drops below 50%, gain (effect) for 1 turn.",
+          "text": "Increase all stats of allied Aogiri Tree characters by 18%. At the start of our turn, increase allied Aogiri Tree characters' Max HP by 20% for 1 turn. When an enemy character gains [Limit], increase your ATK by 6%, up to 18%. When your HP first drops below 50%, gain [Unyielding] for 1 turn. || *Unyielding: Immune to all damage. When removed, gain the Desperate Instinct effect for 1 turn. *Desperate Instinct: While there is an enemy character with the Limit effect on the field, your HP cannot drop below 1. *Limit: Lifesteal and Restoration Rate become 0. Passive skills are disabled. Removed after any character on the field acts 4 times.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Aim",
-          "text": "At the start of battle, reduce enemy characters' ATK by 18% and PEN Rate by 18% for 1 turn. At the start of our turn, gain 1 (effect). When an allied Aogiri Tree character uses an active skill, gain 1 (effect), up to 3 stacks. When your (effect) reaches 2 stacks, gain (effect) for 1 turn, and your next non-active skill damage increases by 20%.",
+          "text": "At the start of battle, reduce enemy characters' ATK by 18% and PEN Rate by 18% for 1 turn. At the start of our turn, gain 1 [Calibration]. When an allied Aogiri Tree character uses an active skill, gain 1 [Calibration], up to 3 stacks. When your [Calibration] reaches 2 stacks, gain [Reload] for 1 turn, and your next non-active skill damage increases by 20%. || *Calibration: ATK +6%, active skill damage +5%. *Reload: Damage dealt +20%, active skill coefficient +10%. When removed, remove all Calibration effects.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -16487,7 +16487,7 @@
       "passives": [
         {
           "name": "Blood Sacrifice",
-          "text": "[Effective also in back-up state] When your turn starts, the ally with the highest ATK gains 1 (effect), up to 3 stacks, and 1 random debuff is removed. Upon entering from back-up, deals 220% ATK (effect) damage to all enemies and applies 2 Weak to all enemies",
+          "text": "[Effective also in back-up state] When your turn starts, the ally with the highest ATK gains 1 [Blood Feast], up to 3 stacks, and 1 random debuff is removed. Upon entering from back-up, deals 220% ATK [Blood Sacrifice] damage to all enemies and applies 2 Weak to all enemies || *Blood Feast: Crit rate +15%, extra damage +12% *Blood Sacrifice: Crit rate x2.5. Heals all allies for 15% of damage dealt",
           "when": "Active at 0★"
         },
         {
@@ -16628,17 +16628,17 @@
       "passives": [
         {
           "name": "Immortal",
-          "text": "When the battle starts, gain (effect) for 2 turns. When (effect) expires, gain (effect). When any character takes fatal damage, immediately deal (effect) damage to all enemies equal to 150% ATK",
+          "text": "When the battle starts, gain [Immortal] for 2 turns. When [Immortal] expires, gain [Vigor]. When any character takes fatal damage, immediately deal [Pierce Kill] damage to all enemies equal to 150% ATK || *Immortal: HP cannot drop below 1. Active Skill Damage +15% *Vigor: All stats +8%. When dealing damage, deal extra damage equal to 100% of ATK *Pierce Kill: This skill's CRIT DMG +40%. CRIT Rate doubled against enemies below 50% HP",
           "when": "Active at 0★"
         },
         {
           "name": "Overall Boost",
-          "text": "When the battle starts, all allied Anteiku characters gain (effect). For each allied Anteiku character on the field, your ATK and CRIT Rate +6%. After using an active skill to attack, apply (effect) to the target for 3 turns",
+          "text": "When the battle starts, all allied Anteiku characters gain [Overall Boost]. For each allied Anteiku character on the field, your ATK and CRIT Rate +6%. After using an active skill to attack, apply [Backlash] to the target for 3 turns || *Overall Boost: Max HP +30%, damage dealt +20%. After attacking, deal extra damage to all enemies equal to 60% of the caster's ATK, and increase damage taken by all enemies by 8% for 2 turns, up to 2 stacks. *Backlash: ATK -20%. While this effect is active, the holder cannot deal extra damage and takes 50% more damage from active skills Lv. 2 and above. After the holder acts, the caster immediately counterattacks, dealing Smite damage equal to 180% of the caster's ATK. *Smite: Ignores DEF and Block Chance for this damage",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Immortal Combo",
-          "text": "When your turn starts, if you have (effect), skill level increases, and you become immune to all debuffs and Weak effects. If you have (effect), after using an active skill this turn, trigger a Frenzy Attack, dealing (effect) damage to all enemies equal to 150% ATK",
+          "text": "When your turn starts, if you have [Immortal], skill level increases, and you become immune to all debuffs and Weak effects. If you have [Vigor], after using an active skill this turn, trigger a Frenzy Attack, dealing [Ultra-Pierce Kill] damage to all enemies equal to 150% ATK || *Immortal: HP cannot drop below 1. Active Skill Damage +15% *Vigor: All stats +8%. When dealing damage, deal extra damage equal to 100% of ATK *Pierce Kill: This skill's CRIT DMG +60%. CRIT Rate doubled against enemies below 60% HP",
           "when": "Unlocks at 3★"
         }
       ],
@@ -16782,7 +16782,7 @@
         },
         {
           "name": "Retaliation",
-          "text": "When an enemy with (effect) uses an active skill, grant that enemy (effect). When an enemy with Disruption uses an active skill, immediately counter and suppress them, dealing (effect) damage equal to 200% of your ATK",
+          "text": "When an enemy with [Weakness Erosion] uses an active skill, grant that enemy [Disruption]. When an enemy with Disruption uses an active skill, immediately counter and suppress them, dealing [Weakness Snipe] damage equal to 200% of your ATK || *Disruption: Makes the target(s)' active skill ineffective for 1 turn. *Weakness Snipe: Crit Rate doubled, damage dealt to targets with Weakness Erosion increased by 80% *Weakness Erosion: All stats reduced by 6%, Lifesteal and Restoration Rate reduced by 40%, Extra Damage reduced by 10%. Max 2 stacks",
           "when": "Unlocks at 3★"
         }
       ],
@@ -16913,17 +16913,17 @@
       "passives": [
         {
           "name": "Tactical Support",
-          "text": "At the start of battle, all Anteiku allies gain (effect). Then you immediately cast a Level 2 active skill. When (effect) ends, immediately consume all Ultimate Energy and Ultimate Energy Cards, and all allies deal 15% more skill damage for 1 turn.",
+          "text": "At the start of battle, all Anteiku allies gain [Tactical Support]. Then you immediately cast a Level 2 active skill. When [Suppression Field] ends, immediately consume all Ultimate Energy and Ultimate Energy Cards, and all allies deal 15% more skill damage for 1 turn. || *Tactical Support: After acting, your ATK and Max HP increase by 5%, up to 4 stacks. Record 30% of the damage dealt this time; the recorded value cannot exceed 80% of the attacker's initial Max HP. When using an active skill attack, deal extra damage equal to the recorded value. This damage ignores 50% of the target's extra damage reduction. *Suppression Field: All allies gain 50% ATK, all enemies lose 20% ATK. Damage dealt and extra damage dealt are reduced by 20%.",
           "when": "Active at 0★"
         },
         {
           "name": "Anteiku Ability Enhanced",
-          "text": "All Anteiku allies' basic stats increase by 24%. For each Anteiku ally on the field, your ATK-related stats increase by 8%. When one of our characters takes skill damage exceeding 30% of their Max HP, if you have (effect), that character randomly triggers one of the following effects: remove all debuffs and Weak effects and gain immunity to them for 1 turn; recover HP equal to 15% of the damage taken, unaffected by recovery rate; reduce the attacker's ATK by 10% for 1 turn, up to 2 stacks.",
+          "text": "All Anteiku allies' basic stats increase by 24%. For each Anteiku ally on the field, your ATK-related stats increase by 8%. When one of our characters takes skill damage exceeding 30% of their Max HP, if you have [Suppression Field], that character randomly triggers one of the following effects: remove all debuffs and Weak effects and gain immunity to them for 1 turn; recover HP equal to 15% of the damage taken, unaffected by recovery rate; reduce the attacker's ATK by 10% for 1 turn, up to 2 stacks. || *Suppression Field: All allies gain 50% ATK, all enemies lose 20% ATK. Damage dealt and extra damage dealt are reduced by 20%.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Collapse Strike",
-          "text": "When our turn starts or after one of our characters acts, you gain 1 (effect), up to 4 stacks. When our turn ends, deal (effect) damage equal to 150% of your ATK to all enemies, then remove all (effect).",
+          "text": "When our turn starts or after one of our characters acts, you gain 1 [Exaltation], up to 4 stacks. When our turn ends, deal [Collapse Strike] damage equal to 150% of your ATK to all enemies, then remove all [Exaltation]. || *Exaltation: All allies' damage dealt increases by 6%. This effect is doubled on yourself. Your damage always critically hits. When the effect ends, recover HP equal to 15% of your initial Max HP. This effect is not affected by Restoration Rate. *Collapse Strike: This skill's damage increases by 30%. For every 6% higher your ATK is than the target's, the skill multiplier increases by 5%, up to a maximum of 30%. Ignores the target's shield.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -17060,12 +17060,12 @@
         },
         {
           "name": "Resolve",
-          "text": "When your turn starts, grants self (effect) for 1 turn; When taking damage, grants self (effect) for 1 turn.",
+          "text": "When your turn starts, grants self [Forthrightness] for 1 turn; When taking damage, grants self [Resolve] for 1 turn. || *Forthrightness: When an allied Aogiri Tree character attacks with an active skill, the character's ATK is increased to 1.2x for the duration of the skill. *Resolve: When an allied Aogiri Tree character takes damage from an active skill, the character's DEF is increased to 1.2x for the duration of the skill.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Camouflage",
-          "text": "When your HP or the HP of the allied Aogiri Tree character with the highest ATK first drops below 50%, grants the target (effect) for 2 turns; When (effect) is removed, grants all allies (effect).",
+          "text": "When your HP or the HP of the allied Aogiri Tree character with the highest ATK first drops below 50%, grants the target [Camouflage] for 2 turns; When [Camouflage] is removed, grants all allies [Alert]. || *Camouflage: DEF-related stats +12%; Damage taken from single-target skills -40%; Extra damage taken -50%. *Alert: Dodges 1 active skill for 1 turn.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -17201,7 +17201,7 @@
         },
         {
           "name": "Stats Boost",
-          "text": "In Stronghold Takeover, allies are immune to all (effect) effects and gain +20% to base stats. This effect is doubled for Aogiri Tree allies. Before an ally casts an active skill, remove all shields from the target and reduce their Lifesteal Rate by 30% for 1 turn",
+          "text": "In Stronghold Takeover, allies are immune to all [Disruption] effects and gain +20% to base stats. This effect is doubled for Aogiri Tree allies. Before an ally casts an active skill, remove all shields from the target and reduce their Lifesteal Rate by 30% for 1 turn || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.",
           "when": "Unlocks at 1★"
         },
         {
@@ -17347,7 +17347,7 @@
         },
         {
           "name": "Blessing",
-          "text": "[Effective also in back-up state] When one of our characters' skill level increases or that character takes active skill damage, that character gains 1 (effect), up to 8 stacks. When our turn starts, remove all (effect). For each (effect) removed, that character's ATK-related stats increase by 4%, up to 8 stacks.",
+          "text": "[Effective also in back-up state] When one of our characters' skill level increases or that character takes active skill damage, that character gains 1 [Blessing], up to 8 stacks. When our turn starts, remove all [Blessing]. For each [Blessing] removed, that character's ATK-related stats increase by 4%, up to 8 stacks. || *Blessing: DEF increases by 10%. When this effect ends, gain a shield equal to 10% of the caster's initial Max HP for 1 turn.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -17563,7 +17563,7 @@
       "passives": [
         {
           "name": "Oblivion",
-          "text": "After an enemy uses an Active Skill, gain 1 stack of (effect). At 3 (effect) stacks, remove all shields from all enemies, immediately deal (effect) damage equal to 200% of ATK to all enemies, then remove all your (effect) stacks. When you apply a Control or Weak effect to an enemy, increase your Skill Level. Trigger once per turn max",
+          "text": "After an enemy uses an Active Skill, gain 1 stack of [Gaze]. At 3 [Gaze] stacks, remove all shields from all enemies, immediately deal [Oblivion] damage equal to 200% of ATK to all enemies, then remove all your [Gaze] stacks. When you apply a Control or Weak effect to an enemy, increase your Skill Level. Trigger once per turn max || Gaze: DEF‑related stats increase by 3% *Oblivion: For every 2% HP you are missing, CRIT Rate of this attack increases by 6%, and CRIT DMG by 1.5%. This skill cannot trigger lifesteal, and deals extra damage equal to 130% lifesteal rate",
           "when": "Active at 0★"
         },
         {
@@ -17573,7 +17573,7 @@
         },
         {
           "name": "Desperation",
-          "text": "When your turn starts, if any ally is below 50% HP, remove all your debuffs and Weak effects, and gain (effect) for 1 turn. When you take damage, if you have (effect), absorb 50% of the damage taken, then at the end of your next turn, take damage equal to the absorbed amount. Before you die, deal (effect) damage equal to 220% of ATK to all enemies.",
+          "text": "When your turn starts, if any ally is below 50% HP, remove all your debuffs and Weak effects, and gain [Desperation] for 1 turn. When you take damage, if you have [Desperation], absorb 50% of the damage taken, then at the end of your next turn, take damage equal to the absorbed amount. Before you die, deal [Oblivion] damage equal to 220% of ATK to all enemies. || *Ultra-Desperation: Draws all attacks to you, reducing damage taken and extra damage taken by 20% during the effect, and grants immunity to debuffs and Weak. *Oblivion: For every 2% HP you are missing, CRIT Rate of this attack increases by 6%, and CRIT DMG by 1.5%. This skill cannot trigger lifesteal, and deals extra damage equal to 130% lifesteal rate",
           "when": "Unlocks at 3★"
         }
       ],
@@ -17707,7 +17707,7 @@
       "passives": [
         {
           "name": "Ability Amplification",
-          "text": "The allied character gains 1 stack of (effect) for 1 turn after casting an active skill attack or taking damage exceeding 35% of their Max HP, up to 3 stacks. When the allied character reaches 2 stacks of (effect), immediately remove their control and Weak effects, then instantly cast a Lv.2 active skill on the enemy with the lowest HP percentage.",
+          "text": "The allied character gains 1 stack of [Ability Amplification] for 1 turn after casting an active skill attack or taking damage exceeding 35% of their Max HP, up to 3 stacks. When the allied character reaches 2 stacks of [Ability Amplification], immediately remove their control and Weak effects, then instantly cast a Lv.2 active skill on the enemy with the lowest HP percentage. || *Ability Amplification: All basic stats +5%, damage dealt +4%. Grants Skill Amplification for 5 turns when this effect expires *Skill Amplification: All stats +3%, active skill damage +6%, up to 5 stacks",
           "when": "Active at 0★"
         },
         {
@@ -17851,7 +17851,7 @@
       "passives": [
         {
           "name": "Severing Edge",
-          "text": "[Effective also in back-up state] When the battle starts, apply (effect) to the enemy with the highest initial ATK. Upon entering from back-up, instantly deal (effect) damage equal to 400% ATK to targets with (effect), remove (effect), and apply (effect). After a character with (effect) dies, apply (effect) to the enemy with the highest initial ATK.",
+          "text": "[Effective also in back-up state] When the battle starts, apply [Confusion] to the enemy with the highest initial ATK. Upon entering from back-up, instantly deal [Smite] damage equal to 400% ATK to targets with [Confusion], remove [Confusion], and apply [Severing Edge]. After a character with [Confusion] dies, apply [Confusion] to the enemy with the highest initial ATK. || *Confusion: Damage taken from active skills +30%, extra damage taken +30%. Store 100% of damage taken when attacked; the stored damage will be settled when the effect is dispelled. This damage cannot exceed 1000% of the caster's initial HP *Severing Edge: Set Healing Rate, Lifesteal Rate and Regeneration Rate to 0. After the bearer uses an active skill, disable their passive skills until the end of their turn *Smite: Ignores DEF and Block Chance for this damage",
           "when": "Active at 0★"
         },
         {
@@ -17861,7 +17861,7 @@
         },
         {
           "name": "Edge Armor",
-          "text": "[Effective also in back-up state] When the battle starts, grants all allies 3 stacks of (effect). When the enemy turn ends, remove 1 stack of (effect) from all allies and reduce all enemies' basic stats by 4%, up to 3 stacks",
+          "text": "[Effective also in back-up state] When the battle starts, grants all allies 3 stacks of [Edge Armor]. When the enemy turn ends, remove 1 stack of [Edge Armor] from all allies and reduce all enemies' basic stats by 4%, up to 3 stacks || *Edge Armor: DEF +8%, CRIT DEF +25%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -17992,7 +17992,7 @@
       "passives": [
         {
           "name": "Counter",
-          "text": "When our turn starts, gain a Shield equal to 15% of Max HP for 1 turn and increase ATK by 30%. When an allied character is attacked by a single-target active skill, if you have a Shield, you take 50% of the damage taken by other allied characters then, regardless of whether you have a Shield, counterattack the attacker, dealing (effect) damage equal to 150% ATK. After each counterattack, non-active skill damage dealt by all allied characters increases by 15% for 1 turn, up to 3 stacks",
+          "text": "When our turn starts, gain a Shield equal to 15% of Max HP for 1 turn and increase ATK by 30%. When an allied character is attacked by a single-target active skill, if you have a Shield, you take 50% of the damage taken by other allied characters then, regardless of whether you have a Shield, counterattack the attacker, dealing [Wave] damage equal to 150% ATK. After each counterattack, non-active skill damage dealt by all allied characters increases by 15% for 1 turn, up to 3 stacks || *Wave: Skill multiplier increases by 60% if the target carries a Shield. If the target has no Shield, ignore the target's DEF and Block Chance, and grant all allies a Shield equal to 20% of the damage dealt for 1 turn",
           "when": "Active at 0★"
         },
         {
@@ -18002,7 +18002,7 @@
         },
         {
           "name": "Wave Strike",
-          "text": "After an allied character casts a non-active skill, gain 1 stack of (effect), up to 4 stacks. No Organization allies gain the following effects based on the number of (effect) stacks: At 1 stack, damage taken from a single skill cannot exceed 40% of the unit's Max HP. At 2 stacks, all stats increase by 6%. At 3 stacks, when dealing damage, the character's ATK becomes 1.2x for the duration of that skill. At 4 stacks, single-target skills deal extra damage equal to 80% ATK and that skill's damage increases by 25%",
+          "text": "After an allied character casts a non-active skill, gain 1 stack of [Wave Strike], up to 4 stacks. No Organization allies gain the following effects based on the number of [Wave Strike] stacks: At 1 stack, damage taken from a single skill cannot exceed 40% of the unit's Max HP. At 2 stacks, all stats increase by 6%. At 3 stacks, when dealing damage, the character's ATK becomes 1.2x for the duration of that skill. At 4 stacks, single-target skills deal extra damage equal to 80% ATK and that skill's damage increases by 25% || *Wave Strike: Increases all allies' DEF and Max HP by 10%, increases your Max HP by 6%, and increases non-active skill damage by 10%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -18135,7 +18135,7 @@
       "passives": [
         {
           "name": "Sated",
-          "text": "[Effective also in Aid state]When the battle begins, gain yourself (effect) effect, after taking action for the first time, is to restore yourself to the maximum HP 30% life and relieve (effect) effect, obtain (effect) Effect",
+          "text": "[Effective also in Aid state]When the battle begins, gain yourself [Gluttony] effect, after taking action for the first time, is to restore yourself to the maximum HP 30% life and relieve [Gluttony] effect, obtain [Sated] Effect || *Gluttony: Immune to all debuffs and weak effects, defense-related abilities increased 12%, the maximum additional damage received in a single round shall not exceed one's maximum HP 20% *Sated: Immune to all debuff effects and weak effects, all ability values ​​increased 8%: Receive additional Damage Reduction 60%, and when you are exposed to active skills of level 2 or above, the amount of damage will be reduced.15%, and have 15% Chance to double the damage reduction effect",
           "when": "Active at 0★"
         },
         {
@@ -18277,17 +18277,17 @@
       "passives": [
         {
           "name": "Grudge",
-          "text": "At the start of battle, all allied characters gain 15% DEF for 1 turn, and you and the allied character with the lowest Max HP gain the (effect) effect. At the end of your side's turn, 1 allied character without the (effect) effect gains the (effect) effect. When an allied character attacks, if it has the (effect) effect, it deals additional damage to the target equal to 100% of the recorded value of (effect).",
+          "text": "At the start of battle, all allied characters gain 15% DEF for 1 turn, and you and the allied character with the lowest Max HP gain the [Grudge] effect. At the end of your side's turn, 1 allied character without the [Grudge] effect gains the [Grudge] effect. When an allied character attacks, if it has the [Grudge] effect, it deals additional damage to the target equal to 100% of the recorded value of [Grudge]. || *Grudge: When taking damage, absorb 30% of the damage taken and store the absorbed value as Grudge stacks. The stored value cannot exceed 100% of the bearer's base Max HP",
           "when": "Active at 0★"
         },
         {
           "name": "Outrage",
-          "text": "After an allied character with the (effect) effect takes action, you gain 1 stack of (effect), up to 4 stacks. This increases all allied characters' DEF and Block Chance by 4%, up to 16%, and causes that character to recover HP equal to 8% of their Max HP. This effect is not affected by Recovery Rate.",
+          "text": "After an allied character with the [Grudge] effect takes action, you gain 1 stack of [Outrage], up to 4 stacks. This increases all allied characters' DEF and Block Chance by 4%, up to 16%, and causes that character to recover HP equal to 8% of their Max HP. This effect is not affected by Recovery Rate. || *Grudge: When taking damage, absorb 30% of the damage taken and store the absorbed value as Grudge stacks. The stored value cannot exceed 100% of the bearer's base Max HP *Outrage: Increases Max HP by 6% and reduces damage taken from skills by 3%",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Fury Strike",
-          "text": "Increase all stats of allied characters by 18%, and increase your own attack-related stats and damage dealt by 16%. When your HP falls below 70%, 50%, and 30% for the first time, immediately cast your Level 1, Level 2, and Level 3 Active Skills. When your (effect) effect reaches 4 stacks, immediately deal (effect) damage equal to 190% of your ATK to all enemies.",
+          "text": "Increase all stats of allied characters by 18%, and increase your own attack-related stats and damage dealt by 16%. When your HP falls below 70%, 50%, and 30% for the first time, immediately cast your Level 1, Level 2, and Level 3 Active Skills. When your [Outrage] effect reaches 4 stacks, immediately deal [Blood Surge] damage equal to 190% of your ATK to all enemies. || *Outrage: Increases Max HP by 6% and reduces damage taken from skills by 3% *Blood Surge: If the enemy's HP percentage is not higher than yours, this skill's damage increases by 150%. If the enemy's HP percentage is not lower than yours, this skill additionally deals bonus damage equal to 6% of your Max HP.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -18423,17 +18423,17 @@
       "passives": [
         {
           "name": "Pierce",
-          "text": "After a No Organization allied character acts, gain (effect). After a No Organization allied character uses an active skill, perform a Bonus-Attack on the enemy target, dealing (effect) damage equal to 240% of ATK, and restore HP equal to 20% of the damage dealt to allied characters, up to 200% of the caster's ATK. When (effect) stacks reach 6, gain (effect) effect.",
+          "text": "After a No Organization allied character acts, gain [Observation]. After a No Organization allied character uses an active skill, perform a Bonus-Attack on the enemy target, dealing [Pierce] damage equal to 240% of ATK, and restore HP equal to 20% of the damage dealt to allied characters, up to 200% of the caster's ATK. When [Observation] stacks reach 6, gain [Underbelly Insight] effect. || *Pierce: Ignores DEF, dealing extra damage equal to 60% of ATK. *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Underbelly Insight: CRIT DMG +50%, extra damage dealt +60%.",
           "when": "Active at 0★"
         },
         {
           "name": "Tactical Enhancement",
-          "text": "Increase No Organization allied characters' basic stats by 30%. At the start of battle, grant (effect) to allied characters. Each time you gain 1 (effect), grant 1 (effect) to allied characters.",
+          "text": "Increase No Organization allied characters' basic stats by 30%. At the start of battle, grant [Tactical Advantage] to allied characters. Each time you gain 1 [Observation], grant 1 [Battle Adaptation] to allied characters. || *Observation: CRIT DMG +10%, damage dealt +5%, up to 6 stacks. *Battle Adaptation: DEF-related stats +5%. While having this effect, attacks always crit. Up to 6 stacks. *Tactical Advantage: Max HP +20%, extra damage taken -40%. When HP first drops below 50%, increase DEF by 50% for 1 turn and gain a shield equal to 15% of Max HP.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Offensive",
-          "text": "At the start of battle, grant (effect) to No Organization allied characters. The effect of (effect) on you is doubled. At the start of our turn, increase your next 2 non-active skill damage by 80%. If your HP is full, upgrade your skill level.",
+          "text": "At the start of battle, grant [Offensive Mark] to No Organization allied characters. The effect of [Offensive Mark] on you is doubled. At the start of our turn, increase your next 2 non-active skill damage by 80%. If your HP is full, upgrade your skill level. || *Offensive Mark: Damage dealt +15%, PEN Rate +10%. When attacking enemies with HP ratio below 30%, ATK +25%. After attacking, instantly kill enemies with HP ratio below 1% and prevent any death immunity effects.",
           "when": "Unlocks at 3★"
         }
       ],
@@ -18565,12 +18565,12 @@
       "passives": [
         {
           "name": "Rapid Combo",
-          "text": "Gain 1 stack of (effect) after any unit acts, up to 4 stacks. At 4 (effect) stacks, clear all (effect) stacks and cast (effect) and (effect) in sequence.(effect)",
+          "text": "Gain 1 stack of [Festival Point] after any unit acts, up to 4 stacks. At 4 [Festival Point] stacks, clear all [Festival Point] stacks and cast [Bash] and [Rapid Combo] in sequence.[Ultra-Rapid Combo] || *Festival Point: Increase other allied characters' damage dealt by 5% *Bash: For 1 turn, when all enemies are attacked, their DEF becomes 0.5 times its current value. Deals damage equal to 140% of ATK to all enemies, plus additional damage equal to 100% of own ATK. *Rapid Combo: Deal 200% ATK damage to all enemies. Crit Rate triples and Crit DMG increases by 40%. Deal 100% ATK extra damage. For every 70% increase to Crit DMG, increases the extra damage multiplier by 20%, up to 120% *Super Combo: Reduce all stats of all enemies by 8%, up to 2 stacks. Deal 280% ATK damage to all enemies. This skill is guaranteed to hit critically for 50% more Crit DMG, as well as 280% ATK extra damage",
           "when": "Active at 0★"
         },
         {
           "name": "Aogiri Tree Boost",
-          "text": "Increase all stats of Aogiri Tree allies by 16% and ATK-related stats of self and the ally with the highest ATK by 12%. When battle starts, if there are 3 or more allied Aogiri Tree allies on the field, inflict (effect) on all enemies for 1 turn",
+          "text": "Increase all stats of Aogiri Tree allies by 16% and ATK-related stats of self and the ally with the highest ATK by 12%. When battle starts, if there are 3 or more allied Aogiri Tree allies on the field, inflict [Turmoil] on all enemies for 1 turn || *Confusion: Reduce all stats by 10%. Extra damage dealt is fixed to 1 point",
           "when": "Unlocks at 1★"
         },
         {
@@ -18711,7 +18711,7 @@
       "passives": [
         {
           "name": "Fortress",
-          "text": "[Effective also in back-up state] At the start of battle, grants allied characters 1 (effect) effect and reduces the amount of shield gained by enemy characters by 40%. Before an allied character uses an active skill, they gain (effect) equal in quantity to the skill's level for 1 turn. Stacks up to 3 times.",
+          "text": "[Effective also in back-up state] At the start of battle, grants allied characters 1 [Fortress] effect and reduces the amount of shield gained by enemy characters by 40%. Before an allied character uses an active skill, they gain [Carnival] equal in quantity to the skill's level for 1 turn. Stacks up to 3 times. || *Fortress: While shielded, increases DEF by 25%; this effect is doubled after the shield is lost. When the user loses a shield, clears their Weak value, removes Control effects, and grants immunity to Control effects until the start of the allied turn. *Carnival: Increase ATK by 5% and Crit Rate by 5%",
           "when": "Active at 0★"
         },
         {
@@ -18721,7 +18721,7 @@
         },
         {
           "name": "Attention",
-          "text": "[Effective also in back-up state] When battle starts, apply (effect) to the ally with the highest base ATK. When HP of the (effect) bearer first drops below 40%, gain a shield equal to 20% of the caster's Max HP for 1 turn. When the (effect) bearer dies, the ally with the highest base ATK gain (effect)",
+          "text": "[Effective also in back-up state] When battle starts, apply [Attention] to the ally with the highest base ATK. When HP of the [Attention] bearer first drops below 40%, gain a shield equal to 20% of the caster's Max HP for 1 turn. When the [Attention] bearer dies, the ally with the highest base ATK gain [Attention] || *Attention: When your turn starts, if HP is above 50%, raise your skill level. If HP is below 50%, dispel this debuff, become immune to Heal Block for 1 turn, and gain a shield equal to 10% of your Max HP for 1 turn",
           "when": "Unlocks at 3★"
         }
       ],
@@ -18852,7 +18852,7 @@
       "passives": [
         {
           "name": "Fully Prepared",
-          "text": "At the start of battle and at the end of our turn, gain (effect). When an enemy character uses an active skill, if you have (effect), counterattack that character, dealing (effect) damage equal to 280% of ATK, and reduce that enemy's next non-active skill damage by 50%. At the start of our turn, gain (effect), increase your skill level, and remove (effect).",
+          "text": "At the start of battle and at the end of our turn, gain [Patience]. When an enemy character uses an active skill, if you have [Patience], counterattack that character, dealing [See Through] damage equal to 280% of ATK, and reduce that enemy's next non-active skill damage by 50%. At the start of our turn, gain [Fully Prepared], increase your skill level, and remove [Patience]. || *See Through: Ignores DEF, CRIT Rate increases to 3x, CRIT DMG +30% *Patience: Basic stats +8%, non-active skill damage +50% *Fully Prepared: All stats +6%, CRIT Rate and damage dealt +40%, active skill coefficient +30%, removed at the end of our turn",
           "when": "Active at 0★"
         },
         {
@@ -18862,7 +18862,7 @@
         },
         {
           "name": "Courtesy",
-          "text": "At the start of battle, apply (effect) to the enemy with the highest initial ATK. When Patience is removed, apply Lethal to the enemy with (effect). When a character with (effect) dies, apply (effect) to the enemy with the highest initial ATK, reduce that target's skill level to 1, and prevent skill upgrades for 1 turn.",
+          "text": "At the start of battle, apply [Courtesy] to the enemy with the highest initial ATK. When Patience is removed, apply Lethal to the enemy with [Courtesy]. When a character with [Courtesy] dies, apply [Courtesy] to the enemy with the highest initial ATK, reduce that target's skill level to 1, and prevent skill upgrades for 1 turn. || *Courtesy: All stats -6%, damage dealt -10%, damage taken from the caster +10%",
           "when": "Unlocks at 3★"
         }
       ],
@@ -18999,17 +18999,17 @@
       "passives": [
         {
           "name": "Weaken",
-          "text": "[Effective also in back-up state] At the start of battle, apply (effect) to enemy characters. At the start of our turn, remove enemy shields, immediately deal extra damage equal to 10% of their current HP, ignoring extra damage reduction and increase effects, up to 100% of your initial HP, and apply (effect) to enemy characters for 1 turn.",
+          "text": "[Effective also in back-up state] At the start of battle, apply [Weaken] to enemy characters. At the start of our turn, remove enemy shields, immediately deal extra damage equal to 10% of their current HP, ignoring extra damage reduction and increase effects, up to 100% of your initial HP, and apply [Internal Injury] to enemy characters for 1 turn. || *Weaken: DEF -20%, damage taken from active skills +12% *Internal Injury: Restoration Rate -60%, Lifesteal -30%",
           "when": "Active at 0★"
         },
         {
           "name": "Aogiri TreeStats Boost",
-          "text": "[Effective also in back-up state] Allied Aogiri Tree characters' basic stats increase by 20%. When an enemy character gains (effect), grant (effect) to the ally with the highest initial ATK. At 1 stack of (effect), your active skill attacks deal extra damage equal to 40% of ATK, ignoring extra damage reduction and increase effects. At 2 stacks, allied characters' damage dealt increases ATK by 30% and reduces the target's ATK-related stats by 8% for 1 turn. At 3 stacks, all your stats increase by 6%. At 4 stacks, grant (effect) to the enemy with the highest initial ATK. At 5 stacks, allied characters' PEN Rate increases by 8%.",
+          "text": "[Effective also in back-up state] Allied Aogiri Tree characters' basic stats increase by 20%. When an enemy character gains [Internal Injury], grant [Advantage] to the ally with the highest initial ATK. At 1 stack of [Advantage], your active skill attacks deal extra damage equal to 40% of ATK, ignoring extra damage reduction and increase effects. At 2 stacks, allied characters' damage dealt increases ATK by 30% and reduces the target's ATK-related stats by 8% for 1 turn. At 3 stacks, all your stats increase by 6%. At 4 stacks, grant [Lethal] to the enemy with the highest initial ATK. At 5 stacks, allied characters' PEN Rate increases by 8%. || *Internal Injury: Restoration Rate -60%, Lifesteal -30% *Advantage: DEF +6%, CRIT DEF +20%, up to 6 stacks *Lethal: Unable to trigger any healing effects.",
           "when": "Unlocks at 1★"
         },
         {
           "name": "Lockdown",
-          "text": "[Effective also in back-up state] At the start of battle, reduce the enemy with the highest initial ATK to skill level 1 and apply (effect). When you enter from back-up, deal Impale Damage equal to 500% of ATK to targets with (effect), apply Lethal to the target for 1 turn, and remove debuffs and Weak effects from allied characters. After a character with (effect) dies, reduce the enemy with the highest initial ATK to skill level 1 and apply (effect).",
+          "text": "[Effective also in back-up state] At the start of battle, reduce the enemy with the highest initial ATK to skill level 1 and apply [Action Seal]. When you enter from back-up, deal Impale Damage equal to 500% of ATK to targets with [Action Seal], apply Lethal to the target for 1 turn, and remove debuffs and Weak effects from allied characters. After a character with [Action Seal] dies, reduce the enemy with the highest initial ATK to skill level 1 and apply [Action Seal]. || *Action Seal: ATK-related stats -8%, skill cannot be upgraded for 1 turn *Impale: This damage ignores the target's DEF. *Lethal: Unable to trigger any healing effects.",
           "when": "Unlocks at 3★"
         }
       ],

@@ -127,7 +127,7 @@
     "Unidades limitadas precisam de 300 pulls (90.000 Diamonds) para garantir. Rate-ups não limitados, como Miza, garantem em 200 pulls (60.000).",
     "O pity não passa para o próximo banner, então nunca comece um que você não consiga terminar.",
     "Só faça pulls para uma unidade exclusiva da sua facção (ou um buff 0★ para qualquer equipe) que não tenha data na loja.",
-    "Natal (por volta dos dias 62–76) se você conseguir 90.000 até lá; senão, Uta [New Year] (por volta dos dias 91–98).",
+    "Em servidores mais antigos, as unidades de Natal vieram por volta dos dias 62–76 e Uta [New Year] por volta dos dias 91–98. As datas do seu servidor podem ser outras.",
     "Halloween Hinami é o banner limitado ativo nos servidores antigos (25 de outubro – 8 de novembro, 300 pulls). Ela pode chegar a este servidor por volta de 27 de outubro. Pule, a menos que você jogue de Anteiku. (data não confirmada)"
    ],
    "source": "artigo \"Planner by server day\" de 19 de outubro, \"If you read nothing else\"; artigo \"Pull and spend\" de 19 de outubro, \"F2P pulling rules\"; Notas de pesquisa de 26 de outubro de 2026 (conferidas por uma checagem de fatos independente), seções E (E-14) e F (F-03, F-18, F-23)"
@@ -142,10 +142,10 @@
    "source": "artigo \"Planner by server day\" de 19 de outubro, \"Shop units on day 43 and day 75\"; artigo \"Pull and spend\" de 19 de outubro, \"Shop priorities\""
   },
   {
-   "step": "Gaste dinheiro real só dentro de uma janela de rebate.",
+   "step": "Você não precisa gastar. Se for gastar, compre dentro de uma janela de rebate.",
    "more": [
     "Uma janela de rebate faz cada compra render duas vezes. A melhor é o Diamond Rebate, dias 34–55 do servidor.",
-    "Nunca compre Diamonds avulsos: você recebe só 80 por US$1."
+    "Diamonds avulsos são o pior valor: 80 por US$1 (preço de 19 de outubro)."
    ],
    "link": [
     "Veja o que comprar",
@@ -188,9 +188,9 @@
       "1166"
      ],
      "why": [
-      "Black Rabbit é DST, então vence todos os atributos. Miza remove escudos a cada turno.",
-      "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
-      "Yakumo [Natsu Matsuri] foi enfraquecido em 14 de outubro. Black Rabbit e Miza são proibidos no Global Pinnacle Championship.",
+      "Black Rabbit é DST, então vence todos os atributos, menos outro DST. Miza remove escudos a cada turno.",
+      "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
+      "Yakumo [Natsu Matsuri] foi enfraquecido em 14 de outubro (relato de criador). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
       "Fonte: notas de pesquisa de 26 de outubro de 2026, seção A6."
      ],
      "backup": true,
@@ -198,12 +198,12 @@
       "kind": "derived",
       "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
       "steps": [
-       "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-       "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+       "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+       "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
        "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
        "A skill de Miza na maior ameaça: ignora escudos e DEF.",
        "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-       "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+       "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
       ],
       "note": null
      },
@@ -233,7 +233,7 @@
        "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
        "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
        "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-       "Naki cura sozinha do slot de back-up: não precisa usar nada."
+       "Naki cura sozinho do slot de back-up: não precisa usar nada."
       ],
       "note": null
      }
@@ -333,7 +333,7 @@
        "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
        "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
        "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-       "Naki cura sozinha do slot de back-up: não precisa usar nada."
+       "Naki cura sozinho do slot de back-up: não precisa usar nada."
       ],
       "note": null
      }
@@ -514,7 +514,7 @@
        "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
        "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
        "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-       "Naki cura sozinha do slot de back-up: não precisa usar nada."
+       "Naki cura sozinho do slot de back-up: não precisa usar nada."
       ],
       "note": "Na Carnival Arena as lutas são no auto, então lá o jogo usa as skills por você. Use esta ordem onde você joga no manual."
      }
@@ -1581,7 +1581,7 @@
        "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
        "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
        "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-       "Naki cura sozinha do slot de back-up: não precisa usar nada."
+       "Naki cura sozinho do slot de back-up: não precisa usar nada."
       ],
       "note": null
      }
@@ -1604,11 +1604,11 @@
       "1166"
      ],
      "why": [
-      "Black Rabbit é DST, então vence todos os atributos. O golpe dele no início do turno não pode ser contra-atacado.",
-      "Miza remove os escudos e tira 10% do HP antes de Black Rabbit atacar.",
+      "Black Rabbit é DST, então vence todos os atributos, menos outro DST. O golpe dele no início do turno não é uma skill ativa, então contra-ataques a skills ativas não disparam.",
+      "Miza remove os escudos e tira 10% do HP atual (no máximo 100% do HP inicial dela) no início do turno, junto com o golpe de Black Rabbit.",
       "Melhor para: ataques na Guild War e Formidable Noro (ele recebe 50% a menos de unidades que não são Aogiri).",
-      "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos no Global Pinnacle Championship.",
-      "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
+      "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
+      "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
       "Trocas: Noro no lugar de Miza; sem Yakumo [Natsu Matsuri]? Use Hideyoshi ou Eto no lugar dele.",
       "Os criadores não dizem qual versão de Naki; [Crybaby] é o nosso melhor palpite. (não confirmado)",
       "Fonte: artigo \"Meta teams\" de 19 de outubro, seção 1 \"Meta A · Aogiri\" e seção 4 \"Endgame team per faction\"."
@@ -1618,12 +1618,12 @@
       "kind": "derived",
       "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
       "steps": [
-       "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-       "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+       "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+       "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
        "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
        "A skill de Miza na maior ameaça: ignora escudos e DEF.",
        "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-       "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+       "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
       ],
       "note": null
      }
@@ -1651,7 +1651,7 @@
       "steps": [
        "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
        "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-       "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+       "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
        "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
        "Naki [Prisoner] funciona no back-up: não precisa usar nada."
       ],
@@ -5492,7 +5492,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Só unidades grátis: presentes de login, selection cards, missões e a loja do jogo (preço não confirmado).",
+     "blurb": "Unidades grátis e baratas: presentes de login, selection cards, missões e unidades da loja (preço na loja não confirmado).",
      "rows": [
       {
        "label": "Loja do dia 43",
@@ -6200,7 +6200,7 @@
       "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
       "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
       "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-      "Naki cura sozinha do slot de back-up: não precisa usar nada."
+      "Naki cura sozinho do slot de back-up: não precisa usar nada."
      ],
      "note": null
     },
@@ -6542,7 +6542,7 @@
          "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
          "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
          "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-         "Naki cura sozinha do slot de back-up: não precisa usar nada."
+         "Naki cura sozinho do slot de back-up: não precisa usar nada."
         ],
         "note": null
        },
@@ -7388,7 +7388,7 @@
          "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
          "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
          "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-         "Naki cura sozinha do slot de back-up: não precisa usar nada."
+         "Naki cura sozinho do slot de back-up: não precisa usar nada."
         ],
         "note": null
        },
@@ -10469,7 +10469,7 @@
          "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
          "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
          "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-         "Naki cura sozinha do slot de back-up: não precisa usar nada."
+         "Naki cura sozinho do slot de back-up: não precisa usar nada."
         ],
         "note": null
        },
@@ -10844,7 +10844,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Só unidades grátis: presentes de login, selection cards, missões e a loja do jogo (preço não confirmado).",
+     "blurb": "Unidades grátis e baratas: presentes de login, selection cards, missões e unidades da loja (preço na loja não confirmado).",
      "rows": [
       {
        "label": "Grátis agora",
@@ -11570,7 +11570,7 @@
          "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
          "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
          "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-         "Naki cura sozinha do slot de back-up: não precisa usar nada."
+         "Naki cura sozinho do slot de back-up: não precisa usar nada."
         ],
         "note": null
        },
@@ -15302,7 +15302,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Só unidades grátis: presentes de login, selection cards, missões e a loja do jogo (preço não confirmado).",
+     "blurb": "Unidades grátis e baratas: presentes de login, selection cards, missões e unidades da loja (preço na loja não confirmado).",
      "rows": [
       {
        "label": "Loja inicial",
@@ -16065,11 +16065,11 @@
      "1166"
     ],
     "why": [
-     "Black Rabbit é DST, então vence todos os atributos. O golpe dele no início do turno não pode ser contra-atacado.",
-     "Miza remove os escudos e tira 10% do HP antes de Black Rabbit atacar.",
+     "Black Rabbit é DST, então vence todos os atributos, menos outro DST. O golpe dele no início do turno não é uma skill ativa, então contra-ataques a skills ativas não disparam.",
+     "Miza remove os escudos e tira 10% do HP atual (no máximo 100% do HP inicial dela) no início do turno, junto com o golpe de Black Rabbit.",
      "Melhor para: ataques na Guild War e Formidable Noro (ele recebe 50% a menos de unidades que não são Aogiri).",
-     "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos no Global Pinnacle Championship.",
-     "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
+     "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
+     "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
      "Trocas: Noro no lugar de Miza; sem Yakumo [Natsu Matsuri]? Use Hideyoshi ou Eto no lugar dele.",
      "Os criadores não dizem qual versão de Naki; [Crybaby] é o nosso melhor palpite. (não confirmado)",
      "Fonte: artigo \"Meta teams\" de 19 de outubro, seção 1 \"Meta A · Aogiri\" e seção 4 \"Endgame team per faction\"."
@@ -16080,12 +16080,12 @@
      "kind": "derived",
      "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
      "steps": [
-      "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-      "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+      "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+      "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
       "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
       "A skill de Miza na maior ameaça: ignora escudos e DEF.",
       "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-      "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+      "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
      ],
      "note": null
     },
@@ -16120,7 +16120,7 @@
      "steps": [
       "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
       "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-      "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+      "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
       "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
       "Naki [Prisoner] funciona no back-up: não precisa usar nada."
      ],
@@ -16162,7 +16162,7 @@
         "steps": [
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -16319,11 +16319,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit é DST, então vence todos os atributos. O golpe dele no início do turno não pode ser contra-atacado.",
-        "Miza remove os escudos e tira 10% do HP antes de Black Rabbit atacar.",
+        "Black Rabbit é DST, então vence todos os atributos, menos outro DST. O golpe dele no início do turno não é uma skill ativa, então contra-ataques a skills ativas não disparam.",
+        "Miza remove os escudos e tira 10% do HP atual (no máximo 100% do HP inicial dela) no início do turno, junto com o golpe de Black Rabbit.",
         "Melhor para: ataques na Guild War e Formidable Noro (ele recebe 50% a menos de unidades que não são Aogiri).",
-        "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos no Global Pinnacle Championship.",
-        "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
+        "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
+        "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
         "Trocas: Noro no lugar de Miza; sem Yakumo [Natsu Matsuri]? Use Hideyoshi ou Eto no lugar dele.",
         "Os criadores não dizem qual versão de Naki; [Crybaby] é o nosso melhor palpite. (não confirmado)",
         "Fonte: artigo \"Meta teams\" de 19 de outubro, seção 1 \"Meta A · Aogiri\" e seção 4 \"Endgame team per faction\"."
@@ -16334,12 +16334,12 @@
         "kind": "derived",
         "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
         "steps": [
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
         ],
         "note": null
        },
@@ -16454,7 +16454,7 @@
         "steps": [
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -16611,11 +16611,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit é DST, então vence todos os atributos. O golpe dele no início do turno não pode ser contra-atacado.",
-        "Miza remove os escudos e tira 10% do HP antes de Black Rabbit atacar.",
+        "Black Rabbit é DST, então vence todos os atributos, menos outro DST. O golpe dele no início do turno não é uma skill ativa, então contra-ataques a skills ativas não disparam.",
+        "Miza remove os escudos e tira 10% do HP atual (no máximo 100% do HP inicial dela) no início do turno, junto com o golpe de Black Rabbit.",
         "Melhor para: ataques na Guild War e Formidable Noro (ele recebe 50% a menos de unidades que não são Aogiri).",
-        "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos no Global Pinnacle Championship.",
-        "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
+        "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
+        "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
         "Trocas: Noro no lugar de Miza; sem Yakumo [Natsu Matsuri]? Use Hideyoshi ou Eto no lugar dele.",
         "Os criadores não dizem qual versão de Naki; [Crybaby] é o nosso melhor palpite. (não confirmado)",
         "Fonte: artigo \"Meta teams\" de 19 de outubro, seção 1 \"Meta A · Aogiri\" e seção 4 \"Endgame team per faction\"."
@@ -16626,12 +16626,12 @@
         "kind": "derived",
         "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
         "steps": [
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
         ],
         "note": null
        },
@@ -16741,7 +16741,7 @@
         "kind": "derived",
         "source": "Textos de skill usados: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
         "steps": [
-         "O início do turno é automático: Black Rabbit acerta todos com 180%, e Miza (back-up) remove os escudos deles e tira 10% do HP.",
+         "O início do turno é automático: Black Rabbit acerta todos com 180%, e Miza (back-up) remove os escudos deles e tira 10% do HP atual.",
          "Ayato [1.5th Anniversary] também usa uma skill grátis no inimigo com menos HP a cada início de turno.",
          "Skill de Black Rabbit: 265% em todos.",
          "Ayato [Wings of Ardor] em seguida: depois de cada skill de Aogiri ele solta três golpes de perseguição.",
@@ -16847,7 +16847,7 @@
         "steps": [
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -16964,7 +16964,7 @@
         "steps": [
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Kiyoko funciona no back-up: no Stronghold Takeover todos os aliados ganham +40% de atributos e uma proteção contra morte (listada na loja do dia 43, não confirmado)."
         ],
@@ -17132,9 +17132,9 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit é DST, então vence todos os atributos. Miza remove escudos a cada turno.",
-        "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
-        "Yakumo [Natsu Matsuri] foi enfraquecido em 14 de outubro. Black Rabbit e Miza são proibidos no Global Pinnacle Championship.",
+        "Black Rabbit é DST, então vence todos os atributos, menos outro DST. Miza remove escudos a cada turno.",
+        "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
+        "Yakumo [Natsu Matsuri] foi enfraquecido em 14 de outubro (relato de criador). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
         "Fonte: notas de pesquisa de 26 de outubro de 2026, seção A6."
        ],
        "team_kind": "sourced",
@@ -17143,12 +17143,12 @@
         "kind": "derived",
         "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
         "steps": [
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
         ],
         "note": null
        },
@@ -17380,7 +17380,7 @@
         "source": "Textos de skill usados: SkillDesc_1165_p2, Skill_EntryDesc_245/246, SkillDesc_1092_p1, SkillDesc_1164_p1; as cinco unidades vêm das notas de pesquisa de 26 de outubro de 2026, seção A5, defesas \"Live forever\" (acúmulo de limites Aogiri).",
         "steps": [
          "Naki [1.5th Anniversary] (1★): +40% de atributos para os aliados Aogiri, só em Stronghold.",
-         "Noro limita cada skill inimiga a 35% do HP dele e transforma o próximo golpe deles em 1.",
+         "Noro (1★), nos 2 primeiros turnos: nenhuma skill inimiga tira mais de 35% do HP máximo dele, e se ele perder metade do HP num turno inimigo, o próximo golpe ativo deles causa 1.",
          "Tatara [Revenge] mantém vivo uma vez, com 1 HP, o aliado Aogiri com mais ATK.",
          "Eto [3M Downloads] aumenta a DEF de todos para cada unidade Aogiri.",
          "Tatara no back-up."
@@ -17498,7 +17498,7 @@
          "Faça o burst no Younger em um turno quando puder: cada faixa de HP que ele perde dispara o golpe de 500% do Elder.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -17571,8 +17571,8 @@
         "steps": [
          "Mantenha Younger Bin em Weak a luta toda: Weak cancela o Warding dele e impede o revive do Elder.",
          "Faça o burst no Younger em um turno quando puder: cada faixa de HP que ele perde dispara o golpe de 500% do Elder.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -17688,7 +17688,7 @@
          "Acerte as partes e os adds primeiro: enquanto 3 aliados dele estiverem vivos, ele recebe 90% a menos.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -17761,8 +17761,8 @@
         "steps": [
          "Dê escudo à equipe antes do turno dele: unidades sem escudo recebem +500%.",
          "Acerte as partes e os adds primeiro: enquanto 3 aliados dele estiverem vivos, ele recebe 90% a menos.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -17878,7 +17878,7 @@
          "Cada golpe SPD reduz a DEF dele em 15% (até 5 vezes): acerte-os cedo.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -17951,8 +17951,8 @@
         "steps": [
          "Use só cartas Lv2 e Lv3: skills Lv1 e o Ultimate causam 50% a menos aqui.",
          "Cada golpe SPD reduz a DEF dele em 15% (até 5 vezes): acerte-os cedo.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -18068,7 +18068,7 @@
          "Quando o escudo dele acaba, ele acerta sua unidade com mais ATK com 260% e aplica Lethal.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -18141,8 +18141,8 @@
         "steps": [
          "Use só cartas Lv2 e Lv3: skills Lv1 e o Ultimate causam 50% a menos aqui.",
          "Quando o escudo dele acaba, ele acerta sua unidade com mais ATK com 260% e aplica Lethal.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -18258,7 +18258,7 @@
          "Mantenha todos vivos: cada morte dispara um golpe de 160% e um stun.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -18331,8 +18331,8 @@
         "steps": [
          "Gaste suas cartas Lv3 nos turnos 1 e 2: ele fica mais forte a cada turno.",
          "Mantenha todos vivos: cada morte dispara um golpe de 160% e um stun.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -18448,7 +18448,7 @@
          "Sem os lacaios, encha a barra de Weak dele: aí ele recebe 50% a mais.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -18521,8 +18521,8 @@
         "steps": [
          "Mate os lacaios primeiro: cada lacaio que morre causa nele dano igual a 150% do HP máximo do lacaio.",
          "Sem os lacaios, encha a barra de Weak dele: aí ele recebe 50% a mais.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -18638,7 +18638,7 @@
          "Não use o Ultimate aqui: ele causa 50% a menos.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -18711,8 +18711,8 @@
         "steps": [
          "Você tem 5 turnos: gaste as cartas Lv3 cedo, enquanto ele estiver acima de 50% de HP.",
          "Não use o Ultimate aqui: ele causa 50% a menos.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -18828,7 +18828,7 @@
          "Guarde sua maior carta para o turno em que ele estiver com Weak cheio: ele recebe 30% a mais.",
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -18901,8 +18901,8 @@
         "steps": [
          "Escudo primeiro: ele recebe 20% a mais de atacantes com escudo.",
          "Guarde sua maior carta para o turno em que ele estiver com Weak cheio: ele recebe 30% a mais.",
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK."
@@ -19215,7 +19215,7 @@
         "steps": [
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -19287,7 +19287,7 @@
         "kind": "derived",
         "source": "Textos de skill usados: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
         "steps": [
-         "O início do turno é automático: Black Rabbit acerta todos com 180%, e Miza (back-up) remove os escudos deles e tira 10% do HP.",
+         "O início do turno é automático: Black Rabbit acerta todos com 180%, e Miza (back-up) remove os escudos deles e tira 10% do HP atual.",
          "Ayato [1.5th Anniversary] também usa uma skill grátis no inimigo com menos HP a cada início de turno.",
          "Skill de Black Rabbit: 265% em todos.",
          "Ayato [Wings of Ardor] em seguida: depois de cada skill de Aogiri ele solta três golpes de perseguição.",
@@ -19377,7 +19377,7 @@
     {
      "id": "starter",
      "name": "Starter",
-     "blurb": "Só unidades grátis: presentes de login, selection cards, missões e a loja do jogo (preço não confirmado).",
+     "blurb": "Unidades grátis e baratas: presentes de login, selection cards, missões e unidades da loja (preço na loja não confirmado).",
      "rows": [
       {
        "label": "Loja do dia 43",
@@ -19403,7 +19403,7 @@
         "steps": [
          "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
          "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-         "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+         "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
          "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
          "Naki [Prisoner] funciona no back-up: não precisa usar nada."
         ],
@@ -19750,11 +19750,11 @@
         "1166"
        ],
        "why": [
-        "Black Rabbit é DST, então vence todos os atributos. O golpe dele no início do turno não pode ser contra-atacado.",
-        "Miza remove os escudos e tira 10% do HP antes de Black Rabbit atacar.",
+        "Black Rabbit é DST, então vence todos os atributos, menos outro DST. O golpe dele no início do turno não é uma skill ativa, então contra-ataques a skills ativas não disparam.",
+        "Miza remove os escudos e tira 10% do HP atual (no máximo 100% do HP inicial dela) no início do turno, junto com o golpe de Black Rabbit.",
         "Melhor para: ataques na Guild War e Formidable Noro (ele recebe 50% a menos de unidades que não são Aogiri).",
-        "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos no Global Pinnacle Championship.",
-        "Ordem dos espaços (dica de criador): Naki no último espaço, depois Black Rabbit, depois Yakumo [Natsu Matsuri], para que a LR cell de Naki dê um ataque extra à sua unidade de maior ATK. Isto é a posição deles, não a ordem de uso.",
+        "Fraca contra: jogar em segundo (\"com Aogiri, quem começa ganha\"). Black Rabbit e Miza estão banidos na temporada 1 do Global Pinnacle Championship (relato de criador).",
+        "LR cell de Naki: criadores dizem que ela dá um ataque extra à sua unidade de maior ATK. No texto do jogo, isso é a LR cell de Naki [Prisoner] (ela faz o aliado Aogiri de maior ATK usar a skill também); a LR cell de Naki [Crybaby] reduz o nível das skills do alvo no PvP. Confira qual cell você tem.",
         "Trocas: Noro no lugar de Miza; sem Yakumo [Natsu Matsuri]? Use Hideyoshi ou Eto no lugar dele.",
         "Os criadores não dizem qual versão de Naki; [Crybaby] é o nosso melhor palpite. (não confirmado)",
         "Fonte: artigo \"Meta teams\" de 19 de outubro, seção 1 \"Meta A · Aogiri\" e seção 4 \"Endgame team per faction\"."
@@ -19765,12 +19765,12 @@
         "kind": "derived",
         "source": "Textos de skill usados: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" vem do artigo de 19 de outubro, seção 1.",
         "steps": [
-         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP deles, e Black Rabbit acerta todos com 180%.",
-         "Naki primeiro: o golpe dela reduz o nível das skills do alvo.",
+         "O início do turno é automático: Miza remove os escudos inimigos e tira 10% do HP atual deles (no máximo 100% do HP inicial dela), e Black Rabbit acerta todos com 180%.",
+         "Naki primeiro: o golpe dele reduz o nível das skills do alvo.",
          "A skill de Black Rabbit em seguida (265% em todos). Com 3★, cada skill de Aogiri deixa ele mais forte.",
          "A skill de Miza na maior ameaça: ignora escudos e DEF.",
          "Yakumo [Natsu Matsuri] por último: o combo duplo dele dispara sozinho a cada 4 ações. Dê a ele o seu maior ATK.",
-         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno e sobe cartas Lv1 para Lv2."
+         "Akira [June Bride] funciona no back-up: ela limpa o Weak a cada turno. Se as próximas skills do time não removerem nenhum efeito Weak, ela também sobe cartas Lv1 para Lv2."
         ],
         "note": null
        },
@@ -19870,7 +19870,7 @@
         "source": "Textos de skill usados: SkillDesc_1165_p2, Skill_EntryDesc_245/246, SkillDesc_1092_p1, SkillDesc_1164_p1; as cinco unidades vêm das notas de pesquisa de 26 de outubro de 2026, seção A5, defesas \"Live forever\" (acúmulo de limites Aogiri).",
         "steps": [
          "Naki [1.5th Anniversary] (1★): +40% de atributos para os aliados Aogiri, só em Stronghold.",
-         "Noro limita cada skill inimiga a 35% do HP dele e transforma o próximo golpe deles em 1.",
+         "Noro (1★), nos 2 primeiros turnos: nenhuma skill inimiga tira mais de 35% do HP máximo dele, e se ele perder metade do HP num turno inimigo, o próximo golpe ativo deles causa 1.",
          "Tatara [Revenge] mantém vivo uma vez, com 1 HP, o aliado Aogiri com mais ATK.",
          "Eto [3M Downloads] aumenta a DEF de todos para cada unidade Aogiri.",
          "Tatara no back-up."
@@ -20256,7 +20256,7 @@
       "steps": [
        "Tatara primeiro: 275% em todos, e reduz o nível das skills deles.",
        "Yakumo [Jason] no healer ou no carry deles: Lethal impede qualquer cura por 2 turnos.",
-       "Naki no mesmo alvo: o golpe dela reduz o nível das skills dele.",
+       "Naki no mesmo alvo: o golpe dele reduz o nível das skills do alvo.",
        "Yakumo [Torture] por último: com 1★ cada ataque adiciona Torment, e 3 acúmulos disparam um golpe grátis de 180%.",
        "Naki [Prisoner] funciona no back-up: não precisa usar nada."
       ],
@@ -20328,7 +20328,7 @@
       "kind": "derived",
       "source": "Textos de skill usados: SkillDesc_1155_p1, SkillDesc_1179_p1, SkillDesc_1161_p1, SkillDesc_1147_p1, SkillDesc_1175_p1.",
       "steps": [
-       "O início do turno é automático: Black Rabbit acerta todos com 180%, e Miza (back-up) remove os escudos deles e tira 10% do HP.",
+       "O início do turno é automático: Black Rabbit acerta todos com 180%, e Miza (back-up) remove os escudos deles e tira 10% do HP atual.",
        "Ayato [1.5th Anniversary] também usa uma skill grátis no inimigo com menos HP a cada início de turno.",
        "Skill de Black Rabbit: 265% em todos.",
        "Ayato [Wings of Ardor] em seguida: depois de cada skill de Aogiri ele solta três golpes de perseguição.",
@@ -21685,7 +21685,7 @@
        "Sen primeiro: a primeira skill dela deixa sua equipe imune a debuffs por um turno.",
        "Rize [Binge Eater] e Kurona em seguida: cada skill delas dispara o golpe grátis de 240% da Nutcracker.",
        "Nutcracker por último, e só quando nenhuma Toka [Maid Costume] estiver com Patience.",
-       "Naki cura sozinha do slot de back-up: não precisa usar nada."
+       "Naki cura sozinho do slot de back-up: não precisa usar nada."
       ],
       "note": null
      },
@@ -21766,7 +21766,7 @@
     "text": "Guarde 90.000 Diamonds para um banner limitado que você consiga terminar (300 pulls)."
    },
    {
-    "text": "Gaste dinheiro real só dentro de uma janela de rebate."
+    "text": "Você nunca precisa gastar dinheiro. Se gastar, compre dentro de uma janela de rebate."
    }
   ],
   "best-teams": [
@@ -21786,13 +21786,13 @@
   ],
   "buy": [
    {
-    "text": "Gaste dinheiro real só dentro de uma janela de rebate; a melhor é nos dias 34–55 do servidor."
+    "text": "Você nunca precisa gastar dinheiro: as equipes do nível Inicial usam unidades grátis e da loja."
    },
    {
-    "text": "Se for comprar só uma coisa, compre o Endless Trials Pass #1."
+    "text": "Se for gastar, compre dentro de uma janela de rebate; a melhor é nos dias 34–55 do servidor."
    },
    {
-    "text": "Nunca compre Diamonds avulsos."
+    "text": "Em 19 de outubro, o Endless Trials Pass #1 era o que mais dava por US$1. Diamonds avulsos eram o que menos dava."
    }
   ],
   "tiers": [
@@ -21933,13 +21933,13 @@
     "name": "Monthly Login Contract",
     "price": "Cerca de US$4,99",
     "why": "A compra mensal favorita dos criadores; compre nos dias 34–55.",
-    "math": "800 + 300 por dia durante 28 dias = 9.200 de valor de banner: 1.844 por US$1. Confira o preço no jogo. São dois tipos e eles acumulam.",
+    "math": "800 + 300 por dia durante 28 dias = 9.200 de valor de banner: 1.844 por US$1, só se você resgatar os 28 dias. Confira o preço no jogo. São dois tipos e eles acumulam.",
     "source": "artigo \"Pull and spend\" de 19 de outubro, \"Real-money value, best first\"; artigo \"Pull and spend\" de 19 de outubro, \"What creators say is worth buying\""
    },
    {
     "name": "Login de evento (Halloween, Natal, aniversário)",
     "price": "US$9,99",
-    "why": "Compra obrigatória só quando dá uma unidade inteira que você vai usar; fora isso é só valor justo.",
+    "why": "Vale a pena só quando dá uma unidade inteira que você vai usar; fora isso é só valor justo.",
     "math": "O Halloween 2025 deu 20 fragmentos grátis + 80 pagos de Arima [Halloween]: 8.400 de valor de banner mais uma unidade inteira. Sem uma unidade inteira: 8.100–8.400 de valor de banner, 811–841 por US$1.",
     "source": "artigo \"Pull and spend\" de 19 de outubro, \"Real-money value, best first\""
    }
@@ -22023,7 +22023,7 @@
     "name": "Recarga avulsa de Diamonds",
     "price": "Qualquer",
     "why": "O pior negócio: 80 Diamonds por US$1.",
-    "math": "Mesmo com a primeira recarga em triplo (só uma vez), cerca de US$100 compram 24.000. Cerca de US$90 em passes compram cerca de 136.200 de valor de banner.",
+    "math": "Mesmo com a primeira recarga em triplo (só uma vez, 240 por US$1), cerca de US$100 compram 24.000.",
     "source": "artigo \"Pull and spend\" de 19 de outubro, \"Real-money value, best first\"; artigo \"Pull and spend\" de 19 de outubro, \"What creators say is worth buying\""
    },
    {
@@ -22078,10 +22078,10 @@
   ]
  },
  "buy_rules": [
-  "Valor de banner = Diamonds + 300 por cada Event Summon Ticket.",
+  "Não gastar nada (US$0) também vale. Estes são preços de 19 de outubro: confira a loja antes de comprar.",
+  "Valor de banner = Diamonds + 300 por cada Event Summon Ticket. Um ticket só vale nos banners em que funciona, então compare Diamonds e tickets separadamente (página Ferramentas).",
   "Compre dentro de uma janela de rebate: Novice Rebate nos dias 1–7, 8–14, 15–21 e 26–32; Carnival Support nos dias 19–25; o Diamond Rebate (o melhor) nos dias 34–55.",
-  "Não existe evento de Black Friday nem de Thanksgiving nos dados do jogo, então não espere por um.",
-  "US$100 para um evento só? Que seja o Natal: cerca de US$90 em passes e contratos comprados de 14/11 a 5/12 dão cerca de 136.200 de valor de banner (cerca de 454 pulls) até 26/12."
+  "Não existe evento de Black Friday nem de Thanksgiving nos dados do jogo, então não espere por um."
  ],
  "tiers": [
   {
@@ -22091,7 +22091,7 @@
    "attribute": "DST",
    "t0": "S",
    "tf": "S",
-   "why": "0★ 180% em área a cada início de turno (não ativo, nunca contra-atacado), −15% de DEF/+10% de dano recebido; marca os inimigos com Capture (−40% de roubo de vida), que vira Limit (passivas desligadas) quando dano suficiente é registrado; com 3+ Aogiri aplica Capture no início da batalha. 1★ Aogiri +18%. DST vence todos os atributos.",
+   "why": "0★ 180% em área a cada início de turno (não ativo, então contra-ataques a skills ativas não disparam), −15% de DEF/+10% de dano recebido; marca os inimigos com Capture (−40% de roubo de vida), que vira Limit (passivas desligadas) quando dano suficiente é registrado; com 3+ Aogiri aplica Capture no início da batalha. 1★ Aogiri +18%. DST vence todos os atributos, menos outro DST.",
    "get": "listada para uma loja por volta do dia 75 (não confirmado) · recrutamento do Carnival"
   },
   {
@@ -22181,7 +22181,7 @@
    "attribute": "SKL",
    "t0": "S",
    "tf": "S",
-   "why": "0★ back-up: limpa o Weak a cada turno, sobe todas as skills Lv1 para Lv2, +15% de dano da ativa, escudos de 20%; 1★ aliados +18%, inimigos -18% (back-up).",
+   "why": "0★ back-up: limpa o Weak a cada turno e dá escudos de 20% depois das próximas skills; se essas skills não removerem nenhum efeito Weak, também sobe todas as skills Lv1 para Lv2 e +15% de dano da ativa; 1★ aliados +18%, inimigos -18% (back-up).",
    "get": "Sequência de pacotes de presente June Bride (23/06 a 07/07/2026, encerrada); sem entrada na loja"
   },
   {
