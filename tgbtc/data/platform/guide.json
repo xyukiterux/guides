@@ -65,11 +65,16 @@
    "source": "October 19 article \"Planner by server day\", \"If you read nothing else\""
   },
   {
-   "step": "Play No Organization, and stay with it.",
+   "step": "Pick one faction and stay with it.",
    "more": [
-    "Nutcracker comes from the Wish Rebate, Sen is free, and the free No Org units all power her up.",
+    "Each faction has a meta team on Best teams, with its attack order.",
+    "Free-to-play: No Organization is the cheapest. Nutcracker comes from the Wish Rebate, Sen is free, and the free No Org units all power her up.",
     "Aogiri is just as strong but needs Black Rabbit (Carnival) and Miza (not limited; her rate-up guarantees her at 200 pulls).",
     "Both beat Anteiku and CCG after the October 14 patch."
+   ],
+   "link": [
+    "See the meta team for each faction",
+    "#best-teams/factions"
    ],
    "source": "October 19 article \"Planner by server day\", \"If you read nothing else\"; October 19 article \"Meta teams\", section 4"
   },
@@ -145,7 +150,38 @@
    ],
    "rows": [
     {
-     "label": "Strong team · free-to-play",
+     "label": "Best: Aogiri team",
+     "units": [
+      "1155",
+      "1175",
+      "1179",
+      "1036",
+      "1166"
+     ],
+     "why": [
+      "Black Rabbit is DST, so he beats every attribute. Miza strips shields every turn.",
+      "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+      "Yakumo [Natsu Matsuri] was weakened on October 14. Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
+      "Source: research notes of October 26, 2026, section A6."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
+      "steps": [
+       "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
+       "Naki first: her hit lowers the target's skill levels.",
+       "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
+       "Miza's skill on the biggest threat: it ignores shields and DEF.",
+       "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
+       "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+      ],
+      "note": null
+     },
+     "best": "aogiri"
+    },
+    {
+     "label": "Free-to-play option",
      "units": [
       "1174",
       "1142",
@@ -159,24 +195,19 @@
       "From day 43, put Kiyoko in the back-up slot: +40% stats and a death save for every ally, in Stronghold Takeover only.",
       "Source: research notes of October 26, 2026, section A6."
      ],
-     "backup": true
-    },
-    {
-     "label": "Strong team · meta (Aogiri)",
-     "units": [
-      "1155",
-      "1175",
-      "1179",
-      "1036",
-      "1166"
-     ],
-     "why": [
-      "Black Rabbit is DST, so he beats every attribute. Miza strips shields every turn.",
-      "Line-up order: Naki last, then Black Rabbit, then Yakumo [Natsu Matsuri].",
-      "Yakumo [Natsu Matsuri] was weakened on October 14. Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
-      "Source: research notes of October 26, 2026, section A6."
-     ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 2 \"Starter Team 1\", \"How to play it\"; research notes of October 26, sections B3 (B-28) and D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
+       "Naki heals from the back-up slot on her own: nothing to cast."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -219,7 +250,38 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
+     "label": "Best: No Org team",
+     "units": [
+      "1174",
+      "1127",
+      "1142",
+      "1114",
+      "1166"
+     ],
+     "why": [
+      "The No Org meta team: every No Org skill makes Nutcracker attack again for free.",
+      "Hideyoshi adds +15% stats to every ally; Nishiki [Orochi] strips enemy buffs.",
+      "Use Kurona until you get Hideyoshi.",
+      "Source: October 19 article \"Meta teams\", section 4 \"Endgame team per faction\"; section 2 \"How to play it\"."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 1 \"Meta B · No Organization\" (Aslan video of September 15) and section 2, \"How to play it\"; research notes of October 26, section D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Hideyoshi and Nishiki [Orochi] next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and not while a Toka [Maid Costume] holds Patience.",
+       "Against Aogiri, don't open with Nutcracker: use area attacks first.",
+       "Back-up: Akira [June Bride] if you go second, Roma [Mad Clown] if you go first."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
      "units": [
       "1174",
       "1142",
@@ -233,23 +295,19 @@
       "Get Nutcracker to 1★ first: +30% No Org stats and every hit crits.",
       "Source: research notes of October 26, 2026, section D (D-01, D-07)."
      ],
-     "backup": true
-    },
-    {
-     "label": "Stronger account",
-     "units": [
-      "1174",
-      "1171",
-      "1142",
-      "1127",
-      "1177"
-     ],
-     "why": [
-      "The example roster from the October 19 article.",
-      "Use Kurona until you get Hideyoshi (+15% basic stats to every ally).",
-      "Source: October 19 article \"Meta teams\", section 2 \"Team 1 · No Org meta core\" (the article's example roster)."
-     ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 2 \"Starter Team 1\", \"How to play it\"; research notes of October 26, sections B3 (B-28) and D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
+       "Naki heals from the back-up slot on her own: nothing to cast."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -262,7 +320,7 @@
     "October 19 article \"Meta teams\", section 2 \"Starter Team 1\" and \"Team 1 · No Org meta core\"",
     "October 19 article \"Meta teams\", section 5 \"PvE: team per mode\""
    ],
-   "disagree": "Sources disagree: the research notes (section D, D-06) give a late-game team of Nutcracker, Nishiki [Orochi], Rize [Seaside], Roma [Mad Clown] and Hideyoshi, with back-up Akira [June Bride], and other notes list 5 field units. This card shows the October 19 article's team as 4 on the field plus 1 back-up, the shape creator videos use.",
+   "disagree": "Sources disagree: the research notes (section D, D-06) give a late-game team of Nutcracker, Nishiki [Orochi], Rize [Seaside], Roma [Mad Clown] and Hideyoshi, with back-up Akira [June Bride], and other notes list 5 field units. This card shows the October 19 article's No Org team (section 4) as 4 on the field plus 1 back-up, the shape creator videos use.",
    "article": "legacy/meta.html"
   },
   {
@@ -282,23 +340,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1174",
-      "1142",
-      "1001",
-      "1036",
-      "1018"
-     ],
-     "why": [
-      "Rize and Naki are SKL, so they beat the SPD meta units (Toka [Maid Costume], Yakumo [Natsu Matsuri]).",
-      "Naki moves to the field. Kurona fills the back-up slot.",
-      "Source: research notes of October 26, 2026, section B3 (B-25, B-28)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta (all units)",
+     "label": "Best: No Org team",
      "units": [
       "1174",
       "1127",
@@ -312,7 +354,49 @@
       "Akira [June Bride] came only from a gift-pack chain that has ended.",
       "Source: October 19 article \"Meta teams\", section 4 \"Endgame team per faction\", No Organization."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 1 \"Meta B · No Organization\" (Aslan video of September 15) and section 2, \"How to play it\"; research notes of October 26, section D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Hideyoshi and Nishiki [Orochi] next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and not while a Toka [Maid Costume] holds Patience.",
+       "Against Aogiri, don't open with Nutcracker: use area attacks first.",
+       "Back-up: Akira [June Bride] if you go second, Roma [Mad Clown] if you go first."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1036",
+      "1018"
+     ],
+     "why": [
+      "Rize and Naki are SKL, so they beat the SPD meta units (Toka [Maid Costume], Yakumo [Natsu Matsuri]).",
+      "Naki moves to the field. Kurona fills the back-up slot.",
+      "Source: research notes of October 26, 2026, section B3 (B-25, B-28)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 3 \"Beat Toka [Maid Costume]\"; research notes of October 26, section B3 (B-25, B-28)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast: fewer, bigger casts.",
+       "Sen early: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Binge Eater], then Naki, on Toka [Maid Costume]: fill her Weak bar in one turn to stun her.",
+       "Nutcracker only once Toka is stunned or has no Patience.",
+       "Kurona only fills the back-up slot."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -347,24 +431,7 @@
    ],
    "rows": [
     {
-     "label": "Team 1 · free-to-play",
-     "units": [
-      "1174",
-      "1142",
-      "1001",
-      "1018",
-      "1036"
-     ],
-     "why": [
-      "Team 1 is your free No Org team.",
-      "Team 2: Yakumo [Jason], Shu [Gourmet], Kureo, Enji and your best SSR. All four are STR, so add an SKL unit if you own one.",
-      "Team 3: your leftovers. A 1-character team is allowed here; use it as a sacrifice against their best team. (unconfirmed)",
-      "Source: research notes of October 26, 2026, section B2 (B-13, B-15, B-17)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta · No Org",
+     "label": "Best: No Org line-up",
      "units": [
       "1174",
       "1114",
@@ -378,7 +445,50 @@
       "Anteiku meta (pick 4 + 1 of these): Toka [Maid Costume], Ken [√A], Toka [Flame Strike], Yoshimura [Readiness], Toka [June Bride], with Toka [1st Anniversary] in back-up.",
       "Source: research notes of October 26, 2026, section B2 (B-18)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1174_p1, SkillDesc_1171_p1, SkillDesc_1177 active and p1, SkillDesc_1114_p1, SkillDesc_1166_p1.",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Rize [Seaside] first: each No Org cast fires Nutcracker's free 240% hit.",
+       "Roma [Mad Clown] next: 265% to all enemies.",
+       "Nishiki [Orochi] on their carry.",
+       "Nutcracker last.",
+       "Akira [June Bride] works from back-up."
+      ],
+      "note": "Carnival Arena fights on auto, so the game casts for you there. Use this order where you play by hand."
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "Team 1 is your free No Org team.",
+      "Team 2: Yakumo [Jason], Shu [Gourmet], Kureo, Enji and your best SSR. All four are STR, so add an SKL unit if you own one.",
+      "Team 3: your leftovers. A 1-character team is allowed here; use it as a sacrifice against their best team. (unconfirmed)",
+      "Source: research notes of October 26, 2026, section B2 (B-13, B-15, B-17)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 2 \"Starter Team 1\", \"How to play it\"; research notes of October 26, sections B3 (B-28) and D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
+       "Naki heals from the back-up slot on her own: nothing to cast."
+      ],
+      "note": "Carnival Arena fights on auto, so the game casts for you there. Use this order where you play by hand."
+     }
     }
    ],
    "more": [
@@ -413,7 +523,36 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
+     "label": "Best: No Org line-up",
+     "units": [
+      "1174",
+      "1171",
+      "1142",
+      "1001",
+      "1177"
+     ],
+     "why": [
+      "All No Org, so every cast triggers Nutcracker.",
+      "Kurona can replace Rize [Binge Eater].",
+      "Source: October 19 article \"Meta teams\", section 5 \"Endless Trial (Tower)\" and section 2 \"Team 1 · No Org meta core\"."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 2 \"Team 1 · No Org meta core\", \"How to play it\"",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Seaside] and Rize [Binge Eater] next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, or only when no Toka [Maid Costume] holds Patience.",
+       "Roma [Mad Clown] works from the back-up slot: nothing to cast."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
      "units": [
       "1001",
       "1174",
@@ -426,22 +565,19 @@
       "Shu goes in back-up once you have him. Naki is Aogiri and can't enter.",
       "Source: October 19 article \"Meta teams\", section 5 \"Endless Trial (Tower)\"."
      ],
-     "backup": true
-    },
-    {
-     "label": "Stronger account",
-     "units": [
-      "1174",
-      "1171",
-      "1142",
-      "1001",
-      "1177"
-     ],
-     "why": [
-      "All No Org. Kurona can replace Rize [Binge Eater].",
-      "Source: October 19 article \"Meta teams\", section 5 \"PvE: team per mode\" (the article's example roster)."
-     ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 2 \"Starter Team 1\", \"How to play it\"; research notes of October 26, sections B3 (B-28) and D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last.",
+       "Shu [Gourmet] only fills the back-up slot."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -476,23 +612,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1010",
-      "1174",
-      "1142",
-      "1001",
-      "1036"
-     ],
-     "why": [
-      "Kureo is the free CCG unit. He is STR, so he beats the SKL version.",
-      "Against the STR version, swap in Juzo [Scorpion] (SPD, day-43 shop).",
-      "Source: research notes of October 26, 2026, section C1 (C-04)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: CCG team",
      "units": [
       "1102",
       "1169",
@@ -505,7 +625,48 @@
       "SKL boss: STR CCG (Kureo, Shirazu). STR boss: SPD (Haise [Mentor], Urie). PSY boss: WIT (Haise [Sealed Memory], Arima [Invincible]).",
       "Source: research notes of October 26, 2026, section C1 (C-05)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_ActCru2 (Warding, Agonal State, 500% hits), SkillDesc_1103_p1, SkillDesc_1169 active, SkillDesc_1102_p1, SkillDesc_1150_p1.",
+      "steps": [
+       "Keep Younger Bin Weak all fight: Weak cancels his Warding and stops Elder's revive.",
+       "Juzo [False Girl], then Shirazu: their area hits reach both brothers.",
+       "Haise [Mentor] with a Lv3 card on Younger: your top-ATK CCG unit repeats it.",
+       "Haise [Sealed Memory] last, to spend his Command stacks.",
+       "Burst Younger in one turn when you can: each HP step he loses sets off Elder's 500% hit."
+      ],
+      "note": null
+     },
+     "best": "ccg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1010",
+      "1174",
+      "1142",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Kureo is the free CCG unit. He is STR, so he beats the SKL version.",
+      "Against the STR version, swap in Juzo [Scorpion] (SPD, day-43 shop).",
+      "Source: research notes of October 26, 2026, section C1 (C-04)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1142_p1, SkillDesc_1010 active, SkillDesc_1174_p1, SkillDesc_1036_p1, SkillDesc_ActCru2.",
+      "steps": [
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Kureo next: his 260% area hit reaches both brothers, and STR beats the SKL version.",
+       "Rize [Binge Eater] on Younger Bin: her cast fires Nutcracker's free hit.",
+       "Nutcracker last, on Younger, in your burst turn.",
+       "Naki heals from back-up after Elder's 500% hits."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -540,23 +701,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1004",
-      "1012",
-      "1174",
-      "1142",
-      "1036"
-     ],
-     "why": [
-      "Shu [Gourmet]'s Stance gives the whole team a shield.",
-      "Yakumo [Jason] puts Lethal on the boss.",
-      "Source: research notes of October 26, 2026, section C2 (C-08)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: Anteiku line-up",
      "units": [
       "1089",
       "1143",
@@ -569,7 +714,48 @@
       "Akira [June Bride] adds shields from the back-up slot.",
       "Source: research notes of October 26, 2026, section C2 (C-09)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1089_p1, SkillDesc_1143 active and p1, SkillDesc_SCru2 (parts, −90%), SkillDesc_1166_p1.",
+      "steps": [
+       "Turn start is automatic: Toka [Anteiku] shields the whole team.",
+       "Roma [Anteiku] first: her Purge strips his buffs, and the next Anteiku hit gets +30%.",
+       "Ken [√A] and Yoshimura on the parts and adds until they die: then his 90% damage cut is gone.",
+       "Lv3 cards on the boss once the adds are down.",
+       "Akira [June Bride] works from back-up and adds shields after your casts."
+      ],
+      "note": null
+     },
+     "best": "anteiku"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1004",
+      "1012",
+      "1174",
+      "1142",
+      "1036"
+     ],
+     "why": [
+      "Shu [Gourmet]'s Stance gives the whole team a shield.",
+      "Yakumo [Jason] puts Lethal on the boss.",
+      "Source: research notes of October 26, 2026, section C2 (C-08)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1004_p1 and active, SkillDesc_1012_v1s1, SkillDesc_1174_p1, SkillDesc_SCru2.",
+      "steps": [
+       "Shu [Gourmet] first, every turn: his Stance shields the whole team before the boss hits.",
+       "Yakumo [Jason] on the boss: Lethal blocks his 50% heal and keeps a debuff on him.",
+       "Sen next: her cast fires Nutcracker's free hit. Aim at the parts and adds first.",
+       "Nutcracker's Lv3 area attack last, once the adds are down.",
+       "Naki heals from back-up."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -605,23 +791,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1174",
-      "1142",
-      "1018",
-      "1001",
-      "1036"
-     ],
-     "why": [
-      "Sen and Kurona are SPD, so they beat the boss.",
-      "It hits your lowest-HP unit every turn; Naki's back-up heal helps. Kureo also works in back-up.",
-      "Source: research notes of October 26, 2026, section C3 (C-14)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: No Org line-up",
      "units": [
       "1174",
       "1114",
@@ -634,7 +804,49 @@
       "Rize [Valentine's Day] is SPD. Toka [Maid Costume] (SPD) works in her place.",
       "Source: research notes of October 26, 2026, section C3 (C-15)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_GloCom_p1..p5, SkillDesc_Glo1_p2, SkillDesc_1148_p1, SkillDesc_1127 active, SkillDesc_1174_p1, SkillDesc_1179_p1.",
+      "steps": [
+       "Use Lv2 and Lv3 cards only: Lv1 skills and the Ultimate deal 50% less here.",
+       "Rize [Valentine's Day] first: each SPD hit cuts its DEF by 15%, up to 5 times.",
+       "Hideyoshi next: +16.5% stats for the team for 3 turns.",
+       "Nishiki [Orochi] with a Lv3 card (PSY deals 50% more). Each No Org cast also fires Rize's and Nutcracker's free hits.",
+       "Nutcracker last.",
+       "Miza works from back-up: nothing to cast."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1174",
+      "1142",
+      "1018",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Sen and Kurona are SPD, so they beat the boss.",
+      "It hits your lowest-HP unit every turn; Naki's back-up heal helps. Kureo also works in back-up.",
+      "Source: research notes of October 26, 2026, section C3 (C-14)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_GloCom_p1..p5, SkillDesc_Glo1_p1/p2, SkillDesc_1018 active, SkillDesc_1142 active, SkillDesc_1174_p1, SkillDesc_1036_p1.",
+      "steps": [
+       "Use Lv2 and Lv3 cards only: Lv1 skills and the Ultimate deal 50% less here.",
+       "Kurona first: each SPD hit cuts its DEF by 15%, up to 5 times.",
+       "Sen next: a team heal, and her cast fires Nutcracker's free hit.",
+       "Rize [Binge Eater], then Nutcracker last.",
+       "Naki heals the unit it hits each turn from back-up."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -669,23 +881,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1174",
-      "1004",
-      "1142",
-      "1001",
-      "1036"
-     ],
-     "why": [
-      "Nutcracker and Shu [Gourmet] are STR.",
-      "Shu's Stance shields the whole team.",
-      "Source: research notes of October 26, 2026, section C4 (C-18)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: No Org line-up",
      "units": [
       "1174",
       "1177",
@@ -698,7 +894,49 @@
       "Miza strips its shield every turn, which also sets off the 260% hit. Use her only when you can take that hit.",
       "Source: research notes of October 26, 2026, section C4 (C-17, C-19)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_GloCom_p1..p5, SkillDesc_Glo2_p1/p2, SkillDesc_1127 active, SkillDesc_1177 active and p1, SkillDesc_1179_p1.",
+      "steps": [
+       "Use Lv2 and Lv3 cards only: Lv1 skills and the Ultimate deal 50% less here.",
+       "Hideyoshi first: +16.5% stats for the team for 3 turns.",
+       "Roma [Mad Clown] next: 265% to all; her passive shrinks its shield by 40%.",
+       "Nishiki [Orochi] with a Lv3 card (PSY deals 50% more).",
+       "Nutcracker last: she is STR, so she beats it.",
+       "Miza in back-up strips its shield each turn, which sets off its 260% hit. Be ready for it."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1174",
+      "1004",
+      "1142",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Nutcracker and Shu [Gourmet] are STR.",
+      "Shu's Stance shields the whole team.",
+      "Source: research notes of October 26, 2026, section C4 (C-18)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_GloCom_p1..p5, SkillDesc_Glo2_p2, SkillDesc_1004_p1, SkillDesc_1174_p1.",
+      "steps": [
+       "Use Lv2 and Lv3 cards only: Lv1 skills and the Ultimate deal 50% less here.",
+       "Shu [Gourmet] first: his Stance shields the team before its 260% hit.",
+       "Sen, then Rize [Binge Eater]: each cast fires Nutcracker's free hit.",
+       "Nutcracker last: she is STR, so she beats it.",
+       "Naki heals from back-up."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -734,23 +972,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1142",
-      "1001",
-      "1174",
-      "1090",
-      "1036"
-     ],
-     "why": [
-      "Rize [Binge Eater], Uta [Rescue] and Naki are SKL, so they beat the boss.",
-      "No Uta [Rescue] yet (day-43 shop)? Use Kurona.",
-      "Source: research notes of October 26, 2026, section C5 (C-22)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: No Org line-up",
      "units": [
       "1171",
       "1114",
@@ -763,7 +985,49 @@
       "Miza at 3★ cleanses your team when she enters. Akira [June Bride] also works in back-up.",
       "Source: research notes of October 26, 2026, section C5 (C-23)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_Glo3_p1..p3, SkillDesc_1127 active, SkillDesc_1171_p1, SkillDesc_1114 active, SkillDesc_1174_p1.",
+      "steps": [
+       "Spend your Lv3 cards on turns 1 and 2: it gets stronger every turn.",
+       "Hideyoshi first: +16.5% stats for the team.",
+       "Rize [Seaside] next: she is SKL, so she beats it.",
+       "Nishiki [Orochi] (PSY deals 50% more).",
+       "Nutcracker last.",
+       "Keep everyone alive: each death sets off a 160% hit and a stun."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1142",
+      "1001",
+      "1174",
+      "1090",
+      "1036"
+     ],
+     "why": [
+      "Rize [Binge Eater], Uta [Rescue] and Naki are SKL, so they beat the boss.",
+      "No Uta [Rescue] yet (day-43 shop)? Use Kurona.",
+      "Source: research notes of October 26, 2026, section C5 (C-22)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "Research notes of October 26, section C5 (C-21, C-22) and section D (D-07)",
+      "steps": [
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Attack inside that turn with Rize [Binge Eater] and Uta [Rescue]: SKL beats it.",
+       "Nutcracker last.",
+       "Spend your Lv3 cards on turns 1 and 2: it gets stronger every turn.",
+       "Naki heals from back-up. Don't let anyone die."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -799,7 +1063,35 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
+     "label": "Best: No Org line-up",
+     "units": [
+      "1174",
+      "1114",
+      "1171",
+      "1177",
+      "1166"
+     ],
+     "why": [
+      "The No Org meta core, with Akira [June Bride] in back-up.",
+      "Source: research notes of October 26, 2026, section C6 (C-29)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_Uni01_p3/p5 (minions, Weak), SkillDesc_1171 active, SkillDesc_1177 active, SkillDesc_1114 active, SkillDesc_1174 active.",
+      "steps": [
+       "Rize [Seaside] and Roma [Mad Clown] first, on the minions: each minion death deals 150% of its max HP to him.",
+       "Nishiki [Orochi] finishes the last minion.",
+       "With the minions gone, fill his Weak bar: he then takes 50% more.",
+       "Nutcracker's Lv3 area attack last.",
+       "Akira [June Bride] works from back-up."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
      "units": [
       "1174",
       "1142",
@@ -812,22 +1104,19 @@
       "Swap the back-up for Kureo when STR beats the current phase.",
       "Source: research notes of October 26, 2026, section C6 (C-28)."
      ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
-     "units": [
-      "1174",
-      "1114",
-      "1171",
-      "1177",
-      "1166"
-     ],
-     "why": [
-      "The No Org meta core, with Akira [June Bride] in back-up.",
-      "Source: research notes of October 26, 2026, section C6 (C-29)."
-     ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_Uni01_p9/p17 (Fragile Attack, Stance), SkillDesc_1004_p1, SkillDesc_1174_p1.",
+      "steps": [
+       "Shu [Gourmet] first: in his Stance he takes no forced crits, and the team gets a shield.",
+       "Sen and Rize [Binge Eater] on the minions: each minion death deals 150% of its max HP to him.",
+       "Fill his Weak bar once the minions are gone.",
+       "Nutcracker last.",
+       "In a phase that puts Lethal on your team, healing does nothing: don't count on Naki."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -864,23 +1153,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1174",
-      "1142",
-      "1001",
-      "1018",
-      "1036"
-     ],
-     "why": [
-      "Your free team. Nutcracker's free extra attacks are triggered skills.",
-      "Each triggered skill makes the boss take 20% more damage (up to 5 times).",
-      "Source: research notes of October 26, 2026, section C7 (C-33)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: No Org line-up",
      "units": [
       "1174",
       "1148",
@@ -893,7 +1166,48 @@
       "A Black Rabbit Aogiri team with area attacks also works.",
       "Source: research notes of October 26, 2026, section C7 (C-33)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_UniC1_p10/p12/p14, SkillDesc_1127 active, SkillDesc_1148_p1, SkillDesc_1174_p1.",
+      "steps": [
+       "You get 5 turns: spend Lv3 cards early, while it is above 50% HP.",
+       "Hideyoshi first: +16.5% stats for the team.",
+       "Rize [Valentine's Day], then Nishiki [Orochi]: each cast fires free hits, and each free hit makes it take 20% more (up to 5 times).",
+       "Nutcracker's area attack last: area attacks deal 50% more.",
+       "Skip the Ultimate here: it deals 50% less."
+      ],
+      "note": null
+     },
+     "best": "noorg"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "Your free team. Nutcracker's free extra attacks are triggered skills.",
+      "Each triggered skill makes the boss take 20% more damage (up to 5 times).",
+      "Source: research notes of October 26, 2026, section C7 (C-33)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "Research notes of October 26, section C7 (C-31, C-32) and section D (D-07)",
+      "steps": [
+       "Sen, Rize [Binge Eater] and Kurona first: each cast fires Nutcracker's free hit, and each free hit makes it take 20% more (up to 5 times).",
+       "Nutcracker's area attack last: area attacks deal 50% more.",
+       "Burst while it is above 50% HP.",
+       "Skip the Ultimate here: it deals 50% less.",
+       "Naki heals from back-up."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -928,23 +1242,7 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
-     "units": [
-      "1004",
-      "1174",
-      "1142",
-      "1001",
-      "1036"
-     ],
-     "why": [
-      "Shu [Gourmet]'s Stance shields the team.",
-      "Nutcracker at 1★ always crits.",
-      "Source: research notes of October 26, 2026, section C8 (C-36)."
-     ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
+     "label": "Best: Anteiku line-up",
      "units": [
       "1089",
       "1143",
@@ -957,7 +1255,48 @@
       "The source also lists Uta [Rescue]; leave him out to keep 4 on the field plus 1 back-up.",
       "Source: research notes of October 26, 2026, section C8 (C-37)."
      ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_GVEBoss_p1..p10, SkillDesc_1089_p1, SkillDesc_1143_p1.",
+      "steps": [
+       "Turn start is automatic: Toka [Anteiku] shields the team, and shielded attackers deal 20% more here.",
+       "Roma [Anteiku] first: her cast gives the next Anteiku hit +30%.",
+       "Ken [√A] and Yoshimura next, with Lv2 or Lv3 cards.",
+       "Save your biggest card for its full-Weak turn: it takes 30% more.",
+       "Bad opening? Restart: only your best fight counts."
+      ],
+      "note": null
+     },
+     "best": "anteiku"
+    },
+    {
+     "label": "Free-to-play option",
+     "units": [
+      "1004",
+      "1174",
+      "1142",
+      "1001",
+      "1036"
+     ],
+     "why": [
+      "Shu [Gourmet]'s Stance shields the team.",
+      "Nutcracker at 1★ always crits.",
+      "Source: research notes of October 26, 2026, section C8 (C-36)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_GVEBoss_p1..p10, SkillDesc_1004_p1, SkillDesc_1174_p2.",
+      "steps": [
+       "Shu [Gourmet] first: his Stance shields the team, and shielded attackers deal 20% more here.",
+       "Sen, then Rize [Binge Eater], with Lv2 or Lv3 cards.",
+       "Nutcracker last: at 1★ every hit crits.",
+       "Save your biggest card for its full-Weak turn: it takes 30% more.",
+       "Bad opening? Restart: only your best fight counts."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -992,7 +1331,35 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
+     "label": "Best: Aogiri line-up",
+     "units": [
+      "1155",
+      "1147",
+      "1161",
+      "1175",
+      "1179"
+     ],
+     "why": [
+      "All Aogiri. Ayato [1.5th Anniversary] is STR.",
+      "Source: research notes of October 26, 2026, section C9 (C-40)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 5 \"Formidable Noro\" (boss skill text and the Morino clear video of November 27, 2025)",
+      "steps": [
+       "Open each turn with a cheap Lv1 card: he counters the first skill each turn.",
+       "Strip his 2 Rift stacks with single-target hits that are not skills, such as follow-up attacks.",
+       "Then your big Lv3 casts. Any hit over 6% of his max HP breaks his Charge.",
+       "Phase 2: kill him with the Ultimate to skip his revives.",
+       "Finish by turn 4: on turn 5 he hits for 2,000%."
+      ],
+      "note": null
+     },
+     "best": "aogiri"
+    },
+    {
+     "label": "Free-to-play option",
      "units": [
       "1012",
       "1036",
@@ -1005,22 +1372,19 @@
       "Yakumo [Torture] and Tatara come from the day-43 shop.",
       "Source: research notes of October 26, 2026, section C9 (C-40)."
      ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
-     "units": [
-      "1155",
-      "1147",
-      "1161",
-      "1175",
-      "1179"
-     ],
-     "why": [
-      "All Aogiri. Ayato [1.5th Anniversary] is STR.",
-      "Source: research notes of October 26, 2026, section C9 (C-40)."
-     ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 5 \"Formidable Noro\" (boss skill text and the Morino clear video of November 27, 2025)",
+      "steps": [
+       "Open each turn with a cheap Lv1 card: he counters the first skill each turn.",
+       "Strip his 2 Rift stacks with single-target hits that are not skills, such as follow-up attacks.",
+       "Then your big Lv3 casts. Any hit over 6% of his max HP breaks his Charge.",
+       "Phase 2: kill him with the Ultimate to skip his revives.",
+       "Finish by turn 4: on turn 5 he hits for 2,000%."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -1055,7 +1419,35 @@
    ],
    "rows": [
     {
-     "label": "Free-to-play",
+     "label": "Best: CCG line-up",
+     "units": [
+      "1102",
+      "1169",
+      "1150",
+      "1116",
+      "1170"
+     ],
+     "why": [
+      "All CCG. He targets PSY units first, so don't bring a PSY carry.",
+      "Source: research notes of October 26, 2026, section C9 (C-39)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 5 \"Centipede Kaneki\"; research notes of October 26, section C9 (C-39)",
+      "steps": [
+       "Turn 1: every unit starts Disrupted, so lean on passive damage.",
+       "Open with a cheap hit: his Hardshell turns the next hit into 1 damage.",
+       "Kill the part first: while it lives he takes 90% less.",
+       "Burst him while he is Weak: he takes 30% more.",
+       "Finish before his 5th turn."
+      ],
+      "note": null
+     },
+     "best": "ccg"
+    },
+    {
+     "label": "Free-to-play option",
      "units": [
       "1010",
       "1123",
@@ -1068,22 +1460,19 @@
       "Juzo [Scorpion] and Iwao come from the day-43 shop.",
       "Source: research notes of October 26, 2026, section C9 (C-39)."
      ],
-     "backup": true
-    },
-    {
-     "label": "Meta",
-     "units": [
-      "1102",
-      "1169",
-      "1150",
-      "1116",
-      "1170"
-     ],
-     "why": [
-      "All CCG. He targets PSY units first, so don't bring a PSY carry.",
-      "Source: research notes of October 26, 2026, section C9 (C-39)."
-     ],
-     "backup": true
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 5 \"Centipede Kaneki\"; research notes of October 26, section C9 (C-39)",
+      "steps": [
+       "Turn 1: every unit starts Disrupted, so lean on passive damage.",
+       "Open with a cheap hit: his Hardshell turns the next hit into 1 damage.",
+       "Kill the part first: while it lives he takes 90% less.",
+       "Burst him while he is Weak: he takes 30% more.",
+       "Finish before his 5th turn."
+      ],
+      "note": null
+     }
     }
    ],
    "more": [
@@ -1101,10 +1490,232 @@
   }
  ],
  "guild_tip": "Guild tip (from experienced guild play)",
+ "faction_teams": [
+  {
+   "id": "noorg",
+   "title": "No Organization",
+   "name": "No Org",
+   "rows": [
+    {
+     "label": "Meta (all units)",
+     "units": [
+      "1174",
+      "1127",
+      "1142",
+      "1114",
+      "1166"
+     ],
+     "why": [
+      "Every No Org skill makes Nutcracker attack again for free (240%) and heal your team.",
+      "Hideyoshi gives every ally +15% stats. Sen adds +4% per No Org unit. Nishiki [Orochi] strips buffs from any enemy that casts.",
+      "Best for: story and PvE, Arena, Carnival, World Bosses, the Weekly Challenge and the Organization Boss.",
+      "Creators still call No Org number one after the October 14 patch.",
+      "Weak to: Toka [Maid Costume] (she counters every skill) and Black Rabbit's Limit (it stops the heals).",
+      "Source: October 19 article \"Meta teams\", section 1 \"Meta B · No Organization\" and section 4 \"Endgame team per faction\"."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 1 \"Meta B · No Organization\" (Aslan video of September 15) and section 2, \"How to play it\"; research notes of October 26, section D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Hideyoshi and Nishiki [Orochi] next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and not while a Toka [Maid Costume] holds Patience.",
+       "Against Aogiri, don't open with Nutcracker: use area attacks first.",
+       "Back-up: Akira [June Bride] if you go second, Roma [Mad Clown] if you go first."
+      ],
+      "note": null
+     }
+    },
+    {
+     "label": "Free-to-play",
+     "units": [
+      "1174",
+      "1142",
+      "1001",
+      "1018",
+      "1036"
+     ],
+     "why": [
+      "The free version: every unit is free except Nutcracker (Wish Rebate, days 1–7).",
+      "Upgrades: Hideyoshi replaces Kurona; Nishiki [Orochi] or Rize [Valentine's Day] replaces Rize [Binge Eater].",
+      "Best for: every mode while you build. Most free-to-play options on the cards below start from it.",
+      "Source: research notes of October 26, 2026, section A6 and D (D-01)."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "sourced",
+      "source": "October 19 article \"Meta teams\", section 2 \"Starter Team 1\", \"How to play it\"; research notes of October 26, sections B3 (B-28) and D (D-07)",
+      "steps": [
+       "Merge skill cards to Lv3 before you cast.",
+       "Sen first: after her next skill, your team is immune to debuffs for one turn.",
+       "Rize [Binge Eater] and Kurona next: each cast fires Nutcracker's free 240% hit.",
+       "Nutcracker last, and only when no Toka [Maid Costume] holds Patience.",
+       "Naki heals from the back-up slot on her own: nothing to cast."
+      ],
+      "note": null
+     }
+    }
+   ],
+   "none": null
+  },
+  {
+   "id": "aogiri",
+   "title": "Aogiri Tree",
+   "name": "Aogiri",
+   "rows": [
+    {
+     "label": "Meta (all units)",
+     "units": [
+      "1155",
+      "1175",
+      "1179",
+      "1036",
+      "1166"
+     ],
+     "why": [
+      "Black Rabbit is DST, so he beats every attribute. His turn-start hit can't be countered.",
+      "Miza strips shields and chips 10% HP before Black Rabbit fires.",
+      "Best for: Guild War attacks and Formidable Noro (he takes 50% less from non-Aogiri units).",
+      "Weak to: going second (\"Aogiri is like the first one wins\"). Black Rabbit and Miza are banned in the Global Pinnacle Championship.",
+      "Slot order (creator tip): put Naki in the last slot, then Black Rabbit, then Yakumo [Natsu Matsuri], so Naki's LR cell gives your highest-ATK unit an extra attack. This is where they stand, not the cast order.",
+      "Swaps: Noro for Miza; no Yakumo [Natsu Matsuri]? Use Hideyoshi or Eto in his place.",
+      "Source: October 19 article \"Meta teams\", section 1 \"Meta A · Aogiri\" and section 4 \"Endgame team per faction\"."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1155_p1/p3, SkillDesc_1179_p1, SkillDesc_1036_v1s1, SkillDesc_1175_p1, SkillDesc_1166_p1; \"give him the highest ATK\" is from the October 19 article, section 1.",
+      "steps": [
+       "Turn start is automatic: Miza strips enemy shields and chips 10% of their HP, and Black Rabbit hits everyone for 180%.",
+       "Naki first: her hit lowers the target's skill levels.",
+       "Black Rabbit's skill next (265% to all). At 3★, every Aogiri cast powers him up.",
+       "Miza's skill on the biggest threat: it ignores shields and DEF.",
+       "Yakumo [Natsu Matsuri] last: his double combo fires on its own every 4 actions. Give him your highest ATK.",
+       "Akira [June Bride] works from back-up: she clears Weak every turn and raises Lv1 cards to Lv2."
+      ],
+      "note": null
+     }
+    },
+    {
+     "label": "Budget (free and shop units)",
+     "units": [
+      "1012",
+      "1036",
+      "1122",
+      "1020",
+      "1137"
+     ],
+     "why": [
+      "All Aogiri, so Yakumo [Torture] gives the team +16% stats and +20% damage.",
+      "Yakumo [Jason] and Naki are free. Yakumo [Torture], Tatara and Naki [Prisoner] are listed for the day-43 shop (unconfirmed).",
+      "Best for: Formidable Noro. In Guild War, put Kiyoko in back-up (+40% stats in Stronghold Takeover).",
+      "Sources disagree: the October 19 article lists only Yakumo [Jason] and Naki as free Aogiri units. This line-up comes from skill text and is untested. (unconfirmed)",
+      "Source: research notes of October 26, 2026, section C9 (C-40) and A6."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1020 active, SkillDesc_1012_v1s1, SkillDesc_1036_v1s1, SkillDesc_1122_p1/p2, SkillDesc_1137_p1.",
+      "steps": [
+       "Tatara first: 275% to all, and it lowers their skill levels.",
+       "Yakumo [Jason] on their healer or carry: Lethal stops all healing for 2 turns.",
+       "Naki on the same target: her hit lowers its skill levels.",
+       "Yakumo [Torture] last: at 1★ every attack adds Torment, and 3 stacks set off a free 180% hit.",
+       "Naki [Prisoner] works from back-up: nothing to cast."
+      ],
+      "note": null
+     }
+    }
+   ],
+   "none": null
+  },
+  {
+   "id": "anteiku",
+   "title": "Anteiku",
+   "name": "Anteiku",
+   "rows": [
+    {
+     "label": "Meta (all units)",
+     "units": [
+      "1178",
+      "1173",
+      "1162",
+      "1144",
+      "1166"
+     ],
+     "why": [
+      "Toka [Maid Costume] counters every enemy skill for 280%, and above 50% HP one hit can take at most 45% of her HP.",
+      "All Anteiku: Toka [Maid Costume] (1★) gives every Anteiku ally +30% stats.",
+      "Creators say the team needs Hinami: \"without Hinami, it doesn't work at all.\"",
+      "Best for: Arena and Guild War defense against skill-heavy teams. One-Eyed Owl and Capture Simulation use Anteiku units.",
+      "Creators call Anteiku \"struggling\" after the October 14 patch. Swap: Ken [√A].",
+      "Source: October 19 article \"Meta teams\", section 1 \"Meta C · Anteiku\" and section 4 \"Endgame team per faction\"."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1162_p1, SkillDesc_1144_p2, SkillDesc_1173 active, SkillDesc_1144 active, SkillDesc_1178_p1, SkillDesc_1166_p1; \"open with Yoshimura\" and \"highest ATK on Maid Toka\" are from the October 19 article, section 1 (Aslan videos).",
+      "steps": [
+       "Battle start is automatic: Toka [June Bride] casts a free Lv2 attack, and Hinami (1★) a free buff.",
+       "Yoshimura first: creators open the fight with him. His hit marks every enemy with Gash.",
+       "Hinami's buff next: +16.5% stats for the whole team for 2 turns.",
+       "Toka [June Bride]: 265% to all inside her Suppression Field.",
+       "Toka [Maid Costume] last: her real damage is the counter she fires at every enemy skill. Give her your highest ATK.",
+       "Akira [June Bride] works from back-up."
+      ],
+      "note": null
+     }
+    }
+   ],
+   "none": "No free-to-play Anteiku team in the sources: the October 19 article says the free Anteiku units (Toka [Rabbit], Enji) are not a real team."
+  },
+  {
+   "id": "ccg",
+   "title": "CCG",
+   "name": "CCG",
+   "rows": [
+    {
+     "label": "Meta (all units)",
+     "units": [
+      "1102",
+      "1169",
+      "1150",
+      "1103",
+      "1170"
+     ],
+     "why": [
+      "Haise [Mentor] makes your top-ATK CCG unit repeat each skill. Shirazu lets allies cast again.",
+      "Haise [Sealed Memory] cuts enemy damage and sets their lifesteal to 0. Juzo [False Girl] adds free area hits.",
+      "Best for: Elder & Younger Bin, Centipede Kaneki and the Event Conquest bosses: they take 30% more from CCG.",
+      "Outside the top three factions in PvP right now; the October 14 patch gave CCG small fixes.",
+      "Source: October 19 article \"Meta teams\", section 4 \"Endgame team per faction\"; research notes on meta teams, section 1 \"CCG\"."
+     ],
+     "backup": true,
+     "order": {
+      "kind": "derived",
+      "source": "Skill text used: SkillDesc_1170_p1, SkillDesc_1103_p1, SkillDesc_1169_p1, SkillDesc_1102_p1, SkillDesc_1150_p1.",
+      "steps": [
+       "Battle start: Mitsuki (in back-up) marks the enemy with the highest ATK.",
+       "Juzo [False Girl] first: each cast gives her 4 Concentration, which fires a free 200% hit on all enemies.",
+       "Shirazu next: 265% to all, and at 2 stacks an ally clears control and casts again.",
+       "Haise [Mentor] with a Lv3 card: your top-ATK CCG unit casts the same level at his target.",
+       "Haise [Sealed Memory] last: his cast spends the Command stacks the others built (enemy lifesteal 0, damage −15%).",
+       "If a field unit falls, Mitsuki enters and hits the marked enemy for 400%."
+      ],
+      "note": null
+     }
+    }
+   ],
+   "none": "No free-to-play CCG team in the sources: the October 19 article says Kureo plus one CCG unit is not a real team. The CCG boss cards list their own free picks."
+  }
+ ],
+ "derived_label": "(worked out from skills)",
  "howto": {
   "home": [
    {
-    "text": "Play No Organization, and build one strong team first."
+    "text": "Pick one faction and build its strongest team first. No Org is the cheapest start."
    },
    {
     "text": "Guild War: one strong team, plus two 1–2 character teams that only grab free tiles.",
@@ -1119,7 +1730,7 @@
   ],
   "best-teams": [
    {
-    "text": "Build one strong team first: the free team below works for story, arena and guild war."
+    "text": "Pick one faction below and build its meta team first. Free-to-play: start with No Org."
    },
    {
     "text": "Guild War: one strong team, plus two 1–2 character teams that only grab free tiles.",
@@ -1129,7 +1740,7 @@
     "text": "Every team is 4 on the field plus 1 back-up."
    },
    {
-    "text": "Merge skill cards to Lv3 before you cast."
+    "text": "Open \"Attack order\" under any team to see who casts first."
    }
   ],
   "buy": [

@@ -97,3 +97,8 @@ details.more>summary{font-size:17px}
 @media(max-width:540px){.units{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.unit span{font-size:15px}.character-copy strong{font-size:15px}.portal strong{font-size:15px}.portal small{font-size:15px;line-height:1.35}.portals{grid-template-columns:repeat(2,minmax(0,1fr))}.eyebrow{font-size:15px}.tier-grid{grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}.tabs button,.actions .button,.actions button{font-size:17px}}
 .hero-number{font-size:15px;letter-spacing:2px}.portal small,.jump button{font-size:17px}
 @media(max-width:540px){.portal small{font-size:17px;line-height:1.3}}
+.attack-order{margin:8px 0 6px;padding-left:24px}.attack-order li{font-size:17px;line-height:1.55;margin:0 0 6px;color:#eef0f4}
+.attack-order li::marker{color:var(--gold);font-weight:800}
+.faction-card{border-top:3px solid var(--gold)}.faction-card .no-team{margin-top:14px}
+.best-row .row-label a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.order-kind{font-size:15px;color:var(--gold);font-weight:700;margin:6px 0 4px}
