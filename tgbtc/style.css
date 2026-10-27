@@ -237,3 +237,9 @@ details[open]>:not(summary){animation:tg-rise .22s ease}
 .crest img,.crest .missing{width:34px;height:34px;object-fit:contain}
 @media(max-width:540px){.hero-crests{gap:8px}.crest{padding:4px 10px 4px 4px}.crest img,.crest .missing{width:28px;height:28px}}
 @media(prefers-reduced-motion:reduce){.crest:hover{transform:none}}
+/* Language: EN | PT | ES switch (header on wide screens, context bar on phones), first-visit offer, English-text note */
+.lang-switch{display:flex;gap:4px;flex-shrink:0}.lang-switch button{min-height:44px;min-width:44px;padding:6px 8px;font-size:15px;font-weight:700;letter-spacing:.5px;color:var(--muted);background:var(--panel);box-shadow:0 2px 0 #06080d}.lang-switch button[aria-pressed=true]{color:#fff;background:#672535;border-color:var(--red)}.lang-switch button:active{transform:translateY(2px);box-shadow:none}
+.lang-switch.in-bar{display:none}
+.lang-offer{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;max-width:1440px;margin:12px auto 0;padding:14px 18px;border:1px solid var(--cyan);border-radius:8px;background:#182c32;width:calc(100% - 36px)}.lang-offer p{margin:0;font-size:17px;flex:1 1 180px}
+.en-note{font-style:italic}
+@media(max-width:540px){.lang-switch.in-header{display:none}.lang-switch.in-bar{display:flex}.contextbar{align-items:center}.contextbar>span:first-child{display:none}.lang-switch.in-bar button{min-width:40px;padding:4px 6px}}

@@ -6,9 +6,9 @@
     "candidates": 143,
     "canonical_ids": 142,
     "legacy_retained": 121,
-    "missing_portraits": 22,
+    "missing_portraits": 1,
     "placeholder_records": 1,
-    "portraits": 121,
+    "portraits": 142,
     "rarity_conflicts_resolved": 1,
     "rarity_counts": {
       "R": 9,
@@ -1078,8 +1078,8 @@
         "1008_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1008.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -1164,8 +1164,8 @@
         "1009_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1009.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -2961,8 +2961,8 @@
         "1022_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1022.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -3622,8 +3622,8 @@
         "1028_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1028.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -3708,8 +3708,8 @@
         "1029_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1029.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -4359,8 +4359,8 @@
         "1034_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1034.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -5724,8 +5724,8 @@
         "1044_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1044.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -5810,8 +5810,8 @@
         "1045_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1045.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -6037,8 +6037,8 @@
         "1047_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1047.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -6123,8 +6123,8 @@
         "1048_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1048.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -6209,8 +6209,8 @@
         "1049_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1049.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -6719,8 +6719,8 @@
         "1054_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1054.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -7371,8 +7371,8 @@
         "1061_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1061.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -7457,8 +7457,8 @@
         "1062_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1062.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -7543,8 +7543,8 @@
         "1063_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1063.png",
+      "portrait_status": "present",
       "rarity": "SR",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -7772,8 +7772,8 @@
         "1066_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1066.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -7858,8 +7858,8 @@
         "1067_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1067.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -7944,8 +7944,8 @@
         "1068_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1068.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -8030,8 +8030,8 @@
         "1069_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1069.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -8116,8 +8116,8 @@
         "1070_p4"
       ],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1070.png",
+      "portrait_status": "present",
       "rarity": "R",
       "rarity_evidence": {
         "confidence": "cross_checked_game_extract",
@@ -19087,8 +19087,8 @@
       "orb": null,
       "passive_refs": [],
       "passives": [],
-      "portrait": null,
-      "portrait_status": "missing",
+      "portrait": "assets/units/1180.png",
+      "portrait_status": "present",
       "rarity": "SSR",
       "rarity_evidence": {
         "confidence": "archived_guide",

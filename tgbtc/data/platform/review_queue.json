@@ -42,12 +42,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1008",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1008",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -58,12 +52,6 @@
     "key": "1008",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1009",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -150,12 +138,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1022",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1022",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -192,12 +174,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1028",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1028",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -208,12 +184,6 @@
     "key": "1028",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1029",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -250,12 +220,6 @@
     "key": "1033",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1034",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -324,12 +288,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1044",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1044",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -340,12 +298,6 @@
     "key": "1044",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1045",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -366,12 +318,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1047",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1047",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -384,12 +330,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1048",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1048",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -400,12 +340,6 @@
     "key": "1048",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1049",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -436,12 +370,6 @@
     "key": "1053",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1054",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -480,12 +408,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1061",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1061",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -498,12 +420,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1062",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1062",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -514,12 +430,6 @@
     "key": "1062",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1063",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -540,12 +450,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1066",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1066",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -556,12 +460,6 @@
     "key": "1066",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1067",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -576,12 +474,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1068",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1068",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -594,12 +486,6 @@
     "priority": "P1"
   },
   {
-    "category": "portrait",
-    "key": "1069",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
-  },
-  {
     "category": "availability",
     "key": "1069",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
@@ -610,12 +496,6 @@
     "key": "1069",
     "needed": "Resolve localized skills and effects; do not invent a build.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "1070",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
@@ -1126,12 +1006,6 @@
     "key": "1179",
     "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
     "priority": "P1"
-  },
-  {
-    "category": "portrait",
-    "key": "upcoming-hinami-halloween",
-    "needed": "Verified portrait and use-rights evidence; never use guessed URL.",
-    "priority": "P2"
   },
   {
     "category": "availability",
