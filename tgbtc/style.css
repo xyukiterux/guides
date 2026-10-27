@@ -126,3 +126,114 @@ ol.attack-order{padding-left:24px;line-height:1.6;font-size:17px}ol.attack-order
 .rec-results{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:980px}.rec{padding:16px}.rec-head{font-size:17px;margin:0 0 4px}.rec-count{font-size:15px;color:var(--cyan);margin:0 0 8px;font-weight:700}
 .units.mini .unit.miss{opacity:.45;border-style:dashed}.units.mini .unit.have{border-color:#35565d}.swap{color:var(--gold)}
 @media(max-width:540px){.faction-picker{gap:6px}.faction-pick{padding:10px 2px;font-size:15px}.faction-pick img,.faction-pick .missing{width:48px;height:48px}.rec-type{flex-direction:column;align-items:stretch}.own-grid{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}}
+
+/* ===== Round 8: depth. The tactile language of the October 19 redesign (assets/site.css, GameGuides 7b5e7b2):
+   layered shadows, a bevel highlight, press-down on :active, faction-colored rings and glows.
+   Content is always visible on load (no scroll reveal). Motion stops under prefers-reduced-motion. ===== */
+:root{--f-noorg:#b98bff;--f-aogiri:#ff8a4c;--f-anteiku:#e0b27a;--f-ccg:#8fc7ff;--fc:var(--red);
+ --t-starter:#8fd98a;--t-mid:#9db7ff;--t-endgame:#f2c46d;--chip-ink:#10141e;
+ --bevel:inset 0 1px 0 rgba(255,255,255,.14);--lift:0 3px 0 #06080d,0 7px 14px rgba(0,0,0,.42);
+ --lift-hi:0 5px 0 #06080d,0 12px 20px rgba(0,0,0,.48);--press:0 0 0 #06080d,0 2px 5px rgba(0,0,0,.45)}
+[data-f=noorg]{--fc:var(--f-noorg)}[data-f=aogiri]{--fc:var(--f-aogiri)}[data-f=anteiku]{--fc:var(--f-anteiku)}[data-f=ccg]{--fc:var(--f-ccg)}
+body{background:radial-gradient(1100px 560px at 88% -8%,rgba(245,104,125,.13),transparent 62%),radial-gradient(800px 480px at -8% 24%,rgba(188,43,68,.12),transparent 60%),var(--bg)}
+
+/* Buttons and button-like links: bevel + ledge, lift on hover, press on click, clear focus ring */
+button,.button{background:linear-gradient(180deg,#323b52,#232a3b);border:1px solid rgba(255,255,255,.16);border-radius:12px;color:var(--ink);
+ box-shadow:var(--bevel),var(--lift);transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
+button:hover,.button:hover{transform:translateY(-2px);filter:brightness(1.1);box-shadow:var(--bevel),var(--lift-hi)}
+button:active,.button:active{transform:translateY(3px);box-shadow:var(--bevel),var(--press)}
+:where(button,.button,a,summary,[role=tab]):focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:12px}
+button.primary,.button.primary{background:linear-gradient(180deg,#f0566a,#b92c45);border-color:rgba(255,170,180,.45);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 3px 0 #5d1322,0 8px 16px rgba(224,71,90,.3)}
+
+/* Cards: soft gradient, bevel, depth */
+.panel{border-radius:16px;background:linear-gradient(180deg,#1d2333,#141925);border-color:rgba(255,255,255,.09);box-shadow:var(--bevel),0 10px 24px rgba(0,0,0,.32)}
+.guide-link{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.guide-link:hover{transform:translateY(-4px);box-shadow:var(--bevel),0 6px 0 #06080d,0 16px 26px rgba(0,0,0,.45)}
+.guide-link:active{transform:translateY(2px);box-shadow:var(--bevel),var(--press)}
+.guide-num{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:14px;font-size:24px;color:#fff;
+ background:linear-gradient(145deg,#f0566a,#8e1f2e);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 4px 0 #4a0d17,0 8px 14px rgba(0,0,0,.4)}
+.hero{border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.028) 0 1px,transparent 1px 9px)}
+.howto{border-radius:16px;box-shadow:var(--bevel),0 8px 20px rgba(0,0,0,.3)}
+
+/* Faction picker: tactile crests with a faction-colored ring */
+.faction-pick{border-radius:18px;background:linear-gradient(180deg,#232a3b,#171c28);border:1px solid rgba(255,255,255,.12);border-top:3px solid var(--fc);
+ box-shadow:var(--bevel),var(--lift);transition:transform .14s ease,box-shadow .14s ease;color:var(--ink)}
+.faction-pick:hover{transform:translateY(-3px);box-shadow:var(--bevel),var(--lift-hi)}
+.faction-pick:active{transform:translateY(3px);box-shadow:var(--bevel),var(--press)}
+.faction-pick.on{background:linear-gradient(180deg,color-mix(in srgb,var(--fc) 26%,#232a3b),#171c28);border-color:var(--fc);
+ box-shadow:var(--bevel),0 3px 0 #06080d,0 0 0 1px var(--fc),0 8px 22px color-mix(in srgb,var(--fc) 35%,transparent)}
+.frame{display:inline-block;border-radius:50%;padding:3px;background:linear-gradient(160deg,rgba(255,255,255,.55) 0%,var(--fc) 40%,color-mix(in srgb,var(--fc) 55%,#000));
+ box-shadow:0 0 0 2px #10141e,0 0 14px color-mix(in srgb,var(--fc) 45%,transparent)}
+.frame img,.frame .missing{display:block;border-radius:50%;background:radial-gradient(ellipse at bottom,#3d2a3f,#141824 75%)}
+
+/* Faction view: colored header rule */
+.faction-view{--fc:inherit}
+.faction-title{display:flex;align-items:center;gap:12px;padding-bottom:10px;position:relative}
+.faction-title:after{content:"";position:absolute;left:0;bottom:0;width:min(240px,60%);height:4px;border-radius:4px;background:linear-gradient(90deg,var(--fc),var(--gold),transparent)}
+
+/* Tier tabs: three thick tactile buttons; the chosen one is pressed in and lit in its tier color */
+.tier-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 10px;max-width:720px}
+.tier-tab{flex-direction:column;gap:2px;min-height:64px;padding:8px 6px;border-radius:16px;border-bottom:3px solid var(--tc);color:var(--ink)}
+.tier-tab .tab-name{font-size:18px;font-weight:800;letter-spacing:.3px}
+.tier-tab small{font-size:15px;color:var(--muted)}
+.tier-tab[aria-selected=true]{background:linear-gradient(180deg,color-mix(in srgb,var(--tc) 34%,#232a3b),#1a2030);border-color:var(--tc);
+ transform:translateY(2px);box-shadow:inset 0 2px 6px rgba(0,0,0,.45),0 1px 0 #06080d,0 0 18px color-mix(in srgb,var(--tc) 30%,transparent)}
+.tier-tab[aria-selected=true] small{color:#e6e9f0}
+.t-starter{--tc:var(--t-starter)}.t-mid{--tc:var(--t-mid)}.t-endgame{--tc:var(--t-endgame)}
+.tier-panel{border-radius:18px;padding:14px 16px 6px;margin:0 0 14px;max-width:980px;border:1px solid rgba(255,255,255,.1);border-left:5px solid var(--tc);
+ background:linear-gradient(180deg,color-mix(in srgb,var(--tc) 8%,#181d2a),#131823);box-shadow:var(--bevel),0 10px 24px rgba(0,0,0,.3);animation:tg-rise .22s ease}
+.tier-blurb{font-size:17px;margin:4px 0 6px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.upgrade{margin:10px 0 4px;padding:10px 14px;border-radius:12px;background:#10141e;border:1px dashed color-mix(in srgb,var(--tc) 60%,#30364a)}
+.upgrade h4{margin:0 0 4px;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:var(--tc)}
+.upgrade li{font-size:17px}
+
+/* Tier chips: small, punchy, dark ink on a bright fill (AA); Endgame shimmers */
+.tier-chip{display:inline-block;padding:3px 10px;border-radius:999px;font-size:15px;font-weight:800;letter-spacing:.4px;color:var(--chip-ink);
+ background:linear-gradient(180deg,color-mix(in srgb,var(--tc) 80%,#fff),var(--tc));box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 2px 0 rgba(0,0,0,.45)}
+.tier-chip.t-endgame{background:linear-gradient(110deg,var(--t-endgame) 0 40%,#fff1c9 50%,var(--t-endgame) 60% 100%);background-size:250% 100%;animation:tg-shine 4s ease-in-out infinite}
+.tier-note{font-size:17px;margin:8px 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:#dfe2ea}
+.slot-where{display:flex;flex-wrap:wrap;align-items:center;gap:8px;text-transform:none;letter-spacing:0}
+.slot-where span:not(.tier-chip){text-transform:uppercase;letter-spacing:1px}
+
+/* Unit cards: depth, faction stripe, portrait ring, how-to-get tag */
+.unit{border-radius:14px;background:linear-gradient(180deg,#232a3b,#161b27);border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--fc);
+ box-shadow:var(--bevel),0 3px 0 #06080d,0 6px 12px rgba(0,0,0,.35);transition:transform .14s ease,box-shadow .14s ease}
+.unit:hover{transform:translateY(-3px);box-shadow:var(--bevel),var(--lift-hi);border-color:rgba(255,255,255,.18)}
+.unit:active{transform:translateY(2px);box-shadow:var(--bevel),var(--press)}
+.unit .frame{width:100%;max-width:84px}
+.unit .frame img,.unit .frame .missing{width:100%;max-width:none}
+.unit.backup{border-style:dashed;border-top-style:solid}
+.unit small.get{display:block;margin-top:2px;padding:2px 6px;border-radius:8px;font-size:15px;line-height:1.25;font-weight:700;color:var(--chip-ink);background:var(--gc);overflow-wrap:anywhere;max-width:100%}
+.g-starter{--gc:var(--t-starter)}.g-mid{--gc:var(--t-mid)}.g-endgame{--gc:var(--t-endgame)}
+.unit small.bu{color:var(--gold)}
+
+/* Collapsibles: tactile summary pills and a smooth open */
+.meta-items details.meta-item{border-radius:16px;background:linear-gradient(180deg,#1c2231,#141925);border:1px solid rgba(255,255,255,.1);
+ box-shadow:var(--bevel),0 3px 0 #06080d,0 8px 16px rgba(0,0,0,.3);transition:transform .14s ease,box-shadow .14s ease}
+.meta-items details.meta-item:not([open]):hover{transform:translateY(-2px);box-shadow:var(--bevel),var(--lift-hi)}
+.meta-items details.meta-item>summary{cursor:pointer;min-height:44px}
+details.more>summary{display:inline-flex;gap:6px;padding:4px 14px 4px 8px;border-radius:999px;background:linear-gradient(180deg,#2a2232,#1d1823);
+ border:1px solid rgba(255,140,155,.3);box-shadow:var(--bevel),0 2px 0 #06080d;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
+details.more>summary:hover{transform:translateY(-1px)}
+details.more>summary:active{transform:translateY(2px);box-shadow:var(--bevel),var(--press)}
+details[open]>:not(summary){animation:tg-rise .22s ease}
+.swaps-box h4{margin:12px 0 4px;font-size:17px;color:var(--gold)}
+.swap-ideas li{font-size:17px}
+@keyframes tg-rise{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@keyframes tg-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+
+@media(max-width:540px){.tier-tabs{gap:6px}.tier-tab{min-height:58px;padding:6px 2px;border-radius:14px}.tier-tab .tab-name{font-size:17px}.tier-panel{padding:12px 10px 4px}
+ .unit .frame{max-width:72px}}
+@media(prefers-reduced-motion:reduce){.tier-chip.t-endgame{animation:none;background:var(--t-endgame)}
+ button:hover,.button:hover,.guide-link:hover,.faction-pick:hover,.unit:hover,.meta-items details.meta-item:not([open]):hover,details.more>summary:hover{transform:none}
+ details[open]>:not(summary),.tier-panel{animation:none}}
+/* Hero: faction crests (portrait rings in faction colors) that jump straight to each faction's teams */
+.hero-crests{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0;max-width:560px}
+.crest{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 5px;border-radius:999px;font-size:15px;font-weight:700;color:var(--ink);
+ background:linear-gradient(180deg,#262d40,#181d2a);border:1px solid color-mix(in srgb,var(--fc) 55%,transparent);box-shadow:var(--bevel),var(--lift);transition:transform .12s ease,box-shadow .12s ease}
+.crest:hover{transform:translateY(-2px);box-shadow:var(--bevel),var(--lift-hi)}
+.crest:active{transform:translateY(3px);box-shadow:var(--bevel),var(--press)}
+.crest img,.crest .missing{width:34px;height:34px;object-fit:contain}
+@media(max-width:540px){.hero-crests{gap:8px}.crest{padding:4px 10px 4px 4px}.crest img,.crest .missing{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.crest:hover{transform:none}}
