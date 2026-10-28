@@ -180,7 +180,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: equipo Aogiri",
+     "label": "Nuestra elección: Aogiri",
      "units": [
       "1155",
       "1175",
@@ -189,6 +189,8 @@
       "1166"
      ],
      "why": [
+      "Ningún video de creador que revisamos da una formación para el Stronghold Takeover. Esta es la elección del artículo del 19 de octubre, no un equipo probado en la Guild War. (sin confirmar)",
+      "Entre las unidades lanzadas, solo dos tienen pasivas principales escritas para el Stronghold Takeover: Kiyoko (desde el día 43, tienda sin confirmar; en el hueco de back-up: +40% de estadísticas y una salvación de la muerte para cada aliado; no está confirmado en qué estrella se desbloquea, así que mira su vista previa de estrellas) y Naki [1.5th Anniversary] (banner pasado). Yoshitoki [Chief] tiene una pequeña bonificación de breakthrough para el Stronghold Takeover. Pon a Kiyoko en el back-up en cuanto la tengas.",
       "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Miza quita escudos cada turno.",
       "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
       "Yakumo [Natsu Matsuri] fue debilitado el 14 de octubre (informe de creador). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
@@ -281,7 +283,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: equipo No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1127",
@@ -344,7 +346,7 @@
    "more": [
     "¿Sin Nutcracker? Usa de carry a Rize [Valentine's Day], Uta [Rescue] o Juzo [Pet Boy].",
     "Chain Campaign es la mejor fuente de gemas al principio. Mata al boss final en 2 turnos o menos para superar también las fases anteriores.",
-    "Abyssal Battlefield: llevas 1 personaje y cuenta como estrellas máximas. Nutcracker es tu mejor opción."
+    "Abyssal Battlefield: llevas 1 personaje y cuenta como estrellas máximas. Nuestra elección es Nutcracker (deducido de las habilidades — no probado). Los creadores añaden: coge perks de daño crítico, ATK y penetración antes que defensa, y mata al primer jefe con una ultimate para que no reviva. (consejo de creador)"
    ],
    "sources": [
     "Notas de investigación del 26 de octubre de 2026 (revisadas por una verificación de datos independiente), sección D",
@@ -371,7 +373,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: equipo No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1127",
@@ -380,7 +382,7 @@
       "1166"
      ],
      "why": [
-      "El mejor equipo No Org en los videos de los creadores. A No Org se la sigue considerando la número uno después del parche del 14 de octubre.",
+      "El mejor equipo No Org en el artículo del 19 de octubre. Después del parche del 14 de octubre, las pruebas de los creadores son escasas: un creador ordena las facciones Aogiri, No Org, Anteiku y CCG (MirageYT, 22 de octubre), y ninguno de los videos que revisamos muestra No Org en la Arena después del parche. (informe de creador)",
       "Back-up: Akira si juegas segundo, Roma [Mad Clown] si juegas primero.",
       "Akira [June Bride] solo salió de una cadena de paquetes de regalo que ya terminó.",
       "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\", No Organization."
@@ -462,7 +464,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1114",
@@ -555,7 +557,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1171",
@@ -644,7 +646,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: equipo CCG",
+     "label": "Nuestra elección: CCG",
      "units": [
       "1102",
       "1169",
@@ -733,7 +735,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación Anteiku",
+     "label": "Nuestra elección: Anteiku",
      "units": [
       "1089",
       "1143",
@@ -823,7 +825,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1114",
@@ -913,7 +915,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1177",
@@ -1004,7 +1006,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1171",
       "1114",
@@ -1095,7 +1097,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1114",
@@ -1185,7 +1187,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1148",
@@ -1244,6 +1246,7 @@
    ],
    "more": [
     "El rango de tu organización aquí decide la entrada en la guild war: solo entran las 8 mejores.",
+    "Los creadores montan esta pelea alrededor de Nico (unidad de la selection card: su activa limpia los debuffs del equipo, sube el daño infligido y reduce el daño recibido) con Uta [Rescue] (tienda del día 43, sin confirmar) o Sen, o alrededor de un solo carry muy invertido. Ningún video de creador que revisamos usa a Nutcracker aquí. (informe de creador, videos más antiguos)",
     "Cada unidad prestada baja tu puntuación un 20%. Pide prestada solo una unidad que añada más de un 25% de daño.",
     "Hace un 50% más a las unidades con debuff y recibe un 50% menos de los Ultimates.",
     "Qué habilidades del juego son de este boss sale de la investigación, no de la pantalla del juego. (sin confirmar)",
@@ -1274,7 +1277,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación Anteiku",
+     "label": "Nuestra elección: Anteiku",
      "units": [
       "1089",
       "1143",
@@ -1363,7 +1366,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación Aogiri",
+     "label": "Nuestra elección: Aogiri",
      "units": [
       "1155",
       "1147",
@@ -1451,7 +1454,7 @@
    ],
    "rows": [
     {
-     "label": "Mejor: alineación CCG",
+     "label": "Nuestra elección: CCG",
      "units": [
       "1102",
       "1169",
@@ -1540,8 +1543,8 @@
      "why": [
       "Cada habilidad No Org hace que Nutcracker ataque otra vez gratis (240%) y cure a tu equipo.",
       "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
-      "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
-      "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
+      "Nuestras elecciones para: historia y PvE, Arena, Carnival, World Bosses, Weekly Challenge y Organization Boss (artículo del 19 de octubre). También es la facción más barata para empezar.",
+      "Después del parche del 14 de octubre, las pruebas de los creadores son escasas: un creador ordena las facciones Aogiri, No Org, Anteiku y CCG (MirageYT, 22 de octubre), y ninguno de los videos que revisamos muestra No Org en la Arena después del parche. (informe de creador)",
       "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
       "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
      ],
@@ -1609,11 +1612,11 @@
      "why": [
       "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
       "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
-      "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
+      "Nuestras elecciones para: ataques en la Guild War y Formidable Noro (recibe un 50% menos de daño de unidades que no son Aogiri), del artículo del 19 de octubre.",
       "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
       "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
       "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
-      "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
+      "Los creadores usan Naki [Prisoner] (tienda del día 43, sin confirmar) o Naki [1.5th Anniversary] (banner pasado) en este equipo, no Naki [Crybaby]. Naki [Crybaby] es el sustituto gratis hasta que tengas uno de ellos. (informe de creador: Aslan, B_adi, Kitcat)",
       "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
      ],
      "backup": true,
@@ -1724,6 +1727,7 @@
       "Haise [Sealed Memory] reduce el daño enemigo y deja su robo de vida en 0. Juzo [False Girl] añade golpes en área gratis.",
       "Mejor para: Elder & Younger Bin, Centipede Kaneki y los bosses de Event Conquest: reciben un 30% más de CCG.",
       "Fuera de las tres mejores facciones en PvP ahora mismo; el parche del 14 de octubre le dio pequeños ajustes a CCG.",
+      "Saiko [Neet Investigator] está en lo más alto de la lista de CCG de un creador (Kitcat, 23 de septiembre, con Juzo [False Girl] y Haise [Mentor]). En PvE su kit da a cada aliado CCG +20% de estadísticas básicas y +15% de ATK. Era una unidad de banner; no se conoce ninguna forma de conseguirla en los servidores nuevos. (informe de creador)",
       "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\"; notas de investigación sobre equipos meta, sección 1 \"CCG\"."
      ],
      "backup": true,
@@ -1765,6 +1769,7 @@
      "Haise [Sealed Memory] reduce el daño enemigo y deja su robo de vida en 0. Juzo [False Girl] añade golpes en área gratis.",
      "Mejor para: Elder & Younger Bin, Centipede Kaneki y los bosses de Event Conquest: reciben un 30% más de CCG.",
      "Fuera de las tres mejores facciones en PvP ahora mismo; el parche del 14 de octubre le dio pequeños ajustes a CCG.",
+     "Saiko [Neet Investigator] está en lo más alto de la lista de CCG de un creador (Kitcat, 23 de septiembre, con Juzo [False Girl] y Haise [Mentor]). En PvE su kit da a cada aliado CCG +20% de estadísticas básicas y +15% de ATK. Era una unidad de banner; no se conoce ninguna forma de conseguirla en los servidores nuevos. (informe de creador)",
      "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\"; notas de investigación sobre equipos meta, sección 1 \"CCG\"."
     ],
     "team_kind": "sourced",
@@ -2043,6 +2048,7 @@
         "Haise [Sealed Memory] reduce el daño enemigo y deja su robo de vida en 0. Juzo [False Girl] añade golpes en área gratis.",
         "Mejor para: Elder & Younger Bin, Centipede Kaneki y los bosses de Event Conquest: reciben un 30% más de CCG.",
         "Fuera de las tres mejores facciones en PvP ahora mismo; el parche del 14 de octubre le dio pequeños ajustes a CCG.",
+        "Saiko [Neet Investigator] está en lo más alto de la lista de CCG de un creador (Kitcat, 23 de septiembre, con Juzo [False Girl] y Haise [Mentor]). En PvE su kit da a cada aliado CCG +20% de estadísticas básicas y +15% de ATK. Era una unidad de banner; no se conoce ninguna forma de conseguirla en los servidores nuevos. (informe de creador)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\"; notas de investigación sobre equipos meta, sección 1 \"CCG\"."
        ],
        "team_kind": "sourced",
@@ -2360,6 +2366,7 @@
         "Haise [Sealed Memory] reduce el daño enemigo y deja su robo de vida en 0. Juzo [False Girl] añade golpes en área gratis.",
         "Mejor para: Elder & Younger Bin, Centipede Kaneki y los bosses de Event Conquest: reciben un 30% más de CCG.",
         "Fuera de las tres mejores facciones en PvP ahora mismo; el parche del 14 de octubre le dio pequeños ajustes a CCG.",
+        "Saiko [Neet Investigator] está en lo más alto de la lista de CCG de un creador (Kitcat, 23 de septiembre, con Juzo [False Girl] y Haise [Mentor]). En PvE su kit da a cada aliado CCG +20% de estadísticas básicas y +15% de ATK. Era una unidad de banner; no se conoce ninguna forma de conseguirla en los servidores nuevos. (informe de creador)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\"; notas de investigación sobre equipos meta, sección 1 \"CCG\"."
        ],
        "team_kind": "sourced",
@@ -2921,6 +2928,7 @@
         "Haise [Sealed Memory] reduce el daño enemigo y deja su robo de vida en 0. Juzo [False Girl] añade golpes en área gratis.",
         "Mejor para: Elder & Younger Bin, Centipede Kaneki y los bosses de Event Conquest: reciben un 30% más de CCG.",
         "Fuera de las tres mejores facciones en PvP ahora mismo; el parche del 14 de octubre le dio pequeños ajustes a CCG.",
+        "Saiko [Neet Investigator] está en lo más alto de la lista de CCG de un creador (Kitcat, 23 de septiembre, con Juzo [False Girl] y Haise [Mentor]). En PvE su kit da a cada aliado CCG +20% de estadísticas básicas y +15% de ATK. Era una unidad de banner; no se conoce ninguna forma de conseguirla en los servidores nuevos. (informe de creador)",
         "(deducido de las habilidades — no probado) El equipo viene del artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\", y de las notas de investigación sobre equipos meta, sección 1 \"CCG\", que lo indican solo para Arena, equipo principal, historia y PvE. Usarlo aquí es decisión nuestra."
        ],
        "team_kind": "derived",
@@ -5939,6 +5947,7 @@
         "Haise [Sealed Memory] reduce el daño enemigo y deja su robo de vida en 0. Juzo [False Girl] añade golpes en área gratis.",
         "Mejor para: Elder & Younger Bin, Centipede Kaneki y los bosses de Event Conquest: reciben un 30% más de CCG.",
         "Fuera de las tres mejores facciones en PvP ahora mismo; el parche del 14 de octubre le dio pequeños ajustes a CCG.",
+        "Saiko [Neet Investigator] está en lo más alto de la lista de CCG de un creador (Kitcat, 23 de septiembre, con Juzo [False Girl] y Haise [Mentor]). En PvE su kit da a cada aliado CCG +20% de estadísticas básicas y +15% de ATK. Era una unidad de banner; no se conoce ninguna forma de conseguirla en los servidores nuevos. (informe de creador)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\"; notas de investigación sobre equipos meta, sección 1 \"CCG\"."
        ],
        "team_kind": "sourced",
@@ -6151,8 +6160,8 @@
     "why": [
      "Cada habilidad No Org hace que Nutcracker ataque otra vez gratis (240%) y cure a tu equipo.",
      "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
-     "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
-     "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
+     "Nuestras elecciones para: historia y PvE, Arena, Carnival, World Bosses, Weekly Challenge y Organization Boss (artículo del 19 de octubre). También es la facción más barata para empezar.",
+     "Después del parche del 14 de octubre, las pruebas de los creadores son escasas: un creador ordena las facciones Aogiri, No Org, Anteiku y CCG (MirageYT, 22 de octubre), y ninguno de los videos que revisamos muestra No Org en la Arena después del parche. (informe de creador)",
      "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
      "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
     ],
@@ -6425,8 +6434,8 @@
        "why": [
         "Cada habilidad No Org hace que Nutcracker ataque otra vez gratis (240%) y cure a tu equipo.",
         "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
-        "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
-        "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
+        "Nuestras elecciones para: historia y PvE, Arena, Carnival, World Bosses, Weekly Challenge y Organization Boss (artículo del 19 de octubre). También es la facción más barata para empezar.",
+        "Después del parche del 14 de octubre, las pruebas de los creadores son escasas: un creador ordena las facciones Aogiri, No Org, Anteiku y CCG (MirageYT, 22 de octubre), y ninguno de los videos que revisamos muestra No Org en la Arena después del parche. (informe de creador)",
         "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
        ],
@@ -6836,7 +6845,7 @@
         "1166"
        ],
        "why": [
-        "El mejor equipo No Org en los videos de los creadores. A No Org se la sigue considerando la número uno después del parche del 14 de octubre.",
+        "El mejor equipo No Org en el artículo del 19 de octubre. Después del parche del 14 de octubre, las pruebas de los creadores son escasas: un creador ordena las facciones Aogiri, No Org, Anteiku y CCG (MirageYT, 22 de octubre), y ninguno de los videos que revisamos muestra No Org en la Arena después del parche. (informe de creador)",
         "Back-up: Akira si juegas segundo, Roma [Mad Clown] si juegas primero.",
         "Akira [June Bride] solo salió de una cadena de paquetes de regalo que ya terminó.",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 4 \"Endgame team per faction\", No Organization."
@@ -10633,7 +10642,7 @@
        ]
       },
       {
-       "label": "Mejor: alineación No Org",
+       "label": "Nuestra elección: No Org",
        "units": [
         "1174",
         "1171",
@@ -11355,8 +11364,8 @@
        "why": [
         "Cada habilidad No Org hace que Nutcracker ataque otra vez gratis (240%) y cure a tu equipo.",
         "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
-        "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
-        "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
+        "Nuestras elecciones para: historia y PvE, Arena, Carnival, World Bosses, Weekly Challenge y Organization Boss (artículo del 19 de octubre). También es la facción más barata para empezar.",
+        "Después del parche del 14 de octubre, las pruebas de los creadores son escasas: un creador ordena las facciones Aogiri, No Org, Anteiku y CCG (MirageYT, 22 de octubre), y ninguno de los videos que revisamos muestra No Org en la Arena después del parche. (informe de creador)",
         "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
        ],
@@ -16071,11 +16080,11 @@
     "why": [
      "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
      "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
-     "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
+     "Nuestras elecciones para: ataques en la Guild War y Formidable Noro (recibe un 50% menos de daño de unidades que no son Aogiri), del artículo del 19 de octubre.",
      "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
      "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
      "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
-     "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
+     "Los creadores usan Naki [Prisoner] (tienda del día 43, sin confirmar) o Naki [1.5th Anniversary] (banner pasado) en este equipo, no Naki [Crybaby]. Naki [Crybaby] es el sustituto gratis hasta que tengas uno de ellos. (informe de creador: Aslan, B_adi, Kitcat)",
      "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
     ],
     "team_kind": "sourced",
@@ -16325,11 +16334,11 @@
        "why": [
         "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
         "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
-        "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
+        "Nuestras elecciones para: ataques en la Guild War y Formidable Noro (recibe un 50% menos de daño de unidades que no son Aogiri), del artículo del 19 de octubre.",
         "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
         "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
-        "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
+        "Los creadores usan Naki [Prisoner] (tienda del día 43, sin confirmar) o Naki [1.5th Anniversary] (banner pasado) en este equipo, no Naki [Crybaby]. Naki [Crybaby] es el sustituto gratis hasta que tengas uno de ellos. (informe de creador: Aslan, B_adi, Kitcat)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
        ],
        "team_kind": "sourced",
@@ -16617,11 +16626,11 @@
        "why": [
         "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
         "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
-        "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
+        "Nuestras elecciones para: ataques en la Guild War y Formidable Noro (recibe un 50% menos de daño de unidades que no son Aogiri), del artículo del 19 de octubre.",
         "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
         "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
-        "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
+        "Los creadores usan Naki [Prisoner] (tienda del día 43, sin confirmar) o Naki [1.5th Anniversary] (banner pasado) en este equipo, no Naki [Crybaby]. Naki [Crybaby] es el sustituto gratis hasta que tengas uno de ellos. (informe de creador: Aslan, B_adi, Kitcat)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
        ],
        "team_kind": "sourced",
@@ -17136,6 +17145,8 @@
         "1166"
        ],
        "why": [
+        "Ningún video de creador que revisamos da una formación para el Stronghold Takeover. Esta es la elección del artículo del 19 de octubre, no un equipo probado en la Guild War. (sin confirmar)",
+        "Entre las unidades lanzadas, solo dos tienen pasivas principales escritas para el Stronghold Takeover: Kiyoko (desde el día 43, tienda sin confirmar; en el hueco de back-up: +40% de estadísticas y una salvación de la muerte para cada aliado; no está confirmado en qué estrella se desbloquea, así que mira su vista previa de estrellas) y Naki [1.5th Anniversary] (banner pasado). Yoshitoki [Chief] tiene una pequeña bonificación de breakthrough para el Stronghold Takeover. Pon a Kiyoko en el back-up en cuanto la tengas.",
         "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Miza quita escudos cada turno.",
         "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Yakumo [Natsu Matsuri] fue debilitado el 14 de octubre (informe de creador). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
@@ -19756,11 +19767,11 @@
        "why": [
         "Black Rabbit es DST, así que le gana a todos los atributos salvo a otro DST. Su golpe al inicio del turno no es una habilidad activa, así que los contraataques a habilidades activas no saltan.",
         "Miza quita los escudos y resta un 10% del HP actual (como máximo el 100% de su propio HP inicial) al inicio del turno, junto con el golpe de Black Rabbit.",
-        "Mejor para: ataques en Guild War y Formidable Noro (recibe un 50% menos de las unidades que no son Aogiri).",
+        "Nuestras elecciones para: ataques en la Guild War y Formidable Noro (recibe un 50% menos de daño de unidades que no son Aogiri), del artículo del 19 de octubre.",
         "Débil contra: jugar segundo (\"con Aogiri, gana el que empieza\"). Black Rabbit y Miza están baneados en la temporada 1 del Global Pinnacle Championship (informe de creador).",
         "LR cell de Naki: los creadores dicen que da un ataque extra a tu unidad con más ATK. En el texto del juego, eso es la LR cell de Naki [Prisoner] (hace que tu aliado Aogiri con más ATK también lance su habilidad); la LR cell de Naki [Crybaby] baja el nivel de habilidad del objetivo en PvP. Revisa qué cell tienes.",
         "Cambios: Noro en lugar de Miza; ¿no tienes a Yakumo [Natsu Matsuri]? Usa a Hideyoshi o Eto en su lugar.",
-        "Los creadores no dicen qué versión de Naki; [Crybaby] es nuestra mejor suposición. (sin confirmar)",
+        "Los creadores usan Naki [Prisoner] (tienda del día 43, sin confirmar) o Naki [1.5th Anniversary] (banner pasado) en este equipo, no Naki [Crybaby]. Naki [Crybaby] es el sustituto gratis hasta que tengas uno de ellos. (informe de creador: Aslan, B_adi, Kitcat)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta A · Aogiri\" y sección 4 \"Endgame team per faction\"."
        ],
        "team_kind": "sourced",
@@ -20019,7 +20030,7 @@
    "group": "Pruebas",
    "rows": [
     {
-     "label": "Mejor: alineación No Org",
+     "label": "Nuestra elección: No Org",
      "units": [
       "1174",
       "1171",
@@ -21334,7 +21345,7 @@
    "group": "Jefes",
    "rows": [
     {
-     "label": "Mejor: alineación Aogiri",
+     "label": "Nuestra elección: Aogiri",
      "units": [
       "1155",
       "1147",
@@ -21414,7 +21425,7 @@
    "group": "Jefes",
    "rows": [
     {
-     "label": "Mejor: alineación CCG",
+     "label": "Nuestra elección: CCG",
      "units": [
       "1102",
       "1169",
@@ -21855,6 +21866,9 @@
   "spend": [
    {
     "text": "Nunca empieces un banner que no puedas terminar: el pity no se transfiere."
+   },
+   {
+    "text": "En un servidor nuevo, un creador dice que te saltes los dos primeros Carnivals y ahorres (Shi). Otro dice que quien no sea veterano debe saltarse a Hinami [Halloween] y ahorrar para el 2.º aniversario, unas dos semanas después del 27 de octubre en los servidores antiguos; la fecha en nuestro servidor no está confirmada (Zeketta). (consejo de creador)"
    },
    {
     "text": "Los banners limitados garantizan la unidad en 300 pulls: junta 90.000 Diamonds antes."
@@ -22411,7 +22425,7 @@
    },
    {
     "name": "Arena y Real-Time Arena",
-    "text": "Los archivos tienen recompensas de temporada de PvP de 60 a 360 Diamonds según el grado (el grado más bajo no paga ninguno), más de 100 a 2.000 monedas PvP y una célula, y recompensas únicas de rango que suman 4.255 Diamonds. No dicen si son de la Arena o de la Real-Time Arena; un creador informa de 1.500 Diamonds por llegar por primera vez al rango 1 de la Arena, lo que coincide con la fila única más alta. (nuestra lectura de los datos)",
+    "text": "Los archivos tienen recompensas de temporada de PvP de 60 a 360 Diamonds según el grado (el grado más bajo no paga Diamonds), más de 100 a 2.000 monedas PvP y una célula, y recompensas únicas de rango que suman 4.255 Diamonds. No dicen si son de la Arena o de la Real-Time Arena; un creador informa de 1.500 Diamonds por llegar por primera vez al rango 1 de la Arena, lo que coincide con la fila única más alta. (nuestra lectura de los datos)",
     "link": "#modes/rta",
     "source": "Datos del juego (PvpFinalR_G0_1..18, filas PvpMaxR); video del creador Zeketta, a través del artículo del 19 de octubre"
    },
@@ -22514,6 +22528,243 @@
    "Notas de investigación del 28 de octubre de 2026 (VIP)"
   ]
  },
+ "builds": {
+  "title": "Builds: potenciales, células y tácticas",
+  "intro": "El texto del juego da el nombre y el efecto de los conjuntos de potenciales, pero no dice cuáles usar, así que estas son builds de creadores. El número es cuántos canales distintos coinciden.",
+  "rules": [
+   {
+    "text": "Estadística principal de la célula: elige % HP, % ATK o % DEF antes que estadísticas fijas.",
+    "channels": 3,
+    "source": "Kitcat (17 de agosto de 2026), Shi (6 y 27 de abril de 2026), Zeketta (23 de abril de 2026)"
+   },
+   {
+    "text": "Potenciales para quien hace daño: Initiate más Smash (por ejemplo 3 Initiate, 4 Smash y 2 Undermine o Eliminate). (consejo de creador)",
+    "channels": 2,
+    "source": "Shi (5 de abril de 2026), Aslan (25 de octubre de 2026)"
+   },
+   {
+    "text": "Potenciales para supports y tanques: 6 Initiate más Undermine, Eliminate o Potent, con HP. Un atributo igual al de la unidad en una célula suma un 5%. (consejo de creador)",
+    "channels": 1,
+    "source": "Shi (5 y 6 de abril de 2026)"
+   },
+   {
+    "text": "Los mods de célula funcionan como conjunto: usa 3 del mismo mod. Resurrection (tres mods de revive) va bien en supports y tanques; Restriction Ignore va en carries que reciben stun. (consejo de creador)",
+    "channels": 2,
+    "source": "Shi (6 de abril de 2026), Aslan (varios videos de 2026)"
+   },
+   {
+    "text": "Gasta materiales de modificación solo en células UR con nota V (5) o mejor. (consejo de creador)",
+    "channels": 2,
+    "source": "Aslan (25 de octubre de 2026), Zeketta (23 de abril de 2026)"
+   },
+   {
+    "text": "Los potenciales Artifice solo funcionan en el campo, así que en una unidad de back-up solo sirven de relleno de estadísticas. (consejo de creador)",
+    "channels": 1,
+    "source": "Shi (5 de abril de 2026)"
+   },
+   {
+    "text": "Las células LR son de cada unidad y no se pueden modificar. Su texto no está en los archivos del juego que usa esta guía. (informe de creador)",
+    "channels": 1,
+    "source": "Shi (6 de abril de 2026)"
+   }
+  ],
+  "unit_note": "Lo que usan los creadores en esta unidad. Úsalo cuando la unidad esté en tu equipo principal. (informe de creador)",
+  "none": "Todavía no encontramos una build de creador para esta unidad. Regla general: quien hace daño lleva células de % ATK y potenciales Initiate más Smash; un support o tanque lleva células de % HP, potenciales Initiate y mods de revive. (consejo de creador)",
+  "per_unit": {
+   "1155": {
+    "build": "Ataque total: células de % ATK (4 lo ideal, 3 como mínimo), Restriction Ignore para que no sufra Disruption, potenciales todos rainbow; una táctica de DPS y una de Fortify.",
+    "channels": 2,
+    "source": "Aslan (5 y 19 de octubre de 2026), Zeketta (23 de septiembre de 2026)"
+   },
+   "1179": {
+    "build": "Mods Resurrection (tres de revive) y una célula defensiva de HP; potenciales rainbow; una táctica de support más Fortify.",
+    "channels": 3,
+    "source": "Aslan (19 de octubre de 2026), Kitcat (12 de octubre de 2026), Zeketta (23 de septiembre de 2026)"
+   },
+   "1137": {
+    "build": "Tres mods de revive; su célula LR reduce el daño recibido.",
+    "channels": 1,
+    "source": "Aslan (19 de agosto y 8 de octubre de 2026)"
+   },
+   "1165": {
+    "build": "Defensivo: HP, mods de revive o Disruption, una célula de HP máximo; una táctica de support más Fortified Armor.",
+    "channels": 1,
+    "source": "Aslan (24 de agosto, 6 y 19 de octubre de 2026)"
+   },
+   "1135": {
+    "build": "Células mixtas de ATK, DEF y HP; tácticas UR defensivas, sin táctica de DPS. Un creador dice que no lo uses sin su célula LR.",
+    "channels": 2,
+    "source": "Aslan (24 de agosto, 14 de septiembre, 8 de octubre de 2026), B_adi (31 de agosto de 2026)"
+   },
+   "1164": {
+    "build": "Defensivo, con DEF y HP; mods Restriction Ignore o Buff Removal.",
+    "channels": 2,
+    "source": "Aslan (29 de abril y 26 de octubre de 2026), Dinossauro massa (26 de octubre de 2026)"
+   },
+   "1180": {
+    "build": "Células de HP en los tres huecos, para que crezca su curación; anti-Disruption y anticontrol primero en sus refinamientos.",
+    "channels": 1,
+    "source": "MirageYT (22 de octubre de 2026)"
+   },
+   "1162": {
+    "build": "Inmunidad a Disruption primero; mods Restriction Ignore y una célula de DEF o HP.",
+    "channels": 1,
+    "source": "Aslan (23 de junio y 19 de octubre de 2026)"
+   },
+   "1127": {
+    "build": "6 potenciales Initiate (support en primera línea) y estadísticas resistentes; Restriction Ignore o tres mods de revive.",
+    "channels": 3,
+    "source": "Aslan (22 de julio de 2026), Shi (23 de marzo de 2026), Guff (30 de abril de 2026)"
+   },
+   "1171": {
+    "build": "Potenciales todos rainbow y tres mods de revive.",
+    "channels": 1,
+    "source": "Aslan (4 de agosto de 2026)"
+   },
+   "1114": {
+    "build": "Potenciales rainbow y tres mods de revive.",
+    "channels": 1,
+    "source": "Aslan (18 de mayo y 4 de agosto de 2026)"
+   },
+   "1148": {
+    "build": "Mods Restriction Ignore, si los tienes.",
+    "channels": 1,
+    "source": "Aslan (4 de agosto de 2026)"
+   },
+   "1090": {
+    "build": "HP completo y 6 potenciales Initiate para el papel de back-up.",
+    "channels": 1,
+    "source": "Shi (23 de marzo de 2026)"
+   },
+   "1140": {
+    "build": "Potenciales rainbow con 2 Smash; una mezcla de células de % de estadísticas.",
+    "channels": 1,
+    "source": "Shi (23 de marzo de 2026)"
+   },
+   "1037": {
+    "build": "Mods anticuración y una táctica que la mantenga con vida.",
+    "channels": 1,
+    "source": "Aslan (24 de agosto de 2026)"
+   },
+   "1116": {
+    "build": "Tres mods de revive: su trabajo es seguir con vida.",
+    "channels": 1,
+    "source": "Aslan (28 de mayo de 2026)"
+   },
+   "1102": {
+    "build": "Células de ataque primero, mejoradas después; el HP también sube el CP.",
+    "channels": 1,
+    "source": "Aslan (14 de mayo de 2026)"
+   }
+  },
+  "sources": [
+   "Notas de investigación del 28 de octubre de 2026 (builds, 158 videos de creadores)"
+  ]
+ },
+ "video_picks": {
+  "title": "Empieza por estos",
+  "intro": "El mejor video actual por tema, elegido entre 331 videos después de revisar lo que cubre cada uno.",
+  "gap": "Ningún video de creador que encontramos muestra una formación de Stronghold Takeover (guild war); usa la guía de Stronghold Takeover. Evita los videos de \"Tokyo Ghoul: Dark War\": es otro juego, más antiguo.",
+  "picks": [
+   {
+    "topic": "Guía para principiantes en un servidor nuevo",
+    "why": "Aslan, 25 de octubre de 2026: grabado en un servidor recién abierto: diarias, todas las tiendas, Diamond Spring, Carnival, potenciales, células, guild war, Arena y VIP en un solo video (74 minutos).",
+    "videos": {
+     "url": "https://youtu.be/6Lcdb56rRng",
+     "title": "Tokyo Ghoul Break the Chains BEGINNER GUIDE!! – Everything Explained"
+    }
+   },
+   {
+    "topic": "Progreso sin gastar",
+    "why": "Kitcat, 7 de octubre de 2026: una cuenta VIP 0 real en el día 150: resultados del Carnival y lo que se saltó (18 minutos).",
+    "videos": {
+     "url": "https://youtu.be/GbmbT8RXyY8",
+     "title": "Day 150 Of F2P!!"
+    }
+   },
+   {
+    "topic": "Cálculo del pity en una cuenta gratis",
+    "why": "Kitcat, 12 de octubre de 2026: muestra en la práctica las garantías de 200 y 300 pulls (13 minutos).",
+    "videos": {
+     "url": "https://youtu.be/PCkku_EwpAc",
+     "title": "250 PULLS FOR THE NEW MISAAA!!"
+    }
+   },
+   {
+    "topic": "Recompensas y economía",
+    "why": "Aslan, 23 de septiembre de 2026: Diamond Spring, pagos de la guild war y cuánto vale cada tienda (27 minutos).",
+    "videos": {
+     "url": "https://youtu.be/apwhkFp27G8",
+     "title": "DEVS WE NEED TO TALK!! – REWARDS, PVP, PVE"
+    }
+   },
+   {
+    "topic": "Equipos Aogiri",
+    "why": "Aslan, 8 de octubre de 2026: todas las combinaciones Aogiri con Black Rabbit, Noro, Yakumo y Naki (17 minutos).",
+    "videos": {
+     "url": "https://youtu.be/jBZyxBZMruU",
+     "title": "EVERY POSSIBLE AOGIRI TEAM COMP!!"
+    }
+   },
+   {
+    "topic": "Builds (células, potenciales, tácticas)",
+    "why": "Aslan, 19 de octubre de 2026: células, potenciales y tácticas para un equipo Aogiri: Black Rabbit, Miza, Naki y el \"Jason\" del creador (muy probablemente Yakumo [Natsu Matsuri]) (23 minutos).",
+    "videos": {
+     "url": "https://youtu.be/UXYlfTEG5vQ",
+     "title": "USE THIS AOGIRI LINE UP IF YOU DON'T HAVE NORO!"
+    }
+   },
+   {
+    "topic": "Mods de célula explicados",
+    "why": "Shi – Gacha, 6 de abril de 2026: las reglas más claras para los mods de célula: conjuntos completos, Resurrection, Disruption, Restriction Ignore. Video más antiguo; las reglas siguen valiendo.",
+    "videos": {
+     "url": "https://youtu.be/BzVpgbqqM5g",
+     "title": "RC cell explainer"
+    }
+   },
+   {
+    "topic": "Potenciales explicados",
+    "why": "Shi – Gacha, 5 de abril de 2026: conjuntos de potenciales para carries y supports. Video más antiguo; las reglas siguen valiendo.",
+    "videos": {
+     "url": "https://youtu.be/qh3_bIEJA9s",
+     "title": "Potentials guide"
+    }
+   },
+   {
+    "topic": "Hinami [Halloween]: pantallas de skills",
+    "why": "Boss Break the Chains, octubre de 2026: sus páginas completas de skills en 13:57–16:30. Sin narración.",
+    "videos": {
+     "url": "https://youtu.be/ZaZBLn2X0NE",
+     "title": "Summon – Review Hinami Fueguchi [Halloween]"
+    }
+   },
+   {
+    "topic": "Hinami [Halloween]: probada",
+    "why": "Zeketta, 27 de octubre de 2026: el único creador que encontramos que la consiguió y la probó en la Real-Time Arena: \"fuerte en teoría, menos en la práctica\". En francés (23 minutos).",
+    "videos": {
+     "url": "https://youtu.be/l3k7ej6SD0k",
+     "title": "INVOCATIONS et PREMIER TEST de HINAMI HALLOWEEN"
+    }
+   },
+   {
+    "topic": "Tier list de CCG",
+    "why": "Kitcat, 23 de septiembre de 2026: la única lista reciente de CCG: Saiko [Neet Investigator], Haise [Mentor] y Juzo [False Girl] arriba.",
+    "videos": {
+     "url": "https://youtu.be/WXDwR--Di-8",
+     "title": "CCG tier list"
+    }
+   },
+   {
+    "topic": "Tier list en español",
+    "why": "MirageYT, 22 de septiembre de 2026: una lista completa de todas las facciones, con elecciones de back-up (25 minutos).",
+    "videos": {
+     "url": "https://youtu.be/GKs6UmpOlTQ",
+     "title": "Top Mejores Personajes del Nuevo Meta"
+    }
+   }
+  ],
+  "source": "Notas de investigación del 28 de octubre de 2026 (selección de videos)"
+ },
  "spend_split": {
   "title": "Meta si gastas vs meta para quien juega gratis",
   "intro": "¿Por qué la guía llama meta a unidades \"más débiles\"? Porque quien juega gratis de verdad puede tenerlas y subirles las estrellas.",
@@ -22522,7 +22773,8 @@
    "Muchas unidades de primer nivel guardan su mejor pasiva tras 1★: el +50% de Hinami [Halloween] y el +16% de Juzo [False Girl] necesitan una segunda copia o un Panacean Star-Up Crystal, y los Panaceans escasean.",
    "Las copias de banner y de Carnival cuestan pulls. Las unidades de la tienda se pueden volver a comprar, así que quien juega gratis les sube las estrellas rápido. (consejo de creador)",
    "Por eso los equipos Inicial e Intermedio usan unidades que de verdad puedes tener y mejorar. Una unidad S que no puedes conseguir, o a la que no puedes subir de estrella, no ayuda a tu equipo.",
-   "¿Juegas gratis? Lee las unidades de banner en \"Con 0★\" y las de la tienda en \"Con estrellas máximas\"."
+   "¿Juegas gratis? Lee las unidades de banner en \"Con 0★\" y las de la tienda en \"Con estrellas máximas\".",
+   "En un servidor nuevo, la mayoría de los equipos meta de los creadores todavía no se pueden montar: Black Rabbit, Noro, Hideyoshi y Nishiki [Orochi] están listados para la tienda del día 75, Naki [Prisoner], Kiyoko y Toka [Anteiku] para el día 43 (todo sin confirmar), y Nutcracker, Akira [June Bride] y Toka [Maid Costume] eran unidades de banner. Monta ya el equipo Inicial y planea el resto según el día de la tienda."
   ],
   "groups": [
    {

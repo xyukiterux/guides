@@ -84,7 +84,7 @@ const T = [
 ['Sources and full articles','Fontes e artigos completos','Fuentes y artículos completos'],
 // best teams
 ['BEST TEAMS','MELHORES EQUIPES','MEJORES EQUIPOS'],['The team for each situation.','A equipe para cada situação.','El equipo para cada situación.'],
-['Each card shows the best team first, then a free-to-play option. Tap a portrait to open that character.','Cada cartão mostra primeiro a melhor equipe e depois uma opção free-to-play. Toque num retrato para abrir o personagem.','Cada tarjeta muestra primero el mejor equipo y luego una opción free-to-play. Toca un retrato para abrir ese personaje.'],
+['Each card shows our pick first, then a free-to-play option. Tap a portrait to open that character.','Cada cartão mostra primeiro a nossa escolha e depois uma opção free-to-play. Toque num retrato para abrir o personagem.','Cada tarjeta muestra primero nuestra elección y luego una opción free-to-play. Toca un retrato para abrir ese personaje.'],
 ['Jump to a team','Ir para uma equipe','Ir a un equipo'],['Meta teams by faction','Equipes meta por facção','Equipos meta por facción'],
 ['The strongest team for each faction, with the order to cast in.','A equipe mais forte de cada facção, com a ordem de uso das habilidades.','El equipo más fuerte de cada facción, con el orden en que lanzar.'],
 ['Modes','Modos','Modos'],['Bosses','Chefes','Jefes'],['Why this team?','Por que esta equipe?','¿Por qué este equipo?'],
@@ -173,7 +173,7 @@ const T = [
 ['Star upgrades','Melhorias de estrela','Mejoras de estrella'],['What each star unlocks, from the game data.','O que cada estrela libera, pelos dados do jogo.','Lo que desbloquea cada estrella, según los datos del juego.'],
 ['Star data is missing. Check in game.','Faltam dados de estrela. Confira no jogo.','Faltan datos de estrellas. Revisa en el juego.'],
 ['Orb, cells & potential','Orb, cells e potencial','Orb, cells y potencial'],['Upgrade costs for the orb are not known.','Os custos de melhoria do orb não são conhecidos.','No se conocen los costes de mejora del orb.'],
-['Potentials for damage dealers: 4 Smash, 3 Initiate, 2 Undermine. For tanks: 3 DEF, 6 HP. (creator tip)','Potenciais para quem causa dano: 4 Smash, 3 Initiate, 2 Undermine. Para tanques: 3 DEF, 6 HP. (dica de criador)','Potenciales para atacantes: 4 Smash, 3 Initiate, 2 Undermine. Para tanques: 3 DEF, 6 HP. (consejo de creador)'],
+
 ['Open cells & potential →','Abrir cells e potencial →','Abrir cells y potencial →'],['Used on Best teams','Usado em Melhores equipes','Usado en Mejores equipos'],
 ['No team on Best teams uses this character yet.','Nenhuma equipe de Melhores equipes usa este personagem ainda.','Ningún equipo de Mejores equipos usa este personaje todavía.'],
 ['Route','Rota','Vía'],['Availability','Disponibilidade','Disponibilidad'],['Limited Banner','Banner limitado','Banner limitado'],
@@ -484,6 +484,14 @@ const T = [
 ["Enter the rate and the number of pulls, or fill in a preset.","Digite a taxa e o número de pulls, ou preencha um modelo.","Escribe la tasa y el número de pulls, o rellena una plantilla."],
 ["This tool models one banner cycle: pulls cannot be more than the guarantee.","Esta ferramenta calcula um ciclo de banner: os pulls não podem passar da garantia.","Esta herramienta calcula un ciclo de banner: los pulls no pueden superar la garantía."],
 ["Pulls per chest","Pulls por baú","Pulls por cofre"],["Pulls to the guarantee","Pulls até a garantia","Pulls hasta la garantía"],["Chest chance must be between 0 and 100%.","A chance do baú deve estar entre 0 e 100%.","La probabilidad del cofre debe estar entre 0 y 100%."],["Chest chance","Chance do baú","Probabilidad del cofre"],
+// 10-28 chunk 3: faction teams on each fight card
+["Teams from every faction","Equipes de todas as facções","Equipos de todas las facciones"],
+["One team per faction for this fight, from Meta teams. Each team says whether it comes from a source or is worked out from skills.","Uma equipe por facção para esta luta, tirada de Equipes meta. Cada equipe diz se vem de uma fonte ou se foi deduzida das habilidades.","Un equipo por facción para esta pelea, sacado de Equipos meta. Cada equipo indica si viene de una fuente o si se dedujo de las habilidades."],
+// 10-28 chunk 9: builds
+["Build (creators)","Build (criadores)","Build (creadores)"],["General build rules →","Regras gerais de build →","Reglas generales de build →"],
+["Star effects and orb art are on each character page. Potential nodes and costs are not in the game files; what creators run is below.","Os efeitos de estrela e a arte das esferas estão na página de cada personagem. Os nós e custos de potencial não estão nos arquivos do jogo; o que os criadores usam está abaixo.","Los efectos de estrella y el arte de las esferas están en la página de cada personaje. Los nodos y costes de potencial no están en los archivos del juego; lo que usan los creadores está abajo."],
+// 10-28 chunk 10b: video picks
+["Open the video","Abrir o vídeo","Abrir el video"],
 ];
 const COL = {pt: 1, es: 2};
 const D = new Map();
@@ -523,6 +531,7 @@ const P = [
  [/^(.+) · (\d{4}-\d{2}-\d{2})$/, '%1 · $2', '%1 · $2'], [/^(.+) · no date$/, '%1 · sem data', '%1 · sin fecha'],
  [/^Tokyo Ghoul · (.+)$/, 'Tokyo Ghoul · %1', 'Tokyo Ghoul · %1'],
  [/^Source: (.+)$/s, 'Fonte: $1', 'Fuente: $1'],
+ [/^All (.+) teams →$/, 'Todas as equipes de %1 →', 'Todos los equipos de %1 →'],
  [/^Sources: (.+)$/s, 'Fontes: $1', 'Fuentes: $1'],[/^Skip: (.+)$/s, 'Não compre: $1', 'No compres: $1'],
  [/^(\d+) channels?$/, m => m[1] + (m[1] === '1' ? pick(' canal', ' canal') : pick(' canais', ' canales'))],
  [/^At least 1 copy: (.+) · at least 2: (.+) · at least 3: (.+) · (.+) copies on average\.$/, 'Pelo menos 1 cópia: $1 · pelo menos 2: $2 · pelo menos 3: $3 · $4 cópias em média.', 'Al menos 1 copia: $1 · al menos 2: $2 · al menos 3: $3 · $4 copias de media.'],

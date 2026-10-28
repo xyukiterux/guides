@@ -845,7 +845,7 @@
       "boss_rotations": [],
       "build": [
         "Before day 19: reach Chain Level 50; the Carnival Support Project rebate needs it.",
-        "Reach Arena Gold 5 before Monday 05:00 of Carnival week; Carnival Arena needs it.",
+        "Reach Arena Gold 5 before Monday 05:00 of Carnival week; Carnival Arena needs it. The game text doesn't say which arena's tier that is, so check the Carnival Arena screen.",
         "Keep Carnival Summon Tickets until you have 100 pulls' worth.",
         "Organization: everyone posts a Weekly Challenge run Monday to Friday; only the top 8 Organizations enter the war."
       ],
@@ -947,7 +947,7 @@
         "Spend all 10 tries before 21:00 every day.",
         "Raise one Paragon Team for the teams you use here."
       ],
-      "unlock": "Opens with the Carnival. Needs Arena Gold 5 before Monday 05:00 of Carnival week.",
+      "unlock": "Opens with the Carnival. Needs Arena Gold 5 before Monday 05:00 of Carnival week (which arena's tier isn't named in the game text; check in game).",
       "verification": "player/client confirmation required",
       "why": "Daily rank pays Carnival Tokens, Diamonds and Cell Promoter, and it is the mode your Paragon Teams boost."
     },
