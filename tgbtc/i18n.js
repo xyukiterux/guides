@@ -456,6 +456,7 @@ const T = [
 ['Enter the rewards and the days from your game.','Digite as recompensas e os dias do seu jogo.','Escribe las recompensas y los días de tu juego.'],
 ['Days you will claim cannot be more than the days in the contract.','Os dias que você vai resgatar não podem passar dos dias do contrato.','Los días que vas a reclamar no pueden superar los días del contrato.'],
 ['Diamonds only (no tickets): none in this offer.','Só Diamonds (sem tickets): esta oferta não tem.','Solo Diamonds (sin tickets): esta oferta no tiene.'],
+["This guide is being updated with new research. Sections update as they're checked. Fully updated by Fri Oct 30, 2026.", "Este guia está sendo atualizado com novas pesquisas. As seções mudam conforme são conferidas. Atualização completa até sex., 30 de out. de 2026.", "Esta guía se está actualizando con nuevas investigaciones. Las secciones cambian a medida que se revisan. Actualización completa para el vie. 30 de oct. de 2026."],
 ];
 const COL = {pt: 1, es: 2};
 const D = new Map();
