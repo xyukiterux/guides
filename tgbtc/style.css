@@ -45,7 +45,7 @@ ol.steps>li>strong{font-size:19px;display:block;line-height:1.45}
 .buy-head{margin-top:30px}.buy-head.must{color:#9fe3b0}.buy-head.skip{color:#ffb2bd}
 .buy-list{list-style:none;padding:0;margin:0;display:grid;gap:10px;max-width:860px}
 .buy-list>li{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 18px 4px;max-width:none}
-.buy-list p{margin:0 0 4px}.price{color:var(--gold);font-weight:700;white-space:nowrap}
+.buy-list p{margin:0 0 4px}.price{color:var(--gold);font-weight:700;white-space:nowrap}.amount{color:var(--gold);font-weight:700}
 .tier-filters{display:flex;gap:24px;align-items:flex-start}.tier-filters .row-label{margin-top:0}
 .tier{margin:26px 0}.tier h2{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.tier h2 small{font-size:15px;color:var(--muted);font-family:inherit}
 .tier-badge{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;font-family:system-ui,sans-serif;font-weight:800;font-size:24px;color:#111}

@@ -52,6 +52,42 @@
     const b=number(balance,'Current balance'), d=number(daily,'Net daily income'), t=number(target,'Target');
     return {gap:Math.max(0,t-b),days:t<=b?0:(d===0?null:Math.ceil((t-b)/d))};
   }
+  // Free Diamonds per day: the sum of the daily sources you enter (blank counts as 0).
+  const INCOME_KEYS = ['incPass','incWish','incQuests','incSpring','incSpring2','incWeekend','incOther'];
+  function dailyIncome(parts) {
+    let day = 0, entered = 0;
+    for (const k of INCOME_KEYS) {
+      const v = parts[k];
+      if (v === '' || v === undefined || v === null) continue;
+      day += number(v, 'Diamonds per day'); entered++;
+    }
+    if (day > 1e12) throw new Error('Diamonds per day is too large.');
+    return {day, week: day*7, entered};
+  }
+  // The guide's typical numbers (What to buy › Free Diamonds): game data, plus 50 a day from daily quests (creator report).
+  const INCOME_PRESETS = {vip0:{incPass:'100',incWish:'187',incQuests:'50',incSpring:'520',incSpring2:'0',incWeekend:'86',incOther:'0'},
+    vip5:{incPass:'100',incWish:'187',incQuests:'50',incSpring:'520',incSpring2:'520',incWeekend:'86',incOther:'0'}};
+  // Copies of the featured unit after n pulls on one banner cycle: n random pulls at rate p, plus one chest roll (chance q)
+  // at every chestEvery pulls before the guarantee, plus one sure copy at the guarantee pull. Exact distribution, no sampling.
+  function copies(ratePct, pulls, guaranteeAt, chestEvery, chestPct) {
+    const p = number(ratePct, 'Target rate')/100, n = number(pulls, 'Number of pulls', {integer:true});
+    const g = number(guaranteeAt, 'Pulls to the guarantee', {integer:true}), c = number(chestEvery, 'Pulls per chest', {integer:true}), q = number(chestPct, 'Chest chance')/100;
+    if (p > 1) throw new Error('Target rate must be between 0 and 100%.');
+    if (q > 1) throw new Error('Chest chance must be between 0 and 100%.');
+    if (g > 0 && n > g) throw new Error('This tool models one banner cycle: pulls cannot be more than the guarantee.');
+    if (n > 5000) throw new Error('Number of pulls is too large.');
+    const chests = c > 0 ? Math.floor((g > 0 && n === g ? n - 1 : n) / c) : 0, sure = g > 0 && n === g ? 1 : 0;
+    let dist = [1];
+    const add = (prob, times) => { for (let i = 0; i < times; i++) { const next = new Array(dist.length + 1).fill(0);
+      dist.forEach((v, k) => { next[k] += v*(1-prob); next[k+1] += v*prob; }); dist = next; } };
+    add(p, n); add(q, chests);
+    if (sure) dist = [0, ...dist];
+    const atLeast = k => Math.max(0, 1 - dist.slice(0, k).reduce((a, b) => a + b, 0));
+    const expected = dist.reduce((a, v, k) => a + v*k, 0);
+    return {atLeast1: atLeast(1), atLeast2: atLeast(2), atLeast3: atLeast(3), expected, chests, sure};
+  }
+  const COPY_PRESETS = {limited:{copyRate:'1',copyPulls:'300',copyGuarantee:'300',copyChestEvery:'100',copyChest:'10'},
+    carnival1:{copyRate:'1',copyPulls:'100',copyGuarantee:'0',copyChestEvery:'100',copyChest:'30'}};
   function maturity(startLocal) {
     if (!startLocal) throw new Error('Choose the stake start time.');
     const start = new Date(startLocal);
@@ -61,7 +97,7 @@
   const defaults = {
     region:'',currency:'USD',budget:'0',springStake:'',springPayout:'',springStart:'',springSource:'',springDate:'',
     pullCost:'',threshold:'',pullsDone:'0',balance:'0',tickets:'0',rate:'',chancePulls:'',pityConfirmed:false,pitySource:'',pityDate:'',
-    forecastBalance:'0',dailyIncome:'',target:'',loginUpfront:'',loginDaily:'',loginTotal:'',loginClaim:'',
+    forecastBalance:'0',dailyIncome:'',target:'',copyRate:'',copyPulls:'',copyGuarantee:'0',copyChestEvery:'0',copyChest:'0',incPass:'',incWish:'',incQuests:'',incSpring:'',incSpring2:'',incWeekend:'',incOther:'',loginUpfront:'',loginDaily:'',loginTotal:'',loginClaim:'',
     offerAName:'',offerAPrice:'',offerADiamonds:'',offerATickets:'0',offerATicketValue:'0',offerADays:'1',offerACap:'1',offerAQuantity:'0',offerASource:'',offerADate:'',offerARegion:'',offerARecurring:false,
     offerBName:'',offerBPrice:'',offerBDiamonds:'',offerBTickets:'0',offerBTicketValue:'0',offerBDays:'1',offerBCap:'1',offerBQuantity:'0',offerBSource:'',offerBDate:'',offerBRegion:'',offerBRecurring:false
   };
@@ -144,6 +180,13 @@
     field(pullPanel,'pityConfirmed','I checked in game that this guarantee gives my unit and that these pulls and tickets count','checkbox');observed(pullPanel,'pity');const pityResult=result(pullPanel);
     const probabilityFields=fields(pullPanel);field(probabilityFields,'rate','Target-unit rate (%)','number',{max:'100'});field(probabilityFields,'chancePulls','Number of pulls','number',{step:'1'});const probabilityResult=result(pullPanel);
     info(pullPanel,'This is a first-copy / one-guarantee calculation. Star upgrades may require different materials or additional copies. No carry-over, selected-unit guarantee or ticket eligibility is assumed. A probability is never a promise.');
+    const copyPanel=panel('Pull simulator: how many copies','Enter the banner rules from the game screen, or fill in a preset and check it against your banner.','Exact odds for one banner cycle: every pull has the same rate, each chest rolls once, and the guarantee pull adds one copy. Presets: limited banner 1% per pull, guarantee at 300, chests at 100 and 200 with about 10% for the unit (fan datamine); Carnival Season 1 chest every 100 pulls with 30% for the unit (game data). A probability is never a promise.');
+    const copyFields=fields(copyPanel);
+    field(copyFields,'copyRate','Target-unit rate (%)','number',{max:'100'});field(copyFields,'copyPulls','Number of pulls','number',{step:'1'});
+    field(copyFields,'copyGuarantee','Pulls to the guarantee (0 = none)','number',{step:'1'});field(copyFields,'copyChestEvery','Pulls per chest (0 = none)','number',{step:'1'});field(copyFields,'copyChest','Chest chance for the unit (%)','number',{max:'100'});
+    const copyButtons=el('div',undefined,'economy-presets');
+    for(const [key,label] of [['limited','Fill limited banner preset'],['carnival1','Fill Carnival Season 1 preset']]){const b=el('button',label,'button');b.type='button';b.addEventListener('click',()=>{for(const [k,v] of Object.entries(COPY_PRESETS[key])){values[k]=v;inputs[k].value=v;}save();update();});copyButtons.append(b);}
+    copyPanel.append(copyButtons);const copyResult=result(copyPanel);
     const packsPanel=panel('Compare offers you see','Enter the TOTAL Diamonds you can collect, not a daily reward.','Compare the same region, currency and date. Only give tickets a value when they help the same goal. Random rewards and non-Diamond items are left out.');
     const packResults={};
     for(const p of ['offerA','offerB']){
@@ -154,6 +197,15 @@
     info(packsPanel,'Diamond-equivalent utility is your assumption, not an exchange guarantee. A recurring plan here counts only the entered number of billing periods; it does not cancel automatically. Uncollected daily rewards reduce actual value. First-purchase bonuses and caps must be included from your game screen.');
     const loginPanel=panel('Login rewards you will really get','For a login contract or sign-in track: count only the days you will actually claim.','A missed day is usually lost, not added at the end. Check the claim rules and the end date in game.');
     const loginFields=fields(loginPanel);field(loginFields,'loginUpfront','Diamonds you get at once');field(loginFields,'loginDaily','Diamonds per claimed day');field(loginFields,'loginTotal','Days in the contract','number',{step:'1',min:'1'});field(loginFields,'loginClaim','Days you will claim','number',{step:'1'});const loginResult=result(loginPanel);
+    const incomePanel=panel('Free Diamonds per day','Enter what you collect each day, or fill in the guide’s typical numbers and change them to match your game.','The typical numbers come from What to buy › Free Diamonds: game data plus 50 a day from daily quests (creator report). Set the Free Monthly Pass to 0 after its 30 days. Events, codes, mail and guild war payouts are not included.');
+    const incomeFields=fields(incomePanel);
+    field(incomeFields,'incPass','Free Monthly Pass (per day)');field(incomeFields,'incWish','Wishing Sign-in (per day)');field(incomeFields,'incQuests','Daily quests (per day)');
+    field(incomeFields,'incSpring','Diamond Spring, first exchange (net per day)');field(incomeFields,'incSpring2','Diamond Spring, second exchange (net per day)');
+    field(incomeFields,'incWeekend','Weekend sign-in tickets (Diamonds per day)');field(incomeFields,'incOther','Anything else (per day)');
+    const incomeButtons=el('div',undefined,'economy-presets');
+    for(const [key,label] of [['vip0','Fill typical VIP 0 numbers'],['vip5','Fill typical VIP 5 numbers']]){const b=el('button',label,'button');b.type='button';b.addEventListener('click',()=>{for(const [k,v] of Object.entries(INCOME_PRESETS[key])){values[k]=v;inputs[k].value=v;}save();update();});incomeButtons.append(b);}
+    const useIncome=el('button','Use this in the savings forecast','button');useIncome.type='button';useIncome.addEventListener('click',()=>{try{const r=dailyIncome(values);values.dailyIncome=String(r.day);inputs.dailyIncome.value=values.dailyIncome;save();update();}catch(_){}});incomeButtons.append(useIncome);
+    incomePanel.append(incomeButtons);const incomeResult=result(incomePanel);
     const forecastPanel=panel('Savings forecast','Use your daily income after your usual costs.','This is a simple estimate with no assumed events, investment compounding or guaranteed future income.');
     const forecastFields=fields(forecastPanel);field(forecastFields,'forecastBalance','Current diamond balance');field(forecastFields,'dailyIncome','Estimated net diamonds per day');field(forecastFields,'target','Target diamond balance');const forecastResult=result(forecastPanel);
     const controls=el('div',undefined,'economy-controls');
@@ -167,6 +219,8 @@
       else try{const r=pity(values.pullCost,values.threshold,values.pullsDone,values.balance,values.tickets);output(pityResult,r.remaining+' pulls remaining · '+r.ticketsUsed+' eligible tickets used · '+fmt(r.required)+' diamonds required · '+fmt(r.shortfall)+' shortfall. Conditional on the rules you entered.');}catch(e){output(pityResult,e.message,true);}
       if(values.rate===''&&values.chancePulls==='')output(probabilityResult,'Enter a target-unit rate and pull count for a probability estimate.');
       else try{const r=chance(values.rate,values.chancePulls);output(probabilityResult,(r.probability*100).toFixed(2)+'% chance of at least one target in '+r.pulls+' independent pulls (pity excluded).');}catch(e){output(probabilityResult,e.message,true);}
+      if(values.copyRate===''&&values.copyPulls==='')output(copyResult,'Enter the rate and the number of pulls, or fill in a preset.');
+      else try{const r=copies(values.copyRate,values.copyPulls,values.copyGuarantee,values.copyChestEvery,values.copyChest),pc=x=>NF({minimumFractionDigits:1,maximumFractionDigits:1}).format(x*100)+'%';output(copyResult,'At least 1 copy: '+pc(r.atLeast1)+' · at least 2: '+pc(r.atLeast2)+' · at least 3: '+pc(r.atLeast3)+' · '+NF({minimumFractionDigits:2,maximumFractionDigits:2}).format(r.expected)+' copies on average.');}catch(e){output(copyResult,e.message,true);}
       let total=0,utility=0,selected=0,invalidSelected=false;const valid=[];
       for(const p of ['offerA','offerB']){
         try{
@@ -192,11 +246,12 @@
       }catch(e){output(packSummary,e.message,true);}
       if(values.loginUpfront===''&&values.loginDaily==='')output(loginResult,'Enter the rewards and the days from your game.');
       else try{const r=loginRewards(values.loginUpfront,values.loginDaily,values.loginClaim,values.loginTotal);output(loginResult,'You collect '+fmt(r.collectible)+' of '+fmt(r.full)+' diamonds · '+fmt(r.missed)+' lost to missed days.');}catch(e){output(loginResult,e.message,true);}
+      try{const r=dailyIncome(values);output(incomeResult,r.entered===0?'Enter your daily sources, or fill in the typical numbers.':fmt(r.day)+' Diamonds a day · '+fmt(r.week)+' a week.');}catch(e){output(incomeResult,e.message,true);}
       if(values.dailyIncome===''&&values.target==='')output(forecastResult,'Enter your income estimate and target.');
       else try{const r=forecast(values.forecastBalance,values.dailyIncome,values.target);output(forecastResult,r.days===null?'Target cannot be reached with zero net daily income.':r.days===0?'Your entered balance already meets the target.':fmt(r.gap)+' diamonds needed · approximately '+r.days+' days at this constant income.');}catch(e){output(forecastResult,e.message,true);}
     }
     update();
     return {refresh:update};
   }
-  return {spring,pity,chance,comparePack,loginRewards,forecast,maturity,mount};
+  return {spring,pity,chance,comparePack,loginRewards,forecast,maturity,dailyIncome,INCOME_PRESETS,copies,COPY_PRESETS,mount};
 });

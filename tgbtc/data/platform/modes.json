@@ -1002,6 +1002,147 @@
       "unlock": "Opens with the Carnival",
       "verification": "player/client confirmation required",
       "why": "Carnival Tokens turn into levels above the cap for your Carnival teams."
+    },
+    {
+      "as_of": "2026-10-28",
+      "boss_rotations": [],
+      "id": "arena",
+      "kind": "1v1 PvP against saved teams",
+      "missing_shots": "No screenshot for this mode yet. The text comes from the game text.",
+      "name": "Arena and Attribute Arena",
+      "region": "game text of September 22, 2026; confirm on your server",
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ],
+      "sections": [
+        {
+          "items": [
+            "Three separate ladders: STR, SKL and SPD. The week's attribute changes on Monday, in the order STR, SKL, SPD.",
+            "Only characters of that attribute can join. Same battle rules as Arena.",
+            "It closes Sunday at 21:30 and reopens Monday at 05:00 (server time). Daily rewards arrive at 22:00."
+          ],
+          "title": "Attribute Arena"
+        },
+        {
+          "items": [
+            "New accounts: buy units first; Noro, Nico, Jason and Naki can reach 6★ from this shop. Then the monthly universal duplicate (5,000 coins) and the weekly UR cell (2,500). Skip random old shards. (4 creator channels: Aslan, Zeketta, Shi, Kitcat)"
+          ],
+          "title": "Arena shop"
+        }
+      ],
+      "source_refs": [
+        "guide-2026-10-27"
+      ],
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: Arena_RuleDesc_1_1_1 to 1_2_3, Arena_RuleDesc_2_1_1 to 2_2_2",
+        "Client reward tables (tkgbtc.com mirror): ArenaActivity_1 to 5",
+        "Research notes of October 28, 2026 (shops: creator videos Aslan, Zeketta, Shi and one more channel)"
+      ],
+      "steps": [
+        "You get 5 free challenges a day, refilled at 05:00 (server time). Extra challenges cost Diamonds, and each one costs more.",
+        "Beat a higher-ranked player and you take their rank. Lose to a lower-ranked player and you drop to theirs.",
+        "Daily rewards arrive by mail at 21:00 (server time), by rank. Reaching a rank for the first time pays a one-time reward.",
+        "Active Rewards: five chests a day for playing Arena battles; two of them pay 50 and 100 Diamonds."
+      ],
+      "team": "",
+      "team_variants": {
+        "f2p": null,
+        "high_end": null,
+        "low_spend": null,
+        "one_unit_clear": null
+      },
+      "teams_needed": "One team for Arena. Attribute Arena only takes characters of that week's attribute.",
+      "tips": [
+        "Use your 5 free challenges every day; don't buy extra ones with Diamonds.",
+        "Carnival Arena needs \"Arena Gold 5\" before Monday 05:00 of Carnival week. The game text doesn't say which arena that tier belongs to, and the Bronze-to-Legend tier names appear as Real-Time Arena ranks, so check the Carnival Arena screen. (our reading of the data)",
+        "Attribute Arena has its own daily rank mail, so also set a team of that week's attribute."
+      ],
+      "unlock": "Arena opens early in the Chain Campaign (the exact unlock is not in the game text). Attribute Arena: Chain Campaign Depth Lv.45.",
+      "verification": "player/client confirmation required",
+      "why": "Daily rank mail, Active Reward chests with Diamonds, and Arena coins for the Arena shop."
+    },
+    {
+      "as_of": "2026-10-28",
+      "boss_rotations": [],
+      "id": "rta",
+      "kind": "1v1 live PvP, cross-server",
+      "missing_shots": "No screenshot for this mode yet. The text comes from the game text.",
+      "name": "Real-Time Arena",
+      "region": "game text of September 22, 2026; confirm on your server",
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ],
+      "sections": [
+        {
+          "items": [
+            "Matches run only at set hours. A creator on a new server reports 10:00–12:00 and 17:00–19:00 (creator report); an older server's screen showed 11:00–13:00 and 18:00–20:00. Check the hours on your server."
+          ],
+          "title": "When it is open"
+        },
+        {
+          "items": [
+            "PvP reward rows in the files: season end 60 to 360 Diamonds by grade (the lowest pays none) plus PvP coins and a cell; one-time rank rewards adding up to 4,255 Diamonds. The files don't say whether these are Arena's or Real-Time Arena's. (our reading of the data)",
+            "Carnival Arena needs \"Arena Gold 5\" before Monday 05:00 of Carnival week. The game text doesn't say which arena that tier belongs to, and the Bronze-to-Legend tier names appear as Real-Time Arena ranks, so check the Carnival Arena screen. (our reading of the data)",
+            "Shop: the weekly Panacean shard, the monthly Panacean, Force Talents and the UR cell. (creator tip)"
+          ],
+          "title": "Rewards"
+        },
+        {
+          "items": [
+            "Turn order decides many matches: the side that acts first often wins, and CP matters. (creator report)",
+            "Build your team tanky enough to survive going second. (creator tip)"
+          ],
+          "title": "How to climb"
+        },
+        {
+          "items": [
+            "Opens on server day 15 at Chain Campaign Depth Lv.120. You set a line-up for live matching.",
+            "Level, limit, exclusive equipment and bonds are made equal; only star rating and refinement carry over. The mode supplies potentials and cells, and you can change them freely.",
+            "Matching runs 06:00–11:00, 13:00–18:00 and 20:00–23:00. Wins add Victory Points toward weekly chests; losses take some away, except in the first 5 reward stages. Every battle pays Strategy Points for its shop."
+          ],
+          "title": "Strategic Arena (a different mode)"
+        }
+      ],
+      "source_refs": [
+        "guide-2026-10-27"
+      ],
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: Arena_RuleDesc_3_1_1 to 3_2_4, Arena_RuleDesc_4_1_1 to 4_2_4",
+        "Client reward tables (tkgbtc.com mirror): PvpFinalR_G0_1 to 17, PvpMaxR rows",
+        "Creator videos: Zeketta (October 27, 2026), Kitcat (September 23, 2026), Aslan (October 6 and 25, 2026), in the research notes of October 28, 2026"
+      ],
+      "steps": [
+        "You fight live players from every server. A win gains Points, a loss loses Points.",
+        "Every challenge uses a try, win or lose. Tries come back 1 per hour up to the cap. You can buy up to 10 Challenge Tickets a day with Diamonds; each costs more, and the price resets daily.",
+        "Your rank comes from your Points. Ranks reset on Monday from Sunday's final standing.",
+        "Daily reward: by your last rank of the day, after the challenge hours end. Season reward: by your tier, after the season ends. First time at each rank: a one-time reward that a reset does not take back."
+      ],
+      "team": "",
+      "team_variants": {
+        "f2p": null,
+        "high_end": null,
+        "low_spend": null,
+        "one_unit_clear": null
+      },
+      "teams_needed": "One team.",
+      "tips": [
+        "Reach a new rank once even if you drop back: first-time rank rewards stay yours.",
+        "Don't buy Challenge Tickets with Diamonds unless you are pushing for a season grade.",
+        "Spend Real-Time Arena coins on Panacean shards first. (creator tip)"
+      ],
+      "unlock": "Reach Chain Campaign Depth Lv.75.",
+      "verification": "player/client confirmation required",
+      "why": "Daily, season and first-time rank rewards, and the Real-Time Arena shop, which sells Panacean shards."
     }
   ],
   "source": "Original 14-mode guide with implementation schema for missing tactics"

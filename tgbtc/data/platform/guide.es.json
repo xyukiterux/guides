@@ -22275,6 +22275,245 @@
   ],
   "source": "Pasos de estrella: texto del juego RoleStarPreview_<id>_1 a 6 de las 142 unidades en los archivos del 22 de septiembre de 2026 (el paso 5 es \"Basic Stats greatly increased\" en todas; el paso 6 siempre cambia la habilidad activa), GuideDialogue_StarUp_2 y 3, ItemDesc_20452, ItemDesc_21197, ItemDesc_20059 y LoginBonusTitle_New_5. Consejos de creadores: guía para principiantes de Aslan (25 de octubre de 2026) y análisis de 3 meses, Zeketta, Kitcat, en las notas de investigación sobre gastos."
  },
+ "economy": {
+  "title": "Diamonds gratis: de dónde salen",
+  "intro": "Lo que recoge un jugador gratis, sin contar eventos ni códigos. Los números vienen de los datos del juego salvo que la línea diga otra cosa; compruébalo en tu juego, porque los servidores cambian.",
+  "income": [
+   {
+    "name": "Free Monthly Pass (servidores nuevos)",
+    "amount": "100 al día",
+    "note": "Los servidores nuevos lo reciben durante 30 días. No está confirmado si vuelve después.",
+    "source": "Datos del juego (FreeLoginMonth: 100 Diamonds); video del creador Aslan, 25 de octubre de 2026"
+   },
+   {
+    "name": "Wishing Sign-in (inicio de sesión diario)",
+    "amount": "Unos 187 al día de media",
+    "note": "Eliges la recompensa cada día.",
+    "source": "artículo \"Pull and spend\" del 19 de octubre (datos del juego)"
+   },
+   {
+    "name": "Misiones diarias (cofre de actividad)",
+    "amount": "50 al día",
+    "note": "No entraba en los totales del 19 de octubre. (informe de creador)",
+    "source": "Video del creador Aslan, 25 de octubre de 2026"
+   },
+   {
+    "name": "Intercambio en el Diamond Spring",
+    "amount": "Unos +520 al día por intercambio",
+    "note": "Apuesta 500. La opción de 24 horas devuelve 1.020 de media y la de 48 horas 1.315. Si un intercambio de 48 horas en curso ocupa tu hueco del día, recoger cada 24 horas rinde más; los creadores dicen que elijas siempre 48 horas, así que compruébalo en el juego. Los creadores informan de 1.200 a 2.500 de vuelta con la opción de 48 horas, y uno dice que la bajaron a 1.200–1.500 (informe de creador). Tienes 1 intercambio al día con VIP 0; un creador dice que el segundo necesita VIP 5 y otro dice VIP 7, así que mira tu pantalla de VIP.",
+    "source": "artículo \"Pull and spend\" del 19 de octubre (datos del juego); videos de los creadores Aslan (14 de mayo y 25 de octubre de 2026), Shi (27 de abril de 2026), Zeketta (23 de abril de 2026), The Spectre (11 de noviembre de 2025)"
+   },
+   {
+    "name": "Inicio de sesión de fin de semana",
+    "amount": "2 Event Summon Tickets a la semana (unos 86 Diamonds al día en pulls)",
+    "note": "Un ticket es un pull de 300 Diamonds.",
+    "source": "Datos del juego (WeekendSignReward_3: Event Summon Ticket x2)"
+   },
+   {
+    "name": "Active Rewards de la Arena",
+    "amount": "50 + 100 al día",
+    "note": "Dos de los cinco cofres de actividad de la Arena pagan Diamonds. Cuántas batallas pide cada cofre no está en los datos, así que los totales de abajo no los cuentan.",
+    "source": "Datos del juego (Arena_RuleDesc_1_2_1; ArenaActivity_1 y _3)"
+   },
+   {
+    "name": "Compensación por mantenimiento",
+    "amount": "500–588 por incidencia",
+    "note": "Irregular; no se cuenta. (informe de creador)",
+    "source": "Video del creador Zeketta, 27 de octubre de 2026"
+   }
+  ],
+  "totals": [
+   "VIP 0: unos 940 al día (893 según los datos del juego más 50 de las misiones diarias) mientras dure el Free Monthly Pass de 30 días; después, unos 840 al día (unos 5.900 a la semana).",
+   "VIP 5 con el segundo intercambio del Diamond Spring: unos 1.460 al día mientras dure el pass, después unos 1.360.",
+   "Desde una cuenta nueva con VIP 0, con el pass terminando el día 30: unos 103 días para juntar 90.000 Diamonds para un banner limitado y unos 68 días para un rate-up de 60.000. Los eventos, códigos, correo y pagos de la guild war del sábado lo aceleran.",
+   "Mide lo tuyo: (Diamonds el día 9 − Diamonds el día 2) ÷ 7, y luego usa la calculadora de la página Herramientas."
+  ],
+  "shops_title": "Mejores compras en las tiendas",
+  "shops_intro": "Lo que los creadores compran primero en cada tienda. El número es cuántos canales distintos coinciden; las líneas con menos de 3 llevan etiqueta.",
+  "shops": [
+   {
+    "name": "Tienda de la Arena",
+    "buy": "Cuentas nuevas: unidades primero (Noro, Nico, Jason y Naki llegan a 6★ con esta tienda). Luego el duplicado universal mensual (5.000 monedas) y la célula UR semanal (2.500).",
+    "skip": "Fragmentos antiguos aleatorios.",
+    "channels": 4,
+    "source": "Videos de los creadores Aslan (25 de octubre de 2026), Zeketta (23 de abril de 2026), Shi (9 de mayo de 2026), Kitcat (7 de junio de 2026)"
+   },
+   {
+    "name": "Tienda de la Organization",
+    "buy": "Cada semana, primero: el ticket de reclutamiento, el ticket de potencial y las llaves UR. Luego, piedras de mejora legendarias y apex. (consejo de creador)",
+    "skip": "Limit Crystals al principio.",
+    "channels": 2,
+    "source": "Videos de los creadores Zeketta (23 de abril de 2026), Aslan (23 de septiembre y 25 de octubre de 2026)"
+   },
+   {
+    "name": "Tienda del Abyss",
+    "buy": "El cofre mensual de táctica UR, luego cofres de táctica SSR.",
+    "skip": "Todo lo demás; no pagues por refrescar la tienda.",
+    "channels": 5,
+    "source": "Videos de los creadores Aslan, Zeketta, Shi (1 de diciembre de 2025), ZoltanVidakF2P (6 de enero de 2026), green dino (24 de diciembre de 2025)"
+   },
+   {
+    "name": "Tienda del Peak Duel (Pinnacle)",
+    "buy": "Tácticas, el cofre de selección de táctica UR y potenciales Lv.6.",
+    "skip": "Sweep coupons, salvo que los necesites.",
+    "channels": 3,
+    "source": "Videos de los creadores Zeketta (27 de octubre de 2026), Aslan (25 de septiembre y 25 de octubre de 2026), Dinossauro massa (26 de octubre de 2026)"
+   },
+   {
+    "name": "Tienda de cristales (duplicados)",
+    "buy": "Baterías con duplicados grises, certificados de talento, potenciales Lv.3. (consejo de creador)",
+    "skip": "Cambiar duplicados del Carnival a 3 por 1 o 2 por 1.",
+    "channels": 2,
+    "source": "Videos de los creadores Aslan, Zeketta"
+   },
+   {
+    "name": "Tienda de intercambio (Exchange)",
+    "buy": "La célula UR semanal; puntos de amistad en baterías y sweep tickets.",
+    "skip": "Cualquier cosa que cueste Diamonds.",
+    "channels": 3,
+    "source": "Videos de los creadores Aslan (25 de octubre de 2026), Zeketta (23 de abril de 2026), Shi"
+   },
+   {
+    "name": "Tienda de la Real-Time Arena",
+    "buy": "El fragmento semanal de Panacean, el Panacean mensual, Force Talents, la célula UR. (consejo de creador)",
+    "skip": "",
+    "channels": 1,
+    "source": "Videos del creador Aslan (23 de septiembre y 25 de octubre de 2026)"
+   },
+   {
+    "name": "Tienda de reciclaje (Salvage)",
+    "buy": "La célula que elijas, por 50.000 puntos. (consejo de creador)",
+    "skip": "El cofre aleatorio de 20.000 puntos.",
+    "channels": 2,
+    "source": "Videos de los creadores Zeketta (23 de abril de 2026), Aslan (25 de octubre de 2026)"
+   },
+   {
+    "name": "Tienda VIP",
+    "buy": "Los tickets semanales de reclutamiento normal. (consejo de creador)",
+    "skip": "Panaceas por 20.000 Diamonds.",
+    "channels": 1,
+    "source": "Video del creador Aslan (25 de octubre de 2026)"
+   }
+  ],
+  "payouts_title": "Lo que pagan los modos grandes",
+  "payouts": [
+   {
+    "name": "Stronghold Takeover (guild war del sábado)",
+    "text": "Mantener un stronghold hasta que se llene su barra de recompensa paga a cada miembro de la org 1.000, 2.000 o 3.000 Diamonds según el nivel del stronghold, más Cell Promoter. El rango final paga Carnival Summon Tickets y potenciales. Un creador dice que la parte en Diamonds es baja; el valor real son los promoters y las Panaceas. (informe de creador)",
+    "link": "#modes/stronghold",
+    "source": "Datos del juego (GVGTimeReward_1..3; recompensas de rango final como en la guía de Stronghold Takeover); video del creador Aslan (23 de septiembre de 2026)"
+   },
+   {
+    "name": "Global Stronghold War (domingos)",
+    "text": "Los archivos tienen una fila de recompensa de 500 Diamonds para todos los participantes y recompensas de rango personal de 300 a 800 Diamonds. Qué rango paga qué fila no está en los datos, y un creador dice que el modo paga pocos Diamonds y vende recargas con Diamonds a cambio de puntos. (informe de creador)",
+    "link": "",
+    "source": "Datos del juego (AllRewardGlobalGVG_S1, filas de rango GlobalGVGP); video del creador Zeketta, 23 de septiembre de 2026"
+   },
+   {
+    "name": "Arena y Real-Time Arena",
+    "text": "Los archivos tienen recompensas de temporada de PvP de 60 a 360 Diamonds según el grado (el grado más bajo no paga ninguno), más de 100 a 2.000 monedas PvP y una célula, y recompensas únicas de rango que suman 4.255 Diamonds. No dicen si son de la Arena o de la Real-Time Arena; un creador informa de 1.500 Diamonds por llegar por primera vez al rango 1 de la Arena, lo que coincide con la fila única más alta. (nuestra lectura de los datos)",
+    "link": "#modes/rta",
+    "source": "Datos del juego (PvpFinalR_G0_1..18, filas PvpMaxR); video del creador Zeketta, a través del artículo del 19 de octubre"
+   },
+   {
+    "name": "Carnival",
+    "text": "El Carnival Support Project (días 19–25 del servidor, necesita Chain Level 50) es una escalera de recarga: gastar dinero real ahí devuelve hasta 187 Carnival tickets más llaves. Las misiones semanales del Carnival pagan unos 2.000 Tokens y 1.050 Diamonds.",
+    "link": "#modes/carnival",
+    "source": "Datos del juego (Act:LvReward_04, Season_Rebate_Task_01..20), según las notas de investigación del 26 de octubre de 2026"
+   }
+  ],
+  "sources": [
+   "Notas de investigación del 28 de octubre de 2026 (152 videos de creadores más las tablas de recompensas del cliente)",
+   "artículo \"Pull and spend\" del 19 de octubre, sección \"Income per day\""
+  ]
+ },
+ "vip": {
+  "title": "VIP: qué da y dónde parar",
+  "intro": "Los niveles de VIP salen solo de recargas con dinero real. Cuánto cuesta cada nivel no está en los datos públicos, así que mira la pantalla de VIP en el juego. Las compras en la Wheel of Fortune no dan puntos de VIP. (informe de creador)",
+  "verdict": [
+   "Jugadores gratis: VIP 0 funciona. Hay creadores que llevan cuentas gratis en VIP 0 hasta el día 75 del servidor. (informe de creador)",
+   "Un creador llegó a VIP 6 con el contrato de inicio de sesión mensual más los growth funds y dice que pares en VIP 5: añade sweeps y, según él, el segundo intercambio del Diamond Spring (unos +520 al día). Otro creador sitúa ese intercambio en VIP 7, así que mira la pantalla de VIP antes de recargar por eso. (informe de creador)",
+   "No recargues solo por el VIP. El correo VIP diario nunca paga Diamonds.",
+   "Si gastas mucho: los creadores no nombran ninguna ventaja que merezca la pena entre VIP 9 y 13; desde VIP 19 se añaden bordes de avatar y un correo diario con muchos más Limit Crystals. (informe de creador)"
+  ],
+  "daily_title": "Correo VIP diario (datos del juego)",
+  "daily_note": "Llega por correo cada día. Ningún nivel paga Diamonds.",
+  "daily": [
+   [
+    "VIP 1",
+    "10 Limit Crystals, 5 Gold Advanced Stone Caskets, 500.000 Gold, 2 Sweep Coupons"
+   ],
+   [
+    "VIP 3",
+    "14 Limit Crystals, 7 caskets, 700.000 Gold, 6 Sweep Coupons"
+   ],
+   [
+    "VIP 5",
+    "16 Limit Crystals, 9 caskets, 900.000 Gold, 10 Sweep Coupons"
+   ],
+   [
+    "VIP 7",
+    "18 Limit Crystals, 10 caskets, 1,2 millones de Gold, 10 Sweep Coupons"
+   ],
+   [
+    "VIP 9–18",
+    "20 Limit Crystals, 10 caskets, 1,5 millones de Gold, 10 Sweep Coupons"
+   ],
+   [
+    "VIP 19–24",
+    "50 Limit Crystals, 20 caskets, 2 millones de Gold, 10 Sweep Coupons"
+   ],
+   [
+    "VIP 25",
+    "80 Limit Crystals, 30 caskets, 3 millones de Gold, 10 Sweep Coupons"
+   ],
+   [
+    "VIP 26–30",
+    "100 Limit Crystals, 30 caskets, 3 millones de Gold, 10 Sweep Coupons, una célula full-score aleatoria y 10–30 Cell Promoter"
+   ]
+  ],
+  "perks_title": "Ventajas que el VIP puede desbloquear (datos del juego; el nivel de cada una no es público)",
+  "perks": [
+   "Límite diario del Diamond Spring (más intercambios al día).",
+   "Sweeps: Assignments SS/SSS, Assignments de Combate y Urgentes, Force Challenge, más sweeps de Conquest.",
+   "Más Stamina al día y un límite de Stamina mayor; más tickets de Arena para comprar; más intentos en el Force Challenge.",
+   "Botón de 100 giros en la Potential Wheel; 1 Abyss Sweep Coupon a la semana; cofres de la Twin Campaign más rápidos.",
+   "Más espacio en la bolsa de RC Cells y de Potenciales; un marco de avatar VIP."
+  ],
+  "levels_title": "Lo que los creadores dicen que añade cada nivel",
+  "levels": [
+   [
+    "VIP 0",
+    "1 intercambio en el Diamond Spring al día; nada para hacer sweep.",
+    "Aslan (24 de abril, 7 y 14 de mayo de 2026)"
+   ],
+   [
+    "VIP 3",
+    "Sweep del Force Challenge.",
+    "Aslan (7 de mayo de 2026)"
+   ],
+   [
+    "VIP 5",
+    "Un segundo intercambio en el Diamond Spring al día y varios sweeps.",
+    "Aslan (14 de mayo de 2026); Shi (27 de abril de 2026) cree que el segundo intercambio es en VIP 7"
+   ],
+   [
+    "Alrededor de VIP 13",
+    "Un regalo de cumpleaños solo para VIP, con Diamonds y tickets de banner.",
+    "Aslan (25 de octubre de 2026)"
+   ],
+   [
+    "VIP 19–20",
+    "Los bordes de avatar más bonitos; raros incluso para quien gasta.",
+    "Shi (9 de febrero y 16 de junio de 2026)"
+   ]
+  ],
+  "sources": [
+   "Tablas de recompensas del cliente (copia en tkgbtc.com): VipDaily_1 a 30",
+   "Texto del juego: VIP_Condition01 a 25, VIP_UI06",
+   "Notas de investigación del 28 de octubre de 2026 (VIP)"
+  ]
+ },
  "spend_split": {
   "title": "Meta si gastas vs meta para quien juega gratis",
   "intro": "¿Por qué la guía llama meta a unidades \"más débiles\"? Porque quien juega gratis de verdad puede tenerlas y subirles las estrellas.",
