@@ -39,11 +39,26 @@
       "title": "Resolved ability text"
     },
     {
+      "as_of": "2026-10-26",
+      "confidence": "fan_datamine",
+      "id": "S15",
+      "path": "data/platform_inputs/datamined_units.json",
+      "title": "Fan datamine of established servers (units released after the extract)",
+      "url": "https://gluttony.dev/heroes/"
+    },
+    {
       "as_of": "2026-09-22",
       "confidence": "archived_guide",
       "id": "original-modes",
       "path": "data/raw/modes.json",
       "title": "Original mode workflows"
+    },
+    {
+      "as_of": "2026-10-27",
+      "confidence": "game_text_with_labeled_creator_tips",
+      "id": "guide-2026-10-27",
+      "path": "data/platform_inputs/modes_added.json",
+      "title": "Mode guides from game text, research notes and creator videos"
     }
   ]
 }

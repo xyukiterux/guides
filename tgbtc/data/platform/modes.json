@@ -258,12 +258,15 @@
       "verification": "player/client confirmation required"
     },
     {
-      "as_of": "2026-09-22",
+      "as_of": "2026-10-27",
       "boss_rotations": [],
+      "build": [],
+      "card": "carnival",
       "id": "region",
-      "kind": "Seasonal dungeon",
+      "kind": "Carnival stage mode",
+      "missing_shots": "No Region Breakthrough screenshot yet: video downloads were blocked on October 27. The rules below come from the game text.",
       "name": "Region Breakthrough (Carnival)",
-      "region": "archive; confirm your server",
+      "region": "game text of September 22, 2026; confirm on your server",
       "required_evidence": [
         "mode screen",
         "boss skill text",
@@ -271,27 +274,84 @@
         "turn-by-turn combat log",
         "server/build version"
       ],
+      "sections": [
+        {
+          "items": [
+            "Pick a stage. Save a line-up: those characters are locked in until the stage is cleared or all of them are dead.",
+            "The region map shows enemy groups: Boss, Elite and Normal. Tap a group for its CP, drops and Extermination share.",
+            "Select one or more groups for one fight; each selected group raises the total CP. They enter in the order you picked, and from the 5th on they wait in back-up and step in when a slot frees.",
+            "Win to collect every selected group's Extermination progress. HP and progress are kept after every fight.",
+            "Defeat every boss and reach 100% Extermination to clear the stage. If your whole team dies, the attempt fails; Give Up resets the area."
+          ],
+          "title": "How a stage works"
+        },
+        {
+          "items": [
+            "Read the modifiers first: Fixed Modifiers (2 effects that swap each week) and Regional Modifiers (more as the stage number rises) add passives to listed enemy types.",
+            "Check each group's CP before you add it: every group you add raises the fight's total CP.",
+            "Fight bosses while your team still has most of its HP, because lost HP never comes back inside the stage.",
+            "Your first clear is rated by how many battles you entered; a better rating pays a better first-clear reward. Fewer battles probably rate better. (unconfirmed)"
+          ],
+          "title": "Planning a stage"
+        },
+        {
+          "items": [
+            "Healing and shields matter more here than anywhere else, because HP carries over. (worked out from the rules — not tested)",
+            "Area damage: every group you select enters the same fight. (worked out from the rules — not tested)",
+            "Bring your best 5: enemy groups beyond the 4th step in from back-up, so long fights need staying power. (worked out from the rules — not tested)"
+          ],
+          "title": "What to build"
+        },
+        {
+          "items": [
+            "Weekly settlement: Monday 05:00 (server time). The weekly reward follows the highest stage you cleared that week, and needs at least 1 clear.",
+            "After settlement your progress resets and your starting cap is set by last week: more than 7 stages → 9, 6–7 → 7, 3–5 → 4, 0–2 → 2.",
+            "When the Carnival ends, your highest stage pays the Carnival reward and sets where you start next Carnival.",
+            "Stages and sweeps pay Carnival Tokens (1–13 per stage in the first Carnival's table, game data quoted in the research notes), and you get 3 free sweeps a day."
+          ],
+          "title": "Weekly cycle and rewards"
+        }
+      ],
       "source_refs": [
-        "original-modes"
+        "original-modes",
+        "guide-2026-10-27"
       ],
-      "source_type": "existing_guide",
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: SecretArea_RuleDesc_1_1_0 to 1_3_8, SecretArea_RuleDesc_2_1_1 to 2_2_6, Season_RuleDesc_2_2",
+        "Game setting quoted in the research notes (Guild war and Carnival plan): SecretAreaDailyFreeSweepTimes 3",
+        "Creator video: Aslan beginner guide (6Lcdb56rRng, October 25, 2026)"
+      ],
       "steps": [
-        "Save a lineup; it's locked and HP carries between fights.",
-        "Tap enemy groups to see their info and add them to the fight (the 5th and later wait in back-up).",
-        "Win to gain Extermination progress; clear all bosses and reach 100% to clear the stage.",
-        "Clear at least 1 stage each week to get the weekly reward (settles Monday 05:00, server time).",
-        "Push far: clearing more than 7 stages in a week sets your max challengeable stage to 9 next week (6-7 -> 7, 3-5 -> 4, 0-2 -> 2)."
+        "Stages unlock in order. The higher the stage, the harder it is and the better the rewards.",
+        "Save a line-up to enter: those characters are locked in, and lost HP carries over from fight to fight until the stage is cleared or the whole team is dead.",
+        "On the map, tap enemy groups to add them to one fight. Each group adds CP; enemies after the 4th wait in back-up and step in.",
+        "Defeat every boss and reach 100% Extermination to clear the stage.",
+        "If your whole team dies, the run fails. Give Up resets the area.",
+        "Your first clear is rated by how many battles you entered, and a better rating pays a better first-clear reward.",
+        "Every enemy gets Fixed Modifiers (they swap each week) and Regional Modifiers (by stage number).",
+        "Weekly reset: Monday 05:00 (server time). Clear at least 1 stage that week for the weekly reward. Next week you can start up to stage 9 if you cleared more than 7, stage 7 for 6–7, stage 4 for 3–5, stage 2 for 0–2.",
+        "When the Carnival ends, your highest stage pays the Carnival reward and sets where you start next Carnival."
       ],
-      "team": "Team 1; pull smaller enemy groups first.",
+      "team": "",
       "team_variants": {
         "f2p": null,
         "high_end": null,
         "low_spend": null,
         "one_unit_clear": null
       },
+      "teams_needed": "1 saved line-up per run; it stays locked until the stage ends.",
       "tip": "Enemies gain Fixed Modifiers (rotate weekly) and Regional Modifiers by stage number.",
+      "tips": [
+        "Common mistake: entering a stage with an injured team.",
+        "Common mistake: a week with no clear: no weekly reward, and your cap drops to stage 2.",
+        "Common mistake: Give Up by accident; it resets the area's progress.",
+        "Use the 3 free sweeps every day.",
+        "Sweeps pay Carnival Tokens; keep spare Tokens for later Carnivals. (creator tip)"
+      ],
       "unlock": "Carnival",
-      "verification": "player/client confirmation required"
+      "verification": "player/client confirmation required",
+      "why": "The Carnival's stage mode: clear stages in order, each harder with better rewards. Stages and daily sweeps pay Carnival Tokens."
     },
     {
       "as_of": "2026-09-22",
@@ -329,12 +389,14 @@
       "verification": "player/client confirmation required"
     },
     {
-      "as_of": "2026-09-22",
+      "as_of": "2026-10-27",
       "boss_rotations": [],
+      "build": [],
+      "card": "guild-war",
       "id": "annihilation",
       "kind": "Organization war (top 3 only)",
       "name": "Stronghold Annihilation",
-      "region": "archive; confirm your server",
+      "region": "game text of September 22, 2026; confirm on your server",
       "required_evidence": [
         "mode screen",
         "boss skill text",
@@ -342,27 +404,97 @@
         "turn-by-turn combat log",
         "server/build version"
       ],
+      "sections": [
+        {
+          "items": [
+            "Only the top 3 Organizations from that Saturday's Stronghold Takeover enter.",
+            "Preparation 15:30: set line-ups and view the map. Battle 16:00–17:00 (server time)."
+          ],
+          "title": "Phases and timeline"
+        },
+        {
+          "items": [
+            "Strongholds have several levels, each with a different number of defenders, CP and rewards.",
+            "Each stronghold has a required CP: a team below it can't attack that stronghold.",
+            "When all defenders of a stronghold are beaten, it is settled and pays out by each Organization's ranking in that stronghold.",
+            "Scale on an older server (April 2026): Aslan's screen showed strongholds needing about 0.9M, 1.2M and 1.5M CP, Lv.3 NPC defenders at 1.1M CP and over 6,000 defenders left. Your server's numbers will differ. (from video, Aslan, 5:00)"
+          ],
+          "title": "The map and CP minimums"
+        },
+        {
+          "items": [
+            "1 team per battle. HP lost stays lost and comes back slowly outside battle.",
+            "Fallen characters come back after a wait (1,200 s in the game settings), or revive at once with Diamonds or Quick Recovery Potions; each revive in a row costs more, and both pay Revival Points.",
+            "Kiyoko's +40% works in Stronghold Takeover only; her passive does not mention Annihilation, so don't count on it here."
+          ],
+          "title": "Teams, HP and revives"
+        },
+        {
+          "items": [
+            "Send each team at the highest stronghold its CP allows.",
+            "Settle one stronghold at a time with the whole Organization, so it pays out while you still rank high in it. (worked out from the rules — not tested)"
+          ],
+          "title": "Choosing targets"
+        },
+        {
+          "items": [
+            "Organizations are ranked by their members' total Annihilation Points; personal rewards follow your own Annihilation Points and Activity Points.",
+            "Rank rewards include Potential Lucky Coins (5–6 at rank 1) and 50 Limit Crystals. (game data quoted in the research notes)"
+          ],
+          "title": "Rewards"
+        },
+        {
+          "items": [
+            "Before 16:00, agree which stronghold the Organization settles first, and send every team that passes its CP minimum there.",
+            "One strong team can beat many defenders in a row (the frame on this page shows players with 13, 52 and 81 in a row), so keep your best team alive and revive it first. (from video, Aslan, 5:00)"
+          ],
+          "title": "Organization coordination"
+        }
+      ],
+      "shots": [
+        {
+          "caption": "Lv.3 Stronghold 001 Battle Status: Defenders Left 6,454, with fixed 1,100,000 CP NPC defenders facing the streamer's 1,652,740 CP Anteiku team. The kill feed reads 'defeated 81 / 13 / 52 teams of defenders in a row'. Org point ranking is on the left.",
+          "channel": "Aslan",
+          "file": "assets/shots/annihilation_chain_kills.jpg",
+          "source_video": "goHzAK1R-mY",
+          "timestamp": "5:00",
+          "upload_date": "2026-04-19",
+          "url": "https://www.youtube.com/watch?v=goHzAK1R-mY&t=300"
+        }
+      ],
       "source_refs": [
-        "original-modes"
+        "original-modes",
+        "guide-2026-10-27"
       ],
-      "source_type": "existing_guide",
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: WOA_RuleDesc_1_1_1 to 1_1_3, WOA_RuleDesc_2_1_1 to 2_3_1",
+        "Game settings quoted in the research notes (Guild war and Carnival plan): PeakOutpost times, revive cooldown 1,200 s, rank rewards"
+      ],
       "steps": [
-        "Set your lineups and study the map during the Preparation Phase.",
-        "Send a team at a stronghold; each battle uses 1 team.",
-        "Check each stronghold's required CP and attack the highest-level one your team qualifies for.",
-        "Defeat defenders for Annihilation Points; rewards follow the rankings.",
-        "Rotate teams: lost HP is not restored right away, and fallen units recover slowly (Diamonds or Quick Recovery Potions revive instantly)."
+        "Saturday after Takeover: preparation 15:30, battle 16:00–17:00 (server time).",
+        "Set your line-ups and study the map during preparation.",
+        "Each battle uses 1 team. Each stronghold has a required CP: a team below it can't attack.",
+        "Defeat defenders for Annihilation Points. When a stronghold's defenders are all beaten, it pays out by each Organization's rank there.",
+        "Lost HP is not restored right away. Fallen characters come back after a wait (1,200 s in the game settings), or revive at once with Diamonds or Quick Recovery Potions."
       ],
-      "team": "Teams 1, 2 and 3 from the guild-war table; team 1 for the high-CP strongholds.",
+      "team": "",
       "team_variants": {
         "f2p": null,
         "high_end": null,
         "low_spend": null,
         "one_unit_clear": null
       },
+      "teams_needed": "Your strongest teams: only teams above a stronghold's CP gate can attack it.",
       "tip": "Only revive with Diamonds when your Organization calls a push.",
-      "unlock": "Opens with the Carnival; only the top 3 Organizations from the weekly Stronghold Takeover",
-      "verification": "player/client confirmation required"
+      "tips": [
+        "Common mistake: reviving teams that are below the CP minimum of every stronghold left.",
+        "Common mistake: spreading members over many strongholds, so none settles in time. (worked out from the rules — not tested)",
+        "Revive with Diamonds only when your Organization calls a push."
+      ],
+      "unlock": "Opens with the Carnival; only the top 3 Organizations from that week's Stronghold Takeover.",
+      "verification": "player/client confirmation required",
+      "why": "A second Saturday war for the top 3. It pays Potential Lucky Coins and Limit Crystals."
     },
     {
       "as_of": "2026-09-22",
@@ -501,6 +633,375 @@
       "tip": "Star totals open star chests.",
       "unlock": "Event",
       "verification": "player/client confirmation required"
+    },
+    {
+      "as_of": "2026-10-27",
+      "boss_rotations": [],
+      "build": [],
+      "card": "guild-war",
+      "id": "stronghold",
+      "kind": "Organization war, Saturdays",
+      "name": "Stronghold Takeover (Guild War)",
+      "org_plan": {
+        "intro": "Org policy from our guild leader, not a game rule. Unlike the general tip on this page to garrison what you take, members leave defense to the guild leader. In the game's words: the towers and buildings are Strongholds, every attack spends a Stronghold Command (the \"attack charges\" on this page) and extra ones can be bought, and defense is your Defense Team in a Stronghold's Garrison.",
+        "items": [
+          "Teams: 1 strong team, 2 weak teams that only take empty tiles, and 1 strong team to hit players or Strongholds. The game allows only 3 teams per player, so one of these four jobs is dropped: ask the guild leader which one your strong team covers.",
+          "Roles: members pave the way toward the Strongholds. The guild leader mostly attacks the Strongholds to take them down, so members can save their teams.",
+          "Defense: unless you are a top-ranked player, do NOT put your Defense Team in a Stronghold's Garrison. Leave it open. The guild leader garrisons his own Defense Team to protect Strongholds from other players, because top players from strong orgs (for example Asura) can otherwise wipe out our teams.",
+          "Movement: push straight toward the Strongholds; don't spread out. Spread-out tiles invite attacks and lost Strongholds, and that loses the war. Play smart and use your attacks wisely.",
+          "Diamonds: spend at least 500 and at most 1,000 Diamonds per player per war on extra Stronghold Commands. Without that we will likely lose, and it gets too expensive for the guild leader and the few players keeping up. At the game's prices that buys 8 to 11 extra Commands (8 cost 590 Diamonds in total, 11 cost 990)."
+        ],
+        "title": "Our org's Guild War plan (from the guild leader)"
+      },
+      "region": "game text of September 22, 2026; confirm on your server",
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ],
+      "sections": [
+        {
+          "items": [
+            "Monday to Friday: every member runs the Weekly Challenge. The Organization ranking settles Monday 00:00–05:00 (points scored then don't count); only the top 8 at Saturday 10:00 enter.",
+            "Saturday 10:00–12:00, preparation: set your 3 line-ups and study the map. Lock your teams now: a team with a defeated character can't be edited later.",
+            "12:00–12:40, opening: everyone sends one team down a road toward an assigned target, and takes the tier-1 strongholds next to the Base. (research notes; not tested)",
+            "12:40–14:20, middle: retake strongholds the enemy has filled with points, rotate tired defenders, keep spending charges. (research notes; not tested)",
+            "14:20–15:00, finish: spend the charges you saved on the strongholds with the most stored points, and capture your last targets by about 14:40 so they are protected or garrisoned at the end. (research notes; not tested)",
+            "15:00: rank rewards. The top 3 go on to Stronghold Annihilation at 15:30."
+          ],
+          "title": "Phases and timeline"
+        },
+        {
+          "items": [
+            "Hex tiles. You start at your Base and can attack only tiles next to ones you hold. A road tile can be attacked again after 30 s, a stronghold after 300 s.",
+            "Strongholds come in tiers: tier 1 near the bases, tier 2 between them, tier 3 in the middle. Higher tiers pay more points. In one war a creator narrated swings of 75–150 points at a tier 1, 600 for taking a tier 2 and 1,250 for retaking the tier 3. (creator report)",
+            "Police Station: taking it flips every tile in its area to you. Hospital: a win in its area restores 25% of the HP lost in that fight. Barracks: your characters that die in its area hit a random enemy for 1% of their max HP. Fortress: lets you garrison more teams.",
+            "\"Garrisoned Troops (x/y)\" shows a stronghold's defenders and its cap. The game setting allows up to 150, but the cap differs by stronghold (the war frame below shows 2/10), and a Fortress raises it. A tile you just captured is under Protection for a while, and some tiles can be destroyed so no one can hold them.",
+            "Some strongholds are held by NPC (bot) teams instead of players."
+          ],
+          "title": "The map"
+        },
+        {
+          "items": [
+            "Attack: your strongest team, built for burst. Healing can't raise a unit above the HP it started the fight with, so heal-heavy teams lose value here.",
+            "Against NPC strongholds: skill burst and shield removal (Miza, Roma [Mad Clown], Naki [1.5th Anniversary]). The bots switch off passives for 1–2 turns, so passive-only carries struggle.",
+            "Defense: tanky units, death saves and counters. Lost HP stays lost, so the team that survives longest wins the trade.",
+            "Kiyoko's +40% basic stats and first death save work in Stronghold Takeover only, and her passive also works from back-up. If your Stronghold line-up has a back-up slot (check in game), she belongs there.",
+            "Teams are 5 characters. The guide's plan is 1 strong team plus 2 small tile teams (guild tip). The October 19 article and some creators instead want 3 full teams, with 2 on defense or as walls of weak teams; follow your Organization's call.",
+            "Team size: the game text says a team needs 5 characters to deploy (GVG_UI107), while guild players use 1–2 character tile teams (guild tip). If the game refuses a small team, make your tile teams from your 5 weakest units. (unconfirmed)"
+          ],
+          "title": "Attack teams and defense teams"
+        },
+        {
+          "items": [
+            "First: the tier 1s next to your Base and any Police Station on your route. They are cheap, start earning points early and give a first-capture reward.",
+            "Next: the 2 nearest tier 2s. Put defenders on them right away.",
+            "Don't open on the tier 3. Let rivals spend their teams on it, then take it late; that is how the winner played in the war Aslan narrated. (creator report)",
+            "Retake a stronghold after the enemy has held it a while: the steal is half of what is stored there. A stronghold held only 10 minutes is not worth much yet. (research notes; not tested)",
+            "Hit the stronghold with the fewest garrisoned teams first, and stop feeding a stronghold that has 50 or more defenders. (research notes; not tested)",
+            "Scale on an older server: player defense teams of 1.37M–1.57M CP and attack teams around 1.57M CP (frames on this page, The Spectre, January 2026). Compare your CP with the defenders' CP shown on a stronghold before you attack. (from video)"
+          ],
+          "title": "Choosing targets"
+        },
+        {
+          "items": [
+            "HP lost in a fight stays lost. It comes back slowly, only outside battle, after a 60 s wait.",
+            "Withdraw a defender that drops below about half HP and put a fresh team in, so the tired one heals. (research notes; not tested)",
+            "Revives are per character: 100 Diamonds for the first 5, then 150 for the next 10, 200 for the next 10, then 300. A whole 5-unit team costs 500 the first time. There is a cap of 300 revives.",
+            "Quick Recovery Potions cost the same counts and are the better choice for your main team. Potion and Diamond revives also pay Revival Points; the Revival Point Shop sells Panacean Star-Up Crystals.",
+            "Each of the first 9 extra charges costs 100 Diamonds or less, less than most revives, so buy charges first."
+          ],
+          "title": "HP and revives"
+        },
+        {
+          "items": [
+            "Monday: an officer posts the Weekly Challenge boss attribute. By Wednesday everyone posts their best run. Thursday: officers check the top-20 board, and low scorers retry on Friday if you are near 8th. (research notes)",
+            "Saturday: mark up to 8 targets on the map and give each tier 2 a squad of about 5 with a leader in the Stronghold chat.",
+            "Stagger attackers on one stronghold so a fresh team hits about every 100 s; each team must wait 300 s between stronghold attacks. (research notes; not tested)",
+            "High-CP members hit strongholds; low-CP members take tier 1s and free tiles all war long and hold the walls.",
+            "Allied sister Organizations can block each other's rivals and split the map. (creator report)"
+          ],
+          "title": "Organization coordination"
+        },
+        {
+          "items": [
+            "Final rank, for every member: rank 1 pays a Lv.6 Random Potential, 10 Carnival Summon Tickets and 50,000 Talent Certificates; ranks 2–3 pay a Lv.5 Potential, 8 tickets and 30,000 or 20,000; ranks 4–10 a Lv.5 Potential and 5 tickets. (game data; per member is our reading)",
+            "Holding a stronghold until its progress bar fills pays every member 1,000, 2,000 or 3,000 Diamonds plus Cell Promoter and Eukaryote.",
+            "First captures pay an Event Summon Ticket (level 1), a Carnival Summon Ticket (level 2) or 800 Talent Certificates (level 3).",
+            "Personal Attack, Defense and Activity ranks pay Exclusive Treasure Box keys to the top players."
+          ],
+          "title": "Rewards"
+        }
+      ],
+      "shots": [
+        {
+          "caption": "Stronghold Takeover hex map early in a busy war. Three organizations' territory shows as pink, cyan and purple, with attack lines running from their Initial Strongholds. The streamer webcam covers the bottom-right corner.",
+          "channel": "Aslan",
+          "file": "assets/shots/gvg_map_overview.jpg",
+          "source_video": "YQLYKELW5Bo",
+          "timestamp": "3:30",
+          "upload_date": "2026-03-14",
+          "url": "https://www.youtube.com/watch?v=YQLYKELW5Bo&t=210"
+        },
+        {
+          "caption": "Map view with the Team Status panel (3 teams, Team 1 attacking). Flag icons give the number of queued attackers and their countdown timers. Green lines are your own org's attack routes. Two hospital special tiles sit at the right edge.",
+          "channel": "The Spectre",
+          "file": "assets/shots/gvg_map_attack_queues.jpg",
+          "source_video": "dp-VgjXd4b0",
+          "timestamp": "0:30",
+          "upload_date": "2026-01-04",
+          "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=30"
+        },
+        {
+          "caption": "Centre of the map: the 1250-point top-tier stronghold, ringed by blocked (no-entry) tiles, with 150/75-point strongholds nearby. Team 3 has dropped to 561,028 CP after losing members, and its status is Idle.",
+          "channel": "The Spectre",
+          "file": "assets/shots/gvg_tier3_stronghold.jpg",
+          "source_video": "dp-VgjXd4b0",
+          "timestamp": "27:57",
+          "upload_date": "2026-01-04",
+          "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=1677"
+        },
+        {
+          "caption": "Stronghold (28,72) info panel: Garrisoned Troops 2/10 with two stacked player defense teams (1.37M and 1.57M CP), and the banner 'Defenders of the Stronghold successfully resisted the attack'. The Withdraw Team and Reinforce Team buttons are visible.",
+          "channel": "The Spectre",
+          "file": "assets/shots/gvg_garrison_defense_teams.jpg",
+          "source_video": "dp-VgjXd4b0",
+          "timestamp": "1:00",
+          "upload_date": "2026-01-04",
+          "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=60"
+        },
+        {
+          "caption": "Battle Status: only 2 characters are left on the defense team (dead defenders do not come back between fights) against a full 1,566,311 CP attack team. The log reads 'defeated ... and successfully pierced the Defense' and '... sent Team to Garrison'.",
+          "channel": "The Spectre",
+          "file": "assets/shots/gvg_battle_status_worn_defender.jpg",
+          "source_video": "dp-VgjXd4b0",
+          "timestamp": "9:00",
+          "upload_date": "2026-01-04",
+          "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=540"
+        },
+        {
+          "caption": "Team Status mid-war: Teams 2 and 3 show 'Reviving...', each with a Quick Resurrection button (paid with diamonds or potions, and the cost climbs). The attack-attempt counter (0/11) and the stronghold-point total are at the top and bottom.",
+          "channel": "The Spectre",
+          "file": "assets/shots/gvg_team_status_reviving.jpg",
+          "source_video": "dp-VgjXd4b0",
+          "timestamp": "8:00",
+          "upload_date": "2026-01-04",
+          "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=480"
+        },
+        {
+          "caption": "Ranking List near the end of the war: Forced 2 Pay 12,663 pts (12 strongholds held), BR0THERH00D 8,149, Phantom 3,820. Rank rewards are shown on the right.",
+          "channel": "The Spectre",
+          "file": "assets/shots/gvg_final_ranking.jpg",
+          "source_video": "dp-VgjXd4b0",
+          "timestamp": "28:12",
+          "upload_date": "2026-01-04",
+          "url": "https://www.youtube.com/watch?v=dp-VgjXd4b0&t=1692"
+        }
+      ],
+      "source_refs": [
+        "guide-2026-10-27"
+      ],
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: GVG_RuleDesc_1_1_1 to 1_1_11, GVG_UI42, GVG_UI63 to GVG_UI76, GVG_UI107, GVGBlockDesc_1 to 4, SkillDesc_GVGSys_p1, SkillDesc_1136_p1, SkillDesc_GVGN_p1 to p7, GlobalGVG_RuleDesc",
+        "Game settings quoted in the research notes (Guild war and Carnival plan): GVGOpenDay, GVGMaxAtkTimes 10, GVGAtkTimesRecover 1200 s, GVGAtkTimesCost, GVGRobScoreRate 0.5",
+        "Creator videos: Aslan, live Organization war (YQLYKELW5Bo) and beginner guide (6Lcdb56rRng, October 25, 2026)",
+        "Guild tips: experienced guild play (given October 26, 2026)"
+      ],
+      "steps": [
+        "Saturday: preparation from 10:00, battle 12:00–15:00, rank rewards at 15:00 (server time).",
+        "Each player sets 3 teams. You start from your Base, which can't be attacked, and can only attack tiles next to ones you hold.",
+        "You start with 10 attack charges and get 1 more every 20 minutes. You can buy 19 more for 2,790 Diamonds in total; the first 3 cost 50 each.",
+        "Every stronghold you hold earns points every 5 minutes. Strongholds still yours at the end pay a final share.",
+        "Taking another Organization's stronghold steals 50% of the points stored there.",
+        "Lost HP stays lost between fights and comes back slowly outside battle. Fallen characters recover slowly, or you revive them with Diamonds or Quick Recovery Potions (each revive costs more).",
+        "Healing can't raise a unit above the HP it had when the fight started."
+      ],
+      "team": "",
+      "team_variants": {
+        "f2p": null,
+        "high_end": null,
+        "low_spend": null,
+        "one_unit_clear": null
+      },
+      "teams_needed": "3 teams per player; the game asks for 5 characters to deploy a team. The guide's plan: 1 strong team that attacks and defends, plus 2 cheap teams that only grab free tiles (guild tip).",
+      "tips": [
+        "Common mistake: three medium teams that all attack. That wastes charges (guild tip).",
+        "Common mistake: a strong team spent on a free tile, which any team could take (guild tip).",
+        "Common mistake: taking a stronghold you can't garrison. When they take it back, they steal half its points.",
+        "Common mistake: sitting at 10 charges, or paying for revives before buying the cheap charges.",
+        "Common mistake: leaving the Weekly Challenge until Saturday morning; the entry check is at 10:00.",
+        "Practice in Takeover Simulation (Organization menu) before Saturday. (creator tip)",
+        "Sundays: the Global Stronghold War is cross-server and entry is by total member CP. Its steal setting is 0, but its rule text says captured points are plundered, so check in game. Either way, holding tiles pays every battle."
+      ],
+      "unlock": "Opens with the Carnival. Only the top 8 Organizations in this server's Weekly Challenge ranking can enter; the check is when preparation starts.",
+      "verification": "player/client confirmation required",
+      "why": "Your Organization's biggest weekly payout: Diamonds and Cell Promoter for holding strongholds, and Carnival Summon Tickets and Talent Certificates for rank."
+    },
+    {
+      "as_of": "2026-10-27",
+      "boss_rotations": [],
+      "build": [
+        "Before day 19: reach Chain Level 50; the Carnival Support Project rebate needs it.",
+        "Reach Arena Gold 5 before Monday 05:00 of Carnival week; Carnival Arena needs it.",
+        "Keep Carnival Summon Tickets until you have 100 pulls' worth.",
+        "Organization: everyone posts a Weekly Challenge run Monday to Friday; only the top 8 Organizations enter the war."
+      ],
+      "card": "carnival",
+      "id": "carnival",
+      "kind": "Event season: every Carnival mode",
+      "missing_shots": "No screenshot for this mode yet: video downloads were blocked on October 27. The text below comes from the game text.",
+      "name": "Carnival",
+      "region": "game text of September 22, 2026; confirm on your server",
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ],
+      "source_refs": [
+        "guide-2026-10-27"
+      ],
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: Season_RuleDesc_1_1 to 2_3, Gacha_Season_RuleDesc_1_4_1, CarnivalExchange_RuleDesc_1_1_1, SeasonPVP_RuleDesc, SecretArea_RuleDesc, SeasonPeak_RuleDesc, GVG_RuleDesc_1_1_1, WOA_RuleDesc_1_1_1",
+        "Game data quoted in the research notes (Guild war and Carnival plan): Carnival chest odds (SeasonGachaTest1, SeasonGachaTest2), weekly quest table, Carnival Support Project (days 19–25, Chain Level 50), Arena Gold 5 entry",
+        "Creator videos: Aslan beginner guide (6Lcdb56rRng, October 25, 2026); research notes of October 26, 2026, sections B1 and B2"
+      ],
+      "steps": [
+        "Carnival Recruitment: the featured unit drops at 1% per pull, and every 100 pulls opens a chest whose contents change by season. Season 1 (Set Sail, likely this server's Carnival 1): 30% the featured unit, 30% a Selection Chest that offers only Kaneki [Christmas], Hinami [Christmas] or a Lv.6 Potential, 24% a Panacean Star-Up Crystal, 16% a Refinement Crystal. Season 2's chest has no Selection Chest (24% featured). Read the chest odds on each Carnival's banner, and pull only in blocks of 100.",
+        "Carnival Arena: 3 teams, best of 3, 10 tries a day (its own guide below).",
+        "Region Breakthrough: stage-by-stage fights with a locked team (its own guide below).",
+        "Carnival Exchange: spend Carnival Tokens. Tokens are not cleared when a Carnival ends.",
+        "Paragon Teams: Carnival Tokens raise a team's Paragon Level, a level boost in Carnival modes (its own guide below).",
+        "Stronghold Takeover and Stronghold Annihilation: the Saturday Organization wars (their own guides below).",
+        "Weekly Carnival quests pay about 2,000 Tokens and 1,050 Diamonds."
+      ],
+      "team": "",
+      "team_variants": {
+        "f2p": null,
+        "high_end": null,
+        "low_spend": null,
+        "one_unit_clear": null
+      },
+      "teams_needed": "Carnival Arena and Stronghold Takeover each take 3 teams, so have 3 ready before Carnival starts.",
+      "tips": [
+        "Exchange order: the season unit's Ability Sphere only if you own that unit, then Potential boxes, then Limit Crystals, then Cell Promoter and Eukaryote.",
+        "Carnival Tokens carry over: if this Carnival's unit isn't yours, save Tokens for the next one. (creator tip)",
+        "On a new server, creators skip the first two Carnivals and save. (creator tip)",
+        "Every Carnival has a top-up rebate ladder; Carnival 1's runs on server days 19–25."
+      ],
+      "unlock": "Opens from time to time. Carnival 1 on the NA relaunch server most likely starts Friday, October 30 (server day 19). (unconfirmed)",
+      "verification": "player/client confirmation required",
+      "why": "Carnival bundles the modes that pay the most: Carnival Recruitment, Carnival Arena, Region Breakthrough, the Carnival Exchange, Paragon Teams and the Saturday Organization wars."
+    },
+    {
+      "as_of": "2026-10-27",
+      "boss_rotations": [],
+      "build": [
+        "Teams: Meta teams, Carnival Arena item for your faction, and the Carnival Arena card on Best teams.",
+        "Fights are automatic against saved line-ups: build teams the AI plays well, with one strong area-attack unit per team. (creator tip)"
+      ],
+      "card": "carnival",
+      "id": "carnival-arena",
+      "kind": "3-team PvP, best of 3",
+      "missing_shots": "No screenshot for this mode yet: video downloads were blocked on October 27. The text below comes from the game text.",
+      "name": "Carnival Arena",
+      "region": "game text of September 22, 2026; confirm on your server",
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ],
+      "source_refs": [
+        "guide-2026-10-27"
+      ],
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: SeasonPVP_RuleDesc_1_1_1 to 1_1_8, SeasonPVP_UI09",
+        "Game settings quoted in the research notes (Guild war and Carnival plan): SeasonPvpJoinCondition Gold_5, SeasonPvpMaxTimes 10",
+        "Research notes of October 26, 2026, section B2"
+      ],
+      "steps": [
+        "Save 3 line-ups; a line-up saves with at least 1 character.",
+        "Challenge a higher-ranked player; win and you swap ranks.",
+        "10 tries a day, refilled at 05:00. Challenges close 1 hour before the 22:00 settlement.",
+        "Daily rewards at 22:00, weekly rewards on Sunday at 22:00 (server time).",
+        "Win at least 1 battle to get a rank. Rankings are cleared when the Carnival ends."
+      ],
+      "team": "",
+      "team_variants": {
+        "f2p": null,
+        "high_end": null,
+        "low_spend": null,
+        "one_unit_clear": null
+      },
+      "teams_needed": "3 teams; you need 2 wins out of 3.",
+      "tips": [
+        "Put your 2 strongest teams where you expect their 2 weakest; a weak Team 3 can soak their best. (unconfirmed)",
+        "Spend all 10 tries before 21:00 every day.",
+        "Raise one Paragon Team for the teams you use here."
+      ],
+      "unlock": "Opens with the Carnival. Needs Arena Gold 5 before Monday 05:00 of Carnival week.",
+      "verification": "player/client confirmation required",
+      "why": "Daily rank pays Carnival Tokens, Diamonds and Cell Promoter, and it is the mode your Paragon Teams boost."
+    },
+    {
+      "as_of": "2026-10-27",
+      "boss_rotations": [],
+      "build": [
+        "First list: CRIT DMG, ATK, a chance to hit back with a level-1 skill, or a chance to empty your Weak bar when hit.",
+        "Second list: CRIT DEF, DEF, a shield after healing, or a shield after taking a critical hit.",
+        "Third list: Regeneration, HP, healing when an ally dies, or a heal on active skills below 35% HP."
+      ],
+      "card": "carnival",
+      "id": "paragon",
+      "kind": "Carnival team upgrade",
+      "missing_shots": "No screenshot for this mode yet: video downloads were blocked on October 27. The text below comes from the game text.",
+      "name": "Paragon Teams",
+      "region": "game text of September 22, 2026; confirm on your server",
+      "required_evidence": [
+        "mode screen",
+        "boss skill text",
+        "team CP and star data",
+        "turn-by-turn combat log",
+        "server/build version"
+      ],
+      "source_refs": [
+        "guide-2026-10-27"
+      ],
+      "source_type": "game_text_and_research",
+      "sources": [
+        "Game text, September 22, 2026 files: SeasonPeak_RuleDesc_1_1_1 to 1_1_9, SeasonPeak_RuleDesc_2_1_1 to 2_3_4",
+        "Creator video: Aslan beginner guide (6Lcdb56rRng, October 25, 2026), from about 62:00"
+      ],
+      "steps": [
+        "A Paragon Team holds several teams. Only max-level characters can join.",
+        "Carnival Tokens raise each team's Paragon Level; its members fight as if leveled above the level cap.",
+        "Max Paragon Level unlocks a Team Passive. Reroll it with Carnival Tokens for a better one.",
+        "The buff works only in Carnival modes, and all Paragon records reset when the Carnival ends."
+      ],
+      "team": "",
+      "team_variants": {
+        "f2p": null,
+        "high_end": null,
+        "low_spend": null,
+        "one_unit_clear": null
+      },
+      "teams_needed": "Your Carnival Arena teams.",
+      "tips": [
+        "Put Tokens into one Paragon Team first: the one you use most in Carnival Arena. (research notes)",
+        "Creators reroll the first team for the hit-back effect (Retaliate). (creator tip)",
+        "A creator says the boost is about +20 levels and also counts in Encounter and the Organization war; the game text only says Carnival modes. (creator report)"
+      ],
+      "unlock": "Opens with the Carnival",
+      "verification": "player/client confirmation required",
+      "why": "Carnival Tokens turn into levels above the cap for your Carnival teams."
     }
   ],
   "source": "Original 14-mode guide with implementation schema for missing tactics"

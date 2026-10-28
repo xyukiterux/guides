@@ -1,6 +1,6 @@
 {
  "as_of": "19 de octubre de 2026",
- "updated": "26 de octubre de 2026",
+ "updated": "27 de octubre de 2026",
  "names": {
   "1001": "Rize [Binge Eater]",
   "1004": "Shu [Gourmet]",
@@ -83,7 +83,8 @@
   "1145": "Uta [New Year]",
   "1149": "Nishiki [Anteiku]",
   "1084": "Sen [Novelist]",
-  "1140": "Rize [Christmas]"
+  "1140": "Rize [Christmas]",
+  "1180": "Hinami [Halloween]"
  },
  "start": [
   {
@@ -98,8 +99,8 @@
    "more": [
     "Cada facción tiene un equipo meta en Mejores equipos, con su orden de ataque.",
     "Free-to-play: No Organization es la más barata. Nutcracker salió del Wish Rebate de los días 1–7 (ya cerrado), Sen es gratis, y todas las unidades No Org gratis la potencian.",
-    "Aogiri es igual de fuerte, pero necesita a Black Rabbit (Carnival) y a Miza (no es limitada; su rate-up la garantiza en 200 pulls).",
-    "Las dos le ganan a Anteiku y CCG después del parche del 14 de octubre."
+    "Aogiri es igual de fuerte, pero necesita a Black Rabbit (su Carnival es la Temporada 21 global, no el próximo de este servidor; llegada a la tienda del día 75 sin confirmar) y a Miza (su rate-up, garantizado a los 200 pulls, terminó el 27 de octubre; espera una reedición o un banner Legacy Custom).",
+    "Las dos le ganan a Anteiku y a CCG tras el parche del 14 de octubre. Hinami [Halloween] (25 de octubre en los servidores antiguos; aquí desde el 27 de octubre, según el dueño de la guía) vuelve a hacer fuerte a Anteiku para quien la consiga. (informe de creador)"
    ],
    "link": [
     "Ver el equipo meta de cada facción",
@@ -124,11 +125,11 @@
   {
    "step": "Ahorra Diamonds y tickets para un banner que puedas terminar.",
    "more": [
-    "Las unidades limitadas necesitan 300 pulls (90.000 Diamonds) para garantizarse. Los rate-ups no limitados, como Miza, garantizan en 200 pulls (60.000).",
+    "Las unidades limitadas necesitan 300 pulls (90.000 Diamonds) para garantizarse. Los rate-ups no limitados, como el de Miza (ya terminado), garantizan a los 200 pulls (60.000).",
     "El pity no se transfiere, así que nunca empieces un banner que no puedas terminar.",
     "Haz pulls solo por una unidad exclusiva de tu facción (o un buff 0★ para cualquier equipo) que no tenga fecha en tienda.",
     "En servidores más antiguos, las unidades de Navidad llegaron hacia los días 62–76 y Uta [New Year] hacia los días 91–98. Las fechas de tu servidor pueden cambiar.",
-    "Halloween Hinami es el banner limitado activo en los servidores antiguos (25 de octubre – 8 de noviembre, 300 pulls). Puede llegar a este servidor hacia el 27 de octubre. Sáltala salvo que juegues Anteiku. (fecha no confirmada)"
+    "Hinami [Halloween] es la nueva soporte limitada de Anteiku (25 de octubre – 8 de noviembre en los servidores antiguos, 300 pulls). El dueño de la guía informa que ya salió en el servidor de relanzamiento NA (27 de octubre). Tira solo si juegas Anteiku y puedes completar los 300; mira la página Nueva unidad."
    ],
    "source": "artículo \"Planner by server day\" del 19 de octubre, \"If you read nothing else\"; artículo \"Pull and spend\" del 19 de octubre, \"F2P pulling rules\"; Notas de investigación del 26 de octubre de 2026 (revisadas por una verificación de datos independiente), secciones E (E-14) y F (F-03, F-18, F-23)"
   },
@@ -165,7 +166,7 @@
      "tip": true
     },
     {
-     "text": "Tus otros dos equipos tienen 1–2 personajes cada uno y solo sirven para tomar tiles libres.",
+     "text": "Tus otros dos equipos tienen 1–2 personajes cada uno, y solo sirven para tomar tiles libres. Si el juego pide 5 personajes, usa tus 5 unidades más débiles.",
      "tip": true
     },
     {
@@ -173,7 +174,7 @@
      "tip": true
     },
     {
-     "text": "¿Un stronghold que nunca parece caer? Prueba un ataque con 1–2 personajes antes de usar un equipo completo.",
+     "text": "¿Un stronghold que nunca parece caer? Prueba un ataque con 1–2 personajes antes de usar un equipo completo (si el juego pide 5 personajes, usa tus 5 unidades más débiles).",
      "tip": true
     }
    ],
@@ -251,7 +252,8 @@
     "Si el juego no acepta un equipo de 1 personaje, arma tu equipo de tiles con tus 5 unidades más débiles.",
     "Compra cargas de ataque extra antes de pagar revives: cada una de las 9 primeras cargas cuesta menos que un revive a partir del 5.º.",
     "Los defensores NPC desactivan tus pasivas durante 1–2 turnos. Lleva burst de habilidades.",
-    "Anteiku (Toka [Maid Costume], Yoshimura [Readiness], Toka [June Bride], Hinami [Hina Matsuri]; back-up Akira [June Bride]) era el mejor equipo de defensa del artículo del 19 de octubre. Ahora los creadores dicen que Anteiku está más floja. (consejo de creador)"
+    "Anteiku (Toka [Maid Costume], Yoshimura [Readiness], Toka [June Bride], Hinami [Hina Matsuri]; back-up Akira [June Bride]) era el mejor equipo de defensa del artículo del 19 de octubre. Los creadores dijeron que Anteiku quedó más débil tras el parche del 14 de octubre; con Hinami [Halloween] (25 de octubre en los servidores antiguos, 27 de octubre aquí según el dueño de la guía), un creador (Aslan) espera que los equipos todo Anteiku sean muy difíciles de matar. (informe de creador)",
+    "Reglas completas, número de equipos y consejos: Modos de juego › Stronghold Takeover."
    ],
    "sources": [
     "Consejos de guild: jugadores de guild con experiencia (dados el 26 de octubre de 2026)",
@@ -429,7 +431,7 @@
     }
    ],
    "more": [
-    "Toka [Maid Costume] contraataca cada habilidad que lances con 280%. Por encima del 50% de HP, un golpe le quita como máximo el 45% de su HP, así que cuenta con 3 golpes o más. No lances la habilidad de Nutcracker mientras ella tenga Patience.",
+    "Toka [Maid Costume] contraataca cada habilidad activa que uses con 280% mientras tenga Patience. Con 1★, por encima del 50% de HP, un golpe le quita como máximo el 45% de su HP, así que cuenta con 3 golpes o más. No uses a Nutcracker mientras ella tenga Patience.",
     "Yakumo [Natsu Matsuri]: céntrate en él con unidades SKL antes de su 4.º Festival Point.",
     "Tienes 5 combates gratis al día; se renuevan a las 05:00. Quien tiene más CP juega primero.",
     "En un servidor nuevo, ve a por la Arena pronto: el primer rank 1 paga 1.500 Diamonds. (consejo de creador)",
@@ -529,6 +531,7 @@
     "Haz las misiones semanales: unos 2.000 Tokens y 1.050 Diamonds por semana.",
     "En un servidor nuevo, los creadores se saltan los dos primeros Carnivals y ahorran. (consejo de creador)",
     "El Carnival 1 en el servidor de relanzamiento NA probablemente empieza el viernes 30 de octubre (día 19 del servidor). (sin confirmar)",
+    "Cada modo del Carnival (Recruitment, Arena, Region Breakthrough, Exchange, Paragon, las guerras del sábado) tiene su propia guía: Modos de juego › Carnival.",
     "Estos equipos salen del texto de habilidad y de consejos de creadores. Ninguno se ha probado en combate aquí. (sin confirmar)"
    ],
    "sources": [
@@ -1539,7 +1542,7 @@
       "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
       "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
       "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
-      "Débil contra: Toka [Maid Costume] (contraataca cada habilidad) y el Limit de Black Rabbit (corta las curaciones).",
+      "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
       "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
      ],
      "backup": true,
@@ -1676,7 +1679,7 @@
       "1166"
      ],
      "why": [
-      "Toka [Maid Costume] contraataca cada habilidad enemiga con 280%, y por encima del 50% de HP un solo golpe le puede quitar como máximo el 45% de su HP.",
+      "Toka [Maid Costume] contraataca cada habilidad activa enemiga con 280% mientras tenga Patience, y con 1★, por encima del 50% de HP, un solo golpe le puede quitar como máximo el 45% de su HP.",
       "Todo Anteiku: Toka [Maid Costume] (1★) da a cada aliado Anteiku +30% de estadísticas.",
       "Los creadores dicen que el equipo necesita a Hinami: \"sin Hinami, no funciona para nada.\"",
       "Mejor para: Arena y defensa en Guild War contra equipos que lanzan muchas habilidades. One-Eyed Owl y Capture Simulation usan unidades Anteiku.",
@@ -1693,7 +1696,7 @@
        "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
        "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
        "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-       "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto.",
+       "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto.",
        "Akira [June Bride] funciona desde el back-up."
       ],
       "note": null
@@ -3016,7 +3019,7 @@
      "id": "gw-tiles",
      "group": "Guild War",
      "title": "Guild War: toma-tiles (1–2 personajes)",
-     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno y solo sirven para tomar tiles libres. (consejo de guild)",
+     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno, y solo sirven para tomar tiles libres. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Toma-tiles (1–2 unidades sobrantes)",
@@ -3062,7 +3065,7 @@
      "id": "gw-breaker",
      "group": "Guild War",
      "title": "Guild War: rompe-torres (1–2 personajes)",
-     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (consejo de guild)",
+     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Rompe-torres (vía gratis)",
@@ -6150,7 +6153,7 @@
      "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
      "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
      "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
-     "Débil contra: Toka [Maid Costume] (contraataca cada habilidad) y el Limit de Black Rabbit (corta las curaciones).",
+     "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
      "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
     ],
     "team_kind": "sourced",
@@ -6424,7 +6427,7 @@
         "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
         "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
         "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
-        "Débil contra: Toka [Maid Costume] (contraataca cada habilidad) y el Limit de Black Rabbit (corta las curaciones).",
+        "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
        ],
        "team_kind": "sourced",
@@ -7575,7 +7578,7 @@
      "id": "gw-tiles",
      "group": "Guild War",
      "title": "Guild War: toma-tiles (1–2 personajes)",
-     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno y solo sirven para tomar tiles libres. (consejo de guild)",
+     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno, y solo sirven para tomar tiles libres. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Toma-tiles (1–2 unidades sobrantes)",
@@ -7621,7 +7624,7 @@
      "id": "gw-breaker",
      "group": "Guild War",
      "title": "Guild War: rompe-torres (1–2 personajes)",
-     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (consejo de guild)",
+     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Rompe-torres (vía gratis)",
@@ -11354,7 +11357,7 @@
         "Hideyoshi da a cada aliado +15% de estadísticas. Sen añade +4% por cada unidad No Org. Nishiki [Orochi] quita los buffs a cualquier enemigo que lance una habilidad.",
         "Mejor para: historia y PvE, Arena, Carnival, World Bosses, el Weekly Challenge y el Organization Boss.",
         "Los creadores siguen poniendo a No Org en primer lugar después del parche del 14 de octubre.",
-        "Débil contra: Toka [Maid Costume] (contraataca cada habilidad) y el Limit de Black Rabbit (corta las curaciones).",
+        "Débil contra: Toka [Maid Costume] (contraataca cada habilidad activa mientras tenga Patience) y el Limit de Black Rabbit (corta las curaciones).",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta B · No Organization\" y sección 4 \"Endgame team per faction\"."
        ],
        "team_kind": "sourced",
@@ -11668,7 +11671,7 @@
      "1166"
     ],
     "why": [
-     "Toka [Maid Costume] contraataca cada habilidad enemiga con 280%, y por encima del 50% de HP un solo golpe le puede quitar como máximo el 45% de su HP.",
+     "Toka [Maid Costume] contraataca cada habilidad activa enemiga con 280% mientras tenga Patience, y con 1★, por encima del 50% de HP, un solo golpe le puede quitar como máximo el 45% de su HP.",
      "Todo Anteiku: Toka [Maid Costume] (1★) da a cada aliado Anteiku +30% de estadísticas.",
      "Los creadores dicen que el equipo necesita a Hinami: \"sin Hinami, no funciona para nada.\"",
      "Mejor para: Arena y defensa en Guild War contra equipos que lanzan muchas habilidades. One-Eyed Owl y Capture Simulation usan unidades Anteiku.",
@@ -11686,7 +11689,7 @@
       "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
       "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
       "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-      "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto.",
+      "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto.",
       "Akira [June Bride] funciona desde el back-up."
      ],
      "note": null
@@ -11719,7 +11722,7 @@
      "source": "Textos de habilidad usados: SkillDesc_1089_p1, SkillDesc_1143 activa y p1, SkillDesc_1026 activa, SkillDesc_1088 activa y p1, SkillDesc_1089 activa, SkillDesc_1036_p1.",
      "steps": [
       "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-      "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+      "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
       "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
       "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
       "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido.",
@@ -11760,7 +11763,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1089_p1, SkillDesc_1143 activa y p1, SkillDesc_1026 activa, SkillDesc_1088 activa y p1, SkillDesc_1089 activa, SkillDesc_1036_p1.",
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido.",
@@ -11860,7 +11863,7 @@
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
          "Yoshimura primero: 265% a todos, y Gash en cada enemigo.",
-         "Roma [Anteiku] después: su Purge, y en PvE el siguiente golpe Anteiku gana +30%.",
+         "Roma [Anteiku] después: su Purge, y el siguiente golpe Anteiku gana +30%.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado.",
          "Toka [Anteiku] al final: 420% al objetivo principal.",
          "Naki cura desde el back-up: los aliados golpeados en el turno anterior recuperan un 8% de su HP máximo."
@@ -11948,7 +11951,7 @@
         "1166"
        ],
        "why": [
-        "Toka [Maid Costume] contraataca cada habilidad enemiga con 280%, y por encima del 50% de HP un solo golpe le puede quitar como máximo el 45% de su HP.",
+        "Toka [Maid Costume] contraataca cada habilidad activa enemiga con 280% mientras tenga Patience, y con 1★, por encima del 50% de HP, un solo golpe le puede quitar como máximo el 45% de su HP.",
         "Todo Anteiku: Toka [Maid Costume] (1★) da a cada aliado Anteiku +30% de estadísticas.",
         "Los creadores dicen que el equipo necesita a Hinami: \"sin Hinami, no funciona para nada.\"",
         "Mejor para: Arena y defensa en Guild War contra equipos que lanzan muchas habilidades. One-Eyed Owl y Capture Simulation usan unidades Anteiku.",
@@ -11966,7 +11969,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto.",
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto.",
          "Akira [June Bride] funciona desde el back-up."
         ],
         "note": null
@@ -12079,7 +12082,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1089_p1, SkillDesc_1143 activa y p1, SkillDesc_1026 activa, SkillDesc_1088 activa y p1, SkillDesc_1089 activa, SkillDesc_1036_p1.",
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido.",
@@ -12179,7 +12182,7 @@
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
          "Yoshimura primero: 265% a todos, y Gash en cada enemigo.",
-         "Roma [Anteiku] después: su Purge, y en PvE el siguiente golpe Anteiku gana +30%.",
+         "Roma [Anteiku] después: su Purge, y el siguiente golpe Anteiku gana +30%.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado.",
          "Toka [Anteiku] al final: 420% al objetivo principal.",
          "Naki cura desde el back-up: los aliados golpeados en el turno anterior recuperan un 8% de su HP máximo."
@@ -12267,7 +12270,7 @@
         "1166"
        ],
        "why": [
-        "Toka [Maid Costume] contraataca cada habilidad enemiga con 280%, y por encima del 50% de HP un solo golpe le puede quitar como máximo el 45% de su HP.",
+        "Toka [Maid Costume] contraataca cada habilidad activa enemiga con 280% mientras tenga Patience, y con 1★, por encima del 50% de HP, un solo golpe le puede quitar como máximo el 45% de su HP.",
         "Todo Anteiku: Toka [Maid Costume] (1★) da a cada aliado Anteiku +30% de estadísticas.",
         "Los creadores dicen que el equipo necesita a Hinami: \"sin Hinami, no funciona para nada.\"",
         "Mejor para: Arena y defensa en Guild War contra equipos que lanzan muchas habilidades. One-Eyed Owl y Capture Simulation usan unidades Anteiku.",
@@ -12285,7 +12288,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto.",
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto.",
          "Akira [June Bride] funciona desde el back-up."
         ],
         "note": null
@@ -12400,7 +12403,7 @@
          "Yoshimura primero: su golpe marca a todos los enemigos con Gash.",
          "Toka [Flame Strike] después: un golpe de 430% con el doble de probabilidad de crítico.",
          "Ken [√A]: cada 3 habilidades enemigas, les quita todos los escudos y golpea a todos con 200% por su cuenta.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga."
         ],
         "note": "En Carnival Arena los combates son en auto, así que allí el juego lanza las habilidades por ti. Usa este orden donde juegas en manual."
        },
@@ -12499,7 +12502,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1089_p1, SkillDesc_1143 activa y p1, SkillDesc_1026 activa, SkillDesc_1088 activa y p1, SkillDesc_1089 activa, SkillDesc_1036_p1.",
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido.",
@@ -12741,7 +12744,7 @@
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo.",
          "Yoshimura primero: 265% a todos, y Gash en cada enemigo.",
-         "Roma [Anteiku] después: su Purge, y en PvE el siguiente golpe Anteiku gana +30%.",
+         "Roma [Anteiku] después: su Purge, y el siguiente golpe Anteiku gana +30%.",
          "Ken [√A] sobre el objetivo principal: 440%. Cada 3 habilidades enemigas, les quita los escudos y golpea a todos con 200%.",
          "Toka [Anteiku] al final: 420% al mismo objetivo.",
          "Kiyoko funciona desde el back-up: en Stronghold Takeover cada aliado gana +40% de estadísticas y una salvación de muerte (aparece en la tienda del día 43, sin confirmar)."
@@ -12829,7 +12832,7 @@
         "1166"
        ],
        "why": [
-        "Toka [Maid Costume] contraataca cada habilidad enemiga con 280%, y por encima del 50% de HP un solo golpe le puede quitar como máximo el 45% de su HP.",
+        "Toka [Maid Costume] contraataca cada habilidad activa enemiga con 280% mientras tenga Patience, y con 1★, por encima del 50% de HP, un solo golpe le puede quitar como máximo el 45% de su HP.",
         "Todo Anteiku: Toka [Maid Costume] (1★) da a cada aliado Anteiku +30% de estadísticas.",
         "Los creadores dicen que el equipo necesita a Hinami: \"sin Hinami, no funciona para nada.\"",
         "Mejor para: Arena y defensa en Guild War contra equipos que lanzan muchas habilidades. One-Eyed Owl y Capture Simulation usan unidades Anteiku.",
@@ -12847,7 +12850,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto.",
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto.",
          "Akira [June Bride] funciona desde el back-up."
         ],
         "note": null
@@ -12933,7 +12936,7 @@
      "id": "gw-tiles",
      "group": "Guild War",
      "title": "Guild War: toma-tiles (1–2 personajes)",
-     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno y solo sirven para tomar tiles libres. (consejo de guild)",
+     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno, y solo sirven para tomar tiles libres. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Toma-tiles (1–2 unidades sobrantes)",
@@ -12979,7 +12982,7 @@
      "id": "gw-breaker",
      "group": "Guild War",
      "title": "Guild War: rompe-torres (1–2 personajes)",
-     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (consejo de guild)",
+     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Rompe-torres (vía gratis)",
@@ -13193,7 +13196,7 @@
          "Mantén a Younger Bin en Weak todo el combate: Weak anula su Warding e impide el revive de Elder.",
          "Haz burst a Younger en un solo turno cuando puedas: cada tramo de HP que pierde activa el golpe de 500% de Elder.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -13296,7 +13299,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto."
         ],
         "note": null
        },
@@ -13406,7 +13409,7 @@
          "Pon escudo al equipo antes de su turno: las unidades sin escudo reciben +500%.",
          "Golpea primero las partes y los adds: mientras sigan vivos 3 aliados suyos, recibe un 90% menos.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -13620,7 +13623,7 @@
          "Usa solo cartas Lv2 y Lv3: las habilidades Lv1 y el Ultimate hacen un 50% menos aquí.",
          "Cada golpe SPD le baja la DEF un 15% (hasta 5 veces): mételos pronto.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -13723,7 +13726,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto."
         ],
         "note": null
        },
@@ -13833,7 +13836,7 @@
          "Usa solo cartas Lv2 y Lv3: las habilidades Lv1 y el Ultimate hacen un 50% menos aquí.",
          "Cuando se le acaba el escudo, golpea a tu unidad con más ATK con 260% y le aplica Lethal.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -13936,7 +13939,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto."
         ],
         "note": null
        },
@@ -14046,7 +14049,7 @@
          "Gasta tus cartas Lv3 en los turnos 1 y 2: se hace más fuerte cada turno.",
          "Mantén a todos con vida: cada muerte activa un golpe de 160% y un stun.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -14149,7 +14152,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto."
         ],
         "note": null
        },
@@ -14259,7 +14262,7 @@
          "Mata primero a los esbirros: cada esbirro que muere le hace un daño igual al 150% de su propio HP máximo.",
          "Sin los esbirros, llena su barra de Weak: entonces recibe un 50% más.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -14362,7 +14365,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto."
         ],
         "note": null
        },
@@ -14472,7 +14475,7 @@
          "Tienes 5 turnos: gasta las cartas Lv3 pronto, mientras esté por encima del 50% de HP.",
          "No uses el Ultimate aquí: hace un 50% menos.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -14575,7 +14578,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto."
         ],
         "note": null
        },
@@ -14685,7 +14688,7 @@
          "Escudo primero: recibe un 20% más de los atacantes con escudo.",
          "Guarda tu carta más fuerte para su turno de Weak completo: recibe un 30% más.",
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido."
@@ -14908,7 +14911,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1089_p1, SkillDesc_1143 activa y p1, SkillDesc_1026 activa, SkillDesc_1088 activa y p1, SkillDesc_1089 activa, SkillDesc_1036_p1.",
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido.",
@@ -15216,7 +15219,7 @@
          "Yoshimura primero: su golpe marca a todos los enemigos con Gash.",
          "Toka [Flame Strike] después: un golpe de 430% con el doble de probabilidad de crítico.",
          "Ken [√A]: cada 3 habilidades enemigas, les quita todos los escudos y golpea a todos con 200% por su cuenta.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga."
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga."
         ],
         "note": null
        },
@@ -15423,7 +15426,7 @@
         "source": "Textos de habilidad usados: SkillDesc_1089_p1, SkillDesc_1143 activa y p1, SkillDesc_1026 activa, SkillDesc_1088 activa y p1, SkillDesc_1089 activa, SkillDesc_1036_p1.",
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
-         "Roma [Anteiku] primero: su Purge quita los buffs y las posturas del objetivo. En PvE su habilidad también da +30% al siguiente golpe Anteiku.",
+         "Roma [Anteiku] primero: su Purge le quita los buffs y posturas al objetivo. Su uso también da +30% al siguiente golpe Anteiku.",
          "Enji después: 260% a todos, y Expose les baja la resistencia a críticos durante 2 turnos.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado (+2% de daño, un 3% menos de daño recibido).",
          "Toka [Anteiku] al final: un golpe de 420% que crece con el HP que ha perdido.",
@@ -15626,7 +15629,7 @@
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
          "Yoshimura primero: 265% a todos, y Gash en cada enemigo.",
-         "Roma [Anteiku] después: su Purge, y en PvE el siguiente golpe Anteiku gana +30%.",
+         "Roma [Anteiku] después: su Purge, y el siguiente golpe Anteiku gana +30%.",
          "Hinami [Christmas]: 260% a todos, e Inspire en cada aliado.",
          "Toka [Anteiku] al final: 420% al objetivo principal.",
          "Naki cura desde el back-up: los aliados golpeados en el turno anterior recuperan un 8% de su HP máximo."
@@ -15725,7 +15728,7 @@
         "steps": [
          "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo.",
          "Yoshimura primero: 265% a todos, y Gash en cada enemigo.",
-         "Roma [Anteiku] después: su Purge, y en PvE el siguiente golpe Anteiku gana +30%.",
+         "Roma [Anteiku] después: su Purge, y el siguiente golpe Anteiku gana +30%.",
          "Ken [√A] sobre el objetivo principal: 440%. Cada 3 habilidades enemigas, les quita los escudos y golpea a todos con 200%.",
          "Toka [Anteiku] al final: 420% al mismo objetivo.",
          "Toka [Natsu Matsuri] funciona desde el back-up: +8% de daño para cada aliado, y +4% de ATK cada turno (hasta 3 veces)."
@@ -15849,12 +15852,13 @@
         "1166"
        ],
        "why": [
-        "Toka [Maid Costume] contraataca cada habilidad enemiga con 280%, y por encima del 50% de HP un solo golpe le puede quitar como máximo el 45% de su HP.",
+        "Toka [Maid Costume] contraataca cada habilidad activa enemiga con 280% mientras tenga Patience, y con 1★, por encima del 50% de HP, un solo golpe le puede quitar como máximo el 45% de su HP.",
         "Todo Anteiku: Toka [Maid Costume] (1★) da a cada aliado Anteiku +30% de estadísticas.",
         "Los creadores dicen que el equipo necesita a Hinami: \"sin Hinami, no funciona para nada.\"",
         "Mejor para: Arena y defensa en Guild War contra equipos que lanzan muchas habilidades. One-Eyed Owl y Capture Simulation usan unidades Anteiku.",
         "Los creadores dicen que Anteiku \"lo está pasando mal\" después del parche del 14 de octubre. Cambio: Ken [√A].",
         "Los creadores no dicen qué versión de Hinami; [Hina Matsuri] es nuestra mejor suposición. (sin confirmar)",
+        "Nuevo (27 de octubre): Hinami [Halloween] puede ocupar el lugar de Hinami [Hina Matsuri] aquí; sus tres equipos están en la página Nueva unidad. (sugerencia nuestra, no probada)",
         "Fuente: artículo \"Meta teams\" del 19 de octubre, sección 1 \"Meta C · Anteiku\" y sección 4 \"Endgame team per faction\"."
        ],
        "team_kind": "sourced",
@@ -15867,7 +15871,7 @@
          "Yoshimura primero: los creadores abren el combate con él. Su golpe marca a todos los enemigos con Gash.",
          "El buff de Hinami después: +16,5% de estadísticas para todo el equipo durante 2 turnos.",
          "Toka [June Bride]: 265% a todos dentro de su Suppression Field.",
-         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga. Dale tu ATK más alto.",
+         "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga. Dale tu ATK más alto.",
          "Akira [June Bride] funciona desde el back-up."
         ],
         "note": null
@@ -17235,7 +17239,7 @@
      "id": "gw-tiles",
      "group": "Guild War",
      "title": "Guild War: toma-tiles (1–2 personajes)",
-     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno y solo sirven para tomar tiles libres. (consejo de guild)",
+     "tip": "Tus otros dos equipos tienen 1–2 personajes cada uno, y solo sirven para tomar tiles libres. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Toma-tiles (1–2 unidades sobrantes)",
@@ -17281,7 +17285,7 @@
      "id": "gw-breaker",
      "group": "Guild War",
      "title": "Guild War: rompe-torres (1–2 personajes)",
-     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (consejo de guild)",
+     "tip": "¿Un stronghold que nunca cae? Prueba un ataque con 1–2 personajes antes de mandar un equipo completo. (Consejo de guild; el texto del juego pide 5 personajes por equipo, mira Modos de juego › Stronghold Takeover.)",
      "rows": [
       {
        "label": "Rompe-torres (vía gratis)",
@@ -19998,7 +20002,7 @@
    },
    {
     "faction": "anteiku",
-    "text": "Anteiku al final: los creadores dicen que \"lo está pasando mal\" después del parche del 14 de octubre, y sus unidades gratis no son un equipo de verdad.",
+    "text": "Anteiku al final para quien juega gratis: sus unidades gratis no forman un equipo de verdad, y los creadores dijeron que \"lo estaba pasando mal\" tras el parche del 14 de octubre. Quien gasta y tiene a Hinami [Halloween] (aquí desde el 27 de octubre, según el dueño de la guía) puede armarla antes.",
     "source": null,
     "kind": "derived"
    }
@@ -20540,7 +20544,7 @@
        "Yoshimura primero: su golpe marca a todos los enemigos con Gash.",
        "Toka [Flame Strike] después: un golpe de 430% con el doble de probabilidad de crítico.",
        "Ken [√A]: cada 3 habilidades enemigas, les quita todos los escudos y golpea a todos con 200% por su cuenta.",
-       "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad enemiga."
+       "Toka [Maid Costume] al final: su daño real es el contraataque que lanza en cada habilidad activa enemiga."
       ],
       "note": null
      },
@@ -21219,7 +21223,7 @@
     "Tv_emYCbVJQ"
    ],
    "more": [
-    "El evento Halloween Hinami (hasta el 1 de noviembre) incluye un Boss Challenge."
+    "El evento Halloween Hinami (hasta el 1 de noviembre en los servidores antiguos; compruébalo en el juego) incluye un Boss Challenge."
    ]
   },
   {
@@ -21759,7 +21763,7 @@
     "text": "Elige una facción y arma primero su equipo más fuerte. No Org es el comienzo más barato."
    },
    {
-    "text": "Guild War: un equipo fuerte, más dos equipos de 1–2 personajes que solo toman tiles libres.",
+    "text": "Guild War: un equipo fuerte, más dos equipos pequeños (1–2 personajes, o tus 5 más débiles si el juego pide 5) que solo toman tiles libres.",
     "tip": true
    },
    {
@@ -21774,7 +21778,7 @@
     "text": "Elige una facción abajo y arma primero su equipo meta. Free-to-play: empieza con No Org."
    },
    {
-    "text": "Guild War: un equipo fuerte, más dos equipos de 1–2 personajes que solo toman tiles libres.",
+    "text": "Guild War: un equipo fuerte, más dos equipos pequeños (1–2 personajes, o tus 5 más débiles si el juego pide 5) que solo toman tiles libres.",
     "tip": true
    },
    {
@@ -21806,7 +21810,7 @@
     "text": "Algunas unidades C están en el equipo gratis (Rize [Binge Eater], Kurona). Sigue usándolas ahí."
    },
    {
-    "text": "Usa \"Con 0★\" para unidades de las que tienes una copia; \"Con estrellas máximas\" para Abyssal Battlefield."
+    "text": "¿Juegas gratis? Lee las unidades de banner en \"Con 0★\" y las de la tienda en \"Con estrellas máximas\": puedes comprar más copias en la tienda."
    }
   ],
   "characters": [
@@ -21817,7 +21821,7 @@
     "text": "Una segunda copia (1★) es la mejor mejora: desbloquea la segunda pasiva."
    },
    {
-    "text": "3★ y 4★ añaden más pasivas; 6★ mejora la habilidad activa."
+    "text": "3★ desbloquea la tercera pasiva, 5★ es el gran salto de estadísticas, 6★ mejora la habilidad activa."
    },
    {
     "text": "Pon los Limit Crystals en tu carry principal."
@@ -21867,7 +21871,7 @@
     "text": "Una segunda copia (1★) es la mejor mejora: desbloquea la segunda pasiva."
    },
    {
-    "text": "3★ y 4★ añaden más pasivas; 6★ mejora la habilidad activa."
+    "text": "3★ desbloquea la tercera pasiva, 5★ es el gran salto de estadísticas, 6★ mejora la habilidad activa."
    },
    {
     "text": "Pon los Limit Crystals en tu carry principal."
@@ -22077,6 +22081,326 @@
    }
   ]
  },
+ "spotlight": [
+  {
+   "id": "1180",
+   "title": "Hinami [Halloween]: la nueva soporte de Anteiku",
+   "reported": "El dueño de la guía informa que ya salió en el servidor de relanzamiento NA (27 de octubre de 2026). En los servidores antiguos su banner limitado va del 25 de octubre al 8 de noviembre. Comprueba la fecha de fin en el juego.",
+   "which": [
+    "¿Qué Hinami es la nueva? Hinami [Halloween]. Su pasiva 1★ da a cada aliado Anteiku +50% de ATK y +50% de HP máximo, lo que coincide con \"su pasiva 1★ para Anteiku parece muy OP\".",
+    "Hinami [Fledgling Butterfly] también figura en la tienda desde el día 15 del servidor (sin confirmar), pero su pasiva 1★ solo la potencia a ella (por encima de 80% de HP: +30% de curación, +20% de daño). Si tu Hinami nueva es esa, manda una captura de su página de habilidades."
+   ],
+   "verdict": [
+    "Quien gasta: sí, es meta. Hace que los equipos todo Anteiku sean mucho más difíciles de matar y peguen más fuerte, y un creador (Aslan) espera que esos equipos sean muy difíciles de vencer. (informe de creador)",
+    "Quien juega gratis: solo si juegas Anteiku y puedes completar los 300 pulls (90.000 Diamonds). Sale con un 1% por pull (datamine de fans) y el pull 300 la garantiza, así que completar el banner normalmente da 2 copias o más: alrededor de un 96% de probabilidad (estimación: 1 − 0,99^300 para una copia aleatoria, más los dos cofres de ~10%). Dos copias dan 1★ (orden estándar de estrellas, compruébalo en el juego). Guarda tu Panacean Star-Up Crystal para ella solo si paras antes; el texto del objeto dice que sirve para \"cualquier personaje SSR de nivel inicial\".",
+    "¿No juegas Anteiku? Sáltala: sus grandes bonificaciones (+50% de ATK y de HP máximo, Transcendence, cargas de Vitality) solo ayudan a aliados Anteiku. Su recorte de curación, su buff de inicio de batalla y su inmunidad a control funcionan en cualquier equipo, pero allí es mucho más débil.",
+    "Solo pudimos ver una reseña de creador para esta actualización (Aslan: una support muy buena). Hay otras reseñas en YouTube, pero no se revisaron, y la que vimos no da veredicto para jugadores gratis. (informe de creador)"
+   ],
+   "how": [
+    [
+     "Habilidad activa",
+     "Todos los aliados +8% en todas las estadísticas (Lv3: +12% durante 2 turnos), y las 2 próximas habilidades activas ganan +80% de coeficiente. Úsala primero y luego a quienes pegan más fuerte."
+    ],
+    [
+     "Pasiva 0★: Transcendence",
+     "Con un equipo todo Anteiku obtiene Transcendence al inicio de la batalla: el HP no baja de 1 y +6% en todas las estadísticas durante 1 turno. La primera vez que otro aliado Anteiku recibe daño mortal, sobrevive con 1 de HP de la misma forma, y todos los aliados Anteiku ganan +30% de daño durante 1 turno."
+    ],
+    [
+     "Pasiva 1★: Anteiku Boost",
+     "Todo aliado Anteiku: +50% de ATK y +50% de HP máximo. Todo enemigo: −60% de curación y −30% de robo de vida. Esta es la pasiva que la hace meta. (1★ en el orden estándar de estrellas del juego; revisa su vista previa de estrellas.)"
+    ],
+    [
+     "Pasiva 3★: Vitality",
+     "Es inmune a control y a Weak, lanza una habilidad activa Lv2 gratis al inicio de la batalla, y los aliados Anteiku acumulan cargas hasta un golpe activo con +100%."
+    ],
+    [
+     "Cómo vencer a su equipo",
+     "El recorte de curación perjudica a los equipos de robo de vida y de sanadores. Para vencer a su equipo: mata a una unidad cuando su salvación única ya se haya usado, usa golpes grandes cuando terminen los efectos de 1 turno, o pelea con unidades que no dependan de la curación. (deducido del texto de sus habilidades — no probado)"
+    ]
+   ],
+   "patch": "El parche SEA del 23 de octubre limitó Transcendence al primer golpe mortal y a 1 turno. Si tu servidor tiene el texto antiguo, es aún más fuerte. (datamine de fans)",
+   "rows": [
+    {
+     "label": "Quien gasta: muralla todo Anteiku",
+     "units": [
+      "1180",
+      "1178",
+      "1173",
+      "1162",
+      "1128"
+     ],
+     "backup": true,
+     "team_kind": "derived",
+     "team_source": null,
+     "why": [
+      "El núcleo del creador: Hinami [Halloween] con Yoshimura [Readiness] y Toka [Maid Costume] o Toka [June Bride]. (informe de creador)",
+      "Las cinco son Anteiku, así que Hinami obtiene Transcendence al inicio de la batalla, y Toka [1st Anniversary] funciona desde el back-up.",
+      "Con 1★ Hinami da +50% de ATK y de HP máximo a todos los aliados y reduce la curación enemiga un 60%.",
+      "(deducido de las habilidades — no probado) Ninguna fuente da exactamente este equipo; está armado a partir del texto de habilidad de las unidades y del núcleo del creador de arriba."
+     ],
+     "order": {
+      "kind": "derived",
+      "steps": [
+       "El inicio de la batalla es automático: Hinami [Halloween] obtiene Transcendence, Toka [June Bride] lanza un ataque Lv2 gratis, y Toka [1st Anniversary] reduce un 60% los próximos golpes que recibas.",
+       "Hinami [Halloween] primero: +12% en todas las estadísticas del equipo, y las 2 próximas habilidades activas pegan un 80% más fuerte.",
+       "Yoshimura después: 265% a todos, y Gash en cada enemigo.",
+       "Toka [June Bride]: 265% a todos dentro de su Suppression Field (aliados +50% de ATK).",
+       "Toka [Maid Costume] al final: mientras tenga Patience, contraataca cada habilidad activa enemiga. Dale tu ATK más alto."
+      ],
+      "note": null,
+      "source": "Textos de habilidad usados: 1180 activa y pasiva 1, SkillDesc_1162 activa y p1, SkillDesc_1173 activa, SkillDesc_1178_p1, SkillDesc_1128_p1. El texto de Hinami [Halloween] sale de un datamine de fans de los servidores antiguos (ficha de héroe 1180 de gluttony.dev, build SEA 3-13088, obtenida el 26 de octubre de 2026)."
+     }
+    },
+    {
+     "label": "Quien gasta: daño",
+     "units": [
+      "1180",
+      "1168",
+      "1178",
+      "1173",
+      "1128"
+     ],
+     "backup": true,
+     "team_kind": "derived",
+     "team_source": null,
+     "why": [
+      "Ken [√A] ocupa el lugar de Toka [June Bride]: un golpe de 440% a un objetivo, con Stun sobre un objetivo en Weak.",
+      "La habilidad activa de Hinami hace que las 2 próximas habilidades activas peguen un 80% más fuerte, así que usa a Ken justo después de ella.",
+      "(deducido de las habilidades — no probado) Ninguna fuente da exactamente este equipo; está armado a partir del texto de habilidad de las unidades y del núcleo del creador de arriba."
+     ],
+     "order": {
+      "kind": "derived",
+      "steps": [
+       "El inicio de la batalla es automático: Hinami [Halloween] obtiene Transcendence, y Toka [1st Anniversary] reduce un 60% los próximos golpes que recibas.",
+       "Hinami [Halloween] primero: +12% en todas las estadísticas, y las 2 próximas habilidades activas pegan un 80% más fuerte.",
+       "Ken [√A] sobre el objetivo principal: 440%, y un 50% más y un Stun si está en Weak.",
+       "Yoshimura después: 265% a todos, y Gash en cada enemigo.",
+       "Toka [Maid Costume] al final: mientras tenga Patience, contraataca cada habilidad activa enemiga."
+      ],
+      "note": null,
+      "source": "Textos de habilidad usados: 1180 activa y pasiva 1, SkillDesc_1168 activa, SkillDesc_1173 activa, SkillDesc_1178_p1, SkillDesc_1128_p1. El texto de Hinami [Halloween] sale de un datamine de fans de los servidores antiguos (ficha de héroe 1180 de gluttony.dev, build SEA 3-13088, obtenida el 26 de octubre de 2026)."
+     }
+    },
+    {
+     "label": "Poco gasto: 1 copia + unidades de la tienda",
+     "units": [
+      "1180",
+      "1089",
+      "1143",
+      "1088",
+      "1014"
+     ],
+     "backup": true,
+     "team_kind": "derived",
+     "team_source": null,
+     "why": [
+      "Con una copia (0★) solo da su habilidad activa y Transcendence; el +50% necesita 1★.",
+      "El resto son unidades de la tienda (días 19 a 43; sin confirmar), todas Anteiku, así que Transcendence sigue funcionando.",
+      "(deducido de las habilidades — no probado) Ninguna fuente da exactamente este equipo; está armado a partir del texto de habilidad de las unidades y del núcleo del creador de arriba."
+     ],
+     "order": {
+      "kind": "derived",
+      "steps": [
+       "El inicio del turno es automático: Toka [Anteiku] pone escudo a todo el equipo, y las unidades Anteiku con escudo son inmunes a debuffs.",
+       "Hinami [Halloween] primero: +12% en todas las estadísticas, y las 2 próximas habilidades activas pegan un 80% más fuerte.",
+       "Hinami [Christmas] después: 260% a todos, e Inspire en cada aliado.",
+       "Toka [Anteiku]: 420% sobre el objetivo principal.",
+       "Roma [Anteiku] al final: su Purge le quita los buffs al objetivo, y el siguiente golpe Anteiku gana +30%.",
+       "Renji [Taciturn] funciona desde el back-up: +15% de HP máximo para tus aliados SPD."
+      ],
+      "note": null,
+      "source": "Textos de habilidad usados: 1180 activa, SkillDesc_1089_p1 y activa, SkillDesc_1088 activa, SkillDesc_1143 activa y p1, SkillDesc_1014_p1. El texto de Hinami [Halloween] sale de un datamine de fans de los servidores antiguos (ficha de héroe 1180 de gluttony.dev, build SEA 3-13088, obtenida el 26 de octubre de 2026)."
+     }
+    }
+   ],
+   "sources": [
+    "Kit: datamine de fans de los servidores antiguos (ficha de héroe 1180 de gluttony.dev, build SEA 3-13088, obtenida el 26 de octubre de 2026). No está en los archivos del juego del 22 de septiembre de 2026 que usa esta guía.",
+    "Banner: datos de gacha de tkgbtc.com, obtenidos el 26 de octubre de 2026: limitado, garantizado a los 300 pulls; los pulls 100 y 200 dan un cofre aleatorio (alrededor de 10% de que sea ella), no una elección.",
+    "Creadores: Aslan, análisis de las filtraciones (21 de octubre de 2026) y guía para principiantes (25 de octubre de 2026).",
+    "Informe del dueño de la guía: ya salió en el servidor de relanzamiento NA (27 de octubre de 2026)."
+   ],
+   "gaps": [
+    "Su vista previa de estrellas (qué estrella desbloquea cada pasiva) no está en nuestros datos; el orden 0★/1★/3★ es el orden estándar del juego. Compruébalo en el juego.",
+    "Fecha de fin y precio del banner en el servidor de relanzamiento NA."
+   ]
+  }
+ ],
+ "stars_guide": {
+  "title": "Qué da cada estrella",
+  "intro": "Todas las unidades siguen el mismo patrón de 6 pasos en la vista previa de estrellas del juego. Las pasivas se desbloquean en 0★, 1★ y 3★.",
+  "steps": [
+   [
+    "0★ (primera copia)",
+    "La habilidad activa y la primera pasiva."
+   ],
+   [
+    "1★",
+    "Desbloquea la segunda pasiva. Para la mayoría de las unidades es la mayor mejora de una sola vez, así que 1★ es la primera meta de las unidades que vas a conservar. Las unidades de la lista \"Invertir a corto plazo\" y las de nota C o D con estrellas máximas se quedan en 0★."
+   ],
+   [
+    "2★",
+    "Añade un efecto de Weak: algo que pasa cuando esta unidad aplica o sufre Weak."
+   ],
+   [
+    "3★",
+    "Desbloquea la tercera pasiva."
+   ],
+   [
+    "4★",
+    "Añade un efecto de Power Burst, normalmente estadísticas o daño cuando se activa el Power Burst."
+   ],
+   [
+    "5★",
+    "Estadísticas básicas muy aumentadas: el gran salto de estadísticas."
+   ],
+   [
+    "6★",
+    "Mejora la habilidad activa: su efecto pasa a una versión Ultra- o gana un efecto nuevo. Las pasivas no cambian en 6★."
+   ]
+  ],
+  "check": "Comprobado con los datos del juego: 1★ (segunda pasiva) y 5★ (gran salto de estadísticas) son correctos, pero 6★ solo mejora la habilidad activa. Las pasivas mejoradas, como la curación de Hinami [Halloween] que pasa del 10% al 15%, vienen de una mejora de regalo aparte, no de las estrellas (datamine de fans).",
+  "note": "Para 33 unidades los datos del juego no confirman qué estrella desbloquea cada pasiva; sus páginas lo avisan. Revisa la vista previa de estrellas en el juego.",
+  "materials": [
+   "Subir de estrella usa los Character Crystals de la propia unidad o un Panacean Star-Up Crystal, que según el texto del objeto sirve para \"cualquier personaje SSR de nivel inicial\". Las cuentas nuevas reciben un Panacean en un bono de login.",
+   "Los creadores cuentan una copia extra por estrella, así que 6★ significa la primera copia más otras 6. (informe de creador)",
+   "100 Panacean Star-Up Crystal Shards fabrican un cristal, y 100 Fragments de una unidad fabrican un Guarantee Ticket de esa unidad.",
+   "Los Panacean Star-Up Crystals escasean: cofres de 100 pulls del Carnival (24% en la Temporada 1; el cofre de la Temporada 2 da 12%) y la Revival Point Shop. Los creadores dicen que nunca los compres con Diamonds. (consejo de creador)",
+   "Las Panaceas rojas dan estrellas; los Panacean Refinement Crystals amarillos suben la nota de la habilidad (de D hasta SSS) cuando la unidad ya tiene estrellas. (informe de creador)"
+  ],
+  "avoid": [
+   "No pongas objetos de estrella ni Limit Crystals en las unidades de la lista \"Invertir a corto plazo\".",
+   "Las unidades de la tienda son las más baratas de subir de estrella, porque la tienda vuelve a vender copias. (consejo de creador)",
+   "Deja las unidades gratis en 6★ y guarda las copias extra para el Crystal Exchange en vez de subir la nota de la habilidad. (consejo de creador)",
+   "Las fuentes no coinciden sobre las unidades sacadas del gacha: un creador dice que vayas a 6★ o te quedes con una copia y nunca pares en 3–4★; la guía sigue poniendo 1★ primero, porque desbloquea una pasiva. (consejo de creador)"
+  ],
+  "source": "Pasos de estrella: texto del juego RoleStarPreview_<id>_1 a 6 de las 142 unidades en los archivos del 22 de septiembre de 2026 (el paso 5 es \"Basic Stats greatly increased\" en todas; el paso 6 siempre cambia la habilidad activa), GuideDialogue_StarUp_2 y 3, ItemDesc_20452, ItemDesc_21197, ItemDesc_20059 y LoginBonusTitle_New_5. Consejos de creadores: guía para principiantes de Aslan (25 de octubre de 2026) y análisis de 3 meses, Zeketta, Kitcat, en las notas de investigación sobre gastos."
+ },
+ "spend_split": {
+  "title": "Meta si gastas vs meta para quien juega gratis",
+  "intro": "¿Por qué la guía llama meta a unidades \"más débiles\"? Porque quien juega gratis de verdad puede tenerlas y subirles las estrellas.",
+  "why": [
+   "La tier list califica cada unidad dos veces: con una copia (\"Con 0★\") y con todas las estrellas (\"Con estrellas máximas\").",
+   "Muchas unidades de primer nivel guardan su mejor pasiva tras 1★: el +50% de Hinami [Halloween] y el +16% de Juzo [False Girl] necesitan una segunda copia o un Panacean Star-Up Crystal, y los Panaceans escasean.",
+   "Las copias de banner y de Carnival cuestan pulls. Las unidades de la tienda se pueden volver a comprar, así que quien juega gratis les sube las estrellas rápido. (consejo de creador)",
+   "Por eso los equipos Inicial e Intermedio usan unidades que de verdad puedes tener y mejorar. Una unidad S que no puedes conseguir, o a la que no puedes subir de estrella, no ayuda a tu equipo.",
+   "¿Juegas gratis? Lee las unidades de banner en \"Con 0★\" y las de la tienda en \"Con estrellas máximas\"."
+  ],
+  "groups": [
+   {
+    "id": "pay",
+    "title": "Meta si gastas (pay-to-win)",
+    "blurb": "Las unidades más fuertes. Sus copias salen de banners o de pulls en el Carnival.",
+    "picks": [
+     {
+      "id": "1180",
+      "why": "Su +50% de ATK y de HP máximo para cada aliado Anteiku es su pasiva 1★ (orden estándar): completar el banner de 300 pulls normalmente da la segunda copia (1% por pull)."
+     },
+     {
+      "id": "1155",
+      "why": "El mejor carry de Aogiri, y DST. Su Carnival es la Temporada 21 global, no el próximo de este servidor; su llegada a la tienda hacia el día 75 no está confirmada."
+     },
+     {
+      "id": "1103",
+      "why": "Su +16% para todos los aliados es su pasiva 1★: una segunda copia (su Carnival es la Temporada 20 global, no el nuestro; tienda del día 75 sin confirmar) o un Panacean."
+     },
+     {
+      "id": "1174",
+      "why": "El motor de No Org. Su banner y el Wish Rebate terminaron; un banner Legacy Custom puede tenerla hasta alrededor del 29 de octubre (informe de jugador)."
+     },
+     {
+      "id": "1178",
+      "why": "Su +30% para aliados Anteiku es su pasiva 1★; su banner limitado terminó (Legacy Custom hasta alrededor del 29 de octubre, informe de jugador)."
+     },
+     {
+      "id": "1179",
+      "why": "Fuerte con una copia. Su banner de rate-up (garantizado a los 200) terminó, así que más copias solo con una reedición."
+     }
+    ]
+   },
+   {
+    "id": "free",
+    "title": "Meta para quien juega gratis o gasta poco",
+    "blurb": "Unidades gratis o de la tienda que funcionan con una copia o a las que puedes subir de estrella.",
+    "picks": [
+     {
+      "id": "1142",
+      "why": "Gratis en el Unlimited Recruitment durante tus primeros 14 días. A con una copia y con estrellas máximas."
+     },
+     {
+      "id": "1090",
+      "why": "Tienda del día 43 (sin confirmar). Con una copia, +20% para todos en un equipo de 5 unidades No Org o Anteiku."
+     },
+     {
+      "id": "1143",
+      "why": "Tienda del día 43 (sin confirmar). Con una copia, +30% de estadísticas básicas para aliados Anteiku en PvE."
+     },
+     {
+      "id": "1122",
+      "why": "Tienda del día 43 (sin confirmar). A con una copia: el núcleo del equipo Aogiri de la tienda."
+     },
+     {
+      "id": "1137",
+      "why": "Tienda del día 43 (sin confirmar). A con estrellas máximas, y una unidad de tienda es la que puedes subir de estrella. (consejo de creador)"
+     },
+     {
+      "id": "1136",
+      "why": "Tienda del día 43 (sin confirmar). Nota C con una copia y B con estrellas máximas, pero en Stronghold Takeover todos los aliados ganan +40% de estadísticas básicas y una salvación contra la muerte."
+     }
+    ]
+   },
+   {
+    "id": "short",
+    "title": "Invertir a corto plazo",
+    "blurb": "Súbelas de nivel y úsalas ahora. No gastes objetos de estrella ni Limit Crystals en ellas.",
+    "picks": [
+     {
+      "id": "1001",
+      "why": "Gratis. En el equipo No Org gratis hace que Nutcracker ataque otra vez; más adelante Nishiki [Orochi] o Rize [Valentine's Day] la reemplaza, y Hideyoshi reemplaza a Kurona."
+     },
+     {
+      "id": "1036",
+      "why": "Selection card del día 14. B con una copia pero C con estrellas máximas: deja a Naki en 0★ como sanador en el back-up."
+     },
+     {
+      "id": "1011",
+      "why": "Tienda del día 15 (sin confirmar). Una sanadora Anteiku de principio de juego; los creadores dicen que su curación pesa al principio y pierde fuerza después. (informe de creador)"
+     },
+     {
+      "id": "1088",
+      "why": "Tienda del día 19 (sin confirmar). Completa los equipos Anteiku Inicial (260% a todos, Inspire) hasta que tengas algo mejor."
+     }
+    ]
+   },
+   {
+    "id": "long",
+    "title": "Invertir a largo plazo",
+    "blurb": "Valen estrellas, Limit Crystals y cells: siguen en los equipos más fuertes.",
+    "picks": [
+     {
+      "id": "1127",
+      "why": "+15% de estadísticas básicas para todos los aliados con una copia, sirve en cualquier equipo. Tienda del día 75 (sin confirmar) o el Selection Chest de un Carnival posterior."
+     },
+     {
+      "id": "1173",
+      "why": "S con estrellas máximas y presente en los equipos Anteiku Intermedio y Endgame, también el de Hinami [Halloween]. Tienda del día 75 (sin confirmar) o el Selection Chest de un Carnival posterior."
+     },
+     {
+      "id": "1114",
+      "why": "El carry S de No Org. Tienda del día 75 (sin confirmar) o el Selection Chest de un Carnival posterior."
+     },
+     {
+      "id": "1083",
+      "why": "B con una copia, A con estrellas máximas, y es una unidad de la tienda del día 43, así que las estrellas están a tu alcance."
+     },
+     {
+      "id": "1180",
+      "why": "Quien gasta, o quien juega gratis con Anteiku y completa los 300 pulls: usa objetos de estrella para llegar a 1★, pero guarda Limit Crystals y cells hasta que tenga 1★."
+     }
+    ]
+   }
+  ],
+  "source": "Calificaciones: artículo \"Tier list\" del 19 de octubre. Cómo conseguir: datos del juego del 22 de septiembre de 2026 (días de login, selection cards, días de tienda). Consejos de estrellas: videos de creadores (Kitcat, Aslan) en las notas de investigación sobre gastos. Hinami [Halloween]: datamine de fans de los servidores antiguos (ficha de héroe 1180 de gluttony.dev, build SEA 3-13088, obtenida el 26 de octubre de 2026)."
+ },
  "buy_rules": [
   "No gastar nada (US$0) también vale. Son precios del 19 de octubre: revisa la tienda antes de comprar.",
   "Valor de banner = Diamonds + 300 por cada Event Summon Ticket. Un ticket solo cuenta en los banners donde funciona, así que compara Diamonds y tickets por separado (página Herramientas).",
@@ -22142,7 +22466,7 @@
    "t0": "S",
    "tf": "S",
    "why": "0★ back-up: quita los escudos enemigos + 10% del HP actual cada turno (límite del 100% de su HP); 1★ Aogiri +20%; 3★ 500% al entrar + Lethal.",
-   "get": "banner con rate-up (no limitado) activo hasta el 27/10/2026 (pity 200)"
+   "get": "banner de rate-up (no limitado, pity 200) que terminó el 27 de octubre en el calendario de este servidor (25 de octubre en los servidores antiguos); más copias solo con una reedición"
   },
   {
    "id": "1161",
@@ -22361,7 +22685,7 @@
    "attribute": "SKL",
    "t0": "A",
    "tf": "A",
-   "why": "0★ \"En batallas PvE\": Anteiku +30% de estadísticas básicas + siguiente daño +30%. Solo PvE.",
+   "why": "0★ \"En batallas PvE\": Anteiku +30% de estadísticas básicas + siguiente daño +30%; solo el aumento de estadísticas es exclusivo de PvE.",
    "get": "Pool de Unlimited Recruitment (días 1-14) · aparece para una tienda alrededor del día 43 (sin confirmar)"
   },
   {
@@ -23300,6 +23624,17 @@
    "tf": "D",
    "why": "SR, x0,29.",
    "get": "ninguna fuente en los datos"
+  },
+  {
+   "id": "1180",
+   "name": "Hinami [Halloween]",
+   "faction": "anteiku",
+   "attribute": "SPD",
+   "t0": "A",
+   "tf": "S",
+   "why": "0★: todos los aliados +8–12% de estadísticas y las 2 próximas habilidades activas +80%; con un equipo todo Anteiku no baja de 1 de HP en el primer turno, y el primer aliado que reciba un golpe mortal sobrevive con 1 de HP. 1★: aliados Anteiku +50% de ATK y de HP máximo, enemigos −60% de curación y −30% de robo de vida. 3★: inmune a control y a Weak. Calificada por la guía a partir de un datamine de fans (26 de octubre de 2026); no está en el artículo del 19 de octubre.",
+   "get": "banner limitado (25 de octubre – 8 de noviembre en los servidores antiguos; ya salió en el relanzamiento NA, según el dueño de la guía); garantizado a los 300 pulls",
+   "new": true
   }
  ],
  "tier_labels": {
@@ -23320,412 +23655,734 @@
   "1001": {
    "tag": "Misión gratis",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1002": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1003": {
    "tag": "Tienda · día 15",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1004": {
    "tag": "Selection card día 28",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1005": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1006": {
    "tag": "Pool antiguo, día 33+",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "pool"
+  },
+  "1007": {
+   "tag": "Pool antiguo, día 33+",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "pool"
   },
   "1010": {
    "tag": "Login día 9",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
   },
   "1011": {
    "tag": "Tienda · día 15",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1012": {
    "tag": "Login día 5",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1013": {
+   "tag": "Tienda · día 90",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1014": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1015": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
   },
   "1016": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1017": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1018": {
    "tag": "Login día 13",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1019": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
   },
   "1020": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1021": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1023": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1025": {
+   "tag": "Tienda · día 29",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "shop"
   },
   "1026": {
    "tag": "Login día 1",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
   },
   "1027": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1030": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1031": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1032": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1033": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
+  },
+  "1035": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
   },
   "1036": {
    "tag": "Selection card día 14",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
   },
   "1037": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1038": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
+  },
+  "1039": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
+  },
+  "1040": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1041": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
   },
   "1042": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1043": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
+  },
+  "1046": {
+   "tag": "Selection card",
+   "tier": "starter",
+   "fallback": null,
+   "kind": "free"
   },
   "1050": {
    "tag": "Tienda · día 19",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1052": {
    "tag": "Pack de pago",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "pool"
+  },
+  "1053": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1055": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1056": {
+   "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1058": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1060": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
+  },
+  "1065": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1071": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1072": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1073": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1074": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1075": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1076": {
    "tag": "Selection card",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "free"
   },
   "1077": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1078": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1079": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1080": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1081": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1083": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1084": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1087": {
    "tag": "Tienda · día 19",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1088": {
    "tag": "Tienda · día 19",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1089": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1090": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1091": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1092": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
+  },
+  "1098": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1099": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1100": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1101": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1102": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1103": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1104": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1105": {
    "tag": "Tienda · día 40",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1114": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1116": {
    "tag": "Pool gratis, días 1–14",
    "tier": "mid",
-   "fallback": "Banner pasado"
+   "fallback": "Banner pasado",
+   "kind": "pool"
+  },
+  "1120": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1121": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1122": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1123": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1124": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1125": {
+   "tag": "Tienda · día 75",
+   "tier": "mid",
+   "fallback": null,
+   "kind": "shop"
   },
   "1127": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1128": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
+  },
+  "1129": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1132": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1133": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1134": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1135": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1136": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1137": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1138": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1139": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1140": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1141": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1142": {
    "tag": "Pull gratis, días 1–14",
    "tier": "starter",
-   "fallback": "Pool antiguo, día 33+"
+   "fallback": "Pool antiguo, día 33+",
+   "kind": "free"
   },
   "1143": {
    "tag": "Tienda · día 43",
    "tier": "starter",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1144": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1145": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1146": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1147": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1148": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1149": {
    "tag": "Pool gratis, días 1–14",
    "tier": "mid",
-   "fallback": "Pool antiguo, día 33+"
+   "fallback": "Pool antiguo, día 33+",
+   "kind": "pool"
   },
   "1150": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1155": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
+  },
+  "1158": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1160": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1161": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1162": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1164": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1165": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1166": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1168": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1169": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1170": {
    "tag": "Pool gratis, días 1–14",
    "tier": "mid",
-   "fallback": "Banner pasado"
+   "fallback": "Banner pasado",
+   "kind": "pool"
   },
   "1171": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
+  },
+  "1172": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
   },
   "1173": {
    "tag": "Tienda · día 75",
    "tier": "mid",
-   "fallback": null
+   "fallback": null,
+   "kind": "shop"
   },
   "1174": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1175": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1177": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1178": {
    "tag": "Banner pasado",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "past"
   },
   "1179": {
+   "tag": "Banner pasado",
+   "tier": "endgame",
+   "fallback": null,
+   "kind": "past"
+  },
+  "1180": {
    "tag": "Banner (activo)",
    "tier": "endgame",
-   "fallback": null
+   "fallback": null,
+   "kind": "live"
   }
  },
  "obtain_info": {

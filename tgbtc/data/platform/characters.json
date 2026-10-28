@@ -17,8 +17,8 @@
       "UR": 4
     },
     "rarity_label_review_count": 4,
-    "resolved_kits": 121,
-    "upcoming_external": 1
+    "resolved_kits": 122,
+    "upcoming_external": 0
   },
   "heroes": [
     {
@@ -19052,20 +19052,20 @@
       "acquisition": {
         "archived_notes": [],
         "odds": null,
-        "pity": null,
+        "pity": 300,
         "region": null,
         "routes": {
           "achievement": null,
           "carnival": null,
           "event": null,
-          "limited_banner": null,
+          "limited_banner": "Limited banner (fan datamine): guaranteed at 300 pulls, 1% per pull; out on the NA relaunch server per the owner (October 27, 2026).",
           "permanent_recruit": null,
           "shard_box": null,
           "shop": null
         },
         "server_day": null,
         "source_refs": [
-          "S13"
+          "S15"
         ],
         "verification": "requires_current_server_verification"
       },
@@ -19073,20 +19073,78 @@
         "Hinami Fueguchi",
         "Hinami Fueguchi [Halloween]"
       ],
-      "attribute": null,
-      "attribute_evidence": null,
+      "attribute": "SPD",
+      "attribute_evidence": {
+        "archive_date": null,
+        "confidence": "fan_datamine",
+        "evidence": "gluttony.dev hero record 1180: model r_1180_T2 (T2 = SPD, as in EquipGacha_filter2_T2), factions [Anteiku], role Support, release 2026-10-25, acquisition pity300. tkgbtc.com TranslateForMultiEN.json: tid#RoleName_1180 = Hinami Fueguchi, tid#RoleTitle_1180 = Halloween. tkgbtc.com Gacha.json hero_gacha61_1180: isLimit 1, 300-pull guarantee, pulls 100 and 200 pay random chest 21463.",
+        "source": "gluttony.dev hero record 1180 (fan datamine of the SEA build 3-13088, dated 2026-10-23; fetched 2026-10-26)"
+      },
       "display_time_is_banner_date": false,
-      "factions": [],
+      "factions": [
+        "Anteiku"
+      ],
       "historical_display_time": null,
-      "id": null,
-      "key": "upcoming-hinami-halloween",
-      "kit": null,
-      "last_verified": "2026-10-25",
+      "id": "1180",
+      "key": "1180",
+      "kit": {
+        "active": "Lv1: Grant all allies 8% increased all stats for 1 turn, and increase the coefficient of the next 2 active skills by 80% within 2 turns. / Lv2: Grant all allies 8% increased all stats for 2 turns, and increase the coefficient of the next 2 active skills by 80% within 2 turns. / Lv3: Grant all allies 12% increased all stats for 2 turns, and increase the coefficient of the next 2 active skills by 80% within 2 turns. || Max skill rank: Active Elevation: Upon use, increases all allies' damage dealt by 20% for 1 turn.",
+        "attribute": "SPD",
+        "base_stats_lv1": {
+          "atk": 1152.0,
+          "block": 0.14,
+          "crit": 0.04,
+          "crit_dmg": 1.58,
+          "def": 917.6,
+          "hp": 12650.0,
+          "lifesteal": 0.02
+        },
+        "data_keys": "fan datamine: gluttony.dev hero record 1180 (fan datamine of the SEA build 3-13088, dated 2026-10-23; fetched 2026-10-26)",
+        "enhanced_variants_gift": {
+          "1180_rp2": "Increase allied Anteiku characters' ATK by 50% and Max HP by 50%; reduce enemy characters' Restoration Rate by 60% and Lifesteal by 30%. When the Transcendence effect is removed, heal all allies for 15% of your Max HP."
+        },
+        "factions": [
+          "Anteiku"
+        ],
+        "had_effect_placeholder": false,
+        "name": "Hinami Fueguchi [Halloween]",
+        "p1": "[0★] [Transcendence] At the start of battle, if all allied characters are Anteiku characters, grant self Transcendence. The first time another allied Anteiku character takes fatal damage, grant that character Transcendence. At the same time, allied Anteiku characters' damage dealt +30%, CRIT RES +80%, and CRIT DEF +50% for 1 turn. || *Transcendence: HP cannot drop below 1, immune to all instant death effects, all stats +6% for 1 turn",
+        "p2": "[1★] [Anteiku Boost] Increase allied Anteiku characters' ATK by 50% and Max HP by 50%; reduce enemy characters' Restoration Rate by 60% and Lifesteal by 30%. When the Transcendence effect is removed, heal all allies for 10% of your Max HP.",
+        "p3": "[3★] [Vitality] Self is immune to control and Weak effects. At the start of battle, cast a Lv.2 Active Skill. When an allied Anteiku character uses a non-active skill, grant that character 1 Vitality. When Vitality reaches 4 stacks, grant that character Initiate. At the start of our turn, grant allied Anteiku characters 1 Vitality. || *Vitality: Active skill damage +6% *Initiate: The next active skill used has its coefficient increased by 100%. After taking effect, remove all Vitality and Initiate effects from yourself",
+        "p4_burst_4star": "Gaining Power Burst increases DEF-related stats by 8% for 1 turn.",
+        "p5_weak_2star": "Suffering Weak reduces damage taken by 12% for 1 turn.",
+        "patch_history": "SEA 3-13088 (2026-10-23) reworded Transcendence: before, it had no 'first time' limit and no '1 turn' duration.",
+        "rarity": "SSR",
+        "role_class": "Support",
+        "sphere_skill": "At the start of our turn, consume all Ultimate Skill Energy Cards to reduce your damage taken by 8%. When casting an active skill, increase allied characters' ATK by 3% and CRIT DMG by 2%.",
+        "star_order_from_data": false,
+        "star_order_note": "Unlock stars follow the game's standard order (passive 2 at 1★, passive 3 at 3★: Const HeroPassiveSkillUnlock [0,1,3,4]); the owner's in-game report calls Anteiku Boost her 1★ passive. Her own star preview is not in our data."
+      },
+      "last_verified": "2026-10-26",
+      "legacy_keys": [
+        "upcoming-hinami-halloween"
+      ],
       "legacy_preserved": false,
       "name": "Hinami Fueguchi [Halloween]",
       "orb": null,
       "passive_refs": [],
-      "passives": [],
+      "passives": [
+        {
+          "name": "Transcendence",
+          "text": "At the start of battle, if all allied characters are Anteiku characters, grant self Transcendence. The first time another allied Anteiku character takes fatal damage, grant that character Transcendence. At the same time, allied Anteiku characters' damage dealt +30%, CRIT RES +80%, and CRIT DEF +50% for 1 turn.",
+          "when": "Active at 0★"
+        },
+        {
+          "name": "Anteiku Boost",
+          "text": "Increase allied Anteiku characters' ATK by 50% and Max HP by 50%; reduce enemy characters' Restoration Rate by 60% and Lifesteal by 30%. When the Transcendence effect is removed, heal all allies for 10% of your Max HP.",
+          "when": "Unlocks at 1★ in the standard order (check the star preview in game)"
+        },
+        {
+          "name": "Vitality",
+          "text": "Self is immune to control and Weak effects. At the start of battle, cast a Lv.2 Active Skill. When an allied Anteiku character uses a non-active skill, grant that character 1 Vitality. When Vitality reaches 4 stacks, grant that character Initiate. At the start of our turn, grant allied Anteiku characters 1 Vitality.",
+          "when": "Unlocks at 3★ in the standard order (check the star preview in game)"
+        }
+      ],
       "portrait": "assets/units/1180.png",
       "portrait_status": "present",
       "rarity": "SSR",
@@ -19095,19 +19153,21 @@
         "legacy_label": "SSR",
         "raw_code": null
       },
-      "region": "unspecified",
-      "review_key": "upcoming-hinami-halloween",
-      "roles": [],
-      "skill_refs": [],
-      "source": "fan-roster",
-      "source_refs": [
-        "S01"
+      "region": "established servers (fan datamine); NA relaunch per owner report",
+      "review_key": "1180",
+      "roles": [
+        "Support"
       ],
-      "source_url": "https://tkgbtc.com/heroes",
-      "sphere": null,
+      "skill_refs": [],
+      "source": "fan-datamine",
+      "source_refs": [
+        "S15"
+      ],
+      "source_url": "https://gluttony.dev/heroes/",
+      "sphere": "Halloween Ability Sphere",
       "stars": [],
-      "status": "announced",
-      "status_note": "Listed as coming soon in the October 25 fan-roster snapshot; ID and regional release unknown."
+      "status": "datamined",
+      "status_note": "Not in the September 22, 2026 game files. Game id, kit and banner come from fan datamines of established servers (gluttony.dev, tkgbtc.com, fetched October 26, 2026). The owner reports she is out on the NA relaunch server (October 27, 2026)."
     }
   ],
   "schema_version": 1,

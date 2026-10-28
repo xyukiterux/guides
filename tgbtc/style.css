@@ -247,6 +247,28 @@ details[open]>:not(summary){animation:tg-rise .22s ease}
 .stat-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}@media(max-width:540px){.stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .shot-preview{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}.shot-preview figure{margin:0;width:calc(50% - 5px);max-width:200px}.shot-preview img{display:block;width:100%;height:auto;border-radius:6px}.shot-preview figcaption{font-size:15px;overflow-wrap:anywhere}
 input[type=file]{max-width:100%;font-size:17px}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}label.button:focus-within{outline:2px solid var(--cyan);outline-offset:2px}
+/* 10-27: how-to-get tag on tier tiles, spender vs free split, new-unit page, mode guides */
+.tier-unit small.get,.split-pick small.get{display:inline-block;margin-top:2px;padding:2px 6px;border-radius:8px;font-size:15px;line-height:1.25;font-weight:700;color:var(--chip-ink);background:var(--gc);overflow-wrap:anywhere;max-width:100%}
+.tier-unit .new-mark{color:var(--cyan,#7fd6e6)}
+.spend-split{margin:18px 0}
+.split-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:12px}
+.split-group{border:1px solid var(--line,rgba(255,255,255,.12));border-radius:14px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.split-group h3{margin:0 0 4px}
+.split-pay{border-top:3px solid var(--t-endgame)}.split-free{border-top:3px solid var(--t-starter)}.split-short{border-top:3px solid var(--gold)}.split-long{border-top:3px solid var(--t-mid)}
+.split-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px}
+.split-pick{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:start;font-size:17px;line-height:1.5}
+.split-pick .split-unit{grid-row:span 3;display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;color:inherit;width:72px;font-size:15px;text-align:center}
+.split-pick .split-unit img,.split-pick .split-unit .missing{width:56px;height:56px;object-fit:contain}
+.split-pick > small.get{justify-self:start}
+.verdict li{margin:6px 0}
+.mode-guide h3{margin-top:18px}
+.mode-shots{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));margin:16px 0}
+.mode-shots figure{margin:0;background:#10141e;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.mode-shots img.mode-shot{display:block;width:100%;height:auto}
+.mode-shots figcaption{padding:10px 12px;font-size:15px;line-height:1.5;color:var(--muted)}
+.mode-section h3{margin-top:20px}
+.org-plan{margin:20px 0;padding:16px 18px;border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:8px;background:#221e18}
+.org-plan h3{margin-top:0;color:var(--gold)}
 
 .update-notice{max-width:1440px;margin:0 auto 6px;padding:10px 32px;font-size:15px;line-height:1.5;color:#e6d6bd;background:#26231f;border-top:1px solid #66503a;border-bottom:1px solid #66503a}
 @media(max-width:850px){.update-notice{padding:10px 22px}}

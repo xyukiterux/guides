@@ -1566,9 +1566,9 @@
       "source_url": "https://tkgbtc.com/pic_head/1179_head.png"
     },
     {
-      "id": null,
-      "identity_evidence": "tkgbtc.com/lang/TranslateForMultiEN.json (retrieved 2026-10-27): tid#RoleName_1180 = \"Hinami Fueguchi\", tid#RoleTitle_1180 = \"Halloween\"; tkgbtc.com/hero-data/HeroBase.json lists id 1180 (display time 2026-10-25). Game id 1180 is not in the 2026-09-22 extract, so the guide record keeps no canonical id.",
-      "key": "upcoming-hinami-halloween",
+      "id": "1180",
+      "identity_evidence": "tkgbtc.com/lang/TranslateForMultiEN.json (retrieved 2026-10-27): tid#RoleName_1180 = \"Hinami Fueguchi\", tid#RoleTitle_1180 = \"Halloween\"; tkgbtc.com/hero-data/HeroBase.json lists id 1180 (display time 2026-10-25). Game id 1180 is not in the 2026-09-22 extract; the guide record uses id 1180 from that fan-mirrored HeroBase (status datamined) and is not counted in coverage.canonical_ids.",
+      "key": "1180",
       "matched_by": "game id in the source file name (pic_head/<id>_head.png)",
       "name": "Hinami Fueguchi [Halloween]",
       "portrait": "assets/units/1180.png",

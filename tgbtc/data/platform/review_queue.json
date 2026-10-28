@@ -1008,15 +1008,15 @@
     "priority": "P1"
   },
   {
-    "category": "availability",
-    "key": "upcoming-hinami-halloween",
-    "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
+    "category": "kit",
+    "key": "1180",
+    "needed": "Kit is from a fan datamine of an established server; confirm the skill page and star preview in the NA client.",
     "priority": "P1"
   },
   {
-    "category": "kit",
-    "key": "upcoming-hinami-halloween",
-    "needed": "Resolve localized skills and effects; do not invent a build.",
+    "category": "availability",
+    "key": "1180",
+    "needed": "Dated current client evidence of region, pool/shop/event, price, odds, and unlock.",
     "priority": "P1"
   }
 ]
