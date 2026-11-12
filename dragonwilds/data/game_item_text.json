@@ -1,0 +1,3837 @@
+{
+ "item_1": {
+  "desc": "A ring that once belonged to a powerful necromancer.",
+  "name_key": "AbraxusRing",
+  "id": "trinket_runic_ring"
+ },
+ "item_2": {
+  "desc": "A durable adamant helmet forged for the strongest of warriors.",
+  "name_key": "AdamantHelmet",
+  "id": "armour_head_adamant"
+ },
+ "item_3": {
+  "desc": "A sturdy set of adamant chest armour, forged for the strongest of warriors.",
+  "name_key": "AdamantPlateBody",
+  "id": "armour_body_adamant"
+ },
+ "item_4": {
+  "desc": "A sturdy set of adamant leg armour, forged for the strongest of warriors.",
+  "name_key": "AdamantPlateLegs",
+  "id": "armour_legs_adamant"
+ },
+ "item_7": {
+  "desc": "Congratulations! Reaching level 99 in Agility is an astonishing feat. Wear this cape with pride.",
+  "name_key": "AgilityCape",
+  "id": "agilitycape"
+ },
+ "item_8": {
+  "desc": "Congratulations! Reaching level 99 in Agility is an astonishing feat. Wear this cape with pride.",
+  "name_key": "AgilityCapeTrimmed",
+  "id": "agilitycapetrimmed"
+ },
+ "item_11": {
+  "desc": "Worn by seasoned warriors, this amulet bolsters strength, precision, and resilience in battle.",
+  "name_key": "Trinket.AmuletofGlory",
+  "id": "trinket_amuletofglory"
+ },
+ "item_14": {
+  "desc": "A rather dapper looking cap that upon catching a fish has a chance to not reduce the amount of fish in the node.",
+  "name_key": "AnglersHat",
+  "id": "armour_head_anglershat"
+ },
+ "item_15": {
+  "desc": "A comfortable hat made from linen, perfect for adventurers who are practicing magic.",
+  "name_key": "ApprenticeHat",
+  "id": "armour_head_apprentice"
+ },
+ "item_17": {
+  "desc": "Provides basic protection for trainees in the magical arts.",
+  "name_key": "ApprenticeRobe",
+  "id": "armour_body_apprentice"
+ },
+ "item_18": {
+  "desc": "Congratulations! Reaching level 99 in Artisan is an astonishing feat. Wear this cape with pride.",
+  "name_key": "ArtisanSkillcape",
+  "id": "armour_t0_cape_skillcape_artisan"
+ },
+ "item_19": {
+  "desc": "Congratulations! Reaching level 99 in Artisan is an astonishing feat. Wear this cape with pride.",
+  "name_key": "ArtisanSkillcapeTrimmed",
+  "id": null
+ },
+ "item_20": {
+  "desc": "Congratulations! Reaching level 99 in Attack is an astonishing feat. Wear this cape with pride.",
+  "name_key": "AttackSkillcape",
+  "id": "armour_t0_cape_skillcape_attack"
+ },
+ "item_21": {
+  "desc": "Congratulations! Reaching level 99 in Attack is an astonishing feat. Wear this cape with pride.",
+  "name_key": "AttackSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_attack_trimmed"
+ },
+ "item_22": {
+  "desc": "AdventureCape10DowdunReach",
+  "name_key": "AvasAccumulator",
+  "id": "armour_t0_cape_avas_accumulator"
+ },
+ "item_23": {
+  "desc": "The only thing this protects is your identity.",
+  "name_key": "BagOfNoggin",
+  "id": "armour_head_bagofnoggin"
+ },
+ "item_24": {
+  "desc": "A warm, black adventurer's cape.",
+  "name_key": "BlackCape",
+  "id": "armour_t0_cape_adventurers_black"
+ },
+ "item_25": {
+  "desc": "A black cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeBlack",
+  "id": "armour_t0_cape_menaphitecape_black"
+ },
+ "item_26": {
+  "desc": "A metal helm worn by the Black Knights of Dowdun Reach.",
+  "name_key": "BlackKnightHelmet",
+  "id": "armour_head_black"
+ },
+ "item_27": {
+  "desc": "A heavy chestplate worn by the Black Knights of Dowdun Reach.",
+  "name_key": "BlackKnightPlatebody",
+  "id": "armour_body_black"
+ },
+ "item_28": {
+  "desc": "Sturdy leg armour worn by the Black Knights of Dowdun Reach.",
+  "name_key": "BlackKnightPlatelegs",
+  "id": "armour_legs_black"
+ },
+ "item_29": {
+  "desc": "A cloak commemorating a dragon's vengeance.",
+  "name_key": "BloodblightCape",
+  "id": "armour_t0_cape_bloodblight"
+ },
+ "item_31": {
+  "desc": "A blue cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeBlue",
+  "id": "armour_t0_cape_menaphite_blue"
+ },
+ "item_32": {
+  "desc": "Ranged body armour crafted from blue dragonhide. Form-fitting, yet intimidating.",
+  "name_key": "BlueDragonhideBody",
+  "id": "armour_body_bluedragonhide"
+ },
+ "item_33": {
+  "desc": "Flexible ranged leg armour crafted from blue dragonhide.",
+  "name_key": "BlueDragonhideChaps",
+  "id": "armour_legs_bluedragonhide"
+ },
+ "item_34": {
+  "desc": "Lightweight ranged headgear crafted from blue dragonhide.",
+  "name_key": "BlueDragonhideCowl",
+  "id": "armour_head_bluedragonhide"
+ },
+ "item_35": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape3DowdunReach",
+  "id": "armour_t0_cape_BlueDyad"
+ },
+ "item_36": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape8DowdunReach",
+  "id": "armour_t0_cape_BlueHex"
+ },
+ "item_37": {
+  "desc": "A cloak to remember the simpler times.",
+  "name_key": "BramblemeadCape",
+  "id": "armour_t0_cape_bramblemead"
+ },
+ "item_38": {
+  "desc": "A helmet forged from bronze.",
+  "name_key": "BronzeHelmet",
+  "id": "armour_head_bronze"
+ },
+ "item_39": {
+  "desc": "A heavy chestplate made from bronze.",
+  "name_key": "BronzePlatebody",
+  "id": "armour_body_bronze"
+ },
+ "item_41": {
+  "desc": "What a silly hat.",
+  "name_key": "ChefsHat",
+  "id": "armour_head_chefshat"
+ },
+ "item_42": {
+  "desc": "A chicken hat. It serves no clear purpose, but it does raise questions.",
+  "name_key": "ChickenHat",
+  "id": "armour_head_chickenhat"
+ },
+ "item_43": {
+  "desc": "A symbol of dedication and support, this cape is granted to those who leave a lasting mark on the community.",
+  "name_key": "CommunityCape",
+  "id": "armour_t0_cape_CommunityCape"
+ },
+ "item_44": {
+  "desc": "Congratulations! Reaching level 99 in Construction is an astonishing feat. Wear this cape with pride.",
+  "name_key": "ConstructionSkillcape",
+  "id": "armour_t0_cape_skillcape_construction"
+ },
+ "item_45": {
+  "desc": "Congratulations! Reaching level 99 in Construction is an astonishing feat. Wear this cape with pride.",
+  "name_key": "ConstructionSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_construction_trimmed"
+ },
+ "item_46": {
+  "desc": "Congratulations! Reaching level 99 in Cooking is an astonishing feat. Wear this cape with pride.",
+  "name_key": "CookingSkillcape",
+  "id": "armour_t0_cape_skillcape_cooking"
+ },
+ "item_47": {
+  "desc": "Congratulations! Reaching level 99 in Cooking is an astonishing feat. Wear this cape with pride.",
+  "name_key": "CookingSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_cooking_trimmed"
+ },
+ "item_48": {
+  "desc": "A mystical hood, popular with edgier wizards.",
+  "name_key": "DarkMageHood",
+  "id": "armour_head_darkmage"
+ },
+ "item_50": {
+  "desc": "Magical armour for the edgier wizard.",
+  "name_key": "DarkMageRobes",
+  "id": "armour_body_darkmage"
+ },
+ "item_51": {
+  "desc": "A lightweight hood woven for the harsh desert sun. It shields the wearer from heat and drifting sands.",
+  "name_key": "DesertHood",
+  "id": "armour_head_desert"
+ },
+ "item_52": {
+  "desc": "Lightweight leggings made for desert travel, offering protection from heat while allowing easy movement across the sands.",
+  "name_key": "DesertLegs",
+  "id": "armour_legs_desert"
+ },
+ "item_53": {
+  "desc": "Loose-fitting and breathable, this robe protects against the sun’s harsh glare while allowing air to flow freely.",
+  "name_key": "DesertRobes",
+  "id": "armour_body_desert"
+ },
+ "item_54": {
+  "desc": "There is no better display of mastery of the Dowdun Reach area.",
+  "name_key": "DowdunReachCape",
+  "id": "armour_t0_cape_DowdunReach"
+ },
+ "item_55": {
+  "desc": "A badge of honor for those who completed all challenges during the closed Alpha Test.",
+  "name_key": "AlphaCape",
+  "id": "armour_t0_cape_alphatest"
+ },
+ "item_56": {
+  "desc": "A hood styled after the ancient overlords of Ashenfall.",
+  "name_key": "DragonkinMageHood",
+  "id": "armour_head_dragonkinmage"
+ },
+ "item_57": {
+  "desc": "Leggings styled after the ancient overlords of Ashenfall.",
+  "name_key": "DragonkinMageLegs",
+  "id": "armour_legs_dragonkinmage"
+ },
+ "item_58": {
+  "desc": "Robes styled after the ancient overlords of Ashenfall.",
+  "name_key": "DragonkinMageRobes",
+  "id": "armour_body_dragonkinmage"
+ },
+ "item_59": {
+  "desc": "Melee chest armour once belonging to a long dead Saradomin Hoplite.",
+  "name_key": "FallenHoplitesChest",
+  "id": "armour_body_Skeleton"
+ },
+ "item_60": {
+  "desc": "A Melee helmet once belonging to a long dead Saradomin Hoplite.",
+  "name_key": "FallenHoplitesHelm",
+  "id": "armour_head_Skeleton"
+ },
+ "item_61": {
+  "desc": "Melee leg armour once belonging to a long dead Saradomin Hoplite.",
+  "name_key": "FallenHoplitesTassets",
+  "id": "armour_legs_Skeleton"
+ },
+ "item_62": {
+  "desc": "A delightful piece of headwear, popular with those who toil the land.",
+  "name_key": "FarmersHat",
+  "id": null
+ },
+ "item_63": {
+  "desc": "Congratulations! Reaching level 99 in Farming is an astonishing feat. Wear this cape with pride.",
+  "name_key": "FarmingSkillcape",
+  "id": "armour_t0_cape_skillcape_farming"
+ },
+ "item_64": {
+  "desc": "Congratulations! Reaching level 99 in Farming is an astonishing feat. Wear this cape with pride.",
+  "name_key": "FarmingSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_farming_trimmed"
+ },
+ "item_65": {
+  "desc": "A cloak depicting the ethereal beauty of Fellhollow.",
+  "name_key": "FellhollowCape",
+  "id": "armour_t0_cape_Fellhollow"
+ },
+ "item_66": {
+  "desc": "Taking or blocking damage has a chance to trigger Burning on the attacker. Melee kills on Burning enemies refills stamina.",
+  "name_key": "FireCape",
+  "id": "armour_t0_cape_fire"
+ },
+ "item_67": {
+  "desc": "Congratulations! Reaching level 99 in Fishing is an astonishing feat. Wear this cape with pride.",
+  "name_key": "FishingSkillcape",
+  "id": "armour_t0_cape_skillcape_fishing"
+ },
+ "item_68": {
+  "desc": "Congratulations! Reaching level 99 in Fishing is an astonishing feat. Wear this cape with pride.",
+  "name_key": "FishingSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_fishing_trimmed"
+ },
+ "item_69": {
+  "desc": "A cloak warning against the danger of hubris.",
+  "name_key": "FracturedCape",
+  "id": "armour_t0_cape_fractured"
+ },
+ "item_70": {
+  "desc": "A cloak worn by garou nobility.",
+  "name_key": "GarouCape",
+  "id": "armour_t0_cape_garou"
+ },
+ "item_72": {
+  "desc": "A cloak reminding us that even gods can be forgotten.",
+  "name_key": "GoblinCape",
+  "id": "armour_t0_cape_goblin"
+ },
+ "item_73": {
+  "desc": "A cloak commemorating a dragon's vengeance.",
+  "name_key": "BloodblightCapeGolden",
+  "id": "bloodblightcapegolden"
+ },
+ "item_74": {
+  "desc": "A cloak to remember the simpler times.",
+  "name_key": "BramblemeadCapeGolden",
+  "id": "bramblemeadcapegolden"
+ },
+ "item_75": {
+  "desc": "There is no better display of mastery of the Dowdun Reach area.",
+  "name_key": "DowdunReachCapeGolden",
+  "id": "dowdunreachcapegolden"
+ },
+ "item_76": {
+  "desc": "A cloak depicting the ethereal beauty of Fellhollow.",
+  "name_key": "FellhollowCapeGolden",
+  "id": "fellhollowcapegolden"
+ },
+ "item_77": {
+  "desc": "A cloak warning against the danger of hubris.",
+  "name_key": "FracturedCapeGolden",
+  "id": "fracturedcapegolden"
+ },
+ "item_78": {
+  "desc": "An upgraded version of the Scorned Wilderness Cape.",
+  "name_key": "ScornedWildernessCapeGolden",
+  "id": "scornedwildernesscapegolden"
+ },
+ "item_79": {
+  "desc": "A cloak depicting ancient monsters and a mage's fury.",
+  "name_key": "StormtouchedCapeGolden",
+  "id": "stormtouchedcapegolden"
+ },
+ "item_80": {
+  "desc": "A light desert cape designed to shield against sun and sand. Offers comfort during long journeys across the dunes.",
+  "name_key": "UmbralSandsCapeGolden",
+  "id": "umbralsandscapegolden"
+ },
+ "item_81": {
+  "desc": "A cloak that makes you shiver, even as it protects against the cold.",
+  "name_key": "WhisperingCapeGolden",
+  "id": "whisperingcapegolden"
+ },
+ "item_83": {
+  "desc": "A green cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeGreen",
+  "id": "armour_t0_cape_menaphitecape_green"
+ },
+ "item_84": {
+  "desc": "Ranged body armour crafted from Green Dragonhide. Form fitting yet intimidating.",
+  "name_key": "GreenDragonhideBody",
+  "id": "armour_body_GreenDHide"
+ },
+ "item_85": {
+  "desc": "Agile Ranged leg armour crafted from Green Dragonhide.",
+  "name_key": "GreenDragonhideChaps",
+  "id": "armour_legs_GreenDHide"
+ },
+ "item_86": {
+  "desc": "Lightweight Ranger headgear crafted from Green Dragonhide for Ranged users",
+  "name_key": "GreenDragonhideCoif",
+  "id": "armour_head_GreenDHide"
+ },
+ "item_87": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape4DowdunReach",
+  "id": "armour_t0_cape_GreenDyad"
+ },
+ "item_88": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape9DowdunReach",
+  "id": "armour_t0_cape_GreenHex"
+ },
+ "item_90": {
+  "desc": "Durable armour crafted from hard leather.",
+  "name_key": "HardLeatherBody",
+  "id": "armour_body_hardleather"
+ },
+ "item_92": {
+  "desc": "A durable helmet crafted from hard leather.",
+  "name_key": "HardLeatherCowl",
+  "id": "armour_head_hardleather"
+ },
+ "item_93": {
+  "desc": "A wizard's robe, infused with endless arcane force.",
+  "name_key": "InfinityArmourChest",
+  "id": "armour_body_Infinity"
+ },
+ "item_94": {
+  "desc": "A wizard's hat, infused with boundless magical power.",
+  "name_key": "InfinityArmourHat",
+  "id": "armour_head_Infinity"
+ },
+ "item_95": {
+  "desc": "A wizards garment. The fabric holds something eternal.",
+  "name_key": "InfinityArmourLegs",
+  "id": "armour_legs_Infinity"
+ },
+ "item_108": {
+  "desc": "Protect your head with this sturdy iron headgear.",
+  "name_key": "IronHelmet",
+  "id": "armour_head_iron"
+ },
+ "item_109": {
+  "desc": "A heavy iron chestplate, providing superior protection in battle.",
+  "name_key": "IronPlatebody",
+  "id": "armour_body_iron"
+ },
+ "item_111": {
+  "desc": "This chest armour is made from parts of the kalphites. Its durable but flexible nature makes it excellent for rangers.",
+  "name_key": "KalphiteCarapaceArmourChest",
+  "id": "armour_body_kalphitecarapace"
+ },
+ "item_112": {
+  "desc": "This helmet is made from parts of the kalphites. Its durable but flexible nature makes it excellent for rangers.",
+  "name_key": "KalphiteCarapaceHelmet",
+  "id": "armour_head_kalphitecarapace"
+ },
+ "item_113": {
+  "desc": "This leg armour is made from parts of the kalphites. Its durable but flexible nature makes it excellent for rangers.",
+  "name_key": "KalphiteCarapaceArmourLegs",
+  "id": "armour_legs_kalphitecarapace"
+ },
+ "item_116": {
+  "desc": "Protective armour made from leather.",
+  "name_key": "LeatherCowl",
+  "id": "armour_head_leather"
+ },
+ "item_118": {
+  "desc": "Stylish? Yes! But not only that... A highly functional backpack that improves your luck with rare wood resource drops. It also lightens the weight of carried wood, and gives a gentle boost to woodcutting progression.",
+  "name_key": "LumberBackpack",
+  "id": "armour_t0_cape_lumber_backpack"
+ },
+ "item_119": {
+  "desc": "A lunar-infused hood designed to complement the garou robes. Suitable for magic users, enhancing healing abilities at night.",
+  "name_key": "LunarGarouMageHat",
+  "id": "armour_head_lunargaroumage"
+ },
+ "item_120": {
+  "desc": "Lunar-imbued leggings that complete the garou robe set. Suitable for magic users, enhancing healing abilities at night.",
+  "name_key": "LunarGarouMageLeggings",
+  "id": "armour_legs_lunargaroumage"
+ },
+ "item_121": {
+  "desc": "Robes woven under the light of a full moon, imbued with the wild power of the garou. Suitable for magic users, enhancing healing abilities at night.",
+  "name_key": "LunarGarouMageRobes",
+  "id": "armour_body_lunargaroumage"
+ },
+ "item_122": {
+  "desc": "Congratulations! Reaching level 99 in Magic is an astonishing feat. Wear this cape with pride.",
+  "name_key": "MagicSkillcape",
+  "id": "armour_t0_cape_skillcape_magic"
+ },
+ "item_123": {
+  "desc": "Congratulations! Reaching level 99 in Magic is an astonishing feat. Wear this cape with pride.",
+  "name_key": "MagicSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_magic_trimmed"
+ },
+ "item_124": {
+  "desc": "Congratulations! Reaching level 99 in Mining is an astonishing feat. Wear this cape with pride.",
+  "name_key": "MiningSkillcape",
+  "id": "armour_t0_cape_skillcape_mining"
+ },
+ "item_125": {
+  "desc": "Congratulations! Reaching level 99 in Mining is an astonishing feat. Wear this cape with pride.",
+  "name_key": "MiningSkillcapeTrimmed",
+  "id": "armour_t0_cape_skillcape_mining_trimmed"
+ },
+ "item_126": {
+  "desc": "Protect your head with this durable mithril headgear.",
+  "name_key": "MithrilHelmet",
+  "id": "armour_head_mithril"
+ },
+ "item_127": {
+  "desc": "A heavy mithril plate, providing welcome protection in battle.",
+  "name_key": "MithrilPlatebody",
+  "id": "armour_body_mithril"
+ },
+ "item_128": {
+  "desc": "Durable mithril leg armour.",
+  "name_key": "MithrilPlatelegs",
+  "id": "armour_legs_mithril"
+ },
+ "item_129": {
+  "desc": "A magically resonant hood, perfect for staying warm.",
+  "name_key": "MysticHood",
+  "id": "armour_head_mystic"
+ },
+ "item_130": {
+  "desc": "Lightweight magical gear for the aspiring sorcerer.",
+  "name_key": "MysticRobeLegs",
+  "id": "armour_legs_mystic"
+ },
+ "item_131": {
+  "desc": "The finest magical thread, spun into fabulous mage gear.",
+  "name_key": "MysticRobe",
+  "id": "armour_body_mystic"
+ },
+ "item_132": {
+  "desc": "Magical headgear for those that rule over their undead minions.",
+  "name_key": "NecromancersCrown",
+  "id": "armour_head_Necromancer"
+ },
+ "item_133": {
+  "desc": "Magical robe bottoms for Sorcerer's that have no concept of ethics.",
+  "name_key": null,
+  "id": "armour_legs_Necromancer"
+ },
+ "item_134": {
+  "desc": "Magical robes for those who believe that death is only the beginning.",
+  "name_key": "NecromancersRobeTop",
+  "id": "armour_body_Necromancer"
+ },
+ "item_135": {
+  "desc": "Black as cooled lava, this cape radiates a faint, lingering heat. It provides a small boost to Defence.",
+  "name_key": "ObsidianCape",
+  "id": "armour_t0_cape_obsidian"
+ },
+ "item_136": {
+  "desc": "Heavy obsidian chest armour designed for frontline warriors. Offers exceptional protection and resilience in close combat.",
+  "name_key": "ObsidianArmourChest",
+  "id": "armour_body_obsidianchestarmour"
+ },
+ "item_137": {
+  "desc": "A sturdy obsidian helmet designed for frontline warriors. Offers exceptional protection and resilience in close combat.",
+  "name_key": "ObsidianHelmet",
+  "id": "armour_head_obsidianhelmet"
+ },
+ "item_138": {
+  "desc": "Heavy obsidian leg armour designed for frontline warriors. Offers exceptional protection and resilience in close combat.",
+  "name_key": "ObsidianArmourLegs",
+  "id": "armour_legs_obsidianlegarmour"
+ },
+ "item_139": {
+  "desc": "A thick orange adventurer's cape.",
+  "name_key": "OrangeCape",
+  "id": "armour_t0_cape_adventurers_orange"
+ },
+ "item_140": {
+  "desc": "A orange cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeOrange",
+  "id": "armour_t0_cape_menaphitecape_orange"
+ },
+ "item_142": {
+  "desc": "A metal helm, worn by paladins in service to the church of Saradomin.",
+  "name_key": "PaladinHelmet",
+  "id": "armour_head_paladin"
+ },
+ "item_143": {
+  "desc": "A heavy chestplate worn by the Paladin's of Saradomin.",
+  "name_key": "PaladinPlatebody",
+  "id": "armour_body_paladin"
+ },
+ "item_144": {
+  "desc": "A bright pink adventurer's cape.",
+  "name_key": "PinkCape",
+  "id": "armour_t0_cape_adventurers_pink"
+ },
+ "item_145": {
+  "desc": "A pink cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapePink",
+  "id": "armour_t0_cape_menaphitecape_pink"
+ },
+ "item_146": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape1DowdunReach",
+  "id": "armour_t0_cape_PinkDyad"
+ },
+ "item_147": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape6DowdunReach",
+  "id": "armour_t0_cape_PinkHex"
+ },
+ "item_149": {
+  "desc": "A scarf worn by Ashenfall's first explorers.",
+  "name_key": "EarlyAdopterHead",
+  "id": "armour_head_earlyadopter"
+ },
+ "item_150": {
+  "desc": "A thick purple adventurer's cape.",
+  "name_key": "PurpleCape",
+  "id": "armour_t0_cape_adventurers_purple"
+ },
+ "item_151": {
+  "desc": "A purple cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapePurple",
+  "id": "armour_t0_cape_menaphitecape_purple"
+ },
+ "item_152": {
+  "desc": "Congratulations! Reaching level 99 in Ranged is an astonishing feat. Wear this cape with pride.",
+  "name_key": "RangedSkillcape",
+  "id": "armour_t0_cape_skillcape_ranged"
+ },
+ "item_153": {
+  "desc": "Congratulations! Reaching level 99 in Ranged is an astonishing feat. Wear this cape with pride.",
+  "name_key": "RangedSkillcapeTrimmed",
+  "id": null
+ },
+ "item_154": {
+  "desc": "Ranger head gear. Wearing this gives you the urge to rob from the rich to help the poor for some reason.",
+  "name_key": "RangerHat",
+  "id": "armour_head_Ranger"
+ },
+ "item_155": {
+  "desc": "Ranger leg gear that makes you feel both agile and slightly rebellious.",
+  "name_key": "RangerTights",
+  "id": "armour_legs_Ranger"
+ },
+ "item_156": {
+  "desc": "Ranger armour that's as dangerous as it is dapper!",
+  "name_key": "RangerTunic",
+  "id": "armour_body_Ranger"
+ },
+ "item_157": {
+  "desc": "A shiny silver ring. It has a strange aura around it.",
+  "name_key": "Trinket.RavanasRing",
+  "id": "trinket_ravannas_ring"
+ },
+ "item_158": {
+  "desc": "A bright red adventurer's cape.",
+  "name_key": "RedCape",
+  "id": "armour_t0_cape_adventurers_red"
+ },
+ "item_159": {
+  "desc": "A red cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeRed",
+  "id": "armour_t0_cape_menaphitecape_red"
+ },
+ "item_160": {
+  "desc": "Agile chest armour stitched from  red dragonhide, fit for the finest of archers.",
+  "name_key": "RedDragonChest",
+  "id": "armour_body_RedDragon"
+ },
+ "item_161": {
+  "desc": "Headgear made of red dragonhide, fit for the finest of archers.",
+  "name_key": "RedDragonHelmet",
+  "id": "armour_head_RedDragon"
+ },
+ "item_162": {
+  "desc": "Flexible leggings made of red dragonhide, fit for the finest of archers.",
+  "name_key": "RedDragonLegs",
+  "id": "armour_legs_RedDragon"
+ },
+ "item_163": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape5DowdunReach",
+  "id": "armour_t0_cape_RedDyad"
+ },
+ "item_165": {
+  "desc": "A heavy chestplate made from Leather and Bone.",
+  "name_key": null,
+  "id": "armour_body_reinforced"
+ },
+ "item_166": {
+  "desc": "Protect your noggin with this basic headgear made from Leather and Bone.",
+  "name_key": "ReinforcedHelmet",
+  "id": "armour_head_reinforced"
+ },
+ "item_171": {
+  "desc": "Congratulations! Reaching level 99 in Runecrafting is an astonishing feat. Wear this cape with pride.",
+  "name_key": "RunecraftingSkillcape",
+  "id": "armour_t0_cape_skillcape_runecrafting"
+ },
+ "item_172": {
+  "desc": "Congratulations! Reaching level 99 in Runecrafting is an astonishing feat. Wear this cape with pride.",
+  "name_key": "RunecraftingSkillcape",
+  "id": "armour_t0_cape_skillcape_runecrafting_trimmed"
+ },
+ "item_173": {
+  "desc": "A powerful amulet made from a crystal that has absorbed the magical blessings of the River Salve.",
+  "name_key": "SalveAmulet",
+  "id": "salveamulet"
+ },
+ "item_174": {
+  "desc": "Worn by followers of Saradomin, this cloak reflects a commitment to justice and the light of reason.",
+  "name_key": "SaradoministCape",
+  "id": "armour_t0_cape_SaradoministCloak"
+ },
+ "item_175": {
+  "desc": "Durable armour worn by the Children of Shadows.",
+  "name_key": "BlackKnightBody",
+  "id": "armour_body_blackranger"
+ },
+ "item_176": {
+  "desc": "Pliable leg armour worn by the Children of Shadows.",
+  "name_key": "BlackKnightChaps",
+  "id": "armour_legs_blackranger"
+ },
+ "item_177": {
+  "desc": "A ranged headpiece worn by the Children of Shadows.",
+  "name_key": "BlackKnightCowl",
+  "id": "armour_head_blackranger"
+ },
+ "item_178": {
+  "desc": "A cape worn by those from the lands of death and decay.",
+  "name_key": "ShadowscaleCape",
+  "id": "armour_t0_cape_Skeleton"
+ },
+ "item_179": {
+  "desc": "Ranger Headgear worn by the Skeleton Archer's from Fellhollow.",
+  "name_key": "ShadowscaleHood",
+  "id": "armour_head_SkeletonRanger"
+ },
+ "item_180": {
+  "desc": "A ghostly sackcloth mask. Reduces Wither buildup while worn.",
+  "name_key": "ShroudOfNoggin",
+  "id": "armour_head_spectralbagofnoggin"
+ },
+ "item_181": {
+  "desc": "Provides a small chance to get extra resources when gathering them in the world.",
+  "name_key": "Trinket.SkillsNecklace",
+  "id": "trinket_skills_necklace"
+ },
+ "item_182": {
+  "desc": "An artistic, if unusual, cape.",
+  "name_key": "ChinchompaCape",
+  "id": "armour_t0_cape_chinchompa"
+ },
+ "item_183": {
+  "desc": "Magical armour crafted from Fine Cloth and Hollow Bark. It has strange magical properties.",
+  "name_key": "SplitbarkBody",
+  "id": "armour_body_Splitbark"
+ },
+ "item_184": {
+  "desc": "Magical head armour crafted from wither corrupted Hollow Bark.",
+  "name_key": "SplitbarkHelm",
+  "id": "armour_head_Splitbark"
+ },
+ "item_185": {
+  "desc": "Magical leg armour armour crafted from wither corrupted Hollow Bark.",
+  "name_key": "SplitbarkLegs",
+  "id": "armour_legs_Splitbark"
+ },
+ "item_186": {
+  "desc": "A full helm forged from steel for melee users.",
+  "name_key": "SteelFullHelm",
+  "id": "armour_head_steel"
+ },
+ "item_187": {
+  "desc": "A strong set of well crafted steel platemail for melee users.",
+  "name_key": "SteelPlatebody",
+  "id": "armour_body_steel"
+ },
+ "item_188": {
+  "desc": "Sturdy and well-made steel leg armour for melee users.",
+  "name_key": "SteelPlatelegs",
+  "id": "armour_legs_steel"
+ },
+ "item_192": {
+  "desc": "A durable helmet crafted from hard leather reinforced with iron studs.",
+  "name_key": "StuddedLeatherCowl",
+  "id": "armour_head_studdedleather"
+ },
+ "item_193": {
+  "desc": "It provides some warmth... barely.",
+  "name_key": "TatteredCape",
+  "id": "armour_t2_cape_tattered"
+ },
+ "item_194": {
+  "desc": "A light desert cape designed to shield against sun and sand. Offers comfort during long journeys across the dunes.",
+  "name_key": "UmbralSandsCape",
+  "id": "armour_t0_cape_umbralsands"
+ },
+ "item_195": {
+  "desc": "A necklace that proudlty displays the Zamorak symbol. Don't wear it to church.",
+  "name_key": "UnholySymbol",
+  "id": "trinket_unholy_symbol"
+ },
+ "item_198": {
+  "desc": "A white cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeWhite",
+  "id": "armour_t0_cape_menaphitecape_white"
+ },
+ "item_199": {
+  "desc": "A helmet worn by a member of the Holy Order of White Knights. It is pure white",
+  "name_key": "WhiteFullHelm",
+  "id": "armour_head_White"
+ },
+ "item_200": {
+  "desc": "White platemail armour worn by a member of the Holy Order of White Knights.",
+  "name_key": "WhitePlatebody",
+  "id": "armour_body_White"
+ },
+ "item_201": {
+  "desc": "White Platelegs worn by a member of the Holy Order of White Knights.",
+  "name_key": "WhitePlatelegs",
+  "id": "armour_legs_White"
+ },
+ "item_202": {
+  "desc": "Durable armour worn by a Wild Knight archer.",
+  "name_key": "WildArcherBody",
+  "id": "armour_body_wildarcher"
+ },
+ "item_203": {
+  "desc": "Durable leg armour worn by a Wild Knight archer.",
+  "name_key": "WildArcherLegs",
+  "id": "armour_legs_wildarcher"
+ },
+ "item_204": {
+  "desc": "A helmet worn by a Wild Knight archer.",
+  "name_key": "WildArcherCowl",
+  "id": "armour_head_wildarcher"
+ },
+ "item_205": {
+  "desc": "A stylish hat, popular with spellcasters.",
+  "name_key": "WizardHat",
+  "id": "armour_head_wizard"
+ },
+ "item_207": {
+  "desc": "Lightweight magical armour.",
+  "name_key": "WizardRobes",
+  "id": "armour_body_wizard"
+ },
+ "item_208": {
+  "desc": "Congratulations! Reaching level 99 in Woodcutting is an astonishing feat. Wear this cape with pride.",
+  "name_key": "WoodcuttingSkillcape",
+  "id": "armour_t0_cape_skillcape_woodcutting"
+ },
+ "item_209": {
+  "desc": "Congratulations! Reaching level 99 in Woodcutting is an astonishing feat. Wear this cape with pride.",
+  "name_key": "WoodcuttingSkillcape",
+  "id": "armour_t0_cape_skillcape_woodcutting_trimmed"
+ },
+ "item_211": {
+  "desc": "A yellow cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
+  "name_key": "MenaphiteCapeYellow",
+  "id": "armour_t0_cape_menaphitecape_yellow"
+ },
+ "item_212": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape2DowdunReach",
+  "id": "armour_t0_cape_YellowDyad"
+ },
+ "item_213": {
+  "desc": "A cape made for its looks more than any kind of magical potency.",
+  "name_key": "AdventureCape7DowdunReach",
+  "id": "armour_t0_cape_YellowHex"
+ },
+ "item_214": {
+  "desc": "A cape that proudly displays obeisance to the god Zamorak.",
+  "name_key": "ZamorakCape",
+  "id": "armour_t0_cape_ZamorakCape"
+ },
+ "item_216": {
+  "desc": "Robe legs styled after the Zamorakian magi of Dowdun Reach.",
+  "name_key": "ZamorakMageRobeLegs",
+  "id": "armour_legs_zamorak"
+ },
+ "item_217": {
+  "desc": "Robes styled after the Zamorakian magi of Dowdun Reach.",
+  "name_key": "ZamorakMageRobe",
+  "id": "armour_body_zamorak"
+ },
+ "item_219": {
+  "desc": "Can be placed down to form your own agility courses.",
+  "name_key": "AgilityFlag",
+  "id": "agilityflag"
+ },
+ "item_220": {
+  "desc": "Can be placed down to form your own agility courses.",
+  "name_key": "AgilityOrb",
+  "id": "agilityorb"
+ },
+ "item_364": {
+  "desc": "A thick blue adventurer's cape.",
+  "name_key": "AdventurersCape",
+  "id": "adventurerscape"
+ },
+ "item_365": {
+  "desc": "Recognises those who like to watch the very best athletes of Ashenfall from third place.",
+  "name_key": "AgilityBronzeMedal",
+  "id": "agilitybronzemedal"
+ },
+ "item_366": {
+  "desc": "Recognises the very best athletes of Ashenfall.",
+  "name_key": "AgilityGoldMedal",
+  "id": "agilitygoldmedal"
+ },
+ "item_367": {
+  "desc": "Recognises the (nearly) very best athletes of Ashenfall.",
+  "name_key": "AgilitySilverMedal",
+  "id": "agilitysilvermedal"
+ },
+ "item_370": {
+  "desc": "A difficult but worthwhile catch. Salty when seared.",
+  "name_key": "Anchovies",
+  "id": "anchovies"
+ },
+ "item_373": {
+  "desc": "The armadillo of the fish world. Catch it and braise it.",
+  "name_key": "ArmouredCatfish",
+  "id": "armouredcatfish"
+ },
+ "item_376": {
+  "desc": "Used as a material to upgrade masterworks and vestige equipments.",
+  "name_key": "AscensionCores",
+  "id": "ascensioncores"
+ },
+ "item_379": {
+  "desc": "Combine X shards to form an Ascension Core.",
+  "name_key": "AscensionShards",
+  "id": "ascensionshards"
+ },
+ "item_383": {
+  "desc": "AdventureCape10DowdunReach",
+  "name_key": "AvasAccumulator",
+  "id": "armour_t0_cape_avas_attractor"
+ },
+ "item_386": {
+  "desc": "A long, thin fish native to the Umbral Sands.",
+  "name_key": "Beltfish",
+  "id": "beltfish"
+ },
+ "item_387": {
+  "desc": "A fruity medley of cooked berries. A great sweet treat to enjoy in the wild.",
+  "name_key": "BerryCompote",
+  "id": "food_fruit_berry_compote"
+ },
+ "item_392": {
+  "desc": "A hulking great Black Knight, wielding a rather threatening greataxe.",
+  "name_key": "BlackKnightBrute",
+  "id": "blackknightbrute"
+ },
+ "item_394": {
+  "desc": "Guarding the Black Knights from people like you.",
+  "name_key": "BlackKnightGuardian",
+  "id": "blackknightguardian"
+ },
+ "item_395": {
+  "desc": "A black knight who has really gone to the dogs.",
+  "name_key": "BlackKnightHoundmaster",
+  "id": "blackknighthoundmaster"
+ },
+ "item_396": {
+  "desc": "A black knight who is tired of you farming them for their drops.",
+  "name_key": "BlackKnightMelee",
+  "id": "blackknightmelee"
+ },
+ "item_397": {
+  "desc": "A long-range combat specialist of the Black Knights.",
+  "name_key": "BlackKnightSniper",
+  "id": "blackknightsniper"
+ },
+ "item_399": {
+  "desc": "He looks mean and powerful.",
+  "name_key": "BlackKnightTitan",
+  "id": "blackknighttitan"
+ },
+ "item_400": {
+  "desc": "The lowest rank of Black Knights.",
+  "name_key": "BlackKnightWarrior",
+  "id": "blackknightwarrior"
+ },
+ "item_405": {
+  "desc": "Likes how you smell. You smell like UNBRIDLED CHAOS.",
+  "name_key": "Boggs",
+  "id": "boggs"
+ },
+ "item_410": {
+  "desc": "Handy for building structures, crafted from bronze bars.",
+  "name_key": "BronzeNails",
+  "id": "bronzenails"
+ },
+ "item_412": {
+  "desc": "A refreshing fruity drink. Excellent for hydration.",
+  "name_key": "CadavaberryInfusion",
+  "id": "food_tea_cadavaberry"
+ },
+ "item_413": {
+  "desc": "A walking, fluffy cannonball. Watch your fingers.",
+  "name_key": "CarnivorousChinchompa",
+  "id": "carnivorouschinchompa"
+ },
+ "item_424": {
+  "desc": "The curls are ONE-HUNDRED-PERCENT NATURAL, thank you for your attention.",
+  "name_key": "Curly",
+  "id": "curly"
+ },
+ "item_425": {
+  "desc": "A demon who may faintly remind you of someone.",
+  "name_key": "Delrom",
+  "id": "delrom"
+ },
+ "item_426": {
+  "desc": "Crafted in the style of the Menaphite, its patterns reflect a long-standing mastery of life beneath the desert sun.",
+  "name_key": "MenaphiteCape",
+  "id": "menaphitecape"
+ },
+ "item_427": {
+  "desc": "A camouflaged flatfish that's no wider than your fingertip.",
+  "name_key": "DesertSole",
+  "id": "desertsole"
+ },
+ "item_438": {
+  "desc": "A delicious flank steak, covered in a fruity dwellbery glaze. Mouthwateringly tasty!",
+  "name_key": "DwellberryGlazedRoastFlank",
+  "id": "food_glazed_dwellberry_roast_flank"
+ },
+ "item_439": {
+  "desc": "A juicy piece of roasted meat, with a deliciously fruity dwellberry glazing. Scrumptious!",
+  "name_key": "DwellberryGlazedRoastMeat",
+  "id": "food_glazed_dwellberry_roast_meat"
+ },
+ "item_441": {
+  "desc": "Adamant bolts infused with sanguine energy and a ruby tip. Drains some of the archers health to increase the bolts damage.",
+  "name_key": "EnchantedAdamantBolts",
+  "id": "enchantedadamantbolts"
+ },
+ "item_450": {
+  "desc": "Its staring eyes seem to be burrowing deep into your subconscious.",
+  "name_key": "Fido",
+  "id": "fido"
+ },
+ "item_454": {
+  "desc": "It actually smells quite good.",
+  "name_key": "FortifyingCrunchies",
+  "id": "food_crunchies_fortifying"
+ },
+ "item_455": {
+  "desc": "A warm vegetable soup, with added mushrooms.",
+  "name_key": "FortifyingSoup",
+  "id": "food_soup_fortifying"
+ },
+ "item_456": {
+  "desc": "A warm meat and mushroom stew, fortifies you against the trials ahead.",
+  "name_key": "FortifyingStew",
+  "id": "food_stew_fortifying"
+ },
+ "item_462": {
+  "desc": "Look at the size of that krill! Can be dried and eaten.",
+  "name_key": "GiantKrill",
+  "id": "giantkrill"
+ },
+ "item_463": {
+  "desc": "It seems to enjoy fighting you, going by the happy eyes and lolling tongue.",
+  "name_key": "Gnasher",
+  "id": "gnasher"
+ },
+ "item_466": {
+  "desc": "Once restored lost health, now inert.",
+  "name_key": null,
+  "id": "potion_t3_healing"
+ },
+ "item_467": {
+  "desc": "Once restored lost health, now inert.",
+  "name_key": "HealingPotion",
+  "id": "healingpotion"
+ },
+ "item_468": {
+  "desc": "Yum! Smells delicious!",
+  "name_key": "HeartyCrunchies",
+  "id": "food_crunchies_hearty"
+ },
+ "item_469": {
+  "desc": "A comforting vegetable soup with added mushrooms. Helps prepare you for a grueling day ahead.",
+  "name_key": "HeartyFortifyingSoup",
+  "id": "food_soup_hearty_fortifying"
+ },
+ "item_470": {
+  "desc": "A comforting vegetable soup, reminds you of rainy days sat by the fire.",
+  "name_key": "HeartySoup",
+  "id": "food_soup_hearty"
+ },
+ "item_471": {
+  "desc": "A nice hot stew. A taste of home.",
+  "name_key": "HeartyStew",
+  "id": "food_stew_hearty"
+ },
+ "item_472": {
+  "desc": "A canine-shaped demon from the plane of Infernus.",
+  "name_key": "Hellhound",
+  "id": "hellhound"
+ },
+ "item_473": {
+  "desc": "Red, squeaky and somewhat cute?",
+  "name_key": "Hellrat",
+  "id": "hellrat"
+ },
+ "item_474": {
+  "desc": "A medium-sized fish. Its flavours emerge when smoked.",
+  "name_key": "Herring",
+  "id": "herring"
+ },
+ "item_476": {
+  "desc": "Has the complete trust of his hellhounds.",
+  "name_key": "HoundmasterRexiton",
+  "id": "houndmasterrexiton"
+ },
+ "item_480": {
+  "desc": "Slippery and sulphurous. Smoke it to make it edible.",
+  "name_key": "InfernalEel",
+  "id": "infernaleel"
+ },
+ "item_487": {
+  "desc": "A meaty kebab.",
+  "name_key": "Kebab",
+  "id": "kebab"
+ },
+ "item_493": {
+  "desc": "Let's hope you remembered to bring your antifire potion.",
+  "name_key": "LesserBlueDragon",
+  "id": "lesserbluedragon"
+ },
+ "item_494": {
+  "desc": "Lesser only in name. Can carve noughts and crosses into your belly.",
+  "name_key": "LesserDemon",
+  "id": "lesserdemon"
+ },
+ "item_497": {
+  "desc": "Can be mined for limestone, a hardy building material.",
+  "name_key": "LimestoneRock",
+  "id": "limestonerock"
+ },
+ "item_498": {
+  "desc": "You've just been lobstered. Delectable when roasted.",
+  "name_key": "Lobster",
+  "id": "lobster"
+ },
+ "item_499": {
+  "desc": "A hellhound that has been broken to the point that it will obey the word of Rexiton.",
+  "name_key": "LoyalHellhound",
+  "id": "loyalhellhound"
+ },
+ "item_500": {
+  "desc": "Just as likely to set themselves alight as you.",
+  "name_key": "MageOfZamorak",
+  "id": "mageofzamorak"
+ },
+ "item_501": {
+  "desc": "A versatile tree that supplies maple sap and maple logs.",
+  "name_key": "MapleTree",
+  "id": "mapletree"
+ },
+ "item_502": {
+  "desc": "This item is no longer functional. Consume it to reclaim the resources in crafting it.",
+  "name_key": "RefundableItem",
+  "id": "vitality_wardstone_medium"
+ },
+ "item_503": {
+  "desc": "This item is no longer functional. Consume it to reclaim the resources in crafting it.",
+  "name_key": "RefundableItem",
+  "id": "item_wardstone_refund_medium"
+ },
+ "item_506": {
+  "desc": "A rich seam that can be mined for mithril.",
+  "name_key": "MithrilDeposit",
+  "id": "mithrildeposit"
+ },
+ "item_507": {
+  "desc": "Why just eat one animal? A carnivore's delight!",
+  "name_key": "MixedPlatter",
+  "id": "food_mixed_platter"
+ },
+ "item_508": {
+  "desc": "Looks a little like an anglerfish, but much tastier.",
+  "name_key": "Monkfish",
+  "id": "monkfish"
+ },
+ "item_510": {
+  "desc": "Believes that the amount of cologne you put on makes you MILDLY FLAMMABLE.",
+  "name_key": "Nosey",
+  "id": "nosey"
+ },
+ "item_511": {
+  "desc": "The image of a fearsome dragon. Used in crafting powerful equipment.",
+  "name_key": "DraconicVisage",
+  "id": "res_visage_dragon"
+ },
+ "item_513": {
+  "desc": "Patch would like you to AVOID LINGERING EYE CONTACT please.",
+  "name_key": "Patch",
+  "id": "patch"
+ },
+ "item_516": {
+  "desc": "Is tired of hellrats taking the mickey out of her HIDEOUS HYPOCHONDRIA.",
+  "name_key": "Pip",
+  "id": "pip"
+ },
+ "item_522": {
+  "desc": "Skrexis has likely built up quite the immune system.",
+  "name_key": "RatMasterSkrexis",
+  "id": "ratmasterskrexis"
+ },
+ "item_524": {
+  "desc": "One well-aimed crossbow bolt would take this spy down.",
+  "name_key": "Raven",
+  "id": "raven"
+ },
+ "item_526": {
+  "desc": "A delicious flank steak, covered in a fruity redberry glaze. Delightfully delicious!",
+  "name_key": "RedberryGlazedRoastFlank",
+  "id": "food_glazed_redberry_roast_flank"
+ },
+ "item_527": {
+  "desc": "A juicy piece of roasted meat, with a tangy redberry glazing. Tasty!",
+  "name_key": "RedberryGlazedRoastMeat",
+  "id": "food_glazed_redberry_roast_meat"
+ },
+ "item_528": {
+  "desc": "Would like your UNFETTERED ATTENTION: could you give him a different name, please?",
+  "name_key": "Reek",
+  "id": "reek"
+ },
+ "item_535": {
+  "desc": "Caught while moving upstream. Delicious when fried.",
+  "name_key": "Salmon",
+  "id": "salmon"
+ },
+ "item_539": {
+  "desc": "A small fish that travels in shoals. Catch one or two and fry them.",
+  "name_key": "Sardine",
+  "id": "sardine"
+ },
+ "item_545": {
+  "desc": "A high-ranking Black Knight who would rather you scarpered quick-smart.",
+  "name_key": "SergeantBlister",
+  "id": "sergeantblister"
+ },
+ "item_547": {
+  "desc": "The simplest of all creatures to angle. Catch it and sautee it.",
+  "name_key": "Shrimp",
+  "id": "shrimp"
+ },
+ "item_554": {
+  "desc": "Perfect for my snake costume.",
+  "name_key": null,
+  "id": "res_leather_snake"
+ },
+ "item_555": {
+  "desc": "Skin from a snake. Can be processed at a Tannery.",
+  "name_key": "SnakeSkin",
+  "id": "res_skin_snake"
+ },
+ "item_561": {
+  "desc": "A demon summoner who has lost his mind to the Dreaming Stone.",
+  "name_key": "SummonerFlament",
+  "id": "summonerflament"
+ },
+ "item_566": {
+  "desc": "A rather imposing looking demon who seems distracted by something.",
+  "name_key": "Thammarith",
+  "id": "thammarith"
+ },
+ "item_569": {
+  "desc": "A finely crafted obsidian chakram, prized for its sharpness and precision. Capable of slicing cleanly through multiple targets before returning.",
+  "name_key": "Toktzxilul",
+  "id": "toktzxilul"
+ },
+ "item_570": {
+  "desc": "A book filled with knowledge on how to swing a pickaxe. Awards a small amount of Mining XP.",
+  "name_key": "SkillTome.Basic.Mining",
+  "id": "tome_t1_mining"
+ },
+ "item_571": {
+  "desc": "A book filled with knowledge on how to swing a pickaxe. Awards a decent amount of Mining XP.",
+  "name_key": "SkillTome.Intermediate.Mining",
+  "id": "tome_t2_mining"
+ },
+ "item_575": {
+  "desc": "A sizeable catch. Grill a trout and treat your belly.",
+  "name_key": "Trout",
+  "id": "trout"
+ },
+ "item_576": {
+  "desc": "A bass that was dropped and is now undead. Can be grilled.",
+  "name_key": "UndeadBass",
+  "id": "undeadbass"
+ },
+ "item_577": {
+  "desc": "Life isn't even sacred for a poor eel. An acquired taste when braised.",
+  "name_key": "UndeadEel",
+  "id": "undeadeel"
+ },
+ "item_582": {
+  "desc": "This item is no longer functional. Consume it to reclaim the resources in crafting it.",
+  "name_key": "RefundableItem",
+  "id": "item_potion_healing_refund_weak"
+ },
+ "item_586": {
+  "desc": "A decorative tree with which to celebrate the festive season.",
+  "name_key": "WintumberTree",
+  "id": "wintumbertree"
+ },
+ "item_587": {
+  "desc": "A personal servant to Alric and a zealot of Zamorak.",
+  "name_key": "ZamorakianAcolyte",
+  "id": "zamorakianacolyte"
+ },
+ "item_588": {
+  "desc": "A ceremonial sword intended as a gift to Zamorak.",
+  "name_key": "ZamorakSword",
+  "id": "zamoraksword"
+ },
+ "item_589": {
+  "desc": "Removes Burning stacks and grants future protection to Burning.",
+  "name_key": "AntifirePotion",
+  "id": "potion_t3_antifire"
+ },
+ "item_591": {
+  "desc": "Puts the whiz in wizard.",
+  "name_key": "ArcaneInfusion",
+  "id": "food_tea_stamina_reduction_magic"
+ },
+ "item_592": {
+  "desc": "There seems to be something solid within the ash pile.",
+  "name_key": "LesserAshes",
+  "id": "item_pack_ashes_demonic_lesser"
+ },
+ "item_593": {
+  "desc": "Fluffy and delicious, if only you had some butter.",
+  "name_key": "BakedPotato",
+  "id": "food_potato_jacket"
+ },
+ "item_595": {
+  "desc": "A potent soup made from beltfish.",
+  "name_key": "BeltfishBroth",
+  "id": "food_beltfish_broth"
+ },
+ "item_596": {
+  "desc": "Made by combining smoked herring, seared anchovies and dried dwellberry.",
+  "name_key": "BerryDrizzlePanSeared",
+  "id": "food_berrydrizzle_pan-seared"
+ },
+ "item_598": {
+  "desc": "If your feline hungry, eat a catfish. Grants the Sea Life perk.",
+  "name_key": "BraisedCatfish",
+  "id": "food_fish_armouredcatfish"
+ },
+ "item_599": {
+  "desc": "Makes you queasy but does wonders for hunger. Grants the Warding Fish perk.",
+  "name_key": "BraisedUndeadEel",
+  "id": "food_fish_undeadeel"
+ },
+ "item_600": {
+  "desc": "Crusty brown outside, pillowy white inside.",
+  "name_key": null,
+  "id": "food_bread"
+ },
+ "item_602": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fish_armouredcatfish_burnt"
+ },
+ "item_603": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fish_beltfish_burnt"
+ },
+ "item_604": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_bread_burnt"
+ },
+ "item_607": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fruit_cadavaberry_burnt"
+ },
+ "item_609": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_dwellberry_burnt"
+ },
+ "item_614": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_haunch_burnt"
+ },
+ "item_618": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_syrup_maple_burnt"
+ },
+ "item_620": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_mushroom_burnt"
+ },
+ "item_627": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fish_salmon_burnt"
+ },
+ "item_629": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fish_shrimp_burnt"
+ },
+ "item_631": {
+  "desc": "PH",
+  "name_key": "TomatoBurnt",
+  "id": "food_tomato_burnt"
+ },
+ "item_632": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fish_trout_burnt"
+ },
+ "item_633": {
+  "desc": "Too well done, but still edible.",
+  "name_key": "GenericBurnt",
+  "id": "food_fish_undeadbass_burnt"
+ },
+ "item_637": {
+  "desc": "A brackish but refreshing beverage.",
+  "name_key": "CactusWater",
+  "id": "res_water_cactus"
+ },
+ "item_638": {
+  "desc": "Can be eaten raw, but wouldn't recommend it. Can be cooked alone or as an ingredient in cooking meals.",
+  "name_key": "Cadavaberries",
+  "id": "food_fruit_cadavaberry"
+ },
+ "item_641": {
+  "desc": "A surefire hangover cure.",
+  "name_key": "CheekyFryup",
+  "id": "food_fryup_cheeky"
+ },
+ "item_642": {
+  "desc": "A source of hydration, free from the taint of natural water sources.",
+  "name_key": "CleanWater",
+  "id": "food_water_clean"
+ },
+ "item_643": {
+  "desc": "Puts the whiz in wizard.",
+  "name_key": "ArcaneInfusion",
+  "id": "food_tea_stamina_reduction_magic_cooling"
+ },
+ "item_644": {
+  "desc": "A thirst-quenching drink, that improves your reflexes.",
+  "name_key": "EvasiveInfusion",
+  "id": "food_tea_stamina_reduction_dodge_cooling"
+ },
+ "item_645": {
+  "desc": "A hydrating drink, infused with primal fury.",
+  "name_key": "FerociousInfusion",
+  "id": "food_tea_stamina_reduction_attack_cooling"
+ },
+ "item_647": {
+  "desc": "A tasty tipple that'll put a quiver in your quiver.",
+  "name_key": "RelentlesssInfusion",
+  "id": "food_tea_stamina_reduction_ranged_cooling"
+ },
+ "item_648": {
+  "desc": "A source of hydration, tainted by the residue of a cataclysmic event.",
+  "name_key": "DirtyWater",
+  "id": "food_water_dirty"
+ },
+ "item_653": {
+  "desc": "Probably not poisonous. A neat little snack.",
+  "name_key": "DriedCadavaberries",
+  "id": "food_fruit_cadavaberry_dried"
+ },
+ "item_654": {
+  "desc": "Sweet and chewy, a great fruity snack.",
+  "name_key": "DriedDwellberries",
+  "id": "food_fruit_dried_dwellberry"
+ },
+ "item_655": {
+  "desc": "Krills hunger with one bite. Grants the Sea Legs perk.",
+  "name_key": "DriedKrill",
+  "id": "food_fish_giantkrill"
+ },
+ "item_656": {
+  "desc": "A tasty dried fruit.",
+  "name_key": null,
+  "id": "food_fruit_peach_dried"
+ },
+ "item_657": {
+  "desc": "A little sour, but a tasty snack.",
+  "name_key": "DriedRedberries",
+  "id": "food_fruit_dried_redberry"
+ },
+ "item_658": {
+  "desc": "Pastry makes everything better.",
+  "name_key": "DubiousMeatPie",
+  "id": "food_pie_meat_dubious"
+ },
+ "item_659": {
+  "desc": "Some rather pretty blue berries.",
+  "name_key": "Dwellberries",
+  "id": "food_fruit_dwellberry"
+ },
+ "item_660": {
+  "desc": "Yum... smells fruity.",
+  "name_key": "DwellberryCrunchies",
+  "id": "food_crunchies_dwellberry"
+ },
+ "item_661": {
+  "desc": "A refreshing fruity drink. Very good for hydration.",
+  "name_key": "DwellberryInfusion",
+  "id": "food_tea_dwellberry "
+ },
+ "item_662": {
+  "desc": "Made by combining fried egg and fried salmon. Grants the Sea Life perk.",
+  "name_key": "EggsRoyale",
+  "id": "food_eggs_royale"
+ },
+ "item_663": {
+  "desc": "A thirst-quenching drink, that improves your reflexes.",
+  "name_key": "EvasiveInfusion",
+  "id": "food_tea_stamina_reduction_dodge"
+ },
+ "item_664": {
+  "desc": "A hydrating drink, infused with primal fury.",
+  "name_key": "FerociousInfusion",
+  "id": "food_tea_stamina_reduction_attack_ranged_magic"
+ },
+ "item_665": {
+  "desc": "Roasted bird meat. Tastes like everything.",
+  "name_key": "Fillet",
+  "id": "food_fillet_from_bird"
+ },
+ "item_666": {
+  "desc": "Throw this at your enemies to set them on fire!",
+  "name_key": "FireOil",
+  "id": "res_fireoil"
+ },
+ "item_667": {
+  "desc": "Made by combining roasted lobster, braised undead eel and fried cabbage.",
+  "name_key": "FishFry",
+  "id": "food_fish_fry"
+ },
+ "item_668": {
+  "desc": "A thick and juicy steak.",
+  "name_key": "FlankSteak",
+  "id": "food_flank"
+ },
+ "item_669": {
+  "desc": "A thirst-quenching drink, that puts a spring in your step.",
+  "name_key": "FleetFootedInfusion",
+  "id": "food_tea_stamina_reduction_sprint"
+ },
+ "item_670": {
+  "desc": "Increases XP gain for the Agility skill.",
+  "name_key": "FocusedAgilityPotion",
+  "id": "focusedagilitypotion"
+ },
+ "item_673": {
+  "desc": "Increases XP gain for the Construction skill.",
+  "name_key": "StandardConstructionPotion",
+  "id": "potion_focused_t3_construction"
+ },
+ "item_674": {
+  "desc": "Increases XP gain for the Cooking skill.",
+  "name_key": "StandardCookingPotion",
+  "id": "potion_focused_t3_cooking"
+ },
+ "item_675": {
+  "desc": "Increases XP gain for the Farming skill.",
+  "name_key": "StandardFarmingPotion",
+  "id": "potion_focused_t3_farming"
+ },
+ "item_676": {
+  "desc": "Increases XP gain for the Fishing skill.",
+  "name_key": "StandardFishingPotion",
+  "id": "potion_focused_t3_fishing"
+ },
+ "item_677": {
+  "desc": "Increases XP gain for the Mining skill.",
+  "name_key": "StandardMiningPotion",
+  "id": "potion_focused_t3_mining"
+ },
+ "item_678": {
+  "desc": "Increases XP gain for the Runecrafting skill.",
+  "name_key": "StandardRunecraftingPotion",
+  "id": "potion_focused_t3_runecrafting"
+ },
+ "item_679": {
+  "desc": "Increases XP gain for the Woodcutting skill.",
+  "name_key": "StandardWoodcuttingPotion",
+  "id": "potion_focused_t3_woodcutting"
+ },
+ "item_680": {
+  "desc": "A hunger-reducing snack made with fried cabbages and grilled mushrooms.",
+  "name_key": "VeggieSandwich",
+  "id": "food_sandwich_veggie"
+ },
+ "item_681": {
+  "desc": "Yum! Maybe I do like cabbage.",
+  "name_key": "FriedCabbage",
+  "id": "food_cabbage_fried"
+ },
+ "item_682": {
+  "desc": "Eggs, sunny side up, a nutritious snack.",
+  "name_key": "EggFried",
+  "id": "food_egg_fried"
+ },
+ "item_683": {
+  "desc": "A pungeant meal that brings a tear to your eye.",
+  "name_key": "FriedOnion",
+  "id": "food_onion_fried"
+ },
+ "item_684": {
+  "desc": "For when you feel like a hungry bear. Grants the Sea Life perk.",
+  "name_key": "FriedSalmon",
+  "id": "food_fish_salmon"
+ },
+ "item_685": {
+  "desc": "Delicious little fishies. Grants the Warding Fish perk.",
+  "name_key": "FriedSardine",
+  "id": "food_fish_sardine"
+ },
+ "item_686": {
+  "desc": "A fruit party, wrapped in golden pastry.",
+  "name_key": null,
+  "id": "food_pie_fruit"
+ },
+ "item_687": {
+  "desc": "A brutal bag sewn from hide and sinew.",
+  "name_key": "GarouPack",
+  "id": "item_pack_garou"
+ },
+ "item_688": {
+  "desc": "A warming dish made with roast pumpkin, maple syrup and dried redberry.",
+  "name_key": "GlazedRoastPumpkinSandwich",
+  "id": "food_sandwich_glazed_pumpkin_roast"
+ },
+ "item_689": {
+  "desc": "A cloth shoulder bag, grimy and poorly kept.",
+  "name_key": "GoblinPack",
+  "id": "item_pack_goblin"
+ },
+ "item_690": {
+  "desc": "A rich and earthy treat.",
+  "name_key": "GrilledMushrooms",
+  "id": "food_mushroom_grilled"
+ },
+ "item_692": {
+  "desc": "Stave off hunger with this tasty bite. Grants the Sea Life perk.",
+  "name_key": "GrilledTrout",
+  "id": "food_fish_trout"
+ },
+ "item_693": {
+  "desc": "Undead and makes you unhungry. Grants the Sea Life perk.",
+  "name_key": "GrilledUndeadBass",
+  "id": "food_fish_undeadbass"
+ },
+ "item_694": {
+  "desc": "Roasted game meat. Tender and tasty.",
+  "name_key": "Haunch",
+  "id": "food_haunch_from_game"
+ },
+ "item_695": {
+  "desc": "Made by combining grilled trout and a baked potato. Grants the Sea Life perk.",
+  "name_key": "HerbBakedTrout",
+  "id": "food_herbbaked_trout"
+ },
+ "item_698": {
+  "desc": "Increases XP gain for the Agility skill.",
+  "name_key": "LesserFocusedAgilityPotion",
+  "id": "lesserfocusedagilitypotion"
+ },
+ "item_699": {
+  "desc": "Increases XP gain for the Artisan skill.",
+  "name_key": "StandardArtisanPotion",
+  "id": "potion_focused_t2_lesser_artisan"
+ },
+ "item_704": {
+  "desc": "Grants a boost to your Fishing XP for a short period of time.",
+  "name_key": "LesserFocusedFishingPotion",
+  "id": "potion_focused_t2_lesser_fishing"
+ },
+ "item_705": {
+  "desc": "Increases XP gain for the Mining skill.",
+  "name_key": "StandardMiningPotion",
+  "id": "potion_focused_t2_lesser_mining"
+ },
+ "item_707": {
+  "desc": "Increases XP gain for the Woodcutting skill.",
+  "name_key": "StandardWoodcuttingPotion",
+  "id": "potion_focused_t2_lesser_woodcutting"
+ },
+ "item_712": {
+  "desc": "Imbue your staff to increase the damage of your magical attacks for a limited time.",
+  "name_key": "MagicFocus",
+  "id": "item_magicfocus"
+ },
+ "item_713": {
+  "desc": "Made from clean water, maple sap and irit. Reduces thirst as well as stamina when blocking.",
+  "name_key": "MapleInfusion",
+  "id": "food_tea_maple"
+ },
+ "item_714": {
+  "desc": "A sweet and nutty syrup. An ingredient for various dishes.",
+  "name_key": "MapleSyrup",
+  "id": "food_syrup_maple"
+ },
+ "item_715": {
+  "desc": "A sweet lunch made with maple syrup and dried redberry.",
+  "name_key": "MapleToastie",
+  "id": "food_toastie_maple"
+ },
+ "item_716": {
+  "desc": "A pizza with bits of meat on it.",
+  "name_key": "MeatPizza",
+  "id": "food_pizza_meat"
+ },
+ "item_717": {
+  "desc": "A carnivore's favourite, made with flank steak and rat roast.",
+  "name_key": "MeatSandwich",
+  "id": "food_sandwich_meat"
+ },
+ "item_718": {
+  "desc": "Meat and vegetables, the classic combination. A warm and pleasant meal.",
+  "name_key": "MeatStew",
+  "id": "food_stew_meat"
+ },
+ "item_719": {
+  "desc": "Meat and vegetables, the classic combination. A warm and pleasant meal.",
+  "name_key": "MeatStew",
+  "id": "food_stew_meat"
+ },
+ "item_720": {
+  "desc": "Meat, meat and more meat. A sandwich with flank steak, rat roast and dried redberries.",
+  "name_key": "DoubleMeatSandwich",
+  "id": "food_sandwich_meat_double"
+ },
+ "item_721": {
+  "desc": "Why just eat one animal? A carnivore's favourite.",
+  "name_key": "MixedGrill",
+  "id": "food_mixed_grill"
+ },
+ "item_722": {
+  "desc": "Tastier than the Piscatoris monkfish, in our humble opinion.",
+  "name_key": "CookedMonkfish",
+  "id": "food_fish_monkfish"
+ },
+ "item_723": {
+  "desc": "Tasty monkfish meat, pierced on a skewer for convenient eating.",
+  "name_key": "MonkfishSkewers",
+  "id": "food_monkfish_skewer"
+ },
+ "item_724": {
+  "desc": "A meaty kebab with mushrooms.",
+  "name_key": "KebabMushrooms",
+  "id": "food_kebab_mushroom"
+ },
+ "item_725": {
+  "desc": "A tasty fruit.",
+  "name_key": "Peach",
+  "id": "food_fruit_peach"
+ },
+ "item_732": {
+  "desc": "Sweet, yet savory.",
+  "name_key": "SoupPumpkin",
+  "id": "food_soup_pumpkin"
+ },
+ "item_733": {
+  "desc": "A seasonal treat, popular with some.",
+  "name_key": "PumpkinSpiceInfusion",
+  "id": "food_tea_pumpkin"
+ },
+ "item_734": {
+  "desc": "Tastes much better than it's name suggests.",
+  "name_key": "PungentOmelette",
+  "id": "food_omelette_pungent"
+ },
+ "item_735": {
+  "desc": "Applies the Quarrymaster perk, which helps to decrease stamina lost from Mining.",
+  "name_key": "SuperQuarrymasterPotion",
+  "id": "potion_t3_quarrymaster"
+ },
+ "item_736": {
+  "desc": "A survivalist meal. Just pretend it's something else.",
+  "name_key": "RatRoast",
+  "id": "food_rat_roast"
+ },
+ "item_738": {
+  "desc": "It smells quite fruity.",
+  "name_key": "RedberryCrunchies",
+  "id": "food_crunchies_redberry_old"
+ },
+ "item_739": {
+  "desc": "A refreshing fruity drink. Good for hydration.",
+  "name_key": "RedberryInfusion",
+  "id": "food_tea_redberry"
+ },
+ "item_743": {
+  "desc": "A reward for finishing Brynmoor Agility Course with a bronze medal.",
+  "name_key": "Agility.Reward.Pack.Brynmoor.Bronze",
+  "id": "agility_reward_pack_brynmoor_bronze"
+ },
+ "item_744": {
+  "desc": "A reward for finishing Brynmoor Agility Course with a gold medal.",
+  "name_key": "Agility.Reward.Pack.Brynmoor.Gold",
+  "id": "agility_reward_pack_brynmoor_gold"
+ },
+ "item_745": {
+  "desc": "A reward for finishing Brynmoor Agility Course with a silver medal.",
+  "name_key": "Agility.Reward.Pack.Brynmoor.Silver",
+  "id": "agility_reward_pack_brynmoor_silver"
+ },
+ "item_746": {
+  "desc": "A reward for finishing Dowdun Reach Agility Course with a bronze medal.",
+  "name_key": "Agility.Reward.Pack.Dowdun.Reach.Bronze",
+  "id": "agility_reward_pack_dowdun_reach_bronze"
+ },
+ "item_747": {
+  "desc": "A reward for finishing Dowdun Reach Agility Course with a gold medal.",
+  "name_key": "Agility.Reward.Pack.Dowdun.Reach.Gold",
+  "id": "agility_reward_pack_dowdun_reach_gold"
+ },
+ "item_748": {
+  "desc": "A reward for finishing Dowdun Reach Agility Course with a silver medal.",
+  "name_key": "Agility.Reward.Pack.Dowdun.Reach.Silver",
+  "id": "agility_reward_pack_dowdun_reach_silver"
+ },
+ "item_749": {
+  "desc": "A reward for finishing Fellhollow Agility Course with a bronze medal.",
+  "name_key": "Agility.Reward.Pack.Fellhollow.Bronze",
+  "id": "agility_reward_pack_fellhollow_bronze"
+ },
+ "item_750": {
+  "desc": "A reward for finishing Fellhollow Agility Course with a gold medal.",
+  "name_key": "Agility.Reward.Pack.Fellhollow.Gold",
+  "id": "agility_reward_pack_fellhollow_gold"
+ },
+ "item_751": {
+  "desc": "A reward for finishing Fellhollow Agility Course with a silver medal.",
+  "name_key": "Agility.Reward.Pack.Fellhollow.Silver",
+  "id": "agility_reward_pack_fellhollow_silver"
+ },
+ "item_752": {
+  "desc": "A reward for finishing Ghornfell Agility Course with a bronze medal.",
+  "name_key": "Agility.Reward.Pack.Ghornfell.Bronze",
+  "id": "agility_reward_pack_ghornfell_bronze"
+ },
+ "item_753": {
+  "desc": "A reward for finishing Ghornfell Agility Course with a bronze medal.",
+  "name_key": "Agility.Reward.Pack.Ghornfell.Bronze",
+  "id": "agility_reward_pack_ghornfell_bronze"
+ },
+ "item_754": {
+  "desc": "A reward for finishing Ghornfell Agility Course with a gold medal.",
+  "name_key": "Agility.Reward.Pack.Ghornfell.Gold",
+  "id": "agility_reward_pack_ghornfell_gold"
+ },
+ "item_755": {
+  "desc": "A reward for finishing Ghornfell Agility Course with a gold medal.",
+  "name_key": "Agility.Reward.Pack.Ghornfell.Gold",
+  "id": "agility_reward_pack_ghornfell_gold"
+ },
+ "item_756": {
+  "desc": "A reward for finishing Ghornfell Agility Course with a silver medal.",
+  "name_key": "Agility.Reward.Pack.Ghornfell.Silver",
+  "id": "agility_reward_pack_ghornfell_silver"
+ },
+ "item_757": {
+  "desc": "A reward for finishing Ghornfell Agility Course with a silver medal.",
+  "name_key": "Agility.Reward.Pack.Ghornfell.Silver",
+  "id": "agility_reward_pack_ghornfell_silver"
+ },
+ "item_758": {
+  "desc": "A reward for finishing Umbral Sands Agility Course with a bronze medal.",
+  "name_key": "Agility.Reward.Pack.Umbral.Sands.Bronze",
+  "id": "agility_reward_pack_umbral_sands_bronze"
+ },
+ "item_759": {
+  "desc": "A reward for finishing Umbral Sands Agility Course with a gold medal.",
+  "name_key": "Agility.Reward.Pack.Umbral.Sands.Gold",
+  "id": "agility_reward_pack_umbral_sands_gold"
+ },
+ "item_760": {
+  "desc": "A reward for finishing Umbral Sands Agility Course with a silver medal.",
+  "name_key": "Agility.Reward.Pack.Umbral.Sands.Silver",
+  "id": "agility_reward_pack_umbral_sands_silver"
+ },
+ "item_761": {
+  "desc": "It's not even Sunday.",
+  "name_key": null,
+  "id": "food_roastdinner"
+ },
+ "item_762": {
+  "desc": "Does wonders for your hunger bar. Grants the Sea Legs perk.",
+  "name_key": "RoastedLobster",
+  "id": "food_fish_lobster"
+ },
+ "item_763": {
+  "desc": "A tough but tasty treat.",
+  "name_key": "RoastPumpkin",
+  "id": "food_pumpkin_roast"
+ },
+ "item_764": {
+  "desc": "Made by combining fried sardine and dried redberry. Grants the Warding Fish perk.",
+  "name_key": "SauteedSardines",
+  "id": "food_sauteed_sardines"
+ },
+ "item_765": {
+  "desc": "A simple meal but one that will hold back the hunger.",
+  "name_key": "SauteedShrimp",
+  "id": "food_fish_shrimp"
+ },
+ "item_766": {
+  "desc": "Hold hunger back until lunch.",
+  "name_key": "SearedAnchovies",
+  "id": "food_fish_anchovies"
+ },
+ "item_767": {
+  "desc": "You'd be surprised at how tasty an eight-ounce cactus, medium-rare can be.",
+  "name_key": "CactusSteakCooked",
+  "id": "food_cactus_cooked"
+ },
+ "item_768": {
+  "desc": "Made by combining fried egg and sauteed shrimp. Grants the Sea Legs perk.",
+  "name_key": "ShrimpOmelette",
+  "id": "food_omelette_shrimp"
+ },
+ "item_769": {
+  "desc": "A dusty sack that rattles when you shake it.",
+  "name_key": "SkeletonPack",
+  "id": "item_pack_skeleton"
+ },
+ "item_770": {
+  "desc": "There seems to be something solid within the ash pile.",
+  "name_key": "SmallAshes",
+  "id": "item_pack_ashes_demonic_small"
+ },
+ "item_771": {
+  "desc": "Nothing beats hunger like a herring. Grants the Warding Fish perk.",
+  "name_key": "SmokedHerring",
+  "id": "food_fish_herring"
+ },
+ "item_772": {
+  "desc": "An unusual meal, but a good one. Grants the Warding Fish perk.",
+  "name_key": "SmokedInfernalEel",
+  "id": "food_fish_infernaleel"
+ },
+ "item_774": {
+  "desc": "Tail not included.",
+  "name_key": null,
+  "id": "food_sausage_squeaking"
+ },
+ "item_775": {
+  "desc": "Consuming a stamina potion will prevent all loss of stamina for a short duration, however you'll need a moment to recover before you have another as such unbridled energy is taxing on the body.",
+  "name_key": "StaminaPotion",
+  "id": "staminapotion"
+ },
+ "item_776": {
+  "desc": "A delicious steak. The perfect campfire meal.",
+  "name_key": "Steak",
+  "id": "food_steak_from_farm"
+ },
+ "item_777": {
+  "desc": "A marvelous way, to start your day.",
+  "name_key": "SteakAndEggs",
+  "id": "food_steakandeggs"
+ },
+ "item_778": {
+  "desc": "A delectable treat made with flank steak, fried onions and grilled mushrooms.",
+  "name_key": "SteakSandwich",
+  "id": "food_sandwich_steak"
+ },
+ "item_779": {
+  "desc": "A long, tough meal. Don't eat it in one swallow.",
+  "name_key": "CookedBeltfish",
+  "id": "food_fish_beltfish"
+ },
+ "item_780": {
+  "desc": "Made by combining dried giant krill, dried redberry and smoked infernal eel.",
+  "name_key": "StirFry",
+  "id": "food_stir-fry"
+ },
+ "item_783": {
+  "desc": "Made by combining dried giant krill, fried cabbage and a braised catfish.",
+  "name_key": "StuffedCatfish",
+  "id": "food_stuffed_catfish"
+ },
+ "item_784": {
+  "desc": "Even when cooked it still smells a great deal.",
+  "name_key": "CookedDesertSole",
+  "id": "food_fish_desertsole"
+ },
+ "item_786": {
+  "desc": "Removes poison and grants resistance to it.",
+  "name_key": "StandardAntipoisonPotion",
+  "id": "potion_t4_antipoison"
+ },
+ "item_787": {
+  "desc": "Increases XP gain for the Agility skill.",
+  "name_key": "SuperFocusedAgilityPotion",
+  "id": "superfocusedagilitypotion"
+ },
+ "item_788": {
+  "desc": "Increases XP gain for the Artisan skill.",
+  "name_key": "StandardArtisanPotion",
+  "id": "potion_focused_t4_artisan"
+ },
+ "item_789": {
+  "desc": "Increases XP gain for the Attack skill.",
+  "name_key": "StandardAttackPotion",
+  "id": "potion_focused_t4_attack"
+ },
+ "item_790": {
+  "desc": "Increases XP gain for the Construction skill.",
+  "name_key": "StandardConstructionPotion",
+  "id": "potion_focused_t4_construction"
+ },
+ "item_795": {
+  "desc": "Increases XP gain for the Runecrafting skill.",
+  "name_key": "StandardRunecraftingPotion",
+  "id": "potion_focused_t4_runecrafting"
+ },
+ "item_797": {
+  "desc": "Applies the Lumberjack perk, which helps to decrease stamina lost from Woodcutting.",
+  "name_key": "SuperLumberjackPotion",
+  "id": "potion_t4_lumberjack"
+ },
+ "item_798": {
+  "desc": "Applies the Quarrymaster perk, which helps to decrease stamina lost from Mining.",
+  "name_key": "SuperQuarrymasterPotion",
+  "id": "potion_t4_quarrymaster"
+ },
+ "item_799": {
+  "desc": "A pie reserved for the less prestigious members of a ship's crew.",
+  "name_key": "PieSwabbie",
+  "id": "food_pie_swabbie"
+ },
+ "item_800": {
+  "desc": "A marvelous amalgamation of sweet and savoury.",
+  "name_key": "VegballSweet",
+  "id": "food_vegball_sweet"
+ },
+ "item_801": {
+  "desc": "A book filled with knowledge on how to move more efficiently. Awards a small amount of Agility XP.",
+  "name_key": "SkillTome.Basic.Agility",
+  "id": "skilltome_basic_agility"
+ },
+ "item_802": {
+  "desc": "A book filled with knowledge on how to move more efficiently. Awards a decent amount of Agility XP.",
+  "name_key": "SkillTome.Intermediate.Agility",
+  "id": "skilltome_intermediate_agility"
+ },
+ "item_803": {
+  "desc": "A book filled with knowledge on the use of melee weapons. Awards a small amount of Attack XP.",
+  "name_key": "SkillTome.Basic.Attack",
+  "id": "tome_t1_attack"
+ },
+ "item_804": {
+  "desc": "A book filled with knowledge on the use of melee weapons. Awards a decent amount of Attack XP.",
+  "name_key": "SkillTome.Intermediate.Attack",
+  "id": "tome_t2_attack"
+ },
+ "item_805": {
+  "desc": "A book filled with knowledge about how to be a better architect. Awards a small amount of Construction XP.",
+  "name_key": "SkillTome.Basic.Construction",
+  "id": "tome_t1_construction"
+ },
+ "item_806": {
+  "desc": "A book filled with knowledge about how to be a better architect. Awards a decent amount of Construction XP.",
+  "name_key": "SkillTome.Intermediate.Construction",
+  "id": "tome_t2_construction"
+ },
+ "item_807": {
+  "desc": "A book filled with knowledge on how to cook better meals. Awards a small amount of Cooking XP.",
+  "name_key": "SkillTome.Basic.Cooking",
+  "id": "tome_t1_cooking"
+ },
+ "item_808": {
+  "desc": "A book filled with knowledge on how to cook better meals. Awards a decent amount of Cooking XP.",
+  "name_key": "SkillTome.Intermediate.Cooking",
+  "id": "tome_t2_cooking"
+ },
+ "item_809": {
+  "desc": "A book filled with knowledge about how to apply dirt and water to seeds. Awards a small amount of Farming XP.",
+  "name_key": "SkillTome.Basic.Farming",
+  "id": "tome_t1_farming"
+ },
+ "item_810": {
+  "desc": "A book filled with knowledge about how to apply dirt and water to seeds. Awards a decent amount of Farming XP.",
+  "name_key": "SkillTome.Intermediate.Farming",
+  "id": "tome_t2_farming"
+ },
+ "item_811": {
+  "desc": "A book filled with knowledge about how to efficiently tire out fish. Awards a small amount of Fishing XP.",
+  "name_key": "SkillTome.Basic.Fishing",
+  "id": "tome_t1_fishing"
+ },
+ "item_812": {
+  "desc": "A book filled with knowledge about how to efficiently tire out fish. Awards a decent amount of Fishing XP.",
+  "name_key": "SkillTome.Intermediate.Fishing",
+  "id": "tome_t2_fishing"
+ },
+ "item_813": {
+  "desc": "A book filled with knowledge about how to wield deadlier spells. Awards a small amount of Magic XP.",
+  "name_key": "SkillTome.Basic.Magic",
+  "id": "tome_t1_magic"
+ },
+ "item_814": {
+  "desc": "A book filled with knowledge about how to wield deadlier spells. Awards a decent amount of Magic XP.",
+  "name_key": "SkillTome.Intermediate.Magic",
+  "id": "tome_t2_magic"
+ },
+ "item_815": {
+  "desc": "A book filled with knowledge about the intricacies of archery. Awards a small amount of Ranged XP.",
+  "name_key": "SkillTome.Basic.Ranged",
+  "id": "tome_t1_ranged"
+ },
+ "item_816": {
+  "desc": "A book filled with knowledge about the intricacies of archery. Awards a decent amount of Ranged XP.",
+  "name_key": "SkillTome.Intermediate.Ranged",
+  "id": "tome_t2_ranged"
+ },
+ "item_817": {
+  "desc": "A book filled with knowledge about how to bind anima within rune essence. Awards a small amount of Runecrafting XP.",
+  "name_key": "SkillTome.Basic.Runecrafting",
+  "id": "tome_t1_runecrafting"
+ },
+ "item_818": {
+  "desc": "A book filled with knowledge about how to bind anima within rune essence. Awards a decent amount of Runecrafting XP.",
+  "name_key": "SkillTome.Intermediate.Runecrafting",
+  "id": "tome_t2_runecrafting"
+ },
+ "item_819": {
+  "desc": "A book filled with knowledge about how to craft tools and equipment. Awards a small amount of Artisan XP.",
+  "name_key": "SkillTome.Basic.Artisan",
+  "id": "tome_t1_artisan"
+ },
+ "item_820": {
+  "desc": "A book filled with knowledge about how to craft tools and equipment. Awards a decent amount of Artisan XP.",
+  "name_key": "SkillTome.Intermediate.Artisan",
+  "id": "tome_t2_artisan"
+ },
+ "item_821": {
+  "desc": "A powerful tome containing ancient techniques of warfare. Grants a large amount of experience in the Attack, Magic and Ranged skills.",
+  "name_key": "Skilltome.Dragonslayer",
+  "id": "tome_t0_dragonslayerquest"
+ },
+ "item_822": {
+  "desc": "A powerful tome containing the forgotten knowledge of the fallen. Grants a large amount of experience in the Attack, Magic and Ranged skills.",
+  "name_key": "Skilltome.Deathquest",
+  "id": "tome_t0_deathquestmain"
+ },
+ "item_824": {
+  "desc": "A book filled with knowledge about how best to chop down trees. Awards a small amount of Woodcutting XP.",
+  "name_key": "SkillTome.Basic.Woodcutting",
+  "id": "tome_t1_woodcutting"
+ },
+ "item_825": {
+  "desc": "A book filled with knowledge about how best to chop down trees. Awards a decent amount of Woodcutting XP.",
+  "name_key": "SkillTome.Intermediate.Woodcutting",
+  "id": "tome_t2_woodcutting"
+ },
+ "item_826": {
+  "desc": "A garou delicacy, ideal for those night-time munchies.",
+  "name_key": "UmbralKebab",
+  "id": "item_food_umbral_kebab"
+ },
+ "item_827": {
+  "desc": "Made by combining fried grilled undead bass and grilled tomato. Grants the Sea Life perk.",
+  "name_key": "UndeadDelight",
+  "id": "food_undead_delight"
+ },
+ "item_828": {
+  "desc": "All of the calories, none of the guilt.",
+  "name_key": null,
+  "id": "food_fryup_vegan"
+ },
+ "item_829": {
+  "desc": "A tasty soup, good for the soul.",
+  "name_key": "VegetableSoup",
+  "id": "food_soup_vegetable"
+ },
+ "item_830": {
+  "desc": "A delicious sponge cake, thankfully without the goblin version of frosting.",
+  "name_key": "VictoriaSpongeCake",
+  "id": "food_cake_victoriaspongecake"
+ },
+ "item_831": {
+  "desc": "A juicy watermelon, sans juice.",
+  "name_key": "WatermelonJerky",
+  "id": "food_watermelon_jerky"
+ },
+ "item_833": {
+  "desc": "Increases XP gain for the Agility skill.",
+  "name_key": "WeakFocusedAgilityPotion",
+  "id": "weakfocusedagilitypotion"
+ },
+ "item_837": {
+  "desc": "Increases XP gain for the Cooking skill.",
+  "name_key": "StandardCookingPotion",
+  "id": "potion_focused_t1_weak_cooking"
+ },
+ "item_838": {
+  "desc": "Increases XP gain for the Farming skill.",
+  "name_key": "StandardFarmingPotion",
+  "id": "potion_focused_t1_weak_farming"
+ },
+ "item_839": {
+  "desc": "Grants a boost to your Fishing XP for a short period of time.",
+  "name_key": "WeakFocusedFishingPotion",
+  "id": "potion_focused_t1_weak_fishing"
+ },
+ "item_840": {
+  "desc": "Increases XP gain for the Mining skill.",
+  "name_key": "StandardMiningPotion",
+  "id": "potion_focused_t1_weak_mining"
+ },
+ "item_841": {
+  "desc": "Increases XP gain for the Runecrafting skill.",
+  "name_key": "StandardRunecraftingPotion",
+  "id": "potion_focused_t1_weak_runecrafting"
+ },
+ "item_844": {
+  "desc": "Applies the Quarrymaster perk, which helps to decrease stamina lost from Mining.",
+  "name_key": "SuperQuarrymasterPotion",
+  "id": "potion_t1_weak_quarrymaster"
+ },
+ "item_846": {
+  "desc": "WeaponBarbs",
+  "name_key": "WeaponPoison",
+  "id": "item_weaponpoison"
+ },
+ "item_847": {
+  "desc": "Use this to hone your equipped melee weapon.",
+  "name_key": "Whetstone",
+  "id": "item_whetstone"
+ },
+ "item_848": {
+  "desc": "A triumph of man over nature.",
+  "name_key": "WildPie",
+  "id": "food_pie_wild"
+ },
+ "item_850": {
+  "desc": "A source of hydration, tainted by the realm of Imaru.",
+  "name_key": "WitherWater",
+  "id": "food_water_wither"
+ },
+ "item_851": {
+  "desc": "A sack holding the personal effects of a Zamorakian.",
+  "name_key": "ZamorakMagePack",
+  "id": "item_pack_zamorak_pack_mage"
+ },
+ "item_852": {
+  "desc": "A sack holding the personal effects of a Zamorakian.",
+  "name_key": "ZamorakWarriorPack",
+  "id": "item_pack_zamorak_pack_warrior"
+ },
+ "item_853": {
+  "desc": "A foul smelling sack hewn from human skin.",
+  "name_key": "ZogrePack",
+  "id": "item_pack_zogre"
+ },
+ "item_854": {
+  "desc": "A moist and squishly bag of bits.",
+  "name_key": "ZombiePack",
+  "id": "item_pack_zombie"
+ },
+ "item_858": {
+  "desc": "Notes, from the beastmasters of Dowdun Reach, on how to train various creatures.",
+  "name_key": "BeastmasterNotes",
+  "id": "res_dr_sq2_journal_pages"
+ },
+ "item_861": {
+  "desc": "The shattered remnant of the Black Knight Titan's sword.",
+  "name_key": "BrokenTitansSword",
+  "id": "res_broken_gatekeeper_sword"
+ },
+ "item_865": {
+  "desc": "A strange sickly essence, linked to the corruption in Dowdun Reach. It writhes as you look at it.",
+  "name_key": "CorruptedEssenceSample",
+  "id": "res_dr_sq3_magical_essence"
+ },
+ "item_873": {
+  "desc": "A crystallised part of a curse, imbued with Imaru's rage.",
+  "name_key": "Cursefragment.Vault",
+  "id": "res_seal_break_fort_key"
+ },
+ "item_874": {
+  "desc": "A crystallised part of a curse, imbued with Imaru's grief.",
+  "name_key": "Cursefragment.Emberwood",
+  "id": "res_seal_break_vil_key"
+ },
+ "item_875": {
+  "desc": "A crystallised part of a curse, imbued with Imaru's despair.",
+  "name_key": "Cursefragment.Silverthorn",
+  "id": "res_seal_break_fall_key"
+ },
+ "item_888": {
+  "desc": "A handcrafted owl made of glass. It seems to have great sentimental value to someone.",
+  "name_key": "GlassOwl",
+  "id": "res_dr_glass_owl"
+ },
+ "item_893": {
+  "desc": "Proof of your triumph over the Soul-Eater. It's dripping ectoplasm all over, you should probably get rid of it...",
+  "name_key": "ImarusHead",
+  "id": "res_imarus_head"
+ },
+ "item_916": {
+  "desc": "A glittering gemstone, desired by a merchant in the Alcarrid garou settlement.",
+  "name_key": "Moonstone",
+  "id": "res_quest_ums_mainquest_moonstone"
+ },
+ "item_921": {
+  "desc": "The heart of a nature spirit, you hunted this for Vannaka. He wants three of them.",
+  "name_key": "PrimordialHeart",
+  "id": "ITEM_quest_FH_WitherBeast_Heart"
+ },
+ "item_931": {
+  "desc": "A piece of the broken Dreaming Stone in Dowdun Reach's Nexus. It whispers if you listen closely.",
+  "name_key": "DreamingStonePiece",
+  "id": "res_dreamstone_shard"
+ },
+ "item_941": {
+  "desc": "A strange, glowing lily, with magical properties.",
+  "name_key": "TwilightLily",
+  "id": "res_dr_sq3_midnight_lilly_leaves"
+ },
+ "item_943": {
+  "desc": "Water blessed by priests of Zamorak.",
+  "name_key": "UnholyWater",
+  "id": "res_dr_sq3_holy_water"
+ },
+ "item_958": {
+  "desc": "The remnants of a Zamorakian shield. Perhaps you could learn something from it.",
+  "name_key": "Vestige.BlackShield",
+  "id": "vestige_blackshield"
+ },
+ "item_961": {
+  "desc": "The remnants of a Zamorakian weapon. Perhaps you could learn something from it.",
+  "name_key": "Vestige.BlackGreataxe",
+  "id": "vestige_blackgreataxe"
+ },
+ "item_975": {
+  "desc": "A sinister piece of jewellery, corroded and burned. Perhaps you can learn something from it.",
+  "name_key": "Vestige.UnholySymbol",
+  "id": "vestige_unholysymbol"
+ },
+ "item_981": {
+  "desc": "The remnants of a Zamorakian weapon. Perhaps you could learn something from it.",
+  "name_key": "Vestige.SubjugationStaff",
+  "id": "vestige_subjugationstaff"
+ },
+ "item_988": {
+  "desc": "The remnants of Zamorakian platelegs. Perhaps you could learn something from it.",
+  "name_key": "VestigeBlackKnightLegs",
+  "id": "vestigeblackknightlegs"
+ },
+ "item_1023": {
+  "desc": "The remnants of a Zamorakian weapon. Perhaps you could learn something from it.",
+  "name_key": "Vestige.BlackSword",
+  "id": "vestige_blacksword"
+ },
+ "item_1024": {
+  "desc": "The remnants of a Zamorakian weapon. Perhaps you could learn something from it.",
+  "name_key": "Vestige.BlackSword",
+  "id": "vestige_blacksword"
+ },
+ "item_1052": {
+  "desc": "A resilient adhesive that can withstand high temperatures.",
+  "name_key": null,
+  "id": "res_adhesive_acrid"
+ },
+ "item_1053": {
+  "desc": "A sturdy metal used for crafting weapons and armour.",
+  "name_key": "AdamantiteBar",
+  "id": "res_bar_adamantite"
+ },
+ "item_1054": {
+  "desc": "A pair of adamant crossbow limbs. Used in crafting an adamant crossbow.",
+  "name_key": "AdamantLimbs",
+  "id": "res_crossbowlimbs_adamant"
+ },
+ "item_1055": {
+  "desc": "Mined from adamantite deposits. It can be smelted into bars at a Blast Furnace.",
+  "name_key": "AdamantiteOre",
+  "id": "res_ore_adamantite"
+ },
+ "item_1057": {
+  "desc": "AstralRune",
+  "name_key": null,
+  "id": "res_rune_air"
+ },
+ "item_1058": {
+  "desc": "A crystallised mass of amylase enzymes, can be used as a reagent potions.",
+  "name_key": "AgilityAmylaseCrystal",
+  "id": "agilityamylasecrystal"
+ },
+ "item_1059": {
+  "desc": "Cute little cannibal fish love some anchovy bait. Irresistible to Herring. Increases the catch chance of this fish.",
+  "name_key": "AnchovyBait",
+  "id": "anchovybait"
+ },
+ "item_1064": {
+  "desc": "To a fish, this feather looks like a long-lost love. Makes Armoured Catfish enamoured. Increases the catch chance of this fish.",
+  "name_key": "AnimatedFeather",
+  "id": "animatedfeather"
+ },
+ "item_1065": {
+  "desc": "A cartilaginous extension of an animal skull.",
+  "name_key": "AnimalHorn",
+  "id": "res_animal_horn_antler"
+ },
+ "item_1078": {
+  "desc": "Can be used for potions.",
+  "name_key": "AgilityAvantoe",
+  "id": "agilityavantoe"
+ },
+ "item_1082": {
+  "desc": "A pair of Black crossbow limbs. Used in crafting a Black Knight Crossbow.",
+  "name_key": "BlackLimbs",
+  "id": "res_crossbowlimbs_black"
+ },
+ "item_1083": {
+  "desc": "A bar of reforged black metal scraps. Used to make Black Knight gear.",
+  "name_key": "BlackMetalBar",
+  "id": "res_bar_blackmetal"
+ },
+ "item_1084": {
+  "desc": "Dropped from Black Knights. Can be reforged into black metal at a blast furnace.",
+  "name_key": "BlackMetalScraps",
+  "id": "res_blackmetal_scraps"
+ },
+ "item_1085": {
+  "desc": "Scraps that can be searched through. Little bits of Black Knight are in there.",
+  "name_key": "SalvagePileBlack",
+  "id": "res_salvage_blackmetal"
+ },
+ "item_1088": {
+  "desc": "Obtained from felling lesser blue dragons. Can be processed at the tannery.",
+  "name_key": "BlueDragonhide",
+  "id": "res_skin_dragon_blue_lesser"
+ },
+ "item_1090": {
+  "desc": "Obtained from felled Lesser Blue Dragons. Can be ground into blue dragon dust.",
+  "name_key": "BlueDragonScale",
+  "id": "res_scale_dragon_blue"
+ },
+ "item_1091": {
+  "desc": "Ground from blue dragon scales. Integral to making antifire potions.",
+  "name_key": "BlueDragonDust",
+  "id": "res_ground_scale_dragon_blue"
+ },
+ "item_1092": {
+  "desc": "A rare bar of refined Blurite, thought to be myth.",
+  "name_key": "BluriteBar",
+  "id": "res_bar_blurite"
+ },
+ "item_1093": {
+  "desc": "A pair of blurite crossbow limbs. Used in crafting a Blurite Crossbow.",
+  "name_key": "BluriteLimbs",
+  "id": "res_crossbowlimbs_blurite"
+ },
+ "item_1094": {
+  "desc": "A chunk of rare and unrefined Blurite.",
+  "name_key": "BluriteOre",
+  "id": "res_ore_blurite"
+ },
+ "item_1095": {
+  "desc": "Crossbow limbs made from powerful bone. Used in crafting the Dorgeshuun Crossbow.",
+  "name_key": "DorgeshuunLimbs",
+  "id": "res_crossbowlimbs_dorgeshuun"
+ },
+ "item_1097": {
+  "desc": "A pair of bronze crossbow limbs. Used in crafting a Bronze Crossbow.",
+  "name_key": "BronzeLimbs",
+  "id": "res_crossbowlimbs_bronze"
+ },
+ "item_1098": {
+  "desc": "A thin sheet of purest bronze, can be used for demonstrating your prowess, potion making or even recycling into bronze bars.",
+  "name_key": "AgilityBronzeLeaf",
+  "id": "agilitybronzeleaf"
+ },
+ "item_1099": {
+  "desc": "Scraps that can be searched through. Seems like it's just a pile of bronze offcuts.",
+  "name_key": "SalvagePileBronze",
+  "id": "res_salvage_bronze"
+ },
+ "item_1101": {
+  "desc": "Yuck I don't like cabbage.",
+  "name_key": "Cabbage",
+  "id": "food_cabbage"
+ },
+ "item_1103": {
+  "desc": "Pipe cactus, sans water.",
+  "name_key": "CactusFibers",
+  "id": "res_fibers_cactus"
+ },
+ "item_1104": {
+  "desc": "A moist and sweet botanical edible. It has a fresh floral fragrance.",
+  "name_key": "CactusSteak",
+  "id": "res_steak_cactus"
+ },
+ "item_1108": {
+  "desc": "A figurine made from clay. Now, much more solid.",
+  "name_key": "ClayDecoration_Fired",
+  "id": "res_clay_decoration"
+ },
+ "item_1109": {
+  "desc": "A figurine made from clay. Still wet.",
+  "name_key": null,
+  "id": "res_clay_decoration_unfired"
+ },
+ "item_1114": {
+  "desc": "Typically found in rocky areas and caves. Combine with metal ores at an upgraded smelter to create higher tiered metal bars.",
+  "name_key": "Coal",
+  "id": "res_ore_coal"
+ },
+ "item_1119": {
+  "desc": "Scraps that can be searched through. I weren't stealing nuffin', copper.",
+  "name_key": "SalvagePileCopper",
+  "id": "res_salvage_copper"
+ },
+ "item_1120": {
+  "desc": "Drops from a volitle bulbous plant that explodes when hit. Can be spun at the spinning wheel to create fine thread.",
+  "name_key": "CorpseCotton",
+  "id": "res_corpse_fur"
+ },
+ "item_1124": {
+  "desc": "Harvested from demons. Can be used as a tanning agent at the tannery.",
+  "name_key": "CursedEssence",
+  "id": "res_essence_cursed"
+ },
+ "item_1125": {
+  "desc": "A sinister leather. Used in crafting.",
+  "name_key": "CursedLeather",
+  "id": "res_leather_cursed"
+ },
+ "item_1126": {
+  "desc": "Made by combining necrotic bonemeal and vile ashes. A crafting component.",
+  "name_key": "DemonicOil",
+  "id": "res_demonic_oil"
+ },
+ "item_1127": {
+  "desc": "A coarse but hard-wearing fabric made from local flora.",
+  "name_key": "DesertCloth",
+  "id": "res_cloth_desert"
+ },
+ "item_1128": {
+  "desc": "A strong but rough thread spun from desert weed.",
+  "name_key": "DesertThread",
+  "id": "res_thread_desert"
+ },
+ "item_1129": {
+  "desc": "A hearty plant native to the region. Can be spun into a durable thread.",
+  "name_key": "DesertWeed",
+  "id": "res_weed_desert"
+ },
+ "item_1132": {
+  "desc": "Why did they laugh when I bought this? Sold by local traders.",
+  "name_key": "DihydrogenMonoxide",
+  "id": "res_dihydrogen_monoxide"
+ },
+ "item_1135": {
+  "desc": "A sturdy leather made from draconic hide, or from tanning hard leather with dragon blood.",
+  "name_key": "DraconicLeather",
+  "id": "res_leather_draconic"
+ },
+ "item_1136": {
+  "desc": "Scruffy organic bits and pieces that can be combined to make draconic leather.",
+  "name_key": "DraconicLeatherScraps",
+  "id": "res_leather_scraps_draconic"
+ },
+ "item_1137": {
+  "desc": "The image of a fearsome dragon. Used in crafting powerful equipment.",
+  "name_key": null,
+  "id": null
+ },
+ "item_1138": {
+  "desc": "Harvested from dragons and dragonwolves. Used as a tanning agent at the tannery.",
+  "name_key": "DragonBlood",
+  "id": "res_dragonblood"
+ },
+ "item_1139": {
+  "desc": "A rare and precious gem, coveted by jewelers.",
+  "name_key": "Dragonstone",
+  "id": "res_gem_dragonstone"
+ },
+ "item_1141": {
+  "desc": "Dropped from felled draconic beasts. Can be processed at the tannery.",
+  "name_key": "DraconicHide",
+  "id": "res_skin_dragonwolf"
+ },
+ "item_1144": {
+  "desc": "FireRune",
+  "name_key": "EarthRune",
+  "id": "res_rune_earth"
+ },
+ "item_1145": {
+  "desc": "Dropped from aggressive spirits or extracted from wither hearts. Used in crafting.",
+  "name_key": "Ectoplasm",
+  "id": "res_ectoplasm"
+ },
+ "item_1147": {
+  "desc": "Obsidian curiosities that feel pleasing in the hand. Can be ground and smelted into pure obsidian.",
+  "name_key": "ElderCuriosities",
+  "id": "res_elder_curiosities"
+ },
+ "item_1149": {
+  "desc": "What is it about feathers that fascinates a fish? A great way to bait them. Trout seem the most susceptible. Increases the catch chance of this fish.",
+  "name_key": "FeatherBait",
+  "id": "featherbait"
+ },
+ "item_1150": {
+  "desc": "Entice Salmon with a knotted ball of bird knock-offs. Increases the catch chance of this fish.",
+  "name_key": "FeatheredLure",
+  "id": "featheredlure"
+ },
+ "item_1152": {
+  "desc": "A complex network of fibres and water reservoirs. Can be tanned to produce a durable material.",
+  "name_key": "PipeCactus",
+  "id": "res_cactus_pipe"
+ },
+ "item_1153": {
+  "desc": "Woven from fine thread and gold. Used in weapon and armour crafting.",
+  "name_key": "FineCloth",
+  "id": "res_cloth_fine"
+ },
+ "item_1154": {
+  "desc": "Made from spun corpse cotton. Can be used as a bow string, and in stitching weapons and gear.",
+  "name_key": "FineThread",
+  "id": "res_thread_fine"
+ },
+ "item_1155": {
+  "desc": "Throw this at your enemies to set them on fire!",
+  "name_key": "FireOil",
+  "id": "res_fireoil"
+ },
+ "item_1161": {
+  "desc": "A high temperature fuel. Needed to smelt more advanced metals.",
+  "name_key": "FuelPellet",
+  "id": "res_fuel_pellet"
+ },
+ "item_1162": {
+  "desc": "An object of garou origin that might hold value with local traders.",
+  "name_key": "ArtifactGarou",
+  "id": "res_artifact_garou"
+ },
+ "item_1163": {
+  "desc": "A local currency favoured by garou traders.",
+  "name_key": "GarouChit",
+  "id": "res_currency_chit_garou"
+ },
+ "item_1164": {
+  "desc": "A high quality material sold by local garou merchants.",
+  "name_key": "GarouCloth",
+  "id": "res_cloth_garou"
+ },
+ "item_1165": {
+  "desc": "If I told you why this bait works, I'd have to krill you. Increases the catch chance of this fish.",
+  "name_key": "KrillBait",
+  "id": "krillbait"
+ },
+ "item_1166": {
+  "desc": "A delightful ornament that will really tie your home together.",
+  "name_key": "GlassDecoration",
+  "id": "res_glass_decoration"
+ },
+ "item_1167": {
+  "desc": "It's transparent that you're going to use this when building.",
+  "name_key": "GlassPane",
+  "id": "res_glass_pane"
+ },
+ "item_1168": {
+  "desc": "A glass item made by glassblowing.",
+  "name_key": "GlassVessel",
+  "id": "res_glass_vessel"
+ },
+ "item_1170": {
+  "desc": "A thin sheet of brilliant gold, can be used for demonstrating your prowess, potion making or even recycling into gold bars.",
+  "name_key": "AgilityGoldenLeaf",
+  "id": "agilitygoldenleaf"
+ },
+ "item_1172": {
+  "desc": "Scraps that can be searched through. All that glitters may not be gold.",
+  "name_key": "SalvagePileGold",
+  "id": "res_salvage_gold"
+ },
+ "item_1174": {
+  "desc": "An especially fine specimen of kalphite wing. Once powdered, has many uses.",
+  "name_key": "KalphiteWingAlpha",
+  "id": "res_wing_kalphite_alpha"
+ },
+ "item_1175": {
+  "desc": "Obtained from felled Lesser Green Dragons. Can be processed at the tannery.",
+  "name_key": "GreenDragonhide",
+  "id": "res_skin_dragon_green_lesser"
+ },
+ "item_1176": {
+  "desc": "Made by tanning green dragonhide. A key crafting component for armour.",
+  "name_key": "GreenDragonhideLeather",
+  "id": "res_leather_dragon_green_lesser"
+ },
+ "item_1179": {
+  "desc": "Ground from gypsum. This reagent seems to reflect light and therefore heat.",
+  "name_key": "GroundGypsum",
+  "id": "res_ground_gypsum"
+ },
+ "item_1180": {
+  "desc": "Ground from limestone. With the proper tools, it can be made into glass at a furnace.",
+  "name_key": "GroundLimestone",
+  "id": "res_ground_limestone"
+ },
+ "item_1185": {
+  "desc": "A crumbly stone unsuitable for building but, once ground, offers unique properties.",
+  "name_key": "Gypsum",
+  "id": "res_gypsum"
+ },
+ "item_1186": {
+  "desc": "A marvel of alchemy that, once applied to equipment, adds durability in extreme conditions.",
+  "name_key": "GypsumWax",
+  "id": "res_wax_gypsum"
+ },
+ "item_1189": {
+  "desc": "Dropped from beasts in Fellhollow. Combined at the tannery to create hard leather.",
+  "name_key": "HardLeatherScraps",
+  "id": "res_leather_scraps_hard"
+ },
+ "item_1192": {
+  "desc": "Found lying around Fellhollow, around long-dead trees. Used in crafting.",
+  "name_key": "HollowBark",
+  "id": "res_bark_hollow"
+ },
+ "item_1193": {
+  "desc": "Used to craft magical equipment. Postie Pete also has a use for them.",
+  "name_key": "DreamShard",
+  "id": "res_currency_dream_shard"
+ },
+ "item_1194": {
+  "desc": "Named as such due to the infinite number of colours it features. It's quite garish.",
+  "name_key": "InfinityCloth",
+  "id": "res_cloth_infinity"
+ },
+ "item_1195": {
+  "desc": "Harvested from thorny irit roots and used when making meals.",
+  "name_key": "Irit",
+  "id": "res_herb_irit"
+ },
+ "item_1198": {
+  "desc": "A pair of iron crossbow limbs. Used in crafting an Iron Crossbow.",
+  "name_key": "IronLimbs",
+  "id": "res_crossbowlimbs_iron"
+ },
+ "item_1200": {
+  "desc": "Scraps that can be searched through. There might be something of value in there.",
+  "name_key": "SalvagePileIron",
+  "id": "res_salvage_iron"
+ },
+ "item_1202": {
+  "desc": "Kalphite bait. Increases the catch chance of fish.",
+  "name_key": "KalphiteBait",
+  "id": "ammo_fishbait_kalphitefly"
+ },
+ "item_1203": {
+  "desc": "A viscous, sticky fluid. Can be processed into a durable adhesive.",
+  "name_key": "KalphiteIchor",
+  "id": "res_ichor_kalphite"
+ },
+ "item_1204": {
+  "desc": "A durable kalphite carapace, suitable for crafting.",
+  "name_key": "KalphiteShell",
+  "id": "res_shell_kalphite"
+ },
+ "item_1205": {
+  "desc": "Shattered kaphite chitin. Could be salvaged with the right adhesive.",
+  "name_key": "KalphiteShellFragments",
+  "id": "res_shell_kalphite_fragments"
+ },
+ "item_1206": {
+  "desc": "A strong but light iridescent material. Once powdered, has many uses.",
+  "name_key": "KalphiteWing",
+  "id": "res_wing_kalphite"
+ },
+ "item_1209": {
+  "desc": "NatureRune",
+  "name_key": "LawRune",
+  "id": "res_rune_law"
+ },
+ "item_1211": {
+  "desc": "A building material. It can also be ground into dust.",
+  "name_key": "Limestone",
+  "id": "res_limestone"
+ },
+ "item_1212": {
+  "desc": "Scraps of lobster meat made into bait to draw in fish. A meal Undead Eels cannot resist. Increases the catch chance of this fish.",
+  "name_key": "LobsterBait",
+  "id": "lobsterbait"
+ },
+ "item_1213": {
+  "desc": "Cut from maple trees. Can be crafted into various equipment.",
+  "name_key": "MapleLogs",
+  "id": "res_wood_maple"
+ },
+ "item_1214": {
+  "desc": "Harvested from maple trees. An ingredient that can be cooked on a campfire.",
+  "name_key": "MapleSap",
+  "id": "res_maple_sap"
+ },
+ "item_1218": {
+  "desc": "A versatile metal used for crafting weapons and armour.",
+  "name_key": "MithrilBar",
+  "id": "res_bar_mithril"
+ },
+ "item_1219": {
+  "desc": "A pair of mithril crossbow limbs. Essential for the crafting of a mithril crossbow.",
+  "name_key": "MithrilCrossbowLimbs",
+  "id": "res_crossbowlimbs_mithril"
+ },
+ "item_1220": {
+  "desc": "Mined from Mithril deposits. It can be smelted into bars at a furnace.",
+  "name_key": "MithrilOre",
+  "id": "res_ore_mithril"
+ },
+ "item_1221": {
+  "desc": "Scraps of mithril that can be smelted into more useful bars.",
+  "name_key": "SalvagePileMithril",
+  "id": "res_salvage_mithril"
+ },
+ "item_1222": {
+  "desc": "Raw material used in the art of glassblowing.",
+  "name_key": "MoltenGlass",
+  "id": "res_molten_glass"
+ },
+ "item_1223": {
+  "desc": "Bait made from monkfish tail. Increases the catch chance of Desert Sole.",
+  "name_key": "MonkfishBait",
+  "id": "ammo_fishbait_monkfish"
+ },
+ "item_1225": {
+  "desc": "A magical textile, woven from mystic thread.",
+  "name_key": "MysticCloth",
+  "id": "res_cloth_mystic"
+ },
+ "item_1226": {
+  "desc": "Dropped from Zamorak magi. Can be spun at a spinning wheel into mystic thread.",
+  "name_key": "MysticFibre",
+  "id": "res_cloth_fibres_mystic"
+ },
+ "item_1227": {
+  "desc": "Spun from mystic fibre. Magic courses through every thread.",
+  "name_key": "MysticThread",
+  "id": "res_cloth_mystic_thread"
+ },
+ "item_1228": {
+  "desc": "A very flammable liquid.",
+  "name_key": "Naphtha",
+  "id": "res_naptha"
+ },
+ "item_1230": {
+  "desc": "Made from ground up undead bone. A useful crafting ingredient.",
+  "name_key": "NecroticBonemeal",
+  "id": "res_bone_ground_necrotic"
+ },
+ "item_1234": {
+  "desc": "An obsidian object, useful as little more than a paperweight. Can be ground and then smelted into pure obsidian.",
+  "name_key": "ObsidianDevice",
+  "id": "res_obsidian_device"
+ },
+ "item_1243": {
+  "desc": "An unusually large Anchovy, cook it to gain more food.",
+  "name_key": "AnchovyPristine",
+  "id": "res_fish_pristine_anchovies"
+ },
+ "item_1244": {
+  "desc": "An unusually large Armoured Catfish, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "ArmouredCatfishPristine",
+  "id": "res_fish_pristine_armouredcatfish"
+ },
+ "item_1245": {
+  "desc": "A basically perfect beltfish.",
+  "name_key": "BeltfishPristine",
+  "id": "res_fish_pristine_beltfish"
+ },
+ "item_1246": {
+  "desc": "A rather fetching looking desert sole, ideal for display.",
+  "name_key": "DesertSolePristine",
+  "id": "res_fish_pristine_desertsole"
+ },
+ "item_1247": {
+  "desc": "An unusually large Giant Krill, cook it to gain more food.",
+  "name_key": "GiantKrillPristine",
+  "id": "res_fish_pristine_giantkrill"
+ },
+ "item_1248": {
+  "desc": "An unusually large Herring, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "HerringPristine",
+  "id": "res_fish_pristine_herring"
+ },
+ "item_1249": {
+  "desc": "An unusually large Infernal Eel, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "InfernalEelPristine",
+  "id": "res_fish_pristine_infernaleel"
+ },
+ "item_1250": {
+  "desc": "An unusually large Lobster, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "LobsterPristine",
+  "id": "res_fish_pristine_lobster"
+ },
+ "item_1251": {
+  "desc": "Blimey. That's a big one.",
+  "name_key": "MonkfishPristine",
+  "id": "res_fish_pristine_monkfish"
+ },
+ "item_1252": {
+  "desc": "An unusually large Salmon, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "SalmonPristine",
+  "id": "res_fish_pristine_salmon"
+ },
+ "item_1253": {
+  "desc": "An unusually large Sardine, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "SardinePristine",
+  "id": "res_fish_pristine_sardine"
+ },
+ "item_1254": {
+  "desc": "An unusually large Shrimp, cook it to gain more food.",
+  "name_key": "ShrimpPristine",
+  "id": "res_fish_pristine_shrimp"
+ },
+ "item_1255": {
+  "desc": "An unusually large Trout, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "TroutPristine",
+  "id": "res_fish_pristine_trout"
+ },
+ "item_1256": {
+  "desc": "An unusually large Undead Bass, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "UndeadBassPristine",
+  "id": "res_fish_pristine_undeadbass"
+ },
+ "item_1257": {
+  "desc": "An unusually large Undead Eel, worthy of putting it on the wall as trophy or cook it to gain more food.",
+  "name_key": "UndeadEelPristine",
+  "id": "res_fish_pristine_undeadeel"
+ },
+ "item_1258": {
+  "desc": "More treat than trick. Can be cooked by itself or used as an ingredient in cooking meals.",
+  "name_key": "Pumpkin",
+  "id": "food_pumpkin"
+ },
+ "item_1261": {
+  "desc": "Doesn't look like much now, but sear it on a bonfire and receive a delicious treat.",
+  "name_key": "RawAnchovies",
+  "id": "res_fish_anchovies"
+ },
+ "item_1262": {
+  "desc": "Should be de-shelled before being braised.",
+  "name_key": "RawArmouredCatfish",
+  "id": "res_fish_armouredcatfish"
+ },
+ "item_1263": {
+  "desc": "You half expect it to start wriggling again.",
+  "name_key": "RawBeltfish",
+  "id": "res_fish_beltfish"
+ },
+ "item_1266": {
+  "desc": "A raw desert sole, smelling rather ripe.",
+  "name_key": "RawDesertSole",
+  "id": "res_fish_desertsole"
+ },
+ "item_1269": {
+  "desc": "A colossal crustacean. A little soggy now, so best dry it.",
+  "name_key": "RawGiantKrill",
+  "id": "res_fish_giantkrill"
+ },
+ "item_1270": {
+  "desc": "Cooked on an anvil. Which may or may not be a red herring.",
+  "name_key": "RawHerring",
+  "id": "res_fish_herring"
+ },
+ "item_1271": {
+  "desc": "Wriggly no more. Will need to be smoked before it goes near your palate.",
+  "name_key": "RawInfernalEel",
+  "id": "res_fish_infernaleel"
+ },
+ "item_1272": {
+  "desc": "Don't worry, it's not alive anymore. For best results, roast.",
+  "name_key": "RawLobster",
+  "id": "res_fish_lobster"
+ },
+ "item_1273": {
+  "desc": "Your mouth waters just looking at it.",
+  "name_key": "RawMonkfish",
+  "id": "res_fish_monkfish"
+ },
+ "item_1275": {
+  "desc": "While it might be edible now, you'll need to fry it in this game.",
+  "name_key": "RawSalmon",
+  "id": "res_fish_salmon"
+ },
+ "item_1276": {
+  "desc": "A small fish that was brought into this world to be fried and eaten.",
+  "name_key": "RawSardine",
+  "id": "res_fish_sardine"
+ },
+ "item_1277": {
+  "desc": "Schrodinger's shrimp: could end up burnt or fried.",
+  "name_key": "RawShrimp",
+  "id": "res_fish_shrimp"
+ },
+ "item_1278": {
+  "desc": "Grill this trout on a fire. You will thank us later.",
+  "name_key": "RawTrout",
+  "id": "res_fish_trout"
+ },
+ "item_1279": {
+  "desc": "It may not look edible, but trust us: grill it and you're in for a treat.",
+  "name_key": "RawUndeadBass",
+  "id": "res_fish_undeadbass"
+ },
+ "item_1280": {
+  "desc": "A dead undead eel. We suggest you braise it.",
+  "name_key": "RawUndeadEel",
+  "id": "res_fish_undeadeel"
+ },
+ "item_1282": {
+  "desc": "Obtained from felling lesser red dragons. Can be processed at the tannery.",
+  "name_key": "RedDragonhide",
+  "id": "res_skin_dragon_red_lesser"
+ },
+ "item_1283": {
+  "desc": "Made by tanning red dragonhide. A key crafting component for armour.",
+  "name_key": "RedDragonhideLeather",
+  "id": "res_leather_dragon_red_lesser"
+ },
+ "item_1285": {
+  "desc": "An object of pure, refined obsidian.",
+  "name_key": "RefinedObsidian",
+  "id": "res_refined_obsidian"
+ },
+ "item_1288": {
+  "desc": "Made from combining necrotic bonemeal and ectoplasm. Used as a crafting component.",
+  "name_key": "SacredOil",
+  "id": "res_sacredoil"
+ },
+ "item_1291": {
+  "desc": "A light yet resilient leather, suited for survival in desert sands.",
+  "name_key": "ScorchLeather",
+  "id": "res_leather_scorch"
+ },
+ "item_1292": {
+  "desc": "A shimmering iridescent powder. Its shifting hues are almost hypnotic.",
+  "name_key": "GroundKaphiteWing",
+  "id": "res_ground_kalphite_wing"
+ },
+ "item_1294": {
+  "desc": "A collection of various sharp objects.",
+  "name_key": "Shrapnel",
+  "id": "res_shrapnel"
+ },
+ "item_1295": {
+  "desc": "Scraps of shrimp dressed to be eaten by fish. A Sardines favorite snack. Increases the catch chance of this fish.",
+  "name_key": "ShrimpBait",
+  "id": "shrimpbait"
+ },
+ "item_1297": {
+  "desc": "A thin sheet of finest silver, can be used for demonstrating your prowess, potion making or even recycling into silver bars.",
+  "name_key": "AgilitySilverLeaf",
+  "id": "agilitysilverleaf"
+ },
+ "item_1299": {
+  "desc": "Scraps that can be searched through. Take a look inside.",
+  "name_key": "SalvagePileSilver",
+  "id": "res_salvage_silver"
+ },
+ "item_1305": {
+  "desc": "Someone may have use for this.",
+  "name_key": "SoulFragment",
+  "id": "res_currency_soulfragment"
+ },
+ "item_1306": {
+  "desc": "Bait that gives fish the heeby-jeebies, but draws them in anyway. Undead Bass love a jump scare. Increases the catch chance of this fish.",
+  "name_key": "SpookyBait",
+  "id": "spookybait"
+ },
+ "item_1307": {
+  "desc": "Made by smelting coal and iron ore together. A primary ingredient for steel weapons, armour and tools.",
+  "name_key": "SteelBar",
+  "id": "res_bar_steel"
+ },
+ "item_1308": {
+  "desc": "A pair of steel crossbow limbs. Used in crafting a steel crossbow.",
+  "name_key": "SteelLimbs",
+  "id": "res_crossbowlimbs_steel"
+ },
+ "item_1309": {
+  "desc": "Scraps that can be searched through. It's the steel of the century.",
+  "name_key": "SalvagePileSteel",
+  "id": "res_salvage_steel"
+ },
+ "item_1311": {
+  "desc": "A building material. Used for advanced construction.",
+  "name_key": "StoneBlock",
+  "id": "res_stone_block"
+ },
+ "item_1312": {
+  "desc": "An underdeveloped kalphite wing. Once powdered, has many uses.",
+  "name_key": "KalphiteWingStunted",
+  "id": "res_wing_kalphite_stunted"
+ },
+ "item_1320": {
+  "desc": "Scraps that can be searched through. There might be nowt tin there.",
+  "name_key": "SalvagePileTin",
+  "id": "res_salvage_tin"
+ },
+ "item_1325": {
+  "desc": "Dropped from the restless dead. Use as a crafting material, or process at a grindstone.",
+  "name_key": "UndeadBone",
+  "id": "res_bone_undead"
+ },
+ "item_1326": {
+  "desc": "The image of a fearsome dragon. Used in crafting powerful equipment.",
+  "name_key": "DraconicVisage",
+  "id": "res_visage_dragon_imaru"
+ },
+ "item_1327": {
+  "desc": "Obtained from undead beasts. Can be cooked for... interesting results.",
+  "name_key": "UndeadMeat",
+  "id": "res_meat_undead"
+ },
+ "item_1328": {
+  "desc": "This trout has seen things. You almost feel apologetic for catching it.",
+  "name_key": "TroutUnusual",
+  "id": "res_fish_unusualtrout_quest"
+ },
+ "item_1331": {
+  "desc": "Remains of a demonic creature. A crafting material used to make demonic oil.",
+  "name_key": "VileAshes",
+  "id": "res_vile_ashes"
+ },
+ "item_1333": {
+  "desc": "Beautiful feathers used to power the Gyrhawk Amulet, which grants additional experience for exploration.",
+  "name_key": "SilverhawkFeathers",
+  "id": "silverhawkfeathers"
+ },
+ "item_1336": {
+  "desc": "Vestige.DragonkinRobe",
+  "name_key": "WaterRune",
+  "id": "res_rune_water"
+ },
+ "item_1341": {
+  "desc": "A supple material that is ideal for making rods and bows.",
+  "name_key": "WillowLogs",
+  "id": "res_wood_willow"
+ },
+ "item_1343": {
+  "desc": "Dropped from withered enemies. Used as a crafting ingredient.",
+  "name_key": "WitheredHeart",
+  "id": "res_heart_withered"
+ },
+ "item_1346": {
+  "desc": "An exceptionally durable and heat-resistant tree variety, yew is highly elastic, decay-resistant, and excellent for bending, making it a perfect choice for bows and high-quality furniture carving.",
+  "name_key": "YewLogs",
+  "id": "res_wood_yew"
+ },
+ "item_1347": {
+  "desc": "A milled piece of yew timber.",
+  "name_key": null,
+  "id": "res_plank_yew"
+ },
+ "item_1350": {
+  "desc": "Arrows with tips forged from adamant.",
+  "name_key": "AdamantArrows",
+  "id": "ammo_arrows_adamant"
+ },
+ "item_1351": {
+  "desc": "Lacerating arrows with tips forged from adamant.",
+  "name_key": "AdamantBarbedArrows",
+  "id": "adamantbarbedarrows"
+ },
+ "item_1352": {
+  "desc": "A crossbow bolt with an adamant tip.",
+  "name_key": "AdamantBolts",
+  "id": "ammo_bolts_adamant"
+ },
+ "item_1353": {
+  "desc": "A solid crossbow reinforced with adamant.",
+  "name_key": "AdamantCrossbow",
+  "id": "weap_crossbow_adamant"
+ },
+ "item_1354": {
+  "desc": "Short, sharp and to the point.",
+  "name_key": "AdamantDagger",
+  "id": "weap_dagger_adamant"
+ },
+ "item_1355": {
+  "desc": "Arrows with tips forged from adamant, coated in fire oil.",
+  "name_key": "AdamantFireArrows",
+  "id": "adamantfirearrows"
+ },
+ "item_1356": {
+  "desc": "A big two-handed axe made of adamant.",
+  "name_key": "AdamantGreatAxe",
+  "id": "weap_greataxe_adamant"
+ },
+ "item_1357": {
+  "desc": "A strong and massive blade made of adamant.",
+  "name_key": "AdamantGreatsword",
+  "id": "weap_greatsword_adamant"
+ },
+ "item_1358": {
+  "desc": "A strong woodcutting axe, good for trees that hit back.",
+  "name_key": "AdamantWoodLoggingAxe",
+  "id": "tool_logging_axe_adamant"
+ },
+ "item_1359": {
+  "desc": "An adamant mace designed to crush your enemies.",
+  "name_key": "AdamantMace",
+  "id": "weap_mace_adamant"
+ },
+ "item_1360": {
+  "desc": "A sturdy pickaxe made of adamant.",
+  "name_key": "AdamantPickaxe",
+  "id": "tool_pick_adamant"
+ },
+ "item_1361": {
+  "desc": "A fast, curved, and very efficient sword.",
+  "name_key": "AdamantScimitar",
+  "id": "weap_scimitar_adamant"
+ },
+ "item_1362": {
+  "desc": "Solid protection, slightly heavy.",
+  "name_key": "AdamantShield",
+  "id": "shield_kite_adamant"
+ },
+ "item_1364": {
+  "desc": "A reliable blade made of adamant.",
+  "name_key": "AdamantSword",
+  "id": "weap_sword_adamant"
+ },
+ "item_1365": {
+  "desc": "A heavy warhammer forged from adamant.",
+  "name_key": "AdamantWarhammer",
+  "id": "weap_hammer_adamant"
+ },
+ "item_1370": {
+  "desc": "A sturdy fishing rod, effective in Brynmoor.",
+  "name_key": "AshRod",
+  "id": "ashrod"
+ },
+ "item_1372": {
+  "desc": "A hulking greataxe made from black metal.",
+  "name_key": "BlackGreataxe",
+  "id": "weap_greataxe_black"
+ },
+ "item_1373": {
+  "desc": "A shield popularised by the Black Knights and made from black metal.",
+  "name_key": "BlackShield",
+  "id": "shield_kite_black"
+ },
+ "item_1374": {
+  "desc": "A sword in the style of the Black Knights, forged from black metal.",
+  "name_key": "BlackSword",
+  "id": "weap_sword_blackknight"
+ },
+ "item_1376": {
+  "desc": "A finely crafted longbow, powerful and precise.",
+  "name_key": "HunterLongbow",
+  "id": "weap_longbow_blightwood"
+ },
+ "item_1377": {
+  "desc": "A finely crafted bow, fast and reliable.",
+  "name_key": "HunterShortbow",
+  "id": "weap_shortbow_blightwood"
+ },
+ "item_1378": {
+  "desc": "A trusty lightsource - now in blue.",
+  "name_key": "Torch.Blue",
+  "id": "tool_torch_blue"
+ },
+ "item_1379": {
+  "desc": "Crossbow Bolts made from Blurite.",
+  "name_key": "BluriteCrossbowBolts",
+  "id": "ammo_bolts_blurite"
+ },
+ "item_1380": {
+  "desc": "A crossbow made from Blurite, thought to be a myth.",
+  "name_key": "BluriteCrossbow",
+  "id": "weap_crossbow_blurite"
+ },
+ "item_1381": {
+  "desc": "Lightweight, but very sharp. Can be fired using the Dorgeshuun Crossbow.",
+  "name_key": "BoneBolts",
+  "id": "bonebolts"
+ },
+ "item_1382": {
+  "desc": "A primitive weapon made from bone, perfect for smashing other bones.",
+  "name_key": "BoneClub",
+  "id": "weap_club_bone"
+ },
+ "item_1383": {
+  "desc": "A sinister weapon, crafted from the bones of fallen creatures.",
+  "name_key": "BoneDagger",
+  "id": "weap_dagger_bone"
+ },
+ "item_1385": {
+  "desc": "This ancient bow is a relic of Elidinis: Goddess of the Moon, Rivers, Growth and Fertility.",
+  "name_key": "BowofElidinis",
+  "id": "weap_longbow_BowofElidinis"
+ },
+ "item_1387": {
+  "desc": "Lacerating arrows with barbed tips forged from bronze.",
+  "name_key": "BarbedBronzeArrows",
+  "id": "barbedbronzearrows"
+ },
+ "item_1389": {
+  "desc": "A 1-Handed Crossbow made from Bronze.",
+  "name_key": "BronzeCrossbow",
+  "id": "weap_crossbow_bronze"
+ },
+ "item_1390": {
+  "desc": "A small blade forged from bronze, suitable for close combat.",
+  "name_key": "BronzeDagger",
+  "id": "weap_dagger_bronze"
+ },
+ "item_1391": {
+  "desc": "Burning arrows with tips forged from bronze coated in fire oil.",
+  "name_key": "FireBronzeArrows",
+  "id": "firebronzearrows"
+ },
+ "item_1392": {
+  "desc": "A two-handed bronze sword for those who prefer power over speed.",
+  "name_key": "BronzeGreatsword",
+  "id": "weap_greatsword_bronze"
+ },
+ "item_1393": {
+  "desc": "A woodcutter's tool, forged from bronze.",
+  "name_key": "BronzeLoggingAxe",
+  "id": "tools_logging_axe_bronze"
+ },
+ "item_1394": {
+  "desc": "Crush your foes with this heavy, spiked bronze mace.",
+  "name_key": "BronzeMace",
+  "id": "weap_mace_bronze"
+ },
+ "item_1399": {
+  "desc": "A heavy-hitting, two-handed weapon crafted from bronze.",
+  "name_key": "BronzeWarhammer",
+  "id": "weap_hammer_bronze"
+ },
+ "item_1404": {
+  "desc": "Made with two coarse threads at a crafting table. Rough but effective.",
+  "name_key": "CoarseNet",
+  "id": "tool_fishing_net_coarse"
+ },
+ "item_1407": {
+  "desc": "A reliable and hard-wearing net made from desert thread.",
+  "name_key": "DesertNet",
+  "id": "tool_fishing_net_desert"
+ },
+ "item_1408": {
+  "desc": "The signature weapon of the Dorgeshuun Goblin tribe. It fires Bone bolts and is surprisingly well made!",
+  "name_key": "DorgeshuunCrossbow",
+  "id": "weap_crossbow_dorgeshuun"
+ },
+ "item_1411": {
+  "desc": "A ferocious blade, filled with primal draconic rage.",
+  "name_key": "DragonboneDagger",
+  "id": "weap_dagger_dragonbone"
+ },
+ "item_1413": {
+  "desc": "A shield forged in the wake of Fuzan's fall. Its scales still glow with a smoldering heat, as though the dragon's fury refuses to fade.",
+  "name_key": "FuzanDragonfireShield",
+  "id": "shield_kite_FuzanDragonfireShield"
+ },
+ "item_1414": {
+  "desc": "Blurite crossbow bolts tipped with enchanted Jade, that have a chance of dealing Earth magic damage and knocking your target down.",
+  "name_key": "EnchantedBluriteCrossbowBolts",
+  "id": "ammo_bolts_enchanted_blurite"
+ },
+ "item_1415": {
+  "desc": "Bronze crossbow bolts tipped with enchanted opal, that have a chance to summon a lightning strike around your target, dealing Air magic damage to all nearby enemies.",
+  "name_key": "EnchantedBronzeCrossbowBolts",
+  "id": "ammo_bolts_enchanted_bronze"
+ },
+ "item_1416": {
+  "desc": "Iron crossbow bolts tipped with enchanted Jade, that have a chance of dealing Water magic damage and slowing your target.",
+  "name_key": "EnchantedIronCrossbowBolts",
+  "id": "ammo_bolts_enchanted_iron"
+ },
+ "item_1417": {
+  "desc": "These crossbow bolts offer a chance to create a toxic burst, poisoning all nearby enemies.",
+  "name_key": "EnchantedMithrilCrossbowBolts",
+  "id": "ammo_bolts_enchanted_mithril"
+ },
+ "item_1418": {
+  "desc": "Steel crossbow bolts tipped with enchanted red topaz. Has a chance to create a necrotic bolt that heals you for a proportion of the damage dealt.",
+  "name_key": "EnchantedSteelBolts",
+  "id": "ammo_bolts_enchanted_steel"
+ },
+ "item_1419": {
+  "desc": "Magical robe bottoms for Sorcerer's that have no concept of ethics.",
+  "name_key": "NecromancersRobeBottom",
+  "id": "shield_kite_Skeleton"
+ },
+ "item_1422": {
+  "desc": "A surprisingly nasty little axe. Popular with goblin warriors.",
+  "name_key": null,
+  "id": "weap_club_swingslash"
+ },
+ "item_1424": {
+  "desc": "A trusty lightsource - now in green.",
+  "name_key": "Torch.Green",
+  "id": "tool_torch_green"
+ },
+ "item_1427": {
+  "desc": "A Scimitar forged from the Visage of Imaru.",
+  "name_key": "ImarusTalon",
+  "id": "weap_scimitar_imaru"
+ },
+ "item_1431": {
+  "desc": "Lacerating arrows with barbed tips forged from iron.",
+  "name_key": "BarbedIronArrows",
+  "id": "barbedironarrows"
+ },
+ "item_1433": {
+  "desc": "A 1-Handed Crossbow made from Iron.",
+  "name_key": "IronCrossbow",
+  "id": "weap_crossbow_iron"
+ },
+ "item_1434": {
+  "desc": "A sharp, compact weapon, perfect for quick strikes in close combat.",
+  "name_key": "IronDagger",
+  "id": "weap_dagger_iron"
+ },
+ "item_1435": {
+  "desc": "Burning arrows with tips forged from iron coated in fire oil.",
+  "name_key": "FireIronArrows",
+  "id": "fireironarrows"
+ },
+ "item_1436": {
+  "desc": "A massive, two-handed axe, capable of delivering devastating blows.",
+  "name_key": "IronGreataxe",
+  "id": "weap_greataxe_iron"
+ },
+ "item_1437": {
+  "desc": "A well-balanced, large, imposing sword for skilled warriors.",
+  "name_key": "IronGreatsword",
+  "id": "weap_greatsword_iron"
+ },
+ "item_1438": {
+  "desc": "A durable tool for chopping trees, ideal for budding lumberjacks.",
+  "name_key": "IronLoggingAxe",
+  "id": "tool_logging_axe_iron"
+ },
+ "item_1439": {
+  "desc": "Crush your foes with this heavy, spiked iron mace.",
+  "name_key": "IronMace",
+  "id": "weap_mace_iron"
+ },
+ "item_1444": {
+  "desc": "A brutal two-handed weapon, capable of smashing through enemy defences.",
+  "name_key": "IronWarhammer",
+  "id": "weap_hammer_iron"
+ },
+ "item_1445": {
+  "desc": "This dagger is thin and has a wavy edge to better slide through gaps in armour.",
+  "name_key": "Keris",
+  "id": "weap_dagger_keris"
+ },
+ "item_1447": {
+  "desc": "A magical weapon carved from maple wood.",
+  "name_key": "MapleStaff",
+  "id": "weap_staff_maple"
+ },
+ "item_1448": {
+  "desc": "A supple longbow carved from maple wood.",
+  "name_key": "MapleLongbow",
+  "id": "weap_longbow_maple"
+ },
+ "item_1449": {
+  "desc": "A bad-ass rod, effective in Dowdun Reach.",
+  "name_key": "MapleRod",
+  "id": "maplerod"
+ },
+ "item_1450": {
+  "desc": "A limber shortbow carved from maple wood",
+  "name_key": "MapleShortbow",
+  "id": "weap_shortbow_maple"
+ },
+ "item_1451": {
+  "desc": "A magical staff fashioned for a master of the mystic arts. It radiates with power.",
+  "name_key": "YewStaff",
+  "id": "weap_staff_yew"
+ },
+ "item_1452": {
+  "desc": "Arrows with tips forged from mithril.",
+  "name_key": "MithrilArrows",
+  "id": "ammo_arrows_mithril"
+ },
+ "item_1453": {
+  "desc": "Lacerating arrows with barbed tips forged from mithril.",
+  "name_key": "BarbedMithrilArrows",
+  "id": "barbedmithrilarrows"
+ },
+ "item_1454": {
+  "desc": "Crossbow bolts made from mithril.",
+  "name_key": "MithrilCrossbowBolts",
+  "id": "ammo_bolts_mithril"
+ },
+ "item_1455": {
+  "desc": "A one-handed crossbow composed mainly from mithril.",
+  "name_key": "MithrilCrossbow",
+  "id": "weap_crossbow_mithril"
+ },
+ "item_1456": {
+  "desc": "A concealable weapon, perfect for backstabbing your enemies.",
+  "name_key": "MithrilDagger",
+  "id": "weap_dagger_mithril"
+ },
+ "item_1457": {
+  "desc": "Burning arrows with tips forged from mithril, coated in fire oil.",
+  "name_key": "FireMithrilArrows",
+  "id": "firemithrilarrows"
+ },
+ "item_1458": {
+  "desc": "A two-handed battleaxe forged from mithril.",
+  "name_key": "MithrilGreataxe",
+  "id": "weap_greataxe_mithril"
+ },
+ "item_1459": {
+  "desc": "A sturdy two-handed sword, with strength to match its size.",
+  "name_key": "MithrilGreatsword",
+  "id": "weap_greatsword_mithril"
+ },
+ "item_1460": {
+  "desc": "A tool for chopping trees. Make sure to hit them with the sharp side.",
+  "name_key": "MithrilLoggingAxe",
+  "id": "tool_logging_axe_mithril"
+ },
+ "item_1461": {
+  "desc": "Crush your foes with this heavy, spiked mithril mace.",
+  "name_key": "MithrilMace",
+  "id": "weap_mace_mithril"
+ },
+ "item_1462": {
+  "desc": "A tool for mining. Few rocks can withstand its strength.",
+  "name_key": "MithrilPickaxe",
+  "id": "tool_pick_mithril"
+ },
+ "item_1463": {
+  "desc": "A curved sword of Eastern influence, forged from mithril.",
+  "name_key": "MithrilScimitar",
+  "id": "weap_scimitar_mithril"
+ },
+ "item_1464": {
+  "desc": "A sturdy shield crafted from mithril. Perfect for holding your ground.",
+  "name_key": "MithrilShield",
+  "id": "shield_kite_mithril"
+ },
+ "item_1465": {
+  "desc": "A well-forged mithril blade for trained combatants.",
+  "name_key": "MithrilSword",
+  "id": "weap_sword_mithril"
+ },
+ "item_1466": {
+  "desc": "An imposing two-handed weapon, capable of crushing any enemy.",
+  "name_key": "MithrilWarhammer",
+  "id": "weap_hammer_mithril"
+ },
+ "item_1467": {
+  "desc": "Made with two mystic threads at a crafting table. A stunningly well crafted net.",
+  "name_key": "MysticNet",
+  "id": "tool_fishing_net_mystic"
+ },
+ "item_1468": {
+  "desc": "Necromantic essence still eminates from this staff.",
+  "name_key": "NecromancersStaff",
+  "id": "weap_staff_necromancer"
+ },
+ "item_1470": {
+  "desc": "A powerful longbow carved from oak wood.",
+  "name_key": "OakLongbow",
+  "id": "weap_longbow_oak"
+ },
+ "item_1471": {
+  "desc": "A favourite fishing rod, effective in Ghornfell.",
+  "name_key": "OakRod",
+  "id": "oakrod"
+ },
+ "item_1472": {
+  "desc": "An agile shortbow carved from oak wood.",
+  "name_key": "OakShortbow",
+  "id": "weap_shortbow_oak"
+ },
+ "item_1474": {
+  "desc": "This ancient and powerful weapon lets the wielder channel its sovereign authority into mind-controlling powers.",
+  "name_key": "Pharaohssceptre",
+  "id": "weap_staff_Pharaohssceptre"
+ },
+ "item_1475": {
+  "desc": "Arrows with tips forged from adamant coated in Weapon Poison.",
+  "name_key": "PoisonedAdamantArrows",
+  "id": "poisonedadamantarrows"
+ },
+ "item_1476": {
+  "desc": "Arrows with tips forged from bronze coated in Weapon Poison.",
+  "name_key": "PoisonBronzeArrows",
+  "id": "poisonbronzearrows"
+ },
+ "item_1477": {
+  "desc": "Arrows with tips carved from animal fangs coated in Weapon Poison.",
+  "name_key": "PoisonBoneArrows",
+  "id": "poisonbonearrows"
+ },
+ "item_1478": {
+  "desc": "Arrows with tips forged from iron coated in Weapon Poison.",
+  "name_key": "PoisonIronArrows",
+  "id": "poisonironarrows"
+ },
+ "item_1479": {
+  "desc": "Arrows with tips forged from mithril, coated in Weapon Poison.",
+  "name_key": "PoisonedMithrilArrows",
+  "id": "poisonedmithrilarrows"
+ },
+ "item_1481": {
+  "desc": "A trusty lightsource - now in purple.",
+  "name_key": "Torch.Purple",
+  "id": "tool_torch_purple"
+ },
+ "item_1482": {
+  "desc": "A trusty lightsource - now in red.",
+  "name_key": "Torch.Red",
+  "id": "tool_torch_red"
+ },
+ "item_1484": {
+  "desc": "A crossbow made from black metal. Similar to those used by Black Knight snipers.",
+  "name_key": "BlackSniperCrossbow",
+  "id": "weap_crossbow_black"
+ },
+ "item_1485": {
+  "desc": "This Greatsword exsists between the realms of the living and the dead.",
+  "name_key": "ShadowSword",
+  "id": "weap_masterwork_greatsword_gatekeeper"
+ },
+ "item_1486": {
+  "desc": "This Greatsword exsists between the realms of the living and the dead.",
+  "name_key": "ShadowSword",
+  "id": "weap_masterwork_greatsword_gatekeeper"
+ },
+ "item_1487": {
+  "desc": "A deadly weapon, with a distubingly accurate name.",
+  "name_key": null,
+  "id": "weap_mace_skullsplitter"
+ },
+ "item_1488": {
+  "desc": "A mage's weapon crafted from wither-rotted hollow bark. It has strange magical properties.",
+  "name_key": "SplitbarkStaff",
+  "id": "weap_staff_splitbark"
+ },
+ "item_1489": {
+  "desc": "A mystical weapon humming with power, wielded by powerful Saradominist Wizards ages past.",
+  "name_key": "StaffOfLight",
+  "id": "weap_staff_staffoflight"
+ },
+ "item_1490": {
+  "desc": "Arrows with tips forged from steel.",
+  "name_key": "SteelArrows",
+  "id": "ammo_arrows_steel"
+ },
+ "item_1492": {
+  "desc": "Crossbow Bolts made from steel.",
+  "name_key": "SteelBolts",
+  "id": "ammo_bolts_steel"
+ },
+ "item_1493": {
+  "desc": "A 1-Handed crossbow made from steel.",
+  "name_key": "SteelCrossbow",
+  "id": "weap_crossbow_steel"
+ },
+ "item_1494": {
+  "desc": "A fine dagger made from high quality steel.",
+  "name_key": "SteelDagger",
+  "id": "weap_dagger_steel"
+ },
+ "item_1496": {
+  "desc": "A two handed battleaxe forged from steel.",
+  "name_key": "SteelGreataxe",
+  "id": "weap_greataxe_steel"
+ },
+ "item_1497": {
+  "desc": "A two handed steel sword made famous by highland warriors.",
+  "name_key": "SteelGreatsword",
+  "id": "weap_greatsword_steel"
+ },
+ "item_1498": {
+  "desc": "A woodcutter's tool, forged from steel.",
+  "name_key": "SteelLoggingAxe",
+  "id": "tool_logging_axe_steel"
+ },
+ "item_1499": {
+  "desc": "A brutal crush weapon forged from high quality steel.",
+  "name_key": "SteelMace",
+  "id": "weap_mace_steel"
+ },
+ "item_1500": {
+  "desc": "A miner's tool, forged from steel.",
+  "name_key": "SteelPickaxe",
+  "id": "tool_pick_steel"
+ },
+ "item_1501": {
+  "desc": "A vicious, curved sword of eastern origins forged from steel.",
+  "name_key": "SteelScimitar",
+  "id": "weap_scimitar_steel"
+ },
+ "item_1502": {
+  "desc": "A reliable, durable shield crafted from steel, perfect for tanking big hits.",
+  "name_key": "SteelShield",
+  "id": "shield_kite_steel"
+ },
+ "item_1504": {
+  "desc": "For fighting monsters and swearing oaths.",
+  "name_key": "SteelSword",
+  "id": "weap_sword_steel"
+ },
+ "item_1505": {
+  "desc": "A massive weapon made from steel. Great for hammering really big nails.",
+  "name_key": "SteelWarhammer",
+  "id": "weap_hammer_steel"
+ },
+ "item_1508": {
+  "desc": "A primitive weapon made from stone, perfect for early adventurers.",
+  "name_key": "StoneClub",
+  "id": "weap_club_stone"
+ },
+ "item_1509": {
+  "desc": "A rudimentary blade, handy in close combat.",
+  "name_key": "StoneDagger",
+  "id": "weap_dagger_stone"
+ },
+ "item_1510": {
+  "desc": "A crude but functional axe for chopping trees.",
+  "name_key": "StoneLoggingAxe",
+  "id": "tool_logging_axe_stone"
+ },
+ "item_1512": {
+  "desc": "A powerful battlestaff, once owned and used by Archmage Alric.",
+  "name_key": "SubjugationStaff",
+  "id": "weap_staff_subjugation"
+ },
+ "item_1514": {
+  "desc": "This sword is now thrice-owned: by you, the Black Knight Titan and Lord Rasmodel.",
+  "name_key": "TitansWrath",
+  "id": "masterwork_weap_greatsword_titanswrath"
+ },
+ "item_1515": {
+  "desc": "A jagged shield of obsidian, shaped to deflect and punish in equal measure. Its edges are as dangerous as the blows it stops.",
+  "name_key": "Toktzketxil",
+  "id": "shield_kite_Toktzketxil"
+ },
+ "item_1516": {
+  "desc": "Forged from volcanic glass, its pointed tip bleeds fire as though the earth itself burns within. The heat never fades.",
+  "name_key": "Toktzmejtal",
+  "id": "weap_staff_Toktzmejtal"
+ },
+ "item_1517": {
+  "desc": "A double-pointed sword that is extremely efficient at finding the weak spots in your enemies.",
+  "name_key": "Toktzxilak",
+  "id": "weap_sword_toktzxilak"
+ },
+ "item_1518": {
+  "desc": "A trusty lightsource.",
+  "name_key": "Torch",
+  "id": "tool_torch"
+ },
+ "item_1519": {
+  "desc": "A massive warhammer of obsidian hue. Each swing carries the weight of something ancient.",
+  "name_key": "Tzhaarketom",
+  "id": "weap_hammer_Tzhaarketom"
+ },
+ "item_1520": {
+  "desc": "Once the bow of a silent hunter. Deals additional damage to unaware targets.",
+  "name_key": "UlvsLongbow",
+  "id": "weap_longbow_ulvs"
+ },
+ "item_1521": {
+  "desc": "This bow still fires with undeadly precision.",
+  "name_key": "UndeadRangersBow",
+  "id": "weap_shortbow_skeleton"
+ },
+ "item_1524": {
+  "desc": "A precise Longbow crafted from Willow.",
+  "name_key": "WillowLongbow",
+  "id": "weap_longbow_willow"
+ },
+ "item_1525": {
+  "desc": "A professional-looking fishing rod, effective in Fellhollow.",
+  "name_key": "WillowRod",
+  "id": "willowrod"
+ },
+ "item_1526": {
+  "desc": "An agile Shortbow crafted from Willow.",
+  "name_key": "WillowShortbow",
+  "id": "weap_shortbow_willow"
+ },
+ "item_1527": {
+  "desc": "A silver dagger that brings fear to all those who howl in the night.",
+  "name_key": "WolfbaneDagger",
+  "id": "weap_dagger_wolfbane"
+ },
+ "item_1529": {
+  "desc": "A basic melee weapon. Handy in a pinch.",
+  "name_key": "WoodenClub",
+  "id": "weap_club_wood"
+ },
+ "item_1534": {
+  "desc": "Made with two wool threads at a crafting table. Unwieldy but does a job.",
+  "name_key": "WoolNet",
+  "id": "tool_fishing_net_wool"
+ },
+ "item_1535": {
+  "desc": "A trusty lightsource - now in yellow.",
+  "name_key": "Torch.Yellow",
+  "id": "tool_torch_yellow"
+ },
+ "item_1536": {
+  "desc": "An impactful longbow carved from yew.",
+  "name_key": "YewLongbow",
+  "id": "weap_longbow_yew"
+ },
+ "item_1537": {
+  "desc": "A fishing rod made from yew and adamant.",
+  "name_key": "YewRod",
+  "id": "yewrod"
+ },
+ "item_1538": {
+  "desc": "A strong shortbow made from yew.",
+  "name_key": "YewShortbow",
+  "id": "weap_shortbow_yew"
+ },
+ "item_1539": {
+  "desc": "Standard issue for any mage in Dowdun Reach.",
+  "name_key": "ZamorakStaff",
+  "id": "masterwork_weap_staff_zamorak"
+ },
+ "item_1541": {
+  "desc": "Made in the style of an ancient axe often found in the hands of zombies, it is capable of dealing both Crush and Slash damage at the same time. There seems to be more to this axe though...",
+  "name_key": "ZombieAxe",
+  "id": "weap_club_zombieaxe"
+ }
+}

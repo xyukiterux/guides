@@ -1,0 +1,898 @@
+
+## Activity boss ActCru2 (83)
+1039_ActCru2_n1s1 [Erode]: Damages all enemies for #Factor_1# of ATK, reducing their ATK-related stats by #Factor_2# for 1 turn.
+1039_ActCru2_n1s2 []: Damages all enemies for #Factor_1# of ATK, reducing their ATK-related stats by #Factor_2# for 1 turn.
+1039_ActCru2_n1s3 []: Damages all enemies for #Factor_1# of ATK, reducing their ATK-related stats by #Factor_2# for 2 turns.
+1038_ActCru2_n1s1 [Impale]: Deals damage to target equal to #Factor_1# of ATK, and reduces the target's DEF-related stats by #Factor_2# for 1 turn.
+1038_ActCru2_n1s2 []: Deals damage to target equal to #Factor_1# of ATK, and reduces the target's DEF-related stats by #Factor_2# for 2 turns.
+1038_ActCru2_n1s3 []: Deals damage to target equal to #Factor_1# of ATK, and reduces the target's DEF-related stats by #Factor_2# for 2 turns.
+2002_ActCru2_n1s1 [Two-Layer Strike]: Deals [Blood Piercer] damage equal to 200% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2002_ActCru2_n1s2 []: Deals [Blood Piercer] damage equal to 240% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2002_ActCru2_n1s3 []: Deals [Blood Piercer] damage equal to 280% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2002_ActCru2_n2s1 [Consecutive Attack]: Damages the target(s) for #Factor_1# of ATK, making their passive skills ineffective for 1 turn.
+2002_ActCru2_n2s2 []: Damages the target(s) for #Factor_1# of ATK, making their passive skills ineffective for 1 turn.
+2002_ActCru2_n2s3 []: Damages the target(s) for #Factor_1# of ATK, making their passive skills ineffective for 2 turns.
+2002_ActCru2_n3s1 [Lethal Swipe]: Damages all enemies for 200% of ATK, applying [Lethal] to them for 1 turn. || *Lethal: Unable to trigger any healing effects.
+2002_ActCru2_n3s2 []: Damages all enemies for 240% of ATK, applying [Lethal] to them for 1 turn. || *Lethal: Unable to trigger any healing effects.
+2002_ActCru2_n3s3 []: Damages all enemies for 280% of ATK, applying [Lethal] to them for 1 turn. || *Lethal: Unable to trigger any healing effects.
+2002_ActCru2_n4s1 [Interference]: Damages the enemy character with the highest CP for 280% of ATK, applying [Interference Mark] for 1 turn. || *Interference Mark: Makes the caster immune to skill attacks from attackers affected by Interference Marks.
+2002_ActCru2_n4s2 []: Damages the enemy character with the highest CP for 340% of ATK, applying [Interference Mark] for 1 turn. || *Interference Mark: Makes the caster immune to skill attacks from attackers affected by Interference Marks.
+2002_ActCru2_n4s3 []: Damages the enemy character with the highest CP for 400% of ATK, applying [Interference Mark] for 1 turn. || *Interference Mark: Makes the caster immune to skill attacks from attackers affected by Interference Marks.
+2002_ActCru2_n5s1 [Kagune Double Attack]: Deals [Lifesteal] damage equal to 300% of ATK to the enemy target. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+2002_ActCru2_n5s2 []: Deals [Lifesteal] damage equal to 560% of ATK to the enemy target. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+2002_ActCru2_n5s3 []: Deals [Lifesteal] damage equal to 420% of ATK to the enemy target. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+ActCru2_b1p1 [Weak]: Changes your Weak cap to 6 when battle starts.
+ActCru2_b1p2 [Disability Immunity]: Immune to all disabling effects and skill level reducing effects
+ActCru2_b1p3 [Underbelly]: Critical damage taken increased by 20%, damage received from CCG characters increased by 30%, damage dealt to CCG characters reduced by 20%.
+ActCru2_b1p4 [Burst]: If Younger Bin's HP is below 50%, all enemies receive damage equal to 500% of ATK, when your turn starts
+ActCru2_b1p5 [Will Boost]: When Younger Bin dies, your basic stats increase by 50%, damage taken reduce by 50%, and your attacks will Stun the targets.
+ActCru2_b1p6 [DMG Boost]: You deal 5% increased damage for every debuff inflicted on the enemies.
+ActCru2_b1p7 [Damage Increase]: Damage dealt increase by 1% for every 3% of lost HP.
+ActCru2_b1p8 [Burst]: If Younger Bin's HP is below 40%, all enemies receive damage equal to 500% of ATK, when your turn starts
+ActCru2_b1p9 [Burst]: If Younger Bin's HP is below 35%, all enemies receive damage equal to 500% of ATK, when your turn starts
+ActCru2_b1p10 [Burst]: If Younger Bin's HP is below 30%, all enemies receive damage equal to 500% of ATK, when your turn starts
+ActCru2_b1p14 [Agonal State]: Taking fatal damage when Younger Bin is alive brings you to 1 HP, applying [Agonal State] to you. [Agonal State] is removed when you're the only survivor in your team. || *Agonal Status: Unable to take action. Immune to damage.
+ActCru2_b2p1 [Weak]: Changes your Weak cap to 4 when battle starts.
+ActCru2_b2p2 [Disability Immunity]: Immune to all disabling effects and skill level reducing effects
+ActCru2_b2p3 [Underbelly]: Critical damage taken increased by 20%, damage received from CCG characters increased by 30%, damage dealt to CCG characters reduced by 20%.
+ActCru2_b2p4 [Feeble]: Elder Bin being in Agonal state causes you to take 30% more damage.
+ActCru2_b2p5 [Warding]: Elder Bin's HP dropping to below 50% for the first time causes you to enter Warding Stance. When Warding Stance is active, the damage of all attacks against Elder Bin is reduced to 1, and you take 30% reduced damage. Weak effect cancels the Stance.
+ActCru2_b2p6 [Resurrection]: If Elder Bin is in Agonal state when your turn starts, you gain [Resurrection State]. When [Resurrection State] is active, if unaffected by Weak effect at the start of your turn, your [Resurrection State] will be removed and Elder Bin will be resurrected with 50% HP remaining, take 50% less damage and deal 100% more damage for 2 turns, and his Agonal state will be removed. Triggers only once || *Resurrection State: Reduces non-critical damage taken by 30%. Increases critical damage taken by 20%.
+ActCru2_b2p7 [Buff Removal]: Your attacks remove a random buff from the target.
+ActCru2_b3p1 [Weak]: Changes your Weak cap to 8 when battle starts.
+ActCru2_b3p2 [Disability Immunity]: Immune to all disabling effects and skill level reducing effects
+ActCru2_b3p3 [Underbelly]: Critical damage taken increased by 20%, damage received from CCG characters increased by 30%, damage dealt to CCG characters reduced by 20%.
+ActCru2_b3p4 [HP Mark]: Grants 2 [HP Mark] as battle starts, stacking up to 5 times. Every 2 times you take damage restricting you, 1 [HP Mark] is removed. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b3p5 [Vitality Acquisition]: When the enemy's turn ends, you gain 1 [HP Mark] for every 1 enemy affected by 3 or more debuffs, up to 3 times. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b3p6 [Non-Restricting DMG Immunity]: Immune to the first non-restricting damage each turn.
+ActCru2_b3p7 [Max DMG taken]: Cannot be dealt more than 30% of Max HP in one attack.
+ActCru2_b3p8 [Injury Restoration]: Restores 10% of lost HP for every 1 [HP Mark] you have when your turn ends. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b3p9 [Vitality Aegis]: If unaffected by [HP Mark] when your turn starts, you gain 1 [HP Mark]. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b3p10 [HP Mark]: Grants 2 [HP Mark] as battle starts, stacking up to 4 times. Every 2 times you take damage restricting you, 1 [HP Mark] is removed. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b3p11 [HP Mark]: Grants 1 [HP Mark] as battle starts, stacking up to 4 times. Every 2 times you take damage restricting you, 1 [HP Mark] is removed. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b4p1 [Weak]: Changes your Weak cap to 4 when battle starts.
+ActCru2_b4p2 [Weak]: Changes your Weak cap to 5 when battle starts.
+ActCru2_b4p3 [Weaken]: As the enemy's turn starts, inflicts 2 random enemies with a debuff that reduces damage they deal by 10% and increases damage they take by 10% for 1 turn.
+ActCru2_b4p4 [Attack]: Taking no damage in the last turn causes you to damage all enemies for 300% of ATK, preventing them from using ATK skills for 1 turn.
+ActCru2_b4p5 [Vitality Reduction]: When dying, remove 2 [HP Mark] from self and reduce the maximum stack of [HP Mark] by 1. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b4p6 [DEF-Related Stats Weakening]: After Weak expires, damages the enemy character with the highest ATK for 200% of ATK, reducing the target's DEF by 20% for 1 turn.
+ActCru2_b4p7 [DMG Amplification]: Damage dealt to targets affected by debuffs increased by 30%.
+ActCru2_b4p8 [Reflex]: Grants Reflex effect for 1 turn when your turn starts. When Reflex is active, taking non-critical damage causes you to deal Reflex damage to the attacker equal to 20% of the damage taken. Taking CRIT DMG cancels Reflex effect.
+ActCru2_b4p9 [Offense-Defense Switch]: When [HP Mark] exceeds 2, your ATK-related stats increases by 10%. When [HP Mark] does not exceed 2, your DEF-related ability increases by 10%. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b5p1 [Weak]: Changes your Weak cap to 4 when battle starts.
+ActCru2_b5p2 [Weak]: Changes your Weak cap to 5 when battle starts.
+ActCru2_b5p3 [ATK-Related Stats Reduction]: Each time an enemy casts an ATK skill, its ATK-Related stats decrease by 10% for 1 turn.
+ActCru2_b5p4 [HP Restoration]: Taking no damage in the last turn heals your whole team for 500% of ATK as your turn starts.
+ActCru2_b5p5 [Mark Reduction]: When dying, remove 2 [HP Mark] from self and reduce the maximum stack of [HP Mark] by 1. || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b5p6 [Lethal Attack]: When an ally is inflicted with Weak effect, damages the enemy character with the lowest HP percentage equal to 180% of ATK, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+ActCru2_b5p7 [DMG Resist]: Damage received from attackers affected by debuffs reduced by 30%.
+ActCru2_b5p8 [Weak Resistance]: Being inflicted with a debuff for the first time each turn reduces Weak by 1.
+ActCru2_b5p9 [Offense-Defense Switch]: When you have more than 2 [HP Mark], ATK-related stats increase by 15% When you have no more than 2 [HP Mark], DEF-related stats increase by 15% || *HP Mark: Increases damage dealt by 10% and reduces damage taken by 5% for every Mark.
+ActCru2_b6p1 [Weak]: Changes your Weak cap to 6 as battle starts. When affected by Weak, you are immune to Weak [Stun] but are removed 1 Momentum from you. || *Stunned: Unable to take any actions.
+ActCru2_b6p2 [Debuff Immunity]: Immune to all debuffs and Skill Level reduction effects.
+ActCru2_b6p3 [Underbelly]: Critical damage taken increased by 20%, damage received from CCG characters increased by 30%, damage dealt to CCG characters reduced by 20%.
+ActCru2_b6p4 [Max DMG taken]: Cannot be dealt more than 30% of Max HP in one attack.
+ActCru2_b6p5 [Momentum]: Grants yourself 5 [Momentum] as battle starts. Each time your turn ends, 1 [Momentum] is removed. || *Momentum: Increases damage dealt by 10% for every Momentum.
+ActCru2_b6p6 [Basic Stats Boost]: Each time an ally dies, 1 [Momentum] is removed, increasing your basic stats by 30%. || *Momentum: Increases damage dealt by 10% for every Momentum.
+ActCru2_b6p7 [Attack Boost]: After battle starts, when your first turn begins, all allies' ATK is increased by 200% for 1 turn. The effect is triggered every 2 turns for the rest of the battle.
+ActCru2_b6p8 [Destruction]: When your turn starts, if you have 4 or more [Momentum], all enemies receive damage equal to 800% of ATK. This effect occurs every 2 turns. || *Momentum: Increases damage dealt by 10% for every Momentum.
+ActCru2_b6p9 [Preparative State]: When your turn starts, if you have no [Momentum], you gain [Preparative State] for 1 turn. After [Preparative State] expires, you gain 5 [Momentum]. || *Preparative State: Increases damage taken by 50%. Reduces damage dealt by 50%. *Momentum: Increases damage dealt by 10% for every Momentum.
+ActCru2_b6p10 []: Damages the enemy character with the highest ATK for 300% of your ATK when your turn starts, applying [Interference Mark] for 1 turn. || *Interference Mark: Makes the caster immune to skill attacks from attackers affected by Interference Marks.
+ActCru2_b7p1 [Weak]: Changes your Weak cap to 5 as battle starts. Suffering Weak increases Weak cap to 10.
+ActCru2_b7p2 [Debuff Immunity]: Immune to all debuffs and Skill Level reduction effects.
+ActCru2_b7p3 [Max DMG taken]: Cannot be dealt more than 35% of Max HP in one attack.
+ActCru2_b7p4 [Defense Ignoring]: When you have no less than 4 [Momentum], you ignore the target's DEF when attacking. || *Momentum: Increases damage dealt by 10% for every Momentum.
+ActCru2_b7p5 [Group Attack]: When your turn starts, if you have less than 2 [Momentum], damages all enemies for 500% of ATK, causing them to take 20% increased damage for 1 turn, granting you 2 [Momentum]. || *Momentum: Increases damage dealt by 10% for every Momentum.
+
+## Activity boss ActCru3 (44)
+ActCru3_base1 [Enhance]: Basic stats are increased; This effect scales with the event raid stage.
+ActCru3_p25 [Unyielding]: Basic stats cannot be reduced below their initial values.
+2005_ActCru3_n1s1 [Boosted Attack]: Deals [Blood Piercer] damage equal to 240% to all enemies, increasing your ATK-related stats by 15% for 2 turns. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2005_ActCru3_n1s2 []: Deals [Blood Piercer] damage equal to 260% to all enemies, increasing your ATK-related stats by 15% for 2 turns. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2005_ActCru3_n1s3 []: Deals [Blood Piercer] damage equal to 280% to all enemies, increasing your ATK-related stats by 15% for 2 turns. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2005_ActCru3_n2s1 [Spouting Spikes]: Deals [Lifesteal] damage equal to 300% of ATK to an enemy, and neutralizes 2 random enemies' passive skills for 1 turn. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+2005_ActCru3_n2s2 []: Deals [Lifesteal] damage equal to 330% of ATK to an enemy, and neutralizes 2 random enemies' passive skills for 1 turn. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+2005_ActCru3_n2s3 []: Deals [Lifesteal] damage equal to 350% of ATK to an enemy, and neutralizes 2 random enemies' passive skills for 1 turn. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+2005_ActCru3_n3s1 [Favorable Attack]: Deals [Death] damage equal to 230% of ATK to all enemies. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+2005_ActCru3_n3s2 []: Deals [Death] damage equal to 250% of ATK to all enemies. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+2005_ActCru3_n3s3 []: Deals [Death] damage equal to 270% of ATK to all enemies. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+2005_ActCru3_n4s1 [Weakened Attack]: Damages an enemy target for #Factor_1# of ATK, and reduces ATK-Related stats of the enemy with the highest ATK by #Factor_2# for 1 turn.
+2005_ActCru3_n4s2 []: Damages an enemy target for #Factor_1# of ATK, and reduces ATK-Related stats of the enemy with the highest ATK by #Factor_2# for 1 turn.
+2005_ActCru3_n4s3 []: Damages an enemy target for #Factor_1# of ATK, and reduces ATK-Related stats of the enemy with the highest ATK by #Factor_2# for 1 turn.
+2005_ActCru3_n5s1 [Lethal Attack]: Deals [Amplification] damage to all enemies for 240% of ATK, inflicting Lethal to them for 1 turn. || *Amplification: If you are buffed, this damage will be increased by 15%
+2005_ActCru3_n5s2 []: Deals [Amplification] damage to all enemies for 260% of ATK, inflicting Lethal to them for 1 turn. || *Amplification: If you are buffed, this damage will be increased by 15%
+2005_ActCru3_n5s3 []: Deals [Amplification] damage to all enemies for 280% of ATK, inflicting Lethal to them for 1 turn. || *Amplification: If you are buffed, this damage will be increased by 15%
+2005_ActCru3_n6s1 [Kagune Attack]: Deals damage equal to #Factor_1# of ATK to the enemy target, while healing all allies #Factor_2# of the damage.
+2005_ActCru3_n6s2 []: Deals damage equal to #Factor_1# of ATK to the enemy target, while healing all allies #Factor_2# of the damage.
+2005_ActCru3_n6s3 []: Deals damage equal to #Factor_1# of ATK to the enemy target, while healing all allies #Factor_2# of the damage.
+ActCru3_p1 [Ultimate Skill DMG Reduction]: Take 40% less damage from Ultimate Skills.
+ActCru3_p2 [Lock HP Lost]: Cannot be dealt more than 35% of Max HP in one skill attack.
+ActCru3_p3 [Lock HP Lost]: Cannot be dealt more than 30% of Max HP in one skill attack.
+ActCru3_p4 [Weak]: Changes your Weak cap to 6 when battle starts.
+ActCru3_p5 [Weak]: Changes your Weak cap to 6 as battle starts. Suffering Weak increases Weak cap to 10.
+ActCru3_p6 [Weak]: Changes your Weak cap to 6 as battle starts. HP dropping to below 50% for the first time reduces your Weak to 0. Weak effect causes you to take 50% increased damage for 1 turn instead of Stunning you.
+ActCru3_p7 [Underbelly]: Damage taken from CCG characters is increased by 30%.
+ActCru3_p8 [Lifesteal Boost]: Casting a single-target skill grants you 1 stack of [Lifesteal Mark]. || *Lifesteal Mark: Lifesteal increased by 5%. Regeneration Rate increased by 15%.
+ActCru3_p9 [DMG Boost]: Damage dealt is increased by 10% for each 1 buff you have, and reduced by 10% for each debuff you have, both up to 40%.
+ActCru3_p10 [Endurance]: When battle starts, you gain 4 stacks of [Endurance]. Every time you suffer Weak effect or every 2 times you're afflicted with a debuff, 1 stack of [Endurance] is removed. || *Endurance: DEF-Related stats increased by 8%. Regeneration Rate increased by 10%.
+ActCru3_p11 [Endurance]: When battle starts, you gain 5 stacks of [Endurance]. Every time you suffer Weak effect or every 2 times you're afflicted with a debuff, 1 stack of [Endurance] is removed. || *Endurance: DEF-Related stats increased by 8%. Regeneration Rate increased by 10%.
+ActCru3_p12 [Burst Attack]: 2 turns after battle starts, if you have over 2 stacks of Endurance when your turn begins, you deal [Death] damage equal to 300% of ATK to all enemies. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+ActCru3_p13 [Burst Attack]: 2 turns after battle starts, if you have over 2 stacks of Endurance when your turn begins, you deal [Death] damage equal to 300% of ATK to all enemies, restoring 10% of the damage dealt for each 1 attacked enemy whose HP percentage is lower than yours. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+ActCru3_p14 [Attack]: Each time your turn starts, you damage a random enemy target for 300% of ATK, and reduces its ATK-Related stats by 15% for 2 turns.
+ActCru3_p15 [Offense-Defense Switch]: DEF-Related stats are increased by 20% if your HP is above 50%. ATK-Related stats are increased by 20% if otherwise.
+ActCru3_p16 [Buff Removal]: Removes up to 3 buffs from 1 random enemy target each time your turn ends, and increases your CRIT Rate by 10% for 2 turns for every 1 removed debuff.
+ActCru3_p17 [Dodge]: You dodge all active skills when your HP is below 10%
+ActCru3_p18 [Retaliation]: Damage taken from active skills of non-restricting attribute removes 1 debuff from you, causing you to Retaliate the attacker for 220% of ATK, increasing your DEF-Related stats by 15% for 1 turn.
+ActCru3_p19 [HP Restoration]: Killing an enemy with a skill heals you for 40% of the damage dealt.
+ActCru3_p20 [HP Restoration]: Killing an enemy with a skill heals you for 40% of the damage dealt, reducing all enemies' skill levels.
+ActCru3_p21 [ATK-Related Stats Boost]: After 2 turns, when your turn begins, Your ATK related stats is increased by 20%
+ActCru3_p22 [Dodge]: After your turn starts, the following effects are applied to you sequentially each 1 turn: [Dodge ATK Skills], [Dodge Disabling Skills], [Dodge Special Skills], [Dodge Stance Skills].
+ActCru3_p23 [ATK-Related Stats Boost]: Team's ATK-Related stats increase by 20% upon death.
+ActCru3_p24 [Endurance Increase]: When your turn starts, if Endurance is lower than 3 stacks, grant yourself 1 stack of patience.
+
+## Anniversary boss (15)
+HalfAnniv_p1 [Chase]: When the battle starts, grant yourself [Chase]. || *Chase: An enemy's death causes self to deal damage equal to 130% of ATK to all enemies.
+HalfAnniv_p2 [Shield Removed]: Before using an active skill, remove all shields from the target.
+HalfAnniv_p3 [Bonus-Attack DMG]: When the enemy turn starts, deal damage equal to 120% of ATK to all enemies. For each enemy you defeat during the battle, deal an additional damage equal to 100% ATK to all enemies. This additional damage ignores shields.
+HalfAnniv_p4 [DEF Weakening]: Each time you take damage, reduce your DEF-related stats by 10%, up to 5 stacks.
+HalfAnniv_p5 [DMG Boost]: When your turn starts, increase your ATK-related stats by 10% and damage dealt by 10%, up to 3 stacks.
+HalfAnniv_p6 [Death Damage]: When your turn starts, deal [Ultra-Death] damage equal to 160% of ATK to the enemy with the highest ATK, and deal additional damage equal to 10% of the target's max HP. This additional damage ignores shields. || *Ultra-Death: This damage deal 40% more damage to the enemy with HP below 35%
+2002_Anniv1_b1s1 []: Deals Blood Piercer Damage equal to 200% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2002_Anniv1_b1s2 []: Deals Blood Piercer Damage equal to 230% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2002_Anniv1_b1s3 []: Deals Blood Piercer Damage equal to 260% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+Anniv1_p1 [Stats Enhancement]: At the start of each allied turn, own ATK-related starts increase by 10%. Starting from turn 3, own ATK-related starts increase by 30%, then remove all enemies' shield effects and apply the [Breathless] effect to all enemies. || *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%.
+Anniv1_p2 [Abuse]: When the enemy turn ends, deals [Impale] damage equal to 180% of ATK to all enemies. || *Impale: This damage ignores the target's DEF.
+Anniv1_p3 [Smite]: After the first turn of the battle, when your turn starts, apply 2 stacks of [Torn] to the enemy with the lowest HP, and deal [Impale] damage equal to 200% of ATK. || *Torn: Max HP is reduced by 5% *Impale: This damage ignores the target's DEF.
+Anniv1_p4 [Attribute Protection]: Your max HP will not be reduced below the base value
+Anniv1_p5 [Damage Boost]: When your turn starts, increase your ATK-related stats by 10% and damage dealt by 10%, up to 3 stacks.
+Anniv1_p6 [Death Damage]: When your turn starts, deal [Ultra-Death] damage equal to 160% of ATK to the enemy with the highest ATK, and deal additional damage equal to 10% of the target's max HP. This additional damage ignores shields. || *Ultra-Death: This damage deal 40% more damage to the enemy with HP below 35%
+
+## Campaign/Exploration Camp (111)
+Camp002univ_lvN []: Changes your Weak cap to 5 as battle starts. When taking damage from a skill you're restricted by, you gain 1 extra Weak for every 1 of that skill's level.
+Camp002univ_lvB []: When taking damage from a skill you're restricted by, you gain 1 extra Weak for every 1 of that skill's level.
+Camp002univ_HPlockN []: Single attack of non-restricting attributes deals no more damage than 50% of your Max HP.
+Camp002univ_HPlockE []: Changes your Weak cap to 6 as battle starts. Single skill of non-restricting attributes deals no more damage than 30% of your Max HP.
+Camp002univ_Wk5 []: Changes your Weak cap to 5 as battle starts, and suffering Weak will not increase it.
+Camp002univ_HPlockB1 []: Single attack deals no more damage than 35% of your Max HP. Single attack from a non-restricting skill deals no more damage than 10% of your Max HP.
+Camp002univ_HPlockB2 []: Cannot be dealt more than 35% of Max HP in one attack.
+Camp002_ATK_exdmg1 []: Damage dealt to targets restricted by you is increased by 6% of their Max HP.
+Camp002_ATK_exdmg2 []: Damage dealt to targets restricted by you is increased by 9% of their Max HP.
+Camp002_ATK_incdmg1 []: Damage dealt to targets restricted by you is increased by 40%.
+Camp002_ATK_incdmg2 []: Damage dealt to targets restricted by you is increased by 60%.
+Camp002_ATK_iggdef1 []: Your attacks ignore 60% of the DEF of targets restricted by you.
+Camp002_ATK_iggdef2 []: Your attacks ignore 90% of the DEF of targets restricted by you.
+Camp002_ATK_unticure []: Damage you deal to targets restricted by you applies [Lethal] for 2 turns. || *Lethal: Unable to trigger any healing effects.
+Camp002_ATK_dispel []: Damage you deal to targets restricted by you removes 1 random buff from them.
+Camp002_dodge []: Dodge 1 skill damage not restricting you once per turn.
+Camp002_dispel []: Removes 1 random debuff from you at the start of your turn.
+Camp002_decDMG []: Taking damage from a non-restricting skill causes the attacker to deal 30% reduced damage for 2 turns. Not removable.
+Camp002_CATK_single []: Taking damage from a single-target skill has a 30% chance to cause you to Retaliate, damaging the attacker for 200% of ATK, applying [Lethal] for 2 turns. Not removable. || *Lethal: Unable to trigger any healing effects.
+Camp002_CATK_round []: At the start of your turn, if you've taken no damage from attacks you're restricted by in this turn, you will damage the enemy target with the highest ATK for 200% of your ATK, reducing the levels of all its skills.
+Camp002_CATK_counter []: Taking damage from a non-restricting skill has a 60% chance to cause you to Retaliate, damaging the attacker for 200% of ATK, reducing the levels of all its skills.
+Camp002_CATK_delv []: Taking damage from a single-target skill has a 60% chance to cause you to Retaliate, damaging the attacker for 200% of ATK, reducing the levels of all its skills.
+Camp002E01_p01 []: Levels up a skill card of yours at random when your turn begins.
+Camp002E01_p02 []: Restore HP increases ATK-Related stats by 10%, stacking up to 5 times. Effect lasts until battle ends.
+Camp002E02_p01 []: Increases CRIT Rate by 5% and CRIT DMG by 5% for every 10% of lost HP.
+Camp002E02_p02 []: When your turn ends, if you've taken no damage in this turn, you damage the enemy with the lowest HP percentage for 200% of your ATK.
+Camp002E03_p01 []: Damage taken from Level-1 skills reduced by 80%.
+Camp002E03_p02 []: Damage taken from Level-1 skills reduced by 50%.
+Camp002E04_p01 []: Increases damage dealt to characters affected by Weak effects by 50%.
+Camp002E04_p02 []: HP dropping to below 20% for the first time heals your allies for 50% of their Max HP.
+Camp002E05_p01 []: Attacking targets restricted by you removes 1 random buff from them. Successfully removing a buff shields you for 20% of Max HP for 1 turn.
+Camp002E06_p01 []: Taking damage from a non-restricting skill increases all allied characters' HP-Related stats by 10% for 2 turns, stacking up to 3 times.
+Camp002E07_p01 []: Taking damage from an active skill of an attacker affected by Lethal causes you to Retaliate upon all enemies for [Impale] damage equal to 200% of ATK. Cannot occur more than once per turn. || *Impale: This damage ignores the target's DEF.
+Camp002E07_p02 []: Damage dealt to targets affected by Lethal reduces their DEF related stats by 40% for 1 turn, stacking up to 2 times.
+Camp002E08_p01 []: At the start of your turn, you deal [Amplification] damage equal to 300% of ATK to 1 random enemy who have cast active skills in this turn. || *Amplification: If you are buffed, this damage will be increased by 15%
+Camp002E08_p02 []: Taking damage from a single-target skill causes you to Retaliate, damaging the attacker for 200% of ATK.
+Camp002B01_p01 []: Changes your Weak cap to 6 as battle starts. Weak effect increases damage taken by 20% and reduces ATK-Related stats by 10% for 1 turn instead of Stunning you.
+Camp002B01_p02 []: Attacks against you from enemies affected by debuffs cause you to Retaliate, damaging them for 100% of ATK. If the targets are affected by Blood Piercer, their Max HP will be increased by 10% or decreased by 15% at random.
+Camp002B01_p03 []: Weak effect causes you to lose 10% of Max HP instead of Stunning you.
+Camp002B01_p04 []: If you're below 50% HP as your turn ends, the enemy with the highest ATK and the one with the lowest ATK will each be inflicted with one of the following effects at random: Max HP reduced by 25%, Max HP increased by 20%, basic stats reduced by 40% for 2 turns, basic stats increased by 30% for 2 turns.
+Camp002B02_p01 []: Changes your Weak cap to 5 as battle starts. Weak effect reduces ATK-Related stats by 10% for 1 turn instead of Stunning you.
+Camp002B02_p02 []: When your turn starts, if you've taken damage from multi-target skills in this round, you will Retaliate, damaging all enemies for 100% of ATK, and applying Bleed effect to the enemy with the lowest HP percentage which lasts for 2 turns and stacks up to 3 times.
+Camp002B02_p03 []: When your turn starts, if an enemy has cast a Stance skill in this turn, you will Retaliate, damaging all enemies for 100% of ATK, and applying Bleed effect to the enemy with the lowest HP percentage which lasts for 2 turns and stacks up to 3 times.
+Camp002B02_p04 []: Dealing damage increases your Max HP by 5%, stacking up to 10 times.
+Camp002B02_p05 []: Removes all Death Marks from all enemies each time an ally dies.
+Camp002B02_p06 []: Dealing damage increases your HP-Related stats by 5%, stacking up to 10 times.
+Camp002B03_p01 []: Changes your Weak cap to 10 as battle starts, and suffering Weak will not increase it. Weak effect causes you to lose 15% of Max HP instead of Stunning you.
+Camp002B03_p02 []: Having less than 6 Weak reduces damage taken by 90%.
+Camp002B03_p03 []: Having more than 4 Weak at the start of your turn shields you for 300% of Max HP. Suffering Weak cancels this effect.
+Camp002B03_p04 []: An allied character's death increases Weak by 2.
+Camp002B03_p05 []: An allied character's death increases Weak by 3.
+Camp002B03_p06 []: Dealing damage through attack removes 1 random debuff from you.
+Camp002B03_p07 []: Dealing damage through attack removes 1 random debuff from you. Successfully removing a debuff causes the target to [Stun] for 1 turn. || *Stunned: Unable to take any actions.
+Camp002B04_p01 []: Changes your Weak cap to 6 as battle starts. Weak effect increases damage taken by 20% for 1 turn instead of Stunning you.
+Camp002B04_p02 []: Changes your Weak cap to 6 as battle starts. Weak effect increases damage taken by 10% for 1 turn instead of Stunning you.
+Camp002B04_p03 []: Each time an allied character dies, all enemies take Blood Piercer damage equal to 140% ATK.
+Camp002B04_p04 []: Each time an allied character dies, all enemies take Blood Piercer damage equal to 140% ATK, reducing the levels of all enemies' skills to 1.
+Camp002B04_p05 []: If accompanied by allies when your HP drops to below 40% for the first time, you will be healed for a random ally's Max HP and instantly kill all allies.
+Camp002B04_p06 []: HP dropping to below 40% for the first time causes you to take 50% reduced damage for 1 turn; if accompanied by allies, you will be healed for the total of all allies' remaining HP and instantly kill all allies.
+Camp002B04_p07 []: Dealing damage through attack reduces the target(s)' Max HP by 5%, stacking up to 5 times.
+Camp002B04_p08 []: Dealing damage through attack increases your HP-related stats by 5%, stacking up to 10 times.
+Camp002B04_p09 []: Dealing damage through attack reduces the targets' HP-related stats by 5%, stacking up to 10 times.
+Camp002B04_p10 []: Restores 20% of lost HP at the end of your turn.
+Camp002B04_p11 []: Restores 50% of lost HP at the end of your turn.
+Camp002B04_p12 []: After 3 turns, restore all lost HP, become immune to all control effects.
+Camp002B04_p13 []: After 4 turns, restore all lost HP, become immune to all control effects, and increase ATK-related stats by 20%, which cannot be removed.
+Camp002B04_p14 []: After 4 turns, restore all lost HP, become immune to all control effects, and increase ATK-related stats by 50%, which cannot be removed.
+Camp002B01_Summon1 []: When your turn starts, if unaccompanied by allies, summon 1 CCG Battler to join the battle. When you die, your summoned characters die, too.
+Camp002B02_Summon1 []: When your turn starts, if unaccompanied by allies, summon 1 CCG Battler to join the battle. When you die, your summoned characters die, too.
+Camp002B02_Summon2 []: When your turn starts, if unaccompanied by allies, summon 1 CCG Battler to join the battle. When you die, your summoned characters die, too.
+Camp002B03_Summon1 []: When your turn starts, if your team has less than 3 surviving characters, summon 2 CCG Battlers to join the battle. When you die, your summoned characters die, too.
+Camp002B03_Summon2 []: When your turn starts, if your team has less than 3 surviving characters, summon 2 CCG Battlers to join the battle. When you die, your summoned characters die, too.
+Camp002B04_Summon1 []: When your turn starts, if unaccompanied by allies, summon 1 ghoul to join the battle. When you die, your summoned characters die, too; with each summoning, your CRIT Rate and CRIT DMG are increased by 20% and 30% respectively. Stacks up to 5 times.
+Camp002B04_Summon2 []: When your turn starts, if your team has less than 3 surviving members, summon 2 ghouls to join the battle; each time you summon ghouls. When you die, your summoned characters die, too; with each summoning, your CRIT Rate is increased by 30% and your CRIT DMG is increased by 30%. Stacks up to 5 times.
+Camp002B04_Summon3 []: When your turn starts, if your team has less than 3 surviving members, summon 2 ghouls to join the battle; each time you summon ghouls. When you die, your summoned characters die, too; with each summoning, your CRIT Rate and CRIT DMG are increased by 40% and 30% respectively. Stacks up to 5 times.
+3004_Camp002E06_m1s1 []: Deals [Underbelly] damage equal to 200% of ATK to the enemy target. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Camp002E06_m1s2 []: Deals [Underbelly] damage equal to 300% of ATK to the enemy target. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Camp002E06_m1s3 []: Deals [Underbelly] damage equal to 400% of ATK to the enemy target. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Camp002E06_m2s1 []: Deals [Amplification] damage equal to 200% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3004_Camp002E06_m2s2 []: Deals [Amplification] damage equal to 300% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3004_Camp002E06_m2s3 []: Deals [Amplification] damage equal to 400% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+1013_Camp002B01_m1s1 []: Deals damage equal to #Factor_1# of ATK to the enemy target, applying one of the following effects at random for 1 turn: damage dealt increased by #Factor_2#, damage dealt reduced by 20%.
+1013_Camp002B01_m1s2 []: Deals damage equal to #Factor_1# of ATK to the enemy target, applying one of the following effects at random for 1 turn: damage dealt increased by #Factor_2#, damage dealt reduced by 30%.
+1013_Camp002B01_m1s3 []: Deals damage equal to #Factor_1# of ATK to the enemy target, applying one of the following effects at random for 1 turn: damage dealt increased by #Factor_2#, damage dealt reduced by 50%.
+1013_Camp002B01_m2s1 []: Deals damage equal to #Factor_1# of ATK to the enemy target, applying one of the following effects at random for 1 turn: damage dealt increased by #Factor_2#, damage dealt reduced by 20%, damage taken increased by 30%, damage taken reduced by 20%.
+1013_Camp002B01_m2s2 []: Deals damage equal to #Factor_1# of ATK to the enemy target, applying one of the following effects at random for 1 turn: damage dealt increased by #Factor_2#, damage dealt reduced by 30%, damage taken increased by 30%, damage taken reduced by 20%.
+1013_Camp002B01_m2s3 []: Deals damage equal to #Factor_1# of ATK to the enemy target, applying one of the following effects at random for 1 turn: damage dealt increased by #Factor_2#, damage dealt reduced by 50%, damage taken increased by 30%, damage taken reduced by 20%.
+3007_Camp002B01_m1s1 []: Deals damage equal to 200% of ATK to the enemy target, applying [Lethal] for 2 turns. || *Lethal: Unable to trigger any healing effects.
+3007_Camp002B01_m1s2 []: Deals damage equal to 300% of ATK to the enemy target, applying [Lethal] for 2 turns. || *Lethal: Unable to trigger any healing effects.
+3007_Camp002B01_m1s3 []: Deals damage equal to 540% of ATK to the enemy target, applying [Lethal] for 2 turns. || *Lethal: Unable to trigger any healing effects.
+1003_Camp002B02_m1s1 []: Deals [Death] damage equal to 180% of ATK to the enemy target, after which, if target's current HP percentage is the lowest among enemies, add a layer of Death Mark to target. Stacks up to 3 times. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+1003_Camp002B02_m1s2 []: Deals [Death] damage equal to 240% of ATK to the enemy target, after which, if target's current HP percentage is the lowest among enemies, add a layer of Death Mark to target. Stacks up to 3 times. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+1003_Camp002B02_m1s3 []: Deals [Death] damage equal to 380% of ATK to the enemy target, after which, if target's current HP percentage is the lowest among enemies, add a layer of Death Mark to target. Stacks up to 3 times. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+1003_Camp002B02_m2s1 []: Deals [Death] damage equal to 180% of ATK to the enemy target, after which, if target's current HP percentage is the lowest among enemies, add a layer of Death Mark to target. Stacks up to 3 times. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+1003_Camp002B02_m2s2 []: Deals [Death] damage equal to 240% of ATK to the enemy target, after which, if target's current HP percentage is the lowest among enemies, add a layer of Death Mark to target. Stacks up to 3 times. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+1003_Camp002B02_m2s3 []: Deals [Death] damage equal to 380% of ATK to the enemy target, after which, if target's current HP percentage is the lowest among enemies, add a layer of Death Mark to target. Stacks up to 3 times. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+3019_Camp002B02_m1s1 []: Deals [Amplification] damage equal to 200% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3019_Camp002B02_m1s2 []: Deals [Amplification] damage equal to 300% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3019_Camp002B02_m1s3 []: Deals [Amplification] damage equal to 540% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+1021_Camp002B04_m1s1 []: Deals [Smite] damage equal to 180% of ATK to the enemy target. || *Smite: Ignores DEF and Block Chance for this damage
+1021_Camp002B04_m1s2 []: Deals [Smite] damage equal to 240% of ATK to the enemy target. || *Smite: Ignores DEF and Block Chance for this damage
+1021_Camp002B04_m1s3 []: Deals [Smite] damage equal to 380% of ATK to the enemy target. || *Smite: Ignores DEF and Block Chance for this damage
+1021_Camp002B04_m2s1 []: Deals [Blood Piercer] damage equal to 100% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+1021_Camp002B04_m2s2 []: Deals [Blood Piercer] damage equal to 140% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+1021_Camp002B04_m2s3 []: Deals [Blood Piercer] damage equal to 220% of ATK to all enemies. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+3004_Camp002B04_m1s1 []: Deals [Underbelly] damage equal to 200% of ATK to the enemy target. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Camp002B04_m1s2 []: Deals [Underbelly] damage equal to 300% of ATK to the enemy target. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Camp002B04_m1s3 []: Deals [Underbelly] damage equal to 540% of ATK to the enemy target. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3003_Camp002B04_m1s1 []: Deals [Amplification] damage equal to 200% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3003_Camp002B04_m1s2 []: Deals [Amplification] damage equal to 300% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3003_Camp002B04_m1s3 []: Deals [Amplification] damage equal to 540% of ATK to the enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+
+## Capture Simulation Field Boss (10)
+GVEBoss_p1 [Weak]: When the battle starts, your Weak cap is set to 4. Weak causes damage taken to increase by 30% for 1 turn instead of stunning
+GVEBoss_p2 [Level Overpower]: Damage taken from Level-1 skills reduced by 30%.
+GVEBoss_p3 [Basic stats increased]: When battle starts, increases basic stats by 8%. If afflicted with all stats reduction effects, removes this basic stats boost, and takes 15% extra damage when attacked.
+GVEBoss_p4 [PEN Rate increased]: When battle starts, increases PEN Rate by 5%. This effect is removed when afflicted with Weak. After the Weak status is cleared, gains [Disruption] for 1 turn. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+GVEBoss_p5 [Weak]: Changes your Weak cap to 4 as battle starts. When suffering a Weak effect, the damage taken will hit critically instead of stunning you. Lasts until the turn ends.
+GVEBoss_p6 [Weak DMG]: After using an active skill for the first time each turn, grants 1 Weak to all enemies.
+GVEBoss_p7 [DEF increased]: When battle starts, increases DEF by 15%, but takes 10% increased damage from all skills and 20% increased damage from crits.
+GVEBoss_p8 [Damage Reduced]: When the enemy uses an active skill, reduces the target's ATK and damage dealt by 10% for 1 turn, stacking up to 3 stacks.
+GVEBoss_p9 [Damage increased]: Deals 20% increased damage to enemies without a shield, and takes 20% increased damage from enemies with a shield.
+GVEBoss_p10 [Restriction Boost]: Damage taken from Restricting attacks increased by 30%.
+
+## Co-op War (8)
+CoopWar_p1 [Indestructible Strike]: After you act, if your current HP percentage is higher than 15% and you have [Immortal], purge all [Immortal] stacks and instantly cast Lv.3 Active Skill on the enemy with the lowest HP || *Immortal: HP cannot drop below 1. Active Skill Damage +15%
+CoopWar_p2 [Backlash]: When battle starts and your turn starts, randomly apply [Backlash] to an enemy for 3 turns || *Backlash: ATK -20%. While this effect is active, the holder cannot deal extra damage and takes 50% more damage from active skills Lv. 2 and above. After the holder acts, the caster immediately counterattacks, dealing Smite damage equal to 180% of the caster's ATK.
+CoopWar_p3 [Pursuit]: After your active skill deals damage, based on your active skill's level, there is a 15%/20%/30% chance to recast the same skill on the target
+CoopWar_p4 [Shudder]: When your turn starts, apply [Shudder] to a random enemy without [Shudder]. If an enemy bears both [Shudder] and [Gaze of the Strong], instantly cast the Lv.3 active skill || *Shudder: Reduces all stats by 4% and ATK-related stats by 12%. When your turn starts, lowers the target's skill level to 1 and the target takes extra damage equal to 8% of Max HP *Gaze of the Strong: Reduces all stats by 4% and ATK-related stats by 12%. Lowers the target's skill level to 1 when your turn starts.
+CoopWar_p5 [Indomitable]: When the battle starts, grant yourself [Indomitable]. Suffering Weak removes [Indomitable] and grant yourself[Fervor] || *Indomitable: HP cannot fall below 40%. *Fervor: Increase ATK-related stats by 10%, increase PEN Rate by 50%, and reduce damage from level 1 skills by 30%
+CoopWar_p6 [Undermine]: When your turn starts, randomly grant all enemies one of the following 1-turn debuffs: ATK-related stats are reduced by 30%; Active skill level drops to Lv.1 at turn start; Take bonus damage equal to 30% of your Max HP after casting an active skill; Receive [Disruption]; Receive the Passive-Disabling effect; || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+CoopWar_p7 [AoE DMG]: When your turn starts, deal [Truth] damage equal to 25% of the target's Max HP to all enemies || *Truth: This damage ignores the sharing effect, the target's shield, and the additional DMG Reduction.
+CoopWar_p8 [Skill Level Up]: After any character on the field casts an active skill, raise the active skill level of all units in both sides' active slots. When battle starts, reduce damage taken from Lv.1 skills by 70%. After an enemy casts an Lv.1 active skill, reduce their damage dealt by 40% for 1 turn
+
+## Formidable/Superb Conquest boss SCru2 (28)
+1057_SCru2_n1s1 [Impale Swipe]: Deals [Pierce] damage to all enemies equal to 200% of ATK. || *Pierce: This damage deal 100% more damage to the enemy with lower DEF than you.
+1057_SCru2_n1s2 []: Deals [Pierce] damage to all enemies equal to 260% of ATK. || *Pierce: This damage deal 100% more damage to the enemy with lower DEF than you.
+1057_SCru2_n1s3 []: Deals [Pierce] damage to all enemies equal to 340% of ATK. || *Pierce: This damage deal 100% more damage to the enemy with lower DEF than you.
+1057_SCru2_n2s1 [Destruction Blow]: Deals [Disruption] damage to all enemies equal to 250% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+1057_SCru2_n2s2 []: Deals [Disruption] damage to all enemies equal to 300% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+1057_SCru2_n2s3 []: Deals [Disruption] damage to all enemies equal to 340% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+SCru2_p1 [Lock Upon Taking Damage]: Damage taken from skills during the enemy's turn will not exceed 30% of your Max HP. Your ATK-Related stats increase by 1% for each 5% drop in your HP.
+SCru2_p2 [Preemptive strike]: When your turn starts, deals damage to all enemies equal to 180% of ATK, and increase damage dealt to enemies without Shield by 500%.
+SCru2_p3 [Gather Power]: When your turn ends, enter [Gather Power] state, and gain the [Panic] effect when an allied Character dies. || *Gather Power: The next Active Skill will deal 500% more damage. *Panic: Remove the effect of Gather Power, increase damage taken by 15% for 1 turn
+SCru2_p4 [Hatred]: When battle starts, grant the enemy Character with the highest ATK [Hostility] effect. When the enemy is damaged by an Active Skill, the Hatred effect is transferred to the target. If the target with Hatred dies, Hatred effect is transferred to the enemy Character with the highest ATK || *Hostility: Increases damage taken from One-Eyed Owl by 20%
+SCru2_p5 [DMG Taken Reduction]: When your HP is below 30%, your DEF will increase by 70% and the damage taken from Lv 1 skills will be reduced by 70%.
+SCru2_p6 [Mania]: The following effects are obtained at the beginning of the second turn: At the end of each of your turns, cause 1,500% ATK DMG to the target with Hatred, and make the target unable to use attack Skills for 2 turns. If the target dies, cause 100% of the damage to all enemies.
+SCru2_p7 [Disorder]: When all Parts die, gains [Disorder]. || Disorder: Immobilized, damage taken increased by 30% for 1 turn
+SCru2_p8 [Destruction]: When your turn ends, deal 500% ATK [Destruction] damage to a random enemy Character, and invalidate the target's passive effect for 3 turns. This skill increases the damage to targets without a Stance by 500%. || *Destruction: The CRIT Rate of this damage is tripled. Additionally deals DMG of 100% ATK to the target when landing a CRIT.
+SCru2_p9 [Flail]: When your turn starts, if we have no debuffs, we deal 200% damage to all enemies and reduce their Skill Level to 1.
+SCru2_p10 [Unity]: When there are 3 allied Characters on the field, the damage you receive is reduced by 90%
+SCru2_p11 [Curse]: Your death reduces all enemy Characters’ damage by 50% for 3 turns.
+SCru2_p12 [Uplift]: When your turn starts, restore 50% of your max HP. If your HP is 100%, increase your ATK-related stats by 50% for 3 turns.
+SCru2_p13 [Weak]: When battle starts, the Weak limit is increased to 4 points, and the player is immune to Weak stun. The damage received by the player in 1 turn is increased by 40%. When affected by Weak, the Weak limit is increased to 10 points.
+SCru2_p14 [Weak Sync]: When the Weak value of a Part increases, the Weak value of itself increases by the same amount
+SCru2_p15 [Hardened]: Reduces damage taken by 60% as battle starts. Suffering Weak cancels the effect.
+SCru2_p16 [Special Skin]: When you are damaged by non-active skills, your Weak increases by 1 point
+SCru2_p17 [DMG Taken Reduction]: Damage from level 1 Skills is reduced by 60%, and damage from level 2 skills is reduced by 30%.
+SCru2_p18 [Cutting Wound]: When attacking, grant the target 1 stack of [Wound], which can be stacked up to 4 stacks. When the wounds are stacked up to 4, all wounds are cleared and the target is granted [Crippled] effect. || *Wound: Damage taken increases by 5%. *Crippled: Damage taken increases by 200%.
+SCru2_p19 [Weak]: Changes your Weak cap to 6 as battle starts. Suffering Weak increases Weak cap to 10.
+SCru2_p20 [Weak Sync]: When the Weak value of Torso increases, the Weak value of itself increases by the same amount
+SCru2_p21 [Barrier]: When enemy's turn starts, grant yourself 1 stack of [Barrier], stacking up to 3 times. When you have a Barrier effect, you become invincible || *Barrier: DEF increased by 500%, and 1 stack of Barrier is removed when receiving damage.
+SCru2_p22 [Stress Barrier]: When the HP of the One-Eyed Owl drops below 30% for the first time, grant yourself 3 stacks of [Barrier] || *Barrier: DEF increased by 500%, and 1 stack of Barrier is removed when receiving damage.
+
+## Formidable/Superb Conquest boss SCru3 (37)
+1064_SCru3_n1s1 [Annihilate]: Deal [Annihilate] damage  equal to 200% of ATK to all enemies. || *Annihilate: Increase this damage by 30% for each debuff the enemy target has.
+1064_SCru3_n2s1 [Scream]: Increases all allied characters' next damage dealt by #Factor_1# for 1 turn.
+1064_SCru3_n3s1 [Slaughter]: Deal [Slaughter] damage  equal to 220% of ATK to all enemies. || *Slaughter: Deals 0.35% additional damage for every 1% of your remaining HP.
+1064_SCru3_n4s1 [Clean-up]: Deal [Ultra-Blade] damage  equal to 220% of ATK to all enemies. || *Ultra-Blade: CRIT Rate increased by 1% and CRIT DMG increases by 1.5% for every 2% of HP lost of the enemy
+SCru3_p1 [Weak]: When the battle starts, immune to Weak value increase.
+SCru3_p2 [Clash]: After taking damage from an active skill, inflict [Clash] on the target for 3 turns. || *Clash: Increase damage dealt by 15% and damage taken by 15%.
+SCru3_p3 [Slaughter Time]: When an enemy character dies, restore 100% of your max HP and increase your ATK-Related stats by 50% for 2 turns.
+SCru3_p4 [CP Enhancement]: Winning the CP Match increases your all stats by 50% for 3 turns.
+SCru3_p5 [Degenerate]: When your 2nd turn starts, grant yourself [Degenerate]. || *Degenerate: The first time damage is dealt each turn, reduce the target's skill level and make the target lethal for 1 turn.
+SCru3_p6 [Berserk]: When the battle starts, grant yourself [Berserk] for 1 turn. || *Berserk: Increase damage dealt by 30% to targets with DEF lower than 70,000.
+SCru3_p7 [Exemption]: When HP drops below 50% for the first time, gain [Exemption] and the following effects: When your turn starts, grant yourself 1 [Barrier]. When your turn ends, deal damage equal to 300% of ATK to a random target and inflict 2 turns of inability to use Stance skills. If the target does not have a Stance, the damage of this skill is increased by 1500%. || *Exemption: When attacked, if the target does not have Clash, evade the damage. *Barrier: Increase DEF by 500%. Remove after taking damage.
+SCru3_p8 [Degrade]: When your turn starts, deal damage equal to 180% of ATK to all enemies and inflict the following effects on all enemies for 1 turn: decrease basic stats by 30%, decrease CRIT rate by 30%, decrease CRIT DMG by 50%, and reduce damage taken by 15%.
+SCru3_p9 [Disruption]: When the battle starts, inflict [Disruption] on all enemies for 1 turn. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+SCru3_p10 [Nemesis]: Reduce damage taken from Aogiri Tree characters by 30%, while damage taken from CCG characters is increased by 30%.
+SCru3_p11 [Restraint Immunity]: When the battle starts, all characters on the field gain Restriction Ignoring. No character will have damage increased or decreased, nor will the Weak value be increased or decreased due to Attribute Restriction.
+SCru3_p12 [Overawe]: When each enemy turn starts, apply the following effects to all enemies in order: prevent the use of Disabling, Stance, Debuff, Special, and ATK skills. On the fifth enemy turn, increase your basic stats by 100% and damage dealt by 100%, then immediately deal [Destruction] damage equal to 300% of ATK to all enemies. Upon your death, all applied effects that prevent specific skill types from being used are removed. || *Destruction: The CRIT Rate of this damage is tripled. Additionally deals DMG of 100% ATK to the target when landing a CRIT.
+SCru3_p13 [Slumber]: While the part is present, your damage taken is reduced by 90%. When the part is defeated, your damage taken is increased by 30%.
+SCru3_p14 [Collapse Power]: Each time an active skill is used, increase your damage dealt by 10% for 3 turns.
+SCru3_p15 [Harden]: When the battle starts and when your turn starts, grant all allied characters 1 [Hardshell]. || *Hardshell: The next damage taken is fixed at 1.
+SCru3_p16 [Summon]: When the battle starts, summon 3 Aogiri Tree Ghouls.
+SCru3_p17 [Rouse]: When the part is present, you will only use Scream. When the part is death, you will only use Slaughter and inflict Weak on yourself. When Weak is removed, immediately deal [Destruction] damage equal to 220% of ATK to all enemies, inflicting 3 turns of the following effects on all enemies: 30% reduction to basic stats, 50% reduction to damage dealt, [Disruption], and passive-disabling. || *Destruction: The CRIT Rate of this damage is tripled. Additionally deals DMG of 100% ATK to the target when landing a CRIT. *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+SCru3_p18 [HP Strike]: When dealing damage, additionally deal damage equal to 4% of your Max HP.
+SCru3_p19 [Devotion]: Upon death, restore 50% of the part's Max HP and grant it 4 stacks of [Energy Charge]. || *Energy Charge: Increase damage dealt by 5%.
+SCru3_p20 [Disabling Immunity]: Immune to disabling effects, passive-disabling effects and Dust effects
+SCru3_p21 [DMG Boost]: If you do not have any debuff effects, increase your damage dealt by 30%. For each debuff effect you have, reduce your basic stats by 10%, up to 30%.
+SCru3_p22 [Bonus-Attack]: When an allied character uses an active skill, deal [Smite] damage equal to 180% of ATK to a random enemy. || *Smite: Ignores DEF and Block Chance for this damage
+SCru3_p23 [Fatal Dodge]: When the battle starts, grant yourself 1 Unkillable. When taking fatal damage, your HP will not drop below 1. This effect is removed when you are affected by Weak.
+SCru3_p24 [Lethal Charge-Up]: If you do not have Disruption, increase your damage dealt by 100% and inflict [Lethal] to target for 3 turns when attacking. For each debuff effect you are under, your basic stats will be reduced by 10%, up to 30%. || *Lethal: Unable to trigger any healing effects.
+SCru3_p25 [Fright]: When another allied character dies, increase your Weak value by 2.
+SCru3_p26 [Energy Leakage]: When another allied characters deal damage, grant yourself 1 [Energy Charge]. When your Energy Charge reaches 4, immediately deal damage equal to 300% of ATK to all enemies and inflict [Off-Balance] on them (which is removed when the caster dies), then remove 4 Energy Charge. || *Energy Charge: Increase damage dealt by 5%. *Off-Balance: When using an active skill, increase your damage taken by 50% for 1 turn.
+SCru3_p27 [Weak]: Changes your Weak cap to 8 when battle starts.
+SCru3_p28 [Kagune Armor]: When the battle starts, grant yourself 2 [Armor]. When Armor is present, increase your CRIT Resist by 80%. When taking CRIT DMG, reduce 1 Armor. When all Armor is lost, grant yourself [Cracked] for 1 turn. While under the Cracked effect, increase your Weak value by 1 when taking damage from an active skill. After the Cracked effect ends, if you have Indomitable, restore 2 Armor. || *Armor: Reduce damage taken by 15%. *Cracked: Damage taken is always a CRIT hit.
+SCru3_p29 [Indomitable]: When the battle starts, grant yourself [Indomitable]. Suffering Weak removes Indomitable and grant yourself [Excitement]. || *Indomitable: HP cannot fall below 40%. *Excitement: Increase ATK-related stats by 100%, increase Lifesteal Rate by 50%, and reduce damage from level 1 skills by 30%.
+SCru3_p30 [Lockdown]: When the second round starts and when your turn starts, deal [Impale] damage equal to 160% of ATK to all enemies and inflict the following effects for 1 turn: 30% reduction in basic stats, 30% damage reduction, [Lethal], [Disruption], and passive-disabling. This effect triggers every 2 turns. || *Impale: This damage ignores the target's DEF. *Lethal: Unable to trigger any healing effects. *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+SCru3_p31 [Dismissal]: When your turn starts, deal [Destruction] damage equal to 2000% of ATK to a random enemy target and inflict Dismissal for 1 turn, prioritizing the PSY enemy target with the highest HP. || *Destruction: The CRIT Rate of this damage is tripled. Additionally deals DMG of 100% ATK to the target when landing a CRIT.
+SCru3_p34 [Stat Reduction Immunity]: Your stats cannot be reduced below their basic values.
+SCru3_p35 [Shield Dispel]: When your turn starts, remove all enemies' shield effects.
+
+## Formidable/Superb Conquest boss SCru4 (31)
+1030_SCru4_n1s1 [Expel Attack]: Deals [Impale] damage equal to 200% of ATK to all enemies. || *Impale: This damage ignores the target's DEF.
+1030_SCru4_n2s1 [Break Strike]: Deals [Impale] damage equal to 320% of ATK to a single enemy. || *Impale: This damage ignores the target's DEF.
+1030_SCru4_n3s1 [Precision Attack]: Deals [Impale] damage equal to 180% of ATK to all enemies. || *Impale: This damage ignores the target's DEF.
+1030_SCru4_n4s1 [Brutal Strike]: Deals [Impale] damage equal to 260% of ATK to a single enemy. || *Impale: This damage ignores the target's DEF.
+1030_SCru4_n5s1 [Slaughter Strike]: Deals [Slaughter] damage equal to 220% of ATK to all enemies. || *Slaughter: Deals 0.35% additional damage for every 1% of your remaining HP.
+1030_SCru4_n6s1 [Break Attack]: Deals [Impale] damage equal to 260% of ATK to a single enemy. || *Impale: This damage ignores the target's DEF.
+SCru4_p2 [Tough Hide]: When the battle starts and your turn ends, gain 2 stacks of [Rift]. When receiving single-target non-active skill damage, removes 1 stack of [Rift]. When having [Rift], reduces damage taken from active skills by 60%. When all [Rift] stacks are lifted, increases damage taken from non-active skills by 30%. || *Rift: Block Chance increased by 5%
+SCru4_p3 [Charged Attack]: When your turn starts, if already in [Charge] state, immediately deals [Smite] damage equal to 600% of ATK to all enemies, reduces all enemies’ DEF-related stats by 30% for 1 turn, and then removes [Charge]. When your turn ends, gains [Charge]. || *Charge: Charge state is removed when taking damage exceeding 6% of max HP in one go. *Smite: Ignores DEF and Block Chance for this damage
+SCru4_p4 [Stranglethorn]: When HP drops below 50% for the first time, deals 240% [Impale] damage to all enemies, and then gains [Contamination]. || *Impale: This damage ignores the target's DEF. *Contamination: Increases Lifesteal by 30%. When taking active skill damage while in Charge state, reduces the target’s basic stats by 20% for 1 turn.
+SCru4_p5 [Resilience]: For every 10% HP lost, increases DEF-related stats by 5%. When your turn starts, if HP is below 30%, the next damage taken is fixed at 1 for 1 turn.
+SCru4_p6 [Brutal]: When dealing CRIT DMG, reduces the target’s CRIT DEF by 30% for 1 turn, up to 3 stacks.
+SCru4_p7 [Berserk]: Starting from Turn 5, when your turn starts, deals [Smite] damage equal to 2000% of ATK to all enemies, and grants all enemies [Disruption] and [Passive-Disabling] effects. || *Smite: Ignores DEF and Block Chance for this damage
+SCru4_p8 [CP Enhancement]: Winning the CP Match increases all of your stats by 50%.
+SCru4_p9 [Overpower]: Takes 50% less damage from non-Aogiri Tree characters; deals 50% more damage to non-Aogiri Tree characters.
+SCru4_p12 [Regeneration]: When the battle starts, gains [Blood Seal Regeneration] and [Blood Mark Regeneration]. When taking lethal damage, removes [Blood Seal Regeneration] and [Blood Mark Regeneration] in sequence, revives self with 100% max HP, raises the skill level for all characters, and then deals [Impale] damage equal to 200% to the enemy with the highest ATK. || *Blood Seal Regeneration: When this effect is removed, increases Max HP by 40% and gains the passive skill [Blood Seal]. *Blood Mark Regeneration: When this effect is removed, increases basic stats by 15% and Max HP by 100%, and gains the passive skill [Blood Mark]. *Impale: This damage ignores the target's DEF.
+SCru4_p13 [Offense & Defense Unity]: When HP is above 50%, for every 10% HP remaining, increases PEN Rate by 3%. When HP is below 50%, for every 10% HP lost, increases Block Chance by 3%.
+SCru4_p14 [Counter]: When taking active skill damage first in each turn, immediately deals [Impale] damage equal to 230% of ATK to all enemies, as well as extra damage equal to 600% base ATK, and grants all enemies [Breathless] for 2 turns (this skill can be evaded). || *Impale: This damage ignores the target's DEF. *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%.
+SCru4_p15 [Blood Seal]: When taking active skill damage, grants the target [Blood Seal] (only 1 stack of [Blood Seal] can exist). When your turn starts, deals [Impale] damage equal to 220% of ATK to the target with [Blood Seal], lowers the target’s skill by 1 level, and roots the target for 1 turn. || *Blood Seal: Basic stats reduced by 10%. *Impale: This damage ignores the target's DEF.
+SCru4_p16 [Blood Mark]: When dealing damage, grants the target 1 stack of [Blood Mark], up to 4 stacks. When an enemy’s [Blood Mark] reaches max stacks, reduces all their stats by 15% for 2 turns, and then removes all [Blood Mark] stacks. || *Blood Mark: Max HP reduced by 3%.
+SCru4_p17 [Fear & Wither]: When the enemy turn starts, randomly grants [Horror] to 1 character for 1 turn, deals [Impale] damage equal to 200% ATK to a random character, and then randomly grants [Wither] to another character for 1 turn. || *Horror: +20% damage dealt and +20% damage taken. Removes Horror when using active skills. *Impale: This damage ignores the target's DEF. *Wither: When other allied characters use active skills, takes damage equal to 25% of max HP; [Wither] is removed after using own active skill.
+SCru4_p18 [Buff Dispel]: When your turn starts, dispels all buffs from the enemy with the highest ATK, and then dispels 2 random buffs from other enemies.
+SCru4_p19 [Hindrance]: When the enemy turn ends, reduces ATK-related stats by 15% for 2 turns for enemies who did not use active skills.
+SCru4_p20 [Boil]: When HP drops below 40% for the first time, grants [Boil] to all allies. When your turn starts, if a character with [Boil] has HP below 30%, grants them 1 stack of [Blood Aura Wrap] ([Blood Aura Wrap] is removed after the character takes active skill damage). || *Boil: ATK-related stats increased by 15%; randomly dispels 1 buff from the target when dealing damage. *Blood Aura Wrap: When taking active skill damage, stuns the attacker for 1 turn.
+SCru4_p21 [Symbiosis]: When the battle starts, gains [Symbiosis]. If other allied characters are in [Rest] state, self also dies. || *Symbiosis: Retains 1 HP when taking lethal damage. Removes [Symbiosis] and gains [Rest]. *Rest: Dodge all incoming damage and HP is fixed at 1.
+SCru4_p22 [Fear Strike]: When your turn starts, if enemies have [Horror], deals [Impale] damage equal to 240% of ATK to all enemies, reduces all enemies’ DEF-related stats by 50% for 1 turn, and then removes all enemies’ [Horror]. || *Horror: +20% damage dealt and +20% damage taken. Removes Horror when using active skills. *Impale: This damage ignores the target's DEF.
+SCru4_p23 [Wither Strike]: When a character with [Wither] dies, deals [Blade] damage equal to 240% of ATK to all enemies, and reduces all enemies’ basic stats by 20% for 2 turns. || *Wither: When other allied characters use active skills, takes damage equal to 25% of max HP; [Wither] is removed after using own active skill. *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+SCru4_p24 [Crush]: When attacking targets below 30% HP, increases ATK by 20% and the attack will hit critically.
+SCru4_p25 [ATK Enhancement]: After dealing damage to targets with lower ATK than self, deals extra damage equal to 100% of ATK.
+SCru4_p28 [Blood Drain]: When your turn starts, if self has [Blood Drain], removes [Blood Drain] and deals [Smite] damage equal to 300% of ATK to the enemy with the lowest HP percentage. When your turn ends, gains [Blood Drain]. || *Blood Drain: Accumulates damage when receiving non-active skill damage, with the limit being 15% of base HP. When the accumulated damage reaches the limit, the effect is removed, and heals self for 25% of all enemies’ max HP. *Smite: Ignores DEF and Block Chance for this damage
+SCru4_p29 [Well of Strength]: When the enemy’s turn starts, gain 4 stacks of [Well of Strength], up to 4 stacks. When receiving single-target non-active skill damage, removes 1 stack of [Well of Strength]. When not having [Well of Strength], deals 30% less damage. || *Well of Strength: Increases skill damage dealt by 25%.
+SCru4_p30 [Stats Boost]: All allies' Basic Stats +100%
+
+## Org/Union boss Uni (14)
+UniSys01_p1 [ATK Increase]: When your turn starts, increases all allies’ ATK by 10%
+UniSys01_p2 [Provoke]: When your character takes damage, your damage dealt increase by 10%, stacking up to 10 times
+UniSys01_p3 [Skill Level Up]: When your turn starts, increases 1 random ally's skill level
+UniSys01_p4 [HP Boost]: Increases all allied characters' Max HP by 50%.
+UniSys01_p5 [Injuring Protection]: When your character takes damage more than 30% of its Max HP, the exceeding part will be nullified, Your damage taken will be fixed to 1 for 1 turn.
+UniSys01_p6 [Shield Activation]: When your turn starts, Shield all allies with 20% of their own Max HP for 1 turn
+UniSys01_p7 [Overall Boost]: When battle starts and at the start of the third turn, our allies deal an additional 50,000 DMG when causing damage by active Skills for 1 turn
+UniM_C01_p1 [Retaliate]: Taking damage from a single-target skill causes you to Retaliate, damaging the attacker for 180% of ATK
+UniM_C01_p2 [Lifesteal]: Dealing damage to buffed targets increases your Lifesteal by another 50%.
+UniM_C01_p3 [Blood Rage]: Taking damage has a 20% chance to grant Blood Rage for 1 turn and damage the enemy with the least HP for 180% of ATK.
+UniM_C01_p4 [Charged-Up]: When a character dies, you instantly gain 2 stacks of Charged-Up and restore 20% of lost HP.
+UniM_C01_p5 [Underbelly]: You take 60% less damage from special skills and debuff-applying skills, but take 30% more damage from Stance skills and Disabling skills.
+UniM_C01_p6 [Debility]: Each time an ally dies, you lose 15% of Max HP.
+UniM_C01_p7 [Summon]: When your turn starts, if unaccompanied by allies, summon gagi and guge to join the battle. When you die, your summoned characters die, too.
+
+## Org/Union boss Uni01 (124)
+1016_Uni01_n1s1 [Sweeping Slash]: Deals [Blade] damage to all enemies equal to 220% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+1016_Uni01_n1s2 []: Deals [Blade] damage to all enemies equal to 250% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+1016_Uni01_n1s3 []: Deals [Blade] damage to all enemies equal to 280% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+1016_Uni01_n2s1 [Splash Attack]: Deals [Splash] damage to the enemy target equal to 300% of ATK. || *Splash: 8% of this damage dealt is additionally given to all enemies.
+1016_Uni01_n2s2 []: Deals [Splash] damage to the enemy target equal to 340% of ATK. || *Splash: 8% of this damage dealt is additionally given to all enemies.
+1016_Uni01_n2s3 []: Deals [Splash] damage to the enemy target equal to 390% of ATK. || *Splash: 8% of this damage dealt is additionally given to all enemies.
+1016_Uni01_n3s1 [Sweeping]: Deals [Impale] damage equal to 200% of ATK to all enemies, granting your other allies a Shield of 15% of the damage dealt for 1 turn. || *Impale: This damage ignores the target's DEF.
+1016_Uni01_n3s2 []: Deals [Impale] damage equal to 230% of ATK to all enemies, granting your other allies a Shield of 15% of the damage dealt for 1 turn. || *Impale: This damage ignores the target's DEF.
+1016_Uni01_n3s3 []: Deals [Impale] damage equal to 260% of ATK to all enemies, granting your other allies a Shield of 15% of the damage dealt for 1 turn. || *Impale: This damage ignores the target's DEF.
+1016_Uni01_n4s1 [Piercing Slash]: Deals [Impale] damage to all enemies equal to 200% of ATK. || *Impale: This damage ignores the target's DEF.
+1016_Uni01_n4s2 []: Deals [Impale] damage to all enemies equal to 240% of ATK. || *Impale: This damage ignores the target's DEF.
+1016_Uni01_n4s3 []: Deals [Impale] damage to all enemies equal to 280% of ATK. || *Impale: This damage ignores the target's DEF.
+1016_Uni01_n5s1 [Fragile Attack]: Deals [Smite] damage equal to 300% of ATK to the enemy target, applying [Fragile Mark] to the target for 2 turns if the target is not in any Stances. || *Smite: Ignores DEF and Block Chance for this damage *Fragile Mark: Damage taken is always considered as CRIT
+1016_Uni01_n5s2 []: Deals [Smite] damage equal to 340% of ATK to the enemy target, applying [Fragile Mark] to the target for 2 turns if the target is not in any Stances. || *Smite: Ignores DEF and Block Chance for this damage *Fragile Mark: Damage taken is always considered as CRIT
+1016_Uni01_n5s3 []: Deals [Smite] damage equal to 380% of ATK to the enemy target, applying [Fragile Mark] to the target for 2 turns if the target is not in any Stances. || *Smite: Ignores DEF and Block Chance for this damage *Fragile Mark: Damage taken is always considered as CRIT
+3003_Uni01_n1s1 [Feeble Attack]: Deals damage equal to #Factor_1# of ATK to the enemy target, and apply one of the following effect to the target: reducing 10% ATK-related stats for 1 turn; reducing 10% DEF-related stats for 1 turn, unable to use lv.1 skills, and unable to use attack skills
+3003_Uni01_n1s2 []: Deals damage equal to #Factor_1# of ATK to the enemy target, and apply one of the following effect to the target: reducing 10% ATK-related stats for 1 turn; reducing 10% DEF-related stats for 1 turn, unable to use lv.1 skills, and unable to use attack skills
+3003_Uni01_n1s3 []: Deals damage equal to #Factor_1# of ATK to the enemy target, and apply one of the following effect to the target: reducing 10% ATK-related stats for 1 turn; reducing 10% DEF-related stats for 1 turn, unable to use lv.1 skills, and unable to use attack skills
+3004_Uni01_n1s1 [Sortie]: Deals [Amass] damage to the enemy target equal to 300% of ATK. || *Amass: Increases this damage dealt by 20% when below 30% HP.
+3004_Uni01_n1s2 []: Deals [Amass] damage to the enemy target equal to 340% of ATK. || *Amass: Increases this damage dealt by 20% when below 30% HP.
+3004_Uni01_n1s3 []: Deals [Amass] damage to the enemy target equal to 390% of ATK. || *Amass: Increases this damage dealt by 20% when below 30% HP.
+3005_Uni01_n1s1 [Precision Strike]: Deals [Weak] damage to the enemy target equal to 300% of ATK. || *Weak: For this damage, Applies 2 additional Weak to the target.
+3005_Uni01_n1s2 []: Deals [Weak] damage to the enemy target equal to 340% of ATK. || *Weak: For this damage, Applies 2 additional Weak to the target.
+3005_Uni01_n1s3 []: Deals [Weak] damage to the enemy target equal to 380% of ATK. || *Weak: For this damage, Applies 2 additional Weak to the target.
+1027_Uni01_n1s1 [Kagune Jab]: Damages all enemies for 200% of ATK, applying [Expose] to them for 2 turns, stacking up to 2 times || *Expose: CRIT Resistance reduced by 10%
+1027_Uni01_n1s2 []: Damages all enemies for 240% of ATK, applying [Expose] to them for 2 turns, stacking up to 2 times || *Expose: CRIT Resistance reduced by 10%
+1027_Uni01_n1s3 []: Damages all enemies for 280% of ATK, applying [Expose] to them for 2 turns, stacking up to 2 times || *Expose: CRIT Resistance reduced by 10%
+3003_Uni01_n2s1 [Strike]: Deals [Underbelly] damage to the enemy target equal to 300% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3003_Uni01_n2s2 []: Deals [Underbelly] damage to the enemy target equal to 340% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3003_Uni01_n2s3 []: Deals [Underbelly] damage to the enemy target equal to 390% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Uni01_n2s1 [Strike]: Deals [Underbelly] damage to the enemy target equal to 300% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Uni01_n2s2 []: Deals [Underbelly] damage to the enemy target equal to 340% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3004_Uni01_n2s3 []: Deals [Underbelly] damage to the enemy target equal to 390% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3005_Uni01_n2s1 [Strike]: Deals [Underbelly] damage to the enemy target equal to 300% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3005_Uni01_n2s2 []: Deals [Underbelly] damage to the enemy target equal to 340% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+3005_Uni01_n2s3 []: Deals [Underbelly] damage to the enemy target equal to 390% of ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+1009_Uni01_n1s1 [Lethal Attack]: Deals damage equal to 300% of ATK to the enemy target, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1009_Uni01_n1s2 []: Deals damage equal to 340% of ATK to the enemy target, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1009_Uni01_n1s3 []: Deals damage equal to 390% of ATK to the enemy target, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1014_Uni01_n1s1 [Feeble Attack]: Deals damage equal to 300% of ATK to the enemy target, applying [Feeble] for 1 turn. || *Feeble: Damage dealt reduced by 20%.
+1014_Uni01_n1s2 []: Deals damage equal to 340% of ATK to the enemy target, applying [Feeble] for 1 turn. || *Feeble: Damage dealt reduced by 20%.
+1014_Uni01_n1s3 []: Deals damage equal to 390% of ATK to the enemy target, applying [Feeble] for 1 turn. || *Feeble: Damage dealt reduced by 20%.
+1049_Uni01_n1s1 [Power Attack]: Damages the target for #Factor_1# of ATK, reducing damage you take by #Factor_2# for 1 turn, stacking up to 2 times.
+1049_Uni01_n1s2 []: Damages the target for #Factor_1# of ATK, reducing damage you take by #Factor_2# for 1 turn, stacking up to 2 times.
+1049_Uni01_n1s3 []: Damages the target for #Factor_1# of ATK, reducing damage you take by #Factor_2# for 1 turn, stacking up to 2 times.
+1076_Uni01_n1s1 [Kagune Attack]: Damages all enemies for #Factor_1# of ATK, increasing damage you deal by #Factor_2# for 2 turns, stacking up to 3 times.
+1076_Uni01_n1s2 []: Damages all enemies for #Factor_1# of ATK, increasing damage you deal by #Factor_2# for 2 turns, stacking up to 3 times.
+1076_Uni01_n1s3 []: Damages all enemies for #Factor_1# of ATK, increasing damage you deal by #Factor_2# for 2 turns, stacking up to 3 times.
+1026_Uni01_n1s1 [Group Disruption]: Damages all enemies for 200% of ATK, applying [Disruption] to them for 1 turn. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+1026_Uni01_n1s2 []: Damages all enemies for 240% of ATK, applying [Disruption] to them for 1 turn. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+1026_Uni01_n1s3 []: Damages all enemies for 280% of ATK, applying [Disruption] to them for 1 turn. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+1047_Uni01_n1s1 [Sweeping Slash]: Deals [Preemptive] damage to all enemies equal to 200% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+1047_Uni01_n1s2 []: Deals [Preemptive] damage to all enemies equal to 240% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+1047_Uni01_n1s3 []: Deals [Preemptive] damage to all enemies equal to 280% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+Uni01_p0 [Perseverance]: Your Max HP will not be reduced below the base value
+Uni01_p1 [Curse on the Strong]: When enemy's turn starts, reduce ATK-related stats by 15% for the enemy with the highest ATK for 1 turn.
+Uni01_p2 [DEF Weakening]: Dealing CRIT reduces the target(s)' DEF-Related stats by 10% for 1 turn, stacking up to 1 time.
+Uni01_p3 [Restriction Ignoring]: Damage dealt will not be affected by attributes for all characters.
+Uni01_p4 [Dodge Ignoring]: Attacks ignore Dodge
+Uni01_p5 [Healing Nullification]: Apply [Lethal] effect to all enemies, Unable to dispel || *Lethal: Unable to trigger any healing effects.
+Uni01_p6 [Ultimate Skill DMG Reduction]: Damage from Ultimate Skills is reduced by 50%.
+Uni01_p7 [Disabling Immunity]: Immune to all Disabling effects.
+Uni01_p8 [Pierce]: Dealing damage causes additional damage equal to 10% of the target’s current HP.
+Uni01_p9 [Weak]: Changes your Weak cap to 5 as battle starts, and suffering Weak will not increase it Weak causes damage taken to increase by 50% for 1 turn instead of stunning
+Uni01_p10 [Torn]: If the target's HP drops below 75% after receiving damage, [Torn] will be applied to it. When the target’s Torn effect is stacked to 4 times, all Torn effects of the target are removed and cause damage to the target by 30% of Max HP, reduces the target's Skill Level, and causes the target to [Stun] for 1 turn || *Stunned: Unable to take any actions. *Torn: Max HP is reduced by 5%
+Uni01_p11 [Feast]: When a character on the field is immobilized, its skill level is increased
+Uni01_p12 [Smite]: After the first turn of the battle, when your turn starts, apply 2 stacks of [Torn] to the enemy with the lowest HP, and deal [Impale] damage of 200% ATK. || *Impale: This damage ignores the target's DEF. *Torn: Max HP is reduced by 5%
+Uni01_p13 [Wound Infection]: When a character with Torn effect dies, all enemies are applied with [Torn] || *Torn: Max HP is reduced by 5%
+Uni01_p14 [Disabling Immunity]: Immune to all disabling effects and skill level reducing effects
+Uni01_p15 [Underbelly Switching · SKL]: When battle starts, switch your attribute to SKL
+Uni01_p16 [Enhancement - Trigger]: When your turn starts, increase all allies’ ATK-related stats by 20% for 1 turn, and Shield allies who have less than 40% HP with 20% of Max HP for 1 turn
+Uni01_p17 [Reinforcement - Trigger]: When battle starts, summon 3 minions to the battle
+Uni01_p18 [Weak Removal]: When battle starts, reduce the Weak value of your character with the most Weak values to 0
+Uni01_p19 [Skill Level Up]: Increases all allies’ skill levels when your turn starts.
+Uni01_p20 [Uplift]: When your character dies, damage taken by all allies is reduced by 10%
+Uni01_p21 [Weak Protection]: When there are more than one ally on the field, your Weak value will not increase
+Uni01_p22 [Life Connection]: When your character dies, you take damage equal to 150% of its max HP
+Uni01_p23 [Underbelly Switching · STR]: When battle starts, switch your attribute to STR
+Uni01_p24 [Roar]: When battle starts, give all allies [Disruption] for 1 turn || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+Uni01_p25 [Deterrence]: When an character dies, all enemies' ATK-Related stats are reduced by 10% for 1 turn.
+Uni01_p26 [Retaliation upon Assault]: When your turn starts, if you took damage in the previous turn, deal damage of 180% ATK to all enemies.
+Uni01_p27 [Blood Boost]: Taking damage increases your damage dealt by 2%, stacking up to 50 times
+Uni01_p28 [Debuff Immunity]: Immune to all debuffs and Skill Level reduction effects.
+Uni01_p29 [Underbelly Switching · PSY]: When battle starts, switch your attribute to PSY
+Uni01_p30 [Weak]: Changes your Weak cap to 3 as battle starts, and suffering Weak will not increase it Weak causes damage taken to increase by 50% for 1 turn instead of stunning
+Uni01_p31 [Oppress]: When taking damage, if the target has a Fragile mark, reduce your this damage taken by 30%
+Uni01_p32 [CRIT Boost]: When dealing a CRIT, increase your ATK by 10% and increase CRIT DMG by 30% for 2 turns, stacking up to 5 times.
+Uni01_p33 [Terminate]: When dealing damage, if the target's HP is less than 50%, the damage you deal this time is increased by 30%
+Uni01_p34 [Abuse]: When enemy’s turn ends, if you didn't take CRIT DMG in this turn, deal [Impale] damage of 180% ATK to all enemies || *Impale: This damage ignores the target's DEF.
+Uni01_p35 [Underbelly Switching · WIT]: When battle starts, switch your attribute to WIT
+Uni01_p36 [Continuous Weakening]: When your turn starts, increases all enemies’ damage taken by 5%, stacking up to 4 times
+Uni01_p37 [Underbelly Boost]: When your character deals damage to a debuffed target, it increases its Weak by an additional 1 point
+Uni01_p38 [Weak]: Changes your Weak cap to 4 when battle starts.
+Uni01_p39 [Death Strike]: When you die, deal 180% damage of your ATK to all enemies and increase all enemies’ Weak by 1 point
+Uni01_p40 [Price of Blood]: When your turn starts, lose 20% of your current HP and increase your ATK by 15%
+Uni01_p41 [Weak]: Changes your Weak cap to 4 as battle starts. Weak effect increases damage taken by 50% for 1 turn instead of Stunning you.
+Uni01_p42 [Weak Shield]: When your Character is affected by Weak, it will be applied with a shield of 300% of DEF.
+Uni01_p43 [Bonus-Attack on Weak]: When an enemy is affected by Weak, deals damage to it of 220% ATK
+Uni01_p44 [Retaliation]: When attacked, if the target is debuffed, Retaliate the target, causing [Destruction] damage of 200% of your ATK. || *Destruction: The CRIT Rate of this damage is tripled. Additionally deals DMG of 100% ATK to the target when landing a CRIT.
+Uni01_p45 [DMG Boost]: For every debuffed enemy, our character's damage dealt is increased by 5%
+Uni01_p46 [Weak]: Changes your Weak cap to 4 as battle starts. Weak increases damage taken by 30% for 1 turn instead of Stunning you.
+Uni01_p47 [Weak Protection]: The end of Weak effect makes you immune to Weak value increase for 1 turn.
+Uni01_p48 [Weakening Blow]: When your turn starts, deals damage equal to 220% of ATK to an random enemy and weakens the target's DEF-Related stats by 20% for 2 turns.
+Uni01_p49 [Shield Boost]: When your turn ends, For every debuff on enemies, Shield yourself with 100% of ATK for 1 turn
+Uni01_p50 [Overwhelm]: When dealing damage, if the target's DEF is less than yours, the damage you deal this time is increased by 30%
+Uni01_p51 [Weak]: Changes your Weak cap to 6 as battle starts. Weak causes damage taken to increase by 50% for 1 turn instead of stunning
+Uni01_p52 [Special Training]: When you turn starts, if none of your characters are affected by Special Training, apply [Special Training] to 1 of your character randomly || *Special Training: Damage dealt is increased by 50%. When your turn starts, your Skill Level is increased. Expires upon Weak.
+Uni01_p53 [Bonus Training]: When your turn ends, if you are affected by Special Training, deal [Impale] damage to a random enemy of 200% ATK || *Impale: This damage ignores the target's DEF.
+Uni01_p54 [Concentration]: When you are affected by Special Training, Shield yourself with 15% of your Max HP for 1 turn
+Uni01_p55 [Weak]: Changes your Weak cap to 4 when battle starts. Weak causes damage taken to increase by 50% for 1 turn instead of stunning
+Uni01_p56 [Combo Punch]: When your turn ends, deal damage equal to 220% of ATK to a random enemy, applying [Lethal] to the target for 1 turn. If you are affected by Special Training, deal 220% damage to the target with the lowest HP, applying [Lethal] to the target for 1 turn. || *Lethal: Unable to trigger any healing effects.
+Uni01_p57 [Inspiration]: When you are affected by Special Training, ATK-related stats increase by 20%, and evasion is ignored when landing attacks
+Uni01_p58 [Anger Suppression]: When you turn starts, reduce your Weak by 1 point
+Uni01_p59 [Bonus-Attack on Weak]: When an enemy is affected by Weak, deals damage to it of 200% ATK
+Uni01_p60 [DMG Taken Reduction]: Damage taken from Level-1 skills reduced by 50%.
+Uni01_p61 [DMG Boost]: Increases 50% more damage dealt to targets with HP lower than 40%
+Uni01_p62 [Weak]: Changes your Weak cap to 4 when battle starts.
+Uni01_p63 [Weak Boost]: When an allied character causes Weak, increases the damage dealt by all our allies by 10%. Limited to 4 times.
+Uni01_p64 [Basic Stats Boost]: Each time an allied character deals damage to an enemy restricted by self with an active skill, basic stats of all allies increase by 3%, stacking up to 5 times.
+Uni01_p65 [Skill Level Up]: Increase your skill level at the end of your turn
+Uni01_p66 [Collision]: When your Weak state is removed, deal [Weak] damage of 240% to the enemy with the highest Weak || *Weak: For this damage, Applies 2 additional Weak to the target.
+Uni01_p67 [Charge]: When your turn starts, if you didn't take damage in the previous turn, your skill level will increase
+Uni01_p68 [Weak]: Changes your Weak cap to 4 when battle starts. When affected by Weak, randomly add one of the effects of reducing the damage dealt by 8%, increasing the damage taken by 8%, or reducing the skill level for 1 turn to all enemies
+Uni01_p69 [Unkillable]: Death-Proof
+
+## Org/Union boss Uni1 (44)
+UniC1_p1 [Weak]: Changes your Weak cap to 8 as battle starts, and suffering Weak will not increase it.
+UniC1_p2 [Restriction Boost]: Grants 10% damage reduction to the target for 1 turn when receiving active skill damage from a target of restricting attribute
+UniC1_p3 [Retaliation]: When HP is below 70%, 50%, or 30% for the first time, all of your debuffs are removed, and all enemies receive [Death] damage of 120% ATK. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+UniC1_p4 [DMG Amplification]: When your turn starts, increases your ATK-related stats by 10%. Stacks up to 5 times.
+UniC1_p5 [Retaliation]: After the 3rd turn of the battle, at the start of the enemy's turn, deals 180% damage to the target with the lowest HP percentage
+UniC1_p6 [Frenzy]: Damage dealt increase by 2% for every 1% of self’s lost HP.
+UniC1_p7 [Assertive]: Damage from Ultimate Skills is reduced by 50%.
+UniC1_p8 [Weak]: Changes your Weak cap to 6 as battle starts. Weak effect reduce damage dealt by 20% for 1 turn instead of Stunning you.
+UniC1_p9 [Summon]: When any allied Character dies, summon 1 CCG Battler into battle, up to 8. Increase ATK-related Stats for all allies by 10%, stacking up to 5 times. When self dies, all summoned Characters present die as well.
+UniC1_p10 [Assertive]: Damage taken from AOE Skills is increased by 50%, and damage taken from Ultimate Skills is reduced by 50%.
+UniC1_p11 [Retaliation]: When your turn ends, deals [Amplification] damage of 180% ATK to all enemies, and 20% additional damage to the target with the lowest HP percentage || *Amplification: If you are buffed, this damage will be increased by 15%
+UniC1_p12 [Underbelly]: Increases damage taken by 50% when HP is above 50%.
+UniC1_p13 [Weak]: Changes your Weak cap to 6 as battle starts. Weak effect increases the skill level of all Skills of 1 random enemy instead of Stunning you.
+UniC1_p14 [DMG Increase]: When an enemy target uses a triggered Skill, grants self with an effect of a 20% increase in damage taken, stacking up to 5 times.
+UniC1_p15 [Retaliation]: When your turn starts, grant yourself a 15% increase in ATK-related stats,stacking up to 3 times, and deal [Blood Piercer] damage of 120% ATK to an random debuffed enemy || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+UniC1_p16 [Weak]: Changes your Weak cap to 6 as battle starts. Weak effect increases the skill level of all Skills of 1 random enemy instead of Stunning you.
+UniC1_p17 [Summon]: When each turn starts, if unaccompanied by allies, summon 2 Cochlea Prisoners to join the battle, up to 8. When you die, your summoned characters die, too.
+UniC1_p18 [Underbelly]: Deals 50% more damage to enemy debuffed targets and takes 50% more damage from enemy buffed targets
+UniC1_p19 [Retaliation]: When your turn ends, grants self a 10% increase in ATK-related stats, stacking up to 5 stacks. Deal 140% ATK damage to enemy target with the lowest HP percentage
+UniC1_p20 [Weak]: Changes your Weak cap to 6 as battle starts. Weak effect reduce damage dealt by 20% for 1 turn instead of Stunning you.
+UniC1_p21 [Underbelly]: When attacked by a Skill, if the attacker's HP is above 80%, the damage taken for this attack increases by 50%.
+UniC1_p22 [Summon]: When your turn starts, if unaccompanied by allies, summon 2 ghouls to join the battle, up to 8. When you dies, your summoned characters die, too.
+UniC1_p23 [Retaliation]: When your turn starts, grants all allies a 10% increase in ATK-related stats, up to 5 stacks. Deal 280% ATK damage to enemy target with the highest percentage of HP
+1010_UniC1_m1s1 []: Deals [Preemptive] damage to all enemies equal to 120% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+1010_UniC1_m1s2 []: Deals [Preemptive] damage to all enemies equal to 140% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+1010_UniC1_m1s3 []: Deals [Preemptive] damage to all enemies equal to 170% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+1003_UniC1_m1s1 []: Damages all enemies for #Factor_1# of ATK, reducing 1 random enemy target’s HP-related stats by #Factor_2# for 1 turn.
+1003_UniC1_m1s2 []: Damages all enemies for #Factor_1# of ATK, reducing 1 random enemy target’s HP-related stats by #Factor_2# for 1 turn.
+1003_UniC1_m1s3 []: Damages all enemies for #Factor_1# of ATK, reducing 1 random enemy target’s HP-related stats by #Factor_2# for 1 turn.
+1013_UniC1_m1s1 []: Deals damage to all enemies equal to 140% of ATK., applying [Lethal] to 1 random enemy target for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1013_UniC1_m1s2 []: Deals damage to all enemies equal to 150% of ATK., applying [Lethal] to 1 random enemy target for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1013_UniC1_m1s3 []: Deals damage to all enemies equal to 170% of ATK., applying [Lethal] to 1 random enemy target for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1021_UniC1_m1s1 []: Deals damage equal to 170% of ATK to the enemy target, applying [Incapacitation] for 1 turn. || *Incapacitation: Unable to take any actions; damage taken increases by 35%; any attack suffered cancels the effect.
+1021_UniC1_m1s2 []: Deals damage equal to 200% of ATK to the enemy target, applying [Incapacitation] for 1 turn. || *Incapacitation: Unable to take any actions; damage taken increases by 35%; any attack suffered cancels the effect.
+1021_UniC1_m1s3 []: Deals damage equal to 220% of ATK to the enemy target, applying [Incapacitation] for 1 turn. || *Incapacitation: Unable to take any actions; damage taken increases by 35%; any attack suffered cancels the effect.
+3018_UniC1_m1s1 []: Deals damage equal to 180% of ATK to the enemy target, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+3018_UniC1_m1s2 []: Deals damage equal to 220% of ATK to the enemy target, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+3018_UniC1_m1s3 []: Deals damage equal to 260% of ATK to the enemy target, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+1076_UniC1_m1s1 []: Deals [Blade] damage to all enemies equal to 130% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+1076_UniC1_m1s2 []: Deals [Blade] damage to all enemies equal to 150% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+1076_UniC1_m1s3 []: Deals [Blade] damage to all enemies equal to 180% of ATK. || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+3004_UniC1_m1s1 []: Deals damage equal to 180% of ATK to the enemy target, applying [Expose] for 1 turn. || *Expose: CRIT Resistance reduced by 10%
+3004_UniC1_m1s2 []: Deals damage equal to 220% of ATK to the enemy target, applying [Expose] for 1 turn. || *Expose: CRIT Resistance reduced by 10%
+3004_UniC1_m1s3 []: Deals damage equal to 260% of ATK to the enemy target, applying [Expose] for 1 turn. || *Expose: CRIT Resistance reduced by 10%
+
+## Secret Area / Region Breakthrough Sec (201)
+Sec1_p1 [Inspire]: When your Weak effect ends, all allied characters' ATK increases by 20% and is immune to Weak increase for 1 turn.
+Sec1_p2 [DMG Boost]: Increases damage dealt by 5% for every 10% of your remaining HP.
+Sec1_p3 [Attack Boost]: [Effective also in back-up state] Increases allied character's ATK-Related stats by 6%.
+Sec1_p4 [Weaken]: When your Weak effect ends, all enemies' DEF is reduced by 30% for 1 turn.
+Sec1_p5 [Agonal Hardening]: When below 30% HP, you take 30% reduced damage, and your CRIT Resistance increases by 30%.
+Sec1_p6 [DEF Weakening]: [Effective also in back-up state] All enemies' DEF-Related stats reduced by 7%.
+Sec1_p7 [Continuous Boost]: Every 2 turns, increases ATK-Related stats by 6% at the start of your turn, stacking up to 5 times.
+Sec1_p8 [Disability Immunity]: Immune to all disabling effects and skill level reducing effects
+Sec1_p9 [Restoration Ability]: When your turn starts, restores 20% of lost HP
+Sec1_p10 [HP Boost]: [Effective also in back-up state] Increases allied characters' HP-Related stats by 20%.
+Sec1_p11 [HP Boost]: Increases Max HP by 8% for every 1 debuff all enemies have.
+Sec1_p12 [Debuff DMG Boost]: You deal 30% more damage when affected by debuffs.
+Sec1_p13 [Weak]: When Weak is applied to you, all other allies' debuffs are removed, and their Weak bars are emptied.
+Sec1_p14 [DEF Boost]: Increases DEF by 8% for every 1 debuff all enemies have.
+Sec1_p15 [Weak]: When Weak is applied to you, all other allies' ATK increases by 20% for 2 turns.
+Sec1_p16 [Attack Boost]: Increases ATK by 8% for every 1 debuff all enemies have.
+Sec1_p17 [DMG Decrease]: You take 30% reduced damage when affected by debuffs.
+Sec1_p18 [Weak]: When Weak is applied to you, all other allies gain a shield to absorb damage equal to 20% of Max HP for 2 turns.
+Sec1_p19 [Non-Special DMG Reduction]: You take 30% reduced damage from non-Special skills.
+Sec1_p20 [Skill Level Up]: Causing CRIT DMG increases ATK by 5%, stacking up to 5 times, and increases skill levels.
+Sec1_p21 [Basic Stats Boost]: [Effective also in back-up state] Increases allied characters' basic stats by 4%.
+Sec1_p22 [Continuous Boost]: Casting an active skill increases all allied characters' CRIT Rate by 10%, stacking up to 4 times.
+Sec1_p23 [Weak]: When Weak or a disabling effect is applied to you, all allied characters' CRIT Rate is increased by 10%, stacking up to 3 times.
+Sec1_p24 [Basic Stats Weakening]: [Effective also in back-up state] Reduces all enemies' basic stats by 4%.
+Sec1_p25 [Take Cover]: If you're not the only one present when battle or your turn starts, 1 random allied character gains [Provoke] for 1 turn. || *Provoke: Draws all attacks to you.
+Sec1_p26 [Debuff Removal]: When the enemy's turn ends, 1 random debuff is removed from you.
+Sec1_p27 [DMG Boost]: Being shielded increases ATK-Related stats by 20%.
+Sec1_p28 [Injury-Triggered Injury]: Taking damage from non-restricting attribute heals you for 30% of the damage taken.
+Sec1_p29 [HP Boost]: The death of an ally increases your Max HP by 8%
+Sec1_p30 [Ultimate Skill DMG Reduction]: Take 40% less damage from Ultimate Skills.
+Sec1_p31 [Injury-Triggered Weakening]: Taking damage inflicts the attacker with one of the following effects at random for 1 turn: unable to use ATK skills, unable to use debuff-applying skills, unable to use Stance skills.
+Sec1_p32 [Continuous Restoration]: Heals all allied characters for 10% of Max HP when your turn ends.
+Sec1_p33 [Weak]: Changes your Weak cap to 4 when battle starts.
+Sec1_p34 [Penetration Boost]: [Effective also in back-up state] Additionally grants 30% PEN Rate for your characters whose attacks are restricting the enemy
+Sec1_p35 [DMG Boost]: When your character deals damage, increases damage dealt by 25% if your remaining HP percentage is higher than the target's.
+Sec1_p36 [Skill Level Up]: If Gagi, Guge and Naki are all present when the battle or your turn starts, all allied characters' skill levels will be increased.
+Sec1_p37 [CRIT Boost Upon Death]: Being killed increases all allied characters' CRIT Rate by 20%.
+Sec1_p38 [Debuff DMG Reduction]: You take 30% less damage from debuff-applying skills.
+Sec1_p39 [DMG Boost]: Increases damage dealt by 1% for every 2% of lost HP.
+Sec1_p40 [ATK Increase]: Increases your ATK by 5% as your turn starts.Limited to 10 times.
+Sec1_p41 [DMG Boost]: When Gagi and Guge are both present, all allied characters deal 30% increased damage, making you immune to all disabling effects.
+Sec1_p42 [CRIT Boost Upon Death]: Being killed increases all allied characters' CRIT DMG by 20%.
+Sec1_p43 [DMG Reduction]: When Gagi and Guge are both present, all allied characters take 30% reduced damage, making you immune to all disabling effects.
+Sec1_p44 [CRIT Boost]: When your turn starts, all allied characters' CRIT Rate increases by 20% for 1 turn if you haven't taken any damage in the last turn.
+Sec1_p45 [weak]: When your Weak effect ends, your ATK increases by 20% and you cannot gain Weak for 1 turn.
+Sec1_p46 [Charge-Up]: When a character dies, grant yourself [Charge-Up], stacking up to 10 times. || *Charge-Up: Basic stats increase by 6%.
+Sec1_p47 [Buff Restoration]: Gaining a buff heals you for 15% of Max HP.
+Sec1_p48 [Charge-Up Strike]: Gaining 10 stacks of Charge-Up causes you to deal [Death] damage equal to 220% of ATK to all enemies, making you immune to all debuffs. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+Sec1_p49 [Preemptive DMG Boost]: Increases damage dealt by 1% for every 2% HP lost of the target.
+Sec1_p50 [DMG Taken Reduction]: Reduces damage taken by 1% for every 2% of lost HP.
+Sec1_p51 [Agonal DMG Boost]: HP dropping to below 20% for the first time causes your whole team to deal 20% increased damage for 2 turns.
+Sec1_p52 [ATK Boost]: [Effective also in back-up state] Increases allied characters' ATK by 10%.
+Sec1_p53 [Agonal DEF Boost]: HP dropping to below 20% for the first time causes your whole team to take 20% reduced damage for 2 turns.
+Sec1_p54 [DEF Boost]: [Effective also in back-up state] Increases allied characters' DEF by 10%.
+Sec1_p55 [Agonal HP Boost]: HP dropping to below 20% for the first time increases all allied characters' Max HP by 15% for 2 turns.
+Sec1_p56 [Non-Ultimate DMG Reduction]: Take 30% reduced damage from non-Ultimate Skills.
+Sec1_p57 [HP Boost]: [Effective also in back-up state] Increases allied character's Max HP by 10%.
+Sec1_p58 [Self Boost]: If unaccompanied by allies, your basic stats increase by 30%.
+Sec1_p59 [Level Up]: If above 50% HP when your turn begins, all allied characters' skill levels will increase; otherwise your whole team will take 30% reduced non-critical damage for 2 turns.
+Sec1_p60 [Resurrection]: Suffering fatal damage revives you and brings you to 35% Max HP.
+Sec1_p61 [Passive Weak]: If unaccompanied by allies when battle starts, your Weak cap will be changed to 6; otherwise it'll be changed to 4.
+Sec1_p62 [Blood Rage]: Stays in [Blood Rage] when your HP is above 70%. Meanwhile increases Lifesteal by 20%. || *Blood Rage: Increases damage dealt by 0.5% for each 1% remaining HP you have.
+Sec1_p63 [Bonus-Attack]: Bonus-Attack will be launched by you following other allied characters' use of single target skills, dealing [Lifesteal] damage equal to 160% of ATK. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+Sec1_p64 [Retaliation]: Taking damage when affected by Blood Rage causes you to Retaliation, damaging the target for 160% of ATK, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+Sec1_p65 [DMG Cap]: Cannot be dealt more than 45% of Max HP in one attack.
+Sec1_p66 [Weak]: Changes your Weak cap to 4 as battle starts. You cannot gain Weak when affected by Blood Rage.
+Sec1_p67 [Restoration Boost]: [Effective also in back-up state] Increases all allied characters' Restoration Rate and Regeneration Rate by 5% when a turn ends. Limited to 10 times.
+Sec1_p68 [Overall DMG Cap]: [Effective also in back-up state] Your whole team cannot be dealt more than 35% of Max HP in one attack.
+Sec1_p69 [Weak]: Changes your Weak cap to 6 when battle starts.
+Sec1_p70 [Group ATK Boost]: When a turn ends, if you have used a skill in that turn, all allied characters' ATK-Related stats increase by 5%, and all enemies' DEF-Related stats decrease by 5%. Limited to 5 times.
+Sec1_p71 [CRIT DMG Boost]: Your critical strikes increase CRIT DMG by 50% and reduce CRIT Resistance by 20%.
+Sec1_p72 [Ultimate Skill Restriction]: The enemies cannot gain Energy.
+Sec1_p73 [Active Skill Switch]: If not below 50% HP, you will use only Weakening Blow when casting active skills; otherwise you will use only Kagune Blow.
+Sec1_p74 [Retaliation]: Taking non-critical damage causes you to Retaliate the attacker for Weak damage equal to 260% of ATK.
+Sec1_p75 [DMG Boost]: Your active skill attacks against enemies unable to take action remove all disabling effects and Weak effects from the targets, increasing the damage of this attack by 50%.
+Sec1_p76 [Weak Boost]: Each time an ally increases an enemy's Weak with a skill, your ATK-Related stats increase by 3%. Limited to 10 times.
+Sec1_p77 [Debuff Immunity]: Immune to all debuffs and Skill Level reduction effects.
+Sec1_p78 [Attribute Restriction Dissolution]: Enemies of restricting attributes against you no longer cause you to deal reduced damage.
+Sec1_p79 [Frenzy]: Applying Weak effect heals you for 15% of lost HP, granting 1 [Frenzy] effect. || *Frenzy: Increases ATK-Related stats by 3%, stacking up to 3 times.
+Sec1_p80 [Shield Lock]: HP dropping to below 30% for the first time shields you for 30% of Max HP for 3 turns, applying [Lock] to the enemy with the highest ATK. When the shield expires or shatters, the Locked effect is removed, inflicting you with Weak effect. || *Locked: Reduces damage taken from attackers unaffected by Locked by 90%.
+Sec1_p81 [Shield Boost]: You deal 20% increased damage when shielded.
+Sec1_p82 [Non-CRIT DMG Reduction]: Reduces damage taken from non-CRIT strikes and Ultimate Skills by 40%. Taking CRIT DMG reduces CRIT DEF by 10%, stacking up to 3 times.
+Sec1_p83 [DMG Cap]: Cannot be dealt more than 35% of Max HP in one attack.
+Sec1_p84 [Amok]: 3 turns after battle starts, all allied characters' ATK-Related stats are increased by 20% as your turn ends. Limited to 3 times.
+Sec1_p85 [Active Skill Switch]: If your HP is not below 50%, you will use only Amplification Combo when casting active skills; otherwise you will use only All-Out Combo.
+Sec1_p86 [Level Reduction]: Dealing damage reduces the level of 1 random enemy skill.
+Sec1_p87 [Weak Protection]: When your Weak effect ends, you gain a shield to absorb damage equal to 10% of Max HP for 2 turns, and you cannot gain Weak for 1 turn.
+Sec1_p88 [Stats Boost]: Granting a shield increases your basic stats by 10% for 2 turns. Being attacked by an active skill when shielded reduces damage you take by 10% for 1 turn, stacking up to 3 times.
+Sec1_p89 [Shield Upon Injury]: Being attacked when not shielded shields you for 30% of the damage taken for 1 turn
+Sec1_p90 [Weak]: Your Weak cap is changed to 4 as battle starts. Suffering Weak also increases CRIT DMG you take by 50%. When Weak effect ends, CRIT DMG you take is increased by 20%, stacking up to 5 times.
+Sec1_p91 [DMG Reduction]: Take 40% reduced damage from Ultimate Skills and debuff-applying skills.
+Sec1_p92 [Overall Boost]: If unaffected by debuff as the enemy's turn starts, your CRIT Rate, Lifesteal, and Block Chance will increase by 25%. Lasts 1 turn.
+Sec1_p93 [Active Skill Switch]: If your HP is not below 50%, you will use only Amplified Sweeping Strike when casting active skills; otherwise you will use only Kagune Attack.
+Sec1_p94 [Retaliation Lock]: When your turn starts, applies [Retaliation Lock] to a random enemy for 1 turn. Taking damage causes you to damage Locked targets for 150% of ATK. || *Retaliation Lock: Damage dealt reduced by 30%. Causing CRIT DMG to the applier removes this effect.
+Sec1_p95 [Basic Stats Boost]: Each time an allied character uses a skill, or has their skill levels increased, or takes damage, all your debuffs are removed, and your basic stats are increased by 3%, stacking up to 15 times.
+Sec1_p96 [Attack Boost]: Each time an allied character removes a debuff, their ATK is increased by 5%. Limited to 10 times.
+Sec1_p97 [Weak Reduction]: Empties Weak bar each time when you lose 35% HP.
+Sec1_p98 [Weak Protection]: When your Weak effect ends, your skill levels are increased and you cannot gain Weak for 1 turn.
+Sec1_p99 [Kill Boost]: Each time you kill an enemy character, your whole team is healed for 30% of their lost HP, and your Lifesteal is increased by 20%, stacking up to 3 times.
+Sec1_p101 [Reduce Healing]: Reduces enemies' Restoration Rate by 30%.
+Sec1_p103 [CRIT Boost]: [Effective also in back-up state] When battle starts, increase all allies' CRIT Rate by 5% and CRIT DMG by 10%
+Sec1_p104 [DEF Weakening]: [Effective also in back-up state] When battle starts, reduce all enemies' DEF and Block Rate by 5%
+Sec1_p105 [HP Restoration]: [Effective also in back-up state] When your character is affected by Weak, restore 15% of self's Max HP
+Sec1_p106 [Group Shield]: [Effective also in back-up state] When your turn starts, add a Shield of 5% of their Max HP for all allies for 1 turn
+Sec1_p107 [DMG Taken Reduction]: [Effective also in back-up state] Reduce the non-restricting attribute damage received by your character by 10%
+Sec1_p108 [Regeneration Rate Weakening]: [Effective also in back-up state] Reduce Regeneration Rate of all enemies by 10%
+Sec1_p109 [Lifesteal Rate Weakening]: [Effective also in back-up state] Reduce Lifesteal Rate of all enemies by 10%
+Sec1_p110 [Restoration Rate Weakening]: [Effective also in back-up state] Reduce Restoration Rate of all enemies by 10%
+Sec1_p111 [CRIT Boost]: [Effective also in back-up state] When allied active skill does not cause a CRIT, Your CRIT Rate is increased by 10%, stacking up to 3 times. The effect will be removed when a CRIT lands
+Sec1_p112 [Skill Level Up]: When your turn starts, if your current HP is less than 50%, your skill level is increased
+Sec1_p113 [Shield Drain]: When dealing damage, grants you a shield equal to 50% of the damage dealt in 1 turn.
+Sec1_p114 [Boost]: When you are shielded, your damage dealt increases by 50% and the CRIT DMG increases by 30%.
+Sec1_p115 [Group Shield]: [Effective also in back-up state] When an allied character takes damage, grant yourself a shield equal to 20% of the damage received for 1 turn
+Sec1_p116 [Active Skill Switch]: If your HP is not below 50%, you will use only Precision Strike when casting active skills; otherwise you will use only Vital Strike
+Sec1_p117 [HP Restoration]: When you apply weak, you recover 10% of your Max HP
+Sec1_p118 [DMG Boost]: Increases damage to immobilized targets by 30%
+Sec1_p119 [Basic Stats Boost]: When your turn ends, if there is an immobilized enemy, all allies' basic stats are increased by 10%, stacking up to 5 times.
+Sec1_p120 [DMG Boost Upon Weak]: Applying Weak to the enemy causes the target to take 10% increased damage
+Sec1_p121 [Weak]: When battle starts, change your Weak cap to 4. When you are affected by Weak, all allies will be shielded for 10% of your Max HP.
+Sec1_p122 [Weak Retaliation]: When your Weak state is removed, deal 220% ATK damage to the enemy with the lowest HP and make it enter the Weak state.
+Sec1_p123 [Struggling]: Increases damage dealt by 1% for every 2% of lost HP.
+Sec1_p124 [Dodge Ignoring]: Your attacks ignores Dodge
+Sec1_p125 [Max DMG taken]: Cannot be dealt more than 30% of Max HP in one single attack.
+Sec1_p126 [Amok]: After 3 turns, when your turn starts, all allies' ATK-related stats are increased by 20%
+Sec1_p127 [Active Skill Switch]: If your HP is not below 50%, you will use only Underbelly Strike when casting active skills; otherwise you will use only Bash
+Sec1_p128 [Basic Stats Boost]: When your turn starts, the basic stats of all enemies are reduced by 10% for 2 turns. If your HP is below 50%, the basic stats of all your allies are increased by 15% for 1 turn.
+Sec1_p129 [Buff Removal]: When causing damage, remove one buff from the target. If the buff is successfully removed, you will gain a 3% increase in ATK-related stats for 1 turn, stacking up to 3 times.
+Sec1_p130 [ATK/DEF Boost]: When an allied character causes damage, for every debuff on the target, the damage dealt to the target increases by 5%. When your character takes damage, for every buff on the target, the damage done to the target reduces by 5%.
+Sec1_p131 [Shield Blast]: When your HP is below 30% for the first time, you gain a shield equal to 30% of your Max HP and grant yourself [Shield Amass] effect for 2 turns. || *Shield Amass: When removed, if you are shielded, it will cause damage to all enemies equal to the remaining Shield value. It will automatically be removed when the shield effect disappears and you will enter the Weak effect.
+Sec1_p132 [ATK Boost]: When an allied character dies, your ATK is increased by 10%, stacking up to 5 times
+Sec1_p133 [Weak]: When battle starts, changes your Weak cap to 4. when you are affected by Weak, all your buffs are removed.
+Sec1_p134 [Active Skill Switch]: If your HP is not below 50%, you will use only Breaking Strike when casting active skills; otherwise you will use only Destruction
+Sec1_p135 [Group Weakening]: When your turn starts, all enemies' ATK-related stats are reduced by 10% for 1 turn. If your HP is below 50%, all enemies' DEF-related stats are reduced by 10% for 1 turn
+Sec1_p136 [Retaliation]: When you receive non-CRIT damage, you retaliate the attacker, causing [Blade] damage of 200% ATK. When you receive CRIT damage, you additionally gain 1 Weak || *Blade: CRIT Rate increases by 1% for every 2% of HP lost of the enemy
+Sec1_p137 [Block Ignoring]: When your character deals damage to a target with HP higher than 90%, the target's Block Rate will be ignored by 30%.
+Sec1_p138 [ATK-Related Stats Boost]: When a character dies, Increases your ATK-Related stats by 10%. Stacks up to 2 times.
+Sec1_p139 [Basic Stats Boost]: When you cause a CRIT, if your current Weak is not 0, reduce your Weak value by 1, otherwise increase your basic stats by 5%, stacking up to 2 times
+Sec1_p140 [Weak]: When battle starts, changes your Weak cap to 4. Weak effect causes you to take 50% more CRIT damage for 1 turn instead of Stunning you. Affected by Weak doesn't increase your Weak cap.
+Sec1Sys_p1 [Tenacity]: All non-Boss enemies' basic stats are increased by 10%.
+Sec1Sys_p2 [Savage]: All Boss enemies' basic stats are increased by 10%.
+Sec1Sys_p3 [Reflex]: All Boss enemies will Reflex 30% of their damage taken and Restore themselves for 15% of their damage taken.
+Sec1Sys_p4 [Boiling Blood]: When the enemy's turn starts, all non-Boss enemies gain one of the following effects: [Boiling Blood] for 1 turn, 80% damage reduction for the next damage, or Restoration of 50% lost HP for self. || Boiling Blood: When dealing damage, cause additional damage equal to 8% of your remaining HP.
+Sec1Sys_p5 [Life Drain]: When all bosses weakened: Your skills level up. Next attack gains 50% lifesteal (heals 50% of damage dealt).
+Sec1Sys_p6 [Stress Response]: When all non-boss enemies HP drop below 30% for the first time: Your skills level up. Next hit takes 50% less damage.
+Sec1Sys_p7 [Near-Death Counter]: All Boss enemies' base stats cannot be reduced below their base values. When a Boss enemy's HP first drops below 50%, grant itself an effect of all stats increased by 15% for 2 turns.
+Sec1Sys_p8 [Burning Blood Enhancement]: All non-Boss enemies' base stats cannot be reduced below their base values. When non-Boss enemies deal damage, they additionally deal 8% of their current HP as extra damage.
+Sec1Sys_p9 []: All Boss enemies' base stats cannot be reduced below their base values. When a Boss enemy's HP first drops below 50%, grant itself an effect of all stats increased by 15% for 2 turns.
+Sec1Sys_p10 []: All non-Boss enemies' base stats cannot be reduced below their base values. When non-Boss enemies deal damage, they additionally deal 8% of their current HP as extra damage.
+Sec1Sys_p11 []: All Boss enemies gain 15% to all base stats, and their base stats cannot be reduced below their base values. When a Boss enemy's HP falls below 50% for the first time, grant self an effect that increases all stats by 15% for 2 turns. For each non-Boss enemy, all enemy units gain 5% to all base stats.
+Sec1Sys_p12 []: All non-Boss enemies gain 15% to all base stats, and their base stats cannot be reduced below their base values. When a non-Boss enemy deals damage, it additionally deals damage equal to 8% of its current HP. For each non-Boss enemy, all enemy units gain 5% to all base stats.
+Sec1Sta_p1 [Rage]: Enemy characters deal 50% increased damage when its HP is below 30%
+Sec1Sta_p2 [Protection]: When the enemy's turn ends, all non-Boss enemy characters gain a shield equal to 20% of lost HP for 1 turn.
+Sec1Sta_p3 [Amok]: Enemy characters are immune to debuffs and Weak effect when below 30% HP.
+Sec1Sta_p4 [Sturdy]: all allied characters' CRIT Rate reduces by 25%, and all enemies take 15% reduced damage from non-CRIT strikes.
+Sec1Sta_p5 [CRIT Resistance]: Enemy characters take 15% less non-CRIT damage.
+Sec1Sta_p6 [Rock-Like]: When the enemy's turn ends, all enemies' DEF-Related stats increase by 10% for 1 turn. Suffering Weak cancels this effect.
+Sec1Sta_p7 [Inspire]: Death of an enemy causes all remaining enemies to deal 10% more damage and increases their Max HP by 10% for 3 turns.
+Sec1Sta_p8 [Flaming Blood]: Non-Boss enemies' attacks deal additional damage equal to 6% of their current HP.
+Sec1Sta_p9 [Healing Prohibition]: Reduces the Restoration Rate and Lifesteal of your characters by 30% and 7% respectively.
+Sec1Sta_p10 [Weaken]: Each time an enemy dies, all allied characters' skill level will be reduced
+Sec1Sta_p11 [Terminate]: When all the Boss enemies die, each of them will deal damage to your characters for 20% of their Max HP.
+Sec1Sta_p12 [Vulnerability]: After all enemies have cast active skills, grants the target an effect that increases damage taken by 4%, stacking up to 10 times.
+Sec1Sta_p13 [Boost]: All enemies deal 15% increased damage and take 40% reduced damage.
+Sec1Sta_p14 [Blood Rage]: For every 5% lost HP of all enemy non-boss characters, their damage dealt increases by 3%, and when dealing damage, additionally heals HP for 15% of the damage dealt.
+Sec1Sta_p15 [Momentum Gathering]: When the enemy's turn begins, the enemies that were not damaged in the previous turn have their ATK increased by 10% for 2 turns.
+Sec1Sta_p16 [Terminate]: When all the Boss enemies die, they will deal damage to your characters for 20% of their Max HP. All enemies will not have their Weak values ​​increased, and will be immune to the effects of Weak.
+Sec1Sta_p17 [Digestion]: When your turn starts, all debuffs on a random enemy are removed, and they are given immunity to all debuffs for 1 turn. When the enemy dies, the skill level of all our characters is reduced.
+Sec1Sta_p18 [Fragile]: When your Character takes damage from restricting Attribute, 1 additional Weak is applied. When your Character is immobilized, damage taken is increased by 30%.
+Sec1Sta_p19 [Aegis]: When all non-Boss enemies take damage, reduces your damage taken by 15% for 1 turn, stacking up to 4 times.
+Sec1Sta_p20 [Curse]: When an enemy character dies, reduces all allies’ basic stats by 6% for 2 turns, stacking up to 3 times.
+Sec1Sta_p21 [Steady]: When enemy’s turn ends, all enemies take fixed damage of 1 the next time they receive damage for 1 turn.
+Sec1Sta_p22 [Disarm]: When an enemy Character deals damage, reduces the target’s HP-Related stats by 5% for 1 turn, stacking up to 4 times.
+Sec1Sta_p23 [Inspire]: When any enemy Character dies, all enemies gain 20% of the maximum HP of the dead Character in 2 turns.
+Sec1Sta_p24 [Wall]: Reduces all your allies' CRIT Rate by 20%. When battle starts, all enemies receive 40% less damage until receiving CRIT damage.
+Sec1Sta_p25 [Weaken]: When each turn starts, all of us will be applied one the following random debuffs for 1 turn: 15% less damage dealt, 15% PEN Rate Reduction, 15% more damage taken, and unable to use ATK skills.
+Sec1Sta_p26 [Harden]: Block Rate of all enemies increased by 15%. When enemy Characters receive damage, grant 10% increase in Block rate for 2 turns. Stacks up to 2 times
+Sec1Sta_p27 [Assistance]: When battle starts, the enemy Character with the highest HP gets [Assistance]. When the character with Assistance dies, the other enemy Character with the highest HP receive Assistance. || *Assistance: Damage dealt increases by 10%. Damage taken by other allies reduced by 30%.
+Sec1Sta_p28 [Resistance]: All enemies receive 20% less damage from Active Skills
+Sec1Sta_p29 [Evolution]: When enemy's turn ends, enemy's non-Boss Character's Skill level increases
+Sec1Sta_p30 [Excitement]: When battle starts, grant all the following effects to all enemy Boss Characters for 3 turns: increase ATK by 10%, increase DEF by 10%, increase max HP by 10%, increase PEN Rate by 10%, increase Block Chance by 10%, increase Lifesteal by 10%. At the end of each enemy’s turn, grant all Boss Characters 2 random effects from the above for 3 turns.
+Sec1Sta_p31 [Tenacious]: The enemy Boss Character is immune to the passive-disabling effects and Dust effects. When the HP of all enemy Characters is less than 40%, the DEF-related stats increase by 10%. After taking the first Active Skill damage in each turn, your damage taken from the Active Skill reduces by 80% for 1 turn.
+Sec1Sta_p32 [Indomitable]: All enemies' stats cannot be reduced below their basic values and their CRIT DMG taken is reduced by 50%. When the battle starts, grant all allied characters [Breathless] for 3 turns. || *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%.
+Sec1Sta_p33 [Burst]: When an enemy enters the field, inflict them [Burst] for 1 turn. Enemies with Burst inflict the target [Breathless] for 2 turns when they attack. || *Burst: Increases ATK-related stats by 30% and DEF-related stats by 30%. Upon removal, grants Accumulate for 1 turn. *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%. *Accumulate: Increases HP-related stats by 20%. Upon removal, grants Burst for 1 turns.
+Sec1Sta_p34 [Disruption]: Starting from the 2nd turn, at the start of our turn, grant all our characters who did not deal damage in the previous turn the [Disruption] effect for 1 turn. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+Sec1Sta_p35 [Breathless]: At the start of the battle, grant all our allies the [Breathless] effect for 2 turns, and this effect takes effect once every 3 turns. || *Breathless: Reduces Restoration Rate by 80%, and Regeneration Rate and Lifesteal Rate by 40%.
+Sec1Sta_p36 [Enrage]: When an enemy character dies, all enemies' attack-related abilities increase by 10%, and all our allies' basic ability values decrease by 10% for 2 turns.
+Sec1Sta_p37 [Protection]: All enemy characters take 30% reduced damage from Level 1 skills; at the start of the enemy turn, grant all enemies 3 stacks of the [Protection] effect. When an enemy character is attacked, they lose 1 stack of the [Protection] effect. || *Protection: Takes 20% reduced damage, lasts for 1 turn, and loses 1 stack of Block after being attacked.
+Sec1Sta_p38 [Iron Wall]: Block Rate of all enemies increased by 15%. When enemy Characters deal damage, reduces the target’s ATK-Related stats by 5% for 1 turn. Stacks up to 4 times. When enemy Characters receive damage, grant 10% increase in Block rate for 2 turns. Stacks up to 2 times
+Sec1Sta_p39 [Barrier]: At the start of battle, all enemies gain 6 stacks of Barrier. After any of allied characters use a non-active skill, removes 1 Barrier stack from all enemies. || *Barrier: Increases DEF by 5% and Block Rate by 5%.
+Sec1Sta_p40 [Chain]: At the start of battle, all allied characters gain 4 stacks of Chain. Allied characters with Chain deal 30% less damage with their active skills. || *Chain: Reduces ATK by 5%; removes 1 Chain stack after casting a skill.
+Sec1Sta_p41 [Damage Affliction]: At the start of battle, all allied characters gain Damage Affliction. When an allied character deals CRIT DMG, Damage Affliction on that character is removed. || *Damage Affliction: Max HP reduced by 15%. After using a skill, takes damage equal to 5% of max HP.
+Sec1Sta_p42 [Faction Boost]: All enemies take 30% less damage from non-No-Organization characters and deal 30% more damage to non-No-Organization characters.
+Sec1Sta_p43 [Ultra-Boost]: All enemies deal 15% more damage, take 40% less damage, and randomly remove 3 buffs from the target when attacking.
+Sec1Sta_p44 [Chisel Strike]: The single-target damage dealt by all enemies is increased by 30%. When an enemy deals damage to a target above 50% HP, deals extra damage equal to 100% ATK.
+Sec1Sta_p45 [Rush]: When the battle and your turn starts, all enemies gain 3 stacks of Rush, up to 3 stacks. After allied characters release an active skill, 1 stack of Rush is removed from all enemies. || *Rush: Increases ATK by 5% and HP by 5%.
+Sec1Sta_p46 [Deflect]: All enemies receive 40% less damage from non-active skills.
+Sec1Sta_p47 [Unity]: For every non-Boss enemy alive, all enemies' basic stats increase by 1% and their damage dealt increases by 1.5%
+Sec1Sta_p48 []: For every non-Boss enemy, all enemies' basic stats increase by 2%, damage dealt increases by 2%, defense increases by 2%, and extra damage taken is reduced by 2%.
+Sec1Sta_p49 []: All enemies gain +25% Damage Reduction. For every non-Boss enemy alive, all enemies receive: basic stats +4%, damage dealt +3.5%, DEF +7%, bonus damage taken -3%, PEN Rate +2.5, Block Chance +2%
+Sec1Sta_p50 [Overpower]: Monster stats increase with Level
+Sec1Sta_p51 []: All enemies gain +25% Damage Reduction. For every non-Boss enemy alive, all enemies receive: basic stats +4%, damage dealt +3.5%, DEF +7%, bonus damage taken -3%, PEN Rate +2.5, Block Chance +2%
+
+## Snipe Battle (19)
+Sni_p1 [Damage Boost]: When your turn starts, if your current HP is above 80%, grant 30% Damage Boost for 1 turn.
+Sni_p2 [Debuff Immunity]: When your turn starts, if your current HP is above 80%, remove all debuffs from yourself and grant Debuff Immunity for 1 turn.
+Sni_p3 [Weak Immunity]: When your turn starts, if your current HP is above 80%, remove all control and Weak effects from yourself and grant Weak Immunity for 2 turns.
+Sni_p4 [Fatal Damage]: When your turn starts, if your current HP is above 80%, inflict [Lethal] on the target for 1 turn when dealing damage. || *Lethal: Unable to trigger any healing effects.
+Sni_p5 [Damage Boost]: When your turn starts, if your current HP is below 50%, grant 20% Damage Boost for 1 turn.
+Sni_p6 [Damage Taken Reduction]: When your turn starts, if your current HP is below 50%, grant 20% Damage Taken Reduction for 1 turn.
+Sni_p7 [HP Recovery]: When your turn starts, if your current HP is below 50%, restore 30% of the HP you’ve lost
+Sni_p8 [Fatal Blow]: When your turn starts, if your current HP is below 50%, inflict [Lethal] on the target for 1 turn when dealing damage. || *Lethal: Unable to trigger any healing effects.
+Sni_p9 [Attack Boost]: Every 2 turns, gain a 5% increase to ATK stats at the start of your turn.
+Sni_p10 [Debuff Immunity]: Every 2 turns, remove all debuffs from yourself and grant Debuff Immunity for 1 turn at the start of your turn.
+Sni_p11 [Weak Immunity]: Every 2 turns, remove all control and Weak effects from yourself and grant Weak Immunity for 2 turn at the start of your turn.
+Sni_p12 [Damage Reduction]: Inflict 30% Damage Reduction on the target for 1 turn when dealing damage
+Sni_p13 [Damage Boost]: Grant 20% Damage Boost on all allies for 1 turn when dealing damage.
+Sni_p14 [HP Recovery]: Heal the ally with the highest ATK for 30% of their lost HP when dealing damage.
+Sni_p15 [Buff Removal]: Remove all buffs from the target when dealing damage.
+Sni_p16 [AOE Shield]: Grant all allies a shield equal to 10% of their max HP when taking damage.
+Sni_p17 [Damage Reduction]: Inflict 30% Damage Reduction on the target for 1 turn when taking damage.
+Sni_p18 [Damage Boost]: Grant all allies 20% Damage Boost for 1 turn when taking damage.
+Sni_p19 [Damage Taken Reduction]: Grant all allies 20% Damage Taken Reduction for 1 turn when taking damage.
+
+## Stronghold NPC defender (19)
+3020_GVGN_n1s1 [Block Attack]: Deal #Factor_1# damage to the enemy target, making passive skill ineffective for 1 turn.
+3020_GVGN_n1s2 []: Deal #Factor_1# damage to the enemy target, making passive skill ineffective for 1 turn.
+3020_GVGN_n1s3 []: Deal #Factor_1# damage to the enemy target, making passive skill ineffective for 2 turns.
+3019_GVGN_n1s1 [Disruption Firing]: Deals [Disruption] damage to the enemy target equal to 210% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+3019_GVGN_n1s2 []: Deals [Disruption] damage to the enemy target equal to 250% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+3019_GVGN_n1s3 []: Deals [Disruption] damage to the enemy target equal to 320% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+3008_GVGN_n1s1 [Provoke]: Deals damage equal to 200% of ATK to the enemy target, poses stances to [Provoke] the enemy for 1 turn || *Provoke: Draws all attacks to you.
+3008_GVGN_n1s2 []: Deals damage equal to 250% of ATK to the enemy target, poses stances to [Provoke] the enemy for 1 turn || *Provoke: Draws all attacks to you.
+3008_GVGN_n1s3 []: Deals damage equal to 320% of ATK to the enemy target, poses stances to [Provoke] the enemy for 2 turns || *Provoke: Draws all attacks to you.
+3007_GVGN_n1s1 [Disruption Firing]: Deals [Disruption] damage to the enemy target equal to 210% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+3007_GVGN_n1s2 []: Deals [Disruption] damage to the enemy target equal to 270% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+3007_GVGN_n1s3 []: Deals [Disruption] damage to the enemy target equal to 380% of ATK. || *Disruption: Makes the target(s)' active skill ineffective for 1 turn.
+GVGN_p1 [Covering Attack]: When an allied character is affected by Weak, you deal [Impale] damage of 210% ATK to the a random enemy target. || *Impale: This damage ignores the target's DEF.
+GVGN_p2 [Attribute Boost]: When battle starts, if the enemy team's CP is higher than yours, every 1% higher will increase your Character's basic stats by 1%
+GVGN_p3 [Death Cry]: When you die, remove the Shield of all enemies and deal 5% of your max HP as damage to a random enemy Character.
+GVGN_p4 [Revenge Firing]: When an allied Character dies, you deal [Impale] damage of 210% ATK to the a random enemy target. || *Impale: This damage ignores the target's DEF.
+GVGN_p5 [Emergency Shield]: When your turn ends, Shield all allies with 20% of their own lost HP
+GVGN_p6 [Shield Boost]: Our Shielded Characters take 20% less damage and deal 20% more damage.
+GVGN_p7 [Emergency Firing]: When your HP is below 50% for the first time, deals [Impale] damage equal to 210% ATK to a random enemy target || *Impale: This damage ignores the target's DEF.
+
+## Twin Campaign (43)
+TwinEnemy_p1 []: All allies' Basic Stats 3%
+TwinEnemy_p2 []: All allies' Basic Stats 5%
+TwinEnemy_p3 []: All allies' Basic Stats 8%
+TwinEnemy_p4 []: Increases the basic stats of all allies by 10%, and Max HP by an extra 10%
+TwinEnemy_p5 []: Increases the basic stats of all allies by 12%, and Max HP by an extra 15%
+TwinEnemy_p6 []: Increases damage dealt by 5%; Reduces damage taken by 5%
+TwinEnemy_p7 []: Increases damage dealt by 10%; Reduces damage taken by 10%
+TwinEnemy_p8 []: Increases damage dealt by 20%; Reduces damage taken by 20%
+TwinEnemy_p9 []: Increases damage dealt by 30%; Reduces damage taken by 30%
+TwinEnemy_p10 []: Increases damage dealt by 40%; Reduces damage taken by 40%
+TwinEnemy_p11 []: Increases damage dealt by 50%; Reduces damage taken by 50%
+TwinEnemy_p12 []: Increases damage dealt by 60%; Reduces damage taken by 60%
+TwinEnemy_p13 []: Basic stats increased by 5%
+TwinEnemy_p14 []: Basic stats increased by 10%
+TwinEnemy_p15 []: Basic stats increased by 8%
+TwinEnemy_p16 []: Basic stats increased by 12%, CRIT DMG by 15% and Additional Damage by 20%
+TwinEnemy_p17 []: If you win the preemption check: When an enemy is defeated, increases the skill level of all allies. When your turn ends, immediately casts a Lv.1 active skill on a random target
+TwinEnemy_p18 []: If you win the preemption check: When an enemy is defeated, nullifies all passive effects of all enemies for 1 turn
+TwinEnemy_p19 []: For every 10% increase in allies’ total CP compared to the enemy’s, increases all stats of all allies by 2%, capped at 12%
+3012_tw1s1 []: Deals Death damage equal to 200% of ATK to an enemy target. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+3012_tw1s2 []: Deals Death damage equal to 300% of ATK to an enemy target. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+3012_tw1s3 []: Deals Death damage equal to 540% of ATK to an enemy target. || *Death: This damage deal 30% more damage to the enemy with HP below 25%
+3001_tw1s1 []: Deals Lifesteal damage equal to 200% of ATK to an enemy target. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+3001_tw1s2 []: Deals Lifesteal damage equal to 300% of ATK to an enemy target. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+3001_tw1s3 []: Deals Lifesteal damage equal to 540% of ATK to an enemy target. || *Lifesteal: The Lifesteal amount of this damage is doubled.
+3011_tw1s1 []: Deals Blood Piercer damage equal to 200% of ATK to an enemy target. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+3011_tw1s2 []: Deals Blood Piercer damage equal to 300% of ATK to an enemy target. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+3011_tw1s3 []: Deals Blood Piercer damage equal to 540% of ATK to an enemy target. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+3006_tw1s1 []: Deals Impale damage equal to 200% of ATK to an enemy target. || *Impale: This damage ignores the target's DEF.
+3006_tw1s2 []: Deals Impale damage equal to 300% of ATK to an enemy target. || *Impale: This damage ignores the target's DEF.
+3006_tw1s3 []: Deals Impale damage equal to 540% of ATK to an enemy target. || *Impale: This damage ignores the target's DEF.
+3005_tw1s1 []: Deals Amplification damage equal to 200% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3005_tw1s2 []: Deals Amplification damage equal to 300% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3005_tw1s3 []: Deals Amplification damage equal to 540% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3006_tw2s1 []: Deals Amplification damage equal to 200% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3006_tw2s2 []: Deals Amplification damage equal to 300% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3006_tw2s3 []: Deals Amplification damage equal to 540% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3005_tw2s1 []: Deals Amplification damage equal to 200% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3005_tw2s2 []: Deals Amplification damage equal to 300% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3005_tw2s3 []: Deals Amplification damage equal to 540% of ATK to an enemy target. || *Amplification: If you are buffed, this damage will be increased by 15%
+3012_tw2s1 []: Deals Weak damage equal to 200% of ATK to an enemy target. || *Weak: For this damage, Applies 2 additional Weak to the target.
+3012_tw2s2 []: Deals Weak damage equal to 300% of ATK to an enemy target. || *Weak: For this damage, Applies 2 additional Weak to the target.
+3012_tw2s3 []: Deals Weak damage equal to 540% of ATK to an enemy target. || *Weak: For this damage, Applies 2 additional Weak to the target.
+
+## World Boss Glo (33)
+GlobalGVGDeathDamage_10 []: When a team of the occupying side fights within the plot's effect range, if an occupying character dies, it will deal extra damage equal to 1% of the deceased character's Max HP to a random enemy target.
+GloCom_p1 [Immunity Effect]: Immune to Weak increase, debuffs, and skill level reduction effect.
+GloCom_p2 [Dodge Ignoring]: Attacks ignore Dodge
+GloCom_p3 [DMG Lock]: Enemies of restricting attributes against you no longer cause you to deal reduced damage.
+GloCom_p4 [DMG Increase]: Increases damage taken by 50% from restricting Attribute, PSY, and WIT.
+GloCom_p5 [DMG Reduction]: Damage from Ultimate Skills is reduced by 50%, and damage from Lv.1 skills is reduced by 50%.
+GloCom_p6 [Ultimate Skill DMG Reduction]: Damage from Ultimate Skills is reduced by 50%.
+Glo1_p1 [Bonus-Attack]: When your turn starts, deal 220% ATK damage to enemy target with the lowest percentage of HP, and additionally deal damage equals to 5% of target’s max HP.
+Glo1_p2 [Restrict Underbelly]: When receiving damage from restricting Attribute, you will be granted an effect of 15% reduction in DEF-related stats. Stacking up to 5 times.
+Glo2_p1 [Shield Effect]: When your turn ends, grant self a shield equal to 20% of the total damage received in the previous turn. Lasts for 1 turn.
+Glo2_p2 [Shield Retaliation]: After the shield effect disappears or breaks, deal 260% of the enemy's ATK to the target with the highest ATK, applying [Lethal] for 1 turn. || *Lethal: Unable to trigger any healing effects.
+Glo2_p3 [Restriction Boost]: When receiving damage from restricted Attribute, you will be granted an effect of 5% increase in ATK-related stats. Stacking up to 5 times.
+Glo3_p1 [Attack Boost]: When your turn starts, you will be granted an effect of increase in ATK-related stats by 10% and enemies will be granted an effect of reduction in DEF-related stats by 10%. Stacking up to 3 times.
+Glo3_p2 [Debuff Retaliation]: When taking active Skill damage, if the attacker has debuffs, Retaliate the target, causing [Underbelly] damage equal to 180% of your ATK. || *Underbelly: If the target is debuffed, this damage will be increased by 15%
+Glo3_p3 [Disabling Boost]: When any enemy target dies, deal damage of 160% ATK to the enemy target with the highest ATK, applying [Stun] for 1 turn. || *Stunned: Unable to take any actions.
+2002_Glo1_b1s1 []: Deals damage equal to #Factor_1# of ATK to the enemy target, reducing its Max HP by #Factor_2# for 1 turn.
+2002_Glo1_b1s2 []: Deals damage equal to #Factor_1# of ATK to the enemy target, reducing its Max HP by #Factor_2# for 1 turn.
+2002_Glo1_b1s3 []: Deals damage equal to #Factor_1# of ATK to the enemy target, reducing its Max HP by #Factor_2# for 1 turn.
+2002_Glo1_b2s1 []: Deals [Preemptive] damage to all enemies equal to 180% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+2002_Glo1_b2s2 []: Deals [Preemptive] damage to all enemies equal to 220% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+2002_Glo1_b2s3 []: Deals [Preemptive] damage to all enemies equal to 240% of ATK. || *Preemptive: Increases this damage by 25% if the enemy's HP is above 70%
+2005_Glo2_b1s1 []: Deals [Impale] damage to the enemy target equal to 160% of ATK. || *Impale: This damage ignores the target's DEF.
+2005_Glo2_b1s2 []: Deals [Impale] damage to the enemy target equal to 220% of ATK. || *Impale: This damage ignores the target's DEF.
+2005_Glo2_b1s3 []: Deals [Impale] damage to the enemy target equal to 260% of ATK. || *Impale: This damage ignores the target's DEF.
+2005_Glo2_b2s1 []: Deals [Blood Piercer] damage to all enemies equal to 120% of ATK. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2005_Glo2_b2s2 []: Deals [Blood Piercer] damage to all enemies equal to 160% of ATK. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2005_Glo2_b2s3 []: Deals [Blood Piercer] damage to all enemies equal to 180% of ATK. || *Blood Piercer: When attacked, the target takes additional damage of 10% of Blood Piercer applier's ATK for 2 turns.
+2004_Glo3_b1s1 []: Deals [Weak] damage to the enemy target equal to 140% of ATK. || *Weak: For this damage, Applies 2 additional Weak to the target.
+2004_Glo3_b1s2 []: Deals [Weak] damage to the enemy target equal to 200% of ATK. || *Weak: For this damage, Applies 2 additional Weak to the target.
+2004_Glo3_b1s3 []: Deals [Weak] damage to the enemy target equal to 240% of ATK. || *Weak: For this damage, Applies 2 additional Weak to the target.
+2004_Glo3_b2s1 []: Deals damage to all enemies equal to 140% of ATK., applying [Feeble] for 1 turn. || *Feeble: Damage dealt reduced by 20%.
+2004_Glo3_b2s2 []: Deals damage to all enemies equal to 200% of ATK., applying [Feeble] for 1 turn. || *Feeble: Damage dealt reduced by 20%.
+2004_Glo3_b2s3 []: Deals damage to all enemies equal to 240% of ATK., applying [Feeble] for 1 turn. || *Feeble: Damage dealt reduced by 20%.
