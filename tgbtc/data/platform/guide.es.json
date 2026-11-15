@@ -21548,6 +21548,19 @@
   ],
   "good": [
    {
+    "name": "2nd Anniversary Value Group Buy",
+    "price": "Diamonds; precio aún desconocido",
+    "why": "Un jugador de otro servidor informa que incluye el LR Tactic Selection Chest (informe de jugador). Comprar pronto no cuesta nada extra: cuando compran más jugadores, el precio baja y el juego te devuelve la diferencia por correo.",
+    "math": "Texto de las reglas del juego: cada ronda vende packs de valor por Diamonds. Cuantos más jugadores compran un pack, más bajo es su precio. Si el precio baja después de que compres, la diferencia vuelve por correo cuando termina la ronda. Decisión nuestra: quien gasta compra el LR Tactic Selection Chest y elige Healing Prohibition, o Fortify si ya tiene Healing Prohibition. Los jugadores gratis compran solo con Diamonds que no hayan apartado para el próximo pity del Carnival; si no, lo saltan. Probablemente las tácticas solo se pueden usar desde el día 60 del servidor, más o menos (sin confirmar).",
+    "source": "texto del juego Anni2ndGroupBuy_RuleDesc_1_1_1 a 1_1_3 y MailDesc_Anni2ndGroupBuy (tablas del juego, copia del sitio de fans Broken Chains); contenido (un LR Tactic Selection Chest): un jugador de un servidor más antiguo, TGBTC Discord, 15 de noviembre de 2026 (informe de jugador); elección de táctica: el mismo jugador; comprar o saltar: decisión nuestra",
+    "evidence": [
+     "Broken Chains game tables lang_TranslateForMultiEN.json tid#Anni2ndGroupBuy_RuleDesc_1_1_1..3, tid#MailDesc_Anni2ndGroupBuy",
+     "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:12 to 00:14 (contents: player report, another server)",
+     "_discord/exports/2026-11-15/img/1571317428862845088_0_image.png",
+     "_discord/exports/2026-11-15/img/1571317498626838558_0_image.png"
+    ]
+   },
+   {
     "name": "Endless Trials Pass #2",
     "price": "US$9,99",
     "why": "Buen valor cuando llegues a él.",
@@ -22150,6 +22163,53 @@
     "text": "Las células LR son de cada unidad y no se pueden modificar. Su texto no está en los archivos del juego que usa esta guía. (informe de creador)",
     "channels": 1,
     "source": "Shi (6 de abril de 2026)"
+   },
+   {
+    "text": "Para el atacante principal, toma líneas de ATK; las líneas de HP suben el CP, pero sirven para apoyos y tanques.",
+    "label": "Informe de jugador",
+    "source": "un miembro de la guild, TGBTC Discord #general, 15 de noviembre de 2026; coincide con los potenciales de creadores para atacantes en esta página",
+    "evidence": [
+     "_discord/exports/2026-11-15/flat.txt 2026-11-15T01:16 to 01:17",
+     "scripts/builds_data.py rule 2"
+    ]
+   },
+   {
+    "text": "LR Healing Prohibition Tactic: ATK +1.300, DEF +1.100, HP +20.000. Todas las estadísticas y Damage Reduction Rate +4%. Reduce un 150% la Regeneration Rate y la Restoration Rate de todos los enemigos.",
+    "label": "Datos del juego",
+    "source": "captura de pantalla del LR Tactic Selection Chest en el juego, 14 de noviembre de 2026; texto del juego SkillDesc_Tactic001_jl6",
+    "evidence": [
+     "_discord/exports/2026-11-15/img/1571317428862845088_0_image.png",
+     "data/raw/en.json tid#SkillDesc_Tactic001_jl6"
+    ]
+   },
+   {
+    "text": "LR Fortify: ATK +1.300, DEF +1.100, HP +20.000. Al empezar la batalla: tu daño adicional recibido −60% y CRIT DEF +50%.",
+    "label": "Datos del juego",
+    "source": "captura de pantalla del LR Tactic Selection Chest en el juego, 14 de noviembre de 2026; texto del juego SkillDesc_Tactic023_gs6",
+    "evidence": [
+     "_discord/exports/2026-11-15/img/1571317498626838558_0_image.png",
+     "data/raw/en.json tid#SkillDesc_Tactic023_gs6"
+    ]
+   },
+   {
+    "text": "En el LR Tactic Selection Chest, elige Healing Prohibition. Elige Fortify si ya tienes Healing Prohibition.",
+    "label": "Informe de jugador",
+    "source": "un jugador de un servidor más antiguo, TGBTC Discord #general, 15 de noviembre de 2026",
+    "evidence": [
+     "_discord/exports/2026-11-15/img/1571317175116111902_0_image.png",
+     "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:14"
+    ]
+   },
+   {
+    "text": "Probablemente las tácticas no se pueden usar antes del día 60 del servidor, más o menos, cuando se abren las Strategic Arena Tactics (14 de diciembre en nuestro servidor).",
+    "label": "Sin confirmar",
+    "source": "datos del juego SeniorArenaTacticUnlockDays = 60 (notas de investigación, plan futuro); un jugador de un servidor más antiguo dijo \"around 2 more months\" (TGBTC Discord #general, 15 de noviembre de 2026)",
+    "evidence": [
+     "data/research/future_plan.md line 81",
+     "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:17 to 00:18",
+     "docs/TGBTC_MASTER_SPEC.md line 21 (day 1 = 2026-10-16)",
+     "tools/account_plan_template/build_v3.py line 101"
+    ]
    }
   ],
   "unit_note": "Lo que usan los creadores en esta unidad. Úsalo cuando la unidad esté en tu equipo principal. (informe de creador)",
@@ -22242,7 +22302,161 @@
    }
   },
   "sources": [
-   "Notas de investigación del 28 de octubre de 2026 (builds, 158 videos de creadores)"
+   "Notas de investigación del 28 de octubre de 2026 (builds, 158 videos de creadores)",
+   "TGBTC Discord #general, 15 de noviembre de 2026, con capturas de pantalla del juego del 14 de noviembre de 2026"
+  ]
+ },
+ "game_rules": {
+  "intro": "Cada línea cita su fuente. Las líneas de otro servidor o de un solo jugador están marcadas.",
+  "cards": [
+   {
+    "id": "turn-order",
+    "top": true,
+    "title": "Quién actúa primero: el CP Match",
+    "lines": [
+     {
+      "text": "El equipo con el CP más alto actúa primero. El juego lo llama CP Match: si tu CP es menor, el enemigo hace el primer movimiento.",
+      "source": "texto del juego Guidance_Cplow_1, Guidance_Cplow_2 y SkillDesc_1006_b1p2 (\"Winning the CP Match at the start of combat...\")",
+      "evidence": [
+       "data/raw/en.json tid#Guidance_Cplow_2",
+       "data/raw/en.json tid#SkillDesc_1006_b1p2"
+      ]
+     },
+     {
+      "text": "Así que el CP importa: súbelo en los equipos que mandas contra otros jugadores (Arena, Stronghold), aunque un equipo con menos CP todavía pueda ganar.",
+      "source": "texto del juego Guidance_Cplow_2; un jugador de un servidor más antiguo dijo \"CP might not mean much\" (TGBTC Discord #general, 15 de noviembre de 2026), lo que el texto del juego contradice",
+      "evidence": [
+       "data/raw/en.json tid#Guidance_Cplow_2",
+       "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:08"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "scenes",
+    "top": true,
+    "title": "Scene Collection: la fila All Characters",
+    "lines": [
+     {
+      "text": "Las escenas de All Characters mejoran a todos los personajes (una escena SSR+ da HP +12.500, y +15.000 en UR).",
+      "source": "captura de pantalla de la Scene Collection en el juego, 14 de noviembre de 2026",
+      "evidence": [
+       "_discord/exports/2026-11-15/img/1571324976928133132_0_image.png"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "level-cap",
+    "title": "Límite de nivel por día del servidor (nuestro servidor)",
+    "intro": "El día 1 de nuestro servidor es el 16 de octubre de 2026. En otro servidor, cuenta los días desde tu propio día 1.",
+    "source": "datos del juego Const HeroLevelMaxServerDaysLimit y SeniorArenaTacticUnlockDays (notas de investigación, plan futuro, sección 5); fechas contadas desde el día 1 de nuestro servidor",
+    "evidence": [
+     "data/research/future_plan.md, section 5 (Const:HeroLevelMaxServerDaysLimit)",
+     "docs/TGBTC_MASTER_SPEC.md line 21 (day 1 = 2026-10-16)",
+     "tools/account_plan_template/build_v3.py line 101"
+    ],
+    "lines": [
+     {
+      "text": "Día 30 (14 de noviembre): límite de nivel 200."
+     },
+     {
+      "text": "Día 42 (26 de noviembre): límite de nivel 215."
+     },
+     {
+      "text": "Día 50 (4 de diciembre): límite de nivel 225."
+     },
+     {
+      "text": "Día 60 (14 de diciembre): límite de nivel 235, y se abren las Strategic Arena Tactics."
+     },
+     {
+      "text": "Día 77 (31 de diciembre): límite de nivel 250."
+     },
+     {
+      "text": "Día 98 (21 de enero de 2027): límite de nivel 265."
+     },
+     {
+      "text": "Día 119 (11 de febrero de 2027): límite de nivel 280."
+     },
+     {
+      "text": "Día 147 (11 de marzo de 2027): límite de nivel 300."
+     },
+     {
+      "text": "Los rivales de nivel 350 vienen de servidores más antiguos o de otros servidores. Nuestro límite solo sube en los días de arriba; nada confirma un salto a 350 aquí.",
+      "source": "datos del juego Const HeroLevelMaxServerDaysLimit; el \"level 350 in 4 days\" de un jugador era el temporizador de su propio servidor (TGBTC Discord #general, 15 de noviembre de 2026)",
+      "evidence": [
+       "data/research/future_plan.md, section 5",
+       "_discord/exports/2026-11-15/img/1571318782771601529_0_image.png",
+       "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:23"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "past-200",
+    "title": "Más allá del nivel 200: Promotion Stones y Crimson Crystals",
+    "verify": "Compruébalo en tu propio Exchange: estos costos vienen de capturas de pantalla de otro servidor (14 de noviembre de 2026).",
+    "lines": [
+     {
+      "text": "Para pasar del nivel 200, cada unidad necesita, entre otros materiales, 10 Promotion Stones propias y 1.500 Crimson Crystals.",
+      "source": "captura de pantalla de la pantalla de mejora en el nivel 200; un jugador de un servidor más antiguo, TGBTC Discord #general, 15 de noviembre de 2026",
+      "evidence": [
+       "_discord/exports/2026-11-15/img/1571320013099499670_0_image.png",
+       "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:21 to 00:25"
+      ]
+     },
+     {
+      "text": "Las Promotion Stones se venden en el Exchange de Blockade Breakthrough (pestañas Promotion por atributo; PSY, WIT y DST comparten una pestaña): 1.500 Blockade Breakthrough Tokens cada una, hasta 10 por semana por unidad.",
+      "source": "captura de pantalla del Exchange en el juego (pestaña Promotion-STR); nombre del objeto: texto del juego ItemName_20376",
+      "evidence": [
+       "_discord/exports/2026-11-15/img/1571318985625051269_0_image.png",
+       "data/raw/en.json tid#ItemName_20376"
+      ]
+     },
+     {
+      "text": "Un equipo de 5 necesita 50 stones: 75.000 Blockade Breakthrough Tokens, más 7.500 Crimson Crystals.",
+      "source": "nuestra cuenta con las dos líneas de arriba",
+      "evidence": [
+       "10 x 5 = 50 stones; 50 x 1500 = 75000 tokens; 5 x 1500 = 7500 crystals"
+      ]
+     },
+     {
+      "text": "Guarda todos los Blockade Breakthrough Tokens y Crimson Crystals para esto. No los gastes en nada más. (informe de jugador)",
+      "source": "un jugador de un servidor más antiguo, TGBTC Discord #general, 15 de noviembre de 2026",
+      "evidence": [
+       "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:20"
+      ]
+     },
+     {
+      "text": "Antes de ahorrar para una unidad, comprueba que su Promotion Stone aparece en el Exchange. No todas las unidades tienen una.",
+      "source": "captura de pantalla del Exchange en el juego: la pestaña STR muestra 12 unidades",
+      "evidence": [
+       "_discord/exports/2026-11-15/img/1571318985625051269_0_image.png"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "force-talents",
+    "title": "Force Talents: planifica antes de gastar",
+    "lines": [
+     {
+      "text": "No se conoce ninguna forma de reiniciar los Force Talents, así que planifica antes de gastar Talent Certificates.",
+      "source": "el texto del juego de los archivos del 22 de septiembre de 2026 no tiene reinicio de Force Talents; un jugador dio el mismo aviso (TGBTC Discord #general, 15 de noviembre de 2026)",
+      "evidence": [
+       "data/raw/en.json: no talent reset/refund key",
+       "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:09"
+      ]
+     },
+     {
+      "text": "Orden: primero la rama del medio (estadísticas base), luego la rama de arriba (estadísticas en %). Haz primero la facción de tu equipo principal y luego las demás. La rama de personaje, abajo, va al final. (consejo de creador)",
+      "source": "Zeketta (video de creador L3LDg1CR4-0, notas de investigación sobre consejos de creadores, sección 4)",
+      "evidence": [
+       "data/research/creator_advice.md section 4"
+      ]
+     }
+    ]
+   }
   ]
  },
  "video_picks": {

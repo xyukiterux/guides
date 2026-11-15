@@ -249,7 +249,16 @@ window.TGV2 = { init: function (A) {
   const TECH_GATE = { 7: 9, 9: 13, 11: 16, 14: 11, 17: 11 };
   const modeCls = m => /Stronghold/.test(m) ? 'sh' : /RTA|Arena|Carnival/.test(m) ? 'pvp' : /Free|Org|Friends|Potential/.test(m) ? 'ut' : 'pve';
   function rules() {
-    title('GAME RULES', 'How the game actually works.', 'Every number on this page comes from the game\'s own data tables, not from guesses.');
+    title('GAME RULES', 'How the game actually works.', 'Numbers come from the game\'s own data tables or in-game screenshots. Each section names its source.');
+    // 11-15: sourced cards from guide.json game_rules (scripts/discord_1115_data.py), translated with the guide.
+    // Read at render time: in PT/ES i18n.js swaps TGDATA.guide for the translated copy after load.
+    const GR = ((window.TGDATA || {}).guide || {}).game_rules;
+    const grCard = c => panel(el('h2', {}, c.title), c.intro ? text(c.intro, 'muted') : null,
+      c.verify ? el('div', { class: 'notice' }, c.verify) : null,
+      el('ul', { class: 'list' }, c.lines.map(l => el('li', {}, el('span', {}, l.text), l.source ? text('Source: ' + l.source, 'subtle') : null))),
+      c.source ? text('Source: ' + c.source, 'subtle') : null);
+    const grCards = top => (GR ? GR.cards.filter(c => !!c.top === top) : []).map(grCard);
+    main.append(...grCards(true));
     // 1. cards
     const hand = [[1, 3, 1], [2, 4, 2], [3, 5, 3], [4, 6, 4], [5, 7, 4]];
     main.append(panel(el('h2', {}, 'More characters alive = more cards'),
@@ -297,6 +306,7 @@ window.TGV2 = { init: function (A) {
       el('div', { class: 'v2-tree' }, tiers),
       text('Each tier opens when every tech in the tier above is activated and the server is old enough (T5 = day 10 … T20 = day 230). You must be in the org 24 h before you can research.', 'subtle'),
       src('game text S01Tech–S20Tech, Unlock_UnionTechStage02–20, UnionTech_UI4 "Mark"')));
+    main.append(...grCards(false));
   }
 
   /* ---------- routing ---------- */
