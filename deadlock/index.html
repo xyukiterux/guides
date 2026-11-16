@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deadlock Field Guide</title>
+<meta name="description" content="Deadlock guide: every hero with stats-based builds and ability order, a hero tier list from high-rank match data, every shop item, how to play, and videos.">
+<meta name="theme-color" content="#121821">
+<meta property="og:title" content="Deadlock Field Guide">
+<meta property="og:description" content="Hero builds from high-rank match stats, a tier list, every item card, how to play, and video guides. Opens on any phone.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{
+  --ink:#19202b;--panel:#242d3b;--panel-2:#2b3545;--well:#161c26;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);
+  --paper:#ece6dc;--muted:#a39e95;--dim:#7d7a74;--ai:#7c9be0;--matcha:#8fbf8a;--gold:#e3b35c;--beni:#e06b5a;--sakura:#f0a9c0;
+  --weapon:#e8a44a;--vitality:#7fc46a;--spirit:#b48ae6;
+  --tS:#e06b5a;--tA:#e3b35c;--tB:#8fbf8a;--tC:#7c9be0;--tD:#8a8f99;
+  --glass:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.02));
+  --head:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{background:#121821}
+body{margin:0;min-height:100vh;color:var(--paper);font:15px/1.6 var(--body);
+  background:radial-gradient(1100px 600px at 85% -10%,rgba(227,179,92,.10),transparent 60%),radial-gradient(900px 600px at -10% 110%,rgba(124,155,224,.10),transparent 60%),#121821}
+a{color:var(--gold)}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;letter-spacing:.01em;margin:0 0 .45em;line-height:1.2}
+h2{font-size:1.75rem}
+h3{font-size:1.15rem}
+.shell{display:grid;grid-template-columns:270px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(25,32,43,.92),rgba(18,24,33,.92));backdrop-filter:blur(14px)}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--paper)}
+.brand .mk{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#f2d08c,#b8812f);color:#1b1408;font:700 1.1rem var(--head);box-shadow:0 4px 14px rgba(227,179,92,.35),inset 0 1px 0 rgba(255,255,255,.5)}
+.brand b{display:block;font-family:var(--head);font-size:1.15rem}
+.brand small{color:var(--gold);letter-spacing:.18em;font-size:.66rem;text-transform:uppercase}
+#checked{font-size:.74rem;color:var(--muted);margin:10px 2px 12px;line-height:1.45}
+#checked a{color:var(--ai)}
+.search{position:relative}
+.search input{width:100%;padding:10px 12px 10px 34px;border-radius:12px;border:1px solid var(--line2);background:rgba(10,14,20,.6);color:var(--paper);font:inherit;outline:none}
+.search input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(227,179,92,.15)}
+.search svg{position:absolute;left:11px;top:12px;opacity:.6}
+.results{position:absolute;left:0;right:0;top:46px;background:#202836;border:1px solid var(--line2);border-radius:12px;max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.88rem;display:flex;align-items:center;gap:8px}
+.results div img{width:22px;height:22px;object-fit:contain}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.74rem}
+.results div:hover,.results div.sel{background:rgba(255,255,255,.06)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:12px;display:flex;flex-direction:column;gap:2px}
+nav .grp{font-size:.66rem;letter-spacing:.2em;color:var(--dim);margin:14px 8px 4px;text-transform:uppercase}
+nav a{display:flex;gap:10px;align-items:center;padding:7px 10px;border-radius:10px;color:var(--paper);text-decoration:none;font-size:.92rem}
+nav a:hover{background:rgba(255,255,255,.05)}
+nav a.on{background:linear-gradient(90deg,rgba(227,179,92,.22),rgba(227,179,92,.06));box-shadow:inset 2px 0 0 var(--gold)}
+nav a .n{margin-left:auto;font-size:.72rem;color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,3vw,44px) 90px}
+.topbar{display:none}
+/* glass */
+.glass,.card,.tile,.hcard{background:var(--glass),rgba(36,45,59,.55);border:1px solid var(--line2);border-radius:var(--r);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 10px 28px rgba(0,0,0,.28);backdrop-filter:blur(12px) saturate(130%);-webkit-backdrop-filter:blur(12px) saturate(130%)}
+.card{padding:16px 18px;min-width:0}
+.card p{margin:.35em 0}
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:clamp(22px,4vw,44px);margin-bottom:22px;isolation:isolate;min-height:250px;display:flex;flex-direction:column;justify-content:flex-end}
+.hero .strip{position:absolute;inset:0;z-index:-2;display:flex;gap:0;opacity:.55}
+.hero .strip img{flex:1;min-width:0;height:100%;object-fit:cover;object-position:top;filter:saturate(1.05)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(18,24,33,.97) 8%,rgba(18,24,33,.55) 60%,rgba(18,24,33,.25)),linear-gradient(90deg,rgba(18,24,33,.85),transparent 70%)}
+.hero .k{color:var(--gold);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin:.1em 0 .15em;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.hero p{max-width:760px;color:#d9d3c9;font-size:1.04rem;margin:0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.sec{margin:30px 0 12px}
+.sec p{margin:.2em 0 0;color:var(--muted)}
+.muted{color:var(--muted)}.small{font-size:.84rem}.tiny{font-size:.74rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-radius:999px;font-size:.74rem;border:1px solid var(--line2);background:rgba(10,14,20,.45);color:#ddd6cb;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.weapon{color:var(--weapon);border-color:rgba(232,164,74,.45)}
+.pill.vitality{color:var(--vitality);border-color:rgba(127,196,106,.45)}
+.pill.spirit{color:var(--spirit);border-color:rgba(180,138,230,.45)}
+.pill.gold{background:var(--gold);color:#1b1408;border-color:var(--gold);font-weight:700}
+.note{border-left:3px solid var(--gold);background:rgba(227,179,92,.07);padding:10px 14px;border-radius:0 12px 12px 0;color:#ddd6cb;margin:12px 0}
+.warn{border-left-color:var(--beni);background:rgba(224,107,90,.08)}
+.tier{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:8px;font:700 .95rem var(--head);color:#14110c;flex:none;padding:0 6px}
+.tS{background:var(--tS)}.tA{background:var(--tA)}.tB{background:var(--tB)}.tC{background:var(--tC)}.tD{background:var(--tD)}
+/* hero tiles */
+.hgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.hcard{display:flex;flex-direction:column;overflow:hidden;cursor:pointer;text-decoration:none;color:var(--paper);transition:transform .18s,border-color .18s,box-shadow .18s;position:relative}
+.hcard:hover{border-color:var(--gold);box-shadow:0 14px 30px rgba(0,0,0,.4),0 0 22px rgba(227,179,92,.18)}
+.hcard img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;display:block;background:var(--well)}
+.hcard .t{padding:8px 10px 10px}
+.hcard b{font-family:var(--head);font-size:1rem;display:block}
+.hcard .tier{position:absolute;top:8px;right:8px;box-shadow:0 3px 10px rgba(0,0,0,.5)}
+/* tier rows */
+.trow{display:grid;grid-template-columns:70px 1fr;border-radius:var(--r);overflow:hidden;margin-bottom:10px}
+.trow .lab{display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 2rem var(--head);color:#14110c}
+.trow .lab small{font:600 .62rem var(--body);letter-spacing:.04em}
+.trow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:5px 10px 5px 5px;border-radius:12px;background:rgba(10,14,20,.45);border:1px solid var(--line);cursor:pointer;font-size:.86rem;text-decoration:none;color:var(--paper)}
+.chip:hover{border-color:var(--gold)}
+.chip img{width:34px;height:34px;border-radius:9px;object-fit:cover;object-position:top}
+.chip i{font-style:normal;font-size:.72rem;color:var(--muted)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs button{padding:7px 14px;border-radius:999px;border:1px solid var(--line2);background:rgba(36,45,59,.55);cursor:pointer;font-size:.88rem}
+.tabs button.on{background:var(--gold);color:#1b1408;border-color:var(--gold);font-weight:700}
+.tabs button.weapon.on{background:var(--weapon);border-color:var(--weapon)}
+.tabs button.vitality.on{background:var(--vitality);border-color:var(--vitality)}
+.tabs button.spirit.on{background:var(--spirit);border-color:var(--spirit)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input{background:rgba(10,14,20,.6);color:var(--paper);border:1px solid var(--line2);border-radius:10px;padding:8px 11px;font:inherit;min-width:200px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line2);border-radius:var(--r);background:rgba(22,28,38,.6)}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:rgba(43,53,69,.85);font-weight:600;white-space:nowrap;cursor:pointer;position:sticky;top:0}
+td.l{cursor:pointer}td.l:hover{color:var(--gold)}
+tr:hover td{background:rgba(255,255,255,.02)}
+/* items */
+.igrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 10px;cursor:pointer;text-align:center;font-size:.8rem;line-height:1.25;transition:transform .15s,border-color .15s,box-shadow .15s;position:relative;border-top:3px solid var(--c,var(--line2))}
+.tile:hover{border-color:var(--c);box-shadow:0 12px 26px rgba(0,0,0,.35),0 0 18px color-mix(in srgb,var(--c) 35%,transparent)}
+.tile img{width:54px;height:54px;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(0,0,0,.6))}
+.tile .cost{color:var(--muted);font-size:.72rem}
+.tile .act{position:absolute;top:6px;right:8px;font-size:.62rem;color:var(--gold);letter-spacing:.08em}
+.w{--c:var(--weapon)}.v{--c:var(--vitality)}.s{--c:var(--spirit)}
+/* build */
+.phase{padding:14px}
+.phase h3{display:flex;align-items:baseline;gap:8px}
+.bitem{display:grid;grid-template-columns:40px 1fr auto;gap:10px;align-items:center;padding:7px 8px;border-radius:12px;cursor:pointer;border:1px solid transparent}
+.bitem:hover{background:rgba(255,255,255,.04);border-color:var(--line2)}
+.bitem img{width:40px;height:40px;object-fit:contain;border-radius:10px;background:rgba(10,14,20,.5);border-bottom:2px solid var(--c)}
+.bitem b{font-weight:600;font-size:.9rem}
+.bitem .m{font-size:.74rem;color:var(--muted);text-align:right;white-space:nowrap}
+.bar{height:4px;border-radius:2px;background:rgba(255,255,255,.08);margin-top:4px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--c,var(--gold))}
+/* ability order grid */
+.aogrid{display:grid;gap:3px;align-items:center;overflow-x:auto;padding-bottom:4px}
+.aogrid .an{display:flex;align-items:center;gap:6px;font-size:.78rem;white-space:nowrap;padding-right:6px}
+.aogrid .an img{width:26px;height:26px;border-radius:7px}
+.aogrid .c{height:26px;min-width:26px;border-radius:6px;background:rgba(255,255,255,.04);display:grid;place-items:center;font-size:.72rem;font-weight:700}
+.aogrid .c.u{background:rgba(124,155,224,.35);color:#fff}
+.aogrid .c.p{background:var(--gold);color:#1b1408}
+.aogrid .hd{font-size:.62rem;color:var(--dim);text-align:center}
+.abil{display:grid;grid-template-columns:56px 1fr;gap:12px}
+.abil img.ai{width:56px;height:56px;border-radius:14px;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.12),rgba(10,14,20,.6));padding:6px;box-shadow:inset 0 0 0 1px var(--line2)}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;font-size:.84rem;margin:8px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.ups{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px}
+.ups li{font-size:.84rem;display:flex;gap:8px}
+.ups li span{flex:none;width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:rgba(227,179,92,.18);color:var(--gold);font-size:.72rem;font-weight:700}
+.sw li{margin:4px 0}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;text-decoration:none;color:var(--paper)}
+.vid .play{flex:none;width:54px;height:54px;border-radius:14px;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#ff7a6a,#b7342a);box-shadow:0 6px 16px rgba(224,107,90,.35)}
+.vid b{display:block;font-size:.9rem;line-height:1.3}
+.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:8px}
+.steps li{position:relative;padding:12px 14px 12px 54px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#1b1408;display:grid;place-items:center;font:700 .9rem var(--head)}
+.src{font-size:.7rem;color:var(--dim)}
+.src a{color:var(--dim)}
+.hhead{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:start}
+.hhead img.card-img{width:100%;border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 0 1px var(--line2)}
+.statrow{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.stat{padding:10px 14px;min-width:110px}
+.stat b{display:block;font:700 1.5rem var(--head);color:var(--gold)}
+.stat span{font-size:.74rem;color:var(--muted)}
+.modal{position:fixed;inset:0;background:rgba(5,8,12,.7);display:none;align-items:center;justify-content:center;z-index:60;padding:14px;backdrop-filter:blur(4px)}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#26303f,#1b222e);border:1px solid var(--line2);border-radius:20px;max-width:640px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.modal .box.wide{max-width:960px}
+.modal .x{position:absolute;right:12px;top:8px;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--muted)}
+.ic-head{display:flex;gap:14px;align-items:center;margin-bottom:8px;padding-right:30px}
+.ic-head img{width:72px;height:72px;object-fit:contain;border-radius:16px;background:rgba(10,14,20,.5);padding:6px;border-bottom:3px solid var(--c)}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.isec h4{font-family:var(--body);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--c,var(--gold));margin:0 0 4px}
+.links a{cursor:pointer}
+.lk{color:var(--gold);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(227,179,92,.4)}
+footer{margin-top:40px;color:var(--dim);font-size:.76rem}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(300px,86vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.5)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 16px;background:rgba(18,24,33,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .topbar button{background:rgba(36,45,59,.8);border:1px solid var(--line2);border-radius:10px;padding:6px 12px;cursor:pointer}
+  .topbar b{font-family:var(--head)}
+  main{padding:16px 16px 80px}
+  .hhead{grid-template-columns:1fr}
+  .hhead img.card-img{max-width:180px}
+  .hgrid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+  .igrid{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+  table{font-size:.8rem}
+  .trow{grid-template-columns:44px 1fr}.trow .lab{font-size:1.4rem}.trow .lab small{display:none}.trow .its{gap:6px;padding:8px}
+  .chip{font-size:.78rem;padding:4px 8px 4px 4px;gap:6px}.chip img{width:28px;height:28px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections">☰ Sections</button><b>Deadlock Field Guide</b></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk">D</span><span><b>Deadlock</b><small>Field Guide</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search heroes, items, abilities…" autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res"></div>
+  </div>
+  <nav id="nav"></nav>
+</aside>
+<main id="main"><p class="muted">Loading the guide…</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="box"><button class="x" aria-label="Close">×</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/deadlock.js?v=2026-11-15-653407"></script>
+<script>
+(function(){
+'use strict';
+const D=window.DL||{heroes:[],items:[],howto:{sections:[],tables:[]},meta:{}};
+const $=s=>document.querySelector(s), main=$('#main');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=(x,d=1)=>x==null?'—':(x*100).toFixed(d)+'%';
+const n0=x=>x==null?'—':Math.round(x).toLocaleString('en-US');
+const M=D.meta||{};
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs)); // no prototype: URL text can never hit 'constructor' etc.
+const HB=dict(D.heroes.map(h=>[h.slug,h])), HN=dict(D.heroes.map(h=>[h.name,h]));
+const IB=dict(D.items.map(i=>[i.id,i]));
+const SLOT={weapon:'w',vitality:'v',spirit:'s'};
+const SLOTNAME={weapon:'Weapon',vitality:'Vitality',spirit:'Spirit'};
+const TYPE={marksman:'Marksman',mystic:'Mystic',brawler:'Brawler',assassin:'Assassin'};
+const ICON_ERR="this.style.visibility='hidden'";
+const himg=(h,cls='')=>`<img class="${cls}" src="${esc(h.img)}" alt="" loading="lazy" onerror="${ICON_ERR}">`;
+const iimg=i=>`<img src="${esc(i.img)}" alt="" loading="lazy" onerror="${ICON_ERR}">`;
+const tierB=t=>t?`<span class="tier t${t}">${t}</span>`:'';
+const itemLink=id=>{const i=IB[id];return i?`<span class="lk" data-item="${i.id}">${esc(i.name)}</span>`:'';};
+const heroLink=name=>{const h=HN[name];return h?`<a class="lk" href="#hero/${h.slug}">${esc(name)}</a>`:esc(name);};
+const stars=c=>c?('●'.repeat(c)+'○'.repeat(Math.max(0,(D.cmax||c)-c))):'—';
+const howtos=(D.howto&&D.howto.sections)||[];
+
+// header line (the "last checked" banner)
+const P=M.patch||{};
+$('#checked').innerHTML=`Last checked against <a href="https://api.deadlock-api.com/docs" target="_blank" rel="noopener">deadlock-api.com</a> and <a href="https://deadlock.wiki/" target="_blank" rel="noopener">deadlock.wiki</a> on ${esc(M.pulled)}, game version build ${esc(M.client_version)} (patch: <a href="${esc(P.link||'#')}" target="_blank" rel="noopener">${esc(P.title||'?')}</a>). Stats: ${esc(M.bracket)} matches since that patch.`;
+
+// ---------- navigation
+const NAV=[
+ ['Start',[['home','Home'],['learn','Heroes to learn first']]],
+ ['How to play',howtos.map(s=>{let t=s.title.replace(/^How to /,'').replace(/^About a Deadlock match$/,'About a match');return [s.id,t[0].toUpperCase()+t.slice(1)];}).concat([['ref','Numbers & tables']])],
+ ['Heroes',[['tiers','Tier list'],['heroes','All heroes',D.heroes.length]]],
+ ['Shop',[['items','All items',D.items.length]]],
+ ['More',[['videos','Videos'],['sources','Sources & method']]],
+];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}">${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+
+// ---------- pages
+const R=Object.create(null);
+R.home=()=>{const strip=D.heroes.slice().sort((a,b)=>(b.stats?b.stats.pr:0)-(a.stats?a.stats.pr:0)).slice(0,8);
+ const top=D.heroes.filter(h=>h.stats&&h.stats.tier==='S');
+ return `<section class="hero glass"><div class="strip">${strip.map(h=>`<img src="${esc(h.card)}" alt="" onerror="${ICON_ERR}">`).join('')}</div>
+ <span class="k">Valve's 6v6 hero shooter · Field Guide</span><h1>Deadlock</h1>
+ <p>Every hero with a build taken from ${esc(M.bracket)} matches, a tier list from current win rates, all ${D.items.length} shop items, how to play, and video guides.</p></section>
+ <div class="grid">
+  ${[['learn','New here?','The easiest heroes that also win the most at all ranks.'],['howto-win','How to win a match','Guardian, Walker, Base Guardians, Shrines, Patron.'],['tiers','Tier list',`${D.heroes.length} heroes ranked by ${esc(M.bracket)} win rate.`],['heroes','Hero builds','Early, mid and late items plus ability order for every hero.'],['items','Every item',`${D.items.filter(i=>!i.legendary).length} shop items + ${D.items.filter(i=>i.legendary).length} Street Brawl legendaries.`],['videos','Videos','Recent YouTube guides for each hero.']].map(([r,t,s])=>`<a class="card tilt" href="#${r}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="muted small">${s}</p><span class="lk small">Open →</span></a>`).join('')}
+ </div>
+ ${top.length?`<div class="sec"><h2>Strongest right now</h2><p>S tier: win rate of 53% or more in ${esc(M.bracket)} games since ${esc(P.title||'the patch')}.</p></div><div class="hgrid">${top.map(heroCard).join('')}</div>`:''}`;};
+
+function heroCard(h){const t=h.stats&&h.stats.tier;return `<a class="hcard tilt" href="#hero/${h.slug}">${tierB(t)}${himg({img:h.card})}<span class="t"><b>${esc(h.name)}</b><span class="tiny muted">${esc(TYPE[h.type]||h.type||'')}${h.stats?' · '+pct(h.stats.wr):''}</span></span></a>`;}
+
+R.learn=()=>{const L=(D.learn||[]).map(s=>HB[s]).filter(Boolean);
+ return `<div class="sec"><h2>Heroes to learn first</h2><p>Picked by a rule, not by taste: heroes the game files rate easiest (complexity 1; the scale goes to ${D.cmax}), sorted by win rate across all ranks since ${esc(P.title||'the patch')} (${n0(M.total_all)} matches).</p></div>
+ <div class="grid wide">${L.map((h,i)=>`<a class="card tilt" href="#hero/${h.slug}" style="text-decoration:none;color:inherit;display:flex;gap:14px">${himg({img:h.img},'')}
+  <div><h3>${i+1}. ${esc(h.name)} ${tierB(h.stats_all&&h.stats_all.tier)}</h3><p class="small muted">${esc(h.role)}</p>
+  <p class="small">All ranks: <b>${pct(h.stats_all.wr)}</b> win rate, in ${pct(h.stats_all.pr,0)} of matches. ${esc(M.bracket)}: ${pct(h.stats&&h.stats.wr)}.</p></div></a>`).join('')}</div>
+ <p class="note small">Start with the first one, play it until you know its 4 abilities, then use its <b>Build</b> section for what to buy. Difficulty comes from the game files' <code>complexity</code> value.</p>
+ <style>.card img{width:64px;height:64px;border-radius:14px;flex:none}</style>`;};
+
+function srcLine(src){return `<span class="src">Source: ${src.map(s=>`<a href="https://deadlock.wiki/${encodeURIComponent(s.title.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(', ')} (deadlock.wiki)</span>`;}
+function prose(t){return esc(t).replace(/\[\[([^\]]+)\]\]/g,(m,n)=>{const h=HN[n];if(h)return `<a class="lk" href="#hero/${h.slug}">${esc(n)}</a>`;const it=D.items.find(i=>i.name===n);return it?itemLink(it.id):esc(n);});}
+function howtoPage(s){
+ let h=`<div class="sec"><span class="pill">${esc(s.kind)}</span><h2 style="margin-top:8px">${esc(s.title)}</h2>${s.intro?`<p>${esc(s.intro)}</p>`:''}</div>`;
+ if(s.paras) h+=s.paras.map(p=>`<div class="card" style="margin-bottom:10px"><p>${prose(p.t)}</p>${srcLine(p.src)}</div>`).join('');
+ if(s.need) h+=`<p class="note">${esc(s.need)}</p>`;
+ if(s.steps) h+=`<ol class="steps">${s.steps.map(p=>`<li class="card">${prose(p.t)}<br>${srcLine(p.src)}</li>`).join('')}</ol>`;
+ if(s.id==='howto-shop') h+=firstBuys();
+ if(s.check) h+=`<p class="note"><b>Check:</b> ${esc(s.check)}</p>`;
+ if(s.why){const w=s.why==='about'?['about','About a Deadlock match']:s.why==='souls-ref'?['ref','Soul values table']:['items','All items'];h+=`<p class="small muted">Why: <a href="#${w[0]}">${w[1]}</a></p>`;}
+ return h;}
+function firstBuys(){const F=(D.first_buys||[]).map(id=>IB[id]).filter(Boolean);
+ return `<div class="card"><h3>Most-bought first items (${esc(M.bracket)})</h3><p class="small muted">800-soul items bought in the first 6 minutes on average, by share of all players. Your hero's own list is on its page.</p>
+ ${F.map(i=>`<div class="bitem ${SLOT[i.slot]}" data-item="${i.id}">${iimg(i)}<div><b>${esc(i.name)}</b><div class="bar"><span style="width:${Math.min(100,i.stats.pr*100*2)}%"></span></div></div><div class="m">${pct(i.stats.pr,0)} buy<br>${i.stats.t.toFixed(1)} min</div></div>`).join('')}</div>`;}
+howtos.forEach(s=>{R[s.id]=()=>howtoPage(s);});
+R.ref=()=>`<div class="sec"><span class="pill">Reference</span><h2 style="margin-top:8px">Numbers &amp; tables</h2><p>Values from the wiki pages named under each table.</p></div>`+
+ (D.howto.tables||[]).map(t=>`<div class="sec" id="${t.id}"><h3>${esc(t.title)}</h3></div><div class="tablewrap"><table><thead><tr>${t.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p>${srcLine(t.src)}</p>`).join('');
+
+// tier list
+let TMODE='high';
+R.tiers=()=>{const key=TMODE==='high'?'stats':'stats_all';const H=D.heroes.filter(h=>h[key]);
+ const rows=['S','A','B','C','D'].map(t=>{const hs=H.filter(h=>h[key].tier===t).sort((a,b)=>b[key].wr-a[key].wr);
+  return `<div class="trow glass"><div class="lab t${t}">${t}<small>${esc(D.tiers[t])}</small></div><div class="its">${hs.map(h=>`<a class="chip" href="#hero/${h.slug}">${himg({img:h.img})}<span>${esc(h.name)}<br><i>${pct(h[key].wr)} · in ${pct(h[key].pr,0)}</i></span></a>`).join('')||'<span class="muted small">none</span>'}</div></div>`;}).join('');
+ const tot=TMODE==='high'?M.total_high:M.total_all;
+ const sorted=H.slice().sort((a,b)=>b[key].wr-a[key].wr);
+ return `<div class="sec"><h2>Hero tier list</h2><p>Tiers are win-rate bands. ${TMODE==='high'?esc(M.bracket)+' means the average rank of both teams was Oracle 1 or higher':'All ranks'}: ${n0(tot)} matches since ${esc(P.title)} (${esc((P.pub_date||'').slice(0,10))}) to ${esc(M.pulled)}, normal mode, ranked + unranked.</p></div>
+ <div class="tabs" data-set="TMODE"><button data-v="high" class="${TMODE==='high'?'on':''}">${esc(M.bracket)} (high rank)</button><button data-v="all" class="${TMODE==='all'?'on':''}">All ranks</button></div>
+ ${rows}
+ <p class="note small">A hero is in about ${pct(12/D.heroes.length,0)} of matches on average (12 heroes per match). The "±" column is the 95% range of the win rate from sample size alone: tiers next to each other often overlap. Win rate is not skill-free: a hero mostly played by its mains can look better than it is for you.</p>
+ <div class="tablewrap"><table><thead><tr><th>#</th><th>Hero</th><th>Tier</th><th>Win rate</th><th>±</th><th>In % of matches</th><th>Hero games</th><th>${TMODE==='high'?'All ranks WR':esc(M.bracket)+' WR'}</th></tr></thead><tbody>
+ ${sorted.map((h,i)=>{const s=h[key],o=h[TMODE==='high'?'stats_all':'stats'];const ci=1.96*Math.sqrt(s.wr*(1-s.wr)/s.n);return `<tr><td>${i+1}</td><td class="l" data-go="hero/${h.slug}">${esc(h.name)}</td><td>${tierB(s.tier)}</td><td>${pct(s.wr)}</td><td class="muted">${(ci*100).toFixed(1)}</td><td>${pct(s.pr)}</td><td>${n0(s.n)}</td><td class="muted">${o?pct(o.wr):'—'}</td></tr>`;}).join('')}
+ </tbody></table></div>`;};
+
+// heroes list
+let HTYPE='all';
+R.heroes=()=>{const types=[...new Set(D.heroes.map(h=>h.type).filter(Boolean))].sort();
+ const list=D.heroes.filter(h=>HTYPE==='all'||h.type===HTYPE);
+ return `<div class="sec"><h2>All heroes</h2><p>Tap a hero for its abilities, what to build, ability order, matchups and videos. Type comes from the game files.</p></div>
+ <div class="tabs" data-set="HTYPE"><button data-v="all" class="${HTYPE==='all'?'on':''}">All ${D.heroes.length}</button>${types.map(t=>`<button data-v="${t}" class="${HTYPE===t?'on':''}">${esc(TYPE[t]||t)}</button>`).join('')}</div>
+ <div class="hgrid">${list.map(heroCard).join('')}</div>`;};
+
+function buildItem(e,showT=true){const i=IB[e.id];if(!i)return '';return `<div class="bitem ${SLOT[i.slot]}" data-item="${i.id}">${iimg(i)}<div><b>${esc(i.name)}</b> <span class="tiny muted">${n0(i.cost)}</span>${e.sold>0.5?' <span class="tiny" style="color:var(--ai)" title="More than half of buyers sold it later to free the slot">· sold later</span>':''}<div class="bar"><span style="width:${Math.min(100,e.pr*100)}%"></span></div></div><div class="m">${pct(e.pr,0)} buy · ${pct(e.wr)} WR${showT?`<br>~${e.t.toFixed(1)} min`:''}</div></div>`;}
+
+function aoGrid(h,o){const A=h.abilities;const cols=o.seq.length;const cnt=[0,0,0,0];
+ const cells=o.seq.map(a=>{cnt[a]++;return {a,k:cnt[a]};});
+ let g=`<div class="aogrid" style="grid-template-columns:auto repeat(${cols},minmax(24px,1fr))"><div></div>${cells.map((c,i)=>`<div class="hd" title="~${o.times[i]} min">${i+1}</div>`).join('')}`;
+ A.forEach((ab,ai)=>{g+=`<div class="an"><img src="${esc(ab.img)}" alt="" onerror="${ICON_ERR}">${esc(ab.name)}</div>`+cells.map((c,i)=>c.a===ai?`<div class="c ${c.k===1?'u':'p'}" title="Step ${i+1}, ~${o.times[i]} min">${c.k===1?'U':['','1','2','5'][c.k-1]}</div>`:'<div class="c"></div>').join('');});
+ return g+'</div>';}
+
+R.hero=(sl)=>{const h=HB[sl];if(!h)return `<p>Hero not found. <a href="#heroes">All heroes</a></p>`;
+ const s=h.stats,a=h.stats_all,B=h.build;
+ const vids=h.videos||[];
+ return `<div class="hhead"><img class="card-img tilt" src="${esc(h.card)}" alt="${esc(h.name)}" onerror="${ICON_ERR}">
+ <div><div class="pills"><span class="pill gold">${esc(TYPE[h.type]||h.type||'Hero')}</span><span class="pill">Gun: ${esc(h.gun)}</span><span class="pill" title="Complexity value in the game files: 1 = easiest, ${D.cmax} = highest">Difficulty ${stars(h.complexity)}</span>${h.tags.map(t=>`<span class="pill">${esc(t)}</span>`).join('')}</div>
+ <h2 style="font-size:2.4rem;margin:.15em 0">${esc(h.name)} ${tierB(s&&s.tier)}</h2>
+ <p style="font-size:1.05rem">${esc(h.role)}</p><p class="muted">${esc(h.playstyle)}</p>
+ <div class="statrow">${s?`<div class="stat glass"><b>${pct(s.wr)}</b><span>win rate, ${esc(M.bracket)}</span></div><div class="stat glass"><b>${pct(s.pr,0)}</b><span>of ${esc(M.bracket)} matches</span></div><div class="stat glass"><b>${s.kda.join(' / ')}</b><span>K / D / A per match</span></div>`:''}${a?`<div class="stat glass"><b>${pct(a.wr)}</b><span>win rate, all ranks</span></div>`:''}</div>
+ <p class="tiny muted">${s?`${n0(s.n)} ${esc(M.bracket)} games and ${n0(a&&a.n)} all-rank games since ${esc(P.title)}, to ${esc(M.pulled)}.`:'No match stats.'}</p></div></div>
+
+ <div class="grid two" style="margin-top:16px"><div class="card"><h3 style="color:var(--matcha)">Strengths</h3><ul class="sw small">${(h.good||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li class="muted">Nothing stands out in the data.</li>'}</ul></div>
+ <div class="card"><h3 style="color:var(--beni)">Weaknesses</h3><ul class="sw small">${(h.bad||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li class="muted">Nothing stands out in the data.</li>'}</ul></div></div>
+ <p class="tiny muted">Ranks compare this hero with all ${D.heroes.length} heroes in ${esc(M.bracket)} games (per match); matchups need 300+ games and a gap bigger than chance. Health and gun come from the game files.</p>
+
+ <div class="sec" id="build"><h2>What to build</h2><p>${B?`What ${esc(M.bracket)} ${esc(h.name)} players buy, from ${n0(B.n)} games since ${esc(P.title)}. Items bought by 15%+ of players, grouped by the average minute they were bought (early under 10, mid 10–20, late 20+), in buy order. "WR" is the win rate of games where the item was bought; late items show higher win rates partly because winning players get rich, so compare items within a column.`:'No stats-based build for this hero (no item data in the window).'}</p></div>
+ ${B?`<div class="grid three">${['early','mid','late'].map(k=>`<div class="card phase"><h3>${k[0].toUpperCase()+k.slice(1)} game <span class="tiny muted">${k==='early'?'0–10 min':k==='mid'?'10–20 min':'20+ min'}</span></h3>${B.phases[k].map(e=>buildItem(e)).join('')||'<p class="muted small">No item reaches 15% here.</p>'}</div>`).join('')}</div>
+ ${B.situational.length?`<div class="card" style="margin-top:12px"><h3>Situational picks</h3><p class="small muted">Bought by 5–15% of players after minute 10; highest win rate first. Good answers to specific enemies, not a core build.</p><div class="grid">${B.situational.map(e=>buildItem(e)).join('')}</div></div>`:''}`:''}
+
+ <div class="sec"><h2>Ability order</h2><p>The order ${esc(M.bracket)} players spend unlocks (U) and ability points (1, 2 and 5 point upgrades), from players who made 15+ choices. Hover a cell for the average minute. Use "Most played" as the default; the win rates of orders run high because only players who reached 15 upgrades are counted, and those tend to be ahead.</p></div>
+ ${(h.orders||[]).map(o=>`<div class="card" style="margin-bottom:12px"><h3>${esc(o.label)} <span class="tiny muted">${pct(o.wr)} WR · ${n0(o.n)} games · ${pct(o.share,0)} of players</span></h3>${aoGrid(h,o)}</div>`).join('')||'<p class="muted">No ability order data for this hero.</p>'}
+
+ <div class="sec"><h2>Abilities</h2><p>Numbers are base values from the game files (build ${esc(M.client_version)}). "+x per Spirit Power" is how much the value grows with Spirit Power.</p></div>
+ <div class="grid two">${h.abilities.map((ab,i)=>`<div class="card abil"><img class="ai" src="${esc(ab.img)}" alt="" onerror="${ICON_ERR}"><div><h3>${i+1}. ${esc(ab.name)}${i===3?' <span class="pill">Ultimate</span>':''}</h3>${ab.quip?`<p class="small muted"><i>${ab.quip}</i></p>`:''}<p class="small">${ab.desc}</p>
+  <dl class="kv">${ab.head.concat(ab.rows).map(r=>`<dt>${esc(r.k)}</dt><dd>${esc(r.v)}${r.s?` <span class="tiny muted">(${esc(r.s)})</span>`:''}</dd>`).join('')}</dl>
+  <ul class="ups">${ab.ups.map(u=>`<li><span>${u.cost}</span><div>${u.text}</div></li>`).join('')}</ul></div></div>`).join('')}</div>
+
+ <div class="grid two" style="margin-top:14px"><div class="card"><h3>Base stats</h3><dl class="kv">${Object.entries(h.base).filter(([k,v])=>v!=null).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></div>
+ <div class="card"><h3>Weapon</h3><dl class="kv">${Object.entries(h.weapon).filter(([k,v])=>v!=null&&v!==0).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}<dt>Base DPS</dt><dd>${h.weapon_dps} <span class="tiny muted">(bullet damage × bullets × shots/s, computed)</span></dd></dl></div></div>
+
+ <div class="sec"><h2>Matchups</h2><p>Win rate of ${esc(h.name)} when this enemy hero was in the match (${esc(M.bracket)}, 300+ games).</p></div>
+ <div class="grid two"><div class="card"><h3 style="color:var(--matcha)">Best against</h3>${muList(h.matchups.best)}</div><div class="card"><h3 style="color:var(--beni)">Worst against</h3>${muList(h.matchups.worst)}</div></div>
+
+ <div class="sec"><h2>Videos</h2><p>${vids.length?'Recent YouTube videos found by search: guides first, then build showcases and pro gameplay, newest first within each. They play here when you are online.':'No recent guide video found for this hero by the search (uploaded since '+esc(M.videos_min||'?')+'). Search YouTube yourself: <a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query='+encodeURIComponent('Deadlock '+h.name+' guide')+'">Deadlock '+esc(h.name)+' guide ↗</a>'}</p></div>
+ <div class="grid wide">${vids.map(vidCard).join('')}</div>
+ <details class="card" style="margin-top:16px"><summary style="cursor:pointer"><b>Lore</b> <span class="muted small">(game files)</span></summary><p class="small muted">${esc(h.lore)}</p></details>`;};
+
+function muList(L){return (L||[]).map(m=>{const h=HN[m.hero];return `<a class="chip" style="margin:4px 6px 4px 0" href="#hero/${h?h.slug:''}">${h?himg({img:h.img}):''}<span>${esc(m.hero)}<br><i>${pct(m.wr)} over ${n0(m.n)}</i></span></a>`;}).join('')||'<p class="muted small">Not enough games.</p>';}
+function vidCard(v){return `<div class="vid card tilt" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}"><span class="play"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted"><span class="pill tiny" style="margin-right:4px">${esc(v.kind||'Video')}</span>${esc(v.channel)} · ${esc(v.date)}${v.duration?' · '+Math.round(v.duration/60)+' min':''}</span></span></div>`;}
+
+// items
+let ISLOT='all',ITIER='all',IQ='';
+R.items=()=>{const L=D.items.filter(i=>(ISLOT==='all'||i.slot===ISLOT)&&(ITIER==='all'||(ITIER==='5'?i.legendary:String(i.tier)===ITIER))&&(!IQ||(i.name+' '+i.desc).toLowerCase().includes(IQ)));
+ return `<div class="sec"><h2>All items</h2><p>${D.items.filter(i=>!i.legendary).length} items you can buy in a normal match, plus ${D.items.filter(i=>i.legendary).length} Legendary items that only appear in Street Brawl. Stats from the game files (build ${esc(M.client_version)}). Tap an item for its full card.</p></div>
+ <div class="tabs" data-set="ISLOT"><button data-v="all" class="${ISLOT==='all'?'on':''}">All</button>${['weapon','vitality','spirit'].map(s=>`<button data-v="${s}" class="${s} ${ISLOT===s?'on':''}">${SLOTNAME[s]}</button>`).join('')}</div>
+ <div class="tabs" data-set="ITIER"><button data-v="all" class="${ITIER==='all'?'on':''}">Any tier</button>${['1','2','3','4'].map(t=>`<button data-v="${t}" class="${ITIER===t?'on':''}">Tier ${t} · ${[0,800,1600,3200,6400][t]}</button>`).join('')}<button data-v="5" class="${ITIER==='5'?'on':''}">Street Brawl legendary</button></div>
+ <div class="filters"><input id="iq" type="search" placeholder="Filter items by name or effect" value="${esc(IQ)}"><span class="small muted">${L.length} shown</span></div>
+ ${[1,2,3,4,5].map(t=>{const T=L.filter(i=>i.tier===t);return T.length?`<h3 style="margin:18px 0 8px">${t===5?'Legendary (Street Brawl only)':'Tier '+t+' · '+[0,800,1600,3200,6400][t]+' souls'}</h3><div class="igrid">${T.map(itemTile).join('')}</div>`:'';}).join('')}`;};
+function itemTile(i){return `<div class="tile tilt ${SLOT[i.slot]}" data-item="${i.id}">${i.active?'<span class="act">ACTIVE</span>':''}${iimg(i)}<b>${esc(i.name)}</b><span class="cost">${i.legendary?'Street Brawl':n0(i.cost)+' souls'}</span></div>`;}
+
+function itemCard(id){const i=IB[id];if(!i)return '';const c=SLOT[i.slot];
+ return `<div class="${c}"><div class="ic-head">${iimg(i)}<div><h2 style="margin:0">${esc(i.name)}</h2><div class="pills"><span class="pill ${i.slot}">${SLOTNAME[i.slot]}</span><span class="pill">${i.legendary?'Legendary · Street Brawl only':'Tier '+i.tier+' · '+n0(i.cost)+' souls'}</span>${i.active?'<span class="pill gold">Active</span>':'<span class="pill">Passive</span>'}</div></div></div>
+ ${i.sections.map(s=>`<div class="isec"><h4>${esc(s.type)}</h4>${s.text?`<p class="small">${s.text}</p>`:''}${s.rows.length?`<dl class="kv">${s.rows.map(r=>`<dt>${esc(r.k)}</dt><dd>${esc(r.v)}${r.s?` <span class="tiny muted">(${esc(r.s)})</span>`:''}</dd>`).join('')}</dl>`:''}</div>`).join('')}
+ ${i.from.length?`<div class="isec"><h4>Builds from</h4><p class="links">${i.from.map(itemLink).join(', ')} <span class="tiny muted">(you pay the difference)</span></p></div>`:''}
+ ${i.into.length?`<div class="isec"><h4>Builds into</h4><p class="links">${i.into.map(itemLink).join(', ')}</p></div>`:''}
+ <div class="isec"><h4>In ${esc(M.bracket)} matches</h4>${i.stats?`<p class="small">Bought by ${pct(i.stats.pr)} of all players; ${pct(i.stats.wr)} win rate when bought; average buy time ${i.stats.t.toFixed(1)} min.</p>`:'<p class="small muted">No purchase data in this window'+(i.legendary?' (Street Brawl is not counted; stats are normal mode only)':'')+'.</p>'}
+ ${i.users.length?`<p class="small">Bought most by: ${i.users.map(u=>`${heroLink(u.hero)} <span class="tiny muted">${pct(u.pr,0)}</span>`).join(', ')}</p>`:''}</div>
+ <p class="src">Stats: game files via deadlock-api.com (build ${esc(M.client_version)}), purchases: deadlock-api.com analytics.</p></div>`;}
+
+// videos
+R.videos=()=>{const H=D.heroes.filter(h=>h.videos&&h.videos.length);const none=D.heroes.filter(h=>!h.videos||!h.videos.length);
+ return `<div class="sec"><h2>Videos</h2><p>${H.reduce((a,h)=>a+h.videos.length,0)} videos for ${H.length} heroes, found by a YouTube search on ${esc(M.videos_searched||'?')} (title names the hero and reads like a guide, uploaded since ${esc(M.videos_min||'?')}, longer than 2 minutes, one per channel). Labelled Guide, Build showcase or Pro gameplay from the title. Not hand-reviewed for quality.</p></div>
+ ${H.map(h=>`<div class="sec"><h3><a class="lk" href="#hero/${h.slug}">${esc(h.name)}</a></h3></div><div class="grid wide">${h.videos.map(vidCard).join('')}</div>`).join('')}
+ ${none.length?`<p class="note small">No recent guide found for: ${none.map(h=>`<a class="lk" href="#hero/${h.slug}">${esc(h.name)}</a>`).join(', ')}.</p>`:''}`;};
+
+R.sources=()=>`<div class="sec"><h2>Sources &amp; method</h2><p>Everything in this guide comes from these pulls (cached in data/raw/ next to this page's build script).</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Source</th><th>Pulled</th></tr></thead><tbody>${(D.sources||[]).map(s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td>${esc(s.date)}</td></tr>`).join('')}</tbody></table></div>
+ <div class="card" style="margin-top:14px"><h3>How the numbers are made</h3><ul class="small">
+ <li><b>Match window:</b> ${esc(P.title)} (${esc((P.pub_date||'').slice(0,10))}) to ${esc(M.pulled)}; ${esc(M.game_mode)} mode; ${esc(M.match_mode)}.</li>
+ <li><b>High rank:</b> ${esc(M.bracket)} = the average badge of both teams is Oracle 1 or higher (${n0(M.total_high)} matches). All ranks: ${n0(M.total_all)} matches.</li>
+ <li><b>Tiers:</b> S ${esc(D.tiers.S)}, A ${esc(D.tiers.A)}, B ${esc(D.tiers.B)}, C ${esc(D.tiers.C)}, D ${esc(D.tiers.D)} win rate.</li>
+ <li><b>Builds:</b> per hero, items bought by 15%+ of that hero's players; phase = average buy minute. Situational = 5–15% after minute 10.</li>
+ <li><b>Ability order:</b> the most common full order, and the best-winning order used by 5%+ of players (150+ games).</li>
+ <li><b>Strengths/weaknesses:</b> top or bottom 6 of ${D.heroes.length} on per-match stats, base health and base gun damage; matchups need 300+ games and a gap bigger than chance.</li>
+ <li><b>Not covered:</b> Street Brawl and other modes, pro-match builds, and anything that needs an opinion rather than data.</li></ul></div>
+ <p class="small muted">Fan-made. Not affiliated with Valve. Hero and item images come from the game files via deadlock-api.com (personal use; Valve owns them; list in assets/manifest.json).</p>`;
+
+// ---------- search
+const IDX=[];
+D.heroes.forEach(h=>{IDX.push({t:h.name,k:'Hero',go:'hero/'+h.slug,img:h.img,x:(h.tags||[]).join(' ')+' '+h.role});h.abilities.forEach(a=>IDX.push({t:a.name,k:'Ability · '+h.name,go:'hero/'+h.slug,img:a.img,x:''}));});
+D.items.forEach(i=>IDX.push({t:i.name,k:SLOTNAME[i.slot]+' item'+(i.legendary?' · Street Brawl':' · '+i.cost),item:i.id,img:i.img,x:''}));
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id,x:g})));
+howtos.forEach(s=>IDX.push({t:s.title,k:'How to play',go:s.id,x:(s.steps||s.paras||[]).map(p=>p.t).join(' ')}));
+(D.howto.tables||[]).forEach(t=>IDX.push({t:t.title,k:'Table',go:'ref',x:t.rows.map(r=>r.join(' ')).join(' ')}));
+const norm=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9 ]/g,'');
+let hits=[],sel=0;
+function doSearch(q){const r=$('#res');q=norm(q).trim();if(!q){r.classList.remove('on');return;}
+ const words=q.split(/\s+/);
+ hits=IDX.map(e=>{const t=norm(e.t),x=norm(e.x);let sc=0;if(t===q)sc=100;else if(t.startsWith(q))sc=60;else if(t.includes(q))sc=40;else if(words.every(w=>t.includes(w)||x.includes(w)))sc=10;return [sc,e];}).filter(a=>a[0]>0).sort((a,b)=>b[0]-a[0]||a[1].t.localeCompare(b[1].t)).slice(0,14).map(a=>a[1]);
+ sel=0;r.innerHTML=hits.length?hits.map((e,i)=>`<div class="${i===0?'sel':''}" data-i="${i}">${e.img?`<img src="${esc(e.img)}" alt="" onerror="${ICON_ERR}">`:''}<span>${esc(e.t)}</span><i>${esc(e.k)}</i></div>`).join(''):'<div class="none">No match. Try a hero, item or ability name.</div>';r.classList.add('on');}
+function goHit(e){if(!e)return;$('#res').classList.remove('on');$('#q').value='';$('#q').blur();$('#side').classList.remove('open');if(e.item){openItem(e.item);}else location.hash=e.go;}
+$('#q').addEventListener('input',e=>doSearch(e.target.value));
+$('#q').addEventListener('keydown',e=>{const r=$('#res');if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...r.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){goHit(hits[sel]);}else if(e.key==='Escape'){r.classList.remove('on');}});
+$('#res').addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#res').classList.remove('on');});
+
+// ---------- modal
+function openModal(html,wide){$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;}
+function closeModal(){$('#modal').classList.remove('on');$('#mbody').innerHTML='';}
+function openItem(id){openModal(itemCard(+id));}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+function playVideo(id,title){openModal(`<h3 style="margin-right:30px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube ↗</a> <span class="muted">(needs internet)</span></p>`,true);}
+
+// ---------- clicks + routing
+document.addEventListener('click',e=>{
+ const it=e.target.closest('[data-item]');if(it){e.preventDefault();openItem(it.dataset.item);return;}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const g=e.target.closest('[data-go]');if(g){location.hash=g.dataset.go;return;}
+ const b=e.target.closest('.tabs[data-set] button');if(b){const set=b.parentNode.dataset.set,val=b.dataset.v;
+  if(set==='TMODE')TMODE=val;else if(set==='HTYPE')HTYPE=val;else if(set==='ISLOT')ISLOT=val;else if(set==='ITIER')ITIER=val;render(false);}
+});
+main.addEventListener('input',e=>{if(e.target.id==='iq'){IQ=e.target.value.toLowerCase();const pos=e.target.selectionStart;render(false);const n=$('#iq');if(n){n.focus();n.setSelectionRange(pos,pos);}}});
+$('#menuBtn').addEventListener('click',()=>$('#side').classList.toggle('open'));
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#side').classList.remove('open');});
+
+function render(top=true){const h=decodeURIComponent(location.hash.slice(1))||'home';const [r,arg]=h.split('/');
+ if(r==='item'){const i=D.items.find(x=>x.slug===arg);if(!R.items)return;main.innerHTML=R.items();$('#nav').innerHTML=navHtml('items');if(i)openItem(i.id);return;}
+ const own=typeof R[r]==='function';const f=own?R[r]:R.home;const cur=own?r:'home';
+ try{main.innerHTML=f(arg)+`<footer>${$('#checked').innerHTML}<br>Fan-made guide · not affiliated with Valve · <a href="#sources">sources &amp; method</a></footer>`;}
+ catch(err){main.innerHTML=`<p class="note warn">This section failed to draw: ${esc(err.message)}. <a href="#home">Home</a></p>`;console.error(err);}
+ $('#nav').innerHTML=navHtml(r==='hero'?'heroes':cur);
+ if(top)window.scrollTo(0,0);
+ document.title=(r==='hero'&&HB[arg]?HB[arg].name+' · ':'')+'Deadlock Field Guide';}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+})();
+</script>
+<script data-tilt=".tilt" data-reveal="none" data-accent="#e3b35c" data-intensity="0.5">/* depth.js -- the shared "depth kit" for every page the Hub opens.
+ *
+ * ONE SOURCE: (local file) Pages that must work offline
+ * (the game guides, the coach reports) carry a COPY written by
+ * `py kit\sync.py`; `py kit\sync.py --check` fails if any copy is stale.
+ * Edit this file, never a copy.
+ *
+ * What it adds, and nothing else:
+ *   1. a fixed canvas BEHIND the page: a floor grid receding to a horizon
+ *      plus a few drifting motes, tinted with the page's own accent;
+ *   2. pointer parallax (--px/--py on <html>, -1..1) for any page that wants it;
+ *   3. cards that lean toward the cursor with a soft glare in the accent;
+ *   4. cards that rise in the first time they scroll into view.
+ *
+ * Configure on the script tag (all optional):
+ *   data-accent="#7c9be0"          colour; default = first of --accent, --ai,
+ *                                  --cc-accent, --teal found on :root
+ *   data-tilt=".card,.tile"        which elements lean (small ones only)
+ *   data-reveal=".card"            which elements rise in (default = data-tilt;
+ *                                  "none" = the page animates its own)
+ *   data-intensity="0.6"           0..1, how visible the backdrop is
+ *   data-grid="off"                motes only, no floor grid
+ *   data-surface=".app-shell"      full-page wrappers whose opaque background
+ *                                  would hide the backdrop; moved onto <html>
+ *
+ * Rules it keeps: never blocks input (pointer-events:none), static for
+ * prefers-reduced-motion, no tilt on touch, paused while the tab is hidden,
+ * ~30 fps, and it never fails loud -- any error leaves the page as it was.
+ */
+(function () {
+  'use strict';
+  if (window.__depthKit) return;
+  window.__depthKit = true;
+
+  var me = document.currentScript || {};
+  var ds = me.dataset || {};
+
+  function ready(fn) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  }
+
+  function parseColor(s) {
+    s = (s || '').trim();
+    var m = /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.exec(s);
+    if (m) {
+      var h = m[1].length === 3 ? m[1].replace(/./g, '$&$&') : m[1];
+      var n = parseInt(h, 16);
+      return [n >> 16, (n >> 8) & 255, n & 255];
+    }
+    m = /rgba?\(\s*(\d+)[,\s]+(\d+)[,\s]+(\d+)/i.exec(s);
+    return m ? [+m[1], +m[2], +m[3]] : null;
+  }
+
+  function luminance(rgb) {
+    return (0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]) / 255;
+  }
+
+  ready(function () {
+    try { init(); } catch (e) { /* the page works without us */ }
+  });
+
+  function init() {
+    var root = document.documentElement, body = document.body;
+    var rs = getComputedStyle(root);
+    var accent = parseColor(ds.accent) ||
+      ['--accent', '--ai', '--cc-accent', '--teal'].map(function (v) { return parseColor(rs.getPropertyValue(v)); })
+        .filter(Boolean)[0] || [95, 199, 216];
+    var A = accent.join(',');
+    root.style.setProperty('--dk-accent', 'rgb(' + A + ')');
+    root.style.setProperty('--dk-accent-rgb', A);
+
+    var light, gridA, moteRGB, moved = [];
+
+    var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var fine = window.matchMedia && matchMedia('(pointer: fine)').matches;
+    var intensity = Math.max(0, Math.min(1, parseFloat(ds.intensity || '0.6')));
+    var gridOn = ds.grid !== 'off';
+
+    /* Move the body's paint onto <html> so a z-index:-1 canvas can sit
+       between the page background and the page content. Without this a body
+       background (painted after negative layers) would hide the canvas.
+       2026-10-02: this used to run ONCE, so a page that switched theme later
+       kept the load-time ground (a light theme showed navy and its dark
+       headings vanished; hit in the Study Hub and the Security+ app). It now
+       re-runs whenever the page's theme attribute or class changes. */
+    function movePaint() {
+      moved.forEach(function (p) { root.style[p] = ''; });
+      moved = [];
+      body.style.background = '';
+      var bs = getComputedStyle(body), rs = getComputedStyle(root);
+      var bgc = parseColor(bs.backgroundColor);
+      if (!bgc || /rgba\([^)]*,\s*0\)$/.test(bs.backgroundColor)) bgc = parseColor(rs.backgroundColor) || [16, 18, 22];
+      light = luminance(bgc) > 0.55;
+      gridA = (light ? 0.16 : 0.24) * intensity / 0.6;
+      moteRGB = light ? A : '211,215,220';
+      if (bs.backgroundImage !== 'none' || (bs.backgroundColor && !/rgba\([^)]*,\s*0\)$/.test(bs.backgroundColor) && bs.backgroundColor !== 'transparent')) {
+        var props = ['backgroundColor', 'backgroundImage', 'backgroundSize', 'backgroundPosition', 'backgroundRepeat', 'backgroundAttachment'];
+        var htmlHas = rs.backgroundImage !== 'none' || !/rgba\([^)]*,\s*0\)$/.test(rs.backgroundColor);
+        if (!htmlHas) props.forEach(function (p) { root.style[p] = bs[p]; moved.push(p); });
+        else { root.style.backgroundColor = bs.backgroundColor; moved.push('backgroundColor'); }
+        body.style.background = 'transparent';
+      }
+    }
+    movePaint();
+    var tPending = 0;
+    new MutationObserver(function () {
+      if (tPending) return;
+      tPending = requestAnimationFrame(function () {
+        tPending = 0; movePaint();
+        try { if (W) draw(); } catch (e) { /* a still (reduced-motion) canvas repaints once here */ }
+      });
+    }).observe(root, { attributes: true, attributeFilter: ['data-theme', 'class'] });
+    root.style.minHeight = '100%';
+
+    /* A full-page wrapper that paints its own opaque background (an app
+       shell) would hide the canvas just like the body did. data-surface
+       names those wrappers; their colour moves onto <html> the same way.
+       Re-applied on DOM changes, because an app can remount its shell. */
+    var surfSel = ds.surface || '';
+    function adoptSurfaces() {
+      if (!surfSel) return;
+      document.querySelectorAll(surfSel).forEach(function (el) {
+        if (el.__dkSurf) return;
+        el.__dkSurf = 1;
+        var c = getComputedStyle(el).backgroundColor;
+        if (c && !/rgba\([^)]*,\s*0\)$/.test(c) && c !== 'transparent') root.style.backgroundColor = c;
+        el.style.backgroundColor = 'transparent';
+      });
+    }
+    adoptSurfaces();
+    if (surfSel) {
+      var sPending = 0;
+      new MutationObserver(function () {
+        if (sPending) return;
+        sPending = requestAnimationFrame(function () { sPending = 0; adoptSurfaces(); });
+      }).observe(body, { childList: true, subtree: true });
+    }
+
+    /* ---------- styles ---------- */
+    var css =
+      '#dk-depth{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}' +
+      '.dk-tilt{transform:perspective(760px) rotateX(var(--dk-rx,0deg)) rotateY(var(--dk-ry,0deg));' +
+      'transition:transform .18s ease-out,box-shadow .25s,border-color .2s;will-change:transform}' +
+      /* :where() = zero specificity, so a page's own hover shadow wins. */
+      ':where(.dk-tilt:hover){box-shadow:0 14px 34px -16px rgba(' + A + ',.55),0 0 0 1px rgba(' + A + ',.16) inset}' +
+      '.dk-glare{position:relative}' +
+      '.dk-glare::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;' +
+      'background:radial-gradient(240px 150px at var(--dk-mx,50%) var(--dk-my,50%),rgba(' + A + ',' + (light ? '.14' : '.2') + '),transparent 70%)}' +
+      '.dk-glare:hover::after{opacity:1}' +
+      '@keyframes dk-rise{from{opacity:0;transform:perspective(760px) translateY(12px) rotateX(7deg)}to{opacity:1}}' +
+      '.dk-hide{opacity:0}' +
+      '.dk-in{animation:dk-rise .55s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--dk-d,0ms)}' +
+      '@media (prefers-reduced-motion:reduce){.dk-tilt{transform:none!important}.dk-in{animation:none}.dk-hide{opacity:1}}';
+    var st = document.createElement('style');
+    st.id = 'dk-style';
+    st.textContent = css;
+    document.head.appendChild(st);
+
+    /* ---------- backdrop ---------- */
+    var cv = document.createElement('canvas');
+    cv.id = 'dk-depth';
+    cv.setAttribute('aria-hidden', 'true');
+    body.insertBefore(cv, body.firstChild);
+    var cx = cv.getContext('2d');
+    var W = 0, H = 0, px = 0, py = 0, tpx = 0, tpy = 0, scroll = 0, raf = 0, last = 0;
+    var motes = [];
+    for (var i = 0; i < 40; i++) motes.push({ x: Math.random(), y: Math.random(), z: [.35, .6, 1][i % 3], s: Math.random() });
+    /* gridA and moteRGB are set by movePaint() above, and refreshed on a theme change. */
+
+    function size() {
+      var d = Math.min(window.devicePixelRatio || 1, 1.5);
+      W = innerWidth; H = innerHeight;
+      cv.width = Math.round(W * d); cv.height = Math.round(H * d);
+      cx.setTransform(d, 0, 0, d, 0, 0);
+    }
+
+    function draw() {
+      cx.clearRect(0, 0, W, H);
+      var hz = H * .66 + py * 10, vx = W / 2 + px * 40;
+      if (gridOn) {
+        var fog = cx.createLinearGradient(0, hz, 0, H);
+        fog.addColorStop(0, 'rgba(' + A + ',0)');
+        fog.addColorStop(1, 'rgba(' + A + ',' + gridA.toFixed(3) + ')');
+        cx.strokeStyle = fog; cx.lineWidth = 1; cx.beginPath();
+        for (var r = -14; r <= 14; r++) {
+          var bx = vx + r * W / 9;
+          cx.moveTo(vx + (bx - vx) * .02, hz); cx.lineTo(bx, H);
+        }
+        for (var k = 0; k < 14; k++) {
+          var z = ((k + scroll) % 14) / 14, y = hz + (H - hz) * z * z * z;
+          cx.moveTo(0, y); cx.lineTo(W, y);
+        }
+        cx.stroke();
+        var hg = cx.createRadialGradient(vx, hz, 0, vx, hz, W * .45);
+        hg.addColorStop(0, 'rgba(' + A + ',' + (0.07 * intensity / 0.6).toFixed(3) + ')');
+        hg.addColorStop(1, 'rgba(' + A + ',0)');
+        cx.fillStyle = hg; cx.fillRect(0, hz - H * .3, W, H * .6);
+      }
+      motes.forEach(function (p) {
+        var x = p.x * W + px * 30 * p.z, y = p.y * H + py * 18 * p.z;
+        var a = (.06 + .2 * p.z) * (.6 + .4 * Math.sin(p.s * 6.28 + scroll)) * intensity / 0.6;
+        cx.fillStyle = 'rgba(' + moteRGB + ',' + a.toFixed(3) + ')';
+        cx.fillRect(x, y, 1.4 * p.z + .4, 1.4 * p.z + .4);
+      });
+    }
+
+    function frame(ts) {
+      raf = requestAnimationFrame(frame);
+      if (ts - last < 33) return;
+      var dt = last ? Math.min(.1, (ts - last) / 1000) : 0;
+      last = ts;
+      px += (tpx - px) * .06; py += (tpy - py) * .06;
+      scroll = (scroll + dt * .35) % 14;
+      motes.forEach(function (p) { p.y -= dt * .006 * p.z; if (p.y < -.02) { p.y = 1.02; p.x = Math.random(); } });
+      draw();
+    }
+
+    function start() {
+      cancelAnimationFrame(raf); last = 0;
+      if (still || document.hidden) { draw(); return; }
+      raf = requestAnimationFrame(frame);
+    }
+    document.addEventListener('visibilitychange', start);
+    window.addEventListener('resize', function () { size(); draw(); });
+    size(); start();
+
+    /* ---------- tilt + glare ---------- */
+    var tiltSel = ds.tilt || '';
+    var revealSel = ds.reveal === 'none' ? '' : (ds.reveal || tiltSel);
+
+    function small(el) {
+      var r = el.getBoundingClientRect();
+      return r.width > 0 && r.width <= 560 && r.height <= 340;
+    }
+
+    function prep(el) {
+      if (el.__dk) return;
+      el.__dk = 1;
+      if (!small(el)) return;
+      el.classList.add('dk-tilt');
+      var after = getComputedStyle(el, '::after').content;
+      if (!after || after === 'none' || after === 'normal') el.classList.add('dk-glare');
+    }
+
+    if (!still && fine) {
+      window.addEventListener('pointermove', function (e) {
+        tpx = e.clientX / innerWidth * 2 - 1; tpy = e.clientY / innerHeight * 2 - 1;
+        root.style.setProperty('--px', tpx.toFixed(3));
+        root.style.setProperty('--py', tpy.toFixed(3));
+      }, { passive: true });
+    }
+
+    if (tiltSel && !still && fine) {
+      var cur = null;
+      document.addEventListener('pointermove', function (e) {
+        var t = e.target && e.target.closest ? e.target.closest(tiltSel) : null;
+        if (t) prep(t);
+        if (t && !t.classList.contains('dk-tilt')) t = null;
+        if (cur && cur !== t) { cur.style.setProperty('--dk-rx', '0deg'); cur.style.setProperty('--dk-ry', '0deg'); }
+        cur = t;
+        if (!t) return;
+        var r = t.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+        t.style.setProperty('--dk-ry', ((x - .5) * 7).toFixed(2) + 'deg');
+        t.style.setProperty('--dk-rx', ((.5 - y) * 9).toFixed(2) + 'deg');
+        t.style.setProperty('--dk-mx', (x * 100).toFixed(1) + '%');
+        t.style.setProperty('--dk-my', (y * 100).toFixed(1) + '%');
+      }, { passive: true });
+      document.addEventListener('pointerleave', function () {
+        if (cur) { cur.style.setProperty('--dk-rx', '0deg'); cur.style.setProperty('--dk-ry', '0deg'); cur = null; }
+      });
+    }
+
+    /* ---------- rise-in, once per element ---------- */
+    if (revealSel && !still && 'IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        var n = 0;
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          var el = en.target;
+          io.unobserve(el);
+          el.style.setProperty('--dk-d', Math.min(n++, 12) * 30 + 'ms');
+          el.classList.remove('dk-hide');
+          el.classList.add('dk-in');
+          el.addEventListener('animationend', function () { el.classList.remove('dk-in'); }, { once: true });
+        });
+      }, { rootMargin: '0px 0px -40px 0px' });
+      var seen = typeof WeakSet === 'function' ? new WeakSet() : null;
+      function scan() {
+        document.querySelectorAll(revealSel).forEach(function (el) {
+          if (seen && seen.has(el)) return;
+          if (seen) seen.add(el);
+          var r = el.getBoundingClientRect();
+          if (r.top > innerHeight) el.classList.add('dk-hide');   // only below the fold; what you see first is never hidden
+          io.observe(el);
+        });
+      }
+      scan();
+      /* Guides render their lists in JS; pick up new cards as they appear. */
+      var pending = 0;
+      new MutationObserver(function () {
+        if (pending) return;
+        pending = requestAnimationFrame(function () { pending = 0; scan(); });
+      }).observe(body, { childList: true, subtree: true });
+    }
+  }
+})();
+</script>
+</body>
+</html>
