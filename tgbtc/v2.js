@@ -259,7 +259,7 @@ window.TGV2 = { init: function (A) {
         el('tbody', {}, c.table.rows.map(r => el('tr', {}, r.map((v, i) => el('td', {}, i === 5 ? el('span', { class: 'tag ' + (c.table.rows.length && /^(Buy|Compre|Compra)$/.test(v) ? 'red' : /^(Skip|Pule|Sáltala)$/.test(v) ? '' : 'gold') }, v) : i === 4 ? el('strong', {}, v) : v))))))) : null,
       c.table && c.table.note ? text(c.table.note, 'muted') : null,
       c.table && c.table.source ? text('Source: ' + c.table.source, 'subtle') : null,
-      c.lines.length ? el('ul', { class: 'list' }, c.lines.map(l => el('li', {}, el('span', {}, l.text), l.source ? text('Source: ' + l.source, 'subtle') : null))) : null,
+      c.lines.length ? el('ul', { class: 'list v2-gr-list' }, c.lines.map(l => el('li', {}, el('span', {}, l.text), l.source ? text('Source: ' + l.source, 'subtle') : null))) : null,
       c.source ? text('Source: ' + c.source, 'subtle') : null);
     const grCards = top => (GR ? GR.cards.filter(c => !!c.top === top) : []).map(grCard);
     main.append(...grCards(true));

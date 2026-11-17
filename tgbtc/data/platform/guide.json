@@ -22490,96 +22490,196 @@
     }
    },
    {
-    "id": "anniv2-group-buy-past",
-    "title": "2nd Anniversary Value Group Buy: rounds already over",
-    "intro": "For reference, and for servers that get this event later.",
-    "lines": [],
-    "table": {
-     "head": [
-      "Round",
-      "When",
-      "You get",
-      "Full price",
-      "Lowest price"
-     ],
-     "rows": [
-      [
-       "1",
-       "November 10",
-       "Panacean Star-Up Crystal ×1",
-       "24,000",
-       "18,000"
-      ],
-      [
-       "2",
-       "November 11, first half",
-       "Potential Lucky Coin ×100",
-       "10,000",
-       "5,000"
-      ],
-      [
-       "3",
-       "November 11, second half",
-       "Advanced Scene Core Selection ×4",
-       "10,000",
-       "5,000"
-      ],
-      [
-       "4",
-       "November 12",
-       "LR Tactic Random Chest ×1",
-       "15,000",
-       "10,500"
-      ],
-      [
-       "5",
-       "November 13, first half",
-       "Exclusive Treasure Box Key ×100",
-       "10,000",
-       "5,000"
-      ],
-      [
-       "6",
-       "November 13, second half",
-       "Research Sweep Certificate ×2",
-       "10,000",
-       "5,000"
-      ],
-      [
-       "7",
-       "November 14",
-       "Full Score Cell Selection Casket I ×2",
-       "16,000",
-       "8,000"
-      ],
-      [
-       "8",
-       "November 15, first half",
-       "Cell Promoter ×100",
-       "8,000",
-       "4,000"
-      ],
-      [
-       "9",
-       "November 15, second half",
-       "Scene Core ×80",
-       "8,000",
-       "4,000"
-      ],
-      [
-       "10",
-       "November 16",
-       "LR Tactic Selection Chest ×1",
-       "50,000",
-       "30,000"
+    "id": "faction-ranking",
+    "top": true,
+    "title": "Which org is strongest right now (player vs player)",
+    "intro": "Power on paper is almost equal, so the kits decide. This is the order for Arena and Stronghold in November 2026, based mostly on one player on older servers. Bosses are a different story: see the last line.",
+    "lines": [
+     {
+      "text": "1. Anteiku. A player on two older servers says it wins most there, and that it works at 1 to 3 stars. It bursts No Organization teams down on turn one, even ones 200,000 to 300,000 CP above it. (player report)",
+      "source": "one player on two older servers, TGBTC Discord, November 16, 2026 (player report)",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T15:32, 17:24, 22:26"
       ]
-     ],
-     "source": "game event table ActGroupBuy_Anniv_2nd (Broken Chains copy of the game tables, pulled November 4, 2026)",
-     "evidence": [
-      "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
-      "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
-     ]
-    }
+     },
+     {
+      "text": "2. Aogiri Tree. Second on those servers, and about half of the top 10 on an old server we checked (our estimate; most teams were hidden). It needs heavy investment: the top team needs its LR cells, the units alone are not enough. (player report, creator tip)",
+      "source": "one player on two older servers, TGBTC Discord, November 16, 2026; our own check of an old server's top 10; Aslan (October 8, 2026): \"having these units alone is not enough\"",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T17:24, 17:38, 22:10",
+       "rook ~/work/tgbtc_strat/yt/out/jBZyxBZMruU.json"
+      ]
+     },
+     {
+      "text": "3. CCG (our placement: the one player asked was unsure, and CCG ranked near the top in the past). Few top players run it on his servers (the CCG player he mentions sits around rank 20), so it is the least proven. A creator found Hideyoshi plus Juzo CCG teams very strong against Aogiri defenses. (player report, creator tip)",
+      "source": "a player on an older server, TGBTC Discord, November 16, 2026; Aslan (October 26, 2026)",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T17:25 to 17:26",
+       "rook ~/work/tgbtc_strat/yt/out/tEZZn3VyN5A.json"
+      ]
+     },
+     {
+      "text": "4. No Organization. It does not survive Anteiku's opening burst right now, even with more CP. One player thinks this will change once Uta [The Past] gets an LR cell. (player report)",
+      "source": "one player on two older servers, TGBTC Discord, November 16, 2026 (player report)",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T15:29 to 15:32, 17:25, 22:26 to 22:27"
+      ]
+     },
+     {
+      "text": "Power does not separate the orgs. Average top-level power: No Organization 168,218, Aogiri Tree 167,975, Anteiku 167,490, CCG 166,366. Best five characters, averaged (2026 Q4): Aogiri Tree 180,721, CCG 180,467, Anteiku 180,026, No Organization 178,359. The gap is 1.1% to 1.3%.",
+      "source": "our data book, game data SEA 13368 (average top-level power of every SSR and UR; best five per org)",
+      "evidence": [
+       "reports-site/tgbtc-sheet-data/csv/08_cp_by_release.csv, 09_cp_by_org_per_quarter.csv"
+      ]
+     },
+     {
+      "text": "Creators run all four: of 33 team screens, 10 are Anteiku, 10 Aogiri Tree, 7 No Organization and 6 CCG.",
+      "source": "33 team screens from 9 creators, December 2025 to October 2026",
+      "evidence": [
+       "RedThread app/data/meta_timeline.json"
+      ]
+     },
+     {
+      "text": "For bosses and the Weekly Challenge, test your strongest team first, whatever its org (our advice). Our best Big Madam and Weekly Challenge scores used Nutcracker (No Organization) as the finisher.",
+      "source": "our own boss tests, October 28 and November 3, 2026",
+      "evidence": [
+       "Boss Lab pages of this guide"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "force-talents-numbers",
+    "top": true,
+    "title": "Force Talents: what each branch gives and what to buy first",
+    "intro": "Force Talents are bought with Talent Certificates. Each org has its own tree, and a tree only helps characters of that org. The stat values of the first 37 nodes are the same for all four orgs; only the star requirements and the character nodes differ.",
+    "source": "game text FactionTalent_Tips_4 (\"Insufficient Talent Certificates\") and item 20242 \"Talent Certificate\"",
+    "lines": [
+     {
+      "text": "Buy in this order: your main team's org first. Inside it: the middle branch (flat stats), then the top branch (% stats). Character nodes come last, and only for characters you really use. (creator tip)",
+      "source": "Shi (March 23 and May 21, 2026), Aslan (May 25, 2026), Zeketta",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/BUZ0XCbc-1w.json, GEz1ZuIJozI.json, m-crMl_XjXY.json",
+       "data/research/creator_advice.md section 4"
+      ]
+     },
+     {
+      "text": "Middle branch, the first 19 nodes (flat stats): ATK +3,200, DEF +3,200 and HP +64,000 for every character of that org. No star requirement that we can find. (our reading: the game text has no unlock condition for these nodes)",
+      "source": "game files of September 22, 2026 (Force Talent text and value table)",
+      "evidence": [
+       "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_01_00 to _19_00"
+      ]
+     },
+     {
+      "text": "Top branch, all 18 nodes: +12% each to Block Chance, Lifesteal, PEN Rate, CRIT DEF, Regeneration Rate, CRIT Rate, CRIT Resist, Restoration Rate and CRIT DMG (two nodes per stat, 5% then 7%).",
+      "source": "game files of September 22, 2026 (Force Talent text and value table)",
+      "evidence": [
+       "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_20_00 to _37_00"
+      ]
+     },
+     {
+      "text": "The top branch opens with stars: each node needs a total number of stars across your characters of that org. The whole branch is open at 48 stars for No Organization, 60 for Anteiku, 70 for Aogiri Tree and 140 for CCG.",
+      "source": "game text of September 22, 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_<org>_20_Unlock to _37_Unlock"
+      ]
+     },
+     {
+      "text": "So stars on any character of your org count, not only your main team. Cheap stars on characters you do not field still open nodes for the ones you do. (our reading of the game text)",
+      "source": "game text of September 22, 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_CCG_20_Unlock \"The total stars of CCG Characters reaches 20 stars\""
+      ]
+     },
+     {
+      "text": "Beyond that there are two more sets of 40 nodes each, all Damage Dealt Increase and Damage Taken Reduction. One set is star-gated: its last node needs 126 stars for No Organization, 180 for Anteiku, 189 for Aogiri Tree and 260 for CCG. The other set has no unlock text and seems to continue the middle branch. Their values and costs are not in our files. (our reading)",
+      "source": "game text of September 22, 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name"
+      ]
+     },
+     {
+      "text": "Character nodes: each one needs you to own two named characters, and it makes that one character deal more damage and take less. More stars on the character raise the bonus. (our reading of the game text)",
+      "source": "game text of September 22, 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_UI_4, FactionTalent_UI_6, FactionTalent_ADQ_72_Unlock"
+      ]
+     },
+     {
+      "text": "Rough value: 50,000 Talent Certificates spent gives about 2,500 CP, and it scales in a straight line. Creators call the certificates \"Force Talents\" or \"papers\". (creator tip)",
+      "source": "Shi (April 27, 2026); \"papers\": Zeketta",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/adyaFXzIMIw.json"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "lr-tactics",
+    "top": true,
+    "title": "LR Tactics: which ones to take",
+    "intro": "A character has 3 Tactic slots: at level 1, level 250 and level 265. The same Tactic can only be equipped once per character.",
+    "lines": [
+     {
+      "text": "Fortify on every character you field. Three creators say the same. (creator tip)",
+      "source": "Shi (April 28, 2026), Soul (June 19, 2026), Aslan (July 22, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/pplY7lNlYgk.json, wDHs0qqQAJg.json, XBzIOd7Mm5g.json"
+      ]
+     },
+     {
+      "text": "Assistance Tactic on your back-up: its text says it also works from the back-up slot, and a creator says it is the only Tactic that does. One per team is enough, says Aslan. (creator tip)",
+      "source": "game text SkillDesc_Tactic017_zy6; Shi's tactic ranking (April 3, 2026); Aslan (April 15, 2026)",
+      "evidence": [
+       "data/raw/en.json tid#SkillDesc_Tactic017_zy6",
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json, ls2vFqppdJE.json"
+      ]
+     },
+     {
+      "text": "Healing Prohibition Tactic on the character that stays alive longest, so it stays active as long as possible. It is especially useful against Aogiri Tree. (creator tip)",
+      "source": "Aslan (February 15 and March 23, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/a8jbTZsYp38.json, V1E2CIu0dLE.json"
+      ]
+     },
+     {
+      "text": "Shi's S tier includes Continuous ATK, Fortify, Assistance Tactic and Shield Tactic (strong against Aogiri Tree). Shi calls Continuous ATK and Fortify the two most broken, and ranks Burst-type Tactics low. (creator tip)",
+      "source": "Shi's tactic ranking (April 3, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json"
+      ]
+     },
+     {
+      "text": "Weak Bonus-Attack is \"worthless\" against Hinami, says Shi: it needs debuffs on the target and Hinami gives debuff immunity. (creator tip)",
+      "source": "Shi's tactic ranking (April 3, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json",
+       "data/raw/en.json tid#SkillDesc_Tactic009_rd6"
+      ]
+     },
+     {
+      "text": "By org (shortened from the creators' full setups). Anteiku: Fortify and Continuous ATK on every unit, Healing Prohibition on the Toka that survives, Assistance on the back-up. Aogiri Tree: Fortify, plus at least one Provocation Counter on the field. CCG: bring Healing Prohibition against Aogiri Tree. No Organization: an LR damage Tactic on the main damage dealer, UR Tactics on the supports. (creator tip)",
+      "source": "Aslan (February 15, March 23, May 19 and July 22, 2026), Shi (February 13 and April 28, 2026; Shi calls Continuous ATK \"Retaliate\")",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/a8jbTZsYp38.json, V1E2CIu0dLE.json, _-Rmzb4klVs.json, WC6hPxVpwBg.json, pplY7lNlYgk.json, XBzIOd7Mm5g.json, s7F5R79cNVA.json"
+      ]
+     },
+     {
+      "text": "Ten Tactics exist only as LR: Continuous ATK, Redemption, Weak Bonus-Attack, Guaranteed CRIT, Repeated Strike, Chain Strikes, Primed and Ready, Priority Protection, Group Upgrade and Momentum Strike. (our reading: the game text has only an LR entry for them)",
+      "source": "game text of September 22, 2026",
+      "evidence": [
+       "data/raw/en.json tid#SkillDesc_Tactic005_cx6 ... Tactic021_xs6 (only a level-6 text exists)"
+      ]
+     },
+     {
+      "text": "Spare Tactics are not wasted: crafting uses 3 Tactics, and three of the same quality (SR, SSR or UR) have a 10% chance to give a higher quality. A UR or LR Tactic can also be refined into a random Tactic of the same quality for 5,000 (UR) or 20,000 (LR) Diamonds; we would not pay that. (our opinion)",
+      "source": "game settings TacticHeroWearMax, TacticCompNeedAmount, TacticRefineCost and game text TacticUI_18, TacticCompose_RuleDesc_1_0_2 (files of September 22, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc-battlesim/dl/Const.json",
+       "data/raw/en.json tid#TacticUI_29"
+      ]
+     }
+    ]
    },
    {
     "id": "turn-order",
@@ -22728,6 +22828,98 @@
       ]
      }
     ]
+   },
+   {
+    "id": "anniv2-group-buy-past",
+    "title": "2nd Anniversary Value Group Buy: rounds already over",
+    "intro": "For reference, and for servers that get this event later.",
+    "lines": [],
+    "table": {
+     "head": [
+      "Round",
+      "When",
+      "You get",
+      "Full price",
+      "Lowest price"
+     ],
+     "rows": [
+      [
+       "1",
+       "November 10",
+       "Panacean Star-Up Crystal ×1",
+       "24,000",
+       "18,000"
+      ],
+      [
+       "2",
+       "November 11, first half",
+       "Potential Lucky Coin ×100",
+       "10,000",
+       "5,000"
+      ],
+      [
+       "3",
+       "November 11, second half",
+       "Advanced Scene Core Selection ×4",
+       "10,000",
+       "5,000"
+      ],
+      [
+       "4",
+       "November 12",
+       "LR Tactic Random Chest ×1",
+       "15,000",
+       "10,500"
+      ],
+      [
+       "5",
+       "November 13, first half",
+       "Exclusive Treasure Box Key ×100",
+       "10,000",
+       "5,000"
+      ],
+      [
+       "6",
+       "November 13, second half",
+       "Research Sweep Certificate ×2",
+       "10,000",
+       "5,000"
+      ],
+      [
+       "7",
+       "November 14",
+       "Full Score Cell Selection Casket I ×2",
+       "16,000",
+       "8,000"
+      ],
+      [
+       "8",
+       "November 15, first half",
+       "Cell Promoter ×100",
+       "8,000",
+       "4,000"
+      ],
+      [
+       "9",
+       "November 15, second half",
+       "Scene Core ×80",
+       "8,000",
+       "4,000"
+      ],
+      [
+       "10",
+       "November 16",
+       "LR Tactic Selection Chest ×1",
+       "50,000",
+       "30,000"
+      ]
+     ],
+     "source": "game event table ActGroupBuy_Anniv_2nd (Broken Chains copy of the game tables, pulled November 4, 2026)",
+     "evidence": [
+      "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+      "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
+     ]
+    }
    }
   ]
  },

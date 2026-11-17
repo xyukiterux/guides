@@ -22490,96 +22490,196 @@
     }
    },
    {
-    "id": "anniv2-group-buy-past",
-    "title": "Value Group Buy do 2º Aniversário: rodadas que já acabaram",
-    "intro": "Para referência, e para servidores que receberem este evento mais tarde.",
-    "lines": [],
-    "table": {
-     "head": [
-      "Rodada",
-      "Quando",
-      "Você recebe",
-      "Preço cheio",
-      "Menor preço"
-     ],
-     "rows": [
-      [
-       "1",
-       "10 de novembro",
-       "Panacean Star-Up Crystal ×1",
-       "24.000",
-       "18.000"
-      ],
-      [
-       "2",
-       "11 de novembro, primeira metade",
-       "Potential Lucky Coin ×100",
-       "10.000",
-       "5.000"
-      ],
-      [
-       "3",
-       "11 de novembro, segunda metade",
-       "Advanced Scene Core Selection ×4",
-       "10.000",
-       "5.000"
-      ],
-      [
-       "4",
-       "12 de novembro",
-       "LR Tactic Random Chest ×1",
-       "15.000",
-       "10.500"
-      ],
-      [
-       "5",
-       "13 de novembro, primeira metade",
-       "Exclusive Treasure Box Key ×100",
-       "10.000",
-       "5.000"
-      ],
-      [
-       "6",
-       "13 de novembro, segunda metade",
-       "Research Sweep Certificate ×2",
-       "10.000",
-       "5.000"
-      ],
-      [
-       "7",
-       "14 de novembro",
-       "Full Score Cell Selection Casket I ×2",
-       "16.000",
-       "8.000"
-      ],
-      [
-       "8",
-       "15 de novembro, primeira metade",
-       "Cell Promoter ×100",
-       "8.000",
-       "4.000"
-      ],
-      [
-       "9",
-       "15 de novembro, segunda metade",
-       "Scene Core ×80",
-       "8.000",
-       "4.000"
-      ],
-      [
-       "10",
-       "16 de novembro",
-       "LR Tactic Selection Chest ×1",
-       "50.000",
-       "30.000"
+    "id": "faction-ranking",
+    "top": true,
+    "title": "Qual org é a mais forte agora (jogador contra jogador)",
+    "intro": "O poder no papel é quase igual, então os kits decidem. Esta é a ordem para Arena e Stronghold em novembro de 2026, com base principalmente em um jogador de servidores mais antigos. Chefes são outra história: veja a última linha.",
+    "lines": [
+     {
+      "text": "1. Anteiku. Um jogador de dois servidores mais antigos diz que é a que mais vence lá, e que funciona com 1 a 3 estrelas. Ela derruba equipes No Organization no primeiro turno, até as que têm 200.000 a 300.000 de CP a mais. (relato de jogador)",
+      "source": "um jogador de dois servidores mais antigos, TGBTC Discord, 16 de novembro de 2026 (relato de jogador)",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T15:32, 17:24, 22:26"
       ]
-     ],
-     "source": "tabela de eventos do jogo ActGroupBuy_Anniv_2nd (cópia Broken Chains das tabelas do jogo, obtida em 4 de novembro de 2026)",
-     "evidence": [
-      "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
-      "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
-     ]
-    }
+     },
+     {
+      "text": "2. Aogiri Tree. Segunda nesses servidores, e cerca de metade do top 10 em um servidor antigo que conferimos (estimativa nossa; a maioria das equipes estava escondida). Precisa de muito investimento: a melhor equipe precisa das LR cells dela, só as unidades não bastam. (relato de jogador, dica de criador)",
+      "source": "um jogador de dois servidores mais antigos, TGBTC Discord, 16 de novembro de 2026; nossa própria conferência do top 10 de um servidor antigo; Aslan (8 de outubro de 2026): \"having these units alone is not enough\"",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T17:24, 17:38, 22:10",
+       "rook ~/work/tgbtc_strat/yt/out/jBZyxBZMruU.json"
+      ]
+     },
+     {
+      "text": "3. CCG (posição decidida por nós: o único jogador perguntado não tinha certeza, e a CCG já esteve perto do topo). Poucos jogadores de topo a usam nos servidores dele (o jogador CCG que ele cita fica perto do rank 20), então é a menos comprovada. Um criador achou as equipes CCG com Hideyoshi e Juzo muito fortes contra defesas Aogiri. (relato de jogador, dica de criador)",
+      "source": "um jogador de um servidor mais antigo, TGBTC Discord, 16 de novembro de 2026; Aslan (26 de outubro de 2026)",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T17:25 to 17:26",
+       "rook ~/work/tgbtc_strat/yt/out/tEZZn3VyN5A.json"
+      ]
+     },
+     {
+      "text": "4. No Organization. Ela não sobrevive ao burst inicial de Anteiku agora, mesmo com mais CP. Um jogador acha que isso vai mudar quando Uta [The Past] ganhar uma LR cell. (relato de jogador)",
+      "source": "um jogador de dois servidores mais antigos, TGBTC Discord, 16 de novembro de 2026 (relato de jogador)",
+      "evidence": [
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T15:29 to 15:32, 17:25, 22:26 to 22:27"
+      ]
+     },
+     {
+      "text": "O poder não separa as orgs. Poder médio no nível máximo: No Organization 168.218, Aogiri Tree 167.975, Anteiku 167.490, CCG 166.366. Cinco melhores personagens, em média (4º trimestre de 2026): Aogiri Tree 180.721, CCG 180.467, Anteiku 180.026, No Organization 178.359. A diferença é de 1,1% a 1,3%.",
+      "source": "nosso livro de dados, dados do jogo SEA 13368 (poder médio no nível máximo de todo SSR e UR; cinco melhores por org)",
+      "evidence": [
+       "reports-site/tgbtc-sheet-data/csv/08_cp_by_release.csv, 09_cp_by_org_per_quarter.csv"
+      ]
+     },
+     {
+      "text": "Os criadores usam as quatro: de 33 telas de equipe, 10 são Anteiku, 10 Aogiri Tree, 7 No Organization e 6 CCG.",
+      "source": "33 telas de equipe de 9 criadores, de dezembro de 2025 a outubro de 2026",
+      "evidence": [
+       "RedThread app/data/meta_timeline.json"
+      ]
+     },
+     {
+      "text": "Para chefes e o Weekly Challenge, teste primeiro a sua equipe mais forte, seja qual for a org (conselho nosso). Nossas melhores pontuações em Big Madam e no Weekly Challenge usaram Nutcracker (No Organization) como finalizador.",
+      "source": "nossos próprios testes de chefe, 28 de outubro e 3 de novembro de 2026",
+      "evidence": [
+       "Boss Lab pages of this guide"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "force-talents-numbers",
+    "top": true,
+    "title": "Force Talents: o que cada ramo dá e o que comprar primeiro",
+    "intro": "Os Force Talents são comprados com Talent Certificates. Cada org tem a sua árvore, e uma árvore só ajuda personagens daquela org. Os valores de stats dos primeiros 37 nós são iguais para as quatro orgs; só as exigências de estrelas e os nós de personagem mudam.",
+    "source": "texto do jogo FactionTalent_Tips_4 (\"Insufficient Talent Certificates\") e item 20242 \"Talent Certificate\"",
+    "lines": [
+     {
+      "text": "Compre nesta ordem: primeiro a org da sua equipe principal. Dentro dela: o ramo do meio (stats fixos), depois o ramo de cima (stats em %). Os nós de personagem vêm por último, e só para personagens que você realmente usa. (dica de criador)",
+      "source": "Shi (23 de março e 21 de maio de 2026), Aslan (25 de maio de 2026), Zeketta",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/BUZ0XCbc-1w.json, GEz1ZuIJozI.json, m-crMl_XjXY.json",
+       "data/research/creator_advice.md section 4"
+      ]
+     },
+     {
+      "text": "Ramo do meio, os primeiros 19 nós (stats fixos): ATK +3.200, DEF +3.200 e HP +64.000 para todo personagem daquela org. Sem exigência de estrelas que tenhamos achado. (nossa leitura: o texto do jogo não tem condição de desbloqueio para esses nós)",
+      "source": "arquivos do jogo de 22 de setembro de 2026 (texto e tabela de valores dos Force Talents)",
+      "evidence": [
+       "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_01_00 to _19_00"
+      ]
+     },
+     {
+      "text": "Ramo de cima, os 18 nós: +12% em cada um de Block Chance, Lifesteal, PEN Rate, CRIT DEF, Regeneration Rate, CRIT Rate, CRIT Resist, Restoration Rate e CRIT DMG (dois nós por stat, 5% e depois 7%).",
+      "source": "arquivos do jogo de 22 de setembro de 2026 (texto e tabela de valores dos Force Talents)",
+      "evidence": [
+       "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_20_00 to _37_00"
+      ]
+     },
+     {
+      "text": "O ramo de cima abre com estrelas: cada nó exige um total de estrelas somando os seus personagens daquela org. O ramo inteiro abre com 48 estrelas em No Organization, 60 em Anteiku, 70 em Aogiri Tree e 140 em CCG.",
+      "source": "texto do jogo de 22 de setembro de 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_<org>_20_Unlock to _37_Unlock"
+      ]
+     },
+     {
+      "text": "Então estrelas em qualquer personagem da sua org contam, não só as da equipe principal. Estrelas baratas em personagens que você não usa ainda abrem nós para os que você usa. (nossa leitura do texto do jogo)",
+      "source": "texto do jogo de 22 de setembro de 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_CCG_20_Unlock \"The total stars of CCG Characters reaches 20 stars\""
+      ]
+     },
+     {
+      "text": "Além disso há mais dois conjuntos de 40 nós cada, todos Damage Dealt Increase e Damage Taken Reduction. Um conjunto é liberado por estrelas: o último nó exige 126 estrelas em No Organization, 180 em Anteiku, 189 em Aogiri Tree e 260 em CCG. O outro conjunto não tem texto de desbloqueio e parece continuar o ramo do meio. Os valores e custos deles não estão nos nossos arquivos. (nossa leitura)",
+      "source": "texto do jogo de 22 de setembro de 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name"
+      ]
+     },
+     {
+      "text": "Nós de personagem: cada um exige que você tenha dois personagens específicos, e faz aquele personagem causar mais dano e receber menos. Mais estrelas no personagem aumentam o bônus. (nossa leitura do texto do jogo)",
+      "source": "texto do jogo de 22 de setembro de 2026",
+      "evidence": [
+       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_UI_4, FactionTalent_UI_6, FactionTalent_ADQ_72_Unlock"
+      ]
+     },
+     {
+      "text": "Valor aproximado: 50.000 Talent Certificates gastos dão cerca de 2.500 de CP, e cresce em linha reta. Os criadores chamam os certificados de \"Force Talents\" ou \"papers\". (dica de criador)",
+      "source": "Shi (27 de abril de 2026); \"papers\": Zeketta",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/adyaFXzIMIw.json"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "lr-tactics",
+    "top": true,
+    "title": "LR Tactics: quais pegar",
+    "intro": "Um personagem tem 3 espaços de Tactic: no nível 1, no nível 250 e no nível 265. A mesma Tactic só pode ser equipada uma vez por personagem.",
+    "lines": [
+     {
+      "text": "Fortify em todo personagem que você coloca em campo. Três criadores dizem o mesmo. (dica de criador)",
+      "source": "Shi (28 de abril de 2026), Soul (19 de junho de 2026), Aslan (22 de julho de 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/pplY7lNlYgk.json, wDHs0qqQAJg.json, XBzIOd7Mm5g.json"
+      ]
+     },
+     {
+      "text": "Assistance Tactic no seu back-up: o texto dela diz que também funciona no espaço de back-up, e um criador diz que é a única Tactic que funciona. Uma por equipe basta, diz o Aslan. (dica de criador)",
+      "source": "texto do jogo SkillDesc_Tactic017_zy6; ranking de Tactics do Shi (3 de abril de 2026); Aslan (15 de abril de 2026)",
+      "evidence": [
+       "data/raw/en.json tid#SkillDesc_Tactic017_zy6",
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json, ls2vFqppdJE.json"
+      ]
+     },
+     {
+      "text": "Healing Prohibition Tactic no personagem que fica vivo por mais tempo, para ela ficar ativa o máximo possível. É especialmente útil contra Aogiri Tree. (dica de criador)",
+      "source": "Aslan (15 de fevereiro e 23 de março de 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/a8jbTZsYp38.json, V1E2CIu0dLE.json"
+      ]
+     },
+     {
+      "text": "O tier S do Shi inclui Continuous ATK, Fortify, Assistance Tactic e Shield Tactic (forte contra Aogiri Tree). O Shi diz que Continuous ATK e Fortify são as duas mais quebradas, e coloca as Tactics do tipo Burst lá embaixo. (dica de criador)",
+      "source": "ranking de Tactics do Shi (3 de abril de 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json"
+      ]
+     },
+     {
+      "text": "Weak Bonus-Attack é \"worthless\" contra a Hinami, diz o Shi: ela precisa de debuffs no alvo e a Hinami dá imunidade a debuffs. (dica de criador)",
+      "source": "ranking de Tactics do Shi (3 de abril de 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json",
+       "data/raw/en.json tid#SkillDesc_Tactic009_rd6"
+      ]
+     },
+     {
+      "text": "Por org (resumido das configurações completas dos criadores). Anteiku: Fortify e Continuous ATK em toda unidade, Healing Prohibition na Toka que sobrevive, Assistance no back-up. Aogiri Tree: Fortify, mais pelo menos uma Provocation Counter em campo. CCG: leve Healing Prohibition contra Aogiri Tree. No Organization: uma Tactic LR de dano no causador de dano principal, Tactics UR nos suportes. (dica de criador)",
+      "source": "Aslan (15 de fevereiro, 23 de março, 19 de maio e 22 de julho de 2026), Shi (13 de fevereiro e 28 de abril de 2026; o Shi chama Continuous ATK de \"Retaliate\")",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/out/a8jbTZsYp38.json, V1E2CIu0dLE.json, _-Rmzb4klVs.json, WC6hPxVpwBg.json, pplY7lNlYgk.json, XBzIOd7Mm5g.json, s7F5R79cNVA.json"
+      ]
+     },
+     {
+      "text": "Dez Tactics só existem como LR: Continuous ATK, Redemption, Weak Bonus-Attack, Guaranteed CRIT, Repeated Strike, Chain Strikes, Primed and Ready, Priority Protection, Group Upgrade e Momentum Strike. (nossa leitura: o texto do jogo só tem a entrada LR delas)",
+      "source": "texto do jogo de 22 de setembro de 2026",
+      "evidence": [
+       "data/raw/en.json tid#SkillDesc_Tactic005_cx6 ... Tactic021_xs6 (only a level-6 text exists)"
+      ]
+     },
+     {
+      "text": "Tactics sobrando não são desperdício: a criação usa 3 Tactics, e três da mesma qualidade (SR, SSR ou UR) têm 10% de chance de dar uma qualidade maior. Uma Tactic UR ou LR também pode ser refinada em uma Tactic aleatória da mesma qualidade por 5.000 (UR) ou 20.000 (LR) Diamonds; nós não pagaríamos isso. (opinião nossa)",
+      "source": "configurações do jogo TacticHeroWearMax, TacticCompNeedAmount, TacticRefineCost e texto do jogo TacticUI_18, TacticCompose_RuleDesc_1_0_2 (arquivos de 22 de setembro de 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc-battlesim/dl/Const.json",
+       "data/raw/en.json tid#TacticUI_29"
+      ]
+     }
+    ]
    },
    {
     "id": "turn-order",
@@ -22728,6 +22828,98 @@
       ]
      }
     ]
+   },
+   {
+    "id": "anniv2-group-buy-past",
+    "title": "Value Group Buy do 2º Aniversário: rodadas que já acabaram",
+    "intro": "Para referência, e para servidores que receberem este evento mais tarde.",
+    "lines": [],
+    "table": {
+     "head": [
+      "Rodada",
+      "Quando",
+      "Você recebe",
+      "Preço cheio",
+      "Menor preço"
+     ],
+     "rows": [
+      [
+       "1",
+       "10 de novembro",
+       "Panacean Star-Up Crystal ×1",
+       "24.000",
+       "18.000"
+      ],
+      [
+       "2",
+       "11 de novembro, primeira metade",
+       "Potential Lucky Coin ×100",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "3",
+       "11 de novembro, segunda metade",
+       "Advanced Scene Core Selection ×4",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "4",
+       "12 de novembro",
+       "LR Tactic Random Chest ×1",
+       "15.000",
+       "10.500"
+      ],
+      [
+       "5",
+       "13 de novembro, primeira metade",
+       "Exclusive Treasure Box Key ×100",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "6",
+       "13 de novembro, segunda metade",
+       "Research Sweep Certificate ×2",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "7",
+       "14 de novembro",
+       "Full Score Cell Selection Casket I ×2",
+       "16.000",
+       "8.000"
+      ],
+      [
+       "8",
+       "15 de novembro, primeira metade",
+       "Cell Promoter ×100",
+       "8.000",
+       "4.000"
+      ],
+      [
+       "9",
+       "15 de novembro, segunda metade",
+       "Scene Core ×80",
+       "8.000",
+       "4.000"
+      ],
+      [
+       "10",
+       "16 de novembro",
+       "LR Tactic Selection Chest ×1",
+       "50.000",
+       "30.000"
+      ]
+     ],
+     "source": "tabela de eventos do jogo ActGroupBuy_Anniv_2nd (cópia Broken Chains das tabelas do jogo, obtida em 4 de novembro de 2026)",
+     "evidence": [
+      "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+      "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
+     ]
+    }
    }
   ]
  },
