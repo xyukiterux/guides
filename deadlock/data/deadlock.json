@@ -43609,6 +43609,1241 @@
    }
   ]
  },
+ "playbooks": {
+  "title": "3-hero playbook",
+  "intro": "Three heroes for a player who likes farming and taking objectives more than duels, wants easy mechanics, and wants a big ultimate in the pocket. Each one has a start, a lane plan, a mid and late game plan, and how to use every ability.",
+  "written": "2026-11-17",
+  "sources": {
+   "stats": {
+    "label": "Match stats",
+    "full": "This guide's match data: Oracle 1+ games since the 11-04-2026 patch (deadlock-api.com)",
+    "url": "https://api.deadlock-api.com/docs"
+   },
+   "files": {
+    "label": "Game files",
+    "full": "Ability and item values parsed from the game files (deadlock-api.com assets)",
+    "url": "https://api.deadlock-api.com/v1/assets/heroes"
+   },
+   "wiki": {
+    "label": "Wiki",
+    "full": "deadlock.wiki hero pages for Seven, Warden and McGinnis (last update listed: 10-30-2026), read 11-17-2026",
+    "url": "https://deadlock.wiki/"
+   },
+   "howto": {
+    "label": "How-to pages",
+    "full": "This guide's How to play pages (each step cites its wiki page)",
+    "url": "#howto-farm"
+   },
+   "v-seven": {
+    "label": "TheBrakeTrain",
+    "full": "TheBrakeTrain, How to Play Seven ULTIMATE GUIDE in Deadlock (YouTube, 2026-11-06)",
+    "url": "https://www.youtube.com/watch?v=8oQ68gnIrCU"
+   },
+   "v-warden": {
+    "label": "TacLaser",
+    "full": "TacLaser, The Warden Build You Need to Climb In Deadlock (YouTube, 2026-08-08; older than the 10-30 changes, so only advice the current stats agree with is used)",
+    "url": "https://www.youtube.com/watch?v=v9S9G7n8aH4"
+   },
+   "v-mcg1": {
+    "label": "RosaliaDL",
+    "full": "RosaliaDL, The McGinnis Guide Nobody Else Can Teach (YouTube, 2026-05-10; a top-rank McGinnis main)",
+    "url": "https://www.youtube.com/watch?v=UP58QkHWAqA"
+   },
+   "v-mcg2": {
+    "label": "hello Tomi",
+    "full": "hello Tomi, How to play McGinnis on the NEW MAP in Deadlock (YouTube, 2026-09-30)",
+    "url": "https://www.youtube.com/watch?v=qs3CJW9kvCE"
+   },
+   "mine": {
+    "label": "Reasoning",
+    "full": "Worked out from the numbers above; not stated by a source. Test it in a match before trusting it.",
+    "url": ""
+   }
+  },
+  "heroes": [
+   {
+    "slug": "seven",
+    "rank": "Main pick",
+    "job": "Farm faster than anyone, then melt groups and objectives with lightning.",
+    "fit": [
+     {
+      "t": "Number 1 of 44 heroes for souls per match (43,873) and number 1 for last hits.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Number 4 of 44 for objective damage per match (11,623).",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Difficulty 1, the lowest. No aim-heavy combos.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "The nuke: [[Storm Cloud]] hits everything in a huge circle.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "Honest note: he is not niche. He is in 35% of all-rank matches (11th most picked of 44). Have Warden ready when he is taken.",
+      "s": [
+       "stats"
+      ]
+     }
+    ],
+    "start": [
+     {
+      "t": "First point goes into [[Power Surge]]. Press it when your wave meets theirs: the shocks jump to 4 nearby troopers.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "First buy: [[Monster Rounds]] (91% of Seven players, around minute 2). More damage to troopers and camps.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Second buy if you are getting poked: [[Extra Regen]]. Seven's base health regen is only 1 per second.",
+      "s": [
+       "stats",
+       "files",
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Do not trade shots. Your goal in lane is to survive and take every trooper, not to get kills.",
+      "s": [
+       "v-seven"
+      ]
+     }
+    ],
+    "lane": [
+     {
+      "t": "Every wave: [[Power Surge]] on, shoot the front trooper, collect the orbs. Then back off until the next wave.",
+      "s": [
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Unlock [[Static Charge]] second. If someone runs at you, put it on them and walk away. They get stunned 3.5 seconds later.",
+      "s": [
+       "stats",
+       "files",
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Unlock [[Lightning Ball]] third. Throw it along the trooper line, or at an enemy hiding behind cover.",
+      "s": [
+       "stats",
+       "v-seven"
+      ]
+     },
+     {
+      "t": "From 2:00 the small camps are up. Clear the wave, hit the nearest camp, come back for the next wave.",
+      "s": [
+       "howto",
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Around minute 9 buy [[Cultist Sacrifice]] (80% buy it). Use it on a big camp monster: 170% bonus souls and a long buff. Use it every time it is ready.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     }
+    ],
+    "mid": [
+     {
+      "t": "This is your best time. Loop: push a wave, clear the camps next to it, push the next wave. Never stand still.",
+      "s": [
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Throw [[Lightning Ball]] into the ground or a wall inside a camp. It stops there and burns everything.",
+      "s": [
+       "v-seven",
+       "files"
+      ]
+     },
+     {
+      "t": "Skip fights that are not next to an objective. Join when the team hits a Walker, the Urn, a Rift or the Midboss.",
+      "s": [
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Buy [[Healbane]] and [[Spirit Lifesteal]] here (86% and 83% buy them): you heal off every group you shock.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "When a lane is empty, shoot the Guardian or Walker with [[Power Surge]] on and your troopers in front.",
+      "s": [
+       "howto",
+       "mine"
+      ]
+     }
+    ],
+    "late": [
+     {
+      "t": "Now you fight. Stay behind your front line, turn on [[Power Surge]], shoot whoever is closest. The shocks do the rest.",
+      "s": [
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Buy [[Escalating Exposure]] first (94%, around minute 21). Every shock makes the next one hit harder, up to 12 stacks.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Buy [[Unstoppable]] (52%). Press it right before [[Storm Cloud]] so a stun cannot cancel the ultimate.",
+      "s": [
+       "stats",
+       "files",
+       "mine"
+      ]
+     },
+     {
+      "t": "Do not ult every fight. Save [[Storm Cloud]] for an objective fight or to finish a fight you are already winning.",
+      "s": [
+       "v-seven"
+      ]
+     }
+    ],
+    "objectives": [
+     {
+      "t": "[[Storm Cloud]] does 50% damage to objectives, so it is for clearing the defenders, not the building.",
+      "s": [
+       "wiki"
+      ]
+     },
+     {
+      "t": "Your gun with [[Power Surge]] is what kills Guardians and Walkers. Keep a trooper wave with you: a Guardian only takes damage while troopers or you are in its range.",
+      "s": [
+       "howto",
+       "mine"
+      ]
+     },
+     {
+      "t": "Midboss or Rift fight: wait above or beside the pit. When the enemy walks in, [[Static Charge]] one of them, then [[Storm Cloud]].",
+      "s": [
+       "mine",
+       "wiki"
+      ]
+     }
+    ],
+    "abilities": [
+     {
+      "name": "Lightning Ball",
+      "when": "Wave clear, camp clear, and to push enemies out from behind cover.",
+      "how": [
+       "It slows down while it is touching enemies, so aim it through the middle of a group.",
+       "Throw it into the floor or a wall to park it on a camp or a doorway.",
+       "The 1-point upgrade gives a second charge. Throw both on a big wave."
+      ],
+      "dont": "Do not throw it at one hero who is far away and moving. It is slow and they will sidestep it.",
+      "s": [
+       "files",
+       "wiki",
+       "v-seven"
+      ]
+     },
+     {
+      "name": "Static Charge",
+      "when": "On anyone who jumps on you, and on a target right before your ultimate.",
+      "how": [
+       "Range is 15 m. The stun comes 3.5 seconds after you cast, in a 5 m circle around the target.",
+       "It also stuns enemies standing next to the target, so pick the one in the middle.",
+       "With 2 points the circle grows by 7 m and can catch a whole team."
+      ],
+      "dont": "Do not expect it to save you right now. It is a delayed stun, so cast it early and keep moving.",
+      "s": [
+       "files",
+       "v-seven"
+      ]
+     },
+     {
+      "name": "Power Surge",
+      "when": "Every wave, every camp, every fight. This is the ability the build is made around.",
+      "how": [
+       "Lasts 10 seconds. Shocks jump to 4 enemies within 10 m of your target.",
+       "It triggers once per burst of your gun, so keep firing bursts at one target standing in a group.",
+       "At 5 points it lasts 10 seconds longer and lowers enemy Spirit Resist by 15%."
+      ],
+      "dont": "Do not press it with no enemies near your target. It only pays off when there is a group.",
+      "s": [
+       "files",
+       "wiki",
+       "v-seven"
+      ]
+     },
+     {
+      "name": "Storm Cloud",
+      "when": "Objective fights, a clumped enemy team, or to finish a fight.",
+      "how": [
+       "Enemies only take damage if they can see you. Cast it in the open, above the fight if you can.",
+       "Take the 1-point upgrade first: +55% Bullet Resist while you channel.",
+       "Press Fire once during the channel for a lightning strike that knocks enemies away. Aim it behind them to push them toward you."
+      ],
+      "dont": "Do not cast it while an enemy with a stun is alive and looking at you. A stun or the item Knockdown ends it.",
+      "s": [
+       "files",
+       "wiki",
+       "v-seven"
+      ]
+     }
+    ],
+    "combos": [
+     {
+      "name": "Wave or camp",
+      "seq": [
+       "Power Surge",
+       "Shoot",
+       "Lightning Ball"
+      ],
+      "t": "Surge on, shoot the middle target, park the ball on top of them.",
+      "s": [
+       "v-seven"
+      ]
+     },
+     {
+      "name": "The nuke",
+      "seq": [
+       "Static Charge",
+       "Unstoppable",
+       "Storm Cloud"
+      ],
+      "t": "Charge the enemy in the middle, pop Unstoppable, start the storm as the stun lands.",
+      "s": [
+       "mine",
+       "files"
+      ]
+     },
+     {
+      "name": "Someone jumps you",
+      "seq": [
+       "Static Charge",
+       "Power Surge",
+       "Shoot"
+      ],
+      "t": "Charge them, back up while shooting with Surge on, they get stunned at 3.5 seconds.",
+      "s": [
+       "v-seven",
+       "files"
+      ]
+     }
+    ],
+    "core": [
+     {
+      "item": "Monster Rounds",
+      "why": "Faster troopers and camps from minute 2. Turns into Cultist Sacrifice.",
+      "s": [
+       "stats",
+       "v-seven"
+      ]
+     },
+     {
+      "item": "Arcane Surge",
+      "why": "Dash-jump, then press Power Surge: it gets more Spirit Power and lasts longer.",
+      "s": [
+       "stats",
+       "files",
+       "v-seven"
+      ]
+     },
+     {
+      "item": "Cultist Sacrifice",
+      "why": "Eat a camp monster for 170% souls and a 160-second buff. The farming item.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Escalating Exposure",
+      "why": "94% buy it. Your shocks hit many times, so the stacks build fast.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Superior Duration",
+      "why": "Longer Power Surge, longer stun, longer Storm Cloud.",
+      "s": [
+       "stats",
+       "v-seven"
+      ]
+     },
+     {
+      "item": "Unstoppable",
+      "why": "Stun immunity for 5.5 seconds. Protects the ultimate.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Boundless Spirit",
+      "why": "Highest win rate of his common late items (57.5%).",
+      "s": [
+       "stats"
+      ]
+     }
+    ],
+    "order_note": "Power Surge first and upgraded early, one point in Static Charge and Lightning Ball, unlock Storm Cloud around minute 6, then finish Power Surge before the rest.",
+    "mistakes": [
+     {
+      "t": "Trading shots in lane. He has 730 health and 1 regen; just take the troopers.",
+      "s": [
+       "files",
+       "v-seven"
+      ]
+     },
+     {
+      "t": "Following the team around the map at minute 12 instead of farming. His whole plan is to be richer than everyone by minute 20.",
+      "s": [
+       "v-seven",
+       "stats"
+      ]
+     },
+     {
+      "t": "Ulting first in a fight. Wait until the enemy has used a stun, or pop Unstoppable.",
+      "s": [
+       "v-seven",
+       "mine"
+      ]
+     },
+     {
+      "t": "Standing alone far from a wall. He has no escape ability.",
+      "s": [
+       "files"
+      ]
+     }
+    ],
+    "counters": "Hardest enemies in the data: Baba (42.3% win rate against), Vindicta (45.6%), Lady Geist (46.3%). Against Vindicta stay under roofs; she shoots you out of Storm Cloud from far away."
+   },
+   {
+    "slug": "warden",
+    "rank": "Niche pick",
+    "job": "A tough gunner who walks at a tower with his wave and does not leave.",
+    "fit": [
+     {
+      "t": "Number 3 of 44 for objective damage per match (11,767). This is the tower-taker, the closest to Sion or Yorick.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Niche: in 17% of all-rank matches, 34th most picked of 44. He is almost always free.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Number 9 for souls per match (40,939). He farms well too.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Strong gun (7th best base damage per second) and 805 health. You mostly hold left click.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "The nuke: [[Last Stand]] damages everyone around you and heals you for it.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "Honest note: difficulty 2, and his win rate is average (51.1%). He wins by towers, not by fights.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     }
+    ],
+    "start": [
+     {
+      "t": "First point goes into [[Alchemical Flask]]. It has a 12 second cooldown: throw it at the trooper line and at the enemy hero every time.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "First buy: [[High-Velocity Rounds]] (95%, around minute 2). His bullets get faster and hit harder.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Take the 1-point Flask upgrade next: each hit removes 1 stamina bar from the enemy.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Losing to waves of troopers? Add [[Monster Rounds]]. Getting shot a lot? Add [[Extra Regen]].",
+      "s": [
+       "v-warden",
+       "stats"
+      ]
+     }
+    ],
+    "lane": [
+     {
+      "t": "Flask the enemy first, then shoot. For 7 seconds their gun does 30% less damage, so you win the trade.",
+      "s": [
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Unlock [[Willpower]], then [[Binding Word]]. Flask, then Binding Word: slowed and out of stamina, they cannot run 20 m in 2.8 seconds, so they get rooted.",
+      "s": [
+       "stats",
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Buy [[Opening Rounds]] around minute 5 (94%): +25% weapon damage against enemies above half health. Then [[Battle Vest]].",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Push the wave into their Guardian and shoot the Guardian while your troopers are next to it.",
+      "s": [
+       "howto"
+      ]
+     },
+     {
+      "t": "Unlock [[Last Stand]] around minute 6. In lane it is your answer when two enemies jump you.",
+      "s": [
+       "stats",
+       "v-warden"
+      ]
+     }
+    ],
+    "mid": [
+     {
+      "t": "By minute 10 you should own [[Swift Striker]] and [[Titanic Magazine]] (89% and 93%). Double the bullets, faster fire.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Buy [[Quicksilver Reload]] (97%) and put it on [[Alchemical Flask]]: every Flask throw refills your gun.",
+      "s": [
+       "stats",
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Your loop: go to a side lane, push the wave, shoot the Walker with troopers in front, farm the camps next to it while the next wave walks up.",
+      "s": [
+       "v-warden",
+       "howto",
+       "mine"
+      ]
+     },
+     {
+      "t": "Stay out of the Walker's small inner circle: its stomp stuns you for 2 seconds.",
+      "s": [
+       "howto"
+      ]
+     },
+     {
+      "t": "Be at every big event your team starts (Walker push, Rift, Midboss) and arrive with [[Last Stand]] ready.",
+      "s": [
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Finish [[Mercurial Magnum]] around minute 19 (94%). It is your biggest power jump.",
+      "s": [
+       "stats"
+      ]
+     }
+    ],
+    "late": [
+     {
+      "t": "You are the front line. Walk in with [[Willpower]] on, Flask the group, root one enemy, hold fire on them.",
+      "s": [
+       "wiki",
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Buy [[Spiritual Overflow]] (71%, 56.3% win rate). Shooting heroes charges up fire rate and lifesteal.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "If their damage is mostly abilities, buy [[Spirit Resilience]] (50% buy it).",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Strong extra: [[Diviner's Kevlar]]. Only 15% buy it but they win 60.2%. Casting Last Stand gives a 1,000 barrier.",
+      "s": [
+       "stats",
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "t": "When the enemy team is dead or busy, do not chase. Go hit the next building.",
+      "s": [
+       "mine",
+       "stats"
+      ]
+     }
+    ],
+    "objectives": [
+     {
+      "t": "His gun is the tower tool: big magazine ([[Titanic Magazine]]), Flask reload ([[Quicksilver Reload]]), fast fire ([[Swift Striker]]).",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "[[Last Stand]] does only 50% damage to objectives. Save it for the enemy who comes to stop you.",
+      "s": [
+       "wiki"
+      ]
+     },
+     {
+      "t": "If one enemy comes to defend: Flask, Binding Word, shoot. If three come: Willpower and leave. The Walker will still be there.",
+      "s": [
+       "mine",
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Each Walker your team kills gives every teammate an extra item slot. That is why this job wins games.",
+      "s": [
+       "howto"
+      ]
+     }
+    ],
+    "abilities": [
+     {
+      "name": "Alchemical Flask",
+      "when": "On cooldown, all game. Before every trade and before every Binding Word.",
+      "how": [
+       "Hit enemies do 30% less weapon damage for 7 seconds and are slowed for 3 seconds.",
+       "With 1 point it also removes 1 stamina, which is what makes the root land.",
+       "At 5 points the cooldown drops by 7 seconds and it cuts their fire rate by 30%."
+      ],
+      "dont": "Do not save it. A Flask sitting ready is wasted damage and a wasted reload.",
+      "s": [
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "name": "Willpower",
+      "when": "To walk into a fight, to chase, or to run away.",
+      "how": [
+       "Gives a barrier and +20% move speed for 5 seconds.",
+       "With 2 points the cooldown drops by 24 seconds, so you have it for almost every fight.",
+       "Press it before you take damage, not after: a barrier does nothing once the health is gone."
+      ],
+      "dont": "Do not burn it just to move across the map before a fight.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "name": "Binding Word",
+      "when": "Right after a Flask hits, on an enemy who has already used their dash.",
+      "how": [
+       "Range is 15 m. They must get 20 m from where they stood within 2.8 seconds or they are rooted for 1.75 seconds.",
+       "With 1 point you deal +20% bullet damage to a trapped hero for 5 seconds. Shoot the head.",
+       "Use it on an enemy trying to run from your Walker push, or on one diving your teammate."
+      ],
+      "dont": "Do not cast it alone on a full-stamina enemy. They just dash out.",
+      "s": [
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "name": "Last Stand",
+      "when": "When 2 or more enemies are close, or when you are at half health in a fight.",
+      "how": [
+       "It charges for 2 seconds first. Start it behind a corner, then step into them.",
+       "It heals you for 75% of the damage it deals to heroes, so more enemies near you means more healing.",
+       "The 2-point upgrade adds 50 damage per second and takes 40 seconds off the cooldown."
+      ],
+      "dont": "Do not start the 2-second charge in the open with stuns pointed at you. Charge first, then show yourself.",
+      "s": [
+       "files",
+       "wiki",
+       "v-warden"
+      ]
+     }
+    ],
+    "combos": [
+     {
+      "name": "Bread and butter",
+      "seq": [
+       "Alchemical Flask",
+       "Binding Word",
+       "Shoot"
+      ],
+      "t": "Flask takes their stamina and speed, the root lands, you shoot a standing target with +20% damage.",
+      "s": [
+       "v-warden",
+       "files"
+      ]
+     },
+     {
+      "name": "The nuke",
+      "seq": [
+       "Willpower",
+       "Last Stand",
+       "Alchemical Flask"
+      ],
+      "t": "Barrier on, start charging behind cover, walk in, Flask them so their guns hit softer while you drain them.",
+      "s": [
+       "v-warden",
+       "mine"
+      ]
+     },
+     {
+      "name": "Tower push",
+      "seq": [
+       "Alchemical Flask",
+       "Shoot",
+       "Alchemical Flask"
+      ],
+      "t": "Flask the wave, empty the magazine into the building, Flask again to reload (needs Quicksilver Reload).",
+      "s": [
+       "files",
+       "mine"
+      ]
+     }
+    ],
+    "core": [
+     {
+      "item": "High-Velocity Rounds",
+      "why": "First buy for 95% of Wardens. Builds into Opening Rounds.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "item": "Opening Rounds",
+      "why": "+25% weapon damage to enemies above half health. Wins lane trades.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Titanic Magazine",
+      "why": "Double ammo. More time shooting the tower, less time reloading.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Quicksilver Reload",
+      "why": "Put it on Flask. Each throw reloads the gun and adds fire rate.",
+      "s": [
+       "stats",
+       "files",
+       "v-warden"
+      ]
+     },
+     {
+      "item": "Fleetfoot",
+      "why": "90% buy it. No slow-down while shooting; he is slow without it.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Mercurial Magnum",
+      "why": "The big one, around minute 19. Flask reloads and adds spirit damage to every bullet.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Spiritual Overflow",
+      "why": "Best win rate of his common late items (56.3%).",
+      "s": [
+       "stats"
+      ]
+     }
+    ],
+    "order_note": "Flask first and maxed by about minute 9, one point each in Willpower and Binding Word, unlock Last Stand around minute 6, then max Willpower, then Last Stand, Binding Word last. (An older video guide maxes Binding Word instead; the current stats favor this order.)",
+    "mistakes": [
+     {
+      "t": "Chasing kills across the map. His numbers are objective damage, not hero damage (19th of 44).",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Casting Binding Word with no Flask first.",
+      "s": [
+       "v-warden"
+      ]
+     },
+     {
+      "t": "Pushing a Walker with no trooper wave. Wait for the wave.",
+      "s": [
+       "howto"
+      ]
+     },
+     {
+      "t": "Holding Last Stand until you are almost dead. It needs 2 seconds to start.",
+      "s": [
+       "files"
+      ]
+     }
+    ],
+    "counters": "Hardest enemies in the data: Lash (44.1% win rate against), Dynamo (44.5%), Lady Geist (46.3%). Lash and Dynamo both pull or stun you out of a push, so hold Willpower for them."
+   },
+   {
+    "slug": "mcginnis",
+    "rank": "Niche pick",
+    "job": "Build a nest of turrets, shove the wave, and rain rockets on whoever comes.",
+    "fit": [
+     {
+      "t": "Niche: in 15% of all-rank matches, 38th most picked of 44. Nobody takes her.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Difficulty 1. Turrets aim for you.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "The nuke: [[Heavy Barrage]] drops 6 rockets a second on an area for 8 seconds, from 36 m away.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "Number 8 of 44 for damage to heroes, with the 2nd weakest gun. The turrets and rockets do the work.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Honest note: she is the weakest fit of the three for farming and towers. She is 15th for objective damage (7,299) and 20th for souls. Turrets deal only 30% damage to objectives. Pick her for wave pushing and holding ground, not for solo tower kills.",
+      "s": [
+       "stats",
+       "wiki"
+      ]
+     }
+    ],
+    "start": [
+     {
+      "t": "Most McGinnis players unlock [[Spectral Wall]] first, then [[Medicinal Specter]] and its 1-point upgrade, then [[Mini Turret]].",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "First buy: [[Monster Rounds]] (52%), then [[Intensifying Magazine]] (54%). Her gun is weak but has 66 bullets: hold fire on the wave.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Your only job for the first 3 waves: kill each trooper wave as fast as you can without losing health.",
+      "s": [
+       "v-mcg1"
+      ]
+     },
+     {
+      "t": "Do not try to out-shoot the enemy hero. A full magazine will not kill them.",
+      "s": [
+       "v-mcg1",
+       "files"
+      ]
+     }
+    ],
+    "lane": [
+     {
+      "t": "Put [[Mini Turret]] behind cover, to the side of the trooper line, not in the open. A turret has 100 health and takes full gun damage at any range.",
+      "s": [
+       "files",
+       "wiki"
+      ]
+     },
+     {
+      "t": "Turrets pick the nearest hero they can see. Shoot the hero you want dead and every turret switches to that hero.",
+      "s": [
+       "wiki"
+      ]
+     },
+     {
+      "t": "Drop [[Medicinal Specter]] where you are standing and stay inside it: 25 health per second for 6.5 seconds.",
+      "s": [
+       "files"
+      ]
+     },
+     {
+      "t": "Buy [[Extra Charge]] around minute 6 (75%): one more turret stored.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "At 2:00, right after the wave dies, either shoot their Guardian or run the crates and the small camp next to your lane. Be back before the next wave.",
+      "s": [
+       "v-mcg1",
+       "howto"
+      ]
+     },
+     {
+      "t": "When the enemy leaves your lane to help elsewhere, shove the wave and hit their Guardian. You will take it in pieces, not in one go.",
+      "s": [
+       "v-mcg1"
+      ]
+     }
+    ],
+    "mid": [
+     {
+      "t": "Unlock [[Heavy Barrage]] around minute 6 and put the next points into it. Most players max it before anything else.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "t": "Rule: push 2 waves in your lane before you walk to any fight. The enemy then loses troopers and tower health while they fight.",
+      "s": [
+       "v-mcg2"
+      ]
+     },
+     {
+      "t": "Be at every Soul Urn drop-off, Rift and Midboss fight. Stand on high ground beside it, never down in the pit.",
+      "s": [
+       "v-mcg1"
+      ]
+     },
+     {
+      "t": "Walker push with a teammate: wall off the defender, drop the Specter, press [[Heroic Aura]], and aim [[Heavy Barrage]] at the troopers and anyone under the Walker.",
+      "s": [
+       "v-mcg1",
+       "files"
+      ]
+     },
+     {
+      "t": "Buy [[Mystic Expansion]] (66%) and put it on [[Mini Turret]] for longer reach.",
+      "s": [
+       "stats",
+       "v-mcg2",
+       "mine"
+      ]
+     },
+     {
+      "t": "A top McGinnis main says: leave the big jungle camps for your carry. Farm waves, crates and the camps beside your lane. This is the part that does not match a farming playstyle.",
+      "s": [
+       "v-mcg1"
+      ]
+     }
+    ],
+    "late": [
+     {
+      "t": "You are the anchor. Stay in the back, never chase. Place turrets where the enemy will walk, then let them come.",
+      "s": [
+       "v-mcg2"
+      ]
+     },
+     {
+      "t": "Buy [[Rapid Recharge]] around minute 20 (59%): 2 more turret charges that come back faster.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Buy [[Escalating Exposure]] (69%, 56.0% win rate). Turrets shoot non-stop, so the stacks build quickly.",
+      "s": [
+       "stats",
+       "v-mcg2"
+      ]
+     },
+     {
+      "t": "Defending your base: turrets behind your Guardians and Shrines, wall the entrance, Barrage the choke. She can hold against a richer team this way.",
+      "s": [
+       "v-mcg2"
+      ]
+     },
+     {
+      "t": "Strong extra: [[Spirit Burn]]. 21% buy it and they win 60.2%.",
+      "s": [
+       "stats"
+      ]
+     }
+    ],
+    "objectives": [
+     {
+      "t": "Turrets deal 65% damage to troopers and 30% to objectives. Use them to kill the wave and guard you, not to kill the tower.",
+      "s": [
+       "wiki"
+      ]
+     },
+     {
+      "t": "[[Heavy Barrage]] deals 50% damage to objectives. It is still her best tower damage: aim it at the Walker when no enemy hero is near.",
+      "s": [
+       "wiki",
+       "v-mcg1"
+      ]
+     },
+     {
+      "t": "[[Heroic Aura]] (50% buy it) gives nearby troopers double the fire rate bonus. Press it when the wave reaches the building.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "t": "Midboss: 1 or 2 turrets and the Specter in the pit for your team, [[Heroic Aura]] on, then wall the side the enemy is coming from and Barrage the pit if they jump in.",
+      "s": [
+       "v-mcg1"
+      ]
+     }
+    ],
+    "abilities": [
+     {
+      "name": "Mini Turret",
+      "when": "Always. Keep your charges spent before a fight starts, not during it.",
+      "how": [
+       "Lasts 35 seconds, reaches 30 m. Cast range is 20 m, so you can place it from safety.",
+       "Place them spread out and behind corners so one enemy ability cannot clear them all.",
+       "With 2 points you hold 3 charges. Lay all three, then start shooting to point them at one hero."
+      ],
+      "dont": "Do not place turrets in the open in front of enemy guns. They die in a second and pay the enemy souls.",
+      "s": [
+       "files",
+       "wiki",
+       "v-mcg2"
+      ]
+     },
+     {
+      "name": "Medicinal Specter",
+      "when": "During a push or a fight, on the spot where your team is standing.",
+      "how": [
+       "Heals allies in a 6 m circle. Two Specters on one spot do not stack.",
+       "With 2 points it comes back 20 seconds sooner and doubles stamina recovery inside it.",
+       "Drop it under the Midboss or Walker fight so the whole team stands in it."
+      ],
+      "dont": "Do not use it after the fight to top up. Use it while damage is coming in.",
+      "s": [
+       "files",
+       "wiki",
+       "v-mcg1"
+      ]
+     },
+     {
+      "name": "Spectral Wall",
+      "when": "To cut one enemy off from their team, block a door, or stop a chase.",
+      "how": [
+       "Range is 50 m and it lasts 6 seconds. Press the ability again to erupt it early for damage.",
+       "With 1 point, enemies it hits take +20% damage from you for 7 seconds. Wall, then Barrage.",
+       "Anyone can break a piece with melee hits, so do not count on it holding for the full time."
+      ],
+      "dont": "Do not wall between your own teammates and the enemy they are killing. Look at where your team is first.",
+      "s": [
+       "files",
+       "wiki",
+       "v-mcg1"
+      ]
+     },
+     {
+      "name": "Heavy Barrage",
+      "when": "Objective fights, a group stuck in a pit or doorway, troopers on a Walker.",
+      "how": [
+       "Range is 36 m but it cannot hit closer than 8.5 m. Stand far back and high up.",
+       "You are slowed while firing. Keep stamina for a dash if someone reaches you.",
+       "With 2 points it lasts 6 seconds longer and comes back 45 seconds sooner."
+      ],
+      "dont": "Do not fire it from inside the fight. You are slow and an easy target; fire it from the ledge above.",
+      "s": [
+       "files",
+       "wiki",
+       "v-mcg1"
+      ]
+     }
+    ],
+    "combos": [
+     {
+      "name": "Wave shove",
+      "seq": [
+       "Mini Turret",
+       "Shoot",
+       "Mini Turret"
+      ],
+      "t": "Turret beside the lane, hold fire on the troopers, second turret when the next wave shows.",
+      "s": [
+       "v-mcg1",
+       "mine"
+      ]
+     },
+     {
+      "name": "The nuke",
+      "seq": [
+       "Mini Turret",
+       "Spectral Wall",
+       "Heavy Barrage"
+      ],
+      "t": "Turrets down first, wall the exit, rockets on the trapped group (they take +20% after the wall hits).",
+      "s": [
+       "files",
+       "v-mcg1"
+      ]
+     },
+     {
+      "name": "Siege",
+      "seq": [
+       "Spectral Wall",
+       "Medicinal Specter",
+       "Heroic Aura",
+       "Heavy Barrage"
+      ],
+      "t": "Wall off the defender, heal the team, speed up the troopers, rockets on the Walker.",
+      "s": [
+       "v-mcg1"
+      ]
+     }
+    ],
+    "core": [
+     {
+      "item": "Monster Rounds",
+      "why": "Faster trooper waves in the first minutes.",
+      "s": [
+       "stats"
+      ]
+     },
+     {
+      "item": "Extra Charge",
+      "why": "75% buy it. One more turret, and each turret hits harder.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Mystic Expansion",
+      "why": "Put it on Mini Turret: more range, so turrets can sit further back.",
+      "s": [
+       "stats",
+       "v-mcg2"
+      ]
+     },
+     {
+      "item": "Heroic Aura",
+      "why": "The push button: troopers and teammates near you shoot faster.",
+      "s": [
+       "stats",
+       "files",
+       "v-mcg1"
+      ]
+     },
+     {
+      "item": "Rapid Recharge",
+      "why": "2 more turret charges and faster recharge. Bought around minute 20.",
+      "s": [
+       "stats",
+       "files"
+      ]
+     },
+     {
+      "item": "Escalating Exposure",
+      "why": "Turrets stack it quickly; everything of yours then hits harder.",
+      "s": [
+       "stats",
+       "v-mcg2"
+      ]
+     },
+     {
+      "item": "Superior Cooldown",
+      "why": "57.1% win rate. More walls, heals and rockets per fight.",
+      "s": [
+       "stats"
+      ]
+     }
+    ],
+    "order_note": "Wall, then Specter (plus 1 point), then Turret to 3 charges by about minute 5. Unlock Heavy Barrage around minute 6 and max it before anything else. Finish Turret and Wall after.",
+    "mistakes": [
+     {
+      "t": "Fighting in the pit or on the front line. She has 2 stamina bars and no escape.",
+      "s": [
+       "v-mcg1",
+       "files"
+      ]
+     },
+     {
+      "t": "Chasing. If they run, let them run and put turrets where they will come back.",
+      "s": [
+       "v-mcg2"
+      ]
+     },
+     {
+      "t": "Leaving your lane un-pushed to join a fight.",
+      "s": [
+       "v-mcg2"
+      ]
+     },
+     {
+      "t": "Relying on the gun. It is the 2nd weakest in the game.",
+      "s": [
+       "files"
+      ]
+     }
+    ],
+    "counters": "Hardest enemies in the data: Paige (45.5% win rate against), Kelvin (45.6%), Seven (46.6%). Seven's shocks jump between your turrets, so spread them wide against him."
+   }
+  ]
+ },
  "cmax": 4,
  "tiers": {
   "S": ">= 53%",

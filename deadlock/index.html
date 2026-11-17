@@ -258,7 +258,7 @@ th{font-family:var(--body);text-transform:uppercase;letter-spacing:.08em;font-si
 </div>
 <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="box"><button class="x" aria-label="Close">×</button><div id="mbody"></div></div></div>
 <noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
-<script src="data/deadlock.js?v=2026-11-15-653407"></script>
+<script src="data/deadlock.js?v=2026-11-15-680329"></script>
 <script>
 (function(){
 'use strict';
@@ -289,7 +289,7 @@ $('#checked').innerHTML=`Last checked against <a href="https://api.deadlock-api.
 
 // ---------- navigation
 const NAV=[
- ['Start',[['home','Home'],['learn','Heroes to learn first']]],
+ ['Start',[['home','Home'],['picks','3-hero playbook'],['learn','Heroes to learn first']]],
  ['How to play',howtos.map(s=>{let t=s.title.replace(/^How to /,'').replace(/^About a Deadlock match$/,'About a match');return [s.id,t[0].toUpperCase()+t.slice(1)];}).concat([['ref','Numbers & tables']])],
  ['Heroes',[['tiers','Tier list'],['heroes','All heroes',D.heroes.length]]],
  ['Shop',[['items','All items',D.items.length]]],
@@ -305,7 +305,7 @@ R.home=()=>{const strip=D.heroes.slice().sort((a,b)=>(b.stats?b.stats.pr:0)-(a.s
  <span class="k">Valve's 6v6 hero shooter · Field Guide</span><h1>Deadlock</h1>
  <p>Every hero with a build taken from ${esc(M.bracket)} matches, a tier list from current win rates, all ${D.items.length} shop items, how to play, and video guides.</p></section>
  <div class="grid">
-  ${[['learn','New here?','The easiest heroes that also win the most at all ranks.'],['howto-win','How to win a match','Guardian, Walker, Base Guardians, Shrines, Patron.'],['tiers','Tier list',`${D.heroes.length} heroes ranked by ${esc(M.bracket)} win rate.`],['heroes','Hero builds','Early, mid and late items plus ability order for every hero.'],['items','Every item',`${D.items.filter(i=>!i.legendary).length} shop items + ${D.items.filter(i=>i.legendary).length} Street Brawl legendaries.`],['videos','Videos','Recent YouTube guides for each hero.']].map(([r,t,s])=>`<a class="card tilt" href="#${r}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="muted small">${s}</p><span class="lk small">Open →</span></a>`).join('')}
+  ${[['picks','3-hero playbook','Seven, Warden and McGinnis: how to start, lane, mid game, late game and every ability.'],['learn','New here?','The easiest heroes that also win the most at all ranks.'],['howto-win','How to win a match','Guardian, Walker, Base Guardians, Shrines, Patron.'],['tiers','Tier list',`${D.heroes.length} heroes ranked by ${esc(M.bracket)} win rate.`],['heroes','Hero builds','Early, mid and late items plus ability order for every hero.'],['items','Every item',`${D.items.filter(i=>!i.legendary).length} shop items + ${D.items.filter(i=>i.legendary).length} Street Brawl legendaries.`],['videos','Videos','Recent YouTube guides for each hero.']].map(([r,t,s])=>`<a class="card tilt" href="#${r}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="muted small">${s}</p><span class="lk small">Open →</span></a>`).join('')}
  </div>
  ${top.length?`<div class="sec"><h2>Strongest right now</h2><p>S tier: win rate of 53% or more in ${esc(M.bracket)} games since ${esc(P.title||'the patch')}.</p></div><div class="hgrid">${top.map(heroCard).join('')}</div>`:''}`;};
 
@@ -318,6 +318,67 @@ R.learn=()=>{const L=(D.learn||[]).map(s=>HB[s]).filter(Boolean);
   <p class="small">All ranks: <b>${pct(h.stats_all.wr)}</b> win rate, in ${pct(h.stats_all.pr,0)} of matches. ${esc(M.bracket)}: ${pct(h.stats&&h.stats.wr)}.</p></div></a>`).join('')}</div>
  <p class="note small">Start with the first one, play it until you know its 4 abilities, then use its <b>Build</b> section for what to buy. Difficulty comes from the game files' <code>complexity</code> value.</p>
  <style>.card img{width:64px;height:64px;border-radius:14px;flex:none}</style>`;};
+
+// ---------- 3-hero playbook (data/raw/playbooks.json)
+const PB=D.playbooks||{heroes:[],sources:{}};
+const ABN=dict(D.heroes.flatMap(h=>h.abilities.map(a=>[a.name,a])));
+const INAME=dict(D.items.map(i=>[i.name,i]));
+function pbt(t){return esc(t).replace(/\[\[([^\]]+)\]\]/g,(m,n)=>{const it=INAME[n.replace(/&#39;/g,"'")];if(it)return itemLink(it.id);return `<b class="ab">${n}</b>`;});}
+function stag(keys){return (keys||[]).map(k=>{const s=PB.sources[k];if(!s)return '';return s.url&&s.url[0]!=='#'?`<a class="stag" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.full)}">${esc(s.label)}</a>`:`<span class="stag" title="${esc(s.full)}">${esc(s.label)}</span>`;}).join('');}
+function pbList(L,ord){const tg=ord?'ol':'ul';return `<${tg} class="pb">${(L||[]).map(x=>`<li>${pbt(x.t)} ${stag(x.s)}</li>`).join('')}</${tg}>`;}
+function comboStep(n){const a=ABN[n],i=INAME[n];if(a)return `<span class="st"><img src="${esc(a.img)}" alt="" onerror="${ICON_ERR}">${esc(n)}</span>`;if(i)return `<span class="st" data-item="${i.id}" style="cursor:pointer"><img src="${esc(i.img)}" alt="" onerror="${ICON_ERR}">${esc(n)}</span>`;return `<span class="st plain">${esc(n)}</span>`;}
+R.picks=(arg)=>{if(!PB.heroes.length)return '<p>No playbook data.</p>';
+ const p=PB.heroes.find(x=>x.slug===arg)||PB.heroes[0];const h=HB[p.slug];const s=h.stats||{},a=h.stats_all||{},B=h.build,o=(h.orders||[])[0];
+ const pa=dict(p.abilities.map(x=>[x.name,x]));
+ const phase=(k,title,when)=>`<div class="card phase"><h3>${title} <span class="tiny muted">${when}</span></h3>${pbList(p[k],true)}</div>`;
+ return `<div class="sec"><span class="pill gold">Playbook</span><h2 style="margin-top:8px">${esc(PB.title)}</h2><p>${esc(PB.intro)}</p></div>
+ <div class="ptabs">${PB.heroes.map(x=>{const hh=HB[x.slug];return `<a class="ptab ${x.slug===p.slug?'on':''}" href="#picks/${x.slug}">${himg({img:hh.img})}<span><b>${esc(hh.name)}</b><small>${esc(x.rank)}</small></span></a>`;}).join('')}</div>
+
+ <div class="hhead"><img class="card-img tilt" src="${esc(h.card)}" alt="${esc(h.name)}" onerror="${ICON_ERR}">
+ <div><div class="pills"><span class="pill gold">${esc(p.rank)}</span><span class="pill">${esc(TYPE[h.type]||h.type)}</span><span class="pill">Difficulty ${stars(h.complexity)}</span></div>
+ <h2 style="font-size:2.4rem;margin:.15em 0">${esc(h.name)} ${tierB(s.tier)}</h2>
+ <p style="font-size:1.1rem"><b>Your job:</b> ${esc(p.job)}</p>
+ <div class="statrow"><div class="stat glass"><b>${n0(s.obj)}</b><span>objective damage per match</span></div><div class="stat glass"><b>${n0(s.nw)}</b><span>souls per match</span></div><div class="stat glass"><b>${pct(s.wr)}</b><span>win rate, ${esc(M.bracket)}</span></div><div class="stat glass"><b>${pct(a.pr,0)}</b><span>of all-rank matches</span></div></div>
+ <div class="card"><h3>Why this hero</h3>${pbList(p.fit)}</div></div></div>
+
+ <div class="sec"><h2>Game plan</h2><p>Four stages, in order. Each line ends with where it comes from; hover or tap a tag.</p></div>
+ <div class="grid two">${phase('start','1. First two minutes','0:00–2:00')}${phase('lane','2. Lane','2–10 min')}${phase('mid','3. Mid game','10–20 min')}${phase('late','4. Late game','20+ min')}</div>
+ <div class="card" style="margin-top:12px"><h3>Taking objectives</h3>${pbList(p.objectives)}<p class="small muted" style="margin-top:8px">Rules for each objective: <a href="#howto-win">Guardians, Walkers, Patron</a> · <a href="#howto-urn">Soul Urn</a> · <a href="#howto-midboss">Midboss</a> · <a href="#howto-rift">Rift</a> · <a href="#howto-farm">farming souls</a></p></div>
+
+ <div class="sec"><h2>How to use each ability</h2><p>Numbers are base values from the game files (build ${esc(M.client_version)}).</p></div>
+ <div class="grid two">${h.abilities.map((ab,i)=>{const x=pa[ab.name]||{how:[]};return `<div class="card abil"><img class="ai" src="${esc(ab.img)}" alt="" onerror="${ICON_ERR}"><div><h3>${i+1}. ${esc(ab.name)}${i===3?' <span class="pill">Ultimate</span>':''} <span class="tiny muted">${esc((ab.head.find(r=>r.k==='Cooldown')||{}).v||'')} cooldown</span></h3>
+  <p class="small"><b class="okc">Use it:</b> ${esc(x.when)}</p><ul class="pb small">${x.how.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+  <p class="small" style="margin-top:8px"><b class="noc">Do not</b> ${esc((x.dont||'').replace(/^Do not /,''))}</p><p style="margin:6px 0 0">${stag(x.s)}</p></div></div>`;}).join('')}</div>
+
+ <div class="sec"><h2>Combos</h2><p>Press them in this order.</p></div>
+ <div class="grid three">${p.combos.map(c=>`<div class="card"><h3>${esc(c.name)}</h3><div class="combo">${c.seq.map(comboStep).join('<span class="ar">→</span>')}</div><p class="small">${pbt(c.t)} ${stag(c.s)}</p></div>`).join('')}</div>
+
+ <div class="sec"><h2>What to buy</h2><p>The items that matter most, in buy order, then the full list from ${n0(B&&B.n)} ${esc(M.bracket)} ${esc(h.name)} games. Tap an item for its card.</p></div>
+ <div class="card"><h3>Core items and why</h3><div class="grid wide">${p.core.map(c=>{const i=INAME[c.item];return `<div class="bitem ${SLOT[i.slot]}" data-item="${i.id}" style="grid-template-columns:40px 1fr">${iimg(i)}<div><b>${esc(i.name)}</b> <span class="tiny muted">${n0(i.cost)}</span><div class="small muted">${esc(c.why)}</div></div></div>`;}).join('')}</div></div>
+ ${B?`<div class="grid three" style="margin-top:12px">${['early','mid','late'].map(k=>`<div class="card phase"><h3>${k[0].toUpperCase()+k.slice(1)} game <span class="tiny muted">${k==='early'?'0–10 min':k==='mid'?'10–20 min':'20+ min'}</span></h3>${B.phases[k].map(e=>buildItem(e)).join('')}</div>`).join('')}</div><p class="tiny muted">"buy" = share of players who bought it; "WR" = win rate of games with it; minute = average buy time. "Sold later" items are cheap early buys that get replaced.</p>`:''}
+
+ <div class="sec"><h2>Ability points</h2><p>${esc(p.order_note)}</p></div>
+ ${o?`<div class="card"><h3>${esc(o.label)} order <span class="tiny muted">${n0(o.n)} games · ${pct(o.share,0)} of players</span></h3>${aoGrid(h,o)}<p class="tiny muted">U = unlock; 1, 2, 5 = the upgrade bought with that many ability points. Hover a cell for the minute.</p></div>`:''}
+
+ <div class="grid two" style="margin-top:14px"><div class="card"><h3 style="color:var(--beni)">Mistakes to avoid</h3>${pbList(p.mistakes)}</div>
+ <div class="card"><h3 style="color:var(--beni)">Hard enemies</h3><p class="small">${esc(p.counters)}</p>${muList(h.matchups.worst)}<h3 style="color:var(--matcha);margin-top:12px">Easy enemies</h3>${muList(h.matchups.best)}</div></div>
+
+ ${(h.videos||[]).length?`<div class="sec"><h2>Watch it played</h2></div><div class="grid wide">${h.videos.map(vidCard).join('')}</div>`:''}
+ <p style="margin-top:16px"><a class="lk" href="#hero/${h.slug}">Full ${esc(h.name)} page: every number, upgrade and matchup →</a></p>
+ <details class="card" style="margin-top:14px"><summary style="cursor:pointer"><b>Where this comes from</b> <span class="muted small">(written ${esc(PB.written)})</span></summary><ul class="pb small">${Object.values(PB.sources).map(x=>`<li><b>${esc(x.label)}:</b> ${x.url&&x.url[0]!=='#'?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.full)}</a>`:esc(x.full)}</li>`).join('')}</ul></details>
+ <style>.ptabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 20px}
+ .ptab{display:flex;gap:10px;align-items:center;padding:8px 12px;border-radius:14px;border:1px solid var(--line2);background:rgba(6,9,8,.45);text-decoration:none;color:var(--paper);min-width:0}
+ .ptab img{width:46px;height:46px;border-radius:12px;object-fit:cover;object-position:top;flex:none}
+ .ptab small{display:block;color:var(--muted);font-size:.72rem}
+ .ptab.on{border-color:var(--gold);background:linear-gradient(90deg,rgba(237,163,59,.22),rgba(237,163,59,.05));box-shadow:0 0 22px rgba(237,163,59,.18)}
+ .pb{margin:8px 0 0;padding-left:1.3em;display:flex;flex-direction:column;gap:7px}.pb li{line-height:1.45}
+ .stag{display:inline-block;font-size:.64rem;color:var(--muted);border:1px solid var(--line2);border-radius:6px;padding:0 5px;margin:0 2px 0 0;white-space:nowrap;text-decoration:none;vertical-align:middle}
+ a.stag:hover{color:var(--gold);border-color:var(--gold)}
+ .ab{color:var(--ai);font-weight:600}.okc{color:var(--matcha)}.noc{color:var(--beni)}
+ .combo{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0}
+ .combo .st{display:inline-flex;align-items:center;gap:6px;padding:4px 10px 4px 4px;border-radius:10px;border:1px solid var(--line2);background:rgba(6,9,8,.45);font-size:.84rem}
+ .combo .st.plain{padding-left:10px}.combo .st img{width:28px;height:28px;border-radius:7px}.combo .ar{color:var(--gold)}
+ @media(max-width:640px){.ptab{flex-direction:column;text-align:center;padding:8px 4px;gap:4px}.ptab small{display:none}}</style>`;};
 
 function srcLine(src){return `<span class="src">Source: ${src.map(s=>`<a href="https://deadlock.wiki/${encodeURIComponent(s.title.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(', ')} (deadlock.wiki)</span>`;}
 function prose(t){return esc(t).replace(/\[\[([^\]]+)\]\]/g,(m,n)=>{const h=HN[n];if(h)return `<a class="lk" href="#hero/${h.slug}">${esc(n)}</a>`;const it=D.items.find(i=>i.name===n);return it?itemLink(it.id):esc(n);});}
@@ -449,6 +510,7 @@ const IDX=[];
 D.heroes.forEach(h=>{IDX.push({t:h.name,k:'Hero',go:'hero/'+h.slug,img:h.img,x:(h.tags||[]).join(' ')+' '+h.role});h.abilities.forEach(a=>IDX.push({t:a.name,k:'Ability · '+h.name,go:'hero/'+h.slug,img:a.img,x:''}));});
 D.items.forEach(i=>IDX.push({t:i.name,k:SLOTNAME[i.slot]+' item'+(i.legendary?' · Street Brawl':' · '+i.cost),item:i.id,img:i.img,x:''}));
 NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id,x:g})));
+PB.heroes.forEach(p=>{const h=HB[p.slug];if(h)IDX.push({t:h.name+' playbook',k:'How to play '+h.name,go:'picks/'+p.slug,img:h.img,x:p.job+' game plan lane mid late combos'});});
 howtos.forEach(s=>IDX.push({t:s.title,k:'How to play',go:s.id,x:(s.steps||s.paras||[]).map(p=>p.t).join(' ')}));
 (D.howto.tables||[]).forEach(t=>IDX.push({t:t.title,k:'Table',go:'ref',x:t.rows.map(r=>r.join(' ')).join(' ')}));
 const norm=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9 ]/g,'');
