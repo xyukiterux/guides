@@ -22191,10 +22191,11 @@
     ]
    },
    {
-    "text": "No LR Tactic Selection Chest, escolha Healing Prohibition. Escolha Fortify se você já tiver Healing Prohibition.",
-    "label": "Relato de jogador",
-    "source": "um jogador de um servidor mais antigo, TGBTC Discord #general, 15 de novembro de 2026",
+    "text": "Do LR Tactic Selection Chest, escolha Fortify (a \"escolha segura\" do Aslan); Potent Tactic é a segunda opção. Um jogador de um servidor mais antigo prefere Healing Prohibition, que o Aslan agora classifica como média ou lixo.",
+    "label": "Dica de criador",
+    "source": "Aslan, tier list de LR Tactics (16 de novembro de 2026); um jogador de um servidor mais antigo, TGBTC Discord #general, 15 de novembro de 2026",
     "evidence": [
+     "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 1:15 to 2:05, 7:55 to 8:59",
      "_discord/exports/2026-11-15/img/1571317175116111902_0_image.png",
      "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:14"
     ]
@@ -22526,6 +22527,14 @@
       ]
      },
      {
+      "text": "Em servidores antigos com LR cells o quadro muda. O Aslan disse em 3 de novembro de 2026 que \"no org is just so OP\", e a tier list dele de 15 de novembro tem personagens de topo em toda org: Yoshimura [Owl of Readiness] e Hinami [Halloween] em Anteiku, Noro, Naki e Yakumo [Natsu Matsuri] em Aogiri Tree, Sen com a LR cell dela em No Organization. A lista dele conta as LR cells. Então a ordem acima vale para servidores novos como o nosso, antes das LR cells. (dica de criador, nossa leitura)",
+      "source": "Aslan (3 e 15 de novembro de 2026); nomes dos personagens identificados por nós a partir dos apelidos dele",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/text/1cVy9B4p3cU.txt 8:45",
+       "rook ~/work/tgbtc_orgrank/text/VYa8-KTsv6k.txt 5:13 to 5:36, 9:39 to 10:04, 19:39 to 19:57, 20:53 to 21:00, 24:51 to 25:04, 26:04 to 26:21"
+      ]
+     },
+     {
       "text": "O poder não separa as orgs. Poder médio no nível máximo: No Organization 168.218, Aogiri Tree 167.975, Anteiku 167.490, CCG 166.366. Cinco melhores personagens, em média (4º trimestre de 2026): Aogiri Tree 180.721, CCG 180.467, Anteiku 180.026, No Organization 178.359. A diferença é de 1,1% a 1,3%.",
       "source": "nosso livro de dados, dados do jogo SEA 13368 (poder médio no nível máximo de todo SSR e UR; cinco melhores por org)",
       "evidence": [
@@ -22561,6 +22570,13 @@
       "evidence": [
        "rook ~/work/tgbtc_strat/yt/out/BUZ0XCbc-1w.json, GEz1ZuIJozI.json, m-crMl_XjXY.json",
        "data/research/creator_advice.md section 4"
+      ]
+     },
+     {
+      "text": "O passo a passo de criador mais completo: na sua org principal, o ramo do meio até Damage Reduction, depois o ramo de cima inteiro, depois termine Damage Reduction. Em seguida, os nós de personagem da sua equipe principal, mas só para personagens em SSS. Depois o ramo do meio de todas as outras orgs até ATK Boost IV. Uma unidade de outra org na sua equipe (Hideyoshi é No Organization) só recebe os talentos da própria org, então suba essa org em seguida. Depois os nós de Damage Dealt da sua org principal (antes de No Organization se o Hideyoshi não estiver na sua equipe principal). A segunda equipe fica por último. (dica de criador)",
+      "source": "Black_Assasine12, guia de Force Talents (1º de dezembro de 2025); a mesma ordem, resumida, de Shi (23 de março e 21 de maio de 2026), Aslan (25 de maio de 2026) e Zeketta",
+      "evidence": [
+       "rook ~/work/tgbtc_orgrank/text/-3VbWyiYE8s.txt 1:16 to 4:20 and 7:02 to 8:27"
       ]
      },
      {
@@ -22618,50 +22634,61 @@
     "id": "lr-tactics",
     "top": true,
     "title": "LR Tactics: quais pegar",
-    "intro": "Um personagem tem 3 espaços de Tactic: no nível 1, no nível 250 e no nível 265. A mesma Tactic só pode ser equipada uma vez por personagem.",
+    "intro": "Um personagem tem 3 espaços de Tactic: no nível 1, no nível 250 e no nível 265 (configuração do jogo TacticHeroWearMax). Isto segue a tier list de criador mais nova (16 de novembro de 2026); onde um vídeo mais antigo discorda, nós avisamos.",
     "lines": [
      {
-      "text": "Fortify em todo personagem que você coloca em campo. Três criadores dizem o mesmo. (dica de criador)",
-      "source": "Shi (28 de abril de 2026), Soul (19 de junho de 2026), Aslan (22 de julho de 2026)",
+      "text": "Do LR Tactic Selection Chest, pegue Fortify. O Aslan diz que é a escolha segura (\"you can't do anything wrong\"), o Shi a coloca no tier S, e três criadores põem Fortify em todo personagem. Segunda opção: Potent Tactic. (dica de criador)",
+      "source": "Aslan (16 de novembro de 2026), Shi (3 e 28 de abril de 2026), Soul (19 de junho de 2026), Aslan (22 de julho de 2026)",
       "evidence": [
-       "rook ~/work/tgbtc_strat/yt/out/pplY7lNlYgk.json, wDHs0qqQAJg.json, XBzIOd7Mm5g.json"
+       "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 1:15 to 2:05 and 20:34 to 21:10",
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json, pplY7lNlYgk.json, wDHs0qqQAJg.json, XBzIOd7Mm5g.json"
       ]
      },
      {
-      "text": "Assistance Tactic no seu back-up: o texto dela diz que também funciona no espaço de back-up, e um criador diz que é a única Tactic que funciona. Uma por equipe basta, diz o Aslan. (dica de criador)",
-      "source": "texto do jogo SkillDesc_Tactic017_zy6; ranking de Tactics do Shi (3 de abril de 2026); Aslan (15 de abril de 2026)",
+      "text": "Healing Prohibition Tactic caiu. O Aslan diz que antes a achava muito boa e agora a coloca como média ou lixo (\"not really needed anymore\"), porque muitos personagens já cortam cura. Um jogador de um servidor mais antigo ainda a pega primeiro, e o próprio Aslan a usava contra Aogiri Tree no começo de 2026. (dica de criador, relato de jogador)",
+      "source": "Aslan (16 de novembro de 2026; antes: 15 de fevereiro e 23 de março de 2026); um jogador de um servidor mais antigo, TGBTC Discord, 15 de novembro de 2026",
       "evidence": [
-       "data/raw/en.json tid#SkillDesc_Tactic017_zy6",
-       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json, ls2vFqppdJE.json"
+       "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 7:55 to 8:59",
+       "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:14"
       ]
      },
      {
-      "text": "Healing Prohibition Tactic no personagem que fica vivo por mais tempo, para ela ficar ativa o máximo possível. É especialmente útil contra Aogiri Tree. (dica de criador)",
-      "source": "Aslan (15 de fevereiro e 23 de março de 2026)",
+      "text": "Continuous ATK depende da sua equipe, e é só 20% de chance. Boa em No Organization (a Sen cura a equipe quando ativa; um espectador acrescentou Uta e Rize, e o Aslan concordou) e no Haise mais novo da CCG. Em Anteiku talvez só na Toka [School Festival Maid Costume]. Não vale a pena em Aogiri Tree agora. O Shi a colocou no tier S em abril. (dica de criador)",
+      "source": "Aslan (16 de novembro de 2026); Shi (3 de abril de 2026)",
       "evidence": [
-       "rook ~/work/tgbtc_strat/yt/out/a8jbTZsYp38.json, V1E2CIu0dLE.json"
-      ]
-     },
-     {
-      "text": "O tier S do Shi inclui Continuous ATK, Fortify, Assistance Tactic e Shield Tactic (forte contra Aogiri Tree). O Shi diz que Continuous ATK e Fortify são as duas mais quebradas, e coloca as Tactics do tipo Burst lá embaixo. (dica de criador)",
-      "source": "ranking de Tactics do Shi (3 de abril de 2026)",
-      "evidence": [
+       "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 3:22 to 6:16",
        "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json"
       ]
      },
      {
-      "text": "Weak Bonus-Attack é \"worthless\" contra a Hinami, diz o Shi: ela precisa de debuffs no alvo e a Hinami dá imunidade a debuffs. (dica de criador)",
-      "source": "ranking de Tactics do Shi (3 de abril de 2026)",
+      "text": "Boas para tirar de um LR Tactic Random Chest: Guaranteed CRIT (uma das Tactics mais bem avaliadas pelo Aslan, porque muitos personagens batem com ataques de follow-up), Shield Tactic, Fortified Armor Tactic, Power Strike Tactic, Roulette Tactic, Assistance Tactic e Priority Protection. Repeated Strike é boa em Anteiku, cujos personagens são na maioria do tipo Balance. (dica de criador)",
+      "source": "Aslan, tier list de LR Tactics (16 de novembro de 2026)",
       "evidence": [
-       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json",
-       "data/raw/en.json tid#SkillDesc_Tactic009_rd6"
+       "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 6:22 to 7:53, 11:06 to 13:45, 16:37 to 20:30"
       ]
      },
      {
-      "text": "Por org (resumido das configurações completas dos criadores). Anteiku: Fortify e Continuous ATK em toda unidade, Healing Prohibition na Toka que sobrevive, Assistance no back-up. Aogiri Tree: Fortify, mais pelo menos uma Provocation Counter em campo. CCG: leve Healing Prohibition contra Aogiri Tree. No Organization: uma Tactic LR de dano no causador de dano principal, Tactics UR nos suportes. (dica de criador)",
-      "source": "Aslan (15 de fevereiro, 23 de março, 19 de maio e 22 de julho de 2026), Shi (13 de fevereiro e 28 de abril de 2026; o Shi chama Continuous ATK de \"Retaliate\")",
+      "text": "Fracas na mesma lista: Killing Tactic, Chain Strikes, Momentum Strike e Provocation Counter. As Tactics do tipo Burst ficam para trás porque quase nenhum personagem Burst é usado. Group Upgrade pode funcionar em Aogiri Tree. Em fevereiro, o Shi ainda queria uma Provocation Counter em campo. (dica de criador)",
+      "source": "Aslan (16 de novembro de 2026); Shi (13 de fevereiro de 2026)",
       "evidence": [
-       "rook ~/work/tgbtc_strat/yt/out/a8jbTZsYp38.json, V1E2CIu0dLE.json, _-Rmzb4klVs.json, WC6hPxVpwBg.json, pplY7lNlYgk.json, XBzIOd7Mm5g.json, s7F5R79cNVA.json"
+       "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 2:10 to 3:20, 14:29 to 18:52",
+       "rook ~/work/tgbtc_strat/yt/out/WC6hPxVpwBg.json"
+      ]
+     },
+     {
+      "text": "Assistance Tactic vai no seu back-up: o texto dela diz que também funciona no espaço de back-up, e o Shi diz que é a única Tactic que funciona. (dica de criador)",
+      "source": "texto do jogo SkillDesc_Tactic017_zy6; Shi (3 de abril de 2026)",
+      "evidence": [
+       "data/raw/en.json tid#SkillDesc_Tactic017_zy6",
+       "rook ~/work/tgbtc_strat/yt/out/s7F5R79cNVA.json"
+      ]
+     },
+     {
+      "text": "Cada LR Tactic lida no vídeo também dá +4% em todos os stats e em Damage Reduction Rate além do efeito dela. Alguns efeitos LR mudaram depois dos nossos arquivos do jogo de 22 de setembro de 2026 (Potent Tactic e Redemption aparecem diferentes no vídeo de novembro), então confira o texto no jogo antes de escolher.",
+      "source": "texto das Tactics no jogo lido no vídeo do Aslan (16 de novembro de 2026); captura de tela no jogo de 14 de novembro de 2026",
+      "evidence": [
+       "rook ~/work/tgbtc_orgrank/text/0NaG6GBs8uQ.txt 1:32, 9:04 to 9:22, 10:30 to 10:46",
+       "_discord/exports/2026-11-15/img/1571317428862845088_0_image.png"
       ]
      },
      {
