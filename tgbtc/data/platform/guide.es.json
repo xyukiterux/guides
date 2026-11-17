@@ -21548,16 +21548,15 @@
   ],
   "good": [
    {
-    "name": "2nd Anniversary Value Group Buy",
-    "price": "Diamonds; precio aún desconocido",
-    "why": "Un jugador de otro servidor informa que incluye el LR Tactic Selection Chest (informe de jugador). Comprar pronto no cuesta nada extra: cuando compran más jugadores, el precio baja y el juego te devuelve la diferencia por correo.",
-    "math": "Texto de las reglas del juego: cada ronda vende packs de valor por Diamonds. Cuantos más jugadores compran un pack, más bajo es su precio. Si el precio baja después de que compres, la diferencia vuelve por correo cuando termina la ronda. Decisión nuestra: quien gasta compra el LR Tactic Selection Chest y elige Healing Prohibition, o Fortify si ya tiene Healing Prohibition. Los jugadores gratis compran solo con Diamonds que no hayan apartado para el próximo pity del Carnival; si no, lo saltan. Probablemente las tácticas solo se pueden usar desde el día 60 del servidor, más o menos (sin confirmar).",
-    "source": "texto del juego Anni2ndGroupBuy_RuleDesc_1_1_1 a 1_1_3 y MailDesc_Anni2ndGroupBuy (tablas del juego, copia del sitio de fans Broken Chains); contenido (un LR Tactic Selection Chest): un jugador de un servidor más antiguo, TGBTC Discord, 15 de noviembre de 2026 (informe de jugador); elección de táctica: el mismo jugador; comprar o saltar: decisión nuestra",
+    "name": "Value Group Buy del 2.º Aniversario",
+    "price": "Diamonds; de 1.800 a 10.500 por ronda que queda, al precio más bajo",
+    "why": "Compras obligatorias que quedan: el LR Tactic Random Chest (19 de noviembre, 10.500) y los cofres de Promotion Stone (21 de noviembre, 1.800). Todas las rondas con su precio están en la página Reglas del juego.",
+    "math": "Texto de las reglas del juego: cuantos más jugadores compran un paquete, más bajo es su precio, y si el precio baja después de tu compra, la diferencia vuelve por correo cuando termina la ronda. Decisión nuestra: los jugadores gratuitos compran solo las dos compras obligatorias; quien gasta añade los Full Score Cells (20 de noviembre, 8.000), luego Potential Lucky Coins (termina el 17 de noviembre, 20:00, hora del este de EE. UU.) y Advanced Scene Cores. Sáltate las Exclusive Treasure Box Keys, los Research Sweep Certificates y los Scene Cores normales. El Panacean Refinement Crystal (23 de noviembre, 9.000) solo si tienes un personaje 6★ (informe de jugador). Las Tactics probablemente solo se pueden usar desde el día 60 del servidor (sin confirmar).",
+    "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026); texto de las reglas Anni2ndGroupBuy_RuleDesc_1_1_1 a 1_1_3; comprar o saltar: decisión nuestra; las dos compras obligatorias también son \"Buy 100%\" en una lista de compras compartida por otra org (captura de pantalla en el TGBTC Discord, 16 de noviembre de 2026), que es más flexible que nosotros en las rondas opcionales; día 60: ajuste del juego SeniorArenaTacticUnlockDays = 60 y un jugador de un servidor más antiguo",
     "evidence": [
-     "Broken Chains game tables lang_TranslateForMultiEN.json tid#Anni2ndGroupBuy_RuleDesc_1_1_1..3, tid#MailDesc_Anni2ndGroupBuy",
-     "_discord/exports/2026-11-15/flat.txt 2026-11-15T00:12 to 00:14 (contents: player report, another server)",
-     "_discord/exports/2026-11-15/img/1571317428862845088_0_image.png",
-     "_discord/exports/2026-11-15/img/1571317498626838558_0_image.png"
+     "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+     "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json",
+     "_discord/exports/2026-11-17/img/1571948552274575515_0.png"
     ]
    },
    {
@@ -22309,6 +22308,279 @@
  "game_rules": {
   "intro": "Cada línea cita su fuente. Las líneas de otro servidor o de un solo jugador están marcadas.",
   "cards": [
+   {
+    "id": "anniv2-group-buy",
+    "top": true,
+    "title": "Value Group Buy del 2.º Aniversario: todas las rondas que quedan",
+    "intro": "El evento va del 10 de noviembre al 24 de noviembre de 2026 (termina a las 8:00, hora del este de EE. UU.). Esta es la lista completa de la tabla de eventos del propio juego, para que guardes Diamonds para las rondas que importan.",
+    "lines": [
+     {
+      "text": "Las rondas empiezan a las 05:00 o a las 17:00, hora del servidor. En nuestro servidor eso es 8:00 y 20:00, hora del este de EE. UU. Una ronda marcada \"primera mitad\" o \"segunda mitad\" dura 12 horas; las demás duran 24.",
+      "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026) (duración de las rondas); las horas del este de EE. UU. vienen de la cuenta atrás del juego del 16 de noviembre de 2026",
+      "evidence": [
+       "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+       "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json",
+       "_discord/exports/2026-11-17/img/1571920605064724491_0.png",
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T16:11"
+      ]
+     },
+     {
+      "text": "Pagas el precio que se muestra al comprar. Cuando más jugadores compran, el precio baja, y el juego te envía la diferencia por correo cuando termina la ronda. Así que comprar pronto no cuesta nada extra.",
+      "source": "texto de las reglas del juego Anni2ndGroupBuy_RuleDesc_1_1_2 y 1_1_3",
+      "evidence": [
+       "Broken Chains game tables lang_TranslateForMultiEN.json tid#Anni2ndGroupBuy_RuleDesc_1_1_2, tid#Anni2ndGroupBuy_RuleDesc_1_1_3"
+      ]
+     },
+     {
+      "text": "Ten en mano hasta el 90% del precio completo al comprar: el primer descuento es del 10%, y el resto solo vuelve por correo después de la ronda. Uno de nuestros jugadores pagó 45.000 por la ronda 10 (precio completo 50.000, precio más bajo 30.000).",
+      "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026) (campo discount: el primer escalón es 0.9 desde 0 compras); los 45.000 son un informe de jugador, TGBTC Discord, 16 de noviembre de 2026",
+      "evidence": [
+       "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+       "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json",
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T15:20"
+      ]
+     },
+     {
+      "text": "Planifica con el precio más bajo. El último escalón de descuento necesita 5.000 compras (creemos que por servidor), y la tabla de eventos hace que el propio juego sume compras a ese contador durante cada ronda. Un jugador esperaba que la ronda 10 terminara en 30.000, su precio más bajo. (nuestra lectura de los datos del juego)",
+      "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026) (campos discount, discount_count y auto_stop); un jugador de un servidor más antiguo, TGBTC Discord, 16 de noviembre de 2026",
+      "evidence": [
+       "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+       "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json",
+       "_discord/exports/2026-11-17/flat.txt 2026-11-16T17:53"
+      ]
+     },
+     {
+      "text": "Compras obligatorias que quedan: el LR Tactic Random Chest el 19 de noviembre y los cofres de Promotion Stone el 21 de noviembre. Juntos cuestan 12.300 Diamonds al precio más bajo (ten 13.500 en mano para el cofre y 3.240 para los cofres de piedra si compras pronto). Jugadores gratuitos: compren estos dos y paren. Las Tactics probablemente solo se pueden usar desde el día 60 del servidor (sin confirmar), así que el cofre es para comprar y guardar.",
+      "source": "decisión nuestra a partir de los precios en tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026); las dos también son \"Buy 100%\" en una lista de compras compartida por otra org (captura de pantalla en el TGBTC Discord, 16 de noviembre de 2026); día 60: ajuste del juego SeniorArenaTacticUnlockDays = 60 (Strategic Arena Tactics) y un jugador de un servidor más antiguo, TGBTC Discord, 15 de noviembre de 2026",
+      "evidence": [
+       "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+       "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json",
+       "_discord/exports/2026-11-17/img/1571948552274575515_0.png",
+       "_discord/exports/2026-11-17/img/1571948454316347593_0.png"
+      ]
+     },
+     {
+      "text": "Quien gasta, por prioridad (no por fecha): LR Tactic chest, Promotion Stones, Full Score Cells, Potential Lucky Coins, Advanced Scene Cores (las dos rondas, 18 y 22 de noviembre). La ronda de Potential Lucky Coin termina el 17 de noviembre a las 20:00, hora del este de EE. UU. Todo eso cuesta 37.800 Diamonds al precio más bajo (30.300 sin los Lucky Coins), o 46.800 con el Panacean Refinement Crystal. El juego dice que \"enables any character to achieve Skill Refinement\"; uno de nuestros jugadores informa de que solo se pueden refinar personajes 6★. (informe de jugador)",
+      "source": "decisión nuestra a partir de los precios en tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026); texto del objeto Panacean Refinement Crystal en el juego (objeto 20203); refinar exige 6★: informe de jugador del 16 de noviembre de 2026",
+      "evidence": [
+       "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+       "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
+      ]
+     },
+     {
+      "text": "Cada cofre de Promotion Stone te deja elegir 1 Character Exclusive Promotion Stone, \"used to promote a character to MR\". Creemos que son las piedras que un personaje necesita después del nivel 200; otra org las llama piedras de nivel 350. (nuestra lectura) A 1.800 Diamonds por 30 cofres, esta es la ronda más barata del evento.",
+      "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026); texto del objeto en el juego ItemDesc_20419 (el cofre); el paso del nivel 200 está en la tarjeta \"Más allá del nivel 200: Promotion Stones y Crimson Crystals\" de esta página (captura de pantalla del juego, 14 de noviembre de 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+       "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
+      ]
+     },
+     {
+      "text": "No gastes en las rondas opcionales los Diamonds que guardaste para tu próxima garantía del Carnival.",
+      "source": "decisión nuestra",
+      "evidence": []
+     }
+    ],
+    "table": {
+     "head": [
+      "Ronda",
+      "Cuándo",
+      "Recibes",
+      "Precio completo",
+      "Precio más bajo",
+      "Nuestra decisión"
+     ],
+     "rows": [
+      [
+       "11",
+       "17 de noviembre, primera mitad",
+       "Potential Lucky Coin ×150",
+       "15.000",
+       "7.500",
+       "Compra si sobran Diamonds"
+      ],
+      [
+       "12",
+       "17 de noviembre, segunda mitad",
+       "Exclusive Treasure Box Key ×100",
+       "10.000",
+       "5.000",
+       "Sáltala"
+      ],
+      [
+       "13",
+       "18 de noviembre, primera mitad",
+       "Advanced Scene Core Selection ×4",
+       "10.000",
+       "5.000",
+       "Compra si sobran Diamonds"
+      ],
+      [
+       "14",
+       "18 de noviembre, segunda mitad",
+       "Research Sweep Certificate ×2",
+       "10.000",
+       "5.000",
+       "Sáltala"
+      ],
+      [
+       "15",
+       "19 de noviembre",
+       "LR Tactic Random Chest ×1",
+       "15.000",
+       "10.500",
+       "Compra"
+      ],
+      [
+       "16",
+       "20 de noviembre",
+       "Full Score Cell Selection Casket I ×2",
+       "16.000",
+       "8.000",
+       "Compra si sobran Diamonds"
+      ],
+      [
+       "17",
+       "21 de noviembre, primera mitad",
+       "Character Exclusive Promotion Stone Selection Casket ×30",
+       "3.600",
+       "1.800",
+       "Compra"
+      ],
+      [
+       "18",
+       "21 de noviembre, segunda mitad",
+       "Scene Core ×120",
+       "12.000",
+       "6.000",
+       "Sáltala"
+      ],
+      [
+       "19",
+       "22 de noviembre, primera mitad",
+       "Advanced Scene Core Selection ×4",
+       "10.000",
+       "5.000",
+       "Compra si sobran Diamonds"
+      ],
+      [
+       "20",
+       "22 de noviembre, segunda mitad",
+       "Exclusive Treasure Box Key ×100",
+       "10.000",
+       "5.000",
+       "Sáltala"
+      ],
+      [
+       "21",
+       "23 de noviembre",
+       "Panacean Refinement Crystal ×1",
+       "12.000",
+       "9.000",
+       "Solo con un 6★ (informe de jugador)"
+      ]
+     ],
+     "note": "Los precios están en Diamonds. \"Precio más bajo\" es lo que cuesta la ronda después de todos los escalones de descuento; la diferencia con lo que pagaste vuelve por correo si la ronda llega al último escalón (nuestra lectura: el propio juego lo completa).",
+     "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026); la columna \"Nuestra decisión\" es decisión nuestra; las dos compras obligatorias también son \"Buy 100%\" en una lista de compras compartida por otra org (captura de pantalla en el TGBTC Discord, 16 de noviembre de 2026), que es más flexible que nosotros en las rondas opcionales",
+     "evidence": [
+      "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+      "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json",
+      "_discord/exports/2026-11-17/img/1571948552274575515_0.png"
+     ]
+    }
+   },
+   {
+    "id": "anniv2-group-buy-past",
+    "title": "Value Group Buy del 2.º Aniversario: rondas que ya terminaron",
+    "intro": "Como referencia, y para servidores que reciban este evento más tarde.",
+    "lines": [],
+    "table": {
+     "head": [
+      "Ronda",
+      "Cuándo",
+      "Recibes",
+      "Precio completo",
+      "Precio más bajo"
+     ],
+     "rows": [
+      [
+       "1",
+       "10 de noviembre",
+       "Panacean Star-Up Crystal ×1",
+       "24.000",
+       "18.000"
+      ],
+      [
+       "2",
+       "11 de noviembre, primera mitad",
+       "Potential Lucky Coin ×100",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "3",
+       "11 de noviembre, segunda mitad",
+       "Advanced Scene Core Selection ×4",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "4",
+       "12 de noviembre",
+       "LR Tactic Random Chest ×1",
+       "15.000",
+       "10.500"
+      ],
+      [
+       "5",
+       "13 de noviembre, primera mitad",
+       "Exclusive Treasure Box Key ×100",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "6",
+       "13 de noviembre, segunda mitad",
+       "Research Sweep Certificate ×2",
+       "10.000",
+       "5.000"
+      ],
+      [
+       "7",
+       "14 de noviembre",
+       "Full Score Cell Selection Casket I ×2",
+       "16.000",
+       "8.000"
+      ],
+      [
+       "8",
+       "15 de noviembre, primera mitad",
+       "Cell Promoter ×100",
+       "8.000",
+       "4.000"
+      ],
+      [
+       "9",
+       "15 de noviembre, segunda mitad",
+       "Scene Core ×80",
+       "8.000",
+       "4.000"
+      ],
+      [
+       "10",
+       "16 de noviembre",
+       "LR Tactic Selection Chest ×1",
+       "50.000",
+       "30.000"
+      ]
+     ],
+     "source": "tabla de eventos del juego ActGroupBuy_Anniv_2nd (copia Broken Chains de las tablas del juego, obtenida el 4 de noviembre de 2026)",
+     "evidence": [
+      "rook ~/work/tgbtc_econ/bc/calendar-data_Activity.json row ActGroupBuy_Anniv_2nd",
+      "rook ~/work/tgbtc_discord/2026-11-17/groupbuy.json"
+     ]
+    }
+   },
    {
     "id": "turn-order",
     "top": true,
