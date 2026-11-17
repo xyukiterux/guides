@@ -43613,6 +43613,16 @@
   "title": "3-hero playbook",
   "intro": "Three heroes for a player who likes farming and taking objectives more than duels, wants easy mechanics, and wants a big ultimate in the pocket. Each one has a start, a lane plan, a mid and late game plan, and how to use every ability.",
   "written": "2026-11-17",
+  "ingame_min_pick": 0.45,
+  "ingame_steps": [
+   "Open the shop (B), choose Browse Builds, then Create New Build. You can do this in the Hero Sandbox.",
+   "Name it after the hero, for example \"Seven playbook\".",
+   "Make three categories: Early game, Mid game, Late game.",
+   "Add the items listed below to each category, in the order shown.",
+   "Press Edit next to Ability Point Order and click the abilities in the order from the Ability points section.",
+   "Save it and pick it as your build. In a match the shop now shows these items first and marks your next ability upgrade."
+  ],
+  "ingame_note": "Steps are from two web guides (Beebom and esports.gg). Menu names can differ in the current game version. The items are the ones at least 45% of high-rank players of this hero buy.",
   "sources": {
    "stats": {
     "label": "Match stats",

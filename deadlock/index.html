@@ -258,7 +258,7 @@ th{font-family:var(--body);text-transform:uppercase;letter-spacing:.08em;font-si
 </div>
 <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="box"><button class="x" aria-label="Close">×</button><div id="mbody"></div></div></div>
 <noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
-<script src="data/deadlock.js?v=2026-11-15-680329"></script>
+<script src="data/deadlock.js?v=2026-11-15-681085"></script>
 <script>
 (function(){
 'use strict';
@@ -355,6 +355,9 @@ R.picks=(arg)=>{if(!PB.heroes.length)return '<p>No playbook data.</p>';
 
  <div class="sec"><h2>What to buy</h2><p>The items that matter most, in buy order, then the full list from ${n0(B&&B.n)} ${esc(M.bracket)} ${esc(h.name)} games. Tap an item for its card.</p></div>
  <div class="card"><h3>Core items and why</h3><div class="grid wide">${p.core.map(c=>{const i=INAME[c.item];return `<div class="bitem ${SLOT[i.slot]}" data-item="${i.id}" style="grid-template-columns:40px 1fr">${iimg(i)}<div><b>${esc(i.name)}</b> <span class="tiny muted">${n0(i.cost)}</span><div class="small muted">${esc(c.why)}</div></div></div>`;}).join('')}</div></div>
+ ${B&&PB.ingame_steps?`<div class="card" style="margin-top:12px"><h3>Put this build in the game <span class="tiny muted">about 3 minutes, once per hero</span></h3><ol class="pb">${PB.ingame_steps.map(t=>`<li>${esc(t)}</li>`).join('')}</ol>
+ ${['early','mid','late'].map(k=>`<div class="combo"><span class="st plain"><b>${k[0].toUpperCase()+k.slice(1)} game</b></span>${B.phases[k].filter(e=>e.pr>=(PB.ingame_min_pick||0.45)).map(e=>comboStep(IB[e.id].name)).join('<span class="ar">→</span>')}</div>`).join('')}
+ <p class="tiny muted">${esc(PB.ingame_note||'')}</p></div>`:''}
  ${B?`<div class="grid three" style="margin-top:12px">${['early','mid','late'].map(k=>`<div class="card phase"><h3>${k[0].toUpperCase()+k.slice(1)} game <span class="tiny muted">${k==='early'?'0–10 min':k==='mid'?'10–20 min':'20+ min'}</span></h3>${B.phases[k].map(e=>buildItem(e)).join('')}</div>`).join('')}</div><p class="tiny muted">"buy" = share of players who bought it; "WR" = win rate of games with it; minute = average buy time. "Sold later" items are cheap early buys that get replaced.</p>`:''}
 
  <div class="sec"><h2>Ability points</h2><p>${esc(p.order_note)}</p></div>
