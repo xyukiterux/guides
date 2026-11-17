@@ -22580,7 +22580,7 @@
       ]
      },
      {
-      "text": "Ramo do meio, os primeiros 19 nós (stats fixos): ATK +3.200, DEF +3.200 e HP +64.000 para todo personagem daquela org. Sem exigência de estrelas que tenhamos achado. (nossa leitura: o texto do jogo não tem condição de desbloqueio para esses nós)",
+      "text": "Ramo do meio, os primeiros 19 nós (stats fixos): ATK +3.200, DEF +3.200 e HP +64.000 para todo personagem daquela org. Sem exigência de estrelas: um nó do meio só precisa do nó anterior (tela do jogo em um vídeo de criador de 1º de dezembro de 2025).",
       "source": "arquivos do jogo de 22 de setembro de 2026 (texto e tabela de valores dos Force Talents)",
       "evidence": [
        "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_01_00 to _19_00"
@@ -22608,17 +22608,19 @@
       ]
      },
      {
-      "text": "Além disso há mais dois conjuntos de 40 nós cada, todos Damage Dealt Increase e Damage Taken Reduction. Um conjunto é liberado por estrelas: o último nó exige 126 estrelas em No Organization, 180 em Anteiku, 189 em Aogiri Tree e 260 em CCG. O outro conjunto não tem texto de desbloqueio e parece continuar o ramo do meio. Os valores e custos deles não estão nos nossos arquivos. (nossa leitura)",
+      "text": "Depois de ATK Boost VI o ramo do meio continua com nós de Damage Taken Reduction, e depois de CRIT DMG Boost II o ramo de cima continua com nós de Damage Dealt Increase: 0,5% por nó, e cada nó de cima exige mais estrelas da org (telas do jogo em um vídeo de criador de 1º de dezembro de 2025). Nos nossos arquivos os nós liberados por estrelas vão até 126 estrelas em No Organization, 180 em Anteiku, 189 em Aogiri Tree e 260 em CCG. Um preço aparece nesse vídeo: 30.000 Talent Certificates por BLK Chance Boost I.",
       "source": "texto do jogo de 22 de setembro de 2026",
       "evidence": [
-       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name"
+       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name",
+       "tools/account_plan_template/ft_media/src/f_130.jpg, f_195.jpg (video -3VbWyiYE8s at 2:10 and 3:15)"
       ]
      },
      {
-      "text": "Nós de personagem: cada um exige que você tenha dois personagens específicos, e faz aquele personagem causar mais dano e receber menos. Mais estrelas no personagem aumentam o bônus. (nossa leitura do texto do jogo)",
+      "text": "Nós de personagem: cada um exige que você tenha dois personagens específicos, e melhora só aquele personagem: +1% de dano, depois +7% de dano e -7% de dano recebido quando o personagem está em SS, e +8% e -8% em SSS (tela do jogo em um vídeo de criador de 1º de dezembro de 2025). É por isso que os criadores só compram esses nós para personagens SSS.",
       "source": "texto do jogo de 22 de setembro de 2026",
       "evidence": [
-       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_UI_4, FactionTalent_UI_6, FactionTalent_ADQ_72_Unlock"
+       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_ADQ_72_Unlock",
+       "tools/account_plan_template/ft_media/src/g_162.jpg, g_182.jpg (video -3VbWyiYE8s at 2:42 and 3:02)"
       ]
      },
      {

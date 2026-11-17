@@ -22580,7 +22580,7 @@
       ]
      },
      {
-      "text": "Rama del medio, los primeros 19 nodos (stats fijos): ATK +3.200, DEF +3.200 y HP +64.000 para cada personaje de esa org. Sin requisito de estrellas que hayamos encontrado. (nuestra lectura: el texto del juego no tiene condición de desbloqueo para estos nodos)",
+      "text": "Rama del medio, los primeros 19 nodos (stats fijos): ATK +3.200, DEF +3.200 y HP +64.000 para cada personaje de esa org. Sin requisito de estrellas: un nodo del medio solo necesita el nodo anterior (pantalla del juego en un vídeo de creador del 1 de diciembre de 2025).",
       "source": "archivos del juego del 22 de septiembre de 2026 (texto y tabla de valores de los Force Talents)",
       "evidence": [
        "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_01_00 to _19_00"
@@ -22608,17 +22608,19 @@
       ]
      },
      {
-      "text": "Además hay dos conjuntos más de 40 nodos cada uno, todos Damage Dealt Increase y Damage Taken Reduction. Un conjunto se abre con estrellas: su último nodo pide 126 estrellas en No Organization, 180 en Anteiku, 189 en Aogiri Tree y 260 en CCG. El otro conjunto no tiene texto de desbloqueo y parece continuar la rama del medio. Sus valores y costes no están en nuestros archivos. (nuestra lectura)",
+      "text": "Después de ATK Boost VI la rama del medio sigue con nodos de Damage Taken Reduction, y después de CRIT DMG Boost II la rama de arriba sigue con nodos de Damage Dealt Increase: 0,5% por nodo, y cada nodo de arriba pide más estrellas de la org (pantallas del juego en un vídeo de creador del 1 de diciembre de 2025). En nuestros archivos los nodos que se abren con estrellas llegan hasta 126 estrellas en No Organization, 180 en Anteiku, 189 en Aogiri Tree y 260 en CCG. En ese vídeo se ve un precio: 30.000 Talent Certificates por BLK Chance Boost I.",
       "source": "texto del juego del 22 de septiembre de 2026",
       "evidence": [
-       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name"
+       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name",
+       "tools/account_plan_template/ft_media/src/f_130.jpg, f_195.jpg (video -3VbWyiYE8s at 2:10 and 3:15)"
       ]
      },
      {
-      "text": "Nodos de personaje: cada uno pide que tengas dos personajes concretos, y hace que ese personaje haga más daño y reciba menos. Más estrellas en el personaje suben el bono. (nuestra lectura del texto del juego)",
+      "text": "Nodos de personaje: cada uno pide que tengas dos personajes concretos, y mejora solo a ese personaje: +1% de daño, luego +7% de daño y -7% de daño recibido cuando el personaje está en SS, y +8% y -8% en SSS (pantalla del juego en un vídeo de creador del 1 de diciembre de 2025). Por eso los creadores solo compran estos nodos para personajes SSS.",
       "source": "texto del juego del 22 de septiembre de 2026",
       "evidence": [
-       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_UI_4, FactionTalent_UI_6, FactionTalent_ADQ_72_Unlock"
+       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_ADQ_72_Unlock",
+       "tools/account_plan_template/ft_media/src/g_162.jpg, g_182.jpg (video -3VbWyiYE8s at 2:42 and 3:02)"
       ]
      },
      {

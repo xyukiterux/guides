@@ -22580,7 +22580,7 @@
       ]
      },
      {
-      "text": "Middle branch, the first 19 nodes (flat stats): ATK +3,200, DEF +3,200 and HP +64,000 for every character of that org. No star requirement that we can find. (our reading: the game text has no unlock condition for these nodes)",
+      "text": "Middle branch, the first 19 nodes (flat stats): ATK +3,200, DEF +3,200 and HP +64,000 for every character of that org. No star requirement: a middle node only needs the node before it (in-game screen in a creator video of December 1, 2025).",
       "source": "game files of September 22, 2026 (Force Talent text and value table)",
       "evidence": [
        "rook ~/work/tgbtc-battlesim/dl/AttrEffect.json FactionTalent_<org>_01_00 to _19_00"
@@ -22608,17 +22608,19 @@
       ]
      },
      {
-      "text": "Beyond that there are two more sets of 40 nodes each, all Damage Dealt Increase and Damage Taken Reduction. One set is star-gated: its last node needs 126 stars for No Organization, 180 for Anteiku, 189 for Aogiri Tree and 260 for CCG. The other set has no unlock text and seems to continue the middle branch. Their values and costs are not in our files. (our reading)",
+      "text": "After ATK Boost VI the middle branch goes on with Damage Taken Reduction nodes, and after CRIT DMG Boost II the top branch goes on with Damage Dealt Increase nodes: 0.5% a node, and each top node needs more org stars (in-game screens in a creator video of December 1, 2025). In our files the star-gated nodes run on to 126 stars for No Organization, 180 for Anteiku, 189 for Aogiri Tree and 260 for CCG. One price is visible in that video: 30,000 Talent Certificates for BLK Chance Boost I.",
       "source": "game text of September 22, 2026",
       "evidence": [
-       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name"
+       "data/raw/en.json tid#FactionTalent_<org>_a38_Unlock to _a77_Unlock, FactionTalent_a38_Name to _a77_Name, FactionTalent_m20_Name to _m59_Name",
+       "tools/account_plan_template/ft_media/src/f_130.jpg, f_195.jpg (video -3VbWyiYE8s at 2:10 and 3:15)"
       ]
      },
      {
-      "text": "Character nodes: each one needs you to own two named characters, and it makes that one character deal more damage and take less. More stars on the character raise the bonus. (our reading of the game text)",
+      "text": "Character nodes: each one needs you to own two named characters, and it boosts only that character: +1% damage, then +7% damage and -7% damage taken once the character is SS, and +8% and -8% at SSS (in-game screen in a creator video of December 1, 2025). That is why creators only buy these for SSS characters.",
       "source": "game text of September 22, 2026",
       "evidence": [
-       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_UI_4, FactionTalent_UI_6, FactionTalent_ADQ_72_Unlock"
+       "data/raw/en.json tid#FactionTalent_Hero_Desc, FactionTalent_ADQ_72_Unlock",
+       "tools/account_plan_template/ft_media/src/g_162.jpg, g_182.jpg (video -3VbWyiYE8s at 2:42 and 3:02)"
       ]
      },
      {
