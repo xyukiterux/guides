@@ -1,9 +1,16 @@
 /* guide-theme (GameGuides/_kit/theme.py) */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');
-:root{--gt-acc:#7c9be0}
+/* skin: this game's own colors, background and heading font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+:root{--gt-acc:#3fc8f5;--gt-head:"Fredoka","Arial Rounded MT Bold",system-ui,sans-serif;--ink:#0d1b2a;--panel:#152a40;--panel-2:#1c3552;--well:#0a1522;--line:rgba(160,220,255,.12);--paper:#f1f7fb;--muted:#9db3c4;--ai:#3fc8f5;--matcha:#8be37a;--gold:#ffd447;--radius:14px;--font-head:var(--gt-head);}
+html{background:#0d1b2a!important}
+body{background:radial-gradient(1000px 560px at 90% -12%,rgba(63,200,245,.17),transparent 62%),radial-gradient(820px 560px at -10% 112%,rgba(255,212,71,.10),transparent 62%),#0d1b2a!important;background-attachment:fixed!important}
+h1,h2,h3,h4,.gt-bubble{font-family:var(--gt-head)!important}
+::selection{background:var(--gt-acc);color:#10131a}
+*{scrollbar-color:color-mix(in srgb,var(--gt-acc) 45%,transparent) transparent}
+
 #main{max-width:none!important;width:100%}
 #main p,#main li{max-width:120ch}
-.gt-bubble,#main h1{font-family:"Fredoka","Arial Rounded MT Bold",system-ui,sans-serif!important;font-weight:700!important;letter-spacing:.2px}
+.gt-bubble{font-weight:700!important;letter-spacing:.2px}
 .gt-hero{position:relative;isolation:isolate;overflow:hidden;border-radius:26px;min-height:clamp(220px,26vw,380px);display:flex;flex-direction:column;justify-content:flex-end;
   padding:clamp(18px,3vw,36px);margin:0 0 22px;background:#000 url('hero.jpg') center/cover no-repeat;
   box-shadow:0 14px 40px rgba(0,0,0,.4),0 0 0 2px color-mix(in srgb,var(--gt-acc) 45%,transparent);animation:gt-up .5s both}
@@ -12,6 +19,6 @@
 .gt-hero .gt-bubble{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1;color:#fff;-webkit-text-stroke:1px rgba(0,0,0,.25);text-shadow:0 4px 0 rgba(0,0,0,.35),0 0 30px var(--gt-acc);margin:4px 0 0}
 
 @keyframes gt-up{from{opacity:0;transform:translateY(16px)}}
-#main .card,#main .tile,#main .statbox,#main .stat,#main .panel{transition:transform .2s,box-shadow .2s,border-color .2s}
-#main .card:hover,#main .tile:hover,#main .statbox:hover{border-color:var(--gt-acc)!important;box-shadow:0 10px 28px rgba(0,0,0,.35),0 0 22px color-mix(in srgb,var(--gt-acc) 30%,transparent)}
+.card,.tile,.statbox,.stat,.panel{transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover,.tile:hover,.statbox:hover{border-color:var(--gt-acc)!important;box-shadow:0 10px 28px rgba(0,0,0,.35),0 0 22px color-mix(in srgb,var(--gt-acc) 30%,transparent)}
 @media (prefers-reduced-motion:reduce){.gt-hero{animation:none}}

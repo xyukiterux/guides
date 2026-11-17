@@ -1,0 +1,24 @@
+/* guide-theme (GameGuides/_kit/theme.py) */
+/* skin: this game's own colors, background and heading font */
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@600;700&display=swap');
+:root{--gt-acc:#ff7a45;--gt-head:"Grenze",Georgia,"Palatino Linotype",serif;--ink:#170f10;--panel:#241718;--panel-2:#301e1f;--well:#110a0b;--line:rgba(255,200,170,.11);--paper:#f3e7dc;--muted:#ab9a90;--ai:#ff7a45;--gold:#f5b640;--beni:#e5484d;--font-head:var(--gt-head);}
+html{background:#170f10!important}
+body{background:radial-gradient(1000px 560px at 90% -12%,rgba(229,72,77,.20),transparent 62%),radial-gradient(900px 600px at 0 115%,rgba(255,122,69,.13),transparent 62%),#170f10!important;background-attachment:fixed!important}
+h1,h2,h3,h4,.gt-bubble{font-family:var(--gt-head)!important}
+::selection{background:var(--gt-acc);color:#10131a}
+*{scrollbar-color:color-mix(in srgb,var(--gt-acc) 45%,transparent) transparent}
+
+
+
+.gt-bubble{font-weight:700!important;letter-spacing:.2px}
+.gt-hero{position:relative;isolation:isolate;overflow:hidden;border-radius:26px;min-height:clamp(220px,26vw,380px);display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(18px,3vw,36px);margin:0 0 22px;background:#000 url('hero.jpg') center/cover no-repeat;
+  box-shadow:0 14px 40px rgba(0,0,0,.4),0 0 0 2px color-mix(in srgb,var(--gt-acc) 45%,transparent);animation:gt-up .5s both}
+.gt-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(12,15,22,.95) 5%,rgba(12,15,22,.45) 55%,rgba(12,15,22,.1)),linear-gradient(90deg,rgba(12,15,22,.7),transparent 65%)}
+.gt-hero .gt-k{color:var(--gt-acc);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.gt-hero .gt-bubble{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1;color:#fff;-webkit-text-stroke:1px rgba(0,0,0,.25);text-shadow:0 4px 0 rgba(0,0,0,.35),0 0 30px var(--gt-acc);margin:4px 0 0}
+
+@keyframes gt-up{from{opacity:0;transform:translateY(16px)}}
+.card,.tile,.statbox,.stat,.panel{transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover,.tile:hover,.statbox:hover{border-color:var(--gt-acc)!important;box-shadow:0 10px 28px rgba(0,0,0,.35),0 0 22px color-mix(in srgb,var(--gt-acc) 30%,transparent)}
+@media (prefers-reduced-motion:reduce){.gt-hero{animation:none}}
