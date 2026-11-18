@@ -1,0 +1,883 @@
+{
+  "agents/gekko-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png",
+    "status": "downloaded",
+    "bytes": 568157
+  },
+  "roles/initiator.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
+    "status": "cached"
+  },
+  "abilities/gekko-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7032
+  },
+  "abilities/gekko-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8027
+  },
+  "abilities/gekko-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6445
+  },
+  "abilities/gekko-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6927
+  },
+  "agents/fade-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/displayicon.png",
+    "status": "downloaded",
+    "bytes": 579617
+  },
+  "abilities/fade-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6189
+  },
+  "abilities/fade-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5714
+  },
+  "abilities/fade-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5248
+  },
+  "abilities/fade-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7590
+  },
+  "agents/breach-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/displayicon.png",
+    "status": "downloaded",
+    "bytes": 456642
+  },
+  "abilities/breach-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5697
+  },
+  "abilities/breach-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7965
+  },
+  "abilities/breach-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6097
+  },
+  "abilities/breach-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7309
+  },
+  "agents/deadlock-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/displayicon.png",
+    "status": "downloaded",
+    "bytes": 540135
+  },
+  "roles/sentinel.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
+    "status": "cached"
+  },
+  "abilities/deadlock-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7505
+  },
+  "abilities/deadlock-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4726
+  },
+  "abilities/deadlock-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7749
+  },
+  "abilities/deadlock-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6028
+  },
+  "agents/tejo-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/displayicon.png",
+    "status": "downloaded",
+    "bytes": 509256
+  },
+  "abilities/tejo-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6357
+  },
+  "abilities/tejo-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6830
+  },
+  "abilities/tejo-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 9111
+  },
+  "abilities/tejo-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5291
+  },
+  "agents/raze-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png",
+    "status": "downloaded",
+    "bytes": 479860
+  },
+  "roles/duelist.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
+    "status": "cached"
+  },
+  "abilities/raze-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2655
+  },
+  "abilities/raze-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5132
+  },
+  "abilities/raze-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5884
+  },
+  "abilities/raze-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6431
+  },
+  "agents/chamber-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png",
+    "status": "downloaded",
+    "bytes": 435701
+  },
+  "abilities/chamber-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6031
+  },
+  "abilities/chamber-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6924
+  },
+  "abilities/chamber-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2943
+  },
+  "abilities/chamber-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5903
+  },
+  "agents/kay-o-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png",
+    "status": "downloaded",
+    "bytes": 628427
+  },
+  "abilities/kay-o-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 11091
+  },
+  "abilities/kay-o-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5935
+  },
+  "abilities/kay-o-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5484
+  },
+  "abilities/kay-o-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5307
+  },
+  "agents/skye-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
+    "status": "downloaded",
+    "bytes": 450543
+  },
+  "abilities/skye-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6049
+  },
+  "abilities/skye-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3890
+  },
+  "abilities/skye-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6196
+  },
+  "abilities/skye-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8601
+  },
+  "agents/cypher-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png",
+    "status": "downloaded",
+    "bytes": 428133
+  },
+  "abilities/cypher-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5526
+  },
+  "abilities/cypher-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4156
+  },
+  "abilities/cypher-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3108
+  },
+  "abilities/cypher-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4760
+  },
+  "agents/sova-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png",
+    "status": "downloaded",
+    "bytes": 464918
+  },
+  "abilities/sova-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4004
+  },
+  "abilities/sova-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6711
+  },
+  "abilities/sova-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3154
+  },
+  "abilities/sova-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5482
+  },
+  "agents/miks-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/displayicon.png",
+    "status": "downloaded",
+    "bytes": 394611
+  },
+  "roles/controller.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
+    "status": "cached"
+  },
+  "abilities/miks-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8025
+  },
+  "abilities/miks-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8131
+  },
+  "abilities/miks-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6098
+  },
+  "abilities/miks-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8046
+  },
+  "agents/killjoy-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png",
+    "status": "downloaded",
+    "bytes": 396252
+  },
+  "abilities/killjoy-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7909
+  },
+  "abilities/killjoy-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7256
+  },
+  "abilities/killjoy-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4162
+  },
+  "abilities/killjoy-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 10115
+  },
+  "agents/harbor-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayicon.png",
+    "status": "downloaded",
+    "bytes": 513708
+  },
+  "abilities/harbor-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5728
+  },
+  "abilities/harbor-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4772
+  },
+  "abilities/harbor-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8148
+  },
+  "abilities/harbor-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4767
+  },
+  "agents/vyse-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/displayicon.png",
+    "status": "downloaded",
+    "bytes": 287425
+  },
+  "abilities/vyse-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5455
+  },
+  "abilities/vyse-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5292
+  },
+  "abilities/vyse-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6156
+  },
+  "abilities/vyse-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5128
+  },
+  "agents/viper-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png",
+    "status": "downloaded",
+    "bytes": 421306
+  },
+  "abilities/viper-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4386
+  },
+  "abilities/viper-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5238
+  },
+  "abilities/viper-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4152
+  },
+  "abilities/viper-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4870
+  },
+  "agents/phoenix-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png",
+    "status": "downloaded",
+    "bytes": 411650
+  },
+  "abilities/phoenix-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5103
+  },
+  "abilities/phoenix-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3877
+  },
+  "abilities/phoenix-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3527
+  },
+  "abilities/phoenix-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5335
+  },
+  "agents/veto-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/displayicon.png",
+    "status": "downloaded",
+    "bytes": 278965
+  },
+  "abilities/veto-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 24286
+  },
+  "abilities/veto-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 17720
+  },
+  "abilities/veto-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 26481
+  },
+  "abilities/veto-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 19416
+  },
+  "agents/astra-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png",
+    "status": "downloaded",
+    "bytes": 409955
+  },
+  "abilities/astra-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6956
+  },
+  "abilities/astra-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6346
+  },
+  "abilities/astra-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7546
+  },
+  "abilities/astra-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8244
+  },
+  "abilities/astra-passive.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/passive/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3787
+  },
+  "agents/brimstone-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png",
+    "status": "downloaded",
+    "bytes": 412007
+  },
+  "abilities/brimstone-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4755
+  },
+  "abilities/brimstone-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4347
+  },
+  "abilities/brimstone-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2328
+  },
+  "abilities/brimstone-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7120
+  },
+  "agents/iso-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayicon.png",
+    "status": "downloaded",
+    "bytes": 354086
+  },
+  "abilities/iso-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7834
+  },
+  "abilities/iso-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7352
+  },
+  "abilities/iso-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6144
+  },
+  "abilities/iso-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8471
+  },
+  "agents/clove-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/displayicon.png",
+    "status": "downloaded",
+    "bytes": 388443
+  },
+  "abilities/clove-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3264
+  },
+  "abilities/clove-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3400
+  },
+  "abilities/clove-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3135
+  },
+  "abilities/clove-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3503
+  },
+  "agents/neon-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png",
+    "status": "downloaded",
+    "bytes": 204687
+  },
+  "abilities/neon-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5337
+  },
+  "abilities/neon-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4359
+  },
+  "abilities/neon-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5196
+  },
+  "abilities/neon-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2035
+  },
+  "agents/yoru-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/displayicon.png",
+    "status": "downloaded",
+    "bytes": 497037
+  },
+  "abilities/yoru-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4901
+  },
+  "abilities/yoru-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6530
+  },
+  "abilities/yoru-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6089
+  },
+  "abilities/yoru-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8437
+  },
+  "agents/waylay-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/displayicon.png",
+    "status": "downloaded",
+    "bytes": 386496
+  },
+  "abilities/waylay-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5768
+  },
+  "abilities/waylay-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8346
+  },
+  "abilities/waylay-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4820
+  },
+  "abilities/waylay-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 6712
+  },
+  "agents/sage-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png",
+    "status": "downloaded",
+    "bytes": 357309
+  },
+  "abilities/sage-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8288
+  },
+  "abilities/sage-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2798
+  },
+  "abilities/sage-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2737
+  },
+  "abilities/sage-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5468
+  },
+  "agents/reyna-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
+    "status": "downloaded",
+    "bytes": 367243
+  },
+  "abilities/reyna-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5792
+  },
+  "abilities/reyna-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 7027
+  },
+  "abilities/reyna-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4464
+  },
+  "abilities/reyna-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 8772
+  },
+  "agents/omen-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png",
+    "status": "downloaded",
+    "bytes": 431965
+  },
+  "abilities/omen-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4495
+  },
+  "abilities/omen-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3770
+  },
+  "abilities/omen-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4600
+  },
+  "abilities/omen-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4822
+  },
+  "agents/jett-icon.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png",
+    "status": "downloaded",
+    "bytes": 410578
+  },
+  "abilities/jett-ability1.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability1/displayicon.png",
+    "status": "downloaded",
+    "bytes": 3337
+  },
+  "abilities/jett-ability2.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 2691
+  },
+  "abilities/jett-grenade.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png",
+    "status": "downloaded",
+    "bytes": 4019
+  },
+  "abilities/jett-ultimate.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ultimate/displayicon.png",
+    "status": "downloaded",
+    "bytes": 5014
+  },
+  "abilities/jett-passive.png": {
+    "sourceUrl": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png",
+    "status": "downloaded",
+    "bytes": 25096
+  },
+  "maps/ascent-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/displayicon.png",
+    "status": "downloaded",
+    "bytes": 26841
+  },
+  "maps/ascent-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 65494
+  },
+  "maps/split-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 26611
+  },
+  "maps/split-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 69578
+  },
+  "maps/fracture-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/displayicon.png",
+    "status": "downloaded",
+    "bytes": 45023
+  },
+  "maps/fracture-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 65859
+  },
+  "maps/bind-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/displayicon.png",
+    "status": "downloaded",
+    "bytes": 50656
+  },
+  "maps/bind-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 63826
+  },
+  "maps/breeze-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/displayicon.png",
+    "status": "downloaded",
+    "bytes": 41660
+  },
+  "maps/breeze-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 58839
+  },
+  "maps/abyss-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/displayicon.png",
+    "status": "downloaded",
+    "bytes": 29070
+  },
+  "maps/abyss-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 57369
+  },
+  "maps/lotus-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/displayicon.png",
+    "status": "downloaded",
+    "bytes": 31156
+  },
+  "maps/lotus-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 62683
+  },
+  "maps/sunset-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/displayicon.png",
+    "status": "downloaded",
+    "bytes": 27316
+  },
+  "maps/sunset-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 65259
+  },
+  "maps/pearl-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/displayicon.png",
+    "status": "downloaded",
+    "bytes": 36977
+  },
+  "maps/pearl-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 64660
+  },
+  "maps/summit-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/756da597-416b-c0f2-f47b-afbdf28670bc/displayicon.png",
+    "status": "downloaded",
+    "bytes": 35500
+  },
+  "maps/summit-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/756da597-416b-c0f2-f47b-afbdf28670bc/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 56037
+  },
+  "maps/icebox-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/displayicon.png",
+    "status": "downloaded",
+    "bytes": 39419
+  },
+  "maps/icebox-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 70990
+  },
+  "maps/corrode-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/1c18ab1f-420d-0d8b-71d0-77ad3c439115/displayicon.png",
+    "status": "downloaded",
+    "bytes": 25625
+  },
+  "maps/corrode-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/1c18ab1f-420d-0d8b-71d0-77ad3c439115/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 75005
+  },
+  "maps/haven-minimap.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/displayicon.png",
+    "status": "downloaded",
+    "bytes": 33099
+  },
+  "maps/haven-listicon.png": {
+    "sourceUrl": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/listviewicon.png",
+    "status": "downloaded",
+    "bytes": 82442
+  }
+}
