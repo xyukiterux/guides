@@ -1,0 +1,1415 @@
+{
+ "sections": [
+  {
+   "id": "howto-combat",
+   "title": "How to fight well (the combat basics)",
+   "kind": "How-to",
+   "answer": "Light attack to build Ultimate, heavy attack to get resources back, block heavy hits, roll out of red areas and break free from stuns.",
+   "need": "You'll need: any weapon and enough Stamina for blocking, dodging and breaking free.",
+   "steps": [
+    {
+     "t": "Tap the attack button to light attack.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "It is performed by tapping the attack button."
+    },
+    {
+     "t": "Keep light attacking in combat: each hit gives a hidden buff that makes 3 Ultimate every second for 9 seconds.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Hitting a light attack while in combat gives you a hidden buff which generates 3 Ultimate every second for 9 seconds"
+    },
+    {
+     "t": "Hold the attack button to heavy attack.",
+     "src": [
+      "Online:Heavy Attack"
+     ],
+     "q": "Heavy attacks are performed by holding the attack button."
+    },
+    {
+     "t": "Fully charge a heavy attack to restore Magicka (with a staff) or Stamina (other weapons).",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Heavy attacks restore Magicka (with staves) or Stamina (other weapons) when fully charged."
+    },
+    {
+     "t": "Hold block to take less damage and stop the disabling effects of most attacks.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "For most attacks, a successful block will reduce your damage taken and prevent any negative disabling effects associated with that attack."
+    },
+    {
+     "t": "Block an enemy's heavy attack to set it Off Balance.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Blocking an enemy's heavy attack will set it Off Balance."
+    },
+    {
+     "t": "Heavy attack an Off Balance enemy to knock it down for 70% more damage.",
+     "src": [
+      "Online:Heavy Attack"
+     ],
+     "q": "Using a heavy attack against an Off Balance opponent will knock them down, deal 70% more damage and restore double the resources."
+    },
+    {
+     "t": "Interrupt an enemy who winds up an attack while you are in melee range.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Players can interrupt an opponent who is winding up an attack, as long as they are within melee range."
+    },
+    {
+     "t": "Roll dodge out of red areas on the ground.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": [
+      "Area of Effect attacks are often indicated as red areas.",
+      "Roll dodging allows the player to roll in a given direction in order to escape an area of effect or break free of a rooting effect."
+     ]
+    },
+    {
+     "t": "Space out your rolls: each roll adds dodge roll fatigue, which makes the next roll cost more.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Performing a roll dodge will give the player dodge roll fatigue, increasing the cost of consecutive rolls until the effect dissipates."
+    },
+    {
+     "t": "Break free when you are stunned to get crowd control immunity for 7 seconds.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": [
+      "Players can break free of some forms of crowd controlling effects, such as stuns.",
+      "which makes them immune to crowd control effects for 7 seconds"
+     ]
+    },
+    {
+     "t": "Swap between your two combat bars once you reach level 15.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Once a player reaches level 15, they can switch between two combat bars."
+    }
+   ],
+   "check": "Your Ultimate bar fills while you fight, and enemies whose heavy attacks you block show white swirls (Off Balance).",
+   "more": [
+    {
+     "t": "Press the attack key while blocking to bash; a bash interrupts enemies.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": [
+      "Pressing the attack key while blocking does a Bash.",
+      "It interrupts enemies and can trigger your weapon's poisons and enchantments."
+     ]
+    },
+    {
+     "t": "Activate an ally's synergy when the prompt shows at the bottom of the screen.",
+     "src": [
+      "Online:Synergy"
+     ],
+     "q": "a prompt at the bottom of the screen appears letting you know that you can activate a Synergy"
+    },
+    {
+     "t": "Wait 20 seconds before you use the same synergy again.",
+     "src": [
+      "Online:Synergy"
+     ],
+     "q": "Synergies have a 20 second cooldown per player for each individual Synergy."
+    },
+    {
+     "t": "Gain Ultimate by hitting enemies, healing others, blocking or dodging.",
+     "src": [
+      "Online:Ultimate"
+     ],
+     "q": "Ultimate regeneration triggers upon hitting a non-trivial enemy with Light or Heavy attacks, when healing others (healing yourself does not count), or upon blocking or dodging an attack."
+    },
+    {
+     "t": "Spend your Ultimate before 500: that is the most you can store.",
+     "src": [
+      "Online:Ultimate"
+     ],
+     "q": "The maximum Ultimate that you can accumulate is 500."
+    },
+    {
+     "t": "Move out of damage-over-time areas: you cannot block them.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Damage from areas dealing damage over time (DoT) like Wall of Elements and effects that are on or inside characters such as Daedric Curse cannot be blocked."
+    },
+    {
+     "t": "Reassign your attribute points from the Character screen for free (since Update 49).",
+     "src": [
+      "Online:Attributes"
+     ],
+     "q": "Beginning with Update 49, attribute points can be reassigned from the Character screen at no cost."
+    },
+    {
+     "t": "Do not raise max Stamina to make blocking or dodging cheaper: it does not change their cost.",
+     "src": [
+      "Online:Attributes"
+     ],
+     "q": "Having more maximum stamina will not increase the cost of dodging, blocking, or other combat maneuvers"
+    }
+   ]
+  },
+  {
+   "id": "howto-buffs",
+   "title": "How to read buffs, debuffs and penetration",
+   "kind": "How-to",
+   "answer": "Buffs help you and allies, debuffs hurt enemies; a Major and a Minor of the same type stack, two of the same name do not, and Update 51 merged Sorcery into Brutality and Prophecy into Savagery.",
+   "need": "You'll need: your buff bar and the enemy's debuff bar in view.",
+   "steps": [
+    {
+     "t": "Read buffs as effects on you or your allies, and debuffs as effects on enemies.",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": "Buffs are applied to yourself or your allies, and debuffs are applied to enemies."
+    },
+    {
+     "t": "Avoid two sources of the same buff: buffs with the same name from different sources do not stack.",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": "Two buffs/debuffs with the same name from different sources will not stack"
+    },
+    {
+     "t": "Combine a Major and a Minor buff of the same type: those do stack.",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": "though a Major and Minor buff of the same type will"
+    },
+    {
+     "t": "Look for Brutality to raise both Weapon and Spell Damage: Sorcery has been removed and replaced with Brutality.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "Brutality now provides both weapon and spell damage, while Sorcery has been removed and replaced with Brutality."
+    },
+    {
+     "t": "Look for Savagery to raise both Weapon and Spell Critical chance: Prophecy was removed and replaced with Savagery.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "Savagery now provides both weapon and spell critical chance, while Prophecy has been removed and replaced with Savagery."
+    },
+    {
+     "t": "Bring a Dragonknight for Minor Brutality from the Elder Dragon passive: 10% more Weapon and Spell Damage.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "The Dragonknight Elder Dragon passive continues to grant Minor Brutality, which now increases both Weapon and Spell Damage by 10%."
+    },
+    {
+     "t": "Bring a Nightblade for Minor Savagery from the Hemorrhage passive: 6% more Weapon and Spell Critical Chance.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "The Nightblade Hemorrhage passive continues to grant Minor Savagery, which now increases both Weapon and Spell Critical Chance by 6%."
+    },
+    {
+     "t": "Bring a Sorcerer for the Exploitation passive: 2974 Offensive Penetration.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "The Sorcerer Exploitation passive no longer grants Minor Prophecy, and instead provides a unique 2974 Offensive Penetration buff."
+    },
+    {
+     "t": "Bring a Templar for the Illuminate passive: 2974 Armor.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "The Templar Illuminate passive no longer grants Minor Sorcery, and instead provides a unique 2974 Armor buff."
+    },
+    {
+     "t": "Add penetration so more of your damage breaks through enemy armor.",
+     "src": [
+      "Online:Penetration"
+     ],
+     "q": "Penetration is a value that represents how much of your damage will break through an opponent's armor."
+    },
+    {
+     "t": "Use Minor Force for 10% more critical damage, or Major Force for 20% (wiki values that may predate the Update 51 buff overhaul).",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": [
+      "Increases critical damage done by 10%.",
+      "Increases critical damage done by 20%.",
+      "Buffs have been overhauled with Update 51, page needs to be updated"
+     ]
+    }
+   ],
+   "check": "With a Major and a Minor of one type active, you see both on your buff bar.",
+   "more": [
+    {
+     "t": "Critical damage starts at 50% and is capped at 125%.",
+     "src": [
+      "Online:Critical Damage"
+     ],
+     "q": "Critical Damage starts with a base damage increase of 50%, and is capped at 125%."
+    },
+    {
+     "t": "An enemy with 18,200 armor resists 36.4% of your damage.",
+     "src": [
+      "Online:Penetration"
+     ],
+     "q": "For example, if an enemy NPC has 18,200 armor, they will resist 36.4% of your damage."
+    },
+    {
+     "t": "Check exact buff values in game: the wiki's Buffs page says buffs were overhauled with Update 51 and the page needs updating.",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": "Buffs have been overhauled with Update 51, page needs to be updated"
+    },
+    {
+     "t": "Look for Minor Resolve to gain 2974 physical and spell resistance (value from the wiki Buffs page, which says it is not yet updated for Update 51).",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": [
+      "Increases physical and spell resistance by 2974.",
+      "Buffs have been overhauled with Update 51, page needs to be updated"
+     ]
+    },
+    {
+     "t": "Look for Major Resolve to gain 5948 physical and spell resistance (value from the wiki Buffs page, which says it is not yet updated for Update 51).",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": [
+      "Increases physical and spell resistance by 5948.",
+      "Buffs have been overhauled with Update 51, page needs to be updated"
+     ]
+    },
+    {
+     "t": "Put Minor Breach on enemies to cut their physical and spell resistance by 2974 (value from the wiki Buffs page, which says it is not yet updated for Update 51).",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": [
+      "Decreases target's physical and spell resistance by 2974.",
+      "Buffs have been overhauled with Update 51, page needs to be updated"
+     ]
+    },
+    {
+     "t": "Put Major Breach on enemies to cut their physical and spell resistance by 5948 (value from the wiki Buffs page, which says it is not yet updated for Update 51).",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": [
+      "Decrease target's physical and spell resistance by 5948.",
+      "Buffs have been overhauled with Update 51, page needs to be updated"
+     ]
+    },
+    {
+     "t": "Get penetration from [[The Lover]] mundus stone or Champion Point slottables such as Piercing.",
+     "src": [
+      "Online:Penetration"
+     ],
+     "q": "Champion Point slottables, such as Piercing and Force of Nature."
+    },
+    {
+     "t": "Put Minor Brittle on enemies to raise their critical damage taken by 10% (wiki value that may predate the Update 51 buff overhaul).",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": [
+      "Increases target's Crit Damage Taken by 10%",
+      "Buffs have been overhauled with Update 51, page needs to be updated"
+     ]
+    },
+    {
+     "t": "Deal Shock damage to Concuss enemies: they get Minor Vulnerability and take 5% more damage for 4 seconds.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": [
+      "The Concussion status can be applied by dealing Shock Damage to a target.",
+      "suffers from Minor Vulnerability for 4 seconds, increasing their damage taken by 5%"
+     ]
+    },
+    {
+     "t": "Deal Physical damage to Sunder enemies: they get Minor Breach for 4 seconds.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": [
+      "The Sundered status can be applied by dealing Physical Damage to a target.",
+      "suffers from Minor Breach debuff for 4 seconds"
+     ]
+    },
+    {
+     "t": "Know that damage-over-time abilities can apply a status effect on every tick.",
+     "src": [
+      "Online:Combat"
+     ],
+     "q": "Damage-over-time abilities have a chance to apply status effect on every tick of damage."
+    },
+    {
+     "t": "Cleanse debuffs with skills or items that have cleansing effects.",
+     "src": [
+      "Online:Buffs"
+     ],
+     "q": "Debuffs can be removed by certain skills or items with cleansing effects."
+    },
+    {
+     "t": "Note that Malacath's Band of Brutality lowers your critical damage by 50%.",
+     "src": [
+      "Online:Critical Damage"
+     ],
+     "q": "The mythic item Malacath's Band of Brutality decreases Critical Damage by 50%."
+    }
+   ]
+  },
+  {
+   "id": "howto-tank",
+   "title": "How to tank in a group",
+   "kind": "How-to",
+   "answer": "Queue as Tank, wear heavy armor, taunt the boss with [[Puncture]] or [[Inner Fire]] and taunt it again before the taunt wears off.",
+   "need": "You'll need: a one-handed weapon and a shield for [[Puncture]], or the [[Undaunted]] skill line for [[Inner Fire]].",
+   "steps": [
+    {
+     "t": "Pick the **Tank** role in the Group & Activity Finder before you queue.",
+     "src": [
+      "Online:Grouping"
+     ],
+     "q": "The Role selection between Tank, Healer and Damage is now required, and is designed to create balanced groups for certain activities."
+    },
+    {
+     "t": "Wear [[Heavy Armor]]: its skills are made for tanks, who need a lot of health.",
+     "src": [
+      "Online:Heavy Armor"
+     ],
+     "q": "These skills generally aid \"tank\" characters— those who require a lot of health."
+    },
+    {
+     "t": "Equip a one-handed weapon and a shield together.",
+     "src": [
+      "Online:One Hand and Shield"
+     ],
+     "q": "Use of these abilities, as well as progression through this skill line, requires equipping a one-handed weapon and a shield at the same time."
+    },
+    {
+     "t": "Slot [[Puncture]] to taunt enemies in melee range.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "The Puncture skill in the One Hand and Shield line. This only works from melee range, and requires you to be wielding a one-handed weapon and shield."
+    },
+    {
+     "t": "To taunt from a distance with any weapon, slot [[Inner Fire]] from the [[Undaunted]] line instead.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "The Inner Fire skill in the Undaunted line. This method works from a distance, and lets you use the equipment of your choice."
+    },
+    {
+     "t": "Taunt the boss so it attacks you instead of your allies.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "It will cause the affected target to attack you instead of your allies."
+    },
+    {
+     "t": "Taunt it again before 15 seconds pass, or the taunt wears off.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "After 15 seconds, the taunt will wear off, which can be disastrous in certain boss battles."
+    },
+    {
+     "t": "Block an attack when yellow lines show it should be blocked.",
+     "src": [
+      "Online:Block"
+     ],
+     "q": "Note the yellow lines that indicate this attack should be blocked."
+    },
+    {
+     "t": "Keep taunted enemies inside their area: taking one out of its leash zone resets the fight.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "Bringing a taunted enemy outside its leash zone will reset the fight."
+    },
+    {
+     "t": "Cast [[Unstoppable]] with 5 pieces of heavy armor worn for Major Resolve and immunity to knockback.",
+     "src": [
+      "Online:Heavy Armor"
+     ],
+     "q": [
+      "Requires 5 pieces of heavy armor equipped Intensify your physical presence to gain Major Resolve",
+      "Also grants you immunity to knockback and disabling effects"
+     ]
+    }
+   ],
+   "check": "After your taunt the boss turns to you and keeps attacking you, not your group.",
+   "more": [
+    {
+     "t": "Other taunts: [[Destructive Clench]] (Frost Destruction Staff, ranged), [[Runic Jolt]] (Arcanist), [[Chains of Flame]] (Dragonknight) and [[Focused Charge]] (Templar).",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": [
+      "The Destructive Clench skill with a Frost Destruction Staff provides a ranged taunt and immobilizes the target.",
+      "The Runic Jolt skill in the Arcanist's Soldier of Apocrypha line.",
+      "The Chains of Flame skill in the Dragonknight's Draconic Power line.",
+      "The Focused Charge skill in the Templar's Aedric Spear line."
+     ]
+    },
+    {
+     "t": "Class lines for tanking: [[Draconic Power]] and [[Earthen Heart]] (Dragonknight), [[Bone Tyrant]] (Necromancer), [[Soldier of Apocrypha]] (Arcanist).",
+     "src": [
+      "Online:Classes"
+     ],
+     "q": [
+      "The Dragonknight class is best suited for tanking-oriented characters due to the Draconic Power and Earthen Heart skill lines",
+      "offering the Bone Tyrant skill line for tanking abilities",
+      "Soldier of Apocrypha for tanking abilities"
+     ]
+    },
+    {
+     "t": "Sets that taunt for you: [[Swarm Mother]] when you block, [[Tormentor]] when you use a Charge, Leap, Teleport or Pull ability.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": [
+      "Blocking attacks with the Swarm Mother set.",
+      "Using any Charge, Leap, Teleport, or Pull ability with the Tormentor set."
+     ]
+    },
+    {
+     "t": "[[Undaunted Bastion]] gives you a damage shield when you taunt while below 75% Health.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "The Undaunted Bastion set will give you a Damage Shield when taunting enemies while you're below 75% Health."
+    },
+    {
+     "t": "If you are not the tank, do not taunt: after one player taunts an enemy, another player cannot taunt it for 15 seconds.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": [
+      "When one player has taunted an enemy, another player may not taunt them for 15 seconds afterwards.",
+      "Generally speaking, if you are in a group and not playing the tank role, you should avoid using any kind of taunts."
+     ]
+    },
+    {
+     "t": "An enemy nobody has taunted usually attacks the greatest damage threat.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "If an enemy is not taunted, it will usually attack the greatest damage threat."
+    },
+    {
+     "t": "Two tanks can swap taunts: an enemy only becomes immune after more than five taunts from at least two players within 12 seconds.",
+     "src": [
+      "Online:Taunt"
+     ],
+     "q": "These penalties have since been relaxed to be more than five taunts between at least two players in the same 12-second period."
+    },
+    {
+     "t": "In [[Kyne's Aegis]], face the Half-Giant Tidebreaker away from the group: it has a cleave attack.",
+     "src": [
+      "Online:Kyne's Aegis"
+     ],
+     "q": "Has a cleave attack, so tanks should make sure they are not facing towards the group."
+    }
+   ],
+   "upcoming": {
+    "t": "Coming with Update 52 (not live when this guide was checked): [[Unstoppable]] and its morphs taunt enemies around you, and [[Tormentor]] taunts every enemy hit, not only the first.",
+    "post": "arzyel/eso-update-52",
+    "q": "The Unstoppable Heavy Armor skill and its morphs, as well as Goading Smash and Goading Vault, now offer an AoE Taunt. This makes it easier for Tanks to control groups of enemies and assist their allies. Additionally the Tormentor Set now taunts all enemies rather than only the first enemy hit"
+   }
+  },
+  {
+   "id": "howto-heal",
+   "title": "How to heal in a group",
+   "kind": "How-to",
+   "answer": "Queue as Healer, equip a Restoration Staff, keep [[Regeneration]] and [[Grand Healing]] on your group, and heavy attack to get Magicka back.",
+   "need": "You'll need: a Restoration Staff.",
+   "steps": [
+    {
+     "t": "Pick the **Healer** role in the Group & Activity Finder before you queue.",
+     "src": [
+      "Online:Grouping"
+     ],
+     "q": "The Role selection between Tank, Healer and Damage is now required"
+    },
+    {
+     "t": "Equip a Restoration Staff: most of its skills heal and protect allies.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "Most active and passive abilities enabled by Restoration Staves focus on protecting and healing allies"
+    },
+    {
+     "t": "Kill an enemy with the staff equipped to unlock the [[Restoration Staff]] skill line.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "The Restoration Staff skill line is granted the first time you kill an enemy with a restoration staff equipped."
+    },
+    {
+     "t": "Cast [[Regeneration]] on yourself or a hurt ally to heal them over time.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "Share your staff's life-giving energy, healing you or a nearby ally for"
+    },
+    {
+     "t": "Place [[Grand Healing]] under your group when several allies are hurt.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "Call upon restoring spirits with your staff, healing you and your allies in the target area for"
+    },
+    {
+     "t": "Cast [[Steadfast Ward]] to shield the ally with the lowest health.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "Call on your staff's strength to protect you or the lowest health ally around you with a damage shield"
+    },
+    {
+     "t": "Cast [[Blessing of Protection]] to heal the allies in front of you and give them Minor Resolve.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": [
+      "Slam your staff down to activate its blessings, healing you and your allies in front of you for",
+      "Also grants Minor Resolve"
+     ]
+    },
+    {
+     "t": "Fully charge a heavy attack on an enemy to get Magicka back.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "dealing a fully-charged heavy attack to an enemy will also recharge the user's magicka based on their level"
+    },
+    {
+     "t": "Use the line's Ultimate, [[Panacea]], to heal you or an ally every 1 second for 5 seconds.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "healing you or an ally for [7687 / 7771 / 7856 / 7940] Health every 1 second for 5 seconds."
+    }
+   ],
+   "check": "Your group stays above half health between boss attacks and you still have Magicka left.",
+   "more": [
+    {
+     "t": "A heal in an area reaches at most 6 targets at a time.",
+     "src": [
+      "Online:Healing"
+     ],
+     "q": "Healing done in an area can only heal up to 6 targets at a time."
+    },
+    {
+     "t": "Class lines for healing: [[Green Balance]] (Warden), [[Living Death]] (Necromancer), [[Curative Runeforms]] (Arcanist).",
+     "src": [
+      "Online:Classes"
+     ],
+     "q": [
+      "Green Balance skill line for healing",
+      "Living Death for healing",
+      "Curative Runeforms for healing"
+     ]
+    },
+    {
+     "t": "[[Combat Prayer]], a morph of Blessing of Protection, also gives Minor Berserk: 5% more damage done for you and your allies.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": "Also grants Minor Berserk and Minor Resolve increasing you and your allies' damage done by 5%"
+    },
+    {
+     "t": "[[Force Siphon]] puts Minor Lifesteal on an enemy: you and your allies heal while damaging it.",
+     "src": [
+      "Online:Restoration Staff"
+     ],
+     "q": [
+      "Focus your staff's power to apply Minor Lifesteal to an enemy for",
+      "healing you and your allies for 600 Health every 1 second when damaging them"
+     ]
+    },
+    {
+     "t": "Allies can use the synergies of your skills at no cost; each synergy has a 20 second cooldown per player.",
+     "src": [
+      "Online:Synergy"
+     ],
+     "q": [
+      "Synergy activations cost no resources and are independent of skill cooldowns.",
+      "Synergies have a 20 second cooldown per player for each individual Synergy."
+     ]
+    },
+    {
+     "t": "The current update's patch notes cut back the group healing of Strife and Funnel so those skills do not replace healers.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "we’re also gently peeling back the group healing of Strife and Funnel to account for this, to try and avoid cases where these abilities replace healers in group scenarios."
+    },
+    {
+     "t": "In [[Kyne's Aegis]], the hardest add pulls need the healers to slot [[Inner Fire]] and taunt some adds.",
+     "src": [
+      "Online:Kyne's Aegis"
+     ],
+     "q": "To do this pull effectively you will need to have the Healers run Inner Fire to taunt certain adds."
+    }
+   ]
+  },
+  {
+   "id": "howto-dungeons",
+   "title": "How to run group dungeons",
+   "kind": "How-to",
+   "answer": "Group up to four players, queue or travel to a dungeon, and take daily Undaunted pledges for keys.",
+   "need": "You'll need: a group of up to four players, or the Dungeon Finder.",
+   "steps": [
+    {
+     "t": "Form a group of up to four players.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "Group Dungeons are designed to be explored with a group of four players maximum."
+    },
+    {
+     "t": "If you are under level 50, enter through the Dungeon Finder to get the Looking for Group buff.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "Entering a group dungeon through the Dungeon Finder while under level 50 will give you the \"Looking for Group\" buff"
+    },
+    {
+     "t": "Talk to the Undaunted in a major city tavern to add dungeons to your map.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "They can be added to your map by talking to members of the Undaunted in the taverns of the major cities of each zone"
+    },
+    {
+     "t": "Run a random dungeon from the dungeon finder for Premium Undaunted Exploration Supplies once every 20 hours.",
+     "src": [
+      "Online:Undaunted"
+     ],
+     "q": "Completing the Daily event will grant Premium Undaunted Exploration Supplies. This event has a 20 hour cooldown per character"
+    },
+    {
+     "t": "At level 45, open the Undaunted Enclave Invitation from your mail.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "open the \"Undaunted Enclave Invitation\" item that you receive in the mail upon reaching level 45"
+    },
+    {
+     "t": "Sign the Tome of the Undaunted in your capital city.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "It will begin a prerequisite quest for you to sign the \"Tome of the Undaunted\" in your capital city."
+    },
+    {
+     "t": "Take up to three pledges a day, one from each Pledge Master.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "It is possible to complete up to three pledges per character per day, a different one offered by each of the three Pledge Masters at the enclave."
+    },
+    {
+     "t": "If you do not own the DLC dungeons, take pledges only from Maj and Glirion.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "players without access to the DLCs can easily avoid them by only getting pledges from Maj and Glirion."
+    },
+    {
+     "t": "Reach level 50 to unlock Veteran dungeons.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "These can be accessed once you hit Level 50 and unlock Veteran content."
+    },
+    {
+     "t": "Read the Scroll of Glorious Battle near the last boss to turn on Hard Mode.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "it is activated by a member of the group reading the glowing \"Scroll of Glorious Battle\" that can be found on the floor near the dungeon's last boss arena."
+    },
+    {
+     "t": "Clear Hard Mode with a pledge active to get two Undaunted Keys instead of one.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "Completing a dungeon in Hard Mode grants an achievement and, if an Undaunted Pledge is active, two Undaunted Keys instead of one."
+    },
+    {
+     "t": "Spend your keys at any Pledge Master in the Undaunted enclave.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "Each key can be spent at any of the Pledge Masters at the Undaunted enclave."
+    }
+   ],
+   "check": "Your pledge quest completes and you get a key to spend at the Pledge Masters.",
+   "more": [
+    {
+     "t": "The Looking for Group buff gives 25% more Max Health and 20% more Weapon and Spell Damage.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "increases your Max Health by 25% and your Weapon and Spell Damage by 20%"
+    },
+    {
+     "t": "Expect DLC dungeons to need level 45 even on normal.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "All DLC dungeons on normal difficulty have a minimum character requirement of level 45."
+    },
+    {
+     "t": "Do DLC pledges for more keys: two, three or four for normal, veteran or veteran hard mode.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "DLC dungeon pledges reward you with two, three or four keys for normal, veteran or veteran hard mode respectively."
+    },
+    {
+     "t": "Plan on at most eight keys per character per day.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "The maximum number of keys that can be earned in a day per character is thus eight."
+    },
+    {
+     "t": "Look for Challenge Banners in newer dungeons: they replace the scroll and keep Hard Mode on between attempts.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "banners preserve their state between attempts, without having to reactivate them every time"
+    },
+    {
+     "t": "Collect each dungeon's own gear sets.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "Each dungeon also has associated collectible gear sets."
+    },
+    {
+     "t": "Expect veteran mode to give better loot.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "They are understandably much more difficult, but earn you higher-quality loot and Veteran Dungeon Achievements."
+    }
+   ]
+  },
+  {
+   "id": "howto-trials",
+   "title": "How to start doing trials",
+   "kind": "How-to",
+   "answer": "Join a group of 12, start on Normal mode, and claim each trial's reward coffer once a week.",
+   "need": "You'll need: a group of 12 players.",
+   "steps": [
+    {
+     "t": "Find a group of 12 players.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": "They are designed for groups of 12, and each has a leaderboard associated with it."
+    },
+    {
+     "t": "Start on Normal mode, the easier mode.",
+     "src": [
+      "Online:Veteran"
+     ],
+     "q": "They remain challenging dungeon instances geared towards groups of twelve players, although they now have an easier Normal mode."
+    },
+    {
+     "t": "If you own no DLC, start with [[Aetherian Archive]], [[Hel Ra Citadel]] or [[Sanctum Ophidia]]: they are in the base game.",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Trials: Aetherian Archive, Hel Ra Citadel, and Sanctum Ophidia are included in the base game."
+    },
+    {
+     "t": "Play [[Halls of Fabrication]] too: it has been free since April 2022.",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Halls of Fabrication has been free since April 2022."
+    },
+    {
+     "t": "Play [[Kyne's Aegis]] in [[Western Skyrim]] too: Greymoor joined the base game with Season Two on 21 October 2026.",
+     "src": [
+      "Online:Base Game",
+      "Online:Kyne's Aegis"
+     ],
+     "q": [
+      "Greymoor: Western Skyrim and Blackreach: Greymoor Caverns (integrated to the base game with the launch of Season Two on 21 October 2026)",
+      "Haafingar, Western Skyrim"
+     ]
+    },
+    {
+     "t": "Play [[Maw of Lorkhaj]] too: it needs the Thieves Guild DLC, which joined the base game in March 2026.",
+     "src": [
+      "Online:Maw of Lorkhaj",
+      "Online:Base Game"
+     ],
+     "q": [
+      "Even though this trial is in an Alliance Zone region, access to the Thieves Guild DLC is required to run it.",
+      "Thieves Guild: Hew's Bane (integrated into the base game since March 2026)"
+     ]
+    },
+    {
+     "t": "Claim each trial's reward coffer once per week.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": "You can only earn the reward coffer from each trial quest once per week."
+    },
+    {
+     "t": "If you play on the North American server, plan for the week to start Tuesday 6am ET (10am UTC).",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": "on the North American server, the weekly coffer and the trial of the week quest period begins on Tuesday 6am ET (10am UTC)"
+    },
+    {
+     "t": "If you play on the European server, plan for the week to start Tuesday 3am UTC.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": "on the European server, the period begins on Tuesday 3am UTC (Monday 11pm ET)"
+    },
+    {
+     "t": "Reach level 50 to unlock Veteran trials.",
+     "src": [
+      "Online:Veteran"
+     ],
+     "q": [
+      "Veteran content in the Elder Scrolls Online is unlocked when a character reaches Level 50.",
+      "Similarly, Veteran Trials and Arenas also become available, and offer access to leaderboards, increased rewards, and new achievements."
+     ]
+    },
+    {
+     "t": "Run Veteran mode for perfected trial sets.",
+     "src": [
+      "Online:Veteran"
+     ],
+     "q": "Perfected versions of trial and arena sets only drop in Veteran mode."
+    },
+    {
+     "t": "Turn on Hard Mode by using the item or object near certain bosses.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Trials also have an additional Hard Mode for certain bosses, which can be activated manually within the dungeon itself.",
+      "It typically involves activating an item or an object found near the boss."
+     ]
+    },
+    {
+     "t": "Switch Hard Mode on or off as you like, except in the [[Craglorn]] trials.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": "Trials hard mode can be turned on and off in all trials except for those in Craglorn."
+    },
+    {
+     "t": "Check which trial is the weekly trial for the leaderboards.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": "Each week, a random trial is chosen as the weekly trial for the leaderboards."
+    }
+   ],
+   "check": "After the final boss you get the weekly reward coffer for that trial.",
+   "more": [
+    {
+     "t": "Find [[Aetherian Archive]], [[Hel Ra Citadel]] and [[Sanctum Ophidia]] in [[Craglorn]].",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Aetherian Archive — A tower in southeastern Craglorn near the city of Elinhir.",
+      "Hel Ra Citadel — An ancient Yokudan fortress in southwestern Craglorn.",
+      "Sanctum Ophidia — An ancient Nedic temple in northern Craglorn."
+     ]
+    },
+    {
+     "t": "Find [[Halls of Fabrication]] in [[Vvardenfell]] and the mini trial [[Asylum Sanctorium]] in [[Clockwork City]].",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Halls of Fabrication — A part of Sotha Sil's Clockwork City.",
+      "Asylum Sanctorium — A mini trial found within the Reactor District in the Brass Fortress."
+     ]
+    },
+    {
+     "t": "Find [[Maw of Lorkhaj]] in [[Reaper's March]], [[Cloudrest]] in [[Summerset]] and [[Sunspire]] in [[Northern Elsweyr]].",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Maw of Lorkhaj — A desecrated Khajiiti temple in Reaper's March.",
+      "Cloudrest — A city found on the mountain of Eton Nir in Summerset, east of Ebon Stadmont.",
+      "Sunspire — An ancient temple of Alkosh found in Northern Elsweyr."
+     ]
+    },
+    {
+     "t": "Find [[Kyne's Aegis]] in [[Western Skyrim]], [[Rockgrove]] in [[Blackwood]] and [[Dreadsail Reef]] in [[High Isle]].",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Kyne's Aegis — A bastion in the Sea of Ghosts, located on an island off the coast north of Solitude.",
+      "Rockgrove — An Argonian settlement and trial located in the southeastern reaches of Blackwood.",
+      "Dreadsail Reef — A reef off the coast of High Isle that serves as a major base for the Dreadsails"
+     ]
+    },
+    {
+     "t": "Find [[Sanity's Edge]] in [[Telvanni Peninsula]], [[Lucent Citadel]] from [[West Weald]] and [[Ossein Cage]] from [[Solstice]].",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Sanity's Edge — The dreamworld of Warlock Vanton.",
+      "Lucent Citadel — A ruined stronghold in the wastelands of Fargrave, accessible from West Weald.",
+      "Ossein Cage — A Coldharbour prison that is accessible from Solstice."
+     ]
+    },
+    {
+     "t": "Find [[Opulent Ordeal]] in the Night Market event zone; it is not part of the weekly trial.",
+     "src": [
+      "Online:Trials"
+     ],
+     "q": [
+      "Opulent Ordeal — A trial created by the enigmatic Opulent entities of the Night Market to test newcomers.",
+      "This does not apply to the Opulent Ordeal, as it is located within an Event Zone."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "howto-solo",
+   "title": "How to get stronger solo (arenas, solo dungeons, Infinite Archive)",
+   "kind": "How-to",
+   "answer": "Train in the solo arenas, the Wolfhunter solo dungeons and the Infinite Archive.",
+   "need": "You'll need: a character that can fight alone, or a companion.",
+   "steps": [
+    {
+     "t": "Enter Maelstrom Arena from [[Wrothgar]] for a solo arena.",
+     "src": [
+      "Online:Arenas"
+     ],
+     "q": "Maelstrom Arena — An otherworldly solo arena accessed from Wrothgar."
+    },
+    {
+     "t": "Enter [[Vateshran Hollows]] in [[The Reach]] for another solo arena.",
+     "src": [
+      "Online:Arenas"
+     ],
+     "q": "Vateshran Hollows — A solo arena in the Reach, south of the Reachwind Ritual Site."
+    },
+    {
+     "t": "Use Sigils in Normal mode; skip them in Veteran mode if you want a higher leaderboard score.",
+     "src": [
+      "Online:Arenas"
+     ],
+     "q": "In Normal mode, use of these synergies is encouraged, but in Veteran mode the use of a Sigil will reduce your final overall leaderboard score."
+    },
+    {
+     "t": "Run the solo versions of [[March of Sacrifices]] or [[Moon Hunter Keep]], alone or with a companion.",
+     "src": [
+      "Online:Solo Dungeons"
+     ],
+     "q": [
+      "Solo Dungeons are instanced PvE content, balanced around a Solo player and optionally a Companion.",
+      "collected from the March of Sacrifices and Moon Hunter Keep solo dungeons"
+     ]
+    },
+    {
+     "t": "Pick 1 to 3 Meted Misfortunes at the start to set the difficulty and rewards.",
+     "src": [
+      "Online:Solo Dungeons"
+     ],
+     "q": [
+      "Meted Misfortunes are a mechanic unique to the Solo Dungeons, which control the difficulty level and rewards the dungeon will have.",
+      "you can pick between 1-3 of them"
+     ]
+    },
+    {
+     "t": "Pick Veteran or Dauntless difficulty for a guaranteed Monster Mask set piece.",
+     "src": [
+      "Online:Solo Dungeons"
+     ],
+     "q": "Guaranteed Monster Mask item set piece and [Associated Dungeon Bust]"
+    },
+    {
+     "t": "Trade your Undaunted Crests to the Crest Merchant Veya Thenim.",
+     "src": [
+      "Online:Solo Dungeons"
+     ],
+     "q": "Solo Dungeons will also provide a unique currency, Undaunted Crests which can be traded to the Crest Merchant Veya Thenim for items."
+    },
+    {
+     "t": "Travel to the [[Infinite Archive]] with its icon on the [[Apocrypha]] map.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "it can be accessed by clicking on the icon on the Apocrypha map and teleporting directly to the Archive"
+    },
+    {
+     "t": "Enter solo, with a companion, or with one friend.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "Players may enter solo, with an NPC Companion, or with one friend (in a duo)."
+    },
+    {
+     "t": "Clear all three waves of a round without dying.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "You must complete all three waves without dying to complete the round."
+    },
+    {
+     "t": "Guard your Threads: each death in the Archive costs one.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "If you are killed by any means in the archive, you will lose one of these Threads."
+    },
+    {
+     "t": "Pick a Verse at the end of each Stage; it lasts until the end of the next Stage.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "Verses are temporary buffs that last until the end of the next Stage."
+    }
+   ],
+   "check": "Your Infinite Archive run reaches later Cycles and Arcs, and your solo dungeon clears drop Monster Mask pieces.",
+   "more": [
+    {
+     "t": "You start the Archive with three Threads.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "When you first enter the Archive, you will have three Threads available"
+    },
+    {
+     "t": "Use the hourglass at the dungeon start to reset your Misfortunes.",
+     "src": [
+      "Online:Solo Dungeons"
+     ],
+     "q": "use the hourglass found at the start of the dungeon to reset them."
+    },
+    {
+     "t": "Pick a Vision at the end of each Cycle; it stays until you finish the Archive.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": [
+      "At the end of each Cycle (including the 5th Cycle where you face Tho'at), you will be given a choice between 2 random Visions",
+      "Visions are enduring buffs that will be on your character until you finish the Infinite Archive."
+     ]
+    },
+    {
+     "t": "Spend Archival Fortunes at the merchants at the Archive entrance.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "Archival Fortunes can be spent at the merchants in the entrance area of the Infinite Archive in return for special rewards"
+    },
+    {
+     "t": "Play the Infinite Archive without a chapter: it is part of the base game.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "The Infinite Archive is part of the base game and is accessible for all players, regardless of ESO Plus subscription or ownership of the Necrom Chapter."
+    },
+    {
+     "t": "Buy class set pieces from Filer Brax in the Archive Index Hall.",
+     "src": [
+      "Online:Infinite Archive"
+     ],
+     "q": "Filer Brax offers class set pieces and is always available in the Archive Index Hall."
+    },
+    {
+     "t": "Play the solo dungeons free: Wolfhunter was made free on October 19, 2026.",
+     "src": [
+      "Online:Solo Dungeons"
+     ],
+     "q": "On October 19, 2026, the Wolfhunter Dungeon DLC was made free for all players as its dungeons were given Solo versions."
+    },
+    {
+     "t": "[[Vateshran Hollows]] needs no DLC now: [[The Reach]] joined the base game with Markarth on 9 November 2026.",
+     "src": [
+      "Online:Arenas",
+      "Online:Base Game"
+     ],
+     "q": [
+      "Vateshran Hollows — A solo arena in the Reach, south of the Reachwind Ritual Site.",
+      "Markarth: The Reach and Blackreach: Arkthzand Cavern (added to the base game on 9 November 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "about-zones",
+   "title": "About zones and chapter order",
+   "kind": "Explanation",
+   "answer": "Each alliance has its own zones, all zones scale to you, and the chapters came out from Morrowind to Gold Road.",
+   "need": "You'll need: nothing; this explains how the world is laid out.",
+   "paras": [
+    {
+     "t": "The base-game zones are split by alliance: five per alliance, plus one or two starter zones.",
+     "src": [
+      "Online:Zones"
+     ],
+     "q": "The base-game zones are divided by Alliance, with five to each Alliance as well as one or two starter zones"
+    },
+    {
+     "t": "Aldmeri Dominion zones: [[Auridon]], [[Grahtwood]], [[Greenshade]], [[Khenarthi's Roost]], [[Malabal Tor]] and [[Reaper's March]].",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Aldmeri Dominion: Auridon, Grahtwood, Greenshade, Khenarthi's Roost, Malabal Tor, Reaper's March"
+    },
+    {
+     "t": "Daggerfall Covenant zones: [[Alik'r Desert]], [[Bangkorai]], [[Betnikh]], [[Glenumbra]], [[Rivenspire]], [[Stormhaven]] and [[Stros M'Kai]].",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Daggerfall Covenant: Alik'r Desert, Bangkorai, Betnikh, Glenumbra, Rivenspire, Stormhaven, Stros M'Kai"
+    },
+    {
+     "t": "Ebonheart Pact zones: [[Bal Foyen]], [[Bleakrock Isle]], [[Deshaan]], [[Eastmarch]], [[The Rift]], [[Shadowfen]] and [[Stonefalls]].",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Ebonheart Pact: Bal Foyen, Bleakrock Isle, Deshaan, Eastmarch, The Rift, Shadowfen, Stonefalls"
+    },
+    {
+     "t": "All zones now scale with Battle Leveling; the zone order still matters for the story.",
+     "src": [
+      "Online:Zones"
+     ],
+     "q": "The tiered ordering of zones remains important for story progression, but the level banding no longer exists, as all zones are subject to the Battle Leveling system"
+    },
+    {
+     "t": "[[Cyrodiil]] is one large zone split into three disputed territories.",
+     "src": [
+      "Online:Zones"
+     ],
+     "q": "Cyrodiil is one zone, much larger than the others, divided into three larger-than-normal disputed territories."
+    },
+    {
+     "t": "The main quest starts with Soul Shriven in Coldharbour, where you escape from [[Coldharbour]].",
+     "src": [
+      "Online:Main Quest"
+     ],
+     "q": "Soul Shriven in Coldharbour: Escape from the depths of Coldharbour."
+    },
+    {
+     "t": "The first four Chapters: Morrowind (2017, [[Vvardenfell]]), Summerset (2018), Elsweyr (2019, [[Northern Elsweyr]]) and Greymoor ([[Western Skyrim]]).",
+     "src": [
+      "Online:Chapters"
+     ],
+     "q": [
+      "Morrowind is the first Chapter of The Elder Scrolls Online. It is an expansion set on the island of Vvardenfell.",
+      "officially launched on all platforms on June 6, 2017",
+      "Summerset is the second Chapter of The Elder Scrolls Online.",
+      "21 May 2018 (early access) 5 June 2018",
+      "Elsweyr is the third Chapter of The Elder Scrolls Online. It is an expansion set in Northern Elsweyr.",
+      "20 May 2019 (early access) 4 June 2019",
+      "Greymoor is the fourth Chapter of The Elder Scrolls Online. Supernatural harrowstorms plague Western Skyrim"
+     ]
+    },
+    {
+     "t": "The next four Chapters: Blackwood, High Isle, Necrom ([[Telvanni Peninsula]], with the [[Arcanist]] class) and Gold Road (2024, [[West Weald]]).",
+     "src": [
+      "Online:Chapters"
+     ],
+     "q": [
+      "Blackwood is the fifth Chapter of The Elder Scrolls Online.",
+      "High Isle is the sixth Chapter of The Elder Scrolls Online.",
+      "Necrom is the seventh Chapter of The Elder Scrolls Online. It is an expansion set on the Telvanni Peninsula",
+      "It also includes the new Arcanist class.",
+      "The expansion is set in the Colovian region of the West Weald, and was released on June 3, 2024 for PC/Mac"
+     ]
+    },
+    {
+     "t": "Chapters were put aside in 2025 in favor of Seasons; the first, Season Zero, was released on April 2, 2026.",
+     "src": [
+      "Online:Chapters",
+      "Online:Seasons"
+     ],
+     "q": [
+      "As of 2025, Chapters have been \"put aside\" in favor of a new content delivery system referred to as Seasons",
+      "Season Zero: Dawn and Dusk — Introduces the Night Market event zone",
+      "Released April 2, 2026"
+     ]
+    },
+    {
+     "t": "Greymoor's [[Western Skyrim]] and [[Blackreach: Greymoor Caverns]] joined the base game with Season Two on 21 October 2026.",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Greymoor: Western Skyrim and Blackreach: Greymoor Caverns (integrated to the base game with the launch of Season Two on 21 October 2026)"
+    },
+    {
+     "t": "Markarth joined the base game in Update 51 Incremental 2, adding [[The Reach]] and [[Blackreach: Arkthzand Cavern]]; you get it on your first login.",
+     "src": [
+      "Online:Update 51 Inc.2",
+      "Online:Base Game"
+     ],
+     "q": [
+      "Players who do not own this DLC will receive it upon their first login after Update 51 Incremental 2 is live.",
+      "Markarth: The Reach and Blackreach: Arkthzand Cavern (added to the base game on 9 November 2026)"
+     ]
+    }
+   ],
+   "check": "Your Collections menu shows the DLC and zones your account owns.",
+   "more": [
+    {
+     "t": "Morrowind's [[Vvardenfell]] has been fully part of the base game since March 2026.",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "Morrowind: Vvardenfell (available for free since April 2022, and fully integrated into the base game since March 2026)"
+    },
+    {
+     "t": "The [[Warden]] class joined the base game with Update 49 in early March 2026.",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "The Warden class was added to the base game with the launch of Update 49 on 6 March 2026"
+    },
+    {
+     "t": "ESO Plus members can use all DLC while subscribed.",
+     "src": [
+      "Online:DLC"
+     ],
+     "q": "ESO Plus members are given access to all DLC for the duration of their subscription."
+    },
+    {
+     "t": "Check what your account owns in the Collections menu.",
+     "src": [
+      "Online:Update 51 Inc.2"
+     ],
+     "q": "to see what content is owned on your account, visit the Collections Menu and visit the Collectibles, Stories, etc. tabs."
+    }
+   ]
+  },
+  {
+   "id": "howto-pvp",
+   "title": "How to start PvP",
+   "kind": "How-to",
+   "answer": "Go to Cyrodiil from level 10 for the Alliance War, or queue Battlegrounds through the Group & Activity Finder.",
+   "need": "You'll need: a character of level 10 or higher.",
+   "steps": [
+    {
+     "t": "Reach level 10 to join a campaign in [[Cyrodiil]].",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": "At Level 10, you will be able to go to Cyrodiil and start participating in a Campaign."
+    },
+    {
+     "t": "Choose one campaign as your Home Campaign.",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": "A player can choose one campaign as their \"Home Campaign.\""
+    },
+    {
+     "t": "Do the tutorial quest Welcome to Cyrodiil to become a Volunteer.",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": "by completing the tutorial quest Welcome to Cyrodiil, you will become enlisted as a Volunteer"
+    },
+    {
+     "t": "Go in at any level: battle leveling scales up your attributes, armor and damage.",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": [
+      "Every player who enters Cyrodiil is given the Battle Spirit bonus, regardless of their level.",
+      "which scales up their attributes, armor, and damage ratings in order to remain competitive"
+     ]
+    },
+    {
+     "t": "Take repeatable quests from your alliance general to learn how to capture keeps.",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": "Each alliance general offers a range of repeatable quests designed to direct players through the motions of capturing a keep or resource."
+    },
+    {
+     "t": "Earn Alliance Points to rank up; each rank gives one skill point.",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": [
+      "As you gain Alliance Points, you will increase your Alliance War Rank further",
+      "Each rank gained will reward you with one skill point."
+     ]
+    },
+    {
+     "t": "Queue Battlegrounds through the **Group & Activity Finder**.",
+     "src": [
+      "Online:Battlegrounds"
+     ],
+     "q": "Battlegrounds are small-scale player-versus-player (PvP) gameplay locations that can be accessed through the Group & Activity Finder."
+    },
+    {
+     "t": "Queue alone or with a pre-formed group.",
+     "src": [
+      "Online:Battlegrounds"
+     ],
+     "q": "you are able to queue up for Battlegrounds individually or in pre-formed groups"
+    },
+    {
+     "t": "Win your first battleground of the day for a Competitive Reward Box.",
+     "src": [
+      "Online:Battlegrounds"
+     ],
+     "q": "You get a Battlemaster Rivyn's Competitive Reward Box by winning your first battleground of the day"
+    }
+   ],
+   "check": "Your Alliance War rank goes up as you earn Alliance Points.",
+   "more": [
+    {
+     "t": "Crown an Emperor by taking all six keeps around the Imperial City.",
+     "src": [
+      "Online:Alliance War"
+     ],
+     "q": "By capturing all six of the keeps surrounding the Imperial City, your alliance will have the opportunity to crown a player as Emperor."
+    },
+    {
+     "t": "Expect your Battlegrounds team to be random, not your alliance.",
+     "src": [
+      "Online:Battlegrounds"
+     ],
+     "q": "Your team is assigned randomly on entering each Battleground"
+    }
+   ]
+  }
+ ]
+}

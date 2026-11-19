@@ -1,0 +1,85 @@
+{
+ "note": "Where each how-to section sits in the left menu. build.py fails if a section is missing here or listed but not written.",
+ "howto": [
+  "howto-return",
+  "howto-level",
+  "howto-skillpoints",
+  "howto-skilllines",
+  "howto-subclass",
+  "howto-cp",
+  "howto-combat",
+  "howto-buffs",
+  "howto-consumables",
+  "howto-mundus",
+  "howto-gear",
+  "howto-research",
+  "howto-craftsets",
+  "howto-writs",
+  "howto-mount",
+  "howto-tank",
+  "howto-heal",
+  "howto-dungeons",
+  "howto-trials",
+  "howto-solo",
+  "howto-pvp",
+  "about-zones"
+ ],
+ "groups": [
+  {
+   "title": "Grow your character",
+   "ids": [
+    "howto-level",
+    "howto-skillpoints",
+    "howto-skilllines",
+    "howto-subclass",
+    "howto-cp"
+   ]
+  },
+  {
+   "title": "Fight better",
+   "ids": [
+    "howto-combat",
+    "howto-buffs",
+    "howto-consumables",
+    "howto-mundus"
+   ]
+  },
+  {
+   "title": "Gear and crafting",
+   "ids": [
+    "howto-gear",
+    "howto-research",
+    "howto-craftsets",
+    "howto-writs",
+    "howto-mount"
+   ]
+  },
+  {
+   "title": "Group and solo content",
+   "ids": [
+    "howto-tank",
+    "howto-heal",
+    "howto-dungeons",
+    "howto-trials",
+    "howto-solo",
+    "howto-pvp"
+   ]
+  },
+  {
+   "title": "The world",
+   "ids": [
+    "about-zones"
+   ]
+  }
+ ],
+ "path": [
+  "howto-return",
+  "howto-subclass",
+  "builds",
+  "howto-skilllines",
+  "howto-cp",
+  "howto-mount",
+  "howto-research",
+  "howto-dungeons"
+ ]
+}

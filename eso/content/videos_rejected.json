@@ -1,0 +1,100 @@
+{
+ "note": "Videos dropped after reading their titles. fetch_videos.py skips these ids and searches again.",
+ "rejected": {
+  "CoObkQhXqpA": {
+   "title": "Should You Play Elder Scrolls Online In 2026?",
+   "channel": "Force Gaming",
+   "reason": "An opinion piece about whether to play, not a how-to guide."
+  },
+  "_xvNXN3pT2s": {
+   "title": "Reittieroptik einstellen - So geht's! 🤩 | The Elder Scrolls Online [Guide] [Deutsch]",
+   "channel": "Gameplayerin",
+   "reason": "German-language video; the guide is in English."
+  },
+  "ggYKWaJzyNg": {
+   "title": "NEW ⚡️Magica Sorc PvP Build & Gameplay 🧙‍♂️| ESO OP Meta Build Guide",
+   "channel": "Nova Nelson",
+   "reason": "Title states meta status as fact (\"OP Meta\")."
+  },
+  "3scv-4v89lA": {
+   "title": "ESO Nightblade is OP in Update 51 | Battleground of the Week",
+   "channel": "Jyggala",
+   "reason": "Gameplay highlight with a strength claim in the title, not a guide."
+  },
+  "0B_pdHly9Us": {
+   "title": "ESO Magicka Templar is UNSTOPPABLE With This Update!",
+   "channel": "Hack The Minotaur",
+   "reason": "Hype title, and made for Update 50, before the Update 51 class changes."
+  },
+  "RApgpd3quhY": {
+   "title": "I Built the STRONGEST Necromancer in ESO U51… This Is INSANE 💀🪦💀",
+   "channel": "Avid Necro",
+   "reason": "Title states a ranking as fact."
+  },
+  "pb2QDJyXZMQ": {
+   "title": "Templar Healer | NEW META Pure Class Build ESO U50 PvE Guide *BEST* skills, gear & How to Play!",
+   "channel": "Facehead McGee",
+   "reason": "Title states meta status as fact, and made for Update 50, before Update 51."
+  },
+  "suRL6n7qd-E": {
+   "title": "ESO’s BEST Class for Clearing Content | U51 Arcanist Build Guide",
+   "channel": "Eigh1 Puppies",
+   "reason": "Title states a class ranking as fact."
+  },
+  "NbLZaAdPTes": {
+   "title": "How To Call Horse In Elder Scrolls Online?",
+   "channel": "Leminox",
+   "reason": "About calling a mount, not about training it."
+  },
+  "RqQqkUHKy4c": {
+   "title": "I Had 40 Hours To Become An ESO Tank",
+   "channel": "BronzeNBrave",
+   "reason": "A challenge vlog, not a tanking guide."
+  },
+  "CApM3CD6Q3o": {
+   "title": "⚔️ AEGIS ASCENDANT – THE HEALER GOD! ⚔️ Eso PVE Sub class Healer!",
+   "channel": "Xurkyn",
+   "reason": "Title states a ranking as fact (\"healer god\")."
+  },
+  "BriyvlljKvk": {
+   "title": "ESO Group Content Etiquette: 12 Rules to Fill Your Trial Groups (Vet Dungeons & Trials Guide)",
+   "channel": "Tamriel Tips N Tricks",
+   "reason": "About group etiquette, not how to run trials."
+  },
+  "PZM_bM86Ixk": {
+   "title": "ESO July 2026 - Season 1 Starts, New Content Drops & More! - The Elder Scrolls Online Survival Guide",
+   "channel": "CozyCaster",
+   "reason": "A monthly news roundup for Season One, not a guide for returning players."
+  },
+  "Nh-JGpylKlI": {
+   "title": "ESO PVP Templar Build U51 Crazy DMG and healing!! PS NA",
+   "channel": "InsaiyanInstinct",
+   "reason": "A PvP damage build, not a healer guide."
+  },
+  "-FJaG4lz_LU": {
+   "title": "ESO Solo Dungeons Guide: Meted Misfortunes Explained + Sets to Beat Dauntless (Season 2)",
+   "channel": "Tamriel Tips N Tricks",
+   "reason": "About solo dungeons; the topic is group dungeons."
+  },
+  "A1dduLSr9kc": {
+   "title": "Ultimate Guide to The Opulent Trial Night Market - Full trial run for Elder Scrolls Online ESO",
+   "channel": "Vince Luca",
+   "reason": "A full run of one event-zone trial, not a guide to starting trials."
+  },
+  "Hbw3pd-pP58": {
+   "title": "ESO Update 49 Top 15 New Features – Free Respecs, New Gold Mounts & More (2026)",
+   "channel": "Tamriel Tips N Tricks",
+   "reason": "An Update 49 feature roundup, not a mount training guide."
+  },
+  "Kbc5AA7YPz0": {
+   "title": "ESO Antiquities Is Now Free! – Complete Beginner Guide (2026)",
+   "channel": "CozyCaster",
+   "reason": "A guide to the Antiquities system, not a general beginner guide; the topic list has no Antiquities topic."
+  },
+  "scKK4FQ4EW8": {
+   "title": "[live] ESO | healing Dungeons | warden and templar",
+   "channel": "Mike Mad Doc",
+   "reason": "A recorded live stream of dungeon runs, not a healer guide (and its title starts with an emoji)."
+  }
+ }
+}

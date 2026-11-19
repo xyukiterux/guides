@@ -1,0 +1,157 @@
+{
+ "note": "Video topics shown on the Videos page, and which how-to pages show them. Videos come from fetch_videos.py (data/raw/videos.json).",
+ "topics": [
+  {
+   "id": "returning",
+   "label": "Coming back after a break",
+   "sections": [
+    "howto-return",
+    "start"
+   ]
+  },
+  {
+   "id": "beginner",
+   "label": "Beginner and general tips",
+   "sections": [
+    "start"
+   ]
+  },
+  {
+   "id": "season",
+   "label": "Season Two: Echoes of Skyrim",
+   "sections": [
+    "howto-return"
+   ]
+  },
+  {
+   "id": "subclassing",
+   "label": "Subclassing",
+   "sections": [
+    "howto-subclass"
+   ]
+  },
+  {
+   "id": "leveling",
+   "label": "Leveling",
+   "sections": [
+    "howto-level"
+   ]
+  },
+  {
+   "id": "champion",
+   "label": "Champion Points",
+   "sections": [
+    "howto-cp"
+   ]
+  },
+  {
+   "id": "crafting",
+   "label": "Crafting and research",
+   "sections": [
+    "howto-research",
+    "howto-craftsets",
+    "howto-writs"
+   ]
+  },
+  {
+   "id": "mounts",
+   "label": "Mount training",
+   "sections": [
+    "howto-mount"
+   ]
+  },
+  {
+   "id": "dps",
+   "label": "Damage and light attack weaving",
+   "sections": [
+    "howto-combat"
+   ]
+  },
+  {
+   "id": "tank",
+   "label": "Tanking",
+   "sections": [
+    "builds",
+    "howto-tank"
+   ]
+  },
+  {
+   "id": "healer",
+   "label": "Healing",
+   "sections": [
+    "builds",
+    "howto-heal"
+   ]
+  },
+  {
+   "id": "dungeons",
+   "label": "Dungeons",
+   "sections": [
+    "howto-dungeons"
+   ]
+  },
+  {
+   "id": "trials",
+   "label": "Trials",
+   "sections": [
+    "howto-trials"
+   ]
+  },
+  {
+   "id": "pvp",
+   "label": "PvP",
+   "sections": [
+    "howto-pvp"
+   ]
+  },
+  {
+   "id": "dragonknight",
+   "label": "Dragonknight",
+   "sections": [
+    "class:dragonknight"
+   ]
+  },
+  {
+   "id": "sorcerer",
+   "label": "Sorcerer",
+   "sections": [
+    "class:sorcerer"
+   ]
+  },
+  {
+   "id": "nightblade",
+   "label": "Nightblade",
+   "sections": [
+    "class:nightblade"
+   ]
+  },
+  {
+   "id": "templar",
+   "label": "Templar",
+   "sections": [
+    "class:templar"
+   ]
+  },
+  {
+   "id": "warden",
+   "label": "Warden",
+   "sections": [
+    "class:warden"
+   ]
+  },
+  {
+   "id": "necromancer",
+   "label": "Necromancer",
+   "sections": [
+    "class:necromancer"
+   ]
+  },
+  {
+   "id": "arcanist",
+   "label": "Arcanist",
+   "sections": [
+    "class:arcanist"
+   ]
+  }
+ ]
+}

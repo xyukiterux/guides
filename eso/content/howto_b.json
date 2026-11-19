@@ -1,0 +1,854 @@
+{
+ "sections": [
+  {
+   "id": "howto-mount",
+   "title": "How to train your mount every day",
+   "kind": "How-to",
+   "answer": "Talk to a stablemaster once a day and raise one riding stat.",
+   "need": "You'll need: at least one mount.",
+   "steps": [
+    {
+     "t": "Get a mount before you try to train.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "A single mount is needed before you can increase your Riding Skill."
+    },
+    {
+     "t": "Go to a stable in a city.",
+     "src": [
+      "Online:Stables"
+     ],
+     "q": "These are places where you can find stablemasters and make use of their services."
+    },
+    {
+     "t": "Speak with the stablemaster to train your Riding Skill.",
+     "src": [
+      "Online:Mounts"
+     ],
+     "q": "You can train your character's Riding Skill once per day by speaking with stablemasters"
+    },
+    {
+     "t": "Pay 250 gold for each training.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "Each upgrade costs 250 Gold."
+    },
+    {
+     "t": "If you want to move faster while mounted, pick Speed.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "Speed: Determines the speed at which you move while mounted."
+    },
+    {
+     "t": "If you want to take more hits before you are knocked off, pick Stamina.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "You will be forced to dismount if hit when this stat is at zero, so upgrading stamina will allow you to take more damage before this happens."
+    },
+    {
+     "t": "If you want more bag space, pick Capacity for 1 more slot each time.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "Each upgrade increases your inventory capacity by 1 point."
+    },
+    {
+     "t": "Keep training until each stat reaches its cap of 60.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "There are three stats available for increase, and each can be raised to a maximum of 60"
+    },
+    {
+     "t": "Come back after the daily reset: 3am UTC on EU, 10am UTC on NA.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "The reset occurs at 3am UTC on EU servers, and 10am UTC on NA servers."
+    },
+    {
+     "t": "Train every character on its own, because the bonus belongs to the character, not the mount.",
+     "src": [
+      "Online:Mounts"
+     ],
+     "q": "are bound to the character rather than the mount, making the different mount types cosmetic."
+    }
+   ],
+   "check": "The stat you picked shows one point higher out of its cap of 60.",
+   "more": [
+    {
+     "t": "Buy Riding Lessons from the Crown Store if you want to train faster than once a day.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "Riding Lessons can also be purchased from the Crown Store in order to speed up the training process."
+    },
+    {
+     "t": "Reach 20 points in a stat to get a cosmetic upgrade on your mounts.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "After 20 points in a single stat, a cosmetic upgrade will be applied to your mounts"
+    },
+    {
+     "t": "Slot the [[War Mount]] Champion star to remove mount Stamina costs outside of combat.",
+     "src": [
+      "Online:Craft"
+     ],
+     "q": "Improves your mastery with mounts, removing all mount Stamina costs outside of combat."
+    }
+   ]
+  },
+  {
+   "id": "howto-research",
+   "title": "How to research traits",
+   "kind": "How-to",
+   "answer": "Research a trait by giving up an item that has it at the matching crafting station.",
+   "need": "You'll need: an item with the trait you want, in your bag or bank.",
+   "steps": [
+    {
+     "t": "Get an item that has the trait you want.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "To start the research process, you need to have an item with the desired trait in your inventory or bank."
+    },
+    {
+     "t": "Use an item you found or one another player crafted.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "Both found items and items crafted by other players work."
+    },
+    {
+     "t": "Go to the station that matches the item: Clothing, Woodworking, Blacksmithing or Jewelry Crafting.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": [
+      "Light and medium armor at Clothing stations",
+      "Bows, staves and shields at Woodworking stations",
+      "Heavy armor and metal weapons at Blacksmithing stations",
+      "Necklaces and rings at Jewelry Crafting stations"
+     ]
+    },
+    {
+     "t": "Start the research, knowing that the item is destroyed.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "Researching a trait will destroy the item."
+    },
+    {
+     "t": "Research each item type on its own, since a trait unlocks only for that type.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "Researching a trait will unlock it only for that particular type of item"
+    },
+    {
+     "t": "Research on each character, since research does not carry over to your other characters.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "researching a trait on one character does not unlock that trait on any other character on that account."
+    },
+    {
+     "t": "Plan for 2 hours on the first trait of an item type, with each further trait doubling the time.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "The base research time for a trait is 2 hours real time. Each further trait you research for an item type doubles this time"
+    },
+    {
+     "t": "Log off if you like, because research keeps counting down.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "Research time continues to count down while you are not playing the character that is researching (e.g. playing another character or offline)."
+    },
+    {
+     "t": "Put skill points into Metallurgy, Stitching, Carpentry or Lapidary Research to research up to 25% faster.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "These abilities can increase the research speed by up to 25%, and raise the limit of concurrent research tasks to 3"
+    },
+    {
+     "t": "Use those passives to research up to 3 traits at once per craft, except in Jewelry Crafting.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "raise the limit of concurrent research tasks to 3 (with the exception of Lapidary Research, which does not add additional research slots)"
+    },
+    {
+     "t": "Research only one trait per item type at a time.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "you still cannot research multiple traits on a single item type at the same time."
+    }
+   ],
+   "check": "The item is gone and a research timer for that trait starts counting down.",
+   "more": [
+    {
+     "t": "At its top rank, Metallurgy reduces research times by 25%, limits research time to 10 days, and allows three items at once.",
+     "src": [
+      "Online:Blacksmithing"
+     ],
+     "q": "Reduces research times by 25%, limits research time to 10 days, and allows the research of three items at once."
+    },
+    {
+     "t": "Use a research scroll to cut the timers of everything you are researching in that craft.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "Using a research scroll will reduce the timers of all items currently being researched in one or more crafts by an amount dependent on the scroll"
+    },
+    {
+     "t": "Expect a 20 hour cooldown on scrolls from Rolis Hlaalu, and none on Crown Store scrolls.",
+     "src": [
+      "Online:Traits"
+     ],
+     "q": "Scrolls obtained from the Crown Store have no cooldown between uses; scrolls purchased from Rolis Hlaalu have a cooldown of 20 hours."
+    }
+   ]
+  },
+  {
+   "id": "howto-craftsets",
+   "title": "How to craft a set",
+   "kind": "How-to",
+   "answer": "Craft set gear at that set's special crafting site, once you know enough traits for the item.",
+   "need": "You'll need: enough researched traits, crafting materials and a known style motif.",
+   "steps": [
+    {
+     "t": "Find the crafting site of the set you want.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "To craft set items, you must find one of their special crafting sites."
+    },
+    {
+     "t": "Look for a site in your own alliance's territory.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "For most sets, there is one crafting site in each Alliance's territory."
+    },
+    {
+     "t": "If the site is in a DLC zone, get that DLC first.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "Some crafting sites are found in DLC zones, and can only be accessed if you own the DLC."
+    },
+    {
+     "t": "Research enough traits for the item type you want to make.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "to craft a set item, you must have researched a number of traits for that specific item type."
+    },
+    {
+     "t": "Use the site's blacksmithing, clothing, jewelry or woodworking station that fits the item.",
+     "src": [
+      "Online:Crafting"
+     ],
+     "q": "special Crafting Sites that are equipped with blacksmithing, clothing, jewelry, and woodworking stations for crafting items in specific Sets."
+    },
+    {
+     "t": "Learn the Crafting Motif for the style you want.",
+     "src": [
+      "Online:Crafting",
+      "Online:Crafting Motifs"
+     ],
+     "q": [
+      "A style can be used if the corresponding crafting motif is known for that item.",
+      "Crafting Motifs are books that unlock the ability to craft an item in a certain style through blacksmithing, clothing, or woodworking."
+     ]
+    },
+    {
+     "t": "Refine raw materials 10 at a time to get crafting materials.",
+     "src": [
+      "Online:Crafting"
+     ],
+     "q": "raw materials for four different crafting professions (blacksmithing, clothing, jewelry crafting, and woodworking) may be refined, 10 at a time, into 7-10 refined craftable items"
+    },
+    {
+     "t": "Keep the upgrade items that refining also gives you.",
+     "src": [
+      "Online:Crafting"
+     ],
+     "q": "refining raw materials will also yield trait items and upgrading items, which can improve the quality crafted items"
+    },
+    {
+     "t": "Improve the finished piece with tempers to raise its quality.",
+     "src": [
+      "Online:Blacksmithing"
+     ],
+     "q": "the piece can be augmented even more through the use of tempers. These elements can enhance the value and quality of your work."
+    },
+    {
+     "t": "Put points into Temper Expertise to raise your chance to improve items.",
+     "src": [
+      "Online:Blacksmithing"
+     ],
+     "q": "Increases the chances of improving items with tempers."
+    }
+   ],
+   "check": "The new piece shows the set name and the trait you chose.",
+   "more": [
+    {
+     "t": "A failed improve attempt can break the item.",
+     "src": [
+      "Online:Blacksmithing"
+     ],
+     "q": "Trying to improve an item can result in breaks, so be careful!"
+    },
+    {
+     "t": "Expect all crafted gear to bind when you equip it.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "if someone else crafts the gear for you. All crafted gear is bind-on-equip."
+    },
+    {
+     "t": "Attune an Attunable Crafting Station at a set's site to craft that set at home.",
+     "src": [
+      "Online:Crafting"
+     ],
+     "q": "go to one of the sites described in 1, and attune your stations to that Set. Then you can have stations in your home that can craft that Set."
+    },
+    {
+     "t": "Find all fourteen chapters of a partial motif to unlock the whole style.",
+     "src": [
+      "Online:Crafting Motifs"
+     ],
+     "q": "Partial motifs are divided into fourteen chapters, each of which must be found and read to unlock all parts of that style."
+    },
+    {
+     "t": "Use your own race's style, which you already know.",
+     "src": [
+      "Online:Crafting Motifs"
+     ],
+     "q": "Every player begins the game having already \"learned\" the racial motif associated with their race."
+    }
+   ]
+  },
+  {
+   "id": "howto-writs",
+   "title": "How to do daily crafting writs",
+   "kind": "How-to",
+   "answer": "Get certified, take one writ per craft each day from a writ board, craft it and turn it in.",
+   "need": "You'll need: a character of at least level 6.",
+   "steps": [
+    {
+     "t": "Reach at least level 6.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "All certifications require the character to be at least level 6."
+    },
+    {
+     "t": "Read the new notice on a board in a major city to start certification.",
+     "src": [
+      "Online:Crafting"
+     ],
+     "q": "When you reach level six a new notice will appear on the noticeboards in all major cities."
+    },
+    {
+     "t": "Do the short certification quest for each craft you want.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "The certification process involves a short quest where you are required to craft an item for a master crafter NPC, and serves as a tutorial to the crafting systems."
+    },
+    {
+     "t": "If you already have Rank 10 in a craft, skip the tutorial part.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "If you are already an established crafter, and have reached Rank 10 in a particular crafting skill line, you can skip the tutorial section and become certified immediately."
+    },
+    {
+     "t": "If you want Jewelry Crafting writs, get certified in Alinor in [[Summerset]].",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "this certification requires access to Alinor in Summerset"
+    },
+    {
+     "t": "Go to a writ board in a major town or city.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "Crafting Writs can be accepted from writs boards located in major towns and cities."
+    },
+    {
+     "t": "Use the **Consumables Crafting Writs** board for alchemy, enchanting and provisioning writs.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": [
+      "When activating the Consumables Crafting Writs board, you'll be greeted with:",
+      "Potions, Glyphs, Food, and Drink! Hone your craft and earn a reward!"
+     ]
+    },
+    {
+     "t": "Use the **Equipment Crafting Writs** board for blacksmithing, clothing, woodworking and jewelry writs.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": [
+      "When activating the Equipment Crafting Writs board, you'll be greeted with:",
+      "Blacksmith Writ: Fulfill a contract to deliver blacksmithing goods."
+     ]
+    },
+    {
+     "t": "Craft the requested gear at a regular crafting station.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "Arms and armor are always requested at the lowest quality, with no additional trait and can be created at regular Crafting Stations."
+    },
+    {
+     "t": "Deliver the finished items: each writ is a contract to deliver them.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "Alchemist Writ: Fulfill a contract to deliver alchemical products."
+    },
+    {
+     "t": "Collect your reward: experience, gold, a box of supplies and inspiration.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "Successful completion of a crafting writ will reward experience, gold, a consumable box of supplies, and inspiration for that profession."
+    },
+    {
+     "t": "Come back after the reset at 3am UTC on EU or 10am UTC on NA, since you get one writ per craft per day.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": [
+      "One writ for each profession may be completed per day.",
+      "daily writs reset at 3am UTC on EU servers, and 10am UTC on NA servers."
+     ]
+    }
+   ],
+   "check": "The writ quest leaves your journal and the reward box is in your bag.",
+   "more": [
+    {
+     "t": "Look for Survey Reports in writ rewards, except from Provisioner writs.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "The rewards for fulfilling crafting writs, except Provisioner writs, may randomly include Survey Reports, which are similar to Treasure Maps."
+    },
+    {
+     "t": "Expect a survey about 1 in 8 times.",
+     "src": [
+      "Online:Crafting Writs"
+     ],
+     "q": "Surveys have an approximate 1 in 8 chance of dropping, regardless of level of crafting writ completed."
+    },
+    {
+     "t": "Watch for Master Writs after you finish a top-tier writ.",
+     "src": [
+      "Online:Master Writ"
+     ],
+     "q": "Master writs are special writs that can be rewarded to you after completing a normal top-tier writ."
+    },
+    {
+     "t": "Spend Writ Vouchers from Master Writs at Rolis Hlaalu.",
+     "src": [
+      "Online:Master Writ"
+     ],
+     "q": "Completing a Master Writ will reward you with Writ Vouchers, which can be used to buy special or unique items from Rolis Hlaalu, the Mastercraft Mediator."
+    },
+    {
+     "t": "Turn in Master Writs in an alliance capital.",
+     "src": [
+      "Online:Master Writ"
+     ],
+     "q": "Master Writs can only be dropped off in the capital city of an alliance."
+    },
+    {
+     "t": "Learn all 9 traits of a craft to raise your Master Writ drop chance.",
+     "src": [
+      "Online:Master Writ"
+     ],
+     "q": "Learning all 9 crafting traits for the appropriate craft."
+    }
+   ]
+  },
+  {
+   "id": "howto-gear",
+   "title": "How to get the gear you want",
+   "kind": "How-to",
+   "answer": "Farm each set type where it drops, then use Transmute Crystals to change traits or reconstruct pieces you have collected.",
+   "need": "You'll need: Transmute Crystals and a Transmute Station.",
+   "steps": [
+    {
+     "t": "Farm overland sets in the zone they drop from.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": [
+      "Each set has a specific zone that it drops from.",
+      "Set items can be found from World Bosses, delve monsters, public dungeon monsters, dolmens (or other world events) and treasure chests found within the zone."
+     ]
+    },
+    {
+     "t": "Run Group Dungeons for dungeon sets.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "Dungeon Sets can be found from normal and veteran Group Dungeons. Bosses and minibosses will always drop pieces from these sets in specific slots."
+    },
+    {
+     "t": "Run Trials for trial sets.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "Trial Sets are available from any of the Trials in the game. Bosses in Trials will drop pieces of these sets."
+    },
+    {
+     "t": "Get a monster helm from the last boss of its dungeon on Veteran.",
+     "src": [
+      "Online:Monster Sets"
+     ],
+     "q": "The head pieces are guaranteed drops from the associated last boss of a group dungeon on Veteran difficulty"
+    },
+    {
+     "t": "Do Undaunted pledges to earn keys.",
+     "src": [
+      "Online:Undaunted Pledges"
+     ],
+     "q": "Completing a normal or veteran mode Pledge for a base game dungeon will reward you with a key."
+    },
+    {
+     "t": "Buy monster shoulders from the Pledge Masters with Undaunted Keys.",
+     "src": [
+      "Online:Monster Sets"
+     ],
+     "q": "shoulder pieces can be bought from Pledge Masters for Undaunted Keys"
+    },
+    {
+     "t": "Find all five fragments of a Mythic item through Antiquities.",
+     "src": [
+      "Online:Mythic Items"
+     ],
+     "q": "All mythic items are broken up into five fragments which each need to be found to create the final piece."
+    },
+    {
+     "t": "Earn Transmute Crystals from Trials, Group Dungeons, Battlegrounds, Tales of Tribute or the Alliance War.",
+     "src": [
+      "Online:Transmute Station"
+     ],
+     "q": "Transmute Crystals, which can be acquired from a variety of activities, including Trials, Group Dungeons, Battlegrounds, Tales of Tribute, and participating in the Alliance War in Cyrodiil."
+    },
+    {
+     "t": "Go to a Transmute Station in [[Clockwork City]], a Mages Guild hall or [[Eyevea]].",
+     "src": [
+      "Online:Transmute Station",
+      "Online:Transmute Crystals"
+     ],
+     "q": [
+      "with Update 50 Transmute Stations were added to all the Mages Guild Halls as well as Eyevea.",
+      "Transmute Stations can be found in Clockwork City and in various Mages guild halls"
+     ]
+    },
+    {
+     "t": "Research the trait you want first.",
+     "src": [
+      "Online:Transmute Station"
+     ],
+     "q": "To reconstruct an item with a trait, or transform an item's trait, the desired trait must have been researched in the appropriate Crafting skill line."
+    },
+    {
+     "t": "Spend 50 Transmute Crystals to change an item's trait.",
+     "src": [
+      "Online:Transmute Crystals"
+     ],
+     "q": "50 Transmute Crystals are used to change the traits of armor and weapons to a trait previously researched for that item."
+    },
+    {
+     "t": "Reconstruct a set piece from your collection for 25 to 75 crystals, less as you collect more of the set.",
+     "src": [
+      "Online:Transmute Station"
+     ],
+     "q": "It is 25 crystals if all items in the set are known, 75 if only one item is known (unless it's a 1 item set)"
+    }
+   ],
+   "check": "The item shows the trait you picked, and your crystal count goes down.",
+   "more": [
+    {
+     "t": "Run group or solo Arenas for arena sets.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "Arena Sets are five-piece sets that can be found from group and solo Arenas."
+    },
+    {
+     "t": "Buy PvP sets with Alliance Points or Tel Var stones.",
+     "src": [
+      "Online:Sets"
+     ],
+     "q": "PVP Sets can be purchased using Alliance Points or Tel Var stones."
+    },
+    {
+     "t": "Wear only one Mythic item at a time.",
+     "src": [
+      "Online:Mythic Items"
+     ],
+     "q": "Only one mythic item can be worn at a time"
+    },
+    {
+     "t": "Join the Antiquarian Circle in Solitude to start Antiquities.",
+     "src": [
+      "Online:Antiquities"
+     ],
+     "q": "To begin treasure hunting, you first need to join the Antiquarian Circle. To do this, travel to Solitude and speak to Verita Numida"
+    },
+    {
+     "t": "Reach level 7 in [[Scrying]] with Antiquarian Insight IV to scry Mythic leads.",
+     "src": [
+      "Online:Mythic Items"
+     ],
+     "q": "You are required to be at least level 7 in Scrying, and have the Antiquarian Insight IV passive to scry Master difficulty leads."
+    },
+    {
+     "t": "Spend crystals before you hit the cap of 1,500, or 3,000 with ESO Plus.",
+     "src": [
+      "Online:Transmute Crystals"
+     ],
+     "q": "Only 1,500 Transmute Crystals can be held at once per account (3,000 with ESO Plus), and they are bound to the account."
+    },
+    {
+     "t": "Expect transmuted and reconstructed items to be bound.",
+     "src": [
+      "Online:Transmute Station"
+     ],
+     "q": "Transmuted and reconstructed items are bound, and cannot be sold or traded to other players."
+    }
+   ]
+  },
+  {
+   "id": "howto-mundus",
+   "title": "How to pick and use a Mundus Stone",
+   "kind": "How-to",
+   "answer": "Activate a Mundus Stone to get its blessing; only one blessing is active at a time.",
+   "need": "You'll need: to travel to a zone that has the stone you want.",
+   "steps": [
+    {
+     "t": "Find a Mundus Stone, a standing stone tied to a Constellation.",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "Mundus Stones are standing stones dedicated to the Constellations."
+    },
+    {
+     "t": "Activate it to get its permanent blessing.",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "Activating one will grant you a permanent blessing, although only one blessing can be active at a time."
+    },
+    {
+     "t": "Activate a different stone to change your blessing.",
+     "src": [
+      "Online:Golden Pursuits"
+     ],
+     "q": "Interact with a Mundus Stone and change your Mundus boon."
+    },
+    {
+     "t": "Look in [[Cyrodiil]] for any stone except [[The Lord]].",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "The Lord is the only stone not found in Cyrodiil."
+    },
+    {
+     "t": "Skip DLC zones, because they have no Mundus Stones.",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "No DLC zones contain any Mundus Stones whatsoever"
+    },
+    {
+     "t": "If you want Weapon and Spell Damage, use [[The Warrior]] in [[Malabal Tor]], [[Alik'r Desert]], [[Eastmarch]] or [[Cyrodiil]].",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": [
+      "The Warrior now grants both Weapon and Spell Damage, rather than only Weapon Damage.",
+      "that stone can be found in Malabal Tor, the Alik'r Desert, Eastmarch, or in Cyrodiil."
+     ]
+    },
+    {
+     "t": "If you want 8% more experience and inspiration gain, use [[The Apprentice]].",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "The Apprentice now grants an 8% bonus to experience and inspiration gain, rather than Spell Damage."
+    },
+    {
+     "t": "Wear armor with the Divines trait to boost your stone's effect.",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "Armor with the Divines Trait increases the effect of Mundus Stones, depending on the Armor's quality."
+    },
+    {
+     "t": "If you wear the [[Twice-Born Star]] set, take two blessings at once.",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "The Twice-Born Star set allows a character to have two blessings at the same time."
+    }
+   ],
+   "check": "Your new blessing replaces the old one.",
+   "more": [
+    {
+     "t": "Ignore the three broken stones in [[Craglorn]], because they can't change your blessing.",
+     "src": [
+      "Online:Mundus Stones"
+     ],
+     "q": "There are three unmarked, broken Mundus Stones in Craglorn dedicated to the Lord, Lady and Steed. They are related to the quest The Corrupted Stone and can't be used to change blessings."
+    }
+   ]
+  },
+  {
+   "id": "howto-consumables",
+   "title": "How to use food and potions",
+   "kind": "How-to",
+   "answer": "Eat food or drink for a timed stat buff, and use potions for quick restores and buffs.",
+   "need": "You'll need: food, drink or potions that you bought, found or crafted.",
+   "steps": [
+    {
+     "t": "Eat food to raise your Health, Magicka or Stamina for a while.",
+     "src": [
+      "Online:Provisioning"
+     ],
+     "q": "Food items boost at least one of the three stats, Health, Magicka, or Stamina for a period of time."
+    },
+    {
+     "t": "Drink a beverage to regenerate stats faster for a while.",
+     "src": [
+      "Online:Provisioning"
+     ],
+     "q": "Drinks provide more rapid regeneration of at least one of the three stats over a period of time."
+    },
+    {
+     "t": "Keep one food buff, because different foods do not stack.",
+     "src": [
+      "Online:Food"
+     ],
+     "q": "If different entries are consumed one after another, the effects do not stack."
+    },
+    {
+     "t": "If you buy food from Innkeepers or Chefs, expect it to be weaker than crafted food.",
+     "src": [
+      "Online:Food"
+     ],
+     "q": [
+      "they may be purchased from Innkeepers or Chefs",
+      "They are less potent than their crafted versions."
+     ]
+    },
+    {
+     "t": "Learn a recipe before you try to cook it.",
+     "src": [
+      "Online:Provisioning"
+     ],
+     "q": "in Provisioning you must have found and learned a recipe before you are able to create any Food or Drink."
+    },
+    {
+     "t": "Cook at a Cooking Fire.",
+     "src": [
+      "Online:Provisioning"
+     ],
+     "q": "You must be at a Cooking Fire in order to create any items."
+    },
+    {
+     "t": "If you want all three stats, cook a Complex Recipe.",
+     "src": [
+      "Online:Provisioning"
+     ],
+     "q": "Complex Recipes are more powerful, and will affect all three stats."
+    },
+    {
+     "t": "Pick up potions from merchants, containers and slain enemies.",
+     "src": [
+      "Online:Potions"
+     ],
+     "q": "Potions of various types can be found in many places, for sale by general Merchants, in containers, in Alchemy Bottles loose on tables, etc., and on the corpses of your slain enemies."
+    },
+    {
+     "t": "Craft potions at an Alchemy station to get stronger ones than you find.",
+     "src": [
+      "Online:Potions"
+     ],
+     "q": "In all cases, these will be weaker than the ones you can craft yourself at Alchemy stations"
+    },
+    {
+     "t": "Combine 1 solvent with 2-3 reagents at the alchemy table.",
+     "src": [
+      "Online:Alchemy"
+     ],
+     "q": "Creating potions in ESO involves combining 1 solvent with 2-3 reagents at the alchemy table."
+    },
+    {
+     "t": "Pick two reagents that share an effect.",
+     "src": [
+      "Online:Alchemy"
+     ],
+     "q": "two reagents with the same effect need to be combined in order to craft a potion."
+    },
+    {
+     "t": "Use a water-based solvent to make a potion you can drink.",
+     "src": [
+      "Online:Alchemy"
+     ],
+     "q": "A water-based solvent creates a potion that you can drink to receive its effects"
+    }
+   ],
+   "check": "The food or potion buff shows on your character with its timer.",
+   "more": [
+    {
+     "t": "Expect vendor food to last 35 minutes with a 5 second cooldown.",
+     "src": [
+      "Online:Food"
+     ],
+     "q": "Items on this list increase an attribute maximum value for 35 minutes and have a 5 second cooldown."
+    },
+    {
+     "t": "Eat a reagent to learn its first effect.",
+     "src": [
+      "Online:Alchemy"
+     ],
+     "q": "You are also able to eat potion ingredients to discover their first effect."
+    },
+    {
+     "t": "Use an oil-based solvent to make poisons for your weapons.",
+     "src": [
+      "Online:Alchemy"
+     ],
+     "q": "an oil-based solvent creates poisons which can be applied to your weapons to cause negative effects on your enemies."
+    },
+    {
+     "t": "Note that Damage and Critical potions now give both the Weapon and Spell versions.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": "Damage and Critical are now hybridized, so potions that previously applied only Weapon or Spell versions now provide both."
+    }
+   ]
+  }
+ ]
+}

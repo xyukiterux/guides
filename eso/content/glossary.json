@@ -1,0 +1,234 @@
+{
+ "note": "Short meanings for words a returning player meets. Each one quotes a cached UESP page; build.py checks every quote and number.",
+ "terms": [
+  {
+   "term": "Champion Points (CP)",
+   "t": "Points you earn with experience after level 50. They let you wear stronger gear and use stronger consumables up to CP 160.",
+   "src": [
+    "Online:Leveling",
+    "Online:Champion Points"
+   ],
+   "q": [
+    "Gaining Champion Points allows players to equip more powerful gear and use more powerful consumables, up to the Champion Progression Cap of 160.",
+    "The Champion System is unlocked when one of your characters reaches Veteran rank at Level 50."
+   ]
+  },
+  {
+   "term": "Veteran",
+   "t": "The harder version of content, open once you reach the maximum level.",
+   "src": [
+    "Online:Leveling"
+   ],
+   "q": "Upon reaching the maximum level, players unlock Veteran content and receive 10 points into the Champion system."
+  },
+  {
+   "term": "Subclassing",
+   "t": "Swapping up to two of your class skill lines for lines from other classes.",
+   "src": [
+    "Online:Subclassing"
+   ],
+   "q": "It allows a player to customize their character by replacing up to two of their class' skill lines with those from other classes."
+  },
+  {
+   "term": "Class Mastery",
+   "t": "Passive skill lines for each class, added in Update 50.",
+   "src": [
+    "Online:Class Mastery"
+   ],
+   "q": "Class Mastery is a skill system introduced with Update 50 that provides passive skill lines for each of the seven Player Classes."
+  },
+  {
+   "term": "Morph",
+   "t": "An active skill that reached rank 4 can be morphed into one of two new versions.",
+   "src": [
+    "Online:Skills"
+   ],
+   "q": "They have 4 Ranks, after which they may be Morphed into a new version."
+  },
+  {
+   "term": "Ultimate",
+   "t": "A third resource, used by Ultimate skills instead of Magicka or Stamina.",
+   "src": [
+    "Online:Skills"
+   ],
+   "q": "Ultimate Skills are similar to Active Skills, but instead of using Stamina or Magicka as most Active Skills do, these use a third resource called Ultimate."
+  },
+  {
+   "term": "Synergy",
+   "t": "A special ability your allies can activate when you use certain skills or sets.",
+   "src": [
+    "Online:Synergy"
+   ],
+   "q": "Synergies are special abilities that other allied players may activate when you use certain skills or sets."
+  },
+  {
+   "term": "Off Balance",
+   "t": "The state an enemy enters when you block its heavy attack; a heavy attack on it then knocks it down for 70% more damage.",
+   "src": [
+    "Online:Combat"
+   ],
+   "q": [
+    "Blocking an enemy's heavy attack will set it Off Balance.",
+    "Using a heavy attack against an Off Balance opponent will knock them down, deal 70% more damage and restore double the resources."
+   ]
+  },
+  {
+   "term": "Penetration",
+   "t": "How much of your damage breaks through an enemy's armor.",
+   "src": [
+    "Online:Penetration"
+   ],
+   "q": "Penetration is a value that represents how much of your damage will break through an opponent's armor."
+  },
+  {
+   "term": "Mundus Stone",
+   "t": "A standing stone that gives one permanent blessing at a time.",
+   "src": [
+    "Online:Mundus Stones"
+   ],
+   "q": "Mundus Stones are standing stones dedicated to the Constellations."
+  },
+  {
+   "term": "Monster set",
+   "t": "A two-piece set (head and shoulders) named after a dungeon boss.",
+   "src": [
+    "Online:Monster Sets"
+   ],
+   "q": "Monster Helm Sets (commonly called \"monster heads\") are a subset of dungeon sets of armor."
+  },
+  {
+   "term": "Mythic",
+   "t": "A one-piece set you build from Antiquities leads.",
+   "src": [
+    "Online:Mythic Items"
+   ],
+   "q": "Mythic Items are special one-piece sets that can only be obtained through the Antiquities system and if you have access to the related DLC."
+  },
+  {
+   "term": "Perfected",
+   "t": "The stronger version of a trial or arena set, dropped only on Veteran.",
+   "src": [
+    "Online:Veteran"
+   ],
+   "q": "Perfected versions of trial and arena sets only drop in Veteran mode."
+  },
+  {
+   "term": "Hard Mode",
+   "t": "An optional harder fight on the last boss of a Veteran dungeon.",
+   "src": [
+    "Online:Group Dungeons"
+   ],
+   "q": "For an even greater challenge, Veteran Dungeons have an optional Death Challenge (more commonly called \"Hard Mode\") that can be activated on the last boss."
+  },
+  {
+   "term": "Pledge",
+   "t": "A daily Undaunted quest to clear a group dungeon, open from level 45.",
+   "src": [
+    "Online:Undaunted Pledges"
+   ],
+   "q": "Undaunted Pledges are Daily Quests which become available at Level 45 from the Undaunted Enclave in your Alliance Capital"
+  },
+  {
+   "term": "Transmute Crystals",
+   "t": "The currency you spend to change an item's trait to one you have researched.",
+   "src": [
+    "Online:Transmute Crystals"
+   ],
+   "q": "50 Transmute Crystals are used to change the traits of armor and weapons to a trait previously researched for that item."
+  },
+  {
+   "term": "Skyshard",
+   "t": "A collectible found around the world; collecting them gives skill points.",
+   "src": [
+    "Online:Skyshards"
+   ],
+   "q": "Skyshards are collectible items that can be found throughout the world."
+  },
+  {
+   "term": "Golden Pursuits",
+   "t": "An activity and rewards system added in Update 44.",
+   "src": [
+    "Online:Golden Pursuits"
+   ],
+   "q": "Golden Pursuits is an activity and rewards system introduced with Update 44."
+  },
+  {
+   "term": "Tamriel Tomes",
+   "t": "A battle pass-style reward system.",
+   "src": [
+    "Online:Tamriel Tomes"
+   ],
+   "q": "Tamriel Tomes is a battle pass-style reward system for Elder Scrolls Online."
+  },
+  {
+   "term": "Battle Leveling",
+   "t": "Scaling that raises a lower-level player's attributes, armor and damage so they stay competitive.",
+   "src": [
+    "Online:Alliance War"
+   ],
+   "q": "this also stacks with \"battle leveling\", which scales up their attributes, armor, and damage ratings in order to remain competitive."
+  },
+  {
+   "term": "Meted Misfortunes",
+   "t": "Debuffs you pick at the start of a solo dungeon; they set its difficulty and rewards.",
+   "src": [
+    "Online:Solo Dungeons"
+   ],
+   "q": "Meted Misfortunes are a mechanic unique to the Solo Dungeons, which control the difficulty level and rewards the dungeon will have."
+  },
+  {
+   "term": "Threads and Verses",
+   "t": "In the Infinite Archive you start with three Threads (lives); Verses are temporary buffs that last until the end of the next Stage.",
+   "src": [
+    "Online:Infinite Archive"
+   ],
+   "q": [
+    "When you first enter the Archive, you will have three Threads available",
+    "Verses are temporary buffs that last until the end of the next Stage."
+   ]
+  },
+  {
+   "term": "Sigils",
+   "t": "Synergies that appear at the start of each round in most arenas.",
+   "src": [
+    "Online:Arenas"
+   ],
+   "q": "A core mechanic of most Arenas is the presence of Sigils, synergies that appear at the beginning of each round of combat."
+  },
+  {
+   "term": "Enlightenment",
+   "t": "While Enlightened you earn experience four times faster toward Champion Points; you get 400,000 XP of it per day.",
+   "src": [
+    "Online:Champion Points"
+   ],
+   "q": [
+    "While you are Enlightened, experience gain is multiplied by four",
+    "Once per day, you receive 400,000 XP of Enlightenment"
+   ]
+  },
+  {
+   "term": "Divines",
+   "t": "An armor trait that makes your Mundus Stone stronger.",
+   "src": [
+    "Online:Mundus Stones"
+   ],
+   "q": "Armor with the Divines Trait increases the effect of Mundus Stones, depending on the Armor's quality."
+  },
+  {
+   "term": "Inspiration",
+   "t": "What crafting professions use to level up.",
+   "src": [
+    "Online:Crafting"
+   ],
+   "q": "All seven crafting professions use Inspiration for leveling purposes."
+  },
+  {
+   "term": "Tempers",
+   "t": "Ingredients used to improve a crafted piece further.",
+   "src": [
+    "Online:Blacksmithing"
+   ],
+   "q": "the piece can be augmented even more through the use of tempers."
+  }
+ ]
+}

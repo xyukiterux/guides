@@ -1,0 +1,958 @@
+{
+ "sections": [
+  {
+   "id": "howto-return",
+   "title": "How to come back after a break",
+   "kind": "How-to",
+   "answer": "Take the Path to Adventure if it is offered, claim the zones that joined the base game, rebuild your character for free, then pick up the new seasonal systems.",
+   "need": "You'll need: one level 50 character for subclassing and Class Mastery.",
+   "steps": [
+    {
+     "t": "If the short Path to Adventure mini-quest appears when you log in, accept it.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "For returning players, they’ll see it first thing on their next log-in and be offered the short mini-quest that will help them rediscover combat basics."
+    },
+    {
+     "t": "Open the **Collections** menu to see which content your account now owns.",
+     "src": [
+      "Online:Update 51 Inc.2"
+     ],
+     "q": "As a reminder, to see what content is owned on your account, visit the Collections Menu and visit the Collectibles, Stories, etc. tabs."
+    },
+    {
+     "t": "Log in once to receive Markarth, which joined the base game with Update 51 Incremental 2.",
+     "src": [
+      "Online:Update 51 Inc.2"
+     ],
+     "q": "Players who do not own this DLC will receive it upon their first login after Update 51 Incremental 2 is live."
+    },
+    {
+     "t": "Visit [[Western Skyrim]] and [[The Reach]]: Greymoor and Markarth are now free with the base game.",
+     "src": [
+      "Online:Season Two"
+     ],
+     "q": "Venture into Skyrim's dark heart with both Greymoor and Markarth becoming free with ESO's base game."
+    },
+    {
+     "t": "Reallocate your skill points from the **Skills** screen; since Update 49 this costs nothing.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "As of Update 49, spent skill points can be reallocated directly from the Skills screen at no cost."
+    },
+    {
+     "t": "Get the free Armory Station from the Crown Store.",
+     "src": [
+      "Online:Armory Station"
+     ],
+     "q": "An Armory Station collectible furnishing is available for free from the Crown Store and can be placed in player houses to access the system."
+    },
+    {
+     "t": "Save your build at the Armory Station so you can swap attributes, skills, gear, Champion Points and outfits later.",
+     "src": [
+      "Online:Armory Station"
+     ],
+     "q": "This allows you to quickly change your attributes, skills, equipment, Champion Points, and Outfits."
+    },
+    {
+     "t": "Train your Riding Skill at a stable once per day.",
+     "src": [
+      "Online:Riding Skill"
+     ],
+     "q": "Your Riding Skill is character-bound and can only be improved once a day at a stable."
+    },
+    {
+     "t": "Decide between subclassing (added in Update 46) and [[Class Mastery]] (added in Update 50).",
+     "src": [
+      "Online:Subclassing",
+      "Online:Update 50"
+     ],
+     "q": [
+      "Subclassing is a system that was released in the base game Update 46.",
+      "Class Mastery: This new feature grants access to powerful passive effects for characters that have reached level 50 in their native class skill lines and are not actively subclassing."
+     ]
+    },
+    {
+     "t": "Complete Weekly and Seasonal challenges to progress the current Tamriel Tome.",
+     "src": [
+      "Online:Tamriel Tomes"
+     ],
+     "q": "Progression through a Tome is done by completing Weekly and Seasonal challenges."
+    },
+    {
+     "t": "Open the **Group & Activity Finder** to join the active Golden Pursuit.",
+     "src": [
+      "Online:Golden Pursuits"
+     ],
+     "q": "They are dynamic, one-off campaigns (accessed from the Group & Activity Finder) that allow you to earn additional rewards during special limited-time windows."
+    },
+    {
+     "t": "If you used [[The Apprentice]] for spell damage, switch to [[The Warrior]] in [[Malabal Tor]], [[Alik'r Desert]], [[Eastmarch]] or [[Cyrodiil]].",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": [
+      "The Apprentice now grants an 8% bonus to experience and inspiration gain, rather than Spell Damage.",
+      "If you previously used this stone for the spell damage bonus and would like to swap to the Warrior, that stone can be found in Malabal Tor, the Alik’r Desert, Eastmarch, or in Cyrodiil."
+     ]
+    }
+   ],
+   "check": "Your Collections show Greymoor and Markarth as owned, and your Armory holds a saved build.",
+   "more": [
+    {
+     "t": "Season Two: Echoes of Skyrim runs from October 21, 2026 until January 27, 2027.",
+     "src": [
+      "Online:Seasons"
+     ],
+     "q": "Released on October 21, 2026 and runs until January 27, 2027."
+    },
+    {
+     "t": "Tamriel Tomes replaced the old Endeavor and Daily Login Reward systems in March 2026.",
+     "src": [
+      "Online:Tamriel Tomes"
+     ],
+     "q": "Tomes incorporated the previous Endeavor and Daily Login Reward systems, which were disabled in March 2026."
+    },
+    {
+     "t": "The free Tome is open to all players; the paid Premium Tome unlocks premium rewards.",
+     "src": [
+      "Online:Tamriel Tomes"
+     ],
+     "q": [
+      "All Elder Scrolls Online players will have access to the free version of the tome",
+      "When purchased, it unlocks the premium rewards for a tome."
+     ]
+    },
+    {
+     "t": "Up to 5,000 Tome Points roll over at the end of each Season.",
+     "src": [
+      "Online:Update 51 Inc.2"
+     ],
+     "q": "Updated the Tamriel Tomes Overview Help menu entry to clarify that up to 5,000 Tome Points roll over at the end of each Season."
+    },
+    {
+     "t": "Path to Adventure is offered to returning players who have not earned the Level 20 Accountwide Achievement.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "as well as returning players who have not acquired the Level 20 Accountwide Achievement."
+    },
+    {
+     "t": "Try the new solo versions of [[March of Sacrifices]] and [[Moon Hunter Keep]], entered from the world map or their entrances.",
+     "src": [
+      "Online:Update 51"
+     ],
+     "q": [
+      "The March of Sacrifices and Moonhunter Keep dungeons now can be played in solo mode!",
+      "You can enter the solo version of these dungeons from the world map or their entrance in their corresponding zones."
+     ]
+    },
+    {
+     "t": "The [[Warden]] class is part of the base game since Update 49.",
+     "src": [
+      "Online:Base Game"
+     ],
+     "q": "The Warden class was added to the base game with the launch of Update 49 on 6 March 2026"
+    },
+    {
+     "t": "Since Update 50 a character can complete up to 100 daily quests per day.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "We have increased the cap on the number of daily quests that can be completed on a character per day from 50 to 100."
+    }
+   ]
+  },
+  {
+   "id": "howto-level",
+   "title": "How to level from 1 to 50",
+   "kind": "How-to",
+   "answer": "Quest, run dungeons through the Dungeon Finder and stack XP buffs until you reach level 50.",
+   "need": "You'll need: any character; a Crown Experience Scroll or Psijic Ambrosia is optional.",
+   "steps": [
+    {
+     "t": "Complete quests for experience.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "Completing quests, discovering new locations"
+    },
+    {
+     "t": "Discover new locations for experience.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "discovering new locations and completing their Objectives"
+    },
+    {
+     "t": "Queue for a group dungeon through the **Dungeon Finder** while under level 50 to get the Looking for Group buff.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "Entering a group dungeon through the Dungeon Finder while under level 50 will give you the \"Looking for Group\" buff"
+    },
+    {
+     "t": "Pick up dungeon quests: they reward 2.25 times the standard quest XP.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "so reward 2.25× the standard XP for a quest at that level"
+    },
+    {
+     "t": "Run a random dungeon through the **Dungeon Finder** for extra rewards and experience when the final boss dies.",
+     "src": [
+      "Online:Undaunted"
+     ],
+     "q": [
+      "The Undaunted also offer rewards for completing random dungeons through the dungeon finder.",
+      "The rewards and experience are automatically sent to you the moment the final boss of the dungeon dies."
+     ]
+    },
+    {
+     "t": "Use a Crown Experience Scroll or Psijic Ambrosia for a 50, 100 or 150% bonus; only one of the two works at a time.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "50/100/150% Crown Experience Scroll — the same buff as Psijic Ambrosia, so only one or the other can be used"
+    },
+    {
+     "t": "Group with other players for 10% more XP from kills.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "10% Grouping — applies only to XP from kills"
+    },
+    {
+     "t": "Activate [[The Apprentice]] Mundus Stone for an 8% bonus to experience.",
+     "src": [
+      "Online:Update 51",
+      "Online:Mundus Stones"
+     ],
+     "q": [
+      "The Apprentice now grants an 8% bonus to experience and inspiration gain, rather than Spell Damage.",
+      "Activating one will grant you a permanent blessing, although only one blessing can be active at a time."
+     ]
+    },
+    {
+     "t": "Open the **Character Sheet** to choose a harder Challenge Difficulty for overland, story instances, delves and public dungeons.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "From the Character Sheet, you can choose between three additional difficulties which will be applied in overland encounters, story instances, delves, and public dungeons"
+    },
+    {
+     "t": "If you pick Seasoned, plan for 100% more damage taken and 20% more experience from monsters.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "You will take 100% more damage from monsters and do 50% less damage. You will receive 50% more gold and 20% more experience from monsters."
+    },
+    {
+     "t": "Reach level 50 to unlock Veteran content and get 10 Champion Points.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "Players can attain a maximum level of 50. Upon reaching the maximum level, players unlock Veteran content and receive 10 points into the Champion system."
+    }
+   ],
+   "check": "Your character shows level 50 and the Champion system opens with 10 points.",
+   "more": [
+    {
+     "t": "The Looking for Group buff gives 25% more Max Health and 20% more Weapon and Spell Damage.",
+     "src": [
+      "Online:Group Dungeons"
+     ],
+     "q": "increases your Max Health by 25% and your Weapon and Spell Damage by 20%"
+    },
+    {
+     "t": "A kill gives you experience only if you dealt at least 3% of the enemy's maximum health in damage.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "Killing enemies and helping others kill enemies (including by healing them) give experience so long as you deal at least 3% of the enemy's maximum health in damage"
+    },
+    {
+     "t": "Picking locks and completing Encounters also give experience.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "picking locks, and completing Encounters also grant experience"
+    },
+    {
+     "t": "Equip gear with the Training trait for 2.5 to 86% more XP from kills.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "2.5–86% Training Trait — applies only to XP from kills"
+    },
+    {
+     "t": "Wear Rings of Mara in a group for 10% more XP.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "10% Rings of Mara — requires grouping when worn"
+    },
+    {
+     "t": "Overland [[Cyrodiil]], outside delves and Imperial City, gives a flat 25% XP boost.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "In addition to these the overland part of Cyrodiil, excluding Delves and Imperial City, has a flat-rate boost of 25%."
+    },
+    {
+     "t": "Stacked XP buffs can reach a total increase of 290% for most content.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "It is currently possible to stack XP buffs for a total possible increase of 290% for most types of content."
+    },
+    {
+     "t": "Master difficulty gives 75% more experience; Vestige gives 100% more.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": [
+      "You will receive 100% more gold and 75% more experience from monsters.",
+      "You will receive 200% more gold and 100% more experience from monsters."
+     ]
+    },
+    {
+     "t": "Every level gives an attribute point; levels that are multiples of 5 give two and multiples of 10 give three.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": [
+      "Each level that a player gains allows them to allocate an attribute point to their magicka, health or stamina.",
+      "Levels that are a multiple of 5 grant two Attribute Points",
+      "Levels that are a multiple of 10 grant three Attribute Points"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "howto-skillpoints",
+   "title": "How to collect skill points",
+   "kind": "How-to",
+   "answer": "Level up, absorb Skyshards and finish storyline quests.",
+   "need": "You'll need: time to explore and quest; no items are required.",
+   "steps": [
+    {
+     "t": "Level your character to 50 to earn 64 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Leveling your character, up to level 50 (64 Skill Points)"
+    },
+    {
+     "t": "Absorb Skyshards: every three you collect give one skill point.",
+     "src": [
+      "Online:Skyshards"
+     ],
+     "q": "However, you will receive one skill point for every three Skyshards you collect."
+    },
+    {
+     "t": "Open the **Achievements** menu to read the clue for each Skyshard's location.",
+     "src": [
+      "Online:Skyshards"
+     ],
+     "q": "In-game, clues to each Skyshard's location are listed in the Achievements menu under their respective areas."
+    },
+    {
+     "t": "Finish the main quest for 11 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing quests in the main quest (11 Skill Points)"
+    },
+    {
+     "t": "Complete the alliance zone storylines: 15 in Dominion, 16 in Covenant, 15 in Pact and 3 in [[Coldharbour]].",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing quest chains in the Dominion, Covenant, Pact, and Coldharbour main storylines (3 in Coldharbour: 16 in Covenant, 15 in Pact, 15 in Dominion)"
+    },
+    {
+     "t": "Complete the story quest in each group dungeon; the base game has 24 of these points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing the story quest in group dungeons (24 Skill Points in the base game, one for each completed dungeon storyline quest"
+    },
+    {
+     "t": "Complete the group challenges in public dungeons for 18 base game skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing group challenges in public dungeons (18 Skill Points in the base game"
+    },
+    {
+     "t": "Rank up in the Alliance War for up to 50 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Ranking up in the Alliance War (50 Skill Points)"
+    },
+    {
+     "t": "Accept the Folium Discognitum in the [[Mages Guild]] quest chain to get 2 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": [
+      "Reading the Folium Discognitum (Optional quest reward from Mages Guild quest chain) (2 Skill Points)",
+      "Two of the skill points listed above are unobtainable if you decide not to accept the Folium Discognitum in the Mages Guild questline."
+     ]
+    },
+    {
+     "t": "Finish the [[Thieves Guild]] primary quest chain for 6 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing the primary quest chain of the Thieves Guild storyline (6 Skill Points)"
+    },
+    {
+     "t": "Finish the [[Dark Brotherhood]] primary quest chain for 8 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing the primary quest chain of the Dark Brotherhood storyline (8 Skill Points)"
+    },
+    {
+     "t": "Reallocate spent points from the **Skills** screen at no cost.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "As of Update 49, spent skill points can be reallocated directly from the Skills screen at no cost."
+    }
+   ],
+   "check": "Each Skyshard trio, level-up or storyline finish adds points you can spend on the Skills screen.",
+   "more": [
+    {
+     "t": "The current total is 579 skill points, counting all Chapters and DLCs.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "up to a current total of 579 points including all Chapters and other DLCs"
+    },
+    {
+     "t": "Skyshards give 113 skill points in the base game.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Absorbing skyshards (113 Skill Points in the base game"
+    },
+    {
+     "t": "Collecting every Skyshard in one location also grants an Achievement.",
+     "src": [
+      "Online:Skyshards"
+     ],
+     "q": "Collecting all the Skyshards in one location grants you an Achievement."
+    },
+    {
+     "t": "The Necrom storyline gives 9 skill points and the West Weald storyline gives 5.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": [
+      "Completing the Necrom storyline (9 Skill Points)",
+      "Completing the West Weald storyline (5 Skill Points)"
+     ]
+    },
+    {
+     "t": "The Eastern Solstice storyline gives 6 skill points.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing the Eastern Solstice storyline (6 Skill Points)"
+    },
+    {
+     "t": "Completing all Scribing quests gives 1 skill point.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Completing all Scribing quests (1 Skill point)"
+    },
+    {
+     "t": "After you reach the maximum level, you no longer get skill points from leveling.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "Characters will no longer receive attribute points and skill points to allocate"
+    }
+   ]
+  },
+  {
+   "id": "howto-skilllines",
+   "title": "How to choose which skill lines to level first",
+   "kind": "How-to",
+   "answer": "Know how each skill line levels and what it needs to unlock, then slot or wear what you want to raise.",
+   "need": "You'll need: level 10 for the Undaunted; the Summerset story quest for the Psijic Order.",
+   "steps": [
+    {
+     "t": "Slot at least one active skill from a class skill line on your current bar to level that line.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "To advance in the skill line, at least one active skill from the skill line must be slotted"
+    },
+    {
+     "t": "Hold a weapon to level its weapon skill line whenever you gain experience.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Any class can advance in any of the Weapon skill lines by holding the appropriate weapon at the moment of gaining experience"
+    },
+    {
+     "t": "Slot more skills from that weapon line to level it faster.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "with more slotted skills granting faster advancement"
+    },
+    {
+     "t": "Wear at least 1 piece of [[Light Armor]], [[Medium Armor]] or [[Heavy Armor]] to level that line; more pieces level it faster.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Only 1 piece need be worn, but progress will be faster the more pieces you wear of that type."
+    },
+    {
+     "t": "Join the [[Fighters Guild]] by speaking to a recruiter in any Fighters Guild hall.",
+     "src": [
+      "Online:Fighters Guild"
+     ],
+     "q": "To join, go to any Fighters Guild hall and speak with Aicessar, Basile Fenandre, or Hilan (regardless of your alliance) and tell them you're ready to join."
+    },
+    {
+     "t": "Kill undead, Daedra or werewolves to level the [[Fighters Guild]] line.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Fighters Guild progress is gained by killing undeads, Daedra or werewolves anywhere, and by doing daily quests to clear Dark Anchors."
+    },
+    {
+     "t": "Join the [[Mages Guild]] by speaking to a recruiter in any Mages Guild hall.",
+     "src": [
+      "Online:Mages Guild"
+     ],
+     "q": "To join, go to any Mages Guild hall and speak with Curinure, Nemarc, or Rudrasa (regardless of your alliance) and tell them you're ready to join."
+    },
+    {
+     "t": "Read Lorebooks to level the [[Mages Guild]] line.",
+     "src": [
+      "Online:Mages Guild"
+     ],
+     "q": "Each Lorebook recovered grants 5, while completing a collection of lorebooks grants 20."
+    },
+    {
+     "t": "Accept the Undaunted joining quest at level 10 or higher to unlock the [[Undaunted]] line.",
+     "src": [
+      "Online:Undaunted"
+     ],
+     "q": [
+      "A player must be at least level 10 to join the Undaunted",
+      "Accepting the quest will unlock the skill line."
+     ]
+    },
+    {
+     "t": "Complete dungeon quests, Pledges and delve dailies to level the [[Undaunted]] line.",
+     "src": [
+      "Online:Undaunted"
+     ],
+     "q": "To level the skill-line, players gain reputation by completing Dungeon Achievements (not including those in the Public Dungeons section), Pledges and delve dailies."
+    },
+    {
+     "t": "Complete The Queen's Decree in Shimmerene before you try to join the [[Psijic Order]].",
+     "src": [
+      "Online:Psijic Order"
+     ],
+     "q": "To join the Psijic Order, you must first complete the first Summerset zone story quest in Shimmerene, The Queen's Decree."
+    },
+    {
+     "t": "Follow the Psijic Order storyline to level it; it has no repeatable quests.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Psijic Order has no daily or otherwise repeatable quests, and progress is obtained only through the quest storyline."
+    },
+    {
+     "t": "Earn Alliance War points to level [[Assault]] and [[Support]] together.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Progress in the Assault and Support lines comes as you gain Alliance War points for any PVP or alliance-war related activities"
+    }
+   ],
+   "check": "The skill line appears in your Skills menu and its rank rises as you play.",
+   "more": [
+    {
+     "t": "Your racial skill line levels with your character level.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Progress in the Racial skill lines is directly equivalent to your character's overall experience level."
+    },
+    {
+     "t": "Do the quest The Antiquarian Circle to unlock [[Excavation]] and [[Scrying]].",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": [
+      "Excavation - obtained by the quest The Antiquarian Circle",
+      "Scrying - obtained by the quest The Antiquarian Circle"
+     ]
+    },
+    {
+     "t": "Progress through the main quest to unlock [[Soul Magic]].",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "Soul Magic - obtained by progress through the main quest"
+    },
+    {
+     "t": "At character level 15 you unlock Weapon Swapping and 5 more skill slots.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "At character level 15, when you acquire Weapon Swapping, you gain an additional 5 slots for your alternate weapon."
+    },
+    {
+     "t": "Each race gets a free passive that raises experience gain for one skill.",
+     "src": [
+      "Online:Skills"
+     ],
+     "q": "each race gets one free passive which increases their experience gain with a given skill."
+    },
+    {
+     "t": "The [[Fighters Guild]] Slayer passive raises Weapon and Spell Damage by 1% per slotted Fighters Guild ability at its first rank.",
+     "src": [
+      "Online:Fighters Guild"
+     ],
+     "q": "Increases your Weapon and Spell Damage by 1% for each Fighters Guild ability slotted."
+    },
+    {
+     "t": "The Undaunted Mettle passive ([[Undaunted]] line) raises Max Health, Stamina and Magicka by 1% per armor type you wear at its first rank.",
+     "src": [
+      "Online:Undaunted"
+     ],
+     "q": "Increases your Max Health, Stamina, and Magicka by 1% per type of Armor (Heavy, Medium, Light) that you have equipped."
+    },
+    {
+     "t": "The [[Psijic Order]] See the Unseen passive lets you interact with rifts across Tamriel.",
+     "src": [
+      "Online:Psijic Order"
+     ],
+     "q": "You can now interact with rifts all throughout Tamriel."
+    },
+    {
+     "t": "The [[Discipline Artisan]] Champion star raises experience for active skills and their skill lines by 3% per stage.",
+     "src": [
+      "Online:Craft"
+     ],
+     "q": "Increases experience gain for currently active skills and their skill lines by 3% per stage."
+    }
+   ]
+  },
+  {
+   "id": "howto-subclass",
+   "title": "How to unlock and set up subclassing",
+   "kind": "How-to",
+   "answer": "Get one character to level 50, do the free quest A Study in Discipline, then swap up to two class skill lines.",
+   "need": "You'll need: at least one level 50 character on your account.",
+   "steps": [
+    {
+     "t": "Get at least one character to level 50.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "In order to use subclassing, you must first have at least one level 50 character"
+    },
+    {
+     "t": "Start the quest A Study in Discipline from the Crown Store at no cost.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "you can start the quest A Study in Discipline from the Crown Store (at no cost)"
+    },
+    {
+     "t": "Travel to the city for your alliance: Dune ([[Reaper's March]]), Evermore ([[Bangkorai]]) or Riften ([[The Rift]]).",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "Dune (Reaper's March), Evermore (Bangkorai), Riften (The Rift)"
+    },
+    {
+     "t": "Talk to Bahtra at-Hunding at her campsite.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "travel to the following city depending on your alliance and talk to Bahtra at-Hunding at her campsite"
+    },
+    {
+     "t": "Ask her to unlock the subclassing menu.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "she will help you unlock the Subclassing system. This will take you to the subclassing menu"
+    },
+    {
+     "t": "Replace up to two of your class skill lines with lines from other classes.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "It allows a player to customize their character by replacing up to two of their class' skill lines with those from other classes."
+    },
+    {
+     "t": "Budget two skill points for each stage of a subclassed line.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "A subclassed skill line gains access to all skills and passives in the same way as base class skill lines, although each stage costs two skill points instead of one."
+    },
+    {
+     "t": "Level the subclassed lines once: their progress is shared by all characters on your account.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "progress in sub-classed skill lines is shared across all characters on your account."
+    },
+    {
+     "t": "Keep no more than three unlevelled subclass skill lines at a time.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "You can have up to three unlevelled sub-class skill lines at a time"
+    },
+    {
+     "t": "Complete A Study in Discipline on each other character you want to subclass.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "the quest A Study in Discipline must be completed on each character whose base class skill lines you wish to change."
+    },
+    {
+     "t": "If you want [[Class Mastery]] instead, keep all three native class lines; swapping any out refunds your Class Mastery purchases.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "Activating subclassing in any capacity by swapping out one or more of your native class skills will automatically refund and unlearn any currently active purchases from Class Mastery."
+    }
+   ],
+   "check": "Your Skills menu lists the new class skill line in place of the one you swapped out.",
+   "more": [
+    {
+     "t": "To use Class Mastery, reach level 50 in all three of your class skill lines and do not subclass.",
+     "src": [
+      "Online:Class Mastery",
+      "Online:Update 50"
+     ],
+     "q": [
+      "Reach Level 50 in all three of the character's class skill lines.",
+      "for characters that have mastered (i.e. reached level 50) in all 3 of their native class skill lines and are not actively subclassing."
+     ]
+    },
+    {
+     "t": "Each class has five Class Mastery passives, and each character can pick two.",
+     "src": [
+      "Online:Class Mastery"
+     ],
+     "q": "Each class will have five different passive skills and for each character you will be able to pick two of them."
+    },
+    {
+     "t": "Class Mastery uses its own points, separate from skill points; you get 2 right away.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": [
+      "distinct from Skill Points, these are exclusively utilized in your Class Mastery skill line",
+      "For the time being you are limited to 2, which are both immediately granted."
+     ]
+    },
+    {
+     "t": "Respec Class Mastery the same way as skill points, through Respec or the Armory.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "the respec process is the same as normal skill points through the Respec or Armory systems."
+    },
+    {
+     "t": "The Class Mastery line stays hidden while you subclass and returns when you respec into all your native lines.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "The skill line will also remain hidden while subclassing, only appearing again when you respec into all your native class skill lines."
+    },
+    {
+     "t": "If you do not want to subclass now, use the skip option in the quest giver's dialogue.",
+     "src": [
+      "Online:Update 50"
+     ],
+     "q": "A new skip option is added to this quest in the bestower’s dialogue tree if you do not wish to subclass right now"
+    },
+    {
+     "t": "A fully levelled subclass line counts as mastered, like a base class line.",
+     "src": [
+      "Online:Subclassing"
+     ],
+     "q": "once a subclass skill has been fully levelled, it is considered 'mastered' in the same way that base class skills can be mastered."
+    }
+   ]
+  },
+  {
+   "id": "howto-cp",
+   "title": "How to earn and spend Champion Points",
+   "kind": "How-to",
+   "answer": "Earn experience at level 50, use your daily Enlightenment, then spend points in the Craft, Warfare and Fitness constellations and slot active perks.",
+   "need": "You'll need: one character at level 50.",
+   "steps": [
+    {
+     "t": "Reach level 50 on any character to unlock the Champion System.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "The Champion System is unlocked when one of your characters reaches Veteran rank at Level 50."
+    },
+    {
+     "t": "Keep earning experience: from then on it gives Champion Points.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "From that point on, experience points provide progression in Champion Points."
+    },
+    {
+     "t": "Play daily to use Enlightenment: you get 400,000 XP of it once per day.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "Once per day, you receive 400,000 XP of Enlightenment"
+    },
+    {
+     "t": "Earn up to 160 Champion Points to wear stronger gear and use stronger consumables.",
+     "src": [
+      "Online:Leveling"
+     ],
+     "q": "Gaining Champion Points allows players to equip more powerful gear and use more powerful consumables, up to the Champion Progression Cap of 160."
+    },
+    {
+     "t": "Spend points across the three constellations: Craft, Warfare and Fitness.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "organized across three Guardian Constellations: Craft (Thief), Warfare (Mage), and Fitness (Warrior)."
+    },
+    {
+     "t": "Spend up to 1200 points in each constellation, for a cap of 3600.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "The current cap is 3600, and you are unable to spend any points that you have earned above this cap. This means you are able to spend 1200 points in each of the three constellations."
+    },
+    {
+     "t": "Put points into the base active perks, up to 50 stages at 1 point per stage.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "These perks can be invested in up to 50 stages at 1 point per stage."
+    },
+    {
+     "t": "Unlock base perks first, since most advanced perks require them.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "Most advanced perks require prerequisite investments in base constellation perks"
+    },
+    {
+     "t": "Slot your active perks on the **Champion Bar** at the top of each constellation.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": [
+      "Advanced abilities that must be equipped to the Champion Bar to function.",
+      "The Champion Bar appears at the top of each constellation interface"
+     ]
+    },
+    {
+     "t": "Swap slotted perks while out of combat; you do not need to respec.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "Perks can be swapped anytime while out of combat, allowing build flexibility without respeccing Champion Points."
+    },
+    {
+     "t": "If you ride a lot, slot [[War Mount]] to remove mount Stamina costs outside combat.",
+     "src": [
+      "Online:Craft"
+     ],
+     "q": "Improves your mastery with mounts, removing all mount Stamina costs outside of combat."
+    }
+   ],
+   "check": "Your Champion Bar shows the perks you slotted, and the Champion menu shows your spent points.",
+   "more": [
+    {
+     "t": "While you are Enlightened, you gain four times the experience.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "While you are Enlightened, experience gain is multiplied by four"
+    },
+    {
+     "t": "Since Update 45, many Craft perks are passive and do not need a slot.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "As of Update 45, many formerly slottable Craft tree perks became passive, eliminating the need for constant swapping during different activities."
+    },
+    {
+     "t": "Your Enlightenment pool caps at 4,800,000 XP after twelve days.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "Enlightenment accumulates in a pool with a cap of 4,800,000 XP after twelve days."
+    },
+    {
+     "t": "The Enlightenment pool is shared by all your level 50 characters.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "the Enlightenment pool is shared across all Level 50 characters on your account."
+    },
+    {
+     "t": "Your account keeps Champion Points even if you delete all your level 50 characters.",
+     "src": [
+      "Online:Champion Points"
+     ],
+     "q": "Once you have access to Champion Points on an account, you will always have access to them, even if you delete all of your Level 50 characters."
+    },
+    {
+     "t": "Save your Champion Points in an Armory build to swap them quickly.",
+     "src": [
+      "Online:Armory Station"
+     ],
+     "q": "This allows you to quickly change your attributes, skills, equipment, Champion Points, and Outfits."
+    },
+    {
+     "t": "[[Wrathful Strikes]] in Warfare grants 41 Weapon and Spell Damage to damaging abilities per stage.",
+     "src": [
+      "Online:Warfare"
+     ],
+     "q": "Grants 41 Weapon and Spell Damage to your damaging abilities per stage."
+    },
+    {
+     "t": "[[Boundless Vitality]] in Fitness grants 28 Max Health per stage.",
+     "src": [
+      "Online:Fitness"
+     ],
+     "q": "Grants 28 Max Health per stage."
+    },
+    {
+     "t": "[[Gifted Rider]] in Craft increases Mount Speed by 2% per stage.",
+     "src": [
+      "Online:Craft"
+     ],
+     "q": "Increases your Mount Speed by 2% per stage."
+    }
+   ]
+  }
+ ]
+}
