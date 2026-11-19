@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heroes V Field Guide</title>
+<meta name="description" content="Heroes of Might and Magic V (with Hammers of Fate and Tribes of the East) guide: every faction, creature, hero, skill, spell and artifact, town build paths, skill builds to each ultimate, and how to play well.">
+<meta name="theme-color" content="#120d0a">
+<meta property="og:title" content="Heroes V Field Guide">
+<meta property="og:description" content="All 8 factions, 177 creatures, the skill wheel, spells, artifacts, town build paths and how-to steps for Heroes of Might and Magic V. Works offline.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Cinzel";src:url("assets/fonts/cinzel.woff2") format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"Alegreya";src:url("assets/fonts/alegreya.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya";src:url("assets/fonts/alegreya-italic.woff2") format("woff2");font-weight:400 900;font-style:italic;font-display:swap}
+:root{
+  --bg:#120d0a;--panel:#1d1510;--panel2:#271c15;--well:#0c0806;
+  --line:rgba(236,223,194,.09);--line2:rgba(217,164,65,.30);
+  --paper:#ecdfc2;--muted:#bfae8b;--dim:#998a6c;
+  --gold:#d9a441;--gold2:#f2cd78;--red:#8e1f1a;--red2:#d4574a;--ink:#1a120c;
+  --c-haven:#e2c56d;--c-inferno:#e0663f;--c-necropolis:#8cc4a0;--c-sylvan:#8fc46a;--c-academy:#7fb4e3;
+  --c-dungeon:#b48ae6;--c-fortress:#d99a55;--c-stronghold:#e07a5f;--c-neutral:#b8ab90;
+  --tS:#e0574a;--tA:#d9a441;--tB:#8fbf7a;--tC:#7fa8d8;--tD:#8f8778;
+  --head:"Cinzel","Trajan Pro","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --body:"Alegreya","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --ui:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:6px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--paper);font:17px/1.6 var(--body);
+  background:
+   radial-gradient(1200px 700px at 88% -10%,rgba(142,31,26,.22),transparent 60%),
+   radial-gradient(1000px 700px at -10% 110%,rgba(217,164,65,.10),transparent 60%),
+   repeating-linear-gradient(45deg,rgba(236,223,194,.012) 0 2px,transparent 2px 7px),var(--bg);background-attachment:fixed}
+a{color:var(--gold2)}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;letter-spacing:.03em;margin:0 0 .45em;line-height:1.2;color:#f4e6c6}
+h2{font-size:1.6rem}
+h3{font-size:1.15rem}
+.shell{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 16px 40px;border-right:1px solid var(--line2);
+  background:linear-gradient(180deg,rgba(32,22,16,.96),rgba(16,11,8,.96))}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--paper)}
+.shield{width:38px;height:44px;flex:none;background:var(--red);clip-path:polygon(0 0,100% 0,100% 58%,50% 100%,0 58%);position:relative;box-shadow:inset 0 0 0 2px var(--gold)}
+.shield::before{content:"";position:absolute;inset:3px;clip-path:polygon(0 0,100% 0,100% 58%,50% 100%,0 58%);border:0;background:linear-gradient(160deg,#a8291f,#5e120e)}
+.shield::after{content:"V";position:absolute;inset:0;display:grid;place-items:center;font:700 1.15rem var(--head);color:var(--gold2);padding-bottom:6px}
+.brand b{display:block;font-family:var(--head);font-size:1.12rem;letter-spacing:.06em}
+.brand small{color:var(--gold);letter-spacing:.2em;font-size:.68rem;text-transform:uppercase;font-family:var(--ui)}
+#checked{font-size:1rem;color:var(--muted);margin:12px 2px 12px;line-height:1.45;font-family:var(--ui)}
+#checked a{color:var(--gold2)}
+.search{position:relative}
+.search input{width:100%;padding:10px 12px 10px 36px;border-radius:var(--r);border:1px solid var(--line2);background:rgba(8,5,3,.7);color:var(--paper);font:16px var(--ui);outline:none}
+.search input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(217,164,65,.18)}
+.search svg{position:absolute;left:12px;top:13px;opacity:.7}
+.results{position:absolute;left:0;right:0;top:46px;background:#1f1610;border:1px solid var(--line2);border-radius:var(--r);max-height:64vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font:15px var(--ui);display:flex;align-items:center;gap:9px}
+.results div img{width:26px;height:26px;object-fit:contain;flex:none}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.76rem;text-align:right}
+.results div:hover,.results div.sel{background:rgba(217,164,65,.12)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:12px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font:600 .7rem var(--ui);letter-spacing:.22em;color:var(--gold);opacity:.85;margin:16px 8px 4px;text-transform:uppercase}
+nav a{display:flex;gap:10px;align-items:center;padding:6px 10px;border-radius:4px;color:var(--paper);text-decoration:none;font:15.5px var(--ui)}
+nav a:hover{background:rgba(217,164,65,.08)}
+nav a.on{background:linear-gradient(90deg,rgba(142,31,26,.55),rgba(142,31,26,.08));box-shadow:inset 3px 0 0 var(--gold)}
+nav a .n{margin-left:auto;font-size:.74rem;color:var(--dim)}
+main{min-width:0;padding:24px clamp(16px,2.6vw,48px) 90px}
+.topbar{display:none}
+/* panels: dark leather with a gold rule */
+.card,.tile,.ccard,.hcard,.tablewrap{background:linear-gradient(180deg,rgba(43,31,23,.92),rgba(27,19,14,.92));border:1px solid var(--line2);border-radius:var(--r);
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.4),inset 0 1px 0 rgba(242,205,120,.08),0 8px 24px rgba(0,0,0,.35)}
+.card{padding:16px 18px;min-width:0;position:relative}
+.card::before,.card::after{content:"";position:absolute;width:14px;height:14px;pointer-events:none;opacity:.8}
+.card::before{left:5px;top:5px;border-left:1px solid var(--gold);border-top:1px solid var(--gold)}
+.card::after{right:5px;bottom:5px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.card p{margin:.35em 0}
+.banner{position:relative;overflow:hidden;border-radius:8px;padding:clamp(22px,4vw,48px);margin-bottom:22px;isolation:isolate;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line2)}
+.banner img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(.9) sepia(.15)}
+.banner::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(18,13,10,.97) 6%,rgba(18,13,10,.55) 55%,rgba(18,13,10,.15)),linear-gradient(90deg,rgba(18,13,10,.85),transparent 70%)}
+.banner::before{content:"";position:absolute;inset:8px;border:1px solid rgba(217,164,65,.35);border-radius:4px;pointer-events:none}
+.banner .k{color:var(--gold);font:600 .76rem var(--ui);letter-spacing:.24em;text-transform:uppercase}
+.banner h1{font-size:clamp(2.1rem,5.2vw,4rem);margin:.12em 0 .15em;color:#fbecc8;text-shadow:0 3px 0 rgba(0,0,0,.6),0 0 30px rgba(217,164,65,.35)}
+.banner p{max-width:820px;color:#e6d7b5;font-size:1.1rem;margin:0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.sec{margin:30px 0 12px}
+.sec h2{display:flex;align-items:center;gap:14px}
+.sec h2::after{content:"";flex:1;height:7px;min-width:30px;background:linear-gradient(90deg,var(--gold),transparent) left top/100% 1px no-repeat,linear-gradient(90deg,var(--red2),transparent) left bottom/55% 1px no-repeat;opacity:.8}
+.sec p{margin:.25em 0 0;color:var(--muted)}
+.muted{color:var(--muted)}.small{font-size:1rem}.tiny{font-size:1rem}
+.ui{font-family:var(--ui)}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:1px 9px;border-radius:3px;font:13px var(--ui);border:1px solid var(--line2);background:rgba(8,5,3,.5);color:#e3d3ae;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.gold{background:var(--gold);color:var(--ink);border-color:var(--gold);font-weight:700}
+.pill.red{background:var(--red);color:#fbe7c0;border-color:#b8332a}
+.fac{--c:var(--c-neutral)}
+.fac-haven{--c:var(--c-haven)}.fac-inferno{--c:var(--c-inferno)}.fac-necropolis{--c:var(--c-necropolis)}.fac-sylvan{--c:var(--c-sylvan)}
+.fac-academy{--c:var(--c-academy)}.fac-dungeon{--c:var(--c-dungeon)}.fac-fortress{--c:var(--c-fortress)}.fac-stronghold{--c:var(--c-stronghold)}.fac-neutral{--c:var(--c-neutral)}
+.pill.f{color:var(--c);border-color:color-mix(in srgb,var(--c) 55%,transparent)}
+.note{border-left:3px solid var(--gold);background:rgba(217,164,65,.07);padding:10px 14px;border-radius:0 4px 4px 0;color:#e6d7b5;margin:12px 0}
+.note.red{border-left-color:var(--red2);background:rgba(142,31,26,.14)}
+.tier{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:3px;font:700 .95rem var(--head);color:#170f09;flex:none;padding:0 6px}
+.tS{background:var(--tS)}.tA{background:var(--tA)}.tB{background:var(--tB)}.tC{background:var(--tC)}.tD{background:var(--tD)}
+/* picture tiles */
+.cgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+.ccard{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:10px 12px;cursor:pointer;text-align:left;border-left:3px solid var(--c,var(--gold));width:100%;color:var(--paper)}
+.ccard:hover,.hcard:hover,.tile:hover{border-color:var(--gold);box-shadow:0 10px 26px rgba(0,0,0,.45),0 0 18px rgba(217,164,65,.18)}
+.ccard img,.ccard .ph{width:64px;height:64px;object-fit:contain;border-radius:4px;background:radial-gradient(circle at 40% 30%,rgba(242,205,120,.12),rgba(8,5,3,.7));border:1px solid var(--line)}
+.ccard b{font-family:var(--head);font-size:1rem;display:block;line-height:1.25;letter-spacing:.02em}
+.ccard .s{font:14px var(--ui);color:var(--muted);display:block;margin-top:2px}
+.ph{display:grid;place-items:center;font:700 1.2rem var(--head);color:var(--gold)}
+.hgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,170px),1fr))}
+.hcard{display:flex;flex-direction:column;overflow:hidden;cursor:pointer;color:var(--paper);text-align:left;padding:0;position:relative;border-top:3px solid var(--c,var(--gold))}
+.hcard img,.hcard .ph{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top;display:block;background:var(--well)}
+.hcard .t{padding:8px 10px 10px}
+.hcard b{font-family:var(--head);font-size:1rem;display:block}
+.hcard .s{font:16px var(--ui);color:var(--muted)}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 10px;cursor:pointer;text-align:center;font:14px/1.25 var(--ui);color:var(--paper)}
+.tile img,.tile .ph{width:56px;height:56px;object-fit:contain}
+.igrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr))}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs button{padding:6px 13px;border-radius:3px;border:1px solid var(--line2);background:rgba(39,28,21,.8);cursor:pointer;font:14.5px var(--ui)}
+.tabs button.on{background:var(--red);color:#fbe7c0;border-color:var(--gold);box-shadow:inset 0 0 0 1px rgba(242,205,120,.4)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input,.filters select{background:rgba(8,5,3,.7);color:var(--paper);border:1px solid var(--line2);border-radius:4px;padding:8px 11px;font:15px var(--ui);min-width:0}
+.filters input{flex:1 1 220px;max-width:360px}
+.tablewrap{overflow-x:auto;padding:0}
+table{width:100%;border-collapse:collapse;font:14.5px/1.45 var(--ui)}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:rgba(70,22,18,.6);font-weight:600;white-space:nowrap;color:var(--gold2);text-transform:uppercase;letter-spacing:.06em;font-size:.74rem}
+th.sort{cursor:pointer}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td .ic{width:30px;height:30px;object-fit:contain;vertical-align:middle;margin-right:6px}
+tr.l{cursor:pointer}tr.l:hover td{background:rgba(217,164,65,.06)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:8px}
+.steps>li{position:relative;padding:12px 16px 12px 58px}
+.steps>li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:12px;width:30px;height:30px;border-radius:3px;background:var(--red);color:var(--gold2);display:grid;place-items:center;font:700 .95rem var(--head);box-shadow:inset 0 0 0 1px var(--gold)}
+.src{font:16px var(--ui);color:var(--dim);margin-top:4px}
+ul.items{margin:6px 0 2px;padding-left:22px}ul.items li{margin:2px 0}
+ul.tight{margin:0;padding-left:18px}ul.tight li{margin:0}ul.pairs{columns:3 180px;padding-left:18px;margin:6px 0}
+details.quote{display:inline;margin:0 0 0 6px}details.quote summary{font:600 12px var(--ui);padding:1px 7px}
+details.quote q{display:block;margin:6px 0;padding-left:10px;border-left:2px solid var(--line2);color:var(--muted);font:italic 15px/1.45 var(--body)}
+details.how{margin:0 0 10px}
+.src a{color:var(--dim)}
+details{margin:8px 0}
+details summary{cursor:pointer;color:var(--gold2);font:600 14px var(--ui);list-style:none;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border:1px solid var(--line2);border-radius:3px;background:rgba(8,5,3,.4)}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";font-weight:700}
+details[open] summary::before{content:"\2212"}
+details > div{margin-top:8px}
+.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:8px;margin:10px 0}
+.kv div.w2{grid-column:span 2}
+.kv div{background:rgba(8,5,3,.5);border:1px solid var(--line);border-radius:4px;padding:6px 10px}
+.kv b{display:block;font:700 1.05rem/1.3 var(--head);color:var(--gold2);overflow-wrap:anywhere}
+.kv span{font:16px/1.4 var(--ui);display:block;color:var(--muted)}
+.lk{color:var(--gold2);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(217,164,65,.45);text-underline-offset:2px}
+.modal{position:fixed;inset:0;background:rgba(6,4,3,.75);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#2a1e16,#17100b);border:1px solid var(--gold);border-radius:8px;max-width:760px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.7),inset 0 0 0 4px rgba(18,13,10,.9),inset 0 0 0 5px rgba(217,164,65,.35)}
+.modal .box.wide{max-width:980px}
+.modal .x{position:absolute;right:10px;top:6px;background:none;border:0;font-size:1.9rem;cursor:pointer;color:var(--muted);line-height:1;padding:4px 8px}
+.chead{display:flex;gap:16px;align-items:center;margin-bottom:8px;padding-right:34px}
+.chead img,.chead .ph{width:88px;height:88px;object-fit:contain;border-radius:6px;background:radial-gradient(circle at 40% 30%,rgba(242,205,120,.14),rgba(8,5,3,.8));border:1px solid var(--line2);flex:none}
+.chead.portrait img{object-fit:cover;width:110px;height:110px}
+.chead h2{margin:0}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+.isec h4{font:600 .76rem var(--ui);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.ab{margin:6px 0}.ab b{color:#f4e6c6}
+.lineup{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.lineup .col{display:flex;flex-direction:column;gap:6px}
+.lineup .col h4{font:600 .74rem var(--ui);letter-spacing:.14em;color:var(--gold);text-align:center;margin:0}
+.mini{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 4px;border:1px solid var(--line);border-radius:4px;background:rgba(8,5,3,.45);cursor:pointer;font:12.5px/1.2 var(--ui);text-align:center;color:var(--paper)}
+.mini:hover{border-color:var(--gold)}
+.mini img,.mini .ph{width:48px;height:48px;object-fit:contain}
+.mini i{font-style:normal;color:var(--dim);font-size:11px}
+.trow{display:grid;grid-template-columns:64px 1fr;border:1px solid var(--line2);border-radius:var(--r);overflow:hidden;margin-bottom:8px;background:rgba(27,19,14,.85)}
+.trow .lab{display:flex;align-items:center;justify-content:center;font:700 1.8rem var(--head);color:#170f09}
+.trow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:4px;background:rgba(8,5,3,.5);border:1px solid var(--line);border-left:3px solid var(--c,var(--gold));cursor:pointer;font:14px var(--ui);color:var(--paper)}
+.chip:hover{border-color:var(--gold)}
+.chip img,.chip .ph{width:34px;height:34px;object-fit:contain}
+.chip i{font-style:normal;font-size:12px;color:var(--muted)}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;text-align:left;width:100%;color:var(--paper)}
+.vtopics{display:grid;gap:18px 22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));margin-top:8px}
+.vtopic h3{margin:0 0 8px}.vlist{display:grid;gap:10px}.vtopic .grid.wide{grid-template-columns:1fr}
+.note-old{display:block;margin-top:4px;color:#e0a37a}
+.vid .play{flex:none;width:52px;height:52px;border-radius:4px;display:grid;place-items:center;background:linear-gradient(160deg,#b8332a,#6e1611);box-shadow:inset 0 0 0 1px var(--gold)}
+.vid b{display:block;font:600 15px/1.3 var(--ui)}
+.path{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center;font:14px var(--ui)}
+.path span.arrow{color:var(--dim)}
+.cost{font:14px var(--ui);white-space:nowrap}
+.wheel-skill{margin-bottom:12px}
+.wheel-skill h3{display:flex;align-items:center;gap:10px}
+.wheel-skill h3 img{width:36px;height:36px}
+.abl{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:8px}
+.abl .a{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:rgba(8,5,3,.4);cursor:pointer;text-align:left;color:var(--paper)}
+.abl .a:hover{border-color:var(--gold)}
+.abl .a.hot{border-color:var(--red2);background:rgba(142,31,26,.22)}
+.abl .a img{width:36px;height:36px;flex:none}
+.abl .a b{display:block;font:600 14.5px var(--ui)}
+.abl .a span{font:12.5px var(--ui);color:var(--muted)}
+footer{margin-top:44px;color:var(--dim);font:13px var(--ui);border-top:1px solid var(--line);padding-top:12px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;z-index:99;background:var(--gold);color:var(--ink);padding:6px 10px}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
+::selection{background:var(--gold);color:var(--ink)}
+*{scrollbar-color:rgba(217,164,65,.45) transparent}
+@media (max-width:1100px){.lineup{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(320px,88vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 14px;background:rgba(18,13,10,.96);border-bottom:1px solid var(--line2)}
+  .topbar button{background:var(--red);border:1px solid var(--gold);border-radius:4px;padding:6px 12px;cursor:pointer;font:15px var(--ui);color:#fbe7c0}
+  .topbar b{font-family:var(--head);letter-spacing:.05em;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .topbar .sbtn{background:rgba(8,5,3,.6);color:var(--gold2)}
+  main{padding:14px 14px 80px}
+  .banner{min-height:240px}
+  .banner::after{background:linear-gradient(0deg,rgba(18,13,10,.97) 10%,rgba(18,13,10,.82) 60%,rgba(18,13,10,.6))}
+  .banner .k{color:var(--gold2);text-shadow:0 1px 3px #000}
+  .lineup{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .trow{grid-template-columns:44px 1fr}.trow .lab{font-size:1.3rem}
+  .chead img,.chead .ph{width:68px;height:68px}
+  .chead.portrait img{width:84px;height:84px}
+  table{font-size:13.5px}
+  th,td{padding:7px 8px}
+}
+@media (max-width:700px){
+  table.stack thead{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
+  table.stack tr{border-bottom:1px solid var(--line2);padding:6px 0}
+  table.stack td{border:0;padding:3px 12px;text-align:left}
+  table.stack td.n{text-align:left}
+  table.stack td.cost{white-space:normal}
+  ul.pairs{columns:1}
+  table.stack td[data-l]::before{content:attr(data-l) ": ";color:var(--gold);font-size:.74rem;text-transform:uppercase;letter-spacing:.06em}
+}
+@media (max-width:420px){.kv{grid-template-columns:repeat(2,minmax(0,1fr))}.cgrid{grid-template-columns:1fr}.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.lineup{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections" aria-controls="side" aria-expanded="false">Sections</button><b>Heroes V Field Guide</b><button id="searchBtn" class="sbtn" aria-label="Search the guide" aria-controls="q">Search</button></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="shield" aria-hidden="true"></span><span><b>Heroes V</b><small>Field Guide</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search creatures, heroes, skills, spells..." autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav" aria-label="Sections"></nav>
+</aside>
+<main id="main" tabindex="-1"><p class="muted">Loading the guide...</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box"><button class="x" aria-label="Close">&times;</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/core.js?v=2026-11-19-1225950"></script>
+<script>
+(function(){
+'use strict';
+const D=window.H5||{meta:{},howto:{sections:[]},factions:[],search:[],videos:{topics:{}},sources:[]};
+const M=D.meta||{};
+const $=s=>document.querySelector(s), main=$('#main');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs));
+const own=(o,k)=>!!o&&Object.prototype.hasOwnProperty.call(o,k); // URL text can never hit 'constructor' etc.
+const WIKI='https://mightandmagic.fandom.com/wiki/';
+const wurl=t=>WIKI+encodeURIComponent(String(t).replace(/ /g,'_')).replace(/%2F/g,'/');
+const n0=x=>x==null?'—':Math.round(x).toLocaleString('en-US');
+const FAC=dict(D.factions.map(f=>[f.id,f]));
+const FNAME=id=>FAC[id]?FAC[id].name:'Neutral';
+const RES=['gold','wood','ore','mercury','crystal','sulfur','gems'];
+const costTxt=c=>{if(!c)return '—';const p=RES.filter(k=>c[k]).map(k=>n0(c[k])+' '+k);return p.length?p.join(', '):'free';};
+const PH=(name)=>`<span class="ph" aria-hidden="true">${esc(String(name||'?').trim().charAt(0))}</span>`;
+const pic=(src,name,cls)=>src?`<img ${cls?`class="${cls}"`:''} src="${esc(src)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'ph',textContent:'${esc(String(name||'?').charAt(0)).replace(/'/g,'')}'}))">`:PH(name);
+const tierB=t=>t?`<span class="tier t${t}">${t}</span>`:'';
+const srcLink=t=>`<a href="${esc(wurl(t))}" target="_blank" rel="noopener">${esc(t)}</a>`;
+const howtos=(D.howto&&D.howto.sections)||[];
+const HT=dict(howtos.map(s=>[s.id,s]));
+
+// header line
+const WIKI_A=`<a href="https://mightandmagic.fandom.com/wiki/Heroes_of_Might_and_Magic_V" target="_blank" rel="noopener">the Might and Magic wiki</a>`;
+$('#checked').innerHTML=`Last checked against ${WIKI_A.replace('the Might and Magic wiki','the wiki')} on ${esc(M.pulled)}. Game version: ${esc(M.version_label||'Tribes of the East')}. <a href="#sources">Details</a>`;
+const CHECKED_FULL=`Last checked against ${WIKI_A} on ${esc(M.pulled)}. Game version: Heroes V with Hammers of Fate and ${esc(M.version_label||'Tribes of the East')} (the newest patch listed on the wiki's patch page).`;
+
+// ---------- lazy reference data
+let R=null;
+function need(cb){if(window.H5REF){R=R||index(window.H5REF);cb();return;}
+ const s=document.createElement('script');s.src='data/ref.js?v=2026-11-19-1225950';s.onload=()=>{R=index(window.H5REF);cb();};
+ s.onerror=()=>{main.innerHTML='<p class="note red">Could not load data/ref.js. Keep the data folder next to index.html.</p>';};document.head.appendChild(s);}
+function index(X){
+ const r={X,C:dict(X.creatures.map(c=>[c.id,c])),H:dict(X.heroes.map(h=>[h.id,h])),S:dict(X.skills.map(s=>[s.id,s])),
+  SP:dict(X.spells.map(s=>[s.id,s])),A:dict(X.artifacts.map(a=>[a.id,a])),SET:dict(X.sets.map(s=>[s.id,s])),
+  ST:dict(X.structures.map(s=>[s.id,s])),BK:dict(X.banks.map(b=>[b.id,b])),F:dict(X.factions.map(f=>[f.id,f])),B:Object.create(null),BN:Object.create(null),AB:Object.create(null)};
+ X.factions.forEach(f=>f.buildings.forEach(b=>{r.B[b.id]=b;const k=norm(b.name);(r.BN[k]=r.BN[k]||[]).push(b);}));
+ X.skills.forEach(s=>s.abilities.forEach(a=>{r.AB[s.id+'/'+slug(a.name)]={s,a};}));
+ return r;}
+const slug=s=>String(s).toLowerCase().replace(/'/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const norm=s=>String(s).toLowerCase().replace(/’/g,"'").replace(/[^a-z0-9' ]/g,' ').replace(/\s+/g,' ').trim();
+
+// prose tokens {{kind:id|Text}}
+function prose(t){return esc(t).replace(/\{\{(\w+):([^|}]+)\|([^}]+)\}\}/g,(m,k,id,txt)=>{
+ if(k==='faction')return `<a class="lk" href="#faction/${esc(id)}">${txt}</a>`;
+ if(k==='skill')return `<a class="lk" href="#skill/${esc(id)}">${txt}</a>`;
+ if(k==='page')return `<a class="lk" href="#${esc(id)}">${txt}</a>`;
+ return `<span class="lk" role="button" tabindex="0" data-card="${esc(k)}:${esc(id)}">${txt}</span>`;});}
+
+// ---------- navigation
+const NAV=[
+ ['Start',[['home','Home'],['start','Start here / come back']]],
+ ['Play well',howtos.filter(s=>s.id!=='start').map(s=>[s.id,s.title.replace(/^How to /,'').replace(/^./,c=>c.toUpperCase())])],
+ ['Factions',[['factions','All factions',8]].concat(D.factions.map(f=>['faction/'+f.id,f.name]))],
+ ['Reference',[['creatures','Creatures',M.counts&&M.counts.creatures],['heroes','Heroes',M.counts&&M.counts.heroes],['skills','Skills & abilities',M.counts&&M.counts.skills],['wheel','Skill wheel by class'],['spells','Spells',M.counts&&M.counts.spells],['artifacts','Artifacts & sets',M.counts&&M.counts.artifacts],['map','Map objects & banks',M.counts&&(M.counts.structures+M.counts.banks)]]],
+ ['Builds & lists',[['builds','Skill builds to ultimates'],['towns','Town build paths'],['tiers','Creature stat list']]],
+ ['More',[['videos','Videos'],['sources','Sources & method']]],
+];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}"${cur===id?' aria-current="page"':''}>${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+
+// ---------- pages (core only)
+const P=Object.create(null);
+P.home=()=>{const tiles=[
+  ['start','Start here','Coming back after a break? A 10-minute path back in.'],
+  ['howto-week1','Open week 1','Town Hall, mines, stat buildings, and a day-by-day build order for each faction.'],
+  ['howto-combat','Win fights','The ATB bar, waiting, morale, Attack and Defense skills.'],
+  ['factions','8 factions','Creatures, buildings, heroes and racial skill for each.'],
+  ['wheel','Skill wheel','What each class can learn and what every ability needs.'],
+  ['builds','Builds to ultimates','The abilities each class needs for its ultimate, in order.'],
+  ['towns','Town build paths','Every dwelling with its prerequisites and total cost.'],
+  ['creatures','All creatures',`${M.counts?M.counts.creatures:''} creatures with stats, cost and growth.`],
+  ['spells','Spells','All schools, every level, by skill mastery.'],
+  ['artifacts','Artifacts & sets',`${M.counts?M.counts.artifacts:''} artifacts and ${M.counts?M.counts.sets:''} sets.`]];
+ return `<section class="banner"><img class="bg" src="card.jpg" alt=""><span class="k">Heroes of Might and Magic V &middot; Hammers of Fate &middot; Tribes of the East</span><h1>Heroes V Field Guide</h1>
+ <p>Every faction, creature, hero, skill, spell and artifact from the game wiki, plus numbered how-to steps for getting better. Covers ${esc(M.version_label||'Tribes of the East')}. Updated ${esc(M.pulled)}.</p></section>
+ <div class="grid">${tiles.map(([r,t,s])=>`<a class="card" href="#${r}" style="text-decoration:none;color:inherit"><h3>${esc(t)}</h3><p class="muted small">${esc(s)}</p><span class="lk small ui">Open</span></a>`).join('')}</div>
+ <div class="sec"><h2>Choose a faction</h2><p>Click a faction for its creatures, buildings, heroes and build path.</p></div>
+ <div class="grid">${D.factions.map(facTile).join('')}</div>
+ <div class="sec"><h2>What is in this guide</h2></div>
+ <div class="card"><p class="small">${n0(M.counts&&M.counts.creatures)} creatures, ${n0(M.counts&&M.counts.heroes)} heroes, ${n0(M.counts&&M.counts.skills)} skills with ${n0(M.abilities)} abilities, ${n0(M.counts&&M.counts.spells)} spells, ${n0(M.counts&&M.counts.artifacts)} artifacts in ${n0(M.counts&&M.counts.sets)} sets, ${n0(M.buildings)} town buildings, ${n0(M.counts&&M.counts.structures)} map objects and ${n0(M.counts&&M.counts.banks)} creature banks. Everything comes from ${n0(M.pages)} wiki pages pulled on ${esc(M.pulled)}; see <a href="#sources">Sources &amp; method</a> for what is missing.</p>
+ <p class="small muted">Search works for every name above: type in the box at the top of the menu.</p></div>`;};
+function facTile(f){return `<a class="card fac fac-${esc(f.id)}" href="#faction/${esc(f.id)}" style="text-decoration:none;color:inherit;border-top:3px solid var(--c)">
+ <h3 style="color:var(--c)">${esc(f.name)}</h3><p class="small">${esc(f.summary)}</p>
+ <div class="pills"><span class="pill">${esc(f.cls)}</span><span class="pill">${esc(f.schools||(f.guild?'Magic guild: see faction page':'No magic guild'))}</span>${f.expansion?`<span class="pill red">${esc(f.expansion)}</span>`:''}</div></a>`;}
+
+function srcLine(p){if(p.nav)return `<div class="src">Guide navigation: points to another part of this guide, no wiki source needed.</div>`;
+ return `<div class="src">${p.advice?'This guide&rsquo;s advice, built on the rule quoted from: ':'Source: '}${p.src.map(x=>srcLink(x.t)).join(', ')}${(p.q||[]).length?` <details class="quote"><summary>What the source says</summary><div>${p.q.map(x=>`<q>${esc(x)}</q>`).join('')}</div></details>`:''}</div>`;}
+function stepBody(p){return `<div>${prose(p.t)}</div>${(p.items||[]).length?`<ul class="items">${p.items.map(x=>`<li>${prose(x)}</li>`).join('')}</ul>`:''}${srcLine(p)}`;}
+const HVID={'start':'start','howto-week1':'week1','howto-creep':'creeping','howto-combat':'combat','howto-skills':'skills','howto-army':'army','howto-map':'map','howto-town':'town'};
+function howtoPage(id){const s=HT[id];if(!s)return P.home();
+ const gl=id==='start'&&(D.howto.glossary||[]).length?`<div class="sec"><h2>Glossary</h2><p>Words this guide uses without explaining them again.</p></div><div class="grid wide">${D.howto.glossary.map(g=>`<div class="card"><h3>${esc(g.term)}</h3><p class="small">${prose(g.t)}</p>${srcLine(g)}</div>`).join('')}</div>`:'';
+ const about=id==='start'&&D.howto.about?`<div class="sec"><h2>About Heroes V</h2><p>Background you need once.</p></div>${D.howto.about.map(p=>`<div class="card" style="margin-bottom:8px"><p>${prose(p.t)}</p>${srcLine(p)}</div>`).join('')}`:'';
+ return `<div class="sec"><h2>${esc(s.title)}</h2>${s.intro?`<p>${prose(s.intro)}</p>`:''}${s.need?`<p>${prose(s.need)}</p>`:''}</div>
+ <ol class="steps">${s.steps.map(p=>`<li class="card">${stepBody(p)}</li>`).join('')}</ol>
+ ${s.check?`<p class="note"><b>Check:</b> ${prose(s.check)}${s.check_kind==='guide'?' <span class="tiny muted">(this guide\'s target, not from a source)</span>':(s.check_src||[]).length?` <span class="src">Source: ${s.check_src.map(x=>srcLink(x)).join(', ')}</span>`:''}</p>`:''}${gl}${about}
+ ${vidBlock(HVID[id]||null,true)}`;}
+howtos.forEach(s=>{P[s.id]=()=>howtoPage(s.id);});
+
+function vidBlock(topic,always){const v=topic&&own(D.videos.topics,topic)?D.videos.topics[topic]:null;if(!v||!v.length)return always&&topic?`<div class="sec"><h2>Videos</h2></div><p class="small muted">No video found for this topic: no English guide for the official game, uploaded since ${esc(vMin())}, matched the search on ${esc(D.videos.searched)}. See <a href="#videos">Videos</a> for the rule.</p>${vOldHtml(topic)}`:'';
+ return `<div class="sec"><h2>Videos</h2><p>${FAC_TOPIC.has(topic)?'Videos about this faction':'English videos on this topic'} for the official game, found by a YouTube search on ${esc(D.videos.searched)}; not hand-reviewed. Each card says if it is a guide or a showcase; titles are the uploaders' own.</p></div><div class="grid wide">${v.map(vidCard).join('')}</div>`;}
+const FAC_TOPIC=new Set(['haven','inferno','necropolis','sylvan','academy','dungeon','fortress','stronghold']);
+const vOld=k=>((D.videos.older||{})[k]||[]);
+const vOldHtml=k=>vOld(k).length?`<p class="small">Older guide, shown because none since ${esc(vMin())} was found. It may describe an older patch:</p><div class="grid wide">${vOld(k).map(vidCard).join('')}</div>`:'';
+const vMin=()=>(D.videos.min_date||'').replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3');
+function vidCard(v){return `<button class="card vid" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}"><span class="play" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="#f2cd78"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted ui">${v.kind?esc({guide:'Guide',showcase:'Showcase, not a how-to',ranking:'Ranking video'}[v.kind]||'')+' &middot; ':''}${esc(v.channel)} &middot; ${esc(v.date)}${v.mod?' &middot; uses a fan mod (Heroes 5.5 or similar)':''}${v.language&&!/^en/i.test(v.language)?' &middot; language: '+esc(v.language):''}</span>${v.rank_note?`<span class="tiny note-old ui">${esc(v.rank_note)}</span>`:''}</span></button>`;}
+
+const VLAB={start:'Getting started',week1:'Week 1 and early game',creeping:'Creeping and neutral stacks',army:'Army and creatures',combat:'Combat',skills:'Skills and hero builds',map:'Adventure map',town:'Town building',tiers:'Tier lists',haven:'Haven',inferno:'Inferno',necropolis:'Necropolis',sylvan:'Sylvan',academy:'Academy',dungeon:'Dungeon',fortress:'Fortress',stronghold:'Stronghold'};
+P.videos=()=>{const T=D.videos.topics||{};const O=D.videos.other||[];const lab=VLAB;
+ const keys=Object.keys(lab);const n=new Set(keys.flatMap(k=>(T[k]||[]).map(v=>v.videoId))).size;
+ return `<div class="sec"><h2>Videos</h2><p>${n} English videos for the official game (guides and showcases, each card says which; titles are the uploaders' own), found by a YouTube search on ${esc(D.videos.searched)}. Rule: the title names the game and the topic, longer than 3 minutes, uploaded since ${esc(vMin())}, at most 3 per topic, one per channel, newest first. Play-throughs, campaign runs and AI-made videos are removed; videos that use a fan mod or are in another language are listed separately at the bottom. Not hand-reviewed.</p></div>
+ <div class="vtopics">${keys.map(k=>`<section class="vtopic"><h3>${esc(lab[k])}</h3>${(T[k]||[]).length?`<div class="vlist">${T[k].map(vidCard).join('')}</div>`:`<p class="small muted">No video found for this topic since ${esc(vMin())}. <a href="https://www.youtube.com/results?search_query=${encodeURIComponent('heroes of might and magic 5 '+lab[k]+' guide')}" target="_blank" rel="noopener">Search YouTube</a> yourself.</p>${vOldHtml(k)}`}</section>`).join('')}</div>
+ ${O.length?`<div class="sec"><h2>Mod and other-language videos</h2><p>Not guides for the official game in English: they use a fan mod (Heroes 5.5, Universe, Arena and others, whose numbers differ from the official game) or are in another language. Kept here because some players use them.</p></div><div class="grid wide">${O.map(vidCard).join('')}</div>`:''}`;};
+
+// ---------- pages that need ref.js
+const PR=Object.create(null);
+PR.factions=()=>`<div class="sec"><h2>Factions</h2><p>Eight factions: six from the base game, Fortress from Hammers of Fate, Stronghold from Tribes of the East. Each has one hero class and one racial skill.</p></div>
+ <div class="grid">${D.factions.map(facTile).join('')}</div>
+ <div class="sec"><h2>Compare</h2></div><div class="tablewrap"><table class="stack"><thead><tr><th>Faction</th><th>Hero class</th><th>Racial skill</th><th>Magic schools</th><th>Rare resource</th><th>Grail building</th><th>Weekly cost, all base creatures</th></tr></thead><tbody>
+ ${R.X.factions.map(f=>`<tr class="l fac-${esc(f.id)}" data-go="faction/${esc(f.id)}"><td><b style="color:var(--c)">${esc(f.name)}</b></td><td data-l="Class">${esc(f.cls)}</td><td data-l="Racial skill">${esc((racialSkill(f)||{}).name||f.racial)}</td><td data-l="Schools">${esc(f.schools||(f.guild?'see faction page':'none (warcries)'))}</td><td data-l="Rare resource">${esc(f.resource)}</td><td data-l="Grail">${esc(f.grail)}</td><td class="cost" data-l="Weekly cost">${costTxt(f.week_cost_base)}</td></tr>`).join('')}</tbody></table></div>
+ <p class="src">Source: the eight faction pages on the wiki. Weekly cost = each base creature's cost times its weekly growth, added up (this guide's sum).</p>`;
+
+function skMore(s){/* a skill's other Effects text and tables, behind buttons */
+ const blocks=(s.more||[]).map(b=>`${b.head?`<h4>${esc(b.head)}</h4>`:''}${b.lead?`<p>${esc(b.lead)}</p>`:''}${b.items.length?`<ul>${b.items.map(x=>`<li${x.d>1?` style="margin-left:${(x.d-1)*1.2}em"`:''}>${esc(x.t)}</li>`).join('')}</ul>`:''}`).join('');
+ const tabs=(s.tables||[]).map(t=>{const cap=t.caption||'Table from the wiki';
+  const cell=c=>Array.isArray(c)?`<ul class="tight">${c.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:esc(c);
+  const unit=t.rows.some(r=>r.some(c=>Array.isArray(c)&&c.some(x=>/: [\d.]+$/.test(x))))?`<p class="tiny muted">The number after each name is copied from the wiki, which gives no unit for it.</p>`:'';
+  const body=t.head.length?`<div class="tablewrap"><table class="stack"><thead><tr>${t.head.map(h=>`<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map((c,i)=>`<td data-l="${esc(t.head[i]||'')}">${cell(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`
+   :`<ul class="pairs">${t.rows.flatMap(r=>{const o=[];for(let i=0;i+1<r.length;i+=2)o.push(`<li><b>${esc(r[i])}</b>: ${esc(r[i+1])}</li>`);return o;}).join('')}</ul>`;
+  return `<details><summary>Show table: ${esc(cap)}</summary><div class="small">${unit}${body}</div></details>`;}).join('');
+ return (blocks?`<details><summary>More rules from the wiki</summary><div class="small">${blocks}</div></details>`:'')+tabs;}
+function racialSkill(f){return R.X.skills.find(s=>s.page===f.racial);}
+PR.faction=(id)=>{const f=R.F[id];if(!f)return `<p class="note red">Faction not found. <a href="#factions">All factions</a></p>`;
+ const sk=racialSkill(f), ult=own(R.X.ultimates,f.cls)?R.X.ultimates[f.cls]:null;
+ const cr=f.creatures.map(i=>R.C[i]);
+ const heroes=R.X.heroes.filter(h=>h.faction===id);
+ const lineup=[1,2,3,4,5,6,7].map(t=>`<div class="col"><h4>TIER ${t}</h4>${['base','upgrade','alternate'].map(fm=>{const c=cr.find(x=>x.tier===t&&x.form===fm);return c?`<button class="mini" data-card="creature:${esc(c.id)}">${pic(c.img,c.name)}<span>${esc(c.name)}</span><i>${fm==='base'?'base':fm==='upgrade'?'upgrade':'alt. upgrade (ToE)'}</i></button>`:'';}).join('')}</div>`).join('');
+ return `<div class="fac fac-${esc(id)}"><section class="banner">${f.img?`<img class="bg" src="${esc(f.img)}" alt="">`:''}<span class="k">${esc(f.cls)} &middot; ${esc(f.alignment||'')} &middot; ${esc(f.terrain||'')}${f.expansion?' &middot; added in '+esc(f.expansion):''}</span><h1 style="color:var(--c)">${esc(f.name)}</h1><p>${esc(f.summary)}</p></section>
+ <div class="kv"><div><b>${esc(f.cls)}</b><span>Hero class</span></div><div><b>${sk?`<a class="lk" href="#skill/${esc(sk.id)}">${esc(sk.name)}</a>`:'?'}</b><span>Racial skill</span></div><div><b>${esc(f.schools||(f.guild?'see buildings':'none'))}</b><span>Magic guild schools${f.schools_src&&f.schools_src!==f.page?' (from the wiki page '+esc(f.schools_src)+')':''}</span></div><div><b>${esc(f.resource||'?')}</b><span>Main rare resource</span></div><div><b>${esc(f.grail||'?')}</b><span>Grail building</span></div><div><b>${n0(f.growth_total)}</b><span>Base creatures per week (all 7 dwellings)</span></div></div>
+ ${f.schools_note?`<p class="note red small"><b>Wiki pages disagree:</b> ${esc(f.schools_note)}</p>`:''}
+ <div class="sec"><h2>Creatures</h2><p>Base form, upgrade, and the alternate upgrade added in Tribes of the East. Click one for its card.</p></div>
+ <div class="lineup">${lineup}</div>
+ <div class="sec"><h2>Racial skill: ${sk?esc(sk.name):''}</h2><p>${sk?esc(sk.intro):''}</p></div>
+ ${sk?`<div class="card"><ul class="small">${sk.levels.map(l=>`<li>${esc(l)}</li>`).join('')}</ul>${skMore(sk)}${ult?`<p class="small"><b>Ultimate: ${esc(ult.ultimate)}.</b> In Tribes of the East it needs ${ult.need.map(n=>`<b>${esc(n)}</b>`).join(', ')}. <a class="lk" href="#builds/${esc(f.cls)}">See the full path</a>.</p>`:''}<div class="src">Source: ${srcLink(sk.page)}</div></div>`:''}
+ ${week1Table(f)}
+ ${rolesTable(f)}
+ <div class="sec"><h2>Paths to each dwelling</h2><p>For every creature dwelling: all buildings it needs (worked out from the wiki's requirement lists), their summed cost, and the highest town level among them. A town builds one building per day.</p></div>
+ ${dwellTable(f)}
+ <div class="sec"><h2>Heroes</h2><p>${heroes.length} ${esc(f.cls)} heroes from the wiki's class page. Tags come from the specialty text (Creature = it names creatures; Economy = gold or resources; Spell = it names a spell).</p></div>
+ <p class="note small"><b>Which hero is best:</b> no recent source. No community ranking from the last 60 days was found, so this guide does not rank heroes.</p>
+ ${specTable(f)}
+ <div class="hgrid">${heroes.map(heroCard).join('')}</div>
+ <div class="sec"><h2>${esc(f.cls)} class</h2></div>
+ <div class="grid two"><div class="card"><h3>Level-up chances</h3><p class="small">Primary stats: ${Object.entries(f.dev||{}).map(([k,v])=>`${esc(k)} ${v}%`).join(', ')||'not listed on the wiki'}.</p>
+ <table><tbody>${f.rates.map(r=>`<tr><td class="n">${esc(r.pct)}</td><td>${esc(r.skills)}</td></tr>`).join('')}</tbody></table><div class="src">Source: ${srcLink(f.cls_page)}</div></div>
+ <div class="card"><h3>Class notes</h3><p class="small">${esc(f.class_intro)}</p>${f.class_notes.length?`<details><summary>${f.class_notes.length} notes from the wiki</summary><div><ul class="small">${f.class_notes.map(n=>`<li${n.d>1?' style="margin-left:1.2em"':''}>${esc(n.t)}</li>`).join('')}</ul></div></details>`:''}</div></div>
+ <div class="sec"><h2>All buildings</h2><p>${f.buildings.length} buildings. Click one for its card.</p></div>
+ ${['Basic','Unique','Un-upgraded','Upgraded','Creature production'].map(g=>{const L=f.buildings.filter(b=>b.group===g);return L.length?`<h3 style="margin-top:14px">${esc(g)}</h3><div class="igrid">${L.map(b=>`<button class="tile" data-card="building:${esc(b.id)}">${pic(b.img,b.name)}<b>${esc(b.name)}</b><span class="tiny muted">${costTxt(b.cost)}</span></button>`).join('')}</div>`:'';}).join('')}
+ ${vidBlock(id)}
+ <p class="src">Source: ${srcLink(f.page)}, ${srcLink(f.cls_page)}.</p></div>`;};
+
+const bLink=b=>`<span class="lk" role="button" tabindex="0" data-card="building:${esc(b.id)}">${esc(b.name)}</span>`;
+const cLink=c=>`<span class="lk" role="button" tabindex="0" data-card="creature:${esc(c.id)}">${esc(c.name)}</span>`;
+function week1Table(f){if(!(f.week1||[]).length)return '';
+ const why=r=>r.why==='income'?esc(R.B[r.building].desc):r.why==='dwelling'?'Creature dwelling':r.why==='level'?'Raises the town level':'Needed for '+esc((R.B[r.why.replace('needed for ','')]||{}).name||'');
+ return `<div class="sec"><h2>Week-one build order</h2><p>One building per day, worked out by this guide from the wiki's costs and rules. Not a community build order. It does not model starting resources. The full week costs ${costTxt(f.week1[f.week1.length-1].total)}: if you cannot pay for a line, build the next one you can afford.</p></div>
+ <details class="how"><summary>How this order is made</summary><div class="small"><p>It assumes a town with only its Village Hall and enough resources for every line; the cached wiki pages do not list starting resources, and the full week can cost more than a map gives you in week 1.</p><p>Start: a town with only its Village Hall (town level 1). The wiki's Town page says town level is the number of buildings built so far, and a town builds one building per day. Each day this guide picks: (1) the Town Hall, or a building it needs, as soon as the town level allows; else (2) the next building towards the lowest-tier creature dwelling not built yet; else (3) the cheapest building that only raises the town level.</p><p>Maps often start you with more buildings: skip the ones you have and go on with the next line. If you cannot pay for a line yet, build the next affordable one and come back. Running total = what the whole order costs up to that day.</p></div></details>
+ <div class="tablewrap"><table class="stack"><thead><tr><th>Day</th><th>Build</th><th>Why</th><th>Town level after</th><th>Running total</th></tr></thead><tbody>
+ ${f.week1.map(r=>{const b=R.B[r.building];return `<tr><td class="n" data-l="Day">${r.day}</td><td data-l="Build">${bLink(b)}${(b.creatures||[]).length?' <span class="tiny muted">('+b.creatures.map(i=>esc((R.C[i]||{}).name||'')).join(', ')+')</span>':''}</td><td data-l="Why">${why(r)}</td><td class="n" data-l="Town level after">${r.level}</td><td class="cost" data-l="Running total">${costTxt(r.total)}</td></tr>`;}).join('')}</tbody></table></div>
+ <p class="src">Source: ${srcLink(f.page)} (costs and requirements), ${srcLink('Town')} (town level), ${srcLink('Time system')} (one building per day). Order by this guide's rule.</p>`;}
+function rolesTable(f){if(!(f.roles||[]).length)return '';
+ const tags=c=>c.tags.filter(t=>['Shooter','Flyer','Large','Caster','No retaliation','Undead','Incorporeal','Magic immune','Breath attack','Regenerates','Teleports others'].includes(t));
+ const cell=(id,adds)=>{const c=R.C[id];if(!c)return '—';return `${cLink(c)} <span class="tiny muted">Init ${n0(c.initiative)} &middot; Speed ${n0(c.speed)}${tags(c).length?' &middot; '+esc(tags(c).join(', ')):''}</span>${adds!==undefined?`<div class="tiny">${adds===null?(c.ab_src==='text'&&c.abilities.length?'<span class="muted">No ability list on its wiki page. Its text names:</span> '+esc(c.abilities.map(a=>a.name).join(', ')):'<span class="muted">No ability list on the base form&rsquo;s wiki page, so not compared</span>'):adds.length?'Adds: '+esc(adds.join(', ')):'No new ability'}</div>`:''}`;};
+ const rc=f.role_count||{};const lst=k=>((rc[k]||{}).ids||[]).map(i=>R.C[i]).filter(Boolean);const unk=k=>((rc[k]||{}).unknown||[]).map(i=>R.C[i]).filter(Boolean);
+ const tile=(k,t)=>{const a=lst(k),u=unk(k);return `<div><b>${u.length?a.length+' or more':a.length}</b><span>${t} (base forms): ${a.map(c=>esc(c.name)).join(', ')||(u.length?'none known':'none')}${u.length?`. Not known for ${u.map(c=>esc(c.name)).join(', ')} (no ability list)`:''}</span></div>`;};
+ const nText=f.creatures.map(i=>R.C[i]).filter(c=>c&&c.ab_src==='text').length;
+ return `<div class="sec"><h2>Army roles</h2><p>What each tier does, from the creature pages: its roles, and the abilities the upgrade and the Tribes of the East alternate upgrade add over the base form. Use it to pick an upgrade by what your army is missing.</p></div>
+ ${nText?`<p class="note">${nText} of this faction's ${f.creatures.length} creature pages have no ability list on the wiki. For those, the roles below come from the abilities the page's own text names (and from the shots field for Shooter), so they may be incomplete.</p>`:''}
+ <div class="kv">${[['Shooter','Shooters'],['Flyer','Flyers'],['Large','Large'],['Caster','Casters']].map(([k,t])=>tile(k,t)).join('')}</div>
+ <div class="tablewrap"><table class="stack"><thead><tr><th>Tier</th><th>Base</th><th>Upgrade</th><th>Alternate upgrade (ToE)</th></tr></thead><tbody>
+ ${f.roles.map(r=>`<tr><td class="n" data-l="Tier">${r.tier}</td><td data-l="Base">${cell(r.base)}</td><td data-l="Upgrade">${r.upgrade?cell(r.upgrade,r.upgrade_adds):'—'}</td><td data-l="Alternate">${r.alternate?cell(r.alternate,r.alternate_adds):'—'}</td></tr>`).join('')}</tbody></table></div>
+ <p class="src">Source: each creature's wiki page (abilities and stats). Roles: Shooter, Flyer, Large and so on are the ability names on those pages (Shooter also when the infobox lists shots); "Adds" compares ability lists (this guide's comparison).</p>`;}
+function specTable(f){const L=(f.specialists||[]).map(x=>({h:R.H[x.hero],cs:x.creatures.map(i=>R.C[i]).filter(Boolean)})).filter(x=>x.h);if(!L.length)return '';
+ return `<div class="card"><h3>Heroes whose specialty names a tier 5-7 creature</h3><p class="small muted">A fact from each hero's specialty text, not a ranking. Useful if you plan to build that dwelling early.</p>
+ <ul class="small">${L.map(x=>`<li><span class="lk" role="button" tabindex="0" data-card="hero:${esc(x.h.id)}">${esc(x.h.name)}</span>: ${x.cs.map(cLink).join(', ')} <span class="muted">(${esc((x.h.specs[0]||{}).name||'')})</span></li>`).join('')}</ul><div class="src">Source: the hero pages on the wiki (specialty text).</div></div>`;}
+function dwellTable(f){
+ return `<div class="tablewrap"><table class="stack"><thead><tr><th>Tier</th><th>Dwelling</th><th>Recruits</th><th>Buildings needed first</th><th>Total cost</th><th>Town level</th></tr></thead><tbody>
+ ${f.dwell.filter((d,i,a)=>a.findIndex(x=>x.building===d.building)===i).map(d=>{const b=R.B[d.building];const cs=(b.creatures||[b.creature]).map(i=>R.C[i]).filter(Boolean);
+ return `<tr><td class="n" data-l="Tier">${d.tier}</td><td data-l="Dwelling"><span class="lk" role="button" tabindex="0" data-card="building:${esc(b.id)}">${esc(b.name)}</span></td><td data-l="Recruits">${cs.map(c=>`<span class="lk" role="button" tabindex="0" data-card="creature:${esc(c.id)}">${esc(c.name)}</span>`).join(', ')}</td>
+ <td data-l="Needs first">${b.path.length?b.path.map(i=>R.B[i]).filter(Boolean).map(x=>`<span class="lk" role="button" tabindex="0" data-card="building:${esc(x.id)}">${esc(x.name)}</span>`).join(', '):'none'}${b.unresolved.length?` <span class="tiny muted">(plus: ${esc(b.unresolved.join(', '))})</span>`:''}</td>
+ <td class="cost" data-l="Total cost">${costTxt(b.path_cost)}</td><td class="n" data-l="Town level">${b.path_level||'—'}</td></tr>`;}).join('')}</tbody></table></div>
+ <p class="src">Source: ${srcLink(f.page)} (building costs and requirements). Sums by this guide. Town level as listed on the wiki.</p>`;}
+
+const CTXS=c=>({'Tribes of the East':'ToE','Hammers of Fate':'HoF'}[c]||c);
+function heroCard(h){return `<button class="hcard fac-${esc(h.faction)}" data-card="hero:${esc(h.id)}">${pic(h.img,h.name)}<span class="t"><b>${esc(h.name)}</b><span class="s">${h.specs.length>1?h.specs.map(x=>esc(x.name)+(x.ctx?' <i>('+esc(CTXS(x.ctx))+')</i>':'')).join(' &middot; '):esc((h.specs[0]||{}).name||'')}</span><span class="pills">${h.tags.map(t=>`<span class="pill">${esc(t)}</span>`).join('')}${h.expansion!=='Heroes V'?`<span class="pill red">${h.expansion==='Tribes of the East'?'ToE':'HoF'}</span>`:''}</span></span></button>`;}
+
+// creatures list
+let CF={fac:'',tier:'',form:'',tag:'',q:'',view:'cards'};
+PR.creatures=()=>{const X=R.X.creatures;const tags=[...new Set(X.flatMap(c=>c.tags))].sort();
+ const L=X.filter(c=>(!CF.fac||c.faction===CF.fac)&&(!CF.tier||c.tier===+CF.tier)&&(!CF.form||c.form===CF.form)&&(!CF.tag||c.tags.includes(CF.tag))&&(!CF.q||norm(c.name+' '+c.abilities.map(a=>a.name).join(' ')).includes(norm(CF.q))));
+ const sel=(id,opts,v,lab)=>`<select id="${id}" aria-label="${lab}"><option value="">${lab}: all</option>${opts.map(([k,t])=>`<option value="${esc(k)}"${String(v)===String(k)?' selected':''}>${esc(t)}</option>`).join('')}</select>`;
+ return `<div class="sec"><h2>Creatures</h2><p>${X.length} creatures: 8 factions &times; 7 tiers &times; base, upgrade and alternate upgrade, plus neutrals. Stats are the wiki infobox values.</p></div>
+ <div class="filters cf">${sel('cfac',[...D.factions.map(f=>[f.id,f.name]),['neutral','Neutral']],CF.fac,'Faction')}${sel('ctier',[1,2,3,4,5,6,7].map(t=>[t,'Tier '+t]),CF.tier,'Tier')}${sel('cform',[['base','Base'],['upgrade','Upgrade'],['alternate','Alternate upgrade'],['neutral','Neutral']],CF.form,'Form')}${sel('ctag',tags.map(t=>[t,t]),CF.tag,'Ability')}
+ <input id="cq" type="search" placeholder="Filter by name or ability" value="${esc(CF.q)}"><span class="small muted ui">${L.length} shown</span>
+ <span class="tabs" data-set="view" style="margin:0"><button data-v="cards" class="${CF.view==='cards'?'on':''}">Cards</button><button data-v="table" class="${CF.view==='table'?'on':''}">Table</button></span></div>
+ ${CF.tag?(()=>{const u=X.filter(c=>(!CF.fac||c.faction===CF.fac)&&(!CF.tier||c.tier===+CF.tier)&&(!CF.form||c.form===CF.form)&&!c.tags.includes(CF.tag)&&c.ab_src!=='list'&&c.ab_src!=='none');return u.length?`<p class="note">This filter may miss ${u.length} creature${u.length>1?'s':''} whose wiki page has no ability list: ${u.map(cLink).join(', ')}. Their abilities come from the page text and may be incomplete.</p>`:'';})():''}
+ ${CF.view==='table'?creatureTable(L):`<div class="cgrid">${L.map(creatureCard).join('')}</div>`}`;};
+function creatureCard(c){return `<button class="ccard fac-${esc(c.faction)}" data-card="creature:${esc(c.id)}">${pic(c.img,c.name)}<span><b>${esc(c.name)}</b><span class="s">${esc(FNAME(c.faction))} &middot; tier ${c.tier} &middot; ${esc(c.form==='alternate'?'alt. upgrade':c.form)}</span><span class="s">Att ${n0(c.attack)} &middot; Def ${n0(c.defense)} &middot; HP ${n0(c.hp)} &middot; Init ${n0(c.initiative)}</span></span></button>`;}
+let CSORT={k:'tier',d:1};
+function creatureTable(L){const cols=[['name','Name'],['faction','Faction'],['tier','Tier'],['attack','Att'],['defense','Def'],['dmg','Damage'],['hp','HP'],['initiative','Init'],['speed','Speed'],['gold','Gold'],['growth','Growth']];
+ const v=(c,k)=>k==='dmg'?(c.dmin+c.dmax)/2:k==='gold'?(c.cost.gold||0):c[k];
+ const S=L.slice().sort((a,b)=>{const x=v(a,CSORT.k),y=v(b,CSORT.k);return (x>y?1:x<y?-1:0)*CSORT.d||a.name.localeCompare(b.name);});
+ return `<div class="tablewrap"><table><thead><tr>${cols.map(([k,t])=>`<th class="sort" data-sort="${k}">${t}${CSORT.k===k?(CSORT.d>0?' ▲':' ▼'):''}</th>`).join('')}</tr></thead><tbody>
+ ${S.map(c=>`<tr class="l fac-${esc(c.faction)}" data-card="creature:${esc(c.id)}"><td>${c.img?`<img class="ic" src="${esc(c.img)}" alt="" loading="lazy">`:''}<b style="color:var(--c)">${esc(c.name)}</b></td><td>${esc(FNAME(c.faction))}</td><td class="n">${c.tier}</td><td class="n">${n0(c.attack)}</td><td class="n">${n0(c.defense)}</td><td class="n">${c.dmin}-${c.dmax}</td><td class="n">${n0(c.hp)}</td><td class="n">${n0(c.initiative)}</td><td class="n">${n0(c.speed)}</td><td class="n">${n0(c.cost.gold)}</td><td class="n">${n0(c.growth)}</td></tr>`).join('')}</tbody></table></div>`;}
+
+// heroes list
+let HF={fac:'',tag:'',exp:'',q:''};
+PR.heroes=()=>{const X=R.X.heroes;
+ const L=X.filter(h=>(!HF.fac||h.faction===HF.fac)&&(!HF.tag||h.tags.includes(HF.tag))&&(!HF.exp||h.expansion===HF.exp)&&(!HF.q||norm(h.name+' '+h.specs.map(s=>s.name+' '+s.desc).join(' ')).includes(norm(HF.q))));
+ return `<div class="sec"><h2>Heroes</h2><p>${X.length} heroes from the wiki's hero-class pages, each with the specialty (and starting skills where the wiki lists them). Some heroes have different specialties per expansion; the card shows each one.</p></div>
+ <div class="filters hf"><select id="hfac" aria-label="Faction"><option value="">Faction: all</option>${D.factions.map(f=>`<option value="${f.id}"${HF.fac===f.id?' selected':''}>${esc(f.name)} (${esc(f.cls)})</option>`).join('')}</select>
+ <select id="htag" aria-label="Specialty type"><option value="">Specialty: all</option>${['Creature','Economy','Spell','Map','Skill / combat'].map(t=>`<option${HF.tag===t?' selected':''}>${t}</option>`).join('')}</select>
+ <select id="hexp" aria-label="Added in"><option value="">Added in: all</option>${['Heroes V','Hammers of Fate','Tribes of the East'].map(t=>`<option${HF.exp===t?' selected':''}>${t}</option>`).join('')}</select>
+ <input id="hq" type="search" placeholder="Filter by name or specialty" value="${esc(HF.q)}"><span class="small muted ui">${L.length} shown</span></div>
+ <div class="hgrid">${L.map(heroCard).join('')}</div>`;};
+
+// skills
+PR.skills=()=>{const X=R.X.skills;const grp=[['racial','Racial skills (one per class)'],['major','Major skills'],['barbarian','Barbarian-only skills (Tribes of the East)']];
+ return `<div class="sec"><h2>Skills &amp; abilities</h2><p>${X.length} skills and ${M.abilities} abilities. A hero learns up to 5 major skills plus the racial skill. Open a skill for its levels, who can learn it, and what each ability needs.</p></div>
+ ${grp.map(([k,t])=>`<div class="sec"><h3>${t}</h3></div><div class="cgrid">${X.filter(s=>s.kind===k).map(s=>`<a class="ccard" href="#skill/${esc(s.id)}" style="text-decoration:none">${pic(s.img,s.name)}<span><b>${esc(s.name)}</b><span class="s">${s.abilities.length} abilities${s.faction?' &middot; '+esc(FNAME(s.faction)):''}</span></span></a>`).join('')}</div>`).join('')}
+ <p class="note small">Want the view per class? Open <a href="#wheel">Skill wheel by class</a>.</p>`;};
+PR.skill=(id)=>{const s=R.S[id];if(!s)return `<p class="note red">Skill not found. <a href="#skills">All skills</a></p>`;
+ const lv=['Basic','Advanced','Expert','Ultimate'];
+ return `<div class="chead">${pic(s.img,s.name)}<div><h2>${esc(s.name)}</h2><div class="pills"><span class="pill">${s.kind==='racial'?'Racial skill: '+esc(FNAME(s.faction)):s.kind==='barbarian'?'Barbarian only':'Major skill'}</span><span class="pill">${s.abilities.length} abilities</span></div></div></div>
+ <p>${esc(s.intro)}</p>
+ <div class="grid">${s.levels.map((l,i)=>`<div class="card">${s.level_imgs&&s.level_imgs[i]?`<img src="${esc(s.level_imgs[i])}" alt="" style="width:40px;height:40px;float:right">`:''}<h3>${esc(lv[i]||'Level '+(i+1))}</h3><p class="small">${esc(l.replace(/^(Basic|Advanced|Expert|Ultimate) [A-Za-z' ]+? (?=(gives|reduces|increases|allows|decreases|means|also|negates|partially|significantly|drastically|lets|makes)\b)/,'').replace(/^./,c=>c.toUpperCase()))}</p></div>`).join('')}</div>
+ ${skMore(s)}
+ ${s.rates.length||s.rates_intro?`<div class="sec"><h3>Who learns it, and how often</h3></div><div class="card small">${s.rates_intro?`<p>${esc(s.rates_intro.split('\n')[0])}</p>`:''}<ul>${s.rates.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div>`:''}
+ <div class="sec"><h3>Abilities</h3><p>${s.mode==='class'?'Requirements differ by class and by version. The Tribes of the East column is the current game.':'Racial abilities unlock abilities in other skills (listed per version).'}</p></div>
+ <div class="abl">${s.abilities.map(a=>`<button class="a${a.ultimate?' hot':''}" data-card="ability:${esc(s.id)}/${esc(slug(a.name))}">${pic(a.img,a.name)}<span><b>${esc(a.name)}${a.ultimate?' (ultimate)':''}</b><span>${esc(a.desc.slice(0,110))}${a.desc.length>110?'...':''}</span></span></button>`).join('')}</div>
+ <p class="src">Source: ${srcLink(s.page)}</p>`;};
+function abilityCard(key){const e=R.AB[key];if(!e)return notFound();const {s,a}=e;
+ const rows=s.mode==='class'?`<table><thead><tr><th>Class</th><th>Tribes of the East needs</th><th>Original / Hammers of Fate needs</th></tr></thead><tbody>${a.rows.map(r=>`<tr><td>${esc(r.cls)}</td><td>${esc(r.toe==='N/A'?'Not available':r.toe)}</td><td>${esc(r.old==='N/A'?'Not available':r.old)}</td></tr>`).join('')}</tbody></table>`
+  :a.ultimate?`<p class="small"><b>Needs (Tribes of the East):</b> ${esc((a.rows[0]||{}).toe||'')}</p><p class="small muted"><b>Needs (${s.id==='runelore'?'Hammers of Fate':'Original / Hammers of Fate'}):</b> ${esc((a.rows[0]||{}).old||'')}</p>`
+  :`<table><thead><tr><th>Unlocks in Tribes of the East</th><th>Unlocks in Original / HoF</th></tr></thead><tbody>${a.rows.map(r=>`<tr><td>${esc(r.toe)}</td><td>${esc(r.old)}</td></tr>`).join('')}</tbody></table>`;
+ return `<div class="chead">${pic(a.img,a.name)}<div><h2>${esc(a.name)}</h2><div class="pills"><a class="pill" href="#skill/${esc(s.id)}">${esc(s.name)}</a>${a.ultimate?'<span class="pill red">Ultimate</span>':''}${a.exp?`<span class="pill">${esc(a.exp)}</span>`:''}</div></div></div>
+ <p>${esc(a.desc)}</p><div class="isec"><h4>${s.mode==='class'?'Who can take it, and what it needs':'Unlocks'}</h4><div class="tablewrap">${rows}</div></div>
+ ${a.notes?`<details><summary>Notes</summary><div class="small">${esc(a.notes)}</div></details>`:''}<p class="src">Source: ${srcLink(s.page)}</p>`;}
+
+// wheel per class
+PR.wheel=(cls)=>{cls=cls&&own(R.X.wheel,cls)?cls:'Knight';const W=R.X.wheel[cls];const u=own(R.X.ultimates,cls)?R.X.ultimates[cls]:{steps:[]};const hot=new Set(u.steps.map(s=>s.ability.toLowerCase()));
+ return `<div class="sec"><h2>Skill wheel: ${esc(cls)}</h2><p>Everything a ${esc(cls)} can learn in Tribes of the East, with the level-up chance for each skill and what each ability needs. Abilities on the path to the ultimate are marked in red.</p></div>
+ <div class="tabs">${Object.keys(R.X.wheel).map(c=>`<button data-go="wheel/${esc(c)}" class="${c===cls?'on':''}">${esc(c)}</button>`).join('')}</div>
+ ${W.map(w=>{const s=R.S[w.skill];return `<div class="card wheel-skill"><h3>${pic(s.img,s.name)}<a class="lk" href="#skill/${esc(s.id)}">${esc(s.name)}</a> <span class="pill">${w.pct?esc(w.pct)+' per level-up':s.kind==='racial'?'racial: always known':'chance not listed'}</span></h3>
+ <div class="abl">${w.abilities.map(a=>{const ab=s.abilities.find(x=>x.name===a.name)||{};return `<button class="a${hot.has(a.name.toLowerCase())||a.ultimate?' hot':''}" data-card="ability:${esc(s.id)}/${esc(slug(a.name))}">${pic(ab.img,a.name)}<span><b>${esc(a.name)}</b><span>Needs: ${esc(a.req==='Racial'?(a.ultimate?'the abilities listed on its card':s.name+' (racial skill)'):a.req)}</span></span></button>`;}).join('')}</div></div>`;}).join('')}
+ <p class="src">Source: the 25 skill pages on the wiki (Tribes of the East requirement column) and the ${esc(cls)} class page for level-up chances.</p>`;};
+
+// builds = ultimate paths
+PR.builds=(cls)=>{const U=R.X.ultimates;const keys=Object.keys(U);cls=cls&&own(U,cls)?cls:keys[0];const u=U[cls];
+ const bySkill={};u.steps.forEach(s=>{(bySkill[s.skill]=bySkill[s.skill]||[]).push(s);});
+ return `<div class="sec"><h2>Skill builds to each ultimate</h2><p>The ultimate of each racial skill needs specific abilities from other skills. This page lists them for each class, with every prerequisite, in an order you can take them (prerequisites first). Data: the Tribes of the East requirement columns on the wiki.</p></div>
+ <div class="tabs">${keys.map(c=>`<button data-go="builds/${esc(c)}" class="${c===cls?'on':''}">${esc(c)}</button>`).join('')}</div>
+ <div class="card"><h3>${esc(cls)}: ${esc(u.ultimate)}</h3><p class="small">Ultimate of <a class="lk" href="#skill/${esc(u.skill)}">${esc(R.S[u.skill].name)}</a>. Needs: ${u.need.map(n=>`<b>${esc(n)}</b>`).join(', ')}.</p>
+ <p class="small">Skills this build uses besides ${esc(R.S[u.skill].name)}: <b>${u.skills.filter(s=>s!==u.skill).length}</b> of your 5 major slots (${u.skills.filter(s=>s!==u.skill).map(s=>`<a class="lk" href="#skill/${esc(s)}">${esc(R.S[s].name)}</a>`).join(', ')}).</p>
+ <ol class="steps">${u.steps.map(s=>`<li class="card"><b><span class="lk" role="button" tabindex="0" data-card="ability:${esc(s.skill)}/${esc(slug(s.ability))}">${esc(s.label)}</span></b> <span class="muted">(${esc(R.S[s.skill].name)})</span><div class="small muted">Needs: ${esc(s.needs)}</div></li>`).join('')}</ol>
+ <p class="note small">This is the path the data requires, not a ranking of builds. No community build guide from the last 60 days was found, so no "best build" is claimed here.</p>
+ <p class="src">Source: ${srcLink(R.S[u.skill].page)} and the skill pages of each ability.</p></div>`;};
+
+// towns: dwelling paths for every faction
+PR.towns=(id)=>{id=id&&R.F[id]?id:'haven';const f=R.F[id];
+ return `<div class="sec"><h2>Town build paths</h2><p>Every creature dwelling, the buildings it needs first, and the total cost of the whole chain. Use it to plan the order: one building per day per town.</p></div>
+ <div class="tabs">${R.X.factions.map(x=>`<button data-go="towns/${esc(x.id)}" class="${x.id===id?'on':''}">${esc(x.name)}</button>`).join('')}</div>
+ <h3 style="margin-top:6px">${esc(f.name)}</h3>${dwellTable(f)}`;};
+
+// creature stat list (tiers)
+const recent=L=>{const s=Date.parse(D.videos.searched||'');return L.filter(v=>s-Date.parse(v.date)<=60*864e5).length;};
+PR.tiers=()=>{const T=R.X.tiers;const L=['S','A','B','C','D'];
+ const tv=(D.videos.topics.tiers||[]);
+ return `<div class="sec"><h2>Creature stat list</h2><p>Whose rating: <b>this guide's formula</b>, not a community tier list. Power = hit points &times; average damage, from the wiki stats. Power per 1000 gold = the power you get for 1000 gold spent on that creature (from its gold cost). Letters are compared within each tier among the upgraded and alternate forms of all 8 factions. S = top 20% of its tier, A = next 20%, B = middle, C = next, D = bottom 20%.</p></div>
+ <p class="note red small"><b>Read this before using it:</b> the formula ignores abilities, Initiative, Speed, shooting, flying and magic, which often matter more. Use it to compare raw toughness and damage, not to pick a faction.</p>
+ ${[1,2,3,4,5,6,7].map(t=>`<div class="sec"><h3>Tier ${t}</h3></div>${L.map(l=>{const cs=T[t].map(i=>R.C[i]).filter(c=>c.stat_tier===l);return cs.length?`<div class="trow"><div class="lab t${l}">${l}</div><div class="its">${cs.map(c=>`<button class="chip fac-${esc(c.faction)}" data-card="creature:${esc(c.id)}">${pic(c.img,c.name)}<span>${esc(c.name)}<br><i>${esc(FNAME(c.faction))} &middot; power ${n0(c.power)}${c.power_per_k?' &middot; '+n0(c.power_per_k)+' power per 1000 gold':''}</i></span></button>`).join('')}</div></div>`:'';}).join('')}`).join('')}
+ <div class="sec"><h2>Community town tier lists</h2><p>Found by the video search. ${recent(tv)>=2?'':'Fewer than two are from the last 60 days, so no faction ranking is stated as current here: "no recent source".'}</p></div>
+ ${tv.length?`<div class="grid wide">${tv.map(vidCard).join('')}</div>`:'<p class="small muted">None found.</p>'}`;};
+
+// spells
+let SPS='light';
+PR.spells=()=>{const sch=[['light','Light'],['dark','Dark'],['destructive','Destructive'],['summoning','Summoning'],['adventure','Adventure'],['runic','Runic (Runemage)'],['warcry','Warcries (Barbarian)']];
+ const L=R.X.spells.filter(s=>s.school===SPS);const lv=[...new Set(L.map(s=>s.level))].sort();
+ return `<div class="sec"><h2>Spells</h2><p>${R.X.spells.length} spells. Level 1 and 2 spells need no skill; Basic in a school unlocks level 3, Advanced level 4, Expert level 5. Runes use resources instead of mana; warcries are the Barbarian's spells.</p></div>
+ <div class="tabs" data-set="SPS">${sch.map(([k,t])=>`<button data-v="${k}" class="${SPS===k?'on':''}">${t}</button>`).join('')}</div>
+ ${lv.map(l=>`<h3 style="margin-top:14px">Level ${l||'?'}</h3><div class="cgrid">${L.filter(s=>s.level===l).map(s=>`<button class="ccard" data-card="spell:${esc(s.id)}">${pic(s.img,s.name)}<span><b>${esc(s.name)}</b><span class="s">${s.mana?esc(s.mana)+' mana':s.resource?esc(s.resource):''}${s.exp?' &middot; '+esc(s.exp):''}</span></span></button>`).join('')}</div>`).join('')}
+ <p class="src">Source: ${srcLink(L[0]?L[0].src:'Heroes V magic')}</p>`;};
+function spellCard(id){const s=R.SP[id];if(!s)return notFound();
+ return `<div class="chead">${pic(s.img,s.name)}<div><h2>${esc(s.name)}</h2><div class="pills"><span class="pill">${esc(s.school_name)}</span><span class="pill">Level ${esc(s.level)}</span>${s.mana?`<span class="pill gold">${esc(s.mana)} mana</span>`:''}${s.resource?`<span class="pill gold">${esc(s.resource)}</span>`:''}${s.exp?`<span class="pill red">${esc(s.exp)}</span>`:''}</div></div></div>
+ <p>${esc(s.desc)}</p>${s.hero_level?`<p class="small">Hero level needed: ${esc(s.hero_level)}</p>`:''}
+ ${s.by_level?`<div class="isec"><h4>Effect by skill level</h4><div class="tablewrap"><table><tbody>${Object.entries(s.by_level).map(([k,v])=>`<tr><td><b>${esc(k)}</b></td><td>${esc(v)}</td></tr>`).join('')}</tbody></table></div></div>`:''}
+ ${s.notes?`<details><summary>Notes</summary><div class="small">${esc(s.notes)}</div></details>`:''}<p class="src">Source: ${srcLink(s.src)}</p>`;}
+
+// artifacts
+let AS='';
+PR.artifacts=()=>{const slots=[...new Set(R.X.artifacts.map(a=>a.slot))];const L=R.X.artifacts.filter(a=>!AS||a.slot===AS);
+ return `<div class="sec"><h2>Artifacts &amp; sets</h2><p>${R.X.artifacts.length} artifacts by slot, and ${R.X.sets.length} sets whose pieces give an extra bonus together.</p></div>
+ <div class="tabs" data-set="AS"><button data-v="" class="${AS===''?'on':''}">All</button>${slots.map(s=>`<button data-v="${esc(s)}" class="${AS===s?'on':''}">${esc(s)}</button>`).join('')}</div>
+ <div class="cgrid">${L.map(a=>`<button class="ccard" data-card="artifact:${esc(a.id)}">${pic(a.img,a.name)}<span><b>${esc(a.name)}</b><span class="s">${esc(a.slot)}${a.set?' &middot; set: '+esc(R.SET[a.set].name):''}</span><span class="s">${esc(a.desc.slice(0,80))}${a.desc.length>80?'...':''}</span></span></button>`).join('')}</div>
+ <div class="sec"><h2>Sets</h2></div><div class="grid wide">${R.X.sets.map(s=>`<button class="card" style="text-align:left;cursor:pointer;color:inherit" data-card="set:${esc(s.id)}"><h3>${esc(s.name)}</h3><div class="path">${s.piece_ids.map(i=>R.A[i]).map(a=>`${pic(a.img,a.name)}`).join('')}</div><p class="small muted">${s.pieces.length} pieces</p></button>`).join('')}</div>
+ <p class="src">Source: ${srcLink('List of Heroes V artifacts')}, ${srcLink('List of Combination artifacts in Heroes V')}</p>`;};
+function artifactCard(id){const a=R.A[id];if(!a)return notFound();
+ return `<div class="chead">${pic(a.img,a.name)}<div><h2>${esc(a.name)}</h2><div class="pills"><span class="pill">${esc(a.slot)}</span>${a.set?`<span class="pill gold lk" data-card="set:${esc(a.set)}">Set: ${esc(R.SET[a.set].name)}</span>`:''}</div></div></div><p>${esc(a.desc)}</p><p class="src">Source: ${srcLink(a.src)}</p>`;}
+function setCard(id){const s=R.SET[id];if(!s)return notFound();
+ return `<h2 style="padding-right:30px">${esc(s.name)}</h2><div class="isec"><h4>Pieces</h4><div class="cgrid">${s.piece_ids.map(i=>R.A[i]).map(a=>`<button class="ccard" data-card="artifact:${esc(a.id)}">${pic(a.img,a.name)}<span><b>${esc(a.name)}</b><span class="s">${esc(a.slot)}</span></span></button>`).join('')}</div>${s.pieces.length>s.piece_ids.length?`<p class="small muted">Not in the artifact list: ${esc(s.pieces.filter(p=>!s.piece_ids.some(i=>R.A[i].name.toLowerCase()===p.toLowerCase())).join(', '))}</p>`:''}</div>
+ <div class="isec"><h4>Bonus</h4>${s.bonus.map(b=>`<p class="small">${esc(b)}</p>`).join('')}</div><p class="src">Source: ${srcLink(s.src)}</p>`;}
+
+// map objects
+let MG='';
+PR.map=()=>{const groups=[...new Set(R.X.structures.map(s=>s.group))];const L=R.X.structures.filter(s=>!MG||s.group===MG);
+ return `<div class="sec"><h2>Map objects &amp; creature banks</h2><p>${R.X.structures.length} adventure-map objects and ${R.X.banks.length} creature banks.</p></div>
+ <div class="sec"><h3>Creature banks</h3><p>Fight the guards for gold, resources, artifacts or spells. Banks restock one month after you clear them.</p></div>
+ <div class="cgrid">${R.X.banks.map(b=>`<button class="ccard" data-card="bank:${esc(b.id)}">${pic(b.img,b.name)}<span><b>${esc(b.name)}</b><span class="s">${esc(b.reward?'Reward: '+b.reward:b.desc.slice(0,90)+(b.desc.length>90?'...':''))}</span><span class="s">${esc(b.group.replace('Battle sites on ','On '))}</span></span></button>`).join('')}</div>
+ <div class="sec"><h3>Map objects</h3></div><div class="tabs" data-set="MG"><button data-v="" class="${MG===''?'on':''}">All</button>${groups.map(g=>`<button data-v="${esc(g)}" class="${MG===g?'on':''}">${esc(g)}</button>`).join('')}</div>
+ <div class="cgrid">${L.map(s=>`<button class="ccard" data-card="structure:${esc(s.id)}">${pic(s.img,s.name)}<span><b>${esc(s.name)}</b><span class="s">${esc(s.sub||s.group)}</span><span class="s">${esc(s.desc.slice(0,80))}${s.desc.length>80?'...':''}</span></span></button>`).join('')}</div>
+ <p class="src">Source: ${srcLink('List of adventure map structures in Heroes V')}, ${srcLink('List of Creature Banks in Heroes V')}, ${srcLink('Creature bank')}</p>`;};
+
+// sources
+PR.sources=()=>{const nm=M.nopic||{};const nn=M.nopic_names||{};
+ return `<div class="sec"><h2>Sources &amp; method</h2><p>Everything here comes from these pulls, cached in data/raw/ next to the build script.</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Source</th><th>Pulled</th></tr></thead><tbody>${D.sources.map(s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td>${esc(s.date)}</td></tr>`).join('')}</tbody></table></div>
+ <div class="sec"><h3>Counts</h3></div><div class="kv">${[...Object.entries(M.counts||{}),['abilities',M.abilities],['town buildings',M.buildings],['wiki pages',M.pages]].map(([k,v])=>`<div><b>${n0(v)}</b><span>${esc(k)}</span></div>`).join('')}</div>
+ <div class="grid two" style="margin-top:14px"><div class="card"><h3>How it is made</h3><ul class="small">
+ <li><b>Stats</b> are the wiki infobox values. The wiki does not tag each number with a patch; most pages describe Tribes of the East (${esc(M.last_patch)} is the newest patch on the wiki's patch page). Where a skill table gives separate Original/Hammers of Fate and Tribes of the East values, both are shown.</li>
+ <li><b>How-to steps</b> are written for this guide. Each step names the wiki page it is based on and quotes the sentences it relies on ("What the source says"). The build stops if a quote is not on the cited page, a cited page holds none of the quotes, a number is not on the page, a named thing is not in the data, a link could open the wrong kind of card, or a step holds more than one action. Steps that only point to another part of this guide say so.</li>
+ <li><b>Week-one build orders</b> are worked out by this guide from the wiki's building costs and requirements, the town-level rule (Town page) and one building per day (Time system). They are not community build orders.</li>
+ <li><b>Army roles</b> compare the ability lists on the creature pages: what the upgrade and the alternate upgrade add over the base form.</li>
+ <li><b>Dwelling paths</b> are worked out by this guide from the wiki's building requirement lists (sums of costs).</li>
+ <li><b>Skill builds</b> follow the wiki's Tribes of the East requirement column, prerequisites first.</li>
+ <li><b>Creature stat list</b> is this guide's formula (HP &times; average damage), labelled as such.</li></ul></div></div>
+ <div class="card" style="margin-top:14px"><h3>What is not verified or missing</h3><ul class="small">
+ <li><b>No meta claims.</b> No faction, hero or build ranking from the last 60 days was found (the newest town tier list video found is older), so the guide says "no recent source" instead of ranking.</li>
+ <li><b>Patch per number:</b> not tagged by the wiki; a few values may be from an older patch.</li>
+ <li><b>Hero starting skills</b> are shown only where the hero page lists them.</li>
+ <li><b>Pictures missing on the wiki:</b> ${Object.entries(nm).filter(([k,v])=>v).map(([k,v])=>`${esc(k)} ${v}`).join(', ')||'none'}. Cards without a picture show a letter crest.${Object.values(nn).some(v=>v.length)?` <details><summary>Show names</summary><div class="small">${Object.entries(nn).filter(([k,v])=>v.length).map(([k,v])=>`<p><b>${esc(k)}:</b> ${esc(v.join(', '))}</p>`).join('')}</div></details>`:''}</li>
+ <li><b>Mods</b> (Heroes 5.5, Equilibris) change many numbers; this guide covers the official game only. Videos that use a mod, or are in another language, are kept apart at the bottom of the Videos page.</li>
+ <li><b>Week-one orders</b> assume a town that starts with only its Village Hall and that the Village Hall counts as town level 1; maps that start you with more buildings shift the order.</li>
+ ${(()=>{const T=D.videos.topics||{};const E=Object.keys(VLAB).filter(k=>!(T[k]||[]).length).map(k=>VLAB[k].toLowerCase());return `<li><b>Videos</b>: ${E.length?`${E.length} ${E.length===1?'topic has':'topics have'} no English guide for the official game uploaded since ${esc(vMin())} (${esc(E.join(', '))}); ${E.length===1?'it says':'those topics say'} so.`:`every topic has at least one English guide uploaded since ${esc(vMin())}.`}</li>`;})()}</ul></div>
+ <div class="sec"><h3>All ${n0(R.X.pages.length)} wiki pages used</h3></div><details><summary>Show the list</summary><div class="small ui" style="columns:3 260px">${R.X.pages.map(p=>`<div><a href="${esc(p.u)}" target="_blank" rel="noopener">${esc(p.t)}</a> <span class="muted">${esc(p.rev)}</span></div>`).join('')}</div></details>
+ <p class="small muted">Fan-made guide, not affiliated with Ubisoft. Game pictures come from the Might and Magic Fandom wiki (list with source URLs in assets/manifest.json). Fonts: Cinzel and Alegreya (SIL Open Font License, files in assets/fonts).</p>`;};
+
+// ---------- cards
+function notFound(){return '<p class="note red">Not found.</p>';}
+function creatureCardFull(id){const c=R.C[id];if(!c)return notFound();
+ const base=c.base&&R.C[c.base], ups=(c.ups||[]).map(i=>R.C[i]).filter(Boolean);
+ const st=[['Attack',c.attack],['Defense',c.defense],['Damage',c.dmin!=null?c.dmin+'-'+c.dmax:null],['Hit points',c.hp],['Initiative',c.initiative],['Speed',c.speed],['Shots',c.ammo],['Mana',c.mana],['Growth / week',c.growth]].filter(x=>x[1]!=null);
+ return `<div class="fac-${esc(c.faction)}"><div class="chead">${pic(c.img,c.name)}<div><h2>${esc(c.name)}</h2><div class="pills"><span class="pill f">${esc(FNAME(c.faction))}</span><span class="pill">Tier ${c.tier}</span><span class="pill">${esc(c.form==='alternate'?'Alternate upgrade (ToE)':c.form==='upgrade'?'Upgrade':c.form==='base'?'Base':'Neutral')}</span>${c.stat_tier?`<a class="pill" href="#tiers">Stat list ${tierB(c.stat_tier)}</a>`:''}</div></div></div>
+ <div class="kv">${st.map(([k,v])=>`<div><b>${esc(typeof v==='number'?n0(v):v)}</b><span>${k}</span></div>`).join('')}<div class="w2"><b class="cost" style="font-size:1rem">${costTxt(c.cost)}</b><span>Cost each</span></div></div>
+ ${c.tags.length?`<div class="pills">${c.tags.map(t=>`<span class="pill">${esc(t)}</span>`).join('')}</div>`:''}
+ <div class="isec"><h4>Abilities</h4>${c.ab_src==='none'?'<p class="small">None: the wiki page says this creature has no abilities.</p>':c.ab_src==='text'?`<p class="small muted">The wiki page has no ability list. These abilities are named in its text, so the list may be incomplete:</p>${c.abilities.map(a=>`<p class="ab small"><b>${esc(a.name)}</b>${a.desc?' &mdash; '+esc(a.desc):''}</p>`).join('')}<details><summary>What the page says</summary><div class="small">${[...new Set(c.abilities.map(a=>a.quote))].map(q=>`<p>&ldquo;${esc(q)}&rdquo;</p>`).join('')}</div></details>`:c.abilities.length?c.abilities.map(a=>`<p class="ab small"><b>${esc(a.name)}</b>${a.desc?' &mdash; '+esc(a.desc):''}</p>`).join(''):`<p class="small muted">The wiki page has no ability list for this creature.${c.intro?' Its summary:':''}</p>${c.intro?`<p class="small">${esc(c.intro)}</p>`:''}`}</div>
+ ${c.abilities.length&&c.intro?`<details><summary>Wiki summary</summary><div class="small">${esc(c.intro)}</div></details>`:''}
+ ${base||ups.length?`<div class="isec"><h4>${base?'Upgrade of':'Upgrades'}</h4><div class="path">${(base?[base]:ups).map(x=>`<button class="chip fac-${esc(x.faction)}" data-card="creature:${esc(x.id)}">${pic(x.img,x.name)}<span>${esc(x.name)}</span></button>`).join('')}</div></div>`:''}
+ ${c.dwelling?`<p class="small">Dwelling: ${esc(c.dwelling)}</p>`:''}
+ ${c.lore?`<details><summary>Lore</summary><div class="small">${esc(c.lore)}</div></details>`:''}<p class="src">Source: ${srcLink(c.src)}</p></div>`;}
+function heroCardFull(id){const h=R.H[id];if(!h)return notFound();
+ return `<div class="fac-${esc(h.faction)}"><div class="chead portrait">${pic(h.img,h.name)}<div><h2>${esc(h.name)}</h2><div class="pills"><a class="pill f" href="#faction/${esc(h.faction)}">${esc(FNAME(h.faction))}</a><span class="pill">${esc(h.cls)}</span><span class="pill">${esc(h.expansion==='Heroes V'?'Base game':'Added in '+h.expansion)}</span>${h.campaign?'<span class="pill red">Campaign hero</span>':''}${h.starter?'<span class="pill gold">Skirmish starting hero</span>':''}</div></div></div>
+ ${h.specs.length>1?'<p class="small muted">The wiki lists more than one specialty for this hero, each under the game, expansion or campaign named in its heading. It does not say which one a skirmish game uses.</p>':''}${h.specs.map(s=>`<div class="isec"><h4>Specialty${s.ctx?' &middot; '+esc(s.ctx):''}</h4><div style="display:flex;gap:10px;align-items:flex-start">${s.img?`<img src="${esc(s.img)}" alt="" style="width:44px;height:44px">`:''}<div><b>${esc(s.name)}</b><p class="small" style="margin:.2em 0">${esc(s.desc)}</p>
+ ${(s.creatures||[]).length?`<div class="path">${s.creatures.map(i=>R.C[i]).filter(Boolean).map(c=>`<button class="chip fac-${esc(c.faction)}" data-card="creature:${esc(c.id)}">${pic(c.img,c.name)}<span>${esc(c.name)}</span></button>`).join('')}</div>`:''}
+ ${s.skills.length?`<p class="small muted">Starting skills: ${esc(s.skills.join(', '))}</p>`:''}</div></div></div>`).join('')||'<p class="small muted">No specialty listed on the wiki.</p>'}
+ ${h.bio?`<details><summary>Biography</summary><div class="small">${esc(h.bio)}</div></details>`:''}<p class="src">Source: ${srcLink(h.src)}</p></div>`;}
+function buildingCard(id){let b=R.B[id];if(!b){const L=R.BN[id];if(!L)return notFound();
+  return `<h2 style="padding-right:30px">${esc(L[0].name)}</h2><p class="small muted">This building exists in ${L.length} ${L.length===1?'faction':'factions'}. Costs and requirements per faction:</p><div class="tablewrap"><table><thead><tr><th>Faction</th><th>Cost</th><th>Needs</th><th>Town level</th></tr></thead><tbody>${L.map(x=>`<tr class="l" data-card="building:${esc(x.id)}"><td>${esc(FNAME(x.faction))}</td><td class="cost">${costTxt(x.cost)}</td><td>${esc(x.needs.join(', ')||'nothing')}</td><td class="n">${x.level||'—'}</td></tr>`).join('')}</tbody></table></div><p class="small">${esc(L[0].desc)}</p>`;}
+ const cs=(b.creatures||[]).map(i=>R.C[i]).filter(Boolean);
+ return `<div class="fac-${esc(b.faction)}"><div class="chead">${pic(b.img,b.name)}<div><h2>${esc(b.name)}</h2><div class="pills"><a class="pill f" href="#faction/${esc(b.faction)}">${esc(FNAME(b.faction))}</a><span class="pill">${esc(b.group)}</span></div></div></div>
+ <p>${esc(b.desc)}</p><div class="kv"><div><b class="cost" style="font-size:1rem">${costTxt(b.cost)}</b><span>Cost</span></div><div><b>${b.level||'—'}</b><span>Town level</span></div><div><b class="cost" style="font-size:1rem">${costTxt(b.path_cost)}</b><span>Cost with all prerequisites</span></div></div>
+ <div class="isec"><h4>Needs</h4><p class="small">${b.need_ids.length?b.need_ids.map(i=>`<span class="lk" role="button" tabindex="0" data-card="building:${esc(i)}">${esc(R.B[i].name)}</span>`).join(', '):'No other building.'}${b.unresolved.length?' Also: '+esc(b.unresolved.join(', ')):''}${b.other.length?' '+esc(b.other.join(' ')):''}</p>
+ ${b.path.length>b.need_ids.length?`<p class="small muted">Full chain: ${b.path.map(i=>esc(R.B[i].name)).join(', ')}</p>`:''}</div>
+ ${cs.length?`<div class="isec"><h4>Recruits</h4><div class="path">${cs.map(c=>`<button class="chip" data-card="creature:${esc(c.id)}">${pic(c.img,c.name)}<span>${esc(c.name)}</span></button>`).join('')}</div></div>`:''}
+ <p class="src">Source: ${srcLink(R.F[b.faction].page)}</p></div>`;}
+function structCard(id,bank){const s=bank?R.BK[id]:R.ST[id];if(!s)return notFound();
+ return `<div class="chead">${pic(s.img,s.name)}<div><h2>${esc(s.name)}</h2><div class="pills"><span class="pill">${esc(bank?'Creature bank · '+s.group:s.group+(s.sub?' · '+s.sub:''))}</span></div></div></div><p>${esc(s.desc)}</p>
+ ${bank&&s.guards?`<div class="kv"><div class="w2"><b style="font-size:1rem">${esc(s.guards)}</b><span>Guards</span></div><div class="w2"><b style="font-size:1rem">${esc(s.reward)}</b><span>Reward</span></div></div>`:''}${bank&&s.strategy?`<div class="isec"><h4>Strategy (from the wiki)</h4><p class="small">${esc(s.strategy)}</p></div>`:''}${bank&&s.flavour?`<details><summary>In-game text</summary><div class="small"><i>${esc(s.flavour)}</i></div></details>`:''}<p class="src">Source: ${srcLink(s.src)}</p>`;}
+function cardHtml(key){const i=key.indexOf(':');const k=key.slice(0,i),id=key.slice(i+1);
+ return k==='creature'?creatureCardFull(id):k==='hero'?heroCardFull(id):k==='ability'?abilityCard(id):k==='spell'?spellCard(id):k==='artifact'?artifactCard(id):k==='set'?setCard(id):k==='building'?buildingCard(id):k==='structure'?structCard(id,false):k==='bank'?structCard(id,true):notFound();}
+
+// ---------- search
+const IDX=(D.search||[]).slice();
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id})));
+howtos.forEach(s=>s.steps.forEach((p,i)=>IDX.push({t:s.title,k:'Step '+(i+1),go:s.id,x:p.t.replace(/\{\{\w+:[^|}]+\|([^}]+)\}\}/g,'$1')})));
+const nz=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9 ]/g,'');
+let hits=[],sel=0;
+function doSearch(q){const r=$('#res');q=nz(q).trim();if(!q){r.classList.remove('on');return;}const words=q.split(/\s+/);
+ hits=IDX.map(e=>{const t=nz(e.t),x=nz(e.x);let sc=0;if(t===q)sc=100;else if(t.startsWith(q))sc=60;else if(t.includes(q))sc=40;else if(words.every(w=>t.includes(w)||x.includes(w)))sc=10;if(sc&&e.k==='Section')sc+=5;if(sc&&/^Step/.test(e.k))sc-=5;return [sc,e];}).filter(a=>a[0]>0).sort((a,b)=>b[0]-a[0]||a[1].t.localeCompare(b[1].t)).slice(0,16).map(a=>a[1]);
+ sel=0;r.innerHTML=hits.length?hits.map((e,i)=>`<div class="${i===0?'sel':''}" data-i="${i}" role="option">${e.img?`<img src="${esc(e.img)}" alt="">`:''}<span>${esc(e.t)}</span><i>${esc(e.k)}</i></div>`).join(''):'<div class="none">No match. Try a creature, hero, skill or spell name.</div>';r.classList.add('on');}
+function goHit(e){if(!e)return;$('#res').classList.remove('on');$('#q').value='';$('#q').blur();closeSide();if(e.card){openCard(e.card);}else location.hash=e.go;}
+$('#q').addEventListener('input',e=>doSearch(e.target.value));
+$('#q').addEventListener('keydown',e=>{const r=$('#res');if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...r.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){goHit(hits[sel]);}else if(e.key==='Escape'){r.classList.remove('on');}});
+$('#res').addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#res').classList.remove('on');});
+
+// ---------- modal
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;$('#modal .x').focus();}
+function closeModal(){if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+function openCard(key){need(()=>openModal(cardHtml(key),/^(building:[a-z' ]+$|ability)/.test(key)));}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('[role="button"][data-card]')){e.preventDefault();openCard(e.target.dataset.card);}});
+function playVideo(id,title){openModal(`<h3 style="margin-right:34px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+
+// ---------- clicks + filters + routing
+function closeSide(){$('#side').classList.remove('open');$('#menuBtn').setAttribute('aria-expanded','false');}
+document.addEventListener('click',e=>{
+ const c=e.target.closest('[data-card]');if(c&&!e.target.closest('a[href]')){e.preventDefault();openCard(c.dataset.card);return;}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const g=e.target.closest('[data-go]');if(g){closeModal();location.hash=g.dataset.go;return;}
+ const th=e.target.closest('th[data-sort]');if(th){const k=th.dataset.sort;CSORT=CSORT.k===k?{k,d:-CSORT.d}:{k,d:1};render(false);return;}
+ const b=e.target.closest('.tabs[data-set] button');if(b){const set=b.parentNode.dataset.set,val=b.dataset.v;
+  if(set==='SPS')SPS=val;else if(set==='AS')AS=val;else if(set==='MG')MG=val;else if(set==='view')CF.view=val;render(false);}
+});
+main.addEventListener('change',e=>{const t=e.target;const m={cfac:['C','fac'],ctier:['C','tier'],cform:['C','form'],ctag:['C','tag'],hfac:['H','fac'],htag:['H','tag'],hexp:['H','exp']}[t.id];
+ if(m){(m[0]==='C'?CF:HF)[m[1]]=t.value;render(false);}});
+main.addEventListener('input',e=>{const t=e.target;if(t.id==='cq'||t.id==='hq'){(t.id==='cq'?CF:HF).q=t.value;const pos=t.selectionStart;render(false);const n=$('#'+t.id);if(n){n.focus();n.setSelectionRange(pos,pos);}}});
+$('#menuBtn').addEventListener('click',()=>{const o=$('#side').classList.toggle('open');$('#menuBtn').setAttribute('aria-expanded',String(o));});
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))closeSide();});
+$('#searchBtn').addEventListener('click',()=>{$('#side').classList.add('open');$('#menuBtn').setAttribute('aria-expanded','true');$('#q').focus();});
+
+const FOOT=()=>`<footer>${CHECKED_FULL}<br>Fan-made guide &middot; not affiliated with Ubisoft &middot; <a href="#sources">sources &amp; method</a></footer>`;
+function render(top=true){let h='';try{h=decodeURIComponent(location.hash.slice(1));}catch(err){h='';}h=h||'home';const parts=h.split('/');const r=parts[0],arg=parts.slice(1).join('/');
+ const navKey=(r==='faction'&&arg)?'faction/'+arg:r==='skill'?'skills':r;
+ const titleOf=()=>(r==='faction'&&FAC[arg]?FAC[arg].name+' · ':'')+'Heroes V Field Guide';
+ const draw=(f)=>{try{main.innerHTML=f(arg)+FOOT();}catch(err){main.innerHTML=`<p class="note red">This section failed to draw: ${esc(err.message)}. <a href="#home">Home</a></p>`;console.error(err);}
+  $('#nav').innerHTML=navHtml(navKey);if(top){window.scrollTo(0,0);}document.title=titleOf();};
+ if(typeof P[r]==='function'){draw(P[r]);return;}
+ if(typeof PR[r]==='function'){if(!R&&!window.H5REF){main.innerHTML='<p class="muted">Loading the reference data...</p>';}need(()=>draw(PR[r]));return;}
+ if(r==='card'&&arg){draw(P.home);openCard(arg);return;}
+ draw(P.home);}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+})();
+</script>
+</body>
+</html>
