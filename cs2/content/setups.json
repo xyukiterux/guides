@@ -1,0 +1,446 @@
+{
+ "note": "Default setups for maps whose wiki pages give none (Inferno, Nuke) or describe an older layout (Cache). One position or rule per line. Sources are dated written guides cached in data/raw/web (see fetch.WEB). \"q\" maps each cited source to the passages it is quoted for; build.py fails if a quote is not character for character in that very source (only white space may differ), if a cited source has no quote, if a number is not in it, or if a {Map|callout} is not on that map's callout map. The build counts how many of a line's sources are dated in the last 60 days and the page shows it on every line (a meta claim needs two). These are common starting points, not the one right setup.",
+ "maps": {
+  "Inferno": {
+   "ct": [
+    {
+     "t": "Two players hold B.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:metabot-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "two B-side players"
+      ],
+      "web:metabot-inferno": [
+       "Two on B, one of them on Banana"
+      ]
+     }
+    },
+    {
+     "t": "One player plays {Inferno|Arch} and Mid, ready to rotate to either site.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:metabot-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "one flexible Arch/Mid player"
+      ],
+      "web:metabot-inferno": [
+       "The mid player at Arch is the hinge who can help either site"
+      ]
+     }
+    },
+    {
+     "t": "Two players hold A: one on the site, one on the {Inferno|Pit} and {Inferno|Apps} side.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:metabot-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "one A Site player",
+       "one Pit/Apartments-side player"
+      ],
+      "web:metabot-inferno": [
+       "Spread across Pit, Library, Arch and the Apartments side"
+      ]
+     }
+    },
+    {
+     "t": "Do not leave A just because you hear {Inferno|Banana}: first ask if the bomb was seen and how many Ts were confirmed.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:metabot-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "Do Not Over-Rotate From Banana Noise",
+       "was the bomb seen?",
+       "how many Ts were confirmed?"
+      ],
+      "web:metabot-inferno": [
+       "Do not over-rotate off the first noise from Banana"
+      ]
+     }
+    }
+   ],
+   "t": [
+    {
+     "t": "Two players contest or hold {Inferno|Banana}.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:gamehub-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "two players contest or hold Banana"
+      ],
+      "web:gamehub-inferno": [
+       "sending two players to pressure Banana"
+      ]
+     }
+    },
+    {
+     "t": "One player takes Mid.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:gamehub-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "one player controls Mid"
+      ],
+      "web:gamehub-inferno": [
+       "one to contest Mid"
+      ]
+     }
+    },
+    {
+     "t": "One player works {Inferno|Second Middle} and {Inferno|Apps}.",
+     "src": [
+      "web:expcarry-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "one player works Second Mid/Apartments"
+      ]
+     }
+    },
+    {
+     "t": "The fifth player supports whichever area is going best.",
+     "src": [
+      "web:expcarry-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "one flexible support connects the strongest area"
+      ]
+     }
+    },
+    {
+     "t": "Gather information and make the CTs use their utility before you commit to a site.",
+     "src": [
+      "web:expcarry-inferno",
+      "web:metabot-inferno"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "The objective is to gather information and make CTs spend utility before committing"
+      ],
+      "web:metabot-inferno": [
+       "Every incendiary and HE a CT spends on Banana is one they do not have for the retake"
+      ]
+     }
+    },
+    {
+     "t": "Hit B once you own {Inferno|Banana}; go A when the CTs put their utility and players into Banana.",
+     "src": [
+      "web:metabot-inferno"
+     ],
+     "q": {
+      "web:metabot-inferno": [
+       "B is the natural hit once you own it; A is the punish when the CTs commit utility and players to Banana"
+      ]
+     }
+    },
+    {
+     "t": "Do not plan around {Inferno|Graveyard}: Valve closed it on March 4, 2026.",
+     "src": [
+      "web:expcarry-inferno",
+      "news:2026-03-04"
+     ],
+     "q": {
+      "web:expcarry-inferno": [
+       "Valve closed Graveyard on March 4, 2026"
+      ],
+      "news:2026-03-04": [
+       "Graveyard at Bombsite A has been closed to the public."
+      ]
+     }
+    }
+   ]
+  },
+  "Nuke": {
+   "ct": [
+    {
+     "t": "Two players play upper: A site, {Nuke|Hut} and {Nuke|Heaven}.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "two players around A/Hut/Heaven"
+      ],
+      "web:metabot-nuke": [
+       "two on A (one in Hut or Main, one in Heaven)"
+      ]
+     }
+    },
+    {
+     "t": "One player watches {Nuke|Outside}.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "one Outside player"
+      ],
+      "web:metabot-nuke": [
+       "one Outside watching the yard from Garage or Secret"
+      ]
+     }
+    },
+    {
+     "t": "One player holds {Nuke|Ramp}.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "one Ramp player"
+      ],
+      "web:metabot-nuke": [
+       "one holding Ramp"
+      ]
+     }
+    },
+    {
+     "t": "One player plays lower (B site) or flexes to where help is needed.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "one lower-site or flexible B player"
+      ],
+      "web:metabot-nuke": [
+       "one anchoring B"
+      ]
+     }
+    },
+    {
+     "t": "Expect fast rotations: on Nuke the setup can change within seconds.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke",
+      "web:boostroom-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "Nuke rotations are extremely fast, so this setup can change within seconds"
+      ],
+      "web:metabot-nuke": [
+       "CT rotations through Vents and Hell are much faster than any T rotation"
+      ],
+      "web:boostroom-nuke": [
+       "the defense can rotate quickly"
+      ]
+     }
+    },
+    {
+     "t": "Rotate through the inside ({Nuke|Vent} or {Nuke|Hell}), never across {Nuke|Outside}.",
+     "src": [
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:metabot-nuke": [
+       "Never rotate across Outside; that is where Ts are waiting."
+      ]
+     }
+    }
+   ],
+   "t": [
+    {
+     "t": "One player gets {Nuke|Lobby} and {Nuke|Hut} information.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "one player controls Lobby/Hut information"
+      ],
+      "web:metabot-nuke": [
+       "once you hold Squeaky and Hut, the CTs have to respect a fast upstairs hit"
+      ]
+     }
+    },
+    {
+     "t": "One player pressures {Nuke|Squeaky}.",
+     "src": [
+      "web:expcarry-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "one player controls Squeaky pressure"
+      ]
+     }
+    },
+    {
+     "t": "Two players work {Nuke|Outside}.",
+     "src": [
+      "web:expcarry-nuke",
+      "web:metabot-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "two players work Outside"
+      ],
+      "web:metabot-nuke": [
+       "Even a two-player Outside take with the smoke wall forces the CTs to send help across"
+      ]
+     }
+    },
+    {
+     "t": "One player holds {Nuke|Ramp} and {Nuke|Radio} or supports the strongest lane.",
+     "src": [
+      "web:expcarry-nuke"
+     ],
+     "q": {
+      "web:expcarry-nuke": [
+       "one player holds Ramp/Radio information or supports the strongest lane"
+      ]
+     }
+    },
+    {
+     "t": "Choose the site late: gather information and force utility before you call upper, lower, ramp or outside.",
+     "src": [
+      "web:boostroom-nuke"
+     ],
+     "q": {
+      "web:boostroom-nuke": [
+       "Gather information, force utility, read rotations, then choose upper, lower, ramp, or outside"
+      ]
+     }
+    }
+   ]
+  },
+  "Cache": {
+   "ct": [
+    {
+     "t": "Two players hold A: one at {Cache|Quad}, one moving between {Cache|Highway} and {Cache|Squeaky}.",
+     "src": [
+      "web:playnews-cache"
+     ],
+     "q": {
+      "web:playnews-cache": [
+       "two on A (typically Quad and a mobile player between Highway and Squeaky)"
+      ]
+     }
+    },
+    {
+     "t": "One player holds Mid behind {Cache|Sandbags}.",
+     "src": [
+      "web:playnews-cache",
+      "web:expcarry-cache"
+     ],
+     "q": {
+      "web:playnews-cache": [
+       "one on Mid behind Sandbags"
+      ],
+      "web:expcarry-cache": [
+       "Mid player"
+      ]
+     }
+    },
+    {
+     "t": "Two players hold B, with {Cache|B Heaven} as the main anchor.",
+     "src": [
+      "web:playnews-cache"
+     ],
+     "q": {
+      "web:playnews-cache": [
+       "two on B with Heaven as the main anchor"
+      ]
+     }
+    },
+    {
+     "t": "Keep {Cache|B Heaven}: if it falls, B site becomes very hard to hold.",
+     "src": [
+      "web:playnews-cache"
+     ],
+     "q": {
+      "web:playnews-cache": [
+       "Heaven is key — if it falls, B site becomes untenable"
+      ]
+     }
+    },
+    {
+     "t": "Do not give Mid away for free while you guard the sites.",
+     "src": [
+      "web:expcarry-cache"
+     ],
+     "q": {
+      "web:expcarry-cache": [
+       "CTs must protect the bombsites without giving Mid for free every round"
+      ]
+     }
+    }
+   ],
+   "t": [
+    {
+     "t": "One player gets {Cache|A Main} information.",
+     "src": [
+      "web:expcarry-cache"
+     ],
+     "q": {
+      "web:expcarry-cache": [
+       "one player controlling A Main information"
+      ]
+     }
+    },
+    {
+     "t": "Two players contest Mid and {Cache|Garage}.",
+     "src": [
+      "web:expcarry-cache"
+     ],
+     "q": {
+      "web:expcarry-cache": [
+       "two players contesting Mid/Garage"
+      ]
+     }
+    },
+    {
+     "t": "One player holds {Cache|B Halls} (B Main).",
+     "src": [
+      "web:expcarry-cache"
+     ],
+     "q": {
+      "web:expcarry-cache": [
+       "one player holding B Main"
+      ]
+     }
+    },
+    {
+     "t": "The fifth player supports or lurks.",
+     "src": [
+      "web:expcarry-cache"
+     ],
+     "q": {
+      "web:expcarry-cache": [
+       "one flexible support or lurk"
+      ]
+     }
+    },
+    {
+     "t": "Win Mid first: holding {Cache|White Box} and threatening {Cache|Sandbags} opens splits onto both sites.",
+     "src": [
+      "web:playnews-cache"
+     ],
+     "q": {
+      "web:playnews-cache": [
+       "A T side that holds White Box and threatens Sandbags opens up three options at once"
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

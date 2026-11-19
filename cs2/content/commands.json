@@ -1,0 +1,235 @@
+{
+ "note": "Every command is checked against data/raw/game/convars.txt + commands.txt (datamined). The game's own description from the dump is shown next to each one.",
+ "open": {
+  "t": "Turn on Enable Developer Console (~) in the game settings, then press the ~ key to open and close the console.",
+  "src": ["fandom:Developer_console"],
+  "q": ["set Enable Developer Console (~) to Yes", "the console can be opened and closed by pressing the [~] key"]
+ },
+ "groups": [
+  {
+   "id": "practice",
+   "title": "Practice server (paste after creating a private match)",
+   "block": true,
+   "cmds": [
+    {
+     "c": "sv_cheats 1",
+     "what": "Allows the practice commands below. Only works on your own server."
+    },
+    {
+     "c": "mp_warmup_end",
+     "what": "Ends warmup so the round starts."
+    },
+    {
+     "c": "mp_limitteams 0",
+     "what": "Lets you join any team."
+    },
+    {
+     "c": "mp_autoteambalance 0",
+     "what": "Stops the game moving you to the other team."
+    },
+    {
+     "c": "mp_freezetime 0",
+     "what": "No waiting at the start of a round."
+    },
+    {
+     "c": "mp_roundtime_defuse 60",
+     "what": "Long rounds so you are not interrupted."
+    },
+    {
+     "c": "mp_maxmoney 60000",
+     "what": "Raises the money cap."
+    },
+    {
+     "c": "mp_startmoney 60000",
+     "what": "Start every round rich."
+    },
+    {
+     "c": "mp_buy_anywhere 1",
+     "what": "Buy outside the buy zone."
+    },
+    {
+     "c": "mp_buytime 9999",
+     "what": "Buy at any time in the round."
+    },
+    {
+     "c": "sv_infinite_ammo 1",
+     "what": "Your weapon never runs out of ammo."
+    },
+    {
+     "c": "ammo_grenade_limit_total 5",
+     "what": "Carry one of every grenade."
+    },
+    {
+     "c": "sv_grenade_trajectory_prac_pipreview 1",
+     "what": "Shows where a grenade will land before you throw it."
+    },
+    {
+     "c": "sv_showimpacts 1",
+     "what": "Shows where each bullet hit (for spray practice)."
+    },
+    {
+     "c": "bot_kick",
+     "what": "Removes all bots."
+    },
+    {
+     "c": "mp_restartgame 1",
+     "what": "Restarts the round with the settings above."
+    }
+   ]
+  },
+  {
+   "id": "drills",
+   "title": "Drills",
+   "cmds": [
+    {
+     "c": "sv_rethrow_last_grenade",
+     "what": "Throws your last grenade again from the same spot (bind it to a key)."
+    },
+    {
+     "c": "bot_add_t",
+     "what": "Adds a T bot. Use bot_add_ct for a CT bot."
+    },
+    {
+     "c": "bot_stop 1",
+     "what": "Freezes bots in place."
+    },
+    {
+     "c": "bot_dont_shoot 1",
+     "what": "Bots stop shooting back."
+    },
+    {
+     "c": "bot_crouch 1",
+     "what": "Bots crouch (practise lower heads)."
+    },
+    {
+     "c": "bot_place",
+     "what": "Puts a bot where you are looking."
+    },
+    {
+     "c": "bot_mimic 1",
+     "what": "Bots copy your movement: good for peek practice."
+    },
+    {
+     "c": "weapon_debug_spread_show 1",
+     "what": "Draws your current spread so you can see counter-strafing work."
+    },
+    {
+     "c": "cl_showpos 1",
+     "what": "Shows your position and speed on screen."
+    },
+    {
+     "c": "god",
+     "what": "You cannot die."
+    },
+    {
+     "c": "noclip",
+     "what": "Fly through walls to reach lineup spots fast."
+    },
+    {
+     "c": "give weapon_ak47",
+     "what": "Gives you a weapon by its game name (weapon_awp, weapon_m4a1_silencer...)."
+    }
+   ]
+  },
+  {
+   "id": "settings",
+   "title": "Settings you can type",
+   "cmds": [
+    {
+     "c": "sensitivity 1",
+     "what": "Mouse sensitivity (eDPI = DPI x this)."
+    },
+    {
+     "c": "zoom_sensitivity_ratio 1",
+     "what": "Sensitivity while scoped."
+    },
+    {
+     "c": "apply_crosshair_code",
+     "what": "Paste a crosshair share code after it. The game's command list flags it developmentonly, so it may not work outside a test build; the crosshair settings also take share codes."
+    },
+    {
+     "c": "cl_crosshair_length 2",
+     "what": "Crosshair bar length in pixels."
+    },
+    {
+     "c": "cl_crosshair_thickness 1",
+     "what": "Crosshair thickness in pixels."
+    },
+    {
+     "c": "cl_crosshair_gap 1",
+     "what": "Gap from the centre in pixels."
+    },
+    {
+     "c": "cl_crosshairdot 0",
+     "what": "Centre dot on (1) or off (0)."
+    },
+    {
+     "c": "cl_crosshair_recoil 0",
+     "what": "Crosshair moves with recoil (1) or stays still (0)."
+    },
+    {
+     "c": "viewmodel_fov 68",
+     "what": "Field of view of the gun model on your screen."
+    },
+    {
+     "c": "cl_radar_always_centered 0",
+     "what": "Stop the radar following you, so it shows more of the map."
+    },
+    {
+     "c": "cl_radar_scale 0.4",
+     "what": "Radar zoom: lower shows more of the map."
+    },
+    {
+     "c": "cl_hud_radar_scale 1.15",
+     "what": "Radar size on screen."
+    },
+    {
+     "c": "cl_showfps 1",
+     "what": "Frame rate counter."
+    },
+    {
+     "c": "fps_max 0",
+     "what": "Frame rate cap (0 = no cap)."
+    },
+    {
+     "c": "cl_hud_telemetry_frametime_show 2",
+     "what": "Always show your frame rate in the HUD."
+    },
+    {
+     "c": "cl_use_opens_buy_menu 0",
+     "what": "Stops the use key opening the buy menu."
+    }
+   ]
+  },
+  {
+   "id": "demos",
+   "title": "Demos and binds",
+   "cmds": [
+    {
+     "c": "record mydemo",
+     "what": "Records a demo of your own server."
+    },
+    {
+     "c": "playdemo mydemo",
+     "what": "Plays a demo file."
+    },
+    {
+     "c": "demoui",
+     "what": "Opens the demo playback controls."
+    },
+    {
+     "c": "bind \"mwheeldown\" \"+jump\"",
+     "what": "Jump on mouse wheel down."
+    },
+    {
+     "c": "unbind \"mwheeldown\"",
+     "what": "Removes a bind."
+    },
+    {
+     "c": "host_writeconfig",
+     "what": "Saves your settings to your config now."
+    }
+   ]
+  }
+ ]
+}

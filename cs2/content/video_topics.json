@@ -1,0 +1,19 @@
+[
+ {"id": "counter-strafe", "title": "Counter-strafing and movement", "section": "move"},
+ {"id": "spray", "title": "Spray control", "section": "spray"},
+ {"id": "spray-ak", "title": "AK-47 spray pattern", "section": "spray"},
+ {"id": "spray-m4a4", "title": "M4A4 spray pattern", "section": "spray"},
+ {"id": "spray-m4a1s", "title": "M4A1-S spray pattern", "section": "spray"},
+ {"id": "spray-galil", "title": "Galil AR spray pattern", "section": "spray"},
+ {"id": "spray-famas", "title": "FAMAS spray pattern", "section": "spray"},
+ {"id": "economy", "title": "Economy: buy, save, force", "section": "economy"},
+ {"id": "pistol", "title": "Pistol rounds", "section": "pistol"},
+ {"id": "utility", "title": "Grenades and utility basics", "section": "utility"},
+ {"id": "peeking", "title": "Peeking and angles", "section": "peek"},
+ {"id": "awp", "title": "AWP", "section": null},
+ {"id": "crosshair", "title": "Crosshair", "section": "crosshair"},
+ {"id": "settings", "title": "Settings and config", "section": "settings"},
+ {"id": "roles", "title": "Team roles", "section": null},
+ {"id": "premier", "title": "Premier and ranking up", "section": "premier"},
+ {"id": "practice", "title": "Practice routine", "section": "practice"}
+]

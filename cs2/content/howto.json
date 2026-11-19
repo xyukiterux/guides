@@ -1,0 +1,872 @@
+{
+ "note": "Hand-written steps, one action each. Every number must appear in a cited source (keys: vdata, cfg, convars, pros, news:<date>, fandom:<Page>, web:<id>, video:<topic>, guide = a step that only uses this guide's own pages). A step that cites a prose source (fandom:, news:, web:) must quote (q) the passage it relies on, word for word. A step that cites only videos is shown as advice from that video. [[Weapon]] must be a weapon card, `command` must be in the game's convar/command dump, {Map|Callout} must be on that map's callout map. build.py fails on any miss.",
+ "sections": [
+  {
+   "id": "comeback",
+   "group": "Start here",
+   "kind": "howto",
+   "title": "How to get back into CS2 after a break",
+   "need": "You'll need: CS2 installed and about an hour for the first session.",
+   "steps": [
+    {
+     "t": "Open **What changed** in this guide and read the updates since you last played.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Check the Active Duty pool on **Maps**: Cache replaced Overpass when Premier Season Five began, and Anubis is back in.",
+     "src": [
+      "news:2026-07-08",
+      "news:2026-01-21"
+     ],
+     "q": [
+      "Added Cache to the Active Duty Map Pool",
+      "Removed Overpass from the Active Duty Map Pool",
+      "Added Anubis to the Active Duty Map Pool"
+     ]
+    },
+    {
+     "t": "Open **Settings** and the new **Crosshair/Scopes** tab: crosshair length and thickness are now set in pixels.",
+     "src": [
+      "news:2026-09-22",
+      "news:2026-09-23"
+     ],
+     "q": [
+      "A new \"Crosshair/Scopes\" tab is available in the Settings menu",
+      "The new crosshair thickness and length units are in pixels"
+     ]
+    },
+    {
+     "t": "Set your crosshair again with **How to set up your crosshair** (pro values are on the **Settings & crosshair** page).",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Play one Deathmatch to warm up your aim and counter-strafing.",
+     "src": [
+      "video:practice"
+     ]
+    },
+    {
+     "t": "Pick two maps from the pool.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Learn three smokes for each of them on their map pages.",
+     "src": [
+      "video:utility"
+     ],
+     "note": "Each map page also has the callouts on its radar."
+    },
+    {
+     "t": "Queue Premier.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "If your CS Rating is hidden, win 1 Premier match to show it again.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "they must win 1 Premier match to show their CS rating"
+     ]
+    }
+   ],
+   "check": "You are done when your crosshair feels right, you know the seven pool maps and your CS Rating is visible."
+  },
+  {
+   "id": "move",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to counter-strafe and shoot accurately",
+   "need": "You'll need: a private server for practice (see **Console commands**).",
+   "steps": [
+    {
+     "t": "Stop moving before every shot you want to land.",
+     "src": [
+      "fandom:Movement",
+      "vdata"
+     ],
+     "q": [
+      "the faster or more movement is done, the more significant a weapon's bullet/pellet spread will be"
+     ],
+     "note": "The faster you move, the wider your bullets spread. Each weapon card shows the moving and standing values under Accuracy."
+    },
+    {
+     "t": "Strafe sideways with A (or D) to peek the angle.",
+     "src": [
+      "video:counter-strafe"
+     ]
+    },
+    {
+     "t": "The moment you see the enemy, release A and tap D once to cancel your speed.",
+     "src": [
+      "video:counter-strafe"
+     ]
+    },
+    {
+     "t": "Fire the first shot as soon as you stop.",
+     "src": [
+      "video:counter-strafe"
+     ]
+    },
+    {
+     "t": "Strafe back into cover after the shots.",
+     "src": [
+      "video:counter-strafe"
+     ]
+    },
+    {
+     "t": "Hold the walk key when you need to be quiet: walking lowers your footstep noise and keeps you more accurate.",
+     "src": [
+      "fandom:Movement"
+     ],
+     "q": [
+      "use the specific walk key to slow down their movement, increasing their accuracy and reducing their footstep noise"
+     ]
+    },
+    {
+     "t": "To practise, paste the practice block from **Console commands** on a private server.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Run `weapon_debug_spread_show 1` to see your spread shrink when you stop.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Run `cl_showpos 1` to see your speed on screen; with an [[AK-47]] your top speed is 215.",
+     "src": [
+      "convars",
+      "vdata"
+     ]
+    }
+   ],
+   "check": "It works when your first bullet hits the head while you are strafing between two boxes."
+  },
+  {
+   "id": "spray",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to control a spray",
+   "need": "You'll need: a private server with infinite ammo (see **Console commands**), and the pattern video for your rifle (below and on each rifle's card).",
+   "steps": [
+    {
+     "t": "Aim at head height before the fight, so you do not need to move your crosshair up.",
+     "src": [
+      "video:spray"
+     ]
+    },
+    {
+     "t": "Stand still and fire: your first bullet is not affected by recoil and lands near your crosshair.",
+     "src": [
+      "fandom:Recoil"
+     ],
+     "q": [
+      "The first shot fired while spraying is always unaffected by recoil, and will land near the crosshair's location, accounting for inaccuracy"
+     ]
+    },
+    {
+     "t": "Keep firing and pull your mouse down as the spray climbs.",
+     "src": [
+      "video:spray"
+     ]
+    },
+    {
+     "t": "Move your mouse against the spray's sideways sway.",
+     "src": [
+      "video:spray",
+      "video:spray-ak"
+     ],
+     "note": "Each rifle has its own pattern: the pattern video for your gun is further down this page."
+    },
+    {
+     "t": "Practise on a wall: paste the practice block from **Console commands** on a private server.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Run `sv_showimpacts 1` to see where each bullet landed.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Compare your bullet holes with the pattern in the video for your gun.",
+     "src": [
+      "video:spray-ak"
+     ]
+    },
+    {
+     "t": "If the enemy is far away, shoot short bursts and let the recoil reset between them.",
+     "src": [
+      "fandom:Recoil",
+      "video:spray"
+     ],
+     "q": [
+      "When the player stops shooting, the recoil index will drop down and return to zero"
+     ]
+    },
+    {
+     "t": "If a second enemy appears during a spray, keep pulling down while you move your aim to them (a spray transfer).",
+     "src": [
+      "video:spray"
+     ]
+    }
+   ],
+   "check": "It works when most of a spray at a wall lands inside a head-sized circle at close range."
+  },
+  {
+   "id": "economy",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to decide: buy, save or force",
+   "need": "You'll need: the team's money (hold the scoreboard key or open the buy menu during freeze time).",
+   "steps": [
+    {
+     "t": "Read your team's money during freeze time.",
+     "src": [
+      "cfg"
+     ],
+     "note": "Everyone starts the half with $800 and nobody can hold more than $16000."
+    },
+    {
+     "t": "Full buy if every player can afford a rifle, Kevlar + Helmet and grenades (totals are on **Buy rounds**).",
+     "src": [
+      "vdata"
+     ]
+    },
+    {
+     "t": "If most of the team cannot full buy, save: buy nothing (or only a pistol) so everyone can full buy together next round.",
+     "src": [
+      "video:economy"
+     ]
+    },
+    {
+     "t": "Count on the loss bonus: $1400 after one loss and $500 more for each further loss, up to $3400.",
+     "src": [
+      "cfg",
+      "fandom:Money"
+     ],
+     "q": [
+      "Round loss bonuses are based on the count of a team's round losses"
+     ]
+    },
+    {
+     "t": "Remember the half starts with one loss already counted, so a lost pistol round pays $1900.",
+     "src": [
+      "cfg",
+      "fandom:Money"
+     ],
+     "q": [
+      "Losing pistol round $1900"
+     ]
+    },
+    {
+     "t": "Expect a win to lower the loss count by one, not reset it (`mp_consecutive_loss_aversion` is 1 in the game files).",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Win money is bigger: $3250 for a win by elimination, $3500 for a bomb explosion or a defuse.",
+     "src": [
+      "cfg"
+     ]
+    },
+    {
+     "t": "Use kill rewards: $300 with most guns, $600 with most SMGs, $900 with a [[Nova]], [[MAG-7]] or [[Sawed-Off]], $100 with the [[AWP]] and $1500 with a knife.",
+     "src": [
+      "vdata"
+     ]
+    },
+    {
+     "t": "If you are T, plant the bomb even in a lost round: the planter gets $300.",
+     "src": [
+      "cfg"
+     ]
+    },
+    {
+     "t": "If you are CT, every T your team kills adds a $50 team award, win or lose.",
+     "src": [
+      "news:2025-07-16"
+     ],
+     "q": [
+      "Counter-Terrorists now receive a $50 team award for each Terrorist eliminated in a round"
+     ]
+    },
+    {
+     "t": "Force buy (armor plus the best gun you can afford) when the enemy is saving or when your loss bonus is already at its top.",
+     "src": [
+      "video:economy"
+     ]
+    }
+   ],
+   "check": "It works when your team buys together and nobody is left with a pistol while four teammates have rifles."
+  },
+  {
+   "id": "pistol",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to play the pistol round",
+   "need": "You'll need: $800 (everyone's money in round one).",
+   "steps": [
+    {
+     "t": "Buy a [[Kevlar Vest]] for $650, or skip it and buy a better pistol plus grenades.",
+     "src": [
+      "cfg",
+      "vdata"
+     ]
+    },
+    {
+     "t": "If you skip armor, try a [[P250]] for $300 with a [[Flashbang]] for $200 and a [[Smoke Grenade]] for $300.",
+     "src": [
+      "vdata"
+     ]
+    },
+    {
+     "t": "If you are CT, let one player buy a [[Defuse Kit]] for $400.",
+     "src": [
+      "vdata"
+     ]
+    },
+    {
+     "t": "Stay close to a teammate so either of you can trade: kill the enemy who just killed the other.",
+     "src": [
+      "video:pistol"
+     ]
+    },
+    {
+     "t": "Stop moving before each shot (see **How to counter-strafe**).",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "If you win, buy SMGs or upgraded pistols next round: SMG kills pay $600.",
+     "src": [
+      "vdata"
+     ]
+    },
+    {
+     "t": "If you lose, agree a plan for round two with the team before round one ends.",
+     "src": [
+      "fandom:Money",
+      "video:economy"
+     ],
+     "q": [
+      "Losing pistol round $1900"
+     ],
+     "note": "A lost pistol round pays $1900 each: the plan is to save or to buy only cheap items."
+    }
+   ],
+   "check": "It works when the whole team made the same plan for round two before round one ended."
+  },
+  {
+   "id": "utility",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to learn and throw lineups",
+   "need": "You'll need: the map's page in this guide and a private server.",
+   "steps": [
+    {
+     "t": "Open the map's page and pick three lineups from **Lineups** (each one jumps to its spot in the video).",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Start a private server on that map and paste the practice block from **Console commands**.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Run `sv_grenade_trajectory_prac_pipreview 1` to see where a grenade will land before you throw.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Stand exactly where the video stands and put your crosshair on the same spot.",
+     "src": [
+      "video:utility"
+     ]
+    },
+    {
+     "t": "Throw with the same method as the video (left click, right click, both, or jump-throw).",
+     "src": [
+      "video:utility"
+     ]
+    },
+    {
+     "t": "Run `sv_rethrow_last_grenade` to repeat the throw until it lands every time.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Buy grenades with the limit in mind: 4 grenades at most, and at most 2 of them flashbangs.",
+     "src": [
+      "cfg"
+     ]
+    },
+    {
+     "t": "Use a [[Smoke Grenade]] to put out an enemy [[Molotov]] or [[Incendiary Grenade]] fire.",
+     "src": [
+      "fandom:Molotov"
+     ],
+     "q": [
+      "The flames can be extinguished by a Smoke Grenade"
+     ]
+    }
+   ],
+   "check": "It works when you land each of your three lineups first try in a real match."
+  },
+  {
+   "id": "crosshair",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to set up your crosshair",
+   "need": "You'll need: the **Settings & crosshair** page of this guide open.",
+   "steps": [
+    {
+     "t": "Open the **Crosshair/Scopes** tab in **Settings**.",
+     "src": [
+      "news:2026-09-22"
+     ],
+     "q": [
+      "A new \"Crosshair/Scopes\" tab is available in the Settings menu"
+     ]
+    },
+    {
+     "t": "Choose a style.",
+     "src": [
+      "pros"
+     ],
+     "note": "The table on **Settings & crosshair** shows which styles the pros use most."
+    },
+    {
+     "t": "Set length, thickness and gap in pixels: a 1-pixel crosshair with 8-pixel bars and a 4-pixel gap is thickness 1, length 8, gap 4.",
+     "src": [
+      "news:2026-09-23"
+     ],
+     "q": [
+      "if you want a 1-pixel wide crosshair with a bar length of 8 pixels and a gap of 4 pixels, then you would set: thickness = 1, length = 8, and gap = 4"
+     ]
+    },
+    {
+     "t": "Or type the same values in the console, for example `cl_crosshair_length 2`, `cl_crosshair_thickness 1` and `cl_crosshair_gap 1`.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "If someone gives you a share code, paste it into the share-code field in the crosshair settings.",
+     "src": [
+      "fandom:Crosshair",
+      "convars"
+     ],
+     "q": [
+      "They can be applied through the settings or via the command apply_crosshair_code"
+     ],
+     "note": "The wiki also names the console command `apply_crosshair_code`, but the game's own command list flags it developmentonly, so it may not work outside a test build."
+    },
+    {
+     "t": "If you change resolution later, leave the values alone: the game rescales the pixels for you.",
+     "src": [
+      "news:2026-09-23"
+     ],
+     "q": [
+      "the new crosshair system automatically rescales pixel counts when the display resolution changes"
+     ]
+    },
+    {
+     "t": "Look at it on a bright wall and on a dark wall in a match.",
+     "src": [
+      "video:crosshair"
+     ]
+    },
+    {
+     "t": "If it disappears on either wall, change its colour.",
+     "src": [
+      "video:crosshair"
+     ]
+    }
+   ],
+   "check": "It works when you can see the centre of your crosshair on every map without looking for it."
+  },
+  {
+   "id": "settings",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to set sensitivity and video like the pros",
+   "need": "You'll need: your mouse software (for DPI) and the **Settings & crosshair** page.",
+   "steps": [
+    {
+     "t": "Set your mouse to 400 or 800 DPI, the two most common values in the pro list.",
+     "src": [
+      "pros"
+     ]
+    },
+    {
+     "t": "Pick an in-game sensitivity so DPI x sensitivity (eDPI) is near the pro median of 800.",
+     "src": [
+      "pros"
+     ],
+     "note": "If you are new to low sensitivity, move toward it in small steps."
+    },
+    {
+     "t": "Leave zoom sensitivity at 1 unless your scoped aim feels wrong; 1 is the median.",
+     "src": [
+      "pros"
+     ]
+    },
+    {
+     "t": "Choose a resolution: most listed pros play 4:3 stretched.",
+     "src": [
+      "pros"
+     ],
+     "note": "If 4:3 feels cramped, 16:9 native is a normal choice too."
+    },
+    {
+     "t": "Turn on **Boost Player Contrast**, like most of the pros with full settings.",
+     "src": [
+      "pros"
+     ]
+    },
+    {
+     "t": "Turn off **V-Sync**, like most of the pros with full settings.",
+     "src": [
+      "pros"
+     ]
+    },
+    {
+     "t": "Set **Radar Map Zoom** lower to see more of the map; the pro values are listed on the settings page.",
+     "src": [
+      "pros"
+     ]
+    }
+   ],
+   "check": "It works when you can turn fully around with one comfortable arm swipe and still hit small flicks."
+  },
+  {
+   "id": "peek",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to peek and hold angles",
+   "need": "You'll need: one teammate to trade you, or bots on a private server.",
+   "steps": [
+    {
+     "t": "Hold an angle from further back, so the enemy must swing wider before they can see you.",
+     "src": [
+      "video:peeking"
+     ]
+    },
+    {
+     "t": "Keep your crosshair at head height on the edge where the enemy will appear.",
+     "src": [
+      "video:peeking"
+     ]
+    },
+    {
+     "t": "If you want information without a fight, shoulder-peek: show only your shoulder and step back at once.",
+     "src": [
+      "video:peeking"
+     ]
+    },
+    {
+     "t": "If you want the fight, wide-peek (swing far past the corner in one move) with a counter-strafe and shoot first.",
+     "src": [
+      "video:peeking",
+      "video:counter-strafe"
+     ]
+    },
+    {
+     "t": "Clear angles one at a time: move to the next only after the first is safe.",
+     "src": [
+      "video:peeking"
+     ]
+    },
+    {
+     "t": "Swing together with a teammate so the enemy can only shoot one of you.",
+     "src": [
+      "video:peeking"
+     ]
+    }
+   ],
+   "check": "It works when you lose fewer fights to players you had already seen."
+  },
+  {
+   "id": "postplant",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to play after the bomb is planted",
+   "need": "You'll need: a plan for which side of the site you will hold.",
+   "steps": [
+    {
+     "t": "As T, count down from 40: the bomb explodes 40 seconds after the plant.",
+     "src": [
+      "fandom:C4_Explosive",
+      "convars"
+     ],
+     "q": [
+      "40 seconds under a competitive ruleset"
+     ]
+    },
+    {
+     "t": "As T, hold the bomb from different angles so a defuser can be shot from two places.",
+     "src": [
+      "video:utility"
+     ]
+    },
+    {
+     "t": "As T, save a [[Molotov]] to throw on the bomb when you hear the defuse start.",
+     "src": [
+      "video:utility"
+     ]
+    },
+    {
+     "t": "As CT, buy a [[Defuse Kit]] in every buy round: it cuts the defuse from 10 seconds to 5.",
+     "src": [
+      "fandom:C4_Explosive"
+     ],
+     "q": [
+      "The time it takes to defuse C4 is 10 seconds or 5 seconds with a defuse kit"
+     ]
+    },
+    {
+     "t": "As CT, wait for teammates and retake the site together instead of one at a time.",
+     "src": [
+      "video:utility"
+     ]
+    },
+    {
+     "t": "When the bomb is about to blow, get behind a wall or round a corner: since Season Five the blast is a shockwave that fades around corners and does not go through walls.",
+     "src": [
+      "news:2026-07-08"
+     ],
+     "q": [
+      "the shockwave dissipates around corners and doesn't go through walls"
+     ]
+    },
+    {
+     "t": "Check your health bar before the blast: it flashes a preview of how much the explosion will hurt you where you stand.",
+     "src": [
+      "news:2026-07-08"
+     ],
+     "q": [
+      "check your health bar which will flash a preview of how well you'll fare after the blast"
+     ]
+    }
+   ],
+   "check": "It works when you know before the plant who holds which angle, and nobody dies to the blast after a lost round."
+  },
+  {
+   "id": "premier",
+   "group": "Ranks",
+   "kind": "howto",
+   "title": "How to get and climb a CS Rating in Premier",
+   "need": "You'll need: Prime Status and profile rank 10.",
+   "steps": [
+    {
+     "t": "Unlock Premier with a Prime Status account at profile rank 10.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "players need to have a Prime Status account and a minimum profile rank"
+     ]
+    },
+    {
+     "t": "Win 10 Premier matches to reveal your CS Rating.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "The player has to win 10 Premier matches before their CS rating is shown"
+     ]
+    },
+    {
+     "t": "Pick maps you know: Team 1 picks one map, Team 2 picks two, Team 1 picks a final map, and one of the four is chosen at random.",
+     "src": [
+      "news:2026-09-22"
+     ],
+     "q": [
+      "Team 1 picks one map Team 2 picks two maps Team 1 picks a final map",
+      "a single map will be randomly selected"
+     ]
+    },
+    {
+     "t": "Plan for 24 rounds (12 per half); a tie after that goes to one overtime of 3 rounds per half.",
+     "note": "The wiki says both teams get $10000 at the start of each overtime half. The game's default for `mp_overtime_startmoney` is the same, but the Premier server setting is not in the pulled game files, so treat the amount as the wiki's.",
+     "src": [
+      "fandom:Premier",
+      "convars"
+     ],
+     "q": [
+      "If both teams tie their score after 24 rounds, only one overtime period is played out",
+      "Both teams are given $10,000 at the start of their overtime half"
+     ]
+    },
+    {
+     "t": "If it is still tied 15-15 after overtime, the match ends in a draw.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "If both teams are still tied 15-15 after overtime has finished then the Premier match ends in a tie"
+     ]
+    },
+    {
+     "t": "Expect a promotion match when one win would take you over a 5000 line; your rating shows as X,999 in it.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "If the player's CS Rating can increase to reach a 5000 CS Rating interval from the current match being won then the next Premier Match will be a \"Promotion"
+     ]
+    },
+    {
+     "t": "Keep playing Premier: a rating hides after a time without Premier matches.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "inactivity if they stop playing Premier",
+      "they must win 1 Premier match to show their CS rating"
+     ],
+     "note": "If it hides, win 1 match to show it again."
+    }
+   ],
+   "check": "Your rating colour band is shown on **Ranks**.",
+   "summary": [
+    {
+     "t": "Needs Prime Status and profile rank 10; win 10 matches to show your rating.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "players need to have a Prime Status account and a minimum profile rank",
+      "The player has to win 10 Premier matches before their CS rating is shown"
+     ]
+    },
+    {
+     "t": "Map pick: Team 1 picks one, Team 2 picks two, Team 1 picks one; one of the four is played at random.",
+     "src": [
+      "news:2026-09-22"
+     ],
+     "q": [
+      "Team 1 picks one map Team 2 picks two maps Team 1 picks a final map",
+      "a single map will be randomly selected"
+     ]
+    },
+    {
+     "t": "24 rounds; a tie goes to one overtime of 3 rounds per half (the wiki gives each team $10000 per overtime half). Still tied at 15-15 after it: the match is a draw.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "If both teams tie their score after 24 rounds, only one overtime period is played out",
+      "Both teams are given $10,000 at the start of their overtime half",
+      "If both teams are still tied 15-15 after overtime has finished then the Premier match ends in a tie"
+     ]
+    },
+    {
+     "t": "Ratings hide after inactivity; win 1 match to show it again.",
+     "src": [
+      "fandom:Premier"
+     ],
+     "q": [
+      "inactivity if they stop playing Premier",
+      "they must win 1 Premier match to show their CS rating"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "practice",
+   "group": "How to play well",
+   "kind": "howto",
+   "title": "How to run a practice session",
+   "need": "You'll need: the practice server commands from **Console commands**.",
+   "steps": [
+    {
+     "t": "Warm up in one Deathmatch, shooting only after a counter-strafe.",
+     "src": [
+      "video:practice"
+     ]
+    },
+    {
+     "t": "Start a private server on the map you play next.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Paste the practice block from **Console commands** into the console.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Spray at a wall with `sv_showimpacts 1` until the [[AK-47]] or [[M4A1-S]] spray stays tight.",
+     "src": [
+      "convars",
+      "video:spray"
+     ]
+    },
+    {
+     "t": "Add a bot with `bot_add_t`.",
+     "note": "The practice block removes all bots with `bot_kick`, so the server is empty while you spray at the wall; this adds back one target to aim at.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Freeze the bots with `bot_stop 1`.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Counter-strafe each time you peek a bot.",
+     "src": [
+      "video:counter-strafe"
+     ],
+     "note": "Aim at its head."
+    },
+    {
+     "t": "Throw your map's lineups with `sv_rethrow_last_grenade` until each lands first try.",
+     "src": [
+      "convars",
+      "video:utility"
+     ]
+    },
+    {
+     "t": "Open one of your lost matches in the demo viewer with `demoui`.",
+     "src": [
+      "convars"
+     ]
+    },
+    {
+     "t": "Write down one mistake to fix next match.",
+     "src": [
+      "video:practice"
+     ]
+    }
+   ],
+   "check": "It works when you finish with one concrete thing to try in your next match."
+  }
+ ]
+}

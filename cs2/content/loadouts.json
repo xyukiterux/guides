@@ -1,0 +1,479 @@
+{
+ "note": "Standard buys. Item ids are weapons.vdata names; build.py adds the prices from the game files and fails if an id has no card. These are the usual shapes of a buy, not a ranking of guns: which rifle or SMG to pick is a preference.",
+ "loadouts": [
+  {
+   "name": "T full buy",
+   "side": "T",
+   "round": "Full buy",
+   "items": [
+    "weapon_ak47",
+    "item_assaultsuit",
+    "weapon_smokegrenade",
+    "weapon_flashbang",
+    "weapon_molotov"
+   ],
+   "when": "When every T can pay for it. Kill rewards with a rifle are $300.",
+   "src": [
+    "vdata"
+   ]
+  },
+  {
+   "name": "CT full buy (M4A1-S)",
+   "side": "CT",
+   "round": "Full buy",
+   "items": [
+    "weapon_m4a1_silencer",
+    "item_assaultsuit",
+    "item_defuser",
+    "weapon_smokegrenade",
+    "weapon_flashbang",
+    "weapon_incgrenade"
+   ],
+   "when": "When every CT can pay for it. Keep the kit: it halves the defuse time.",
+   "src": [
+    "vdata",
+    "fandom:C4_Explosive"
+   ],
+   "q": [
+    "The time it takes to defuse C4 is 10 seconds or 5 seconds with a defuse kit"
+   ]
+  },
+  {
+   "name": "CT full buy (M4A4)",
+   "side": "CT",
+   "round": "Full buy",
+   "items": [
+    "weapon_m4a1",
+    "item_assaultsuit",
+    "item_defuser",
+    "weapon_smokegrenade",
+    "weapon_flashbang",
+    "weapon_incgrenade"
+   ],
+   "when": "Same round as the M4A1-S buy; the M4A4 has a bigger magazine, the M4A1-S more damage per bullet (see the weapon cards).",
+   "src": [
+    "vdata"
+   ]
+  },
+  {
+   "name": "AWP buy (CT)",
+   "side": "CT",
+   "round": "Full buy",
+   "items": [
+    "weapon_awp",
+    "item_assaultsuit",
+    "item_defuser",
+    "weapon_flashbang"
+   ],
+   "when": "For the team's sniper in a full-buy round. AWP kills pay only $100.",
+   "src": [
+    "vdata"
+   ]
+  },
+  {
+   "name": "AWP buy (T)",
+   "side": "T",
+   "round": "Full buy",
+   "items": [
+    "weapon_awp",
+    "item_assaultsuit",
+    "weapon_flashbang"
+   ],
+   "when": "For the team's sniper in a full-buy round. AWP kills pay only $100.",
+   "src": [
+    "vdata"
+   ]
+  },
+  {
+   "name": "T force buy (Galil AR)",
+   "side": "T",
+   "round": "Force buy",
+   "items": [
+    "weapon_galilar",
+    "item_kevlar",
+    "weapon_flashbang"
+   ],
+   "when": "When the team cannot full buy but must win this round.",
+   "src": [
+    "video:economy"
+   ]
+  },
+  {
+   "name": "CT force buy (FAMAS)",
+   "side": "CT",
+   "round": "Force buy",
+   "items": [
+    "weapon_famas",
+    "item_kevlar",
+    "weapon_flashbang"
+   ],
+   "when": "When the team cannot full buy but must win this round.",
+   "src": [
+    "video:economy"
+   ]
+  },
+  {
+   "name": "T SMG force (MAC-10)",
+   "side": "T",
+   "round": "Force buy",
+   "items": [
+    "weapon_mac10",
+    "item_kevlar"
+   ],
+   "when": "Cheap force; SMG kills pay $600, so a won fight helps the next buy.",
+   "src": [
+    "vdata"
+   ]
+  },
+  {
+   "name": "CT SMG force (MP9)",
+   "side": "CT",
+   "round": "Force buy",
+   "items": [
+    "weapon_mp9",
+    "item_kevlar"
+   ],
+   "when": "Cheap force; SMG kills pay $600, so a won fight helps the next buy.",
+   "src": [
+    "vdata"
+   ]
+  },
+  {
+   "name": "Eco with armor (T)",
+   "side": "T",
+   "round": "Eco",
+   "items": [
+    "weapon_tec9",
+    "item_kevlar"
+   ],
+   "when": "A save round where you still want to fight close up.",
+   "src": [
+    "video:economy"
+   ]
+  },
+  {
+   "name": "Eco with armor (CT)",
+   "side": "CT",
+   "round": "Eco",
+   "items": [
+    "weapon_fiveseven",
+    "item_kevlar"
+   ],
+   "when": "A save round where you still want to fight close up.",
+   "src": [
+    "video:economy"
+   ]
+  },
+  {
+   "name": "Pistol round: armor",
+   "side": "Both",
+   "round": "Pistol",
+   "items": [
+    "item_kevlar"
+   ],
+   "when": "Round one or thirteen: you have $800.",
+   "src": [
+    "cfg"
+   ]
+  },
+  {
+   "name": "Pistol round: P250 and grenades",
+   "side": "Both",
+   "round": "Pistol",
+   "items": [
+    "weapon_p250",
+    "weapon_flashbang",
+    "weapon_smokegrenade"
+   ],
+   "when": "Round one or thirteen without armor: you have $800.",
+   "src": [
+    "cfg"
+   ]
+  },
+  {
+   "name": "Pistol round: CT kit",
+   "side": "CT",
+   "round": "Pistol",
+   "items": [
+    "item_defuser",
+    "weapon_flashbang"
+   ],
+   "when": "One CT per team, so a planted bomb can be defused in 5 seconds.",
+   "src": [
+    "fandom:C4_Explosive"
+   ],
+   "q": [
+    "The time it takes to defuse C4 is 10 seconds or 5 seconds with a defuse kit"
+   ]
+  }
+ ],
+ "roles": [
+  {
+   "name": "In-game leader (IGL)",
+   "what": "Calls the strategy, the buy and the mid-round decisions for the team.",
+   "src": [
+    "video:roles",
+    "web:refrag-roles"
+   ],
+   "q": [
+    "calling the strats and reading the midgame"
+   ],
+   "tips": [
+    {
+     "t": "Set up a default that gathers information, then turn it into a committed hit once the information arrives.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Setting up the passive shape that gathers information, then converting it into a committed hit once the information arrives"
+     ]
+    },
+    {
+     "t": "Plan the team's money two rounds ahead: when to save, when to force.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Deciding when the team saves, when it forces, and what it can afford two rounds ahead"
+     ]
+    },
+    {
+     "t": "Take this role if you already know why rounds are lost.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Lead if you already know why rounds are lost"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Entry",
+   "what": "First player into a site: takes the first fight so teammates can trade.",
+   "src": [
+    "video:roles",
+    "web:csdb-roles"
+   ],
+   "q": [
+    "The entry is the first player into contested space"
+   ],
+   "tips": [
+    {
+     "t": "Have your crosshair at head height on the angle before you cross it.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Your crosshair is at head height on the angle before you cross it, or you lose"
+     ]
+    },
+    {
+     "t": "Go in with a teammate right behind you: a death that gets traded is a success.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "An entry without a teammate right behind them is just a player dying first",
+      "Deaths that were traded were successes"
+     ]
+    },
+    {
+     "t": "Take entry if aim is your strength and losing duels does not tilt you.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Take entry if your aim is your strength and losing duels does not tilt you"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Sniper (AWPer)",
+   "what": "Buys the [[AWP]] in full-buy rounds and holds or takes long angles. prosettings lists it as Sniper.",
+   "src": [
+    "video:roles",
+    "pros",
+    "web:csdb-roles"
+   ],
+   "q": [
+    "Control sightlines, stall pushes"
+   ],
+   "tips": [
+    {
+     "t": "On CT, take one shot, then reposition.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "One shot, then reposition"
+     ]
+    },
+    {
+     "t": "Buy it consistently if you take the role: an [[AWP]] kill pays only $100.",
+     "src": [
+      "web:csdb-roles",
+      "vdata"
+     ],
+     "q": [
+      "Buy it consistently",
+      "returns only $100 per kill"
+     ]
+    },
+    {
+     "t": "Play positions over flicks: the [[AWP]] is only truly accurate scoped and standing still.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Positioning beats flicking",
+      "The AWP is only truly accurate scoped and stationary"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Support",
+   "what": "Throws the smokes and flashes for the entry and trades kills.",
+   "src": [
+    "video:roles",
+    "web:refrag-roles"
+   ],
+   "q": [
+    "The Support player will often be trading"
+   ],
+   "tips": [
+    {
+     "t": "Learn five grenades on your most-played map first, starting with the standard smoke, two flashes and a molotov.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Learn five grenades on your most-played map",
+      "Learn the standard smoke, two flashes and a molotov on the map you queue most"
+     ]
+    },
+    {
+     "t": "Be the trade behind the entry.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "be the trade behind the entry"
+     ]
+    },
+    {
+     "t": "Start here if you are new or coming back: it is the fastest way to be useful.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Start as support",
+      "It is the fastest route to being useful"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Lurker",
+   "what": "Plays away from the team to catch rotating enemies or cut them off.",
+   "src": [
+    "video:roles",
+    "web:csdb-roles"
+   ],
+   "q": [
+    "catch the rotator who runs past them"
+   ],
+   "tips": [
+    {
+     "t": "Time your lurk to land when the CTs commit to the other site.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "The lurk works because it lands at the moment the CTs commit elsewhere"
+     ]
+    },
+    {
+     "t": "Walk, do not run, so the enemy hears only what you choose.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Walking, not running"
+     ]
+    },
+    {
+     "t": "Tell your team you are lurking; in solo queue, lurk only when they agree.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Lurk only with your team's agreement",
+      "If nobody knows you are lurking, you are not lurking"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Anchor (CT)",
+   "what": "Holds one bombsite alone or with one teammate and waits for help.",
+   "src": [
+    "video:roles",
+    "web:csdb-roles"
+   ],
+   "q": [
+    "Anchors hold a bombsite alone or in a pair"
+   ],
+   "tips": [
+    {
+     "t": "Stay alive until help arrives: you do not need to win the site alone.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "expected to survive long enough for help to arrive, not to win outright"
+     ]
+    },
+    {
+     "t": "Use utility that buys time, like an [[Incendiary Grenade]] into the choke.",
+     "src": [
+      "web:csdb-roles"
+     ],
+     "q": [
+      "Utility that buys time"
+     ]
+    },
+    {
+     "t": "Learn every angle, timing and spot on your site.",
+     "src": [
+      "web:refrag-roles"
+     ],
+     "q": [
+      "As an Anchor, you need to know your bombsite inside out"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Rifler",
+   "what": "Every non-sniper on prosettings is listed as Rifler: entries, supports, lurkers and IGLs all rifle.",
+   "src": [
+    "pros"
+   ]
+  }
+ ],
+ "role_pick": {
+  "t": "Start as support: learn five grenades on your most-played map and trade for your teammates. Take entry if aim is your strength. Take the [[AWP]] only if you will commit to it.",
+  "src": [
+   "web:csdb-roles"
+  ],
+  "q": [
+   "Start as support",
+   "Learn five grenades on your most-played map",
+   "Take entry if your aim is your strength",
+   "Take the AWP only if you will commit to it"
+  ]
+ }
+}

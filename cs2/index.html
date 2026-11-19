@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Counter-Strike 2 Field Manual</title>
+<meta name="description" content="Counter-Strike 2 guide built from the game files: every weapon with price, damage, armor penetration and recoil, the economy and buy rounds, all seven Active Duty maps with callouts and lineups, pro settings, ranks, console commands and a practice routine.">
+<meta name="theme-color" content="#0e1217">
+<meta property="og:title" content="Counter-Strike 2 Field Manual">
+<meta property="og:description" content="Weapons, economy, Active Duty callouts and lineups, pro settings and a come-back plan, from the CS2 game files and patch notes.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Barlow Condensed";src:url("assets/fonts/barlow-condensed-semibold.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Barlow Condensed";src:url("assets/fonts/barlow-condensed-bold.woff2") format("woff2");font-weight:700;font-display:swap}
+:root{
+  --bg:#0e1217;--panel:#171d25;--panel2:#1f2731;--well:#0a0e13;--line:rgba(190,205,222,.10);--line2:rgba(190,205,222,.19);
+  --text:#e9edf1;--muted:#a3aebb;--dim:#7d8996;--or:#f29b30;--or2:#ffbd5c;--t:#e2b65a;--ct:#86abe0;--cash:#93d36f;--bad:#e8705e;--steel:#5d7186;
+  --tS:#f29b30;--tA:#e2c35a;--tB:#93d36f;--tC:#86abe0;--tD:#8d97a3;
+  --head:"Barlow Condensed","Bahnschrift","DIN Condensed","Arial Narrow","Roboto Condensed",sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"Cascadia Mono","Consolas","SFMono-Regular",Menlo,monospace;
+  --r:4px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--text);font:16px/1.6 var(--body);
+  background:
+   radial-gradient(1100px 520px at 92% -8%,rgba(242,155,48,.13),transparent 60%),
+   radial-gradient(900px 640px at -10% 110%,rgba(93,113,134,.22),transparent 62%),
+   linear-gradient(rgba(190,205,222,.025) 1px,transparent 1px) 0 0/100% 44px,
+   linear-gradient(90deg,rgba(190,205,222,.025) 1px,transparent 1px) 0 0/44px 100%,var(--bg);background-attachment:fixed}
+a{color:var(--or2)}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:0 0 .45em;line-height:1.1}
+h2{font-size:1.9rem}h3{font-size:1.3rem}h4{font-size:1.05rem;letter-spacing:.08em;color:var(--or2)}
+code,.mono{font-family:var(--mono);font-size:.9em}
+code{background:rgba(10,14,19,.75);border:1px solid var(--line2);padding:1px 6px;border-radius:3px;color:#ffd9a6;word-break:break-word}
+.shell{display:grid;grid-template-columns:272px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 14px 40px;border-right:1px solid rgba(242,155,48,.22);background:linear-gradient(180deg,rgba(23,29,37,.96),rgba(14,18,23,.96))}
+.brand{display:flex;gap:11px;align-items:center;text-decoration:none;color:var(--text)}
+.brand .mk{width:40px;height:40px;display:grid;place-items:center;background:var(--or);color:#16110a;flex:none;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+.brand b{display:block;font:700 1.35rem/1 var(--head);letter-spacing:.06em;text-transform:uppercase}
+.brand small{color:var(--or);letter-spacing:.22em;font:600 .72rem var(--head);text-transform:uppercase}
+#checked{font-size:.875rem;color:var(--muted);margin:12px 2px;line-height:1.45;border-left:2px solid var(--or);padding-left:8px}
+#checked a{color:var(--ct)}
+.search{position:relative}
+.search input{width:100%;padding:10px 12px 10px 34px;border-radius:var(--r);border:1px solid var(--line2);background:rgba(8,11,15,.75);color:var(--text);font:inherit;font-size:16px;outline:none}
+.search input:focus{border-color:var(--or);box-shadow:0 0 0 3px rgba(242,155,48,.18)}
+.search svg{position:absolute;left:11px;top:14px;opacity:.6}
+.results{position:absolute;left:0;right:0;top:48px;background:#1a212b;border:1px solid var(--line2);border-radius:var(--r);max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.55)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.92rem;display:flex;align-items:center;gap:8px}
+.results div img{width:34px;height:24px;object-fit:contain}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.8125rem;white-space:nowrap}
+.results div:hover,.results div.sel{background:rgba(242,155,48,.12)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:12px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font:700 .78rem var(--head);letter-spacing:.2em;color:var(--or);margin:16px 8px 4px;text-transform:uppercase;opacity:.9}
+nav a{display:flex;gap:10px;align-items:center;padding:6px 10px;border-radius:3px;color:var(--text);text-decoration:none;font-size:.95rem}
+nav a:hover{background:rgba(255,255,255,.05)}
+nav a.on{background:linear-gradient(90deg,rgba(242,155,48,.22),rgba(242,155,48,.03));box-shadow:inset 3px 0 0 var(--or)}
+nav a .n{margin-left:auto;font-size:.8125rem;color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,2.6vw,44px) 90px}
+.topbar{display:none}
+.card,.tile,.mcard{background:linear-gradient(180deg,rgba(31,39,49,.92),rgba(23,29,37,.92));border:1px solid var(--line2);border-radius:var(--r);box-shadow:0 10px 26px rgba(0,0,0,.28);position:relative;min-width:0}
+.card{padding:16px 18px}
+.card::before,.tile::before,.mcard::before{content:"";position:absolute;left:-1px;top:-1px;width:18px;height:3px;background:var(--or);pointer-events:none}
+.card p{margin:.4em 0}
+.hero{position:relative;overflow:hidden;border-radius:var(--r);margin-bottom:22px;isolation:isolate;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(20px,3.6vw,44px);border:1px solid rgba(242,155,48,.35)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(14,18,23,.97) 6%,rgba(14,18,23,.55) 55%,rgba(14,18,23,.2)),linear-gradient(90deg,rgba(14,18,23,.9),transparent 75%)}
+.nw{white-space:nowrap}
+.hero .k{color:var(--or);font:700 .9rem var(--head);letter-spacing:.3em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);margin:.08em 0 .12em;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.hero h1 span{color:var(--or)}
+.hero p{max-width:860px;color:#d8dee5;font-size:1.06rem;margin:0}
+.stripe{height:6px;background:repeating-linear-gradient(135deg,var(--or) 0 10px,transparent 10px 20px);opacity:.65;margin:0 0 18px;border-radius:2px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+.grid.four{grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr))}
+.sec{margin:30px 0 12px}
+.sec h2{display:flex;align-items:center;gap:14px}
+.sec h2::after{content:"";flex:1;height:2px;min-width:30px;background:linear-gradient(90deg,rgba(242,155,48,.7),transparent)}
+.sec p{margin:.25em 0 0;color:var(--muted)}
+.muted{color:var(--muted)}.small{font-size:.9rem}.tiny{font-size:.875rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:1px 9px;border-radius:3px;font-size:.8125rem;border:1px solid var(--line2);background:rgba(8,11,15,.5);color:#d7dde4;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.side-T{color:var(--t);border-color:rgba(226,182,90,.5)}.side-CT{color:var(--ct);border-color:rgba(134,171,224,.5)}.side-Both{color:#cfd6de}
+.cash{color:var(--cash);font-variant-numeric:tabular-nums;font-weight:600}
+.note{border-left:3px solid var(--or);background:rgba(242,155,48,.07);padding:10px 14px;border-radius:0 4px 4px 0;color:#dfe4ea;margin:12px 0}
+.note.warn{border-left-color:var(--bad);background:rgba(232,112,94,.08)}
+.note.info{border-left-color:var(--ct);background:rgba(134,171,224,.08)}
+.tier{display:inline-grid;place-items:center;min-width:30px;height:30px;font:700 1.05rem var(--head);color:#141009;flex:none;padding:0 6px;clip-path:polygon(0 0,100% 0,100% 70%,70% 100%,0 100%)}
+.tS{background:var(--tS)}.tA{background:var(--tA)}.tB{background:var(--tB)}.tC{background:var(--tC)}.tD{background:var(--tD)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs button{padding:6px 14px;border-radius:3px;border:1px solid var(--line2);background:rgba(23,29,37,.8);cursor:pointer;font:600 .98rem var(--head);letter-spacing:.06em;text-transform:uppercase}
+.tabs button:hover{border-color:var(--or)}
+.tabs button.on{background:var(--or);color:#16110a;border-color:var(--or)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input,.filters select{background:rgba(8,11,15,.75);color:var(--text);border:1px solid var(--line2);border-radius:var(--r);padding:8px 11px;font:inherit;font-size:16px;min-width:0}
+.filters input{flex:1 1 220px;max-width:360px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line2);border-radius:var(--r);background:rgba(15,20,26,.75);max-width:100%}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:rgba(31,39,49,.95);font:700 .82rem var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--or2);white-space:nowrap;position:sticky;top:0}
+th.sort{cursor:pointer}th.sort:hover{color:#fff}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tr:hover td{background:rgba(255,255,255,.025)}
+td.l{cursor:pointer;color:var(--text)}td.l:hover{color:var(--or2)}
+.wgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr))}
+.tile{display:flex;flex-direction:column;gap:4px;padding:12px 12px 10px;cursor:pointer;transition:border-color .15s,transform .15s;text-align:left;color:var(--text)}
+.tile:hover{border-color:var(--or);transform:translateY(-2px)}
+.tile img{width:100%;height:96px;object-fit:contain;filter:drop-shadow(0 6px 10px rgba(0,0,0,.6))}
+.tile b{font:700 1.15rem var(--head);letter-spacing:.04em;text-transform:uppercase}
+.tile .row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.tile .tier{position:absolute;top:8px;right:8px;min-width:26px;height:26px;font-size:.875rem;letter-spacing:.04em}
+.bar{height:6px;border-radius:1px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:3px}
+.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--or),var(--or2))}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:10px 18px;margin:10px 0}
+.statgrid div{font-size:.88rem;color:var(--muted)}
+.statgrid b{display:flex;justify-content:space-between;color:var(--text);font-weight:600}
+.big{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.stat{padding:12px 16px;min-width:140px;flex:1 1 140px}
+.stat b{display:block;font:700 1.9rem/1.1 var(--head);color:var(--or)}
+.stat span{font-size:.82rem;color:var(--muted)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:8px}
+.steps li{position:relative;padding:12px 14px 12px 58px;min-height:52px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:12px;top:12px;width:32px;height:30px;background:var(--or);color:#16110a;display:grid;place-items:center;font:700 1.15rem var(--head);clip-path:polygon(0 0,100% 0,100% 70%,72% 100%,0 100%)}
+.src{font-size:.875rem;color:var(--dim)}
+.src a{color:var(--dim)}
+.srcbtn{background:none;border:1px solid var(--line2);color:var(--muted);font-size:.8125rem;padding:0 7px;border-radius:3px;cursor:pointer;margin-left:6px;vertical-align:1px}
+.srcbtn:hover{border-color:var(--or);color:var(--or2)}
+.srcbox{display:none;margin-top:6px;font-size:.84rem;color:var(--muted);background:rgba(8,11,15,.55);border:1px solid var(--line);padding:8px 10px;border-radius:3px}
+.srcbox.on{display:block}
+.ws a,.wl{color:var(--or2);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(242,155,48,.45);text-underline-offset:2px}
+details{border:1px solid var(--line2);border-radius:var(--r);background:rgba(15,20,26,.6);margin:8px 0}
+details>summary{cursor:pointer;padding:9px 12px;font:600 1.02rem var(--head);letter-spacing:.06em;text-transform:uppercase;color:#dfe5eb;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"+";display:inline-block;width:18px;color:var(--or)}
+details[open]>summary::before{content:"\2013"}
+details>.in{padding:2px 14px 12px}
+.modal{position:fixed;inset:0;background:rgba(4,6,9,.75);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#1e2630,#141a21);border:1px solid rgba(242,155,48,.35);border-radius:6px;max-width:820px;width:100%;max-height:92vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.modal .box.wide{max-width:1000px}
+.modal .x{position:absolute;right:10px;top:6px;background:none;border:0;font-size:1.9rem;cursor:pointer;color:var(--muted);line-height:1}
+.whead{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:center;padding-right:28px}
+.whead img{width:100%;max-height:150px;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.65))}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;font-size:.92rem;margin:8px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;color:var(--text)}
+.vid .play{flex:none;width:52px;height:52px;display:grid;place-items:center;background:var(--or);clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+.vid b{display:block;font-size:.95rem;line-height:1.3}
+.mgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.mcard{overflow:hidden;cursor:pointer;text-decoration:none;color:var(--text);display:block}
+.mcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:saturate(.9)}
+.mcard:hover{border-color:var(--or)}
+.mcard:hover img{filter:none}
+.mcard .t{padding:10px 14px 12px}
+.mcard b{font:700 1.5rem var(--head);letter-spacing:.06em;text-transform:uppercase}
+.mapwrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start}
+.radar{position:relative;width:100%;aspect-ratio:1;background:#06080b;border:1px solid var(--line2);border-radius:var(--r);overflow:hidden}
+.radar img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:.92}
+.radar .mk{position:absolute;transform:translate(-50%,-50%);font:600 13px/1.05 var(--head);letter-spacing:.03em;color:#fff;background:rgba(10,14,19,.72);border:1px solid rgba(255,255,255,.25);padding:1px 4px;border-radius:2px;white-space:nowrap;cursor:pointer;text-transform:uppercase;max-width:none}
+.radar .mk.c-Bombsite{background:rgba(232,112,94,.9);border-color:#ffb4a8;font-size:15px;z-index:3}
+.radar .mk.c-CT{background:rgba(70,110,170,.92)}.radar .mk.c-T{background:rgba(170,128,40,.92)}
+.radar .mk.c-Inner{background:rgba(10,14,19,.55);color:#cfd6de}
+.radar .mk.dot{font-size:0;padding:4px;border-radius:50%}.radar .mk.dot.gone{opacity:0;pointer-events:none}
+.radar .mk.dot:hover,.radar .mk.dot:focus{font-size:13px;padding:1px 4px;border-radius:2px;z-index:6}
+.radar .mk.hl,.radar .mk.dot.hl{background:var(--or);color:#16110a;border-color:#fff;z-index:5;box-shadow:0 0 0 3px rgba(242,155,48,.45);font-size:13px;padding:1px 4px;border-radius:2px}
+.radar.nolab .mk{font-size:0;padding:4px;border-radius:50%}
+.radar.nolab .mk.hl{font-size:13px;padding:1px 5px;border-radius:2px}
+.clist{display:flex;flex-wrap:wrap;gap:6px}
+.clist button{border:1px solid var(--line2);background:rgba(8,11,15,.55);border-radius:3px;padding:3px 9px;cursor:pointer;font-size:.88rem}
+.clist button:hover,.clist button.hl{border-color:var(--or);color:var(--or2)}
+.clist button.closed{color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}.clist button.closed .tiny{text-decoration:none;display:inline-block;margin-left:4px;color:var(--bad)}
+.radar .mk.closed{background:rgba(60,64,70,.85);color:#aab2bb;text-decoration:line-through;border-style:dashed}
+.lu{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);cursor:pointer}
+.ph{display:none}
+@media (max-width:599px){.phide{display:none}.ph{display:inline}.pc{display:none}}
+.lugrid{display:grid;grid-template-columns:1fr}
+@media (min-width:1200px){.lugrid{grid-template-columns:1fr 1fr}.lugrid .lu:nth-child(odd){border-right:1px solid var(--line)}}
+.lu:hover{background:rgba(242,155,48,.06)}
+.lu .k{font:700 .8125rem var(--head);letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:2px;background:#2a3340;min-width:66px;text-align:center}
+.k-Smoke{color:#d9dee4}.k-Flash{color:#fff3b0}.k-Molotov{color:#ffab73}.k-HE{color:#a9e38f}.k-Utility{color:var(--ct)}
+.lu .at{font-family:var(--mono);font-size:.82rem;color:var(--muted)}
+.trow{display:grid;grid-template-columns:88px 1fr;border:1px solid var(--line2);border-radius:var(--r);overflow:hidden;margin-bottom:10px;background:rgba(15,20,26,.7)}
+.trow .lab{display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 2.2rem var(--head);color:#141009;text-align:center;padding:6px}
+.trow .lab small{font:600 .8125rem/1.2 var(--body);letter-spacing:0;text-transform:none}
+.trow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:3px;background:rgba(8,11,15,.55);border:1px solid var(--line);cursor:pointer;font-size:.9rem;color:var(--text)}
+.chip:hover{border-color:var(--or)}
+.chip img{width:52px;height:34px;object-fit:contain}
+.chip i{font-style:normal;font-size:.8125rem;color:var(--muted)}
+.ladder{display:flex;gap:6px;align-items:flex-end;height:150px;padding-top:26px;margin:12px 0 4px}
+.ladder div{flex:1;background:linear-gradient(180deg,var(--cash),rgba(147,211,111,.35));border-radius:2px 2px 0 0;position:relative;min-width:0}
+.ladder div span{position:absolute;top:-22px;left:0;right:0;text-align:center;font:700 .95rem var(--head);color:var(--cash)}
+.ladx{display:flex;gap:6px}.ladx span{flex:1;text-align:center;font-size:.8125rem;color:var(--muted);min-width:0}
+.band{display:grid;grid-template-columns:120px 1fr;gap:10px;align-items:center;margin:6px 0}
+.band b{font:700 1.15rem var(--head);letter-spacing:.06em;padding:4px 10px;border-radius:3px;text-align:center;color:#111}
+.sgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,170px),1fr))}
+.sgrid .card{padding:10px;text-align:center;font-size:.88rem}
+.sgrid img{width:100%;max-width:150px;height:60px;object-fit:contain}
+.cmd{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr) auto;gap:12px;align-items:start;padding:9px 12px;border-bottom:1px solid var(--line)}
+.cmd code{display:inline-block}
+.copy{background:rgba(242,155,48,.12);border:1px solid rgba(242,155,48,.45);color:var(--or2);border-radius:3px;padding:2px 10px;cursor:pointer;font:600 .85rem var(--head);letter-spacing:.08em;text-transform:uppercase}
+.copy:hover{background:var(--or);color:#16110a}
+pre.block{background:rgba(8,11,15,.85);border:1px solid var(--line2);border-radius:var(--r);padding:12px 14px;overflow-x:auto;font:.86rem/1.55 var(--mono);color:#ffd9a6;white-space:pre-wrap;word-break:break-all}
+.dist{display:grid;grid-template-columns:minmax(0,1fr) 54px;gap:2px 10px;font-size:.88rem;align-items:center}
+.dist .bar{margin:0}
+.xh{width:110px;height:110px;background:#5a6672;border-radius:4px;flex:none;background:linear-gradient(135deg,#7b8794,#3f4a55)}
+.news li{margin:3px 0}
+.news h3{font-size:1.15rem;margin:0}
+.loadout .its{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.loadout .its span{display:flex;flex-direction:column;align-items:center;font-size:.8125rem;color:var(--muted);width:76px;text-align:center;line-height:1.2}
+.loadout .its img{width:72px;height:46px;object-fit:contain}
+.setup{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}
+.setup ol{margin:6px 0 0;padding-left:22px}.setup li{margin:6px 0}
+.pill.age{font-size:.8125rem;margin-left:4px;white-space:normal;display:inline}.pill.age.ok{border-color:#4f7a3a;color:#b9e59c}.pill.age.warn{border-color:#8a6a2a;color:#f2cf86}
+.radarage details{margin-top:6px}.radarage ul{margin:4px 0;padding-left:20px}
+details.charts{margin:18px 0 6px}details.charts>summary{cursor:pointer;list-style:none;padding:8px 12px;border:1px solid var(--line2);border-radius:3px;background:rgba(8,11,15,.45)}
+details.charts>summary .h{font:700 1.25rem var(--head);letter-spacing:.04em;text-transform:uppercase;color:var(--or)}
+details.charts>summary::before{content:'+ ';color:var(--or)}details.charts[open]>summary::before{content:'- '}
+details.charts>.grid{margin-top:10px}
+.stepnote{margin:6px 0 0;color:var(--muted);font-size:.95rem}
+.setup h4.ct{color:var(--ct)}.setup h4.t{color:var(--t)}
+.adv{font-size:.8125rem;color:var(--muted);border:1px dashed var(--line2);border-radius:3px;padding:0 6px;margin-left:4px;white-space:nowrap}
+blockquote.q{margin:6px 0 0;padding:4px 10px;border-left:2px solid var(--line2);color:#cdd5de;font-style:italic}
+.tips{margin:8px 0 0;padding-left:20px}.tips li{margin:4px 0}
+footer{margin-top:44px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);padding-top:14px}
+::selection{background:var(--or);color:#16110a}
+*{scrollbar-color:rgba(242,155,48,.45) transparent}
+:focus-visible{outline:2px solid var(--or);outline-offset:2px}
+@media (max-width:1100px){.mapwrap{grid-template-columns:1fr}.cmd{grid-template-columns:1fr auto}.cmd .d{grid-column:1/-1}}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(310px,88vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 14px;background:rgba(14,18,23,.95);border-bottom:1px solid rgba(242,155,48,.3)}
+  .topbar button{background:var(--panel2);border:1px solid var(--line2);border-radius:3px;padding:6px 12px;cursor:pointer;font:600 1rem var(--head);letter-spacing:.08em;text-transform:uppercase}
+  .topbar b{font:700 1.2rem var(--head);letter-spacing:.06em;text-transform:uppercase}
+  #tver{margin-left:auto;font-size:.8125rem;line-height:1.25;color:var(--muted);text-align:right}
+  main{padding:16px 14px 80px}
+  .whead{grid-template-columns:1fr}.whead img{max-height:120px}
+  .trow{grid-template-columns:56px 1fr}.trow .lab{font-size:1.6rem}.trow .lab small{display:none}
+  .chip{font-size:.84rem}.chip img{width:42px;height:28px}
+  .hero{min-height:240px}
+  table{font-size:.86rem}th,td{padding:7px 8px}
+  .ladder div span{font-size:.85rem}
+  .band{grid-template-columns:96px 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections" aria-controls="side">Menu</button><b>CS2 Field Manual</b><span id="tver"></span></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16110a" stroke-width="2.6"><circle cx="12" cy="12" r="6.5"/><path d="M12 1.5v6M12 16.5v6M1.5 12h6M16.5 12h6"/></svg></span><span><b>Counter-Strike 2</b><small>Field Manual</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search" autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav"></nav>
+</aside>
+<main id="main"><p class="muted">Loading the guide...</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box"><button class="x" aria-label="Close">&times;</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/cs2.js?v=2026-11-19-776334"></script>
+<script>
+(function(){
+'use strict';
+const D=window.CS2||{weapons:[],maps:[],howto:{sections:[]},meta:{},commands:{groups:[]},videos:{},vtopics:[]};
+const $=s=>document.querySelector(s), main=$('#main');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs));
+const money=n=>n==null?'-':'$'+Number(n).toLocaleString('en-US');
+const pct=x=>x==null?'-':x.toFixed(x>=10?0:1)+'%';
+const M=D.meta||{};
+const W=D.weapons||[], WB=dict(W.map(w=>[w.slug,w])), WID=dict(W.map(w=>[w.id,w])), WN=dict(W.map(w=>[w.name,w]));
+const MAPS=D.maps||[], MB=dict(MAPS.map(m=>[m.slug,m]));
+const HOW=(D.howto&&D.howto.sections)||[], HB=dict(HOW.map(h=>[h.id,h]));
+const VT=D.videos||{};
+const IMG_ERR="this.style.visibility='hidden'";
+const wimg=w=>`<img src="${esc(w.img)}" alt="${esc(w.name)}" loading="lazy" onerror="${IMG_ERR}">`;
+const tierB=(t,short)=>t?`<span class="tier t${t}" title="Damage tier ${t}: this guide's armored kill-time rating from the game files, not a meta rating">${short?'Dmg ':'Damage tier '}${t}</span>`:'';
+const sideP=s=>`<span class="pill side-${esc(s)}">${s==='Both'?'T + CT':esc(s)}</span>`;
+const SRCNAME={vdata:'weapons.vdata (game files)',cfg:'gamemode_competitive.cfg (game files)',convars:'convar + command dumps (game files)',pros:'prosettings.net pro data'};
+const CHECK=`Last checked against the CS2 game files, Steam patch notes and prosettings.net on ${esc(M.pulled)}, game version ${esc(M.patch)} (build ${esc(M.client)}, ${esc(M.version_date)})`;
+
+/* ---------- navigation ---------- */
+const NAV=[
+ ['Start here',[['home','Home'],['how/comeback','Coming back after a break'],['changes','What changed',(D.news||[]).length]]],
+ ['How to play well',HOW.filter(h=>h.group==='How to play well').map(h=>['how/'+h.id,h.title.replace(/^How to /,'').replace(/^./,c=>c.toUpperCase())])],
+ ['Reference',[['weapons','Weapons & gear',W.length],['tiers','Damage tiers'],['buys','Economy & buy rounds'],['maps','Maps & callouts',MAPS.length],['settings','Settings & crosshair'],['roles','Roles'],['ranks','Ranks & Premier'],['commands','Console commands']]],
+ ['More',[['videos','Videos'],['sources','Sources & method']]]
+];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}">${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+$('#tver').innerHTML=`v${esc(M.patch)}<br>checked ${esc(M.pulled)}`;
+$('#checked').innerHTML=`${CHECK}. Sources: <a href="https://github.com/SteamDatabase/GameTracking-CS2" target="_blank" rel="noopener">game files</a>, <a href="https://store.steampowered.com/news/app/730" target="_blank" rel="noopener">patch notes</a>.`;
+
+/* ---------- small renderers ---------- */
+function rich(t){ // **bold**, `code`, [[Weapon]], {Map|Callout}
+  let s=esc(t);
+  const PL={'What changed':'changes','Maps':'maps','Buy rounds':'buys','Console commands':'commands','Settings & crosshair':'settings','Settings &amp; crosshair':'settings','Ranks':'ranks','How to counter-strafe':'how/move','How to set up your crosshair':'how/crosshair'};
+  s=s.replace(/\*\*(.+?)\*\*/g,(m,x)=>PL[x]?`<a href="#${PL[x]}"><b>${x}</b></a>`:`<b>${x}</b>`);
+  s=s.replace(/`([^`]+)`/g,(m,c)=>`<code>${c}</code>`);
+  s=s.replace(/\[\[([^\]]+)\]\]/g,(m,n)=>{const w=WN[n.replace(/&#39;/g,"'").replace(/&amp;/g,'&')];return w?`<a class="wl" data-w="${esc(w.slug)}">${n}</a>`:n;});
+  s=s.replace(/\{([^|{}]+)\|([^{}]+)\}/g,(m,mp,c)=>{const mm=MAPS.find(x=>x.name===mp);return mm?`<a class="wl" href="#map/${mm.slug}/${encodeURIComponent(c)}">${c}</a>`:c;});
+  return s;
+}
+function srcLabel(k){
+  if(SRCNAME[k])return esc(SRCNAME[k]);
+  if(k==='guide')return 'this guide (the step only uses one of its pages)';
+  if(k.startsWith('web:')){const w=(D.web||{})[k.slice(4)];return w?`<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.name)}</a> (page dated ${esc(w.date)})`:esc(k);}
+  if(k.startsWith('fandom:'))return `<a href="https://counterstrike.fandom.com/wiki/${encodeURIComponent(k.slice(7).replace(/_Helmet$/,'_%2B_Helmet'))}" target="_blank" rel="noopener">Counter-Strike Wiki: ${esc(k.slice(7).replace(/_/g,' ').replace(/Kevlar Helmet/,'Kevlar + Helmet'))}</a>`;
+  if(k.startsWith('news:')){const u=(D.news_urls||{})[k.slice(5)];return u?`<a href="${esc(u)}" target="_blank" rel="noopener">Patch notes ${esc(k.slice(5))}</a>`:`Patch notes ${esc(k.slice(5))} (Steam news)`;}
+  if(k.startsWith('video:')){const v=(VT[k.slice(6)]||[])[0];return v?`video: <a class="wl" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}">${esc(v.title)}</a> (${esc(v.channel)}, ${esc(v.date)})`:'video';}
+  return esc(k);
+}
+function srcLine(keys,q){
+  if(q&&!Array.isArray(q))return keys.map(k=>`<span class="src">${srcLabel(k)}</span>${(q[k]||[]).map(x=>`<blockquote class="q">&ldquo;${esc(x)}&rdquo;</blockquote>`).join('')}`).join('');
+  return `<span class="src">Source: ${keys.map(srcLabel).join('; ')}</span>${(q||[]).map(x=>`<blockquote class="q">&ldquo;${esc(x)}&rdquo;</blockquote>`).join('')}${keys.length&&keys.every(k=>k.startsWith('video:'))?'<br><span class="src">Advice from this video. The guide matched the video to the topic by its title and chapters; it did not check the advice line by line.</span>':''}`;}
+const advTag=p=>p.kind==='advice'?'<span class="adv" title="From a creator video, not from the game files or a wiki">advice</span>':'';
+function vidCard(v,at){at=at||v.at;return `<div class="vid card" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}"${at?` data-at="${at}"`:''} role="button" tabindex="0"><span class="play"><svg width="20" height="20" viewBox="0 0 24 24" fill="#16110a"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} &middot; ${esc(v.date)}${v.duration?' &middot; '+Math.round(v.duration/60)+' min':''}${(v.chapters||[]).length?' &middot; '+v.chapters.length+' chapters':''}${v.at?` &middot; opens at ${Math.floor(v.at/60)}:${String(v.at%60).padStart(2,'0')}`:''}</span></span></div>`;}
+function vids(ids,limit){const L=[].concat(...ids.map(i=>VT[i]||[]));const seen=new Set();const out=L.filter(v=>!seen.has(v.videoId)&&seen.add(v.videoId)).slice(0,limit||3);return out.length?`<div class="grid three">${out.map(v=>vidCard(v)).join('')}</div>`:'';}
+const head=(t,p)=>`<div class="sec"><h2>${t}</h2>${p?`<p>${p}</p>`:''}</div>`;
+// advice from fewer than two recent written guides: say whose it is and when
+function byLead(b){return b?`${NUMW[b.n]||b.n} ${b.n===1?'guide':'guides'} (${esc(b.who)}) ${b.n===1?'suggests':'suggest'}: `:'';}
+function byNote(b){return `${b.n===1?'One guide\'s view':(NUMW[b.n]||b.n)+' guides\' view'} (${esc(b.who)})${b.old?`, ${b.n===1?'older':'all older'} than 60 days`:''}.`;}
+function srcBtn(html){return `<button class="srcbtn" data-src>Source</button><div class="srcbox">${html}</div>`;}
+
+/* ---------- home ---------- */
+const NUMW=['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve'];
+function nSteps(id){const s=(D.howto.sections||[]).find(x=>x.id===id);const n=s?(s.steps||[]).length:0;return NUMW[n]||String(n);}
+const plural=(n,one,many)=>`${n} ${n===1?one:(many||one+'s')}`;
+function home(){
+  const lastN=(D.news||[])[0];
+  const counts=[[W.filter(w=>!['Grenades','Gear'].includes(w.cat)).length,'guns with full stats'],[W.filter(w=>['Grenades','Gear'].includes(w.cat)).length,'grenades and gear'],[MAPS.length,'Active Duty maps'],[MAPS.reduce((a,m)=>a+m.layers.reduce((b,l)=>b+l.markers.length,0),0),'callouts on radars'],[MAPS.reduce((a,m)=>a+m.lineups.length,0),'lineup clips'],[(D.pstats||{}).n_list||0,'pros in the settings data']];
+  return `<section class="hero"><img class="bg" src="assets/keyart.jpg" alt="" onerror="${IMG_ERR}"><span class="k">Field manual &middot; <span class="nw">updated ${esc(M.pulled)}</span></span><h1>Counter-Strike <span>2</span></h1><p>Everything to get good again: how to shoot, buy and throw, every gun with its real numbers from the game files, all seven Active Duty maps with callouts and lineups, and the settings pros use.</p></section>
+  <div class="stripe"></div>
+  <div class="grid three">
+   <a class="card" href="#how/comeback" style="text-decoration:none;color:inherit"><h3>Start here: coming back</h3><p class="muted">${nSteps('comeback')} steps for your first session after a break: crosshair, pool, warm-up, Premier.</p></a>
+   <a class="card" href="#changes" style="text-decoration:none;color:inherit"><h3>What changed</h3><p class="muted">${(D.news||[]).length} official updates in the last 60 days${lastN?`, newest ${esc(lastN.date)}`:''}. New crosshair system, silent reload, Premier pick order.</p></a>
+   <a class="card" href="#maps" style="text-decoration:none;color:inherit"><h3>Active Duty pool</h3><p class="muted">${MAPS.map(m=>esc(m.name)).join(', ')}.</p></a>
+  </div>
+  ${head('What is here')}
+  <div class="big">${counts.map(([n,l])=>`<div class="card stat"><b>${Number(n).toLocaleString('en-US')}</b><span>${l}</span></div>`).join('')}</div>
+  <div class="grid three">
+   ${[['how/move','Shoot accurately','Counter-strafe, then shoot.'],['how/spray','Control a spray','Pull down, follow the sway.'],['how/economy','Buy, save or force','The money rules from the game files.'],['weapons','Weapons & gear','Price, damage, armor pen, recoil.'],['buys','Buy rounds','Full buy, force, eco: what each costs.'],['settings','Pro settings','Sens, crosshair and video from '+((D.pstats||{}).n_list||0)+' pros.'],['ranks','Ranks & Premier','CS Rating colours and how to climb.'],['commands','Console commands','Practice server block, copy and paste.'],['how/practice','Practice routine','One session, '+nSteps('practice').toLowerCase()+' steps.']].map(([h,t,p])=>`<a class="card" href="#${h}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="muted small">${p}</p></a>`).join('')}
+  </div>
+  <div class="note info">Search works for weapons, maps, callouts (try "palace" or "banana"), commands and pro players. Press <code>/</code> to jump to the search box.</div>`;
+}
+
+/* ---------- how-to ---------- */
+function howPage(id){
+  const s=HB[id];if(!s)return notFound();
+  const allv=[...new Set([].concat(...s.steps.map(p=>p.src.filter(k=>k.startsWith('video:')).map(k=>k.slice(6)))))];
+  return `${head(esc(s.title),esc(s.group))}
+  ${s.need?`<p class="muted">${rich(s.need)}</p>`:''}
+  <ol class="steps">${s.steps.map(p=>`<li class="card">${rich(p.t)} ${advTag(p)}${srcBtn(srcLine(p.src,p.q))}${p.note?`<p class="stepnote">${rich(p.note)}</p>`:''}</li>`).join('')}</ol>
+  ${s.check?`<div class="note">${rich(s.check)}</div>`:''}
+  ${id==='spray'?sprayPatterns():''}
+  ${allv.length?head('Videos for this'):''}${allv.length?vids(allv.filter(v=>!PATTERN_T[v]),3):''}
+  ${id==='premier'?`<p><a href="#ranks">See the CS Rating colours and skill groups.</a></p>`:''}`;
+}
+
+const PATTERN_T={'spray-ak':'AK-47','spray-m4a4':'M4A4','spray-m4a1s':'M4A1-S','spray-galil':'Galil AR','spray-famas':'FAMAS'};
+const PATTERN_W={weapon_ak47:'spray-ak',weapon_m4a1:'spray-m4a4',weapon_m4a1_silencer:'spray-m4a1s',weapon_galilar:'spray-galil',weapon_famas:'spray-famas'};
+function sprayPatterns(){
+  return `${head('Spray pattern per rifle','Each rifle has its own fixed pattern. One video per rifle, opened at the part about that gun; the upload date is on each card.')}
+  <div class="note info">Older pattern videos still show the right bullet path: the patch notes list no rifle recoil change, and the 2026-04-21 update changed only the camera motion (&ldquo;Bullet trajectories should continue to match CS2&rdquo;). ${srcBtn(srcLine(['news:2026-04-21']))}</div>
+  ${Object.entries(PATTERN_T).map(([k,g])=>{const w=WN[g];return `<h3 style="margin-top:16px">${w?`<a class="wl" data-w="${esc(w.slug)}">${esc(g)}</a>`:esc(g)}</h3>${vids([k],3)||'<p class="muted small">No pattern video for this rifle.</p>'}`;}).join('')}`;
+}
+
+/* ---------- what changed ---------- */
+const li=i=>/^[A-Z][\w' ]{1,24}$/.test(i)&&i.split(' ').length<=3?`<li style="list-style:none;margin-left:-18px"><b style="color:var(--ct)">${esc(i)}</b></li>`:`<li>${esc(i)}</li>`; // map name sub-headings inside MAPS
+function changes(){
+  const N=D.news||[];
+  const pe=(D.pool_events||[]);
+  return `${head('What changed','Official CS2 updates from the last 60 days (Steam patch notes), newest first. Big lines first; full notes behind each button.')}
+  <div class="note">Biggest for a returning player: crosshairs moved to a new pixel-based system with a new share-code format (Sept. 22-30), you can reload silently by holding reload, the Premier map pick changed to 1-2-1 with a random final map, and Cache is in the Active Duty pool instead of Overpass.</div>
+  ${N.map(n=>{const imp=n.secs.filter(s=>/Gameplay|Premier|Competitive|Settings|Crosshair|Maps/.test(s.name));const rest=n.secs.filter(s=>!imp.includes(s));
+   return `<div class="card news" style="margin-bottom:10px"><h3>${esc(n.date)} <a href="${esc(n.url)}" target="_blank" rel="noopener" class="tiny" style="font-family:var(--body);text-transform:none;letter-spacing:0">${esc(n.title)} (Steam)</a></h3>
+   ${imp.map(s=>`<h4 style="margin:.6em 0 .2em">${esc(s.name)}</h4><ul>${s.items.slice(0,8).map(li).join('')}</ul>${s.items.length>8?`<details><summary>${s.items.length-8} more</summary><div class="in"><ul>${s.items.slice(8).map(li).join('')}</ul></div></details>`:''}`).join('')}
+   ${rest.length?`<details><summary>${imp.length?'Other notes':'Notes'} (${rest.reduce((a,s)=>a+s.items.length,0)})</summary><div class="in">${rest.map(s=>`<h4 style="margin:.6em 0 .2em">${esc(s.name)}</h4><ul>${s.items.map(li).join('')}</ul>`).join('')}</div></details>`:''}</div>`;}).join('')}
+  ${head('Bigger changes this year','Gameplay, Premier, competitive, settings and map lines from the last 12 months of patch notes.')}
+  <details><summary>Show ${(D.big||[]).length} groups of changes</summary><div class="in">${(D.big||[]).map(b=>`<p class="small"><b>${esc(b.date)} &middot; ${esc(b.sec)}</b> <a href="${esc(b.url)}" target="_blank" rel="noopener" class="tiny">notes</a></p><ul class="small">${b.items.slice(0,12).map(i=>`<li>${esc(i)}</li>`).join('')}</ul>`).join('')}</div></details>
+  ${head('Active Duty pool history','Every add and remove in the official notes.')}
+  <div class="tablewrap"><table><thead><tr><th>Date</th><th>Change</th><th>Map</th><th>Notes</th></tr></thead><tbody>${pe.map(e=>`<tr><td>${esc(e[0])}</td><td>${e[1]==='added'?'<span class="cash">Added</span>':'<span style="color:var(--bad)">Removed</span>'}</td><td>${esc(e[2])}</td><td><a href="${esc(e[3])}" target="_blank" rel="noopener">Steam</a></td></tr>`).join('')}</tbody></table></div>`;
+}
+
+/* ---------- weapons ---------- */
+let WCAT='All', WSIDE='All', WQ='', WSORT='type';
+const CATS=['All','Pistols','SMGs','Rifles','Snipers','Heavy','Grenades','Gear'];
+function wTile(w){return `<div class="tile" data-w="${esc(w.slug)}" role="button" tabindex="0">${w.tier?tierB(w.tier,true):''}${wimg(w)}<b>${esc(w.name)}</b><span class="row"><span class="cash">${w.price?money(w.price):'Free'}</span>${sideP(w.side)}<span class="pill">${esc(w.cat)}</span></span>${w.dmg&&w.cat!=='Gear'?`<span class="tiny muted">${w.dmg} dmg &middot; ${w.ap}% armor pen &middot; ${w.rpm} rpm</span>`:''}</div>`;}
+function weapons(){
+  let L=W.filter(w=>(WCAT==='All'||w.cat===WCAT)&&(WSIDE==='All'||w.side===WSIDE||w.side==='Both')&&(!WQ||w.name.toLowerCase().includes(WQ)));
+  const CO=['Pistols','SMGs','Rifles','Snipers','Heavy','Grenades','Gear'];
+  const key={type:w=>String(CO.indexOf(w.cat)).padStart(2,'0')+String(w.price||0).padStart(5,'0'),price:w=>w.price||0,dmg:w=>-(w.dmg||0),ap:w=>-(w.ap||0),ttk:w=>w.ttk==null?9:w.ttk,name:w=>w.name}[WSORT];
+  L=L.slice().sort((a,b)=>{const x=key(a),y=key(b);return x<y?-1:x>y?1:0;});
+  return `${head('Weapons & gear',`Every buyable gun, grenade and piece of gear, with numbers from the game file weapons.vdata (game version ${esc(M.patch)}). Click a card for the full stats.`)}
+  <div class="tabs" id="wcat">${CATS.map(c=>`<button data-cat="${c}" class="${WCAT===c?'on':''}">${c}</button>`).join('')}</div>
+  <div class="filters"><input id="wq" type="search" placeholder="Filter by name" value="${esc(WQ)}" aria-label="Filter weapons">
+   <select id="wside" aria-label="Side"><option value="All">Both sides</option><option value="T"${WSIDE==='T'?' selected':''}>T can buy</option><option value="CT"${WSIDE==='CT'?' selected':''}>CT can buy</option></select>
+   <select id="wsort" aria-label="Sort"><option value="type">Sort: type, then price</option><option value="price"${WSORT==='price'?' selected':''}>Sort: price</option><option value="dmg"${WSORT==='dmg'?' selected':''}>Sort: damage</option><option value="ap"${WSORT==='ap'?' selected':''}>Sort: armor pen</option><option value="ttk"${WSORT==='ttk'?' selected':''}>Sort: armored kill time</option><option value="name"${WSORT==='name'?' selected':''}>Sort: name</option></select>
+   <span class="muted small">${L.length} shown</span></div>
+  <div class="wgrid">${L.map(wTile).join('')}</div>
+  <p class="src" style="margin-top:14px">Source: weapons.vdata, items_game.txt (sides) from SteamDatabase/GameTracking-CS2; names, descriptions and pictures from ByMykel/CSGO-API (game files). The tier letter is this guide's damage tier: see <a href="#tiers">Damage tiers</a>.</p>`;
+}
+function statBar(label,val,max,txt){const p=Math.max(0,Math.min(100,val/max*100));return `<div><b><span>${label}</span><span>${txt==null?val:txt}</span></b><div class="bar"><span style="width:${p}%"></span></div></div>`;}
+function weaponCard(slug){
+  const w=WB[slug];if(!w)return '<p>Not found.</p>';
+  const isGun=w.dmg&&w.cat!=='Gear'&&w.cat!=='Grenades'&&w.id!=='weapon_taser';
+  const vt=PATTERN_W[w.id]?[PATTERN_W[w.id],'spray']:/awp|ssg08/.test(w.id)?['awp']:isGun?['spray']:w.cat==='Grenades'?['utility']:[];
+  const use=[];
+  if(isGun){
+    use.push(w.onetap?`<b>One headshot kills through a helmet</b> at close range (${w.dmgtab.head[1]} damage).`:`Needs ${w.stk.head[1]} headshots through a helmet at close range (${w.dmgtab.head[1]} each).`);
+    use.push(`Kills an armored player with ${w.stk.chest[1]} chest hits${w.ttk!=null?` in ${w.ttk.toFixed(2)} s at full fire rate`:''}.`);
+    use.push(`Kill reward <span class="cash">${money(w.kill)}</span> in competitive.`);
+  }
+  if(w.id==='item_defuser')use.push('Cuts the defuse from 10 seconds to 5 (wiki). CT only.');
+  if(w.fire)use.push(`Fire: each flame lasts ${w.fire.life} s on average, and flames spread up to ${w.fire.range} units from where it lands. If it flies for more than ${w.fire.fuse} s it bursts in the air with no fire (wiki Molotov page). <span class="src">Game files: ${esc(w.fire.life_cvar)} ${w.fire.life} (&ldquo;${esc(w.fire.desc)}&rdquo;), ${esc(w.fire.range_cvar)} ${w.fire.range}, molotov_throw_detonate_time ${w.fire.fuse}. Smoke and flash durations: not in the game files, and the wiki's figures are from CS:GO, so they are not given here.</span>`);
+  if(w.id==='item_assaultsuit')use.push('Kevlar Vest plus helmet: armor for chest, stomach, arms and head.');
+  if(w.id==='item_kevlar')use.push('Armor for chest, stomach and arms; the head stays open.');
+  const t=w.dmgtab;
+  return `<div class="whead">${wimg(w)}<div><h2 style="margin-bottom:.2em">${esc(w.name)} ${w.tier?tierB(w.tier):''}</h2><div class="pills">${sideP(w.side)}<span class="pill">${esc(w.cat)}</span><span class="pill cash">${w.price?money(w.price):'Free'}</span>${w.auto?'<span class="pill">Full auto</span>':''}${w.silencer?'<span class="pill">Silenced</span>':''}${w.burst?'<span class="pill">Burst mode</span>':''}${w.zoom?'<span class="pill">Scope</span>':''}</div><p class="muted small" style="margin:.3em 0 0">${esc(w.desc)}</p></div></div>
+  ${w.wiki&&w.wiki.text?`<div class="note"><b>What it does:</b> ${w.wiki.official?'&ldquo;'+esc(w.wiki.text)+'&rdquo; (official description)':esc(w.wiki.text)} <span class="src">via <a href="https://counterstrike.fandom.com/wiki/${encodeURIComponent(w.wiki.page.replace('Kevlar_Helmet','Kevlar_+_Helmet'))}" target="_blank" rel="noopener">Counter-Strike Wiki</a></span></div>`:''}
+  ${use.length?`<div class="note">${use.join('<br>')}</div>`:''}
+  <dl class="kv"><dt>How to get it</dt><dd>Buy menu, ${esc(w.cat)}${w.side!=='Both'?`, ${w.side} side only`:', both sides'}, ${w.price?money(w.price):'free'}.</dd></dl>
+  ${isGun?`<div class="statgrid">${statBar('Damage',w.dmg*w.bullets,120,w.bullets>1?`${w.dmg} x ${w.bullets}`:w.dmg)}${statBar('Armor penetration',w.ap,100,w.ap+'%')}${statBar('Fire rate',w.rpm,1200,w.rpm+' rpm')}${statBar('Move speed',w.speed,250,w.speed+(w.speed_alt&&w.speed_alt!==w.speed?' / '+w.speed_alt+' scoped':''))}${statBar('Magazine',w.clip,150,`${w.clip} / ${w.reserve}`)}${statBar('Penetration',w.pen,2.5,w.pen)}</div>
+  <h4>Damage at close range (health lost)</h4>
+  <div class="tablewrap"><table><thead><tr><th>Hit</th><th class="num">No armor</th><th class="num">Armor</th><th class="num"><span class="pc">Hits to kill</span><span class="ph">Hits</span></th><th class="num"><span class="pc">Hits to kill (armor)</span><span class="ph">Hits (armor)</span></th></tr></thead><tbody>
+  ${['head','chest','stomach','legs'].map(p=>`<tr><td>${p[0].toUpperCase()+p.slice(1)}</td><td class="num">${t[p][0]}</td><td class="num">${t[p][1]}</td><td class="num">${w.stk[p][0]}</td><td class="num">${w.stk[p][1]}</td></tr>`).join('')}</tbody></table></div>
+  <p class="src">Damage x hitbox multiplier (head ${w.hs}x, chest 1x, stomach 1.25x, legs 0.75x; wiki Hitbox page) x armor penetration when armored (legs are never armored). Range falloff is not included: damage drops with distance (range modifier ${w.rm}). Armor that runs out mid-fight is not modelled.</p>
+  <details><summary>Accuracy and recoil (game values)</summary><div class="in">
+   <div class="statgrid"><div><b><span>Standing</span><span>${w.acc.stand}</span></b></div><div><b><span>Crouching</span><span>${w.acc.crouch}</span></b></div><div><b><span>Moving</span><span>${w.acc.move}</span></b></div><div><b><span>Jumping</span><span>${w.acc.jump}</span></b></div><div><b><span>Per shot fired</span><span>${w.acc.fire}</span></b></div><div><b><span>Base spread</span><span>${w.acc.spread}</span></b></div></div>
+   <p class="small muted">Inaccuracy x 1000 (lower is more accurate). Moving is ${w.acc.stand?Math.round(w.acc.move/w.acc.stand):'-'} times the standing value: stop before you shoot.</p>
+   <div class="statgrid"><div><b><span>Recoil magnitude</span><span>${w.recoil.mag}</span></b></div><div><b><span>Recoil angle variance</span><span>${w.recoil.angle_var}</span></b></div><div><b><span>Recovery standing (s)</span><span>${w.recoil.rec_stand}</span></b></div><div><b><span>Recovery crouching (s)</span><span>${w.recoil.rec_crouch}</span></b></div><div><b><span>Recoil seed</span><span>${w.recoil.seed}</span></b></div><div><b><span>Cycle time (s)</span><span>${w.cycle}</span></b></div></div>
+   <p class="small muted">The spray pattern is fixed for each gun (wiki Recoil page); learn it from the video below.</p></div></details>`:''}
+  ${PATTERN_W[w.id]?`<p class="small muted">Pattern videos may be older than this year: the 2026-04-21 update changed only the camera motion, and the patch notes list no rifle recoil change (<a href="#how/spray">How to control a spray</a>).</p>`:''}
+  ${vt.length&&vids(vt,2)?`<h4 style="margin-top:14px">${PATTERN_W[w.id]?'Spray pattern':isGun?'Spray and use':'How to use it'}: videos</h4>${vids(vt,2)}`:''}
+  <p class="src">Source: weapons.vdata and items_game.txt (game files, version ${esc(M.patch)}); picture and description: ByMykel/CSGO-API${w.cat==='Gear'&&w.id!=='weapon_taser'?' / Counter-Strike Wiki':''}.</p>`;
+}
+
+/* ---------- tiers ---------- */
+function tiers(){
+  const G=W.filter(w=>w.tier);
+  return `${head('Damage tiers','Whose rating: this guide, computed from the game files. What it measures: how fast a gun kills an armored player with chest hits at close range, at full fire rate, with every bullet hitting.')}
+  <div class="note warn">This is <b>not</b> a meta or "best gun" list. It ignores accuracy, recoil, movement, range, price and kill reward, so machine guns rank high here even though they spray wide. Use it to compare raw damage output inside one price bracket.</div>
+  <div class="note info">Meta (which guns pros and high-rated players buy most right now): <b>no recent source</b>. HLTV weapon statistics block automated access and no two dated sources from the last 60 days were found, so the guide does not rank guns by popularity. ${srcBtn('Searched: HLTV stats (HTTP 403 to scripts), Liquipedia (no weapon stats), YouTube tier-list videos (opinions, not data). Rule used: a meta claim needs two dated sources from the last 60 days that agree.')}</div>
+  ${['S','A','B','C','D'].map(t=>{const L=G.filter(w=>w.tier===t).sort((a,b)=>a.ttk-b.ttk);return `<div class="trow"><div class="lab t${t}">${t}<small>${esc(D.tiers[t])}</small></div><div class="its">${L.map(w=>`<span class="chip" data-w="${esc(w.slug)}" role="button" tabindex="0">${wimg(w)}<span>${esc(w.name)}<br><i>${w.stk.chest[1]===1?'1 shot':w.ttk.toFixed(2)+' s &middot; '+w.stk.chest[1]+' hits'} &middot; ${money(w.price)}</i></span></span>`).join('')||'<span class="muted small">none</span>'}</div></div>`;}).join('')}
+  <div class="trow"><div class="lab" style="background:#3a4552;color:#dfe5eb;font-size:1.1rem">Not rated<small style="color:#c7cfd8">shotguns</small></div><div class="its">${W.filter(w=>w.cat==='Heavy'&&w.bullets>1).map(w=>`<span class="chip" data-w="${esc(w.slug)}" role="button" tabindex="0">${wimg(w)}<span>${esc(w.name)}<br><i>${w.bullets} pellets x ${w.dmg} &middot; ${money(w.price)}</i></span></span>`).join('')}<span class="muted small" style="align-self:center">Pellets spread, so the "all pellets hit" numbers only hold point blank.</span></div></div>
+  ${head('One-shot headshot through a helmet','At close range, from the damage, headshot multiplier and armor penetration in the game files.')}
+  <div class="pills">${G.filter(w=>w.onetap).map(w=>`<span class="chip" data-w="${esc(w.slug)}" role="button" tabindex="0">${wimg(w)}<span>${esc(w.name)}<br><i>${w.dmgtab.head[1]} damage</i></span></span>`).join('')}</div>
+  <p class="src">Letters: ${Object.entries(D.tiers).map(([k,v])=>`${k} = ${esc(v)}`).join('; ')}. Shotguns count all pellets hitting.</p>`;
+}
+
+/* ---------- economy ---------- */
+function buys(){
+  const e=D.econ||{};
+  const guns=W.filter(w=>w.kill!=null&&w.price&&!['Gear','Grenades'].includes(w.cat)).sort((a,b)=>b.kill-a.kill||a.price-b.price);
+  const L=D.loadouts||[];
+  const rounds=['Pistol','Eco','Force buy','Full buy'];
+  const maxL=Math.max(...(e.ladder||[1]));
+  return `${head('Economy & buy rounds',`The money rules from gamemode_competitive.cfg (game files) and the wiki's Money page. Answer first: buy together, save together.`)}
+  <div class="big">
+   <div class="card stat"><b class="cash">${money(e.mp_startmoney)}</b><span>start of each half</span></div>
+   <div class="card stat"><b class="cash">${money(e.mp_maxmoney)}</b><span>most you can hold</span></div>
+   <div class="card stat"><b class="cash">${money(e.cash_team_elimination_bomb_map)}</b><span>win by elimination (each)</span></div>
+   <div class="card stat"><b class="cash">${money(e.cash_team_terrorist_win_bomb)}</b><span>win by bomb / defuse (each)</span></div>
+   <div class="card stat"><b class="cash">${money(e.cash_player_bomb_planted)}</b><span>to the bomb planter</span></div>
+   <div class="card stat"><b>${e.mp_buytime}s</b><span>buy time after freeze time (${e.mp_freezetime}s)</span></div>
+  </div>
+  <div class="grid two">
+   <div class="card"><h3>Loss bonus</h3><p class="small muted">Each player on the losing team gets this. It grows by ${money(e.cash_team_loser_bonus_consecutive_rounds)} per counted loss; a win lowers the count by one${e.loss_aversion===1?'':' (check: the game value changed)'}. Each half starts with ${e.mp_starting_losses} loss counted, so a lost pistol round is loss count 2 and pays ${money(e.ladder&&e.ladder[1])}.</p>
+    <div class="ladder">${(e.ladder||[]).map(v=>`<div style="height:${v/maxL*100}%"><span>${money(v)}</span></div>`).join('')}</div><div class="ladx">${(e.ladder||[]).map((v,i)=>`<span>count ${i+1}${i===4?'+':''}</span>`).join('')}</div><p class="tiny muted" style="margin:2px 0 0">Loss count (losses counted so far this half, including the one each half starts with).</p>
+    <p class="src">Source: cash_team_loser_bonus ${e.cash_team_loser_bonus}, cash_team_loser_bonus_consecutive_rounds ${e.cash_team_loser_bonus_consecutive_rounds}, mp_starting_losses ${e.mp_starting_losses} (game files); a win steps the count down by one: mp_consecutive_loss_aversion ${e.loss_aversion} (convar dump: &ldquo;${esc(e.loss_aversion_desc)}&rdquo;); cap of ${money(e.ladder&&e.ladder[4])}: wiki Money page.</p></div>
+   <div class="card"><h3>Other money</h3><dl class="kv">
+    <dt>Kill with most guns</dt><dd class="cash">${money(e.cash_player_killed_enemy_default)}</dd>
+    <dt>Defuse (to the defuser)</dt><dd class="cash">${money(e.cash_player_bomb_defused)}</dd>
+    <dt>Bomb planted, then defused</dt><dd class="cash">${money(e.cash_team_planted_bomb_but_defused)} T team bonus</dd>
+    <dt>CT team award per T killed</dt><dd class="cash">$50 each, win or lose <span class="src">(<a href="${esc((D.news_urls||{})['2025-07-16']||'#')}" target="_blank" rel="noopener">patch notes 2025-07-16</a>)</span></dd>
+    <dt>Team short-handed</dt><dd class="cash">${money(e.cash_team_bonus_shorthanded)}</dd>
+    <dt>Killing a teammate</dt><dd style="color:var(--bad)">-${money(Math.abs(e.cash_player_killed_teammate||0))}</dd>
+    <dt>Grenades you can carry</dt><dd>${e.grenade_limit} (flashbangs: ${e.flash_limit})</dd>
+    <dt>Round time</dt><dd>${e.mp_roundtime} min; bomb timer ${e.c4} s</dd>
+    <dt>Match length</dt><dd>${e.mp_maxrounds} rounds (first to ${e.mp_maxrounds/2+1})</dd></dl>
+    <p class="src">Source: gamemode_competitive.cfg; bomb timer from the wiki C4 page.</p></div>
+  </div>
+  ${head('Standard buys','What each usual buy costs right now (prices summed from the game files). Which rifle or SMG you pick inside a buy is a preference.')}
+  <div class="tabs" id="rtabs">${['All',...rounds].map(r=>`<button data-round="${r}" class="${BR===r?'on':''}">${r}</button>`).join('')}</div>
+  <div class="grid three">${L.filter(l=>BR==='All'||l.round===BR).map(l=>`<div class="card loadout"><h3>${esc(l.name)}</h3><div class="pills"><span class="pill">${esc(l.round)}</span>${sideP(l.side)}<span class="pill cash">${money(l.total)}</span></div><div class="its">${l.items.map(i=>{const w=WID[i];return w?`<span data-w="${esc(w.slug)}" style="cursor:pointer">${wimg(w)}${esc(w.name)}<br><b class="cash">${money(w.price)}</b></span>`:'';}).join('')}</div><p class="small" style="margin:0">${rich(l.when)} ${srcBtn(srcLine(l.src))}</p></div>`).join('')}</div>
+  ${head('Kill reward by gun','From each weapon file (m_nKillAward).')}
+  <div class="tablewrap"><table><thead><tr><th>Weapon</th><th class="phide">Type</th><th class="num">Price</th><th class="num"><span class="pc">Kill reward</span><span class="ph">Reward</span></th><th class="num"><span class="pc">Kills to pay it back</span><span class="ph">Kills to repay</span></th></tr></thead><tbody>${guns.map(w=>`<tr><td class="l" data-w="${esc(w.slug)}">${esc(w.name)}</td><td class="phide">${esc(w.cat)}</td><td class="num cash">${money(w.price)}</td><td class="num cash">${money(w.kill)}</td><td class="num">${w.kill?Math.ceil(w.price/w.kill):'-'}</td></tr>`).join('')}</tbody></table></div>
+  ${head('Videos')}${vids(['economy','pistol'],3)}`;
+}
+let BR='All';
+
+/* ---------- maps ---------- */
+function mapsPage(){
+  return `${head('Maps & callouts','The seven Active Duty maps (Premier and competitive pool). Each page has the radar with every callout, site notes from the wikis, lineups from recent videos and map guides.')}
+  <div class="mgrid">${MAPS.map(m=>`<a class="mcard" href="#map/${m.slug}"><img src="${esc(m.img)}" alt="${esc(m.name)}" loading="lazy" onerror="${IMG_ERR}"><span class="t"><b>${esc(m.name)}</b><br><span class="tiny muted">${m.layers.reduce((a,l)=>a+l.markers.length,0)} callouts &middot; ${m.lineups.length} lineup clips${m.pool?` &middot; in the pool since ${esc(m.pool[1])}`:''}</span></span></a>`).join('')}</div>
+  <p class="src" style="margin-top:12px">Pool: the official patch notes (every add/remove is on <a href="#changes">What changed</a>). Photos: Liquipedia (CC BY-SA 3.0).</p>`;
+}
+let MLAYER=0, MLAB=window.innerWidth>=600, MKIND='All', LALL=false;
+const LPHONE=10;   // the first 10 lineups of each type (phone and PC), the rest behind "Show all"
+function lineupIntro(m){
+  const c=m.lineup_counts||{}, K=[['Smoke','smoke','smokes'],['Flash','flash','flashes'],['Molotov','molotov','molotovs'],['HE','HE grenade','HE grenades']];
+  const have=K.filter(([k])=>c[k]).map(([k,a,b])=>plural(c[k],a,b)), miss=K.slice(0,3).filter(([k])=>!c[k]).map(([,,b])=>b);
+  const whole=m.lineups.filter(l=>l.whole).length, old=[...new Set(m.lineups.filter(l=>l.older).map(l=>l.date))].sort();
+  const nw=d=>`<span class="nw">${esc(d)}</span>`;
+  const oldTxt=old.length?` Few recent videos show these flashes or molotovs, so ${plural(old.length,'video from','videos from')} ${old.map(nw).join(', ')} ${old.length===1?'is':'are'} used too (marked "older"); ${m.layout_last?`each was uploaded after ${esc(m.name)}'s last layout change in the patch notes (${nw(m.layout_last)})`:`the patch notes list no layout change for ${esc(m.name)} since CS2 came out (${nw(M.cs2_release)})`}.`:'';
+  return `${have.join(', ')||'No lineups'}, taken from the chapters of lineup videos${whole?` (${plural(whole,'entry is a whole video','entries are whole videos')} of flashes or molotovs whose chapters do not name single throws)`:''}.${miss.length?` The video search (uploads since ${esc(M.videos_min)}) found no ${miss.join(' or ')} for ${esc(m.name)}.`:''} Click one to play the video at that throw. T or CT is shown where the chapter or video title says it.${m.lineups_dropped?` ${plural(m.lineups_dropped,'chapter is','chapters are')} left out because they name a plan or no target, are a single word, or are in another language; sponsor reads are left out too.`:''}${oldTxt}`;
+}
+function radarAge(m,L){
+  const ch=L.layout_after||[];
+  if(!ch.length&&!L.pre_cs2)return `<p class="src">No layout change for ${esc(m.name)} in the official patch notes since this radar was uploaded.</p>`;
+  const why=[L.pre_cs2?`it was uploaded before CS2 came out (${esc(M.cs2_release)})`:'',ch.length?`${plural(ch.length,'layout change')} in the patch notes came later`:''].filter(Boolean).join(', and ');
+  return `<div class="note warn small radarage"><b>Older layout.</b> This radar may not match the map you play: ${why}. Use it for names, not exact walls.${ch.length?`<details><summary>Layout changes since ${esc(L.radar_date)}</summary><ul>${ch.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.date)}</a>: ${esc(c.t)}</li>`).join('')}</ul><p class="src">From the [ MAPS ] part of the official patch notes. Clipping, gap, lighting, sound and bug fixes are left out.</p></details>`:''}</div>`;
+}
+function mapPage(slug,hl){
+  const m=MB[slug];if(!m)return notFound();
+  if(MLAYER>=m.layers.length)MLAYER=0;
+  const L=m.layers[MLAYER];
+  const cats=['Bombsite','CT Spawn','T Spawn','Callout','Inner-Site Callout'];
+  const cl=c=>c==='Bombsite'?'Bombsite':c==='CT Spawn'?'CT':c==='T Spawn'?'T':/Inner/.test(c)?'Inner':'Callout';
+  const hlc=hl?decodeURIComponent(hl).toLowerCase():'';
+  const isHl=n=>hlc&&n.toLowerCase().split('/').map(x=>x.trim()).includes(hlc)||hlc===n.toLowerCase();
+  const lusAll=m.lineups.filter(l=>MKIND==='All'||l.kind===MKIND||l.side===MKIND), seenK={};
+  const lus=!LALL?lusAll.filter(l=>(seenK[l.kind]=(seenK[l.kind]||0)+1)<=LPHONE):lusAll;
+  const kinds=['All',...new Set(m.lineups.map(l=>l.kind)),...['T','CT'].filter(x=>m.lineups.some(l=>l.side===x))];
+  const S=m.setups;
+  const age=l=>{const n=l.n_recent, d=(l.dated||[]).filter(x=>!x.official);const nd=x=>`<span class="nw">${esc(x)}</span>`, old=d.filter(x=>!x.recent).map(x=>x.published?`${nd(x.date)} (updated; first published ${nd(x.published)})`:nd(x.date));
+    const off=(l.official||[]).length?` + patch notes ${l.official.map(esc).join(', ')}`:'';
+    return n>=2?`<span class="pill age ok" title="Two or more sources dated in the last 60 days say this">${n} recent sources${off}</span>`
+      :`<span class="pill age warn" title="A meta claim needs two dated sources from the last 60 days">${n===1?'1 recent source':'no recent source'}${old.length?`; older: ${old.join(', ')}`:''}${off}</span>`;};
+  const setLine=l=>`<li>${rich(l.t)} ${age(l)} ${srcBtn(srcLine(l.src,l.q))}</li>`;
+  const setupHtml=S?`${head('Default setups','A common starting shape for each side: who goes where. From dated written map guides; open Source for the quotes and dates. Each line says how many of its sources are from the last 60 days: a line with fewer than two is one guide\'s view, not a settled default. Adjust to your team and the enemy.')}
+  <div class="setup"><div class="card"><h4 class="ct">CT side</h4><ol>${S.ct.map(setLine).join('')}</ol></div><div class="card"><h4 class="t">T side</h4><ol>${S.t.map(setLine).join('')}</ol></div></div>`:'';
+  const W8=(m.watch||[]).slice(0,8);
+  const watchHtml=W8.length?`<h4 style="margin-top:14px">Watch the setups explained</h4><div class="card" style="padding:4px 0">${W8.map(l=>`<div class="lu" data-vid="${esc(l.vid)}" data-at="${l.at}" data-title="${esc(m.name+': '+l.t)}" role="button" tabindex="0"><span class="k k-Utility">Guide</span><span>${esc(l.t)}<br><span class="tiny muted">${esc(l.ch)} &middot; ${esc(l.date)}</span></span><span class="at">${Math.floor(l.at/60)}:${String(l.at%60).padStart(2,'0')}</span></div>`).join('')}</div><p class="src">Chapters of the map guide videos below whose titles name a side, a default, a setup or positions; each opens the video at that point.</p>`:'';
+  return `${head(esc(m.name),`${m.layers.reduce((a,l)=>a+l.markers.length,0)} callouts &middot; ${m.lineups.length} lineup clips &middot; ${m.pool?`in the Active Duty pool since ${esc(m.pool[1])}`:'long-standing Active Duty map'}`)}
+  <div class="mapwrap">
+   <div>
+    ${m.layers.length>1?`<div class="tabs" id="mlayer">${m.layers.map((l,i)=>`<button data-layer="${i}" class="${i===MLAYER?'on':''}">${esc(l.label)}</button>`).join('')}</div>`:''}
+    <div class="radar${MLAB?'':' nolab'}" id="radar"><img src="${esc(L.radar)}" alt="${esc(m.name)} radar" onerror="${IMG_ERR}">${L.markers.map((k,i)=>`<span class="mk c-${cl(k.c)}${isHl(k.n)?' hl':''}${k.closed?' closed':''}" style="left:${k.x}%;top:${k.y}%" data-i="${i}" title="${esc(k.n)}${k.closed?` (closed ${esc(k.closed)})`:''}">${esc(k.n)}</span>`).join('')}</div>
+    <div class="filters" style="margin-top:8px"><button class="copy" id="mlab">${MLAB?'Hide labels':'Show labels'}</button><span class="src">Radar and callout positions: <a href="${esc(L.src)}" target="_blank" rel="noopener">Counter-Strike Wiki interactive map</a>, radar picture uploaded ${esc(L.radar_date)}.</span></div>
+    ${radarAge(m,L)}
+    ${S?setupHtml:watchHtml}
+   </div>
+   <div>
+    <h3>Callouts</h3><p class="small muted">Tap a name to find it on the radar.</p>
+    ${cats.map(c=>{const ks=L.markers.map((k,i)=>[k,i]).filter(([k])=>k.c===c||(c==='Callout'&&!cats.includes(k.c)));return ks.length?`<h4 style="margin:.8em 0 .3em">${esc(c)}</h4><div class="clist">${ks.map(([k,i])=>`<button data-mi="${i}" class="${isHl(k.n)?'hl':''}${k.closed?' closed':''}"${k.closed?` title="${esc(k.closed_t)} (patch notes ${esc(k.closed)})"`:''}>${esc(k.n)}${k.closed?` <span class="tiny">closed ${esc(k.closed)}</span>`:''}</button>`).join('')}</div>`:'';}).join('')}
+    <h3 style="margin-top:18px">Site notes</h3>
+    ${m.notes_layout&&m.notes.length?`<div class="note warn small">${rich(m.notes_layout.t)} Current default setups: below. ${srcBtn(srcLine(m.notes_layout.src,m.notes_layout.q))}</div>`:''}
+    ${m.notes.length?m.notes.map((n,i)=>`<details${i<2&&!m.notes_layout?' open':''}><summary>${esc(n.title)}</summary><div class="in small">${n.html}</div></details>`).join('')+`<p class="src">Source: <a href="${esc(m.notes_src.url)}" target="_blank" rel="noopener">${esc(m.notes_src.name)}</a> (quoted; CC BY-SA).${S?'':' How each side sets up: see the map guide chapters below.'}</p>`:`<p class="muted small">The wikis have no current site notes for this map${S?'; the default setups for both sides are below.':'.'}</p>`}
+    ${S?watchHtml:''}
+   </div>
+  </div>
+  ${head('Lineups',lineupIntro(m))}
+  ${m.lineups.length?`<div class="tabs" id="lkind">${kinds.map(k=>`<button data-kind="${esc(k)}" class="${MKIND===k?'on':''}">${esc(k)}</button>`).join('')}</div>
+  <div class="card lugrid" style="padding:4px 0">${lus.map(l=>`<div class="lu" data-vid="${esc(l.vid)}" data-at="${l.at}" data-title="${esc(m.name+': '+l.t)}" role="button" tabindex="0"><span class="k k-${esc(l.kind)}">${esc(l.kind)}</span><span>${esc(l.t)}${l.side?` <span class="pill side-${esc(l.side)}" title="From the ${esc(l.side_from)}">${esc(l.side)}</span>`:''}<br><span class="tiny muted">${esc(l.ch)} &middot; <span class="nw">${esc(l.date)}</span>${l.older?' <span class="pill age warn" title="Uploaded before the six-month window; after the map\'s last layout change">older</span>':''}</span></span><span class="at">${l.whole?'video':Math.floor(l.at/60)+':'+String(l.at%60).padStart(2,'0')}</span></div>`).join('')||'<p class="muted small" style="padding:8px 12px">None of this type.</p>'}</div>${lus.length<lusAll.length?`<button class="copy" id="lall" style="margin-top:8px">Show all ${lusAll.length} lineups</button>`:''}`:'<p class="muted">No chaptered lineup video was found; see the videos below.</p>'}
+  ${head('Lineup videos')}${m.videos.util.length?`<div class="grid three">${m.videos.util.map(v=>vidCard(v)).join('')}</div>`:'<p class="muted small">None found.</p>'}
+  ${head('Map guides: callouts, setups, tips')}${m.videos.guide.length?`<div class="grid three">${m.videos.guide.map(v=>vidCard(v)).join('')}</div>`:'<p class="muted small">None found.</p>'}
+  <p class="src">Videos found by a YouTube search on ${esc(M.videos_searched)} (uploaded since ${esc(M.videos_min)}${m.lineups.some(l=>l.older)?'; flash and molotov videos marked "older" go back further, see above':''}); chapter titles are the creators' own. Nothing is downloaded: videos play from youtube-nocookie.com.</p>`;
+}
+
+/* ---------- pro settings ---------- */
+let PROS=null, PQ='', PROLE='All', PSORT='', PDESC=false, PLIMIT=60;
+function loadPros(cb){if(window.CS2PROS){PROS=window.CS2PROS;cb();return;}const s=document.createElement('script');s.src='data/pros.js?v=2026-11-19-776334';s.onload=()=>{PROS=window.CS2PROS;cb();};s.onerror=()=>{main.insertAdjacentHTML('beforeend','<p class="note warn">Could not load data/pros.js.</p>');};document.head.appendChild(s);}
+function distBox(title,sh,note){if(!sh||!sh[0]||!sh[0].length)return '';return `<div class="card"><h4>${esc(title)}</h4><div class="dist">${sh[0].map(([k,n,p])=>`<span>${esc(k)}<div class="bar"><span style="width:${p}%"></span></div></span><span class="tiny muted" style="text-align:right">${pct(p)}</span>`).join('')}</div><p class="src">${sh[1]} players${note?' &middot; '+note:''}</p></div>`;}
+// phones: the medians above are the answer; each group of charts opens with a button (always open on PC)
+function chartGroup(t,p,body){const n=(body.match(/<h4>/g)||[]).length;return `<details class="charts"${window.innerWidth>=900?' open':''}><summary><span class="h">${esc(t)}</span> <span class="muted small">${n} charts</span></summary>${p?`<p class="muted small">${p}</p>`:''}${body}</details>`;}
+function settingsPage(){
+  const P=D.pstats||{};
+  return `${head('Settings & crosshair',`What ${Number(P.n_list||0).toLocaleString('en-US')} pros on prosettings.net use (sensitivity, resolution), and the full settings of the ${P.n_detail} highest-listed players (crosshair, video, radar), pulled ${esc(M.pulled)}.`)}
+  <div class="note info">These are observations, not "best settings". Copy what feels right, then keep it. ${srcBtn(`prosettings.net CS2 list, pulled ${esc(M.pulled)}; player pages last updated between ${esc((P.updated||[])[0])} and ${esc((P.updated||[])[1])}. The list is ordered by team ranking on the site; the detailed set is its first ${P.n_detail} players.`)}</div>
+  <div class="big">
+   <div class="card stat"><b>${P.edpi_med}</b><span>median eDPI (DPI x sens); middle half ${(P.edpi_q||[])[0]}-${(P.edpi_q||[])[1]}</span></div>
+   <div class="card stat"><b>${P.sens_med}</b><span>median in-game sensitivity</span></div>
+   <div class="card stat"><b>${P.zoom_med}</b><span>median zoom sensitivity</span></div>
+   <div class="card stat"><b>${P.xh_len_med} / ${P.xh_thick_med} / ${P.xh_gap_med}</b><span>median crosshair length / thickness / gap (px)</span></div>
+  </div>
+  ${chartGroup('Mouse and display','',`<div class="grid four">${distBox('DPI',P.dpi)}${distBox('Polling rate (Hz)',P.hz)}${distBox('Resolution',P.res)}${distBox('Aspect ratio',P.ar)}${distBox('Scaling mode',P.scale)}${distBox('Role',P.role)}</div>`)}
+  ${chartGroup('Crosshair','New pixel-based system (since the Sept. 22 update).',`<div class="grid four">${distBox('Style',P.xh_style)}${distBox('Length (px)',P.xh_len)}${distBox('Thickness (px)',P.xh_thick)}${distBox('Gap (px)',P.xh_gap)}${distBox('Centre dot',P.xh_dot)}${distBox('Outline',P.xh_outline)}${distBox('Follow recoil',P.xh_recoil)}${distBox('Colour (R,G,B)',P.xh_color)}</div>`)}
+  ${chartGroup('Video, viewmodel and radar','',`<div class="grid four">${distBox('Boost Player Contrast',P.contrast)}${distBox('V-Sync',P.vsync)}${distBox('NVIDIA Reflex',P.reflex)}${distBox('Display mode',P.display)}${distBox('MSAA',P.msaa)}${distBox('Shadow quality',P.shadow)}${distBox('Model / texture detail',P.texture)}${distBox('Shader detail',P.shader)}${distBox('Ambient occlusion',P.ao)}${distBox('FidelityFX Super Resolution',P.fsr)}${distBox('Viewmodel FOV',P.vm_fov)}${distBox('Radar map zoom',P.radar_scale)}${distBox('Radar centers the player',P.radar_center)}${distBox('Radar rotating',P.radar_rotate)}${distBox('HUD scale',P.hud_scale)}</div>`)}
+  ${head('All pros','Search, filter and sort. Players with a Settings button have full settings (crosshair, video, console values).')}
+  <div id="prolist"><p class="muted">Loading the pro list...</p></div>
+  <p><a href="#how/crosshair">How to set up your crosshair</a> &middot; <a href="#how/settings">How to set sensitivity and video</a></p>`;
+}
+function proTable(){
+  if(!PROS)return '';
+  let L=PROS.list.filter(p=>(PROLE==='All'||p.role===PROLE)&&(!PQ||(p.n+' '+p.team).toLowerCase().includes(PQ)));
+  if(PSORT){L=L.slice().sort((a,b)=>{const x=a[PSORT],y=b[PSORT];if(x==null)return 1;if(y==null)return -1;return (x<y?-1:x>y?1:0)*(PDESC?-1:1);});}
+  const cols=[['n','Player'],['team','Team'],['role','Role'],['dpi','DPI'],['sens','Sens'],['edpi','eDPI'],['zoom','Zoom'],['hz','Hz'],['res','Resolution'],['ar','Aspect'],['scale','Scaling']];
+  const num=new Set(['dpi','sens','edpi','zoom','hz']);
+  return `<div class="filters"><input id="pq" type="search" placeholder="Player or team" value="${esc(PQ)}" aria-label="Filter pros"><select id="prole" aria-label="Role"><option value="All">All roles</option>${['Rifler','Sniper'].map(r=>`<option${PROLE===r?' selected':''}>${r}</option>`).join('')}</select><span class="muted small">${L.length} players</span></div>
+  <div class="tablewrap"><table><thead><tr>${cols.map(([k,t])=>`<th class="sort${num.has(k)?' num':''}" data-ps="${k}">${t}${PSORT===k?(PDESC?' &darr;':' &uarr;'):''}</th>`).join('')}<th></th></tr></thead><tbody>
+  ${L.slice(0,PLIMIT).map(p=>`<tr><td>${esc(p.n)}</td><td>${esc(p.team)}</td><td>${esc(p.role)}</td>${['dpi','sens','edpi','zoom','hz'].map(k=>`<td class="num">${p[k]==null?'-':p[k]}</td>`).join('')}<td>${esc(p.res)}</td><td>${esc(p.ar)}</td><td>${esc(p.scale)}</td><td>${p.d?`<button class="copy" data-pro="${esc(p.s)}">Settings</button>`:''}</td></tr>`).join('')}</tbody></table></div>
+  ${L.length>PLIMIT?`<p><button class="copy" id="pmore">Show ${Math.min(200,L.length-PLIMIT)} more</button></p>`:''}
+  <p class="src">Source: <a href="https://prosettings.net/lists/cs2/" target="_blank" rel="noopener">prosettings.net CS2 list</a>, pulled ${esc(M.pulled)}. Gear columns are left out.</p>`;
+}
+function xhSvg(f){
+  const n=k=>{const v=parseFloat(f[k]);return isNaN(v)?0:v;};
+  const len=n('cl_crosshair_length'),th=Math.max(1,n('cl_crosshair_thickness')),gap=n('cl_crosshair_gap'),dot=f.cl_crosshairdot==='Yes',ol=f.cl_crosshair_drawoutline==='Yes';
+  const col=`rgba(${n('cl_crosshaircolor_r')},${n('cl_crosshaircolor_g')},${n('cl_crosshaircolor_b')},${(f.cl_crosshaircolor_a?n('cl_crosshaircolor_a'):255)/255})`;
+  const s=4,c=55,T=f.cl_crosshair_t==='Yes';
+  const r=(x,y,w,h)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${col}"${ol?' stroke="#000" stroke-width="1.5"':''}/>`;
+  const L=len*s,TH=th*s,G=gap*s+TH/2;
+  let out=r(c+G,c-TH/2,L,TH)+r(c-G-L,c-TH/2,L,TH)+r(c-TH/2,c+G,TH,L)+(T?'':r(c-TH/2,c-G-L,TH,L));
+  if(dot)out+=r(c-TH/2,c-TH/2,TH,TH);
+  return `<svg class="xh" viewBox="0 0 110 110" role="img" aria-label="Crosshair preview">${out}</svg>`;
+}
+function proCard(s){
+  const p=PROS&&PROS.list.find(x=>x.s===s);if(!p||!p.d)return '<p>Not found.</p>';
+  const f=p.d.f;const ok=new Set(D.valid_fields||[]);
+  const grp=[['Mouse',['dpi','sensitivity','edpi','zoom_sensitivity_ratio_mouse','hz','windows_sensitivity']],['Crosshair',Object.keys(f).filter(k=>/crosshair|ironsight/.test(k))],['Viewmodel',['viewmodel_fov','viewmodel_offset_x','viewmodel_offset_y','viewmodel_offset_z']],['Video',['resolution','aspect_ratio','scaling_mode','display_mode','boost_player_contrast','wait_for_vertical_sync','nvidia_reflex_low_latency','max_fps','multisampling_anti-aliasing_mode','global_shadow_quality','dynamic_shadows','model_texture_detail','texture_filtering_mode','shader_detail','particle_detail','ambient_occlusion','high_dynamic_range','fidelityfx_super_resolution']],['HUD and radar',['hud_scaling','cl_hud_color','cl_radar_always_centered','cl_radar_rotate','cl_radar_square_with_scoreboard','cl_radar_hud_scale','cl_radar_scale']]];
+  const LAB=D.field_labels||{};
+  const yn=v=>v==='Yes'?'1':v==='No'?'0':v;
+  const cons=Object.keys(f).filter(k=>ok.has(k)&&/^cl_crosshair|^viewmodel_|^cl_radar_scale$|^cl_radar_hud_scale$/.test(k)&&f[k]!==''&&/^(-?\d+(\.\d+)?|Yes|No)$/.test(f[k])).map(k=>`${k} ${yn(f[k])}`);
+  return `<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding-right:28px">${xhSvg(f)}<div><h2 style="margin:0">${esc(p.n)}</h2><div class="pills"><span class="pill">${esc(p.team)}</span><span class="pill">${esc(p.role)}</span><span class="pill">eDPI ${p.edpi==null?'-':p.edpi}</span></div><p class="tiny muted" style="margin:0">Crosshair preview drawn from the values below (approximate). Page updated ${esc(p.d.updated)}.</p></div></div>
+  ${grp.map(([t,ks])=>{const rows=ks.filter(k=>f[k]!=null&&f[k]!=='');return rows.length?`<h4 style="margin-top:12px">${t}</h4><dl class="kv">${rows.map(k=>`<dt>${esc(LAB[k]||k)}</dt><dd>${esc(f[k])}</dd>`).join('')}</dl>`:'';}).join('')}
+  ${cons.length?`<h4 style="margin-top:12px">Console values <button class="copy" data-copy="${esc(cons.join('; '))}">Copy</button></h4><pre class="block">${esc(cons.join('\n'))}</pre><p class="src">Only values whose console name exists in the game's convar dump are listed. Style and colour presets: set them in Settings &gt; Crosshair/Scopes.</p>`:''}
+  <p class="src">Source: <a href="https://prosettings.net/players/${encodeURIComponent(p.s)}/" target="_blank" rel="noopener">prosettings.net player page</a>.</p>`;
+}
+
+/* ---------- roles, ranks, commands, videos, sources ---------- */
+function roles(){
+  const P=D.pstats||{};
+  return `${head('Roles','Who does what in a five-player team, and how to play each role. Definitions and tips from dated written role guides and the role videos below; the role split is from prosettings.net.')}
+  ${D.role_pick?`<div class="note info"><b>Not sure which to play?</b> ${byLead(D.role_pick.by)}${rich(D.role_pick.t)} ${srcBtn(srcLine(D.role_pick.src,D.role_pick.q))}</div>`:''}
+  <div class="grid three">${(D.roles||[]).map(r=>`<div class="card"><h3>${esc(r.name)}</h3><p>${rich(r.what)} ${srcBtn(srcLine(r.src,r.q))}</p>${(r.tips||[]).length?`<h4>How to play it</h4>${r.tips_by?`<p class="tiny muted">${byNote(r.tips_by)}</p>`:''}<ol class="tips">${r.tips.map(t=>`<li>${rich(t.t)} ${srcBtn(srcLine(t.src,t.q))}</li>`).join('')}</ol>`:''}</div>`).join('')}</div>
+  ${head('Role split among listed pros')}<div class="grid four">${distBox('Role',P.role,'prosettings lists only Rifler or Sniper')}</div>
+  ${head('Videos')}${vids(['roles','awp'],3)}`;
+}
+function ranks(){
+  const C={'Grey':'#9aa3ad','Light blue':'#8fc8ee','Blue':'#4f7fe0','Purple':'#a77be6','Pink':'#e277c9','Red':'#e0584a','Yellow':'#f2c94c'};
+  const prem=HB.premier;
+  return `${head('Ranks & Premier','Premier uses a CS Rating; Competitive uses a Skill Group per map.')}
+  <div class="grid two"><div class="card"><h3>CS Rating colours</h3>${(D.rating||[]).map(b=>`<div class="band"><b style="background:${C[b.color]||'#999'}">${esc(b.color)}</b><span class="mono">${b.from.toLocaleString('en-US')}${b.to?' - '+b.to.toLocaleString('en-US'):'+'}</span></div>`).join('')}<p class="src">Source: Counter-Strike Wiki, Premier page.</p></div>
+  <div class="card"><h3>Premier in short</h3><ul class="small">${((prem||{}).summary||[]).map(p=>`<li>${rich(p.t)} ${srcBtn(srcLine(p.src,p.q))}</li>`).join('')}</ul><p><a href="#how/premier">How to get and climb a CS Rating</a></p><p class="src">Sources: wiki Premier page; patch notes 2026-09-22.</p></div></div>
+  ${head('Competitive skill groups','Per map, 18 groups from lowest to highest.')}
+  <div class="sgrid">${(D.skill||[]).map(g=>`<div class="card"><img src="${esc(g.img)}" alt="" loading="lazy" onerror="${IMG_ERR}"><br><b>${g.n}.</b> ${esc(g.name)}</div>`).join('')}</div>
+  <p class="src">Names: Counter-Strike Wiki Matchmaking page; badges: the wiki's skill group images (CS:GO-era art, same names in CS2).</p>
+  ${head('Videos')}${vids(['premier'],3)}`;
+}
+function commands(){
+  const G=(D.commands||{}).groups||[];
+  return `${head('Console commands','Every command here exists in the game\'s own convar and command dump (datamined from this version).')}
+  ${D.commands.open?`<p>${rich(D.commands.open.t)} ${srcBtn(srcLine(D.commands.open.src,D.commands.open.q))}</p>`:''}
+  ${G.map(g=>`<h3 style="margin-top:22px">${esc(g.title)} ${g.block?`<button class="copy" data-copy="${esc(g.cmds.map(c=>c.c).join('; '))}">Copy all</button>`:''}</h3>
+  ${g.block?`<pre class="block">${esc(g.cmds.map(c=>c.c).join('\n'))}</pre>`:''}
+  <div class="card" style="padding:0">${g.cmds.map(c=>`<div class="cmd"><code>${esc(c.c)}</code><span class="d small">${esc(c.what)}${c.desc?`<br><span class="tiny muted">Game: ${esc(c.desc)}${c.cheat?' (needs sv_cheats 1)':''}</span>`:(c.cheat?'<br><span class="tiny muted">Needs sv_cheats 1</span>':'')}</span><button class="copy" data-copy="${esc(c.c)}">Copy</button></div>`).join('')}</div>`).join('')}
+  <p class="src">Source: DumpSource2/convars.txt and commands.txt in SteamDatabase/GameTracking-CS2 (version ${esc(M.patch)}).</p>`;
+}
+function videosPage(){
+  const T=D.vtopics||[];
+  return `${head('Videos',`Recent guides per topic, found by a YouTube search on ${esc(M.videos_searched)} (uploaded since ${esc(M.videos_min)}${Object.keys(M.topic_min||{}).length?'; exceptions: '+Object.entries(M.topic_min).map(([k,v])=>esc(k)+' since '+esc(v)).join(', '):''}; newest first, one per channel). They play here from youtube-nocookie.com; nothing is downloaded.`)}
+  ${T.filter(t=>(VT[t.id]||[]).length).map(t=>`<h3 style="margin-top:20px">${esc(t.title)} ${t.section?`<a class="tiny" style="font-family:var(--body);text-transform:none;letter-spacing:0" href="#how/${t.section}">steps</a>`:''}</h3>${PATTERN_T[t.id]?'<p class="tiny muted" style="margin:0 0 6px">Pattern videos are accepted back to the CS2 release (2023-09-27): the patch notes list no rifle recoil change. Check the date on each card.</p>':''}${vids([t.id],3)}`).join('')}
+  ${head('Maps')}${MAPS.map(m=>`<h3 style="margin-top:18px"><a href="#map/${m.slug}" style="color:inherit">${esc(m.name)}</a></h3>${m.videos.util.concat(m.videos.guide).length?`<div class="grid three">${m.videos.util.concat(m.videos.guide).slice(0,6).map(v=>vidCard(v)).join('')}</div>`:'<p class="muted small">None found.</p>'}`).join('')}`;
+}
+function sources(){
+  const P=D.pstats||{};
+  const nv=Object.values(VT).reduce((a,v)=>a+v.length,0);
+  const empty=Object.entries(VT).filter(([k,v])=>!v.length).map(([k])=>k);
+  return `${head('Sources & method','Where every fact comes from, how it was checked, and what is missing.')}
+  <div class="tablewrap"><table><thead><tr><th>What</th><th class="num">Count</th><th>From</th></tr></thead><tbody>
+   <tr><td>Guns with full stats</td><td class="num">${W.filter(w=>!['Grenades','Gear'].includes(w.cat)).length}</td><td>weapons.vdata</td></tr>
+   <tr><td>Grenades and gear</td><td class="num">${W.filter(w=>['Grenades','Gear'].includes(w.cat)).length}</td><td>weapons.vdata</td></tr>
+   <tr><td>Active Duty maps</td><td class="num">${MAPS.length}</td><td>patch notes (checked by the build)</td></tr>
+   <tr><td>Callouts on radars</td><td class="num">${MAPS.reduce((a,m)=>a+m.layers.reduce((b,l)=>b+l.markers.length,0),0)}</td><td>Counter-Strike Wiki interactive maps</td></tr>
+   <tr><td>Lineup clips</td><td class="num">${MAPS.reduce((a,m)=>a+m.lineups.length,0)}</td><td>chapters of YouTube lineup videos (since ${esc(M.videos_min)}; a few flash and molotov videos are older, see below)</td></tr>
+   <tr><td>Videos</td><td class="num">${nv}</td><td>YouTube search, ${Object.keys(VT).length-empty.length} of ${Object.keys(VT).length} topics found</td></tr>
+   <tr><td>Pros (sens/res)</td><td class="num">${P.n_list}</td><td>prosettings.net list</td></tr>
+   <tr><td>Pros (full settings)</td><td class="num">${P.n_detail}</td><td>prosettings.net player pages</td></tr>
+   <tr><td>How-to guides</td><td class="num">${HOW.length}</td><td>written for this guide; every number checked against its cited source</td></tr>
+   <tr><td>Console commands</td><td class="num">${(D.commands.groups||[]).reduce((a,g)=>a+g.cmds.length,0)}</td><td>checked against the convar/command dump</td></tr>
+   <tr><td>Official updates shown</td><td class="num">${(D.news||[]).length}</td><td>Steam news, last 60 days</td></tr></tbody></table></div>
+  ${head('Sources')}
+  <ul>${(D.sources||[]).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> <span class="muted small">(pulled ${esc(s.date)})</span></li>`).join('')}</ul>
+  ${head('How it was checked')}
+  <ul class="small"><li>The build (build.py) stops with an error if any number in a how-to step is not in the source that step cites, if a named weapon is not in the game files, if a console command is not in the game's command dump, if the map pool disagrees with the patch notes, or if a card has no picture.</li><li>Weapon numbers are read straight from weapons.vdata; derived numbers (damage after armor, hits to kill, kill time) are computed from those, with the formula shown on each card.</li><li>Videos are picked by a rule (topic words in the title, CS2, recent, longer than 2 minutes, one per channel), not hand-reviewed.</li></ul>
+  ${head('What is unverified or missing')}
+  <ul class="small">
+   <li><b>Meta / popularity</b>: no source. HLTV statistics refuse automated access; no two dated sources from the last 60 days were found. The tier page ranks raw damage only.</li>
+   <li><b>Spray patterns</b> are shown as videos, one set per rifle (AK-47, M4A4, M4A1-S, Galil AR, FAMAS), not drawn: the game stores a recoil seed and recoil numbers (on each card), not the pattern itself. Some pattern videos are from 2024 or 2023; the build fails if a patch note changes rifle recoil.</li>
+   <li><b>Range falloff</b>: damage tables are at close range; each card shows the range modifier.</li>
+   <li><b>Cache radar</b>: the wiki's callout map uses the older Cache layout; the 2026 version may differ in places.</li>
+   <li><b>Site notes and default setups</b>: Inferno and Nuke have no current site notes on either wiki (Nuke's Liquipedia text is redesign history and is left out), and the Cache notes are for the old layout. These three maps get CT and T default setups from dated written guides (${Object.values(D.web||{}).filter(w=>/Inferno|Nuke|Cache/.test(w.name)).map(w=>esc(w.name)+', '+esc(w.date)).join('; ')}); every line quotes its source and the build checks the quote. Ancient, Anubis, Dust II and Mirage use the wiki notes plus the map-guide chapters.</li>
+   <li><b>Advice from videos</b>: steps that cite only a video are tagged &ldquo;advice&rdquo;. The video was matched by title and chapters, not watched line by line (YouTube refused transcripts to scripts).</li>
+   <li><b>Smoke and flash timings</b> are not stated: they are not in the game files and the wiki's values are from CS:GO. Molotov and incendiary fire values come from the game's convar dump and are on those cards.</li>
+   <li><b>Skill group badges</b> are CS:GO-era wiki images.</li>
+   <li><b>Lineups</b> are video chapters picked by rule; ${MAPS.reduce((a,m)=>a+(m.lineups_dropped||0),0)} chapters that name a plan, no target or only one word instead of one throw, or are in another language, are left out, as are sponsor reads; flash and molotov videos with no usable chapters are listed once as whole videos. T/CT is shown only where the title says it.</li>
+   <li><b>Older sources</b>: ${Object.entries(M.topic_min||{}).map(([k,v])=>esc(k)+' videos since '+esc(v)).join(', ')}; pro settings pages dated ${esc(((D.pstats||{}).updated||[])[0])} to ${esc(((D.pstats||{}).updated||[])[1])} (used for medians only, not for meta); the Refrag role guide is from 2025${Object.keys(M.lineup_older||{}).length?`; flash and molotov lineup videos older than ${esc(M.videos_min)}, used where too few recent ones exist and each uploaded after its map's last layout change: ${Object.entries(M.lineup_older).map(([k,v])=>esc(k)+' '+v.map(esc).join(', ')).join('; ')}`:''}.</li>
+   ${empty.length?`<li><b>Video topics with no recent result</b>: ${empty.map(esc).join(', ')}.</li>`:''}
+   <li><b>Pro settings</b> are what prosettings.net lists; players change settings often.</li></ul>
+  <p class="src">Pictures: weapons and gear from the game files (via ByMykel/CSGO-API and the Steam CDN), radars, armor and badges via counterstrike.fandom.com, map photos via liquipedia.net, key art from the Steam store; every file and its source URL is in assets/manifest.json. Fonts: Barlow Condensed (SIL Open Font License, bundled) and your system font.</p>`;
+}
+function notFound(){return `${head('Not found')}<p>That page does not exist. <a href="#home">Go home</a>.</p>`;}
+
+/* ---------- search ---------- */
+const IDX=[];
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({k:t,go:id,t:g})));
+HOW.forEach(h=>IDX.push({k:h.title,go:'how/'+h.id,t:'How-to'}));
+W.forEach(w=>IDX.push({k:w.name,w:w.slug,t:w.cat,img:w.img}));
+MAPS.forEach(m=>{IDX.push({k:m.name,go:'map/'+m.slug,t:'Map',img:m.img});m.layers.forEach(L=>L.markers.forEach(c=>IDX.push({k:c.n,go:'map/'+m.slug+'/'+encodeURIComponent(c.n.split('/')[0].trim()),t:m.name+' callout'})));});
+((D.commands||{}).groups||[]).forEach(g=>g.cmds.forEach(c=>IDX.push({k:c.c,go:'commands',t:'Command'})));
+(D.pro_names||[]).forEach(([n,s,team])=>IDX.push({k:n,pro:s,t:'Pro: '+team}));
+const norm=s=>s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'');
+let hits=[],sel=0;
+function doSearch(q){const r=$('#res');q=norm(q).trim();if(!q){r.classList.remove('on');return;}
+ const sc=e=>{const k=norm(e.k);return k===q?0:k.startsWith(q)?1:k.split(/[\s/]+/).some(x=>x.startsWith(q))?2:k.includes(q)?3:9;};
+ hits=IDX.map(e=>[sc(e),e]).filter(x=>x[0]<9).sort((a,b)=>a[0]-b[0]||a[1].k.length-b[1].k.length).slice(0,14).map(x=>x[1]);sel=0;
+ r.innerHTML=hits.length?hits.map((e,i)=>`<div data-i="${i}" class="${i===0?'sel':''}" role="option">${e.img?`<img src="${esc(e.img)}" alt="" onerror="${IMG_ERR}">`:''}<span>${esc(e.k)}</span><i>${esc(e.t)}</i></div>`).join(''):'<div class="none">No match</div>';r.classList.add('on');}
+function goHit(e){if(!e)return;$('#res').classList.remove('on');$('#q').value='';$('#q').blur();$('#side').classList.remove('open');if(e.w)openW(e.w);else if(e.pro)openPro(e.pro);else location.hash=e.go;}
+$('#q').addEventListener('input',e=>doSearch(e.target.value));
+$('#q').addEventListener('keydown',e=>{const r=$('#res');if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...r.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){goHit(hits[sel]);}else if(e.key==='Escape'){r.classList.remove('on');}});
+$('#res').addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#res').classList.remove('on');});
+
+/* ---------- modal + events ---------- */
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;$('#modal .x').focus();}
+function closeModal(){if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+function openW(s){openModal(weaponCard(s),true);}
+function openPro(s){if(PROS)openModal(proCard(s),true);else loadPros(()=>openModal(proCard(s),true));}
+function playVideo(id,title,at){openModal(`<h3 style="margin-right:30px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#000;border-radius:4px"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0${at?'&start='+(+at):''}" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}${at?'&t='+(+at)+'s':''}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();$('#q').focus();}
+ if((e.key==='Enter'||e.key===' ')&&document.activeElement&&document.activeElement.matches('[role=button]')){e.preventDefault();document.activeElement.click();}});
+function copyText(t,btn){const done=()=>{if(btn){const o=btn.textContent;btn.textContent='Copied';setTimeout(()=>btn.textContent=o,1200);}};
+ if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(done,()=>fallback());else fallback();
+ function fallback(){const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}ta.remove();done();}}
+document.addEventListener('click',e=>{
+ const v=e.target.closest('[data-vid]');if(v){e.preventDefault();playVideo(v.dataset.vid,v.dataset.title,v.dataset.at);return;}
+ const w=e.target.closest('[data-w]');if(w){e.preventDefault();openW(w.dataset.w);return;}
+ const pr=e.target.closest('[data-pro]');if(pr){openPro(pr.dataset.pro);return;}
+ const cp=e.target.closest('[data-copy]');if(cp){copyText(cp.dataset.copy,cp);return;}
+ const sb=e.target.closest('[data-src]');if(sb){const b=sb.nextElementSibling;b.classList.toggle('on');sb.setAttribute('aria-expanded',b.classList.contains('on'));return;}
+ const c=e.target.closest('#wcat [data-cat]');if(c){WCAT=c.dataset.cat;render(false);return;}
+ const rt=e.target.closest('#rtabs [data-round]');if(rt){BR=rt.dataset.round;render(false);return;}
+ const ly=e.target.closest('#mlayer [data-layer]');if(ly){MLAYER=+ly.dataset.layer;render(false);return;}
+ const lk=e.target.closest('#lkind [data-kind]');if(lk){MKIND=lk.dataset.kind;render(false);return;}
+ if(e.target.closest('#lall')){LALL=true;render(false);return;}
+ if(e.target.closest('#mlab')){MLAB=!MLAB;render(false);return;}
+ const mi=e.target.closest('[data-mi]');if(mi){hlMarker(+mi.dataset.mi);return;}
+ const mk=e.target.closest('.radar .mk');if(mk){hlMarker(+mk.dataset.i);return;}
+ const ps=e.target.closest('[data-ps]');if(ps){if(PSORT===ps.dataset.ps)PDESC=!PDESC;else{PSORT=ps.dataset.ps;PDESC=['dpi','sens','edpi','zoom','hz'].includes(PSORT);}drawPros();return;}
+ if(e.target.closest('#pmore')){PLIMIT+=200;drawPros();return;}
+});
+function declutter(){ // hide a radar label (keep its dot) when it would cover a label already placed; bombsites and spawns first
+  const R=$('#radar');if(!R||R.classList.contains('nolab'))return;
+  const mks=[...R.querySelectorAll('.mk')];mks.forEach(m=>m.classList.remove('dot','gone'));
+  const pri=m=>m.classList.contains('hl')?0:m.classList.contains('c-Bombsite')?1:/c-CT|c-T\b/.test(m.className)?2:m.classList.contains('c-Inner')?4:3;
+  const placed=[];const pad=2;
+  mks.map(m=>[pri(m),m]).sort((a,b)=>a[0]-b[0]).forEach(([p,m])=>{const r=m.getBoundingClientRect();
+    if(placed.some(q=>r.left<q.right+pad&&r.right>q.left-pad&&r.top<q.bottom+pad&&r.bottom>q.top-pad))m.classList.add('dot');else placed.push(r);});
+  // a hidden label's dot must not sit on top of a label that is shown
+  mks.filter(m=>m.classList.contains('dot')).forEach(m=>{const r=m.getBoundingClientRect();m.classList.toggle('gone',placed.some(q=>r.left<q.right&&r.right>q.left&&r.top<q.bottom&&r.bottom>q.top));});
+}
+window.addEventListener('resize',()=>{clearTimeout(window.__dc);window.__dc=setTimeout(declutter,120);});
+function hlMarker(i){document.querySelectorAll('.radar .mk.hl,.clist button.hl').forEach(x=>x.classList.remove('hl'));const m=document.querySelector(`.radar .mk[data-i="${i}"]`),b=document.querySelector(`.clist [data-mi="${i}"]`);if(m)m.classList.add('hl');if(b)b.classList.add('hl');declutter();if(m&&window.innerWidth<1100)$('#radar').scrollIntoView({behavior:'smooth',block:'center'});}
+function drawPros(){const el=$('#prolist');if(el)el.innerHTML=proTable();}
+main.addEventListener('input',e=>{
+ if(e.target.id==='wq'){WQ=e.target.value.toLowerCase();const pos=e.target.selectionStart;render(false);const n=$('#wq');if(n){n.focus();n.setSelectionRange(pos,pos);}}
+ if(e.target.id==='pq'){PQ=e.target.value.toLowerCase();PLIMIT=60;const pos=e.target.selectionStart;drawPros();const n=$('#pq');if(n){n.focus();n.setSelectionRange(pos,pos);}}
+});
+main.addEventListener('change',e=>{if(e.target.id==='wside'){WSIDE=e.target.value;render(false);}if(e.target.id==='wsort'){WSORT=e.target.value;render(false);}if(e.target.id==='prole'){PROLE=e.target.value;PLIMIT=60;drawPros();}});
+$('#menuBtn').addEventListener('click',()=>$('#side').classList.toggle('open'));
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#side').classList.remove('open');});
+
+/* ---------- router ---------- */
+let lastRoute='';
+function render(top=true){
+ const h=decodeURIComponent(location.hash.slice(1))||'home';const parts=h.split('/');const r=parts[0],arg=parts[1],arg2=parts.slice(2).join('/');
+ const PAGES=dict([['home',home],['changes',changes],['weapons',weapons],['tiers',tiers],['buys',buys],['maps',mapsPage],['settings',settingsPage],['roles',roles],['ranks',ranks],['commands',commands],['videos',videosPage],['sources',sources]]);
+ let html, cur=r;
+ try{
+  if(r==='how'){html=howPage(arg);cur='how/'+arg;}
+  else if(r==='map'){if(lastRoute!=='map/'+arg){MLAYER=0;MKIND='All';LALL=false;}html=mapPage(arg,arg2);cur='maps';}
+  else if(r==='weapon'){html=weapons();cur='weapons';setTimeout(()=>WB[arg]&&openW(arg),0);}
+  else html=(PAGES[r]||notFound)();
+ }catch(err){html=`<p class="note warn">This page failed to draw: ${esc(err.message)}</p>`;console.error(err);}
+ main.innerHTML=html+`<footer>${CHECK}. Built from public data for personal use; Counter-Strike 2 and its art belong to Valve. <a href="#sources">Sources &amp; method</a>.</footer>`;
+ $('#nav').innerHTML=navHtml(cur);
+ lastRoute=r==='map'?'map/'+arg:r;
+ if(r==='settings')loadPros(drawPros);
+ if(r==='map'){declutter();const im=$('#radar img');if(im&&!im.complete)im.addEventListener('load',declutter,{once:true});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(declutter);}
+ if(top)window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+})();
+</script>
+</body>
+</html>
