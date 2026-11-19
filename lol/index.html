@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>League of Legends Guide</title>
+<meta name="description" content="League of Legends guide: every champion with builds, runes and skill order from two stats sites, a tier list per role, every item and rune, how to play well, and what changed in 2026.">
+<meta name="theme-color" content="#010a13">
+<meta property="og:title" content="League of Legends Guide">
+<meta property="og:description" content="Builds, runes and tier lists checked against two stats sites, every item and rune, wave management, objectives and how to climb. Works offline.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Cinzel";src:url("assets/fonts/Cinzel.ttf") format("truetype");font-weight:400 900;font-display:swap}
+:root{
+  --bg:#010a13;--navy:#091428;--panel:#0a1a2b;--panel2:#0f2236;--well:#050f1a;
+  --line:rgba(200,170,110,.16);--line2:rgba(200,170,110,.34);
+  --gold:#c8aa6e;--gold-l:#f0e6d2;--gold-b:#c89b3c;--gold-d:#785a28;
+  --hex:#0ac8b9;--hex-d:#005a82;--blue:#0397ab;--paper:#f0e6d2;--text:#e8e2d4;--muted:#a09b8c;--dim:#7d7868;
+  --red:#e84057;--green:#4fd18b;
+  --tS:#f0c35c;--tA:#0ac8b9;--tB:#7fa8d9;--tC:#a09b8c;--tD:#b35a5a;
+  --head:"Cinzel","Trajan Pro","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font:16px/1.6 var(--body);
+  background:radial-gradient(1200px 700px at 100% -10%,rgba(10,200,185,.07),transparent 60%),radial-gradient(1000px 700px at -10% 110%,rgba(200,155,60,.07),transparent 60%),
+  linear-gradient(180deg,#010a13,#020d18 40%,#010a13);background-attachment:fixed}
+a{color:var(--gold)}
+a:hover{color:var(--gold-l)}
+button{font:inherit;color:inherit}
+img{max-width:100%}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;margin:0 0 .45em;line-height:1.2;color:var(--gold-l);letter-spacing:.02em}
+h2{font-size:1.7rem}
+h3{font-size:1.12rem}
+.shell{display:grid;grid-template-columns:272px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line2);
+  background:linear-gradient(180deg,rgba(9,20,40,.96),rgba(1,10,19,.96))}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--paper)}
+.brand .mk{width:40px;height:40px;flex:none;position:relative;display:grid;place-items:center}
+.brand .mk::before{content:"";position:absolute;inset:0;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:linear-gradient(160deg,var(--gold-l),var(--gold-b) 45%,var(--gold-d))}
+.brand .mk::after{content:"";position:absolute;inset:4px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:radial-gradient(circle at 50% 45%,#1de9d9,#0397ab 45%,#011a2a 75%)}
+.brand b{display:block;font-family:var(--head);font-size:1.12rem;letter-spacing:.06em;color:var(--gold-l)}
+.brand small{color:var(--gold);letter-spacing:.2em;font-size:.8rem;text-transform:uppercase}
+#checked{font-size:.9rem;color:var(--muted);margin:12px 2px;line-height:1.45}
+#checked a{color:var(--hex)}
+.search{position:relative}
+.search input,.filters input,.filters select,.bigsearch input{width:100%;padding:10px 12px 10px 36px;border:1px solid var(--line2);background:rgba(1,10,19,.8);color:var(--paper);font:inherit;outline:none;border-radius:2px}
+.search input:focus,.filters input:focus,.bigsearch input:focus{border-color:var(--hex);box-shadow:0 0 0 2px rgba(10,200,185,.25)}
+.search svg,.bigsearch svg{position:absolute;left:12px;top:13px;opacity:.7;color:var(--gold)}
+.results{position:absolute;left:0;right:0;top:46px;background:#06131f;border:1px solid var(--line2);max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.92rem;display:flex;align-items:center;gap:8px}
+.results div img{width:24px;height:24px;object-fit:cover}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.8rem;white-space:nowrap}
+.results div:hover,.results div.sel{background:rgba(10,200,185,.1)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:10px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font-size:.8rem;letter-spacing:.22em;color:var(--gold);opacity:.85;margin:16px 8px 4px;text-transform:uppercase;font-family:var(--head)}
+nav a{display:flex;gap:10px;align-items:center;padding:7px 10px;color:var(--text);text-decoration:none;font-size:.95rem;border-left:2px solid transparent}
+nav a:hover{background:rgba(200,170,110,.07);color:var(--gold-l)}
+nav a.on{background:linear-gradient(90deg,rgba(10,200,185,.16),transparent);border-left-color:var(--hex);color:var(--gold-l)}
+nav a .n{margin-left:auto;font-size:.8rem;color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,2.4vw,40px) 90px}
+.topbar{display:none}
+/* frames */
+.card,.tile,.ccard,.stat,.trow,.tablewrap,.vid{background:linear-gradient(180deg,rgba(15,34,54,.92),rgba(9,22,37,.92));border:1px solid var(--line2);position:relative}
+.card{padding:16px 18px;min-width:0}
+.card::before{content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--gold-l) 50%,var(--gold) 80%,transparent);opacity:.55}
+.card p{margin:.35em 0}
+.hero{position:relative;z-index:5;padding:clamp(22px,4vw,48px);margin-bottom:22px;isolation:isolate;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--gold-d)}
+.hero img.bg{position:absolute;inset:0;max-width:100%;width:100%;height:100%;object-fit:cover;object-position:center 20%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(1,10,19,.98) 6%,rgba(1,10,19,.55) 55%,rgba(1,10,19,.2)),linear-gradient(90deg,rgba(1,10,19,.9),transparent 75%)}
+.hero::before{content:"";position:absolute;inset:8px;border:1px solid rgba(200,170,110,.3);pointer-events:none}
+.hero .k{color:var(--hex);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4.4rem);margin:.1em 0 .15em;background:linear-gradient(180deg,#fff8e6,var(--gold) 70%,var(--gold-d));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;letter-spacing:.04em}
+.hero p{max-width:860px;color:var(--text);font-size:1.06rem;margin:0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.sec{margin:30px 0 12px}
+.sec h2{display:flex;align-items:center;gap:14px;text-transform:uppercase;font-size:1.45rem;letter-spacing:.06em}
+.sec h2::before{content:"";width:10px;height:10px;transform:rotate(45deg);border:2px solid var(--gold);flex:none}
+.sec h2::after{content:"";flex:1;height:1px;min-width:30px;background:linear-gradient(90deg,var(--gold-d),transparent)}
+.sec p{margin:.25em 0 0;color:var(--muted)}
+.muted{color:var(--muted)}.small{font-size:.9rem}.tiny{font-size:.8rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;font-size:.8rem;border:1px solid var(--line2);background:rgba(1,10,19,.6);color:var(--text);white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.gold{background:linear-gradient(180deg,var(--gold),var(--gold-d));color:#0b0f14;border-color:var(--gold);font-weight:700}
+.pill.hex{color:var(--hex);border-color:rgba(10,200,185,.5)}
+.pill.warn{color:#ffb4a8;border-color:rgba(232,64,87,.6)}
+.note{border-left:3px solid var(--hex);background:rgba(10,200,185,.07);padding:10px 14px;color:var(--text);margin:12px 0}
+.note.warn{border-left-color:var(--red);background:rgba(232,64,87,.08)}
+.tier{display:inline-grid;place-items:center;min-width:30px;height:30px;font:700 1rem var(--head);color:#06121c;flex:none;padding:0 6px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.tS{background:var(--tS)}.tA{background:var(--tA)}.tB{background:var(--tB)}.tC{background:var(--tC)}.tD{background:var(--tD)}.tX{background:#3a4656;color:var(--paper)}
+/* champion tiles */
+.cgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(128px,1fr))}
+.ccard{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 10px;cursor:pointer;text-decoration:none;color:var(--text);text-align:center;transition:border-color .15s,box-shadow .15s}
+.ccard:hover{border-color:var(--hex);box-shadow:0 0 16px rgba(10,200,185,.25)}
+.ccard img{width:64px;height:64px;border:2px solid var(--gold-d);object-fit:cover}
+.ccard b{font-family:var(--head);font-size:.92rem;line-height:1.2;color:var(--gold-l)}
+.ccard .tier{position:absolute;top:6px;right:6px;min-width:24px;height:24px;font-size:.8rem}
+.ccard .rl{font-size:.8rem;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;background:rgba(1,10,19,.6);border:1px solid var(--line);cursor:pointer;font-size:.9rem;text-decoration:none;color:var(--text)}
+.chip:hover{border-color:var(--hex);color:var(--gold-l)}
+.chip img{width:34px;height:34px;object-fit:cover;border:1px solid var(--gold-d)}
+.chip i{font-style:normal;font-size:.8rem;color:var(--muted)}
+.chip i.niche{color:#e0b062}
+.chip i.chg{color:#f0a37a}
+.chip.rare{border-style:dashed;opacity:.8}
+@media (min-width:601px){.nw{white-space:nowrap}}
+.gtier{display:inline-flex;align-items:center;gap:6px;vertical-align:middle}.gtier small{font:600 .72rem var(--body);color:var(--muted);letter-spacing:0;text-transform:none}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs button{padding:7px 14px;border:1px solid var(--line2);background:rgba(9,20,40,.8);cursor:pointer;font-size:.9rem;color:var(--text)}
+.tabs button:hover{border-color:var(--gold)}
+.tabs button.on{background:linear-gradient(180deg,#123049,#0a1a2b);border-color:var(--hex);color:var(--gold-l);box-shadow:inset 0 -2px 0 var(--hex)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters .fi{position:relative;flex:1 1 260px;max-width:460px}
+.filters select{padding:9px 10px;width:auto;flex:0 0 auto}
+.tablewrap{overflow-x:auto}
+/* below 600 px a reference table becomes one card per row: the first cell is its heading, the others are "label: value" lines */
+@media (max-width:600px){.tablewrap.stack{background:none;border:0}.tablewrap.stack table,.tablewrap.stack tbody,.tablewrap.stack tr,.tablewrap.stack td{display:block;width:auto}
+.tablewrap.stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.tablewrap.stack tr{background:linear-gradient(180deg,rgba(15,34,54,.92),rgba(9,22,37,.92));border:1px solid var(--line2);margin:0 0 8px;padding:8px 12px}
+.tablewrap.stack td{border:0;padding:3px 0}.tablewrap.stack td:empty{display:none}.tablewrap.stack td:first-child{font-weight:700;color:var(--gold)}
+.tablewrap.stack td:not(:first-child)::before{content:attr(data-label) ": ";color:var(--muted,#9fb0c0);font-weight:600}}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:rgba(9,20,40,.95);font-family:var(--head);font-weight:600;white-space:nowrap;position:sticky;top:0;color:var(--gold);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+td.l{cursor:pointer;color:var(--gold-l)}td.l:hover{color:var(--hex)}
+tr:hover td{background:rgba(10,200,185,.03)}
+td .tier{min-width:24px;height:24px;font-size:.8rem}
+/* items */
+.igrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(118px,1fr))}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 10px;cursor:pointer;text-align:center;font-size:.86rem;line-height:1.25}
+.tile:hover{border-color:var(--hex);box-shadow:0 0 14px rgba(10,200,185,.2)}
+.tile img{width:48px;height:48px;border:1px solid var(--gold-d)}
+.tile .cost{color:var(--gold);font-size:.8rem}
+.ic{display:inline-flex;align-items:center;gap:8px;padding:5px 8px 5px 5px;border:1px solid var(--line);background:rgba(1,10,19,.55);cursor:pointer;font-size:.9rem;color:var(--text);min-width:0}
+.ic:hover{border-color:var(--hex)}
+.ic img{width:36px;height:36px;border:1px solid var(--gold-d);flex:none}
+.ic.sm img{width:30px;height:30px}
+.ic small{display:block;font-size:.8rem;color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.arrow{color:var(--gold);font-size:1.1rem}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;font-size:.92rem;margin:8px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.kv.lv{border-top:1px solid var(--line2);padding-top:6px}.kv.lv dt{max-width:11em}
+@media (max-width:480px){.kv.lv{grid-template-columns:1fr;gap:0}.kv.lv dd{margin-bottom:6px}}
+.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:8px}
+.steps li{position:relative;padding:12px 14px 12px 58px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:11px;width:30px;height:30px;display:grid;place-items:center;font:700 .95rem var(--head);color:#06121c;background:linear-gradient(180deg,var(--gold-l),var(--gold));clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.src{font-size:.8rem;color:var(--dim)}
+.src.adv{color:#d9b97a}.src.adv b{color:#f0c35c;font-weight:700}
+.hero .chk{font-size:.86rem;color:var(--muted);margin-top:8px}.hero .chk a{color:var(--hex)}
+.tablewrap.scrolls{background-image:linear-gradient(90deg,transparent calc(100% - 28px),rgba(10,200,185,.18))}
+.scrollhint{font-size:.8rem;color:var(--hex);margin:4px 0 0}
+.mgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.mon{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px}
+.mon img{width:72px;height:72px;border:2px solid var(--gold-d)}
+.gloss{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr))}
+.src a{color:var(--dim)}
+details.quote{display:inline-block;margin-left:6px;font-size:.8rem;color:var(--muted)}
+details.quote>summary{cursor:pointer;color:var(--hex);list-style:none;display:inline}
+details.quote>summary::-webkit-details-marker{display:none}
+details.quote>summary::after{content:" +"}
+details.quote[open]{display:block;margin:4px 0 0;padding:6px 10px;border-left:2px solid var(--hex);background:rgba(10,200,185,.06)}
+details.quote[open]>summary::after{content:" \2212"}
+details.quote q{color:var(--text);font-style:italic}
+.hhead{display:grid;grid-template-columns:200px 1fr;gap:22px;align-items:start}
+.hhead img.art{width:100%;border:1px solid var(--gold-d);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.statrow{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.stat{padding:10px 14px;min-width:120px}
+.stat b{display:block;font:700 1.35rem var(--head);color:var(--gold-l)}
+.stat span{font-size:.8rem;color:var(--muted)}
+.modal{position:fixed;inset:0;background:rgba(1,6,12,.78);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#0f2236,#07131f);border:1px solid var(--gold-d);max-width:680px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.7)}
+.modal .box::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold-l),transparent)}
+.modal .box.wide{max-width:980px}
+.modal .x{position:absolute;right:10px;top:6px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--muted);line-height:1}
+.ic-head{display:flex;gap:14px;align-items:center;margin-bottom:8px;padding-right:34px}
+.ic-head img{width:64px;height:64px;border:2px solid var(--gold-d);flex:none}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.isec h4{font-family:var(--body);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.lk{color:var(--gold);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(200,170,110,.4)}
+.lk:hover{color:var(--hex)}
+.st{display:block}.pv,.ac{color:var(--gold-l)}.md{color:#7fb8ff}.pd{color:#ff9e7a}.td{color:#fff}.hp{color:var(--green)}.sh{color:#c9d6e0}
+.trow{display:grid;grid-template-columns:78px 1fr;margin-bottom:10px}
+.trow .lab{display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 2rem var(--head);color:#06121c;padding:6px}
+.trow .lab small{font:600 .66rem var(--body);letter-spacing:.02em;text-align:center}
+.trow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px}
+.agree{color:var(--green)}.differ{color:#ffb4a8}.vold{color:#f0c674}
+.skillgrid{display:grid;gap:3px;overflow-x:auto;padding-bottom:4px}
+.skillgrid .an{display:flex;align-items:center;gap:6px;font-size:.82rem;white-space:nowrap;padding-right:6px}
+.skillgrid .an img{width:26px;height:26px;border:1px solid var(--gold-d)}
+.skillgrid .c{height:26px;min-width:24px;background:rgba(255,255,255,.04);display:grid;place-items:center;font-size:.8rem;font-weight:700}
+.skillgrid .c.on{background:linear-gradient(180deg,#14a39a,#0a6f74);color:#fff}
+.skillgrid .c.r{background:linear-gradient(180deg,var(--gold),var(--gold-d));color:#06121c}
+.skillgrid .hd{font-size:.8rem;color:var(--dim);text-align:center}
+.skillgrid.sg-half{display:none}.skillgrid.sg-half+.skillgrid.sg-half{margin-top:8px}
+@media (max-width:600px){.skillgrid.sg-wide{display:none}.skillgrid.sg-half{display:grid}}
+.abil{display:grid;grid-template-columns:56px 1fr;gap:12px}
+.abil img{width:56px;height:56px;border:2px solid var(--gold-d)}
+.abil .key{display:inline-grid;place-items:center;width:24px;height:24px;font:700 .8rem var(--head);background:rgba(10,200,185,.18);color:var(--hex);margin-right:6px}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;text-decoration:none;color:var(--text)}
+.vid:hover{border-color:var(--hex)}
+.vidwrap{display:flex;flex-direction:column;gap:4px;min-width:0}.vchap{margin:0 0 0 4px}.vchap ol{margin:6px 0 0;padding-left:22px}
+.vid .play{flex:none;width:50px;height:50px;display:grid;place-items:center;position:relative;background:var(--hex);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.vid .play::before{content:"";position:absolute;inset:1.5px;background:linear-gradient(180deg,#123049,#0a1a2b);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.vid .play svg{position:relative}
+.vid b{display:block;font-size:.94rem;line-height:1.3}
+details.more>summary{cursor:pointer;color:var(--gold);list-style:none;display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line2);background:rgba(9,20,40,.8);font-size:.9rem}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";font-weight:700;color:var(--hex)}
+details.more[open]>summary::before{content:"\2212"}
+details.more[open]>summary{margin-bottom:10px}
+.tree{display:grid;gap:8px}
+.tree .slot{display:grid;gap:8px;grid-template-columns:repeat(var(--n,3),minmax(0,92px))}
+@media (max-width:480px){.tree .slot{grid-template-columns:repeat(var(--n,3),minmax(0,1fr))}.sec h2::after{display:none}}
+.rn{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;overflow-wrap:anywhere;text-align:center;font-size:.8rem;cursor:pointer;padding:6px 2px;border:1px solid transparent}
+.rn:hover{border-color:var(--line2);background:rgba(10,200,185,.06)}
+.rn img{width:42px;height:42px}
+.rn.ks img{width:54px;height:54px}
+.bigsearch{position:relative;max-width:640px;margin:14px 0 0}
+.bigsearch .results{top:48px}
+footer{margin-top:40px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);padding-top:12px}
+::selection{background:var(--hex);color:#06121c}
+*{scrollbar-color:rgba(200,170,110,.45) transparent}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(300px,86vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 14px;background:rgba(1,10,19,.95);border-bottom:1px solid var(--line2)}
+  .topbar button{background:rgba(9,20,40,.9);border:1px solid var(--line2);padding:6px 12px;cursor:pointer;color:var(--gold-l)}
+  .topbar b{font-family:var(--head);color:var(--gold-l);font-size:.98rem}
+  main{padding:16px 14px 80px}
+  .hhead{grid-template-columns:92px minmax(0,1fr);gap:12px}
+  .hhead img.art{max-width:92px}
+  .hhead h2{font-size:1.8rem!important}
+  .stat{min-width:0;flex:1 1 40%;padding:8px 10px}.stat b{font-size:1.1rem}
+  .cgrid{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}
+  .ccard img{width:52px;height:52px}
+  .igrid{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}
+  table{font-size:.84rem}
+  th,td{padding:7px 8px}
+  .trow{grid-template-columns:48px 1fr}.trow .lab{font-size:1.4rem;justify-content:flex-start;padding-top:14px}.trow .lab small{display:none}.trow .its{gap:6px;padding:8px}
+  .chip{font-size:.84rem;padding:3px 8px 3px 3px;gap:6px}.chip img{width:28px;height:28px}
+  .hero{min-height:240px}
+  .rn{font-size:.8rem}
+  h2{font-size:1.4rem}.sec h2{font-size:1.2rem}
+}
+@media (max-width:480px){
+  .hhead{grid-template-columns:76px minmax(0,1fr);column-gap:12px;row-gap:0;align-items:start}
+  .hhead img.art{max-width:76px;aspect-ratio:1;object-fit:cover;object-position:center 12%;grid-row:1/span 3}
+  .hhead>div{display:contents}
+  .hhead>div>*{grid-column:1/-1}
+  .hhead>div>.pills,.hhead>div>h2,.hhead>div>h2+p{grid-column:2}
+  .hhead .statrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .hhead .stat{min-width:0}
+  .hhead .stat:last-child:nth-child(odd){grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections" aria-controls="side">Menu</button><b>League of Legends Guide</b></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk" aria-hidden="true"></span><span><b>League of Legends</b><small>Player's Guide</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search champions, items, runes..." autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav" aria-label="Sections"></nav>
+</aside>
+<main id="main"><p class="muted">Loading the guide...</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box"><button class="x" aria-label="Close">&times;</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/lol.js?v=2026-11-18-415572"></script>
+<script>
+(function(){
+'use strict';
+const D=window.LOL||{champions:[],items:[],trees:[],runes:{},shards:{},summs:{},tiers:{},learn:{},changes:[],howto:{sections:[],tables:[],roles:[]},videos:{},meta:{},sources:[]};
+const $=s=>document.querySelector(s), main=$('#main');
+const chargeRows=ch=>{const wl=ch.wiki?`https://wiki.leagueoflegends.com/en-us/Template:Data_${ch.wiki.replace(/ /g,'_')}`:'https://wiki.leagueoflegends.com/';
+  return `${ch.n?`<dt>Charges</dt><dd>${esc(ch.n)}</dd>`:''}<dt>Recharge</dt><dd>${ch.rec?`${esc(ch.rec)} s <span class="tiny muted">(League Wiki, edited <span style="white-space:nowrap">${esc(ch.src.rev)}</span>)</span>`:`not checked: <a href="${esc(wl)}" target="_blank" rel="noopener">see the League Wiki</a>`}</dd>${ch.lock?`<dt>Between casts</dt><dd>${esc(ch.lock)} s</dd>`:''}`;};
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const checkedOn=()=>M.checked_to&&M.checked_to!==M.pulled?`${esc(M.pulled)} to ${esc(M.checked_to)}`:esc(M.pulled);
+const pct=(x,d=1)=>x==null?'-':(+x).toFixed(d)+'%';
+const n0=x=>x==null?'-':Math.round(x).toLocaleString('en-US');
+const sgn=x=>(x>=0?'+':'')+x.toFixed(1);
+const M=D.meta||{};
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs)); // no prototype keys: '#champ/constructor' is just "not found"
+const CB=dict(D.champions.map(c=>[c.id,c])), CS=dict(D.champions.map(c=>[c.slug,c])), CN=dict(D.champions.map(c=>[c.name,c])), CK=dict(D.champions.map(c=>[c.key,c]));
+const IB=dict(D.items.map(i=>[i.id,i])), IN=dict(D.items.map(i=>[i.name,i])), IS=dict(D.items.map(i=>[i.slug,i]));
+const RB=dict(Object.values(D.runes).map(r=>[r.id,r])), RN=dict(Object.values(D.runes).map(r=>[r.name,r]));
+const SB=dict(Object.values(D.shards).map(s=>[s.id,s]));
+const SPB=dict(Object.values(D.summs).map(s=>[s.id,s])), SPN=dict(Object.values(D.summs).map(s=>[s.name,s]));
+const TR=dict(D.trees.map(t=>[t.id,t]));
+const ROLES=['top','jungle','mid','adc','support'];
+const RNAME={top:'Top',jungle:'Jungle',mid:'Mid',adc:'Bottom',support:'Support'};
+const KIND={support:'Support item chain',starter:'Starter',basic:'Basic',epic:'Epic',legendary:'Legendary',boots:'Boots',consumable:'Consumable and trinket'};
+const costLabel=i=>i.quest?(i.from.length?'quest reward':n0(i.cost)+' gold, support only'):n0(i.cost)+' gold';
+const CAT={attack:'Attack',magic:'Magic',defense:'Defense',haste:'Ability haste',speed:'Movement',utility:'Utility'};
+const HIDE="this.style.visibility='hidden'";
+const img=(src,cls='',alt='')=>`<img class="${cls}" src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="${HIDE}">`;
+const tierB=t=>t?`<span class="tier t${t}" title="Guide tier ${t}">${t}</span>`:'';
+const howtos=(D.howto&&D.howto.sections)||[];
+const HS=dict(howtos.map(s=>[s.id,s]));
+const P=M.cur_patch||{}, SPI=M.stats_patch_info||{};
+const champLink=c=>c?`<a class="lk" href="#champ/${c.slug}">${esc(c.name)}</a>`:'';
+const itemLink=id=>{const i=IB[id];return i?`<span class="lk" data-item="${i.id}" role="button" tabindex="0">${esc(i.name)}</span>`:'';};
+
+$('#checked').innerHTML=`Game version <b>${esc(M.game_patch)}</b> (Data Dragon ${esc(M.ddragon)}). Stats from patch ${esc(M.stats_game_patch)}, ${esc(M.bracket)}. Last checked against <a href="https://ddragon.leagueoflegends.com/api/versions.json" target="_blank" rel="noopener">Riot Data Dragon</a>, <a href="https://u.gg/lol/tier-list" target="_blank" rel="noopener">u.gg</a>, <a href="https://lolalytics.com/lol/tierlist/" target="_blank" rel="noopener">LoLalytics</a> and the <a href="https://wiki.leagueoflegends.com/en-us/" target="_blank" rel="noopener">League Wiki</a> on ${checkedOn()}.`;
+
+// ---------- navigation
+const NAV=[
+ ['Start',[['home','Home'],['start','Come back after a break'],['changes','What changed in 2026'],['roles','Roles and who to learn'],['glossary','Glossary']]],
+ ['How to play',[['about','About a match']].concat(howtos.filter(s=>s.id.startsWith('howto-')).map(s=>[s.id,s.title.replace(/^How to /,'').replace(/^./,c=>c.toUpperCase())])).concat([['ref','Timers and tables']])],
+ ['Champions',[['tiers','Tier list'],['champions','All champions',D.champions.length]]],
+ ['Reference',[['items','Items',D.items.length],['runes','Runes',Object.keys(D.runes).length],['spells','Summoner spells',Object.keys(D.summs).length],['monsters','Epic monsters',(D.monsters||[]).length]]],
+ ['More',[['videos','Videos'],['sources','Sources and method']]],
+];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}"${cur===id?' aria-current="page"':''}>${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+
+// ---------- prose: [[Name]], [[Name|label]], [[#route|label]], **UI label**
+const WIKI='https://wiki.leagueoflegends.com/en-us/';
+function prose(t){return esc(t).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\[\[([^\]]+)\]\]/g,(m,inner)=>{
+ const [target,label]=inner.replace(/&#39;/g,"'").split('|');const lab=esc(label||target);
+ if(target[0]==='#')return `<a class="lk" href="${esc(target)}">${lab}</a>`;
+ const c=CN[target];if(c)return `<a class="lk" href="#champ/${c.slug}">${lab}</a>`;
+ const i=IN[target];if(i)return `<span class="lk" data-item="${i.id}" role="button" tabindex="0">${lab}</span>`;
+ const r=RN[target];if(r)return `<span class="lk" data-rune="${r.id}" role="button" tabindex="0">${lab}</span>`;
+ if(SPN[target])return `<a class="lk" href="#spells">${lab}</a>`;
+ return `<a class="lk" href="${WIKI}${encodeURIComponent(target.replace(/ /g,'_'))}" target="_blank" rel="noopener">${lab}</a>`;});}
+const wikiLinks=src=>(src||[]).map(s=>`<a href="${WIKI}${encodeURIComponent(s.title.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(', ');
+// p = a step, paragraph, role or card: sourced (src + q quotes), advice, or nav (a step inside this guide)
+function srcLine(src,p){p=p||{};
+ if(p.nav)return `<span class="src">Step in this guide</span>`;
+ if(p.advice)return `<span class="src adv"><b>Common coaching advice</b> (not from a measured source)${(src||[]).length?`; facts in it from ${wikiLinks(src)} (League of Legends Wiki)`:''}</span>${quoteBox(p)}`;
+ return `<span class="src">Source: ${wikiLinks(src)} (League of Legends Wiki)</span>${quoteBox(p)}`;}
+// the quoted page text, behind a tap/keyboard toggle (a hover title does not work on phones)
+function quoteBox(p){const Q=(p&&p.q)||[],RW=(p&&p.rows)||[];return Q.length||RW.length?`<details class="quote"><summary>What the page says</summary>${Q.map(x=>`<q>${esc(x)}</q>`).join(' … ')}${RW.map(r=>`${Q.length?' … ':''}table "${esc(r.table)}", row: ${r.cols.map((c,i)=>`${esc(c)} <q>${esc(r.cells[i])}</q>`).join(' · ')}`).join('')}</details>`:'';}
+
+// ---------- videos
+// brief rule: "recent" means within 60 days of the last check; an older video stays (its topic changed little since 26.01) but says so
+const vidOld=v=>{const a=Date.parse(v.date),b=Date.parse(M.checked_to||M.pulled);return a&&b&&(b-a)/864e5>60;};
+function vidCard(v){return `<div class="vid" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" role="button" tabindex="0"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0ac8b9" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} · ${esc(v.date)}${v.duration?' · '+Math.round(v.duration/60)+' min':''}${vidOld(v)?' · <span class="vold">older than 60 days</span>':''}</span></span></div>`;}
+function vidItem(v){return `<div class="vidwrap">${vidCard(v)}${(v.chapters||[]).length?`<details class="quote vchap"><summary>What it covers (the video's own chapters)</summary><ol class="tiny">${v.chapters.map(c=>`<li>${esc(c)}</li>`).join('')}</ol></details>`:''}</div>`;}
+const ymd=d=>d?d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6):'';
+function vids(topic,label){const L=(D.videos||{})[topic]||[];const since=(M.videos_topic_min||{})[topic]||M.videos_min;if(!L.length)return `<p class="small muted">No recent video passed the search rule for this topic${since?' (a guide for every role, uploaded since '+esc(ymd(since))+')':''}.</p>`;
+ return `<div class="grid wide">${L.map(vidItem).join('')}</div>`;}
+const HOWTO_VID={'howto-farm':'farming','howto-waves':'waves','howto-trade':'laning','howto-vision':'vision','howto-objectives':'objectives','howto-jungle':'jungle','howto-climb':'climb','howto-turrets':'objectives','howto-midgame':'teamfight','start':'climb'};
+
+// ---------- pages
+const R=Object.create(null);
+const niche=e=>Math.min(e.u.pr,e.l.pr)<(M.niche_pr||0);
+const LOLA_STRONG=['S+','S','S-','A+','A','A-'];   // "Highest win rates now" also needs LoLalytics' own letter (it weighs pick and ban rate) at A- or better
+const strong=e=>(e.tier==='S'||e.tier==='A')&&!niche(e)&&LOLA_STRONG.includes(e.l.tier);
+function bestNow(role,n){const T=(D.tiers[role]||{}).rows||[];return T.filter(strong).slice(0,n).map(e=>CB[e.id]).filter(Boolean);}
+function champChip(c,sub,cls){return `<a class="chip${cls?' '+cls:''}" href="#champ/${c.slug}">${img(c.img,'',c.name)}<span>${esc(c.name)}${sub?`<br><i>${sub}</i>`:''}${c.changed?`<br><i class="chg" title="Changed in patch ${esc(M.game_patch)}; the stats are from ${esc(M.stats_game_patch)}">changed in ${esc(M.game_patch)}</i>`:''}</span></a>`;}
+R.home=()=>{
+ const card=(r,t,s)=>`<a class="card" href="#${r}" style="text-decoration:none;color:inherit;display:block"><h3>${t}</h3><p class="muted small">${s}</p><span class="lk small">Open</span></a>`;
+ return `<section class="hero"><img class="bg" src="assets/banner.webp" alt="" onerror="${HIDE}">
+ <span class="k">Patch ${esc(M.game_patch)} · updated ${esc(M.checked_to||M.pulled)}</span><h1>League of Legends</h1>
+ <p>Every champion with a build, runes and skill order from two stats sites, a tier list for each role, all ${D.items.length} items and ${Object.keys(D.runes).length} runes, and step-by-step guides to waves, objectives and climbing.</p>
+ <p class="chk">Stats from patch ${esc(M.stats_game_patch)}, ${esc(M.bracket)}. Last checked against Riot Data Dragon, u.gg, LoLalytics and the League Wiki on ${checkedOn()}. <a href="#sources">Sources</a></p>
+ <div class="bigsearch"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q2" type="search" placeholder="Search a champion, item, rune or topic" autocomplete="off" aria-label="Search the guide"><div class="results" id="res2" role="listbox"></div></div></section>
+ <div class="grid">
+ ${card('start','Come back after a break',`${(HS.start&&HS.start.steps||[]).length} steps to get back into the game, from what changed to your first ranked game.`)}
+ ${card('changes','What changed in 2026','Role Quests, Faelights, new turret rules, no Atakhan and no Feats of Strength, plus every new champion and item since you last played.')}
+ ${card('roles','Roles and who to learn','What each position does, its Role Quest reward, and the easiest champions that also win.')}
+ ${card('howto-waves','Wave management','Freeze, slow push and fast push, step by step.')}
+ ${card('howto-objectives','Objectives and timers','Drakes, Voidgrubs, Rift Herald and Baron: when they spawn and how to take them.')}
+ ${card('howto-midgame','After laning','Grouping, side lanes and teamfights: who does what once the first turret falls.')}
+ ${card('monsters','Epic monsters','Every drake type, the Elder Dragon, Voidgrubs, Rift Herald and Baron: spawn times and what each one gives.')}
+ ${card('howto-climb','How to climb','LP, Aegis of Valor, demotion shields and decay.')}
+ ${card('tiers','Tier list',`Per role, from ${esc(M.bracket)} games on u.gg and LoLalytics; a letter only when both sites give the same band.`)}
+ ${card('champions','All champions',`${D.champions.length} champions: abilities, build, runes, skill order, matchups and Riot's own tips.`)}
+ ${card('items','Items and runes',`${D.items.length} items you can buy on Summoner's Rift, ${Object.keys(D.runes).length} runes and ${Object.keys(D.summs).length} summoner spells.`)}
+ </div>
+ <div class="sec"><h2>Highest win rates right now</h2><p>Guide tier S or A, LoLalytics' own letter A- or better, and picked in ${M.niche_pr}%+ of games on both sites (${esc(M.bracket)}, patch ${esc(M.stats_game_patch)}). <a href="#tiers">Full tier list</a></p></div>
+ <div class="grid three">${ROLES.map(r=>`<div class="card"><h3>${RNAME[r]}</h3><div class="row">${bestNow(r,4).map(c=>champChip(c,tierLetter(c,r))).join('')||'<span class="muted small">No champion passes all three tests in this role.</span>'}</div></div>`).join('')}</div>`;};
+function tierLetter(c,r){const x=((D.tiers[r]||{}).rows||[]).find(e=>e.id===c.id);return x&&x.tier?'Tier '+x.tier:'';}
+
+function howtoPage(s){
+ let h=`<div class="sec"><span class="pill hex">${esc(s.kind)}</span><h2 style="margin-top:8px">${esc(s.title)}</h2>${s.intro?`<p>${prose(s.intro)}</p>`:''}</div>`;
+ if(s.need)h+=`<p class="note">${prose(s.need)}</p>`;
+ if(s.paras)h+=s.paras.map(p=>`<div class="card" style="margin-bottom:10px"><p>${prose(p.t)}</p>${srcLine(p.src,p)}</div>`).join('');
+ if(s.steps)h+=`<ol class="steps">${s.steps.map(p=>`<li class="card">${prose(p.t)}<br>${srcLine(p.src,p)}</li>`).join('')}</ol>`;
+ if(s.check)h+=`<p class="note"><b>Check:</b> ${prose(s.check)}${s.check_advice?' <span class="src adv"><b>Common coaching advice</b> (a target, not from a measured source)</span>':''}</p>`;
+ if(s.id==='changes')h+=changesBlock();
+ const v=HOWTO_VID[s.id];if(v)h+=`<div class="sec"><h2>Videos</h2><p>Recent YouTube guides on this topic, found by search; they play here when you are online.</p></div>${vids(v)}`;
+ return h;}
+howtos.forEach(s=>{R[s.id]=()=>howtoPage(s);});
+
+let CHV=null;
+function changesBlock(){const C=D.changes||[];if(!C.length)return '';if(!CHV)CHV=C[0].version;const c=C.find(x=>x.version===CHV)||C[0];
+ const cur=M.cur_patch||{},sp=M.stats_patch_info||{};
+ return `<div class="sec"><h2>New since you last played</h2><p>Pick the patch you last played. Lists compare Riot's Data Dragon for that patch with ${esc(M.ddragon)}.</p></div>
+ <div class="tabs" data-set="CHV">${C.map(x=>`<button data-v="${esc(x.version)}" class="${x.version===c.version?'on':''}">Patch ${esc(x.patch)}${x.date?' · '+esc(x.date):''}</button>`).join('')}</div>
+ <div class="grid two"><div class="card"><h3>New champions (${c.new_champs.length})</h3><div class="row">${c.new_champs.map(n=>CN[n]?champChip(CN[n]):esc(n)).join('')||'<span class="muted">None</span>'}</div></div>
+ <div class="card"><h3>New items (${c.new_items.length})</h3><div class="row">${c.new_items.map(n=>IN[n]?`<span class="ic sm" data-item="${IN[n].id}" role="button" tabindex="0">${img(IN[n].img)}${esc(n)}</span>`:esc(n)).join('')||'<span class="muted">None</span>'}</div></div>
+ <div class="card"><h3>Items gone (${c.gone_items.length})</h3><p class="small muted">No longer in the Summoner's Rift shop.</p><p class="small">${c.gone_items.map(esc).join(', ')||'None'}</p></div></div>
+ <div class="sec"><h2>The current patches</h2></div>
+ <div class="grid two">${[cur,sp].filter(x=>x&&x.title).map(x=>`<div class="card"><h3>Patch ${esc(x.title.slice(1))} <span class="tiny muted">${esc(x.date||'')}</span></h3>
+ <p class="small"><b>Champions changed (${x.champions.length}):</b> ${x.champions.map(n=>CN[n]?champLink(CN[n]):esc(n)).join(', ')||'none'}</p>
+ <p class="small"><b>Items changed (${x.items.length}):</b> ${x.items.map(i=>(IN[i.name]?itemLink(IN[i.name].id):esc(i.name))+(i.note?` <span class="muted">(${esc(i.note)})</span>`:'')).join(', ')||'none'}</p>
+ ${x.notes_url?`<p class="small"><a href="${esc(x.notes_url)}" target="_blank" rel="noopener">Official patch notes</a> · <a href="${WIKI}${esc(x.title)}" target="_blank" rel="noopener">wiki page</a></p>`:''}</div>`).join('')}</div>
+ <p class="note small">Stats in this guide come from patch ${esc(M.stats_game_patch)} because ${esc(M.game_patch)} went live on ${esc(cur.date||'?')}, the day of the pull. Champions changed in ${esc(M.game_patch)} carry a warning on their page.</p>`;}
+
+R.roles=()=>{const RL=(D.howto.roles||[]);
+ return `<div class="sec"><h2>Roles and who to learn</h2><p>What each position does, from the wiki; the Role Quest reward as it is now (introduced in 26.01, changed in later 2026 patches); and the easiest champions to learn that also win, picked by a rule (below).</p></div>
+ <div class="grid two">${RL.map(r=>{const L=(D.learn[r.id]||[]).map(e=>({e,c:CB[e.id]})).filter(x=>x.c);return `<div class="card" id="role-${r.id}"><h3>${esc(r.name)}</h3><p>${prose(r.t)}</p><p class="small"><b>${prose(r.quest)}</b></p>
+ <h4 style="margin-top:12px;font-size:.95rem">Easy to learn</h4><div class="row">${L.map(x=>champChip(x.c,`difficulty ${x.c.diff}/10 · u.gg ${pct(x.e.u.wr)} · LoLalytics ${pct(x.e.l.wr)}, all ranks`)).join('')||'<span class="muted small">No champion meets the rule in this role.</span>'}</div>
+ <h4 style="margin-top:12px;font-size:.95rem">Highest win rates now</h4><div class="row">${bestNow(r.id,5).map(c=>champChip(c,tierLetter(c,r.id))).join('')||'<span class="muted small">No champion passes the rule (guide tier S or A, LoLalytics A- or better, not niche).</span>'}</div>
+ <p class="small" style="margin-top:10px"><a href="#tiers/${r.id}">${esc(r.name)} tier list</a> · <a href="#champions/${r.id}">all ${esc(r.name)} champions</a></p>${srcLine(r.src,r)}
+ <details class="more" style="margin-top:10px"><summary>${esc(r.name)} videos</summary>${vids(r.id==='adc'?'adc':r.id)}</details></div>`;}).join('')}</div>
+ <p class="note small"><b>Easy to learn rule:</b> Riot's own difficulty rating 1 to 4 (of 10, from Data Dragon), the role is 15%+ of the champion's games, ${n0(M.min_games)}+ games and a ${M.min_pr}%+ pick rate in each source, and a win rate at or above the role average at all ranks in <b>both</b> u.gg and LoLalytics (patch ${esc(M.stats_game_patch)}). Sorted by how far above average; each chip names the site of each win rate.</p>`;};
+R.learn=()=>R.roles();
+
+R.about=()=>howtoPage(HS.about);
+R.monsters=()=>{const L=D.monsters||[];const groups=[...new Set(L.map(m=>m.group))];const rn=D.rift_note;
+ return `<div class="sec"><span class="pill hex">Reference</span><h2 style="margin-top:8px">Epic monsters</h2><p>Every drake type, the Elder Dragon, Voidgrubs, Rift Herald, Baron Nashor and the Rift Scuttler: when they spawn and what your team gets. Timers are also in <a href="#ref">Timers and tables</a>; how to take them is in <a href="#howto-objectives">How to take objectives</a>.</p></div>
+ ${rn?`<div class="note">${prose(rn.t)}<br>${srcLine(rn.src,rn)}</div>`:''}
+ ${groups.map(g=>`<div class="sec"><h3>${esc(g)}</h3></div><div class="mgrid">${L.filter(m=>m.group===g).map(m=>`<div class="card mon" id="mon-${esc(m.id)}">${img(m.img,'',m.name)}<div>
+  <h3 style="margin:0">${esc(m.name)}</h3>${m.buff?`<div class="pills"><span class="pill gold">${esc(m.buff)}</span></div>`:''}
+  <dl class="kv"><dt>Spawns</dt><dd>${esc(m.spawn)}</dd><dt>Respawn</dt><dd>${esc(m.respawn)}</dd></dl>
+  <div class="isec"><h4>What your team gets</h4><p class="small">${prose(m.gives)}</p></div>
+  ${m.soul?`<div class="isec"><h4>Dragon Soul (fourth drake)</h4><p class="small">${prose(m.soul)}</p></div>`:''}
+  ${m.rift?`<details class="more" style="margin-top:8px"><summary>How the map changes</summary><p class="small">${prose(m.rift)}</p></details>`:''}
+  <div style="margin:8px 0 0">${srcLine(m.src,m)} · <a class="src" href="${WIKI}${encodeURIComponent((m.page||m.name).replace(/ /g,'_'))}" target="_blank" rel="noopener">wiki page</a></div></div></div>`).join('')}</div>`).join('')}`;};
+R.glossary=()=>{const G=(D.howto&&D.howto.glossary)||[];
+ return `<div class="sec"><span class="pill hex">Reference</span><h2 style="margin-top:8px">Glossary</h2><p>Words this guide and most League videos use, with the wiki page each meaning comes from.</p></div>
+ <div class="gloss">${G.map(g=>`<div class="card"><p style="margin:0">${prose(g.t)}</p>${srcLine(g.src,g)}</div>`).join('')}</div>`;};
+R.ref=()=>`<div class="sec"><span class="pill hex">Reference</span><h2 style="margin-top:8px">Timers and tables</h2><p>Values from the wiki pages named under each table (patch ${esc(M.game_patch)} rules). What each monster gives is on the <a href="#monsters">Epic monsters</a> page.</p></div>`+
+ (D.howto.tables||[]).map(t=>`<div class="sec" id="${t.id}"><h3>${esc(t.title)}</h3></div><div class="tablewrap stack"><table><thead><tr>${t.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map((c,i)=>`<td data-label="${esc(t.cols[i]||'')}">${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p>${srcLine(t.src)}</p>`).join('');
+
+// ---------- tier list
+let TROLE='top';
+R.tiers=(arg)=>{if(arg&&ROLES.includes(arg))TROLE=arg;const T=D.tiers[TROLE]||{rows:[],split:[],low:[]};const B=M.bands||[];
+ const lab={S:'+2.0 or more',A:'+0.75 to +2.0',B:'-0.75 to +0.75',C:'-2.0 to -0.75',D:'below -2.0'};
+ const rows=['S','A','B','C','D'].map(t=>{const L=T.rows.filter(e=>e.tier===t&&!niche(e));return `<div class="trow"><div class="lab t${t}">${t}<small>${lab[t]}</small></div><div class="its">${L.map(e=>{const c=CB[e.id];return c?champChip(c,`${pct(e.u.wr)} · ${pct(e.l.wr)}<br>${n0(Math.min(e.u.n,e.l.n))} games${niche(e)?'</i><br><i class="niche">rarely picked (under '+M.niche_pr+'%)':''}`,niche(e)?'rare':''):'';}).join('')||'<span class="muted small">none</span>'}</div></div>`;}).join('');
+ const rare=T.rows.filter(niche).sort((a,b)=>'SABCD'.indexOf(a.tier)-'SABCD'.indexOf(b.tier));
+ const rareRow=rare.length?`<div class="trow"><div class="lab tX">R<small>rarely picked</small></div><div class="its">${rare.map(e=>{const c=CB[e.id];return c?champChip(c,`Tier ${e.tier} · ${pct(e.u.wr)} · ${pct(e.l.wr)}<br>${n0(Math.min(e.u.n,e.l.n))} games</i><br><i class="niche">rarely picked (under ${M.niche_pr}%)`,'rare'):'';}).join('')}</div></div>`:'';
+ const all=T.rows.concat(T.split).sort((a,b)=>(b.u.d+b.l.d)-(a.u.d+a.l.d));
+ return `<div class="sec"><h2>Tier list</h2><p>Whose rating: this guide's (neither site shows these letters). The letter is how far above or below its site's average a champion wins, given only when u.gg and LoLalytics land in the same band; otherwise it is under "Sources differ".</p></div>
+ <div class="tabs" data-set="TROLE">${ROLES.map(r=>`<button data-v="${r}" class="${TROLE===r?'on':''}">${RNAME[r]}</button>`).join('')}</div>
+ <details class="more"><summary>How the letters are made</summary><p class="small">Chips show u.gg · LoLalytics win rate and the smaller game count. "Sources differ" chips give the letter each site's win rate would get under these bands. <b>Rarely picked (under ${M.niche_pr}%)</b> means fewer than ${M.niche_pr} in 100 games on either site have it: the letter is real for the players who pick it, but it is not a sign of a safe pick. They are listed in their own row (R) below the letters, with their letter on the chip. A champion changed in patch ${esc(M.game_patch)} says so on its chip: its numbers here are from ${esc(M.stats_game_patch)}.</p><p class="small">${RNAME[TROLE]}, ${esc(M.bracket)}, patch ${esc(M.stats_game_patch)}. For each site, the guide takes the champion's win rate minus that site's average: u.gg's ${RNAME[TROLE]} average is ${pct(T.ugg_avg,2)} (${n0(T.ugg_games)} games); LoLalytics publishes one overall average for all roles, ${pct(T.lola_avg,2)}. Each gap is put in a band, in percentage points (S +2.0 or more, A +0.75 to +2.0, B -0.75 to +0.75, C -2.0 to -0.75, D below). The letter is given only when both sites' gaps fall in the same band, and only for champions with ${n0(M.min_games)}+ games and a ${M.min_pr}%+ pick rate in this role on both. <b>Rarely picked</b>: under ${M.niche_pr}% pick rate on a site, so a small group of players (often specialists) makes the number, even when the game count is large. "Highest win rates now" lists leave rarely picked champions out and also need LoLalytics' own letter at A- or better.</p></details>
+ ${srcBox([['u.gg match stats, one overview file per champion (world, Emerald+), patch '+M.stats_game_patch,'https://u.gg/lol/tier-list',(M.ugg_dates||[]).join(', '),n0(T.ugg_games)+' games'],['LoLalytics tier list, '+RNAME[TROLE]+', Emerald+, patch '+M.stats_game_patch,T.lola_url,T.lola_date,'']],'Sources for this tier list')}
+ ${rows}${rareRow}
+ ${T.split.length?`<div class="trow"><div class="lab tX tsplit">?<small>sources differ</small></div><div class="its">${T.split.map(e=>{const c=CB[e.id];return c?champChip(c,`Sources differ: u.gg ${e.u.band}, LoLalytics ${e.l.band}<br>${n0(Math.min(e.u.n,e.l.n))} games`):'';}).join('')}</div></div>`:''}
+ ${T.low.length?`<p class="small muted">Played in this role but too rarely for a letter (under ${M.min_pr}% pick rate or ${n0(M.min_games)} games in a source): ${T.low.map(id=>CB[id]?champLink(CB[id]):'').join(', ')}.</p>`:''}
+ <p class="note small">Win rate measures how a champion does in the hands of the people who play it now. One-trick players lift some champions; a champion with a high ban rate is seen less. The LoLalytics column shows that site's own letter, which also weighs pick and ban rate.</p>
+ <details class="more"><summary>Full table with both sources</summary><div class="tablewrap"><table><thead><tr><th>#</th><th>Champion</th><th>Guide tier</th><th>u.gg WR</th><th>vs avg</th><th>u.gg pick</th><th>u.gg games</th><th>LoLalytics WR</th><th>vs avg</th><th>Pick</th><th>Ban</th><th>Games</th><th>LoLalytics' own grade</th></tr></thead><tbody>
+ ${all.map((e,i)=>{const c=CB[e.id];return c?`<tr><td>${i+1}</td><td class="l" data-go="champ/${c.slug}">${esc(c.name)}</td><td>${e.tier?tierB(e.tier):'<span class="muted">split</span>'}</td><td>${pct(e.u.wr,2)}</td><td class="muted">${sgn(e.u.d)}</td><td>${pct(e.u.pr)}</td><td>${n0(e.u.n)}</td><td>${pct(e.l.wr,2)}</td><td class="muted">${sgn(e.l.d)}</td><td>${pct(e.l.pr)}</td><td>${pct(e.l.br)}</td><td>${n0(e.l.n)}</td><td>${esc(e.l.tier)}</td></tr>`:'';}).join('')}
+ </tbody></table></div></details>`;};
+
+// ---------- champions list
+let CROLE='all',CTAG='all',CQ='';
+R.champions=(arg)=>{if(arg&&ROLES.includes(arg))CROLE=arg;const tags=[...new Set(D.champions.flatMap(c=>c.tags))].sort();
+ const q=CQ.toLowerCase();
+ const L=D.champions.filter(c=>(CROLE==='all'||c.roles.some(r=>r.role===CROLE))&&(CTAG==='all'||c.tags.includes(CTAG))&&(!q||(c.name+' '+c.title+' '+(c.ab||[]).join(' ')).toLowerCase().includes(q)));
+ return `<div class="sec"><h2>All champions</h2><p>Roles come from where people play them (15%+ of ${esc(M.bracket)} games on u.gg); classes are Riot's. The badge is the guide tier in the champion's main role.</p></div>
+ <div class="tabs" data-set="CROLE"><button data-v="all" class="${CROLE==='all'?'on':''}">All</button>${ROLES.map(r=>`<button data-v="${r}" class="${CROLE===r?'on':''}">${RNAME[r]}</button>`).join('')}</div>
+ <div class="filters"><div class="fi"><svg style="position:absolute;left:12px;top:13px;opacity:.7;color:var(--gold)" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="cq" type="search" placeholder="Filter by name or ability" value="${esc(CQ)}" aria-label="Filter champions"></div>
+ <select id="ctag" aria-label="Class"><option value="all">Any class</option>${tags.map(t=>`<option ${CTAG===t?'selected':''}>${esc(t)}</option>`).join('')}</select><span class="small muted">${L.length} shown</span></div>
+ <div class="cgrid">${L.map(c=>{const r=CROLE!=='all'?c.roles.find(x=>x.role===CROLE):c.roles[0];return `<a class="ccard" href="#champ/${c.slug}">${tierB(r&&r.tier)}${img(c.img,'',c.name)}<b>${esc(c.name)}</b><span class="rl">${c.roles.map(x=>RNAME[x.role]).join(', ')||'no ranked data'}</span></a>`;}).join('')}</div>`;};
+
+// ---------- champion page
+const CF=Object.create(null);
+function loadChamp(id,cb){if(window.LOLC&&window.LOLC[id]){cb();return;}if(CF[id])return;CF[id]=1;const s=document.createElement('script');s.src='data/champ/'+encodeURIComponent(id)+'.js?v=2026-11-18-415572';
+ s.onload=()=>{delete CF[id];cb();};s.onerror=()=>{delete CF[id];main.insertAdjacentHTML('afterbegin','<p class="note warn">Could not load this champion\'s data file.</p>');};document.head.appendChild(s);}
+let CRL={};
+function skillGrid(F,seq){const A=F.abilities.filter(a=>a.k!=='P');const n=Math.min(18,seq.length);
+ // one grid of all levels on a wide screen; on a phone, two grids (levels 1-9 and 10-18) so no level hides behind a sideways scroll
+ const part=(a0,a1,cls)=>{const S=seq.slice(a0,a1);if(!S.length)return '';let g=`<div class="skillgrid ${cls}" style="grid-template-columns:auto repeat(${S.length},minmax(22px,1fr))"><div></div>${S.map((s,i)=>`<div class="hd">${a0+i+1}</div>`).join('')}`;
+  A.forEach(a=>{g+=`<div class="an">${img(a.img)}<span>${a.k}</span></div>`+S.map(s=>s===a.k?`<div class="c ${a.k==='R'?'r':'on'}">${a.k}</div>`:'<div class="c"></div>').join('');});
+  return g+'</div>';};
+ return part(0,n,'sg-wide')+part(0,Math.min(9,n),'sg-half')+part(9,n,'sg-half');}
+function icItem(id,sub){const i=IB[id];if(!i)return `<span class="ic sm">${esc(id)}</span>`;return `<span class="ic" data-item="${i.id}" role="button" tabindex="0">${img(i.img,'',i.name)}<span>${esc(i.name)}${sub?`<small>${sub}</small>`:''}</span></span>`;}
+function icRune(id,small){const r=RB[id];if(!r)return '';return `<span class="ic ${small?'sm':''}" data-rune="${r.id}" role="button" tabindex="0">${img(r.img,'',r.name)}<span>${esc(r.name)}</span></span>`;}
+function icShard(id){const s=SB[id];return s?`<span class="ic sm" title="${esc(s.short)}">${img(s.img,'',s.name)}<span>${esc(s.name)}</span></span>`:'';}
+function icSpell(id){const s=SPB[id];return s?`<a class="ic" href="#spells">${img(s.img,'',s.name)}<span>${esc(s.name)}</span></a>`:'';}
+function srcBox(rows,label){return `<details class="more srcbox" style="margin-top:10px"><summary>${esc(label||'Sources')} (${rows.filter(r=>r[1]).length})</summary><ul class="small">${rows.filter(r=>r[1]).map(([n,u,d,w])=>`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>, pulled ${esc(d)}${w?` · ${esc(w)}`:''}</li>`).join('')}</ul></details>`;}
+function startIcons(ids){return [...new Set(ids)].map(i=>{const k=ids.filter(x=>x===i).length;return icItem(i,k>1?'x'+k:'');}).join('');}
+// u.gg's spell pair or starting set against LoLalytics' most picked one: share of games on each site, and LoLalytics' pick when they differ
+function setCheck(k,mine,top,ag,icons){const ok=ag&&ag[k];const what=k==='spells'?'pair':'set';
+ return `<div class="setcheck small" data-k="${k}" style="margin-top:8px"><div>${ok?yn(true):`${yn(false)}: LoLalytics' most picked ${what} (${pct(top&&top.pick,0)} of games) is`}${mine.minority?` <span class="differ">Played in under half the games on both sites.</span>`:''}<details class="quote"><summary>games</summary>u.gg's ${what}: ${pct(mine.share,0)} of u.gg's games, ${pct(mine.lola_pick,0)} of LoLalytics' games.</details></div>${ok||!top?'':`<div class="row" style="margin-top:4px">${icons(top)}</div>`}</div>`;}
+function runeCheck(ag){const D2=[...(ag.runes_diff||[]),...(ag.shards_diff||[])];
+ const nm=x=>RB[x]?RB[x].name:SB[x]?SB[x].name:x;
+ return `<p class="small runecheck" style="margin-top:4px">Other rune rows and shards: ${D2.length?`${yn(false)}. LoLalytics' most picked: ${D2.map(d=>`${esc(nm(d.lola))} (${pct(d.lola_pick,0)}) over ${esc(nm(d.ugg))} (${pct(d.ugg_pick,0)})`).join('; ')}.`:yn(true)}</p>`;}
+const yn=(ok,a,b)=>ok?`<span class="agree">Both agree</span>`:`<span class="differ">Sources differ</span>`;
+R.lost=()=>`<div class="sec"><h2>Page not found</h2><p>This League of Legends guide has no page at that address. Try the search box, or go to the <a href="#home">home page</a>.</p></div>`;
+R.champ=(sl)=>{const c=CS[sl];if(!c)return `<p>Champion not found. <a href="#champions">All champions</a></p>`;
+ const F=window.LOLC&&window.LOLC[c.id];
+ if(!F){loadChamp(c.id,()=>{if(location.hash.slice(1).split('/')[1]===sl)render(false);});return `<p class="muted">Loading ${esc(c.name)}...</p>`;}
+ const role=CRL[c.id]&&F.builds.some(b=>b.role===CRL[c.id])?CRL[c.id]:(F.builds[0]||{}).role;
+ const B=F.builds.find(b=>b.role===role);const rr=c.roles.find(x=>x.role===role)||{};
+ const u=B&&B.ugg,l=B&&B.lola,ag=B&&B.agree;
+ let h=`<div class="hhead">${img(c.load,'art',c.name)}<div>
+ <div class="pills">${c.tags.map(t=>`<span class="pill gold">${esc(t)}</span>`).join('')}<span class="pill" title="Riot's difficulty rating in Data Dragon">${c.diff?'Difficulty '+c.diff+'/10':'Difficulty not rated'}</span>${c.res?`<span class="pill">${esc(c.res)}</span>`:''}</div>
+ <h2 style="font-size:2.3rem;margin:.15em 0 0">${esc(c.name)} ${rr.tier?`<span class="gtier">${tierB(rr.tier)}<small>Guide tier</small></span>`:''}</h2><p class="muted" style="margin:0 0 6px;font-family:var(--head)">${esc(c.title)}</p>
+ ${c.changed?`<p class="note warn small">Changed in patch ${esc(M.game_patch)} (live ${esc(P.date||'')}). The stats and build below are from ${esc(M.stats_game_patch)} and may not match the new numbers yet.</p>`:''}
+ ${F.builds.length>1?`<div class="tabs" data-set="CRL" data-c="${esc(c.id)}">${F.builds.map(b=>`<button data-v="${b.role}" class="${b.role===role?'on':''}">${RNAME[b.role]} · ${pct((c.roles.find(x=>x.role===b.role)||{}).share*100,0)}</button>`).join('')}</div>`:''}
+ <div class="statrow">${rr.ugg?`<div class="stat"><b>${pct(rr.ugg.wr)}</b><span>win rate, u.gg</span></div>`:''}${rr.lola?`<div class="stat"><b>${pct(rr.lola.wr)}</b><span>win rate, LoLalytics</span></div><div class="stat"><b>${pct(rr.lola.pr)}</b><span>pick rate, LoLalytics</span></div><div class="stat"><b>${pct(rr.lola.br)}</b><span>ban rate, LoLalytics</span></div><div class="stat"><b>${esc(rr.lola.tier)}</b><span>LoLalytics' own grade (not the guide tier)</span></div>`:''}</div>
+ ${role&&rr.ugg&&rr.lola?`<div class="small muted" style="margin:0 0 4px">Each site has its own average, so compare each win rate with its own site. <details class="quote"><summary>The averages</summary>u.gg's ${RNAME[role]} average is ${pct((D.tiers[role]||{}).ugg_avg,2)}; LoLalytics' overall average (all roles) is ${pct((D.tiers[role]||{}).lola_avg,2)}. The guide tier compares each site's win rate with that site's average. The LoLalytics letter is that site's own rating, which also weighs pick and ban rate.</details></div>`:''}
+ <p class="tiny muted">${role?`${RNAME[role]}, ${esc(M.bracket)}, patch ${esc(M.stats_game_patch)}: ${n0(rr.ugg&&rr.ugg.n)} games on u.gg, ${n0(rr.lola&&rr.lola.n)} on LoLalytics. Guide tier ${rr.tier?esc(rr.tier):rr.tier_state==='split'?`not given (sources differ: u.gg ${esc(rr.bands&&rr.bands.ugg)}, LoLalytics ${esc(rr.bands&&rr.bands.lola)})`:'not given (played too rarely in this role)'}; <a href="#tiers/${role}">tier list</a>.`:'No ranked games found for this champion in the stats window.'}</p></div></div>`;
+ if(u){h+=`<div class="sec" id="build"><h2>Build</h2><p>u.gg's recommended set-up on <a href="${esc(B.src&&B.src.ugg||'https://u.gg/lol/tier-list')}" target="_blank" rel="noopener">u.gg</a> (${n0(u.n)} ${esc(M.bracket)} games, ${pct(u.wr)} win rate). Each part is checked against <a href="${esc(B.src&&B.src.lola||'https://lolalytics.com/lol/tierlist/')}" target="_blank" rel="noopener">LoLalytics</a>' most picked choice: "Both agree" or "Sources differ". Pulled ${esc((B.src&&B.src.ugg_date)||M.pulled)}.</p></div>
+ <div class="grid two"><div class="card"><h3>Runes <span class="tiny muted">${n0(u.runes.n)} games · ${pct(u.runes.wr)} WR</span></h3>
+  <p class="small muted" style="margin:0">${esc((TR[u.runes.primary]||{}).name||'')} + ${esc((TR[u.runes.sub]||{}).name||'')}</p>
+  <div class="row" style="margin-top:6px">${u.runes.perks.slice(0,4).map((p,i)=>icRune(p,i>0)).join('')}</div>
+  <div class="row" style="margin-top:6px">${u.runes.perks.slice(4).map(p=>icRune(p,true)).join('')}</div>
+  <div class="row" style="margin-top:6px">${u.runes.shards.map(icShard).join('')}</div>
+  ${l&&l.keystone?`<p class="small" style="margin-top:10px">LoLalytics: ${icRune(l.keystone.id,true)} in ${pct(l.keystone.pick)} of games. Keystone: ${yn(ag&&ag.keystone)}</p>`:''}
+  ${l&&ag?runeCheck(ag):''}</div>
+ <div class="card"><h3>Summoner spells <span class="tiny muted">${n0(u.spells.n)} games · ${pct(u.spells.wr)} WR</span></h3><div class="row">${u.spells.ids.map(icSpell).join('')}</div>
+  ${l?setCheck('spells',u.spells,l.spells,ag,x=>x.ids.map(icSpell).join('')):''}
+  <h3 style="margin-top:14px">Start with <span class="tiny muted">${n0(u.start.n)} games</span></h3><div class="row">${startIcons(u.start.ids)}</div>
+  ${l?setCheck('start',u.start,l.start,ag,x=>startIcons(x.ids)):''}${role==='support'&&(D.support_chain||[]).length?`<p class="tiny muted" style="margin-top:6px">Both sets leave out ${itemLink(D.support_chain[0])}, which the game buys for you as a support.</p>`:''}</div></div>
+ <div class="card" style="margin-top:12px"><h3>Core items, in buy order <span class="tiny muted">${n0(u.core.n)} games · ${pct(u.core.wr)} WR</span></h3>
+  <div class="row">${u.core.ids.map(i=>icItem(i)).join('<span class="arrow">&rsaquo;</span>')}</div>
+  ${l&&l.items.length?`<p class="small" style="margin-top:10px">LoLalytics most picked 1st item, then the most picked 2nd and 3rd item not already listed: ${l.items.map(x=>`${itemLink(x.id)} <span class="muted">(${pct(x.pick,0)})</span>`).join(' &rsaquo; ')}${l.boots?`; boots ${itemLink(l.boots.id)}`:''}. First item: ${yn(ag&&ag.first_item)} 2nd and 3rd items: ${yn(ag&&ag.core_rest)}${ag&&(ag.core_rest_miss||[]).length?` <span class="muted">(${ag.core_rest_miss.map(i=>itemLink(i)).join(', ')} not in LoLalytics' top three)</span>`:''}</p>`:''}
+  <details class="more" style="margin-top:8px"><summary>4th, 5th and 6th item options</summary><p class="small muted" style="margin:8px 0">Win rates for later items are high because they are bought in games that are already going well; compare games, not win rate.</p><div class="grid three">${u.opts.map((s,i)=>`<div><h4 class="small" style="font-family:var(--body);color:var(--gold)">Item ${i+4}</h4><div style="display:flex;flex-direction:column;gap:6px">${s.map(o=>icItem(o.id,`${pct(o.wr)} WR · ${n0(o.n)} games`)).join('')}</div></div>`).join('')}</div></details></div>
+ <div class="card" style="margin-top:12px"><h3>Skill order <span class="tiny muted">max ${u.skills.max.split('').join(' > ')} · ${n0(u.skills.n)} games · ${pct(u.skills.wr)} WR</span></h3>${skillGrid(F,u.skills.seq)}
+  ${l&&l.skills?`<p class="small" style="margin-top:8px">LoLalytics most common order maxes ${esc(ag.lola_max.split('').join(' > '))} (${pct(l.skills.pick)} of games). First max: ${yn(ag&&ag.max_order)} Second max: ${yn(ag&&ag.max_full)}</p>`:''}</div>
+ ${srcBox([['u.gg match stats (overview), patch '+M.stats_game_patch,B.src&&B.src.ugg,B.src&&B.src.ugg_date,n0(u.n)+' games'],['LoLalytics build page, patch '+M.stats_game_patch,B.src&&B.src.lola,B.src&&B.src.lola_date,l?n0(l.n)+' games':'']],'Sources for this build')}
+ ${!l?'<p class="small muted">Only one source has this role: LoLalytics had no build page for it, so nothing above is cross-checked.</p>':''}`;}
+ else h+=`<p class="note">No build: this champion has no ranked games in the stats window.</p>`;
+ if(B&&u){const none=w=>`<span class="muted small">No clear ${w} matchup: no lane opponent passes the rule below on both sites.</span>`;
+ const gap=(m,s)=>{const a=s==='u'?u.wr:(l?l.wr:null);const w=s==='u'?m.ugg.wr:m.lola.wr;return a==null?'?':(w-a>=0?'+':'')+(w-a).toFixed(1);};
+ const muChip=m=>CK[m.id]?champChip(CK[m.id],`${gap(m,'u')} / ${gap(m,'l')} vs avg<br>${pct(m.ugg.wr)} / ${pct(m.lola.wr)} · ${n0(Math.min(m.ugg.n,m.lola.n))} games`):'';
+ h+=`<div class="sec"><h2>Matchups</h2><p>Lane opponents against whom ${esc(c.name)} wins clearly less or more than ${esc(c.name)}'s own average, on both sites. Each chip shows the gap to that average in points (u.gg / LoLalytics), then the win rates and the smaller game count. A champion with a low average can be "better than average" in a matchup it still loses.</p></div>
+ <div class="grid two"><div class="card"><h3 style="color:#ffb4a8">Hardest <span class="tiny muted">(worse than average)</span></h3><div class="row">${B.hard.map(muChip).join('')||none('hard')}</div></div>
+ <div class="card"><h3 style="color:var(--green)">Easiest <span class="tiny muted">(better than average)</span></h3><div class="row">${B.easy.map(muChip).join('')||none('easy')}</div></div></div>
+ <details class="more" style="margin-top:10px"><summary>How matchups are picked</summary><p class="small">An opponent is listed when each site has ${n0(M.mu_min_games)}+ games of the matchup and puts ${esc(c.name)}'s win rate in it at least ${M.mu_gap} points, and at least ${M.mu_z} standard errors, below (hardest) or above (easiest) ${esc(c.name)}'s own average in this role: ${pct(u.wr)} on u.gg, ${l?pct(l.wr):'?'} on LoLalytics. Smaller samples are left out because their win rate can move several points by chance. Both sites likely read the same Riot match data, so their agreement is not two independent measurements.</p></details>`;}
+ h+=`<div class="sec"><h2>Abilities</h2><p>From Riot's Data Dragon ${esc(M.ddragon)}: text, cooldown and cost per rank. Damage and other numbers per rank are from the League Wiki, shown only where the wiki's cooldowns equal Data Dragon's for this patch.</p></div>
+ <div class="grid two">${F.abilities.map(a=>`<div class="card abil">${img(a.img,'',a.name)}<div><h3><span class="key">${a.k}</span>${esc(a.name)}</h3><p class="small">${a.desc}</p>
+  ${a.k!=='P'?`<dl class="kv">${a.cd?`<dt>Cooldown</dt><dd>${esc(a.cd)} s</dd>`:''}${a.charges?chargeRows(a.charges):''}${a.cost?`<dt>Cost</dt><dd>${esc(a.cost)}</dd>`:''}${a.range?`<dt>Range</dt><dd>${esc(a.range)}</dd>`:''}</dl>`:''}${a.lv?`<dl class="kv lv">${a.lv.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="tiny muted">Per rank, from the League Wiki (<a href="https://wiki.leagueoflegends.com/en-us/${esc(a.lv_src.title.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(a.lv_src.title.replace(/^Template:Data /,''))}</a>, edited ${esc(a.lv_src.rev)}); its cooldowns match Data Dragon ${esc(M.ddragon)}.</p>`:''}</div></div>`).join('')}</div>`;
+ if(F.ally.length||F.enemy.length)h+=`<div class="sec"><h2>Riot's tips</h2><p>Written by Riot, shipped in Data Dragon.</p></div><div class="grid two"><div class="card"><h3>Playing as ${esc(c.name)}</h3><ul class="small">${F.ally.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div><div class="card"><h3>Playing against ${esc(c.name)}</h3><ul class="small">${F.enemy.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div></div>`;
+ h+=`<div class="sec"><h2>Base stats</h2><p>At level 1, from Data Dragon ${esc(M.ddragon)}.${(M.growth_dead||[]).length?` Attack damage growth is from the <a href="${WIKI}Module:ChampionData/data" target="_blank" rel="noopener">League Wiki's champion data</a> (revision ${esc(M.growth_wiki_rev)}), because Data Dragon gives 0 for every champion.`:''}</p></div><div class="card"><dl class="kv">${Object.entries(F.base).filter(([k,v])=>v[0]!=null).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v[0])}${v[2]==='none'?` <span class="muted">(growth per level not published in Data Dragon ${esc(M.ddragon)})</span>`:v[2]==='wiki'?` <span class="muted">(+${esc(v[1])} per level, League Wiki)</span>`:v[1]?` <span class="muted">(+${esc(v[1])} per level${k==='Attack speed'?', %':''})</span>`:''}</dd>`).join('')}</dl></div>
+ <div class="sec"><h2>Videos</h2>${(()=>{const CV=(D.champ_videos||{})[c.id]||[];const yt=`<a href="https://www.youtube.com/results?search_query=${encodeURIComponent(c.name+' guide league of legends')}" target="_blank" rel="noopener">search YouTube</a>`;
+  return CV.length?`<p>${esc(c.name)} guides found by a YouTube search on ${esc(M.champ_videos_searched||'?')}: the title names ${esc(c.name)} and no other champion, reads like a guide and is not a reaction video, uploaded since ${esc(M.videos_min.slice(0,4)+'-'+M.videos_min.slice(4,6)+'-'+M.videos_min.slice(6))}, one per channel. Chosen by that rule, not watched. Then the ${role?RNAME[role]:'role'} guides; for more, ${yt}.</p></div><div class="grid wide">${CV.map(vidItem).join('')}</div>${role?`<h3 style="margin:16px 0 8px">${RNAME[role]} guides</h3>`:''}`
+  :`<p>${(D.champ_videos||{})[c.id]?'No recent '+esc(c.name)+' guide passed the search rule':'Champion guides are searched only for the "Easy to learn" and "Highest win rates now" picks'}. These are ${role?RNAME[role]:'role'} guides found by the search rule; for this champion, ${yt}.</p></div>`;})()}${role?vids(role):''}
+ <details class="more" style="margin-top:16px"><summary>Lore</summary><p class="small muted">${esc(F.lore)}</p></details>`;
+ return h;};
+
+// ---------- items
+let IKIND='all',ICAT='all',IQ='';
+R.items=()=>{if(!ILOADED)loadItems(()=>{if((location.hash.slice(1)||'').split('/')[0]==='items'){const q=$('#iq');if(!(q&&document.activeElement===q))render(false);}});
+ const q=IQ.toLowerCase();const L=D.items.filter(i=>(IKIND==='all'||i.kind===IKIND)&&(ICAT==='all'||i.cats.includes(ICAT))&&(!q||(i.name+' '+i.stats.join(' ')+' '+(i.plain||'')).toLowerCase().includes(q)));
+ return `<div class="sec"><h2>Items</h2><p>All ${D.items.length} items you can buy on Summoner's Rift (Data Dragon ${esc(M.ddragon)}). Tap one for its stats, effects, recipe and who builds it.</p></div>
+ <div class="tabs" data-set="IKIND"><button data-v="all" class="${IKIND==='all'?'on':''}">All</button>${Object.keys(KIND).map(k=>`<button data-v="${k}" class="${IKIND===k?'on':''}">${KIND[k]}</button>`).join('')}</div>
+ <div class="tabs" data-set="ICAT"><button data-v="all" class="${ICAT==='all'?'on':''}">Any stat</button>${Object.keys(CAT).map(k=>`<button data-v="${k}" class="${ICAT===k?'on':''}">${CAT[k]}</button>`).join('')}</div>
+ <div class="filters"><div class="fi"><svg style="position:absolute;left:12px;top:13px;opacity:.7;color:var(--gold)" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="iq" type="search" placeholder="Filter by name or stat" value="${esc(IQ)}" aria-label="Filter items"></div><span class="small muted">${L.length} shown</span></div>
+ ${Object.keys(KIND).map(k=>{const T=L.filter(i=>i.kind===k);return T.length?`<h3 style="margin:18px 0 8px">${KIND[k]} <span class="tiny muted">${T.length}</span></h3><div class="igrid">${T.map(i=>`<div class="tile" data-item="${i.id}" role="button" tabindex="0">${img(i.img,'',i.name)}<b>${esc(i.name)}</b><span class="cost">${costLabel(i)}</span></div>`).join('')}</div>`:'';}).join('')}`;};
+function itemCard(id){const i=IB[id];if(!i)return '<p>Item not found.</p>';
+ return `<div class="ic-head">${img(i.img,'',i.name)}<div><h2 style="margin:0">${esc(i.name)}</h2><div class="pills"><span class="pill gold">${costLabel(i)}</span><span class="pill">${KIND[i.kind]}</span>${i.cats.map(c=>`<span class="pill">${CAT[c]}</span>`).join('')}</div></div></div>
+ ${i.plain?`<p class="small muted">${esc(i.plain)}</p>`:''}
+ ${i.stats.length?`<div class="isec"><h4>Stats</h4><p class="small">${i.stats.map(esc).join('<br>')}</p></div>`:''}
+ ${i.effect?`<div class="isec"><h4>Effects</h4><p class="small">${i.effect}</p>${i.effect_more?`<details class="more"><summary>More</summary><p class="small">${i.effect_more}</p></details>`:''}</div>`:''}
+ <div class="isec"><h4>How to get it</h4>${i.how?`<p class="small">${esc(i.how)}</p><p class="small">Support item chain: ${(D.support_chain||[]).slice(0,3).map(itemLink).join(' &rsaquo; ')} &rsaquo; one free upgrade. The same gold also counts for the support <a href="#roles">Role Quest</a> (800 points, 1 per gold).</p>`:`<p class="small">Buy it in the shop for ${n0(i.cost)} gold${i.from.length?`, or build it from ${i.from.map(itemLink).join(' + ')} and pay ${n0(i.combine)} more`:''}. Sells for ${n0(i.sell)}.</p>`}</div>
+ ${i.into.length?`<div class="isec"><h4>Builds into</h4><p class="small">${i.into.map(itemLink).join(', ')}</p></div>`:''}
+ <div class="isec"><h4>What it is used for</h4>${i.users.length?`<p class="small">Core item (in u.gg's recommended build) for: ${i.users.map(u=>CB[u.id]?champLink(CB[u.id]):esc(u.name)).join(', ')}.</p>`:'<p class="small muted">Not in any champion\'s u.gg recommended core build this patch.</p>'}</div>
+ <p class="src">Item data: Riot Data Dragon ${esc(M.ddragon)}${i.from_wiki?' (stats and effect from the League Wiki, because Data Dragon\'s entry is blank or shows placeholder zeros)':''}${i.wiki?`; how to get it: <a href="${WIKI}${encodeURIComponent(i.wiki.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(i.wiki)}</a> (League of Legends Wiki)`:''}. Core-item use: u.gg, patch ${esc(M.stats_game_patch)}, ${esc(M.bracket)}.</p>`;}
+
+// ---------- runes
+R.runes=()=>`<div class="sec"><h2>Runes</h2><p>The five rune paths. Pick one keystone (top row) and one rune from each of the three rows of your primary path, then two runes from a secondary path, then three stat shards. Tap a rune for its full text.</p></div>
+ <div class="grid">${D.trees.map(t=>`<div class="card"><h3 class="row">${img(t.img,'',t.name)} ${esc(t.name)}</h3><div class="tree">${t.slots.map((s,si)=>`<div class="slot" style="--n:${s.length}">${s.map(id=>{const r=RB[id];return `<div class="rn ${si===0?'ks':''}" data-rune="${id}" role="button" tabindex="0">${img(r.img,'',r.name)}<span>${esc(r.name)}</span></div>`;}).join('')}</div>`).join('')}</div></div>`).join('')}</div>
+ <div class="sec"><h2>Stat shards</h2><p>Names and text from the client's perk list (Community Dragon).</p></div><div class="grid">${Object.values(D.shards).map(s=>`<div class="card row" style="flex-wrap:nowrap">${img(s.img,'',s.name)}<div><b>${esc(s.name)}</b><p class="small muted">${esc(s.short)}</p></div></div>`).join('')}</div>`;
+function runeCard(id){const r=RB[id];if(!r)return '<p>Rune not found.</p>';const t=TR[r.tree]||{};
+ return `<div class="ic-head">${img(r.img,'',r.name)}<div><h2 style="margin:0">${esc(r.name)}</h2><div class="pills"><span class="pill gold">${esc(t.name||'')}</span><span class="pill">${r.keystone?'Keystone':'Row '+r.slot}</span></div></div></div>
+ <div class="isec"><h4>What it does</h4><p class="small">${r.long||r.short}</p></div>
+ <div class="isec"><h4>How to get it</h4><p class="small">${r.keystone?`Choose ${esc(t.name)} as your primary path and take it in the top row.`:`Take it in row ${r.slot} of ${esc(t.name)}, as your primary path or as one of the two secondary runes.`}</p></div>
+ ${r.keystone?`<div class="isec"><h4>Who uses it</h4>${r.users.length?`<p class="small">Keystone in u.gg's recommended build for: ${r.users.map(u=>CB[u.id]?champLink(CB[u.id]):esc(u.name)).join(', ')}.</p>`:'<p class="small muted">Not the main keystone of any champion this patch.</p>'}</div>`:''}
+ <p class="src">Rune text: Riot Data Dragon ${esc(M.ddragon)}.</p>`;}
+
+// ---------- summoner spells
+R.spells=()=>`<div class="sec"><h2>Summoner spells</h2><p>The spells you can take on Summoner's Rift, from Data Dragon ${esc(M.ddragon)}. Each champion's page shows u.gg's recommended pair and the pair most players take on LoLalytics.</p></div>
+ <div class="grid wide">${Object.values(D.summs).sort((a,b)=>a.name.localeCompare(b.name)).map(s=>`<div class="card abil">${img(s.img,'',s.name)}<div><h3>${esc(s.name)}</h3><p class="small">${s.desc}</p><p class="tiny muted">Cooldown ${esc(s.cd)} s · unlocks at player level ${esc(s.level)}</p></div></div>`).join('')}</div>`;
+
+// ---------- videos
+const VT=[['waves','Wave management'],['laning','Laning and trading'],['farming','Last-hitting and CS'],['jungle','Jungle'],['objectives','Objectives and macro'],['vision','Vision and warding'],['teamfight','Teamfighting'],['climb','Climbing ranked'],['top','Top lane'],['mid','Mid lane'],['adc','Bottom lane (ADC)'],['support','Support'],['runes','Runes and items']];
+R.videos=()=>{const V=D.videos||{};const n=Object.values(V).reduce((a,l)=>a+l.length,0);
+ return `<div class="sec"><h2>Videos</h2><p>${n} YouTube guides for ${Object.values(V).filter(l=>l.length).length} of ${VT.length} topics, chosen by a stated rule, not watched or reviewed.</p>
+ <details class="more"><summary>How videos are picked</summary><p class="small">Found by a YouTube search on ${esc(M.videos_searched||'?')}: the title names the topic and reads like a guide, uploaded since ${M.videos_min?esc(M.videos_min.slice(0,4)+'-'+M.videos_min.slice(4,6)+'-'+M.videos_min.slice(6)):'?'}, longer than 4 minutes, in English, one per channel, newest first${Object.keys(M.videos_topic_min||{}).length?' (runes and items, laning and vision: since patch 26.01 changed items, the map and vision, '+esc(ymd(Object.values(M.videos_topic_min)[0]))+')':''}. A video uploaded more than 60 days before the last check is marked "older than 60 days". Titles about "Classic" League, one champion, a tier claim or gameplay only are dropped, and so are titles about one role for a topic about every role. Chosen by that rule, not watched or reviewed for quality; "What it covers" lists each video's own chapter titles where it has them. They play here (youtube-nocookie.com) when you are online.</p></details></div>
+ ${VT.map(([k,t])=>`<div class="sec"><h3>${esc(t)}</h3></div>${vids(k)}`).join('')}`;};
+
+// ---------- sources
+R.sources=()=>{const T=Object.values(D.tiers);return `<div class="sec"><h2>Sources and method</h2><p>Everything here comes from these pulls, cached in data/raw/ next to the build script (request log: data/raw/_fetch_log.json). The public copy leaves out the full u.gg and LoLalytics responses; the numbers this guide uses from them are in data/.</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Source</th><th>Used for</th><th>Pulled</th></tr></thead><tbody>${(D.sources||[]).map(s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>${(s.pages||[]).length?`<details class="more srcpages"><summary>${s.pages.length} pages</summary><p class="small">${s.pages.map(esc).join(', ')}</p></details>`:''}${s.more?`<details class="more srcpages"><summary>Details</summary><p class="small">${esc(s.more)}</p></details>`:''}</td><td>${esc(s.what)}</td><td>${s.pulled===false?'linked, not pulled':esc(s.date).replace(/(\d{4}-\d\d-\d\d)/g,'<span class="nw">$1</span>')}</td></tr>`).join('')}</tbody></table></div>
+ <div class="grid two" style="margin-top:14px"><div class="card"><h3>Counts</h3><dl class="kv"><dt>Champions</dt><dd>${D.champions.length}</dd><dt>Champion role builds</dt><dd>${D.champions.reduce((a,c)=>a+c.roles.length,0)}</dd><dt>Items (Summoner's Rift)</dt><dd>${D.items.length}</dd><dt>Runes</dt><dd>${Object.keys(D.runes).length} + ${Object.keys(D.shards).length} shards</dd><dt>Summoner spells</dt><dd>${Object.keys(D.summs).length}</dd><dt>Tier entries</dt><dd>${T.reduce((a,t)=>a+t.rows.length,0)} with a letter, ${T.reduce((a,t)=>a+t.split.length,0)} split</dd><dt>How-to guides</dt><dd>${howtos.filter(s=>s.steps).length} (${howtos.reduce((a,s)=>a+(s.steps||[]).length,0)} steps)</dd><dt>Videos</dt><dd>${Object.values(D.videos||{}).reduce((a,l)=>a+l.length,0)}</dd><dt>Cached requests</dt><dd>${n0(M.requests_ok)}</dd></dl></div>
+ <div class="card"><h3>How the numbers are made</h3><ul class="small">
+ <li><b>Stats window:</b> patch ${esc(M.stats_game_patch)} (${esc(SPI.date||'')} to ${esc(P.date||'')}), ranked solo/duo, ${esc(M.bracket)}. u.gg: world. LoLalytics: all regions. Patch ${esc(M.game_patch)} is not used for stats because it went live on the pull date.</li>
+ <li><b>Guide tier:</b> for each site, win rate minus that site's average: u.gg's average for the role, LoLalytics' one overall average for all roles (its tier files give the same figure for every lane; it counts each player's own rank, so it is above 50%). Bands: S +2.0 or more, A +0.75 to +2.0, B -0.75 to +0.75, C -2.0 to -0.75, D below. Letter = the band both sites give; it is given only when the two bands are the same (otherwise the entry is listed as "Sources differ" with the letter each site's win rate would get) and both have ${n0(M.min_games)}+ games and a ${M.min_pr}%+ pick rate in the role.</li>
+ <li><b>Builds:</b> u.gg's recommended runes, spells, starting items, 3 core items and skill order for that role (u.gg's own pick, which is not always the most played one). Next to each part is LoLalytics' most picked choice (keystone, each other rune row, stat shards, spell pair, starting set, 1st/2nd/3rd item and level-15 skill order) with a check of whether they agree; where they do not, the page says "Sources differ" and shows LoLalytics' pick and how often each choice is played. A spell pair or starting set played in under half the games on both sites is marked as such.</li>
+ <li><b>Matchups:</b> enemy in the same lane, ${n0(M.mu_min_games)}+ games on each site, and on each site the matchup win rate is ${M.mu_gap}+ points and ${M.mu_z}+ standard errors away from the champion's own average, on the same side.</li>
+ <li><b>How-to steps:</b> each step is one of three kinds. A sourced step cites a wiki page and quotes it; the build fails if the quote is not on that page or if a number in the step is not inside the quote (open "What the page says" under a step to read the quote). A step marked <b>Common coaching advice</b> is standard practice that no measured source states. A "Step in this guide" just moves you around this guide. Every name must be a champion, item, rune, spell or wiki page in the pulled data.</li>
+ <li><b>Rule changes after 26.01:</b> the patch pages ${esc((M.patch_review||{}).pages?M.patch_review.pages[0]+' to '+M.patch_review.pages[M.patch_review.pages.length-1]:'')} are cached. The build lists every rule block on them that touches a topic in this guide (${n0((M.patch_review||{}).blocks)} blocks) and fails unless each has a reviewed verdict; ${n0((M.patch_review||{}).changed)} of them led to a change here (Role Quests and Aegis of Valor, plus a quote added to the Victorious step), and those lines quote the patch page. Champion and item balance changes are not part of this check: champion pages flag ${esc(M.game_patch)} changes, and item cards come from the current Data Dragon.</li>
+ <li><b>Epic monsters and the support item chain:</b> from the cached wiki pages (Dragon Slayer, Dragon pit, Elder Dragon, Hand of Baron, World Atlas, Runic Compass, Bounty of Worlds and others), checked the same way.</li>
+ <li><b>Item one-liners:</b> Riot's one-line item text is hidden when it claims a stat the item does not have (${(M.plain_dropped||[]).length} items: ${esc((M.plain_dropped||[]).join(', '))}).</li></ul></div></div>
+ <div class="card" style="margin-top:14px"><h3>What is not verified or not covered</h3><ul class="small">
+ <li>Stats are one patch behind the game data (see above); ${esc(M.game_patch)} changes are flagged on champion pages, not reflected in the numbers.</li>
+ <li>The LoLalytics build numbers are read from the state embedded in its public build pages (no official API); if the page format changes, a refresh can miss them and the build will say so.</li>
+ <li>u.gg's build is u.gg's recommendation, not proven best and not always the most played (each part shows LoLalytics' most picked choice). Win rates of builds are not adjusted for player skill.</li>
+ <li>Data Dragon no longer carries per-rank ability numbers. They come from the League Wiki and are shown for ${n0((M.abil_stat||{}).shown)} of ${n0(Object.values(M.abil_stat||{}).reduce((a,b)=>a+b,0))} abilities, only where the wiki's cooldowns equal Data Dragon's; the others are left out (${esc(Object.entries(M.abil_stat||{}).filter(([k])=>k!=='shown').map(([k,v])=>k+' '+v).join(', '))}).</li>
+ <li>Modes other than Summoner's Rift ranked (ARAM, Arena, Swiftplay) are not covered.</li>
+ <li>Videos are picked by a search rule, not watched. Champion guide videos were searched only for the ${n0(Object.keys(D.champ_videos||{}).length)} champions shown as "Easy to learn" or "Highest win rates now" (${n0(Object.values(D.champ_videos||{}).filter(l=>l.length).length)} have one); other champion pages show the role's guides and a YouTube search link.</li>
+ <li>The Victorious skin rule (15 ranked wins per season) is from the League Wiki's Rank page and is restated in patch 26.15; that Solo/Duo and Flex wins count together is from the Rank page only.</li>
+ <li>Later patch pages are checked for rule changes by topic words (Role Quest, turret, Smite, minion, LP and others); a rule change worded without one of those words would be missed.</li></ul></div>
+ <p class="small muted">Fan-made and not endorsed by Riot Games. League of Legends and all images belong to Riot Games (used under Riot's "Legal Jibber Jabber" fan-content policy); list of image sources in assets/manifest.json. Heading font: Cinzel (SIL Open Font License).</p>`;};
+
+// ---------- search
+const IDX=[];
+D.champions.forEach(c=>{IDX.push({t:c.name,k:'Champion · '+(c.roles.map(r=>RNAME[r.role]).join(', ')||c.tags.join(', ')),go:'champ/'+c.slug,img:c.img,x:c.title+' '+c.tags.join(' ')});(c.ab||[]).forEach((a,i)=>IDX.push({t:a,k:'Ability · '+c.name,go:'champ/'+c.slug,img:c.img,x:''}));});
+D.items.forEach(i=>IDX.push({t:i.name,k:'Item · '+costLabel(i),item:i.id,img:i.img,x:i.stats.join(' ')}));
+(D.monsters||[]).forEach(m=>IDX.push({t:m.name,k:'Epic monster',go:'monsters',img:m.img,x:(m.buff||'')+' '+m.gives}));
+((D.howto&&D.howto.glossary)||[]).forEach(g=>{const w=(g.t.match(/\*\*([^*]+)\*\*/)||[])[1];if(w)IDX.push({t:w,k:'Glossary',go:'glossary',x:g.t});});
+Object.values(D.runes).forEach(r=>IDX.push({t:r.name,k:'Rune · '+((TR[r.tree]||{}).name||''),rune:r.id,img:r.img,x:''}));
+Object.values(D.summs).forEach(s=>IDX.push({t:s.name,k:'Summoner spell',go:'spells',img:s.img,x:''}));
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id,x:g})));
+howtos.forEach(s=>IDX.push({t:s.title,k:'Guide',go:s.id,x:(s.steps||s.paras||[]).map(p=>p.t).join(' ')}));
+(D.howto.tables||[]).forEach(t=>IDX.push({t:t.title,k:'Table',go:'ref',x:t.rows.map(r=>r.join(' ')).join(' ')}));
+(D.howto.roles||[]).forEach(r=>IDX.push({t:r.name+' role',k:'Role',go:'roles',x:r.t}));
+const norm=s=>String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,'');
+function makeSearch(inp,res){let hits=[],sel=0;
+ function run(q){q=norm(q).trim();if(!q){res.classList.remove('on');return;}const words=q.split(/\s+/);
+  hits=IDX.map(e=>{const t=norm(e.t),x=norm(e.x);let sc=0;if(t===q)sc=100;else if(t.startsWith(q))sc=60;else if(t.includes(q))sc=40;else if(words.every(w=>t.includes(w)||x.includes(w)))sc=10;return [sc,e];}).filter(a=>a[0]>0).sort((a,b)=>b[0]-a[0]||a[1].t.localeCompare(b[1].t)).slice(0,14).map(a=>a[1]);
+  sel=0;res.innerHTML=hits.length?hits.map((e,i)=>`<div class="${i===0?'sel':''}" data-i="${i}" role="option">${e.img?img(e.img):''}<span>${esc(e.t)}</span><i>${esc(e.k)}</i></div>`).join(''):'<div class="none">No match. Try a champion, item, rune or topic.</div>';res.classList.add('on');}
+ function go(e){if(!e)return;res.classList.remove('on');inp.value='';inp.blur();$('#side').classList.remove('open');if(e.item)openItem(e.item);else if(e.rune)openRune(e.rune);else location.hash=e.go;}
+ inp.addEventListener('input',e=>run(e.target.value));
+ inp.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...res.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){go(hits[sel]);}else if(e.key==='Escape'){res.classList.remove('on');}});
+ res.addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();go(hits[+d.dataset.i]);}});}
+makeSearch($('#q'),$('#res'));
+document.addEventListener('click',e=>{if(!e.target.closest('.search,.bigsearch'))document.querySelectorAll('.results').forEach(r=>r.classList.remove('on'));});
+
+// ---------- modal
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;$('#modal .x').focus();}
+function closeModal(){if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+// item effects, one-liners and "who builds it" are in data/items.js, loaded the first time an item card or the items page opens
+let ILOADED=false;const IQUEUE=[];
+function loadItems(cb){if(ILOADED){cb();return;}IQUEUE.push(cb);if(IQUEUE.length>1)return;const s=document.createElement('script');s.src='data/items.js?v=2026-11-18-415572';
+ s.onload=()=>{Object.entries(window.LOLI||{}).forEach(([id,x])=>{if(IB[id])Object.assign(IB[id],x);});ILOADED=true;IQUEUE.splice(0).forEach(f=>f());};
+ s.onerror=()=>{IQUEUE.length=0;main.insertAdjacentHTML('afterbegin','<p class="note warn">Could not load the item data file.</p>');};document.head.appendChild(s);}
+function openItem(id){if(ILOADED){openModal(itemCard(+id));return;}openModal('<p class="muted">Loading item...</p>');loadItems(()=>{if($('#modal').classList.contains('on'))$('#mbody').innerHTML=itemCard(+id);});}
+function openRune(id){openModal(runeCard(+id));}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('[role=button][data-item],[role=button][data-rune],[role=button][data-vid]')){e.preventDefault();e.target.click();}});
+// YouTube refuses to play an embed on a page opened from file:// (no referrer: "Error 153"), so there the modal links out instead
+function playVideo(id,title){if(location.protocol==='file:'){openModal(`<h3 style="margin-right:30px">${esc(title)}</h3><p class="small vid-file">Videos cannot play inside a guide opened as a file on this device (YouTube blocks the embed there). <a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Watch it on YouTube</a> <span class="muted">(needs internet)</span>, or open the guide from its web address to play it here.</p>`,true);return;}
+ openModal(`<h3 style="margin-right:30px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+
+// ---------- clicks + routing
+document.addEventListener('click',e=>{
+ const it=e.target.closest('[data-item]');if(it){e.preventDefault();openItem(it.dataset.item);return;}
+ const ru=e.target.closest('[data-rune]');if(ru){e.preventDefault();openRune(ru.dataset.rune);return;}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const g=e.target.closest('[data-go]');if(g){location.hash=g.dataset.go;return;}
+ const b=e.target.closest('.tabs[data-set] button');if(b){const set=b.parentNode.dataset.set,val=b.dataset.v;
+  if(set==='TROLE')TROLE=val;else if(set==='CROLE')CROLE=val;else if(set==='IKIND')IKIND=val;else if(set==='ICAT')ICAT=val;else if(set==='CHV')CHV=val;else if(set==='CRL')CRL[b.parentNode.dataset.c]=val;render(false);}
+});
+main.addEventListener('input',e=>{const id=e.target.id;if(id==='iq'||id==='cq'){if(id==='iq')IQ=e.target.value;else CQ=e.target.value;const pos=e.target.selectionStart;render(false);const n=$('#'+id);if(n){n.focus();n.setSelectionRange(pos,pos);}}});
+main.addEventListener('change',e=>{if(e.target.id==='ctag'){CTAG=e.target.value;render(false);}});
+$('#menuBtn').addEventListener('click',()=>$('#side').classList.toggle('open'));
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#side').classList.remove('open');});
+
+function render(top=true){let h='home';try{h=decodeURIComponent(location.hash.slice(1))||'home';}catch(err){h='home';}const parts=h.split('/');const r=parts[0],arg=parts[1];
+ if(r==='item'){main.innerHTML=R.items()+footer();$('#nav').innerHTML=navHtml('items');const i=IS[arg];if(i)openItem(i.id);return;}
+ const own=Object.prototype.hasOwnProperty.call(R,r)&&typeof R[r]==='function';const lost=!own&&h!=='home';const f=own?R[r]:lost?R.lost:R.home;const cur=own?r:'home';
+ try{main.innerHTML=f(arg)+footer();}
+ catch(err){main.innerHTML=`<p class="note warn">This section failed to draw: ${esc(err.message)}. <a href="#home">Home</a></p>`;console.error(err);}
+ const navCur=r==='champ'?'champions':r==='learn'?'roles':cur;$('#nav').innerHTML=navHtml(navCur);
+ if($('#q2'))makeSearch($('#q2'),$('#res2'));
+ main.querySelectorAll('.tablewrap').forEach(w=>{if(w.scrollWidth>w.clientWidth+2&&!w.classList.contains('scrolls')){w.classList.add('scrolls');w.insertAdjacentHTML('afterend','<p class="scrollhint">Scroll the table sideways for more columns &rarr;</p>');}});
+ if(top)window.scrollTo(0,0);
+ document.title=(r==='champ'&&CS[arg]?CS[arg].name+' · ':'')+'League of Legends Guide';}
+function footer(){return `<footer>${$('#checked').innerHTML}<br>Fan-made guide, not endorsed by Riot Games · <a href="#sources">sources and method</a></footer>`;}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+})();
+</script>
+</body>
+</html>

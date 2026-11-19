@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guild Wars 2 Field Guide</title>
+<meta name="description" content="Guild Wars 2 guide for returning players: every profession and elite specialization, current builds from two dated sources, gearing, masteries, mounts, story order, gold, Wizard's Vault and videos.">
+<meta name="theme-color" content="#15100e">
+<meta property="og:title" content="Guild Wars 2 Field Guide">
+<meta property="og:description" content="Come back to Guild Wars 2: builds checked against two dated sources, gearing to ascended, masteries, mounts, story order, gold making and the Wizard's Vault. Works offline.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Cinzel";src:url("assets/fonts/Cinzel.ttf") format("truetype");font-weight:400 900;font-display:swap;unicode-range:U+0000-002F,U+003A-10FFFF}
+/* digits are left out of Cinzel on purpose: its 1 reads like a Roman I, so numbers in headings use the next serif */
+:root{
+  --ink:#15100e;--ink2:#1c1512;--panel:#231a16;--panel2:#2c211c;--well:#110c0a;
+  --line:rgba(239,227,200,.10);--line2:rgba(239,227,200,.20);
+  --parch:#efe3c8;--parch2:#e2d2ae;--muted:#bba98a;--dim:#94846b;
+  --red:#c8332b;--redt:#f0705f;--red2:#8e1f19;--gold:#d9a441;--jade:#7fb59a;--sky:#86b3d6;
+  --head:"Cinzel","Trajan Pro","Palatino Linotype",Palatino,Georgia,serif;
+  --body:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:6px;
+}
+*{box-sizing:border-box}
+html{background:var(--ink);-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--parch);font:17px/1.6 var(--body);overflow-x:hidden;
+  background:
+   radial-gradient(1200px 520px at 100% -8%,rgba(200,51,43,.16),transparent 62%),
+   radial-gradient(900px 600px at -10% 105%,rgba(217,164,65,.08),transparent 60%),
+   var(--ink)}
+a{color:var(--redt)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+button{font:inherit;color:inherit}
+img{max-width:100%}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;letter-spacing:.02em;margin:0 0 .45em;line-height:1.2;color:var(--parch)}
+h2{font-size:1.75rem;padding-bottom:12px;background:url("assets/ui/brush.svg") left bottom/220px 12px no-repeat}
+h3{font-size:1.12rem}
+code{font-family:Consolas,"SFMono-Regular",Menlo,monospace;font-size:.86em;background:rgba(0,0,0,.35);padding:1px 5px;border-radius:4px;word-break:break-all}
+.shell{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line);background:linear-gradient(180deg,#1d1512,#130e0c)}
+.brand{display:flex;gap:11px;align-items:center;text-decoration:none;color:var(--parch)}
+.brand .mk{width:42px;height:42px;flex:none;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e0473c,#7e1712);box-shadow:0 0 0 2px rgba(239,227,200,.25),0 6px 16px rgba(200,51,43,.35);font:700 1.05rem var(--head);color:var(--parch)}
+.brand b{display:block;font-family:var(--head);font-size:1.12rem;line-height:1.15}
+.brand small{color:var(--gold);letter-spacing:.16em;font-size:.68rem;text-transform:uppercase}
+#checked{font-size:1rem;color:var(--muted);margin:12px 2px;line-height:1.5}
+#checked a{color:var(--parch2)}
+.search{position:relative}
+.search input{width:100%;padding:10px 12px 10px 36px;border-radius:var(--r);border:1px solid var(--line2);background:rgba(0,0,0,.35);color:var(--parch);font:inherit;font-size:16px;outline:none}
+.search input:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(200,51,43,.22)}
+.search svg{position:absolute;left:11px;top:13px;opacity:.65}
+.results{position:absolute;left:0;right:0;top:48px;background:#241b17;border:1px solid var(--line2);border-radius:var(--r);max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.92rem;display:flex;align-items:center;gap:9px}
+.results div img{width:26px;height:26px;object-fit:cover;border-radius:4px;flex:none}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.76rem;white-space:nowrap}
+.results div:hover,.results div.sel{background:rgba(200,51,43,.18)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:10px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font-family:var(--head);font-size:.74rem;letter-spacing:.16em;color:var(--gold);margin:14px 8px 4px;text-transform:uppercase}
+nav a{display:flex;gap:10px;align-items:center;padding:6px 10px 6px 14px;border-radius:4px;color:var(--parch2);text-decoration:none;font-size:.95rem;position:relative}
+nav a:hover{background:rgba(239,227,200,.05);color:var(--parch)}
+nav a.on{color:var(--parch);background:linear-gradient(90deg,rgba(200,51,43,.28),rgba(200,51,43,0))}
+nav a.on::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:6px;background:url("assets/ui/stroke.svg") center/100% 100% no-repeat}
+nav a .n{margin-left:auto;font-size:.76rem;color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,3vw,48px) 90px}
+.topbar{display:none}
+#checkedm{display:none}
+.card,.tile{background:linear-gradient(180deg,rgba(239,227,200,.045),rgba(239,227,200,.012)),var(--panel);border:1px solid var(--line2);border-radius:var(--r);box-shadow:0 8px 22px rgba(0,0,0,.28)}
+.card{padding:16px 18px;min-width:0}
+.card p{margin:.35em 0}
+.hero{position:relative;overflow:hidden;border-radius:10px;padding:clamp(22px,4vw,48px);margin-bottom:24px;isolation:isolate;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line2)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;object-position:center 40%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(21,16,14,.97) 6%,rgba(21,16,14,.6) 55%,rgba(21,16,14,.15)),linear-gradient(90deg,rgba(21,16,14,.9),transparent 75%)}
+.hero .k{color:var(--gold);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;align-self:flex-start;background:rgba(21,16,14,.78);padding:5px 10px;border-radius:4px;text-shadow:0 1px 3px #000}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4rem);margin:.1em 0 .2em;text-shadow:0 4px 18px rgba(0,0,0,.7)}
+.hero p{max-width:820px;color:var(--parch2);font-size:1.06rem;margin:0}
+.hero .sbox{margin-top:16px;max-width:560px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.sec{margin:32px 0 14px}
+.sec>p{margin:.3em 0 0;color:var(--muted);max-width:1100px}
+.muted{color:var(--muted)}.small{font-size:.94rem}.tiny{font-size:.88rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:1px 9px;border-radius:999px;font-size:.8rem;border:1px solid var(--line2);background:rgba(0,0,0,.3);color:var(--parch2);white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.red{background:var(--red);border-color:var(--red);color:#fff7ea;font-weight:700}
+.pill.ok{color:var(--jade);border-color:rgba(127,181,154,.5)}
+.pill.old{color:var(--gold);border-color:rgba(217,164,65,.5)}
+.note{border-left:4px solid var(--red);background:rgba(200,51,43,.08);padding:10px 14px;border-radius:0 6px 6px 0;color:var(--parch2);margin:12px 0}
+.note.gold{border-left-color:var(--gold);background:rgba(217,164,65,.07)}
+.lk{color:var(--redt);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(240,112,95,.45);background:none;border:0;padding:0;font:inherit}
+a.tilecard{text-decoration:none;color:inherit;display:block}
+a.hometile{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:start}
+a.hometile img{width:64px;height:64px;object-fit:cover;border-radius:6px;background:var(--well);box-shadow:0 0 0 1px var(--line2)}
+a.tilecard:hover,.tile:hover,.ccard:hover{border-color:var(--red)}
+.tile{display:flex;flex-direction:column;cursor:pointer;overflow:hidden;text-align:left;padding:0;color:var(--parch);width:100%}
+.tile .pic{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--well)}
+.tile .pic.fit{object-fit:contain;background:#0f0b09}
+.tile .pic.sq{aspect-ratio:1/1;object-fit:contain;padding:14px;background:radial-gradient(circle at 50% 40%,rgba(239,227,200,.08),rgba(0,0,0,.3))}
+.tile .pic.top{object-position:center 12%}
+.tile.mrow{flex-direction:row;align-items:center}.tile.mrow .pic.sq{width:84px;flex:none;padding:8px;aspect-ratio:1/1}
+.tile .t{padding:10px 12px 12px}
+.tile b{font-family:var(--head);font-size:1.02rem;display:block;line-height:1.25}
+.tile .s{font-size:.95rem;color:var(--muted);display:block;margin-top:2px}
+.ccard{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:start;padding:12px;cursor:pointer;text-align:left;width:100%}
+.ccard img{width:56px;height:56px;object-fit:cover;border-radius:6px;background:var(--well)}
+.ccard b{font-weight:650;display:block;line-height:1.3}
+.ccard .s{font-size:.95rem;color:var(--muted);display:block}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs a,.tabs button{padding:6px 14px;border-radius:999px;border:1px solid var(--line2);background:var(--panel);cursor:pointer;font-size:.92rem;text-decoration:none;color:var(--parch2)}
+.tabs .on{background:var(--red);color:#fff7ea;border-color:var(--red);font-weight:700}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input,.filters select{background:rgba(0,0,0,.35);color:var(--parch);border:1px solid var(--line2);border-radius:var(--r);padding:8px 11px;font:inherit;font-size:16px;min-width:0;max-width:100%}
+.filters input{flex:1 1 220px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line2);border-radius:var(--r);background:rgba(17,12,10,.6)}
+table{width:100%;border-collapse:collapse;font-size:1rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#2a1f1a;font-family:var(--head);font-weight:600;font-size:.84rem;letter-spacing:.04em;white-space:nowrap}
+td.num,th.num{text-align:right;white-space:nowrap}
+td .ic{width:28px;height:28px;vertical-align:middle;margin-right:8px;border-radius:4px;flex:none}
+td button.lk{overflow-wrap:anywhere;white-space:normal;min-width:0}
+tr:hover td{background:rgba(239,227,200,.025)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:8px;max-width:1100px}
+a.term{color:inherit;text-decoration:underline dotted var(--gold);text-underline-offset:3px}
+.sgrp{margin:18px 0 4px;font-family:var(--head);font-size:1.15rem;color:var(--gold,#d9b56a)}
+.steps li{position:relative;padding:12px 16px 12px 58px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:11px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff7ea;display:grid;place-items:center;font:700 .95rem var(--head);box-shadow:0 0 0 2px rgba(239,227,200,.18)}
+.src{font-size:.88rem;color:var(--dim);margin-top:4px}
+.src a{color:var(--dim)}
+.howhead p{max-width:1100px}
+.need{font-size:1rem;color:var(--parch2);margin:4px 0}
+.see{color:var(--jade);font-size:.95rem;margin-top:3px}
+ul.notes{max-width:1100px;margin:8px 0;padding-left:1.2em;color:var(--parch2)}ul.notes li{margin:6px 0}ul.notes .src{display:inline}
+.check{border-left:4px solid var(--jade);background:rgba(127,181,154,.08);padding:10px 14px;border-radius:0 6px 6px 0;margin:12px 0;max-width:1100px}
+.path{list-style:none;counter-reset:p;padding:0;margin:0;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr))}
+.path li{counter-increment:p}
+.path a{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;text-decoration:none;color:var(--parch);padding:14px}
+.path a::before{content:counter(p);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--red);font:700 1.1rem var(--head);color:#fff7ea}
+.path b{font-family:var(--head);display:block}
+.path span{color:var(--muted);font-size:.92rem}
+.trow{display:grid;grid-template-columns:84px 1fr;border-radius:var(--r);overflow:hidden;margin-bottom:10px;border:1px solid var(--line2)}
+.trow .lab{display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 2.1rem var(--head);color:#fff7ea;text-align:center;padding:6px}
+.trow .lab small{font:600 .7rem var(--body);letter-spacing:.03em}
+.tS .lab{background:var(--red)}.tA .lab{background:#9a6a1f}.tN .lab{background:#3a2e27;color:var(--muted)}
+.trow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px;background:var(--panel)}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:6px;background:rgba(0,0,0,.3);border:1px solid var(--line2);cursor:pointer;font-size:.9rem;color:var(--parch);text-align:left}
+.chip:hover{border-color:var(--red)}
+.chip img{width:34px;height:34px;border-radius:4px}
+.chip i{font-style:normal;font-size:.88rem;color:var(--muted);display:block}
+.brow{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 12px;cursor:pointer;width:100%;text-align:left}
+.brow img{width:44px;height:44px;border-radius:5px}
+.brow b{display:block;font-weight:650}
+.brow .s{display:block;font-size:.95rem;color:var(--muted)}
+.brow .r{text-align:right;font-size:.88rem;color:var(--muted);white-space:nowrap}
+.blist{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr))}
+.vid{display:flex;flex-direction:column;overflow:hidden}
+.vid .frame{position:relative;aspect-ratio:21/9;background:#000;display:grid;place-items:center;cursor:pointer;border:0;width:100%;padding:0}
+.vid .frame span{width:64px;height:44px;border-radius:12px;background:var(--red);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.vid .frame span::after{content:"";border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.vid .frame{background:radial-gradient(circle at 50% 45%,rgba(200,51,43,.22),transparent 60%),linear-gradient(180deg,#201714,#0d0908)}
+.vid .frame em{position:absolute;left:12px;right:12px;bottom:8px;font-style:normal;font-size:.88rem;color:var(--muted);text-align:center}
+.vid iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.vid .t{padding:10px 12px 12px}
+.vid b{display:block;line-height:1.35}
+.modal{position:fixed;inset:0;background:rgba(8,5,4,.72);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#2a201b,#1a1311);border:1px solid var(--line2);border-radius:10px;max-width:760px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.65)}
+.modal .x{position:absolute;right:10px;top:6px;background:none;border:0;font-size:1.9rem;cursor:pointer;color:var(--muted);line-height:1;padding:6px}
+.mhead{display:flex;gap:14px;align-items:center;margin-bottom:10px;padding-right:34px}
+.mhead img{width:84px;height:84px;object-fit:cover;border-radius:8px;background:var(--well);flex:none;box-shadow:0 0 0 1px var(--line2)}
+.mhead h2{background:none;padding:0;margin:0;font-size:1.5rem}
+.mpic{width:100%;max-height:260px;object-fit:cover;border-radius:8px;margin:4px 0 10px;display:block}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+.isec h4{font-family:var(--head);font-size:.86rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;font-size:.94rem;margin:6px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.gear{margin:10px 0;padding:10px 12px;border-left:3px solid var(--red,#c8332b);background:rgba(0,0,0,.18);border-radius:4px}.gear h5{margin:0 0 6px;font-size:1rem;color:var(--gold)}
+.codebox{display:flex;gap:8px;align-items:stretch;margin:6px 0}
+.codebox code{flex:1;padding:8px 10px;display:block;min-width:0}
+.btn{background:var(--red);border:0;color:#fff7ea;border-radius:var(--r);padding:8px 14px;cursor:pointer;font-weight:700}
+.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--parch2)}
+details.more{margin-top:8px}
+details.more>summary{cursor:pointer;color:var(--redt);font-size:.92rem;list-style:none;display:inline-block;padding:3px 0}
+details.more>summary::before{content:"+ ";font-weight:700}
+details.more[open]>summary::before{content:"\2212  "}
+details.more>summary::-webkit-details-marker{display:none}
+.lvls{list-style:none;padding:0;margin:6px 0;display:flex;flex-direction:column;gap:6px}
+.lvls li{padding:8px 10px;background:rgba(0,0,0,.25);border-radius:5px;font-size:.92rem}
+.lvls li b{display:block}
+.spechead{position:relative;border-radius:10px;overflow:hidden;padding:22px;display:flex;gap:16px;align-items:center;border:1px solid var(--line2);margin-bottom:16px;isolation:isolate}
+.spechead .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.75}
+.spechead::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(21,16,14,.92),rgba(21,16,14,.55))}
+.spechead .ic{width:72px;height:72px;flex:none}
+.spechead h2{background:none;padding:0;margin:0}
+.bossnext{font-weight:700;color:var(--gold)}
+footer{margin-top:44px;color:var(--dim);font-size:.82rem;max-width:1100px}
+@media (max-width:980px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(320px,88vw);z-index:50;transform:translateX(-102%);transition:transform .2s;visibility:hidden}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6);visibility:visible}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 14px;background:rgba(21,16,14,.96);border-bottom:1px solid var(--line)}
+  .topbar button{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r);padding:6px 12px;cursor:pointer}
+  .topbar b{font-family:var(--head)}
+  main{padding:16px 14px 80px}
+  #checkedm{display:block;font-size:.94rem;color:var(--muted);padding:8px 14px;border-bottom:1px solid var(--line);line-height:1.5}
+  #checkedm a{color:var(--parch2)}
+  h2{font-size:1.45rem}
+  .hero{min-height:280px}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .kv{grid-template-columns:1fr;gap:0}.kv dt{margin-top:6px}
+  .brow{grid-template-columns:40px minmax(0,1fr)}.brow .r{grid-column:2;text-align:left}
+  .mhead img{width:64px;height:64px}
+  .trow{grid-template-columns:52px 1fr}.trow .lab{font-size:1.5rem}.trow .lab small{display:none}
+  table{font-size:1rem}th,td{padding:7px 7px}th,th.num{white-space:normal}.hm{display:none}
+  .vt td:first-child{min-width:130px}
+  .codebox{flex-direction:column}
+  .tile.mrow{flex-direction:row;align-items:center}.tile.mrow .pic.sq{width:76px;flex:none;padding:8px;aspect-ratio:1/1}
+  .modal{padding:0}.modal .box{max-height:100vh;height:100%;border-radius:0}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menu" aria-label="Open the section list">Menu</button><b>GW2 Field Guide</b></div>
+<div id="checkedm"></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk">GW</span><span><b>Guild Wars 2</b><small>Field Guide</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="q" type="search" placeholder="Search specs, mounts, masteries, items..." autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav"></nav>
+</aside>
+<main id="main" tabindex="-1"></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mtitle"><div class="box"><button class="x" id="mx" aria-label="Close">&times;</button><div id="mbody"></div></div></div>
+<script src="data/gw2.js?v=2026-11-19-496162"></script>
+<script>
+(function(){
+'use strict';
+const D=window.GW||{};
+const $=s=>document.querySelector(s),main=$('#main');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs));
+const M=D.meta||{},C=M.counts||{};
+const ERR="this.style.visibility='hidden'";
+const img=(src,cls='',alt='')=>src?`<img class="${cls}" src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="${ERR}">`:'';
+const fmtDate=d=>{if(!d)return '?';const t=new Date(d+'T00:00:00Z');return isNaN(t)?d:t.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});};
+const coins=c=>{if(c==null)return '—';const g=Math.floor(c/10000),s=Math.floor(c/100)%100,cu=c%100;return (g?g.toLocaleString('en-US')+'g ':'')+(g||s?s+'s ':'')+cu+'c';};
+const ext=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+const WIKI=p=>'https://wiki.guildwars2.com/wiki/'+encodeURIComponent(String(p).replace(/ /g,'_')).replace(/%2F/g,'/');
+
+const PROFS=D.professions||[],SPECS=D.specs||[],BUILDS=D.builds||[],MAST=D.masteries||[],MOUNTS=D.mounts||[],RAIDS=D.raids||[],BOSS=D.bosses||[],REL=D.releases||[],CUR=D.currencies||[],MAT=D.materials||[],VAULT=D.vault||[],OBJ=D.objectives||[],VIDS=D.videos||[],HOW=D.howto||[];
+const PB=dict(PROFS.map(p=>[p.slug,p])),PN=dict(PROFS.map(p=>[p.name,p]));
+const SB=dict(SPECS.map(s=>[s.slug,s])),SN=dict(SPECS.map(s=>[s.name,s]));
+const BB=dict(BUILDS.map(b=>[b.id,b]));
+const MB=dict(MAST.map(m=>[m.slug,m])),MN=dict(MAST.map(m=>[m.name,m]));
+const MOB=dict(MOUNTS.map(m=>[m.slug,m])),MON=dict(MOUNTS.map(m=>[m.name,m]));
+const RB=dict(RAIDS.map(r=>[r.slug,r])),BOB=dict(BOSS.map(b=>[b.slug,b]));
+const CB=dict(CUR.map(c=>[String(c.id),c])),CN=dict(CUR.map(c=>[c.name,c]));
+const IB=dict(MAT.concat(VAULT).map(i=>[String(i.id),i])),IN=dict(MAT.concat(VAULT).map(i=>[i.name,i]));
+const HB=dict(HOW.map(h=>[h.id,h]));const HG=D.howto_glossary||[];
+const VT=dict(VIDS.map(v=>[v.topic,v]));
+const MODES=D.modes||{};
+const specImg=name=>(SN[name]||{}).img||(PN[name]||{}).img||'';
+const profOf=name=>SN[name]?SN[name].prof:(PN[name]?PN[name].name:'');
+
+// header line
+$('#checked').innerHTML=`Last checked against the ${ext('https://api.guildwars2.com/v2/build','official GW2 API')} and the ${ext('https://wiki.guildwars2.com/','official wiki')} on <b>${esc(M.pulled)}</b>, game build <b>${esc(M.build)}</b> (newest update notes: ${ext(WIKI('Game updates/'+M.newest_update),esc(M.newest_update))}). Builds: ${ext('https://snowcrows.com/builds','Snow Crows')} + ${ext('https://metabattle.com/','MetaBattle')} pulled the same day.`;
+
+$('#checkedm').innerHTML=$('#checked').innerHTML;
+// ---------- navigation
+const howTitle=id=>{const h=HB[id];return h?h.title.replace(/^How to /,'').replace(/^./,c=>c.toUpperCase()):id;};
+const NAV=[
+ ['Start',[['home','Home'],['start','Start here: coming back'],['path','The whole path, in order']]],
+ ['How to play well',HOW.filter(h=>h.id!=='start').map(h=>['howto/'+h.id,howTitle(h.id)])],
+ ['Builds',[['builds','Builds by game mode',(C.builds_agreed||0)+(C.builds_single||0)],['tiers','Priority list (two sources)',C.builds_agreed]]],
+ ['Reference',[['professions','Professions',PROFS.length],['specs','Elite specializations',SPECS.length],['masteries','Masteries',MAST.length],['mounts','Mounts',MOUNTS.length],['releases','Expansions, story order',REL.length],['raids','Raid encounters',RAIDS.length],['bosses','World bosses',BOSS.length],['vault',"Wizard's Vault",VAULT.length],['prices','Trading Post prices',MAT.length],['currencies','Currencies',CUR.length]]],
+ ['More',[['videos','Videos',C.videos],['sources','Sources and method']]],
+];
+function navHtml(cur){const top=cur.split('/')[0];return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>{const on=cur===id||(id.indexOf('/')<0&&top===id)||(id==='builds'&&top==='builds')||(id==='specs'&&top==='spec')||(id==='professions'&&top==='prof');return `<a href="#${id}" class="${on?'on':''}"${on?' aria-current="page"':''}>${esc(t)}${n!=null&&n!==''?`<span class="n">${n}</span>`:''}</a>`;}).join('')).join('');}
+
+// ---------- shared bits
+const R=Object.create(null);
+function linkName(n){
+ n=n.replace(/&#39;/g,"'");
+ if(SN[n])return `<a class="lk" href="#spec/${SN[n].slug}">${esc(n)}</a>`;
+ if(PN[n])return `<a class="lk" href="#prof/${PN[n].slug}">${esc(n)}</a>`;
+ const mo=MON[n]||MON[n.replace(/ Mount$/,'')];if(mo)return `<button class="lk" data-open="mount:${mo.slug}">${esc(n)}</button>`;
+ const ma=MN[n]||MN[n+' Mount'];if(ma)return `<button class="lk" data-open="mastery:${ma.slug}">${esc(n)}</button>`;
+ const mal=MAST.find(m=>m.levels.some(l=>l.name===n));if(mal)return `<button class="lk" data-open="mastery:${mal.slug}">${esc(n)}</button>`;
+ const cu=CN[n]||CN[n.replace(/s$/,'')];if(cu)return `<button class="lk" data-open="currency:${cu.id}">${esc(n)}</button>`;
+ const it=IN[n]||IN[n.replace(/s$/,'')];if(it)return `<button class="lk" data-open="item:${it.id}">${esc(n)}</button>`;
+ return `<b>${esc(n)}</b>`;}
+const prose=t=>esc(t).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\[\[([^\]]+)\]\]/g,(m,n)=>linkName(n));
+const srcLinks=L=>(L||[]).map(s=>ext(WIKI(s.page),'wiki: '+s.page)).join(' · ');
+function videosFor(topic,title){const v=VT[topic];if(!v||!v.list.length)return '';return `<div class="sec"><h2>${esc(title||'Videos')}</h2><p>Found by a search rule (title names the game and the topic, uploaded since ${esc(fmtDate(M.videos_min))}, longer than 3 minutes, one per channel, no tier lists, reviews or story walkthroughs). Not hand-reviewed.</p></div><div class="grid wide">${v.list.map(vidCard).join('')}</div>`;}
+function vidCard(v){return `<div class="card vid" style="padding:0"><button class="frame" data-yt="${esc(v.videoId)}" aria-label="Play ${esc(v.title)}"><span></span><em>${Math.round((v.duration||0)/60)} min · click to play (youtube-nocookie.com)</em></button><div class="t"><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} · ${esc(fmtDate(v.date))} · ${Math.round((v.duration||0)/60)} min · ${ext(v.url,'open on YouTube')}</span>${v.date&&v.date<M.balance_date?`<span class="pill old" style="margin-top:6px;align-self:flex-start">before ${esc(fmtDate(M.balance_date))} balance update</span>`:`<span class="pill ok" style="margin-top:6px;align-self:flex-start">after ${esc(fmtDate(M.balance_date))} balance update</span>`}</div></div>`;}
+
+// ---------- pages
+const TILEPIC={start:'assets/ui/keyart.webp',path:(REL[0]||{}).img,builds:specImg('Firebrand'),tiers:specImg('Harbinger'),specs:specImg('Bladesworn'),'howto/gear':(MAT[0]||{}).img,masteries:(MAST[0]||{}).img,mounts:(MOUNTS[0]||{}).img,'howto/gold':(CUR.find(c=>c.name==='Coin')||MAT.find(m=>m.sell)||{}).img,vault:(VAULT[0]||{}).img,bosses:(BOSS[0]||{}).img,videos:(MOUNTS[7]||{}).img};
+R.home=()=>{
+ const tiles=[['start','Coming back after a break','The changes since you last played, in the order to deal with them.'],['path','The whole path','Story, gear, masteries, mounts and endgame in one ordered list.'],['builds','Builds',`${(C.builds_agreed||0)+(C.builds_single||0)} recent builds for every game mode, each with its source, date and a before / after ${fmtDate(M.balance_date)} patch mark.`],['tiers','Priority list','Builds two independent build sites both list. Tier letters only where both were updated after the '+fmtDate(M.balance_date)+' patch.'],['specs','Elite specializations',`All ${SPECS.length} elite specs: weapons, traits, the expansion that has them.`],['howto/gear','Gear to ascended','Exotic first, then ascended, and where each piece comes from.'],['masteries','Masteries',`${MAST.length} mastery tracks with what each level does and what content needs it.`],['mounts','Mounts',`All ${MOUNTS.length} mounts and every way to unlock them.`],['howto/gold','Make gold',`Steps plus Trading Post prices for ${MAT.length} materials, as of ${fmtDate(M.pulled)}.`],['vault',"Wizard's Vault",`${M.wv_season||'This season'}: ${VAULT.length} rewards and ${OBJ.length} objectives.`],['bosses','World bosses',`${BOSS.length} bosses with their spawn times in your time zone.`],['videos','Videos',`${C.videos} recent guide videos by topic.`]];
+ return `<section class="hero">${img('assets/ui/keyart.webp','','')}
+ <span class="k">Field guide · build ${esc(M.build)} · updated ${esc(fmtDate(M.pulled))}</span><h1>Guild Wars 2</h1>
+ <p>A guide for getting back into Tyria and getting good: what changed, how to gear, which builds the build sites agree on right now, and every profession, mastery and mount, all from the official API and wiki.</p>
+ <div class="sbox"><button class="btn" data-go="start">Start here: coming back</button> <button class="btn ghost" data-focus="q">Search</button></div></section>
+ <div class="note gold"><b>Big change:</b> the ${esc(fmtDate(M.balance_date))} update shipped major skill and balance changes. Build cards show whether their source was updated after it.</div>
+ <div class="grid">${tiles.map(([r,t,s])=>`<a class="card tilecard hometile" href="#${r}">${img(TILEPIC[r],'','')}<span><h3>${esc(t)}</h3><p class="muted small">${esc(s)}</p></span></a>`).join('')}</div>
+ <div class="sec"><h2>What is in this guide</h2></div>
+ <div class="tablewrap" style="max-width:900px"><table><tbody>
+ ${[['How-to guides',HOW.length],['Professions',PROFS.length],['Elite specializations',SPECS.length],['Build pages from two sites',C.build_pages],['Builds both sites agree on',C.builds_agreed],['Mastery tracks',MAST.length],['Mounts',MOUNTS.length],['Releases (expansions and seasons)',REL.length+REL.reduce((a,r)=>a+r.children.length,0)],['Raid encounters',RAIDS.length],['World bosses',BOSS.length],["Wizard's Vault rewards / objectives",VAULT.length+' / '+OBJ.length],['Trading Post materials',MAT.length],['Currencies',CUR.length],['Videos',C.videos]].map(([k,v])=>`<tr><td>${k}</td><td class="num">${v}</td></tr>`).join('')}
+ </tbody></table></div>`;};
+
+R.path=()=>{const P=[['start','Come back after a break','Vault, relics, new raid layout, fresh builds.'],['howto/loadbuild','Load a build','Paste a build code into a build template.'],['builds','Pick a build for what you play','Open world first; every card has its source and date.'],['howto/gear','Gear up','Exotic now, ascended over time.'],['howto/daily',"Do the Wizard's Vault",'Dailies and weeklies pay Astral Acclaim.'],['howto/story','Play the story in order','Every release, oldest first.'],['howto/masteries','Train masteries','What other content needs comes first.'],['howto/mounts','Unlock the mounts','Raptor, springer, skimmer, jackal, then the rest.'],['howto/gold','Make gold','Trading Post habits and daily crafting.'],['howto/fractals','Start fractals','Groups of five; Agony starts at scale 20.'],['howto/raids','Start raids','Quickplay first, then training groups.'],['howto/wvw','Try World vs. World','Follow a commander.'],['howto/pvp','Try PvP','Same stats for everyone.']];
+ return `<div class="sec"><h2>The whole path, in order</h2><p>The order this guide suggests for a returning or newly level-80 player. Each step opens its how-to.</p></div><ol class="path">${P.map(([r,t,s])=>`<li><a class="card" href="#${r}"><span><b>${esc(t)}</b><span>${esc(s)}</span></span></a></li>`).join('')}</ol>${videosFor('beginner','Videos: basics')}`;};
+
+const VTOPIC={start:'returning',gear:'gear',masteries:'masteries',mounts:'mounts',gold:'gold',daily:'wizards-vault',fractals:'fractals',raids:'raids',wvw:'wvw',pvp:'pvp',story:'story'};
+const WHY={builds:['builds','Builds by game mode'],vault:['vault',"Wizard's Vault rewards"],'gear-ref':['specs','Elite specializations (weapon collections)'],'masteries-ref':['masteries','All masteries'],'mounts-ref':['mounts','All mounts'],releases:['releases','Expansions and story order'],prices:['prices','Trading Post prices']};
+// steps with a route (mount, content) are alternatives: one numbered group per route, headed "Springer: if you own End of Dragons"
+function stepGroups(L){const G=[];L.forEach(s=>{const k=s.route?s.route.join('|'):'';if(!G.length||G[G.length-1][2]!==k)G.push([s.route,[],k]);G[G.length-1][1].push(s);});return G;}
+const routeLabel=r=>r[0]+': '+(r[1]==='Any expansion'?'with any expansion':(/^Living World/.test(r[1])?'with ':'if you own ')+r[1]);
+// how-to glossary: the first use of each word on the page links to its wiki quote in the "Words used here" box
+function markTerms(html,terms,done){let inA=0;return html.split(/(<[^>]+>)/).map(seg=>{
+ if(seg[0]==='<'){if(/^<a\b/.test(seg))inA++;else if(/^<\/a>/.test(seg))inA--;return seg;}
+ if(inA)return seg;const put=[];
+ terms.forEach(([g,i])=>{if(done.has(i))return;const re=new RegExp('\\b(?:'+g.match+')\\b','i');const m=seg.match(re);if(!m)return;done.add(i);put.push(i);seg=seg.replace(re,x=>'\u0001'+i+'\u0002'+x+'\u0003');});
+ return seg.replace(/\u0001(\d+)\u0002([^\u0003]*)\u0003/g,(m,i,x)=>`<a class="term" href="#" data-gl="${i}" title="${esc(HG[+i].quote)}">${x}</a>`);}).join('');}
+function howGloss(terms){return terms.length?`<details class="card gloss" id="hgloss" style="margin:0 0 14px;max-width:1100px"><summary style="cursor:pointer"><b>Words used here</b> <span class="muted small">(${terms.length}, each quoted from the wiki)</span></summary><dl class="kv">${terms.map(([g,i])=>`<dt id="gl-${i}"><b>${esc(g.term)}</b></dt><dd>&ldquo;${esc(g.quote)}&rdquo; <span class="src">${ext(g.url,g.label)}</span></dd>`).join('')}</dl></details>`:'';}
+function howPage(id){const h=HB[id];if(!h)return notFound();
+ const w=WHY[h.why];const terms=HG.map((g,i)=>[g,i]).filter(([g])=>g.sections.includes(id));const done=new Set();const mk=t=>markTerms(prose(t),terms,done);
+ return `<div class="sec howhead"><span class="pill">${esc(h.kind||'How-to')}</span><h2 style="margin-top:8px">${esc(h.title)}</h2>${h.need?`<p class="need">${mk(h.need)}</p>`:''}</div>
+ ${howGloss(terms)}
+ ${stepGroups(h.steps).map(([r,L])=>`${r?`<h3 class="sgrp">${esc(routeLabel(r))}</h3>`:''}<ol class="steps">${L.map(s=>`<li class="card">${mk(s.t)}${s.see?`<div class="see">${prose(s.see)}</div>`:''}<div class="src">${s.advice?'This guide\'s own advice (no source says to do this). Facts from: ':s.q?`Source: &ldquo;${esc(s.q)}&rdquo; `:'Source: '}${srcLinks(s.src)}</div></li>`).join('')}</ol>`).join('')}
+ ${h.check?`<div class="check"><b>Done when:</b> ${prose(h.check)}</div>`:''}
+ ${(h.notes||[]).length?`<details class="more notes" open><summary>Good to know (${h.notes.length})</summary><ul class="notes">${h.notes.map(n=>`<li>${mk(n.t)} <span class="src">${n.guide?'This guide\'s rule, not from a source.':'Source: '+srcLinks(n.src)}</span></li>`).join('')}</ul></details>`:''}
+ ${w?`<p><a class="lk" href="#${w[0]}">Reference: ${esc(w[1])}</a></p>`:''}
+ ${id==='masteries'?masteryOrder():''}
+ ${id==='mounts'?`<div class="grid">${MOUNTS.map(mountTile).join('')}</div>`:''}
+ ${videosFor(VTOPIC[id],'Videos on this')}`;}
+R.start=()=>howPage('start');
+R.howto=a=>howPage(a);
+
+// ---------- professions and specs
+function specTile(s){return `<a class="card tile tilecard" href="#spec/${s.slug}">${img(s.bg,'pic',s.name)}<span class="t" style="display:flex;gap:10px;align-items:center">${img(s.img,'','')}<span><b>${esc(s.name)}</b><span class="s">${esc(s.prof)} · ${esc(s.expansion||'?')}</span></span></span></a>`;}
+R.professions=()=>`<div class="sec"><h2>Professions</h2><p>${PROFS.length} professions from the official API. Each has five core specializations and its elite specializations from the expansions.</p></div>
+ <div class="grid">${PROFS.map(p=>`<a class="card tilecard" href="#prof/${p.slug}" style="display:flex;gap:14px;align-items:center">${img(p.img,'','')}<span><b style="font-family:var(--head);font-size:1.15rem">${esc(p.name)}</b><span class="s muted small" style="display:block">${p.elites.map(esc).join(', ')}</span></span></a>`).join('')}</div>`;
+R.prof=a=>{const p=PB[a];if(!p)return notFound();const el=SPECS.filter(s=>s.prof===p.name);
+ const rows=(D.agreed||[]).concat(D.single||[]).filter(r=>r.prof===p.name);
+ return `<div class="spechead">${img(el[0]&&el[0].bg,'bg','')}${img(p.img,'ic',p.name)}<div><h2>${esc(p.name)}</h2><div class="pills">${p.core.map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div><span class="small muted">Core specializations (official API).</span></div></div>
+ <div class="sec"><h2>Elite specializations</h2></div><div class="grid">${el.map(specTile).join('')}</div>
+ <div class="sec"><h2>Weapons</h2><p>From the official API. "Needs" = the elite specialization that unlocks the weapon (or Weaponmaster Training, see Start here).</p></div>
+ <div class="tablewrap" style="max-width:900px"><table><thead><tr><th>Weapon</th><th>Hand</th><th>Needs</th></tr></thead><tbody>${p.weapons.map(w=>`<tr><td>${esc(w.name)}</td><td>${esc(w.hands)}</td><td>${w.spec?linkName(w.spec):'<span class="muted">core</span>'}</td></tr>`).join('')}</tbody></table></div>
+ <div class="sec"><h2>Current ${esc(p.name)} builds</h2><p>Every game mode. Tap a build for its code, weapons and source.</p></div>${buildRows(rows)||'<p class="muted">No current build from either source.</p>'}`;};
+R.specs=()=>{const exps=[...new Set(SPECS.map(s=>s.expansion).filter(Boolean))];
+ return `<div class="sec"><h2>Elite specializations</h2><p>All ${SPECS.length} elite specializations (official API), with the expansion that grants each (wiki). Filter by profession or expansion.</p></div>
+ <div class="filters"><input id="sf" type="search" placeholder="Filter by name" aria-label="Filter specializations"><select id="sp" aria-label="Profession"><option value="">All professions</option>${PROFS.map(p=>`<option>${esc(p.name)}</option>`).join('')}</select><select id="se" aria-label="Expansion"><option value="">All expansions</option>${exps.map(e=>`<option>${esc(e)}</option>`).join('')}</select></div>
+ <div class="grid" id="sgrid">${SPECS.map(s=>specTile(s).replace('<a class','<a data-p="'+esc(s.prof)+'" data-e="'+esc(s.expansion)+'" data-n="'+esc(s.name.toLowerCase())+'" class')).join('')}</div><p id="snone" class="muted" hidden>Nothing matches.</p>`;};
+R.spec=a=>{const s=SB[a];if(!s)return notFound();const rows=(D.agreed||[]).concat(D.single||[]).filter(r=>r.spec===s.name);
+ return `<div class="spechead">${img(s.bg,'bg','')}${img(s.img,'ic',s.name)}<div><h2>${esc(s.name)}</h2><div class="pills"><a class="pill" href="#prof/${PN[s.prof].slug}">${esc(s.prof)}</a><span class="pill red">${esc(s.expansion||'?')}</span>${s.weapons.map(w=>`<span class="pill">${esc(w)}</span>`).join('')}${s.no_weapon?'<span class="pill">No new weapon type</span>':''}</div></div></div>
+ <p style="max-width:1000px">${esc(s.summary)}</p>
+ ${s.no_weapon?`<p class="small" style="max-width:1000px"><b>Weapons:</b> no new weapon type. &ldquo;${esc(s.no_weapon)}&rdquo; <span class="src">${ext(WIKI('Elite specialization'),'wiki: Elite specialization')}</span></p>`:''}
+ <div class="sec"><h2>Builds</h2></div>${buildRows(rows)||'<p class="muted">Neither build site lists a current build for this specialization.</p>'}
+ <div class="sec"><h2>Traits</h2><p>Text from the official API.</p></div>
+ <div class="grid two"><div class="card"><h3>Always on (minor traits)</h3>${s.minor.map(t=>`<p class="small"><b>${esc(t.name)}</b>: ${esc(t.desc)}</p>`).join('')}</div>
+ <div class="card"><h3>Choices (major traits)</h3>${[1,2,3].map(tier=>`<div class="isec"><h4>${['Adept','Master','Grandmaster'][tier-1]}</h4>${s.major.filter(t=>t.tier===tier).map(t=>`<details class="more"><summary>${esc(t.name)}</summary><p class="small">${esc(t.desc)}</p></details>`).join('')}</div>`).join('')}</div></div>`;};
+
+// ---------- builds
+const ROLE_NOTE='Role is read from the build title, then from MetaBattle\'s "focus" line.';
+const NOTIER={pre_patch:'agreed, no tier: a source predates the '+fmtDate(M.balance_date)+' patch',not_featured:'agreed, no tier: not a Snow Crows Featured build'};
+const rateTxt=b=>(b.meta?'marked Meta, ':'')+'rating: '+b.rating.replace(/^./,c=>c.toUpperCase());
+function bOne(id){return BB[id];}
+function glossary(){const G=D.glossary||[];if(!G.length)return '';
+ return `<details class="card gloss" style="margin:0 0 16px"><summary style="cursor:pointer"><b>Words on the build cards</b> <span class="muted small">(${G.length} terms, each quoted from its source)</span></summary><dl class="kv">${G.map(g=>`<dt><b>${esc(g.term)}</b></dt><dd>${g.quote?'&ldquo;'+esc(g.quote)+'&rdquo;':'<span class="muted">'+esc(g.undefined)+'</span>'} <span class="src">${ext(g.url,g.label)}</span></dd>`).join('')}</dl></details>`;}
+function freshPill(b){return b.post_balance?`<span class="pill ok">after ${esc(fmtDate(M.balance_date))} balance</span>`:`<span class="pill old">before ${esc(fmtDate(M.balance_date))} balance</span>`;}
+function buildRows(rows){if(!rows.length)return '';
+ const byMode={};rows.forEach(r=>(byMode[r.mode]=byMode[r.mode]||[]).push(r));
+ return Object.keys(MODES).filter(m=>byMode[m]).map(m=>`<h3 style="margin-top:14px">${esc(MODES[m])}</h3><div class="blist">${byMode[m].map(rowCard).join('')}</div>`).join('');}
+function rowCard(r){const ids=r.sc.concat(r.mb);const first=BB[ids[0]]||{};
+ const two=r.sc.length&&r.mb.length;
+ return `<button class="card brow" data-open="row:${esc(r.mode)}|${esc(r.spec)}|${esc(r.role)}">${img(specImg(r.spec),'',r.spec)}<span><b>${esc(btitle(first,r.spec))}</b><span class="s">${esc(r.spec)} · ${esc(r.role)} · ${esc(first.weapons||'')}</span></span><span class="r">${two?(r.tier?`<span class="pill red">Tier ${esc(r.tier)}</span><br>2 sources`:`<span class="pill old">No tier</span><br>2 sources`):`1 source<br>${esc(first.src==='snowcrows'?'Snow Crows':'MetaBattle')}`}</span></button>`;}
+function btitle(b,spec){const t=b.title||spec;return t.toLowerCase().includes(spec.toLowerCase())?t:spec+': '+t;}
+function findRow(key){const [mode,spec,role]=key.split('|');return (D.agreed||[]).concat(D.single||[]).find(r=>r.mode===mode&&r.spec===spec&&r.role===role);}
+function buildBlock(b){const name=b.src==='snowcrows'?'Snow Crows':'MetaBattle';
+ return `<div class="isec"><h4>${esc(name)}: ${esc(b.title)}</h4><dl class="kv"><dt>Source</dt><dd>${ext(b.url,b.url.replace(/^https:\/\//,''))}</dd><dt>${b.src==='snowcrows'?'Updated (on the page)':'Last page edit'}</dt><dd>${esc(fmtDate(b.updated))} ${freshPill(b)}</dd>
+ ${b.src==='snowcrows'?`<dt>Snow Crows list</dt><dd>${b.rating==='featured'?'"Featured"':'listed, not Featured'}${b.balance?' · '+esc(b.balance):''}</dd>`:`<dt>MetaBattle rating</dt><dd>${esc(rateTxt(b))}${b.focus?' · focus: '+esc(b.focus):''}${b.designed?' · designed for '+esc(b.designed):''}</dd>`}
+ ${b.weapons?`<dt>Weapons</dt><dd>${esc(b.weapons)}</dd>`:''}${b.exp&&b.exp.length?`<dt>Needs</dt><dd>${b.exp.map(esc).join(', ')}</dd>`:''}</dl>
+ ${gearBlock(b)}
+ ${b.code?`<div class="codebox"><code>${esc(b.code)}</code><button class="btn" data-copy="${esc(b.code)}">Copy</button></div><p class="tiny muted">Paste it in game: <a class="lk" href="#howto/loadbuild">How to load a build code</a>. The code holds skills and traits only; equip the gear listed above.</p>`:'<p class="tiny muted">No build code on the page; open the source.</p>'}</div>`;}
+function gearBlock(b){const g=b.gear||{};if(!(g.stats||[]).length&&!g.rune&&!g.relic)return '';
+ return `<div class="gear"><h5>Gear (from the ${b.src==='snowcrows'?'Snow Crows':'MetaBattle'} page)</h5><dl class="kv">${g.stats.length?`<dt>Stats</dt><dd>${g.stats.map(esc).join('<br>')}</dd>`:''}${g.rune?`<dt>Rune</dt><dd>${esc(g.rune)}</dd>`:''}${(g.sigils||[]).length?`<dt>Sigils</dt><dd>${g.sigils.map(esc).join(', ')}</dd>`:''}<dt>Relic</dt><dd>${g.relic?esc(g.relic):'<span class="muted">the page names none</span>'}</dd></dl></div>`;}
+function openRow(key){const r=findRow(key);if(!r)return;const s=SN[r.spec]||{};const bs=r.sc.concat(r.mb).map(bOne).filter(Boolean);
+ return `<div class="mhead">${img(specImg(r.spec),'',r.spec)}<div><h2 id="mtitle">${esc(r.spec)}: ${esc(r.role)}</h2><div class="pills"><span class="pill">${esc(MODES[r.mode]||r.mode)}</span><span class="pill">${esc(profOf(r.spec))}</span>${r.tier?`<span class="pill red">Tier ${esc(r.tier)}</span>`:r.no_tier?'<span class="pill old">two sources, no tier</span>':'<span class="pill">one source only</span>'}</div></div></div>
+ ${r.tier?`<p class="small">Listed by both Snow Crows (Featured) and MetaBattle (${esc(rateTxt(bOne(r.mb[0])||{}))}), both updated after the ${esc(fmtDate(M.balance_date))} balance update. <a class="lk" href="#tiers">What the tiers mean</a></p>`:r.no_tier?`<p class="small">Both sites list this, updated within ${M.recent_days} days, but ${r.no_tier==='pre_patch'?'at least one of the two pages was last updated before the '+esc(fmtDate(M.balance_date))+' balance update, so it may not reflect the current skills':'the Snow Crows page is in its full list, not its Featured selection'}. No tier letter. <a class="lk" href="#tiers">What the tiers mean</a></p>`:`<p class="small">Only one of the two build sites lists a recent build for this; treat it as one opinion, not a consensus.</p>`}
+ ${bs.map(buildBlock).join('')}<p class="tiny muted" style="margin-top:12px">${ROLE_NOTE} ${s.slug?`<a class="lk" href="#spec/${s.slug}">${esc(r.spec)} page</a>`:''}</p>`;}
+R.builds=a=>{const mode=MODES[a]?a:'open-world';
+ const ag=(D.agreed||[]).filter(r=>r.mode===mode),si=(D.single||[]).filter(r=>r.mode===mode);
+ const roles=[...new Set(ag.concat(si).map(r=>r.role))];
+ return `<div class="sec"><h2>Builds by game mode</h2><p>From ${ext('https://snowcrows.com/builds','Snow Crows')} (their "Featured" builds; for WvW, which has no Featured builds, their full list) and ${ext('https://metabattle.com/','MetaBattle')} (builds flagged Meta or rated Great), only pages updated on or after ${esc(fmtDate(M.recent_cutoff))}. Pulled ${esc(fmtDate(M.pulled))}.</p></div>
+ <div class="tabs" role="tablist">${Object.entries(MODES).map(([k,v])=>`<a href="#builds/${k}" class="${k===mode?'on':''}" role="tab" aria-selected="${k===mode}">${esc(v)}</a>`).join('')}</div>
+ <div class="filters"><select id="bf" aria-label="Role"><option value="">All roles</option>${roles.map(r=>`<option>${esc(r)}</option>`).join('')}</select><select id="bp" aria-label="Profession"><option value="">All professions</option>${PROFS.map(p=>`<option>${esc(p.name)}</option>`).join('')}</select></div>
+ ${glossary()}<h3>Both sites agree <span class="pill red">${ag.length}</span></h3>
+ ${ag.length?`<div class="blist bl">${ag.map(r=>rowCard(r).replace('<button class','<button data-role="'+esc(r.role)+'" data-prof="'+esc(r.prof)+'" class')).join('')}</div>`:'<p class="muted">No build in this mode is listed recently by both sites.</p>'}
+ <h3 style="margin-top:22px">One source only <span class="pill">${si.length}</span></h3><p class="small muted">Recent on one site, missing or older on the other. Still a real, dated build page; just not cross-checked.</p>
+ ${si.length?`<div class="blist bl">${si.map(r=>rowCard(r).replace('<button class','<button data-role="'+esc(r.role)+'" data-prof="'+esc(r.prof)+'" class')).join('')}</div>`:'<p class="muted">None.</p>'}
+ ${mode==='open-world'?videosFor('builds-openworld','Videos: open world builds'):videosFor(mode==='raids'?'raids':mode,'Videos: '+MODES[mode])}`;};
+R.tiers=()=>{const ag=D.agreed||[];
+ return `<div class="sec"><h2>Priority list: builds two sources agree on</h2><p>This is not a damage ranking. A build appears here only when both build sites list it for the same game mode, specialization and role, and both pages were updated on or after ${esc(fmtDate(M.recent_cutoff))} (${M.recent_days} days before the pull on ${esc(fmtDate(M.pulled))}). It gets a letter only if both pages were also updated after the ${esc(fmtDate(M.balance_date))} balance update.</p></div>
+ <div class="tablewrap" style="max-width:980px;margin-bottom:16px"><table><thead><tr><th>Letter</th><th>Means</th><th>Whose rating</th></tr></thead><tbody>
+ <tr><td><b>S</b></td><td>Snow Crows Featured build + MetaBattle build marked <b>Meta</b> (the page's meta flag), both updated after ${esc(fmtDate(M.balance_date))}</td><td>Snow Crows' Featured selection and MetaBattle's own Meta flag</td></tr>
+ <tr><td><b>A</b></td><td>Snow Crows Featured build + MetaBattle rating <b>Great</b> (no Meta flag), both updated after ${esc(fmtDate(M.balance_date))}</td><td>Snow Crows' Featured selection and MetaBattle's own rating</td></tr>
+ <tr><td class="muted">no tier</td><td>Both sites list it, but a page predates the ${esc(fmtDate(M.balance_date))} balance update, or the Snow Crows page is not Featured</td><td>both sites, not cross-checked against the patch</td></tr>
+ <tr><td class="muted">none</td><td>Only one site lists it recently: see Builds, "One source only"</td><td>that one site</td></tr></tbody></table></div>
+ ${ag.length?Object.keys(MODES).map(m=>{const L=ag.filter(r=>r.mode===m);if(!L.length)return '';return `<h3 style="margin-top:20px">${esc(MODES[m])}</h3>${['S','A'].map(t=>{const T=L.filter(r=>r.tier===t);return T.length?`<div class="trow t${t}"><div class="lab">${t}<small>${t==='S'?'Meta':'Great'}</small></div><div class="its">${T.map(r=>`<button class="chip" data-open="row:${esc(r.mode)}|${esc(r.spec)}|${esc(r.role)}">${img(specImg(r.spec),'','')}<span>${esc(r.spec)}<i>${esc(r.role)}</i></span></button>`).join('')}</div></div>`:'';}).join('')}${(()=>{const T=L.filter(r=>!r.tier);return T.length?`<div class="trow tN"><div class="lab">&ndash;<small>no tier</small></div><div class="its">${T.map(r=>`<button class="chip" data-open="row:${esc(r.mode)}|${esc(r.spec)}|${esc(r.role)}">${img(specImg(r.spec),'','')}<span>${esc(r.spec)}<i>${esc(r.role)} · ${r.no_tier==='pre_patch'?'pre-patch source':'not Featured'}</i></span></button>`).join('')}</div></div>`:'';})()}`;}).join(''):'<p class="note">No build met the two-source rule on the pull date, so no tier is shown. See the one-source builds instead.</p>'}
+ <details class="card" style="margin-top:16px"><summary style="cursor:pointer"><b>Source</b> <span class="muted small">(how each line was checked)</span></summary><ul class="small">
+ <li>Snow Crows: ${C.sc_total} build pages read (${C.sc_featured} Featured, the rest from the WvW full list); ${C.sc_recent} updated on or after ${esc(fmtDate(M.recent_cutoff))}. Date = the "Updated" date printed on each page.</li>
+ <li>MetaBattle: ${C.mb_total} build pages read through the MetaBattle wiki API; ${C.mb_recent} edited on or after ${esc(fmtDate(M.recent_cutoff))}. Date = the last page edit; rating and the Meta flag = the page's Build box (<code>rating</code> and <code>meta</code> fields).</li>
+ <li>Open each chip for both source links and dates.</li></ul></details>`;};
+
+// ---------- masteries
+function masteryOrder(){const need=MAST.filter(m=>m.needed_by.length);
+ return need.length?`<div class="sec"><h2>Masteries other content needs</h2><p>From the wiki raid encounter list: the encounter names the mastery as required or useful.</p></div><div class="grid wide">${need.map(m=>`<button class="card ccard" data-open="mastery:${m.slug}">${img(m.img,'','')}<span><b>${esc(m.name)}</b><span class="s">${esc(m.region)} · ${m.needed_by.map(esc).join(', ')}</span></span></button>`).join('')}</div>`:'';}
+R.masteries=()=>{const regs=[...new Set(MAST.map(m=>m.region))];const T=M.mastery_totals||{};
+ return `<div class="sec"><h2>Masteries</h2><p>${MAST.length} mastery tracks from the official API, grouped by region. Points earned in a region only buy that region's masteries. <a class="lk" href="#howto/masteries">How to train masteries, and which first</a></p></div>
+ ${regs.map(r=>`<h3 style="margin-top:20px">${esc(r)} ${T[r]?`<span class="pill">${T[r]} points available (wiki)</span>`:''}</h3><div class="grid">${MAST.filter(m=>m.region===r).map(m=>`<button class="card tile mrow" data-open="mastery:${m.slug}">${img(m.img,'pic sq',m.name)}<span class="t"><b>${esc(m.name)}</b><span class="s">${m.levels.length} levels · ${m.points} points${m.needed_by.length?' · needed for raids':''}</span></span></button>`).join('')}</div>`).join('')}
+ ${videosFor('masteries','Videos: masteries')}`;};
+function openMastery(m){return `<div class="mhead">${img(m.img,'',m.name)}<div><h2 id="mtitle">${esc(m.name)}</h2><div class="pills"><span class="pill red">${esc(m.region)}</span><span class="pill">${m.points} mastery points in total</span></div></div></div>
+ ${m.unlock?`<p class="small"><b>Unlock:</b> ${esc(m.unlock)}</p>`:''}${m.needed_by.length?`<p class="small"><b>Needed for:</b> ${m.needed_by.map(esc).join(', ')}</p>`:''}
+ <div class="isec"><h4>Levels in order</h4><ol class="lvls">${m.levels.map(l=>`<li><b>${esc(l.name)}</b> <span class="tiny muted">${l.points} point${l.points===1?'':'s'} · ${(l.xp||0).toLocaleString('en-US')} XP</span><br>${esc(l.desc)}</li>`).join('')}</ol></div>
+ <p class="tiny muted">Official API, masteries endpoint. ${ext(WIKI(m.name),'Wiki page')}</p>`;}
+
+// ---------- mounts
+function mountTile(m){return `<button class="card tile" data-open="mount:${m.slug}">${img(m.img,'pic',m.name)}<span class="t"><b>${esc(m.name)}</b><span class="s">${esc([...new Set(m.rows.map(r=>r.content).filter(Boolean))].join(', '))}${m.rows.length>1?' · '+m.rows.length+' ways to get it':''}</span></span></button>`;}
+R.mounts=()=>`<div class="sec"><h2>Mounts</h2><p>All ${MOUNTS.length} mounts from the wiki's "Types and acquisition" table, matched to the official API. <a class="lk" href="#howto/mounts">How to unlock the mounts</a></p></div><div class="grid">${MOUNTS.map(mountTile).join('')}</div>${videosFor('mounts','Videos: mounts')}`;
+function openMount(m){const tr=m.track&&MN[m.track];
+ return `${img(m.img,'mpic',m.name)}<h2 id="mtitle" style="background:none;padding:0">${esc(m.name)}</h2>
+ <div class="isec"><h4>How to get it</h4><div class="tablewrap"><table><thead><tr><th>Needs</th><th>Mastery?</th><th>How</th></tr></thead><tbody>${m.rows.map(r=>`<tr><td>${esc(r.content)}</td><td>${esc(r.mastery)}</td><td>${esc(r.how)}</td></tr>`).join('')}</tbody></table></div></div>
+ ${m.notes.length?`<div class="isec"><h4>What it does</h4><ul class="small">${m.notes.map(n=>`<li><b>${esc(n.label)}:</b> ${esc(n.text)}${n.items.length?`<ul>${n.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}</li>`).join('')}</ul></div>`:''}
+ ${tr?`<p><button class="lk" data-open="mastery:${tr.slug}">${esc(tr.name)} mastery track</button></p>`:''}<p class="tiny muted">${ext(WIKI('Mount'),'Wiki: Mount')} · ${ext(WIKI(m.name),'Wiki: '+m.name)}</p>`;}
+
+// ---------- releases
+R.releases=()=>`<div class="sec"><h2>Expansions and story order</h2><p>Every release in story order, from the wiki's list of releases. <a class="lk" href="#howto/story">How to play the story in order</a></p></div>
+ <div class="grid wide">${REL.map((r,i)=>`<div class="card tile" style="cursor:default">${img(r.img,'pic fit',r.name)}<span class="t"><b>${i+1}. ${esc(r.name.replace(/^(.*?) Expansion \d+: \1$/,'$1').replace(/ Expansion (\d+): .*/,''))}</b><span class="s">${esc(r.saga||'')} · ${esc(r.dates)}</span>
+ ${r.children.length?`<span class="small" style="display:block;margin-top:8px">Then:</span><ul class="small" style="margin:4px 0 0;padding-left:1.2em">${r.children.map(c=>`<li style="margin-bottom:6px"><b>${esc(c.name)}</b><span class="muted tiny" style="display:block;margin-top:2px">${esc(c.dates)}</span></li>`).join('')}</ul>`:''}
+ ${r.page?`<span class="tiny" style="display:block;margin-top:8px">${ext(WIKI(r.page),'Wiki page')}</span>`:''}</span></div>`).join('')}</div>${videosFor('story','Videos: story order')}${videosFor('voe','Videos: Visions of Eternity')}`;
+
+// ---------- raids
+R.raids=()=>{const groups=[...new Set(RAIDS.map(r=>r.group))];const maxd=Math.max(...RAIDS.map(r=>+r.difficulty||0));
+ return `<div class="sec"><h2>Raid encounters</h2><p>${RAIDS.length} encounters from the wiki's list of raid encounters (former strike missions included). Difficulty is the wiki's rating, ${maxd} is hardest. <a class="lk" href="#howto/raids">How to start raids</a></p></div>
+ ${groups.map(g=>`<h3 style="margin-top:20px">${esc(g)}</h3><div class="grid">${RAIDS.filter(r=>r.group===g).map(r=>`<button class="card tile" data-open="raid:${r.slug}">${img(r.img,'pic',r.name)}<span class="t"><b>${r.wing?'Wing '+esc(r.wing)+': ':''}${esc(r.name)}</b><span class="s">${esc(r.boss||r.events.join(', '))}${r.difficulty?' · difficulty '+esc(r.difficulty):''}</span></span></button>`).join('')}</div>`).join('')}
+ ${videosFor('raids','Videos: raids')}`;};
+function openRaid(r){const maxd=Math.max(...RAIDS.map(x=>+x.difficulty||0));
+ return `${img(r.img,'mpic',r.name)}<h2 id="mtitle" style="background:none;padding:0">${esc(r.name)}</h2><dl class="kv"><dt>Group</dt><dd>${esc(r.group)}${r.wing?' · Wing '+esc(r.wing):''}</dd>${r.boss?`<dt>Boss</dt><dd>${esc(r.boss)}</dd>`:''}${r.events.length?`<dt>Encounters</dt><dd>${r.events.map(esc).join(', ')}</dd>`:''}${r.difficulty?`<dt>Difficulty (wiki)</dt><dd>${esc(r.difficulty)} of ${maxd}</dd>`:''}<dt>Released</dt><dd>${esc(r.date)}</dd>${r.masteries.length?`<dt>Masteries</dt><dd>${r.masteries.map(x=>{const n=x.replace(/ \((required|recommended)\)$/,'');return linkName(n.replace(/^./,c=>c.toUpperCase()))+esc(x.slice(n.length));}).join(', ')}</dd>`:''}</dl>
+ <p class="tiny muted">${ext(WIKI('Raid'),'Wiki: Raid')} · ${ext(WIKI(r.name),'Wiki: '+r.name)}</p>`;}
+
+// ---------- world bosses
+function nextSpawn(times){const now=new Date();const mins=now.getUTCHours()*60+now.getUTCMinutes();let best=null;
+ times.forEach(t=>{const [h,m]=t.split(':').map(Number);let d=h*60+m-mins;if(d<0)d+=1440;if(best==null||d<best)best=d;});return best;}
+function localT(t){const [h,m]=t.split(':').map(Number);const d=new Date();d.setUTCHours(h,m,0,0);return d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});}
+R.bosses=()=>{const L=BOSS.slice().sort((a,b)=>(nextSpawn(a.times)??9999)-(nextSpawn(b.times)??9999));
+ const off=BOSS.filter(b=>b.off_timer).length;
+ return `<div class="sec"><h2>World bosses</h2><p>${BOSS.length-off} world bosses on the main timer, with their fixed spawn times from the wiki schedule (UTC), shown in your time zone and sorted by the next spawn. Then ${off} that ArenaNet has called world bosses but that are not on the main timer (wiki footnote), so they have no spawn time here. The official API lists ${C.bosses_api}; every one has a card. <a class="lk" href="#howto/gold">They are part of making gold</a></p></div>
+ <div class="grid">${L.map(b=>{const n=nextSpawn(b.times);return `<button class="card tile" data-open="boss:${b.slug}">${img(b.img,b.zone_picture?'pic':'pic top',b.name)}<span class="t"><b>${esc(b.name)}</b><span class="s">${esc(b.zone)} · ${esc(b.rank)}</span>${n!=null?`<span class="s bossnext">Next in ${Math.floor(n/60)}h ${n%60}m</span>`:'<span class="s">Not on the main timer</span>'}</span></button>`;}).join('')}</div>`;};
+function openBoss(b){return `${img(b.img,'mpic',b.name)}<h2 id="mtitle" style="background:none;padding:0">${esc(b.name)}</h2>${b.zone_picture?'<p class="tiny muted">Picture: a map or location shot (the wiki has no boss portrait).</p>':''}
+ <dl class="kv">${b.bosses&&b.bosses!==b.name?`<dt>Bosses</dt><dd>${esc(b.bosses)}</dd>`:''}<dt>Zone</dt><dd>${esc(b.zone)}</dd><dt>Rank</dt><dd>${esc(b.rank)}</dd><dt>Schedule</dt><dd>${esc(b.category||'')}</dd>${b.drops?`<dt>Notable drops</dt><dd>${esc(b.drops)}</dd>`:''}</dl>
+ <div class="isec"><h4>Spawn times</h4><p class="small">${b.times.length?b.times.map(t=>`${esc(localT(t))} <span class="muted tiny">(${esc(t)} UTC)</span>`).join(' · '):'Not on the main world boss timer (wiki).'}</p></div><p class="tiny muted">${ext(WIKI('World boss'),'Wiki: World boss')}</p>`;}
+
+// ---------- vault, prices, currencies
+function itemCell(i){return `<button class="lk" data-open="item:${i.id}" style="text-decoration:none;color:var(--parch);display:inline-flex;align-items:center;text-align:left">${img(i.img,'ic','')}${esc(i.name)}</button>`;}
+R.vault=()=>{const kinds=['Featured','Normal','Legacy'];
+ return `<div class="sec"><h2>Wizard's Vault</h2><p>Season: <b>${esc(M.wv_season)}</b>, ends ${esc(fmtDate(M.wv_end))}. Rewards and objectives from the official API on ${esc(fmtDate(M.pulled))}. <a class="lk" href="#howto/daily">How to do your dailies and weeklies</a></p></div>
+ <div class="filters"><input id="vf" type="search" placeholder="Filter rewards" aria-label="Filter rewards"></div>
+ ${kinds.map(k=>{const L=VAULT.filter(v=>v.kind===k);return L.length?`${k==='Legacy'?'<details class="more vleg"><summary>Show the Legacy rewards ('+L.length+')</summary>':''}<h3 style="margin-top:16px">${k} rewards <span class="pill">${L.length}</span></h3><div class="tablewrap"><table class="vt"><thead><tr><th>Reward</th><th class="num">Acclaim</th><th class="num hm">Limit</th><th class="num hm">Sells for</th><th class="num">Copper per Acclaim</th></tr></thead><tbody>${L.map(v=>`<tr data-n="${esc(v.name.toLowerCase())}"><td>${itemCell(v)}${v.count>1?' <span class="muted">x'+v.count+'</span>':''}</td><td class="num">${v.cost}</td><td class="num hm">${v.limit||'—'}</td><td class="num hm">${v.sell?coins(v.sell):'<span class="muted">not tradable</span>'}</td><td class="num">${v.per_aa!=null?v.per_aa:'—'}</td></tr>`).join('')}</tbody></table></div>${k==='Legacy'?'</details>':''}`:'';}).join('')}
+ <p class="tiny muted">Copper per Acclaim = lowest sell listing x count, minus the Trading Post's 5% listing and 10% exchange fees, divided by the Acclaim cost. Prices are a snapshot from ${esc(fmtDate(M.pulled))}.</p>
+ <div class="sec"><h2>Objectives this season</h2><p>${OBJ.length} objectives in the API pool. The Vault picks your daily and weekly set from them.</p></div>
+ <details class="more"><summary>Show all ${OBJ.length} objectives</summary><div class="tablewrap"><table><thead><tr><th>Objective</th><th>Mode</th><th class="num">Acclaim</th></tr></thead><tbody>${OBJ.map(o=>`<tr><td>${esc(o.title)}</td><td>${esc(o.track)}</td><td class="num">${o.acclaim}</td></tr>`).join('')}</tbody></table></div></details>
+ ${videosFor('wizards-vault',"Videos: Wizard's Vault")}`;};
+R.prices=()=>`<div class="sec"><h2>Trading Post prices</h2><p>Highest buy order and lowest sell listing for ${MAT.length} common crafting materials, from the official API: a snapshot, prices as of ${esc(fmtDate(M.pulled))}. <a class="lk" href="#howto/gold">How to make gold</a></p></div>
+ <div class="tablewrap"><table><thead><tr><th>Material</th><th class="hm">Rarity</th><th class="num">Buy order</th><th class="num">Sell listing</th></tr></thead><tbody>${MAT.slice().sort((a,b)=>(b.sell||0)-(a.sell||0)).map(i=>`<tr><td>${itemCell(i)}</td><td class="hm">${esc(i.rarity)}</td><td class="num">${coins(i.buy)}</td><td class="num">${coins(i.sell)}</td></tr>`).join('')}</tbody></table></div>${videosFor('gold','Videos: making gold')}`;
+R.currencies=()=>`<div class="sec"><h2>Currencies</h2><p>All ${CUR.length} wallet currencies from the official API.</p></div><div class="filters"><input id="cf" type="search" placeholder="Filter currencies" aria-label="Filter currencies"></div>
+ <div class="grid wide" id="cgrid">${CUR.map(c=>`<button class="card ccard" data-open="currency:${c.id}" data-n="${esc(c.name.toLowerCase())}">${img(c.img,'',c.name)}<span><b>${esc(c.name)}</b><span class="s">${esc(c.desc)}</span></span></button>`).join('')}</div>`;
+function openItem(i){return `<div class="mhead">${img(i.img,'',i.name)}<div><h2 id="mtitle">${esc(i.name)}</h2><div class="pills"><span class="pill">${esc(i.rarity)}</span><span class="pill">${esc(i.type)}</span></div></div></div>${i.desc?`<p>${esc(i.desc)}</p>`:''}
+ <dl class="kv">${i.cost!=null?`<dt>Wizard's Vault</dt><dd>${i.cost} Astral Acclaim${i.count>1?' for '+i.count:''} (${esc(i.kind)})</dd>`:''}<dt>Trading Post</dt><dd>${i.tradable?`buy order ${coins(i.buy)}, sell listing ${coins(i.sell)} (${esc(fmtDate(M.pulled))})`:'not tradable'}</dd></dl><p class="tiny muted">Official API, items and commerce/prices. ${ext(WIKI(i.name),'Wiki page')}</p>`;}
+function openCur(c){return `<div class="mhead">${img(c.img,'',c.name)}<div><h2 id="mtitle">${esc(c.name)}</h2></div></div><p>${esc(c.desc)}</p><p class="tiny muted">Official API, currencies. ${ext(WIKI(c.name),'Wiki page')}</p>`;}
+
+// ---------- videos, sources
+R.videos=()=>`<div class="sec"><h2>Videos</h2><p>1 to 3 recent videos per topic, found by a search rule (see Sources). They play from youtube-nocookie.com only when you click; nothing is stored in this guide. Searched ${esc(fmtDate(M.videos_searched))}.</p></div>
+ ${VIDS.map(v=>`<h3 style="margin-top:20px">${esc(v.name)}</h3>${v.list.length?`<div class="grid wide">${v.list.map(vidCard).join('')}</div>`:`<p class="muted small">No video matched the rule. ${ext('https://www.youtube.com/results?search_query='+encodeURIComponent('GW2 '+v.name),'Search YouTube')}</p>`}`).join('')}`;
+R.sources=()=>`<div class="sec"><h2>Sources and method</h2><p>Every fact in this guide comes from these pulls. Where the guide gives its own order or rule (The whole path, the mastery order), it says so. Raw responses are cached in <code>data/raw/</code> with a fetch log (URL and time of every request).</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Source</th><th>Pulled</th></tr></thead><tbody>${(D.sources||[]).map(s=>`<tr><td>${ext(s.url,s.name)}</td><td>${esc(s.date)}</td></tr>`).join('')}</tbody></table></div>
+ <div class="sec"><h2>Counts</h2></div><div class="tablewrap" style="max-width:700px"><table><tbody>${Object.entries(C).map(([k,v])=>`<tr><td>${esc(k.replace(/_/g,' '))}</td><td class="num">${v}</td></tr>`).join('')}</tbody></table></div>
+ <div class="sec"><h2>How it is checked</h2></div><ul style="max-width:1100px">
+ <li>Every number in a how-to step must appear in the wiki page the step cites, and every named thing must exist in the pulled data; the build stops with an error otherwise.</li>
+ <li>Every how-to step shows the sentence from its cited wiki page that says to do it (checked word for word). Where no page says it, the step is marked "This guide's own advice". Items named in money advice must be sellable according to the official API.</li>
+ <li>Every build card lists the gear its source page gives: Snow Crows' gear tables (rune and sigil names looked up in the official API by item id) or MetaBattle's equipment box.</li>
+ <li>Builds: a build is "agreed" only when both build sites list it for the same mode, specialization and role, both updated within ${M.recent_days} days of the pull. It gets a tier letter only when both pages were also updated after the ${esc(fmtDate(M.balance_date))} balance update. Role is read from the build title, then MetaBattle's "focus" line, so two sites naming a role differently can miss each other.</li>
+ <li>Snow Crows has no Featured WvW builds, so WvW uses its full list; those builds are marked "listed, not Featured" and never get a tier letter.</li>
+ <li>The priority list ranks by the sites' own selection and rating, not by measured damage.</li>
+ <li>Videos are chosen by a rule (title names the game and topic, uploaded since ${esc(fmtDate(M.videos_min))}, over 3 minutes, newest first, one per channel; tier lists, reviews, story walkthroughs and titles about another topic are dropped), not hand-picked. A video appears under one topic only.</li></ul>
+ <div class="sec"><h2>Not covered or not verified</h2></div><ul style="max-width:1100px">
+ <li>Gear stats, runes and sigils per build are on the source pages, not copied here.</li>
+ <li>Trading Post prices are a snapshot from the pull date.</li>
+ <li>Legendary crafting, every achievement and every collection are out of scope; the wiki links cover them.</li>
+ <li>Some world bosses use a zone map picture because the wiki has no portrait; their cards say so.</li></ul>
+ <div class="sec"><h2>Wiki pages used (${(D.wiki_pages||[]).length})</h2></div><p class="small" style="max-width:1200px">${(D.wiki_pages||[]).map(p=>ext(WIKI(p),p)).join(' · ')}</p>
+ <p class="tiny muted" style="margin-top:16px">Guild Wars 2 and all game art are by ArenaNet. This is a non-commercial fan guide. Picture sources are listed in assets/manifest.json.</p>`;
+function notFound(){return `<div class="sec"><h2>Not found</h2><p>That page does not exist. <a href="#home">Go home</a></p></div>`;}
+
+// ---------- modal
+const modal=$('#modal'),mbody=$('#mbody');let lastFocus=null;
+function openModal(kind,key){let h='';
+ if(kind==='row')h=openRow(key);else if(kind==='mastery'&&MB[key])h=openMastery(MB[key]);else if(kind==='mount'&&MOB[key])h=openMount(MOB[key]);
+ else if(kind==='raid'&&RB[key])h=openRaid(RB[key]);else if(kind==='boss'&&BOB[key])h=openBoss(BOB[key]);else if(kind==='item'&&IB[key])h=openItem(IB[key]);else if(kind==='currency'&&CB[key])h=openCur(CB[key]);
+ if(!h)return;lastFocus=document.activeElement;mbody.innerHTML=h;modal.classList.add('on');$('#mx').focus();}
+function closeModal(){modal.classList.remove('on');mbody.innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+$('#mx').onclick=closeModal;modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('on'))closeModal();});
+
+document.addEventListener('click',e=>{
+ const o=e.target.closest('[data-open]');if(o){e.preventDefault();const v=o.dataset.open,i=v.indexOf(':');openModal(v.slice(0,i),v.slice(i+1));return;}
+ const y=e.target.closest('[data-yt]');if(y){const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(y.dataset.yt)+'?autoplay=1';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title='YouTube video';f.referrerPolicy='strict-origin-when-cross-origin';y.replaceWith(f);return;}
+ const c=e.target.closest('[data-copy]');if(c){const t=c.dataset.copy;const done=()=>{c.textContent='Copied';setTimeout(()=>c.textContent='Copy',1500);};
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(done,()=>fallbackCopy(t,done));else fallbackCopy(t,done);return;}
+ const gl=e.target.closest('[data-gl]');if(gl){e.preventDefault();const d=$('#hgloss'),t=$('#gl-'+gl.dataset.gl);if(d)d.open=true;if(t)t.scrollIntoView({block:'center',behavior:'smooth'});return;}
+ const g=e.target.closest('[data-go]');if(g){location.hash='#'+g.dataset.go;return;}
+ const fq=e.target.closest('[data-focus]');if(fq){if(innerWidth<=980)side.classList.add('open');$('#'+fq.dataset.focus).focus();return;}
+});
+function fallbackCopy(t,done){const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(_){}ta.remove();}
+
+// ---------- page filters (delegated)
+document.addEventListener('input',e=>{const id=e.target.id;
+ if(id==='sf'||id==='sp'||id==='se'){const q=$('#sf').value.trim().toLowerCase(),p=$('#sp').value,x=$('#se').value;let n=0;
+  document.querySelectorAll('#sgrid [data-n]').forEach(el=>{const ok=(!q||el.dataset.n.includes(q))&&(!p||el.dataset.p===p)&&(!x||el.dataset.e===x);el.hidden=!ok;if(ok)n++;});$('#snone').hidden=n>0;}
+ if(id==='bf'||id==='bp'){const r=$('#bf').value,p=$('#bp').value;document.querySelectorAll('.bl [data-role]').forEach(el=>{el.hidden=!((!r||el.dataset.role===r)&&(!p||el.dataset.prof===p));});}
+ if(id==='vf'){const q=e.target.value.trim().toLowerCase();if(q){const dl=document.querySelector('.vleg');if(dl)dl.open=true;}document.querySelectorAll('.vt tr[data-n]').forEach(el=>{el.hidden=!!q&&!el.dataset.n.includes(q);});}
+ if(id==='cf'){const q=e.target.value.trim().toLowerCase();document.querySelectorAll('#cgrid [data-n]').forEach(el=>{el.hidden=!!q&&!el.dataset.n.includes(q);});}
+});
+document.addEventListener('change',e=>{if(['sp','se','bf','bp'].includes(e.target.id))e.target.dispatchEvent(new Event('input',{bubbles:true}));});
+
+// ---------- search
+const IDX=[];
+const add=(label,kind,go,im,extra)=>IDX.push({label,kind,go,im,k:(label+' '+(extra||'')).toLowerCase()});
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>add(t,'Section','#'+id,'',g)));
+HOW.forEach(h=>add(h.title,'How-to','#'+(h.id==='start'?'start':'howto/'+h.id),'',h.steps.concat(h.notes||[]).map(s=>s.t).join(' ').replace(/\[\[|\]\]|\*\*/g,'')));
+PROFS.forEach(p=>add(p.name,'Profession','#prof/'+p.slug,p.img,p.core.join(' ')));
+SPECS.forEach(s=>add(s.name,'Elite spec · '+s.prof,'#spec/'+s.slug,s.img,s.prof+' '+s.expansion+' '+s.weapons.join(' ')));
+MAST.forEach(m=>add(m.name,'Mastery · '+m.region,'mastery:'+m.slug,m.img,m.levels.map(l=>l.name).join(' ')));
+MOUNTS.forEach(m=>add(m.name,'Mount','mount:'+m.slug,m.icon||m.img,'mount'));
+RAIDS.forEach(r=>add(r.name,'Raid encounter','raid:'+r.slug,r.img,(r.boss||'')+' '+r.events.join(' ')));
+BOSS.forEach(b=>add(b.name,'World boss','boss:'+b.slug,b.img,b.zone));
+REL.forEach(r=>add(r.name.replace(/ Expansion \d+: .*/,''),'Release','#releases',r.img,r.children.map(c=>c.name).join(' ')));
+MAT.concat(VAULT).forEach(i=>add(i.name,i.cost!=null?"Vault reward":'Material','item:'+i.id,i.img,''));
+CUR.forEach(c=>add(c.name,'Currency','currency:'+c.id,c.img,''));
+(D.agreed||[]).concat(D.single||[]).forEach(r=>{const b=BB[r.sc.concat(r.mb)[0]]||{};add(btitle(b,r.spec)+' ('+(MODES[r.mode]||r.mode)+')','Build','row:'+r.mode+'|'+r.spec+'|'+r.role,specImg(r.spec),r.spec+' '+r.role+' '+r.prof);});
+const q=$('#q'),res=$('#res');let hits=[],sel=0;
+function runSearch(){const s=q.value.trim().toLowerCase();if(!s){res.classList.remove('on');return;}
+ const words=s.split(/\s+/);
+ hits=IDX.map(e=>{if(!words.every(w=>e.k.includes(w)))return null;const l=e.label.toLowerCase();return [l===s?0:l.startsWith(s)?1:l.includes(s)?2:3,e];}).filter(Boolean).sort((a,b)=>a[0]-b[0]||a[1].label.length-b[1].label.length).slice(0,40).map(x=>x[1]);
+ sel=0;res.innerHTML=hits.length?hits.map((h,i)=>`<div role="option" data-i="${i}" class="${i===0?'sel':''}">${h.im?img(h.im,'',''):''}<span>${esc(h.label)}</span><i>${esc(h.kind)}</i></div>`).join(''):'<div class="none">Nothing found. Try a profession, spec, mount or item name.</div>';res.classList.add('on');}
+function pick(h){res.classList.remove('on');q.value='';side.classList.remove('open');if(h.go[0]==='#')location.hash=h.go;else{const i=h.go.indexOf(':');openModal(h.go.slice(0,i),h.go.slice(i+1));}}
+q.addEventListener('input',runSearch);
+q.addEventListener('keydown',e=>{if(!res.classList.contains('on'))return;const items=res.querySelectorAll('[data-i]');
+ if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!items.length)return;sel=(sel+(e.key==='ArrowDown'?1:-1)+items.length)%items.length;items.forEach((x,i)=>x.classList.toggle('sel',i===sel));items[sel].scrollIntoView({block:'nearest'});}
+ else if(e.key==='Enter'){e.preventDefault();if(hits[sel])pick(hits[sel]);}else if(e.key==='Escape'){res.classList.remove('on');}});
+res.addEventListener('click',e=>{const d=e.target.closest('[data-i]');if(d)pick(hits[+d.dataset.i]);});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))res.classList.remove('on');});
+
+// ---------- router
+const side=$('#side');$('#menu').onclick=()=>side.classList.toggle('open');
+function route(){const h=decodeURIComponent(location.hash.slice(1))||'home';const i=h.indexOf('/');const name=i<0?h:h.slice(0,i),arg=i<0?'':h.slice(i+1);
+ const f=R[name];closeModalSilent();
+ main.innerHTML=(f?f(arg):notFound())+`<footer>Guild Wars 2 Field Guide · data pulled ${esc(M.pulled)} · game build ${esc(M.build)} · Guild Wars 2 is a trademark of ArenaNet; game art belongs to ArenaNet. <a href="#sources">Sources and method</a></footer>`;
+ $('#nav').innerHTML=navHtml(h);side.classList.remove('open');window.scrollTo(0,0);
+ const t=main.querySelector('h1,h2');document.title=(t&&name!=='home'?t.textContent.trim()+' · ':'')+'Guild Wars 2 Field Guide';}
+function closeModalSilent(){modal.classList.remove('on');mbody.innerHTML='';}
+window.addEventListener('hashchange',route);route();
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+})();
+</script>
+</body>
+</html>
