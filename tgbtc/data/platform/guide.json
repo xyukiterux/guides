@@ -22491,6 +22491,526 @@
     }
    },
    {
+    "id": "lr-cells",
+    "top": true,
+    "title": "LR cells: how you get them (the Cell Creation event)",
+    "intro": "An LR cell is an Rc Cell made for one character. The one source we know of is a weekend event called Cell Creation. One creator explains the rules; lines marked \"game text\" quote the event screen itself.",
+    "lines": [
+     {
+      "text": "Your place on the ranking comes from your Personal Points in the current round. Each pull costs 1 Cell Creation coin and gives 10 points. Nothing on the screen or in the video ties the ranking to combat power or Arena rank. (game text, creator tip)",
+      "source": "Aslan, Cell Creation guide (October 10, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 0:45 to 1:06 and 3:08 to 3:24"
+      ]
+     },
+     {
+      "text": "The board mixes players from several servers. On one screen the ranked players carry the tags FR001, FR016, FR009 and FR015, and the creator watching it is on DE008. So being first on your own server does not put you first here. (seen on a creator's screen)",
+      "source": "the event screen in Aslan's video (October 10, 2026), frame at 4:18",
+      "evidence": [
+       "tools/account_plan_template/lr_cells_frame_258.jpg (video frame at 4:18)"
+      ]
+     },
+     {
+      "text": "The top 3 of each round each get one of the 6 LR cells on show. Game text: \"Top 3 in each round must receive exclusive cells\". Which of the 6 you get is random, so first place can get the one nobody wants. (game text, creator tip)",
+      "source": "game text on the event screen (frame at 4:18) and Aslan's explanation (October 10, 2026)",
+      "evidence": [
+       "tools/account_plan_template/lr_cells_frame_258.jpg (video frame at 4:18)",
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 3:24 to 5:47"
+      ]
+     },
+     {
+      "text": "The cells that are left are raffled among everyone lower down. To get any cell from a round, top 3 included, you need 100 points in that round (10 pulls). Game text: \"Participation Requirement: Reach 100 Personal Points in this round\". (game text, creator tip)",
+      "source": "game text on the event screen (frame at 4:18) and Aslan's explanation (October 10, 2026)",
+      "evidence": [
+       "tools/account_plan_template/lr_cells_frame_258.jpg (video frame at 4:18)",
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 4:49 to 5:22"
+      ]
+     },
+     {
+      "text": "A round ends when everyone's pulls together reach 20,000 points, which is 2,000 pulls. Then a new round starts. The screen shows it as \"Heat reached 6770/20000\". (game text, creator tip)",
+      "source": "game text on the event screen (frame at 4:18) and Aslan's explanation (October 10, 2026)",
+      "evidence": [
+       "tools/account_plan_template/lr_cells_frame_258.jpg (video frame at 4:18)",
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 6:39 to 7:05"
+      ]
+     },
+     {
+      "text": "The slow way: each round pays Cell Fluid by rank, 500 for 1st, 400 for 2nd and 300 for 3rd. The creator thinks 4th and 5th get 200 and 6th to 10th get 100, but says he is not sure. 1,000 Cell Fluid buys an LR cell in the Cell Shop. The video does not show whether you can pick which one. The event rules only say Cell Fluid is sent by ranking; the amounts are from the creator's memory. (creator tip)",
+      "source": "Aslan, Cell Creation guide (October 10, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 6:19 to 7:56"
+      ]
+     },
+     {
+      "text": "How many pulls it took on that screen, part-way through a round: 71 for 3rd place, 76 for 2nd and 161 for 1st. Your server group will be different. (seen on a creator's screen)",
+      "source": "the event screen in Aslan's video (October 10, 2026), frame at 4:18",
+      "evidence": [
+       "tools/account_plan_template/lr_cells_frame_258.jpg (video frame at 4:18)"
+      ]
+     },
+     {
+      "text": "The event runs on Saturday and Sunday, about every two weeks. The creator thinks you get 3 free coins a day, plus one free single pull every 24 hours; more coins come from the Pack button for Diamonds or money. (creator tip)",
+      "source": "Aslan, Cell Creation guide (October 10, 2026)",
+      "evidence": [
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 0:20 to 1:13 and 8:56 to 9:04"
+      ]
+     },
+     {
+      "text": "Our call: a top-3 place gets you one of the 6 cells at random. On that screen 3 of the 6 were the new cell, so it is about a coin flip, not a sure thing. Only race when any of the 6 would help you. Otherwise, if you will reach 100 points (10 pulls) in a round anyway, you join that round's raffle for the cells the top 3 did not get. Nobody knows how many players share that raffle, and the free coins may not cover 10 pulls, so we would not buy coins just to enter it. Each new round needs another 100 points. Keep \"High-Rating Cells UP\" selected; the creator says the other filters did not help. The creator also says any pull has a small chance to drop one of the cells shown under the Exclusive Cell button (creator tip, unconfirmed). (our call, creator tip)",
+      "source": "our call; the filter tip is Aslan's (October 10, 2026)",
+      "evidence": [
+       "tools/account_plan_template/lr_cells_frame_258.jpg (video frame at 4:18)",
+       "rook ~/work/tgbtc_strat/yt/text/AXv_ogEP1Gs.txt 1:13 to 2:34, 3:35 to 4:05, 5:22 to 5:47 and 6:00 to 6:19"
+      ]
+     },
+     {
+      "text": "Not known yet: the Diamond price of one coin, and when the event first opens on a new server. One creator says LR cells unlock 3 to 4 months into a server; another says it takes 3 to 5 months to get one (creator tips, unconfirmed). Our server opened October 16, 2026 (our own record), so November 18 was day 34. That Wednesday the Event menu did not list Cell Creation; it is a weekend event, so that does not settle it. (creator tip, seen in game)",
+      "source": "Aslan, beginner guide (October 25, 2026): \"3 to 5 months\"; Kitcat (September 8, 2026): \"3 to 4 months\"; the Event menu of one of our accounts on November 18, 2026",
+      "evidence": [
+       "RedThread kb claims c-bfc03b1af366 (Aslan 6Lcdb56rRng at 4:47), c-dea180e6dc53 (Kitcat m25zVHaqUWo at 8:29)",
+       "RedThread app/dailies/map/n2_event.png"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "exchange-prices",
+    "top": false,
+    "title": "Exchange shops: every price we could see",
+    "intro": "Six of the ten Exchange tabs show almost all their prices to a free, low-VIP account (Organization hides four rows until Organization Tech Tier 8; Crystal hides one row that is not unlocked yet). Real-Time Arena shows two open rows and VIP one; the rest need a rank or a VIP level. Premium Monthly Card hides every price without the card. Salvage is locked.",
+    "lines": [
+     {
+      "text": "Cell Evolution Eukaryote costs 500 Diamonds each on the Regular tab, and 200 Limit Crystals for 10 (20 each) on the Limit Crystal tab (15 times a week). Our call: buy it with Limit Crystals, not Diamonds. (seen in game, our call)",
+      "source": "the prices are from the Exchange screens (November 18, 2026); the advice is our call",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_regular_00.png",
+       "RedThread app/dailies/map/shops/a1_limit_crystal_00.png"
+      ]
+     },
+     {
+      "text": "The Crystal tab sells a Panacean Star-Up Crystal for 1 UR Crystal and a Selection SSR Character for 8 SSR Crystals. One SSR Crystal also buys 50 Limit Crystals. A Talent Certificate ×30,000 row (2 a week) was marked to unlock on November 19; its price was not shown yet. (seen in game)",
+      "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_crystal_00.png"
+      ]
+     },
+     {
+      "text": "Free, and it looks daily: a Regular Battery on the Crystal tab and 1,000,000 Gold on the VIP tab. Both showed Sold Out when we looked, with a timer of about 8¾ hours to the next one. (seen in game)",
+      "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_crystal_00.png",
+       "RedThread app/dailies/map/shops/a1_vip_02.png"
+      ]
+     },
+     {
+      "text": "Organization tab: four more rows open with Organization Tech Tier 8. Level 1 opens Gold ×3,000,000 (5 a week), level 2 Exclusive Treasure Box Key ×5 (5 a week), level 3 Potential Lucky Coin ×5 (2 a week) and level 4 Event Summon Ticket ×5 (2 a week). Their prices are hidden until then. (seen in game)",
+      "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_organization_00.png"
+      ]
+     },
+     {
+      "text": "VIP tab, what each level opens (prices hidden below that level): VIP 6 Promotion Crystal III and Gold ×1,500,000, 5 a day each. VIP 7 Free Diamonds once a day and Event Summon Ticket ×5 once a week. VIP 8 a Summon Ticket and Exclusive Treasure Box Key ×10, once a day each. VIP 9 Event Summon Ticket ×10 and Cell Promoter ×100, once a week each. VIP 10 a Panacean Star-Up Crystal once a month and Cell Evolution Eukaryote ×30 once a week. VIP 11 a Panacean Refinement Crystal twice a month. VIP 12 opens a Shachi Random Ability Sphere 3 times a week, VIP 13 another one 5 times a week, and VIP 15 a third Shachi row (no limit shown). (seen in game)",
+      "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_vip_00.png",
+       "RedThread app/dailies/map/shops/a1_vip_01.png",
+       "RedThread app/dailies/map/shops/a1_vip_02.png"
+      ]
+     },
+     {
+      "text": "Premium Monthly Card Shop (only while the card is active): Free Diamonds, a Summon Ticket, Limit Crystal ×5, Exclusive Treasure Box Key ×5 and Gold ×2,000,000 once a day each; Event Summon Ticket ×5 once a week; a Panacean Star-Up Crystal and Event Summon Ticket ×10 once a month. Prices are hidden without the card. (seen in game)",
+      "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_monthly_card_00.png"
+      ]
+     },
+     {
+      "text": "Real-Time Arena tab: the best rows need a rank. Master V opens a Panacean Star-Up Crystal (once a month), a Random UR cell (Score 100) once a week, Special Fragment Selection Chest VII (10 a week), the Superlative Potential Box (2 a week), an Attribute Material Selection Chest (no limit shown) and an Initial Fragment Selection Chest (2 a day). Diamond V opens Panacean Star-Up Crystal Shard ×15 once a week. Platinum V opens an Initial Fragment Selection Chest (1 a day) and a Random Initial Character Fragment (5 a day). Open to everyone: Talent Certificate ×100 for 100 Real-Time Arena points and a Random Initial Character Fragment for 50 (3 a day). (seen in game)",
+      "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+      "evidence": [
+       "RedThread app/dailies/map/shops/a1_rta_00.png",
+       "RedThread app/dailies/map/shops/a1_rta_01.png"
+      ]
+     }
+    ],
+    "table": {
+     "head": [
+      "Shop tab",
+      "Item",
+      "Price",
+      "Limit"
+     ],
+     "rows": [
+      [
+       "Regular",
+       "Panacean Crystal Nucleus ×1",
+       "5,000 Diamonds",
+       "1 per day"
+      ],
+      [
+       "Regular",
+       "Random Full Score UR Factor Attribute Cell ×1",
+       "10,000 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Random Full Score UR Factor Attribute Cell ×1",
+       "100,000,000 gold",
+       "1 per week"
+      ],
+      [
+       "Regular",
+       "Cell Evolution Eukaryote ×1",
+       "500 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Nuclear Battery ×1",
+       "500 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Improved Battery ×1",
+       "100 Diamonds",
+       "sold out when we looked; came back in about 8¾ hours (looks daily)"
+      ],
+      [
+       "Regular",
+       "Premium Bond Tablet (Yellow, Blue or Red) ×10",
+       "500 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Strength Data, Speed Data or Skill Data ×500",
+       "500 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Gold ×2,000,000",
+       "500 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Bond Tablet (Yellow, Blue or Red) ×10",
+       "50 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Sweep Coupon ×1",
+       "50 Diamonds",
+       ""
+      ],
+      [
+       "Regular",
+       "Assignment Refresh Coupon ×1",
+       "30 Diamonds",
+       "10 per day"
+      ],
+      [
+       "Regular",
+       "Promotion Stone, WIT / PSY / DST, 5★ / 4★ / 3★ / 2★ / 1★ (each)",
+       "80 / 40 / 20 / 10 / 5 Diamonds",
+       ""
+      ],
+      [
+       "Friendship Point",
+       "Promotion Crystal III ×1",
+       "2,500 Friendship Points",
+       "1 per day"
+      ],
+      [
+       "Friendship Point",
+       "Gemstone Bunny ×1",
+       "800 Friendship Points",
+       "1 per day"
+      ],
+      [
+       "Friendship Point",
+       "Combat Manual - Advanced ×1",
+       "800 Friendship Points",
+       "1 per day"
+      ],
+      [
+       "Friendship Point",
+       "Improved Battery ×1",
+       "500 Friendship Points",
+       "5 per day"
+      ],
+      [
+       "Friendship Point",
+       "4-star Promotion Stone (STR, SKL or SPD) ×1",
+       "400 Friendship Points",
+       "5 per day"
+      ],
+      [
+       "Friendship Point",
+       "Bond Tablet (Red, Yellow or Blue) ×5",
+       "300 Friendship Points",
+       "10 per day"
+      ],
+      [
+       "Friendship Point",
+       "Potential Stone ×10",
+       "200 Friendship Points",
+       "10 per day"
+      ],
+      [
+       "Friendship Point",
+       "Sweep Coupon ×1",
+       "50 Friendship Points",
+       "20 per day"
+      ],
+      [
+       "Friendship Point",
+       "Promotion Stone, WIT / PSY / DST, 5★ / 4★ / 3★ / 2★ / 1★ (each)",
+       "160 / 80 / 40 / 20 / 10 Friendship Points",
+       ""
+      ],
+      [
+       "Crystal",
+       "Panacean Star-Up Crystal ×1",
+       "1 UR Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Selection Special Character ×1",
+       "3 UR Crystals",
+       ""
+      ],
+      [
+       "Crystal",
+       "Random Rainbow Potential Lv.6 ×1",
+       "2 UR Crystals",
+       "1 per week"
+      ],
+      [
+       "Crystal",
+       "Selection SSR Character ×1",
+       "8 SSR Crystals",
+       ""
+      ],
+      [
+       "Crystal",
+       "Lv.4 Random Potential ×1",
+       "1 SSR Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Limit Crystal ×50",
+       "1 SSR Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Regular Battery ×1",
+       "Free",
+       "sold out when we looked; came back in about 8¾ hours (looks daily)"
+      ],
+      [
+       "Crystal",
+       "Special Character Fragment Chest ×1",
+       "3 SR Crystals",
+       "2 per day"
+      ],
+      [
+       "Crystal",
+       "Lv.3 Random Potential ×1",
+       "3 SR Crystals",
+       ""
+      ],
+      [
+       "Crystal",
+       "Sweep Coupon ×10",
+       "3 SR Crystals",
+       "10 per week"
+      ],
+      [
+       "Crystal",
+       "Limit Crystal ×5",
+       "1 SR Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Crimson Crystal ×30",
+       "1 SR Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "4-star Promotion Stone (STR, SKL or SPD) ×10",
+       "1 SR Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Improved Battery ×1",
+       "3 R Crystals",
+       "sold out when we looked; came back in about 8¾ hours (looks daily)"
+      ],
+      [
+       "Crystal",
+       "Limit Crystal ×1",
+       "1 R Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Combat Manual - Intermediate ×3",
+       "1 R Crystal",
+       ""
+      ],
+      [
+       "Crystal",
+       "Gold ×600,000",
+       "1 R Crystal",
+       ""
+      ],
+      [
+       "Arena",
+       "Character piece ×1: Noro [Quick Revival], Yakumo Omori [Jason], Naki [Crybaby] or Nico [Ladyboy in Love]",
+       "3,000 Arena points",
+       ""
+      ],
+      [
+       "Arena",
+       "Limit Crystal ×10",
+       "100 Arena points",
+       ""
+      ],
+      [
+       "Arena",
+       "Sweep Coupon ×5",
+       "50 Arena points",
+       "sold out when we looked; came back in about 8¾ hours (looks daily)"
+      ],
+      [
+       "Arena",
+       "Promotion Stone, WIT / PSY / DST, 5★ / 4★ / 3★ / 2★ / 1★ (each)",
+       "48 / 24 / 12 / 6 / 3 Arena points",
+       ""
+      ],
+      [
+       "Organization",
+       "Character piece ×1: Iwao Kuroiwa [Arata proto], Yukinori Shinohara [Arata proto], Kureo Mado [Quinque Maniac] or Kohtaro Amon [Twinblades of Justice]",
+       "10,000 Organization notes",
+       "1 per week"
+      ],
+      [
+       "Organization",
+       "Crimson Crystal ×30",
+       "500 Organization notes",
+       "5 per week"
+      ],
+      [
+       "Organization",
+       "Limit Crystal ×10",
+       "200 Organization notes",
+       "20 per week"
+      ],
+      [
+       "Organization",
+       "Promotion Stone, WIT / PSY / DST, 5★ / 4★ / 3★ / 2★ / 1★ (each)",
+       "80 / 40 / 20 / 10 / 5 Organization notes",
+       ""
+      ],
+      [
+       "Limit Crystal",
+       "Cell Evolution Eukaryote ×10",
+       "200 Limit Crystals",
+       "15 per week"
+      ],
+      [
+       "Limit Crystal",
+       "Legendary Enhancement Stone ×10",
+       "150 Limit Crystals",
+       "2 per week"
+      ],
+      [
+       "Limit Crystal",
+       "Apex Enhancement Stone ×10",
+       "100 Limit Crystals",
+       "10 per week"
+      ],
+      [
+       "Limit Crystal",
+       "Cell Promoter ×10",
+       "80 Limit Crystals",
+       "50 per week"
+      ],
+      [
+       "Limit Crystal",
+       "Scarlet, Yellow or Azure Core II ×5",
+       "75 Limit Crystals",
+       ""
+      ],
+      [
+       "Limit Crystal",
+       "Fine Enhancement Stone ×10",
+       "50 Limit Crystals",
+       ""
+      ],
+      [
+       "Limit Crystal",
+       "Rare Enhancement Stone ×10",
+       "25 Limit Crystals",
+       ""
+      ],
+      [
+       "Limit Crystal",
+       "Scarlet, Yellow or Azure Core I ×5",
+       "15 Limit Crystals",
+       ""
+      ],
+      [
+       "Limit Crystal",
+       "Normal Enhancement Stone ×10",
+       "10 Limit Crystals",
+       ""
+      ],
+      [
+       "Limit Crystal",
+       "4-star Promotion Stone (WIT, PSY or DST) ×1",
+       "4 Limit Crystals",
+       ""
+      ],
+      [
+       "Real-Time Arena",
+       "Talent Certificate ×100",
+       "100 Real-Time Arena points",
+       ""
+      ],
+      [
+       "Real-Time Arena",
+       "Random Initial Character Fragment ×1",
+       "50 Real-Time Arena points",
+       "3 per day"
+      ],
+      [
+       "VIP",
+       "Gold ×1,000,000",
+       "Free",
+       "sold out when we looked; came back in about 8¾ hours (looks daily)"
+      ]
+     ],
+     "note": "A blank limit means the screen showed none. Prices are what one of our accounts (level 74, low VIP) saw on November 18, 2026; the Exchange opens from the bar at the bottom of the home screen.",
+     "source": "Exchange screens of one of our accounts, November 18, 2026 (every tab, scrolled to the end)",
+     "evidence": [
+      "RedThread app/dailies/map/shops/a1_<tab>_<page>.png (35 pictures)"
+     ]
+    }
+   },
+   {
     "id": "faction-ranking",
     "top": true,
     "title": "Which org is strongest right now (player vs player)",
@@ -22706,6 +23226,245 @@
       "evidence": [
        "rook ~/work/tgbtc-battlesim/dl/Const.json",
        "data/raw/en.json tid#TacticUI_29"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "events-free-vs-paid",
+    "top": false,
+    "title": "Event pages: what is free and where the money buttons are",
+    "intro": "Seen on our own accounts on November 18, 2026, on a server about five weeks old. Event names and prices can differ on your server.",
+    "lines": [
+     {
+      "text": "Chain Campaign Boost and Endless Trial Boost (Event menu) each have a free top row: 100 Diamonds for every depth step you have reached, and one tap claims them all. The row under it costs 24.99 USD. One of our accounts had 300 and 400 Diamonds waiting on the two pages, and another had 1,200. (seen in game)",
+      "source": "seen in game on two of our accounts, November 18, 2026 (screenshots)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_ev_ccb.png",
+       "RedThread app/dailies/map/n2_ev_etb4.png",
+       "RedThread app/dailies/map/a3_etb3.png"
+      ]
+     },
+     {
+      "text": "Lucky Wheel, Value Pack page: one Free pack a day (1 wheel ticket) sits beside packs of 0.99 to 14.99 USD. We saw a 0.99 USD pack move into the same spot after the claim (seen once, on one account). Our call: tap once and look before you tap again. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/ann_wheel_pack.png",
+       "RedThread app/dailies/map/ann_wheel_pack2.png"
+      ]
+     },
+     {
+      "text": "Lucky Wheel Point Shop: the first item is 100 Diamonds for 1 cake token, 10 times. Our call: buy that first. Spending 10 tokens opens phase 2 (Potential Lucky Coins, an exclusive ticket); later phases open at 50, 150 and 450 tokens spent. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_ann_lwshop.png",
+       "RedThread app/dailies/map/n2_lwshop_p2.png",
+       "RedThread app/dailies/map/n2_lwshop_p3.png",
+       "RedThread app/dailies/map/n2_lwshop_p4.png",
+       "RedThread app/dailies/map/n2_lwshop_p5.png"
+      ]
+     },
+     {
+      "text": "Potential Wheel: a spin costs 1 Potential Lucky Coin. When your coins run out, the same two buttons switch to 100 and 1,000 Diamonds. Our call: check the price on the button before each press. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_ev_potwheel.png",
+       "RedThread app/dailies/map/n2_ev_pw5.png"
+      ]
+     },
+     {
+      "text": "Wheel of Fortune (Event menu) spins cost real money, 0.29 USD each. Diamond Spring takes 500 Diamonds or 4.99 USD. The 2nd Anniversary Special Sign-In has one free row; its second and third rows open only after a 9.99 USD purchase. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_event.png",
+       "RedThread app/dailies/map/ann_signin.png"
+      ]
+     },
+     {
+      "text": "Exclusive Treasure Box keys: on the event page each Open press spends 1 key. The Assistant tab \"Open Exclusive Ability Sphere\" spends them in batches; one press used 88 keys. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/as_sphere.png",
+       "RedThread app/dailies/map/as_sphere2.png",
+       "RedThread app/dailies/map/ev_box.png"
+      ]
+     },
+     {
+      "text": "Card Treasure Hunt: each stage has 30 face-down cards and one hides the stage prize. Stage 4's prize is 1,000 Diamonds. Flips: you start with 15, daily quests give 1 or 2 each (one of them, \"obtain 10 paid-currency points\", needs a purchase), and these goals give 5 each: log in 4 and 7 days, finish Force Challenge 5 times (it counts once per arc per day) and take part in 20 Conquest Battles. Moving to the next stage throws away the cards you did not flip. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/ev_card.png",
+       "RedThread app/dailies/map/n2_ev_cardq.png",
+       "RedThread app/dailies/map/n2_ev_cardg.png"
+      ]
+     },
+     {
+      "text": "Character Activity, BOSS Challenge: you need the event character in your line-up, and you can borrow a friend's copy. Borrowed damage scores 50%. One AUTO run with a level 300 team and a borrowed copy scored 57,156 and opened every point tier at once, 800 Diamonds among them. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_ayato_boss.png",
+       "RedThread app/dailies/map/n2_ayato_b2.png",
+       "RedThread app/dailies/map/n2_ayato_b3.png"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "daily-time-savers",
+    "top": false,
+    "title": "Daily routine: time savers and traps",
+    "intro": "Seen on our own accounts on November 18, 2026 (level 73 to 74, on a server about five weeks old).",
+    "lines": [
+     {
+      "text": "The Assistant (a subscription) has a Daily tab with One-click Execute. One press ran Anteiku, the Boss dispatch, the Assignment claims and the Bingo submit. It left four dailies undone: obtain 3 Rc Cells, clear Gold once, clear EXP once and give 1 Bingo Card. Its Gold and EXP sweep rows were set to 0, which likely explains two of them. Our call: do those four by hand. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/a1_05.png",
+       "RedThread app/dailies/map/a1_09.png",
+       "RedThread app/dailies/map/b_daily.png",
+       "RedThread app/dailies/map/a1_08.png"
+      ]
+     },
+     {
+      "text": "Daily Activeness chests sit at 20, 40, 60, 80, 100, 120 and 150 points. Quest values we saw: log in 15, clear Gold 15, clear EXP 15, salvage an Rc Cell 15, obtain 3 Rc Cells 10, give a Bingo Card 10, one Exclusive Equipment draw 10. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/b_daily.png",
+       "RedThread app/dailies/map/c_claim.png",
+       "RedThread app/dailies/map/c_q5.png"
+      ]
+     },
+     {
+      "text": "Rc Cells: on Character, Train, Rc Cells, One-Tap Equip puts the best spare cells on that character with no confirmation. Our call: do it for every character you own first; it should raise combat power. Then use Rc Salvage, Batch, and tick N, R, SR and SSR. On one account 509 leftover cells gave 13.77 million gold and 750 Diamonds. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/e_rc.png",
+       "RedThread app/dailies/map/e_rc2.png",
+       "RedThread app/dailies/map/f_batch.png",
+       "RedThread app/dailies/map/f_batch3.png",
+       "RedThread app/dailies/map/f_salv3.png"
+      ]
+     },
+     {
+      "text": "Do not let the Rc Cell bag and the mailbox fill up together. A full bag sends rewards to the mailbox as \"Inventory Items Overflowed\" mails that last about 30 days, and the mailbox holds 100 mails. With both full, new rewards have nowhere to go. One of our accounts had both full. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/d_mail.png",
+       "RedThread app/dailies/map/g_mail4.png"
+      ]
+     },
+     {
+      "text": "On a line-up screen, One-Tap Promotion raises every unit shown by up to 5 levels per press while your materials last, with no confirmation. Using Quick Upgrade and One-Tap Promotion together took five units from level 200 to 300; there both buttons lost their red dot, which looks like the cap for now. It cost about 155 million gold plus EXP items and no Diamonds; that line-up went from 644,548 to 773,966 CP. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_promo.png",
+       "RedThread app/dailies/map/n2_promo2.png",
+       "RedThread app/dailies/map/n2_endless6.png"
+      ]
+     },
+     {
+      "text": "Stamina items: Regular Battery +30, Improved Battery +100, Nuclear Battery +300. The refill box also has a \"Go to Buy\" button for a real-money pack. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/force6.png",
+       "RedThread app/dailies/map/n2_ayato_boss2.png"
+      ]
+     },
+     {
+      "text": "Weekly Challenge: one AUTO win at Difficulty 6 (recommended 350,000 CP, 300% score bonus, 20 stamina) with a 510,614 CP team scored 128,859 and opened every reward tier up to 50,000 in one claim: 1,300 Diamonds, 10 keys and 5 million gold among them. Our call: if you do nothing else in your org this week, do one run. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_weekly.png",
+       "RedThread app/dailies/map/n2_weekly_end.png",
+       "RedThread app/dailies/map/n2_weekly4.png"
+      ]
+     },
+     {
+      "text": "A Conquest Battle Invitation (red WARNING box with Quit, Suspend and Go) can pop up over any screen when an org member invites you. Go puts you in with a separate Conquest line-up, not your main team. Ours was 1.29 million CP against a 1.6 million boss and lost. Our call: press Quit unless you have set that line-up. The Card Treasure Hunt goal counts Conquest Battles you take part in, so a declined invitation should not count toward it (our reading). (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_conq1.png",
+       "RedThread app/dailies/map/n2_conq_end.png"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "modes-seen-in-game",
+    "top": false,
+    "title": "Modes by the numbers: costs, limits and unlocks we saw",
+    "intro": "Seen on our own accounts on November 18, 2026 (level 73 to 74, Chain Campaign depth 251 to 265). Numbers change with your depth and level.",
+    "lines": [
+     {
+      "text": "Chain Campaign: you get 25 Chain Licenses a day, reset at 05:00 on the game clock. Each Start also costs 30 stamina. A stage at depth 251 needs 5 teams, and Start is refused if any team is empty (\"Add at least one character to your main line-up\"). Auto-Repeat ran all 25 licenses hands-off and took one account from depth 251 to 265, with 1,460 Diamonds in the rewards. That run also used 6 Regular Batteries; Auto-Repeat Settings has an option to use stamina items by itself, which is the likely cause. Our call: turn it off if you want to keep them. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/chain_auto.png",
+       "RedThread app/dailies/map/chain_l5.png",
+       "RedThread app/dailies/map/chain_b2.png",
+       "RedThread app/dailies/map/chain_b3.png"
+      ]
+     },
+     {
+      "text": "On the Chain Campaign line-up screen, a swipe that starts on a portrait drags that unit to another team. To scroll, flick on the CP column instead. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/chain_t1.png",
+       "RedThread app/dailies/map/chain_ready.png"
+      ]
+     },
+     {
+      "text": "Blockade Breakthrough: you pick 3 buffs per round and they stay until the round resets. Sweep on new enemy nodes unlocks at Chain Campaign depth 300; before that you fight each one. Node 18 is the boss. One account cleared nodes 1 to 15; nodes 16 and up showed a padlock and we do not know why. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/blk1.png",
+       "RedThread app/dailies/map/blk4.png",
+       "RedThread app/dailies/map/blk9.png"
+      ]
+     },
+     {
+      "text": "Force Challenge: the No Organization arc has no unit restriction and its three stages cost 20, 35 and 60 stamina; Sweep All costs 115 stamina and 3 coupons. The CCG arc takes Anteiku units only. The Anteiku arc takes Aogiri units only and opens on Monday, Thursday and Sunday. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/force1.png",
+       "RedThread app/dailies/map/force2.png",
+       "RedThread app/dailies/map/force3.png"
+      ]
+     },
+     {
+      "text": "Endless Trial has four ladders: the main one, and Trial STR, Trial SKL and Trial SPD. A trial costs 8 stamina. The Automatic Challenge switch chains trials by itself; on one account it cleared 15 trials in a row and brought 1,500 Diamonds. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_endless.png",
+       "RedThread app/dailies/map/n2_endless2.png",
+       "RedThread app/dailies/map/a3_trial_idle.png"
+      ]
+     },
+     {
+      "text": "Exploration: a unit that falls stays out for the rest of that map, and the game rebuilds your line-up from what is left. Our call: level your team before you start a new map. Map V: 30 enemies at 750,000 CP, 3 stamina each, and 2,300 Diamonds for the first clear. (seen in game, our call)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_expl.png",
+       "RedThread app/dailies/map/n2_expl2.png",
+       "RedThread app/dailies/map/n2_expl_r.png"
+      ]
+     },
+     {
+      "text": "Arena: 5 tickets a day. The main Arena ranking is finalized at 21:00 UTC-8 and the SPD Arena at 22:00 UTC-8; in US Eastern winter time that is midnight and 1:00 AM (1:00 and 2:00 AM in summer, if the game clock stays on UTC-8). CP can understate a team: a 663,650 CP opponent fielded level 300 to 350 units, each with an Assist partner. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/arena1.png",
+       "RedThread app/dailies/map/arena3.png",
+       "RedThread app/dailies/map/arena8.png"
+      ]
+     },
+     {
+      "text": "Organization Boss: the Bonus Phase has reward nodes that are finalized at 08:00, 16:00 and 24:00 on the game clock; tap a node marked Claimable to collect it. At Point level 23 the odds shown were SS 15%, S 25%, A 45% and B 15%. (seen in game)",
+      "source": "seen in game on one of our accounts, November 18, 2026 (screenshot)",
+      "evidence": [
+       "RedThread app/dailies/map/n2_orgboss.png",
+       "RedThread app/dailies/map/n2_orgboss3.png",
+       "RedThread app/dailies/map/n2_orgboss_r.png"
       ]
      }
     ]
