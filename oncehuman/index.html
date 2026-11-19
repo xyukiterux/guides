@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Once Human Field Guide</title>
+<meta name="description" content="Once Human guide for the Isles of Abyss scenario and Season 5: builds by damage keyword with dated sources, every weapon, armor set, mod and Deviation, bosses, silos, Tech, base building and videos.">
+<meta name="theme-color" content="#111214">
+<meta property="og:title" content="Once Human Field Guide">
+<meta property="og:description" content="Builds by damage keyword, every weapon, set, mod and Deviation, Isles of Abyss and Season 5, bosses and silos. Works offline.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Barlow Condensed";font-weight:600;font-style:normal;font-display:swap;src:url(assets/fonts/barlow-condensed-600.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-style:normal;font-display:swap;src:url(assets/fonts/barlow-condensed-700.woff2) format("woff2")}
+:root{
+  --bg:#111214;--steel:#1a1c1f;--steel2:#22252a;--steel3:#2b2f35;--well:#0c0d0f;
+  --line:rgba(232,228,222,.08);--line2:rgba(232,228,222,.15);
+  --text:#ebe7e1;--muted:#aaa59e;--dim:#827d77;
+  --red:#e5383b;--red2:#ff5a5d;--redglow:rgba(229,56,59,.35);--ember:#f0a35e;--frost:#84c8ea;--ok:#8fcf86;--warn:#f2c14e;
+  --kShrapnel:#e8a65a;--kFrost:#84c8ea;--kSurge:#b896ff;--kBurn:#ff7a45;--kBomber:#ff5d6c;--kBounce:#8fcf86;--kFast:#f2c14e;--kFortress:#a9b4bf;--kBull:#ff6f91;
+  --head:"Barlow Condensed","Arial Narrow","Roboto Condensed","Segoe UI",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:6px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font:16px/1.6 var(--body);
+  background:
+   radial-gradient(900px 520px at 92% -8%,rgba(229,56,59,.13),transparent 62%),
+   radial-gradient(700px 500px at -8% 108%,rgba(132,200,234,.06),transparent 60%),
+   repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 4px),
+   linear-gradient(180deg,#141518,#0f1012);background-attachment:fixed}
+a{color:var(--red2)}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;letter-spacing:.03em;margin:0 0 .4em;line-height:1.1;text-transform:uppercase}
+h2{font-size:2rem}h3{font-size:1.25rem;letter-spacing:.04em}
+p{margin:.4em 0}
+.shell{display:grid;grid-template-columns:268px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line2);
+  background:linear-gradient(180deg,rgba(26,28,31,.96),rgba(15,16,18,.96))}
+aside::before{content:"";display:block;height:4px;margin:-18px -14px 14px;background:repeating-linear-gradient(135deg,var(--red) 0 10px,#2a1213 10px 20px)}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--text)}
+.brand svg{flex:none}
+.brand b{display:block;font:700 1.45rem/1 var(--head);letter-spacing:.06em;text-transform:uppercase}
+.brand small{color:var(--red2);letter-spacing:.22em;font:600 .72rem var(--head);text-transform:uppercase}
+#checked{font-size:1rem;color:var(--muted);margin:12px 2px;line-height:1.45}
+#checked a{color:var(--frost)}
+.search{position:relative}
+.search input{width:100%;padding:10px 12px 10px 36px;border-radius:var(--r);border:1px solid var(--line2);background:var(--well);color:var(--text);font:inherit;outline:none}
+.search input:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(229,56,59,.18)}
+.search svg{position:absolute;left:12px;top:14px;opacity:.6}
+.results{position:absolute;left:0;right:0;top:48px;background:var(--steel2);border:1px solid var(--line2);border-radius:var(--r);max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:1rem;display:flex;align-items:center;gap:8px}
+.results div img,.results div svg{width:26px;height:26px;object-fit:contain;flex:none}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.875rem;white-space:nowrap}
+.results div:hover,.results div.sel{background:rgba(229,56,59,.14)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:10px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font:700 .78rem var(--head);letter-spacing:.2em;color:var(--red2);margin:14px 8px 4px;text-transform:uppercase}
+nav a{display:flex;gap:10px;align-items:center;padding:6px 10px;border-radius:3px;color:var(--text);text-decoration:none;font-size:.95rem;border-left:3px solid transparent}
+nav a:hover{background:rgba(255,255,255,.04)}
+nav a.on{background:linear-gradient(90deg,rgba(229,56,59,.2),rgba(229,56,59,.03));border-left-color:var(--red)}
+nav a .n{margin-left:auto;font-size:.875rem;color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,2.6vw,44px) 90px}
+.topbar{display:none}
+.card,.tile,.panel{background:linear-gradient(180deg,rgba(43,47,53,.55),rgba(26,28,31,.75));border:1px solid var(--line2);border-radius:var(--r);position:relative}
+.card{padding:16px 18px;min-width:0}
+.card::before{content:"";position:absolute;top:-1px;left:14px;width:38px;height:3px;background:var(--red);border-radius:0 0 2px 2px}
+.hero{position:relative;overflow:hidden;border-radius:var(--r);padding:clamp(22px,4vw,48px);margin-bottom:20px;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line2);isolation:isolate}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(14,15,17,.97) 6%,rgba(14,15,17,.55) 55%,rgba(14,15,17,.2)),linear-gradient(90deg,rgba(14,15,17,.9),transparent 75%)}
+.hero .k{color:var(--red2);font:700 .9rem var(--head);letter-spacing:.24em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);margin:.08em 0 .12em;letter-spacing:.06em;text-shadow:0 0 30px var(--redglow),0 3px 0 rgba(0,0,0,.6)}
+.hero p{max-width:820px;color:#ddd8d0;font-size:1.06rem;margin:0}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.status span{background:rgba(12,13,15,.75);border:1px solid var(--line2);border-left:3px solid var(--red);padding:5px 10px;font-size:.88rem;border-radius:3px}
+.status b{font-family:var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--red2);margin-right:6px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.sec{margin:28px 0 12px}
+.sec>p{margin:.25em 0 0;color:var(--muted);max-width:980px}
+.sec h2{display:flex;align-items:center;gap:14px}
+.sec h2::after{content:"";flex:1;height:2px;min-width:30px;background:linear-gradient(90deg,var(--red),transparent)}
+.muted{color:var(--muted)}.small{font-size:1rem}.tiny{font-size:1rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:1px 9px;border-radius:3px;font-size:.875rem;border:1px solid var(--line2);background:rgba(12,13,15,.6);color:#ddd8d0;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.red{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.pill.ok{color:var(--ok);border-color:rgba(143,207,134,.5)}
+.pill.warn{color:var(--warn);border-color:rgba(242,193,78,.5)}
+.pill.bad{color:var(--red2);border-color:rgba(255,90,93,.55)}
+.r-Legendary{color:#f0b34a}.r-Epic{color:#c08cff}.r-Rare{color:#6fb4ff}.r-Normal,.r-Standard{color:#9fd69a}
+.note{border-left:3px solid var(--red);background:rgba(229,56,59,.07);padding:10px 14px;border-radius:0 var(--r) var(--r) 0;color:#e1dcd4;margin:12px 0}
+.note.warn{border-left-color:var(--warn);background:rgba(242,193,78,.07)}
+.answer{font-size:1.08rem;color:#f1ede7;max-width:1000px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.tabs button{padding:6px 13px;border-radius:3px;border:1px solid var(--line2);background:var(--steel2);cursor:pointer;font-size:1rem}
+.tabs a.tab{padding:6px 13px;border-radius:3px;border:1px solid var(--line2);background:var(--steel2);font-size:1rem;color:var(--text);text-decoration:none}
+.tabs a.tab.on{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.tabs button.on{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.tabs .lab{font:700 .875rem var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);align-self:center;margin-right:4px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 14px}
+.filters input{background:var(--well);color:var(--text);border:1px solid var(--line2);border-radius:var(--r);padding:8px 11px;font:inherit;min-width:min(100%,260px)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line2);border-radius:var(--r);background:rgba(17,18,20,.7)}
+table{width:100%;border-collapse:collapse;font-size:1rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--steel3);font:700 .875rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--red2);white-space:nowrap}
+/* tiles */
+.igrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr))}
+.tile{display:flex;gap:10px;align-items:center;padding:10px;cursor:pointer;text-align:left;transition:border-color .15s,background .15s;min-width:0;width:100%}
+.tile:hover,.tile:focus-visible{border-color:var(--red);background:linear-gradient(180deg,rgba(229,56,59,.12),rgba(26,28,31,.8));outline:none}
+.tile .pic{flex:none;width:58px;height:58px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.07),rgba(12,13,15,.7));border-radius:4px;border:1px solid var(--line)}
+.tile .pic img,.tile .pic svg{max-width:54px;max-height:54px;object-fit:contain}
+/* weapon art is about 2:1: picture on top, full tile width */
+.tile.wide{flex-direction:column;align-items:stretch}.tile.wide .pic{width:100%;height:76px}.tile.wide .pic img{max-width:100%;max-height:70px;width:auto;height:auto}
+.ic-head .pic.wide{width:220px}.ic-head .pic.wide img{max-width:210px;width:auto;height:auto}
+.tile b{display:block;font-weight:600;font-size:1rem;line-height:1.25;overflow-wrap:anywhere}
+.tile .sub{display:block;font-size:1rem;color:var(--muted);line-height:1.35}
+.kw{display:inline-block;padding:0 7px;border-radius:3px;font:700 .9rem var(--head);letter-spacing:.06em;text-transform:uppercase;color:#14110e;background:var(--c,#999);white-space:nowrap}
+.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:8px;max-width:1100px}
+.steps li{position:relative;padding:12px 14px 12px 58px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:12px;width:30px;height:30px;border-radius:3px;background:var(--red);color:#fff;display:grid;place-items:center;font:700 1.05rem var(--head)}
+.src{display:block;margin-top:4px;font-size:1rem;color:var(--dim)}
+.src a{color:var(--dim)}
+.lk{color:var(--red2);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(255,90,93,.4);text-underline-offset:2px}
+.lk:hover{color:#fff}
+.ofc{font-weight:600;color:#f3e6d6}
+.modal{position:fixed;inset:0;background:rgba(5,6,8,.78);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#24272c,#16181b);border:1px solid var(--line2);border-top:3px solid var(--red);border-radius:var(--r);max-width:760px;width:100%;max-height:92vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.7)}
+.modal .box.wide{max-width:1000px}
+.modal .x{position:absolute;right:10px;top:6px;background:none;border:0;font-size:2rem;line-height:1;cursor:pointer;color:var(--muted);padding:4px 8px}
+.ic-head{display:flex;gap:16px;align-items:center;margin-bottom:8px;padding-right:34px}
+.ic-head .pic{flex:none;width:110px;height:110px;display:grid;place-items:center;border-radius:4px;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.08),rgba(12,13,15,.8));border:1px solid var(--line2)}
+.ic-head .pic img,.ic-head .pic svg{max-width:100px;max-height:100px;object-fit:contain}
+.ic-head h2{font-size:1.9rem;margin:0}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+.isec h4{font:700 1rem var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--red2);margin:0 0 4px}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 16px;font-size:1rem;margin:6px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+ul.l{margin:6px 0;padding-left:1.25em}ul.l li{margin:3px 0}
+.more{background:var(--steel3);border:1px solid var(--line2);border-radius:3px;padding:5px 12px;cursor:pointer;font-size:.88rem;margin-top:8px}
+.more:hover{border-color:var(--red)}
+.srcbox{display:none;margin-top:8px;font-size:1rem;border-left:2px solid var(--line2);padding-left:10px}
+.srcbox.on{display:block}
+.bline{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line);align-items:start}
+.bline:first-of-type{border-top:0}
+.bline .k{font:700 1rem var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:4px;background:var(--well);border:1px solid var(--line2);cursor:pointer;font-size:1rem;margin:2px 6px 2px 0;color:var(--text)}
+.chip:hover{border-color:var(--red)}
+.chip img,.chip svg{width:30px;height:30px;object-fit:contain}
+.chip.wide img{width:64px}
+.chip.nodata{cursor:default;border-style:dashed}
+.tierrow{display:grid;grid-template-columns:200px repeat(var(--n),minmax(90px,1fr));border-bottom:1px solid var(--line);align-items:center}
+.tl{display:inline-grid;place-items:center;min-width:34px;height:34px;border-radius:3px;font:700 1.25rem var(--head);color:#111}
+.tS{background:#ff5a5d}.tA{background:#f0a35e}.tB{background:#f2c14e}.tC{background:#8fcf86}.tX{background:#3a3e44;color:var(--muted)}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;color:var(--text);text-align:left;width:100%}
+.vid .play{flex:none;width:52px;height:52px;border-radius:4px;display:grid;place-items:center;background:linear-gradient(180deg,var(--red2),#9d1f22);box-shadow:0 6px 16px var(--redglow)}
+.vid b{display:block;font-size:1rem;line-height:1.3}
+footer{margin-top:44px;color:var(--dim);font-size:.875rem;border-top:1px solid var(--line);padding-top:14px}
+:focus-visible{outline:2px solid var(--red2);outline-offset:2px}
+.note.tip{border-left-color:var(--frost);background:rgba(132,200,234,.07)}
+.terms{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));margin-top:12px}
+.terms dt{font:700 1.1rem var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--red2)}
+.terms dd{margin:2px 0 0}
+.tablewrap.fit th{white-space:normal}.tablewrap.fit td,.tablewrap.fit th{padding:8px 8px}
+.gl{font-size:1rem;color:var(--muted);margin:10px 0}
+.gl-narrow{display:none}
+@media(max-width:639px){.gl-wide{display:none}.gl-narrow{display:block}}
+.topbar .ver{margin-left:auto;font-size:.875rem;color:var(--muted);white-space:nowrap}
+.fbtn{display:none}
+.mats{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+@media (max-width:640px){
+  .fbtn{display:inline-flex;align-items:center;gap:8px;background:var(--steel2);border:1px solid var(--line2);border-radius:3px;padding:6px 12px;cursor:pointer;font-size:1rem;margin:4px 0 8px}
+  .fwrap:not(.open) .fmore{display:none}
+  .tablewrap.stack.fit td{display:inline-block;width:auto;vertical-align:top;padding:4px 8px 8px 11px}
+  .kv.wide{grid-template-columns:1fr;gap:0}.kv.wide dd{margin-bottom:6px}
+}
+@media (max-width:640px){
+  .tablewrap.stack{overflow:visible;border:0;background:none}
+  .tablewrap.stack table,.tablewrap.stack tbody,.tablewrap.stack tr,.tablewrap.stack th,.tablewrap.stack td{display:block;width:100%}
+  .tablewrap.stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .tablewrap.stack tr{border:1px solid var(--line2);border-radius:var(--r);margin:0 0 10px;background:rgba(17,18,20,.7);padding:4px 0}
+  .tablewrap.stack th[scope=row]{font-size:1.02rem!important;border-bottom:1px solid var(--line2)}
+  .tablewrap.stack td{border-bottom:0;padding:4px 11px}
+  .tablewrap.stack td::before{content:attr(data-label);display:block;font:700 .875rem var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--red2)}
+}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(310px,88vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:9px 14px;background:rgba(17,18,20,.96);border-bottom:1px solid var(--line2)}
+  .topbar button{background:var(--steel2);border:1px solid var(--line2);border-radius:3px;padding:6px 12px;cursor:pointer;display:flex;gap:8px;align-items:center}
+  .topbar b{font:700 1.15rem var(--head);letter-spacing:.06em;text-transform:uppercase}
+  main{padding:14px 12px 80px}
+  h2{font-size:1.6rem}
+  .igrid{grid-template-columns:1fr 1fr}
+  .tile{flex-direction:column;align-items:flex-start;gap:6px}
+  .bline{grid-template-columns:1fr;gap:4px}
+  .tierrow{grid-template-columns:120px repeat(var(--n),minmax(60px,1fr))}
+  table{font-size:1rem}
+  .ic-head .pic{width:76px;height:76px}.ic-head .pic img,.ic-head .pic svg{max-width:68px;max-height:68px}
+  .ic-head h2{font-size:1.4rem}
+  .ic-head .pic.wide{width:150px}.ic-head .pic.wide img{max-width:140px}
+  .modal{padding:6px}.modal .box{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+::selection{background:var(--red);color:#fff}
+*{scrollbar-color:rgba(229,56,59,.5) transparent}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections" aria-controls="side" aria-expanded="false"><svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor"><rect width="16" height="2"/><rect y="6" width="16" height="2"/><rect y="12" width="16" height="2"/></svg>Sections</button><b>Once Human</b><span class="ver" id="ver"></span></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="#e5383b" stroke-width="4"/><circle cx="32" cy="32" r="6" fill="#e5383b"/><path d="M32 4v10M32 50v10M4 32h10M50 32h10" stroke="#e5383b" stroke-width="3"/></svg><span><b>Once Human</b><small>Field Guide</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search weapons, mods, Deviations..." autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav" aria-label="Sections"></nav>
+</aside>
+<main id="main"><p class="muted">Loading the guide...</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box"><button class="x" aria-label="Close">&times;</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/oncehuman.js?v=2026-11-18-215720"></script>
+<script>
+(function(){
+'use strict';
+const D=window.OH;
+const $=s=>document.querySelector(s), main=$('#main');
+if(!D){main.innerHTML='<p class="note">The data file data/oncehuman.js did not load. Keep the data folder next to index.html.</p>';return;}
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs));
+const M=D.meta;
+const GROUPS=['weapons','sets','armor','mods','deviations','keywords','places','facilities'];
+const ALL=[].concat(...GROUPS.map(g=>D[g]));
+const BYID=dict(ALL.map(c=>[c.id,c]));
+const GROUP=dict(GROUPS.flatMap(g=>D[g].map(c=>[c.id,g])));
+// card details (stats, effects, drops) live in data/cards/<group>.js and load when a list or card needs them
+const LOADED=Object.create(null),WAIT=Object.create(null);
+function loadGroup(g){if(LOADED[g])return Promise.resolve();if(WAIT[g])return WAIT[g];
+ return WAIT[g]=new Promise((ok,bad)=>{const s=document.createElement('script');s.src=`data/cards/${g}.js?v=2026-11-18-215720`;
+  s.onload=()=>{const X=(window.OHX||{})[g]||{};for(const id in X)if(BYID[id])Object.assign(BYID[id],X[id]);LOADED[g]=1;ok();};
+  s.onerror=()=>{delete WAIT[g];bad(new Error(`data/cards/${g}.js did not load. Keep the data folder next to index.html.`));};document.head.appendChild(s);});}
+function ready(...gs){const miss=gs.filter(g=>!LOADED[g]);if(!miss.length)return true;
+ Promise.all(miss.map(loadGroup)).then(()=>render(false)).catch(e=>{main.innerHTML=`<p class="note">${esc(e.message)}</p>`;});return false;}
+const LOADING='<p class="muted">Loading cards...</p>';
+const BYNAME=dict(ALL.slice().reverse().map(c=>[c.name,c]));
+const H=D.howto, SECS=H.sections, SECBY=dict(SECS.map(s=>[s.id,s]));
+const KWC={'Shrapnel':'--kShrapnel','Frost Vortex':'--kFrost','Power Surge':'--kSurge','Burn':'--kBurn','Unstable Bomber':'--kBomber','Bounce':'--kBounce','Fast Gunner':'--kFast','Fortress Warfare':'--kFortress',"The Bull's Eye":'--kBull'};
+const kwB=k=>`<span class="kw" style="--c:var(${KWC[k]||'--muted'})">${esc(k.replace("The Bull's Eye","Bull's Eye"))}</span>`;
+const KINDNAME={weapon:'Weapon',set:'Armor set',armor:'Armor piece',mod:'Mod',deviation:'Deviation',keyword:'Damage keyword',dungeon:'Dungeon',boss:'Boss',facility:'Facility'};
+
+// ---------- drawn icons (used when the wiki has no picture; the card says so)
+const ICONS={
+ 'mod-mask':'<path d="M14 22c0-6 8-10 18-10s18 4 18 10c0 14-8 26-18 26S14 36 14 22z"/><path d="M22 28h8M34 28h8"/>',
+ 'mod-helmet':'<path d="M12 40c0-14 9-24 20-24s20 10 20 24z"/><path d="M8 40h48v6H8z"/>',
+ 'mod-top':'<path d="M20 12l-10 8 6 10 6-4v26h20V26l6 4 6-10-10-8-6 4h-12z"/>',
+ 'mod-gloves':'<path d="M22 54V30l-6-8 4-3 6 6V12h4v14h2V10h4v16h2V12h4v18l4-6 4 2-6 14v14z"/>',
+ 'mod-bottoms':'<path d="M18 10h28l2 44h-10l-6-26-6 26H16z"/>',
+ 'mod-shoes':'<path d="M14 18h12v16l22 6v10H12z"/>',
+ 'mod-weapon':'<path d="M8 26h36l6-4h6v8h-6l-4 4H30l-4 14h-8l2-14H8z"/>',
+ 'keyword':'<circle cx="32" cy="32" r="18"/><path d="M32 6v12M32 46v12M6 32h12M46 32h12M14 14l8 8M42 42l8 8M50 14l-8 8M14 50l8-8"/>',
+ 'dungeon':'<path d="M10 54V22l22-12 22 12v32z"/><path d="M26 54V36h12v18"/>',
+ 'boss':'<path d="M32 8c12 0 20 9 20 20 0 8-4 12-8 15v9H20v-9c-4-3-8-7-8-15C12 17 20 8 32 8z"/><circle cx="25" cy="28" r="4"/><circle cx="39" cy="28" r="4"/>',
+ 'facility':'<path d="M8 54V30l14-8v8l14-8v8l14-8v32z"/><path d="M48 22V8h6v18"/>',
+ 'weapon':'<path d="M8 26h36l6-4h6v8h-6l-4 4H30l-4 14h-8l2-14H8z"/>',
+ 'armor':'<path d="M20 12l-10 8 6 10 6-4v26h20V26l6 4 6-10-10-8-6 4h-12z"/>',
+ 'deviation':'<circle cx="32" cy="34" r="16"/><circle cx="26" cy="32" r="3"/><circle cx="38" cy="32" r="3"/><path d="M20 14l6 6M44 14l-6 6"/>',
+ 'set':'<path d="M20 12l-10 8 6 10 6-4v26h20V26l6 4 6-10-10-8-6 4h-12z"/>',
+ 'fac-trap':'<path d="M8 50h48"/><path d="M14 50l6-18 6 18M26 50l6-22 6 22M38 50l6-18 6 18"/>',
+ 'fac-turret':'<path d="M14 54h36l-4-12H18z"/><rect x="22" y="26" width="20" height="16" rx="3"/><path d="M42 32h16"/>',
+ 'fac-wall':'<path d="M8 54V20h48v34"/><path d="M8 32h48M8 44h48M22 20v12M42 20v12M14 32v12M32 32v12M50 32v12M22 44v10M42 44v10"/>',
+ 'fac-power':'<path d="M36 6L14 36h16l-4 22 24-32H34z"/>',
+ 'fac-storage':'<rect x="10" y="18" width="44" height="34" rx="2"/><path d="M10 30h44M28 30v8h8v-8"/>',
+ 'fac-garage':'<path d="M8 54V24l24-14 24 14v30"/><path d="M16 54V32h32v22M16 40h32M16 47h32"/>',
+ 'fac-bench':'<path d="M8 30h48v8H8z"/><path d="M14 38v16M50 38v16"/><path d="M20 30l6-14h12l6 14"/>'
+};
+function drawn(kind,size,color){const k=ICONS[kind]?kind:(kind.startsWith('mod-')?'mod-weapon':'keyword');return `<svg width="${size}" height="${size}" viewBox="0 0 64 64" fill="none" stroke="${color||'#e5383b'}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="drawn ${esc(k.replace('mod-',''))} icon">${ICONS[k]}</svg>`;}
+const wide=c=>c.kind==='weapon'&&c.img&&!c.img.startsWith('icon:')?' wide':'';  // weapon art is about 2:1
+const pic=(c,size=54)=>c.img&&c.img.startsWith('icon:')?drawn(c.img.slice(5),size,(c.kw||[]).length?`var(${KWC[c.kw[0]]})`:null):`<img src="${esc(c.img)}" alt="" loading="lazy" width="${size}" height="${size}" onerror="this.replaceWith(document.createRange().createContextualFragment('${drawn('keyword',size).replace(/"/g,'&quot;')}'))">`;
+
+// ---------- header line
+const N=M.newest_official||{};
+$('#ver').textContent=`v${String(M.version).split(' ')[0]} · checked ${M.pulled}`;
+$('#checked').innerHTML=`Last checked against <a href="https://once-human.fandom.com/" target="_blank" rel="noopener">the Once Human Wiki</a> and the <a href="${esc(N.url||'https://www.oncehuman.game/news/')}" target="_blank" rel="noopener">official patch notes</a> on ${esc(M.pulled)}, game version ${esc(M.version)}.`;
+
+// ---------- prose: [[Card]] links, [[o:Name]] official-only names
+function prose(t){return esc(t).replace(/\[\[([^\]]+)\]\]/g,(m,n)=>{n=n.replace(/&#39;/g,"'").replace(/&amp;/g,'&');if(n.startsWith('o:')){const oc=BYNAME[n.slice(2)]||BYNAME['The '+n.slice(2)];return oc?`<span class="lk" role="link" tabindex="0" data-card="${oc.id}">${esc(n.slice(2))}</span>`:`<span class="ofc">${esc(n.slice(2))}</span>`;}const c=BYNAME[n];return c?`<span class="lk" role="link" tabindex="0" data-card="${c.id}">${esc(n)}</span>`:esc(n);});}
+function srcItem(k){const s=D.sources[k];if(!s)return esc(k);return `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${s.date?' ('+esc(s.date)+')':''}`;}
+const srcLine=keys=>`<span class="src">Source: ${keys.map(srcItem).join('; ')}</span>`;
+let SBX=0;
+function moreBox(label,html){const id='sb'+(++SBX);return `<button class="more" data-toggle="${id}" aria-expanded="false">${esc(label)}</button><div class="srcbox" id="${id}">${html}</div>`;}
+function srcButton(keys,label){const id='sb'+(++SBX);return `<button class="more" data-toggle="${id}" aria-expanded="false">${esc(label||('Sources ('+keys.length+')'))}</button><div class="srcbox" id="${id}">${keys.map(k=>`<div>${srcItem(k)}</div>`).join('')}</div>`;}
+
+// ---------- navigation
+const VID_FOR={comeback:'start','ioa':'start','ioa-howto':'start',ship:'ship','ioa-bosses':'ioa_boss',season5:'season5',silo:'silo',base:'base',tech:'tech','deviations-howto':'deviations'};
+const navSec=g=>SECS.filter(s=>s.group===g).map(s=>[s.id,s.nav]);
+const NAV=[
+ ['Start',[['home','Home']].concat(navSec('Start'))],
+ ['This season',navSec('This season')],
+ ['Play well',navSec('Play well')],
+ ['Builds',[['builds','Builds by keyword',D.builds.builds.length],['tiers','Tier list (relayed)']]],
+ ['Reference',[['weapons','Weapons',D.weapons.length],['armor','Armor and sets',D.sets.length+D.armor.length],['mods','Mods',D.mods.length],['deviations','Deviations',D.deviations.length],['keywords-ref','Damage keywords',D.keywords.length],['bosses','Bosses and dungeons',D.places.length],['facilities','Base facilities',D.facilities.length]]],
+ ['More',[['videos','Videos',D.counts.videos],['sources','Sources and method']]],
+];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}"${cur===id?' aria-current="page"':''}>${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+
+const R=Object.create(null);
+// ---------- home
+R.home=()=>{const C=D.counts;const tiles=[
+ ['comeback','Back after a break',`What changed since spring 2026 and ${SECBY.comeback.steps.length} steps to get going again.`],
+ ['ioa','Isles of Abyss','The ocean scenario: phases, Haywire Zones, ship cannons, bosses.'],
+ ['season5','Season 5','Resonant Movements and The Echo War, step by step.'],
+ ['builds','Builds',`${D.builds.builds.length} builds by damage keyword, every line with its sources.`],
+ ['weapons','Weapons',`${C.weapons} weapons with stats, keyword and how to get them.`],
+ ['armor','Armor and sets',`${C.sets} sets with their 1-4 piece effects, ${C.armor} single pieces.`],
+ ['mods','Mods',`${C.mods} armor and weapon mods with where they drop.`],
+ ['deviations','Deviations',`${C.deviations} Deviations: what each does and where to catch it.`],
+ ['bosses','Bosses and dungeons',`${D.places.filter(p=>p.group==='Securement Silo').length} Silos, ${D.places.filter(p=>p.kind==='dungeon'&&p.group!=='Securement Silo').length} other dungeon, ${D.places.filter(p=>p.kind==='boss').length} bosses (${D.places.filter(p=>p.official).length} from the official notes).`],
+ ['loop','Daily and weekly','The timers that reset and what to do each week.']];
+ return `<section class="hero"><img class="bg" src="assets/hero.webp" alt="Isles of Abyss key art">
+ <span class="k">Field guide for returning players</span><h1>Once Human</h1>
+ <p>Everything to get good again: builds by damage keyword with dated sources, every weapon, set, mod and Deviation from the wiki, the current scenario and season, and how to run the weekly loop.</p>
+ <div class="status"><span><b>Version</b>${esc(M.version)}</span><span><b>Scenario</b>${esc(M.scenario)}</span><span><b>Season</b>${esc(M.season)}</span><span><b>Updated</b>${esc(M.updated)}</span></div></section>
+ <div class="search card" style="margin-bottom:18px"><label for="q2" class="small muted">Search everything: weapons, sets, mods, Deviations, bosses, sections</label><input id="q2" type="search" placeholder="Try: Last Valor, Polar Jelly, silo, Sunken Lord" style="margin-top:6px;padding-left:12px" autocomplete="off"></div>
+ <div class="grid">${tiles.map(([r,t,s])=>`<a class="card" href="#${r}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="small muted">${s}</p><span class="lk small">Open</span></a>`).join('')}</div>
+ <div class="sec"><h2>What changed lately</h2><p>From the official patch notes. Full list on <a href="#comeback">Back after a break</a>.</p></div>
+ <div class="grid two">${SECBY.comeback.paras.slice(-3).reverse().map(p=>`<div class="card"><p>${prose(p.t)}</p>${srcLine(p.src)}</div>`).join('')}</div>`;};
+
+// ---------- how-to / explanation pages
+function videoBlock(topic){const v=(D.videos||{})[topic]||[];if(!v.length)return '';return `<div class="sec"><h2>Watch</h2><p>Recent videos found by search (uploaded since ${esc(fmtD(M.videos_min))}); not reviewed for accuracy. Titles are shown as the creators wrote them.</p></div><div class="grid">${v.map(vidCard).join('')}</div>`;}
+function tableHtml(tb){return `<div class="sec"><h3>${esc(tb.title)}</h3></div><div class="tablewrap stack"><table><thead><tr>${tb.cols.map(c=>`<th scope="col">${esc(c)}</th>`).join('')}</tr></thead><tbody>${tb.rows.map(r=>`<tr>${r.map((c,i)=>i===0?`<th scope="row" style="text-transform:none;letter-spacing:0;font:600 1rem var(--body);color:var(--text);background:none">${prose(c)}</th>`:`<td data-label="${esc(tb.cols[i])}">${prose(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>${srcLine(tb.src)}`;}
+// consecutive items that cite the same sources share one source line, on the last item of the run
+function runSrc(arr,i,noun){const k=p=>p.src.join('|');if(i<arr.length-1&&k(arr[i+1])===k(arr[i]))return '';let a=i;while(a>0&&k(arr[a-1])===k(arr[i]))a--;
+ return a===i?srcLine(arr[i].src):srcLine(arr[i].src).replace('Source: ',`Source for ${noun} ${a+1}-${i+1}: `);}
+const GLOSS=(SECBY.glossary&&SECBY.glossary.terms)||[];
+function glossLine(s){if(s.id==='glossary'||!GLOSS.length)return '';const txt=JSON.stringify([s.intro,s.need,s.check,s.tip,s.paras,s.steps,s.tables]).toLowerCase();
+ const hit=GLOSS.filter(g=>txt.includes(g.term.toLowerCase().replace(/^the /,'')));if(!hit.length)return '';const links=hit.map(g=>`<a href="#glossary">${esc(g.term)}</a>`).join(', ');
+ return `<p class="gl gl-wide">Words on this page: ${links} (see the glossary).</p><div class="gl gl-narrow">${moreBox('Words on this page ('+hit.length+')',`<p>${links} (see the glossary).</p>`)}</div>`;}
+// a reference list or how-to page built from wiki pages edited before v2.3.6 says so at the top
+function changedBanner(L){const x=L.filter(c=>c.changed);return x.length?`<p class="note warn small">Changed by the official notes since the wiki was edited: ${x.map(c=>`<span class="lk" role="link" tabindex="0" data-card="${c.id}">${esc(c.name)}</span> (${esc(c.changed)})`).join(', ')}. Their cards show the new effect first.</p>`:'';}
+function staleBanner(L,noun){L=L.filter(c=>!c.official);const n=L.filter(c=>c.stale).length;if(!n)return '';const all=n===L.length;
+ return `<div class="note warn small"><p style="margin:0"><b>${all?'All':n+' of'} ${L.length} ${esc(noun)} from the wiki</b> come from pages last edited before v2.3.6 (${esc(fmtDate(M.tech_rebuild))}). Drops, levels and unlocks may have changed; each card says so.</p>${moreBox('How this was checked',`<p>v2.3.6 rebuilt Tech and removed level gates, so pages edited before it may describe the older game.${noun.match(/mod|Silo|dungeon/i)?' '+siloNews():''}</p>`)}</div>`;}
+function siloNews(){const L=M.silo_news||[];return `Dated check: of the ${M.official_since_rebuild} official update and dev-blog articles cached from ${esc(fmtDate(M.tech_rebuild))} to ${esc(fmtDate(M.pulled))}, ${L.length} mention${L.length===1?'s':''} a Securement Silo${L.length?': '+L.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> ("${esc(x.text)}")`).join('; '):''}. ${L.every(x=>/^Fixed\b/.test(x.text))?(L.length?'That is a bug fix, not a reward change.':''):'Read them for changes.'}`;}
+const fmtDate=d=>{const m=/^(\d{4})-(\d\d)-(\d\d)$/.exec(d||'');return m?`${['January','February','March','April','May','June','July','August','September','October','November','December'][+m[2]-1]} ${+m[3]}, ${m[1]}`:esc(d);};
+function secStale(s){const L=s.stale_srcs||[];if(!L.length)return '';
+ return `<div class="note warn small"><p style="margin:0">Some lines on this page cite wiki pages last edited before v2.3.6 (${esc(fmtDate(M.tech_rebuild))}): ${L.map(k=>srcItem(k)).join('; ')}. They may describe the game before the Tech rebuild.</p>${s.id==='silo'?moreBox('How this was checked',`<p>${siloNews()}</p>`):''}</div>`;}
+function secPage(s){
+ let h=`<div class="sec" style="margin-top:4px"><span class="pill red">${esc(s.kind)}</span><h2 style="margin-top:10px">${esc(s.title)}</h2></div>`;
+ if(s.intro)h+=`<p class="answer">${prose(s.intro)}</p>${s.intro_src?srcLine(s.intro_src):''}`;
+ h+=secStale(s);
+ h+=glossLine(s);
+ if(s.terms){const term=g=>`<div class="card" data-term="${esc(g.term)}"><dt>${esc(g.term)}</dt><dd>${prose(g.t)}</dd>${srcLine(g.src)}</div>`,FIRST=12;
+  h+=`<dl class="terms">${s.terms.slice(0,FIRST).map(term).join('')}</dl>${s.terms.length>FIRST?`<button class="more" data-toggle="gl-rest" aria-expanded="false">Show ${s.terms.length-FIRST} more terms</button><div class="srcbox" id="gl-rest"><dl class="terms">${s.terms.slice(FIRST).map(term).join('')}</dl></div>`:''}`;}
+ if(s.paras)h+=`<div class="grid two" style="margin-top:12px">${s.paras.map((p,i)=>`<div class="card"><p>${prose(p.t)}</p>${runSrc(s.paras,i,'cards')}</div>`).join('')}</div>`;
+ if(s.need)h+=`<p class="note">${prose(s.need)}</p>${s.need_src?srcLine(s.need_src):''}`;
+ if(s.steps)h+=`${s.paras?'<div class="sec"><h2>Steps</h2></div>':''}<ol class="steps">${s.steps.map((p,i)=>`<li class="card">${prose(p.t)}${runSrc(s.steps,i,'steps')}</li>`).join('')}</ol>`;
+ if(s.check)h+=`<p class="note">${prose(s.check)}</p>${s.check_src?srcLine(s.check_src):''}`;
+ if(s.tip)h+=`<p class="note tip">${prose(s.tip)}</p>${s.tip_src?srcLine(s.tip_src):""}`;
+ (s.tables||[]).forEach(tb=>h+=tableHtml(tb));
+ if(s.id==='keywords')h+=`<div class="sec"><h2>The keywords</h2><p>Tap one for the full card: the wiki's description and every weapon, mod and set that names it.</p></div>${staleBanner(D.keywords,'keyword cards')}<div class="igrid">${D.keywords.map(tile).join('')}</div>`;
+ if(s.id==='silo'){const sil=D.places.filter(p=>p.group==='Securement Silo'),oth=D.places.filter(p=>p.kind==='dungeon'&&p.group!=='Securement Silo');
+  h+=`<div class="sec"><h2>Silos</h2></div><div class="igrid">${sil.map(tile).join('')}</div>${oth.length?`<div class="sec"><h3>Other dungeons</h3></div><div class="igrid">${oth.map(tile).join('')}</div>`:''}`;}
+ if(s.id==='base')h+=`<p class="small muted">All ${D.facilities.length} facilities with pictures: <a href="#facilities">Base facilities</a>.</p>`;
+ h+=videoBlock(VID_FOR[s.id]);
+ return h;}
+SECS.forEach(s=>{R[s.id]=()=>secPage(s);});
+
+// ---------- tiles and card modal
+function tileSub(c){if(c.official)return `${c.type?esc(c.type)+' · ':''}${c.group?esc(c.group)+' · ':''}Official notes, no wiki page yet`;
+ if(c.kind==='weapon')return `${esc(c.cls)} · <span class="r-${esc(c.rarity)}">${esc(c.rarity)}</span>`;
+ if(c.kind==='set')return `Set · ${c.n_pieces} pieces · <span class="r-${esc(c.rarity)}">${esc(c.rarity)}</span>`;
+ if(c.kind==='armor')return `${esc(c.slot)} · <span class="r-${esc(c.rarity)}">${esc(c.rarity)}</span>`;
+ if(c.kind==='mod')return `${esc(c.slot)} · <span class="r-${esc(c.rarity)}">${esc(c.rarity)}</span>`;
+ if(c.kind==='deviation')return `${esc(c.type)}${c.utility?' · '+esc(c.utility):''}`;
+ if(c.kind==='keyword')return `${c.weapons.length} weapons · ${c.mods.length} mods`;
+ if(c.kind==='dungeon'||c.kind==='boss')return `${esc(KINDNAME[c.kind])}${c.region?' · '+esc(c.region):''}${c.mod_slot?' · '+esc(c.mod_slot)+' mods':''}`;
+ if(c.kind==='facility')return esc(c.type);return '';}
+const dname=c=>c.display||c.name;
+function tile(c){return `<button class="tile${wide(c)}" data-card="${c.id}"><span class="pic">${pic(c)}</span><span style="min-width:0"><b>${esc(dname(c))}</b><span class="sub">${tileSub(c)}</span>${(c.kw||[]).length?`<span style="display:block;margin-top:3px">${c.kw.slice(0,2).map(kwB).join(' ')}</span>`:''}</span></button>`;}
+function staleNote(c){if(!c.stale)return '';return `<p class="note warn small">This wiki page was last edited ${esc(c.edited)}, before v2.3.6 (${esc(M.tech_rebuild)}), which rebuilt Tech and removed level gates. Drops, levels and unlocks below may be out of date.</p>`;}
+const list=(arr,h4)=>arr&&arr.length?`<div class="isec"><h4>${h4}</h4><ul class="l">${arr.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'';
+const getGone=c=>c.get_dropped?`<p class="muted small">Left out: ${c.get_dropped} line${c.get_dropped>1?'s':''} on the wiki page that unlock${c.get_dropped>1?'':'s'} it through Memetics, which v2.3.6 removed. Unlocks now come from Tech: <a href="#tech">Tech order</a>.</p>`:'';
+const getList=(c,h4)=>(c.get_none?`<div class="isec"><h4>${h4}</h4><p class="muted small">The wiki page gives no source for it.</p></div>`:(c.get_by||[]).length?`<div class="isec get-by"><h4>${h4}</h4>${c.get_by.map(g=>`<p class="small" style="margin-top:8px"><b>${esc(g.where)}</b></p><ul class="l">${g.how.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`).join('')}<span class="src">Each line sits under the scenario heading the wiki page gives it.</span></div>`:list(c.get,h4))+getGone(c);
+const chips=ids=>ids.map(id=>BYID[id]).filter(Boolean).map(c=>`<span class="chip" role="button" tabindex="0" data-card="${c.id}">${pic(c,30)}${esc(dname(c))}</span>`).join('');
+function usedIn(c){const b=D.builds.builds.filter(b=>b.lines.some(l=>l.v.includes(c.name)));return b.length?`<div class="isec"><h4>Used in builds</h4><p>${b.map(x=>`<a class="lk" href="#builds/${x.id}">${esc(x.name)}</a>`).join(', ')}</p></div>`:'';}
+function officialCard(c){let h='';
+ h+=c.parts.map(([h4,items])=>`<div class="isec"><h4>${esc(h4)}</h4><ul class="l">${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${((c.after||{})[h4]||[]).map(n=>`<p class="small note warn">${esc(n)}</p>`).join('')}</div>`).join('');
+ if(c.howto)h+=`<p class="small">How to fight it: <a href="#${esc(c.howto)}">steps</a>.</p>`;
+ h+=usedIn(c);
+ h+=`<p class="src">Source, quoted word for word: ${c.src.map(srcItem).join('; ')}. The wiki has no page for it yet, so there are no stats. Picture: drawn icon (the cached notes give none).</p>`;return h;}
+function cardHead(c){return `<div class="ic-head"><span class="pic${wide(c)}">${pic(c,100)}</span><div><h2>${esc(dname(c))}</h2>${c.display?`<p class="small muted aka">Wiki page: ${esc(c.name)}</p>`:''}${(c.aka||[]).filter(a=>a!==c.display).length?`<p class="small muted aka">Also called: ${c.aka.filter(a=>a!==c.display).map(esc).join(', ')}</p>`:''}<div class="pills"><span class="pill red">${esc(KINDNAME[c.kind])}</span>${c.rarity?`<span class="pill r-${esc(c.rarity)}">${esc(c.rarity)}</span>`:''}${c.cls?`<span class="pill">${esc(c.cls)}</span>`:''}${c.slot&&c.kind!=='weapon'?`<span class="pill">${esc(c.slot)}</span>`:''}${c.style?`<a class="pill" href="#glossary" title="Style: see the glossary">Style: ${esc(c.style)}</a>`:''}${c.type&&c.kind!=='keyword'?`<span class="pill">${esc(c.type)}</span>`:''}${(c.kw||[]).map(kwB).join(' ')}</div></div></div>`;}
+const oldTag=c=>c.superseded?' (wiki, before the change)':'';
+function changedNote(c){const x=c.superseded;if(!x)return '';
+ return `<div class="isec note warn"><h4>Changed ${esc(x.when)}</h4><p class="small">The official notes changed this after the wiki page was last edited. The new effect:</p><dl class="kv">${x.now.map(([n,t])=>`${n?`<dt>${esc(n)}</dt>`:''}<dd${n?'':' style="grid-column:1/-1"'}>${esc(t)}</dd>`).join('')}</dl>${x.caveat?`<p class="small muted">${esc(x.caveat)}</p>`:''}<span class="src">Source, quoted word for word: ${x.src.map(srcItem).join('; ')}. The wiki text further down is from before the change.</span></div>`;}
+function cardHtml(c){
+ let h=cardHead(c);
+ if(c.official)return h+officialCard(c);
+ h+=staleNote(c);h+=changedNote(c);
+ if(c.quote)h+=`<p class="muted small"><i>${esc(c.quote)}</i></p>`;
+ if(c.kind==='weapon'){h+=c.stats.length?`<div class="isec"><h4>Stats (wiki infobox)</h4><dl class="kv">${c.stats.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></div>`:'';h+=list(c.features,'What it does'+oldTag(c));h+=getList(c,'How to get it');}
+ if(c.kind==='set'){h+=(c.summary||[]).map(p=>`<p class="small">${esc(p)}</p>`).join('');
+  h+=c.effects.length?`<div class="isec"><h4>Set effects${oldTag(c)}</h4><dl class="kv">${c.effects.map(([n,t])=>`<dt>${n} piece${n>1?'s':''}</dt><dd>${esc(t)}</dd>`).join('')}</dl></div>`:'';
+  h+=`<div class="isec"><h4>Pieces</h4><dl class="kv">${c.pieces.map(([n,s,hp])=>`<dt>${esc(s)}</dt><dd>${esc(n)}${hp?` <span class="muted tiny">HP ${esc(hp)}</span>`:''}</dd>`).join('')}</dl></div>`;
+  h+=getList(c,'How to get it');
+  }
+ if(c.kind==='armor'){h+=c.stats.length?`<div class="isec"><h4>Stats</h4><dl class="kv">${c.stats.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></div>`:'';h+=list(c.features,'Effect'+oldTag(c));h+=getList(c,'How to get it');}
+ if(c.kind==='mod'){h+=`<div class="isec"><h4>${esc(c.family)} · ${esc(c.slot)} slot</h4><p>${esc(c.core||'No effect text on the wiki page.')}</p>${(c.core_by||[]).length?`<ul class="l">${c.core_by.map(([r,e])=>`<li><b>${esc(r)}:</b> ${esc(e)}</li>`).join('')}</ul>`:''}</div>`;h+=getList(c,'Where it drops');h+=list(c.suffixes,'Suffixes');if((c.suffix_dropped||[]).length)h+=`<p class="muted small">Left out: the wiki page's suffix lines about ${c.suffix_dropped.map(n=>'"'+esc(n)+' Mods"').join(' and ')}, a name that is not this mod's (the lines may have been copied from another mod's page).</p>`;h+=list(c.rec,'Weapons the wiki recommends');}
+ if(c.kind==='deviation'){h+=(c.summary||[]).length?c.summary.map(p=>`<p>${esc(p)}</p>`).join(''):'<p class="muted small">The wiki page has no description yet.</p>';h+=list(c.abilities,'Abilities');if(c.techniques)h+=`<p class="muted small">The wiki page also lists Techniques, which work only in the Deviation: Survive, Capture, Preserve scenario. This card does not show them.</p>`;
+  h+=c.obtain.length?`<div class="isec"><h4>Where to catch it</h4>${c.obtain.map(g=>`<p class="small" style="margin-top:8px"><b>${esc(g.where)}</b></p><ul class="l">${g.how.concat(g.spawns).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${g.src&&g.src.startsWith('o:')?`<span class="src">From the ${srcItem(g.src)}. The wiki's location lists do not cover Isles of Abyss yet.</span>`:g.src?`<span class="src">From the wiki page <a href="${esc(M.wiki_url+g.src.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(g.src)}</a> (the Deviation's own page lists no location).</span>`:''}`).join('')}</div>`:'<div class="isec"><h4>Where to catch it</h4><p class="muted small">Not on the wiki yet: neither its page, the Deviation list pages nor any Silo page gives a location.</p></div>';
+  if(c.env.length)h+=`<div class="isec"><h4>Likes (territory environment)</h4><p class="small">${c.env.map(esc).join(', ')}</p></div>`;}
+ if(c.kind==='keyword'){h+=c.text.map(p=>`<p>${esc(p)}</p>`).join('');h+=c.weapons.length?`<div class="isec"><h4>Weapons with this keyword</h4>${chips(c.weapons)}</div>`:'';h+=c.mods.length?`<div class="isec"><h4>Mods that name it</h4>${chips(c.mods)}</div>`:'';h+=c.sets.length?`<div class="isec"><h4>Sets that name it</h4>${chips(c.sets)}</div>`:'';}
+ if(c.kind==='dungeon'){h+=(c.summary||[]).map(p=>`<p>${esc(p)}</p>`).join('');h+=c.region?`<div class="isec"><h4>Where</h4><p>${esc(c.region)}${c.coords?` <span class="muted">(${esc(c.coords)})</span>`:''}</p></div>`:'';if((c.mod_drops||[]).length)h+=`<div class="isec"><h4>Mod drop</h4><dl class="kv">${c.mod_drops.map(d=>`<dt>${esc(d.diff)}</dt><dd>${d.slot==='Armor'?'An armor mod (the page does not name the slot)':esc(d.slot)+' mod'}, up to ${esc(d.cap)}</dd>`).join('')}</dl><span class="src">From the wiki page <a href="${esc(M.wiki_url+'Securement_Silo')}" target="_blank" rel="noopener">Securement Silo</a> (this Silo's own page does not list its mods).</span></div>`;
+  h+=list(c.objectives,'Objectives');h+=list(c.gear,'Gear rewards');h+=list((c.capture||[]).map(n=>n+' (the page summary says you can capture it here)').concat(c.devs||[]),'Deviation rewards');h+=list(c.tips,'Tips');if(c.tips_dropped)h+=`<p class="muted small">Left out: ${c.tips_dropped} tip${c.tips_dropped>1?'s':''} on the wiki page that unlock things through Memetics, which v2.3.6 removed. Unlocks now come from Tech: <a href="#tech">Tech order</a>.</p>`;}
+ if(c.kind==='boss'){h+=(c.summary||[]).map(p=>`<p>${esc(p)}</p>`).join('');h+=c.region?`<div class="isec"><h4>Where</h4><p>${esc(c.region)}</p></div>`:'';h+=list(c.attacks,'Attacks and skills');}
+ if(c.kind==='facility'){if(c.removed)h+=`<p class="note warn small">The wiki lists this facility as removed from the game (its page is in the wiki's "Removed" category; page edited ${esc(c.edited)}). The lines below say how it was obtained before. Check in game before you plan around it.</p>`;h+=(c.summary||[]).map(p=>`<p>${esc(p)}</p>`).join('');if(c.power)h+=`<p class="small">Needs power.</p>`;
+  h+=`<div class="isec"><h4>How to get it</h4><ul class="l">${c.get.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${c.get_src?`<span class="src">From the ${srcItem(c.get_src)}${c.stale?', because this wiki page predates v2.3.6 and its unlock text describes the old system':''}.</span>`:''}${c.get_src?'':'<span class="src">From the wiki page (link below).</span>'}<p class="small">Order to unlock Tech in: <a href="#tech">Tech order</a>.</p></div>`;
+  if(c.materials&&c.materials.length)h+=`<div class="isec"><h4>Materials to build it</h4><div class="mats">${c.materials.map(x=>`<span class="pill">${esc(x)}</span>`).join('')}</div></div>`;}
+ if(c.notes)h+=`<div class="isec"><h4>What build sources say</h4>${c.notes.map(n=>`<p>${prose(n.t)}</p>${srcLine(n.src)}`).join('')}</div>`;
+ h+=usedIn(c);
+ h+=`<p class="src">Source: <a href="${esc(M.wiki_url+c.page.replace(/ /g,'_'))}" target="_blank" rel="noopener">${esc(c.page)} (Once Human Wiki)</a>, page last edited ${esc(c.edited||'?')}.${c.drawn?' Picture: drawn icon (no picture found on the wiki or Game8).':(c.pic_src==='Game8 mod list'?' Picture: mod icon from Game8\'s Once Human mod list.':(c.pic_src==='Once Human Wiki (Tech icon)'?' Picture: the wiki\'s Tech (Memetic) icon for it.':''))}</p>`;
+ return h;}
+
+// ---------- reference lists with filters
+const F=Object.create(null);
+function fval(k,d){return F[k]==null?d:F[k];}
+function tabs(key,opts,label){const cur=fval(key,'all');return `<div class="tabs" data-set="${key}">${label?`<span class="lab">${label}</span>`:''}${[['all','All']].concat(opts).map(([v,t])=>`<button data-v="${esc(v)}" class="${cur===v?'on':''}" aria-pressed="${cur===v}">${esc(t)}</button>`).join('')}</div>`;}
+function fwrap(first,rest,label){const open=F._fopen?' open':'';
+ return `<div class="fwrap${open}">${first}<button class="fbtn" data-fopen aria-expanded="${!!F._fopen}">${F._fopen?'Hide':'More'} filters (${esc(label)})</button><div class="fmore">${rest}</div></div>`;}
+function qbox(key,ph,n){return `<div class="filters"><input data-q="${key}" type="search" placeholder="${esc(ph)}" value="${esc(fval(key,''))}" aria-label="${esc(ph)}"><span class="small muted">${n} shown</span></div>`;}
+const uniq=a=>[...new Set(a.filter(Boolean))].sort();
+const match=(c,q)=>!q||JSON.stringify([c.name,c.aka,c.features,c.core,c.summary,c.effects,c.kw,c.type,c.cls,c.slot]).toLowerCase().includes(q.toLowerCase());
+const RAR=['Legendary','Epic','Rare','Normal','Standard'];
+R.weapons=()=>{if(!ready('weapons'))return LOADING;const cls=uniq(D.weapons.map(w=>w.cls)),kws=D.keywords.map(k=>k.name);
+ const L=D.weapons.filter(w=>(fval('wc','all')==='all'||w.cls===F.wc)&&(fval('wk','all')==='all'||w.kw.includes(F.wk))&&(fval('wr','all')==='all'||w.rarity===F.wr)&&match(w,fval('wq','')));
+ return `<div class="sec"><h2>Weapons</h2><p>${D.weapons.filter(w=>!w.official).length} weapons from the wiki, plus ${D.weapons.filter(w=>w.official).length} from the official notes only. The keyword chip is what the weapon triggers; pick weapons by keyword first. Tap one for stats, effects and how to get it.</p></div>
+ ${changedBanner(D.weapons)}${staleBanner(D.weapons,'weapon cards')}${fwrap(tabs('wk',kws.map(k=>[k,k.replace("The Bull's Eye","Bull's Eye")]),'Keyword'),tabs('wc',cls.map(c=>[c,c]),'Type')+tabs('wr',RAR.filter(r=>D.weapons.some(w=>w.rarity===r)).map(r=>[r,r]),'Rarity'),'type, rarity')}
+ ${qbox('wq','Filter by name or effect',L.length)}<div class="igrid">${L.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>`;};
+R.armor=()=>{if(!ready('sets','armor'))return LOADING;const slots=uniq(D.armor.map(a=>a.slot));const q=fval('aq','');
+ const S=D.sets.filter(s=>match(s,q)),A=D.armor.filter(a=>(fval('as','all')==='all'||a.slot===F.as)&&match(a,q));
+ return `<div class="sec"><h2>Armor and sets</h2><p>Wear 4 pieces of one set for its full effect; most builds fill the other two slots freely. ${D.sets.length} sets and ${D.armor.filter(a=>!a.official).length} single key pieces from the wiki, plus ${D.armor.filter(a=>a.official).length} from the official notes only.</p></div>
+ ${changedBanner(D.sets.concat(D.armor))}
+ ${staleBanner(D.sets.concat(D.armor),'armor cards')}${qbox('aq','Filter sets and pieces by name or effect',S.length+A.length)}
+ <div class="sec"><h3>Sets</h3></div><div class="igrid">${S.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>
+ <div class="sec"><h3>Single pieces</h3></div>${tabs('as',slots.map(s=>[s,s]),'Slot')}<div class="igrid">${A.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>`;};
+R.mods=()=>{if(!ready('mods'))return LOADING;const slots=uniq(D.mods.map(m=>m.slot));const kws=D.keywords.map(k=>k.name).filter(k=>D.mods.some(m=>m.kw.includes(k)));
+ const L=D.mods.filter(m=>(fval('mf','all')==='all'||m.family===F.mf)&&(fval('ms','all')==='all'||m.slot===F.ms)&&(fval('mk','all')==='all'||m.kw.includes(F.mk))&&match(m,fval('mq','')));
+ return `<div class="sec"><h2>Mods</h2><p>${D.mods.length} mods. Each armor slot takes one mod; weapon mods go on the gun. Pick mods that feed your build's keyword. Most wiki mod pages have no picture, so most icons come from Game8's mod list; the ${D.mods.filter(m=>m.drawn&&!m.official).length} mods found on neither use a drawn slot icon in their keyword's colour.</p></div>
+ ${staleBanner(D.mods,'mod cards')}${fwrap(tabs('mk',kws.map(k=>[k,k.replace("The Bull's Eye","Bull's Eye")]),'Keyword'),tabs('mf',[['Armor mod','Armor mods'],['Weapon mod','Weapon mods']],'Kind')+tabs('ms',slots.map(s=>[s,s]),'Slot'),'kind, slot')}
+ ${qbox('mq','Filter by name or effect',L.length)}<div class="igrid">${L.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>`;};
+R.deviations=()=>{if(!ready('deviations'))return LOADING;const types=uniq(D.deviations.map(d=>d.type));
+ const L=D.deviations.filter(d=>(fval('dt','all')==='all'||d.type===F.dt)&&match(d,fval('dq','')));
+ return `<div class="sec"><h2>Deviations</h2><p>${D.deviations.length} Deviations: what each does and where to catch it.${D.counts.deviations_wiki_ioa?'':` The wiki's location lists name the older scenarios, not Isles of Abyss.`} How to catch one: <a href="#deviations-howto">steps</a>.</p>
+ <div class="small">${moreBox('More about these cards',`<p>Combat Deviations fight beside you; Territory and Crafting ones work in your base. Each card says where the wiki or the official notes say to catch it.${D.counts.deviations_wiki_ioa?'':` Isles of Abyss locations here come from the October 21 official notes and cover ${D.counts.deviations_ioa} Deviations, ${D.counts.deviations_ioa_morphed} of them Morphed forms.`}</p><p>New since the wiki pages: ${D.deviations.filter(d=>d.official).map(d=>`<span class="lk" role="link" tabindex="0" data-card="${d.id}">${esc(d.name)}</span>`).join(' and ')}. They have no wiki page yet, so their cards quote the official notes and have no stats.</p>`)}</div></div>
+ ${staleBanner(D.deviations,'Deviation cards')}
+ ${tabs('dt',types.map(t=>[t,t]),'Type')}${qbox('dq','Filter by name or effect',L.length)}<div class="igrid">${L.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>`;};
+R['keywords-ref']=()=>!ready('keywords')?LOADING:`<div class="sec"><h2>Damage keywords</h2><p>The ${D.keywords.length} keywords and everything in the data that names them. Explanation: <a href="#keywords">About damage keywords</a>.</p></div>${staleBanner(D.keywords,'keyword cards')}<div class="igrid">${D.keywords.map(tile).join('')}</div>`;
+R.bosses=()=>{if(!ready('places'))return LOADING;const L=D.places.filter(p=>!p.official&&(fval('bk','all')==='all'||p.kind===F.bk));const O=D.places.filter(p=>p.official);
+ return `<div class="sec"><h2>Bosses and dungeons</h2><p>Securement Silos drop mods (each Silo has its own slot); Prime War is a separate dungeon; Great Ones and world bosses come from the wiki. How to run a Silo: <a href="#silo">steps</a>.</p></div>
+ ${staleBanner(D.places.filter(p=>!p.official),"boss and dungeon cards")}
+ ${tabs('bk',[['dungeon','Dungeons'],['boss','Bosses']],'Kind')}<div class="igrid">${L.map(tile).join('')}</div>
+ <div class="sec"><h3>Isles of Abyss fights (official notes only)</h3><p>No wiki pages yet: each card quotes the official v3.1.1 notes word for word. How to beat them: <a href="#ioa-bosses">Isles of Abyss bosses</a>. Season 5 dungeon: <a href="#season5">The Echo War</a>.</p></div>
+ <div class="igrid">${O.map(tile).join('')}</div>`;};
+R.facilities=()=>{if(!ready('facilities'))return LOADING;const types=uniq(D.facilities.map(f=>f.type));const L=D.facilities.filter(f=>(fval('ft','all')==='all'||f.type===F.ft)&&match(f,fval('fq','')));
+ return `<div class="sec"><h2>Base facilities</h2><p>${D.facilities.length} facilities and defenses from the wiki. Each card says how to unlock it (from its wiki page, or the official v2.3.6 Tech rules when the page has nothing current) and what it costs to build. How to set up a base: <a href="#base">steps</a>.</p></div>
+ ${staleBanner(D.facilities,'facility cards')}${fwrap('',tabs('ft',types.map(t=>[t,t]),'Type'),'type')}${qbox('fq','Filter by name',L.length)}<div class="igrid">${L.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>`;};
+
+// ---------- builds
+function lineBadge(l){if(l.label==='sources disagree')return '<span class="pill bad">Sources disagree</span>';if(l.label==='one source')return '<span class="pill warn">One source</span>';return `<span class="pill ok">${l.n} sources agree</span>`;}
+function lineChanged(l){const x=l.v.map(n=>BYNAME[n]).filter(c=>c&&c.changed);return x.length?`<p class="note warn small" style="margin:4px 0 0">${x.map(c=>`<span class="lk" role="link" tabindex="0" data-card="${c.id}">${esc(c.name)}</span>`).join(', ')}: changed by the official notes on ${esc(x.map(c=>c.changed).join(', '))}. The card shows the new effect.</p>`:'';}
+function nameChip(n,l){const c=BYNAME[n];if(c)return `<span class="chip${wide(c)}" role="button" tabindex="0" data-card="${c.id}">${pic(c,30)}${esc(dname(c))}</span>`;return `<span class="chip nodata" title="Not in the pulled wiki data">${drawn('keyword',30)}${esc(n)} <span class="tiny muted">(not in wiki data yet)</span></span>`;}
+R.builds=(arg)=>{const B=D.builds;const b=B.builds.find(x=>x.id===arg)||B.builds[0];
+ return `<div class="sec"><h2>Builds by damage keyword</h2><p>Each line shows who recommends it. Green: 2 or more sources dated within 60 days agree. Amber: only one source. Red: the sources name different things. Sources are listed under every line.</p></div>
+ <p class="note warn small">${esc(B.warning)}</p>
+ <div class="tabs">${B.builds.map(x=>`<a href="#builds/${x.id}" class="tab ${x.id===b.id?'on':''}"${x.id===b.id?' aria-current="page"':''}>${esc(x.name)}</a>`).join('')}</div>
+ <div class="card"><div class="pills">${kwB(b.keyword)}</div><h2 style="margin-top:6px">${esc(b.name)}</h2><p class="answer">${esc(b.for)}</p>
+ ${b.lines.map(l=>`<div class="bline"><span class="k">${esc(l.k)}</span><div>${l.v.map(n=>nameChip(n,l)).join('')} ${lineBadge(l)}${l.note?`<p class="small muted" style="margin:4px 0 0">${esc(l.note)}</p>`:''}${lineChanged(l)}${(l.videos||[]).length?`<p class="small muted" style="margin:4px 0 0">Also named in the titles of recent videos (found by search, not watched, so not counted as sources): ${l.videos.map(v=>`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.channel)}</a> (${esc(v.date)})`).join(', ')}.</p>`:''}<div>${srcButton(l.s)}</div></div></div>`).join('')}${b.gaps?`<p class="small muted" style="margin-top:10px">${esc(b.gaps.t)} ${srcLine(b.gaps.src)}</p>`:''}</div>
+ ${b.play.length?`<div class="sec"><h2>How to play it</h2></div><ol class="steps">${b.play.map(p=>`<li class="card">${prose(p.t)}${p.label?' '+lineBadge(p):''}${p.note?`<p class="small muted" style="margin:4px 0 0">${esc(p.note)}</p>`:''}${srcLine(p.src)}</li>`).join('')}</ol>`:''}
+ <p class="small muted">Keyword card: ${(()=>{const k=D.keywords.find(k=>k.name===b.keyword);return k?`<span class="lk" role="link" tabindex="0" data-card="${k.id}">${esc(k.name)}</span>`:'';})()} · How to assemble any build: <a href="#build-howto">steps</a></p>
+ ${b.video_note?`<p class="note warn small">${esc(b.video_note)}</p>`:''}${videoBlock({shrapnel:'shrapnel',frost:'frost',surge:'surge',bomber:'bomber'}[b.id])}`;};
+R.tiers=()=>{const T=D.builds.tiers;const S=T.sources.map(k=>(D.meta_sources.find(m=>m.key===k))).filter(Boolean);
+ return `<div class="sec"><h2>Build tier list</h2></div>
+ <p class="answer">${esc(T.answer)}</p>
+ <p class="small">${esc(T.relay_note)}</p>
+ <div class="tablewrap fit stack"><table><thead><tr><th scope="col">Build</th><th scope="col">Agreement</th>${S.map(s=>`<th scope="col"><a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(s.key==='raidrig'?'raidrig':'Gamespec')}</a><br><span class="tiny muted" style="text-transform:none;letter-spacing:0">relayed · ${esc(s.date)}</span></th>`).join('')}</tr></thead>
+ <tbody>${T.rows.map(r=>`<tr><th scope="row" style="text-transform:none;letter-spacing:0;font:600 1rem var(--body);color:var(--text);background:none">${esc(r.build)}</th><td data-label="Agreement">${r.agree==='one source'?'<span class="pill warn">One source</span>':(r.agree==='sources disagree'?'<span class="pill bad">Sources disagree</span>':`<span class="pill ok">${esc(r.agree)}</span>`)}</td>${T.sources.map(k=>{const v=r.ratings[k];return `<td data-label="${esc(k==='raidrig'?'raidrig':'Gamespec')}">${v&&v!=='-'?`<span class="tl t${esc(v)}">${esc(v)}</span>`:'<span class="tl tX" title="no rating">-</span>'}</td>`;}).join('')}</tr>`).join('')}</tbody></table></div>
+ ${T.others?`<p class="small">${esc(T.others)}</p>`:''}
+ <div class="small">${moreBox('How to read the letters',`<p>${esc(T.what)}</p><p>Agreement: green when both sites relay the same letter (possibly from one list), amber when only one site gives a letter, red when they give different letters.</p>`)} ${srcButton(T.sources.map(k=>'m:'+k),'Sources ('+T.sources.length+')')}</div>
+ <p class="small">Full loadouts with per-line sources: <a href="#builds">Builds by keyword</a>.</p>`;};
+
+// ---------- videos
+function fmtD(s){s=String(s||'');return s.length===8?`${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6)}`:s;}
+function vidCard(v){return `<button class="vid card" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}"><span class="play"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} · ${esc(v.date)}${v.duration?' · '+Math.round(v.duration/60)+' min':''}</span></span></button>`;}
+const VT={start:'Getting started in Isles of Abyss',ship:'Ships',ioa_boss:'Isles of Abyss bosses',season5:'Season 5: Dissonant Resonance',shrapnel:'Shrapnel build',frost:'Frost Vortex build',surge:'Power Surge build',bomber:'Unstable Bomber build',deviations:'Deviations',base:'Base building',silo:'Securement Silos',tech:'Tech progression'};
+R.videos=()=>{const V=D.videos||{};const keys=Object.keys(VT);
+ return `<div class="sec"><h2>Videos</h2><p>${D.counts.videos} recent videos by topic, newest first. They play here from youtube-nocookie.com when you are online. Not reviewed for accuracy.</p><div class="small">${moreBox('How these were picked',`<p>A YouTube search on ${esc(M.videos_searched)}: the title must say Once Human and name the topic, uploaded since ${esc(fmtD(M.videos_min))}, longer than 3 minutes, one per channel.</p>`)}</div></div>
+ ${keys.map(k=>`<div class="sec"><h3>${esc(VT[k])}</h3></div>${(V[k]||[]).length?`<div class="grid">${V[k].map(vidCard).join('')}</div>`:`<p class="muted small">No video from the last 60 days matched. <a href="https://www.youtube.com/results?search_query=${encodeURIComponent('Once Human '+VT[k])}" target="_blank" rel="noopener">Search YouTube</a>.</p>`}`).join('')}`;};
+
+// ---------- sources
+R.sources=()=>{const C=D.counts;
+ return `<div class="sec"><h2>Sources and method</h2><p>Everything here comes from cached pulls (data/raw/, with a request log), checked by a build script before the page is made.</p></div>
+ <div class="grid two"><div class="card"><h3>What is in the guide</h3><dl class="kv wide"><dt>Weapons</dt><dd>${C.weapons}</dd><dt>Armor sets</dt><dd>${C.sets}</dd><dt>Single armor pieces</dt><dd>${C.armor}</dd><dt>Mods</dt><dd>${C.mods}</dd><dt>Deviations</dt><dd>${C.deviations}</dd><dt>Damage keywords</dt><dd>${C.keywords}</dd><dt>Bosses and dungeons</dt><dd>${C.places}</dd><dt>Facilities</dt><dd>${C.facilities}</dd><dt>How-to and explanation pages</dt><dd>${SECS.length}</dd><dt>Builds</dt><dd>${D.builds.builds.length}</dd><dt>Videos</dt><dd>${C.videos}</dd><dt>Pictures</dt><dd>${C.pictures_wiki} from the wiki, ${C.pictures_game8} mod icons from Game8, ${C.pictures_drawn} drawn slot icons</dd><dt>Cards from wiki pages older than v2.3.6</dt><dd>${C.cards_stale} of ${C.cards} (flagged on the card and at the top of each list)</dd><dt>Cards from the official notes only</dt><dd>${C.cards_official} (no wiki page yet; text quoted word for word, no stats)</dd><dt>Deviations with no location</dt><dd>${C.deviations_no_location}</dd></dl>
+ <h4 style="margin-top:12px">Old wiki pages, by section</h4><div class="tablewrap"><table class="stale-by"><thead><tr><th scope="col">Section</th><th scope="col">Before v2.3.6</th></tr></thead><tbody>${Object.entries(C.stale_by_kind).map(([k,[n,t]])=>`<tr><td>${esc(KINDNAME[k]||k)}</td><td>${n===t?'all '+t:n+' of '+t}</td></tr>`).join('')}</tbody></table></div></div>
+ <div class="card"><h3>How it was checked</h3><ul class="l small">
+ <li>Cards are parsed from ${M.wiki_pages} wiki pages (MediaWiki api.php, pulled ${esc(M.pulled)}). Each card links its wiki page and shows when it was last edited.</li>
+ <li>The build script (build.py) stops with an error if a name in the prose is not a card or not in a cited source, or if a number in a step is not in the source that step cites.</li>
+ <li>A build line needs 2 or more sources dated within 60 days of the pull, or it is shown as "One source" or "Sources disagree".</li>
+ <li>The tier letters are relayed: both sites pass on unnamed community tier lists, possibly the same one. This guide adds no ratings.</li>
+ <li>The build script also checks every step for one action, number words and site names against the cited sources, and stops on wiki maintenance text in a card.</li></ul></div></div>
+ <div class="card" style="margin-top:14px"><h3>Not covered, or not verified</h3><ul class="l small">
+ <li>The wiki's armor, mod and Deviation pages are written by fans. ${C.cards_stale} cards come from pages last edited before v2.3.6 (April 8, 2026), including <b>all ${D.mods.filter(m=>!m.official).length} wiki mod cards</b>, <b>all ${C.stale_by_kind.dungeon[1]} Silos and dungeons</b> and all ${C.stale_by_kind.keyword[1]} keyword pages; those cards and lists carry a warning. ${siloNews()} ${(()=>{const x=ALL.filter(c=>c.changed);return x.length?`The official notes have since changed ${x.length} cards (${x.map(c=>esc(c.name)).join(', ')}); those cards show the new effect above the old wiki text.`:'';})()}</li>
+ <li>Pulled from the wiki but not made into cards:<ul class="l">${H.not_carded.map(g=>`<li>${prose(g.t)} <span class="muted">(${g.n} wiki page${g.n===1?'':'s'} pulled)</span></li>`).join('')}</ul></li>
+ <li>${ALL.filter(c=>c.official).map(c=>esc(c.name)).join(', ')} have no wiki pages yet. Their cards quote the official notes word for word, with a drawn icon and no stats.</li>
+ <li>${M.typo_fixes} wiki typo${M.typo_fixes===1?' is':'s are'} corrected on the cards (for example "Blace" to "Blaze"). Other wiki text is shown as written.</li>
+ <li>Facility unlock text comes from each wiki page; when the page predates v2.3.6 or has none, the card gives the official v2.3.6 Tech rules instead. Exact boss HP and damage numbers and drop rates are not in the pulled data. The daily and weekly loop lists only timers stated in the official notes, the wiki or a dated guide.</li>
+ <li>Videos are picked by a search rule, not watched.</li></ul></div>
+ <div class="sec"><h3>Build and tier sources (third-party, dated)</h3></div><div class="tablewrap"><table><thead><tr><th scope="col">Page</th><th scope="col">Date on page</th><th scope="col">Within 60 days</th></tr></thead><tbody>${D.meta_sources.map(s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td>${esc(s.date)}<br><span class="small muted">From ${esc(s.date_basis)}</span></td><td>${s.fresh?'Yes':'No'}</td></tr>`).join('')}</tbody></table></div>
+ <div class="sec"><h3>Official articles used (${D.official.length})</h3></div>${(()=>{const row=s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td style="white-space:nowrap">${esc(s.date)}</td></tr>`,tb=L=>`<div class="tablewrap"><table><thead><tr><th scope="col">Article</th><th scope="col">Date</th></tr></thead><tbody>${L.map(row).join('')}</tbody></table></div>`;
+  return tb(D.official.slice(0,10))+(D.official.length>10?`<div class="small" style="margin-top:8px">${moreBox('Show the other '+(D.official.length-10)+' articles',tb(D.official.slice(10)))}</div>`:'');})()}
+ <p class="small muted" style="margin-top:14px">Fan-made, not affiliated with NetEase or Starry Studio. Card pictures come from the Once Human Wiki and, for most mods, Game8's mod list (all game art); the banner and tile picture are official key art from oncehuman.game. Every file's source is in assets/manifest.json. Heading font: Barlow Condensed (SIL Open Font License), bundled.</p>`;};
+
+// ---------- search
+const IDX=[];
+ALL.forEach(c=>{IDX.push({t:dname(c),k:KINDNAME[c.kind],card:c.id,c,x:[c.name,(c.aka||[]).join(' '),c.cls,c.slot,c.mod_slot,c.type,(c.kw||[]).join(' ')].join(' ')});
+ (c.aka||[]).filter(a=>a!==dname(c)).concat(c.display?[c.name]:[]).forEach(a=>IDX.push({t:a,k:KINDNAME[c.kind]+' (also '+dname(c)+')',card:c.id,c,x:''}));});
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id,x:g})));
+SECS.forEach(s=>IDX.push({t:s.title,k:'Guide page',go:s.id,x:[s.intro,(s.steps||[]).map(p=>p.t).join(' '),(s.paras||[]).map(p=>p.t).join(' ')].join(' ')}));
+D.builds.builds.forEach(b=>IDX.push({t:b.name+' build',k:'Build',go:'builds/'+b.id,x:b.keyword+' '+b.lines.map(l=>l.v.join(' ')).join(' ')}));
+['Voyager','Heart of the Ocean'].forEach(t=>IDX.push({t,k:'Isles of Abyss',go:'ioa-bosses',x:'boss isles of abyss'}));
+GLOSS.forEach(g=>IDX.push({t:g.term,k:'Glossary',go:'glossary',term:g.term,x:g.t}));
+['The Echo War','Resonant Movements','Dissonant Dust'].forEach(t=>IDX.push({t,k:'Season 5',go:'season5',x:'vision season'}));
+const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ');
+let hits=[],sel=0,resEl=null;
+function doSearch(q,box){resEl=box;q=norm(q).trim();if(!q){box.classList.remove('on');return;}
+ const words=q.split(' ');
+ hits=IDX.map(e=>{const t=norm(e.t),x=norm(e.x);let sc=0;if(t===q)sc=100;else if(t.startsWith(q))sc=60;else if(t.includes(q))sc=40;else if(words.every(w=>t.includes(w)||x.includes(w)))sc=10;return [sc,e];}).filter(a=>a[0]>0).sort((a,b)=>b[0]-a[0]||a[1].t.localeCompare(b[1].t)).slice(0,14).map(a=>a[1]);
+ sel=0;box.innerHTML=hits.length?hits.map((e,i)=>`<div class="${i===0?'sel':''}" data-i="${i}" role="option">${e.c?pic(e.c,26):''}<span>${esc(e.t)}</span><i>${esc(e.k)}</i></div>`).join(''):'<div class="none">No match. Try a weapon, mod, Deviation or boss name.</div>';box.classList.add('on');}
+function goHit(e){if(!e)return;document.querySelectorAll('.results').forEach(r=>r.classList.remove('on'));const q=$('#q');q.value='';q.blur();closeSide();if(e.card)openCard(e.card);else location.hash=e.go;
+ if(e.term)setTimeout(()=>{const el=[...document.querySelectorAll('[data-term]')].find(x=>x.dataset.term===e.term);if(!el)return;const box=el.closest('.srcbox');if(box&&!box.classList.contains('on')){box.classList.add('on');const b=document.querySelector('[data-toggle="'+box.id+'"]');if(b)b.setAttribute('aria-expanded','true');}el.scrollIntoView({block:'center'});},120);}
+function wireSearch(inp,box){inp.addEventListener('input',()=>doSearch(inp.value,box));
+ inp.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...box.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){e.preventDefault();goHit(hits[sel]);}else if(e.key==='Escape'){box.classList.remove('on');}});
+ box.addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});}
+wireSearch($('#q'),$('#res'));
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))document.querySelectorAll('.results').forEach(r=>r.classList.remove('on'));});
+
+// ---------- modal
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;setTimeout(()=>$('#modal .x').focus(),0);}
+function closeModal(){CUR=null;if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+let CUR=null;
+function openCard(id){const c=BYID[id];if(!c)return;CUR=id;const g=GROUP[id];
+ if(LOADED[g]){openModal(cardHtml(c));return;}
+ openModal(cardHead(c)+'<p class="muted">Loading the card...</p>');
+ loadGroup(g).then(()=>{if(CUR===id&&$('#modal').classList.contains('on'))$('#mbody').innerHTML=cardHtml(c);}).catch(e=>{if(CUR===id)$('#mbody').innerHTML=cardHead(c)+`<p class="note">${esc(e.message)}</p>`;});}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-card][role]')){e.preventDefault();openCard(e.target.dataset.card);}});
+function playVideo(id,title){openModal(`<h3 style="margin-right:34px;text-transform:none">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;border-radius:4px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+
+// ---------- events + routing
+function closeSide(){$('#side').classList.remove('open');$('#menuBtn').setAttribute('aria-expanded','false');}
+document.addEventListener('click',e=>{
+ const c=e.target.closest('[data-card]');if(c){e.preventDefault();openCard(c.dataset.card);return;}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const t=e.target.closest('[data-toggle]');if(t){const b=document.getElementById(t.dataset.toggle);const on=b.classList.toggle('on');t.setAttribute('aria-expanded',on);return;}
+ const fo=e.target.closest('[data-fopen]');if(fo){F._fopen=!F._fopen;render(false);return;}
+ const b=e.target.closest('.tabs[data-set] button');if(b){F[b.parentNode.dataset.set]=b.dataset.v;render(false);}
+});
+main.addEventListener('input',e=>{const k=e.target.dataset&&e.target.dataset.q;if(k){F[k]=e.target.value;const pos=e.target.selectionStart;render(false);const n=main.querySelector(`[data-q="${k}"]`);if(n){n.focus();n.setSelectionRange(pos,pos);}return;}
+ if(e.target.id==='q2'){let box=main.querySelector('#res2');if(!box){box=document.createElement('div');box.className='results';box.id='res2';e.target.parentNode.style.position='relative';e.target.parentNode.appendChild(box);wireSearch(e.target,box);doSearch(e.target.value,box);}}});
+$('#menuBtn').addEventListener('click',()=>{const o=$('#side').classList.toggle('open');$('#menuBtn').setAttribute('aria-expanded',o);});
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))closeSide();});
+function render(top=true){const h=decodeURIComponent(location.hash.slice(1))||'home';const [r,arg]=h.split('/');
+ if(r==='card'){if(!main.innerHTML||main.querySelector('p.muted:only-child'))renderRoute('home',null,top);openCard(arg);return;}
+ renderRoute(r,arg,top);}
+function renderRoute(r,arg,top){const own=typeof R[r]==='function';const f=own?R[r]:R.home;const cur=own?r:'home';
+ try{main.innerHTML=f(arg)+`<footer>${$('#checked').innerHTML}<br>Fan-made guide, not affiliated with NetEase or Starry Studio. <a href="#sources">Sources and method</a></footer>`;}
+ catch(err){main.innerHTML=`<p class="note">This section failed to draw: ${esc(err.message)}. <a href="#home">Home</a></p>`;console.error(err);}
+ $('#nav').innerHTML=navHtml(cur);
+ if(top)window.scrollTo(0,0);
+ const t=(NAV.flatMap(x=>x[1]).find(x=>x[0]===cur)||[])[1];document.title=(t&&cur!=='home'?t+' · ':'')+'Once Human Field Guide';}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+})();
+</script>
+</body>
+</html>
