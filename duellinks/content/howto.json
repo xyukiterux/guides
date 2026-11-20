@@ -1,0 +1,228 @@
+{
+ "note": "Hand-written steps. Every step cites the cached source it comes from (art: = Duel Links Meta article in data/raw/dlm/articles, yp: = Yugipedia page in data/raw/yugipedia). Every step or paragraph with a source also carries q: short verbatim quotes from that source that back the claim; the guide shows them under the step. build.py checks that every quote is in the cited text, that every number in a step appears in its cited sources and that every [[kind:Name]] link exists in the pulled data. Steps with no source only point at this guide's own pages and must not state numbers.",
+ "sections": [
+  {
+   "id": "start", "group": "Start here", "title": "How to come back after a break",
+   "kind": "how-to",
+   "need": "You'll need: the game updated to the version in the header and about 15 minutes.",
+   "steps": [
+    {"t": "Pick your format: Speed Duel is the game's main ruleset, and Rush Duel is the second format, added in September 2023.", "src": ["yp:Yu_Gi_Oh_Duel_Links"],
+     "q": ["it follows Speed Duel rules rather than Master Rule , with the Rush Duel format being added in September 2023"]},
+    {"t": "Open the [[page:banlist|Banlist]] page: the last list change for both formats was announced on 2026-09-28 and took effect on Oct 8.", "src": ["art:news_balance_update_2026_september_28"],
+     "q": ["The Forbidden/Limited List will be updated on Oct 8"]},
+    {"t": "Check each card you used before your break against that list.", "src": []},
+    {"t": "Open [[page:meta|Speed meta]] or [[page:rush|Rush meta]] and choose one deck marked **Tier list + results** (Speed) or **Top in both result sets** (Rush).", "src": []},
+    {"t": "Compare the deck's gem price on its card with the Gems you have.", "src": []},
+    {"t": "If you are short, buy from the box at the top of [[page:boxes|Box priority]] that sells that deck's core cards.", "src": []},
+    {"t": "Open [[page:events|Events]] and check whether a KC Cup is running; in November 2026 Stage 1 ran from November 4th until November 15th.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["Stage 1 is available from November 4th until November 15th"]},
+    {"t": "Play Ranked Duels with the new deck; every win counts toward the month's cumulative rewards.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["towards the cumulative rewards"]},
+    {"t": "Watch one Street Replay a day for 5 Gems. The replays you watch are PvP Duels from Platinum Rank and above.", "src": ["yp:Duel_World"],
+     "q": ["lets the player watch a PvP Duel (in Platinum Rank and above) to receive 5 Gems per day"]}
+   ],
+   "check": "You are done when you have one legal deck from the meta page and you know whether a KC Cup or a Duelist Road event is live."
+  },
+  {
+   "id": "ranked", "group": "How to play well", "title": "How to climb Ranked Duels",
+   "kind": "how-to",
+   "need": "You'll need: one deck from the Speed or Rush meta page.",
+   "steps": [
+    {"t": "Note when the season starts: each season lasts 1 month and a new one starts on the 1st day of each month at 10:00 AM (JST).", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["starts during the 1st day of each month, at 10:00 AM (JST)"]},
+    {"t": "Expect to begin 7 ranks below where you ended last season; you never drop below Rookie 1.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["the rank of each player will be decreased by 7, but will not go lower than Rookie 1"]},
+    {"t": "Collect each rank-up reward as you climb: Bronze, Silver and Gold Rank 1 pay 50 Gems, Platinum and Legend Rank 1 pay 100 Gems, and King of Games pays 200 Gems, once per month.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["Bronze Rank 1 50 Gems", "King of Games 200 Gems"]},
+    {"t": "Play fast: each Duelist has 180 seconds in total for a turn, and you lose by Time Out at 0.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["Each Duelist has a total of 180 seconds to make his/her move during a turn", "loses by Time Out"]},
+    {"t": "In Legend 2 and 3, count your losses: 3 losses in a row drop your rank, so after 2 in a row the next loss costs you a rank.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["On the ranks Legend 2 and 3, losing 3 consecutive times will decrease the rank"]},
+    {"t": "Keep winning after you stop ranking up: 50 wins in a month pays a SPEED UR Ticket and 100 wins a RUSH UR Ticket (Glossy).", "src": ["art:news_november_2026_ranked_duels_rewards"],
+     "q": ["50 | 1 SPEED UR Ticket", "100 | 1 RUSH UR Ticket (Glossy)"]},
+    {"t": "Spend Ranked Duels tickets before they expire, 1 month after the end of the season you got them in.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["they expire 1 month after the end of the Ranked Duel Season when it was obtained"]},
+    {"t": "If you reach King of Games, check the next KC Cup: King of Games players from the month before were invited straight to Stage 2 in November 2026.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["Duelists who reached King of Games in October 2026 are invited straight to Stage 2"]}
+   ],
+   "check": "You are done for the month when you have claimed the King of Games reward or the highest rank you can reach, and the 50-win UR ticket."
+  },
+  {
+   "id": "kccup", "group": "How to play well", "title": "How to play the KC Cup",
+   "kind": "how-to",
+   "need": "You'll need: a deck from the meta page (filter its lists by KC Cup DLv. Max) and your rank from last month's Ranked Duels.",
+   "steps": [
+    {"t": "Check your start level: your Speed rank last month sets your first DLv. (KC Cup level). Silver starts at DLv. 3, Gold at DLv. 5, Platinum at DLv. 7, Legend and above at DLv. 10.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["Your DLv. will begin at the following levels depending on your rank", "Legend Rank and beyond | DLv. 10"]},
+    {"t": "Play Stage 1 until DLv. MAX; since the KC Cup Sep. 2026 there are no demotions at any DLv. in Stage 1.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["Starting from the KC Cup Sep. 2026, demotions no longer occur from any Dlv. in the 1st Stage", "Reaching DLV MAX qualifies a player for Stage 2"]},
+    {"t": "Collect the DLv. rewards on the way: DLv. 4 gives a Glossy SR Ticket, DLv. 14 a Glossy UR Ticket and DLv. 20 gives 200 Gems.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["4 | 1 Glossy SR Ticket", "14 | 1 Glossy UR Ticket", "20 | 200 Gems"]},
+    {"t": "Enter Stage 2 once you reach DLv. 20; in November 2026 it opened on November 13th and ended on November 15th.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["Stage 2 becomes available for Duelist who reached DLv. 20 which begins November 13th and ends on November 15th"]},
+    {"t": "In Stage 2, every loss costs points: it uses an ELO system, and duels are global. This guide's view: play it only when you can focus.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["Stage 2 of the KC Cup follows an ELO system, with points gained/lost for each win or loss", "Duels are global and not region only"]},
+    {"t": "Aim for your region's Top 500: those players can enter the World Championship Regional Qualifiers.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["The Top 500 players of each region will be eligible to play in the World Championship Regional Qualifiers"]},
+    {"t": "Only #1 Global gets a World Championship Invitation, and 2nd to 100th get KC Cup Points. This guide's view: push for #1 only if you are close.", "src": ["art:tournaments_2026_nov_kc_cup"],
+     "q": ["The player achieving the spot of #1 Global after the rankings will receive a World Championship Invitation", "Players Ranking from 2nd-100th will receive KC Cup Points"]}
+   ],
+   "check": "You are done when Stage 2 closes; the ticket rewards depend on your final global ranking."
+  },
+  {
+   "id": "gems", "group": "Free to play", "title": "How to farm Gems every month",
+   "kind": "how-to",
+   "need": "You'll need: a few minutes every day. Amounts are from the October 2026 Gems Report (Duel Links Meta).",
+   "steps": [
+    {"t": "Log in every day for the daily reward: at least +300 Gems in October 2026.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["Daily Reward Minimum +300"]},
+    {"t": "Watch one Street Replay every day: 5 Gems a day, +155 in October.", "src": ["art:news_2026_october_gems_report", "yp:Duel_World"],
+     "q": ["Daily Street Replay Reward +155", "to receive 5 Gems per day"]},
+    {"t": "Clear every event to its last Gem reward: the three Event Rush events gave +45, +375 and +340.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["Akiza Izinski Acceleration! +340"]},
+    {"t": "Play each new Alt Style's event: the report lists every Alt Style released in October at about +1100 Gems, without saying which steps pay them.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["Alt Styles - Yami Bakura (Coat) +1100"]},
+    {"t": "Win Ranked Duels for the cumulative rewards (+810) and the rank-up rewards (+350 in Speed counted from Platinum Rank 6, +300 in Rush counted from Silver Rank 4).", "src": ["art:news_2026_october_gems_report"],
+     "q": ["Rank Up Rewards Speed (Starting at Platinum Rank6) +350", "Rank Up Rewards Rush (Starting at Silver Rank4) +300"]},
+    {"t": "Play Character Deck Duels (+500): a PvP mode with a prebuilt deck for each character, opened from the PvP Arena or its icon in Duel World.", "src": ["art:news_2026_october_gems_report", "yp:Character_Deck_Duels"],
+     "q": ["Character Deck Duels +500", "It can be accessed in the PvP arena or by selecting the Character Deck Duels icon in the overworld", "Character Decks are prebuilt Decks made up of cards closely associated with each character"]},
+    {"t": "Fill the Challenge Stamps (+150): stamp rewards for playing a set number of duels. The report lists them under Ranked Duels.", "src": ["art:news_2026_october_gems_report", "yp:KC_Cup_Duel_Links"],
+     "q": ["Character Deck Duels +500 - Challenge Stamps +150", "The player can obtain rewards by Dueling a certain number of times"]},
+    {"t": "Finish the Weekly Missions (+120).", "src": ["art:news_2026_october_gems_report"],
+     "q": ["Weekly Missions +120"]},
+    {"t": "Link your Konami ID to Duel Links on the Yu-Gi-Oh! Duelist Point website, Konami's points program. It began in September 2025 for Japanese accounts only; in November 2026 Duel Links Meta wrote that more countries can now use it, so check whether yours is one.", "src": ["art:news_september_2025_duelist_point", "art:quick_news_2026_november_09_duelist_points"],
+     "q": ["you must link a Konami ID with a Japanese country to your Master Duel / Duel Links App", "even more countries can now take advantage of both Duelist Point and the CODA Web Shop"]},
+    {"t": "Exchange points for its Gems there (+105 in the October 2026 Gems Report). When the program began in September 2025, 100x Gems (once) and 10x Gems (once per week) cost 0 points, and Duel Links missions on the site, such as logging in, paid 20 points a week each.", "src": ["art:news_2026_october_gems_report", "art:news_september_2025_duelist_point"],
+     "q": ["Weekly Missions +120 - Duelist Point +105", "100x Gems | 0 | One-Time Only", "10x Gems | 0 | Once Per Week", "Log in to Duel Links | 20 | Weekly"]},
+    {"t": "Tap the decoration in each Duel World area and the Shop roof; they sometimes give 1-5 Gems.", "src": ["yp:Duel_World"],
+     "q": ["each area has an interactable decoration that will occasionally gift the player with 1-5 Gems", "The roof of the shop can be tapped for a chance of Gems"]},
+    {"t": "Check the month's total: October 2026 offered 12,510 Gems, 1 UR Dream Ticket each for Speed and Rush, 1 SR Dream Ticket (Rush) and 386 Box Chips, including a one-off Thank-You gift of +2500.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["12,510 Gems - 1 UR Dream Ticket (Speed) - 1 UR Dream Ticket (Rush) - 1 SR Dream Ticket (Rush) - 386 Box Chips", "Coda Web Store +200 - Thank-You +2500"]},
+    {"t": "Compare it with the cost of the newest box: buying all three runs of the Shooting Majesty Main Box (180 packs each) cost 27,000 Gems, the report's price for the three UR copies usually needed to compete.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["Second Run | • 180 Packs - 9,000 Gems", "Total Cost | 27,000 Gems", "all three UR copies usually needed to compete"]}
+   ],
+   "check": "Compare your month with the Gems Report table on this page; the gap is what events and campaigns did not cover."
+  },
+  {
+   "id": "spend", "group": "Free to play", "title": "How to spend Gems as a free player",
+   "kind": "how-to",
+   "need": "You'll need: one target deck from the meta page.",
+   "steps": [
+    {"t": "Choose the deck before you spend anything.", "src": []},
+    {"t": "Note the UR cards in the deck's **Core cards** on its card.", "src": []},
+    {"t": "Buy from the box that holds the most of those URs; [[page:boxes|Box priority]] ranks the boxes.", "src": []},
+    {"t": "Start a new Main Box's first run with the 100 Box Chips Bundle: 15 packs for 750 Gems, the same rate as the other 165 packs of that run (8,250 Gems), and its name says it adds 100 Box Chips.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["First Run | • 100 Box Chips Bundle (15 Packs) - 750 Gems", "Remaining 165 Packs - 8,250 Gems"]},
+    {"t": "Budget 180 packs (9,000 Gems) for each full run of a Main Box.", "src": ["art:news_2026_october_gems_report"],
+     "q": ["180 Packs - 9,000 Gems"]},
+    {"t": "Use UR and SR tickets from Ranked Duels and the KC Cup on cards that are hard to pull; the Ranked Duels ticket pool is updated monthly.", "src": ["yp:Ranked_Duels_Duel_Links"],
+     "q": ["the ticket pool is updated monthly, adding exclusive cards into the pool"]},
+    {"t": "Check the [[page:staples|Staples]] page before buying a box for one card. This guide's view: a staple like [[card:Forbidden Droplet]] is played in many decks, so it keeps its use when the meta moves.", "src": []}
+   ],
+   "check": "You are done when the target deck's core cards are covered and your leftover Gems wait for the next box."
+  },
+  {
+   "id": "loop", "group": "Free to play", "title": "How to use the monthly events loop",
+   "kind": "how-to",
+   "need": "You'll need: the Events page of this guide for the dates.",
+   "steps": [
+    {"t": "At the start of each month, read the new Ranked Duels Ticket rewards; November 2026 added [[card:Goblin Freefall Squad]] and [[card:Acetic Acid Trap Hole]].", "src": ["art:news_november_2026_ranked_duels_rewards"],
+     "q": ["Goblin Freefall Squad", "Acetic Acid Trap Hole"]},
+    {"t": "During Duel Capsule, play Ranked Duels: a win gives 9 Capsule Coins, a loss 2, and one Capsule costs 3 coins.", "src": ["art:events_2026_november_duel_capsule"],
+     "q": ["Obtain a Capsule by using 3 Capsule Coins"]},
+    {"t": "During Bingo Missions, finish each sheet: the 5th sheet alone pays 50 Gems.", "src": ["art:events_2026_november_bingo_missions"],
+     "q": ["5th Sheet - 50 Gems"]},
+    {"t": "During Duelist Road, collect Data Material, the event item that pays for each roulette spin, in Duel World or Ranked Duels.", "src": ["art:events_2026_november_duelist_road"],
+     "q": ["Collect Event Items (Data Material) by Dueling in Duel World or Ranked Duels", "Use Event Items to spin the roulette and Duel against the opponent decided by it"]},
+    {"t": "Spin the Duelist Road roulette to advance through the areas; Area 4 pays 1 UR Jewel (Jewels pay for cards at the Card Trader, see the [[page:about|glossary]]).", "src": ["art:events_2026_november_duelist_road", "yp:Card_Trader_Duel_Links_character"],
+     "q": ["Use Event Items to spin the roulette", "Round 1 | 1 UR Jewel", "Cards can be obtained by using Gold, Jewels, and Stones"]},
+    {"t": "When a KC Cup is announced, plan your Ranked climb around it (see [[page:kccup|How to play the KC Cup]]).", "src": []}
+   ],
+   "check": "The table under this how-to lists every event type seen since June 2026 and the last time it ran."
+  },
+  {
+   "id": "unlock", "group": "How to play well", "title": "How to unlock characters and their level rewards",
+   "kind": "how-to",
+   "need": "You'll need: Gate Keys and the character's card on the Characters page.",
+   "steps": [
+    {"t": "Clear Stage Missions in each Duel World; that adds new Legendary Duelists to the Gate.", "src": ["yp:Duel_World"],
+     "q": ["New Legendary Duelists are added to the Gate by completing Stage Missions"]},
+    {"t": "Duel the character at the Gate with its key colour; for example [[char:Seto Kaiba]] needs White keys.", "src": ["dlm:characters"],
+     "q": ["Seto Kaiba requires White keys to duel at the gate"]},
+    {"t": "Finish the Unlock Missions shown on the character's card.", "src": ["dlm:characters"],
+     "q": ["win 1 Duel(s) against Seto Kaiba at level 30"]},
+    {"t": "Use the 10 auto-duels a day at the Gate to farm drops without playing every duel.", "src": ["yp:Duel_World"],
+     "q": ["Players can use the auto-duel feature 10 times a day at the Gate"]},
+    {"t": "Level the character up by dueling with it: a character earns experience toward its next Level in every Duel.", "src": ["yp:Yu_Gi_Oh_Duel_Links"],
+     "q": ["The player's character earns experience to increase their Level by Dueling"]},
+    {"t": "Claim the cards and Skills listed under Level rewards on the character's card.", "src": []},
+    {"t": "If you missed an event character, check the Gate later: event characters are added there after their event leaves.", "src": ["yp:Duel_World"],
+     "q": ["including formally event exclusive characters after their event is taken out of circulation"]}
+   ],
+   "check": "The character's card lists every unlock mission, level reward and Skill so you can tick them off. If it says \"not in source data\", the Duel Links Meta record has no rewards for that character."
+  },
+  {
+   "id": "deckbuild", "group": "How to play well", "title": "How to build a meta deck from this guide",
+   "kind": "how-to",
+   "need": "You'll need: the deck's card on the meta page.",
+   "steps": [
+    {"t": "Open the deck on [[page:meta|Speed meta]] or [[page:rush|Rush meta]].", "src": []},
+    {"t": "Read the **Skill** line on the deck's card.", "src": []},
+    {"t": "Open the skill to see which characters have it and how they get it.", "src": []},
+    {"t": "Read **Core cards**: they are sorted by how many lists play them. This guide's view: get the top ones first.", "src": []},
+    {"t": "Open the newest full list that is not marked **before banlist**.", "src": []},
+    {"t": "Tap each card you do not own; its card shows where to get it.", "src": []},
+    {"t": "If a UR is out of reach, compare the other lists on the card and use a version without it.", "src": []},
+    {"t": "Check every card against [[page:banlist|Banlist]] before ranked play.", "src": []}
+   ],
+   "check": "You are done when your deck matches one of the dated lists, apart from the cards you chose to swap."
+  }
+ ],
+ "notes": {
+  "tiers": {"t": "One council member wrote in the 2026-11-02 update that the meta is diverse enough to get good results with any deck on the tier list.", "src": ["art:tier_list_updates_2026_november_2"],
+   "q": ["the meta is still diverse, which gives you the chance to achieve good results with any of the decks on the tier list"]}
+ },
+ "about": {
+  "id": "about", "title": "About Speed Duel and Rush Duel", "kind": "explanation",
+  "paras": [
+   {"t": "Duel Links uses Speed Duel rules rather than Master Rule. Rush Duel was added as a second format in September 2023, so most modes, rewards and tickets now come in a SPEED and a RUSH version.", "src": ["yp:Yu_Gi_Oh_Duel_Links", "art:news_november_2026_ranked_duels_rewards"],
+    "q": ["it follows Speed Duel rules rather than Master Rule", "1 SPEED N Ticket (Glossy)", "1 RUSH N Ticket (Glossy)"]},
+   {"t": "Each format keeps its own cards and limits: Speed Duel cards cannot be used in Rush Duels, and you can hold 50 Chronicle Cards in Speed in addition to 50 in Rush.", "src": ["yp:Duel_World"],
+    "q": ["Speed Duel cards cannot be used in Rush Duels, and vice-versa", "Players can have 50 Chronicle Cards in the Speed Duel format, in addition to 50 Chronicles Cards in the Rush Duel format"]},
+   {"t": "Each format has its own Forbidden/Limited list, in groups this guide calls Forbidden, Limited 1, Limited 2 and Limited 3 (the update article writes \"Limit 1\" and so on). The September 28 update moved Speed cards to Forbidden, Limited 1, Limited 3 and Unlimited, and Rush cards to Limited 2, Limited 3 and Unlimited.", "src": ["art:news_balance_update_2026_september_28"],
+    "q": ["[SPEED] Cards to be Forbidden", "[SPEED] Cards to be Limit 1", "[SPEED] Cards to be Limit 3", "[Speed] Cards to be Unlimited", "[RUSH] Cards to be Limit 2", "[RUSH] Cards to be Limit 3", "[RUSH] Cards to be Unlimited"]},
+   {"t": "Your deck also takes one Skill. Skills must be unlocked before you can use them, and each character has its own set of possible Skills, which is why the Skills page lists who gets each one and counts how often it appears in winning lists.", "src": ["yp:Yu_Gi_Oh_Duel_Links"],
+    "q": ["Each player can have one Skill . Skills must be unlocked before they can be used, with each character having their own set of possible Skills"]}
+  ],
+  "terms": [
+   {"term": "DLv.", "t": "The KC Cup level. Your rank from last month sets the DLv. you start at, Gems and tickets are paid at each DLv., and DLv. 20 qualifies you for Stage 2.", "src": ["art:tournaments_2026_nov_kc_cup"],
+    "q": ["Gems, tickets, and gold are given to players for each DLV level", "Stage 2 becomes available for Duelist who reached DLv. 20"]},
+   {"term": "DLv. Max", "t": "The top level of KC Cup Stage 1; reaching it qualifies you for Stage 2. Duel Links Meta tags decks that got there as \"KC Cup DLv. Max\", and this guide uses those lists as one of its result sources.", "src": ["art:tournaments_2026_nov_kc_cup"],
+    "q": ["Reaching DLV MAX qualifies a player for Stage 2 of the KC Cup", "Stage 1 DLv. MAX Decks"]},
+   {"term": "ELO", "t": "The points system of KC Cup Stage 2: you gain points for a win and lose points for a loss, and the final global ranking decides the rewards.", "src": ["art:tournaments_2026_nov_kc_cup"],
+    "q": ["Stage 2 of the KC Cup follows an ELO system, with points gained/lost for each win or loss"]},
+   {"term": "King of Games", "t": "The top rank of a Ranked Duels season. Its rank-up reward is 200 Gems once per month.", "src": ["yp:Ranked_Duels_Duel_Links"],
+    "q": ["King of Games 200 Gems"]},
+   {"term": "Glossy", "t": "A card foil. Yugipedia's Card Trader page names three foils: Basic (non-foil), Glossy and Prismatic. The Card Trader can upgrade any card it sells to Glossy, and only UR and SR cards to Prismatic. Some reward tickets carry the label, for example the Glossy SR Ticket at KC Cup DLv. 4; the sources do not say in words that such a ticket gives a Glossy copy.", "src": ["yp:Card_Trader_Duel_Links_character", "art:tournaments_2026_nov_kc_cup"],
+    "q": ["The cards sold by the Card Trader can also be upgraded to a higher foil, which consists Glossy and Prismatic", "Any card in the Card Trader's inventory can be upgraded to Glossy foiling, and only UR and SR cards can be upgraded to Prismatic foiling", "1 Basic (non-foil) copy", "4 | 1 Glossy SR Ticket"]},
+   {"term": "Alt Style", "t": "An alternate version of a Legendary Duelist that is listed as its own character, for example Seto Kaiba (Urban).", "src": ["yp:Legendary_Duelist"],
+    "q": ["Seto Kaiba Seto Kaiba (Urban) ( Alt Style )"]},
+   {"term": "Chronicle Cards", "t": "Cards with Special Processing applied; you can hold 50 in each format.", "src": ["yp:Duel_World"],
+    "q": ["Chronicle Cards, which are cards with Special Processing applied"]},
+   {"term": "Box Chips", "t": "A currency counted in each Gems Report that you trade for cards from a box: Duel Links Meta notes you can get most cards of a box with Box Chips. You earn them from events (Rainbow Capsules in Duel Capsule give Gems or Box Chips), and in a new Main Box the 100 Box Chips Bundle is 15 packs for 750 Gems.", "src": ["art:news_2026_october_gems_report", "art:events_2026_october_aki_riding_event", "art:events_2026_november_duel_capsule"],
+    "q": ["1 SR Dream Ticket (Rush) - 386 Box Chips", "you can also get most of these cards with Box Chips", "Rainbow Capsules | Gems or Box Chips", "100 Box Chips Bundle (15 Packs) - 750 Gems"]},
+   {"term": "Spicy Win Streaks", "t": "A Duel Links Meta tag for off-meta decks that won at least 5 duels in a row in Legend or King of Games, posted on its Discord. This guide counts those lists in the results but never as a tournament result.", "src": ["art:win_streaks_november_14_2026"],
+    "q": ["showcase of the spiciest non-Tier List decks that have gone on large win-streaks in Legend, KoG", "All lists have at least a 5 winstreak"]},
+   {"term": "Duel Links Meta", "t": "The fan site whose tier list, deck results, card database and articles this guide pulls. Its Top Player Council writes the tier list updates.", "src": ["art:tier_list_updates_2026_november_2"],
+    "q": ["Learn more about the Top Player Council members"]},
+   {"term": "Character Deck Duels", "t": "A PvP mode, released on April 1st, 2026, played with Character Decks: prebuilt decks of cards tied to one character, each with an exclusive Skill. You get a character's deck from Lifetime Missions after you unlock that character. Open it from the PvP Arena or its icon in Duel World. It has its own Forbidden/Limited list.", "src": ["yp:Character_Deck_Duels"],
+    "q": ["It was released on April 1st, 2026", "Character Decks are prebuilt Decks made up of cards closely associated with each character, along with an exclusive Skill", "You can receive them as rewards for Lifetime Missions completed by unlocking the corresponding characters", "A special Forbidden/Limited list applies to Character Decks"]},
+   {"term": "Challenge Stamps", "t": "Rewards for playing a set number of duels. Yugipedia describes them for the KC Cup; the Gems Reports also list Challenge Stamps under Ranked Duels (+150 Gems in October 2026).", "src": ["yp:KC_Cup_Duel_Links", "art:news_2026_october_gems_report"],
+    "q": ["The player can obtain rewards by Dueling a certain number of times in KC Cup Duels", "Character Deck Duels +500 - Challenge Stamps +150"]},
+   {"term": "Duelist Point", "t": "Konami's points website for its digital card games (Master Duel and Duel Links). You link a Konami ID, earn points from missions on the site (Duel Links missions paid 20 points a week each in September 2025) and exchange them for items such as Gems, Box Chips and sleeves. It began in September 2025 for Japanese accounts only; in November 2026 Duel Links Meta wrote that more countries can now use it. The Gems Reports list its Gems under Login Bonuses (+105 in October 2026).", "src": ["art:news_september_2025_duelist_point", "art:quick_news_2026_november_09_duelist_points", "art:news_2026_october_gems_report"],
+    "q": ["a new point-based rewards program for Yu-Gi-Oh! digital card games (Master Duel and Duel Links)", "various missions on the website become available to earn points which you can then exchange for various items", "Log in to Duel Links | 20 | Weekly", "50x Box Chips | 100 | Once Per Month", "even more countries can now take advantage of both Duelist Point", "Weekly Missions +120 - Duelist Point +105"]},
+   {"term": "Jewels", "t": "Trade items for the Card Trader: its cards cost Gold, Jewels and Stones, and the Jewel and Stone match the card's rarity and Attribute (an SR WATER monster needs SR Jewels and Stones of Water). Events pay them, for example 1 UR Jewel in Duelist Road Area 4.", "src": ["yp:Card_Trader_Duel_Links_character", "art:events_2026_november_duelist_road"],
+    "q": ["Cards can be obtained by using Gold, Jewels, and Stones. The latter two correspond to the card's Rarity and Attribute", "For example, a SR WATER monster requires SR Jewels and Stones of Water to be purchased", "Round 1 | 1 UR Jewel"]}
+  ]
+ }
+}

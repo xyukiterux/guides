@@ -1,0 +1,8 @@
+{
+ "note": "Videos picked by fetch_videos.py's search rule but dropped after a title check; reason per video.",
+ "exclude": {
+  "vN_zUGHRvx8": "topic:box: off-topic for this topic (My Predictions for the Duel Links Tenth Anniversary Box)",
+  "DONRQMHumO4": "topic:box: off-topic, a Duel Quiz walkthrough, not about which box to buy (How To Solve The Shooting Majesty Duel Quiz? Yu-Gi-Oh! Duel )",
+  "Tak5kGugtjM": "topic:box: off-topic, a Duel Quiz walkthrough, not about which box to buy (Yugioh Duel Links - Duel Quiz: Shooting Majesty)"
+ }
+}

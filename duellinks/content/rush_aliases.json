@@ -1,0 +1,8 @@
+{
+ "about": "Rush tier list chapter names that do not match a Duel Links Meta Rush deck type by spelling, and the deck type each one means, with the reason. A chapter name not listed here and not matching by spelling is shown as 'no matching deck type' and rates nothing.",
+ "aliases": [
+  {"chapter": "Worms", "deck": "Wyrms : Rush!", "why": "the video title says \"WYRMS ARE BACK\"; chapter titles are written from speech and mishear names"},
+  {"chapter": "Royal Rebel", "deck": "Royal Rebel's", "why": "same name without the possessive"},
+  {"chapter": "Hero", "deck": "Elemental HERO: Rush!", "why": "the only HERO deck type in the Duel Links Meta Rush results"}
+ ]
+}

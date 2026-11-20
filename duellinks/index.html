@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Duel Links Field Guide</title>
+<meta name="description" content="Yu-Gi-Oh! Duel Links guide: Speed and Rush meta decks with full lists and sources, tier list, skills, characters and level rewards, box priority, gem farming, banlist, ranked and KC Cup.">
+<meta name="theme-color" content="#070d1f">
+<meta property="og:title" content="Duel Links Field Guide">
+<meta property="og:description" content="Current Speed and Rush meta decks with dated sources, every card that matters, skills, characters, box priority and gem farming. Works offline.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Cinzel";src:url("assets/fonts/cinzel.woff2") format("woff2");font-weight:400 900;font-display:swap}
+:root{
+  --bg:#070d1f;--bg2:#0b1430;--panel:#0f1a38;--panel2:#152349;--well:#08112a;
+  --line:rgba(120,170,255,.16);--line2:rgba(232,182,74,.32);
+  --ink:#eaf0ff;--muted:#a9b8db;--dim:#8394bd;
+  --gold:#e8b64a;--gold2:#f6d27a;--blue:#2f8fe0;--cyan:#6cd0ff;--red:#ff7a6b;--green:#5fd39a;
+  --head:"Cinzel","Trajan Pro","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:10px;
+  --f-normal:#c9a64a;--f-effect:#c4692b;--f-spell:#1f9a77;--f-trap:#b0507e;--f-fusion:#8752a6;--f-synchro:#d7dbe3;
+  --f-xyz:#3a3a46;--f-link:#2b62b3;--f-ritual:#4b82cf;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.6 var(--body);
+  background:radial-gradient(1200px 700px at 90% -15%,rgba(47,143,224,.22),transparent 60%),
+             radial-gradient(900px 600px at -10% 110%,rgba(232,182,74,.10),transparent 60%),var(--bg)}
+a{color:var(--cyan)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;letter-spacing:.02em;line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(1.9rem,4.4vw,3rem)}
+h2{font-size:clamp(1.4rem,2.6vw,1.9rem);color:var(--gold2)}
+h3{font-size:1.15rem}
+p{margin:.4em 0}
+.shell{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line2);
+  background:linear-gradient(180deg,#0c1735,#070d1f)}
+.brand{display:flex;gap:11px;align-items:center;text-decoration:none;color:var(--ink)}
+.brand .mk{width:40px;height:52px;border-radius:5px;border:2px solid var(--gold);display:grid;place-items:center;flex:none;
+  background:linear-gradient(160deg,#1c3c7a,#0b1736);box-shadow:0 0 14px rgba(47,143,224,.45),inset 0 0 0 3px #0b1736}
+.brand .mk i{width:16px;height:16px;transform:rotate(45deg);background:linear-gradient(135deg,var(--gold2),var(--gold));display:block}
+.brand b{display:block;font-family:var(--head);font-size:1.12rem;letter-spacing:.04em}
+.brand small{color:var(--gold);letter-spacing:.16em;font-size:.7rem;text-transform:uppercase}
+#checked{font-size:.8rem;color:var(--muted);margin:12px 2px;line-height:1.5}
+#checked a{color:var(--cyan)}
+.search{position:relative;margin-top:6px}
+.search input{width:100%;padding:11px 12px;border-radius:8px;border:1px solid var(--line);background:var(--well);color:var(--ink);font:inherit;font-size:16px}
+.search input:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(232,182,74,.18)}
+.results{position:absolute;left:0;right:0;top:50px;background:var(--panel);border:1px solid var(--line2);border-radius:10px;max-height:64vh;overflow:auto;z-index:60;display:none;box-shadow:0 20px 40px rgba(0,0,0,.55)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.92rem;display:flex;align-items:center;gap:9px}
+.results div img{width:26px;height:38px;object-fit:cover;border-radius:3px;flex:none}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.76rem;white-space:nowrap}
+.results div:hover,.results div.sel{background:rgba(47,143,224,.16)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:10px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font-family:var(--head);font-size:.74rem;letter-spacing:.18em;color:var(--gold);margin:16px 8px 4px;text-transform:uppercase}
+nav a{display:flex;gap:10px;align-items:center;padding:7px 10px;border-radius:7px;color:var(--ink);text-decoration:none;font-size:.95rem}
+nav a:hover{background:rgba(47,143,224,.12)}
+nav a.on{background:linear-gradient(90deg,rgba(232,182,74,.22),rgba(232,182,74,.03));box-shadow:inset 3px 0 0 var(--gold)}
+nav a .n{margin-left:auto;font-size:.76rem;color:var(--dim)}
+main{min-width:0;padding:24px clamp(14px,2.6vw,40px) 80px}
+.topbar{display:none}
+footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:.82rem}
+/* card-frame panels: gold corner brackets */
+.panel{position:relative;background:linear-gradient(180deg,rgba(21,35,73,.92),rgba(13,23,50,.92));border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;min-width:0}
+.panel::before,.panel::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--gold);pointer-events:none;opacity:.85}
+.panel::before{top:-1px;left:-1px;border-right:0;border-bottom:0;border-top-left-radius:var(--r)}
+.panel::after{bottom:-1px;right:-1px;border-left:0;border-top:0;border-bottom-right-radius:var(--r)}
+.sec{margin:30px 0 12px;display:flex;align-items:center;gap:12px}
+.sec h2{margin:0}
+.sec::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.lead{color:var(--muted);max-width:1100px}
+.muted{color:var(--muted)}.small{font-size:.88rem}.tiny{font-size:.8rem}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:2px 10px;border-radius:999px;font-size:.8rem;border:1px solid var(--line);background:var(--well);color:var(--ink);white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.ok{border-color:rgba(95,211,154,.55);color:var(--green)}
+.pill.warn{border-color:rgba(255,122,107,.55);color:var(--red)}
+.pill.gold{border-color:var(--gold);color:var(--gold2)}
+.note{border-left:3px solid var(--gold);background:rgba(232,182,74,.08);padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0;max-width:1200px}
+.note.blue{border-left-color:var(--blue);background:rgba(47,143,224,.09)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:7px;border:1px solid var(--line2);background:var(--panel2);color:var(--ink);font-size:.9rem;text-decoration:none}
+.btn:hover{border-color:var(--gold)}
+.btn.on{background:linear-gradient(180deg,#f2c766,#c9952f);color:#1a1205;border-color:var(--gold);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+/* hero banner */
+.hero{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--line2);min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(18px,3vw,36px);margin-bottom:18px;isolation:isolate}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(7,13,31,.97) 12%,rgba(7,13,31,.55) 55%,rgba(7,13,31,.15)),linear-gradient(90deg,rgba(7,13,31,.85),transparent 70%)}
+.hero .k{color:var(--gold);font-family:var(--head);letter-spacing:.2em;font-size:.8rem;text-transform:uppercase}
+.hero p{max-width:820px;font-size:1.05rem;color:#dbe4fb}
+/* tiles */
+.tile{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:var(--ink);cursor:pointer}
+.tile:hover{border-color:var(--gold)}
+.tile h3{margin:0 0 3px}
+.tile .num{font-family:var(--body);font-weight:800;font-size:1.6rem;color:var(--gold2);line-height:1}
+/* Yu-Gi-Oh card thumbnails with frame colour */
+.cardgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(112px,1fr))}
+.cardgrid.sm{grid-template-columns:repeat(auto-fill,minmax(86px,1fr))}
+.yc{position:relative;display:flex;flex-direction:column;border-radius:6px;padding:3px 3px 0;background:var(--fr,#555);cursor:pointer;color:#0b0f1a;text-decoration:none;border:0;text-align:left;min-width:0;
+  box-shadow:0 0 0 1px rgba(0,0,0,.6),0 6px 16px rgba(0,0,0,.35);transition:transform .12s,box-shadow .12s}
+.yc:hover{transform:translateY(-2px);box-shadow:0 0 0 2px var(--gold),0 10px 22px rgba(0,0,0,.45)}
+.yc img{width:100%;aspect-ratio:200/292;object-fit:cover;border-radius:3px;display:block;background:#0a0f1e}
+.yc .nm{font-size:.74rem;line-height:1.2;margin:4px 2px 5px;padding:0;height:2.4em;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8);font-weight:600;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.yc .ct{position:absolute;top:6px;left:6px;background:rgba(7,13,31,.88);color:var(--gold2);border:1px solid var(--gold);border-radius:5px;font:700 .8rem var(--body);padding:0 6px}
+.yc .pc{position:absolute;top:6px;right:6px;background:rgba(7,13,31,.88);color:#fff;border-radius:5px;font-size:.72rem;padding:0 5px}
+.yc .bn{position:absolute;bottom:42px;left:6px;right:6px;text-align:center;background:rgba(160,20,20,.9);color:#fff;font-size:.68rem;font-weight:700;border-radius:4px;padding:1px 3px}
+.fr-normal{--fr:var(--f-normal)}.fr-effect{--fr:var(--f-effect)}.fr-spell{--fr:var(--f-spell)}.fr-trap{--fr:var(--f-trap)}
+.fr-fusion{--fr:var(--f-fusion)}.fr-synchro{--fr:var(--f-synchro)}.fr-synchro .nm{color:#10131c;text-shadow:none}
+.fr-xyz{--fr:var(--f-xyz)}.fr-link{--fr:var(--f-link)}.fr-ritual{--fr:var(--f-ritual)}
+.rar{display:inline-grid;place-items:center;min-width:30px;padding:0 6px;height:22px;border-radius:4px;font:800 .74rem var(--body);letter-spacing:.04em}
+.rar.UR{background:linear-gradient(135deg,#fff1b8,#e8b64a 45%,#9c6a12);color:#2a1a00}
+.rar.SR{background:linear-gradient(135deg,#eef6ff,#9fc2ea 50%,#5578a6);color:#0b1530}
+.rar.R{background:linear-gradient(135deg,#bfe0ff,#3d84c9);color:#04122a}
+.rar.N{background:#5a6378;color:#fff}
+/* deck tiles */
+.decks{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.deck{display:grid;grid-template-columns:78px 1fr;gap:12px;align-items:center;text-decoration:none;color:var(--ink);cursor:pointer}
+.deck:hover{border-color:var(--gold)}
+.deck img{width:78px;aspect-ratio:200/292;object-fit:cover;border-radius:5px;border:2px solid var(--gold)}
+.deck h3{margin:0 0 4px}
+.deck h1{overflow-wrap:anywhere;min-width:0}.deck>div{min-width:0}
+.tierb{display:inline-grid;place-items:center;min-width:64px;height:26px;border-radius:5px;font:800 .82rem var(--body);text-transform:uppercase;padding:0 8px;color:#160f02;letter-spacing:.04em}
+.t1{background:linear-gradient(135deg,#ffe28a,#e8b64a)}.t2{background:linear-gradient(135deg,#d7e7ff,#8fb4e6)}.t3{background:linear-gradient(135deg,#cfa27a,#a8703d)}.t0{background:#3a4560;color:#dfe6f7}
+.bar{height:7px;border-radius:4px;background:var(--well);overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+/* tables */
+.tw{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--head);font-size:.8rem;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;white-space:nowrap}
+tr:hover td{background:rgba(47,143,224,.05)}
+td.r,th.r{text-align:right}
+td.nw{white-space:nowrap}
+/* how-to */
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:12px 0;max-width:1100px}
+ol.steps li{counter-increment:s;position:relative;padding:10px 12px 10px 52px;margin:8px 0;background:var(--well);border:1px solid var(--line);border-radius:8px}
+ol.steps li::before{content:counter(s);position:absolute;left:10px;top:9px;width:30px;height:30px;display:grid;place-items:center;border-radius:5px;
+  background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1205;font:800 .95rem var(--body);transform:rotate(45deg) scale(.82)}
+ol.steps li::before{transform:none}
+.src{font-size:.78rem;color:var(--dim);margin-top:3px}
+.src a{color:var(--dim)}
+.need{color:var(--muted);font-style:italic}
+details.more{margin:10px 0}
+details.more>summary{cursor:pointer;color:var(--gold2);font-weight:600;list-style:none;display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border:1px solid var(--line2);border-radius:7px;background:var(--panel2)}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";font-weight:800}
+details.more[open]>summary::before{content:"\2212"}
+details.more[open]>summary{margin-bottom:10px}
+.srcbox{display:none;margin:10px 0;padding:10px 14px;border:1px dashed var(--line2);border-radius:8px;background:rgba(232,182,74,.05);font-size:.9rem}
+.srcbox.on{display:block}
+.srcbox ul{margin:4px 0;padding-left:18px}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+.filters input[type=search],.filters select{padding:9px 11px;border-radius:7px;border:1px solid var(--line);background:var(--well);color:var(--ink);font:inherit;font-size:16px;min-width:0}
+.filters input[type=search]{flex:1 1 220px;max-width:420px}
+/* character + skill tiles */
+.chgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.ch{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;cursor:pointer;padding:12px 8px}
+.ch img{width:84px;height:84px;object-fit:cover;border-radius:50%;border:2px solid var(--gold);background:var(--well)}
+.ch b{font-size:.92rem;line-height:1.25}
+.sk{display:grid;grid-template-columns:52px 1fr;gap:10px;cursor:pointer}
+.sk img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--blue);background:var(--well)}
+.sk h3{font-size:1rem;margin:0 0 2px}
+.sk p{font-size:.9rem;color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+/* modal */
+#modal{position:fixed;inset:0;z-index:100;display:none;align-items:flex-start;justify-content:center;background:rgba(3,6,16,.78);padding:4vh 12px;overflow:auto}
+#modal.on{display:flex}
+#mbox{width:min(980px,100%);position:relative}
+#mclose{position:absolute;top:10px;right:10px;z-index:2;width:38px;height:38px;border-radius:7px;border:1px solid var(--line2);background:var(--panel2);font-size:1.3rem;line-height:1}
+.cd{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:20px}
+.cd .art{align-self:start;border-radius:8px;padding:6px 6px 8px;background:var(--fr,#555)}
+.cd .art img{width:100%;display:block;border-radius:4px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;font-size:.92rem;margin:8px 0}
+.kv b{color:var(--muted);font-weight:600}
+.ctext{white-space:pre-line;background:var(--well);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.95rem}
+.vids{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.vid .frame{position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.vid .frame iframe,.vid .frame button{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid .frame button{background:linear-gradient(180deg,rgba(7,13,31,.2),rgba(7,13,31,.85));color:var(--ink);display:grid;place-items:center;font-weight:700}
+.vid .frame button span{border:2px solid var(--gold);padding:8px 16px;border-radius:7px;background:rgba(7,13,31,.7)}
+.vid h4{font-family:var(--body);font-size:.95rem;margin:8px 0 2px;letter-spacing:0}
+.list-meta{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.9rem;color:var(--muted);margin:6px 0 10px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.sub{font-family:var(--head);color:var(--gold);font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;margin:14px 0 6px}
+.more-btn{margin:14px 0}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;left:0;top:0;bottom:0;width:min(86vw,320px);z-index:80;transform:translateX(-105%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:0 0 40px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:70;padding:10px 14px;background:rgba(7,13,31,.96);border-bottom:1px solid var(--line2)}
+  .topbar b{font-family:var(--head)}
+  .topbar button{border:1px solid var(--line2);background:var(--panel2);border-radius:7px;padding:6px 12px}
+  main{padding:16px 12px 70px}
+  .cd{grid-template-columns:1fr}
+  .hero::after{background:linear-gradient(0deg,rgba(7,13,31,.97) 30%,rgba(7,13,31,.8) 70%,rgba(7,13,31,.55))}
+  .cd .art{max-width:220px}
+  .cardgrid{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}
+  .deck{grid-template-columns:62px 1fr}.deck img{width:62px}
+  .deck h1{font-size:1.6rem}
+  th,td{padding:6px 7px}
+}
+@media (max-width:480px){.hero .k{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
+  table.stack tr:first-child{display:none}
+  table.stack tr{border:1px solid var(--line);border-radius:8px;margin:0 0 10px;padding:6px 4px;background:var(--well)}
+  table.stack td{border:0;padding:3px 8px 3px 124px;text-align:left;white-space:normal;position:relative;min-height:1.6em}
+  table.stack td::before{content:attr(data-l);position:absolute;left:8px;top:5px;font-family:var(--head);font-size:.72rem;letter-spacing:.08em;color:var(--gold);text-transform:uppercase}
+  table.stack .pill{white-space:normal}
+  table.stack tr:hover td{background:none}}
+.quote{font-style:italic;color:var(--muted)}
+.vid .frame button{flex-direction:column;gap:6px;text-align:center;padding:12px}
+.vid .frame button .vt{font-weight:700;font-size:.95rem;line-height:1.3;max-width:92%;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;border:0;background:none;padding:0}
+.vid .frame button .vc{font-weight:400;font-size:.82rem;color:var(--muted);border:0;background:none;padding:0}
+.prints{display:flex;flex-wrap:wrap;gap:8px}.prints figure{margin:0;width:78px;text-align:center}.prints img{width:78px;border-radius:4px;display:block}.prints figcaption{font-size:.72rem;color:var(--muted);line-height:1.25;margin-top:3px}
+dl.gloss{display:grid;grid-template-columns:minmax(110px,max-content) 1fr;gap:6px 16px;max-width:1100px}
+dl.gloss dt{font-weight:700;color:var(--gold2)}dl.gloss dd{margin:0}
+@media (max-width:520px){dl.gloss{grid-template-columns:1fr}dl.gloss dd{margin-bottom:8px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menu" aria-label="Open menu" aria-expanded="false">Menu</button><b>Duel Links Field Guide</b></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk"><i></i></span><span><b>Duel Links</b><small>Field Guide</small></span></a>
+  <div id="checked">Loading…</div>
+  <div class="search"><input id="q" type="search" placeholder="Search cards, decks, skills…" autocomplete="off" aria-label="Search the guide"><div id="res" class="results" role="listbox"></div></div>
+  <nav id="nav"></nav>
+</aside>
+<main id="main" tabindex="-1"><p>Loading the guide…</p><noscript>This guide needs JavaScript turned on.</noscript></main>
+</div>
+<div id="modal" role="dialog" aria-modal="true" aria-label="Details"><div id="mbox" class="panel"><button id="mclose" aria-label="Close">×</button><div id="mbody"></div></div></div>
+<script src="data/dl.js?v=2026-11-19-49810-1032-96280"></script>
+<script>
+"use strict";
+const D = window.DL || null;
+let C = window.DLC || null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const own = (o, k) => o != null && Object.prototype.hasOwnProperty.call(o, k);
+const pct = x => (x * 100).toFixed(x < 0.1 ? 1 : 0) + "%";
+const num = n => n == null ? "?" : Number(n).toLocaleString("en-US");
+const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "x";
+
+/* ---------- lazy card database ---------- */
+let cardWait = [];
+function needCards(cb) {
+  if (C) { cb(); return; }
+  cardWait.push(cb);
+  if (cardWait.length > 1) return;
+  const s = document.createElement("script");
+  s.src = "data/cards.js?v=2026-11-19-49810-1032-96280";
+  s.onload = () => { C = window.DLC; const w = cardWait; cardWait = []; w.forEach(f => f()); buildIndex(); };
+  s.onerror = () => { const m = $("#main"); if (m) m.insertAdjacentHTML("afterbegin", '<p class="note">The card database (data/cards.js) did not load.</p>'); };
+  document.head.appendChild(s);
+}
+/* ---------- lazy skills and characters (data/ref.js) ---------- */
+let R = window.DLR || null, refWait = [];
+if (D) { D.skills = R ? R.skills : []; D.chars = R ? R.chars : []; }
+function needRef(cb) {
+  if (R) { cb(); return; }
+  refWait.push(cb);
+  if (refWait.length > 1) return;
+  const s = document.createElement("script");
+  s.src = "data/ref.js?v=2026-11-19-49810-1032-96280";
+  s.onload = () => { R = window.DLR; D.skills = R.skills; D.chars = R.chars; const w = refWait; refWait = []; buildIndex(); w.forEach(f => f()); };
+  s.onerror = () => { const m = $("#main"); if (m) m.insertAdjacentHTML("afterbegin", '<p class="note">The skill and character data (data/ref.js) did not load.</p>'); };
+  document.head.appendChild(s);
+}
+/* a reprint is stored as {same: main id}: it shows its own picture but the main entry's data */
+const card = id => { if (!C || !own(C, id)) return null; const c = C[id]; return c.same && own(C, c.same) ? C[c.same] : c; };
+const mainIds = () => Object.keys(C).filter(id => !C[id].same);
+function frame(c) {
+  if (!c) return "";
+  if (c.t === "Spell") return "fr-spell";
+  if (c.t === "Trap") return "fr-trap";
+  const m = c.mt || [];
+  for (const k of ["Link", "Xyz", "Synchro", "Fusion", "Ritual"]) if (m.includes(k)) return "fr-" + k.toLowerCase();
+  return m.includes("Normal") ? "fr-normal" : "fr-effect";
+}
+const img = id => "assets/cards/" + encodeURIComponent(id) + ".webp";
+function yc(id, opts) {
+  opts = opts || {};
+  const c = card(id);
+  const nm = c ? c.n : "Card";
+  const ban = c && c.ban ? `<span class="bn">${esc(c.ban)}</span>` : "";
+  return `<button class="yc ${frame(c)}" data-card="${esc(id)}" title="${esc(nm)}"><img loading="lazy" src="${img(id)}" alt="${esc(nm)}">`
+    + (opts.count ? `<span class="ct">x${esc(opts.count)}</span>` : "") + (opts.pc != null ? `<span class="pc">${esc(opts.pc)}</span>` : "")
+    + ban + `<span class="nm">${esc(nm)}</span></button>`;
+}
+const rar = r => r ? `<span class="rar ${esc(r)}">${esc(r)}</span>` : "";
+const charImg = n => { const c = D.chars.find(x => x.name === n); return c ? c.img : "icon-192.png"; };
+
+/* ---------- inline links in prose: **bold**, [[kind:Name|label]] ---------- */
+function prose(t) {
+  let h = esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+  return h.replace(/\[\[(\w+):([^\]|]+)(?:\|([^\]]*))?\]\]/g, (m, kind, ref, lab) => {
+    const label = esc(lab || ref);
+    if (kind === "page") return `<a href="#${esc(ref)}">${label}</a>`;
+    if (kind === "deck") return `<a href="#deck/${esc(deckFmt(ref))}/${esc(slug(ref))}">${label}</a>`;
+    if (kind === "char") return `<a href="#" data-char="${esc(ref)}">${label}</a>`;
+    if (kind === "skill") return `<a href="#" data-skill="${esc(ref)}">${label}</a>`;
+    if (kind === "card") return `<a href="#" data-cardname="${esc(ref)}">${label}</a>`;
+    return label;
+  });
+}
+function deckFmt(n) { return D.rush.some(d => d.name === n) && !D.speed.some(d => d.name === n) ? "rush" : "speed"; }
+function srcLinks(keys, quotes) {
+  if (!keys || !keys.length) return "";
+  return '<div class="src">Source: ' + keys.map(k => { const s = own(D.src, k) ? D.src[k] : null;
+    return s ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> (${esc(s.date)})` : esc(k); }).join("; ")
+    + (quotes && quotes.length ? `. It says: ${quotes.map(q => `<span class="quote">\u201c${esc(q)}\u201d</span>`).join(" ")}` : "") + "</div>";
+}
+
+/* ---------- navigation ---------- */
+const HOW = Object.fromEntries(D ? D.howto.sections.map(s => [s.id, s]) : []);
+const NAV = [
+  ["Start here", [["home", "Home"], ["start", "Come back after a break"], ["about", "About Speed and Rush"]]],
+  ["Meta", [["meta", "Speed meta decks"], ["rush", "Rush meta decks"], ["tiers", "Tier list"], ["staples", "Staple cards"]]],
+  ["How to play well", [["ranked", "Climb Ranked Duels"], ["kccup", "Play the KC Cup"], ["deckbuild", "Build a meta deck"], ["unlock", "Unlock characters"]]],
+  ["Free to play", [["gems", "Farm Gems"], ["spend", "Spend Gems"], ["boxes", "Box priority"], ["loop", "Monthly events loop"]]],
+  ["Reference", [["cards", "All cards"], ["skills", "Skills"], ["chars", "Characters"], ["banlist", "Banlist"], ["events", "Events"]]],
+  ["More", [["videos", "Videos"], ["sources", "Sources and method"]]],
+];
+function drawNav() {
+  const counts = {meta: D.speed.length, rush: D.rush.length, cards: D.meta.counts.cards, skills: D.meta.counts.skills, chars: D.meta.counts.chars,
+    boxes: D.boxes.length, staples: D.staples.speed.length + D.staples.rush.length};
+  $("#nav").innerHTML = NAV.map(([g, items]) => `<div class="grp">${esc(g)}</div>` + items.map(([id, lab]) =>
+    `<a href="#${id}" data-r="${id}">${esc(lab)}${counts[id] ? `<span class="n">${counts[id]}</span>` : ""}</a>`).join("")).join("");
+}
+function checkedLine() {
+  const m = D.meta;
+  return `Game version <b>${esc(m.version)}</b> (App Store, ${esc(m.version_date)}). Last checked against `
+    + `<a href="https://www.duellinksmeta.com/tier-list/" target="_blank" rel="noopener">Duel Links Meta</a> and `
+    + `<a href="https://yugipedia.com/wiki/Yu-Gi-Oh!_Duel_Links" target="_blank" rel="noopener">Yugipedia</a> on ${esc(m.pulled)}. `
+    + `Meta window: ${esc(m.since)} to ${esc(m.pulled)}.`;
+}
+
+/* ---------- pages ---------- */
+function sec(title, extra) { return `<div class="sec"><h2>${esc(title)}</h2></div>` + (extra || ""); }
+function agreeTag(d) {
+  if (d.fmt === "rush") return (d.agree === "both" ? '<span class="pill ok">Top in both result sets</span><span class="pill">Single source (Duel Links Meta results)</span>'
+    : d.agree === "results" ? '<span class="pill">Top in one result set</span>' : '<span class="pill">Low data</span>') + rushCreator(d);
+  const indep = (d.creator || []).length ? '<span class="pill gold">Named by a creator</span>' : '<span class="pill warn">No independent source</span>';
+  if (d.agree === "both") return '<span class="pill ok">Tier list + results</span><span class="pill">One publisher</span>' + indep;
+  if (d.agree === "tier") return '<span class="pill warn">Tier list only, few results</span>' + indep;
+  if (d.agree === "results") return '<span class="pill">Results only</span>';
+  return '<span class="pill">Low data</span>';
+}
+function rushCreator(d) {
+  const c = (d.creator || [])[0];
+  return c ? `<span class="pill gold">Creator: ${esc(c.rating)}</span>` : (D.rush_rating || []).length ? '<span class="pill">No creator rating</span>' : "";
+}
+function rushRatingBox() {
+  return (D.rush_rating || []).map(r => `<details class="more"><summary>Creator tier list: ${esc(r.channel)}, ${esc(r.date)}</summary>`
+    + `<p class="small"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>, ${esc(r.channel)}, uploaded ${esc(r.date)}. This guide reads the tiers from the video's chapter titles as YouTube shows them (pulled ${esc(r.fetched)}); the video was not watched, and chapter titles written from speech can mishear names.${r.description_links_dlm ? " The description points viewers to the tournament results on Duel Links Meta, so this rating may rest on the same data as the results." : ""}</p>`
+    + `<div class="tw"><table class="stack"><tr><th>Chapter</th><th>Rating</th><th>Duel Links Meta deck type</th></tr>${r.rows.map(x => `<tr><td data-l="Chapter">${esc(x.chapter)}</td><td data-l="Rating">${esc(x.rating)}</td><td data-l="Deck type">${x.deck ? linkDeck(x.deck) + (x.why ? ` <span class="muted small">(${esc(x.why)})</span>` : "") : '<span class="muted">No matching deck type in the results</span>'}</td></tr>`).join("")}</table></div>`
+    + `<p class="small muted">Not named in any chapter: ${D.rush.filter(d => !(d.creator || []).length).map(d => linkDeck(d.name)).join(", ") || "none"}.</p></details>`).join("");
+}
+function tierBadge(d) {
+  if (d.fmt === "rush") return `<span class="tierb t0">#${d.pos}</span>`;
+  return d.tier ? `<span class="tierb t${d.tier}">Tier ${d.tier}</span>` : '<span class="tierb t0">Untiered</span>';
+}
+function deckIcon(d) { const id = (d.core[0] || {}).id || ((d.lists[0] || {}).main || [[null]])[0][0]; return id ? img(id) : "icon-192.png"; }
+function deckTile(d, total) {
+  return `<a class="panel deck" href="#deck/${d.fmt}/${esc(d.slug)}"><img loading="lazy" src="${deckIcon(d)}" alt="">`
+    + `<div><h3>${esc(d.name)}</h3><div class="pills">${tierBadge(d)}${agreeTag(d)}</div>`
+    + `<div class="small muted">${d.n60} lists in ${D.meta.window} days (${pct(d.share)}) · ${d.n30} in the last 30</div>`
+    + `<div class="bar"><i style="width:${Math.min(100, d.share * 100 / (total || 1) * 4).toFixed(1)}%"></i></div></div></a>`;
+}
+
+function pHome() {
+  const m = D.meta;
+  const both = D.speed.filter(d => d.agree === "both");
+  const rboth = D.rush.filter(d => d.agree === "both");
+  const tiles = [["meta", "Speed meta", D.speed.length + " decks", "Tier list plus 60 days of results, full lists."],
+    ["rush", "Rush meta", D.rush.length + " decks", "No Duel Links Meta tier list: King of Games and tournament results compared" + ((D.rush_rating || []).length ? ", plus one creator rating." : ".")],
+    ["start", "Come back after a break", HOW.start.steps.length + " steps", "The shortest path back into ranked."],
+    ["cards", "All cards", num(m.counts.cards), "Every card in a meta list, a banlist or a level reward."],
+    ["skills", "Skills", num(m.counts.skills), "Who has each skill and how often it wins."],
+    ["chars", "Characters", num(m.counts.chars), "Unlock missions and level rewards."],
+    ["boxes", "Box priority", "Speed + Rush", "Which box covers the most meta cards."],
+    ["gems", "Farm Gems", num((D.gems[0] || {}).total) + " last month", "Every Gem source from the latest Gems Report" + ((D.gems[0] || {}).oneoff ? ` (includes a one-off ${num(D.gems[0].oneoff)} Thank-You gift).` : ".")]];
+  return `<div class="hero"><img class="bg" src="assets/keyart.webp" alt=""><div class="k">Yu-Gi-Oh! Duel Links · Speed and Rush</div>`
+    + `<h1>Duel Links Field Guide</h1><p>The current meta for both formats with full deck lists and dated sources, every card that matters, skills, characters, box priority for free players, gem farming, the banlist, ranked and the KC Cup. Updated ${esc(m.pulled)}.</p>`
+    + `<div class="chips"><a class="btn on" href="#start">Start here</a><a class="btn" href="#meta">Speed meta</a><a class="btn" href="#rush">Rush meta</a><a class="btn" href="#gems">Farm Gems</a></div></div>`
+    + `<div class="note blue"><b>Right now (${esc(m.pulled)}):</b> Tier 1 on the Duel Links Meta council list (${esc(m.tier_date)}) is ${D.speed.filter(d => d.tier === 1).map(d => `<a href="#deck/speed/${esc(d.slug)}">${esc(d.name)}</a>`).join(" and ") || "empty"}. In Speed, ${both.map(d => `<a href="#deck/speed/${esc(d.slug)}">${esc(d.name)}</a>`).join(", ") || "no deck"} are on the Duel Links Meta tier list (${esc(m.tier_date)}) and near the top of the last ${m.window} days of results (both published by Duel Links Meta). In Rush, ${rboth.map(d => `<a href="#deck/rush/${esc(d.slug)}">${esc(d.name)}</a>`).join(", ") || "no deck"} are in the top ${m.rush_top} of both King of Games lists and tournament top cuts (one source: the Duel Links Meta results database).</div>`
+    + sec("What is in this guide") + `<div class="grid">` + tiles.map(([r, t, n, p]) => `<a class="panel tile" href="#${r}"><div><div class="num">${esc(n)}</div><h3>${esc(t)}</h3><p class="small muted">${esc(p)}</p></div></a>`).join("") + `</div>`
+    + sec("Search") + `<p class="lead">The search box on the left finds cards, decks, skills, characters, boxes and pages. Press <b>/</b> to jump to it.</p>`
+    + sec(`Tier 1 on the council list (${m.tier_date})`) + `<p class="small muted">The Duel Links Meta Top Player Council's top group, whatever its share of results. <a href="#tiers">Open the tier list</a>.</p><div class="decks">${D.speed.filter(d => d.tier === 1).map(d => deckTile(d, 1)).join("") || '<p class="muted">No Tier 1 deck in the data.</p>'}</div>`
+    + sec("Top Speed decks: tier list + results") + `<div class="decks">${both.map(d => deckTile(d, 1)).join("")}</div>`;
+}
+
+function pHowto(id) {
+  const s = HOW[id];
+  if (!s) return pNotFound();
+  let h = `<h1>${esc(s.title)}</h1><p class="need">${esc(s.need || "")}</p><ol class="steps">`
+    + s.steps.map(st => `<li>${prose(st.t)}${srcLinks(st.src, st.q)}</li>`).join("") + `</ol>`;
+  if (s.check) h += `<p class="note">${prose(s.check)}</p>`;
+  if (id === "ranked") h += tRanked();
+  if (id === "kccup") h += tKcc();
+  if (id === "gems") h += tGems();
+  if (id === "loop") h += tLoop();
+  if (id === "spend") h += `<p><a class="btn" href="#boxes">Open Box priority</a> <a class="btn" href="#staples">Open Staples</a></p>`;
+  const v = {ranked: "topic:meta", kccup: "topic:kccup", gems: "topic:f2p", spend: "topic:f2p", start: "topic:return"}[id];
+  if (v) h += topicVids(v, "Videos");
+  return h;
+}
+function pAbout() {
+  const a = D.howto.about;
+  return `<h1>${esc(a.title)}</h1>` + a.paras.map(p => `<div class="panel" style="margin:10px 0;max-width:1100px"><p>${prose(p.t)}</p>${srcLinks(p.src, p.q)}</div>`).join("")
+    + sec("Words this guide uses") + `<dl class="gloss">${(a.terms || []).map(g => `<dt>${esc(g.term)}</dt><dd>${prose(g.t)}${srcLinks(g.src, g.q)}</dd>`).join("")}</dl>`
+    + topicVids("topic:rush", "Rush Duel videos");
+}
+function tRanked() {
+  return sec("Rank-up rewards (once per month)") + `<p class="small muted">From Yugipedia, Ranked Duels (Duel Links).</p><div class="tw"><table><tr><th>Rank</th><th class="r">Gems</th></tr>`
+    + D.rankup.map(r => `<tr><td>${esc(r[0])}</td><td class="r">${esc(r[1])}</td></tr>`).join("") + `</table></div>`
+    + sec("Cumulative win rewards, November 2026") + `<details class="more"><summary>Show all ${D.ranked_cum.length} reward steps</summary><div class="tw"><table><tr><th class="r">Wins</th><th>Reward</th></tr>`
+    + D.ranked_cum.map(r => `<tr><td class="r">${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("") + `</table></div></details>` + srcLinks(["art:news_november_2026_ranked_duels_rewards"]);
+}
+function tKcc() {
+  const m = D.meta;
+  return sec("Start level by last month's rank") + `<div class="tw"><table><tr><th>Rank</th><th>Starting DLv.</th></tr>` + D.kc_start.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("") + `</table></div>`
+    + sec("Stage 1 DLv. rewards, November 2026") + `<div class="tw"><table><tr><th class="r">DLv.</th><th>Reward</th></tr>` + D.kc_dlv.map(r => `<tr><td class="r">${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("") + `</table></div>`
+    + srcLinks(["art:tournaments_2026_nov_kc_cup"])
+    + sec("Decks that reached DLv. Max, November 2026") + `<p class="small muted">${m.kcc_total} lists submitted to Duel Links Meta with the KC Cup DLv. Max tag since 2026-11-01.</p><div class="tw"><table><tr><th>Deck</th><th class="r">Lists</th><th class="r">Share</th></tr>`
+    + m.kcc_month.map(([n, k]) => `<tr><td>${linkDeck(n)}</td><td class="r">${k}</td><td class="r">${pct(k / (m.kcc_total || 1))}</td></tr>`).join("") + `</table></div>`;
+}
+function linkDeck(n) { const d = D.speed.find(x => x.name === n) || D.rush.find(x => x.name === n); return d ? `<a href="#deck/${d.fmt}/${esc(d.slug)}">${esc(n)}</a>` : esc(n); }
+function tGems() {
+  return D.gems.map((g, i) => {
+    const body = `<div class="grid two">${g.sections.map(s => `<div class="panel"><h3>${esc(s.name)}</h3><div class="tw"><table>${s.rows.map(r => `<tr><td>${esc(r[0])}</td><td class="r">+${num(r[1])}</td></tr>`).join("")}</table></div></div>`).join("")}</div>`
+      + (g.extra.length ? `<p class="small muted">Also: ${g.extra.map(esc).join(", ")}.</p>` : "") + (g.box_cost.length ? `<p class="small"><b>Cost to Keep Up</b> (buying three runs of each new box, the report's price for the three UR copies usually needed): ${g.box_cost.map(([b, c]) => `${esc(b)}: <b>${esc(c)}</b>`).join("; ")}.</p>` : "");
+    return sec(`${g.title}: ${num(g.total)} Gems`) + `<p class="small"><a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.title)}</a>, Duel Links Meta, ${esc(g.date)}</p>`
+      + (i === 0 ? body : `<details class="more"><summary>Show the breakdown</summary>${body}</details>`);
+  }).join("");
+}
+function tLoop() {
+  return sec("Recurring events and posts since " + D.meta.first_index) + `<p class="small muted">Counted from Duel Links Meta article titles; "Last" links the newest one.</p><div class="tw"><table class="stack"><tr><th>Type</th><th class="r">Times</th><th>Last</th></tr>`
+    + D.loop.map(e => `<tr><td data-l="Type">${esc(e.type)}</td><td class="r" data-l="Times">${e.count}</td><td data-l="Last"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a> <span class="muted small">${esc(e.date)}</span></td></tr>`).join("") + `</table></div>`;
+}
+
+const KIND = {kog: "King of Games", kcc: "KC Cup DLv. Max", tournament: "tournament top cuts", spicy: "Spicy Win Streaks", other: "other tags"};
+function kindsLine(k) { return Object.entries(k || {}).sort((a, b) => b[1] - a[1]).map(([x, n]) => `${num(n)} ${esc(KIND[x] || x)}`).join(", "); }
+function metaIntro(fmt) {
+  const m = D.meta;
+  if (fmt === "speed") return `<p class="lead">A deck is marked <b>Tier list + results</b> when it is on the Duel Links Meta tier list (Top Player Council, <a href="${esc(m.tier_url)}" target="_blank" rel="noopener">${esc(m.tier_title)}, ${esc(m.tier_date)}</a>) <b>and</b> in the top ${m.result_top} by submitted results with at least ${pct(m.result_min_share)} of the ${num(m.total_speed)} lists from ${esc(m.since)} to ${esc(m.pulled)}: ${kindsLine(m.kinds_speed)}.</p>`
+    + `<details class="more"><summary>One publisher: how independent are these sources?</summary><p class="small"><b>One publisher.</b> The tier list (the council's opinion) and the results (the raw lists) are both published by Duel Links Meta, so they are not two independent sources. No independent tier list dated in the window was found. <b>Source C</b> is outside Duel Links Meta: ${(D.video_checks || []).length} dated creator video${(D.video_checks || []).length === 1 ? "" : "s"} on the meta and the KC Cup, whose chapter titles and titles (and English captions where YouTube allowed it) this guide checked for deck names (<b>Named by a creator</b>). Naming a deck is weaker than rating it; open a deck's Sources to see what each video says.</p></details>`;
+  const rr = (D.rush_rating || [])[0];
+  return `<p class="lead">Duel Links Meta keeps no tier list for Rush. A deck is marked <b>Top in both result sets</b> when it is in the top ${m.rush_top} by King of Games lists <b>with at least ${m.rush_min_kog}</b> of them, <b>and</b> in the top ${m.rush_top} by community tournament top cuts <b>with at least ${m.rush_min_tour}</b>, from ${esc(m.since)} to ${esc(m.pulled)} (${num(m.total_rush)} lists). A deck that meets only one of the two is <b>Top in one result set</b>.${rr ? ` <b>Creator: Tier N</b> is the rating in one dated creator tier list (${esc(rr.channel)}, ${esc(rr.date)}).` : ""}</p>`
+    + `<details class="more"><summary>Single source: how far to trust this</summary><p class="small"><b>Single source.</b> Both result sets come from the Duel Links Meta database, so they are one source, not two that agree. Rush data is thin: treat the order below the top few decks as rough.${rr ? ` The creator tier list is a second, dated opinion, but it does not always agree: its Tier 1 (${rr.rows.filter(x => x.rating === "Tier 1").map(x => esc(x.name)).join(", ")}) ${rr.rows.some(x => x.rating === "Tier 1" && x.deck) ? "" : "matches no deck type in the results, and "}the #1 deck by results, ${esc(D.rush[0].name)}, ${(D.rush[0].creator || []).length ? "is rated " + esc(D.rush[0].creator[0].rating) : "is not named in any chapter"}.` : ""}</p></details>` + rushRatingBox();
+}
+let metaFilter = "all";
+function pMeta(fmt) {
+  const list = D[fmt];
+  const f = metaFilter;
+  const shown = list.filter(d => f === "all" || d.agree === f);
+  return `<h1>${fmt === "speed" ? "Speed" : "Rush"} meta decks</h1>` + metaIntro(fmt)
+    + `<div class="tabs">${(fmt === "speed" ? [["all", "All"], ["both", "Tier list + results"], ["tier", "Tier list only"], ["results", "Results only"]] : [["all", "All"], ["both", "Top in both result sets"], ["results", "Top in one result set"]])
+      .map(([k, l]) => `<button class="btn ${f === k ? "on" : ""}" data-mf="${k}">${l}</button>`).join("")}</div>`
+    + `<div class="decks">${shown.map(d => deckTile(d, 1)).join("") || '<p class="muted">No deck in this group.</p>'}</div>`
+    + (fmt === "rush" ? topicVids("topic:rush", "Rush videos") : "");
+}
+
+function pDeck(fmt, s) {
+  if (fmt !== "speed" && fmt !== "rush") return pNotFound();
+  const d = D[fmt].find(x => x.slug === s);
+  if (!d) return pNotFound("Deck not found.");
+  const m = D.meta;
+  const srcA = fmt === "speed"
+    ? `<li>Tier list: ${d.tier ? "Tier " + d.tier : "not on the tier list"}. <a href="${esc(m.tier_url)}" target="_blank" rel="noopener">${esc(m.tier_title)}</a>, Duel Links Meta Top Player Council, ${esc(m.tier_date)}.</li>`
+    : `<li>King of Games lists: ${d.kog} (rank #${d.kog_pos} of ${D.rush.length}; needs the top ${m.rush_top} and at least ${m.rush_min_kog}), ${esc(m.since)} to ${esc(m.pulled)}. Duel Links Meta results database.</li>`;
+  const srcB = fmt === "speed"
+    ? `<li>Results: ${d.n60} lists (#${d.pos}, ${pct(d.share)}): ${d.kog} King of Games, ${d.kcc} KC Cup DLv. Max, ${d.tour} tournament top cuts (${d.tour_wins} ${d.tour_wins === 1 ? "win" : "wins"}), ${esc(m.since)} to ${esc(m.pulled)}, newest ${esc(d.last)}. <a href="${esc(d.dlm)}" target="_blank" rel="noopener">Deck type on Duel Links Meta</a>.</li>`
+    : `<li>Community tournament top cuts: ${d.tour} (rank #${d.tour_pos}; needs the top ${m.rush_top} and at least ${m.rush_min_tour}), ${d.tour_wins} ${d.tour_wins === 1 ? "win" : "wins"}, newest ${esc(d.last)}. Same database, so Rush lines rest on a single source.</li>`;
+  const srcC = (fmt === "speed" ? d.creator || [] : []).map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>, ${esc(c.channel)}, ${esc(c.date)}: names ${esc(d.name)} in ${c.chapters.map(x => ({"(no chapters)": "its captions", "(video title)": "its title", "(description)": "its description"})[x] || "the chapter \u201c" + esc(x) + "\u201d").join(", ")}.</li>`).join("");
+  const vids = (d.videos || []).map(v => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a>, ${esc(v.channel)}, ${esc(v.date)}${v.lang_name && v.lang_name !== "English" ? ` (${esc(v.lang_name)})` : ""}</li>`).join("");
+  let h = `<p class="small"><a href="#${fmt === "speed" ? "meta" : "rush"}">${fmt === "speed" ? "Speed" : "Rush"} meta</a> /</p>`
+    + `<div class="panel"><div class="deck" style="cursor:default"><img src="${deckIcon(d)}" alt=""><div><h1 style="margin:0">${esc(d.name)}</h1><div class="pills">${tierBadge(d)}${agreeTag(d)}`
+    + `<button class="btn" data-srcbox="sb-${esc(d.slug)}" aria-expanded="false">Sources (${fmt === "speed" ? 2 + (d.creator || []).length : 1 + (d.creator || []).length})</button></div></div></div>`
+    + `<div class="srcbox" id="sb-${esc(d.slug)}"><b>Source A</b><ul>${srcA}</ul><b>Source B</b><ul>${srcB}</ul>`
+    + (fmt === "speed" ? `<b>Source C: creator videos that name this deck</b>` + (srcC ? `<ul>${srcC}</ul>` : `<p class="small muted">None. No checked meta or KC Cup video (${(D.video_checks || []).length} so far) names this deck, so it has no source outside Duel Links Meta. The deck videos below were found by a search for the deck name and are not checked or counted.</p>`)
+      : `<b>Source C: creator tier list</b>` + ((d.creator || []).length ? `<ul>${d.creator.map(c => `<li>${esc(c.rating)} in <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>, ${esc(c.channel)}, ${esc(c.date)}: chapter “${esc(c.chapter)}”${c.why ? ` (read as ${esc(d.name)}: ${esc(c.why)})` : ""}.</li>`).join("")}</ul>` : `<p class="small muted">None. ${(D.rush_rating || []).length ? "The dated creator tier list (" + esc(D.rush_rating[0].channel) + ", " + esc(D.rush_rating[0].date) + ") names this deck in no chapter." : "No dated creator rating was found."}</p>`))
+    + (vids ? `<b>Deck videos (found by a search rule, not reviewed; not counted as a source)</b><ul>${vids}</ul>` : "") + `</div>`
+    + `<div class="list-meta"><span><b>${d.n60}</b> lists in ${m.window} days</span><span><b>${d.n30}</b> in the last 30</span><span>Share <b>${pct(d.share)}</b></span>`
+    + (d.gems_median ? `<span>Median price <b>${num(d.gems_median)}</b> Gems (Duel Links Meta estimate)</span>` : "") + `</div>`
+    + `<p><b>Skill:</b> ${d.skills.map(([n, k]) => `<a href="#" data-skill="${esc(n)}">${esc(n)}</a> (${k} of ${d.n60})`).join(", ")}</p></div>`;
+  if (d.core.length) h += sec("Core cards") + `<p class="small muted">Share of this deck's recent lists that play the card (Duel Links Meta deck breakdown), and the usual number of copies.</p><div class="cardgrid">`
+    + d.core.map(c => yc(c.id, {count: c.at, pc: c.per + "%"})).join("") + `</div>`;
+  h += sec("Full deck lists") + `<div class="tabs">${d.lists.map((l, i) => `<button class="btn ${i ? "" : "on"}" data-list="${i}">${esc(l.date)} · ${esc(l.kind === "kog" ? "King of Games" : l.kind === "kcc" ? "KC Cup DLv. Max" : l.kind === "tournament" ? "Tournament" : l.src)}${l.pre_ban ? " · before banlist" : ""}</button>`).join("")}</div>`
+    + (d.lists.some(l => l.pre_ban) ? `<p class="note small">Lists marked <b>before banlist</b> were submitted before the Forbidden/Limited List changed on ${esc(m.ban_date)}. Check every card against the <a href="#banlist">Banlist</a> before you copy one.</p>` : "")
+    + (d.illegal_lists ? `<p class="small muted">${d.illegal_lists} of this deck's ${d.n60} lists are flagged illegal under the current banlist by Duel Links Meta and are not shown.</p>` : "")
+    + d.lists.map((l, i) => `<div class="dl" data-li="${i}" ${i ? "hidden" : ""}><div class="list-meta"><span>${esc(l.src)}</span><span>${esc(l.date)}</span>${l.pre_ban ? `<span class="pill warn">Before the ${esc(m.ban_date)} banlist</span>` : ""}<span>Skill: <a href="#" data-skill="${esc(l.skill)}">${esc(l.skill)}</a></span>`
+      + (l.gems ? `<span>${num(l.gems)} Gems (Duel Links Meta estimate)</span>` : "") + (l.report ? `<a href="${esc(l.report)}" target="_blank" rel="noopener">Tournament report</a>` : "") + `</div>`
+      + `<div class="sub">Main deck (${l.main.reduce((a, x) => a + x[1], 0)})</div><div class="cardgrid sm">${l.main.map(x => yc(x[0], {count: x[1]})).join("")}</div>`
+      + (l.extra.length ? `<div class="sub">Extra deck (${l.extra.reduce((a, x) => a + x[1], 0)})</div><div class="cardgrid sm">${l.extra.map(x => yc(x[0], {count: x[1]})).join("")}</div>` : "")
+      + (l.side.length ? `<details class="more"><summary>Side deck (${l.side.reduce((a, x) => a + x[1], 0)})</summary><div class="cardgrid sm">${l.side.map(x => yc(x[0], {count: x[1]})).join("")}</div></details>` : "")
+      + `</div>`).join("");
+  if ((d.videos || []).length) h += sec("Videos") + vidGrid(d.videos);
+  else h += sec("Videos") + `<p class="muted">No guide video from the last ${m.window} days matched the search rule. <a href="https://www.youtube.com/results?search_query=${encodeURIComponent("duel links " + d.name + " deck")}" target="_blank" rel="noopener">Search YouTube</a>.</p>`;
+  return h;
+}
+
+function pTiers() {
+  const m = D.meta;
+  const rows = [1, 2, 3].map(t => {
+    const ds = D.speed.filter(d => d.tier === t);
+    return `<div class="panel" style="display:grid;grid-template-columns:96px 1fr;gap:14px;margin:10px 0;align-items:center"><span class="tierb t${t}" style="height:44px;font-size:1rem">Tier ${t}</span><div class="chips">${ds.map(d => `<a class="btn" href="#deck/speed/${esc(d.slug)}">${esc(d.name)} <span class="muted small">${pct(d.share)}</span></a>`).join("") || '<span class="muted">none</span>'}</div></div>`;
+  }).join("");
+  return `<h1>Tier list</h1><p class="lead"><b>Whose rating:</b> the Duel Links Meta Top Player Council, <a href="${esc(m.tier_url)}" target="_blank" rel="noopener">${esc(m.tier_title)}</a> (${esc(m.tier_date)}). <b>What the numbers mean</b> (this guide's summary: the pulled Duel Links Meta pages give no written definition): the council sorts decks into numbered groups, Tier 1 first. ${prose(D.howto.notes.tiers.t)} The percentage beside each deck is its share of the ${num(m.total_speed)} result lists from ${esc(m.since)} to ${esc(m.pulled)} (this guide's count, not the council's).</p>`
+    + srcLinks(D.howto.notes.tiers.src, D.howto.notes.tiers.q) + rows
+    + sec("Rush: results ranking (no Duel Links Meta tier list)") + `<p class="lead">Order by number of lists from ${esc(m.since)} to ${esc(m.pulled)}. This is a count, not a rating.</p><div class="tw"><table class="stack"><tr><th class="r">#</th><th>Deck</th><th class="r">Lists</th><th class="r">King of Games</th><th class="r">Tournament tops</th><th>Creator rating</th><th>Sources</th></tr>`
+    + D.rush.map(d => `<tr><td class="r" data-l="#">${d.pos}</td><td data-l="Deck"><a href="#deck/rush/${esc(d.slug)}">${esc(d.name)}</a></td><td class="r" data-l="Lists">${d.n60}</td><td class="r" data-l="King of Games">${d.kog}</td><td class="r" data-l="Top cuts">${d.tour}</td><td data-l="Rating">${(d.creator || []).length ? esc(d.creator[0].rating) : "-"}</td><td data-l="Sources">${agreeTag(d)}</td></tr>`).join("") + `</table></div>`
+    + sec("Speed: results next to the tier list") + `<div class="tw"><table class="stack"><tr><th class="r">#</th><th>Deck</th><th>Tier</th><th class="r">Lists</th><th class="r">Share</th><th class="r">KC Cup Max</th><th class="r">Tour. wins</th><th>Sources</th></tr>`
+    + D.speed.map(d => `<tr><td class="r" data-l="#">${d.pos}</td><td data-l="Deck"><a href="#deck/speed/${esc(d.slug)}">${esc(d.name)}</a></td><td data-l="Tier">${d.tier ? "Tier " + d.tier : "-"}</td><td class="r" data-l="Lists">${d.n60}</td><td class="r" data-l="Share">${pct(d.share)}</td><td class="r" data-l="KC Cup Max">${d.kcc}</td><td class="r" data-l="Tour. wins">${d.tour_wins}</td><td data-l="Sources">${agreeTag(d)}</td></tr>`).join("") + `</table></div>`
+    + topicVids("topic:meta", "Tier list videos");
+}
+
+function pStaples() {
+  const part = (fmt, title) => sec(title) + `<p class="small muted">Cards played in at least 4 different ${fmt === "speed" ? "Speed" : "Rush"} decks in the ${D.meta.window}-day lists. The number on the card is how many decks play it.</p>`
+    + `<div class="cardgrid">${D.staples[fmt].map(s => yc(s.id, {pc: s.decks + " decks"})).join("")}</div>`;
+  return `<h1>Staple cards</h1><p class="lead">Cards that the most different meta decks play, counted by this guide from the dated lists. This guide's view: a card that fits many decks keeps its use when the meta moves. Open a card to see where to get it.</p>` + part("speed", "Speed staples") + part("rush", "Rush staples");
+}
+
+let cf = {q: "", fmt: "all", type: "all", rar: "all", ban: "all", meta: "all", n: 120};
+function pCards() {
+  if (!C) { needCards(route); return "<h1>All cards</h1><p>Loading the card database…</p>"; }
+  const ids = mainIds();
+  const q = cf.q.trim().toLowerCase();
+  const res = ids.filter(id => { const c = C[id];
+    if (cf.fmt !== "all" && (cf.fmt === "rush") !== c.rush) return false;
+    if (cf.type !== "all" && c.t !== cf.type) return false;
+    if (cf.rar !== "all" && c.rar !== cf.rar) return false;
+    if (cf.ban === "any" && !c.ban) return false;
+    if (cf.ban !== "all" && cf.ban !== "any" && c.ban !== cf.ban) return false;
+    if (cf.meta === "yes" && !c.used.length) return false;
+    if (q && !(c.n.toLowerCase().includes(q) || (c.d || "").toLowerCase().includes(q))) return false;
+    return true; }).sort((a, b) => (C[b].used.length - C[a].used.length) || C[a].n.localeCompare(C[b].n));
+  const opt = (k, vals) => `<select data-cf="${k}" aria-label="${k}">${vals.map(([v, l]) => `<option value="${v}" ${cf[k] === v ? "selected" : ""}>${l}</option>`).join("")}</select>`;
+  return `<h1>All cards</h1><p class="lead">${num(ids.length)} cards: every card in a ${D.meta.window}-day meta list (Speed and Rush), every deck's core cards, both banlists, box icons and every character level reward. Cards played in meta decks come first. A reprint is the same card, so each card is shown once.</p>`
+    + `<div class="filters"><input type="search" data-cf="q" value="${esc(cf.q)}" placeholder="Filter by name or text" aria-label="Filter cards">`
+    + opt("fmt", [["all", "Speed + Rush"], ["speed", "Speed"], ["rush", "Rush"]]) + opt("type", [["all", "All types"], ["Monster", "Monsters"], ["Spell", "Spells"], ["Trap", "Traps"]])
+    + opt("rar", [["all", "All rarities"], ["UR", "UR"], ["SR", "SR"], ["R", "R"], ["N", "N"]])
+    + opt("ban", [["all", "Any banlist status"], ["any", "On a banlist"], ["Forbidden", "Forbidden"], ["Limited 1", "Limited 1"], ["Limited 2", "Limited 2"], ["Limited 3", "Limited 3"]])
+    + opt("meta", [["all", "All cards"], ["yes", "In a meta deck"]]) + `</div><p class="small muted" id="ccount">${num(res.length)} cards match.</p>`
+    + `<div class="cardgrid">${res.slice(0, cf.n).map(id => yc(id)).join("")}</div>` + (res.length > cf.n ? `<button class="btn more-btn" data-more="1">Show 120 more</button>` : "");
+}
+
+let sf = {q: "", fmt: "all", use: "all", n: 90};
+function pSkills() {
+  const q = sf.q.trim().toLowerCase();
+  const res = D.skills.filter(s => (sf.fmt === "all" || (sf.fmt === "rush") === s.rush) && (sf.use === "all" || s.use > 0) && (sf.use !== "live" || !s.archive)
+    && (!q || s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q) || s.chars.some(c => c.name.toLowerCase().includes(q))));
+  return `<h1>Skills</h1><p class="lead">${num(D.skills.length)} skills from the Duel Links Meta database. The number shows how many of the ${D.meta.window}-day result lists used the skill. Open a skill to see which characters get it and how.</p>`
+    + `<div class="filters"><input type="search" data-sf="q" value="${esc(sf.q)}" placeholder="Filter by name, text or character" aria-label="Filter skills">`
+    + `<select data-sf="fmt" aria-label="format">${[["all", "Speed + Rush"], ["speed", "Speed"], ["rush", "Rush"]].map(([v, l]) => `<option value="${v}" ${sf.fmt === v ? "selected" : ""}>${l}</option>`).join("")}</select>`
+    + `<select data-sf="use" aria-label="use">${[["all", "All skills"], ["meta", "Used in meta lists"]].map(([v, l]) => `<option value="${v}" ${sf.use === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>`
+    + `<p class="small muted">${num(res.length)} skills match.</p><div class="grid">${res.slice(0, sf.n).map(skillTile).join("")}</div>` + (res.length > sf.n ? `<button class="btn more-btn" data-smore="1">Show 90 more</button>` : "");
+}
+function skillTile(s) {
+  const ch = s.chars[0];
+  return `<div class="panel sk" data-skill="${esc(s.name)}" tabindex="0" role="button"><img loading="lazy" src="${ch ? charImg(ch.name) : "icon-192.png"}" alt="">`
+    + `<div><h3>${esc(s.name)}</h3><div class="pills"><span class="pill">${s.rush ? "Rush" : "Speed"}</span>${s.use ? `<span class="pill gold">${s.use} meta lists</span>` : ""}${s.archive ? '<span class="pill">Archived</span>' : ""}</div><p>${esc(s.desc)}</p></div></div>`;
+}
+
+let chf = {q: "", w: "all"};
+const rewardNote = c => c.npc ? "NPC, no level rewards" : !c.rewards_known ? (c.base ? "Alt Style: level rewards not in source data" : "Level rewards: not in source data") : `${c.rewards.length} level-up cards`;
+function pChars() {
+  const worlds = [...new Set(D.chars.flatMap(c => c.world.split(", ")).filter(Boolean))];
+  const q = chf.q.trim().toLowerCase();
+  const res = D.chars.filter(c => (chf.w === "all" || c.world.split(", ").includes(chf.w)) && (!q || c.name.toLowerCase().includes(q)));
+  return `<h1>Characters</h1><p class="lead">${D.chars.length} characters. Open one for its unlock missions, Gate key, level rewards (cards and skills) and skills.</p>`
+    + `<div class="filters"><input type="search" data-chf="q" value="${esc(chf.q)}" placeholder="Filter by name" aria-label="Filter characters"><select data-chf="w" aria-label="world"><option value="all">All worlds</option>${worlds.map(w => `<option ${chf.w === w ? "selected" : ""}>${esc(w)}</option>`).join("")}</select></div>`
+    + `<div class="chgrid">${res.map(c => `<div class="panel ch" data-char="${esc(c.name)}" tabindex="0" role="button"><img loading="lazy" src="${esc(c.img)}" alt=""><b>${esc(c.name)}</b><span class="tiny muted">${esc(c.world)} · ${rewardNote(c)}</span></div>`).join("")}</div>`;
+}
+
+let bf = {t: "all"};
+const boxFlags = b => (b.paid ? ' <span class="pill warn">Paid Crystals</span>' : "") + (b.old ? ` <span class="pill">${b.release ? "Over " + D.meta.box_old_days + " days old" : "No release date"}: check the shop</span>` : "");
+function pBoxes() {
+  const pr = (fmt) => {
+    const list = D.prio[fmt];
+    if (!list.length) return '<p class="muted">No box holds a core UR/SR of a deck marked Tier list + results or Top in both result sets.</p>';
+    return `<div class="tw"><table class="stack"><tr><th class="r">#</th><th>Box</th><th>Type</th><th>Released</th><th class="r">Score</th><th>Meta decks it feeds (core cards)</th></tr>`
+      + list.map((p, i) => { const b = D.boxes.find(x => x.id === p.id) || {};
+        return `<tr><td class="r" data-l="#">${i + 1}</td><td data-l="Box"><a href="#" data-box="${esc(p.id)}">${esc(b.name)}</a>${boxFlags(b)}</td><td data-l="Type">${esc(b.type)}</td><td class="nw" data-l="Released">${esc(b.release)}</td><td class="r" data-l="Score">${p.score.toFixed(2)}</td><td data-l="Feeds">${Object.entries(p.decks).map(([dn, ids]) => `${linkDeck(dn)} <span class="muted small">(${ids.length})</span>`).join(", ")}</td></tr>`; }).join("") + `</table></div>`;
+  };
+  const types = [...new Set(D.boxes.map(b => b.type))];
+  const res = D.boxes.filter(b => bf.t === "all" || b.type === bf.t);
+  return `<h1>Box priority</h1><p class="lead">A higher score means the box sells more of the UR and SR cards that the top decks play. This is this guide's own count, not an expert ranking. This guide's view: check the box's card list before buying, because a box can be worth it for one deck only.</p>`
+    + `<details class="more"><summary>How the score is counted</summary><p>For every deck marked Tier list + results (Speed) or Top in both result sets (Rush), each UR or SR core card played in at least half of its lists adds (deck share × share of lists playing it × usual copies) to every box that sells it.</p></details>`
+    + `<p class="note small">Whether a box is still sold is not in any data this guide pulls. <b>Paid Crystals</b> marks Selection Boxes: the September 2026 Gems Report says they are \u201cthe only content released that paywall cards needed to compete\u201d. <b>Check the shop</b> marks boxes released more than ${D.meta.box_old_days} days before ${esc(D.meta.pulled)} (this guide's rule), which may have left the shop.</p>`
+    + sec("Speed: boxes that feed the current meta") + pr("speed") + sec("Rush: boxes that feed the current meta") + pr("rush")
+    + topicVids("topic:box", "Box videos")
+    + sec("All boxes") + `<div class="filters"><select data-bf="t" aria-label="box type"><option value="all">All types</option>${types.map(t => `<option ${bf.t === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></div>`
+    + `<div class="cardgrid">${res.map(b => b.icon ? `<button class="yc fr-link" data-box="${esc(b.id)}" title="${esc(b.name)}"><img loading="lazy" src="${img(b.icon)}" alt=""><span class="pc">${esc(b.release.slice(0, 7))}</span><span class="nm">${esc(b.name)}</span></button>` : "").join("")}</div>`;
+}
+
+let banFmt = "speed";
+function pBan() {
+  const B = D.ban[banFmt] || {};
+  const order = ["Forbidden", "Limited 1", "Limited 2", "Limited 3"];
+  const meaning = {"Forbidden": "cannot be used", "Limited 1": "1 card from this group per deck", "Limited 2": "2 cards from this group per deck", "Limited 3": "3 cards from this group per deck"};
+  const ch = D.ban_changes.filter(c => c.fmt === banFmt);
+  const lab = v => /^\d$/.test(v) ? (v === "0" ? "Forbidden" : "Limited " + v) : v;
+  return `<h1>Banlist</h1><p class="lead">The Forbidden/Limited list as stored in the Duel Links Meta card database on ${esc(D.meta.pulled)}. In Duel Links a Limited group caps how many cards <b>from the whole group</b> one deck may hold. The last change was announced on ${esc(D.ban_article ? D.ban_article.date : "?")}.</p>`
+    + `<div class="tabs"><button class="btn ${banFmt === "speed" ? "on" : ""}" data-ban="speed">Speed</button><button class="btn ${banFmt === "rush" ? "on" : ""}" data-ban="rush">Rush</button></div>`
+    + order.filter(k => own(B, k)).map(k => sec(`${k} (${B[k].length})`) + `<p class="small muted">${meaning[k]}</p><div class="cardgrid sm">${B[k].map(id => yc(id)).join("")}</div>`).join("")
+    + (ch.length ? sec("What changed on " + (D.ban_article ? D.ban_article.date : "")) + `<details class="more"><summary>Show the ${ch.length} ${banFmt === "speed" ? "Speed" : "Rush"} changes</summary><div class="tw"><table><tr><th>Card</th><th>From</th><th>To</th></tr>${ch.map(c => `<tr><td><a href="#" data-card="${esc(c.id)}">${esc((card(c.id) || {}).n || c.id)}</a></td><td>${esc(lab(c.from))}</td><td>${esc(lab(c.to))}</td></tr>`).join("")}</table></div></details>` + srcLinks(["art:news_balance_update_2026_september_28"]) : "")
+    + (banFmt === "speed" && D.skill_changes.length ? sec("Skill changes in the same update") + `<ul>${D.skill_changes.map(s => `<li><a href="#" data-skill="${esc(s[0])}">${esc(s[0])}</a>: ${esc(s[1])}</li>`).join("")}</ul>` : "");
+}
+
+function pEvents() {
+  return `<h1>Events</h1><p class="lead">Every event, campaign and news post Duel Links Meta published from ${esc(D.meta.since)} to ${esc(D.meta.pulled)}, newest first. For what to do in each, see <a href="#loop">How to use the monthly events loop</a>.</p>`
+    + `<div class="tw"><table class="stack"><tr><th>Date</th><th>Type</th><th>Post</th></tr>${D.events.slice().reverse().map(e => `<tr><td class="nw" data-l="Date">${esc(e.date)}</td><td data-l="Type">${esc(e.type)}</td><td data-l="Post"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a></td></tr>`).join("")}</table></div>` + tLoop();
+}
+
+function vidGrid(list) {
+  return `<div class="vids">${list.map(v => `<div class="vid"><div class="frame"><button data-yt="${esc(v.videoId)}" aria-label="Play ${esc(v.title)}"><span class="vt">${esc(v.title)}</span><span>Play video</span></button></div>`
+    + `<div class="small muted" style="margin-top:6px">${esc(v.channel)} · ${esc(v.date)} · ${esc(v.lang_name || "language not set")} · <a href="${esc(v.url)}" target="_blank" rel="noopener">Open on YouTube</a></div></div>`).join("")}</div>`;
+}
+function topicVids(k, title) {
+  const list = own(D.videos, k) ? D.videos[k] : [];
+  return sec(title) + (list.length ? vidGrid(list)
+    : `<p class="muted">No recent video found: nothing uploaded from ${esc(D.meta.videos_min)} on matched the search rule (searched ${esc(D.meta.videos_searched)}).</p>`);
+}
+function pVideos() {
+  const labels = {"topic:meta": "Meta and tier lists", "topic:kccup": "KC Cup", "topic:rush": "Rush Duel", "topic:f2p": "Free to play and Gems", "topic:return": "New and returning players", "topic:box": "Boxes"};
+  let h = `<h1>Videos</h1><p class="lead">Picked by a search rule (title names the topic and Duel Links, longer than 3 minutes, one per channel, newest first), all uploaded from ${esc(D.meta.videos_min)} on (searched ${esc(D.meta.videos_searched)}). English videos come first in each topic; every video shows its language as the uploader set it. Nothing is downloaded: the player loads from youtube-nocookie.com when you press Play.</p>`;
+  for (const [k, l] of Object.entries(labels)) h += topicVids(k, l);
+  for (const d of D.speed.concat(D.rush)) if ((d.videos || []).length) h += sec(d.name + (d.fmt === "rush" && !/rush!?$/i.test(d.name) ? " (Rush)" : "")) + vidGrid(d.videos);
+  return h;
+}
+
+function pSources() {
+  const m = D.meta;
+  return `<h1>Sources and method</h1>`
+    + `<div class="grid">${[["Speed decks", m.counts.speed_decks], ["Rush decks", m.counts.rush_decks], ["Speed lists", m.total_speed], ["Rush lists", m.total_rush], ["Cards", m.counts.cards], ["Skills", m.counts.skills], ["Characters", m.counts.chars], ["Boxes", m.counts.boxes]]
+      .map(([l, n]) => `<div class="panel"><div class="num" style="font-weight:800;font-size:1.6rem;color:var(--gold2)">${num(n)}</div><div class="muted">${l}</div></div>`).join("")}</div>`
+    + sec("Sources") + `<div class="tw"><table><tr><th>Source</th><th>Used for</th><th>Checked</th></tr>${D.sources.map(s => `<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td>${esc(s.what)}</td><td class="nw">${esc(s.date)}</td></tr>`).join("")}</table></div>`
+    + sec("Method") + `<ul class="lead">`
+    + `<li>All facts come from pulls cached in <code>data/raw/</code> with a fetch log. The build stops if a how-to number is not in its cited page, or a card, skill, character, deck or box name does not resolve.</li>`
+    + `<li>Meta window: lists submitted to Duel Links Meta from ${esc(m.since)} to ${esc(m.pulled)} (${m.window} days): ${kindsLine(m.kinds_speed)} in Speed; ${kindsLine(m.kinds_rush)} in Rush.</li>`
+    + `<li>Speed "Tier list + results" = on the Top Player Council tier list (${esc(m.tier_date)}) and in the top ${m.result_top} by lists with at least ${pct(m.result_min_share)} share. Both come from Duel Links Meta, so the pill also says "One publisher". "Named by a creator" = source C, a dated video outside Duel Links Meta whose chapter titles, title or English captions name the deck (descriptions are not counted: many are keyword lists).</li>`
+    + `<li>Rush "Top in both result sets" = top ${m.rush_top} by King of Games lists (at least ${m.rush_min_kog}) and top ${m.rush_top} by tournament top cuts (at least ${m.rush_min_tour}). This is a single source (the Duel Links Meta database). Rush "Creator: Tier N" = the tier in a dated creator tier list video, read from its chapter titles; content/rush_aliases.json lists each chapter name that is read as a differently spelled deck type, with the reason.</li>`
+    + `<li>Full lists: never one that Duel Links Meta flags as illegal under the current banlist; lists from on or after the ${esc(m.ban_date)} banlist come first, older ones are marked "before banlist".</li>`
+    + `<li>Every sourced how-to step shows a short quote from its source; the build stops if the quote is not in the cached page.</li>`
+    + `<li>Box priority and staples are this guide's own counts from those lists and the deck breakdowns, not expert opinion.</li>`
+    + `<li>Players are never named: decks show the event, placement and date only.</li></ul>`
+    + sec("Not verified or missing") + `<ul class="lead">`
+    + `<li>Speed sources A and B come from one publisher (Duel Links Meta). No independent Speed tier list dated in the last 60 days was found; Speed source C only shows that a creator names a deck, not how they rate it.</li>`
+    + `<li>Rush has no tier list on Duel Links Meta; its ranking is a single-source count of ${num(m.total_rush)} lists and is thin below the top few decks. ${(D.rush_rating || []).length ? `One dated creator tier list (${esc(D.rush_rating[0].channel)}, ${esc(D.rush_rating[0].date)}) is shown as source C, read from its chapter titles only; ${D.rush_rating[0].rows.filter(x => !x.deck).length} of its ${D.rush_rating[0].rows.length} chapter names match no deck type in the results${D.rush_rating[0].description_links_dlm ? ", and its description points to the Duel Links Meta results, so it may rest on the same data" : ""}.` : "No dated creator rating was found."}</li>`
+    + `<li>Win rates are not published for Duel Links; "share" counts lists that did well, so popular decks are over-represented.</li>`
+    + `<li>Gem prices per list are Duel Links Meta estimates. Box availability (whether an old box is still sold) is not in the data. Some characters have no level rewards in the Duel Links Meta record; they say "not in source data".</li>`
+    + `<li>Event and reward tables are from the month named on them; Konami changes them each month.</li>`
+    + `<li>Videos are picked by a search rule and not watched; some are not in English and are labelled. Source C reads auto-captions, which can mishear names.</li></ul>`;
+}
+
+function pNotFound(msg) { return `<h1>Page not found</h1><p>${esc(msg || "That page does not exist.")} <a href="#home">Go to the home page</a>.</p>`; }
+
+/* ---------- modals ---------- */
+function openModal(h) { $("#mbody").innerHTML = h; $("#modal").classList.add("on"); document.body.style.overflow = "hidden"; $("#mclose").focus(); }
+function closeModal() { $("#modal").classList.remove("on"); document.body.style.overflow = ""; $("#mbody").innerHTML = ""; }
+function cardModal(id) {
+  needCards(() => {
+    const c = card(id);
+    if (!c) { openModal("<h2>Card not found</h2>"); return; }
+    const stats = [["Format", c.rush ? "Rush" : "Speed"], ["Type", [c.t, c.race].filter(Boolean).join(" / ")], ["Kind", (c.mt || []).join(", ")], ["Attribute", c.attr],
+      ["Level", c.lv], ["ATK / DEF", c.atk != null ? `${c.atk} / ${c.def != null ? c.def : "-"}` : null], ["Banlist", c.ban || "Unlimited"], ["Legend card", c.leg ? "Yes" : null]].filter(x => x[1] != null && x[1] !== "");
+    const boxes = c.box.map(b => { const x = D.boxes.find(y => y.id === b); return x ? `<a href="#" data-box="${esc(b)}">${esc(x.name)}</a> <span class="muted small">(${esc(x.type)})</span>` : ""; }).filter(Boolean);
+    openModal(`<div class="cd"><div class="art ${frame(c)}"><img src="${img(id)}" alt="${esc(c.n)}"></div><div><h2>${esc(c.n)}</h2><div class="pills">${rar(c.rar)}${c.ban ? `<span class="pill warn">${esc(c.ban)}</span>` : ""}</div>`
+      + `<div class="kv">${stats.map(([k, v]) => `<b>${esc(k)}</b><span>${esc(v)}</span>`).join("")}</div><div class="ctext">${esc(c.d)}</div>`
+      + `<div class="sub">How to get it</div>${c.ob.length ? `<ul>${c.ob.map(o => `<li>${esc(o)}</li>`).join("")}</ul>` : '<p class="muted">No source listed in the data.</p>'}`
+      + (boxes.length ? `<div class="sub">Boxes</div><p>${boxes.join(", ")}</p>` : "")
+      + ((c.pr || []).length > 1 || c.np > 1 ? `<div class="sub">Prints</div><p class="small muted">The Duel Links Meta database has ${c.np} print${c.np === 1 ? "" : "s"} of this card (reprints in other boxes, packs or events). They play the same, so this guide shows the card once and lists where to get every print above.${(c.pr || []).length < c.np ? ` This guide has a picture of ${(c.pr || []).length} of them.` : ""}</p><div class="prints">${(c.pr || []).map(([pid, rel, r]) => `<figure><img loading="lazy" src="${img(pid)}" alt="${esc(c.n)}"><figcaption>${esc(rel || "no release date")}${r ? " · " + esc(r) : ""}</figcaption></figure>`).join("")}</div>` : "")
+      + `<div class="sub">Used in</div>${c.used.length ? `<p>${c.used.map(linkDeck).join(", ")}</p>` : `<p class="muted">Not in a current meta list.</p>`}</div></div>`);
+  });
+}
+function skillModal(name) { needRef(() => skillModalNow(name)); }
+function skillModalNow(name) {
+  const s = D.skills.find(x => x.name === name);
+  if (!s) { openModal("<h2>Skill not found</h2>"); return; }
+  const decks = D.speed.concat(D.rush).filter(d => d.skills.some(k => k[0] === name));
+  openModal(`<h2>${esc(s.name)}</h2><div class="pills"><span class="pill">${s.rush ? "Rush" : "Speed"}</span>${s.use ? `<span class="pill gold">${s.use} meta lists</span>` : ""}${s.archive ? '<span class="pill">Archived</span>' : ""}</div>`
+    + `<div class="ctext">${esc(s.desc)}</div>` + (decks.length ? `<div class="sub">Played in</div><p>${decks.map(d => linkDeck(d.name)).join(", ")}</p>` : "")
+    + `<div class="sub">Characters and how they get it</div><div class="chgrid">${s.chars.map(c => `<div class="panel ch" data-char="${esc(c.name)}" tabindex="0" role="button"><img loading="lazy" src="${charImg(c.name)}" alt=""><b>${esc(c.name)}</b><span class="tiny muted">${esc(c.how || "")}</span></div>`).join("") || '<p class="muted">No character listed.</p>'}</div>`);
+}
+function charModal(name) { needRef(() => charModalNow(name)); }
+function charModalNow(name) {
+  const c = D.chars.find(x => x.name === name);
+  if (!c) { openModal("<h2>Character not found</h2>"); return; }
+  needCards(() => {
+    const byLv = {};
+    c.rewards.forEach(r => { (byLv[r.lv] = byLv[r.lv] || []).push(r.id); });
+    openModal(`<div style="display:flex;gap:14px;align-items:center"><img src="${esc(c.img)}" alt="" style="width:88px;height:88px;border-radius:50%;border:2px solid var(--gold);object-fit:cover"><div><h2 style="margin:0">${esc(c.name)}</h2><div class="muted">${esc(c.world)} · ${c.skills} skills · ${c.drops} drop cards</div></div></div>`
+      + (c.notes.length ? `<div class="sub">Farming notes from Duel Links Meta</div><p class="small muted">Their writers' view, not this guide's. Pulled ${esc(D.meta.pulled)}; the character page gives no writing date. Ban limits are left out: check the <a href="#banlist">Banlist</a>.</p><ul>${c.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : "")
+      + (c.missions.length ? `<div class="sub">Unlock missions</div><ol>${c.missions.map(n => `<li>${esc(n)}</li>`).join("")}</ol>` : "")
+      + (c.lvl_skills.length ? `<div class="sub">Level-up skills</div><ul>${c.lvl_skills.map(s => `<li>${esc(s.how)}: <a href="#" data-skill="${esc(s.name)}">${esc(s.name)}</a> <span class="muted small">(${s.rush ? "Rush" : "Speed"})</span></li>`).join("")}</ul>` : "")
+      + (!c.rewards_known ? `<div class="sub">Level rewards</div><p class="muted">Not in source data: the Duel Links Meta character record has no level rewards for ${esc(c.name)}.${c.base ? ` This is an Alt Style of <a href="#" data-char="${esc(c.base)}">${esc(c.base)}</a>, whose level rewards are listed on its own card.` : ""}</p>` : c.npc ? `<div class="sub">Level rewards</div><p class="muted">None: this is an NPC, not a playable character.</p>` : "")
+      + (c.rewards.length ? `<div class="sub">Level-up cards</div>` + Object.keys(byLv).sort((a, b) => a - b).map(lv => `<div class="small muted" style="margin-top:8px">Level ${esc(lv)}</div><div class="cardgrid sm">${byLv[lv].map(id => yc(id)).join("")}</div>`).join("") : "")
+      + (c.farm ? `<p style="margin-top:14px"><a href="${esc(c.farm)}" target="_blank" rel="noopener">Farming guide on Duel Links Meta</a></p>` : ""));
+  });
+}
+function boxModal(id) {
+  const b = D.boxes.find(x => x.id === id);
+  if (!b) { openModal("<h2>Box not found</h2>"); return; }
+  needCards(() => {
+    const p = ["speed", "rush"].map(f => D.prio[f].findIndex(x => x.id === id) >= 0 ? `${f === "speed" ? "Speed" : "Rush"} priority #${D.prio[f].findIndex(x => x.id === id) + 1}` : "").filter(Boolean);
+    openModal(`<h2>${esc(b.name)}</h2><div class="pills"><span class="pill">${esc(b.type)}</span><span class="pill">Released ${esc(b.release)}</span><span class="pill">${b.n} cards</span>${p.map(x => `<span class="pill gold">${x}</span>`).join("")}</div>`
+      + `<div class="sub">UR cards (${b.ur.length})</div><div class="cardgrid sm">${b.ur.map(i => yc(i)).join("") || '<span class="muted">None in the data.</span>'}</div>`
+      + `<p class="small muted">Only cards the guide tracks have pictures; the full box list is on <a href="${esc(b.url)}" target="_blank" rel="noopener">Duel Links Meta</a>.</p>`);
+  });
+}
+
+/* ---------- search ---------- */
+let IDX = [];
+function buildIndex() {
+  IDX = [];
+  NAV.forEach(([g, items]) => items.forEach(([id, l]) => IDX.push({t: l, k: "Page", go: "#" + id})));
+  D.howto.sections.forEach(s => IDX.push({t: s.title, k: "How-to", go: "#" + s.id}));
+  D.speed.forEach(d => IDX.push({t: d.name, k: "Speed deck", go: `#deck/speed/${d.slug}`, img: deckIcon(d)}));
+  D.rush.forEach(d => IDX.push({t: d.name, k: "Rush deck", go: `#deck/rush/${d.slug}`, img: deckIcon(d)}));
+  D.skills.forEach(s => IDX.push({t: s.name, k: "Skill", skill: s.name}));
+  D.chars.forEach(c => IDX.push({t: c.name, k: "Character", char: c.name, img: c.img}));
+  D.boxes.forEach(b => IDX.push({t: b.name, k: b.type || "Box", box: b.id, img: b.icon ? img(b.icon) : null}));
+  if (C) for (const id of mainIds()) IDX.push({t: C[id].n, k: "Card" + (C[id].rush ? " (Rush)" : ""), card: id, img: img(id)});
+  IDX.forEach(x => x.l = x.t.toLowerCase());
+}
+let sel = -1, hits = [];
+function doSearch() {
+  const q = $("#q").value.trim().toLowerCase();
+  const box = $("#res");
+  if (!q) { box.classList.remove("on"); return; }
+  if (!C) needCards(doSearch);
+  if (!R) needRef(doSearch);
+  const words = q.split(/\s+/);
+  hits = IDX.filter(x => words.every(w => x.l.includes(w))).sort((a, b) => (b.l.startsWith(q) - a.l.startsWith(q)) || (a.k === "Card") - (b.k === "Card") || a.t.length - b.t.length).slice(0, 40);
+  sel = hits.length ? 0 : -1;
+  box.innerHTML = hits.length ? hits.map((x, i) => `<div role="option" data-i="${i}" class="${i === sel ? "sel" : ""}">${x.img ? `<img src="${esc(x.img)}" alt="">` : ""}<span>${esc(x.t)}</span><i>${esc(x.k)}</i></div>`).join("") : `<div class="none"><span>Not in this guide's ${num(D.meta.counts.cards)} meta cards, decks, skills or pages. <a href="https://www.duellinksmeta.com/cards/" target="_blank" rel="noopener">Search the full Duel Links Meta card database.</a></span></div>`;
+  box.classList.add("on");
+}
+function pick(x) {
+  $("#res").classList.remove("on");
+  $("#q").blur();
+  $("#side").classList.remove("open");
+  if (x.go) location.hash = x.go;
+  else if (x.card) cardModal(x.card);
+  else if (x.skill) skillModal(x.skill);
+  else if (x.char) charModal(x.char);
+  else if (x.box) boxModal(x.box);
+}
+
+/* ---------- router ---------- */
+function route() {
+  const h = decodeURIComponent(location.hash.replace(/^#/, "")) || "home";
+  const [r, a, b] = h.split("/");
+  const P = {home: pHome, about: pAbout, meta: () => pMeta("speed"), rush: () => pMeta("rush"), tiers: pTiers, staples: pStaples, cards: pCards, skills: pSkills,
+    chars: pChars, boxes: pBoxes, banlist: pBan, events: pEvents, videos: pVideos, sources: pSources};
+  let html;
+  try {
+    if (!R && ["skills", "chars"].includes(r)) { needRef(route); html = "<h1>Loading…</h1><p>Loading the skill and character data…</p>"; }
+    else if (r === "deck") html = pDeck(a, b);
+    else if (own(P, r)) html = P[r]();
+    else if (own(HOW, r)) html = pHowto(r);
+    else html = pNotFound();
+  } catch (e) { html = `<h1>Something went wrong</h1><p>${esc(e.message)}</p>`; console.error(e); }
+  const needs = ["staples", "banlist", "deck", "home", "boxes"].includes(r);
+  if (needs && !C) { needCards(route); }
+  $("#main").innerHTML = html + `<footer>${checkedLine()} Yu-Gi-Oh! Duel Links and all card art belong to Konami. Fan guide; not affiliated with Konami or Duel Links Meta.</footer>`;
+  document.querySelectorAll("#nav a").forEach(x => x.classList.toggle("on", x.dataset.r === r || (r === "deck" && x.dataset.r === (a === "rush" ? "rush" : "meta"))));
+  document.title = (r === "home" ? "" : ($("#main h1") ? $("#main h1").textContent + " | " : "")) + "Duel Links Field Guide";
+}
+
+/* ---------- events ---------- */
+function bind() {
+  document.addEventListener("click", e => {
+    const t = e.target.closest("[data-card],[data-cardname],[data-skill],[data-char],[data-box],[data-mf],[data-list],[data-srcbox],[data-ban],[data-more],[data-smore],[data-yt],#mclose");
+    if (!t) { if (e.target === $("#modal")) closeModal(); if (!e.target.closest(".search")) $("#res").classList.remove("on"); return; }
+    if (t.id === "mclose") { closeModal(); return; }
+    e.preventDefault();
+    const ds = t.dataset;
+    if (ds.card) cardModal(ds.card);
+    else if (ds.cardname) needCards(() => { const id = Object.keys(C).find(k => C[k].n === ds.cardname); if (id) cardModal(id); });
+    else if (ds.skill) skillModal(ds.skill);
+    else if (ds.char) charModal(ds.char);
+    else if (ds.box) boxModal(ds.box);
+    else if (ds.mf) { metaFilter = ds.mf; route(); }
+    else if (ds.ban) { banFmt = ds.ban; route(); }
+    else if (ds.more) { cf.n += 120; route(); }
+    else if (ds.smore) { sf.n += 90; route(); }
+    else if (ds.list != null) { document.querySelectorAll("[data-list]").forEach(b => b.classList.toggle("on", b === t)); document.querySelectorAll(".dl").forEach(x => x.hidden = x.dataset.li !== ds.list); }
+    else if (ds.srcbox) { const b = document.getElementById(ds.srcbox); if (b) { b.classList.toggle("on"); t.setAttribute("aria-expanded", b.classList.contains("on")); } }
+    else if (ds.yt) { t.parentNode.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(ds.yt)}?autoplay=1" title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>`; }
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") { if ($("#modal").classList.contains("on")) closeModal(); $("#res").classList.remove("on"); $("#side").classList.remove("open"); }
+    if (e.key === "/" && document.activeElement.tagName !== "INPUT") { e.preventDefault(); $("#q").focus(); }
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches("[role=button][data-skill],[role=button][data-char]")) { e.preventDefault(); e.target.click(); }
+  });
+  let deb;
+  document.addEventListener("input", e => {
+    const t = e.target;
+    const re = (obj, k, cap) => { obj[k] = t.value; if (cap) obj.n = cap; clearTimeout(deb); deb = setTimeout(() => { const pos = t.selectionStart; route(); const n = document.querySelector(`[data-${t.dataset.cf != null ? "cf" : t.dataset.sf != null ? "sf" : "chf"}="${k}"]`); if (n && n.focus && n.type === "search") { n.focus(); try { n.setSelectionRange(pos, pos); } catch (x) {} } }, 160); };
+    if (t.dataset.cf) re(cf, t.dataset.cf, 120);
+    else if (t.dataset.sf) re(sf, t.dataset.sf, 90);
+    else if (t.dataset.chf) re(chf, t.dataset.chf);
+  });
+  document.addEventListener("change", e => {
+    const t = e.target;
+    if (t.tagName !== "SELECT") return;
+    if (t.dataset.cf) { cf[t.dataset.cf] = t.value; cf.n = 120; route(); }
+    else if (t.dataset.sf) { sf[t.dataset.sf] = t.value; sf.n = 90; route(); }
+    else if (t.dataset.chf) { chf[t.dataset.chf] = t.value; route(); }
+    else if (t.dataset.bf) { bf[t.dataset.bf] = t.value; route(); }
+  });
+  const q = $("#q");
+  q.addEventListener("input", doSearch);
+  q.addEventListener("focus", () => { needRef(() => {}); needCards(() => {}); });
+  q.addEventListener("keydown", e => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); if (!hits.length) return; sel = (sel + (e.key === "ArrowDown" ? 1 : hits.length - 1)) % hits.length;
+      document.querySelectorAll("#res div[data-i]").forEach(d => d.classList.toggle("sel", +d.dataset.i === sel)); }
+    if (e.key === "Enter" && sel >= 0 && hits[sel]) { e.preventDefault(); pick(hits[sel]); }
+  });
+  $("#res").addEventListener("click", e => { const d = e.target.closest("[data-i]"); if (d) pick(hits[+d.dataset.i]); });
+  $("#menu").addEventListener("click", () => { const s = $("#side"); s.classList.toggle("open"); $("#menu").setAttribute("aria-expanded", s.classList.contains("open")); });
+  $("#nav").addEventListener("click", () => $("#side").classList.remove("open"));
+  window.addEventListener("hashchange", () => { closeModal(); route(); window.scrollTo(0, 0); });
+}
+
+if (!D) { $("#main").innerHTML = "<h1>Data missing</h1><p>data/dl.js did not load. Run <code>py build.py</code>.</p>"; }
+else {
+  $("#checked").innerHTML = checkedLine();
+  drawNav(); buildIndex(); bind(); route();
+  const later = () => { needRef(() => {}); needCards(() => {}); };
+  if ("requestIdleCallback" in window) requestIdleCallback(later); else setTimeout(later, 1200);
+  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+</script>
+</body>
+</html>
