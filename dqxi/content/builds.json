@@ -1,0 +1,207 @@
+{
+  "note": "Suggested skill routes summarised from one character guide per party member. That guide is not dated within the last 60 days, so treat these as suggestions, not a current consensus. Panel names follow the in-game panel list.",
+  "builds": [
+    {
+      "id": "hero",
+      "role": "GamerGuides' character guide calls the Luminary a flexible fighter who takes part in many Pep Powers and can clear groups early with spells and greatsword skills.",
+      "weapon": "Greatswords are suggested for the early game because their first skills cover both group fights and bosses, while swords catch up later and can pair with a shield or [[Dual Wielding]].",
+      "order": [
+        {"t": "Take [[Flame Slash]] in Swords so the Itemized Kill Pep Power with Erik is available.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Take [[Helichopter]] in Greatswords for group fights.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "If you want a stronger single-target hit early, also take [[Cutting Edge]].", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Head toward [[Unbridled Blade]] as the main boss skill; it needs one Swordmastery panel unlocked first.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Take [[Pep Up]] in Luminary so you can trigger Pep Mode on command for Pep Powers.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Work up Swordmastery toward [[Sword Dance]], which can take over from Unbridled Blade against bosses.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Once Luminary expands, take [[Charm +40]] for 10 free Skill Points.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Reset Luminary to get the spent SP back.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Take [[Gigaslash]] and [[Gigagash]] in the late game to hit all enemies.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Fill in the Strength passives, such as [[Strength +25]], ahead of the other stat panels.", "src": ["gg:basics__characters__the-hero"]}
+      ],
+      "skip": [
+        {"t": "Skip [[Metal Slash]] and [[Dragon Slash]] early; they only suit metal slimes and dragon-type foes.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "If points are tight late, you can pass on [[Zap]] and [[Zapple]] in favour of the Charm +40 reset.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "Skip the Magical Mending panel, since the Luminary has no group heal like Multiheal to benefit from it.", "src": ["gg:basics__characters__the-hero"]}
+      ],
+      "tips": [
+        {"t": "[[Pep Up]] costs 25 MP; if you would rather not spend MP, the [[Pep-Up Power-Up]] panel is suggested in any case.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "[[Blade of Ultimate Power]] costs 48 MP, so it drains the Luminary's MP quickly.", "src": ["gg:basics__characters__the-hero"]},
+        {"t": "[[Fullheal]] and [[Omniheal]] are worth picking up in Luminary for emergencies.", "src": ["gg:basics__characters__the-hero"]}
+      ]
+    },
+    {
+      "id": "erik",
+      "role": "GamerGuides' character guide calls him a fast damage dealer and thief who sets up big hits through status effects and later dual wielding.",
+      "weapon": "Knives are suggested to start because they have strong skills for bosses, while boomerangs suit random battles but are weak against bosses.",
+      "order": [
+        {"t": "Take [[Half-Inch]] first to steal and to enable the Itemized Kill Pep Power once the Luminary has Flame Slash.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Head toward [[Agility +30]] in Guile for its hidden +10 SP.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Reset the tree to recover the points.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Take [[Sleeper Hit]] and [[Persecutter]] in Knives, since they work together.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Take [[Cobra Strike]] and [[Victimiser]] next; poison works on more later bosses than sleep.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Unlock [[Dual-Wielding]] in Knives as your short-term goal.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Unlock [[Divide]] in Guile next; it effectively triples Erik's damage for one turn.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Once the trees expand, take [[Critical Claim]] as a long-term staple despite its MP cost.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Take [[Dually Deadly]] in Swords to remove the offhand damage penalty, plus [[Double Down]] in Boomerangs.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Take [[Fatal Flash]] in Swords for stronger single-target and boss damage.", "src": ["gg:basics__characters__erik"]}
+      ],
+      "skip": [
+        {"t": "Skip the early Swords skills; [[Flame Slash]] is the only one that is not situational.", "src": ["gg:basics__characters__erik"]},
+        {"t": "Hold off on boomerangs early, as they lack boss-fighting skills.", "src": ["gg:basics__characters__erik"]}
+      ],
+      "tips": [
+        {"t": "Use [[Divide]] with [[Half-Inch]] to triple the steal rate; [[Sticky Fingers]] raises it further after the trees expand.", "src": ["gg:basics__characters__erik"]},
+        {"t": "[[Critical Claim]] costs 64 MP but always lands a critical hit, which helps when hunting metal slimes.", "src": ["gg:basics__characters__erik"]},
+        {"t": "His key late skills are spread apart, so aim for an overall package until you can farm [[Seed of Skill]] items.", "src": ["gg:basics__characters__erik"]}
+      ]
+    },
+    {
+      "id": "veronica",
+      "role": "GamerGuides' character guide calls her the main offensive spellcaster, with strong group damage and debuffs.",
+      "weapon": "Heavy Wands are suggested because Veronica is a caster and wand hits restore some MP, while whips need Strength she lacks.",
+      "order": [
+        {"t": "Head down the Vim tree toward [[Channel Anger]], which needs four of the surrounding panels.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Take the panels on the right side on the way, avoiding [[Spooky Aura]].", "src": ["gg:basics__characters__veronica"]},
+        {"t": "After Channel Anger, take the remaining resistance passive below it.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Move to Heavy Wands for its passives rather than its skills.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Once the trees fully unlock, head toward [[Maximum MP +30]] in Vim for a free 10 SP.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Reset the Vim tree.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Rebuild it going right this time.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Head toward [[Enchanting Echo]], which needs the two panels just under [[Antimagic]].", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Collect the remaining Vim spells, such as [[Kaboomle]] and [[Kafrizzle]].", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Finish the rest of the Heavy Wand passives.", "src": ["gg:basics__characters__veronica"]}
+      ],
+      "skip": [
+        {"t": "Skip the Whips tree; Sylvando is the better whip user and her spells already hit groups.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Skip [[Spooky Aura]] on the way to Channel Anger.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "Do not aim for [[Antimagic]] early; it only helps against heavy spellcasting foes.", "src": ["gg:basics__characters__veronica"]}
+      ],
+      "tips": [
+        {"t": "[[Channel Anger]] is a better pick than [[Ring of Ruin]], since Veronica is likely the only offensive caster.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "[[Sage's Breath]] helps keep her MP up in later fights.", "src": ["gg:basics__characters__veronica"]},
+        {"t": "[[Zing Stick]] gives an extra way to revive a downed ally in emergencies.", "src": ["gg:basics__characters__veronica"]}
+      ]
+    },
+    {
+      "id": "serena",
+      "role": "GamerGuides' character guide calls her the main early healer and support buffer.",
+      "weapon": "Wands are suggested because they allow a shield and boost Magical Mending; spears are only worth it briefly, mainly for early metal slime hunting.",
+      "order": [
+        {"t": "If you want early spear use, take [[Thunder Thrust]] and [[Party Pooper]] in Spears.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Reset Serena once Jade joins and send her down the Wands tree.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Stack Magical Mending panels through the first portion of the game to power her heals.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Take [[Snap, Crackle, Poof]] in Wands, the suggested pick from her starting trees.", "src": ["gg:basics__characters__serena"]},
+        {"t": "When her trees expand mid-game, take [[Channel Anger]] and [[Enchanting Echo]].", "src": ["gg:basics__characters__serena"]},
+        {"t": "Add some Magical Might.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Take [[Hypnowhip]] mid-game only to make one [[Holier Hymns]] panel reachable.", "src": ["gg:basics__characters__serena"]},
+        {"t": "In the final portion, return to Magical Mending.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Take both [[Holier Hymns]] panels and all the Hymns.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Take all Wands passives and [[Divine Restitution]].", "src": ["gg:basics__characters__serena"]}
+      ],
+      "skip": [
+        {"t": "Skip the Heavy Wand tree when it opens mid-game; it offers little for her.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Skip [[Dual-Wielding]] in Wands; a single wand with a shield is suggested for defence.", "src": ["gg:basics__characters__serena"]}
+      ],
+      "tips": [
+        {"t": "Her first group heal, [[Multiheal]], arrives at level 35, so plan around single-target healing before then.", "src": ["gg:basics__characters__serena"]},
+        {"t": "Once you rely on [[Omniheal]], Magical Mending matters much less because it heals the party to full.", "src": ["gg:basics__characters__serena"]},
+        {"t": "The Hymns in Harpistry become much stronger once you have the two [[Holier Hymns]] passives.", "src": ["gg:basics__characters__serena"]}
+      ]
+    },
+    {
+      "id": "sylvando",
+      "role": "GamerGuides' character guide calls him an early party-wide healer and buffer who sets up allies, fading somewhat later in the game.",
+      "weapon": "Knives are suggested after the core skills, since they lead to Have A Ball and the Chivalry tree and help set up Erik's poison and sleep combos.",
+      "order": [
+        {"t": "Head through Litheness toward [[Hustle Dance]] as soon as he joins, taking [[Sobering Slap]] on the way.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "If you want extra points, detour to [[Charm +40]] in Showmanship for 10 free SP.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Reset that tree.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Continue with the next step.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Take [[Hustle Dance]], likely your first party-wide heal.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Take [[Pink Pirouette]] and [[That's Amore]] near Hustle Dance.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Take the Knives tree, including [[Cobra Strike]], to poison foes for Erik's Victimiser.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Unlock [[Have A Ball]] in Litheness through the Knives side.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "If you choose whips instead, take [[Wyrm Whip]] and [[Lash Batter]].", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "When Chivalry unlocks, take [[Ladies First]] and [[Finger of Justice]].", "src": ["gg:basics__characters__sylvando"]}
+      ],
+      "skip": [
+        {"t": "Swords add nothing exclusive for him; only use them if no one else needs swords.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "If you take [[Whipping Boy]], also take the other Whipping passives, since enemies may not target him.", "src": ["gg:basics__characters__sylvando"]}
+      ],
+      "tips": [
+        {"t": "Raise his Charm to make [[Hustle Dance]] and [[That's Amore]] stronger.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "Showmanship is reached through either Litheness or Whips.", "src": ["gg:basics__characters__sylvando"]},
+        {"t": "[[Gold Rush]] costs 1,000 gold per use instead of MP and hits all enemies.", "src": ["gg:basics__characters__sylvando"]}
+      ]
+    },
+    {
+      "id": "jade",
+      "role": "GamerGuides suggests her for nearly every party lineup and calls her a physical powerhouse.",
+      "weapon": "Spears are suggested throughout because that tree holds her strongest single-target and critical-hit skills.",
+      "order": [
+        {"t": "Take Strength panels for Jade.", "src": ["gg:basics__characters__jade"]},
+        {"t": "Set Jade on the Spears tree when she joins.", "src": ["gg:basics__characters__jade"]},
+        {"t": "Head toward [[Multithrust]] as her main attack.", "src": ["gg:basics__characters__jade"]},
+        {"t": "Take [[Party Pooper]] as her only group attack until her other trees open.", "src": ["gg:basics__characters__jade"]},
+        {"t": "Once her trees open, head toward [[Multifeet]] in Fisticuffs while still favouring Strength.", "src": ["gg:basics__characters__jade"]},
+        {"t": "After Multifeet, work up Allure to [[Femme Fatale]].", "src": ["gg:basics__characters__jade"]},
+        {"t": "Take [[Pink Typhoon]], which is required before the locked [[Pink Tornado]].", "src": ["gg:basics__characters__jade"]},
+        {"t": "Unlock [[Pink Tornado]].", "src": ["gg:basics__characters__jade"]},
+        {"t": "Start raising Jade's Charm for her Allure skills.", "src": ["gg:basics__characters__jade"]}
+      ],
+      "skip": [
+        {"t": "Skip Claws; spears outclass them for her.", "src": ["gg:basics__characters__jade"]},
+        {"t": "Stop using [[Pink Typhoon]] once you have [[Pink Tornado]].", "src": ["gg:basics__characters__jade"]}
+      ],
+      "tips": [
+        {"t": "[[Thunder Thrust]] and [[Lightning Thrust]] are useful for metal slime grinding.", "src": ["gg:basics__characters__jade"]},
+        {"t": "[[Belle's Bow]] from Quest 18 at +3 restores 6 MP per round; two of them give 12 MP per round.", "src": ["gg:basics__characters__jade"]}
+      ]
+    },
+    {
+      "id": "rab",
+      "role": "GamerGuides' character guide calls him a jack of all trades who buffs, debuffs, heals and deals some damage, handy in boss fights.",
+      "weapon": "Heavy Wands are suggested early since Claws have little until that tree expands; later you choose Claws or a return to Heavy Wands.",
+      "order": [
+        {"t": "Take Heavy Wands first, including [[Zing Stick]] for guaranteed revives.", "src": ["gg:basics__characters__rab"]},
+        {"t": "Take [[Benediction]] in Enlightenment to cure Curse.", "src": ["gg:basics__characters__rab"]},
+        {"t": "Leave the rest of that tree early.", "src": ["gg:basics__characters__rab"]},
+        {"t": "Once his trees fully unlock, pick a path: Claws or Enlightenment.", "src": ["gg:basics__characters__rab"]},
+        {"t": "If you go Claws, take [[Rake 'n' Break]] to strip enemy buffs.", "src": ["gg:basics__characters__rab"]},
+        {"t": "If you go Claws, take [[Hardclaw]] and [[Wild Animaul]], aiming for critical hit chance.", "src": ["gg:basics__characters__rab"]},
+        {"t": "If you go Claws, collect all the Claws passives.", "src": ["gg:basics__characters__rab"]},
+        {"t": "If you go Enlightenment, plan for many SP to reach [[Kacrackle]] and [[Kazammle]].", "src": ["gg:basics__characters__rab"]},
+        {"t": "At high levels, either stay on Claws or return to Heavy Wands to build Enlightenment.", "src": ["gg:basics__characters__rab"]}
+      ],
+      "skip": [
+        {"t": "Skip Claws and most of Enlightenment early; there is little there besides [[Benediction]].", "src": ["gg:basics__characters__rab"]}
+      ],
+      "tips": [
+        {"t": "If you skip Claws, [[Clear Your Mind]] in Enlightenment also removes enemy buffs.", "src": ["gg:basics__characters__rab"]},
+        {"t": "Use [[Wild Animaul]] when not chasing crits; otherwise [[Hardclaw]] keeps its crit chance across hits.", "src": ["gg:basics__characters__rab"]}
+      ]
+    },
+    {
+      "id": "hendrik",
+      "role": "GamerGuides' character guide calls him a versatile tank and damage dealer, especially with axe and shield.",
+      "weapon": "Axes are suggested because every axe skill is useful and they allow a shield; late on you can switch to greatswords for more damage.",
+      "order": [
+        {"t": "Take the Axes tree when he joins, starting with [[Helm Splitter]] and [[Scrap Mettle]].", "src": ["gg:basics__characters__eight"]},
+        {"t": "Take [[Parallax]] for strong single-target damage.", "src": ["gg:basics__characters__eight"]},
+        {"t": "Take [[Axes of Evil]] for group damage, using it sparingly due to his low MP.", "src": ["gg:basics__characters__eight"]},
+        {"t": "Take [[Hatchet Man]] for metal slimes and high-defence foes.", "src": ["gg:basics__characters__eight"]},
+        {"t": "When Fraternity unlocks, head straight for [[Forbearance]] if you use shields.", "src": ["gg:basics__characters__eight"]},
+        {"t": "Take [[Steadfast Forbearance]] to reduce damage taken while drawing attacks.", "src": ["gg:basics__characters__eight"]},
+        {"t": "Late in the final part, either stay on axe and shield or switch to greatswords for more damage.", "src": ["gg:basics__characters__eight"]}
+      ],
+      "skip": [
+        {"t": "Skip the Swords tree; it has nothing exclusive and [[Dual Wielding]] suits him poorly.", "src": ["gg:basics__characters__eight"]},
+        {"t": "[[Defending Champion]] lasts one turn and cannot combine with Forbearance.", "src": ["gg:basics__characters__eight"]}
+      ],
+      "tips": [
+        {"t": "In the Definitive Edition, the 10SP bonus is on [[Magical Mending +20]] in Fraternity, not [[H-Pathy]].", "src": ["gg:basics__characters__eight"]},
+        {"t": "Pair [[Holy Impregnable]] with a [[Catholicon Ring]] +3 for near-total ailment immunity.", "src": ["gg:basics__characters__eight"]},
+        {"t": "[[Blind Man's Biff]] deals full damage regardless of Dazzle after Quest 48.", "src": ["gg:basics__characters__eight"]}
+      ]
+    }
+  ]
+}

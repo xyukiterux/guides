@@ -1,0 +1,3317 @@
+{
+ "chapters": [
+  {
+   "id": "p-birth",
+   "act": 0,
+   "title": "Birth of a Luminary",
+   "src": "gg:walkthrough__prologue__birth-of-a-luminary",
+   "goal": "Climb Cobblestone Tor with Gemma, win your first fights and reach the summit to finish the coming-of-age ceremony.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Choose your weapon: the [[Cobblestone Greatsword]] for more damage or the [[Cobblestone Sword]] if you want a shield.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Talk to Dunstan, the Elder, at the bridge.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Beat the [[Slime]] group up the path with plain attacks; Sandy helps and cannot fall.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Search behind the monument on the left for a [[Pot Lid]].",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Equip the [[Pot Lid]] only if you kept the sword.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Turn right at the first cave fork.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Climb the wall.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Take the [[Medicinal Herb]] by the tree.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Start every fight by swinging at the monster on the field so it takes damage before the battle.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Turn right at the fork past the bridge.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Smash the pots by the stairs for a [[Medicinal Herb]] and 5G.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Pick up the [[Copper Ore]] from the sparkly spot deeper in the caverns.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Fight the pair of [[Smog]]s.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Keep HP above 10.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Let Gemma heal you.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Use [[Frizz]] if your hits keep missing.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Grab the [[Pink Pine]] by the tree in the northwest corner.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Climb the rope.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "After the Gryphon scene at the summit, take the second [[Pink Pine]] by the northwest tree.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Enter the cave.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "[[Pot Lid]] - chest behind the monument at the base"
+   ]
+  },
+  {
+   "id": "p-cobblestone",
+   "act": 0,
+   "title": "Cobblestone",
+   "src": "gg:walkthrough__prologue__cobblestone",
+   "goal": "Loot your home village, finish its first quest and leave for Heliodor with a map and a horse.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Go to your house in the northeast.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Talk to Amber to receive the [[Precious Pendant]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Leave the house at night.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Meet Gemma by the large tree near the entrance.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Search your home: the cupboard has [[Plain Clothes]] and the upstairs pots hold 10G.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Climb the crates onto the shed roof next door for a 50G chest and a [[Flurry Feather]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Talk to the quest villager below your house to start [[The People's Friend]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Hand over the [[Flurry Feather]] for a [[Sleeping Hibiscus]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Check every bookshelf you pass from now on; red books can be recipe books.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Buy a [[Bandana]] and [[Wayfarer's Clothes]] at the Item Shop.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Skip the [[Cypress Stick]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Smash the barrels in the southeast cave for a [[Seed of Agility]], a [[Copper Ore]] and 7G.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Open the chest behind Gemma's house for a [[Cypress Stick]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Climb Gemma's roof for a [[Medicinal Herb]].",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Take the [[Fresh Water]] at the top of the waterfall by your house.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Go to the north entrance.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    },
+    {
+     "t": "Talk to Dunstan for the Map of Erdrea, a horse and Gemma's Charm.",
+     "src": [
+      "gg:walkthrough__prologue__cobblestone"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "[[Seed of Agility]] - barrel in the southeast cave",
+    "50G and [[Flurry Feather]] - shed roof next to your house"
+   ]
+  },
+  {
+   "id": "a1-heliodor-region",
+   "act": 1,
+   "title": "Heliodor Region",
+   "src": "gg:walkthrough__act-i__heliodor-region",
+   "goal": "Walk north from Cobblestone through the Heliodor Region to the city of Heliodor, looting both paths and the first camp.",
+   "level": {
+    "t": "Reach level 5 on the way to the camp; it teaches [[Heal]] and unlocks the Character Builder.",
+    "src": [
+     "gg:walkthrough__act-i__heliodor-region"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Equip Gemma's Charm, which you just received.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Travel on foot instead of by horse, so a strike on a field monster opens the battle with damage already dealt.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Search the ruins on the left before the first clearing for a [[Chimaera Wing]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Kill [[Stark Raven]]s first in each fight, since they speed themselves up.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Keep right on the north path to open a chest with a [[Seed of Life]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Spend your first skill points on [[Greatsword Guard]] for greatswords or [[Flame Slash]] for swords.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Save at the camp statue.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Loot the cabin pots, the 80G chest behind it and the well's [[Strong Medicine]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Go east from camp.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Mine the crystal on the south wall for 2 [[Copper Ore]] and a [[Flintstone]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Level up on [[Bunicorn]]s and [[Stark Raven]]s along the Road to the Emerald Coast; the tent at its end has a [[Chimaera Wing]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Keep HP above 15 on the eastern path, where [[Hammerhood]]s and [[Fright Bulb]]s appear.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Open the chest behind the wall where the [[Platypunk]] slumps for a [[Single Phial]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Take the southwest path for the [[Toad Oil]] barrel on the pier and the [[Fresh Water]] spot.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Rest at camp.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Cross the north bridge.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Harvest the northwest flower point.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    },
+    {
+     "t": "Enter Heliodor.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-region"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "[[Seed of Life]] - chest on the north path, keep right",
+    "[[Single Phial]] - chest behind the wall on the eastern path"
+   ]
+  },
+  {
+   "id": "a1-heliodor",
+   "act": 1,
+   "title": "Heliodor",
+   "src": "gg:walkthrough__act-i__heliodor",
+   "goal": "Loot Heliodor and its castle and finish both town quests before meeting the King, since that audience locks you out of town.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Talk to the man by the castle stairs north of the fountain to start [[The Soldier and the Strategist - A Tale of Two Heroes]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Buy a new sword or greatsword at the Weapon shop, plus a [[Leather Hat]] and [[Leather Armour]] ([[Leather Shield]] for sword users).",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Climb the ladder south of the shops.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Drop down the large house's chimney.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Open the balcony chest for a [[Gold Bracer]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Talk to the girl outside the Inn to start [[Amelia's in a Pickle!]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Climb the Item shop ladder to the roof.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Pick up the cat.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Jump the crate to the east roof for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Return the cat to the girl to receive [[Kitty Litter]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Search the bookshelf in the far southeast house for the quest book.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Give the book to the man by the castle stairs for a [[Drasilian Shilling]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Open the chest under the stairs of the northeast Royal Square house for 100G.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Go through the bush in the southeast house's garden to the hidden chest with a [[Seed of Sorcery]].",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Enter the castle by day.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Loot the castle first; the top-floor balcony barrel holds a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    },
+    {
+     "t": "Go to the throne room to meet the King; this moves the story on.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "Mini medal - roof chest east of the Item shop",
+    "Mini medal - castle top-floor balcony barrel",
+    "[[Gold Bracer]] - balcony chest of the large house west of the fountain",
+    "[[Seed of Deftness]] - pot in the same house, entered by the chimney",
+    "[[Seed of Strength]] - barrel behind the guard east of town",
+    "[[Seed of Therapeusis]] - castle top floor, east corridor pot"
+   ]
+  },
+  {
+   "id": "a1-sewers",
+   "act": 1,
+   "title": "Heliodor Sewers",
+   "src": "gg:walkthrough__act-i__heliodor-sewers",
+   "goal": "Break out of the dungeon with your cellmate, slip through the sewers and flee the Black Dragon.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Smash the pots in your cell.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Walk to the cell door to meet the other prisoner.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Go back into the cell.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Talk to your partner to find the hidden passage.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Turn right at the first junction for a [[Medicinal Herb]] by the locked door.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Take the other path.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Run from the soldiers at the bridge.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "If the soldiers catch you, heal during the fight before HP gets low.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Run to the crates to sneak past the guards.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Wait for the next guard to turn his back.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Wait for the final guard to walk north.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Save at the Goddess Statue in the caves below.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    },
+    {
+     "t": "Flee the [[Black Dragon]] without fighting by dashing toward the screen until you jump into the water.",
+     "src": [
+      "gg:walkthrough__act-i__heliodor-sewers"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": []
+  },
+  {
+   "id": "a1-return-heliodor",
+   "act": 1,
+   "title": "Return to Heliodor",
+   "src": "gg:walkthrough__act-i__return-to-heliodor",
+   "goal": "Recruit Erik, explore the Heliodorian Foothills, then use Downtown Heliodor to trace the Red Orb to The Kingsbarrow.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Smash the pots by your bed.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Talk to the Priest.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Talk to [[Erik]] outside to recruit him.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Set Erik to manual control.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Build Erik's Knives toward [[Sleeper Hit]] and Pursecutter, plus [[Half-Inch]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Talk to the warrior by the church to start [[It Takes Two to Tango]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Finish a monster with The Real Decoy when both are pepped.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Climb down the church well for a [[Pointy Hat]] (equip it), a [[Small Scale]] and a [[Hardy Hide]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Kill [[Stump Chump]]s first since they heal allies.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Keep HP up against [[Great Sabrecub]]s.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Open the hidden chest between a tree and rocks in the southeast of the open area for a [[Red Eye]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Follow the south path past the bridge to the chest with a [[Seed of Strength]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Keep HP topped up across the bridge, where [[Great Sabrecat]]s have high HP and hard hits.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Turn in the quest at the church for a [[Gold Chain]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Equip the [[Gold Chain]].",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Harvest [[Buzzberries]] at the tree point on the hill path before entering Downtown Heliodor.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Buy Erik the better dagger and [[Leather Armour]] in Downtown Heliodor.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Give a [[Holy Water]] and a [[Buzzberries]] to the girl with the dog.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Let the dog scare off the guard instead of paying 2000G.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Cross the roofs to Derk's Shop in the Royal Square.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Smash the upstairs pots for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Leave through Downtown.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    },
+    {
+     "t": "Head southwest to The Manglegrove.",
+     "src": [
+      "gg:walkthrough__act-i__return-to-heliodor"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "Mini medal - upstairs pots in Derk's Shop",
+    "[[Pointy Hat]] - chest in the well outside the church",
+    "[[Gold Chain]] - reward for It Takes Two to Tango",
+    "[[Drasilian Guinea]] - upper-layer drop-down chest in Downtown Heliodor; sells for 500G"
+   ]
+  },
+  {
+   "id": "a1-manglegrove",
+   "act": 1,
+   "title": "The Manglegrove",
+   "src": "gg:walkthrough__act-i__the-manglegrove",
+   "goal": "Cross The Manglegrove, unlock the Fun-Size Forge, beat the Tricky Devil so the bridge is fixed, and reach Cobblestone.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Talk to the merchant south of the entrance; he sells [[Flintstone]], [[Small Scale]] and [[Fresh Water]] for forging.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Target [[Dancing Devil]]s and [[Sham Hatwitch]]es early, and carry [[Antidotal Herb]]s for [[Bubble Slime]] poison.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Talk to every cow you find; they forecast weather and 10 of them unlock a trophy.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Take the east path.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Climb the ledges to the flower point.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Open the ledge chest for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Cross the south bridge to the camp, where Erik hands over the [[Fun-Size Forge]] and a recipe book.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Forge the [[Divine Dagger]] for Erik from a [[Copper Ore]] and [[Fresh Water]] if the Luminary uses greatswords.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Spend the pearls you earn reworking the Luminary's greatsword.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Open the chest in the camp hut for [[Economies of Scale]].",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Forge [[Scale Armour]] (and a [[Scale Shield]] for sword users).",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Touch the root east of camp.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Take the west path from the central clearing to the hidden chest.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Fight the [[Tricky Devil]] (145 HP) with regular attacks.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Keep everyone above 20 HP because of its [[Sizz]].",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Cross the repaired bridge.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Climb the rope at the far end.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Open the chest north of the ore point for a [[Single Phial]].",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Exit east.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Detour into the cave east of the Cobblestone entrance for 5 pearls.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Go south to Cobblestone.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    }
+   ],
+   "bosses": [
+    "Tricky Devil"
+   ],
+   "get": [
+    "[[Fun-Size Forge]] - from Erik at the camp",
+    "[[Economies of Scale]] - chest in the camp hut",
+    "Mini medal - ledge chest on the east path"
+   ]
+  },
+  {
+   "id": "a1-emerald-coast",
+   "act": 1,
+   "title": "Cobblestone and The Emerald Coast",
+   "src": "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast",
+   "goal": "Witness Cobblestone's past and ruined present, dig up the Keystone at Cobblestone Falls, and prepare at the Emerald Coast camp.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Go to your house.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Talk to Amber.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Follow young Gemma to the pier.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Talk to the boy and old man.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Return up to the village to end the vision of the past.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Open the chest in the ruined church for [[O Holy Knight]].",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Leave by the north exit.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Take the east path to The Emerald Coast.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Examine the three-sided rock at Cobblestone Falls to dig up the box with the letters and the Keystone.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Open the chest on the cliff west of the weather cow for a [[Hardy Hide]].",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Rest at the camp.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Forge a [[Templar's Uniform]] for Erik from [[Buzzberries]] and [[Cottontop]], reworking it toward +3.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Skip the new greatsword in the camp shop if you already have a [[Copper Chopper]] +3.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Harvest the tree point northeast of camp and the flower point toward the beach.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Rest at camp again.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    },
+    {
+     "t": "Leave the area to the south for The Kingsbarrow.",
+     "src": [
+      "gg:walkthrough__act-i__cobblestone-and-the-emerald-coast"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "[[O Holy Knight]] - chest in the ruined Cobblestone church"
+   ]
+  },
+  {
+   "id": "a1-kingsbarrow",
+   "act": 1,
+   "title": "The Kingsbarrow",
+   "src": "gg:walkthrough__act-i__the-kingsbarrow",
+   "goal": "Take back the Red Orb from The Kingsbarrow by beating the Grim Gryphons, then escape through the Door of Departure.",
+   "steps": [
+    {
+     "t": "Smash the pot in the tent at the start for a [[Single Phial]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Go downstairs.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Turn right at the first junction.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Climb outside for the [[Hardy Hide]] spot by the rubble.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Climb out at the next junction.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Go south to the chest with a [[Strength Ring]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Give the [[Strength Ring]] to the Luminary.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Defeat the [[Mecha-mynah]]s in the north room.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Take the [[Wing of Bat]] spot.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Open the chest behind the [[Smog]] group to the west for a [[Templar's Uniform]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Defeat a sparkling [[Eggsoskeleton]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Mount the [[Eggsoskeleton]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Jump to the chests with a [[Seed of Defence]] and [[Put a Feather in Your Cap]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Drop to the door for 2 [[Magic Water]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Heal everyone to full HP and MP.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Fight the [[Grim Gryphon]]s (about 130HP each).",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Sleep them with [[Sleeper Hit]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Hit them with [[Sizz]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Use [[Scorched Earth]] instead if both of you are pepped.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Use [[Evac]] to leave.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Rest at the Emerald Coast camp.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Try the forge's first flourish (a forge technique that strikes two gauges at once); it unlocks if you are at least level 10.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Forge a [[Feathered Cap]] each for the Luminary and Erik from a [[Hardy Hide]] and a [[Flurry Feather]].",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Walk east under the tree to the Door of Departure.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    }
+   ],
+   "bosses": [
+    "Grim Gryphon"
+   ],
+   "get": [
+    "[[Put a Feather in Your Cap]] - Basement 3F chest, reached on an Eggsoskeleton mount",
+    "[[Strength Ring]] - chest outside the temple's upper level",
+    "[[Seed of Defence]] - Basement 3F chest"
+   ]
+  },
+  {
+   "id": "a1-hotto",
+   "act": 1,
+   "title": "Hotto and the Hotto Steppe",
+   "src": "gg:walkthrough__act-i__hotto-and-the-hotto-steppe",
+   "goal": "Explore Hotto, meet Veronica, finish Hotto's two forging quests, and level up before The Cryptic Crypt.",
+   "level": {
+    "t": "Be at least level 10 on the Steppe and reach level 12 on [[Robber Rabbit]]s before The Cryptic Crypt.",
+    "src": [
+     "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Save with the Priest by the Door.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Kill [[Bongo Drongo]]s first since they call help as well as raising enemy attack.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Grab the [[Warmaline]] and [[Lava Lump]] spots south of town.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Enter Hotto.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Open the chest behind the west house for a mini medal and the chest behind the Inn for [[An Introduction to Armour]].",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Talk to the blacksmith west of the second Item shop to start [[Smiths and Sparkly Spots]].",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Talk to the man behind the bar to start [[Put a Ring on It]] and receive [[Twenty-Four Carats of Class]] and 2 [[Gold Ore]].",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Buy Erik a [[Poison Moth Knife]], but hold off on the iron weapons and [[Chain Mail]].",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Pay the woman at the end of the bath walkway 20G for a puff-puff; it counts toward a trophy.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Bring Connie to the girl at the entrance so [[Veronica]] joins you.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Go to the bar.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Mine [[Iron Ore]] west across the bridge.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Forge [[Bronze Armour]] and the [[Gold Ring]] +1 at the camp.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Fly back to Hotto.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Turn in both quests for [[I ♥ Iron Arms]] and a [[Crucerang]].",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Forge a [[Cast-Iron Claymore]] for the Luminary from [[Iron Ore]] and [[Copper Ore]], aiming for +3.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Go south from camp.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Hug the cliff east of the [[Glass Frit]] spot.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Open the chest for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Go northwest from camp past the ore point.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    },
+    {
+     "t": "Enter The Cryptic Crypt.",
+     "src": [
+      "gg:walkthrough__act-i__hotto-and-the-hotto-steppe"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "Mini medal - chest behind the west house in Hotto",
+    "Mini medal - chest in the far southwest of the Steppe",
+    "[[An Introduction to Armour]] - chest behind the Hotto Inn",
+    "[[Twenty-Four Carats of Class]] - from the Put a Ring on It quest giver",
+    "[[I ♥ Iron Arms]] - reward for Smiths and Sparkly Spots",
+    "[[Crucerang]] - reward for Put a Ring on It"
+   ]
+  },
+  {
+   "id": "a1-cryptic-crypt",
+   "act": 1,
+   "title": "The Cryptic Crypt",
+   "src": "gg:walkthrough__act-i__the-cryptic-crypt",
+   "goal": "Find Serena, beat Jarvis to restore Veronica's magic, and leave Hotto with the twins and the Zoom spell.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Make [[Mud Mannequin]]s and [[Skullrider]]s your first targets in every fight.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Walk toward the chest at the second junction to fall through.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Open the chest behind you for a [[Yggdrasil Leaf]].",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Take the west path near the root to drop again for a [[Feathered Cap]] and 2 [[Gold Ore]].",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Defeat the sparkling [[Skullrider]].",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Ride the [[Skullrider]] up the walls marked with footprints.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Climb back up.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Collect the chests on that floor: 1000G, [[Robber Gloves]], a mini medal and a [[Silver Platter]].",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Save at the Goddess Statue by the fountain.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Give Erik some [[Medicinal Herb]]s.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Touch the root to learn the password.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Say it at the door.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Fight [[Jarvis]] (around 260 HP) and his Shadows (around 70 HP).",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Open with [[Cutting Edge]].",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Follow with Erik's [[Sleeper Hit]] into Pursecutter.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Heal the party right after Jarvis uses Cool Breath.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Do not bother stealing.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Take the [[Iron Ore]] spot and the [[Grubby Bandage]] pot in the boss room.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Build [[Veronica]] in Heavy Wands and Vim, and [[Serena]] in Wands and Harpistry.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Give Serena the [[Silver Platter]] if the Luminary uses greatswords.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Leave Hotto to learn [[Zoom]].",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Sell your [[Chimaera Wing]]s.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Go southwest to the checkpoint.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Show your pass at the checkpoint to enter the Gallopolis Region.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    }
+   ],
+   "bosses": [
+    "Jarvis",
+    "Jarvis's shadow"
+   ],
+   "get": [
+    "Mini medal - Basement 1F chest",
+    "[[Robber Gloves]] - Basement 1F chest",
+    "[[Yggdrasil Leaf]] - chest in the pit",
+    "1000G - Basement 1F chest"
+   ]
+  },
+  {
+   "id": "a1-gallopolis",
+   "act": 1,
+   "title": "The Sultanate of Gallopolis",
+   "src": "gg:walkthrough__act-i__the-sultanate-of-gallopolis",
+   "goal": "Win the Sand National for Prince Faris, beat the Slayer of the Sands, and recruit Sylvando before heading to Gondolia.",
+   "level": {
+    "t": "Be around level 15 for the Slayer of the Sands.",
+    "src": [
+     "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Open the chest on the western edge south of Gallopolis for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Register the southwest camp.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "In town, open the southwest-corner chest for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Take [[So You Want to Be a Witch]] from the Inn bookshelf.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Accept [[A Walk on the Wild Side]] from the painter in the northwest and [[A Cactus Cutlet to Die For]] in the Tavern.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Buy [[Bunny Ears]] for the girls, but skip the shop wands since you can forge better.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Loot the palace, including 1500G behind the throne.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Meet Faris at the circus at night.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Win the Sand National by grabbing every green swirl and letting go of dash when stamina runs low.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Fight [[Cactiball]]s near the South Campsite until a [[Golden Globe]] joins a battle.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Turn in the globule.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Forge the [[Wizard's Staff]] for Veronica first.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Forge the [[Tricky Turban]] and [[Enchantress's Gloves]] next.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "At night in the Celestial Sands, with the Luminary, Erik and Serena pepped, finish a [[Spitzfire]] with [[Wild Side]].",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Fight the [[Slayer of the Sands]] (around 710 HP).",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Cast [[Sap]] and [[Decelerate]] on it.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Keep [[Buff]] on Veronica.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Answer [[Kasap]] with Buff.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Hit it with [[Zap]] or [[Cutting Edge]], Veronica's [[Frizz]], and Erik's [[Sleeper Hit]] into Pursecutter.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Switch the Luminary to healing if Serena is confused.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Win the Bronze and Silver Cups at the track, cutting right at turn 3 on the Silver course.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Put [[Sylvando]] on the path to [[Hustle Dance]] right away.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis",
+      "gg:walkthrough__prologue__essential-tips"
+     ]
+    },
+    {
+     "t": "Accept [[A Lovely Letter]] at the western checkpoint.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Show the Sultan's letter to enter Gondolia.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    }
+   ],
+   "bosses": [
+    "Slayer of the Sands"
+   ],
+   "get": [
+    "Mini medal - chest south of Gallopolis",
+    "Mini medal - southwest-corner chest in town",
+    "[[So You Want to Be a Witch]] - Inn bookshelf",
+    "[[Traveller's Hood]] - church wardrobe",
+    "[[Gold Bracer]] - Bronze Cup on the difficult setting",
+    "[[Gallopolitan Garb]] - Silver Cup on easy"
+   ]
+  },
+  {
+   "id": "a1-gondolia",
+   "act": 1,
+   "title": "Gondolia",
+   "src": "gg:walkthrough__act-i__gondolia",
+   "goal": "Cross Laguna di Gondolia, fetch the cure from Grotta della Fonte for the Doge's son, and beat Jasper to rescue Erik and gain a ship.",
+   "level": {
+    "t": "Be at least level 18 for Grotta della Fonte.",
+    "src": [
+     "gg:walkthrough__act-i__gondolia"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Defeat a sparkling [[Midnight Horknight]].",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Fly the [[Midnight Horknight]] to the small islands, including the [[Seed of Skill]] chest for Sylvando.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Kill [[Muddy Hand]]s first because they keep calling for help.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Open the central-platform chest for a mini medal and the northern island chest for [[I ♥ Iron Armour]].",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Take [[A Slender Sword of Solid Silver]] from the western swamp's central platform.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Forge Sylvando a [[Silver Rapier]] at the camp after reporting your targets.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Take [[Filigree for Fun and Profit]] from the Gondolia church bookshelf.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Haggle between the two Cat Suit brothers until it drops to 1,000G if you want Veronica's cat look.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Swap letters with the woman near the Doge's house and the Gallopolis guard for [[Cutting-Edge Kit]].",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Accept [[An Even Lovelier Letter]].",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Search the upstairs wardrobe in the house north of her for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "At the Grotta della Fonte camp, forge [[Gold Platter]]s, a [[Fur Hood]], an [[Iron Mask]] and [[Iron Cuirass]]es.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Fight the two [[Coralossus]] (around 230 HP each) with the Luminary's [[Zap]], [[Sap]], and [[Oomph]] on the Luminary and Erik.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Climb the rope past the lake for the [[Seed of Magic]] and [[Green Eye]] chests.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Zoom to Gondolia.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Beat the [[Heliodorian guard]]s with [[Zap]] and [[Bang]].",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Cross the Inn roofs.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Take the gondola to the stage.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Fight [[Jasper]] (around 630 HP).",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Use magic during Sword Stance.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Keep [[Buff]] on Veronica.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Cast [[Sap]] and [[Decelerate]] on him.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Cure Fizzle fast.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    }
+   ],
+   "bosses": [
+    "Jasper"
+   ],
+   "get": [
+    "Mini medal - central swamp, central platform chest",
+    "Mini medal - wardrobe in the house north of the Doge's",
+    "Mini medal - Grotta della Fonte, chest south of the camp",
+    "[[I ♥ Iron Armour]] - central swamp, northern island chest",
+    "[[A Slender Sword of Solid Silver]] - western swamp, central platform chest",
+    "[[Filigree for Fun and Profit]] - Gondolia church bookshelf"
+   ]
+  },
+  {
+   "id": "a1-rainbough",
+   "act": 1,
+   "title": "Search for the Rainbough",
+   "src": "gg:walkthrough__act-i__search-for-the-rainbough",
+   "goal": "Sail to Zwaardsrust and Octagonia, win the martial arts tournament with Vince, and beat Arachtagon under the orphanage.",
+   "level": {
+    "t": "Be around levels 18-20 in Zwaardsrust and at least level 22 before Arachtagon.",
+    "src": [
+     "gg:walkthrough__act-i__search-for-the-rainbough"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Stop at Insula Australis.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Open the chest on the southern islet for [[Rings Around the World]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Kill [[Tap Devil]]s first in Zwaardsrust; they make the whole party dance and curse it.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Search the hay field west of the Warrior's Rest Inn slowly at night for a non-sparkling mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Take [[Smithing with Steel]] from the Inn's upstairs bookshelf and the balcony chest's mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Accept [[A Path to Paradise]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Use [[Care Prayer]] on a [[Deadnaut]] in the western ruins at night.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Ride a [[Horknight]] over the lake in north Dundrasil to the chest with a [[Necklace of Immunity]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "In Octagonia, buy [[Tough Guy Tattoo]]s for the Luminary and Erik and the [[Rod of Rapidity]] for Veronica.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Take the mini medal pot in the alcove at the bottom of town and [[Building Butterfly Bric-a-Brac]] in the Orphanage.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "In the tournament, use [[Cutting Edge]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Focus [[Underdigger]] first and [[Sinderella]] second.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Defend when both foes are pepped.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Focus [[Sterling Sylva]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Cure poison at once.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Hit [[Rab]] first in the final.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Heal below 80 HP.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Trigger fights at the metal orbs in the Caverns under Octagonia for [[Metal Slime]]s.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Take the [[Assassin's Dagger]] for Erik.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Beat the [[Cannibox]] in the right chest of the northwest pair for a [[Seed of Skill]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Fight [[Arachtagon]] (around 1270 HP).",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Heal with [[Hustle Dance]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Keep [[Acceleratle]] up.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Cast [[Buff]] and [[Sap]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Cast [[Oomph]] on Veronica for fire spells.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Accept [[Skincare for the Fierce and Fabulous]].",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Finish [[The Shadow]] for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ],
+   "bosses": [
+    "Abominable showman",
+    "Underdigger",
+    "Sinderella",
+    "Whambelina",
+    "Sterling Sylva",
+    "Golden Boy",
+    "Masked Rab",
+    "Masked Jade",
+    "Arachtagon",
+    "Vince Vanquish"
+   ],
+   "get": [
+    "Mini medal - hidden in the hay field west of Warrior's Rest Inn",
+    "Mini medal - Warrior's Rest Inn balcony chest",
+    "Mini medal - Octagonia, pot in the alcove under the stairs",
+    "Mini medal - Caverns under Octagonia, east chest",
+    "[[Smithing with Steel]] - Warrior's Rest Inn bookshelf",
+    "[[Rings Around the World]] - Insula Australis, southern chest"
+   ]
+  },
+  {
+   "id": "a1-dundrasil",
+   "act": 1,
+   "title": "To Dundrasil Castle Ruins",
+   "src": "gg:walkthrough__act-i__to-dundrasil-castle-ruins",
+   "goal": "Cross the Dundrasil Region to the castle ruins, follow Rab to the truth about your birth, and gain Rab, Jade and the Rainbough.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Build the Luminary toward [[Cutting Edge]], [[Frost Fangs]] and [[Zap]], Erik toward dual wielding, and Sylvando to [[Hustle Dance]].",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Pick the gold flower point in the northwest for the [[Mellow Vera]].",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Shoot the target in the tree beside the flower point.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Ride a [[Horknight]] to the west island for a [[Drasilian Sovereign]].",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Climb the ruins northeast of the camp to the ladder and chest with a [[Bandit Blade]].",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Zoom to Octagonia to turn in [[Skincare for the Fierce and Fabulous]] for a recipe book.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Forge a [[Batterfly Knife]] if Erik dual wields, plus the [[Dapper Doublet]] and [[Natty Cravat]] for Sylvando.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Climb the northern of the two small ruins to the balcony chest with a [[Seed of Life]].",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Open the chest on the north side of the shack by the Goddess Statue for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Fight [[Green Dragon]]s in the castle ruins for 656 Exp each, but heal after their party-wide Flame Breath.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Climb the ladder by the northeast bridge.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Smash the pots there for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Beat the [[Cannibox]] in the left chest of the northwest building.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Take the [[Dragon Scale]] from the right chest.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Equip the [[Dragon Scale]] on the Luminary or Erik.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Climb into the well by the friendly Slime to enter the castle.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Duck under the fallen pillar south of the gravestone for [[Dress Like a Drasilian]].",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Take the [[Devil's Tail]] from the north building.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    },
+    {
+     "t": "Build [[Jade]] in Spears toward [[Multithrust]] and [[Rab]] in Heavy Wands once they join.",
+     "src": [
+      "gg:walkthrough__act-i__to-dundrasil-castle-ruins"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "Mini medal - chest at the shack southwest of the castle ruins",
+    "Mini medal - pots up the ladder in the northeast castle ruins",
+    "[[Dragon Scale]] - right-hand chest in the northwest ruined building",
+    "[[Dress Like a Drasilian]] - under the fallen pillar south of the gravestone",
+    "[[Drasilian Sovereign]] - northwestern island chest"
+   ]
+  },
+  {
+   "id": "a1-puerto-valor",
+   "act": 1,
+   "title": "To Puerto Valor",
+   "src": "gg:walkthrough__act-i__to-puerto-valor",
+   "goal": "Clear The Costa Valor, cash in medals, quests and casino prizes in Puerto Valor, then open the sluice to the outer sea.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Sail northwest from the Gondolia dock to the Costa Valor dock.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Grab the [[Tortoise Shell]] chest on the hidden south beach and the [[Coral Hairpin]] chest on the offshore islet.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Climb into the well by the camp for a [[Pitch Pearl]] chest.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "In Puerto Valor, climb the spiral stairs beside the Casino for a 1300G chest.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Accept [[Anything for Love]] in town.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Accept [[Shiver me Timbers!]] in town.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Accept [[A Rush of Blood]] in town.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Trade your first 20 mini medals in the Hotel for a [[Shield-Bearer]], [[Hermes' Hat]] and [[Rune Staff]].",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Deliver the letter to Valentino in the beach restaurant.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Report in Gondolia for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Take [[Your Crafting Career Starts Here]] from the house west of the restaurant.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Get [[All Things Nice]] from the man in red.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Fight [[Robbin' 'Ood]] on Insula Australis.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Drop his [[Merry Man]] crew with [[Zap]] and [[Sizzle]].",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Cure sealed spells.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Defeat a [[Coralossus]] on the Costa Valor beach for the Floral Coral.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Turn in both quests.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Buy [[Down the Rabbithole]] with casino tokens.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Play poker for double or nothing.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Step out of the casino and back in to autosave your winnings.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Forge the [[Bunny Suit]].",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Dress Jade in the [[Bunny Suit]], the [[Bunny Ears]] and [[Fishnet Stockings]] to finish the old man's quest.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Talk to Servantes in Don Rodrigo's mansion so he opens the sluice.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Sail to the Valor-Sauvage Channel west of town.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Follow the stream into the fog.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    }
+   ],
+   "bosses": [
+    "Robbin' 'Ood",
+    "Merry Man"
+   ],
+   "get": [
+    "Mini medal - Hotel bedroom pot",
+    "Mini medal - reward for An Even Lovelier Letter",
+    "[[Your Crafting Career Starts Here]] - bookshelf in the house west of the restaurant",
+    "[[All Things Nice]] - man in red at the entrance",
+    "[[Down the Rabbithole]] - casino prize",
+    "[[Coral Hairpin]] - Costa Valor northeast beach chest"
+   ]
+  },
+  {
+   "id": "a1-green-orb",
+   "act": 1,
+   "title": "The Green Orb",
+   "src": "gg:walkthrough__act-i__the-green-orb",
+   "goal": "Find Kai for the mermaid Michelle, beat Tentacular, and receive the Green Orb from Queen Marina in Nautica.",
+   "level": {
+    "t": "Be around level 24 or higher before sailing to Lonalulu.",
+    "src": [
+     "gg:walkthrough__act-i__the-green-orb"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Open the chest behind the western ship on The Strand for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Talk to Jade and Michelle.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Climb the steps left of the arch on Insula Incognita for [[Crafting Comforting Clothing]].",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Beware the hard-hitting [[Cyclops]] there.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Smash the pots behind the cabin on Insula Occidentalis for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Grab the [[Slime Crown]] chest and the ruins mini medal on Insula Orientalis.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Hunt [[Liquid Metal Slime]]s that appear with [[King Slime]]s.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "In Lonalulu, read the Armor shop shelf for [[My First Pearly Pieces]].",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Open the chest behind the Weapons counter.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Search behind the beach stairs for 3000G and the barrels south of the Tavern for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Talk to the Canon Lady for a cannon.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Sail to the fleet while saving MP.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Fight [[Tentacular]] (around 1345 HP), focusing the main body.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Hit whichever tentacle shields the main body.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Use [[Hustle Dance]] after its multi-hit attacks.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Have Veronica cast [[Kasap]].",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Have Veronica cast [[Frizzle]] with [[Oomph]] next.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Use Serena's [[Kabuff]] to soften party-wide hits.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Get the veil from Kainui.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Open the mini medal chest by Kainui's house on Saikiki Beach.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Give Michelle the veil at The Strand; telling the truth or lying both lead to [[Lorelei's Harp]].",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Sail into the vortex southwest of the Zwaardsrust dock.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Play the harp there to reach Nautica.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Open the chest behind the church for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Speak to Queen Marina for the Green Orb.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Finish [[Up Where They Walk]] via the old man in Gondolia's northwest tower and [[My Secret Saint]] with the figure on Insula Orientalis.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    }
+   ],
+   "bosses": [
+    "Tentacular"
+   ],
+   "get": [
+    "Mini medal - The Strand, behind the western ship",
+    "Mini medal - Lonalulu, barrel south of the Tavern",
+    "[[Crafting Comforting Clothing]] - Insula Incognita, chest on top of the arch",
+    "[[My First Pearly Pieces]] - Lonalulu Armor shop bookshelf",
+    "[[Building a Blade of Blistering Brutality]] - Lonalulu Weapons shop chest",
+    "[[Lucida Shard]] - Insula Algarum, hidden northeast chest"
+   ]
+  },
+  {
+   "id": "a1-silver-orb",
+   "act": 1,
+   "title": "The Silver Orb",
+   "src": "gg:walkthrough__act-i__the-silver-orb",
+   "goal": "Explore The Champs Sauvage and the Academie, then climb The Eerie Eyrie and beat the Elysium Bird for the Silver Orb.",
+   "steps": [
+    {
+     "t": "Sail north from The Strand.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Head inland to the east.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Play the harp at the vortex.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Open the chest in the corner west of the south camp for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Mine the ore point east of the bridge for [[Platinum Ore]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Forge Drasilian pieces for the Luminary at the camp.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Climb the rope east of the south bridge for a [[Vanguard]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Take the center stairs to an [[Enchanted Stone]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "At the Academie, accept [[Making Things Right]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Forge the [[Queen's Whip]] at +1 or higher for mini medals.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Buy pearls from the woman in the first room at 100G each to rework gear.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Search the Bibliotheque shelves for [[Next-Level Neckwear]] and [[Fine and Dandy Designs]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Accept [[A Memorial Mystery]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Dig up the gold spot in the flowers southwest of the door at night.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Accept [[The Agony and the Ecstasy]] upstairs.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Hand your medals to the Headmaster for [[Kit Fit for a King]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "In The Eerie Eyrie, ride a [[Rotten Eggsoskeleton]] to the ledge chests.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Take the school paper from behind the cave sign.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Ride a [[Demonrider]] up the claw-print wall.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Go south for [[Electrifying Equipment]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Take [[Build Better Birds' Feet]] behind the waterfall and the chest with 4 [[Magic Water]].",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Heal up.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Fight the [[Elysium bird]] (over 800 HP) and two [[Hades condor]]s.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Raise [[Magic Barrier]] and Hymn of Fire.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "If [[Veronica]] is level 29 or higher, have her cast [[Boom]] on the whole enemy group.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Kill the condors first.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Keep damage steady through the bird's heals.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Open the final chest for the Silver Orb.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Report back at the Academie.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    }
+   ],
+   "bosses": [
+    "Elysium bird",
+    "Hades condor"
+   ],
+   "get": [
+    "Mini medal - Champs Sauvage, west of the south camp",
+    "Mini medal - Eerie Eyrie, central stream chest",
+    "[[Next-Level Neckwear]] - Academie Bibliotheque",
+    "[[Fine and Dandy Designs]] - Academie Bibliotheque",
+    "[[Electrifying Equipment]] - Eerie Eyrie, west of the camp by the back route",
+    "[[Build Better Birds' Feet]] - behind the northern waterfall"
+   ]
+  },
+  {
+   "id": "a1-purple-orb",
+   "act": 1,
+   "title": "The Purple Orb",
+   "src": "gg:walkthrough__act-i__the-purple-orb",
+   "goal": "Free Phnom Nonh from the cursed mural by beating Dora-in-Grey, take the Magic Key, and open the Zwaardsrust ruins door for the Purple Orb.",
+   "level": {
+    "t": "Be around level 29 entering The Other Side and level 30 for Dora-in-Grey.",
+    "src": [
+     "gg:walkthrough__act-i__the-purple-orb"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Open the chest behind the market stall for a [[Dragon Horn]].",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Accept [[Light it Up]] south of the square.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Ask the weather cow when it will rain.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Rest until it rains.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Beat a [[Brollygagger]] for the cloth.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Buy Erik the [[Sword Breaker]].",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Read [[Dragony Designs]] in the house south of the Weapons shop.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Smash the pots on the top floor of the house east of the Armor shop for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Follow the balcony of the house west of the church to a hidden chest with 10 pearls.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Open the chest behind the ruins for [[Knick-Knacks for Nifty Nickers]].",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Talk to the woman with Bunny Ears upstairs at the Inn for a puff-puff and 5 Charm.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Heal.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Open the big chest on the east side path to fight the [[Colossal Cannibox]] (560 HP).",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Keep HP above 150.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "On the second visit, open the chests for a [[Platinum Platter]], an [[Enchanted Stone]] and a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Level to 30 near the Goddess Statue.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Add Serena if she has [[Snap, Crackle, Poof]].",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Fight [[Dora-in-Grey]] (1,200 HP): Serena shields herself and the Luminary from charm, and [[Hustle Dance]] follows each laser.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Deal damage with Jade's [[Multithrust]] after Veronica's [[Oomphle]], plus [[Sap]] and the Luminary's [[Unbridled Blade]].",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Go down the eastern stairs in the Zwaardsrust ruins.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Unlock the door for [[Classy Clobber for Kingly Kids]], an [[Enchanted Stone]] and the Purple Orb.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Take the gold sparkly spot in the same room for the [[Choker]].",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    }
+   ],
+   "bosses": [
+    "Dora-in-Grey"
+   ],
+   "get": [
+    "Mini medal - top-floor pot, house east of the Armor shop",
+    "Mini medal - Cursed Cloisters lower level chest",
+    "[[Dragony Designs]] - bookshelf south of the Weapons shop",
+    "[[Knick-Knacks for Nifty Nickers]] - chest behind the ruins",
+    "[[Papillon Pendant]] - from the Colossal Cannibox",
+    "[[Classy Clobber for Kingly Kids]] - Zwaardsrust ruins Magic Key room"
+   ]
+  },
+  {
+   "id": "a1-magic-key",
+   "act": 1,
+   "title": "The Magic Key",
+   "src": "gg:walkthrough__act-i__the-magic-key",
+   "goal": "Use the Magic Key on the red doors around Erdrea and finish the Emerald Coast and Insula Isles crossbow targets before Sniflheim.",
+   "level": null,
+   "steps": [
+    {
+     "t": "Open the northwest door on Insula Australis for a [[Slime Crown]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Shoot the Emerald Coast targets.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Report at the campsite for [[Seed of Magic]]s.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the door southeast of your Cobblestone home for a [[Wristorative]], which heals 25 HP a turn at +3.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Downtown Heliodor door for 5000G.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the door west of the Hotto Steppe ore point for a [[Banishing Blade]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Gallopolis door by the Tavern for 2000G, [[Making the Magic Happen]], a [[Seed of Skill]] and a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Gondolia door by the Item shop for [[Divine Designs]], a [[Seed of Magic]] and a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the tower door southwest of the Dundrasil camp for a stack of mini medals.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Puerto Valor door near the beach for a [[Falcon Knife Earring]], Erik's twin-strike dagger.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Lonalulu hilltop door for [[Zombie Mail]], a mini medal and a [[Seed of Life]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Academie door in the northwest of the first floor for a [[Thunderball]], a mini medal and a [[Seed of Skill]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the Phnom Nonh door for [[Secrets of the Silversmiths]] and a [[Sage's Elixir]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Open the north door on Insula Occidentalis for a [[Falcon Blade]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Sail through the vortex east of Insula Borealis to Insula Centralis for a mini medal, the last target and a [[Sainted Soma]].",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    },
+    {
+     "t": "Report on Insula Occidentalis.",
+     "src": [
+      "gg:walkthrough__act-i__the-magic-key"
+     ]
+    }
+   ],
+   "bosses": [],
+   "get": [
+    "Mini medal - Gallopolis, Gondolia and Lonalulu Magic Key rooms",
+    "Mini medal - Dundrasil tower Magic Key room",
+    "[[Making the Magic Happen]] - Gallopolis Magic Key room",
+    "[[Divine Designs]] - Gondolia Magic Key room",
+    "[[Secrets of the Silversmiths]] - Phnom Nonh Magic Key room",
+    "[[Wristorative]] - Cobblestone Magic Key room"
+   ]
+  },
+  {
+   "id": "a1-blue-orb",
+   "act": 1,
+   "title": "The Blue Orb",
+   "src": "gg:walkthrough__act-i__the-blue-orb",
+   "goal": "Thaw Sniflheim by beating Jormun in the Hekswood, learning the witch's secret in the Royal Library, and defeating Krystalinda for the Blue Orb.",
+   "level": {
+    "t": "Fight Krystalinda at around level 31 or higher.",
+    "src": [
+     "gg:walkthrough__act-i__the-blue-orb"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Grab the [[Magic Beast Hide]] from the pier barrels.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Rest at the camp behind the city.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Forge the [[Hocus Locus]] for Veronica and Rab, buying any missing [[Silkblossom]] from the camp merchant.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Unlock the Magic Key door at the back to enter the frozen city.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Talk to the Queen.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Open the cabin chest northwest of the city for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Ride a [[Face Invader]] in the Snaerfelt.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Ram the ice blocks by holding R2.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Cross the western archway for a mini medal chest.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Take [[Supercool Kit]] from behind the cabin by the Hekswood.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "In the Hekswood, follow the western ice path south to [[Platinum Protection]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Fight [[Jörmun]] (820 HP) solo.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Keep HP above 100.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Use [[Unbridled Blade]] after its jig drops its defence.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Hit switches in the Royal Library to move shelves.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Take both recipe books from the Level 3 shelves.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Kill the [[Mimic]] (around 720 HP) on Level 4 quickly with [[Sap]], [[Unbridled Blade]] and [[Multithrust]] before it uses [[Thwack]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Fight [[Krystalinda]] (1800 HP).",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Raise [[Magic Barrier]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Cast [[Sap]] on her.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Cast [[Oomph]] on the Luminary and Jade.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Keep [[Hustle Dance]] going.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Take the [[Nobleman's Knife]] for Erik and the basement mini medal in the castle.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Get the Blue Orb.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Accept [[The Viking Hoard]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Accept [[A Cold Crush]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Read the Inn bookshelf for [[Platinum Power]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Pick the gold Snaerose south of the Snaerfelt camp for [[That's Magic]].",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Bring the Viking's gift from Insula Borealis.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    }
+   ],
+   "bosses": [
+    "Jörmun",
+    "Krystalinda"
+   ],
+   "get": [
+    "Mini medal - cabin chest northwest of the city",
+    "Mini medal - Snaerfelt chest across the archway",
+    "Mini medal - Sniflheim Castle basement pot",
+    "[[Supercool Kit]] - behind the cabin near the Hekswood",
+    "[[Favourite Fashions of the Masters of Magic]] - Royal Library Level 3",
+    "[[An Anthology of Elemental Earrings]] - Royal Library Level 3"
+   ]
+  },
+  {
+   "id": "a1-yggdrasil",
+   "act": 1,
+   "title": "Onward to Yggdrasil",
+   "src": "gg:walkthrough__act-i__onward-to-yggdrasil",
+   "goal": "Reach Arboria, clear the First Forest and its two quests, and open the path to Yggdrasil to close Act I.",
+   "level": {
+    "t": "Be level 32 or higher for the upper Arborian Highlands.",
+    "src": [
+     "gg:walkthrough__act-i__onward-to-yggdrasil"
+    ]
+   },
+   "steps": [
+    {
+     "t": "Ride a [[Runny Eggsoskeleton]] up the Pit Cave to the chest with a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Loot Arboria: the mini medal chest by the entrance stairs, the [[Supplicant]] upstairs in the twins' house and the Item shop [[Sainted Soma]].",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Accept [[Fit as a Fiddle]] from the old man and [[Planting Seeds for the Future]] in the Grove of Repose.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Zoom to the Academie.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Trade medals for the [[Agility Gilet]] and [[Glombolero]].",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Shoot the Manglegrove targets.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Report to the camp bowyer.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "See Bo in Gallopolis for the [[Happy Hat]].",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Open the chest north of the first fork in the Arborian Highlands for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Forge a [[Platinum Lance]] for Jade at the camp.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Rework any pieces you are equipping that are not at +3.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Open the cave chest in the First Forest for [[How to Outdo the Undead]].",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Pick the gold sparkly spot under the large northern tree for the Red Kale.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Fight [[Sprite Bulb]]s near the top until a [[Wight Bulb]] appears and drops the seeds.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Zoom to Arboria.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Turn in both quests for a [[Healer]] and a [[Butterfly Baton]].",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Use the well at the World Tree to return to the great altar.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Open the chest behind the altar for a mini medal.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Pick up the [[Yggdrasil Dew]].",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Keep the [[Yggdrasil Dew]] for emergencies.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    },
+    {
+     "t": "Against [[Jasper]] at the Heart of Yggdrasil, use only buffs and healing; the fight cannot be won.",
+     "src": [
+      "gg:walkthrough__act-i__onward-to-yggdrasil"
+     ]
+    }
+   ],
+   "bosses": [
+    "Jasper"
+   ],
+   "get": [
+    "Mini medal - Pit Cave chest",
+    "Mini medal - Arboria, chest south of the entrance stairs",
+    "Mini medal - Arborian Highlands, north chest",
+    "Mini medal - First Forest, behind the great altar",
+    "[[How to Outdo the Undead]] - First Forest cave chest",
+    "[[Happy Hat]] - Bo, for every crossbow target"
+   ]
+  }
+ ]
+}

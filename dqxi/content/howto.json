@@ -1,0 +1,615 @@
+{
+ "note": "Hand-written how-to guides. Every line cites the cached page it comes from (gg: = GamerGuides DE guide text, fandom:/dqo: = wiki pages). build.py fails if a number is not in the cited page or a [[name]] is not in the game data. A line about using this guide or the game menus cites \"guide\" and shows \"this guide\" instead of a Source link; such a line may not state a number.",
+ "sections": [
+  {
+   "id": "comeback",
+   "title": "How to pick the game back up after a break",
+   "need": "You'll need: your save file.",
+   "steps": [
+    {
+     "t": "Load your newest save.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Open the main menu.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Find your chapter in the Walkthrough tab of this guide by the last town or dungeon you remember.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Read the chapter's goal line and the party level target.",
+     "src": [
+      "guide"
+     ]
+    },
+    {
+     "t": "Open Misc > Character Builder.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Spend any unspent skill points (the Character Builder how-to shows how).",
+     "src": [
+      "guide",
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Open the [[Fun-Size Forge]] from the Important Items menu.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Check which recipe books you own.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "If the walkthrough level target is above your party, farm with the Level up fast how-to before the next boss.",
+     "src": [
+      "guide",
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "If you are past [[Calasmos]] in the third act, jump to the Post-game checklist tab.",
+     "src": [
+      "guide"
+     ]
+    }
+   ],
+   "check": "You know your chapter, your party has no unspent points, and you know the next level target.",
+   "need_src": [
+    "guide"
+   ],
+   "check_src": [
+    "guide"
+   ]
+  },
+  {
+   "id": "builder",
+   "title": "How to spend skill points in the Character Builder",
+   "need": "You'll need: skill points from levelling up or a [[Seed of Skill]].",
+   "steps": [
+    {
+     "t": "Open the main menu > Misc > Character Builder.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Pick the character; each block of panels is one weapon or skill type.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Unlock a panel next to one you already own; you can only unlock adjacent panels.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Plan a route toward the panels marked ?; each shows how many surrounding panels it needs before it opens.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Commit to one weapon type per character first; the Party tab lists every panel with its SP cost.",
+     "src": [
+      "guide",
+      "fandom:List_of_skill_types_in_Dragon_Quest_XI.json"
+     ]
+    },
+    {
+     "t": "If you chose badly, go to any church or priest.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Pick Rectification there to reset one whole skill type (not single panels).",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    },
+    {
+     "t": "Pay the reset fee: 20 gold per skill point refunded. Rectification opens once [[Veronica]] and [[Serena]] have joined.",
+     "src": [
+      "gg:basics__characters__character-builder"
+     ]
+    }
+   ],
+   "check": "The panel lights up and its skill appears in the character's Abilities list.",
+   "why": "Panels expand after major story events, and at level 99 the only new points come from a [[Seed of Skill]], worth one point each.",
+   "why_src": [
+    "gg:basics__characters__character-builder",
+    "fandom:Seed_of_skill.json"
+   ]
+  },
+  {
+   "id": "forge",
+   "title": "How to forge a +3 item at the Fun-Size Forge",
+   "need": "You'll need: the recipe book, the materials (see the item card), and for reworking, [[Perfectionist's pearl]]s.",
+   "steps": [
+    {
+     "t": "Open the [[Fun-Size Forge]] from the Important Items menu (Definitive Edition lets you forge almost anywhere).",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Choose either a new item to craft or rework to improve one you own.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Pick Bash on one square.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Watch its gauge fill.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Stop each gauge inside the green range; aim for the small notch, where the meter turns yellow.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Watch Focus in the bottom left: Bash costs 5 Focus, Flourishes cost more.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Use Flourishes to hit several squares at once; the first one unlocks at Level 10.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "If the Master Stroke (Hephaestus' Flame, learned at level 55) appears, use it when a square is close to its notch.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Use Appraise: Pretty well means +1, Really well +2, Brilliantly +3.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "Finish with every gauge green for a guaranteed +1.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "For a +3 on a new item, get at least half the gauges yellow.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    },
+    {
+     "t": "If you fail a rework, nothing is lost: the item keeps its previous bonus.",
+     "src": [
+      "gg:fun-sized-forge__fun-sized-forge"
+     ]
+    }
+   ],
+   "check": "The finished item shows its stat bonus as +1, +2 or +3.",
+   "why": "Each stat on an item card reads base/+1/+2/+3, so a +3 forge is often worth more than a shop upgrade.",
+   "why_src": [
+    "dqo:List_of_weapons_in_Dragon_Quest_XI.json",
+    "gg:fun-sized-forge__fun-sized-forge"
+   ],
+   "check_src": [
+    "gg:fun-sized-forge__fun-sized-forge"
+   ]
+  },
+  {
+   "id": "pep",
+   "title": "How to use Pep Powers",
+   "need": "You'll need: the right skill panels for combo Pep Powers (see the table on the source page).",
+   "steps": [
+    {
+     "t": "Fight normally or Guard until a character peps up; the portrait glows.",
+     "src": [
+      "gg:basics__characters__pep-powers"
+     ]
+    },
+    {
+     "t": "Watch for the glow to flash: the pepped up state is about to end.",
+     "src": [
+      "gg:basics__characters__pep-powers"
+     ]
+    },
+    {
+     "t": "Swap pepped characters out of battle to hold the state while others pep up.",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "Bring them back for a group Pep Power.",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "Use a [[Pep pip]] to pep up one character, or a [[Pep pop]] to pep up the whole active party.",
+     "src": [
+      "gg:basics__characters__pep-powers"
+     ]
+    },
+    {
+     "t": "Buy a [[Pep pip]] at the Octagonia Casino for 125,000 tokens, or for 10 [[Mini medal]]s each after you hand in 110.",
+     "src": [
+      "gg:basics__characters__pep-powers"
+     ]
+    },
+    {
+     "t": "Buy a [[Pep pop]] in Cobblestone in the final part of the game for 200,000G each.",
+     "src": [
+      "gg:basics__characters__pep-powers"
+     ]
+    }
+   ],
+   "check": "The Pep Power appears in the Pep Powers menu of the pepped characters.",
+   "why": "There are 83 Pep Powers; using 25 unlocks the Peppy-Go-Lucky trophy.",
+   "why_src": [
+    "gg:basics__characters__pep-powers"
+   ]
+  },
+  {
+   "id": "level",
+   "title": "How to level up fast with metal slimes",
+   "need": "You'll need: the [[Luminary]] with [[Pep Up]] (Luminary panels), [[Erik]], [[Jade]], [[Sylvando]], [[Rab]], and a few [[Pep pip]]s.",
+   "steps": [
+    {
+     "t": "Start a battle against enemies that do not run away with [[Rab]], [[Erik]], [[Jade]] and [[Sylvando]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Guard with them until all four are pepped up, swapping members in and out as needed.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Bring in the [[Luminary]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Use [[Pep Up]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Finish the battle.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Save.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Give [[Sylvando]] a [[Pep pip]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Start a new battle with the [[Luminary]], [[Erik]], [[Jade]] and [[Sylvando]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Use the Haulellujah Pep Power.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Swap [[Erik]] out for [[Rab]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Have the [[Luminary]] use [[Pep Up]] and [[Sylvando]] use a [[Pep pip]] on [[Jade]].",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Use the [[Electro Light]] Pep Power; if it calls robots instead of metal slimes, reload your save.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "On [[Rab]]'s next turn use [[Dirge of Dundrasil]] to put the slimes to sleep.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    },
+    {
+     "t": "Finish them with critical-hit skills, not normal attacks, which can wake them up so they flee.",
+     "src": [
+      "gg:extras__how-to-grind__how-to-level-up-fast"
+     ]
+    }
+   ],
+   "check": "At level 70+ one such fight can give at least 500,000 EXP to everyone; a [[Metal king slime]] (Vicious) then always drops a [[Pep pip]].",
+   "check_src": [
+    "gg:extras__how-to-grind__how-to-level-up-fast"
+   ]
+  },
+  {
+   "id": "gold",
+   "title": "How to farm gold in the final act",
+   "need": "You'll need: the third act with flight, [[Erik]] with [[Half-Inch]] and [[Sticky Fingers]] (Guile panels), ideally [[Robber gloves]] +3.",
+   "steps": [
+    {
+     "t": "Fly to The First Forest Whale Way Station, just north of Yggdrasil.",
+     "src": [
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    },
+    {
+     "t": "Fight [[Hooper duper]]s.",
+     "src": [
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    },
+    {
+     "t": "Use [[Half-Inch]] with [[Erik]] to steal their [[Devilry drinker]] shield.",
+     "src": [
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    },
+    {
+     "t": "Flee or finish the battle.",
+     "src": [
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    },
+    {
+     "t": "Repeat.",
+     "src": [
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    },
+    {
+     "t": "Sell each [[Devilry drinker]] for 30,000G.",
+     "src": [
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    }
+   ],
+   "check": "Your gold rises by 30,000G per shield sold; [[Hooper duper]]s also drop [[Seed of Sorcery]]."
+  },
+  {
+   "id": "seeds",
+   "title": "How to farm stat seeds",
+   "need": "You'll need: drop-rate gear: two [[Bunny tail]]s per character, the [[Pirate king's pendant]] on [[Erik]].",
+   "steps": [
+    {
+     "t": "Equip the drop-rate gear; seeds are always a monster's rare drop.",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "Bring the source's ideal team: [[Erik]], [[Jade]], [[Veronica]] and [[Serena]].",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "Swap [[Veronica]] out for the [[Luminary]] to use the Haulellujah Pep Power, which makes the last three foes killed drop their rare items.",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "For [[Seed of life]], go south over the bridge from the Champs Sauvage (North) campsite at night.",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "Fight the [[Corpse corporal]]s there (up to three per battle).",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "For [[Seed of magic]]: in daytime on the Path to Trial Isle, fight the flying Vicious [[Terrornodon]]s.",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "For [[Seed of strength]]: fight [[Brownie]]s on Insula Incognita (Malicious ones in the last part).",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "For [[Seed of defence]]: fight [[Mosstodon]]s in the First Forest, south of the Arboria entrance.",
+     "src": [
+      "gg:extras__how-to-grind__farming-seeds"
+     ]
+    },
+    {
+     "t": "For [[Seed of Sorcery]]: fight [[Hooper duper]]s (see the gold how-to).",
+     "src": [
+      "guide",
+      "gg:extras__how-to-grind__farming-seeds",
+      "gg:extras__how-to-grind__farming-money"
+     ]
+    }
+   ],
+   "check": "Seeds land in the bag after battle; use them from the Items menu."
+  },
+  {
+   "id": "bunny",
+   "title": "How to farm Bunny tails",
+   "need": "You'll need: early game access to the Heliodor Region; the [[Luminary]], [[Erik]] and [[Jade]] for Haulellujah.",
+   "steps": [
+    {
+     "t": "Go to the Heliodor Region campsite (first or second part of the game).",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "At night, attack sleeping groups of [[Bunicorn]]s (three or four together).",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "Steal the common drop with [[Half-Inch]] so only the [[Bunny tail]] is left to drop.",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "Once [[Jade]] joins, pep up the [[Luminary]], [[Erik]] and [[Jade]].",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "Use Haulellujah to guarantee rare drops from the last three foes.",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    },
+    {
+     "t": "If you are in the third act, hunt [[Spiked hare]]s on Insula Occidentalis instead; the tail is their common drop.",
+     "src": [
+      "gg:extras__how-to-grind__bunny-tails"
+     ]
+    }
+   ],
+   "check": "Each [[Bunny tail]] adds 1% drop rate; eight equipped give 8%."
+  },
+  {
+   "id": "medals",
+   "title": "How to collect and spend Mini Medals",
+   "need": "You'll need: a boat (both exchange points need one).",
+   "steps": [
+    {
+     "t": "Open every chest, pot and barrel; the Mini Medals tab lists all known spots.",
+     "src": [
+      "guide",
+      "gg:extras__mini-medals__what-are-mini-medals"
+     ]
+    },
+    {
+     "t": "Hand medals in at Puerto Valor for the first page of the Album de Medailles.",
+     "src": [
+      "gg:extras__mini-medals__what-are-mini-medals"
+     ]
+    },
+    {
+     "t": "Hand the rest in at L'Academie de Notre Maitre des Medailles; the reward table is on the Mini Medals tab.",
+     "src": [
+      "guide",
+      "gg:extras__mini-medals__what-are-mini-medals"
+     ]
+    },
+    {
+     "t": "If you want more after the last reward, race in the Black Cup at Gallopolis (a Drustan Trials wish); every race pays one medal.",
+     "src": [
+      "gg:extras__mini-medals__farming-mini-medals"
+     ]
+    },
+    {
+     "t": "Or farm [[Umbra]]s at night in the Disciple's Trial - The Cruel Crypt.",
+     "src": [
+      "gg:extras__mini-medals__farming-mini-medals"
+     ]
+    },
+    {
+     "t": "Steal the [[Umbra]]s' medal with [[Erik]].",
+     "src": [
+      "gg:extras__mini-medals__farming-mini-medals"
+     ]
+    }
+   ],
+   "check": "The album page fills with stamps and each threshold reward is handed over."
+  },
+  {
+   "id": "draconian",
+   "title": "How to choose Draconian Quest options",
+   "need": "You'll need: a new game (options are only offered on the naming screen).",
+   "steps": [
+    {
+     "t": "Start a new game and, on the naming screen, press the button shown to open Draconian Quest.",
+     "src": [
+      "gg:basics__gameplay-primer__draconian-quest"
+     ]
+    },
+    {
+     "t": "Tick only the options you want; the Draconian tab lists all of them and which version has them.",
+     "src": [
+      "guide",
+      "fandom:Draconian_Quest.json",
+      "gg:basics__gameplay-primer__draconian-quest"
+     ]
+    },
+    {
+     "t": "If an option becomes too much, remove it at any church.",
+     "src": [
+      "gg:basics__gameplay-primer__draconian-quest"
+     ]
+    },
+    {
+     "t": "Know that a removed option cannot be turned back on without an older save or a new game.",
+     "src": [
+      "gg:basics__gameplay-primer__draconian-quest"
+     ]
+    }
+   ],
+   "check": "Each completed Draconian Quest earns a star next to the save file.",
+   "check_src": [
+    "fandom:Draconian_Quest.json"
+   ]
+  }
+ ]
+}

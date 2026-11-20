@@ -1,0 +1,82 @@
+{
+ "note": "Crossbow target positions, rewritten from the GamerGuides DE walkthrough chapters, in the order the walkthrough finds them (this order may differ from the numbered target pictures on the GamerGuides Crossbow Kid pages).",
+ "regions": {
+  "Gallopolis Region": [
+    {"t": "Look up at the first palm trees southeast (on the map) of the Gallopolis entrance.", "src": ["gg:walkthrough__act-i__the-sultanate-of-gallopolis"]},
+    {"t": "Look up at the cliff near the entrance to the Hotto Steppe.", "src": ["gg:walkthrough__act-i__the-sultanate-of-gallopolis"]},
+    {"t": "Face the archway from the west cliff due west of the Hotto Steppe entrance; the target sits on a strange plant on the east cliff.", "src": ["gg:walkthrough__act-i__the-sultanate-of-gallopolis"]},
+    {"t": "Look above the tent at the Celestial Sands checkpoint.", "src": ["gg:walkthrough__act-i__the-sultanate-of-gallopolis"]},
+    {"t": "Look just above the water in the southwest part of the pool in the Celestial Sands to the north.", "src": ["gg:walkthrough__act-i__the-sultanate-of-gallopolis"]}
+  ],
+  "Laguna di Gondolia": [
+    {"t": "Look right to a rock as soon as you enter the Laguna from the east.", "src": ["gg:walkthrough__act-i__gondolia"]},
+    {"t": "Look right to the top of a pole at the head of the south stairs, reached by the northeast stairs of the central platform.", "src": ["gg:walkthrough__act-i__gondolia"]},
+    {"t": "Face west from the intersection below the western stairs of the central platform to a target hanging from a tree.", "src": ["gg:walkthrough__act-i__gondolia"]},
+    {"t": "Look out to the rocks from the platforms on the west side of the Western swamp.", "src": ["gg:walkthrough__act-i__gondolia"]},
+    {"t": "Drop below the central platform of the west walkway to look under the bridge.", "src": ["gg:walkthrough__act-i__gondolia"]}
+  ],
+  "The Costa Valor": [
+    {"t": "Go to the northeast rock corner of the small island off the eastern beach.", "src": ["gg:walkthrough__act-i__to-puerto-valor"]},
+    {"t": "Look up on the hill at the intersection north of the bridge.", "src": ["gg:walkthrough__act-i__to-puerto-valor"]},
+    {"t": "Hug the north wall of the field south of that bridge to a tree just past the first few trees (north of the Camp).", "src": ["gg:walkthrough__act-i__to-puerto-valor"]},
+    {"t": "Hug the western wall heading south in the southern field to spot one in a tree.", "src": ["gg:walkthrough__act-i__to-puerto-valor"]},
+    {"t": "Look up at the trees on top of the rocks by the eastern wall of the southern field.", "src": ["gg:walkthrough__act-i__to-puerto-valor"]}
+  ],
+  "Zwaardsrust Region": [
+    {"t": "Look just above the door of the first windmill you reach heading north from the ship.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]},
+    {"t": "Face north from the Ore gathering point in the southwest corner to the top of the nearest hay bale.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]},
+    {"t": "Shoot the target just behind the Priest at the back of the Warrior's Rest Inn.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]},
+    {"t": "Go west from the windmill north of the bridge to the edge to see one hanging from a tree.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]},
+    {"t": "Check behind the scarecrow in the hay field to the northeast.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]}
+  ],
+  "Insula Isles": [
+    {"t": "Look up at the tree on the hill along the western edge of Insula Australis.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]},
+    {"t": "Look up at the rocks at the far south of Insula Algarum.", "src": ["gg:walkthrough__act-i__the-green-orb"]},
+    {"t": "Shoot down under the bridge of Insula Borealis while standing on the bridge.", "src": ["gg:walkthrough__act-i__the-green-orb"]},
+    {"t": "Turn around in the northeast corner of Insula Orientalis to face the high rocks near a bush.", "src": ["gg:walkthrough__act-i__the-green-orb"]},
+    {"t": "Look north from the northeast corner of Insula Centralis, reached through the Vortex of Light east of Insula Borealis.", "src": ["gg:walkthrough__act-i__the-magic-key"]}
+  ],
+  "Dundrasil Region": [
+    {"t": "Look east up on the rocks from the nearest tree on the right at the archway.", "src": ["gg:walkthrough__act-i__search-for-the-rainbough"]},
+    {"t": "Search the tree right of the Mellow Vera flower point along the north wall in the northwest.", "src": ["gg:walkthrough__act-i__to-dundrasil-castle-ruins"]},
+    {"t": "Look in the tree at the ruins east of the Camp.", "src": ["gg:walkthrough__act-i__to-dundrasil-castle-ruins"]},
+    {"t": "Search the rocks just south of the bridge in the southwest of the area.", "src": ["gg:walkthrough__act-i__to-dundrasil-castle-ruins"]},
+    {"t": "Face the south wall inside the northwest ruined building of the castle ruins.", "src": ["gg:walkthrough__act-i__to-dundrasil-castle-ruins"]}
+  ],
+  "The Champs Sauvage": [
+    {"t": "Look northeast behind the large rock just south of the first bridge.", "src": ["gg:walkthrough__act-i__the-silver-orb"]},
+    {"t": "Look up west of the Sparkly Spot south of the Camp to a target dangling from a tree.", "src": ["gg:walkthrough__act-i__the-silver-orb"]},
+    {"t": "Look into the lake north of the bridge.", "src": ["gg:walkthrough__act-i__the-silver-orb"]},
+    {"t": "Face the waterfall from the northwest part of the area over the bridge past the lake fork.", "src": ["gg:walkthrough__act-i__the-silver-orb"]},
+    {"t": "Look up into the air near the bridge just south of the Camp.", "src": ["gg:walkthrough__act-i__the-silver-orb"]}
+  ],
+  "The Emerald Coast": [
+    {"t": "Turn around from the dock to face the shack, where a target dangles from the roof.", "src": ["gg:walkthrough__act-i__the-magic-key"]},
+    {"t": "Face east in the corner north of the Camp.", "src": ["gg:walkthrough__act-i__the-magic-key"]},
+    {"t": "Turn around along the western wall of the field on the way to the Door of Departure to spot one on the wall.", "src": ["gg:walkthrough__act-i__the-magic-key"]},
+    {"t": "Look up at the last large tree due west of the Campsite.", "src": ["gg:walkthrough__act-i__the-magic-key"]},
+    {"t": "Search the northeast corner across the bridge northwest of that tree.", "src": ["gg:walkthrough__act-i__the-magic-key"]}
+  ],
+  "Sniflheim Region": [
+    {"t": "Look up at the tree behind the Ore gathering point in the northwest corner.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Face southwest from the end of the short east path south of the Snaerfelt entrance.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Face east from the small hill with a chest along the eastern wall to a tree target.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Face north from the Flower gathering point along the southwest edge to a tree target.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Look up to the south from the far eastern edge near the Viking Hideout (reachable only once the Sniflheim mystery is solved).", "src": ["gg:walkthrough__act-i__the-blue-orb"]}
+  ],
+  "The Snaerfelt": [
+    {"t": "Face the western wall from the top of the archway near the entrance (smash the ice with a Face Invader to get up).", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Look up between the two large icicles along the western edge of the field east of the Frozen Fjord.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Keep the camera on the western wall going north along the western edge past the archways.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Search behind the northeast side of the building on the plateau for one dangling from a tree.", "src": ["gg:walkthrough__act-i__the-blue-orb"]},
+    {"t": "Look up at the tree west of the Flower gathering point below the east end of the plateau path.", "src": ["gg:walkthrough__act-i__the-blue-orb"]}
+  ],
+  "The Manglegrove": [
+    {"t": "Look on the north rocks of the first field from the eastern exit (Heliodor side).", "src": ["gg:walkthrough__act-i__onward-to-yggdrasil"]},
+    {"t": "Look up high at a tree in the southwest corner of the next large field to the west.", "src": ["gg:walkthrough__act-i__onward-to-yggdrasil"]},
+    {"t": "Follow the eastern path north of the Camp bridge to its end near the waterfall.", "src": ["gg:walkthrough__act-i__onward-to-yggdrasil"]},
+    {"t": "Keep to the western wall on the north path from the three-way split.", "src": ["gg:walkthrough__act-i__onward-to-yggdrasil"]},
+    {"t": "Look up northeast at the end of the short path entering from the Costa Valor Campsite to the south.", "src": ["gg:walkthrough__act-i__onward-to-yggdrasil"]}
+  ]
+ }
+}

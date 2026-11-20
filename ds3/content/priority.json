@@ -1,0 +1,20 @@
+{
+ "level": {
+  "title": "Levelling priority",
+  "steps": [
+   {"t": "Reach the Strength and Dexterity your weapon needs first: they are required to wield it (each weapon card lists Needs).", "s": ["Stats (Dark Souls III)"]},
+   {"advice": true, "t": "Vigor to 27, then your damage stat to 40 (see the soft caps table).", "s": ["fx:Vigor", "fx:Strength", "fx:Dexterity", "fx:Intelligence", "fx:Faith"]},
+   {"advice": true, "t": "Endurance toward 40 for melee, Attunement toward 35 for casters.", "s": ["fx:Endurance", "fx:Attunement"]},
+   {"advice": true, "t": "Vigor toward 50 after that.", "s": ["fx:Vigor"]}
+  ],
+  "note": "This order is a reading of the soft caps, not a ranking of builds."
+ },
+ "upgrade": {
+  "title": "Upgrade priority",
+  "steps": [
+   {"t": "Every [[Estus Shard]] and [[Undead Bone Shard]]: they raise your flask charges and healing for the whole game.", "s": ["Estus Shard", "Undead Bone Shard"]},
+   {"t": "One main weapon at a time with [[Blacksmith Andre]]: titanite is limited until the Handmaid sells it.", "s": ["Blacksmith Andre", "Titanite Shard (Dark Souls III)"]},
+   {"t": "Umbral Ashes to the [[Shrine Handmaid]], so she sells [[Titanite Shard]] and [[Large Titanite Shard]] without limit.", "s": ["Titanite Shard (Dark Souls III)", "Large Titanite Shard (Dark Souls III)"]}
+  ]
+ }
+}

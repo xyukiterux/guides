@@ -1,0 +1,225 @@
+{
+ "note": "Hand review of the videos the search rule in fetch_videos.py found (reviewed 2026-11-20 from title, channel, length and upload date). Only 'keep' videos are shown, each with the reason; 'drop' says why the others are left out. build.py fails if a found video is in neither list.",
+ "topics": {
+  "start": {
+   "keep": {
+    "gG09qLdp0A8": "Early tips for the S version: what to do first.",
+    "tqzncA8gla4": "Explains the battle system and Pep Powers."
+   },
+   "drop": {
+    "M2fJQZYvvyE": "A build guide, shown under builds instead.",
+    "bhK3N04fIFY": "Levelling only, shown under levelling.",
+    "v53PWvpskbY": "PS4 base game, three tips only; the two kept videos cover more."
+   }
+  },
+  "builder": {
+   "keep": {
+    "TmiYeNOouJo": "Shows how the Character Builder grid and skill points work.",
+    "M2fJQZYvvyE": "One long build guide covering every party member."
+   },
+   "drop": {
+    "GYg0kbEo-iY": "Erik only: shown on Erik's page.",
+    "9uhM0eryLnw": "Act 1 only and almost an hour long.",
+    "etQZcPeDwSw": "Rab only: shown on Rab's page."
+   }
+  },
+  "forge": {
+   "keep": {
+    "wwKKSaknn8k": "Walks through the Fun-Size Forge menu.",
+    "folC4jip7AQ": "How to reach +3 when forging.",
+    "AlLAOsU9-v0": "Explains the forge's cool-down wait."
+   },
+   "drop": {
+    "mk4AVLHK_Q0": "Mostly general tips, little forging.",
+    "wSqaRLMYIKw": "Episode 226 of a let's-play, not a guide."
+   }
+  },
+  "level": {
+   "keep": {
+    "YOdZ36KU5P0": "Efficient early-game EXP farming in the S version.",
+    "MljxenzRV6E": "How to make metal slimes appear.",
+    "oFaujSAOn6s": "Late-game EXP farm."
+   },
+   "drop": {
+    "bhK3N04fIFY": "Two minutes long; the kept videos show more.",
+    "sghdEd967r0": "Same idea as the early-game video kept above."
+   }
+  },
+  "seeds": {
+   "keep": {
+    "ZgykS_iLFEU": "Strength seed farming route.",
+    "ORd7sfyKQSI": "Respawning Tickington chest for Seeds of Skill (S version only).",
+    "3oTC4Rn1KVY": "Seeds of Life farming."
+   },
+   "drop": {
+    "1Cj4moknNm8": "Same strength-seed farm as the kept video.",
+    "U7ZY9KLCfBo": "Original release method; the Tickington chest video is for the S version."
+   }
+  },
+  "medals": {
+   "keep": {
+    "Vc5TtZ5p74U": "Respawning chest for mini medals in the Definitive Edition.",
+    "d3m53XFf_94": "Walks through mini medals 1-25.",
+    "s64juBxoFVA": "Mini medal farming method."
+   },
+   "drop": {
+    "B-6p-VUF0Is": "Episode of a let's-play.",
+    "YBlDUc2A5jc": "Two minutes, same farming idea as a kept video."
+   }
+  },
+  "tickington": {
+   "keep": {
+    "3lNo2mAxinM": "All Tockle and pastword locations in the S version.",
+    "hpIk0PhVXro": "All Tockle locations.",
+    "Lc7fM6KWecE": "One Tickington world quest (Whealbrook) step by step."
+   },
+   "drop": {
+    "AA_9fD-Ka0k": "Two side quests only.",
+    "ORd7sfyKQSI": "About seed farming, shown under seeds."
+   }
+  },
+  "drustan": {
+   "keep": {
+    "kRkvKjISVow": "Every Drustan trial in one video.",
+    "2nXt6GD_ozc": "The Sage trial.",
+    "46aJceGjTpE": "Drustan's second trial."
+   },
+   "drop": {
+    "zXUA8JGA3f0": "A playthrough episode, not a guide.",
+    "giO6IYpbyQA": "Draconian-mode run of one trial."
+   }
+  },
+  "calasmos": {
+   "keep": {
+    "UMHI1rMDb6M": "How to beat Calasmos, with the strategy explained.",
+    "8UovU8MjpJ8": "How to beat Calasmos.",
+    "aw11f6pzaGQ": "Another approach to the fight in the Definitive Edition."
+   },
+   "drop": {
+    "gzHFlZt9SPc": "A speed kill with an end-game party, not a how-to.",
+    "zdbvfirJ_sA": "Fight footage with a Draconian option on."
+   }
+  },
+  "timewyrm": {
+   "keep": {
+    "HVu0QprU5gk": "Timewyrm strategy.",
+    "EGHmY7XyQps": "Short kill with the setup shown.",
+    "GhS5F2xeshY": "Full Timewyrm fight in the S version."
+   },
+   "drop": {
+    "wxyGYzevfrQ": "Episode 53 of a let's-play.",
+    "5Abs806ulUU": "Speed kill, same idea as the kept short kill."
+   }
+  },
+  "draconian": {
+   "keep": {
+    "_vQ9VpJi2N4": "Overweening Pride with every Draconian option on: shows what to expect.",
+    "aYtVkfcZCgU": "A boss with every Draconian option on and no healing."
+   },
+   "drop": {
+    "6UJDxkUhwwk": "Part 35 of a series.",
+    "5ZDTjIEiGkE": "Low-level challenge run, not a guide to the options.",
+    "zTx-HnSmBy4": "Episode 46 of a let's-play."
+   }
+  },
+  "party": {
+   "keep": {
+    "M2fJQZYvvyE": "Covers every party member's role and build.",
+    "sikskB50IQA": "One creator's ranking of the party (an opinion, not a tier list)."
+   },
+   "drop": {
+    "9uhM0eryLnw": "Act 1 only and almost an hour long.",
+    "1Zbje_m0oZ4": "About the story and characters, not party choice.",
+    "TsRI8fJZzaI": "Damage numbers only."
+   }
+  },
+  "party_hero": {
+   "keep": {
+    "rA5p-txSEWM": "The Luminary's skill trees explained.",
+    "M2fJQZYvvyE": "Covers every party member, the Luminary included."
+   },
+   "drop": {
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "TxqQDipFL9o": "A boss fight, not a build.",
+    "Up301SRfjPw": "A let's-play episode."
+   }
+  },
+  "party_erik": {
+   "keep": {
+    "mrgBaeg90nQ": "Erik's skill trees explained.",
+    "GYg0kbEo-iY": "Which Erik skill tree to pick.",
+    "jbnkSwrSrZw": "Compares Erik's Act 1 builds."
+   },
+   "drop": {
+    "M2fJQZYvvyE": "Already shown for the other members; the kept videos are Erik-only.",
+    "1aF475HfLEI": "A costume, not a build."
+   }
+  },
+  "party_veronica": {
+   "keep": {
+    "bvaVlb04y6M": "Veronica's skill trees explained.",
+    "M2fJQZYvvyE": "Covers every party member, Veronica included."
+   },
+   "drop": {
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "KRClgjC__FI": "A different game (Dragon Quest Tact).",
+    "xWiM2s2MFzc": "A let's-play episode."
+   }
+  },
+  "party_serena": {
+   "keep": {
+    "2Ftd1KRVJPA": "Serena's skill trees explained.",
+    "M2fJQZYvvyE": "Covers every party member, Serena included."
+   },
+   "drop": {
+    "Lqsy7zcg7vc": "A solo challenge.",
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "UWOENIBMN7Q": "Pep Power showcase, not a build."
+   }
+  },
+  "party_sylvando": {
+   "keep": {
+    "b489fdpkvcg": "Sylvando's skill trees explained.",
+    "M2fJQZYvvyE": "Covers every party member, Sylvando included."
+   },
+   "drop": {
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "lgG-50Tqlbw": "A let's-play episode.",
+    "Yc0XCaoPwV0": "About the character's story, not a build."
+   }
+  },
+  "party_jade": {
+   "keep": {
+    "aI4cz7S3Tug": "Jade's skill trees explained.",
+    "XfauFbE6yz0": "Shows every Allure ability.",
+    "M2fJQZYvvyE": "Covers every party member, Jade included."
+   },
+   "drop": {
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "F9kjjVytE70": "A levelling trick, not a build."
+   }
+  },
+  "party_rab": {
+   "keep": {
+    "etQZcPeDwSw": "Rab's skill trees explained.",
+    "M2fJQZYvvyE": "Covers every party member, Rab included."
+   },
+   "drop": {
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "r58uAneF2ZI": "A challenge run.",
+    "Up301SRfjPw": "A let's-play episode."
+   }
+  },
+  "party_hendrik": {
+   "keep": {
+    "OdoBU88Z8fI": "Builds Hendrik as the party's tank.",
+    "M2fJQZYvvyE": "Covers every party member, Hendrik included."
+   },
+   "drop": {
+    "Du4pkFPVKIU": "A playthrough episode of a story duel.",
+    "TsRI8fJZzaI": "Damage numbers only.",
+    "WZmOYqS7z9Q": "In French; about secret panels only."
+   }
+  }
+ }
+}

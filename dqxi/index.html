@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dragon Quest XI S Guide: walkthrough, party builds, forge, bosses</title>
+<meta name="description" content="Dragon Quest XI S Definitive Edition guide: act-by-act walkthrough with level targets, Character Builder panels and routes, every weapon and armour with Fun-Size Forge recipes, bosses, Mini Medals, Tickington, post-game.">
+<meta name="theme-color" content="#0a1a6b">
+<meta property="og:title" content="Dragon Quest XI S Guide">
+<meta property="og:description" content="Walkthrough by act with level targets, party skill routes, every forge recipe and book location, boss fight notes, Mini Medals, Tickington and the post-game. Works offline.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Cinzel";font-weight:700;font-style:normal;font-display:swap;src:url("assets/fonts/cinzel-700-latin.woff2") format("woff2")}
+:root{
+  --bg:#050b2e;--bg2:#0a1450;--win:#0c1d86;--win2:#081462;--win3:#06104d;--edge:#ffffff;--edge2:#c9d3ff;
+  --text:#ffffff;--muted:#c3cbf2;--dim:#8d98d8;--gold:#f2c94c;--gold2:#ffe08a;--red:#ff7b7b;--green:#8fe39a;--cyan:#7fd8ff;
+  --tS:#f2c94c;--tA:#8fe39a;--tB:#7fd8ff;--tC:#c3cbf2;
+  --head:"Cinzel","Trajan Pro","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:10px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--text);font:17px/1.6 var(--body);min-height:100vh;overflow-x:hidden;
+  background:radial-gradient(1200px 700px at 80% -10%,rgba(60,90,255,.25),transparent 60%),radial-gradient(900px 600px at -10% 110%,rgba(242,201,76,.08),transparent 60%),var(--bg)}
+a{color:var(--gold2);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--head);color:var(--gold);font-weight:700;letter-spacing:.02em;line-height:1.25;margin:.2em 0 .5em}
+h1{font-size:clamp(26px,3.4vw,40px)}
+h2{font-size:clamp(22px,2.4vw,30px)}
+h3{font-size:20px}
+p{margin:.4em 0 .8em}
+img{max-width:100%}
+/* the Dragon Quest window: royal blue, white rounded border, thin inner line */
+.win{background:linear-gradient(180deg,var(--win),var(--win2));border:3px solid var(--edge);border-radius:var(--r);
+  box-shadow:inset 0 0 0 2px var(--win3),inset 0 0 0 3px rgba(255,255,255,.18),0 6px 18px rgba(0,0,0,.45);padding:16px 18px;margin:0 0 16px;min-width:0}
+.win.tight{padding:10px 12px}
+.win h2:first-child,.win h3:first-child{margin-top:0}
+.muted{color:var(--muted)}
+.dim{color:var(--dim);font-size:15px}
+.gold{color:var(--gold)}
+/* layout */
+header.top{position:sticky;top:0;z-index:30;background:linear-gradient(180deg,#0a1a6b,#071255);border-bottom:3px solid var(--edge);
+  display:flex;align-items:center;gap:14px;padding:10px 18px;flex-wrap:wrap}
+.brand{font-family:var(--head);font-size:22px;color:var(--gold);white-space:nowrap;display:flex;align-items:center;gap:10px}
+.brand img{width:34px;height:34px;border-radius:6px;border:2px solid #fff}
+.searchbox{flex:1 1 320px;position:relative;min-width:0}
+#q{width:100%;font:17px var(--body);padding:10px 14px;border-radius:8px;border:2px solid var(--edge);background:var(--win3);color:#fff}
+#q::placeholder{color:var(--dim)}
+.hdrline{flex-basis:100%;font-size:15px;color:var(--muted);margin-top:-4px}
+.hdrline .short{display:none}
+@media (max-width:900px){.hdrline .long{display:none}.hdrline .short{display:inline}}
+#res{position:absolute;left:0;right:0;top:calc(100% + 6px);display:none;max-height:70vh;overflow:auto;z-index:40}
+#res.on{display:block}
+#res a{display:flex;justify-content:space-between;gap:12px;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.12);color:#fff}
+#res a:hover,#res a.sel{background:rgba(242,201,76,.16);text-decoration:none}
+#res a span{color:var(--muted);font-size:14px;text-align:right}
+#menuBtn{display:none;font:600 16px var(--body);background:var(--win3);color:#fff;border:2px solid #fff;border-radius:8px;padding:8px 12px;cursor:pointer}
+.shell{display:grid;grid-template-columns:250px minmax(0,1fr);gap:18px;padding:18px;max-width:none}
+nav.side{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;padding:10px 6px}
+nav.side a{display:block;position:relative;padding:7px 10px 7px 26px;color:#fff;border-radius:6px;font-size:16px}
+nav.side a:hover{background:rgba(255,255,255,.08);text-decoration:none}
+nav.side a.on{color:var(--gold)}
+nav.side a.on::before{content:"";position:absolute;left:9px;top:50%;margin-top:-6px;border-left:9px solid var(--gold);border-top:6px solid transparent;border-bottom:6px solid transparent;animation:blink 1s steps(2) infinite}
+nav.side .grp{font-family:var(--head);color:var(--dim);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:12px 10px 4px}
+@keyframes blink{50%{opacity:.25}}
+main{min-width:0}
+footer{padding:14px 18px 40px;color:var(--muted);font-size:15px;border-top:2px solid rgba(255,255,255,.2);margin-top:10px}
+.checked{font-size:15px;color:var(--muted)}
+.checked a{color:var(--gold2)}
+/* grids and tiles */
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.grid.small{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+.tile{display:flex;gap:12px;align-items:center;color:#fff;min-width:0;cursor:pointer}
+.tile:hover{border-color:var(--gold);text-decoration:none}
+.tile img,.tile .ph{width:56px;height:56px;object-fit:contain;flex:0 0 56px;image-rendering:auto;background:rgba(0,0,0,.18);border-radius:8px}
+.tile .tn{font-weight:600;line-height:1.3;overflow-wrap:break-word;hyphens:auto}
+.tile .ts{color:var(--muted);font-size:14px}
+.ph{display:flex;align-items:center;justify-content:center;font-family:var(--head);color:var(--gold);font-size:24px;border:2px solid rgba(255,255,255,.3)}
+.bigimg{width:160px;height:160px;object-fit:contain;background:rgba(0,0,0,.2);border-radius:10px;border:2px solid rgba(255,255,255,.35);flex:0 0 160px}
+.portrait{width:100%;height:240px;object-fit:contain;object-position:center top;background:rgba(0,0,0,.18);border-radius:8px}
+.cardhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.cardhead>div{flex:1 1 260px;min-width:0}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.4);font-size:14px;margin:0 6px 6px 0;color:var(--muted)}
+.pill.gold{border-color:var(--gold);color:var(--gold)}
+.pill.warn{border-color:var(--red);color:var(--red)}
+.answer{font-size:19px;color:#fff;margin:.2em 0 .8em}
+.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin:8px 0 12px}
+.kv div{background:rgba(0,0,0,.2);border-radius:8px;padding:6px 10px;border:1px solid rgba(255,255,255,.15)}
+.kv b{display:block;font-size:13px;color:var(--muted);font-weight:500}
+.kv span{font-size:18px;font-weight:700}
+/* tables */
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid rgba(255,255,255,.14);vertical-align:top}
+th{color:var(--gold);font-weight:600;font-size:15px;white-space:nowrap}
+tr.hl td{background:rgba(242,201,76,.16)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+/* steps */
+ol.steps{margin:.3em 0 1em;padding-left:1.6em}
+ol.steps li{margin:.35em 0;padding-left:.2em}
+ol.steps li::marker{color:var(--gold);font-weight:700}
+.srcbtn{font:14px var(--body);background:none;border:1px solid rgba(255,255,255,.35);color:var(--muted);border-radius:6px;padding:1px 8px;cursor:pointer;margin-left:6px}
+.srcbtn:hover{border-color:var(--gold);color:var(--gold)}
+.srclist{display:none;font-size:14px;margin:4px 0 2px}
+.srclist.on{display:block}
+details{margin:.5em 0}
+details>summary{cursor:pointer;color:var(--gold2);font-weight:600;list-style:none;display:inline-block;padding:4px 12px;border:2px solid rgba(255,255,255,.5);border-radius:8px}
+details>summary::-webkit-details-marker{display:none}
+details[open]>summary{margin-bottom:8px}
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.chip{font:15px var(--body);padding:6px 12px;border-radius:999px;border:2px solid rgba(255,255,255,.55);background:var(--win3);color:#fff;cursor:pointer}
+.chip.on{border-color:var(--gold);color:var(--gold);background:rgba(242,201,76,.12)}
+select,input.f{font:16px var(--body);padding:7px 10px;border-radius:8px;border:2px solid rgba(255,255,255,.6);background:var(--win3);color:#fff;max-width:100%}
+.btn{display:inline-block;font:600 16px var(--body);padding:8px 14px;border-radius:8px;border:2px solid #fff;background:var(--win3);color:#fff;cursor:pointer}
+.btn:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
+.hero{position:relative;border-radius:var(--r);overflow:hidden;border:3px solid #fff;margin-bottom:16px;min-height:220px;display:flex;align-items:flex-end;
+  background:#0a1a6b url("card.jpg") center/cover no-repeat}
+.hero .ov{background:linear-gradient(90deg,rgba(5,11,46,.95) 0%,rgba(5,11,46,.9) 50%,rgba(5,11,46,.55) 70%,rgba(5,11,46,.1) 88%);padding:22px 24px;width:100%}
+.hero .ov>*{max-width:min(760px,58%)}
+@media (max-width:900px){.hero .ov>*{max-width:none}}
+.hero h1{margin:0 0 .2em}
+.paths{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.tier{display:inline-block;width:30px;text-align:center;font-family:var(--head);font-weight:700;border-radius:6px;color:#071255}
+.tier.S{background:var(--tS)}.tier.A{background:var(--tA)}.tier.B{background:var(--tB)}.tier.C{background:var(--tC)}
+.vid{display:flex;flex-direction:column;gap:6px}
+.vid .frame{position:relative;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden;border:2px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.check{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:#f2c94c;flex:0 0 20px}
+.check.done a{color:var(--dim);text-decoration:line-through}
+.note{border-left:4px solid var(--gold);padding:6px 12px;background:rgba(242,201,76,.08);border-radius:0 8px 8px 0;margin:8px 0 12px}
+.warnnote{border-left-color:var(--red);background:rgba(255,123,123,.08)}
+.back{display:inline-block;margin-bottom:10px}
+ul.plain{list-style:none;padding:0;margin:.3em 0 1em}
+ul.plain li{padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.cols2{display:grid;gap:16px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.more{margin-top:10px}
+@media (max-width:1100px){.cols2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:900px){
+  .shell{grid-template-columns:minmax(0,1fr);padding:12px}
+  nav.side{position:fixed;top:0;left:0;bottom:0;width:min(300px,86vw);max-height:none;z-index:50;transform:translateX(-105%);transition:transform .2s;margin:0;border-radius:0 10px 10px 0}
+  nav.side.open{transform:none}
+  #menuBtn{display:inline-block}
+  header.top{padding:8px 12px;gap:10px}
+  .brand{font-size:18px}
+  .searchbox{flex-basis:100%}
+  .bigimg{width:110px;height:110px;flex-basis:110px}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .win{padding:12px 12px}
+  .grid,.grid.small,.grid.wide{grid-template-columns:minmax(0,1fr)}
+  .hero{min-height:200px}
+  .hero .ov{background:linear-gradient(180deg,rgba(5,11,46,.55),rgba(5,11,46,.95))}
+  th,td{padding:6px 6px;font-size:15px}
+}
+@media (max-width:640px){
+  table.stack thead{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
+  table.stack tr{border-bottom:2px solid rgba(255,255,255,.22);padding:6px 0}
+  table.stack td{border:0;padding:2px 4px;text-align:left}
+  table.stack td[data-l]::before{content:attr(data-l) ": ";color:var(--gold);font-size:14px;font-weight:600}
+  table.stack td.num{text-align:left}
+  table.stack td:empty{display:none}
+  table.stack.panels td{display:inline-block;width:auto;margin-right:14px}
+  table.stack.panels td:first-child{display:block;width:100%}
+  table.stack.panels td:empty,table.stack td:empty{display:none}
+}
+#scrim{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:45}
+#scrim.on{display:block}
+</style>
+</head>
+<body>
+<header class="top">
+  <button id="menuBtn" aria-controls="side" aria-expanded="false">Menu</button>
+  <a class="brand" href="#home"><img src="icon-192.png" alt="">DQXI S Guide</a>
+  <div class="searchbox">
+    <input id="q" type="search" placeholder="Search gear, bosses, skills, quests, chapters..." autocomplete="off" aria-label="Search the guide">
+    <div id="res" class="win tight" role="listbox"></div>
+  </div>
+  <div class="hdrline"><span class="long">Game: Dragon Quest XI S Definitive Edition &middot; Last checked against dragon-quest.org on 2026-11-19, dragonquest.fandom.com on 2026-11-19 and gamerguides.com on 2026-11-20</span><span class="short">Definitive Edition &middot; checked 2026-11-19 (<a href="#sources">sources</a>)</span></div>
+</header>
+<div id="scrim"></div>
+<div class="shell">
+  <nav id="side" class="side win" aria-label="Sections">
+    <div class="grp">Start</div>
+    <a href="#home">Home</a>
+    <a href="#start">Start here / after a break</a>
+    <div class="grp">Play well</div>
+    <a href="#howto">How to play well</a>
+    <a href="#walk">Walkthrough by act</a>
+    <a href="#party">Party and builds</a>
+    <a href="#bosses">Bosses</a>
+    <div class="grp">Reference</div>
+    <a href="#gear">Weapons and armour</a>
+    <a href="#items">Items and materials</a>
+    <a href="#forge">Forge recipe books</a>
+    <a href="#tiers">Gear ranking</a>
+    <div class="grp">Side content</div>
+    <a href="#quests">Side quests</a>
+    <a href="#medals">Mini Medals</a>
+    <a href="#tick">Tickington and Tockles</a>
+    <a href="#crossbow">Crossbow targets</a>
+    <a href="#post">Post-game and superbosses</a>
+    <a href="#drac">Draconian Quest</a>
+    <div class="grp">More</div>
+    <a href="#videos">Videos</a>
+    <a href="#sources">Sources and method</a>
+  </nav>
+  <main id="view" tabindex="-1"><div class="win">Loading the guide...</div></main>
+</div>
+<footer>
+  <div id="checked" class="checked">Last checked against dragon-quest.org on 2026-11-19, dragonquest.fandom.com on 2026-11-19 and gamerguides.com on 2026-11-20. Game version: Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition (the sources give no platform patch number). Sources: <a href="https://dragon-quest.org/wiki/Dragon_Quest_XI">Dragon Quest Wiki</a>, <a href="https://dragonquest.fandom.com/wiki/Dragon_Quest_XI">Dragon Quest Wiki on Fandom</a>, <a href="https://www.gamerguides.com/dragon-quest-xi-echoes-of-an-elusive-age-definitive-edition/guide">GamerGuides</a>. <a href="#sources">Method</a>.</div>
+  <div class="dim">Fan-made, non-commercial. Wiki data is reused under the wikis' Creative Commons (BY-SA) licences with links to each page. Dragon Quest XI S, its art and names belong to Square Enix, ARMOR PROJECT and BIRD STUDIO. Build 2026-11-20-1306398.</div>
+</footer>
+<script src="data/core.js"></script>
+<script>
+"use strict";
+(function(){
+const D = window.DQ;
+const V = document.getElementById("view");
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+const byId = (arr) => { const m = Object.create(null); arr.forEach(x => m[x.id] = x); return m; };
+const PARTY = byId(D.party), BOSS = byId(D.bosses), CH = byId(D.chapters), HT = byId(D.howto);
+let G = null, GEAR = null, BOOK = null;
+const ACTS = [[0,"Prologue"],[1,"Act I"],[2,"Act II"],[3,"Act III"],[4,"Definitive Edition endgame"]];
+
+let W = null;
+function needWalk(cb){
+  if (W) return cb();
+  const s = document.createElement("script");
+  s.src = "data/walk.js";
+  s.onload = () => { W = window.DQW; cb(); };
+  s.onerror = () => { V.innerHTML = '<div class="win">Could not load data/walk.js. Keep the guide folder together and reload.</div>'; };
+  document.head.appendChild(s);
+}
+function needGear(cb){
+  if (G) return cb();
+  const s = document.createElement("script");
+  s.src = "data/gear.js";
+  s.onload = () => { G = window.DQG; GEAR = byId(G.gear); BOOK = byId(G.books); cb(); };
+  s.onerror = () => { V.innerHTML = '<div class="win">Could not load data/gear.js. Keep the guide folder together and reload.</div>'; };
+  document.head.appendChild(s);
+}
+function srcBtn(list){
+  if (!list || !list.length) return "";
+  list = list.map(x => typeof x === "number" ? D.srcs[x] : x);
+  const mine = list.filter(s => !s.u).length ? ' <span class="pill">this guide</span>' : "";
+  list = list.filter(s => s.u);
+  if (!list.length) return mine;
+  const id = "s" + Math.random().toString(36).slice(2, 9);
+  return `<button class="srcbtn" data-src="${id}" aria-expanded="false">Source</button><div class="srclist" id="${id}">` +
+    list.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join("<br>") + "</div>" + mine;
+}
+function img(src, alt, cls){
+  return src ? `<img class="${cls||""}" src="${esc(src)}" alt="${esc(alt)}" loading="lazy" width="56" height="56">` : `<div class="ph ${cls||""}" aria-hidden="true">${esc((alt||"?")[0])}</div>`;
+}
+function stepsList(steps){
+  return `<ol class="steps">${steps.map(s => `<li>${s.h}${srcBtn(s.s)}</li>`).join("")}</ol>`;
+}
+function back(href, label){ return `<a class="back" href="${href}">&#8592; ${esc(label)}</a>`; }
+function ageDays(d){
+  const t = Date.parse(d || "");
+  return isNaN(t) ? null : Math.max(0, Math.floor((Date.now() - t) / 86400000));
+}
+function vids(topic, max){
+  const list = ((D.videos || {})[topic] || []).slice(0, max || 3);
+  if (!list.length) return `<p class="dim">No video found for this topic by the search rule (see Sources).</p>`;
+  return `<div class="grid wide">${list.map(v => `<div class="vid"><div class="frame"><button class="btn play" data-v="${esc(v.videoId)}">Play here</button></div>
+    <div><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a><div class="dim">${esc(v.channel)} &middot; uploaded ${esc(v.date)}${ageDays(v.date) != null ? ` (${ageDays(v.date)} days ago)` : ""}</div>${v.why ? `<div class="dim">Why this one: ${esc(v.why)}</div>` : ""}</div></div>`).join("")}</div>`;
+}
+
+/* ------------------------------------------------------------ pages */
+const P = Object.create(null);
+
+P.home = () => {
+  const c = D.meta.counts;
+  const tiles = [
+    ["#walk", "Walkthrough by act", `${c.chapters} chapters, ${c.steps} steps, level targets`],
+    ["#party", "Party and builds", `${c.party} characters, ${c.panels} Character Builder panels`],
+    ["#gear", "Weapons and armour", `${c.equipment} cards with stats, recipes, where to get`],
+    ["#items", "Items and materials", `${c.items} items, forge materials and key items`],
+    ["#forge", "Forge recipe books", `${c.books} books with locations, ${c.recipes} recipes`],
+    ["#bosses", "Bosses", `${c.bosses} boss cards with HP, resistances, fight notes`],
+    ["#howto", "How to play well", `${c.howtos} step-by-step how-tos`],
+    ["#quests", "Side quests", `${c.quests} quests with requirement and reward`],
+    ["#medals", "Mini Medals", `${c.medal_spots} locations, rewards up to 110`],
+    ["#tick", "Tickington", `${c.tick} worlds: pastwords and bosses`],
+    ["#crossbow", "Crossbow targets", `${c.crossbow} regions and rewards`],
+    ["#post", "Post-game", "Checklist and superbosses"],
+  ];
+  return `<section class="hero"><div class="ov"><h1>Dragon Quest XI S: Echoes of an Elusive Age</h1>
+    <p class="answer">Everything to play the Definitive Edition well: the route by act with party level targets, what to unlock in each Character Builder, what to forge and where the recipe book is, and how to beat each boss.</p>
+    <div class="checked">${esc(D.meta.checked)}. Updated ${esc(D.meta.build_date)}.</div></div></section>
+    <div class="paths">
+      <a class="win tile" href="#start"><div><div class="tn gold">Start here or come back after a break</div><div class="ts">Find your chapter, spend your points, check the next level target.</div></div></a>
+      <a class="win tile" href="#walk"><div><div class="tn gold">Continue the story</div><div class="ts">Pick your act and chapter; steps are numbered, one action each.</div></div></a>
+      <a class="win tile" href="#post"><div><div class="tn gold">Finished the story?</div><div class="ts">Post-game checklist, Drustan trials, Timewyrm.</div></div></a>
+    </div>
+    <div class="win"><h2>What is in this guide</h2><div class="grid">${tiles.map(t => `<a class="win tight tile" href="${t[0]}"><div><div class="tn">${esc(t[1])}</div><div class="ts">${esc(t[2])}</div></div></a>`).join("")}</div>
+    <p class="dim">Use the search box at the top for any weapon, item, boss, skill panel, quest or chapter.</p></div>`;
+};
+
+P.start = () => {
+  const h = HT["comeback"];
+  return `<div class="win"><h1>Start here / come back after a break</h1>
+    <p class="answer">Find where you are, fix your party's skill points and gear, then follow the next chapter's level target.</p>
+    <p class="dim">${h.need_h || esc(h.need)}</p>${stepsList(h.steps)}<p><b>Done when:</b> ${h.check_h}</p></div>
+    <div class="paths">
+      <div class="win"><h3>New to the battle system?</h3><p>Read these in order:</p><ol class="steps">
+        <li><a href="#howto/builder">How to spend skill points</a></li><li><a href="#howto/forge">How to forge a +3 item</a></li><li><a href="#howto/pep">How to use Pep Powers</a></li></ol></div>
+      <div class="win"><h3>Stuck on a boss?</h3><p>Open the boss card: HP, what it resists, which statuses land, and the walkthrough steps for that fight.</p><a class="btn" href="#bosses">All bosses</a></div>
+      <div class="win"><h3>Under-levelled?</h3><p>Use the metal slime method, then come back to the chapter.</p><a class="btn" href="#howto/level">How to level up fast</a></div>
+    </div>
+    <div class="win"><h2>Videos to get started</h2>${vids("start")}</div>`;
+};
+
+P.howto = (id) => {
+  if (id && own(HT, id)) {
+    const h = HT[id];
+    return `${back("#howto", "All how-tos")}<div class="win"><h1>${esc(h.title)}</h1><p class="dim">${h.need_h || esc(h.need)}</p>${stepsList(h.steps)}
+      ${h.check ? `<p><b>Check it worked:</b> ${h.check_h}</p>` : ""}${h.why ? `<details><summary>Why</summary><p>${h.why_h}</p></details>` : ""}
+      <p class="dim">Sources:</p>${h.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join("<br>")}</div>
+      ${({level:"level", seeds:"seeds", forge:"forge", medals:"medals", draconian:"draconian", builder:"builder", pep:"builder"})[id] ? `<div class="win"><h2>Videos</h2>${vids(({level:"level", seeds:"seeds", forge:"forge", medals:"medals", draconian:"draconian", builder:"builder", pep:"builder"})[id])}</div>` : ""}`;
+  }
+  return `<div class="win"><h1>How to play well</h1><p class="answer">Short how-tos: numbered steps, one action each, every line with its source.</p>
+    <div class="grid wide">${D.howto.map(h => `<a class="win tight tile" href="#howto/${esc(h.id)}"><div><div class="tn">${esc(h.title)}</div><div class="ts">${h.steps.length} steps</div></div></a>`).join("")}</div></div>`;
+};
+
+P.walk = (id) => {
+  if (id && own(CH, id)) {
+    if (!W) { needWalk(route); return `<div class="win">Loading the walkthrough...</div>`; }
+    const c = Object.assign({}, CH[id], W[id]);
+    const list = D.chapters, i = list.findIndex(x => x.id === id);
+    const prev = list[i - 1], next = list[i + 1];
+    return `${back("#walk/act-" + c.act, "All chapters")}<div class="win"><span class="pill gold">${esc(ACTS.find(a => a[0] === c.act)[1])}</span>
+      <h1>${esc(c.title)}</h1><p class="answer">${c.goal_h}</p>
+      ${c.level ? `<div class="note"><b>Level target:</b> ${c.level.h}</div>` : `<div class="note">No level target in the source for this chapter.${c.level_next ? ` Use the next target the source gives: <b>level ${esc(c.level_next.v)}</b> for <a href="#walk/${esc(c.level_next.id)}">${esc(c.level_next.title)}</a>.` : ""}</div>`}
+      ${c.boss_l.length ? `<p><b>Bosses:</b> ${c.boss_l.map(b => b.id ? `<a href="#boss/${esc(b.id)}">${esc(b.n)}</a>` : esc(b.n)).join(", ")}</p>` : ""}
+      <h3>Steps</h3>${stepsList(c.steps)}
+      ${c.get_h.length ? `<details><summary>Pickups worth getting (${c.get_h.length})</summary><ul>${c.get_h.map(g => `<li>${g}</li>`).join("")}</ul></details>` : ""}
+      <p class="dim">Source: ${c.source.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join(", ")}</p>
+      <div class="controls">${prev ? `<a class="btn" href="#walk/${esc(prev.id)}">&#8592; ${esc(prev.title)}</a>` : ""}${next ? `<a class="btn" href="#walk/${esc(next.id)}">${esc(next.title)} &#8594;</a>` : ""}</div></div>`;
+  }
+  const act = id && /^act-\d$/.test(id) ? +id.slice(4) : null;
+  return `<div class="win"><h1>Walkthrough by act</h1><p class="answer">Pick your chapter. Each one has a goal, a party level target where the source gives one, numbered steps and the bosses.</p>
+    <div class="controls">${ACTS.map(a => `<a class="chip ${act === a[0] ? "on" : ""}" href="#walk/act-${a[0]}">${esc(a[1])}</a>`).join("")}<a class="chip ${act === null ? "on" : ""}" href="#walk">All</a></div></div>
+    ${ACTS.filter(a => act === null || a[0] === act).map(a => {
+      const cs = D.chapters.filter(c => c.act === a[0]);
+      return cs.length ? `<div class="win"><h2>${esc(a[1])}</h2><div class="tw"><table class="stack"><thead><tr><th>Chapter</th><th>Goal</th><th>Level</th><th>Bosses</th></tr></thead><tbody>
+        ${cs.map(c => `<tr><td><a href="#walk/${esc(c.id)}"><b>${esc(c.title)}</b></a></td><td>${c.goal_h}</td><td data-l="Level">${c.level ? (c.level.t.match(/\d+(?:-\d+)?\+?/) || ["see chapter"])[0] : (c.level_next ? `<span class="dim">${esc(c.level_next.v)} (next chapter's)</span>` : "-")}</td>
+          <td data-l="Bosses">${c.boss_l.map(b => b.id ? `<a href="#boss/${esc(b.id)}">${esc(b.n)}</a>` : esc(b.n)).join(", ") || "-"}</td></tr>`).join("")}</tbody></table></div></div>` : "";
+    }).join("")}`;
+};
+
+P.party = (id) => {
+  if (id && own(PARTY, id)) {
+    const p = PARTY[id];
+    const types = p.types;
+    const b = p.build;
+    return `${back("#party", "Whole party")}<div class="win"><div class="cardhead">${p.img ? `<img class="bigimg" src="${esc(p.img)}" alt="${esc(p.name)}">` : ""}
+      <div><h1>${esc(p.name)}</h1>
+      <div>${types.map(t => `<span class="pill">${esc(t)}</span>`).join("")}</div>
+      ${p.quote ? `<p class="muted"><i>${esc(p.quote)}</i></p>` : ""}${p.pep ? `<p><b>Pep bonus:</b> ${esc(p.pep)}</p>` : ""}</div></div></div>
+      ${b ? `<div class="win"><h2>Suggested Character Builder route</h2><p><span class="pill warn">${esc(b.label)}</span> <span class="dim">These suggestions come from one guide without a date in the last 60 days. Treat them as a starting route, not a ranking.</span></p>
+        ${b.role ? `<p><b>Role:</b> ${b.role_h || esc(b.role)}</p>` : ""}<p><b>Weapon:</b> ${b.weapon_h || esc(b.weapon)}</p><h3>Take panels in this order</h3>${stepsList(b.order)}
+        ${b.skip && b.skip.length ? `<h3>Skip or delay</h3>${stepsList(b.skip)}` : ""}${b.tips && b.tips.length ? `<h3>Tips</h3>${stepsList(b.tips)}` : ""}</div>` : ""}
+      <div class="win"><h2>All Character Builder panels</h2><p class="dim">SP = skill points to unlock. "Later" panels open after a major story event. Secret panels need neighbouring panels first.</p>
+        ${types.map(t => `<details ${t === types[0] ? "open" : ""}><summary>${esc(t)} (${p.panels.filter(x => x.type === t).length})</summary><div class="tw"><table class="stack panels"><thead><tr><th>Panel</th><th class="num">SP</th><th class="num">MP</th><th>Target</th><th>Note</th></tr></thead><tbody>
+        ${p.panels.filter(x => x.type === t).map(x => { const note = [x.secret ? "Secret panel" : "", x.late ? "Later" : ""].filter(Boolean).join(", ");
+          return `<tr><td><b>${esc(x.name)}</b></td><td class="num" data-l="SP">${x.sp == null ? "" : x.sp}</td><td class="num" data-l="MP">${x.mp == null ? "" : x.mp}</td><td data-l="Target">${esc(x.target)}</td><td data-l="Note">${note}</td></tr>`; }).join("")}</tbody></table></div></details>`).join("")}
+        <p class="dim">Total SP for every panel: ${p.panels.reduce((a, x) => a + (x.sp || 0), 0)}.</p>${srcBtn(p.src.map(s => ({t: s.t, u: (s.k.startsWith("dqo:") ? "https://dragon-quest.org/wiki/" : "https://dragonquest.fandom.com/wiki/") + s.t.replace(/ /g, "_")})))}</div>
+      ${p.stats.length ? `<div class="win"><h2>Stats from level 1 to 99</h2><div class="tw"><table><thead><tr><th>Stat</th><th class="num">Start</th><th class="num">Max</th></tr></thead><tbody>${p.stats.map(s => `<tr><td>${esc(s.k)}</td><td class="num">${esc(s.start)}</td><td class="num">${esc(s.max)}</td></tr>`).join("")}</tbody></table></div></div>` : ""}
+      ${p.spells.length ? `<div class="win"><h2>Spells by level</h2><div class="tw"><table><thead><tr><th>Spell</th><th class="num">Level</th><th class="num">MP</th><th>Target</th><th>Effect</th></tr></thead><tbody>${p.spells.map(s => `<tr><td>${esc(s.name)}</td><td class="num">${esc(s.level)}</td><td class="num">${esc(s.mp)}</td><td>${esc(s.target || "")}</td><td>${esc(s.desc)}</td></tr>`).join("")}</tbody></table></div></div>` : ""}
+      <div class="win"><h2>Build videos for ${esc(p.name)}</h2>${vids("party_" + p.id)}</div>`;
+  }
+  return `<div class="win"><h1>Party and builds</h1><p class="answer">Eight party members. Open one for every Character Builder panel with its SP cost, and a suggested order to take them.</p></div>
+    <div class="grid">${D.party.map(p => `<a class="win tight" href="#party/${esc(p.id)}" style="color:#fff">${p.img ? `<img class="portrait" src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">` : ""}
+      <h3 style="margin:.4em 0 .2em">${esc(p.name)}</h3><div class="ts muted">${p.types.map(esc).join(", ")}</div><div class="dim">${p.panels.length} panels</div></a>`).join("")}</div>`;
+};
+
+function bossStats(v){
+  const f = [["HP","hp"],["MP","mp"],["Attack","atk"],["Defence","def"],["Agility","agi"],["EXP","exp"],["Gold","gold"]];
+  return `<div class="kv">${f.filter(x => v[x[1]]).map(x => `<div><b>${x[0]}</b><span>${esc(v[x[1]])}</span></div>`).join("")}</div>`;
+}
+const NV = b => ((b.forms || [])[0] || {}).v || {};
+function bossWhere(b, v){
+  if (b.where_note && !v.where) return `${b.where_note.h}${srcBtn(b.where_note.s)}`;
+  return (v.where_mixed ? '<span class="dim">The wiki lists these places without saying which one is the boss fight:</span><br>' : "") + esc(v.where || "").replace(/\n/g, "<br>") +
+    (v.field && v.field.length ? `<details><summary>Also met as a field monster</summary><p>${v.field.map(esc).join("<br>")}</p></details>` : "");
+}
+P.bosses = (q) => {
+  const mode = q || "all";
+  const list = D.bosses.filter(b => mode === "all" || (mode === "post" ? b.post : !b.post));
+  return `<div class="win"><h1>Bosses</h1><p class="answer">${D.bosses.length} boss fights. Each card has HP and stats from the wiki stat templates, strategy lines from GamerGuides where it covers the fight, and what the boss resists.</p>
+    <div class="controls"><a class="chip ${mode === "all" ? "on" : ""}" href="#bosses">All</a><a class="chip ${mode === "story" ? "on" : ""}" href="#bosses/story">Story</a><a class="chip ${mode === "post" ? "on" : ""}" href="#bosses/post">Post-game (act 3, Tickington)</a>
+    <input class="f" id="bf" placeholder="Filter by name or place" aria-label="Filter bosses"></div></div>
+    <div class="grid small" id="bl">${list.map(b => { const v = NV(b);
+      return `<a class="win tight tile" href="#boss/${esc(b.id)}" data-n="${esc((b.name + " " + (b.aliases || []).join(" ") + " " + (v.where || "")).toLowerCase())}">${img(b.img, b.name)}<div><div class="tn">${esc(b.name)}</div><div class="ts">HP ${esc(v.hp)}${b.forms.length > 1 ? ` &middot; ${b.forms.length} forms` : ""}${b.post ? " &middot; post-game" : ""}</div></div></a>`; }).join("")}</div>`;
+};
+P.boss = (arg) => {
+  const [id, fs] = String(arg || "").split("/");
+  if (!id || !own(BOSS, id)) return `<div class="win"><h1>Boss not found</h1><a href="#bosses">All bosses</a></div>`;
+  const b = BOSS[id], fi = Math.min(Math.max(parseInt(fs, 10) || 0, 0), b.forms.length - 1), f = b.forms[fi], v = f.v || {}, m = f.m;
+  const res = v.res || {};
+  const lab = {fire:"Fire",ice:"Ice",wind:"Wind",rock:"Earth",light:"Light",dark:"Dark",zap:"Zap"};
+  const el = Object.keys(lab).filter(k => own(res, k));
+  const st = Object.keys(res).filter(k => !own(lab, k));
+  return `${back("#bosses", "All bosses")}<div class="win"><div class="cardhead">${b.img ? `<img class="bigimg" src="${esc(b.img)}" alt="${esc(b.name)}">` : `<div class="ph bigimg">${esc(b.name[0])}</div>`}
+    <div><h1>${esc(b.name)}</h1>
+    ${b.forms.length > 1 ? `<div class="controls" role="tablist" aria-label="Forms of this fight">${b.forms.map((x, k) => `<a class="chip ${k === fi ? "on" : ""}" role="tab" aria-selected="${k === fi}" href="#boss/${esc(b.id)}/${k}">${esc(x.label)}</a>`).join("")}</div>` : (f.label ? `<p class="dim">${esc(f.label)}</p>` : "")}
+    ${(v.where || b.where_note) ? `<div class="where"><b>Where:</b> ${bossWhere(b, v)}</div>` : ""}${bossStats(v)}</div></div>
+    ${b.notes.length ? `<h3>How to beat it</h3>${stepsList(b.notes)}` : (b.no_strategy ? `<p class="dim">No strategy in the cached guides: ${esc(b.no_strategy)}</p>` : "")}
+    ${f.tactics.length ? `<details ${b.notes.length ? "" : "open"}><summary>Notes worked out from its stat template</summary><p class="dim">This guide's own rules applied to the wiki numbers, not advice from a strategy guide: a status is listed only at 75% resistance or lower.</p><ul>${f.tactics.map(t => `<li>${esc(t)}</li>`).join("")}</ul></details>` : ""}
+    ${b.chapters.length ? `<p><b>Walkthrough steps for this fight:</b> ${b.chapters.map(c => `<a href="#walk/${esc(c)}">${esc(CH[c].title)}</a>`).join(", ")}</p>` : ""}
+    <div class="cols2"><div>${v.skills && v.skills.length ? `<h3>Skills</h3><ul>${v.skills.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
+      ${v.spells && v.spells.length ? `<h3>Spells</h3><ul>${v.spells.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
+      ${v.drops && v.drops.length ? `<h3>Drops</h3><ul>${v.drops.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}</div>
+    <div>${el.length ? `<h3>Resistances</h3><p class="dim">0% = takes full damage, 100% = immune, negative = takes extra damage.</p><div class="tw"><table><tbody>${el.map(k => `<tr><td>${lab[k]}</td><td class="num">${esc(res[k])}</td></tr>`).join("")}
+      ${st.map(k => `<tr><td>${esc(k)}</td><td class="num">${esc(res[k])}</td></tr>`).join("")}</tbody></table></div>` : `<p class="dim">No resistance table in the source for this ${b.forms.length > 1 ? "form" : "boss"}.</p>`}</div></div>
+    ${v.desc ? `<details><summary>Bestiary text</summary><p>${esc(v.desc)}</p></details>` : ""}
+    ${m ? `<details><summary>Malicious version (post-game)</summary>${bossStats(m)}${m.where ? `<p><b>Where:</b> ${esc(m.where)}</p>` : ""}</details>` : ""}
+    <p class="dim">Sources: ${b.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join(", ")}</p></div>`;
+};
+
+function statLine(g){ const s = g.stats[0]; return s ? `${s.k} ${s.v}` : (g.uses && g.uses[0]) || ""; }
+function gearTile(g){ return `<a class="win tight tile" href="#gear/${esc(g.id)}">${img(g.img, g.name)}<div><div class="tn">${esc(g.name)}</div><div class="ts">${esc(g.type)} &middot; ${esc(statLine(g))}${g.recipe ? " &middot; forge" : ""}</div></div></a>`; }
+const GS = {cat: "weapon", type: "", who: "", forge: false, q: "", n: 120};
+function gearList(kind){
+  const cats = kind === "items" ? [["item","Usable items"],["material","Forge materials"],["key","Key items"]] : [["weapon","Weapons"],["armour","Armour"],["headwear","Headwear"],["shield","Shields"],["accessory","Accessories"]];
+  if (!cats.some(c => c[0] === GS.cat)) { GS.cat = cats[0][0]; GS.type = ""; }
+  const inCat = G.gear.filter(g => g.cat === GS.cat);
+  const types = [...new Set(inCat.map(g => g.type))];
+  const whos = ["Luminary","Erik","Veronica","Serena","Sylvando","Jade","Rab","Hendrik"];
+  let list = inCat.filter(g => (!GS.type || g.type === GS.type) && (!GS.forge || g.recipe) && (!GS.q || g.name.toLowerCase().includes(GS.q)) &&
+    (!GS.who || (g.equip.length ? g.equip.some(e => e.toLowerCase().includes(GS.who.toLowerCase()) || /^(all|everyone)$/i.test(e)) : (g.typenote || "").includes(GS.who === "Luminary" ? "Luminary" : GS.who))));
+  const shown = list.slice(0, GS.n);
+  return `<div class="win"><h1>${kind === "items" ? "Items and materials" : "Weapons and armour"}</h1>
+    <p class="answer">${kind === "items" ? "Every usable item, forge material and key item, with how to get it and which recipes use it." : "Every weapon, armour, headwear, shield and accessory with its stats at +0/+1/+2/+3, who can equip it, where to get it and its forge recipe."}</p>
+    <div class="controls">${cats.map(c => `<button class="chip ${GS.cat === c[0] ? "on" : ""}" data-cat="${c[0]}">${c[1]}</button>`).join("")}</div>
+    <div class="controls"><select id="gt" aria-label="Type"><option value="">All types</option>${types.map(t => `<option ${GS.type === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>
+      ${kind === "items" ? "" : `<select id="gw" aria-label="Who can equip"><option value="">Anyone</option>${whos.map(w => `<option ${GS.who === w ? "selected" : ""}>${w}</option>`).join("")}</select>
+      <label class="chip ${GS.forge ? "on" : ""}"><input type="checkbox" id="gf" ${GS.forge ? "checked" : ""} style="margin-right:6px">Forgeable</label>`}
+      <input class="f" id="gq" placeholder="Filter by name" value="${esc(GS.q)}" aria-label="Filter by name"><span class="dim">${list.length} shown of ${inCat.length}</span></div></div>
+    <div class="grid small">${shown.map(gearTile).join("")}</div>
+    ${list.length > shown.length ? `<p><button class="btn" id="gmore">Show all ${list.length}</button></p>` : ""}`;
+}
+P.gear = (id, kind) => {
+  if (!G) { needGear(route); return `<div class="win">Loading the gear data...</div>`; }
+  if (id && own(GEAR, id)) return gearCard(GEAR[id]);
+  if (id) return `<div class="win"><h1>Item not found</h1><p>No weapon, armour or item has that address.</p><a href="#gear">All weapons and armour</a> &middot; <a href="#items">All items</a></div>`;
+  return gearList(kind || "gear");
+};
+P.items = () => P.gear(null, "items");
+function statTable(g){
+  if (!g.stats.length) return "";
+  const rows = g.stats.map(s => { const p = s.v.split("/"); return [s.k, p]; });
+  const four = rows.some(r => r[1].length === 4);
+  return `<div class="tw"><table><thead><tr><th>Stat</th>${four ? `<th class="num">Base</th><th class="num">+1</th><th class="num">+2</th><th class="num">+3</th>` : `<th class="num">Value</th>`}</tr></thead><tbody>
+    ${rows.map(r => `<tr><td>${esc(r[0])}</td>${four ? [0,1,2,3].map(i => `<td class="num">${esc(r[1].length === 4 ? (i ? r[1][i].replace(/^([^+\-])/, "+$1") : r[1][0]) : (i ? "" : r[1].join("/")))}</td>`).join("") : `<td class="num">${esc(r[1].join("/"))}</td>`}</tr>`).join("")}</tbody></table></div>`;
+}
+function gearCard(g){
+  const listHref = (g.cat === "item" || g.cat === "material" || g.cat === "key") ? "#items" : "#gear";
+  return `${back(listHref, "Back to the list")}<div class="win"><div class="cardhead">${g.img ? `<img class="bigimg" src="${esc(g.img)}" alt="${esc(g.name)}" style="image-rendering:auto">` : ""}
+    <div><h1>${esc(g.name)}</h1><div><span class="pill gold">${esc(g.type)}</span>${g.recipe ? `<span class="pill">Forgeable</span>` : ""}</div>
+    ${g.uses && g.uses.length ? `<p class="answer">${g.uses.map(esc).join(". ")}</p>` : ""}
+    ${statTable(g)}${g.equip.length ? `<p><b>Who can equip:</b> ${g.equip.map(esc).join(", ")}${g.equip_caveat ? ` <span class="dim">(${esc(g.equip_caveat)})</span>` : ""}</p>${g.equip_from_note && g.typenote ? `<details><summary>More about ${esc(g.type.toLowerCase())}</summary><p>${esc(g.typenote)}</p></details>` : ""}` : (g.typenote ? `<p><b>Who can equip:</b> ${esc(g.typenote)}</p>` : "")}</div></div>
+    <h3>How to get it</h3>${g.obtain.length ? `<ul>${g.obtain.map(o => `<li>${esc(o)}</li>`).join("")}</ul>` : `<p class="dim">The source list gives no location.</p>`}
+    ${g.recipe ? `<h3>Forge recipe</h3><p><b>Recipe book:</b> ${g.recipe.book_id ? `<a href="#forge/${esc(g.recipe.book_id)}">${esc(g.recipe.book)}</a>` : esc(g.recipe.book)} &middot; <span class="muted">${esc(g.recipe.where)}</span></p>
+      <ul>${g.recipe.mats.map(m => `<li>${m.n} &times; ${m.id ? `<a href="#gear/${esc(m.id)}">${esc(m.name)}</a>` : esc(m.name)}</li>`).join("")}</ul>` : ""}
+    ${g.notes.length ? `<h3>Notes</h3><ul>${g.notes.map(o => `<li>${esc(o)}</li>`).join("")}</ul>` : ""}
+    ${g.used_in.length ? `<h3>Used to forge</h3><p>${g.used_in.map(x => `<a href="#gear/${esc(x)}">${esc(GEAR[x].name)}</a>`).join(", ")}</p>` : ""}
+    <p class="dim">Sources: ${g.src.map(s => `<a href="${esc((s.k.startsWith("dqo:") ? "https://dragon-quest.org/wiki/" : "https://dragonquest.fandom.com/wiki/") + s.t.replace(/ /g, "_"))}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join(", ")}</p></div>`;
+}
+
+P.forge = (id) => {
+  if (!G) { needGear(route); return `<div class="win">Loading the gear data...</div>`; }
+  const q = (P.forge.q || "").toLowerCase();
+  const list = G.books.filter(b => !q || (b.name + " " + b.where + " " + b.recipes.join(" ")).toLowerCase().includes(q));
+  return `<div class="win"><h1>Fun-Size Forge recipe books</h1><p class="answer">You can only forge an item after you find its recipe book. ${G.books.length} books, where each one is, and what it teaches.</p>
+    <p><a class="btn" href="#howto/forge">How to forge a +3 item</a></p>
+    <div class="controls"><input class="f" id="ff" placeholder="Filter by book, place or item" value="${esc(P.forge.q || "")}" aria-label="Filter recipe books"></div>
+    <div class="tw"><table class="stack"><thead><tr><th>Recipe book</th><th>Where</th><th>Recipes</th></tr></thead><tbody>
+    ${list.map(b => `<tr id="${esc(b.id)}" class="${b.id === id ? "hl" : ""}"><td><b>${esc(b.name)}</b></td><td data-l="Where">${esc(b.where)}</td><td data-l="Makes">${b.recipes_l.map(r => r.id ? `<a href="#gear/${esc(r.id)}">${esc(r.n)}</a>` : esc(r.n)).join(", ")}</td></tr>`).join("")}</tbody></table></div>
+    <p class="dim">Source: <a href="https://dragon-quest.org/wiki/List_of_fun-size_forge_recipe_book_locations_in_Dragon_Quest_XI" target="_blank" rel="noopener">List of fun-size forge recipe book locations in Dragon Quest XI (Dragon Quest Wiki)</a>. Ingredients are on each item card.</p></div>`;
+};
+
+P.tiers = () => {
+  if (!G) { needGear(route); return `<div class="win">Loading the gear data...</div>`; }
+  return `<div class="win"><h1>Gear ranking</h1><p class="answer">The strongest weapon of each type and the strongest armour of each slot, ranked by the stat at +3 when the source lists +0/+1/+2/+3 values for it, and at +0 when the source gives only one value (marked "+0 only").</p>
+    <div class="note"><b>Whose rating:</b> this guide's data rule, not a person's opinion. Letters: <span class="tier S">S</span> within 95% of the best value in its type, <span class="tier A">A</span> within 85%, <span class="tier B">B</span> within 70%, <span class="tier C">C</span> below that. It ignores special effects (read the Notes on each card).</div>
+    <div class="note warnnote"><b>No community tier list:</b> no party or build tier list with two agreeing sources dated in the last 60 days was found for this game (no recent source), so none is shown.</div></div>
+    <div class="grid wide">${D.ranking.map(r => `<div class="win"><h3>${esc(r.type)} <span class="dim">(${esc(r.stat)})</span></h3><div class="tw"><table><tbody>
+      ${r.rows.map(x => `<tr><td><span class="tier ${x.tier}">${x.tier}</span></td><td><a href="#gear/${esc(x.id)}">${esc(GEAR[x.id].name)}</a> <span class="dim">${esc(x.lvl)}</span></td><td class="num">${x.v}</td></tr>`).join("")}</tbody></table></div></div>`).join("")}</div>`;
+};
+
+P.quests = (id) => {
+  return `<div class="win"><h1>Side quests</h1><p class="answer">${D.quests.length} quests with where to start, what to do and the reward, in the game's quest-log order.</p>
+    <div class="controls"><input class="f" id="qf" placeholder="Filter quests" aria-label="Filter quests"></div>
+    <div class="tw"><table class="stack"><thead><tr><th class="num">No.</th><th>Quest</th><th>Where</th><th>What to do</th><th>Reward</th></tr></thead><tbody id="qt">
+    ${D.quests.map(q => `<tr id="quest-${esc(q.id)}" class="${q.id === id ? "hl" : ""}" data-n="${esc((q.name + " " + q.where + " " + q.task + " " + q.reward).toLowerCase())}"><td class="num" data-l="Quest no.">${q.n ? q.n + srcBtn(q.n_l) : '<span class="muted">none in sources</span>'}</td><td><b>${esc(q.name)}</b>${q.src_l[0].u.includes("gamerguides") ? srcBtn(q.src_l) : ""}</td><td data-l="Where">${esc(q.where)}</td><td data-l="Do">${esc(q.task)}</td><td data-l="Reward">${esc(q.reward)}</td></tr>`).join("")}</tbody></table></div>
+    <p class="dim">Source: <a href="https://dragonquest.fandom.com/wiki/List_of_quests_in_Dragon_Quest_XI" target="_blank" rel="noopener">List of quests in Dragon Quest XI (Fandom)</a>; rows with their own Source button come from the GamerGuides walkthrough because the Fandom table lacks them. ${esc(D.meta.quest_note || "")} The number's Source button opens the walkthrough page that names it.</p></div>`;
+};
+
+P.medals = () => {
+  const M = D.medals, c = D.meta.counts;
+  return `<div class="win"><h1>Mini Medals</h1><p class="answer">Hand medals in at L'Academie de Notre Maitre des Medailles for the rewards below. The source lists ${c.medal_spots} spots covering medal numbers 1 to ${c.medal_max}.</p>
+    <p><a class="btn" href="#howto/medals">How to collect and spend Mini Medals</a></p></div>
+    <div class="cols2"><div class="win"><h2>Rewards</h2><div class="tw"><table><thead><tr><th class="num">Medals</th><th>Reward</th><th>Album</th></tr></thead><tbody>
+      ${M.rewards.map(r => `<tr><td class="num">${r.n}</td><td>${esc(r.reward)}</td><td class="dim">${esc(r.group)}</td></tr>`).join("")}</tbody></table></div>
+      <p class="dim">Source: <a href="https://dragonquest.fandom.com/wiki/Mini_medal" target="_blank" rel="noopener">Mini medal (Fandom)</a></p></div>
+    <div class="win"><h2>Where they are</h2><div class="controls"><input class="f" id="mf" placeholder="Filter by place" aria-label="Filter medal locations"></div>
+      <ul class="plain" id="ml">${M.spots.map(s => `<li data-n="${esc(s.where.toLowerCase())}"><b class="gold">#${s.n}${s.to !== s.n ? "-" + s.to : ""}</b> ${esc(s.where)}${srcBtn(s.src_l)}</li>`).join("")}</ul>
+      ${D.meta.medal_missing.length ? `<p class="dim">Numbers the source page text does not list: ${D.meta.medal_missing.join(", ")}.</p>` : ""}
+      <p class="dim">Source: GamerGuides mini medal locations (3 pages, linked from each spot).</p></div></div>
+    <div class="win"><h2>Videos</h2>${vids("medals")}</div>`;
+};
+
+P.tick = () => {
+  const altars = [...new Set(D.tick.map(a => a.altar))];
+  return `<div class="win"><h1>Tickington and Tockles</h1><p class="answer">Definitive Edition only. Find Tockles in Erdrea to get pastwords; each pastword opens a world from an older Dragon Quest at an altar in Tickington, often with a boss.</p>
+    <p class="dim">${D.tick.length} worlds at ${altars.length} altars. Each one shows its boss and, behind a button, how the source says it is unlocked. Full steps and maps are on the linked source page.</p></div>
+    <div class="grid wide">${altars.map(a => `<div class="win"><h2>${esc(a)}</h2>${D.tick.filter(x => x.altar === a).map(x => `<h3>${esc(x.world)}</h3>
+      <p>${x.bosses.length ? `<b>Boss:</b> ${x.bosses.map(esc).join(", ")}` : '<span class="dim">No boss named by the source.</span>'}${srcBtn(x.src_l)}</p>
+      <details><summary>${x.kind === "pastword" ? "Where the pastword Tockle is" : "How it unlocks"}</summary><p>${esc(x.how)}</p></details>`).join("")}</div>`).join("")}</div>
+    <div class="win"><h2>Videos</h2>${vids("tickington")}</div>`;
+};
+
+P.crossbow = () => `<div class="win"><h1>Crossbow targets</h1><p class="answer">Each region has 5 targets; shoot all of them, then talk to the bowyer at the listed campsite for the reward.</p>
+  <div class="note warnnote"><b>Sources disagree:</b> the Fandom wiki says the crossbow minigame was removed from the 3DS and Definitive versions, while the GamerGuides Definitive Edition guide lists these targets and rewards. The list follows GamerGuides. Not checked in game.</div>
+  <p class="dim">Positions are rewritten from the GamerGuides walkthrough chapters, in the order the walkthrough reaches them. GamerGuides also has a numbered screenshot of each target; that numbering may not follow the same order, so the picture links (online only) are listed separately.</p></div>
+  <div class="grid wide">${D.crossbow.map(c => `<div class="win"><h2>${esc(c.region)}</h2>
+    <p><b>Bowyer:</b> ${esc(c.bowyer)} &middot; <b>Reward:</b> ${esc(c.reward)}</p>
+    <ol class="steps">${c.words.map(w => `<li>${w.h} ${srcBtn(w.s)}</li>`).join("")}</ol>
+    <p class="dim">Pictures on GamerGuides (online): ${c.list.map(t => `<a href="${esc(t.picture)}" target="_blank" rel="noopener">${t.area ? esc(t.area) : "target " + t.n}</a>`).join(", ")}${c.map ? `, <a href="${esc(c.map)}" target="_blank" rel="noopener">region map</a>` : ""} &middot; <a href="${esc(c.url)}" target="_blank" rel="noopener">Crossbow Kid page</a></p></div>`).join("")}</div>`;
+
+P.post = () => {
+  const done = JSON.parse(localStorage.getItem("dqxi-post") || "{}");
+  const kinds = [...new Set(D.checklist.map(c => c.kind))];
+  return `<div class="win"><h1>Post-game and superbosses</h1><p class="answer">After the credits, Act III opens. Tick items off as you go; ticks stay on this device only.</p></div>
+    <div class="grid wide">${D.supers.map(id => { const b = BOSS[id], v = NV(b); return `<a class="win tile" href="#boss/${esc(id)}">${img(b.img, b.name)}<div><div class="tn gold">${esc(b.name)}</div><div class="ts">HP ${esc(v.hp)} &middot; ${esc(b.where_short || (v.where || "").split("\n")[0])}</div></div></a>`; }).join("")}</div>
+    <div class="cols2">${kinds.map(k => `<div class="win"><h2>${esc(k)}</h2>${D.checklist.filter(c => c.kind === k).map((c, i) => { const key = k + ":" + c.t;
+      return `<label class="check ${done[key] ? "done" : ""}"><input type="checkbox" data-k="${esc(key)}" ${done[key] ? "checked" : ""}><a href="${esc(c.href)}">${esc(c.t)}</a></label>`; }).join("")}</div>`).join("")}</div>
+    <div class="win"><h2>Videos: Drustan trials</h2>${vids("drustan")}<h2>Videos: Calasmos</h2>${vids("calasmos")}<h2>Videos: Timewyrm</h2>${vids("timewyrm")}</div>`;
+};
+
+P.drac = () => `<div class="win"><h1>Draconian Quest options</h1><p class="answer">Optional handicaps you pick when you start a new game. You can remove them at a church but never add them back.</p>
+  <p><a class="btn" href="#howto/draconian">How to choose Draconian Quest options</a></p>
+  <div class="tw"><table class="stack"><thead><tr><th>Option</th><th>Effect</th><th>Version</th></tr></thead><tbody>${D.drac.map(d => `<tr><td><b>${esc(d.name)}</b></td><td>${esc(d.effect)}</td><td data-l="Version">${esc(d.only || "All versions")}</td></tr>`).join("")}</tbody></table></div>
+  <p class="dim">Source: <a href="https://dragonquest.fandom.com/wiki/Draconian_Quest" target="_blank" rel="noopener">Draconian Quest (Fandom)</a></p></div>
+  <div class="win"><h2>Videos</h2>${vids("draconian")}</div>`;
+
+P.videos = () => {
+  const names = {start:"Getting started", builder:"Character Builder and builds", forge:"Fun-Size Forge", level:"Levelling and metal slimes", seeds:"Seed farming", medals:"Mini Medals",
+    tickington:"Tickington", drustan:"Drustan trials", calasmos:"Calasmos", timewyrm:"Timewyrm", draconian:"Draconian Quest", party:"Party choices"};
+  D.party.forEach(p => { names["party_" + p.id] = "Builds: " + p.name; });
+  return `<div class="win"><h1>Videos</h1><p class="answer">Picked by hand: up to 3 guides per topic, each with its upload date and why it was kept. "Play here" loads it from youtube-nocookie.com.</p>
+    <p class="dim">${D.meta.video_recent || 0} of ${D.meta.counts.videos} are from the last 60 days; this is a 2019/2020 game, so most good guides are older. How they were found: <a href="#sources">Sources and method</a>.</p></div>
+    ${Object.keys(names).map(k => `<div class="win"><h2>${esc(names[k])}</h2>${vids(k)}</div>`).join("")}`;
+};
+
+P.sources = () => {
+  const m = D.meta, c = m.counts;
+  return `<div class="win"><h1>Sources and method</h1><p class="answer">Every fact comes from a cached page pull; nothing is written from memory. The build stops if a name or number in the prose is not in the pulled data.</p>
+    <p class="checked">${esc(m.checked)}. Game version: ${esc(m.version)}.</p>
+    <h2>Counts</h2><div class="kv">${[["Weapons and armour", c.equipment],["Items and materials", c.items],["Forge recipes", c.recipes],["Recipe books", c.books],["Boss cards", c.bosses],["Party members", c.party],
+      ["Skill panels", c.panels],["Side quests", c.quests],["Walkthrough chapters", c.chapters],["Walkthrough steps", c.steps],["How-tos", c.howtos],["Mini medal spots", c.medal_spots],["Tickington worlds", c.tick],["Crossbow regions", c.crossbow],["Videos", c.videos],["Pictures", c.images],["Page requests logged", c.requests]].map(x => `<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join("")}</div>
+    <h2>Sources</h2><ul>${D.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> <span class="dim">(pulled ${esc(s.date)})</span></li>`).join("")}</ul>
+    <p class="dim">Requests by site: ${Object.keys(m.sites).map(k => `${esc(k)} ${m.sites[k]}`).join(", ")}. First pull ${esc(m.first_pull)}, last pull ${esc(m.pulled)}. The full list with URLs and times is in data/raw/_fetch_log.json; every picture's source is in assets/manifest.json.</p>
+    <h2>How the checks work</h2><ol class="steps"><li>Names in double brackets in every hand-written line must match a weapon, item, boss, party member, skill, quest, monster or place in the pulled data.</li>
+      <li>Every number in a hand-written step must appear in the cached text of the page that step cites.</li><li>Every recipe ingredient and recipe book must resolve; every item card needs a picture.</li>
+      <li>Build suggestions and rankings say whose they are; anything without two sources from the last 60 days is labelled "no recent source".</li></ol>
+    <h2>How the videos were picked</h2><p>Found by a search rule, then reviewed by hand: each kept video says why, and cutscenes, let's-play parts, full runs and off-topic videos were dropped. Search rule: ${esc(m.videos_rule || "")} Searched ${esc(m.videos_searched || "never")}.</p>
+    <h2>What is unverified or missing</h2><ul>
+      <li>Party build routes come from one guide (GamerGuides) that is not dated within the last 60 days: labelled "no recent source". No community tier list met the two-recent-sources rule, so none is shown.</li>
+      <li>Crossbow targets: the Fandom wiki says the minigame was removed from the Definitive Edition; the GamerGuides Definitive Edition guide lists the targets. Not verified in game.</li>
+      <li>Crossbow target positions are rewritten from the GamerGuides walkthrough chapters, where the text describes each target as the route reaches it; the GamerGuides Crossbow Kid pages show them only as screenshots, which are linked.</li>
+      <li>Boss cards: the wikis split some fights over several pages; those are joined into one card with a form switch (Indignus, Tatsunaga, Mordegon Lord of Shadows, Timewyrm) and field-monster versions are left out (${esc((m.boss_dropped || []).join(", "))}). Strategy lines come from GamerGuides fight sections; cards without one: ${D.bosses.filter(b => !b.notes.length).map(b => esc(b.name)).join(", ") || "none"} (the card shows the stat-template notes or the reason).</li>
+      <li>Videos are searched by a rule and then reviewed by hand (keep or drop with a reason). ${(m.video_recent || 0)} of ${c.videos} kept videos are from the last 60 days.</li>
+      <li>Side quests: ${D.quests.length} rows, from the Fandom quest table plus the quests only the GamerGuides walkthrough names. ${esc(m.quest_note || "")}</li>
+      <li>Boss fight notes are derived from each boss's stat template (resistances, actions). ${D.bosses.filter(b => !NV(b).res).length} of ${D.bosses.length} boss cards have no resistance table in either wiki, and ${D.bosses.filter(b => !b.img).length} have no picture on either wiki (shown with a letter badge).</li>
+      ${m.medal_missing.length ? `<li>Mini medal numbers not described in the source text: ${m.medal_missing.join(", ")}.</li>` : ""}
+      ${(m.gaps.recipe_books_without_location || []).map(b => `<li>Recipe book "${esc(b)}" appears in the Fandom recipe list but not in the recipe book location list.</li>`).join("")}
+      <li>Party stats from level 1 to 99 and spells by level are only on the source page for the Luminary.</li>
+      <li>Stats follow the wiki lists; the four values are the item at +0, +1, +2 and +3.</li></ul>
+    <h2>Rebuild</h2><p>On Windows: <code>py build.py</code> rebuilds from the cache; <code>py build.py --refresh</code> pulls everything again; <code>py build.py --videos</code> re-runs the video search. Tests: <code>py -m pytest tests -q</code>.</p></div>`;
+};
+
+/* ------------------------------------------------------------ router */
+function setNav(name){
+  document.querySelectorAll("nav.side a").forEach(a => {
+    const h = a.getAttribute("href").slice(1);
+    a.classList.toggle("on", h === name || (name === "boss" && h === "bosses") || (name === "gear" && h === "gear"));
+  });
+}
+function route(){
+  const raw = decodeURIComponent((location.hash || "#home").slice(1));
+  const [name, ...rest] = raw.split("/");
+  const arg = rest.join("/") || null;
+  const fn = own(P, name) ? P[name] : P.home;
+  let out;
+  try { out = fn(arg); } catch (e) { out = `<div class="win"><h1>Something went wrong drawing this page</h1><p>${esc(e.message)}</p><a href="#home">Home</a></div>`; console.error(e); }
+  V.innerHTML = out;
+  setNav(own(P, name) ? name : "home");
+  closeMenu();
+  const hl = V.querySelector("tr.hl");
+  if (hl) hl.scrollIntoView({block: "center"}); else window.scrollTo(0, 0);
+  bind();
+}
+function bind(){
+  const bf = document.getElementById("bf");
+  if (bf) bf.oninput = () => { const q = bf.value.toLowerCase(); document.querySelectorAll("#bl .tile").forEach(t => t.style.display = t.dataset.n.includes(q) ? "" : "none"); };
+  const qf = document.getElementById("qf");
+  if (qf) qf.oninput = () => { const q = qf.value.toLowerCase(); document.querySelectorAll("#qt tr").forEach(t => t.style.display = t.dataset.n.includes(q) ? "" : "none"); };
+  const mf = document.getElementById("mf");
+  if (mf) mf.oninput = () => { const q = mf.value.toLowerCase(); document.querySelectorAll("#ml li").forEach(t => t.style.display = t.dataset.n.includes(q) ? "" : "none"); };
+  const ff = document.getElementById("ff");
+  if (ff) ff.onchange = () => { P.forge.q = ff.value; route(); };
+  V.querySelectorAll("[data-cat]").forEach(b => b.onclick = () => { GS.cat = b.dataset.cat; GS.type = ""; GS.n = 120; route(); });
+  const gt = document.getElementById("gt"); if (gt) gt.onchange = () => { GS.type = gt.value; route(); };
+  const gw = document.getElementById("gw"); if (gw) gw.onchange = () => { GS.who = gw.value; route(); };
+  const gf = document.getElementById("gf"); if (gf) gf.onchange = () => { GS.forge = gf.checked; route(); };
+  const gq = document.getElementById("gq"); if (gq) gq.onchange = () => { GS.q = gq.value.toLowerCase(); route(); };
+  const gm = document.getElementById("gmore"); if (gm) gm.onclick = () => { GS.n = 1e9; route(); };
+  V.querySelectorAll(".check input").forEach(cb => cb.onchange = () => {
+    const d = JSON.parse(localStorage.getItem("dqxi-post") || "{}");
+    if (cb.checked) d[cb.dataset.k] = 1; else delete d[cb.dataset.k];
+    localStorage.setItem("dqxi-post", JSON.stringify(d));
+    cb.parentNode.classList.toggle("done", cb.checked);
+  });
+}
+document.addEventListener("click", e => {
+  const s = e.target.closest(".srcbtn");
+  if (s) { const el = document.getElementById(s.dataset.src); const on = el.classList.toggle("on"); s.setAttribute("aria-expanded", on); return; }
+  const pl = e.target.closest(".play");
+  if (pl) { const f = pl.parentNode; f.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(pl.dataset.v)}?autoplay=1" title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`; }
+});
+
+/* ------------------------------------------------------------ search */
+const Q = document.getElementById("q"), R = document.getElementById("res");
+let hits = [], sel = 0;
+function search(q){
+  q = q.trim().toLowerCase();
+  if (q.length < 2) { R.classList.remove("on"); hits = []; return; }
+  const words = q.split(/\s+/);
+  hits = D.search.map(r => { const n = r[0].toLowerCase(), all = (r[0] + " " + r[1]).toLowerCase();
+      if (!words.every(w => all.includes(w))) return null;
+      return [n === q ? 0 : n.startsWith(q) ? 1 : n.includes(q) ? 2 : 3, r]; })
+    .filter(Boolean).sort((a, b) => a[0] - b[0] || a[1][0].length - b[1][0].length).slice(0, 14).map(x => x[1]);
+  sel = 0;
+  R.innerHTML = hits.length ? hits.map((h, i) => `<a href="${esc(h[2])}" class="${i === sel ? "sel" : ""}" role="option">${esc(h[0])}<span>${esc(h[1])}</span></a>`).join("") : `<div class="dim" style="padding:8px 12px">No match. Try fewer letters.</div>`;
+  R.classList.add("on");
+}
+Q.addEventListener("input", () => search(Q.value));
+Q.addEventListener("keydown", e => {
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); if (!hits.length) return; sel = (sel + (e.key === "ArrowDown" ? 1 : hits.length - 1)) % hits.length; R.querySelectorAll("a").forEach((a, i) => a.classList.toggle("sel", i === sel)); }
+  else if (e.key === "Enter" && hits.length) { location.hash = hits[sel][2]; R.classList.remove("on"); Q.blur(); }
+  else if (e.key === "Escape") { R.classList.remove("on"); }
+});
+R.addEventListener("click", e => { if (e.target.closest("a")) { R.classList.remove("on"); Q.value = ""; } });
+document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) R.classList.remove("on"); });
+
+/* ------------------------------------------------------------ phone menu */
+const side = document.getElementById("side"), scrim = document.getElementById("scrim"), mb = document.getElementById("menuBtn");
+function closeMenu(){ side.classList.remove("open"); scrim.classList.remove("on"); mb.setAttribute("aria-expanded", "false"); }
+mb.onclick = () => { const o = side.classList.toggle("open"); scrim.classList.toggle("on", o); mb.setAttribute("aria-expanded", String(o)); };
+scrim.onclick = closeMenu;
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+
+window.addEventListener("hashchange", route);
+route();
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1448 @@
+{
+ "note": "Hand-written steps. Each step carries 'q': verbatim excerpt(s) from the cited page(s) that say what the step says (the build checks they are in the page); 'nav': true marks a step about this guide itself. Every step cites the cached wiki page keys (data/raw/pages/<key>.json) it was written from; build.py checks every number against those pages and every [[name]] against the game data. 'advice' marks a community strategy tip; 'meta' marks a which-tower-to-use claim: 'dated' needs index_pairs that the BTD6 Index confirms, otherwise it is shown as 'no recent source'.",
+ "sections": [
+  {
+   "id": "comeback",
+   "title": "How to come back after a break",
+   "kind": "How-to",
+   "group": "start",
+   "need": "You'll need: the game updated, about 30 minutes for the first session.",
+   "steps": [
+    {
+     "t": "Open the **Start here** page of this guide and read the update list at the top, so you know which version you are on.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "nav": true,
+     "q": []
+    },
+    {
+     "t": "Spend your unspent Knowledge Points in the game's **Monkey Knowledge** menu; it opens at level 30.",
+     "src": [
+      "Monkey_Knowledge__BTD6_"
+     ],
+     "q": [
+      "Starting at level 30, players can invest Monkey Money and Monkey Knowledge Points into any one of six skill trees to unlock permanent enhancements."
+     ]
+    },
+    {
+     "t": "Play Hard Standard on maps you have not cleared yet. Higher rounds give much more Player XP and Tower XP, so Hard Standard is the best mode for unlocking things.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Higher rounds give much more Player and Tower XP, making Hard Standard the ideal game mode for progression."
+     ]
+    },
+    {
+     "t": "Use one tower type plus your hero for a few games, so all the Tower XP goes into that tower and its upgrades unlock sooner.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Focusing on one tower type supported by a Hero will funnel all Tower XP earned during the game into that tower type, allowing for much faster upgrade unlocks."
+     ]
+    },
+    {
+     "t": "Read the hard rounds before you play: camo on round 24, lead on round 28, the MOAB on round 40 and the ceramic rush on round 63. The **Rounds** page marks them.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Blacks first appear on round 20, whites on 22, camos on 24, purples on 25, and leads on 28.",
+      "40 MOAB x1 The MOAB is the hardest challenge of the early game.",
+      "This infamous round has 3 extremely tight Ceramic waves with 40, 40, and 42 Ceramics respectively."
+     ]
+    },
+    {
+     "t": "Open **Events at build time** in this guide to see the Boss event, Odyssey, Race and Contested Territory dates when it was built.",
+     "src": [
+      "Boss_Bloon_Event",
+      "Odyssey__BTD6_",
+      "Contested_Territory__BTD6_"
+     ],
+     "nav": true,
+     "q": []
+    },
+    {
+     "t": "Test a plan in Sandbox before a hard run. Sandbox cannot send a round you have never reached.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Note that Sandbox cannot send a round the player has never reached before."
+     ],
+     "advice": true
+    }
+   ],
+   "check": "You have no unspent Monkey Knowledge points and you know which of the hard rounds your usual towers cannot handle."
+  },
+  {
+   "id": "early",
+   "title": "How to play rounds 1 to 40",
+   "kind": "How-to",
+   "group": "play",
+   "need": "You'll need: any map on Medium or Hard. Works the same on every difficulty.",
+   "steps": [
+    {
+     "t": "Buy unupgraded towers first. A [[Dart Monkey]] with [[Very Quick Shots]] costs 2.5x a plain Dart Monkey but is only 1.5x as strong, so a second Dart Monkey does more for less.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "A Dart Monkey with Very Quick Shots, for instance, costs 2.5x as much as a basic Dart Monkey, but is only 1.5x as powerful."
+     ]
+    },
+    {
+     "t": "Spread your first towers along the track. Do not put them all at the entrance.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Early on, most towers should be spread out.",
+      "Do not put every tower by the entrance of the map"
+     ]
+    },
+    {
+     "t": "Save for your hero as early as you can; selling a tower can be worth it to place the hero sooner.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Attempt to save up for the Hero as early as possible.",
+      "Towers can be sold for most of the cost they were bought for, and in some cases this can be worth it to place the Hero down faster."
+     ],
+     "advice": true
+    },
+    {
+     "t": "If your hero is [[Benjamin]], place him only after your defense is stable: he cannot pop early Bloons.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "If using Benjamin, then he should instead only be placed when the player has a proper defense, as he cannot pop early Bloons."
+     ],
+     "advice": true
+    },
+    {
+     "t": "Have enough pierce for round 10. It ends with a dense clump of Blue Bloons.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Instead of just spaced out Greens, Blues, and Reds, this round contains a dense clump of Blues near the end of the round."
+     ]
+    },
+    {
+     "t": "Get a tower that can see Camo before round 24. Its Camo Green can only be popped by camo detection.",
+     "src": [
+      "Strategy_Bloons_TD_6",
+      "Camo_Bloon__BTD6_"
+     ],
+     "q": [
+      "24 Camo Green x1 Blue x20 The Camo Green can only be popped by towers with camo detection."
+     ]
+    },
+    {
+     "t": "Get a tower that can pop Lead before round 28. Lead Bloons are immune to sharp, shatter, energy and cold damage.",
+     "src": [
+      "Strategy_Bloons_TD_6",
+      "Lead_Bloon__BTD6_"
+     ],
+     "q": [
+      "28 Lead x6 Most common earlygame towers are unable to damage Lead Bloons",
+      "They are immune to sharp, shatter, energy, and cold damage."
+     ]
+    },
+    {
+     "t": "Once the early defense holds, save up for one tower with tier 2 or 3 upgrades to carry you.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Once early defense stabilizes a bit, try to save up into a strong early game carry tower with tier 2 or 3 upgrades."
+     ]
+    },
+    {
+     "t": "Set targeting on each tower: **Strong** for towers near the start, **Last** for towers that face down a straight, **First** for clean-up towers.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Towers facing down straightaways can use Last to ensure they always attack in that direction and maximize their pierce, while early towers on the track will usually be more effective when targeting Strong"
+     ]
+    },
+    {
+     "t": "Before round 40, make sure you have single-target damage for the MOAB and can clean up the ceramics inside it.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Without the entire early-game setup being prepared to deal good single-target damage and clean up the tight, high-RBE ceramics, this round could very easily be a dead-end."
+     ]
+    }
+   ],
+   "check": "Round 40 ends with no lives lost.",
+   "why": "rounds"
+  },
+  {
+   "id": "late",
+   "title": "How to set up for the late game",
+   "kind": "How-to",
+   "group": "play",
+   "need": "You'll need: a stable defense past round 40.",
+   "steps": [
+    {
+     "t": "Stop buying cheap low-tier towers. Past the first upgrades, higher tiers give more power for the cash, so save for one big upgrade instead.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Past the first couple upgrades, higher tier upgrades are usually more cost-efficient."
+     ]
+    },
+    {
+     "t": "Pick one or two strong core towers that can handle the late rounds and plan your cash around them.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "most late game plans revolve around saving up for one or two strong core towers that can handle the later rounds, then supporting them."
+     ]
+    },
+    {
+     "t": "Put support next to your core towers: [[Jungle Drums]], [[Berserker Brew]] and [[Stronger Stimulant]] help in every mode.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Jungle Drums, Berserker Brew, and Stronger Stimulant are especially pivotal across every game mode."
+     ]
+    },
+    {
+     "t": "If a core tower cannot see Camo, give it camo support such as [[Radar Scanner]], [[Submerge and Support]] or [[Signal Flare]].",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "If a tower can't see Camo, then Camo support, such as Radar Scanner, Submerge and Support, Signal Flare, can cover that weakness."
+     ]
+    },
+    {
+     "t": "Add a slow or stall tower for the hard late rounds: [[Giant Condor]], [[MOAB Glue]], [[Relentless Glue]], [[Bloon Sabotage]], [[MOAB Press]] or [[Symphonic Resonance]].",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "Stall and slowdown towers, such as Giant Condor, MOAB Glue, Relentless Glue, Bloon Sabotage, MOAB Press, or Symphonic Resonance, become easier to field and more valuable as the game goes on."
+     ]
+    },
+    {
+     "t": "Group your late towers inside the range of a [[Monkey Village]] so area buffs reach all of them.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "cramming towers together can make it easier to cover a large number of towers with area buffs such as from Monkey Villages"
+     ]
+    },
+    {
+     "t": "Prepare for round 63: three tight waves of 40, 40 and 42 Ceramic Bloons.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "This infamous round has 3 extremely tight Ceramic waves with 40, 40, and 42 Ceramics respectively."
+     ]
+    },
+    {
+     "t": "Prepare for round 59, the first Camo Lead round: your lead popper must see Camo.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "This is the first Camo Lead round.",
+      "forgetting to give Camo detection to a lead-popper or put down a lead-popper that sees Camo is a common cause of defeat on round 59."
+     ]
+    }
+   ],
+   "check": "Rounds 59, 63 and 64 pass without using every ability at once.",
+   "why": "rounds"
+  },
+  {
+   "id": "farming",
+   "title": "How to make extra cash in a game",
+   "kind": "How-to",
+   "group": "play",
+   "need": "You'll need: a mode that allows income (not CHIMPS) and a defense that holds without the farm's cash.",
+   "steps": [
+    {
+     "t": "Place a [[Banana Farm]]. With no upgrades it makes 4 bunches of bananas a round worth $20 each, $80 in total.",
+     "src": [
+      "Banana_Farm__BTD6_"
+     ],
+     "q": [
+      "It generates 4 bunches of bananas each round, each worth $20, for a total of $80 per round."
+     ]
+    },
+    {
+     "t": "Collect the bananas within 15 seconds; bananas you leave on the ground spoil.",
+     "src": [
+      "Banana_Farm__BTD6_"
+     ],
+     "q": [
+      "Uncollected bananas spoil and disappear after 15 seconds."
+     ]
+    },
+    {
+     "t": "Upgrade the top path for more bananas: [[Increased Production]] makes 6 bunches, [[Greater Production]] 8 and [[Banana Plantation]] 16.",
+     "src": [
+      "Banana_Farm__BTD6_"
+     ],
+     "q": [
+      "increases the number of banana bunches the Banana Farm generates per round from 6 to 8",
+      "increases the number of banana bunches the Banana Farm generates per round from 8 to 16"
+     ]
+    },
+    {
+     "t": "Take [[Monkey Bank]] if you would rather not click bananas: it drops none, stores the farm's cash, adds 15% interest each round and holds up to $7,000.",
+     "src": [
+      "Banana_Farm__BTD6_"
+     ],
+     "q": [
+      "Instead of producing collectable bananas, Banana Farm generates cash in its internal balance on each round",
+      "At the end of each round it increases its balance by 15% in interest. It has a maximum balance of $7000"
+     ],
+     "advice": true
+    },
+    {
+     "t": "For more cash, go up to the tier 4 [[Banana Research Facility]]: 5 crates a round worth $300 each, $1,500 a round.",
+     "src": [
+      "Banana_Farm__BTD6_"
+     ],
+     "q": [
+      "Produces 5 large Banana crates every round worth $300 each.",
+      "Each crate is worth $300, so it effectively produces a total of $1,500 per round."
+     ]
+    },
+    {
+     "t": "Put your farms and towers inside a [[Monkey Village]] with [[Monkey Business]]: towers and upgrades up to tier 3 bought in its range cost 10% less.",
+     "src": [
+      "Monkey_Village__BTD6_"
+     ],
+     "q": [
+      "Provides 10% discount to all Monkeys and upgrades tier 3 or less purchased in the radius of the Village."
+     ]
+    },
+    {
+     "t": "Upgrade it to [[Monkey Commerce]] for another 5% off. Up to three Monkey Commerce Villages stack, for at most 25% off.",
+     "src": [
+      "Monkey_Village__BTD6_"
+     ],
+     "q": [
+      "which stacks with Monkey Business and stacks up to three times with other Monkey Commerce towers for a maximum of 25% discount"
+     ]
+    },
+    {
+     "t": "Later, [[Monkeyopolis]] sacrifices the Banana Farms in its range and makes cash from their value. It costs $5,000 for each farm in range.",
+     "src": [
+      "Monkey_Village__BTD6_"
+     ],
+     "q": [
+      "When purchased, the village sacrifices all tier 4 or lower Banana Farms in range",
+      "In exchange, Monkeyopolis generates cash depending on the value of the Banana Farms",
+      "the upgrade always costs $5,000 times the number of Banana Farms in range."
+     ]
+    },
+    {
+     "t": "Farm lightly while keeping a strong defense. On Impoppable, round 40 is where too much farming most often loses the game.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "advice": true,
+     "q": [
+      "Have a robust defense while doing light to moderate farming.",
+      "Round 40 is the round that most often spells trouble for setups with too much farming."
+     ]
+    }
+   ],
+   "check": "Your cash per round goes up and you still lose no lives.",
+   "why": "towers"
+  },
+  {
+   "id": "mm",
+   "title": "How to earn Monkey Money faster",
+   "kind": "How-to",
+   "group": "progress",
+   "need": "You'll need: maps unlocked at several difficulties.",
+   "steps": [
+    {
+     "t": "Win each map and mode once. The first clear gives a medal and much more Monkey Money than replays.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Clearing a given difficulty mode on a given map for the first time rewards a medal and much more Monkey Money than future clears"
+     ]
+    },
+    {
+     "t": "Play harder map groups when you can: Monkey Money from a win is multiplied by 2 on Intermediate, 3 on Advanced and 4 on Expert maps.",
+     "src": [
+      "Map_difficulty"
+     ],
+     "q": [
+      "Expert Win games on 20 different maps ×1.3 ×4"
+     ],
+     "advice": true
+    },
+    {
+     "t": "Claim your Daily Rewards and play events and quests; they all pay Monkey Money.",
+     "src": [
+      "Monkey_Money__BTD6_"
+     ],
+     "q": [
+      "Winning games Leveling up Daily Rewards Events Quests"
+     ]
+    },
+    {
+     "t": "Finish the weekly Odyssey. Completing it gives Monkey Money plus, usually, a Power or an Insta Monkey.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "Completing the Odyssey earns additional rewards at the end depending on the difficulty, usually Monkey Money and a Power or Insta Monkey."
+     ]
+    },
+    {
+     "t": "Spend it before you reach 20,000 Monkey Money: anything above that is lost.",
+     "src": [
+      "Monkey_Money__BTD6_"
+     ],
+     "q": [
+      "Only up to 20,000 may be stored at a time; any excess is discarded."
+     ]
+    },
+    {
+     "t": "Go for achievements that give Monkey Knowledge points as well, such as the CHIMPS ones.",
+     "src": [
+      "Strategy_Bloons_TD_6",
+      "CHIMPS"
+     ],
+     "q": [
+      "Attempt to obtain achievements, especially ones that grant Monkey Knowledge points",
+      "proactively working towards CHIMPS clears can earn various achievements and several Monkey Knowledge points"
+     ],
+     "advice": true
+    }
+   ],
+   "check": "Your Monkey Money goes up after every session and never sits at 20,000."
+  },
+  {
+   "id": "mkhow",
+   "title": "How to spend Monkey Knowledge",
+   "kind": "How-to",
+   "group": "progress",
+   "need": "You'll need: player level 30 or more. The full list with every node is on the Monkey Knowledge page.",
+   "steps": [
+    {
+     "t": "Reach level 30. Monkey Knowledge opens there.",
+     "src": [
+      "Monkey_Knowledge__BTD6_"
+     ],
+     "q": [
+      "Starting at level 30, players can invest Monkey Money and Monkey Knowledge Points into any one of six skill trees"
+     ]
+    },
+    {
+     "t": "Plan which of the six trees to branch out on: Primary, Military, Magic, Support, Heroes or Powers.",
+     "src": [
+      "Monkey_Knowledge__BTD6_"
+     ],
+     "q": [
+      "it is important to have a plan to branch out on each skill tree",
+      "into any one of six skill trees"
+     ],
+     "advice": true
+    },
+    {
+     "t": "Put points into the tree before you aim further down it: tier 3 and higher need points already spent in that tree.",
+     "src": [
+      "Monkey_Knowledge__BTD6_"
+     ],
+     "q": [
+      "Tiers 3 and above require a certain number of Monkey Knowledge Points to be invested into the tree before they can be unlocked"
+     ]
+    },
+    {
+     "t": "Keep Monkey Money ready: tier 4 nodes cost 250, tier 5 cost 500 and tier 6 and higher cost 1,000 the first time you buy them.",
+     "src": [
+      "Monkey_Knowledge__BTD6_"
+     ],
+     "q": [
+      "tiers 4 and above cost Monkey Money when purchased for the first time."
+     ]
+    },
+    {
+     "t": "For Impoppable, get [[Pre-game Prep]], [[Bonus Monkey!]], [[More Cash]], [[Military Conscription]] and [[Veteran Monkey Training]] first.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "meta": "no recent source",
+     "q": [
+      "Important ones include Pre-game Prep, Bonus Monkey!, More Cash, Military Conscription, and Veteran Monkey Training."
+     ]
+    },
+    {
+     "t": "For faster hero levels, take [[Monkey Education]] (+8% XP) and [[Self Taught Heroes]] (+10% XP).",
+     "src": [
+      "Hero__BTD6_"
+     ],
+     "q": [
+      "Monkey Education — +8% XP Self Taught Heroes — +10% XP"
+     ]
+    },
+    {
+     "t": "If you change your mind, respec for 2,000 Monkey Money. Nodes you already paid Monkey Money for only cost a point next time.",
+     "src": [
+      "Monkey_Knowledge__BTD6_"
+     ],
+     "q": [
+      "It costs 2,000 Monkey Money per use to respec Monkey Knowledge",
+      "so they will only require a Knowledge Point and not cost any Monkey Money the next time the player unlocks them."
+     ]
+    },
+    {
+     "t": "Practice CHIMPS without relying on it: Monkey Knowledge is fully off in CHIMPS.",
+     "src": [
+      "Monkey_Knowledge__BTD6_",
+      "CHIMPS"
+     ],
+     "q": [
+      "Monkey Knowledge is completely disabled in CHIMPS"
+     ]
+    }
+   ],
+   "why": "mk"
+  },
+  {
+   "id": "hard",
+   "title": "How to clear a map up to the black border",
+   "kind": "How-to",
+   "group": "modes",
+   "need": "You'll need: the map unlocked. Each border needs every medal of the border before it.",
+   "steps": [
+    {
+     "t": "Beat Easy, Primary Only and Deflation for the bronze border.",
+     "src": [
+      "Map"
+     ],
+     "q": [
+      "Bronze, for beating Easy, Primary Only, and Deflation"
+     ]
+    },
+    {
+     "t": "Beat Medium, Military Only, Reverse and Apopalypse for the silver border.",
+     "src": [
+      "Map"
+     ],
+     "q": [
+      "Silver, for earning a Bronze border and beating Medium, Military Only, Reverse and Apopalypse"
+     ]
+    },
+    {
+     "t": "Beat Hard Standard: it starts on round 3, ends on round 80 and gives you 100 lives.",
+     "src": [
+      "Hard"
+     ],
+     "q": [
+      "The player has 100 Lives.",
+      "The game begins on Round 3 and ends on Round 80"
+     ]
+    },
+    {
+     "t": "Beat Magic Monkeys Only (Hard Standard unlocks it). Only heroes and Magic towers are allowed.",
+     "src": [
+      "Hard"
+     ],
+     "q": [
+      "It unlocks Alternate Bloons Rounds, Magic Monkeys Only, and Sandbox.",
+      "Magic Monkeys Only — Only Heroes and Magic towers may be used."
+     ]
+    },
+    {
+     "t": "Beat Double HP MOABs (Magic Monkeys Only unlocks it). Every MOAB-class Bloon has twice the health.",
+     "src": [
+      "Hard"
+     ],
+     "q": [
+      "It unlocks Double HP MOABs.",
+      "Double HP MOABs — All MOAB-class Bloons gain doubled health."
+     ]
+    },
+    {
+     "t": "Beat Half Cash (Double HP MOABs unlocks it). Starting cash and cash from pops are halved.",
+     "src": [
+      "Hard"
+     ],
+     "q": [
+      "It unlocks Half Cash.",
+      "Half Cash — The starting cash, cash from popping Bloons"
+     ]
+    },
+    {
+     "t": "Beat Alternate Bloons Rounds (Hard Standard unlocks it). It opens Impoppable on that map.",
+     "src": [
+      "Hard"
+     ],
+     "q": [
+      "Alternate Bloons Rounds — Many rounds are modified to have significantly increased difficulty",
+      "It unlocks Impoppable."
+     ]
+    },
+    {
+     "t": "Beat Impoppable. It opens CHIMPS on that map.",
+     "src": [
+      "Hard"
+     ],
+     "q": [
+      "It unlocks CHIMPS."
+     ]
+    },
+    {
+     "t": "Beat CHIMPS for the gold border.",
+     "src": [
+      "Map"
+     ],
+     "q": [
+      "Gold, for earning a Silver border and beating Hard, Magic Monkeys Only, Double HP MOABs, Half Cash, Alternate Bloons Rounds, Impoppable, and CHIMPS"
+     ]
+    },
+    {
+     "t": "Beat CHIMPS again without exiting the game or using Retry Last Round for the black border.",
+     "src": [
+      "Map",
+      "CHIMPS"
+     ],
+     "q": [
+      "the black version, which is earned in addition to the red version by completing the game in one session without exiting the game or using the \"Retry Last Round\" option."
+     ]
+    }
+   ],
+   "check": "The map shows a black border on the map select screen.",
+   "why": "modes"
+  },
+  {
+   "id": "impoppable",
+   "title": "How to beat Impoppable",
+   "kind": "How-to",
+   "group": "modes",
+   "need": "You'll need: Alternate Bloons Rounds beaten on the map, and the key Monkey Knowledge from the Monkey Knowledge how-to.",
+   "steps": [
+    {
+     "t": "Know the rules: rounds 6 to 100, one life, and prices 20% above Medium (about 11.11% above Hard).",
+     "src": [
+      "Impoppable__BTD6_"
+     ],
+     "q": [
+      "Towers and upgrades cost 20% more than on Medium difficulty (~11.11% more than on Hard - Standard).",
+      "Starts on round 6 and ends by completing round 100."
+     ]
+    },
+    {
+     "t": "Start farming in rounds 31 to 40, and have at least a 2-0-0 Banana Farm by round 40.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "q": [
+      "For the latter part of the early game, Rounds 31-40, a start to farming is optimal.",
+      "Attempt to get at least a 2-0-0 farm by Round 40."
+     ],
+     "advice": true
+    },
+    {
+     "t": "Keep the farming light while the defense holds: round 40 is where too much farming most often fails.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "q": [
+      "Do not over-farm either, as over-greeding can lead to a loss.",
+      "Round 40 is the round that most often spells trouble for setups with too much farming."
+     ],
+     "advice": true
+    },
+    {
+     "t": "Sell towers when you need to: to afford your hero early, and to afford your expensive late-game carry.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "advice": true,
+     "q": [
+      "Situations that necessitate selling includes affording the Hero early and affording the expensive late-game carry."
+     ]
+    },
+    {
+     "t": "Put [[Jungle Drums]], [[Berserker Brew]] and [[Stronger Stimulant]] next to your damage towers in the mid game.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "advice": true,
+     "q": [
+      "Jungle Drums, Berserker Brew, and Stronger Stimulant are useful even in the mid-game",
+      "Berserker Brew/Stronger Stimulant should be purchased for the strongest mid-game tower(s)."
+     ]
+    },
+    {
+     "t": "Expect Super Ceramic Bloons after round 80: Ceramics are replaced and MOAB-Class Bloons get more health.",
+     "src": [
+      "Impoppable__BTD6_"
+     ],
+     "q": [
+      "Ceramic Bloons are replaced with Super Ceramic Bloons, all Bloons gradually increase in speed, and MOAB-Class Bloons gradually increase in health."
+     ]
+    },
+    {
+     "t": "Prepare camo damage for round 78: it has 72 Camo Ceramics in a dense group.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "q": [
+      "78 Rainbow ×150 Ceramic ×75 BFB ×1 Purple ×80 Camo Ceramic ×72 Without a solid Camo popping power or reliable decamo, the densely packed Camo Ceramics will easily cause a sudden loss."
+     ]
+    },
+    {
+     "t": "Prepare for DDTs on rounds 90 and 95: you need towers that pop Camo, Black and Lead at once.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "q": [
+      "90 Fortified Camo Regrow Lead ×500 DDT ×3",
+      "95 Fortified Camo Regrow Lead ×500 Camo Regrow Purple ×250 Fortified MOAB ×50 DDT ×30",
+      "Not noticing them while without towers that can pop Camo, Black, and Lead will cause a sudden loss."
+     ]
+    },
+    {
+     "t": "Save single-target damage for round 98 (the highest RBE) and the BAD on round 100, which ignores slowdowns.",
+     "src": [
+      "Strategy_Impoppable__BTD6_"
+     ],
+     "q": [
+      "This round has the highest RBE out of any round in pre-Freeplay Impoppable.",
+      "due to the BAD being immune to all slowdowns from towers and requiring single-target damage options to be dealt with."
+     ]
+    }
+   ],
+   "check": "You finish round 100. CHIMPS on this map is now open.",
+   "why": "rounds",
+   "diffplan": true,
+   "plan_note": "These are CHIMPS records. CHIMPS has Impoppable's rounds and one life, but it is played on Hard prices with no Monkey Knowledge, powers, selling or extra income, so treat a pair as a tested starting point for Impoppable, not a promise.",
+   "plan_note_src": [
+    "CHIMPS",
+    "Impoppable__BTD6_"
+   ]
+  },
+  {
+   "id": "chimps",
+   "title": "How to beat CHIMPS",
+   "kind": "How-to",
+   "group": "modes",
+   "need": "You'll need: Impoppable beaten on the map. The rules: rounds 6 to 100 on Hard prices, one life, no continues, no Monkey Knowledge, no powers and no selling.",
+   "steps": [
+    {
+     "t": "Plan your cash from starting cash, pops and end-of-round cash only: every other income is off in CHIMPS.",
+     "src": [
+      "CHIMPS"
+     ],
+     "q": [
+      "All sources of cash except starting cash, cash per pop, and end-of-round cash are disabled."
+     ]
+    },
+    {
+     "t": "Place your hero early. Most CHIMPS defenses are built around it.",
+     "src": [
+      "CHIMPS"
+     ],
+     "advice": true,
+     "q": [
+      "The hero is extremely important during CHIMPS, providing many attacking and supporting capabilities that centralize a defense around, making it important to place the Hero early"
+     ]
+    },
+    {
+     "t": "Buy a few strong towers with support instead of many low-tier towers that stop mattering later.",
+     "src": [
+      "CHIMPS"
+     ],
+     "advice": true,
+     "q": [
+      "Avoid placing down too many low-tier towers in the early-game and mid-game that do not become relevant in the late-game.",
+      "Instead, focus on a few strong towers with support as well."
+     ]
+    },
+    {
+     "t": "Add cheap support such as [[Berserker Brew]] and [[MOAB Glue]].",
+     "src": [
+      "CHIMPS"
+     ],
+     "advice": true,
+     "q": [
+      "Take advantage of support towers such as Berserker Brew and MOAB Glue to support a defense for relatively low cost."
+     ]
+    },
+    {
+     "t": "Skip towers that do little without making cash or lives, such as [[Monkey Town]] and [[Benjamin]].",
+     "src": [
+      "CHIMPS"
+     ],
+     "q": [
+      "Avoid towers that have little or no purpose without the functionalities of generating cash and/or lives, such as Monkey Town and Benjamin"
+     ],
+     "advice": true
+    },
+    {
+     "t": "Start from a beginner-friendly plan: [[Gwendolin]] with [[The Tack Zone]] and [[Inferno Ring]], [[Obyn Greenfoot]] with [[Avatar of Wrath]], or [[Striker Jones]] with [[MOAB Assassin]] spam.",
+     "src": [
+      "CHIMPS"
+     ],
+     "meta": "no recent source",
+     "q": [
+      "Some beginner-friendly examples of strategies are Gwendolin paired with The Tack Zone and Inferno Ring, Obyn Greenfoot with Avatar of Wrath, and Striker Jones with MOAB Assassin spam."
+     ]
+    },
+    {
+     "t": "Test rounds 63 and 98 in Sandbox with your planned towers before the real run.",
+     "src": [
+      "CHIMPS"
+     ],
+     "q": [
+      "it is advised to use the Sandbox gamemode to test strategies and avoid frustration by simulating though difficult rounds such as 63 and 98 with theoretical setups."
+     ],
+     "advice": true
+    },
+    {
+     "t": "If you leak, use **Retry Last Round** to get the red medal. Replay later without it for the black medal.",
+     "src": [
+      "CHIMPS"
+     ],
+     "q": [
+      "the red version, which is earned by completing the map on CHIMPS at all",
+      "the black version, which is earned in addition to the red version by completing the game in one session without exiting the game or using the \"Retry Last Round\" option."
+     ]
+    }
+   ],
+   "check": "The map shows the red (or black) CHIMPS medal.",
+   "why": "builds",
+   "diffplan": true,
+   "plan_note": "Before a run, look up your map's group below: the map facts tell you what the towers must handle, and the pairs are towers that won CHIMPS there with nothing else. Test your pick in Sandbox first.",
+   "plan_note_src": [
+    "CHIMPS"
+   ]
+  },
+  {
+   "id": "mapdiff",
+   "title": "How to adjust to the map's difficulty",
+   "kind": "How-to",
+   "group": "modes",
+   "need": "You'll need: the map's card from the Maps page (paths, water, record runs).",
+   "steps": [
+    {
+     "t": "Expect harder maps to have shorter paths or several paths, line-of-sight blockers and removable objects.",
+     "src": [
+      "Map_difficulty"
+     ],
+     "q": [
+      "Maps of higher difficulty levels generally feature shorter paths and/or multiple paths, line of sight and placement blockers, and removable objects."
+     ]
+    },
+    {
+     "t": "On maps with walls, use towers that ignore line of sight, such as the [[Alchemist]] and the [[Monkey Ace]].",
+     "src": [
+      "Map"
+     ],
+     "q": [
+      "Some towers, however, are not affected by obstacles, such as the Alchemist and Monkey Ace."
+     ]
+    },
+    {
+     "t": "Pay to remove an object only when it opens space or sight that your plan needs.",
+     "src": [
+      "Map"
+     ],
+     "advice": true,
+     "q": [
+      "Most removables open more placeable terrain and/or remove line of sight blockers"
+     ]
+    },
+    {
+     "t": "Place towers where they can see several parts of the track, like the centre of [[In The Loop]].",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "advice": true,
+     "q": [
+      "it is better for a tower to be able to target multiple disparate parts of a track, such as in the center of In The Loop"
+     ]
+    },
+    {
+     "t": "On maps with separate Bloon and MOAB lanes, such as [[Cargo]] and [[Dark Dungeons]], cover each lane on its own for round 91.",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "This round is usually simple, but difficult on maps with very separate Bloon and MOAB lanes, especially Cargo and Dark Dungeons."
+     ]
+    },
+    {
+     "t": "On short maps, plan extra single-target burst for the BAD on round 100, like [[First Strike Capability]].",
+     "src": [
+      "Strategy_Bloons_TD_6"
+     ],
+     "q": [
+      "Many strategies lack the sheer damage required to take the BAD down on shorter maps, instead turning to dedicated single-target damage burst options like First Strike Capability."
+     ],
+     "advice": true
+    },
+    {
+     "t": "Use the extra XP: rounds give 1.1x XP on Intermediate, 1.2x on Advanced and 1.3x on Expert maps.",
+     "src": [
+      "Map_difficulty"
+     ],
+     "q": [
+      "Advanced Win games on 12 different maps ×1.2 ×3"
+     ]
+    }
+   ],
+   "why": "maps",
+   "diffplan": true,
+   "plan_note": "The same map groups side by side: harder groups have shorter and more numerous paths and more blockers, and the cheapest recorded CHIMPS wins cost more.",
+   "plan_note_src": [
+    "Map_difficulty"
+   ]
+  },
+  {
+   "id": "paragon",
+   "title": "How to make a Paragon",
+   "kind": "How-to",
+   "group": "progress",
+   "need": "You'll need: the Paragon unlocked with that tower's XP, and a lot of cash (see the Paragons page for costs).",
+   "steps": [
+    {
+     "t": "Earn the tower's XP to unlock its Paragon: 500,000 to 1,000,000 XP depending on the tower.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "The Paragon upgrade must be unlocked with tower XP."
+     ]
+    },
+    {
+     "t": "Place three copies of the tower on the map.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "All three tier 5 versions of the tower must exist on the map at the same time."
+     ]
+    },
+    {
+     "t": "Upgrade each copy to a different tier 5, so all three tier 5 upgrades of that tower are on the map at once.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "Upgrading a tier 5 tower into a Paragon requires having all three tier 5 versions of the same tower on the map at the same time."
+     ]
+    },
+    {
+     "t": "Buy the Paragon on one of them. It absorbs every other tower of that type and any Paragon Power Totems.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "it absorbs all other towers of the same tower type and Paragon Power Totems on the map, merging them into a single tower."
+     ]
+    },
+    {
+     "t": "Raise its Degree (up to 100) by adding cash in the Paragon menu.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "The amount of extra cash invested on the Paragon menu",
+      "The maximum possible Paragon Degree is 100."
+     ]
+    },
+    {
+     "t": "Absorb extra tier 5 towers beyond the three you need: each one adds to the Degree.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "The number of tier 5 towers absorbed besides the three used to create the Paragon"
+     ]
+    },
+    {
+     "t": "Let the towers you will absorb pop a lot first: the damage they dealt adds to the Degree.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "The total amount of damage dealt and cash p"
+     ]
+    },
+    {
+     "t": "Absorb any Paragon Power Totems you have for more Degree.",
+     "src": [
+      "Paragon"
+     ],
+     "q": [
+      "Paragon Power Totems — no upper limit 2,000 power per totem absorbed"
+     ]
+    },
+    {
+     "t": "Against bosses, aim for a high Degree: Paragons deal 25% more damage to bosses for every 20 Degrees and double damage to Elite bosses.",
+     "src": [
+      "Boss_Bloon__BTD6_"
+     ],
+     "q": [
+      "they also deal 25% extra damage to bosses for every 20 Degrees they have, and deal double damage to Elite bosses."
+     ],
+     "advice": true
+    }
+   ],
+   "check": "The tower turns into the Paragon and shows its Degree.",
+   "why": "paragons"
+  },
+  {
+   "id": "boss",
+   "title": "How to beat a Boss event",
+   "kind": "How-to",
+   "group": "events",
+   "need": "You'll need: this week's boss and map (see Events at build time).",
+   "steps": [
+    {
+     "t": "Open the boss card in this guide and read its special rules before you pick towers.",
+     "src": [
+      "Boss_Bloon_Event"
+     ],
+     "q": [
+      "In each event, one of the Boss Bloons is selected to appear on a map, possibly with some challenge modifiers such as tower and hero restrictions."
+     ]
+    },
+    {
+     "t": "Boss rounds: tier 1 comes on round 40, and tiers 2 to 5 on rounds 60, 80, 100 and 120.",
+     "src": [
+      "Boss_Bloon__BTD6_"
+     ],
+     "q": [
+      "Bosses appear at tier 1 on round 40, tier 2 on round 60, tier 3 on round 80, tier 4 on round 100, and tier 5 on round 120."
+     ]
+    },
+    {
+     "t": "Kill each tier before the next tier's round starts: if it is still alive then, the run ends in a loss.",
+     "src": [
+      "Boss_Bloon__BTD6_"
+     ],
+     "q": [
+      "If the player fails to defeat the boss before the start of the round that the next tier would spawn on, the run ends immediately in a loss."
+     ]
+    },
+    {
+     "t": "Plan your opening around the default start: $650 and 200 lives on Normal, 100 lives on Elite.",
+     "src": [
+      "Boss_Bloon_Event"
+     ],
+     "q": [
+      "Starting cash $650",
+      "Starting lives 200 in Normal, 100 in Elite"
+     ]
+    },
+    {
+     "t": "Beat tier 5 before round 140: reaching round 140 with it alive is an instant loss.",
+     "src": [
+      "Boss_Bloon_Event"
+     ],
+     "q": [
+      "However, if the player reaches round 140 without defeating the tier 5 boss, they lose instantly."
+     ]
+    },
+    {
+     "t": "Aim for a Paragon (up to 4 are allowed by default): only Paragons and Artillery Batteries buffed by Pop and Awe deal extra damage to bosses.",
+     "src": [
+      "Boss_Bloon_Event",
+      "Boss_Bloon__BTD6_"
+     ],
+     "q": [
+      "Max Paragons 4",
+      "the only towers that do this normally are Paragons and Artillery Batteries buffed by Pop and Awe."
+     ],
+     "advice": true
+    },
+    {
+     "t": "Do not rely on percentage damage: bosses are immune to it, including [[Big Bloon Sabotage]].",
+     "src": [
+      "Boss_Bloon__BTD6_"
+     ],
+     "q": [
+      "All bosses are immune to percentage-based damage or HP reduction, such as Ezili's MOAB Hex, Grand Saboteur's ability, and Big Bloon Sabotage."
+     ]
+    },
+    {
+     "t": "After you beat tier 5 on Normal, try Elite: it unlocks then.",
+     "src": [
+      "Boss_Bloon_Event"
+     ],
+     "q": [
+      "The Elite version of the boss may not be attempted in single-player until tier 5 of the Normal boss is defeated."
+     ]
+    }
+   ],
+   "check": "The tier 5 boss pops before round 140.",
+   "why": "bosses"
+  },
+  {
+   "id": "odyssey",
+   "title": "How to play an Odyssey",
+   "kind": "How-to",
+   "group": "events",
+   "need": "You'll need: this week's Odyssey (see Events at build time). Easy has 3 islands, Medium 4 and Hard 5.",
+   "steps": [
+    {
+     "t": "Open the Odyssey and read every island's rules before you build your crew.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "Viewing Island Rules for the first island of an Odyssey"
+     ]
+    },
+    {
+     "t": "Pick one hero for the hero seat.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "The player begins an Odyssey by building a crew consisting of towers, Powers, and one Hero."
+     ]
+    },
+    {
+     "t": "Fill the monkey seats with tower types that cover every island; the towers, copies and seats you get depend on the Odyssey.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "The player can choose tower types up to the number of monkey seats available",
+      "The set of towers and powers the player can choose from, the maximum number of copies of each tower or power that the player can add, and the number of \"seats\" they can be placed in, all depend on the Odyssey's settings."
+     ]
+    },
+    {
+     "t": "Fill the power seats the same way.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "The set of towers and powers the player can choose from, the maximum number of copies of each tower or power that the player can add, and the number of \"seats\" they can be placed in, all depend on the Odyssey's settings."
+     ]
+    },
+    {
+     "t": "Protect your lives: they are shared by all islands, and finishing an island with fewer lives lowers your maximum for the rest of the Odyssey.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "The player has one set of lives shared between all islands",
+      "the next island sets the player's max lives to their remaining lives"
+     ]
+    },
+    {
+     "t": "In Extreme mode, place as few copies as you can on early islands: each copy you place cannot be used on later islands.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "In Extreme mode, any copies of non-Hero towers the player places on an island's map become unusable on later islands."
+     ]
+    },
+    {
+     "t": "If you lose on an island, restart from the first round of that island.",
+     "src": [
+      "Odyssey__BTD6_"
+     ],
+     "q": [
+      "If the player loses on one island, they can restart from the first round of that island."
+     ]
+    }
+   ],
+   "check": "All islands are complete and the rewards screen appears."
+  },
+  {
+   "id": "ct",
+   "title": "How to play Contested Territory",
+   "kind": "How-to",
+   "group": "events",
+   "need": "You'll need: a team. Contested Territory runs every other week; your team plays against five other teams.",
+   "steps": [
+    {
+     "t": "Look at the board and pick a tile that shares a side with a tile your team owns.",
+     "src": [
+      "Contested_Territory__BTD6_"
+     ],
+     "q": [
+      "Players may only attempt to capture tiles which share a side with a tile their team owns"
+     ]
+    },
+    {
+     "t": "Read the tile's scoring: Least Cash, Least Tiers, Boss or Race.",
+     "src": [
+      "Contested_Territory__BTD6_"
+     ],
+     "q": [
+      "Least Cash: Sauda, Corvus Least Tiers: Gwendolin, Sauda, Captain Churchill, Geraldo, Corvus All heroes are able to be used on Race and Boss tiles."
+     ]
+    },
+    {
+     "t": "If another team owns the tile, aim to beat their score; a tie does not capture it.",
+     "src": [
+      "Contested_Territory__BTD6_"
+     ],
+     "q": [
+      "Owned tiles may only be captured by beating the owner's current score on that tile; tied scores result in no capture."
+     ]
+    },
+    {
+     "t": "Use your daily tickets (you get four a day): a ticket is only spent when you capture a tile.",
+     "src": [
+      "Contested_Territory__BTD6_"
+     ],
+     "q": [
+      "Players gain four tickets every day",
+      "Tickets are not spent until and unless the player captures a tile."
+     ]
+    },
+    {
+     "t": "Leave unused tickets if you must: at the end of a day they go into a team pool for the next days.",
+     "src": [
+      "Contested_Territory__BTD6_"
+     ],
+     "q": [
+      "All of a team's unused tickets at the end of a day get put into a pool and may be used by players on the following days."
+     ]
+    },
+    {
+     "t": "Recapture your team's old tiles before they turn neutral: scores on tiles degrade over time.",
+     "src": [
+      "Contested_Territory__BTD6_"
+     ],
+     "q": [
+      "Over time scores on tiles degrade, tiles stop generating points, and eventually tiles turn neutral again if not recaptured by any teams."
+     ]
+    }
+   ],
+   "check": "The tile shows your team's colour.",
+   "why": "live"
+  },
+  {
+   "id": "threats",
+   "title": "How to counter each Bloon type",
+   "kind": "How-to",
+   "group": "play",
+   "need": "You'll need: the Bloons page open for the full table of health, RBE and immunities.",
+   "steps": [
+    {
+     "t": "Regrow Bloons (from round 17): pop them quickly; they regain lost layers every 3 seconds.",
+     "src": [
+      "Regrow_Bloon__BTD6_"
+     ],
+     "q": [
+      "Regrow Bloons first appear on Round 17",
+      "These heart-shaped Bloons regenerate lost layers every 3 seconds."
+     ]
+    },
+    {
+     "t": "Camo Bloons (from round 24): towers ignore them unless they have camo detection; attacks like [[Counter-Espionage]] remove Camo.",
+     "src": [
+      "Camo_Bloon__BTD6_"
+     ],
+     "q": [
+      "Camo Bloons first appear on Round 24",
+      "Towers will ignore Camo Bloons unless they have camo detection.",
+      "Camo status can be removed by attacks that strip Camo, such as Counter-Espionage"
+     ]
+    },
+    {
+     "t": "Purple Bloons (from round 25): use damage other than energy, plasma, fire or frigid.",
+     "src": [
+      "Purple_Bloon__BTD6_"
+     ],
+     "q": [
+      "They first appear on round 25",
+      "They are immune to energy, plasma, fire, and frigid damage."
+     ]
+    },
+    {
+     "t": "Lead Bloons (from round 28): use damage other than sharp, shatter, energy or cold, such as explosions.",
+     "src": [
+      "Lead_Bloon__BTD6_"
+     ],
+     "q": [
+      "Lead Bloons start appearing on round 28",
+      "They are immune to sharp, shatter, energy, and cold damage."
+     ]
+    },
+    {
+     "t": "Fortified Bloons take more damage to pop: a Fortified Lead takes 4, and Fortified Ceramics and MOAB-Class Bloons take twice as much.",
+     "src": [
+      "Fortified_Bloon__BTD6_"
+     ],
+     "q": [
+      "Fortified Leads take 4 damage to pop, while fortified Ceramic and MOAB-Class Bloons take twice as much damage to pop."
+     ]
+    },
+    {
+     "t": "DDTs (from round 90) have the properties of a Black, Lead and Camo Bloon. Each has 400 health and drops 4 Camo Regrow Ceramics.",
+     "src": [
+      "DDT__BTD6_"
+     ],
+     "q": [
+      "It has the properties of a Black Bloon, Lead Bloon, and Camo Bloon.",
+      "Each DDT has 400 health and contains 4 Camo Regrow Ceramic Bloons"
+     ]
+    }
+   ],
+   "why": "bloons"
+  }
+ ],
+ "tables": [
+  {
+   "id": "modes",
+   "title": "Difficulties and their rules",
+   "cols": [
+    "Mode",
+    "Rounds",
+    "Lives",
+    "Prices"
+   ],
+   "rows": [
+    [
+     "Easy",
+     "1 to 40",
+     "200",
+     "85% of Medium"
+    ],
+    [
+     "Medium",
+     "1 to 60",
+     "150",
+     "Medium prices"
+    ],
+    [
+     "Hard",
+     "3 to 80",
+     "100",
+     "8% above Medium"
+    ],
+    [
+     "Impoppable",
+     "6 to 100",
+     "1",
+     "20% above Medium"
+    ],
+    [
+     "CHIMPS",
+     "6 to 100",
+     "1",
+     "Hard prices; no income except pops and round cash"
+    ]
+   ],
+   "src": [
+    "Easy",
+    "Medium",
+    "Hard",
+    "Impoppable__BTD6_",
+    "CHIMPS"
+   ]
+  },
+  {
+   "id": "mapdiff",
+   "title": "Map difficulty",
+   "cols": [
+    "Map group",
+    "Unlocks after",
+    "XP",
+    "Monkey Money",
+    "Round 100 Insta tier"
+   ],
+   "rows": [
+    [
+     "Beginner",
+     "the tutorial",
+     "x1.0",
+     "x1",
+     "0, 1 or 2"
+    ],
+    [
+     "Intermediate",
+     "wins on 5 different maps",
+     "x1.1",
+     "x2",
+     "1, 2 or 3"
+    ],
+    [
+     "Advanced",
+     "wins on 12 different maps",
+     "x1.2",
+     "x3",
+     "2, 3 or 4"
+    ],
+    [
+     "Expert",
+     "wins on 20 different maps",
+     "x1.3",
+     "x4",
+     "3 or 4"
+    ]
+   ],
+   "src": [
+    "Map_difficulty"
+   ]
+  },
+  {
+   "id": "borders",
+   "title": "Map borders",
+   "cols": [
+    "Border",
+    "What you must beat"
+   ],
+   "rows": [
+    [
+     "Bronze",
+     "Easy, Primary Only, Deflation"
+    ],
+    [
+     "Silver",
+     "Bronze + Medium, Military Only, Reverse, Apopalypse"
+    ],
+    [
+     "Gold",
+     "Silver + Hard, Magic Monkeys Only, Double HP MOABs, Half Cash, Alternate Bloons Rounds, Impoppable, CHIMPS"
+    ],
+    [
+     "Black",
+     "Gold + CHIMPS without exiting or Retry Last Round"
+    ]
+   ],
+   "src": [
+    "Map"
+   ]
+  }
+ ]
+}

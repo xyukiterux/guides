@@ -1,0 +1,19 @@
+{
+ "note": "Quests the GamerGuides walkthrough numbers ('Quest NN - Name') that the Fandom quest table does not list. Every field is rewritten from the cited GamerGuides page; build.py checks names and numbers against it.",
+ "quests": [
+  {
+   "name": "The Holiest of Harps",
+   "where": "Havens Above, northeast island: the Watcher outside the Item shop (Post-game)",
+   "task": "Defeat a difficult beast to get the item the Watcher needs.",
+   "reward": "A permanent rise in Serena's Magical Mending.",
+   "src": ["gg:walkthrough__act-iii-post-game__in-search-of-lost-time"]
+  },
+  {
+   "name": "Morcant's Mastery of Magic",
+   "where": "Angri-La: the monk outside the Inn (Post-game)",
+   "task": "Find the three Morcant Tomes on the bookshelves of the Royal Library (Levels 1, 2 and 3).",
+   "reward": "Rab's Magical Mending and Might go up by 50.",
+   "src": ["gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"]
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "note": "How the boss cards are put together from the two wikis' boss categories. The wikis split one fight over several pages or templates (one per wiki, one per form, a '(boss)' and a '(normal encounter)' page). 'groups' joins them into one card: each form is one fight or one body part, and the members of a form are the same fight on different pages (the first member's numbers win, the others fill gaps). 'drop' lists templates that are field monsters, not boss fights. 'distinct' lists cards whose names look alike but are different fights. build.py fails if two cards are left with the same base name and are not listed in 'distinct'.",
+ "groups": [
+  {
+   "name": "Grim Gryphon",
+   "img": "grim-gryphon",
+   "forms": [
+    {
+     "label": "Boss fight (The Kingsbarrow)",
+     "members": [
+      "Grim gryphon (boss)",
+      "Grim Gryphon"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Tentacular",
+   "img": "tentacular",
+   "forms": [
+    {
+     "label": "Boss fight (the open sea near Lonalulu)",
+     "members": [
+      "Tentacular (Boss)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Elysium Bird",
+   "img": "elysium-bird",
+   "forms": [
+    {
+     "label": "Boss fight (The Eerie Eyrie)",
+     "members": [
+      "Elysium bird (boss)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Indignus",
+   "img": "indignus",
+   "forms": [
+    {
+     "label": "Fortress of Fear (Act II)",
+     "members": [
+      "Indignus (all versions)",
+      "Indignus"
+     ]
+    },
+    {
+     "label": "Erik's story, Rock of Wrong (Definitive Edition)",
+     "members": [
+      "Indignus (Erik's scenario)",
+      "Indignus (Dragon Armour)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Tatsunaga",
+   "img": "tatsunaga",
+   "forms": [
+    {
+     "label": "First fight (Hotto)",
+     "members": [
+      "Tatsunaga (first fight)"
+     ]
+    },
+    {
+     "label": "Rematch (Mount Huji)",
+     "members": [
+      "Tatsunaga (rematch)"
+     ]
+    }
+   ],
+   "source_only": [
+    "Tatsunaga"
+   ]
+  },
+  {
+   "name": "Mordegon, Lord of Shadows",
+   "img": "mordegon-lord-of-shadows",
+   "forms": [
+    {
+     "label": "First form",
+     "members": [
+      "The Lord of Shadows",
+      "Mordegon, Lord of Shadows"
+     ]
+    },
+    {
+     "label": "Final form: Mordragon",
+     "members": [
+      "The Lord of Shadows (final form) / Mordragon (2D mode)",
+      "Mordragon"
+     ]
+    },
+    {
+     "label": "Mordragon's tail",
+     "members": [
+      "Mordragon's tail",
+      "Mordragon / Mordragon's tail (2D mode)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Timewyrm",
+   "img": "timewyrm",
+   "forms": [
+    {
+     "label": "Timewyrm",
+     "members": [
+      "Timewyrm"
+     ]
+    },
+    {
+     "label": "Timewyrm's tail",
+     "members": [
+      "Timewyrm's tail"
+     ]
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "Grim gryphon (normal encounter)",
+  "Elysium bird",
+  "Tentacular"
+ ],
+ "drop_why": {
+  "Grim gryphon (normal encounter)": "field monster in Zwaardsrust and the Costa Valor, not a boss fight",
+  "Elysium bird": "the 254 HP field monster of the second act; the boss is the 800 HP one in The Eerie Eyrie",
+  "Tentacular": "the 1,550 HP field version on The Open Sea - North in the second act; the boss is the first-act fight near Lonalulu"
+ },
+ "distinct": [
+  "Jasper",
+  "Jasper Unbound",
+  "Jasper Corrupted",
+  "Jasper Unhinged",
+  "Shadow Jasper",
+  "Mordegon",
+  "Mordegon's staff",
+  "Jarvis",
+  "Jarvis's shadow",
+  "Tyriant",
+  "Tyriant's shadow",
+  "Rab",
+  "Rab's Shadow",
+  "Masked Rab",
+  "Blind hatred",
+  "Blind hatred's shadow",
+  "Boodica",
+  "Boodica's right-hand man",
+  "Boodica's left-hand man",
+  "Heliodorian guard",
+  "Heliodorian soldier",
+  "Grim Gryphon",
+  "Vicious grim gryphon",
+  "Masked Jade",
+  "Jinxed Jade"
+ ],
+ "shared_picture_ok": {
+  "Jasper Unhinged": "No picture of its own on either wiki; shows Jasper, the same character (also used by Shadow Jasper).",
+  "Shadow of Shadows": "No picture of its own on either wiki; shows the Lord of Shadows, whose shadow it is."
+ }
+}

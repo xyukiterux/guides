@@ -1,0 +1,31 @@
+{
+ "new": {
+  "title": "Start here: your first hours",
+  "intro": "You'll need: the base game. About two hours gets you to the second boss. Each line links to the card or page it came from.",
+  "steps": [
+   {"advice": true, "t": "Pick a class on the character screen. If you are unsure, pick [[Knight]]: its [[Knight Shield]] blocks 100% of physical damage.", "s": ["Knight (Dark Souls III)"]},
+   {"t": "Pick up the [[Ashen Estus Flask]] a short way into the first area. It refills FP; the normal [[Estus Flask]] refills HP.", "s": ["Estus Flask (Dark Souls III)"]},
+   {"t": "Pull the [[Coiled Sword]] out of [[Iudex Gundyr]] to start the first boss fight. Hit him while he stands up: he cannot fight back until he picks up his weapon.", "s": ["Iudex Gundyr", "Coiled Sword"]},
+   {"t": "Thrust the [[Coiled Sword]] into the bonfire in [[Firelink Shrine]]. You can now travel between every bonfire you have lit.", "s": ["Coiled Sword", "Bonfire (Dark Souls III)"]},
+   {"t": "Talk to the [[Fire Keeper]] at the shrine bonfire to spend souls on levels.", "s": ["Fire Keeper (Dark Souls III)"]},
+   {"t": "Take every [[Estus Shard]] and [[Undead Bone Shard]] you find back to the shrine. See How to get more Estus.", "s": ["Estus Shard", "Undead Bone Shard"]},
+   {"t": "Give every Umbral Ash you find to the [[Shrine Handmaid]]. Each one adds items to her shop.", "s": ["Shrine Handmaid"]},
+   {"t": "Follow the Area order page from [[High Wall of Lothric]] onward. It lists the bosses, the bonfires and the NPCs you can lose in each area.", "s": ["Bonfire (Dark Souls III)"]}
+  ],
+  "check": "You are on track when the shrine bonfire lets you travel and the Handmaid sells more than her first stock."
+ },
+ "back": {
+  "title": "Coming back after a break",
+  "intro": "Read this before you load an old save. It takes about five minutes.",
+  "steps": [
+   {"t": "Open your inventory and write down which Cinders of a Lord you already hold. The Area order page shows which boss gives each one.", "s": ["Ending (Dark Souls III)"]},
+   {"t": "Check your stats against the soft caps table on the Builds page. Points past a soft cap give much less.", "s": ["fx:Vigor", "fx:Strength", "fx:Dexterity", "fx:Endurance"]},
+   {"t": "If your stats are spread too thin, talk to [[Rosaria, Mother of Rebirth]] in her bed chamber in [[Cathedral of the Deep]] and choose rebirth to reallocate them. Each rebirth costs one [[Pale Tongue]]; you can do it up to five times per playthrough.", "s": ["Dark Souls III", "Rosaria, Mother of Rebirth"]},
+   {"t": "Visit [[Blacksmith Andre]] and spend your titanite on one weapon. Use the How to upgrade a weapon steps.", "s": ["Blacksmith Andre"]},
+   {"t": "Read the NPC quests page for every character you have already met. Several quests end for good if you go to the wrong area first.", "s": ["Yoel of Londor", "Orbeck of Vinheim", "Holy Knight Hodrick"]},
+   {"t": "If you want the DLCs, read the DLC order page: [[Painted World of Ariandel]] is entered from the Cleansing Chapel bonfire in [[Cathedral of the Deep]].", "s": ["Ashes of Ariandel"]},
+   {"nav": true, "t": "Practise against the next boss with its card open: each boss card has its weaknesses, its HP and the wiki strategy.", "s": ["Boss (Dark Souls III)"]}
+  ],
+  "check": "You are ready when one weapon is upgraded, your main stat is at or below its soft cap and you know your next boss."
+ }
+}

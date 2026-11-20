@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bloons TD 6 Field Guide</title>
+<meta name="description" content="Bloons TD 6 guide: every tower and upgrade with costs per difficulty, heroes, Paragons, bloons, the 140-round table, CHIMPS and Impoppable how-tos, Monkey Knowledge, bosses, Odyssey and Contested Territory.">
+<meta name="theme-color" content="#0b1a33">
+<meta property="og:title" content="Bloons TD 6 Field Guide">
+<meta property="og:description" content="Every tower, upgrade, hero and round, with how-tos for CHIMPS, Impoppable, bosses and events. Built from the community wiki and record data.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="assets/fonts/fredoka.css">
+<style>
+:root{
+  --bg:#0b1a33;--bg2:#0e2246;--panel:#132a52;--panel2:#183463;--well:#0a1730;--line:rgba(150,200,255,.13);--line2:rgba(150,200,255,.25);
+  --text:#f2f6ff;--muted:#b0c3e0;--dim:#8da2c4;
+  --blue:#2f9bff;--blue2:#1a6fd4;--blue3:#0f4c99;--yellow:#ffd23f;--yellow2:#e6a700;--brown:#a8672f;--brown2:#6f4220;--red:#ec4a3f;--green:#5cc84a;--purple:#ab7cf0;--orange:#ff9d2e;
+  --Primary:#3fa7ff;--Military:#5cc84a;--Magic:#b182f5;--Support:#ffb02e;
+  --tS:#ec4a3f;--tA:#ff9d2e;--tB:#ffd23f;--tC:#5cc84a;--tD:#3fa7ff;
+  --head:"Fredoka","Baloo 2","Arial Rounded MT Bold","Trebuchet MS",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font:17px/1.6 var(--body);
+  background:radial-gradient(1200px 600px at 90% -10%,rgba(47,155,255,.22),transparent 60%),radial-gradient(900px 600px at -10% 110%,rgba(168,103,47,.18),transparent 60%),
+  radial-gradient(circle at 20px 20px,rgba(255,255,255,.035) 2px,transparent 3px) 0 0/44px 44px,var(--bg);background-attachment:fixed}
+a{color:var(--yellow)}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--head);font-weight:600;margin:0 0 .4em;line-height:1.15;letter-spacing:.01em}
+h1,h2{color:#fff;text-shadow:0 2px 0 #071430,2px 0 0 #071430,-2px 0 0 #071430,0 -2px 0 #071430,0 5px 0 rgba(0,0,0,.35)}
+h2{font-size:clamp(1.6rem,2.6vw,2.2rem)}
+h3{font-size:1.22rem}
+.shell{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:16px 14px 40px;border-right:3px solid var(--brown2);
+  background:linear-gradient(180deg,#0f2550,#0a1a38)}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--text);padding:6px 6px 10px}
+.brand .mk{width:44px;height:50px;flex:none;position:relative}
+.brand .mk::before{content:"";position:absolute;left:4px;top:0;width:36px;height:42px;border-radius:50% 50% 48% 48%/55% 55% 45% 45%;background:radial-gradient(circle at 32% 28%,#ff9a8f 0 18%,#ec4a3f 19% 100%);box-shadow:inset -4px -5px 0 rgba(0,0,0,.18),0 3px 0 #7a1e18}
+.brand .mk::after{content:"";position:absolute;left:18px;top:40px;border:4px solid transparent;border-top:7px solid #c93a30}
+.brand b{display:block;font:600 1.45rem/1 var(--head);color:#fff;text-shadow:0 2px 0 #071430,2px 0 0 #071430,-2px 0 0 #071430,0 -2px 0 #071430}
+.brand small{display:block;margin-top:4px;color:var(--yellow);font:600 .8rem var(--head);letter-spacing:.14em;text-transform:uppercase}
+#checked{font-size:.82rem;color:var(--muted);margin:4px 4px 12px;line-height:1.45}
+#checked a{color:var(--yellow)}
+.search{position:relative}
+.search input{width:100%;padding:11px 12px 11px 38px;border-radius:14px;border:2px solid var(--line2);background:#071430;color:var(--text);font:inherit;font-size:1rem;outline:none}
+.search input:focus{border-color:var(--yellow);box-shadow:0 0 0 3px rgba(255,210,63,.2)}
+.search svg{position:absolute;left:13px;top:14px;opacity:.7}
+.results{position:absolute;left:0;right:0;top:50px;background:#102650;border:2px solid var(--line2);border-radius:14px;max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.95rem;display:flex;align-items:center;gap:9px}
+.results div img{width:28px;height:28px;object-fit:contain;flex:none}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.8rem;text-align:right}
+.results div:hover,.results div.sel{background:rgba(47,155,255,.18)}
+.results .none{color:var(--muted);cursor:default}
+.diff{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin:12px 0 4px;background:#071430;border-radius:12px;padding:4px;border:2px solid var(--line)}
+.diff button{border:0;background:transparent;border-radius:9px;padding:6px 2px;cursor:pointer;font:600 .82rem var(--head);color:var(--muted)}
+.diff button.on{background:linear-gradient(#ffe27a,#ffc515);color:#3a2604;box-shadow:0 2px 0 #b98400}
+.difflab{font-size:.78rem;color:var(--dim);margin:8px 4px 0}
+nav{margin-top:10px;display:flex;flex-direction:column;gap:2px}
+nav .grp{font:600 .78rem var(--head);letter-spacing:.14em;color:#ffe9b0;margin:14px 0 5px;text-transform:uppercase;padding:4px 10px;border-radius:8px;
+  background:linear-gradient(180deg,#9b5f2b,#6f4220);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 2px 0 #4a2a12}
+nav a{display:flex;gap:10px;align-items:center;padding:7px 10px;border-radius:10px;color:var(--text);text-decoration:none;font-size:.97rem}
+nav a:hover{background:rgba(47,155,255,.14)}
+nav a.on{background:linear-gradient(90deg,rgba(47,155,255,.35),rgba(47,155,255,.08));box-shadow:inset 4px 0 0 var(--yellow)}
+nav a .n{margin-left:auto;font-size:.78rem;color:var(--dim)}
+main{min-width:0;padding:24px clamp(14px,2.6vw,40px) 90px}
+.topbar{display:none}
+.card,.tile,.glass{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0)),var(--panel);border:2px solid var(--line2);border-radius:var(--r);box-shadow:0 4px 0 #06122a}
+.card{padding:16px 18px;min-width:0}
+.card p{margin:.35em 0}
+.hero{position:relative;overflow:hidden;border-radius:22px;padding:clamp(20px,4vw,44px);margin-bottom:22px;isolation:isolate;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;border:3px solid #071430;box-shadow:0 6px 0 #06122a}
+.hero .art{position:absolute;inset:0;z-index:-2;background:url("card.jpg") center 30%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(8,20,45,.97) 10%,rgba(8,20,45,.6) 55%,rgba(8,20,45,.15)),linear-gradient(90deg,rgba(8,20,45,.85),transparent 75%)}
+.hero .k{display:inline-block;align-self:flex-start;font:600 .85rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:#3a2604;background:linear-gradient(#ffe27a,#ffc515);padding:4px 12px;border-radius:999px;box-shadow:0 2px 0 #b98400}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);margin:.15em 0 .1em}
+.hero p{max-width:900px;color:#e2ecff;font-size:1.08rem;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:14px;text-decoration:none;font:600 1rem var(--head);color:#fff;background:linear-gradient(#55b6ff,#1f80e6);border:0;border-bottom:4px solid #0f4c99;cursor:pointer;text-shadow:0 1px 0 rgba(0,0,0,.35)}
+.btn.y{background:linear-gradient(#ffe27a,#ffc515);color:#3a2604;border-bottom-color:#b98400;text-shadow:none}
+.btn.g{background:linear-gradient(#7fdc6c,#3fa52f);border-bottom-color:#2a6e1f}
+.btn:active{transform:translateY(2px);border-bottom-width:2px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.sec{margin:30px 0 12px}
+.sec p{margin:.25em 0 0;color:var(--muted)}
+.muted{color:var(--muted)}.small{font-size:.9rem}.tiny{font-size:.82rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:2px 10px;border-radius:999px;font-size:.82rem;border:2px solid var(--line2);background:#0a1a38;color:#dfe9ff;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.y{background:linear-gradient(#ffe27a,#ffc515);color:#3a2604;border-color:#e6a700;font-weight:700}
+.pill.adv{border-color:rgba(255,157,46,.6);color:#ffc98a}
+.pill.meta{border-color:rgba(236,74,63,.7);color:#ffb2ab}
+.pill.ok{border-color:rgba(92,200,74,.7);color:#b9f0ad}
+.pill.soon{border-color:rgba(80,170,255,.8);color:#bfe0ff}
+.cat{--c:var(--blue)}
+.cat-Primary{--c:var(--Primary)}.cat-Military{--c:var(--Military)}.cat-Magic{--c:var(--Magic)}.cat-Support{--c:var(--Support)}
+.pill.catp{border-color:var(--c);color:var(--c)}
+.note{border-left:5px solid var(--yellow);background:rgba(255,210,63,.08);padding:11px 15px;border-radius:0 14px 14px 0;color:#e8efff;margin:12px 0}
+.note.blue{border-left-color:var(--blue);background:rgba(47,155,255,.08)}
+.note.warn{border-left-color:var(--red);background:rgba(236,74,63,.09)}
+.tier{display:inline-grid;place-items:center;min-width:30px;height:30px;border-radius:10px;font:700 1rem var(--head);color:#14110c;flex:none;padding:0 6px;box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.tS{background:var(--tS)}.tA{background:var(--tA)}.tB{background:var(--tB)}.tC{background:var(--tC)}.tD{background:var(--tD)}
+/* tiles */
+.tgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 10px;cursor:pointer;text-align:center;line-height:1.25;text-decoration:none;color:var(--text);border-top:5px solid var(--c,var(--line2));transition:transform .12s,border-color .12s}
+.tile:hover{transform:translateY(-2px);border-color:var(--c,var(--yellow))}
+.tile img{width:84px;height:84px;object-fit:contain;filter:drop-shadow(0 4px 6px rgba(0,0,0,.5))}
+.tile b{font:600 1.02rem var(--head)}
+.tile .sub{color:var(--muted);font-size:.84rem}
+.tile .cost{color:var(--yellow);font-weight:700;font-size:.92rem}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs button{padding:7px 15px;border-radius:12px;border:0;border-bottom:3px solid #071430;background:#17305d;cursor:pointer;font:600 .95rem var(--head);color:#dfe9ff}
+.tabs button.on{background:linear-gradient(#55b6ff,#1f80e6);border-bottom-color:#0f4c99;color:#fff}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input{background:#071430;color:var(--text);border:2px solid var(--line2);border-radius:12px;padding:9px 12px;font:inherit;font-size:1rem;min-width:min(100%,260px)}
+.tablewrap{overflow-x:auto;border:2px solid var(--line2);border-radius:var(--r);background:rgba(10,23,48,.75)}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#17305d;font:600 .85rem var(--head);letter-spacing:.04em;color:var(--yellow);white-space:nowrap;position:sticky;top:0}
+td.l{cursor:pointer;color:var(--yellow)}
+tr:hover td{background:rgba(47,155,255,.06)}
+tr.mark td{background:rgba(255,210,63,.07)}
+tr.endm td{border-bottom:3px solid var(--yellow)}
+.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:4px 10px 4px 4px;border-radius:12px;background:#0a1a38;border:2px solid var(--line);cursor:pointer;font-size:.9rem;text-decoration:none;color:var(--text);margin:2px 4px 2px 0;max-width:100%}
+.chip:hover{border-color:var(--yellow)}
+.chip img{width:34px;height:34px;object-fit:contain;flex:none}
+.chip i{font-style:normal;font-size:.8rem;color:var(--muted)}
+.chip span{min-width:0;overflow-wrap:anywhere}
+.bl{display:inline-flex;align-items:center;gap:4px;padding:1px 8px 1px 3px;border-radius:999px;background:#0a1a38;border:1px solid var(--line);font-size:.85rem;margin:2px 3px 2px 0;white-space:nowrap}
+.bl img{width:20px;height:22px;object-fit:contain}
+/* tower page */
+.thead{display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:start}
+.thead .big{width:100%;aspect-ratio:1;object-fit:contain;background:radial-gradient(circle at 50% 40%,rgba(47,155,255,.35),rgba(10,23,48,.2) 70%);border-radius:24px;border:3px solid #071430;box-shadow:0 5px 0 #06122a;padding:10px}
+.statrow{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.stat{padding:9px 14px;min-width:104px;background:#0a1a38;border:2px solid var(--line2);border-radius:14px}
+.stat b{display:block;font:600 1.35rem var(--head);color:var(--yellow)}
+.stat span{font-size:.8rem;color:var(--muted)}
+.path{padding:12px}
+.path h3{display:flex;align-items:center;gap:8px}
+.path h3 .pn{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--c);color:#071430;font-size:1rem;box-shadow:0 2px 0 rgba(0,0,0,.4)}
+.up{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:9px 6px;border-top:1px solid var(--line)}
+.up:first-of-type{border-top:0}
+.up img{width:56px;height:56px;object-fit:contain;background:#0a1a38;border-radius:12px;border:2px solid var(--line2)}
+.up b{font:600 1.03rem var(--head)}
+.up .t{display:inline-block;font:600 .74rem var(--head);color:#071430;background:var(--c);border-radius:6px;padding:0 6px;margin-right:6px;vertical-align:2px}
+.up .c{color:var(--yellow);font-weight:700;white-space:nowrap}
+.up .d{font-size:.92rem;color:#d7e3fa;margin:3px 0}
+.up details{font-size:.85rem;color:var(--muted)}
+.up summary{cursor:pointer;color:var(--blue);list-style:none}
+.up summary::-webkit-details-marker{display:none}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;font-size:.9rem;margin:8px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+/* steps */
+.steps{counter-reset:s;list-style:none;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:9px}
+.steps li{position:relative;padding:12px 16px 12px 62px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:10px;width:32px;height:37px;border-radius:50% 50% 47% 47%/55% 55% 45% 45%;
+  background:radial-gradient(circle at 32% 28%,#ff9a8f 0 16%,#ec4a3f 17% 100%);color:#fff;display:grid;place-items:center;font:700 1rem var(--head);text-shadow:0 1px 0 #7a1e18;box-shadow:inset -3px -4px 0 rgba(0,0,0,.18),0 2px 0 #7a1e18}
+.steps li::after{content:"";position:absolute;left:27px;top:46px;border:3px solid transparent;border-top:5px solid #c93a30}
+.steps .st{display:block}
+.src{font-size:.82rem;color:var(--dim);margin-top:5px;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.src a{color:var(--dim)}
+.srcbtn{background:none;border:1px solid var(--line2);border-radius:8px;color:var(--muted);font-size:.78rem;padding:1px 8px;cursor:pointer}
+.srcbox{display:none;font-size:.85rem;color:var(--muted);margin-top:6px;background:#0a1a38;border-radius:10px;padding:8px 10px}
+.srcbox.on{display:block}
+.srcbox .quote{display:block;margin-top:5px;color:#d7e3fa;font-style:italic}
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(3,9,22,.72);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#19366a,#10264d);border:3px solid #071430;border-radius:22px;max-width:680px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 8px 0 #06122a,0 30px 70px rgba(0,0,0,.6)}
+.modal .box.wide{max-width:980px}
+.modal .x{position:absolute;right:10px;top:8px;width:38px;height:38px;border-radius:50%;border:0;background:linear-gradient(#ff7d72,#d63a30);color:#fff;font:700 1.3rem var(--head);cursor:pointer;box-shadow:0 3px 0 #7a1e18}
+.ic-head{display:flex;gap:14px;align-items:center;margin-bottom:8px;padding-right:40px}
+.ic-head img{width:96px;height:96px;object-fit:contain;flex:none;background:#0a1a38;border-radius:18px;padding:6px;border:2px solid var(--line2)}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.isec h4{font:600 .82rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);margin:0 0 4px}
+.lk{color:var(--yellow);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(255,210,63,.45)}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;color:var(--text)}
+.vid .play{flex:none;width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(#ff7d72,#d63a30);box-shadow:0 3px 0 #7a1e18}
+.vid b{display:block;font-size:.97rem;line-height:1.3}
+.trow{display:grid;grid-template-columns:76px 1fr;border-radius:var(--r);overflow:clip;margin-bottom:10px;border:2px solid var(--line2);background:var(--panel);box-shadow:0 4px 0 #06122a}
+.trow .lab{font:700 2.4rem var(--head);color:#14110c;text-align:center;padding:10px 4px}
+.trow .labin{position:sticky;top:12px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.trow .lab small{font:700 .86rem/1.2 var(--body)}
+.trow .its{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:6px;padding:10px;align-content:start}
+.trow .its .chip{margin:0}
+.live{border-top:5px solid var(--green)}
+.live.ended{border-top-color:var(--dim);opacity:.62}
+.chg{display:grid;gap:8px;align-items:start;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));margin-top:8px}
+.chg details{background:#0a1a38;border:2px solid var(--line);border-radius:12px;padding:6px 10px}
+.chg summary{cursor:pointer;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.chg summary img{width:34px;height:34px;object-fit:contain}
+.chg ul{margin:4px 0 6px;padding-left:20px;font-size:.88rem}
+.chg .at{font-size:.82rem;color:var(--yellow);margin-top:6px}
+.pill.buff{border-color:rgba(92,200,74,.7);color:#b9f0ad}.pill.nerf{border-color:rgba(236,74,63,.7);color:#ffb2ab}
+.pairline{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;padding:6px 0;border-top:1px solid var(--line)}
+.pairline .plus{font:700 1.1rem var(--head);color:var(--yellow)}
+footer{margin-top:44px;color:var(--dim);font-size:.85rem;border-top:2px dashed var(--line2);padding-top:14px}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+::selection{background:var(--yellow);color:#3a2604}
+*{scrollbar-color:rgba(255,210,63,.45) transparent}
+@media (max-width:980px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(320px,88vw);z-index:50;transform:translateX(-104%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.5)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:9px 14px;background:rgba(11,26,51,.95);border-bottom:3px solid var(--brown2)}
+  .topbar button{background:linear-gradient(#55b6ff,#1f80e6);border:0;border-bottom:3px solid #0f4c99;border-radius:12px;padding:6px 12px;cursor:pointer;font:600 .95rem var(--head);color:#fff}
+  .topbar b{font:600 1.1rem var(--head)}
+  main{padding:14px 12px 80px}
+  .thead{grid-template-columns:1fr}
+  .thead .big{max-width:150px}
+  .tgrid{grid-template-columns:repeat(auto-fill,minmax(112px,1fr))}
+  .tile img{width:64px;height:64px}
+  .tgrid.maps{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px}
+  .tgrid.maps .tile{padding:6px 6px 8px}.tgrid.maps .tile b{font-size:.92rem}
+  table{font-size:.86rem}
+  th,td{padding:7px 8px}
+  .trow{grid-template-columns:52px 1fr}.trow .lab{font-size:1.7rem}.trow .lab small{font-size:.72rem}.trow .labin{top:64px}
+  .steps li{padding:12px 12px 12px 56px}
+  .steps li::before{left:10px}.steps li::after{left:23px}
+  .hero{min-height:260px}
+}
+@media (max-width:700px){
+  table.stack thead{display:none}
+  table.stack tr{display:block;border-bottom:2px solid var(--line2);padding:6px 0}
+  table.stack td{display:flex;gap:10px;border:0;padding:3px 10px;text-align:left}
+  table.stack td::before{content:attr(data-l);flex:none;width:76px;font:600 .8rem var(--head);color:var(--yellow);padding-top:2px}
+  table.stack td.num{white-space:normal}
+  table.stack td:empty{display:none}
+  .tablewrap:has(table.stack){overflow-x:visible}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections">Menu</button><b>BTD6 Field Guide</b></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk" aria-hidden="true"></span><span><b>Bloons TD 6</b><small>Field Guide</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search towers, upgrades, heroes, rounds..." autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <div class="difflab">Prices shown for:</div>
+  <div class="diff" id="diff" role="group" aria-label="Difficulty for prices"></div>
+  <nav id="nav"></nav>
+</aside>
+<main id="main"><p class="muted">Loading the guide...</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box"><button class="x" aria-label="Close">X</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/btd6.js?v=2026-11-19-457819"></script>
+<script>
+(function(){
+'use strict';
+const D=window.BTD||{towers:[],paragons:[],heroes:[],bloons:[],bosses:[],rounds:[],maps:[],mk:[],powers:[],howto:{sections:[],tables:[]},meta:{counts:{}},pairs:[],pairs_by_diff:{},diffplan:[],index:{},live:{},videos:{},dmg:{cols:[],rows:[]},sources:[]};
+// large parts one page needs (hero levels, per-upgrade stats, the tier list) load from their own file when that page opens
+const PARTS=Object.create(null),LOADING=Object.create(null);
+function mergePart(n,p){if(n==='levels')D.heroes.forEach(h=>{h.levels=p[h.slug]||[];});else if(n==='stats')D.towers.forEach(t=>{const st=p[t.slug]||[];t.paths.forEach((r,i)=>r.forEach((u,j)=>{if(u)u.stats=(st[i]||[])[j]||null;}));});else if(n==='solo')D.solo=p;else if(n==='changes')D.changes=p;PARTS[n]=true;}
+function need(n){if(PARTS[n])return true;const got=(window.BTD_PART||{})[n];if(got){mergePart(n,got);return true;}
+ if(!LOADING[n]){LOADING[n]=true;const sc=document.createElement('script');sc.src='data/btd6-'+n+'.js?v=2026-11-19-457819';sc.onload=()=>{const g=(window.BTD_PART||{})[n];if(g){mergePart(n,g);render(false);}};sc.onerror=()=>{main.insertAdjacentHTML('afterbegin','<p class="note warn">Could not load data/btd6-'+esc(n)+'.js.</p>');};document.head.appendChild(sc);}
+ return false;}
+const LOADMSG='<p class="muted">Loading...</p>';
+const $=s=>document.querySelector(s), main=$('#main');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const n0=x=>x==null?'-':Number(x).toLocaleString('en-US',{maximumFractionDigits:1});
+const money=x=>x==null?'-':'$'+n0(x);
+const pct=x=>x==null?'-':Math.round(x*100)+'%';
+const M=D.meta||{};
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs));
+const TB=dict(D.towers.map(t=>[t.slug,t])), HB=dict(D.heroes.map(h=>[h.slug,h])), PB=dict(D.paragons.map(p=>[p.slug,p]));
+const BB=dict(D.bloons.map(b=>[b.slug,b])), BOSS=dict(D.bosses.map(b=>[b.slug,b])), MAPB=dict(D.maps.map(m=>[m.slug,m]));
+const MKB=dict(D.mk.map(k=>[k.slug,k])), POW=dict(D.powers.map(p=>[p.slug,p]));
+const UP=Object.create(null); D.towers.forEach(t=>t.paths.forEach(r=>r.forEach(u=>{if(u)UP[u.name]={t,u};})));
+const NAMES=Object.create(null);
+D.towers.forEach(t=>NAMES[t.name]={go:'tower/'+t.slug});
+Object.keys(UP).forEach(n=>NAMES[n]={go:'tower/'+UP[n].t.slug,hl:n});
+D.paragons.forEach(p=>NAMES[p.name]={par:p.slug});
+D.heroes.forEach(h=>NAMES[h.name]={go:'hero/'+h.slug});
+D.bloons.forEach(b=>NAMES[b.name]={bloon:b.slug});
+D.bosses.forEach(b=>NAMES[b.name]={boss:b.slug});
+D.maps.forEach(m=>{if(!NAMES[m.name])NAMES[m.name]={map:m.slug};});
+D.mk.forEach(k=>{if(!NAMES[k.name])NAMES[k.name]={mk:k.slug};});
+D.powers.forEach(p=>{if(!NAMES[p.name])NAMES[p.name]={power:p.slug};});
+const DIFFS=['Easy','Medium','Hard','Impoppable'];
+let DI=1; try{const s=localStorage.getItem('btd6.diff');if(s!==null&&+s>=0&&+s<4)DI=+s;}catch(e){}
+const cost=a=>a?money(a[DI]):'-';
+const IMG_ERR="this.style.visibility='hidden'";
+const img=(src,alt,cls)=>src?`<img class="${cls||''}" src="${esc(src)}" alt="${esc(alt||'')}" loading="lazy" onerror="${IMG_ERR}">`:'';
+const tierB=t=>t?`<span class="tier t${t}">${t}</span>`:'';
+const howtos=(D.howto&&D.howto.sections)||[];
+const HT=dict(howtos.map(s=>[s.id,s]));
+
+// links to a card from any name
+function refAttrs(r){if(!r)return '';if(r.go)return `href="#${esc(r.go)}"`+(r.hl?` data-hl="${esc(r.hl)}"`:'');const k=['par','bloon','boss','map','mk','power'].find(k=>r[k]);return k?`href="#" data-${k}="${esc(r[k])}"`:'';}
+function nameLink(n,label){const r=NAMES[n];return r?`<a class="lk" ${refAttrs(r)}>${esc(label||n)}</a>`:esc(label||n);}
+function prose(t){return esc(t).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g,(m,n,l)=>nameLink(n.replace(/&#39;/g,"'"),l));}
+function entImg(ref){if(!ref)return '';if(ref.kind==='hero')return (HB[ref.slug]||{}).img;if(ref.kind==='paragon')return (PB[ref.paragon]||{}).img||(TB[ref.tower]||{}).img;if(ref.kind==='base')return (TB[ref.tower]||{}).img;const u=UP[ref.name];return u?u.u.img:'';}
+function entHref(ref){if(!ref)return '';if(ref.kind==='hero')return `href="#hero/${esc(ref.slug)}"`;if(ref.kind==='paragon')return `href="#" data-par="${esc(ref.paragon||'')}"`;return `href="#tower/${esc(ref.tower)}"`+(ref.kind==='upgrade'?` data-hl="${esc(ref.name)}"`:'');}
+// record names come in BTD6 Index spelling ("Moab Domination"); a matched card shows the game's own name
+function entChip(label,ref,sub){if(ref&&ref.name)label=ref.name;return ref?`<a class="chip" ${entHref(ref)}>${img(entImg(ref),'')}<span>${esc(label)}${sub?`<br><i>${sub}</i>`:''}</span></a>`:`<span class="chip">${esc(label)}${sub?` <i>${sub}</i>`:''}</span>`;}
+
+// header line
+const V=M.version;
+$('#checked').innerHTML=`Game version <b>${esc(V)}</b> (${esc(M.version_date)}). Last checked against <a href="https://www.bloonswiki.com/" target="_blank" rel="noopener">Blooncyclopedia</a>, <a href="https://data.ninjakiwi.com/" target="_blank" rel="noopener">Ninja Kiwi Open Data</a> and <a href="https://btd6index.win/" target="_blank" rel="noopener">BTD6 Index</a> on ${esc(M.pulled)}.`;
+function diffHtml(){return DIFFS.map((d,i)=>`<button data-di="${i}" class="${i===DI?'on':''}" aria-pressed="${i===DI}">${d==='Impoppable'?'Impop.':d}</button>`).join('');}
+$('#diff').innerHTML=diffHtml();
+
+// navigation
+const C=M.counts||{};
+const NAV=[
+ ['Start',[['home','Home'],['start','Start here / come back'],['live','Events at build time']]],
+ ['How to play well',howtos.filter(s=>s.id!=='comeback').map(s=>[s.id,s.title.replace(/^How to /,'').replace(/^./,c=>c.toUpperCase())])],
+ ['Reference',[['towers','Towers & upgrades',C.towers],['paragons','Paragons',C.paragons],['heroes','Heroes',C.heroes],['bloons','Bloons',C.bloons],['bosses','Boss Bloons',C.bosses],['rounds','Rounds 1-140',C.rounds],['maps','Maps',C.maps],['mk','Monkey Knowledge',C.mk],['powers','Powers',C.powers],['modes','Modes & difficulties']]],
+ ['Builds & ratings',[['tiers','Tier list (records)'],['builds','Builds & crosspaths']]],
+ ['More',[['videos','Videos'],['sources','Sources & method']]],
+];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}">${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+
+const R=Object.create(null);
+// ---------- home
+R.home=()=>{const L=D.live||{};
+ return `<section class="hero"><div class="art"></div><span class="k">Version ${esc(V)} · checked ${esc(M.pulled)}</span><h1>Bloons TD 6</h1>
+ <p>Every tower and all ${C.upgrades} upgrades with prices on your difficulty, ${C.heroes} heroes, ${C.paragons} Paragons, the 140-round threat table, and step-by-step how-tos for CHIMPS, Impoppable, Monkey Knowledge, bosses, Odyssey and Contested Territory. Updated ${esc(M.pulled)}.</p>
+ <div class="btns"><a class="btn y" href="#start">Start here</a><a class="btn" href="#towers">Towers</a><a class="btn" href="#rounds">Rounds</a><a class="btn g" href="#chimps">Beat CHIMPS</a></div></section>
+ <div class="filters"><input id="homeq" type="search" placeholder="Search: tower, hero, round 63..." aria-label="Search the guide" style="flex:1"></div>
+ <div class="grid">${[['start','Start here / come back after a break','What changed, then a path through the guide.'],['early','Rounds 1 to 40','Camo by 24, lead by 28, the MOAB on 40.'],['chimps','Beat CHIMPS','The rules, the plan and the rounds that end runs.'],['towers','Towers & upgrades',`${C.towers} towers, ${C.upgrades} upgrades, costs and stats.`],['rounds','Rounds table','RBE, cash and new threats for rounds 1 to 140.'],['tiers','Tier list (records)','Which single towers have carried CHIMPS on the most maps.'],['builds','Builds & crosspaths','2-tower CHIMPS pairs by map difficulty.'],['mk','Monkey Knowledge',`All ${C.mk} nodes by tree.`],['live','Events at build time',`Boss, Odyssey, race and CT running or announced on ${M.pulled}.`]].map(([r,t,s])=>`<a class="card" href="#${r}" style="text-decoration:none;color:inherit"><h3>${esc(t)}</h3><p class="muted small">${esc(s)}</p><span class="lk small">Open</span></a>`).join('')}</div>
+ ${liveStrip()}`;};
+function liveStrip(head=true){const L=D.live||{};const it=[];
+ const cls=e=>e.ended?'card live ended':e.upcoming?'card live upcoming':'card live',endp=e=>e.ended?'<span class="pill meta">Ended</span> ':e.upcoming?'<span class="pill soon">Upcoming</span> ':'';
+ if(L.boss)it.push(`<div class="${cls(L.boss)}"><h3>Boss: ${esc(L.boss.name)}</h3><p class="small muted">${endp(L.boss)}${esc(L.boss.start)} to ${esc(L.boss.end)} · ${esc(L.boss.scoring||'')}</p>${BOSS[L.boss.type]?`<a class="lk small" href="#" data-boss="${esc(L.boss.type)}">Boss card</a>`:''}</div>`);
+ if(L.odyssey)it.push(`<div class="${cls(L.odyssey)}"><h3>Odyssey: ${esc(L.odyssey.name)}</h3><p class="small muted">${endp(L.odyssey)}${esc(L.odyssey.start)} to ${esc(L.odyssey.end)}</p><a class="lk small" href="#live">Crew limits</a></div>`);
+ if(L.race)it.push(`<div class="${cls(L.race)}"><h3>Race: ${esc(L.race.name)}</h3><p class="small muted">${endp(L.race)}${esc(L.race.start)} to ${esc(L.race.end)}</p></div>`);
+ if(L.ct)it.push(`<div class="${cls(L.ct)}"><h3>Contested Territory</h3><p class="small muted">${endp(L.ct)}${esc(L.ct.start)} to ${esc(L.ct.end)}</p><a class="lk small" href="#ct">How to play it</a></div>`);
+ return it.length?(head?`<div class="sec"><h2>Events at build time (${esc(M.pulled)})</h2><p>From Ninja Kiwi Open Data: the events running or announced when the data was pulled. Upcoming ones had not started yet. Events change weekly, so these may have ended; rebuild the guide to refresh.</p></div>`:'')+`<div class="grid">${it.join('')}</div>`:'';}
+
+// ---------- start here
+function changesBlock(){if(!need('changes'))return LOADMSG;const V_=(D.changes||[]).slice().reverse();if(!V_.length)return '';
+ const majors=[...new Set(V_.map(c=>c.v.split('.')[0]))];
+ const it=x=>`<li><span class="pill ${x.k||''}">${x.k==='buff'?'Buff':x.k==='nerf'?'Nerf':'Change'}</span> ${esc(x.t)}${x.sub&&x.sub.length?`<ul>${x.sub.map(it).join('')}</ul>`:''}</li>`;
+ const ent=e=>{const pic=e.kind==='tower'?(TB[e.slug]||{}).img:(HB[e.slug]||{}).img;const href=e.kind==='tower'?'#tower/'+e.slug:'#hero/'+e.slug;
+  return `<details><summary>${img(pic,'')}<b>${esc(e.name)}</b>${e.buffs?`<span class="pill buff">${e.buffs} buff${e.buffs>1?'s':''}</span>`:''}${e.nerfs?`<span class="pill nerf">${e.nerfs} nerf${e.nerfs>1?'s':''}</span>`:''}${e.other?`<span class="pill">${e.other} other change${e.other>1?'s':''}</span>`:''}</summary>${e.rows.map(r=>`<div class="at">${esc(r.at)}</div><ul>${r.items.map(it).join('')}</ul>`).join('')}<p class="tiny"><a class="lk" href="${esc(href)}">${esc(e.name)} card</a></p></details>`;};
+ const none=V_.filter(c=>!c.entries.length).map(c=>c.v);
+ return `<div class="sec"><h2>Tower and hero changes in versions ${majors[majors.length-1]} to ${majors[0]}</h2><p>Every tower and hero change listed on the wiki's patch-note pages, marked buff or nerf as the wiki marks it. Tap a name for the exact numbers. Paragon, power, map and mode changes are on the linked pages.</p></div>
+ ${V_.filter(c=>c.entries.length).map(c=>`<div class="card" style="margin-bottom:10px"><h3>Version ${esc(c.v)}${c.date?` <span class="tiny muted">released ${esc(c.date)}</span>`:''}</h3><p class="tiny muted" style="margin:0">${c.entries.length} towers and heroes changed · <a href="${esc(c.url)}" target="_blank" rel="noopener">wiki patch notes</a> (page edited ${esc(c.edited)})</p><div class="chg">${c.entries.map(ent).join('')}</div></div>`).join('')}
+ ${none.length?`<p class="small muted">No tower or hero changes listed on the wiki for ${none.map(esc).join(', ')}.</p>`:''}`;}
+R.start=()=>{const s=HT.comeback;const ups=M.updates||[];
+ return `<div class="sec"><span class="pill y">Start here</span><h2 style="margin-top:8px">Coming back after a break</h2><p>Read the update list, then follow the steps, then the path below.</p></div>
+ <div class="grid two"><div class="card"><h3>Recent updates</h3><div class="tablewrap"><table><thead><tr><th>Version</th><th>Released (Steam)</th></tr></thead><tbody>${ups.map(u=>`<tr><td>${esc(u.v)}</td><td>${esc(u.date)}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">From the update table on Blooncyclopedia. The tower and hero changes are listed below; full patch notes: <a href="https://www.bloonswiki.com/Update_history:Bloons_TD_6" target="_blank" rel="noopener">update history</a>.</p></div>
+ <div class="card"><h3>Your path through this guide</h3><ol class="small">${[['early','Rounds 1 to 40'],['late','Set up for the late game'],['farming','Make extra cash in a game'],['mkhow','Spend Monkey Knowledge'],['hard','Clear a map up to the black border'],['impoppable','Beat Impoppable'],['chimps','Beat CHIMPS'],['boss','Beat a Boss event'],['odyssey','Play an Odyssey'],['ct','Play Contested Territory']].map(([r,t])=>`<li><a class="lk" href="#${r}">${t}</a></li>`).join('')}</ol>
+ <p class="small muted">Look things up in <a class="lk" href="#towers">Towers</a>, <a class="lk" href="#rounds">Rounds</a> and <a class="lk" href="#bloons">Bloons</a> as you go.</p></div></div>
+ ${addedSince()}
+ ${changesBlock()}
+ ${s?howtoBody(s):''}`;};
+function addedSince(){const maj=v=>parseInt(String(v||'').split('.')[0],10);const top=maj(V);if(!top)return '';
+ const items=[];
+ D.towers.forEach(t=>items.push({v:t.since,k:'Tower',h:`<a class="chip" href="#tower/${esc(t.slug)}">${img(t.img,'')}<span>${esc(t.name)}<br><i>Tower</i></span></a>`}));
+ D.paragons.forEach(p=>items.push({v:p.since,k:'Paragon',h:`<a class="chip" href="#" data-par="${esc(p.slug)}">${img(p.img,'')}<span>${esc(p.name)}<br><i>Paragon</i></span></a>`}));
+ D.maps.forEach(m=>items.push({v:m.since,k:'Map',h:`<a class="chip" href="#" data-map="${esc(m.slug)}">${img(m.img,'')}<span>${esc(m.name)}<br><i>${esc(m.diff)} map</i></span></a>`}));
+ D.bosses.forEach(b=>items.push({v:b.since,k:'Boss',h:`<a class="chip" href="#bosses">${img(b.img,'')}<span>${esc(b.name)}<br><i>Boss</i></span></a>`}));
+ D.powers.forEach(p=>items.push({v:p.since,k:'Power',h:`<a class="chip" href="#powers">${img(p.img,'')}<span>${esc(p.name)}<br><i>Power</i></span></a>`}));
+ D.mk.forEach(k=>items.push({v:k.since,k:'MK',h:`<a class="chip" href="#" data-mk="${esc(k.slug)}">${img(k.img,'')}<span>${esc(k.name)}<br><i>Monkey Knowledge</i></span></a>`}));
+ const rows=[];for(let v=top;v>top-6;v--){const L=items.filter(i=>maj(i.v)===v);if(L.length)rows.push(`<div class="card" style="margin-bottom:10px"><h3>Version ${v}</h3><div>${L.map(i=>i.h).join('')}</div></div>`);}
+ return rows.length?`<div class="sec"><h2>What was added in the last updates</h2><p>Everything in this guide's data that the wiki marks as introduced in versions ${top-5} to ${top}. Tower and hero balance changes are listed in the next section.</p></div>${rows.join('')}`:'';}
+
+// ---------- how-to pages
+function srcLine(st,i){const srcs=st.src||[];
+ const tags=(st.advice?'<span class="pill adv" title="A community strategy tip, not a rule of the game">Community tip</span>':'')+(st.meta==='no recent source'?'<span class="pill meta" title="A which-tower-to-use claim without two recent agreeing sources">No recent source</span>':st.meta==='dated'?'<span class="pill ok">2 dated sources</span>':'');
+ return `<div class="src">${tags}<button class="srcbtn" data-src="${i}" aria-expanded="false">Source</button></div><div class="srcbox" id="src${i}">${srcs.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> (Blooncyclopedia${s.edited?', page edited '+esc(s.edited):''})`).join('<br>')}${(st.quote||[]).length?`<span class="quote">The page says: ${st.quote.map(q=>'"'+esc(q)+'"').join(' ... ')}</span>`:''}${st.evidence&&st.evidence.pairs&&st.evidence.pairs.length?'<br>BTD6 Index 2 Towers CHIMPS: '+st.evidence.pairs.map(p=>`${esc(p.a)} + ${esc(p.b)} on ${p.maps} maps (newest ${esc(p.latest)})`).join('; '):''}</div>`;}
+let SRCN=0;
+// every ranked row counted from record runs carries this label: 2+ completions in the last 60 days, or "No recent source"
+function recPill(p){return p.label==='2 recent records'?'<span class="pill ok" title="2 or more BTD6 Index completions in the last 60 days">2 recent records</span>':'<span class="pill meta" title="Fewer than 2 completions in the last 60 days: record history, not the current meta">No recent source</span>';}
+function pairChip(p){return `<div class="pairline">${entChip((p.ra&&p.ra.name)||p.a,p.ra,esc(p.xa))}<span class="plus">+</span>${entChip((p.rb&&p.rb.name)||p.b,p.rb,esc(p.xb))}<span class="tiny muted">${p.n} win${p.n===1?'':'s'}${p.maps&&p.maps.length?' on '+p.maps.map(esc).join(', '):''} · newest ${esc(p.latest)}</span>${recPill(p)}</div>`;}
+function diffPlan(note){const P=D.diffplan||[];if(!P.length)return '';const cut=M.meta_cut;
+ return `<div class="sec"><h2>By map difficulty</h2>${note?`<p>${prose(note)}</p>`:''}<p class="small">Map facts: Blooncyclopedia map table and BTD6 Index map notes. Wins: BTD6 Index 2 Towers CHIMPS (two towers, a hero counts as one) and Least Cost CHIMPS, pulled ${esc(M.pulled)}. "Recent" = since ${esc(cut)}.</p></div>
+ <div class="grid two">${P.map(d=>`<div class="card dplan"><h3><span class="pill y">${esc(d.diff)}</span> ${d.maps} maps</h3>
+ <dl class="kv"><dt>Shortest path</dt><dd>median ${n0(d.short_median)}, shortest ${n0(d.short_min)} <span class="tiny muted">(the wiki map table's path length)</span></dd><dt>Several entrances</dt><dd>${d.multi} of ${d.maps} maps</dd><dt>Line-of-sight blockers</dt><dd>${d.los} of ${d.maps} maps</dd><dt>Removable objects</dt><dd>${d.removables} of ${d.maps} maps</dd><dt>Water</dt><dd>${d.water} of ${d.maps} maps</dd>
+ <dt>Cheapest CHIMPS win</dt><dd>${d.lcc_min?`<b>${money(d.lcc_min.money)}</b> on ${nameLink(d.lcc_min.map)} (${esc(d.lcc_min.date)}); median of the ${d.lcc_n} map records ${money(d.lcc_median)}`:'none recorded'}</dd></dl>
+ <h4 class="tiny" style="margin:10px 0 4px;color:var(--yellow);letter-spacing:.1em;text-transform:uppercase">2-tower pairs that won here recently</h4>
+ ${d.recent.length?d.recent.map(pairChip).join(''):`<p class="small muted">No 2 Towers CHIMPS win on these maps since ${esc(cut)} (newest ${esc(d.newest||'-')}). Most-used pairs of all time, not recent:</p>${d.older.map(pairChip).join('')}`}</div>`).join('')}</div>`;}
+function howtoBody(s){
+ let h=`<div class="sec"><span class="pill">${esc(s.kind)}</span><h2 style="margin-top:8px">${esc(s.title)}</h2></div>`;
+ if(s.need)h+=`<p class="note">${prose(s.need)}</p>`;
+ h+=`<ol class="steps">${(s.steps||[]).map(st=>`<li class="card"><span class="st">${prose(st.t)}</span>${srcLine(st,SRCN++)}</li>`).join('')}</ol>`;
+ if(s.check)h+=`<p class="note blue"><b>Check:</b> ${prose(s.check)}</p>`;
+ if(s.diffplan)h+='<!--plan-->';
+ if(s.why){const W={rounds:['rounds','Rounds table'],towers:['towers','Towers & upgrades'],mk:['mk','Monkey Knowledge list'],modes:['modes','Modes & difficulties'],builds:['builds','Builds & crosspaths'],maps:['maps','Maps'],paragons:['paragons','Paragons'],bosses:['bosses','Boss Bloons'],bloons:['bloons','Bloons table'],live:['live','Events at build time']}[s.why];if(W)h+=`<p class="small muted">See also: <a class="lk" href="#${W[0]}">${W[1]}</a></p>`;}
+ const vt={early:'start',late:'rounds',farming:'farming',mkhow:'mk',hard:'blackborder',impoppable:'impoppable',chimps:'chimps',paragon:'paragon',boss:'bosses',odyssey:'odyssey',ct:'ct',comeback:'update',threats:'rounds',mapdiff:'blackborder',mm:'farming'}[s.id];
+ const vs=(D.videos[vt]||[]);
+ if(vs.length)h+=`<div class="sec"><h3>Watch</h3><p class="small">Recent videos found by a YouTube search (titles checked, not the full video).</p></div><div class="grid wide">${vs.map(vidCard).join('')}</div>`;
+ if(s.diffplan)h=h.replace('<!--plan-->',diffPlan(s.plan_note));
+ if(s.id==='threats')h+=`<p style="margin-top:14px"><a class="btn" href="#bloons">Open the Bloons table</a></p>`;
+ return h;}
+howtos.forEach(s=>{if(s.id!=='comeback')R[s.id]=()=>howtoBody(s);});
+R.comeback=()=>R.start();
+
+// ---------- modes reference
+R.modes=()=>`<div class="sec"><span class="pill">Reference</span><h2 style="margin-top:8px">Modes &amp; difficulties</h2><p>The rules of each difficulty, map group and border. Values from the Blooncyclopedia pages named under each table.</p></div>`+
+ (D.howto.tables||[]).map(t=>`<div class="sec"><h3>${esc(t.title)}</h3></div><div class="tablewrap"><table><thead><tr>${t.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="src">Source: ${t.src.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(', ')}</p>`).join('')+
+ `<p class="note small">Price multipliers used for every cost in this guide (from the wiki's cost module): Easy ${M.mults?M.mults[0]:''}, Medium ${M.mults?M.mults[1]:''}, Hard ${M.mults?M.mults[2]:''}, Impoppable ${M.mults?M.mults[3]:''} times the Medium price, rounded to $5.</p>`;
+
+// ---------- towers
+let TCAT='all',TQ='';
+R.towers=()=>{const cats=['Primary','Military','Magic','Support'];
+ const L=D.towers.filter(t=>(TCAT==='all'||t.cat===TCAT)&&(!TQ||(t.name+' '+t.desc+' '+t.paths.flat().map(u=>u?u.name:'').join(' ')).toLowerCase().includes(TQ)));
+ return `<div class="sec"><h2>Towers &amp; upgrades</h2><p>${C.towers} towers in 4 groups. Prices are for <b>${DIFFS[DI]}</b> (change it on the left). Tap a tower for its 3 paths, every upgrade, stats and the crosspaths record runs use.</p></div>
+ <div class="tabs" data-set="TCAT"><button data-v="all" class="${TCAT==='all'?'on':''}">All ${D.towers.length}</button>${cats.map(c=>`<button data-v="${c}" class="${TCAT===c?'on':''}">${c}</button>`).join('')}</div>
+ <div class="filters"><input id="tq" type="search" placeholder="Filter by tower or upgrade name" value="${esc(TQ)}" aria-label="Filter towers"><span class="small muted">${L.length} shown</span></div>
+ ${cats.map(c=>{const T=L.filter(t=>t.cat===c);return T.length?`<h3 style="margin:18px 0 8px">${c}</h3><div class="tgrid">${T.map(towerTile).join('')}</div>`:'';}).join('')}`;};
+function towerTile(t){return `<a class="tile cat-${esc(t.cat)}" href="#tower/${esc(t.slug)}">${img(t.img,t.name)}<b>${esc(t.name)}</b><span class="cost">${cost(t.cost)}</span>${t.paragon?'<span class="sub">has a Paragon</span>':''}</a>`;}
+const RANGE=s=>s.global?'Map-wide':s.range;
+function statKV(s){if(!s)return '<span class="muted">No datamined stats for this upgrade.</span>';
+ const rows=[[s.global?'Attack reach':'Range',RANGE(s)],s.global?['Tower radius',s.range]:['',null],['Attack cooldown (s)',s.cooldown],['Damage',s.damage],['Pierce',s.pierce],['Projectiles',s.count],['Sees Camo',s.camo==null?null:(s.camo?'Yes':'No')],['Attacks',s.attacks>1?s.attacks:null]].filter(r=>r[1]!=null&&r[1]!=='');
+ return `<dl class="kv">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;}
+R.tower=(sl)=>{const t=TB[sl];if(!t)return `<p>Tower not found. <a href="#towers">All towers</a></p>`;if(!need('stats'))return LOADMSG;
+ const b=t.base||{};const par=t.paragon?PB[t.paragon]:null;
+ return `<div class="thead cat-${esc(t.cat)}">${img(t.img,t.name,'big')}<div>
+ <div class="pills"><span class="pill catp" style="--c:var(--${esc(t.cat)})">${esc(t.cat)}</span>${t.hotkey?`<span class="pill">Hotkey ${esc(t.hotkey)}</span>`:''}${t.since?`<span class="pill">Added in ${esc(t.since)}</span>`:''}</div>
+ <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin:.15em 0">${esc(t.name)}</h2>
+ <p style="font-size:1.08rem"><b>Used for:</b> ${esc(t.desc)}</p>${t.unlock?`<p class="small"><b>How to get it:</b> ${esc(t.unlock)} <span class="muted">(your player level: towers unlock as you earn Player XP from games, per the wiki's <a href="https://www.bloonswiki.com/Strategy:Bloons_TD_6" target="_blank" rel="noopener">Strategy: Bloons TD 6</a> page)</span>. Upgrades unlock with this tower's XP (shown on each upgrade).</p>`:''}
+ <div class="statrow"><div class="stat"><b>${cost(t.cost)}</b><span>to place (${DIFFS[DI]})</span></div>${t.has_stats?`<div class="stat"><b>${esc(RANGE(b))}</b><span>${b.global?'attack reach (any Bloon it can see)':'range'}</span></div><div class="stat"><b>${esc(b.cooldown)}s</b><span>attack cooldown</span></div><div class="stat"><b>${esc(b.pierce)}</b><span>pierce</span></div><div class="stat"><b>${b.camo?'Yes':'No'}</b><span>sees Camo</span></div>`:''}</div>
+ ${t.intro.length?`<details class="card"><summary style="cursor:pointer"><b>More about this tower</b> <span class="muted small">(from the wiki)</span></summary>${t.intro.map(p=>`<p class="small">${esc(p)}</p>`).join('')}${t.notes.length?`<ul class="small">${t.notes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}<p class="tiny"><a href="${esc(t.wiki)}" target="_blank" rel="noopener">Full wiki page</a></p></details>`:''}
+ </div></div>
+ <div class="sec"><h2>Upgrade paths</h2><p>Price of each upgrade on <b>${DIFFS[DI]}</b>; "path total" adds the upgrades before it on that path (not the tower itself). You can take up to tier 5 on one path and tier 2 on one other path. Tap <i>Stats</i> for datamined numbers at that tier.</p></div>
+ <div class="grid three">${t.paths.map((row,pi)=>`<div class="card path cat-${esc(t.cat)}"><h3><span class="pn">${pi+1}</span>Path ${pi+1}</h3>${row.map(u=>u?upRow(u):'').join('')}</div>`).join('')}</div>
+ ${par?`<div class="sec"><h2>Paragon</h2></div><a class="card" href="#" data-par="${esc(par.slug)}" style="display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit">${img(par.img,par.name,'')}<div><h3>${esc(par.name)}</h3><p class="small muted">${esc(par.desc)}</p><p class="small"><b class="lk">${cost(par.cost)}</b> · ${n0(par.xp)} tower XP to unlock</p></div></a><style>a.card>img{width:96px;height:96px;object-fit:contain}</style>`:''}
+ <div class="sec"><h2>Crosspaths in record CHIMPS runs</h2><p>How often each upgrade combination of this tower appears in BTD6 Index completions (2 Million Pops CHIMPS and 2 Towers CHIMPS). A count is completions, not a rating; the date is the newest completion with it.</p></div>
+ ${t.record_xp.length?`<div class="tablewrap"><table class="stack rec"><thead><tr><th>Crosspath</th><th>Top upgrade</th><th class="num">Completions</th><th>Newest</th><th>Label</th></tr></thead><tbody>${t.record_xp.map(x=>`<tr><td data-l="Crosspath"><b>${esc(x.x)}</b></td><td data-l="Upgrade">${nameLink(x.who)}</td><td class="num" data-l="Completions">${n0(x.n)}</td><td data-l="Newest">${esc(x.latest)}</td><td data-l="Label">${recPill(x)}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">No record runs use this tower.</p>'}
+ ${t.solo.length?`<div class="sec"><h3>Solo CHIMPS carries from this tower</h3><p class="small">Upgrades that alone made 2,000,000 pops in a CHIMPS win, by number of maps (of ${D.index.nmaps}). Record history, all dates.</p></div><div>${t.solo.map(s=>entChip(s.entity,s.ref,`${s.maps} maps · ${s.xp.length?esc(s.xp[0].x)+' · ':''}newest ${esc(s.latest||'-')}`)+recPill(s)).join(' ')}</div>`:''}
+ <p class="src" style="margin-top:16px">Costs and descriptions: Blooncyclopedia Cargo tables. Stats: datamined game files (Module:BTD6 stats). Records: btd6index.win, pulled ${esc(M.pulled)}.</p>`;};
+function upRow(u){return `<div class="up" data-up="${esc(u.name)}">${img(u.img,u.name)}<div><span class="t">T${u.tier}</span><b>${esc(u.name)}</b><br><span class="c">${cost(u.cost)}</span> <span class="tiny muted">path total ${cost(u.path_total)}${u.xp?` · ${n0(u.xp)} XP to unlock`:''}</span><div class="d">${esc(u.desc)}</div><details><summary>Stats</summary>${statKV(u.stats)}</details></div></div>`;}
+
+// ---------- paragons
+R.paragons=()=>`<div class="sec"><h2>Paragons</h2><p>${C.paragons} Paragons. Prices on <b>${DIFFS[DI]}</b>. To make one you need all three tier 5 upgrades of the tower on the map: <a class="lk" href="#paragon">how to make a Paragon</a>.</p></div>
+ <div class="tgrid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">${D.paragons.map(p=>`<a class="tile cat-${esc((TB[p.tower_slug]||{}).cat)}" href="#" data-par="${esc(p.slug)}">${img(p.img,p.name)}<b>${esc(p.name)}</b><span class="sub">${esc(p.tower)}</span><span class="cost">${cost(p.cost)}</span><span class="sub">${n0(p.xp)} XP to unlock</span></a>`).join('')}</div>`;
+function paragonCard(sl){const p=PB[sl];if(!p)return '';
+ return `<div class="ic-head">${img(p.img,p.name)}<div><h2 style="margin:0">${esc(p.name)}</h2><div class="pills"><span class="pill">Paragon of ${esc(p.tower)}</span>${p.since?`<span class="pill">Added in ${esc(p.since)}</span>`:''}</div></div></div>
+ <p><i>${esc(p.desc)}</i></p>
+ <div class="isec"><h4>Cost</h4><p class="small">${DIFFS.map((d,i)=>`${d}: <b>${money(p.cost[i])}</b>`).join(' · ')}</p></div>
+ <div class="isec"><h4>How to get it</h4><p class="small">Earn ${n0(p.xp)} ${esc(p.tower)} XP to unlock it, then have all three tier 5 ${esc(p.tower)} upgrades on the map and buy it on one of them. <a class="lk" href="#paragon">Step by step</a></p></div>
+ ${p.intro.length?`<div class="isec"><h4>What it does</h4>${p.intro.map(x=>`<p class="small">${esc(x)}</p>`).join('')}</div>`:''}
+ ${p.stats?`<div class="isec"><h4>Main attack (degree 1, datamined)</h4>${statKV(p.stats)}</div>`:''}
+ <p class="src"><a href="${esc(p.wiki)}" target="_blank" rel="noopener">Wiki page</a> · <a class="lk" href="#tower/${esc(p.tower_slug)}">${esc(p.tower)} upgrades</a></p>`;}
+
+// ---------- heroes
+R.heroes=()=>`<div class="sec"><h2>Heroes</h2><p>${C.heroes} heroes, cheapest first, prices on <b>${DIFFS[DI]}</b>. You can place one hero per game; it levels up from 1 to 20 by itself. Tap a hero for every level-up.</p></div>
+ <div class="tgrid" style="grid-template-columns:repeat(auto-fill,minmax(170px,1fr))">${D.heroes.map(h=>`<a class="tile" href="#hero/${esc(h.slug)}" style="--c:var(--yellow)">${img(h.img,h.name)}<b>${esc(h.name)}</b><span class="sub">${esc(h.title)}</span><span class="cost">${cost(h.cost)}</span></a>`).join('')}</div>`;
+R.hero=(sl)=>{const h=HB[sl];if(!h)return `<p>Hero not found. <a href="#heroes">All heroes</a></p>`;if(!need('levels'))return LOADMSG;
+ return `<div class="thead">${img(h.img,h.name,'big')}<div>
+ <div class="pills"><span class="pill y">Hero</span><span class="pill">${esc(h.title)}</span><span class="pill" title="Multiplier on the XP each level needs">XP curve x${esc(h.xp_scale)}</span></div>
+ <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin:.15em 0">${esc(h.name)}</h2><p style="font-size:1.06rem"><i>${esc(h.desc)}</i></p><p class="small">${h.unlock?`<b>How to get it:</b> ${esc(h.unlock)} <span class="tiny muted">(wiki)</span> `:''}<b>Used for:</b> see "At a glance" and the levels below.</p>
+ <div class="statrow"><div class="stat"><b>${cost(h.cost)}</b><span>to place (${DIFFS[DI]})</span></div>${h.xp20?`<div class="stat"><b>${n0(h.xp20)}</b><span>XP from level 1 to 20</span></div>`:''}${h.solo?`<div class="stat"><b>${h.solo.maps}</b><span>maps with a solo CHIMPS win of 2,000,000 pops (newest record ${esc(h.solo.latest||'-')})</span></div>`:''}<div class="stat"><b>${h.pairs}</b><span>2-tower CHIMPS pairs</span></div></div>
+ ${h.intro.map(p=>`<p>${esc(p)}</p>`).join('')}
+ ${h.notes.length?`<div class="card"><h3>At a glance</h3><ul class="small">${h.notes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}</div></div>
+ <div class="sec"><h2>Level by level</h2><p>The game's own level-up text, copied on the hero's wiki page. Heroes level up from the XP they earn at the end of each round; you can also buy the next level with cash.</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Level</th><th>What changes</th></tr></thead><tbody>${h.levels.map(l=>`<tr><td><b>${l.lv}</b></td><td>${l.fx.map(f=>`<div>${f.what==='In-game'?'':`<span class="tiny muted">${esc(f.what)}:</span> `}${esc(f.t)}</div>`).join('')}</td></tr>`).join('')}</tbody></table></div>
+ <p class="src" style="margin-top:12px"><a href="${esc(h.wiki)}" target="_blank" rel="noopener">Wiki page</a> · XP to level 20 = the wiki's level table x this hero's XP curve.</p>`;};
+
+// ---------- bloons
+R.bloons=()=>{const first=Object.create(null);(D.rounds||[]).forEach(r=>r.g.forEach(g=>{D.bloons.forEach(b=>{const n=b.name.replace(/ Bloon$/,'');if(first[b.slug]==null&&new RegExp('(^|[^A-Za-z])'+n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'([^A-Za-z]|$)').test(g.b))first[b.slug]=r.n;});}));
+ const dm=D.dmg||{cols:[],rows:[]};
+ return `<div class="sec"><h2>Bloons</h2><p>${C.bloons} Bloon types, weakest first${(M.test_bloons||[]).length?` (the Sandbox test objects ${M.test_bloons.map(esc).join(' and ')} are left out)`:''}. RBE = how many single pops the whole Bloon takes (children included). "First round" = the first standard round it appears in. Tap one for its card.</p></div>
+ <div class="tgrid">${D.bloons.map(b=>`<a class="tile" href="#" data-bloon="${esc(b.slug)}" style="--c:${b.moab?'var(--red)':'var(--blue)'}">${img(b.img,b.name)}<b>${esc(b.name)}</b><span class="sub">RBE ${n0(b.rbe)} · ${first[b.slug]?`round ${first[b.slug]}`:'not in standard rounds'}</span></a>`).join('')}</div>
+ <div class="sec"><h2>What pops what</h2><p>Which damage types can hurt each special Bloon (Yes = can damage it).</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Damage type</th>${dm.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${dm.rows.map(r=>`<tr><td><b>${esc(r.type)}</b></td>${r.can.map(c=>`<td>${/yes/i.test(c)?'<span class="pill ok">Yes</span>':/no/i.test(c)?'<span class="pill meta">No</span>':esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+ <p class="src">Source: <a href="https://www.bloonswiki.com/Damage_type" target="_blank" rel="noopener">Damage type</a> and the btd6_bloons Cargo table (Blooncyclopedia). <a class="lk" href="#threats">How to counter each type</a></p>`;};
+function bloonCard(sl){const b=BB[sl];if(!b)return '';
+ return `<div class="ic-head">${img(b.img,b.name)}<div><h2 style="margin:0">${esc(b.name)}</h2><div class="pills">${b.moab?'<span class="pill meta">MOAB-Class</span>':''}${b.immune?`<span class="pill">Immune: ${esc(b.immune)}</span>`:''}</div></div></div>
+ <dl class="kv"><dt>Health</dt><dd>${n0(b.hp)}${b.hp_fort?` (Fortified ${n0(b.hp_fort)})`:''}</dd><dt>RBE</dt><dd>${n0(b.rbe)}${b.rbe_fort?` (Fortified ${n0(b.rbe_fort)})`:''}</dd><dt>Layers</dt><dd>${n0(b.layers)}</dd><dt>Speed</dt><dd>${n0(b.speed)} units/s</dd><dt>Pops into</dt><dd>${esc(b.children||'-')}</dd><dt>Comes from</dt><dd>${esc(b.parents||'-')}</dd></dl>
+ <p class="src">Blooncyclopedia btd6_bloons table. <a class="lk" href="#threats">How to counter it</a></p>`;}
+
+// ---------- bosses
+R.bosses=()=>`<div class="sec"><h2>Boss Bloons</h2><p>${C.bosses} bosses. In events they come in 5 tiers, on rounds 40, 60, 80, 100 and 120; Paragons deal them extra damage. <a class="lk" href="#boss">How to beat a Boss event</a></p></div>
+ <div class="grid wide">${D.bosses.map(b=>`<div class="card"><div style="display:flex;gap:12px;align-items:center">${img(b.img,b.name,'')}${b.img_elite?img(b.img_elite,b.name+' Elite',''):''}<div><h3 style="margin:0">${esc(b.name)}</h3><p class="small muted" style="margin:0">${esc(b.title)} · skulls: ${esc(b.skulls)} normal / ${esc(b.skulls_elite)} elite</p></div></div>
+ <ul class="small">${b.rules.map(r=>`<li>${esc(r)}</li>`).join('')}</ul><p class="src"><a href="${esc(b.wiki)}" target="_blank" rel="noopener">Wiki page</a></p></div>`).join('')}</div>
+ <style>.card>div>img{width:84px;height:84px;object-fit:contain;flex:none}</style>`;
+
+// ---------- rounds
+let RR='1-40',RKEY=false;
+R.rounds=()=>{const [a,b]=RR==='all'?[1,140]:RR.split('-').map(Number);const ends=dict((D.mode_ends||[]).map(e=>[e.n,(D.mode_ends||[]).filter(x=>x.n===e.n).map(x=>x.mode).join(' / ')]));
+ const L=D.rounds.filter(r=>r.n>=a&&r.n<=b&&(!RKEY||r.why||r.new));
+ return `<div class="sec"><h2>Rounds 1 to 140</h2><p>Standard rounds. <b>Cash</b> = cash from pops plus the end-of-round bonus (the only cash in CHIMPS); <b>Total</b> = all cash up to that round from round 1. Yellow rows have a known danger; a thick line marks the last round of a difficulty.</p></div>
+ <div class="tabs" data-set="RR">${['1-40','41-80','81-100','101-140','all'].map(v=>`<button data-v="${v}" class="${RR===v?'on':''}">${v==='all'?'All':'Rounds '+v}</button>`).join('')}</div>
+ <div class="tabs" data-set="RKEY"><button data-v="0" class="${!RKEY?'on':''}">Every round</button><button data-v="1" class="${RKEY?'on':''}">Only dangerous or new-threat rounds</button></div>
+ <div class="tablewrap"><table class="stack"><thead><tr><th>#</th><th>Bloons</th><th class="num">Length</th><th class="num">RBE</th><th class="num">Cash</th><th class="num">Total</th><th>Watch out</th></tr></thead><tbody>
+ ${L.map(r=>`<tr class="${r.why?'mark':''} ${ends[r.n]?'endm':''}" id="r${r.n}"><td data-l="Round"><b>${r.n}</b>${ends[r.n]?`&nbsp;<span class="tiny" style="color:var(--yellow)">${esc(ends[r.n])} ends</span>`:''}</td><td data-l="Bloons"><div>${r.g.map(g=>bl(g)).join('')}</div></td><td class="num" data-l="Length">${r.dur!=null?r.dur.toFixed(1)+'s':'-'}</td><td class="num" data-l="RBE">${n0(r.rbe)}</td><td class="num" data-l="Cash">${money(r.cash)}</td><td class="num" data-l="Total">${money(r.cum)}</td><td class="small" data-l="Watch out">${r.new||r.why?`<div>${r.new?`<div><b>First:</b> ${r.new.map(esc).join(', ')}</div>`:''}${r.why?`<div>${esc(r.why)}</div>`:''}</div>`:''}</td></tr>`).join('')}
+ </tbody></table></div>
+ <p class="src">Rounds, RBE and cash: <a href="https://www.bloonswiki.com/Rounds_(BTD6)" target="_blank" rel="noopener">Rounds (BTD6)</a>. "Watch out" text: <a href="https://www.bloonswiki.com/Strategy:Bloons_TD_6" target="_blank" rel="noopener">Strategy:Bloons TD 6</a>, important rounds table. "First" = first appearance of that Bloon type or property in these rounds.</p>`;};
+function bl(g){const name=g.b;const base=D.bloons.slice().sort((x,y)=>y.name.length-x.name.length).find(b=>new RegExp('(^|[^A-Za-z])'+b.name.replace(/ Bloon$/,'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'([^A-Za-z]|$)').test(name));
+ return `<span class="bl">${base?img(base.img,''):''}${esc(name)} x${n0(g.n)}</span>`;}
+
+// ---------- maps
+let MD='all',MQ='';
+R.maps=()=>{const ds=['Beginner','Intermediate','Advanced','Expert'];const L=D.maps.filter(m=>(MD==='all'||m.diff===MD)&&(!MQ||m.name.toLowerCase().includes(MQ)));
+ return `<div class="sec"><h2>Maps</h2><p>${C.maps} maps by difficulty. Each card shows path length, water, entrances and the BTD6 Index records for that map (least cash to win CHIMPS, number of 2-tower CHIMPS pairs).</p></div>
+ <div class="tabs" data-set="MD"><button data-v="all" class="${MD==='all'?'on':''}">All</button>${ds.map(d=>`<button data-v="${d}" class="${MD===d?'on':''}">${d}</button>`).join('')}</div>
+ <div class="filters"><input id="mq" type="search" placeholder="Filter maps" value="${esc(MQ)}" aria-label="Filter maps"><span class="small muted">${L.length} shown</span></div>
+ <div class="tgrid maps" style="grid-template-columns:repeat(auto-fill,minmax(190px,1fr))">${L.map(m=>`<a class="tile" href="#" data-map="${esc(m.slug)}" style="--c:${{Beginner:'var(--green)',Intermediate:'var(--yellow)',Advanced:'var(--orange)',Expert:'var(--red)'}[m.diff]||'var(--blue)'}">${img(m.img,m.name)}<b>${esc(m.name)}</b><span class="sub">${esc(m.diff)}${m.water?' · water':''}</span></a>`).join('')}</div>
+ <style>.tile[data-map] img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px}</style>`;};
+function mapCard(sl){const m=MAPB[sl];if(!m)return '';
+ return `<div style="margin-right:40px"><h2 style="margin:0 0 6px">${esc(m.name)}</h2><div class="pills"><span class="pill y">${esc(m.diff)}</span>${m.water?'<span class="pill">Has water</span>':'<span class="pill">No water</span>'}${m.since?`<span class="pill">Added in ${esc(m.since)}</span>`:''}</div></div>
+ ${img(m.img,m.name,'')}<style>#mbody>img{display:block;width:100%;max-width:640px;margin-left:auto!important;margin-right:auto!important;max-height:300px;object-fit:cover;border-radius:14px;margin:8px 0}</style>
+ <dl class="kv"><dt>Entrances / exits</dt><dd>${n0(m.entrances)} / ${n0(m.exits)}</dd><dt>Path length</dt><dd>${m.paths.map((p,i)=>`${m.path_labels[i]?esc(m.path_labels[i])+': ':''}${n0(p)}`).join(', ')||'-'} <span class="tiny muted">(as listed in the wiki's map table)</span></dd>
+ <dt>Least cash CHIMPS record</dt><dd>${m.lcc?`<b>${money(m.lcc.money)}</b> <span class="tiny muted">(version ${esc(m.lcc.version)}, ${esc(m.lcc.date)})</span>`:'none recorded'}</dd><dt>2-tower CHIMPS pairs</dt><dd>${n0(m.n2tc)}</dd><dt>Solo CHIMPS towers</dt><dd>${n0(m.n2mp)} <span class="tiny muted">(towers that alone made 2,000,000 pops in a CHIMPS win here)</span></dd></dl>
+ <p class="small"><a class="lk" href="#builds">Pairs that win most on ${esc(m.diff)} maps</a> · <a class="lk" href="#mapdiff">How to adjust to map difficulty</a></p>
+ <p class="src">Map data: btd6_maps Cargo table (Blooncyclopedia). Records: btd6index.win.</p>`;}
+
+// ---------- Monkey Knowledge
+let MKT='Primary';
+R.mk=()=>{const cats=['Primary','Military','Magic','Support','Heroes','Powers'];const L=D.mk.filter(k=>k.cat===MKT);
+ return `<div class="sec"><h2>Monkey Knowledge</h2><p>${C.mk} nodes in 6 trees, tier 1 (top of the tree) first; the tier is the game's, as listed on the wiki's Monkey Knowledge page. Tier 3 and higher need "points" = Knowledge Points you must already have spent in this tree; tier 4 and higher also cost Monkey Money, paid once. Turned off in CHIMPS. <a class="lk" href="#mkhow">What to take first</a></p></div>
+ <div class="tabs" data-set="MKT">${cats.map(c=>`<button data-v="${c}" class="${MKT===c?'on':''}">${c} (${D.mk.filter(k=>k.cat===c).length})</button>`).join('')}</div>
+ <div class="grid">${L.map(k=>`<div class="card" style="display:flex;gap:12px">${img(k.img,k.name,'')}<div><h3 style="margin:0">${esc(k.name)}</h3><p class="small" style="margin:.2em 0">${esc(k.desc)}</p><p class="tiny muted" style="margin:0">Tier ${esc(k.tier)}${k.pts?` · needs ${k.pts} points in tree`:''}${k.cost?` · ${n0(k.cost)} Monkey Money`:' · free'}${k.pre.length?` · after ${k.pre.map(p=>nameLink(p)).join(', ')}`:''}</p></div></div>`).join('')}</div>
+ <style>.card>img{width:56px;height:56px;object-fit:contain;flex:none}</style>
+ <p class="src">Source: btd6_mk Cargo table (Blooncyclopedia).</p>`;};
+
+// ---------- powers
+R.powers=()=>`<div class="sec"><h2>Powers</h2><p>${C.powers} Powers, bought with Monkey Money and used in any mode that allows them (not CHIMPS, not ranked boss events).</p></div>
+ <div class="grid">${D.powers.map(p=>`<div class="card" style="display:flex;gap:12px">${img(p.img,p.name,'')}<div><h3 style="margin:0">${esc(p.name)}</h3><p class="small" style="margin:.2em 0">${esc(p.desc)}</p><p class="tiny muted" style="margin:0">${p.cost?n0(p.cost)+' Monkey Money':''}${p.pro_of?` · Pro version of ${esc(p.pro_of)}`:''}</p></div></div>`).join('')}</div>
+ <style>.card>img{width:60px;height:60px;object-fit:contain;flex:none}</style><p class="src">Source: btd6_powers Cargo table (Blooncyclopedia).</p>`;
+
+// ---------- tier list (records)
+let TK='upgrade',TSORT='maps';
+R.tiers=()=>{if(!need('solo'))return LOADMSG;const I=D.index||{};const rules=I.rules||{};
+ const L=(D.solo||[]).filter(s=>TK==='all'||(TK==='hero'?s.ref&&s.ref.kind==='hero':!(s.ref&&s.ref.kind==='hero')));
+ const band={S:'80%+ of maps',A:'50-80%',B:'25-50%',C:'10-25%',D:'under 10%'};
+ const tl=(D.videos.tierlist||[]);
+ return `<div class="sec"><h2>Tier list: what can carry CHIMPS alone</h2><p><b>Whose rating:</b> counted by this guide from BTD6 Index records (pulled ${esc(M.pulled)}), not an opinion. <b>What the letters mean:</b> the share of the ${I.nmaps} maps on which that single upgrade or hero has a "2 Million Pops CHIMPS" completion.</p></div>
+ <div class="pills"><span class="pill meta" title="A tier letter is a meta claim; it needs 2 completions in the last 60 days">${I.tier_label==='2 recent records'?'2 recent records':'No recent source'}</span><span class="pill">newest record ${esc(((D.solo||[]).map(s=>s.latest).sort().pop())||'-')}</span></div>
+ <p class="note warn small"><b>Read the letters as history, not as the current meta.</b> ${n0(I.recent2mp)} of ${n0(I.n2mp)} completions behind them are from the last 60 days (since ${esc(I.meta_cut)}), so no letter here has two recent sources. Each chip shows the date of the newest record in the Index${I.one_per_map?' (the Index keeps one record per tower and map, so this is not the last time anyone won with it)':''}; balance changes since then are not reflected.</p>
+ <p class="note small"><b>2 Million Pops CHIMPS</b> (BTD6 Index rule): "${esc((rules['2mp']||{}).description||'')}" A high tier proves the tower can win almost anywhere with enough support money; it does not mean it is the easiest pick for you.</p>
+ <div class="tabs" data-set="TK"><button data-v="upgrade" class="${TK==='upgrade'?'on':''}">Towers &amp; upgrades</button><button data-v="hero" class="${TK==='hero'?'on':''}">Heroes</button><button data-v="all" class="${TK==='all'?'on':''}">All</button></div>
+ <div class="tabs" data-set="TSORT"><button data-v="maps" class="${TSORT==='maps'?'on':''}">Most maps first</button><button data-v="newest" class="${TSORT==='newest'?'on':''}">Newest record first</button></div>
+ ${['S','A','B','C','D'].map(t=>{const T=L.filter(s=>s.tier===t);if(TSORT==='newest')T.sort((x,y)=>(y.latest||'').localeCompare(x.latest||'')||y.maps-x.maps);return `<div class="trow"><div class="lab t${t}"><div class="labin">${t}<small>${band[t]}</small><small>${T.length} shown</small></div></div><div class="its">${T.map(s=>entChip(s.entity,s.ref,`${s.maps} maps${s.xp.length?' · '+esc(s.xp[0].x):''} · newest ${esc(s.latest||'-')}`)).join('')||'<span class="muted small">none</span>'}</div></div>`;}).join('')}
+ <div class="sec"><h3>Opinion tier lists from creators (dated)</h3><p class="small">Recent videos, listed so you can compare. This guide did not transcribe them and takes no ranking from them.</p></div>
+ <div class="grid wide">${tl.map(vidCard).join('')||'<p class="muted">No recent tier-list video found.</p>'}</div>`;};
+
+// ---------- builds
+let BD='Beginner';
+R.builds=()=>{const I=D.index||{};const rules=I.rules||{};const P=(D.pairs_by_diff||{})[BD]||[];const B=I.tc_batch||{};
+ const recRow=(p,n,nl)=>`<tr><td data-l="Tower 1">${entChip(p.a,p.ra,esc(p.xa))}</td><td data-l="Tower 2">${entChip(p.b,p.rb,esc(p.xb))}</td><td class="num" data-l="${nl}">${n}</td><td data-l="Newest">${esc(p.latest)}</td><td data-l="Label">${recPill(p)}</td></tr>`;
+ const head=nl=>`<thead><tr><th>Tower 1</th><th>Tower 2</th><th class="num">${nl}</th><th>Newest win</th><th>Label</th></tr></thead>`;
+ return `<div class="sec"><h2>Builds &amp; crosspaths</h2><p>Most-recorded pairs (record history, not the current meta). Each row is a pair of towers (a hero counts as a tower) that won CHIMPS with nothing else, with the crosspaths they used most. A count says how often a pair is in the records, not how good it is today.</p></div>
+ <p class="note small"><b>2 Towers CHIMPS</b> (2TC, BTD6 Index rule): "${esc((rules['2tc']||{}).description||'')}" ${n0(I.n2tc)} completions; ${n0(I.recent2tc)} in the last 60 days (since ${esc(I.meta_cut)}). Newest record date: ${esc(I.latest)}.</p>
+ ${B.n?`<p class="note warn small"><b>How old these records are:</b> ${n0(B.n)} of the ${n0(B.total)} 2 Towers CHIMPS entries carry one single date, ${esc(B.date)}, and ${n0(B.undated)} have no date at all. ${B.top_pairs_on_it} of the 20 most-used pairs below have their newest win in ${esc(String(B.date).slice(0,7))}. Rows with fewer than 2 wins since ${esc(I.meta_cut)} are labelled <b>No recent source</b>.</p>`:''}
+ <div class="tabs" data-set="BD">${['Beginner','Intermediate','Advanced','Expert'].map(d=>`<button data-v="${d}" class="${BD===d?'on':''}">${d} maps</button>`).join('')}</div>
+ <div class="tablewrap"><table class="stack rec">${head(esc(BD)+' maps won')}<tbody>${P.map(p=>recRow(p,p.n,'Maps won')).join('')}</tbody></table></div>
+ ${diffPlan('')}
+ <div class="sec"><h3>Most-recorded pairs on all maps</h3><p class="small">Pairs by the number of maps they have a 2 Towers CHIMPS win on, all dates.</p></div>
+ <div class="tablewrap"><table class="stack rec">${head('Maps')}<tbody>${(D.pairs||[]).slice(0,20).map(p=>recRow(p,p.maps,'Maps')).join('')}</tbody></table></div>
+ <div class="sec"><h3>Most-recorded crosspath per tower</h3><p class="small">From all 2 Million Pops CHIMPS (2MP) and 2 Towers CHIMPS (2TC) completions, all dates. Tap a tower for its full list.</p></div>
+ <div class="tablewrap"><table class="stack rec"><thead><tr><th>Tower</th><th>Crosspath</th><th>Upgrade</th><th class="num">Completions</th><th>Newest</th><th>Label</th></tr></thead><tbody>${D.towers.filter(t=>t.record_xp.length).map(t=>{const x=t.record_xp[0];return `<tr><td class="l" data-go="tower/${esc(t.slug)}" data-l="Tower">${esc(t.name)}</td><td data-l="Crosspath"><b>${esc(x.x)}</b></td><td data-l="Upgrade">${nameLink(x.who)}</td><td class="num" data-l="Completions">${n0(x.n)}</td><td data-l="Newest">${esc(x.latest)}</td><td data-l="Label">${recPill(x)}</td></tr>`;}).join('')}</tbody></table></div>
+ <div class="sec"><h3>Progression order</h3></div><div class="grid"><a class="card" href="#mk" style="text-decoration:none;color:inherit"><h3>Monkey Knowledge</h3><p class="small muted">All nodes in tree order; what to take first is in the how-to.</p></a><a class="card" href="#hard" style="text-decoration:none;color:inherit"><h3>Map medals</h3><p class="small muted">The mode order from Easy to black border.</p></a><a class="card" href="#heroes" style="text-decoration:none;color:inherit"><h3>Hero levels</h3><p class="small muted">What each hero gets at each level.</p></a></div>
+ <p class="src">Source: btd6index.win (2 Towers CHIMPS and 2 Million Pops CHIMPS lists), pulled ${esc(M.pulled)}. Player names are left out on purpose.</p>`;};
+
+// ---------- live
+R.live=()=>{const L=D.live||{};const o=L.odyssey;
+ return `<div class="sec"><h2>Events at build time (${esc(M.pulled)})</h2><p>The events that were running or announced when this guide was built, from Ninja Kiwi Open Data. Events marked Upcoming had not started yet. They change every week, so check the dates: an event whose end date has passed is over.</p></div>
+ ${liveStrip(false)}
+ ${L.boss?`<div class="sec"><h3>Recent bosses</h3></div><div>${L.boss.recent.map(b=>`<span class="pill" style="margin:3px">${esc(b.start)}: ${esc(b.name)}</span>`).join('')}</div><p class="small muted">That boss event's map: ${esc(L.boss.map||'-')} on ${esc(L.boss.difficulty||'-')}, start cash ${money(L.boss.cash)}.</p>`:''}
+ ${o?`<div class="sec"><h3>Odyssey: ${esc(o.name)}</h3><p class="small">${esc(o.desc||'')}</p></div><div class="grid three">${Object.entries(o.levels).map(([d,l])=>`<div class="card"><h3>${d[0].toUpperCase()+d.slice(1)}</h3><p class="small">${l.seats} monkey seats, ${l.monkeys} monkeys max, ${l.power_seats} power seats, ${l.lives} lives${l.extreme?', Extreme':''}.</p><p class="small"><b>Islands:</b> ${l.maps.map(m=>`${esc(m.map)} (${esc(m.mode)}, rounds ${m.start}-${m.end})`).join('; ')}</p><p class="small"><b>Towers allowed:</b> ${l.towers.map(t=>`${esc(t.t)}${t.max>1?' x'+t.max:''}`).join(', ')}</p></div>`).join('')}</div>`:''}
+ <p class="small" style="margin-top:12px"><a class="lk" href="#boss">Boss how-to</a> · <a class="lk" href="#odyssey">Odyssey how-to</a> · <a class="lk" href="#ct">Contested Territory how-to</a></p>`;};
+
+// ---------- videos
+const VT=[['start','Getting started'],['chimps','CHIMPS'],['blackborder','Black borders'],['impoppable','Impoppable'],['rounds','Hard rounds'],['mk','Monkey Knowledge'],['paragon','Paragons'],['heroes','Heroes'],['tierlist','Tier lists (opinion)'],['bosses','Boss events'],['odyssey','Odyssey'],['ct','Contested Territory'],['farming','Farming'],['update','Latest update']];
+R.videos=()=>`<div class="sec"><h2>Videos</h2><p>1 to 3 recent videos per topic, found by a YouTube search on ${esc(M.videos_searched||'?')} (uploaded since ${esc(M.videos_min||'?')}, longer than 2 minutes, one per channel). Titles were checked; the videos were not watched in full. They play here when you are online.</p></div>
+ ${VT.map(([k,t])=>{const v=D.videos[k]||[];return `<div class="sec"><h3>${t}</h3></div>${v.length?`<div class="grid wide">${v.map(vidCard).join('')}</div>`:`<p class="small muted">No recent video matched. <a href="https://www.youtube.com/results?search_query=${encodeURIComponent('btd6 '+t)}" target="_blank" rel="noopener">Search YouTube</a></p>`}`;}).join('')}`;
+function vidCard(v){return `<div class="vid card" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" role="button" tabindex="0"><span class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} · ${esc(v.date)}${v.duration?' · '+Math.round(v.duration/60)+' min':''}</span></span></div>`;}
+
+// ---------- sources
+R.sources=()=>{const I=D.index||{};
+ return `<div class="sec"><h2>Sources &amp; method</h2><p>Everything here comes from these pulls, cached next to the build script (data/raw) with a fetch log of every URL and time.</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Source</th><th>Pulled</th></tr></thead><tbody>${(D.sources||[]).map(s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td style="white-space:nowrap">${esc(s.date)}</td></tr>`).join('')}</tbody></table></div>
+ <div class="grid two" style="margin-top:14px"><div class="card"><h3>Counts</h3><dl class="kv">${Object.entries(C).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${n0(v)}</dd>`).join('')}<dt>how-to guides</dt><dd>${howtos.length}</dd><dt>videos</dt><dd>${Object.values(D.videos).reduce((a,v)=>a+v.length,0)}</dd></dl></div>
+ <div class="card"><h3>How it is made</h3><ul class="small">
+ <li><b>Prices:</b> Medium price from the wiki tables x the cost module's multipliers (Easy ${M.mults&&M.mults[0]}, Hard ${M.mults&&M.mults[2]}, Impoppable ${M.mults&&M.mults[3]}), rounded to $5 like the game.</li>
+ <li><b>Stats:</b> the first attack and first projectile in the datamined tower files, upgrade on one path only.</li>
+ <li><b>How-to steps:</b> written from the cited wiki pages. Each step's Source box quotes the sentence it was written from; the build fails if that quote is not on the cited page, if a number in a step is not in its page, or if a name is not in the data.</li>
+ <li><b>"Community tip"</b> marks advice, not a rule of the game: a tip from a wiki strategy section, or a step this guide draws from the rule quoted in its Source box. The build fails if a step with a judgement word (best, should, instead, build towards...) has no label, and section notes may not carry one at all.</li>
+ <li><b>"No recent source"</b> marks a which-tower claim that lacks two agreeing sources from the last 60 days. Every ranked record row (tier list, builds, crosspaths) carries it unless it has 2+ completions in the last 60 days; the build checks this.</li>
+ <li><b>Tier list and builds:</b> counts of BTD6 Index completions; names are matched to cards and shown with the game's spelling.</li>
+ <li><b>Balance changes:</b> copied row by row from the wiki's per-version patch-note pages (Towers and Heroes sections), with the wiki's own buff / nerf marks.</li></ul></div></div>
+ <div class="card" style="margin-top:14px"><h3>Not verified or missing</h3><ul class="small">
+ <li>No datamined stats on the wiki for ${D.towers.filter(t=>!t.has_stats).map(t=>esc(t.name)).join(', ')}; their cards show prices and descriptions only.</li>
+ <li>Stats show one attack; towers with several attacks or sub-towers have more than what is listed.</li>
+ <li>Record names that could not be matched to a card: ${(I.unresolved||[]).map(esc).join(', ')||'none'}. Record maps not in the wiki's map table: ${(I.unknown_maps||[]).map(esc).join(', ')||'none'}.</li>
+ <li>Strategy pages age: the Impoppable strategy page was last edited ${esc(((howtos.find(s=>s.id==='impoppable')||{steps:[]}).steps.flatMap(s=>s.src).find(s=>s.key==='Strategy_Impoppable__BTD6_')||{}).edited||'?')}; tips from it are marked.</li>
+ <li>Tier letters are counted from record runs, almost all older than 60 days, so they are labelled "No recent source"; no opinion tier list from the last 60 days could be checked against a second source.</li>
+ <li>Events are a snapshot from ${esc(M.pulled)}; events that had ended by then are greyed out and marked Ended, and events that had not started yet are marked Upcoming.</li>
+ <li>Several patch-note pages carry the wiki's own "in need of research" notes, so a change can be missing or still unconfirmed there.</li>
+ <li>Videos are picked by a search rule and title check, not watched in full.</li></ul></div>
+ <p class="small muted">Fan-made, not affiliated with Ninja Kiwi. Game pictures from Blooncyclopedia file pages (owned by Ninja Kiwi; list with source URLs in assets/manifest.json). Heading font: Fredoka (SIL Open Font License), bundled.</p>`;};
+
+// ---------- search
+const IDX=[];
+D.towers.forEach(t=>{IDX.push({t:t.name,k:t.cat+' tower',go:'tower/'+t.slug,img:t.img,x:t.desc});t.paths.forEach(r=>r.forEach(u=>{if(u)IDX.push({t:u.name,k:t.name+' '+u.path+'-'+u.tier,go:'tower/'+t.slug,hl:u.name,img:u.img,x:u.desc});}));});
+D.paragons.forEach(p=>IDX.push({t:p.name,k:'Paragon · '+p.tower,par:p.slug,img:p.img,x:p.desc}));
+D.heroes.forEach(h=>IDX.push({t:h.name,k:'Hero · '+h.title,go:'hero/'+h.slug,img:h.img,x:h.desc}));
+D.bloons.forEach(b=>IDX.push({t:b.name,k:'Bloon',bloon:b.slug,img:b.img,x:b.immune}));
+D.bosses.forEach(b=>IDX.push({t:b.name,k:'Boss Bloon',boss:b.slug,img:b.img,x:b.title}));
+D.maps.forEach(m=>IDX.push({t:m.name,k:'Map · '+m.diff,map:m.slug,img:m.img,x:''}));
+D.mk.forEach(k=>IDX.push({t:k.name,k:'Monkey Knowledge · '+k.cat,mk:k.slug,img:k.img,x:k.desc}));
+D.powers.forEach(p=>IDX.push({t:p.name,k:'Power',power:p.slug,img:p.img,x:p.desc}));
+D.rounds.forEach(r=>IDX.push({t:'Round '+r.n,k:'Round',go:'rounds',round:r.n,x:r.g.map(g=>g.b).join(' ')+' '+(r.why||'')}));
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id,x:g})));
+howtos.forEach(s=>IDX.push({t:s.title,k:'How-to',go:s.id==='comeback'?'start':s.id,x:(s.steps||[]).map(p=>p.t).join(' ')}));
+const norm=s=>String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,'');
+let hits=[],sel=0,activeQ=null;
+function doSearch(q,box){const r=box||$('#res');q=norm(q).trim();if(!q){r.classList.remove('on');return;}
+ const words=q.split(/\s+/);
+ hits=IDX.map(e=>{const t=norm(e.t),x=norm(e.x);let sc=0;if(t===q)sc=100;else if(t.startsWith(q))sc=60;else if(t.includes(q))sc=40;else if(words.every(w=>t.includes(w)||x.includes(w)))sc=10;if(sc&&e.k==='Round'&&sc<60)sc=5;return [sc,e];}).filter(a=>a[0]>0).sort((a,b)=>b[0]-a[0]||a[1].t.length-b[1].t.length).slice(0,14).map(a=>a[1]);
+ sel=0;r.innerHTML=hits.length?hits.map((e,i)=>`<div class="${i===0?'sel':''}" data-i="${i}" role="option">${e.img?img(e.img,''):''}<span>${esc(e.t)}</span><i>${esc(e.k)}</i></div>`).join(''):'<div class="none">No match. Try a tower, upgrade, hero, map or "round 63".</div>';r.classList.add('on');}
+function goHit(e){if(!e)return;document.querySelectorAll('.results').forEach(x=>x.classList.remove('on'));$('#q').value='';$('#q').blur();$('#side').classList.remove('open');
+ if(e.par)openModal(paragonCard(e.par));else if(e.bloon)openModal(bloonCard(e.bloon));else if(e.boss){location.hash='bosses';}else if(e.map)openModal(mapCard(e.map));else if(e.mk){MKT=MKB[e.mk].cat;location.hash==='#mk'?render():location.hash='mk';}else if(e.power){location.hash='powers';}
+ else if(e.round){const n=e.round;RR=n<=40?'1-40':n<=80?'41-80':n<=100?'81-100':'101-140';RKEY=false;PENDING_ROUND=n;if(location.hash==='#rounds')render();else location.hash='rounds';}
+ else{if(e.hl)PENDING_HL=e.hl;if(location.hash==='#'+e.go)render();else location.hash=e.go;}}
+let PENDING_HL=null,PENDING_ROUND=null;
+$('#q').addEventListener('input',e=>doSearch(e.target.value));
+function keyNav(e,box){const r=box;if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...r.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){goHit(hits[sel]);}else if(e.key==='Escape'){r.classList.remove('on');}}
+$('#q').addEventListener('keydown',e=>keyNav(e,$('#res')));
+document.addEventListener('mousedown',e=>{const d=e.target.closest('.results [data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search')&&!e.target.closest('#homeres')&&e.target.id!=='homeq')document.querySelectorAll('.results').forEach(x=>x.classList.remove('on'));});
+
+// ---------- modal
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;$('#modal .x').focus();}
+function closeModal(){if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.vid')){e.preventDefault();playVideo(e.target.dataset.vid,e.target.dataset.title);}});
+function playVideo(id,title){openModal(`<h3 style="margin-right:44px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+
+// ---------- clicks + routing
+document.addEventListener('click',e=>{
+ const a=e.target.closest('[data-par],[data-bloon],[data-boss],[data-map],[data-mk],[data-power]');
+ if(a){e.preventDefault();const d=a.dataset;if(d.par)openModal(paragonCard(d.par));else if(d.bloon)openModal(bloonCard(d.bloon));else if(d.map)openModal(mapCard(d.map));
+  else if(d.boss){closeModal();location.hash='bosses';}else if(d.mk){MKT=(MKB[d.mk]||{}).cat||MKT;closeModal();if(location.hash==='#mk')render(false);else location.hash='mk';}else if(d.power){closeModal();location.hash='powers';}return;}
+ const hl=e.target.closest('a[data-hl]');if(hl){PENDING_HL=hl.dataset.hl;if(hl.getAttribute('href')===location.hash){e.preventDefault();render();}}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const g=e.target.closest('[data-go]');if(g){location.hash=g.dataset.go;return;}
+ const sb=e.target.closest('.srcbtn');if(sb){const box=document.getElementById('src'+sb.dataset.src);if(box){box.classList.toggle('on');sb.setAttribute('aria-expanded',box.classList.contains('on'));}return;}
+ const di=e.target.closest('#diff button');if(di){DI=+di.dataset.di;try{localStorage.setItem('btd6.diff',DI);}catch(err){}$('#diff').innerHTML=diffHtml();render(false);return;}
+ const b=e.target.closest('.tabs[data-set] button');if(b){const set=b.parentNode.dataset.set,val=b.dataset.v;
+  if(set==='TCAT')TCAT=val;else if(set==='RR')RR=val;else if(set==='RKEY')RKEY=val==='1';else if(set==='MD')MD=val;else if(set==='MKT')MKT=val;else if(set==='TK')TK=val;else if(set==='TSORT')TSORT=val;else if(set==='BD')BD=val;render(false);}
+});
+function keepFocus(id,fn){const el=document.getElementById(id);const pos=el?el.selectionStart:0;fn();const n=document.getElementById(id);if(n){n.focus();n.setSelectionRange(pos,pos);}}
+main.addEventListener('input',e=>{const id=e.target.id;
+ if(id==='tq')keepFocus(id,()=>{TQ=e.target.value.toLowerCase();render(false);});
+ else if(id==='mq')keepFocus(id,()=>{MQ=e.target.value.toLowerCase();render(false);});
+ else if(id==='homeq'){let box=$('#homeres');if(!box){box=document.createElement('div');box.className='results';box.id='homeres';box.style.position='relative';box.style.top='0';e.target.parentNode.after(box);}doSearch(e.target.value,box);}});
+main.addEventListener('keydown',e=>{if(e.target.id==='homeq'){const box=$('#homeres');if(box)keyNav(e,box);}});
+$('#menuBtn').addEventListener('click',()=>$('#side').classList.toggle('open'));
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#side').classList.remove('open');});
+
+function render(top=true){let h;try{h=decodeURIComponent(location.hash.slice(1))||'home';}catch(e){h='home';}const [r,arg]=h.split('/');
+ const own=typeof R[r]==='function';const f=own?R[r]:R.home;let cur=own?r:'home';
+ if(r==='tower')cur='towers';if(r==='hero')cur='heroes';
+ SRCN=0;
+ try{main.innerHTML=f(arg)+`<footer>${$('#checked').innerHTML}<br>Fan-made guide, not affiliated with Ninja Kiwi · <a href="#sources">Sources &amp; method</a></footer>`;}
+ catch(err){main.innerHTML=`<p class="note warn">This section failed to draw: ${esc(err.message)}. <a href="#home">Home</a></p>`;console.error(err);}
+ $('#nav').innerHTML=navHtml(cur);
+ const title=r==='tower'&&TB[arg]?TB[arg].name:r==='hero'&&HB[arg]?HB[arg].name:(HT[r]||{}).title;
+ document.title=(title?title+' · ':'')+'Bloons TD 6 Field Guide';
+ if(PENDING_HL){const el=[...document.querySelectorAll('.up[data-up]')].find(x=>x.dataset.up===PENDING_HL);PENDING_HL=null;if(el){el.style.background='rgba(255,210,63,.16)';el.style.borderRadius='12px';el.scrollIntoView({block:'center'});return;}}
+ if(PENDING_ROUND){const el=document.getElementById('r'+PENDING_ROUND);PENDING_ROUND=null;if(el){el.classList.add('mark');el.scrollIntoView({block:'center'});return;}}
+ if(top)window.scrollTo(0,0);}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+})();
+</script>
+</body>
+</html>

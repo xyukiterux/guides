@@ -1,0 +1,11 @@
+{
+ "note": "Videos found by the search that were turned down after reading the title. The search skips them.",
+ "rejected": {
+  "65S6gYML6wg": "A Race event run on one map; not about Monkey Knowledge (the title says No Monkey Knowledge).",
+  "RcTc5as8t58": "A two-minute personal-best clip, not a guide to Contested Territory.",
+  "3bpLy0qvEpA": "Plays the new quest without explaining the update.",
+  "EQXyMS-RpU8": "About a game mod that gives unlimited Monkey Knowledge, not how to spend it.",
+  "eXksVgbwBVc": "A challenge run for entertainment, not a guide to the Boss event.",
+  "HPsluhuRQ8w": "A Race event tutorial on one map; 'Minimum Monkey Knowledge' in the title means it avoids Monkey Knowledge, it is not about it."
+ }
+}

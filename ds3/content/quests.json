@@ -1,0 +1,265 @@
+{
+ "intro": "The questlines that change what you can get or which ending you can reach. Steps are in order; red lines are the points you can lose for this playthrough. The full wiki text for each NPC is behind the Full questline button.",
+ "npcs": [
+  {
+   "npc": "Yoel of Londor",
+   "also": ["Yuria of Londor", "Anri of Astora"],
+   "reward": "The Usurpation of Fire ending; Yuria's shop",
+   "s": ["Ending (Dark Souls III)", "Yoel of Londor"],
+   "steps": [
+    "Agree to serve [[Yoel of Londor]] at the crumbled bridge near the start of [[Undead Settlement]]; he moves to [[Firelink Shrine]].",
+    {
+     "t": "Choose Draw Out True Strength with Yoel: a free level and a Dark Sigil. Each death now raises your Hollowing. At 2, 6, 12 and 15 Hollowing he offers it again, up to 5 sigils.",
+     "s": ["Yoel of Londor", "Dark Sigil"]
+    },
+    "Talk to [[Anri of Astora]] and [[Horace the Hushed]] near Halfway Fortress in [[Road of Sacrifices]] until they repeat themselves.",
+    "Beat [[Deacons of the Deep]] and talk to Anri at the shrine until they say they are going to [[Irithyll of the Boreal Valley]].",
+    "With all 5 sigils, enter [[Catacombs of Carthus]]. Yoel dies and [[Yuria of Londor]] takes his place at the shrine.",
+    "Find Anri near the giant rolling ball and answer No when they ask about Horace.",
+    "Talk to Anri at the Church of Yorshka bonfire in Irithyll until you get the Quiet resolve gesture.",
+    "Beat [[Pontiff Sulyvahn]], then talk to Yuria until she says Anri waits in the Darkmoon Tomb.",
+    "Go to the Darkmoon Tomb before the elevator to [[Anor Londo]], take the [[Sword of Avowal]] from the pilgrim and use the action button on Anri's mat."
+   ],
+   "missable": [
+    "Get all 5 sigils before the Catacombs of Carthus banner appears: entering the Catacombs kills Yoel. Beating the [[Abyss Watchers]] and using their bonfire is still safe.",
+    "Do not kill the [[Old Woman of Londor]] in the Church of Yorshka: that ends Yuria's quest.",
+    "Do not heal your Dark Sigils with the [[Fire Keeper]]: that fails the quest."
+   ]
+  },
+  {
+   "npc": "Siegward of Catarina",
+   "reward": "Siegward helps against Yhorm (if freed before you first enter the arena); Siegbräu, Catarina armor",
+   "s": ["Siegward of Catarina"],
+   "steps": [
+    "Ride the two-stage elevator in the [[Undead Settlement]] church and talk to Siegward.",
+    "Jump off the elevator halfway onto the hidden platform where Siegward sits on a ledge.",
+    "Kill the Demon below together with Siegward for a Siegbräu and the Toast gesture.",
+    "After meeting [[Unbreakable Patches]] in [[Cathedral of the Deep]], find Siegward stuck in a well outside the Cleansing Chapel bonfire. Get his armor back from Patches (buy it or kill him).",
+    "Find him in the kitchen near the Distant Manor bonfire in [[Irithyll of the Boreal Valley]], past the Sewer Centipedes.",
+    "Get the [[Old Cell Key]] in [[Irithyll Dungeon]], then reach his cell from [[Profaned Capital]]: drop from the roof near the Court Sorcerer. Open the cell and talk to him."
+   ],
+   "missable": [
+    "To have Siegward join the [[Yhorm the Giant]] fight with a [[Storm Ruler]], free him before you first enter Yhorm's boss arena.",
+    "Free and talk to Siegward before you beat [[Yhorm the Giant]]. Otherwise you only get the [[Storm Ruler]]: no armor, shield or Siegbräu.",
+    "If you unlock his cell but do not talk to him, he stays there and does not join the Yhorm fight."
+   ]
+  },
+  {
+   "npc": "Sirris of the Sunless Realms",
+   "also": ["Holy Knight Hodrick"],
+   "reward": "Silvercat Ring, Sunset Shield and armor, Sirris summon for later bosses",
+   "s": ["Sirris of the Sunless Realms"],
+   "steps": [
+    "Light the Halfway Fortress bonfire; Sirris appears at the shrine briefly.",
+    "Give the [[Dreamchaser's Ashes]] to the [[Shrine Handmaid]]. Sirris comes back, teaches Darkmoon Loyalty and leaves her sign for the Deacons and the Abyss Watchers.",
+    "In Irithyll light the Central Irithyll bonfire, reload, and use her sign at the start of the bridge to help her against Creighton. She thanks you with the [[Silvercat Ring]].",
+    "After [[Curse-rotted Greatwood]] and [[Aldrich, Devourer of Gods]] are dead, buy the special [[Budding Green Blossom]] from the Handmaid.",
+    "Go back to the Greatwood arena in [[Undead Settlement]] and use her sign at the edge of the pit to help her against [[Holy Knight Hodrick]].",
+    "Accept her vow of knighthood at the shrine. You can then summon her for [[Dragonslayer Armour]] and the Twin Princes."
+   ],
+   "missable": [
+    "Offering a [[Pale Tongue]] to [[Rosaria, Mother of Rebirth]] fails Sirris's quest. Finish Sirris first, then Leonhard's quest."
+   ]
+  },
+  {
+   "npc": "Holy Knight Hodrick",
+   "reward": "Meeting him before he dies",
+   "s": ["Holy Knight Hodrick"],
+   "steps": [
+    "Ride the metal cage on the back of the friendly Hollow Manservant at the top of the highest cliff in [[Undead Settlement]] to reach him."
+   ],
+   "missable": [
+    "Visit him before you fight [[Curse-rotted Greatwood]]: the floor above the Pit of Hollows breaks during the fight and kills him."
+   ]
+  },
+  {
+   "npc": "Greirat of the Undead Settlement",
+   "reward": "Blue Tearstone Ring and a shop that grows",
+   "s": ["Greirat of the Undead Settlement", "Unbreakable Patches"],
+   "steps": [
+    "Open his cell below the Tower on the Wall bonfire in [[High Wall of Lothric]] with the Cell Key.",
+    "Find [[Loretta's Bone]] on the body hanging from the balcony of the first three-story building in [[Undead Settlement]]; hit it down and give it to him. You keep the [[Blue Tearstone Ring]].",
+    "Reload the area twice (he grieves, then gives the Curl up gesture).",
+    "Let him go pillaging. He comes back after you beat any area boss and sells new items."
+   ],
+   "missable": [
+    "For the Irithyll trip, [[Unbreakable Patches]] must already be at the shrine: he goes to rescue Greirat, and you must reload and beat an area boss for both to return.",
+    "Never send him to [[Lothric Castle]]: there is no way to save him."
+   ]
+  },
+  {
+   "npc": "Orbeck of Vinheim",
+   "reward": "Sorceries, Young Dragon Ring, Slumbering Dragoncrest Ring",
+   "s": ["Orbeck of Vinheim"],
+   "steps": [
+    "Find him on the second floor of the ruins where [[Crystal Sage]] is fought, in Crucifixion Woods.",
+    "Have 10 Intelligence (the [[Scholar Ring]] counts) and ask to learn sorceries; he moves to the shrine.",
+    "Give him at least one sorcery scroll.",
+    "Learn any four sorceries for the [[Young Dragon Ring]] (not given if you started as a [[Sorcerer]]).",
+    "Learn Aural Decoy, Farron Flashsword, Spook and Pestilent Mist for the Silent Ally gesture and the [[Slumbering Dragoncrest Ring]]."
+   ],
+   "missable": [
+    "Bring him a sorcery scroll before you defeat four bosses, or he leaves for this playthrough."
+   ]
+  },
+  {
+   "npc": "Irina of Carim",
+   "also": ["Eygon of Carim"],
+   "reward": "Miracles shop; Eygon summon",
+   "s": ["Irina of Carim", "Eygon of Carim", "Grave Key"],
+   "steps": [
+    "Buy the [[Grave Key]] from the Handmaid after giving her the [[Mortician's Ashes]].",
+    "Reach Irina's cell in [[Undead Settlement]] through the sewers and open the second door with the key.",
+    "Accept her service; she moves to the east-wing basement of the shrine and sells miracles.",
+    "Talk to her at least once to get [[Eygon of Carim]]'s summon sign before the [[Crystal Sage]]."
+   ],
+   "missable": [
+    "Buying even one dark miracle from her makes Eygon take her to the Iudex Gundyr bonfire, where he turns hostile."
+   ]
+  },
+  {
+   "npc": "Anri of Astora",
+   "also": ["Horace the Hushed"],
+   "reward": "Ring of the Evil Eye, Quiet Resolve; Anri's Straight Sword (Aldrich route) or the Sword of Avowal and three Dark Sigils (Londor route)",
+   "s": ["Anri of Astora"],
+   "steps": [
+    "Meet Anri and Horace near the Halfway Fortress bonfire in [[Road of Sacrifices]]. Horace gives the [[Blue Sentinels]] emblem.",
+    "Use their summon signs for [[Deacons of the Deep]]. Once you have the [[Small Doll]], they appear at Firelink Shrine: talk to Anri.",
+    "After the [[Abyss Watchers]], find Anri in the [[Catacombs of Carthus]] near the rope bridge, then decide about Horace (in a cavern in [[Smouldering Lake]]).",
+    "In [[Irithyll of the Boreal Valley]], talk to Anri at the Church of Yorshka to learn Quiet Resolve. Anri gives the [[Ring of the Evil Eye]] here if you left the Catacombs without finding out about Horace.",
+    "Decide about the assassin hidden in the Church of Yorshka. Kill her: Anri goes on to fight [[Aldrich, Devourer of Gods]] and [[Yuria of Londor]]'s questline ends. Spare her: the Londor route, and Yuria's questline goes on.",
+    "Aldrich route, after [[Pontiff Sulyvahn]]: use Anri's summon sign in front of the doors of the grand cathedral of [[Anor Londo]] and help Anri defeat Aldrich. Then [[Ludleth of Courland]] gives you [[Anri's Straight Sword]].",
+    "Londor route, after [[Pontiff Sulyvahn]]: go to Gwyn's honorary tomb in [[Anor Londo]]. The Old Woman of Londor gives the [[Sword of Avowal]]; perform the wedding with Anri for three [[Dark Sigil]]s."
+   ],
+   "missable": [
+    "If you leave Horace alive and tell Anri where he is, Anri goes to him and dies: the quest ends.",
+    "If you kill Horace first and then tell Anri, you get the [[Ring of the Evil Eye]] and the quest goes on.",
+    "On the Aldrich route Anri later turns up hollowed and hostile: near the Cathedral of the Deep bonfire, or at Horace's grave in [[Smouldering Lake]] if you told Anri where he was."
+   ]
+  },
+  {
+   "npc": "Ringfinger Leonhard",
+   "also": ["Rosaria, Mother of Rebirth"],
+   "reward": "Red Eye Orb, Applause; invade him for the Crescent Moon Sword, Silver Mask and Soul of Rosaria",
+   "s": ["Ringfinger Leonhard", "Rosaria, Mother of Rebirth"],
+   "steps": [
+    "After you light the Tower on the Wall bonfire or defeat [[Vordt of the Boreal Valley]], Leonhard appears at Firelink Shrine and gives you five [[Cracked Red Eye Orb]]s.",
+    "After the [[Curse-rotted Greatwood]] or the Cliff Underside bonfire, talk to him by Lothric's throne while you hold a [[Pale Tongue]]: he gives the Lift Chamber Key.",
+    "Open the door under the Tower on the Wall bonfire in [[High Wall of Lothric]] and kill the Darkwraith at the bottom of the elevator for a full [[Red Eye Orb]].",
+    "Talk to him again for the Applause gesture; he asks you to join [[Rosaria's Fingers]].",
+    "Offer a [[Pale Tongue]] to [[Rosaria, Mother of Rebirth]] (not the rebirth or appearance services): Leonhard then greets you near the entrance to her chamber.",
+    "When you reach [[Profaned Capital]] past [[Irithyll Dungeon]] (the Rosaria page says: the first bonfire in [[Anor Londo]]), he murders Rosaria and flees to [[Anor Londo]]. Take the [[Black Eye Orb]] she leaves behind.",
+    "Use the [[Black Eye Orb]] in [[Anor Londo]], in the chamber that once held the illusion of Gwynevere, to invade Leonhard's world. He drops the [[Soul of Rosaria]], his Silver Mask and the [[Crescent Moon Sword]]; the Shrine Handmaid then sells the rest of his set.",
+    "Return the soul to revive her, or give it to [[Ludleth of Courland]] for the [[Bountiful Sunlight]] miracle. Her death has no consequences: you can still reallocate, change appearance and offer Pale Tongues to rank up in the covenant."
+   ],
+   "missable": [
+    "Offering a Pale Tongue to Rosaria makes [[Sirris of the Sunless Realms]]'s questline fail: complete Sirris' questline first, then Leonhard's."
+   ]
+  },
+  {
+   "npc": "Cornyx of the Great Swamp",
+   "reward": "Pyromancy shop",
+   "s": ["Cornyx of the Great Swamp"],
+   "steps": [
+    "Drop from the right side of the bridge near the guillotine in [[Undead Settlement]] onto the ledge below and follow the path (Cliff Underside bonfire) to his cage.",
+    "Agree to be his pupil; he moves to the shrine basement and sells pyromancies."
+   ],
+   "missable": []
+  },
+  {
+   "npc": "Karla",
+   "reward": "Dark sorceries and miracles shop",
+   "s": ["Karla", "Jailer's Key Ring"],
+   "steps": [
+    "Get the [[Jailer's Key Ring]] via the swamp of [[Profaned Capital]] (upper levels of the Giant Slave's cell).",
+    "Open her cell on the lower level of [[Irithyll Dungeon]] and agree to rescue her; she moves under the stairs left of Andre."
+   ],
+   "missable": []
+  },
+  {
+   "npc": "Hawkwood",
+   "reward": "Duel for the dragon stones; summon at Oceiros",
+   "s": ["Hawkwood the Deserter"],
+   "steps": [
+    "Meet him on the stairs in front of the shrine bonfire.",
+    "If you own all three dragon stones and got [[Hawkwood's Swordgrass]] from Andre, he waits near the Abyss Watchers bonfire in [[Farron Keep]] for a duel."
+   ],
+   "missable": []
+  },
+  {
+   "npc": "Giant Archer of the Undead Settlement",
+   "reward": "Hawk Ring without a fight",
+   "s": ["Giant Archer of the Undead Settlement"],
+   "steps": [
+    "Carry a [[Young White Branch]] when you meet him and he stays friendly.",
+    "Collect all the Young White Branches in the base game (Undead Settlement, Cathedral of the Deep and Farron Keep); he dies on his own and you can loot the [[Hawk Ring]]."
+   ],
+   "missable": []
+  },
+  {
+   "npc": "Amnesiac Lapp",
+   "reward": "Lapp's ending in The Ringed City",
+   "s": ["Amnesiac Lapp"],
+   "steps": [
+    "Talk to Lapp each time you find him in [[The Ringed City]].",
+    "Find the Purging Monument and tell him."
+   ],
+   "missable": [
+    "Tell him about the Purging Monument before you fight [[Slave Knight Gael]], or he turns hollow and attacks you."
+   ]
+  },
+  {
+   "npc": "Unbreakable Patches",
+   "reward": "Prostration and Patches squat gestures, Rusted Coin, Rusted Gold Coin, a shop at Firelink Shrine",
+   "s": ["Unbreakable Patches"],
+   "steps": [
+    "In the [[Cathedral of the Deep]], take the elevator up near the entrance to the [[Deacons of the Deep]] boss room and open the large double doors to the rooftop. Patches, wearing the Catarina Set, asks you to cross a bridge.",
+    "In the middle of the bridge he lowers it to have the Giant Slaves kill you. He then waits on the opposite side of the bridge, shortly before the room where [[Rosaria, Mother of Rebirth]] is met.",
+    "Talk to him there and choose \"You know who I am\": he gives the Prostration gesture and a [[Rusted Coin]], and becomes a merchant.",
+    "At Firelink Shrine, take the elevator in the tower (the one that needs the [[Tower Key]]) to the top of the belfry: Patches locks the gate behind you.",
+    "Get out by dropping down onto the coffins that stick out of the wall (Spook or the [[Silvercat Ring]] help) or by warping with a [[Homeward Bone]].",
+    "Find him on the upper level of the shrine near the Giant Tree. Refuse to forgive him for a [[Rusted Gold Coin]]; he then sells his wares there for the rest of the game. Reload the area and talk to him while he squats for the Patches squat gesture.",
+    "If you sent [[Greirat of the Undead Settlement]] to pillage and tell Patches, he leaves to save Greirat; both return after you beat an area boss."
+   ],
+   "missable": [
+    "Take the elevator to the cathedral roof from the Cleansing Chapel first and the bridge trap does not happen: his first encounter is then the Firelink Shrine trap.",
+    "Telling Patches about Greirat makes him leave only if you have not bought the full Catarina Set from him."
+   ]
+  },
+  {
+   "npc": "Yuria of Londor",
+   "also": ["Yoel of Londor", "Anri of Astora"],
+   "reward": "Dignified Bow, Morion Blade, Yuria as a summon for Soul of Cinder; the Usurpation of Fire ending",
+   "s": ["Yuria of Londor"],
+   "steps": [
+    "Draw out true strength with [[Yoel of Londor]] until you have all five [[Dark Sigil]]s before you reach the [[Catacombs of Carthus]]. Next time you visit Yoel's place he is dead and Yuria stands close by.",
+    "Talk to her for the Dignified Bow gesture.",
+    "Once [[Orbeck of Vinheim]] has moved to Firelink Shrine she asks you to settle the matter of Orbeck; bring her Orbeck's Ashes for the [[Morion Blade]].",
+    "Once you reach the [[Catacombs of Carthus]] she says she is guiding [[Anri of Astora]] to Irithyll. Keep Anri alive until [[Pontiff Sulyvahn]] has been defeated.",
+    "Do not kill the Londor Pilgrim within the Church of Yorshka.",
+    "Find Anri in the old Darkmoon tomb in [[Anor Londo]] and marry Anri for 3 more Dark Sigils, a total of 8.",
+    "Yuria then swears fealty to the Lord of Hollows; she no longer turns aggressive if attacked, unless the Fire Keeper heals your Dark Sigils. She can be summoned for [[Soul of Cinder]]. Link the First Flame while you hold 8 Dark Sigils for the Usurpation of Fire ending."
+   ],
+   "missable": [
+    "If Yoel dies before you have all five Dark Sigils, Yuria never appears.",
+    "Yuria disappears if Anri dies at any point before Pontiff Sulyvahn.",
+    "If you kill or anger Yuria, the Londor Pale Shade invades you in [[Farron Keep]] and [[Irithyll of the Boreal Valley]] instead."
+   ]
+  },
+  {
+   "npc": "Shira, Knight of Filianore",
+   "reward": "Sacred Chime of Filianore, Titanite Slab",
+   "s": ["Shira, Knight of Filianore"],
+   "steps": [
+    "In [[The Ringed City]], climb the stairs above the Ringed City Streets swamp, patrolled by Harald Legion Knights, to a large door. Shira speaks to you from the other side.",
+    "Tell her the name of Lord Gwyn, then accept her request to put [[Darkeater Midir]] to rest: she gives the [[Sacred Chime of Filianore]].",
+    "Her summon sign is inside the small shrine from which Midir's arena can be accessed; summoning her or not makes no difference to her request.",
+    "Defeat Midir, then talk to Shira for a [[Titanite Slab]]."
+   ],
+   "missable": [
+    "Do Midir before you touch the slumbering Filianore: after that Shira leaves her old places, turns permanently hostile and ambushes you in a ruin in the ash desert near the Filianore's Rest bonfire.",
+    "If you kill her there she drops the Crucifix of the Mad King and any gift she had not yet given; her set lies on a corpse behind her old door."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2299 @@
+{
+ "note": "Boss strategy lines rewritten from the cached GamerGuides fight sections (one action per line). Every line cites its page; build.py checks names, numbers and that each line is one action. 'where' fills a location the wiki templates leave blank. 'no_source' lists bosses no cached page has a strategy for, with the reason shown on the card.",
+ "bosses": [
+  {
+   "boss": "Smog",
+   "tips": [
+    {
+     "t": "Keep the Luminary's HP above 10: Smogs only use regular attacks.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    },
+    {
+     "t": "Cast Frizz if physical attacks keep missing.",
+     "src": [
+      "gg:walkthrough__prologue__birth-of-a-luminary"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Heliodorian Guard",
+   "tips": [
+    {
+     "t": "Cast Zap or Bang with the Luminary to hit the whole group.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Send Erik after the two senior guards with Sleeper Hit.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Use Scorched Earth if the Luminary and Erik are pepped up.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Great Sabrecat",
+   "tips": [
+    {
+     "t": "Have Hendrik cast Kabuff on the party: the Sabrecat mostly attacks physically.",
+     "src": [
+      "gg:tickington__altar-of-the-cursed-king"
+     ]
+    },
+    {
+     "t": "Keep HP topped up: its desperate attack ignores defense.",
+     "src": [
+      "gg:tickington__altar-of-the-cursed-king"
+     ]
+    },
+    {
+     "t": "Bring it down fast: the creature only has around 1100 HP total.",
+     "src": [
+      "gg:tickington__altar-of-the-cursed-king"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Coralossus",
+   "tips": [
+    {
+     "t": "Cast Zap with the Luminary: it hits the golems' weakness.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Cast Sap on them to lower their defense.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Cast Oomph on Erik and the Luminary to boost Pursecutter and Cutting Edge.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Robbin' 'Ood",
+   "tips": [
+    {
+     "t": "Cure sealed spells at once, especially on Veronica.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Finish him with Cutting Edge: he has only around 250 HP.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Merry Man",
+   "tips": [
+    {
+     "t": "Defeat the Merry Men before Robbin' 'Ood.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    },
+    {
+     "t": "Cast Zap and Sizzle to clear them quickly.",
+     "src": [
+      "gg:walkthrough__act-i__to-puerto-valor"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Abominable Showman",
+   "tips": [
+    {
+     "t": "Cast Zap on the Showman's clones to clear them all at once.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Defend for a round when both opponents are pepped up.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Malicious version: hit every fighter at once with Quadraslash.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Underdigger",
+   "tips": [
+    {
+     "t": "Focus attacks on the Underdigger first: his desperate attacks are the bigger threat.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Block his hits with Greatsword Guard or Sword Stance.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Use Cutting Edge on him.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Malicious version: have Sylvando pass turns to Veronica for Kaboomle.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Sterling Sylva",
+   "tips": [
+    {
+     "t": "Concentrate every attack on Sterling Sylva.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Cure the poison from his kiss with a herb right away.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Heal more often once he raises his attack and defense.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Masked Rab",
+   "tips": [
+    {
+     "t": "Target Rab first: his Snooze and Midheal can swing the match.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Heal the Luminary whenever HP drops below 80.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Masked Jade",
+   "tips": [
+    {
+     "t": "Defeat Rab before Jade.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Defend when both are pepped up: their joint pep power hits very hard.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Vince Vanquish",
+   "tips": [
+    {
+     "t": "Use plain attacks: he has only 150 HP.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Skip healing: most of his attacks miss.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Hades Condor",
+   "tips": [
+    {
+     "t": "Defeat the Hades Condors escorting the Elysium Bird first: they have little HP.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Use Jade's Harvest Moon against them.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Malicious version: cast Magic Barrier to cut Kasizzle damage.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Malicious version: keep HP high, since its regular attacks deal over 150.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Boodica's Right-hand Man",
+   "tips": [
+    {
+     "t": "Take out both hand men before Boodica.",
+     "src": [
+      "gg:walkthrough__character-interludes__jade-journeys-forth"
+     ]
+    },
+    {
+     "t": "Use Multithrust on each of them: they have around 350 HP.",
+     "src": [
+      "gg:walkthrough__character-interludes__jade-journeys-forth"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Boodica's Left-hand Man",
+   "tips": [
+    {
+     "t": "Take out both hand men before Boodica.",
+     "src": [
+      "gg:walkthrough__character-interludes__jade-journeys-forth"
+     ]
+    },
+    {
+     "t": "Use Multithrust on each of them: they have around 350 HP.",
+     "src": [
+      "gg:walkthrough__character-interludes__jade-journeys-forth"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Rab",
+   "where": {
+    "t": "The Void, a sparring match against Rab set by Grand Master Pang on the journey to Angri-La (Act II).",
+    "src": [
+     "gg:walkthrough__act-ii__journey-to-angri-la"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Keep casting Quadraslash: the goal is to power it up, not to beat Rab.",
+     "src": [
+      "gg:walkthrough__act-ii__journey-to-angri-la"
+     ]
+    },
+    {
+     "t": "Defend the round after Rab prepares himself: Pearly Gates follows.",
+     "src": [
+      "gg:walkthrough__act-ii__journey-to-angri-la"
+     ]
+    },
+    {
+     "t": "Cast Moreheal on the Luminary if HP drops below 150.",
+     "src": [
+      "gg:walkthrough__act-ii__journey-to-angri-la"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Rab's Shadow",
+   "where": {
+    "t": "Copies Rab summons during the sparring match in the Void, on the journey to Angri-La (Act II).",
+    "src": [
+     "gg:walkthrough__act-ii__journey-to-angri-la"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Ignore the copies: the fifth Quadraslash ends the fight.",
+     "src": [
+      "gg:walkthrough__act-ii__journey-to-angri-la"
+     ]
+    },
+    {
+     "t": "Heal through the copies' Zam and Kasap.",
+     "src": [
+      "gg:walkthrough__act-ii__journey-to-angri-la"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Knight Aberrant",
+   "tips": [
+    {
+     "t": "Cast Sap on it: it has high defense.",
+     "src": [
+      "gg:tickington__altar-of-origins__damdara"
+     ]
+    },
+    {
+     "t": "Recast Sap whenever it uses Buff on itself.",
+     "src": [
+      "gg:tickington__altar-of-origins__damdara"
+     ]
+    },
+    {
+     "t": "Cast Oomphle on your attackers.",
+     "src": [
+      "gg:tickington__altar-of-origins__damdara"
+     ]
+    },
+    {
+     "t": "Heal often: Tackle can hit one character for 180+.",
+     "src": [
+      "gg:tickington__altar-of-origins__damdara"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Gyldenbritches",
+   "tips": [
+    {
+     "t": "Focus the whole party on the Gyldenbritches: it uses desperate attacks and calls allies.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "In the Viking Hideout rematch, have the Luminary use Quadraslash on the other monsters.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "Use an Oomphle-boosted Unbridled Blade on the ones Gyldygga summons.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tweedledoom",
+   "tips": [
+    {
+     "t": "Defeat Tweedledoom first: Seismic Shock hits the party for over 170.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Bench Sylvando and Hendrik until one twin is in critical condition.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Finish each twin with Executioner from Sylvando and Hendrik.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tweedledeath",
+   "tips": [
+    {
+     "t": "Wear it down until its name turns orange.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Finish it with Executioner.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Toss Hendrik a Pep Pip to repeat Executioner on the second twin.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Calasmos",
+   "where": {
+    "t": "Final fight of Act III, after the Drustan trials: call Cetacea and fly toward the dark star in the sky.",
+    "src": [
+     "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Use the Super Sword of Light from the inventory on the Luminary's first turn to strip his dark aura.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Keep the Luminary and Veronica in the party for Gigagash and Kaboomle when Darklings appear.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Cast Magic Barrier against Kaboomle and Projectile of Darkness.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Have Hendrik use Immense Defense and Forbearance.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Darkling",
+   "where": {
+    "t": "Summoned by Calasmos during the final fight of Act III.",
+    "src": [
+     "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Bring the Luminary and Veronica so you can clear Darklings as soon as Calasmos calls them in.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Clear them with Gigagash or Kaboomle.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Archfiend's Acolyte",
+   "tips": [
+    {
+     "t": "Cast Fizzle on it with Serena: it stops Whoosh and Frizzle.",
+     "src": [
+      "gg:tickington__altar-of-salvation"
+     ]
+    },
+    {
+     "t": "Keep Fizzle on it for the whole fight.",
+     "src": [
+      "gg:tickington__altar-of-salvation"
+     ]
+    },
+    {
+     "t": "Heal after Frizzle: it can hit one character for 60+.",
+     "src": [
+      "gg:tickington__altar-of-salvation"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Pilferpithecus",
+   "tips": [
+    {
+     "t": "Wear Rousing Rings +3 against Kasnooze.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride__briscolettis-mansion"
+     ]
+    },
+    {
+     "t": "Equip light-resistant gear against Kaboom.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride__briscolettis-mansion"
+     ]
+    },
+    {
+     "t": "Have Sylvando cast Oomphle on the Luminary and Jade.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride__briscolettis-mansion"
+     ]
+    },
+    {
+     "t": "Use Unbridled Blade and Multithrust: it has around 1750 HP.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride__briscolettis-mansion"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Revivalist",
+   "tips": [
+    {
+     "t": "Focus all attacks on the Revivalist.",
+     "src": [
+      "gg:tickington__altar-of-the-undeciphered"
+     ]
+    },
+    {
+     "t": "Leave the Grublin for last: it only hits one character.",
+     "src": [
+      "gg:tickington__altar-of-the-undeciphered"
+     ]
+    },
+    {
+     "t": "Heal Swoosh damage with Multiheal or Hustle Dance.",
+     "src": [
+      "gg:tickington__altar-of-the-undeciphered"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jasper Unhinged",
+   "tips": [
+    {
+     "t": "Equip dark protection on Hendrik: Lance of Darkness does nothing then.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__an-old-friend"
+     ]
+    },
+    {
+     "t": "Skip buffs unless needed: Disruptive Wave strips them in the winged phase.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__an-old-friend"
+     ]
+    },
+    {
+     "t": "Use Hendrik's best single-target attack, such as Parallax with an axe.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__an-old-friend"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "King of Metal King Slimes",
+   "tips": [
+    {
+     "t": "Use critical-hit moves: crits ignore its defense.",
+     "src": [
+      "gg:tickington__altar-of-the-starry-skies__ruby-path-of-doom"
+     ]
+    },
+    {
+     "t": "Have Hendrik use Hatchet Man.",
+     "src": [
+      "gg:tickington__altar-of-the-starry-skies__ruby-path-of-doom"
+     ]
+    },
+    {
+     "t": "Heal every turn: its bolts hit the party for 140+ and can paralyze.",
+     "src": [
+      "gg:tickington__altar-of-the-starry-skies__ruby-path-of-doom"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Grampogriff",
+   "tips": [
+    {
+     "t": "Use physical attacks: it recasts Bounce whenever it drops.",
+     "src": [
+      "gg:tickington__altar-of-reverie__pillar-of-pegasus"
+     ]
+    },
+    {
+     "t": "Keep the party healed through Venom Mist and its roar.",
+     "src": [
+      "gg:tickington__altar-of-reverie__pillar-of-pegasus"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Nagasus",
+   "tips": [
+    {
+     "t": "Equip two Archangel's Boots +3 per character for 100% protection from lost turns.",
+     "src": [
+      "gg:tickington__altar-of-reverie__pillar-of-pegasus"
+     ]
+    },
+    {
+     "t": "Queue a heal every turn: its lightning storm deals 180+ to the party.",
+     "src": [
+      "gg:tickington__altar-of-reverie__pillar-of-pegasus"
+     ]
+    },
+    {
+     "t": "Use Sword Dance or Unbridled Blade with the Luminary.",
+     "src": [
+      "gg:tickington__altar-of-reverie__pillar-of-pegasus"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Dayle",
+   "tips": [
+    {
+     "t": "Cast Magic Barrier: his only attack spells are Kafrizz and Kacrack.",
+     "src": [
+      "gg:tickington__altar-of-the-cursed-king__trodain-castle"
+     ]
+    },
+    {
+     "t": "Attack freely when he casts Tick-Tock: it always fails.",
+     "src": [
+      "gg:tickington__altar-of-the-cursed-king__trodain-castle"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Nelgelas",
+   "tips": [
+    {
+     "t": "Focus on Nelgelas first: the one with more HP is the more dangerous one (about 12000 HP).",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    },
+    {
+     "t": "Equip Catholicon Rings against his jet-black fog.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    },
+    {
+     "t": "Keep buffs light: his disruptive wave removes them.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Hunkorvus",
+   "tips": [
+    {
+     "t": "Cast Blunt on Hunkorvus to cut his physical damage.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    },
+    {
+     "t": "Stack Kabuff while Blunt is active.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    },
+    {
+     "t": "Switch Erik to swords or knives once only one boss is left.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Shadow of Shadows",
+   "tips": [
+    {
+     "t": "Target it as soon as it appears: it buffs the Lord of Shadows.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Defeat it before it casts Kabuff.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tyriant's Shadow",
+   "tips": [
+    {
+     "t": "Make summoned Shadows your main target: they have around 280 HP.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Remove each Shadow with one Unbridled Blade.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Overweening Pride",
+   "where": {
+    "t": "Final Drustan trial: enter the Sage's Trial and return to Drustan; beat it within 50 turns.",
+    "src": [
+     "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Equip Hendrik with two Skull Rings +3 to cancel dark damage.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Keep Hendrik on Immense Defense and Forbearance.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Use Gigagash once the reinforcements arrive.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    },
+    {
+     "t": "Cast Kerplunk with Hendrik or Serena when most of the party is down.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__echoes-of-an-elusive-age"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Timewyrm",
+   "where": {
+    "t": "Optional Definitive Edition superboss behind the time rift above the Tower of Lost Time; it appears after you beat the End of Time.",
+    "src": [
+     "gg:walkthrough__definitive-edition-endgame__timewyrm"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Reapply Kabuff, Magic Barrier and Insulatle each phase: every switch triggers disruptive wave.",
+     "src": [
+      "gg:walkthrough__definitive-edition-endgame__timewyrm"
+     ]
+    },
+    {
+     "t": "Dispel their pepped-up state with Rab's Rake 'n' Break or Clear Your Mind.",
+     "src": [
+      "gg:walkthrough__definitive-edition-endgame__timewyrm"
+     ]
+    },
+    {
+     "t": "Open with Yggdragon's Blessing if everyone starts the fight pepped.",
+     "src": [
+      "gg:walkthrough__definitive-edition-endgame__timewyrm"
+     ]
+    },
+    {
+     "t": "Feed Veronica Elfin Elixirs to keep Magic Burst going.",
+     "src": [
+      "gg:walkthrough__definitive-edition-endgame__timewyrm"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "End of Time",
+   "where": {
+    "t": "Deepest Recesses of the Past, the final level of the Hall of Remembrance in Tickington (Definitive Edition).",
+    "src": [
+     "gg:tickington__hall-of-remembrance__deepest-recesses-of-the-past"
+    ]
+   },
+   "tips": [
+    {
+     "t": "Equip Catholicon Rings to block the ailment fog.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__deepest-recesses-of-the-past"
+     ]
+    },
+    {
+     "t": "Carry Yggdrasil Dews on every character for the move that cuts off three party members.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__deepest-recesses-of-the-past"
+     ]
+    },
+    {
+     "t": "Cast Sap on the main body.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__deepest-recesses-of-the-past"
+     ]
+    },
+    {
+     "t": "Use Erik's Divide and Double Down with Oomphle on him.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__deepest-recesses-of-the-past"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Dud Dude",
+   "tips": [
+    {
+     "t": "Keep everyone topped off: his critical can hit for 350+.",
+     "src": [
+      "gg:tickington__altar-of-reverie__weavers-peak"
+     ]
+    },
+    {
+     "t": "Attack freely when he tries Kazap: it always fails.",
+     "src": [
+      "gg:tickington__altar-of-reverie__weavers-peak"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Baramos",
+   "tips": [
+    {
+     "t": "Open with Serena's Hymn of Light.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle-later-on"
+     ]
+    },
+    {
+     "t": "Have Serena cast Multiheal every turn.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle-later-on"
+     ]
+    },
+    {
+     "t": "Cast Insulatle against his fire breath.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle-later-on"
+     ]
+    },
+    {
+     "t": "Cast Oomphle on your main damage dealers.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle-later-on"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Necrogondolier",
+   "tips": [
+    {
+     "t": "Cast Magic Barrier or Hymn of Thunder against the lightning staff.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle"
+     ]
+    },
+    {
+     "t": "Queue a heal every turn: he acts twice per turn.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle"
+     ]
+    },
+    {
+     "t": "Use Sword Dance or Unbridled Blade with the Luminary.",
+     "src": [
+      "gg:tickington__altar-of-salvation__baramoss-castle"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Maeve",
+   "tips": [
+    {
+     "t": "Cast Kabuff twice with Serena to blunt her normal attacks.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past"
+     ]
+    },
+    {
+     "t": "Have Sylvando cast Oomph on the Luminary twice.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past"
+     ]
+    },
+    {
+     "t": "Use Cutting Edge on Maeve: she has around 1000 HP.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past"
+     ]
+    },
+    {
+     "t": "Clear the Rockbombs with Bang.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Obstructicus",
+   "tips": [
+    {
+     "t": "Cast Sap: it has high defense.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past__roamer-encampment"
+     ]
+    },
+    {
+     "t": "Cast Kabuff on the party against its physical moves.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past__roamer-encampment"
+     ]
+    },
+    {
+     "t": "Cast Oomphle on your physical attackers.",
+     "src": [
+      "gg:tickington__altar-of-the-forgotten-past__roamer-encampment"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Dazey",
+   "tips": [
+    {
+     "t": "Wake sleepers with Sylvando's Sobering Slap.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride"
+     ]
+    },
+    {
+     "t": "Keep HP above 200: its desperate attack hits for 170+.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride"
+     ]
+    },
+    {
+     "t": "Carry Yggdrasil Leaves or Zing for Death Dance.",
+     "src": [
+      "gg:tickington__altar-of-the-heavenly-bride"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Erdrick's Restless Armour",
+   "tips": [
+    {
+     "t": "Have Serena play Hymn of Thunder.",
+     "src": [
+      "gg:tickington__altar-of-the-legendary-line__cave-leading-to-rendarak"
+     ]
+    },
+    {
+     "t": "Counter its Kasap with Kabuff.",
+     "src": [
+      "gg:tickington__altar-of-the-legendary-line__cave-leading-to-rendarak"
+     ]
+    },
+    {
+     "t": "Land Sap on it: it has good defense.",
+     "src": [
+      "gg:tickington__altar-of-the-legendary-line__cave-leading-to-rendarak"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Doomsday Dragon",
+   "tips": [
+    {
+     "t": "Buff, heal or defend while Doomsday Gaze blocks physical attacks.",
+     "src": [
+      "gg:tickington__altar-of-the-starry-skies__ruby-path-of-doom"
+     ]
+    },
+    {
+     "t": "Heal every turn: it acts twice per turn.",
+     "src": [
+      "gg:tickington__altar-of-the-starry-skies__ruby-path-of-doom"
+     ]
+    },
+    {
+     "t": "Cast Oomphle on the Luminary and Jade.",
+     "src": [
+      "gg:tickington__altar-of-the-starry-skies__ruby-path-of-doom"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Wyrmalroth",
+   "tips": [
+    {
+     "t": "Defeat Wyrmalroth first: he has Fullheal and Kabuff.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-1"
+     ]
+    },
+    {
+     "t": "Use Erik's Divide and Double Down with boomerangs.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-1"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Zomaiden",
+   "tips": [
+    {
+     "t": "Make Zomaiden your next target after Wyrmalroth.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-1"
+     ]
+    },
+    {
+     "t": "Cast Hymn of Ice or Magic Barrier against Kacrack.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-1"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Lord Dragon",
+   "tips": [
+    {
+     "t": "Cast Insulatle against his breath attacks.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-1"
+     ]
+    },
+    {
+     "t": "Leave Lord Dragon for last.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-1"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Mortamammoth",
+   "tips": [
+    {
+     "t": "Defeat Mortamammoth first: it has Magic Burst.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-2"
+     ]
+    },
+    {
+     "t": "Equip two Catholicon Rings +3 per character against its war cry and gleam.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-2"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Psaroid",
+   "tips": [
+    {
+     "t": "Defeat Psaroid second: the rings do not block its Thwack.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-2"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Nimclops",
+   "tips": [
+    {
+     "t": "Counter its Kasap with Kabuff.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-2"
+     ]
+    },
+    {
+     "t": "Keep buffs up: no enemy in this fight has disruptive wave.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-2"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Hoopthorne",
+   "tips": [
+    {
+     "t": "Defeat Hoopthorne first: Catholicon Rings do not block his Beguile.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    },
+    {
+     "t": "Heal up after he dies: the survivor gains three actions per turn.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Orgodelotl",
+   "tips": [
+    {
+     "t": "Equip Catholicon Rings against its spike ailments.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    },
+    {
+     "t": "Keep buffs light: it has disruptive wave.",
+     "src": [
+      "gg:tickington__hall-of-remembrance__hall-of-remembrance-level-3"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jasper",
+   "tips": [
+    {
+     "t": "Use magic while Jasper is in Sword Stance.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Keep Buff on Veronica.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Cast Fizzle on Jasper with Serena to stop Zam.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    },
+    {
+     "t": "Use Cutting Edge once Sword Stance drops.",
+     "src": [
+      "gg:walkthrough__act-i__gondolia"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jörmun",
+   "tips": [
+    {
+     "t": "Use Unbridled Blade after its jolly jig lowers its defense.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Keep HP above 100.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Malicious version: land the killing blow with a Zap spell.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Malicious version: have Hendrik use Immense Defense and Forbearance.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Krystalinda",
+   "tips": [
+    {
+     "t": "Cast Magic Barrier against Crackle.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Cast Sap on her with Veronica or Rab.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    },
+    {
+     "t": "Avoid magic other than fire spells such as Frizzle.",
+     "src": [
+      "gg:walkthrough__act-i__the-blue-orb"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jarvis",
+   "tips": [
+    {
+     "t": "Use Cutting Edge on Jarvis.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Put Jarvis to sleep with Erik's Sleeper Hit.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Follow a successful Sleeper Hit with Pursecutter.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Heal right after Cool Breath.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jarvis's Shadow",
+   "tips": [
+    {
+     "t": "Cast Scorched Earth with a pepped-up Erik to trap every enemy.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    },
+    {
+     "t": "Skip stealing: the Shadows carry nothing.",
+     "src": [
+      "gg:walkthrough__act-i__the-cryptic-crypt"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tentacular",
+   "tips": [
+    {
+     "t": "Hit the Tentacle that shields Tentacular.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Use fire or thunder: Tentacular is weak to both.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Cast Kasap with Veronica.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    },
+    {
+     "t": "Heal with Hustle Dance after the tentacle barrage.",
+     "src": [
+      "gg:walkthrough__act-i__the-green-orb"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Dora-in-Grey",
+   "tips": [
+    {
+     "t": "Cast Snap, Crackle, Poof on Serena and the Luminary against Charm.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Replace Serena if her abilities get sealed.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Use Jade's Multithrust boosted by Oomphle.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    },
+    {
+     "t": "Heal with Hustle Dance after the laser.",
+     "src": [
+      "gg:walkthrough__act-i__the-purple-orb"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Elysium Bird",
+   "tips": [
+    {
+     "t": "Cast Hymn of Fire and Magic Barrier against Sizzle.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Defeat the Hades Condors first.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Cast Boom with Veronica to hit all three.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    },
+    {
+     "t": "Keep up steady damage: it heals itself for around 100.",
+     "src": [
+      "gg:walkthrough__act-i__the-silver-orb"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Slayer of the Sands",
+   "tips": [
+    {
+     "t": "Open with Sap and Decelerate.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Counter Kasap with Buff.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Use Zap: it is weak to thunder.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    },
+    {
+     "t": "Use Erik's Sleeper Hit followed by Pursecutter.",
+     "src": [
+      "gg:walkthrough__act-i__the-sultanate-of-gallopolis"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Headless Honcho",
+   "tips": [
+    {
+     "t": "Defeat the Vicious Grim Gryphon first to stop Decelerate.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Clear the lesser monsters with Boom.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Finish the Honcho with Unbridled Blade: it has around 690 HP.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Keep HP above 150.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Vicious Grim Gryphon",
+   "tips": [
+    {
+     "t": "Defeat it first: it casts Decelerate.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Use Boom or Kasnooze on the escort group.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tyriant",
+   "tips": [
+    {
+     "t": "Switch to magic while he is in Sword Stance.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Kill his Shadows first.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    },
+    {
+     "t": "Keep HP above 150: Zammle can crit for over 75.",
+     "src": [
+      "gg:walkthrough__act-ii"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tatsunaga",
+   "tips": [
+    {
+     "t": "Keep Kabuff up: his normal attacks lower your defense.",
+     "src": [
+      "gg:walkthrough__act-ii__forging-the-sword-of-legend"
+     ]
+    },
+    {
+     "t": "Re-Vamp Jade twice before Multithrust.",
+     "src": [
+      "gg:walkthrough__act-ii__forging-the-sword-of-legend"
+     ]
+    },
+    {
+     "t": "Have Sylvando use Hustle Dance.",
+     "src": [
+      "gg:walkthrough__act-ii__forging-the-sword-of-legend"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Alizarin",
+   "tips": [
+    {
+     "t": "Cast Kabuff during Crimson Mist.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "Cast Acceleratle when he uses Decelerate, or he can take four turns in a row.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "Re-Vamp Jade twice before Multithrust.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "Cast Sap on him with Oomphle on the Luminary.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Unfathomable Anger",
+   "tips": [
+    {
+     "t": "Cast Sap: he has 7500 HP and you have 30 turns.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Have Hendrik keep Forbearance up.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Gyldygga",
+   "tips": [
+    {
+     "t": "Have Rab cast Blunt as soon as she uses Oomphle.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "Keep Hendrik in as a backup healer for when your healer turns to gold.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    },
+    {
+     "t": "Use an Oomphle-boosted Unbridled Blade.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-erik"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Restless Knight",
+   "tips": [
+    {
+     "t": "Cast Blunt and Sap with Rab.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Remove Curse with Rab quickly.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Cast Oomph on the Luminary for Unbridled Blade.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Gloomnivore",
+   "tips": [
+    {
+     "t": "Cast Blunt with Rab: his attack boost also lowers his defense.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Use Parallax to paralyze him.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Malicious version: cast both Sap and Blunt.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Malicious version: start Hendrik's turns with Immense Defense.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jinxed Jade",
+   "tips": [
+    {
+     "t": "Cast Sap on her: she has around 1800 HP.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Cast Oomphle on the Luminary for Unbridled Blade.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Cast Blunt with Rab.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Booga",
+   "tips": [
+    {
+     "t": "Free charmed allies with Sylvando's Sobering Slap.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Cast Blunt and Sap.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    },
+    {
+     "t": "Stock MP items: Giga Mega Drain steals large amounts of MP.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-jade"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Avarith",
+   "tips": [
+    {
+     "t": "Cast Antimagic with Rab to seal her spells.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-sylvando"
+     ]
+    },
+    {
+     "t": "Use Helm Splitter to undo her Kabuff.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-sylvando"
+     ]
+    },
+    {
+     "t": "Heal with Rab's Staff of Salvation.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-sylvando"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Auroral Serpent",
+   "tips": [
+    {
+     "t": "Cure paralysis with Sylvando's Tingle.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-the-twins"
+     ]
+    },
+    {
+     "t": "Cast Sap: it has around 4900 HP.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-the-twins"
+     ]
+    },
+    {
+     "t": "Re-Vamp Jade twice before Multithrust.",
+     "src": [
+      "gg:walkthrough__act-ii__reuniting-with-the-twins"
+     ]
+    },
+    {
+     "t": "Malicious version: equip paralysis protection against Burning Breath every round.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Indignus",
+   "tips": [
+    {
+     "t": "Cast Sap: he has around 3500 HP.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Cure Gigathrow's paralysis with Tingle right away.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Have Hendrik cast Kabuff twice.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Use Divide with Erik in his interlude fight to triple his damage.",
+     "src": [
+      "gg:walkthrough__character-interludes__eriks-new-acquaintance"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jasper Unbound",
+   "tips": [
+    {
+     "t": "Ignore the Bahlibs to focus Jasper.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Have Hendrik cast Kabuff so Jasper wastes turns removing it.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Keep HP above half.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Mordegon, Lord of Shadows",
+   "tips": [
+    {
+     "t": "Defeat the Shadow of Shadows before it casts Kabuff.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Defeat Mordragon's Tail first: it revives Mordragon with Kazing.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Cast Magic Barrier when both heads pep up.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    },
+    {
+     "t": "Use Rab's Cleansing Mind to remove their pep.",
+     "src": [
+      "gg:walkthrough__act-ii__the-fortress-of-fear"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Mordegon",
+   "tips": [
+    {
+     "t": "Stop healing while Purple Mist is up.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    },
+    {
+     "t": "Ignore the Staves unless you use attacks that hit all enemies.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    },
+    {
+     "t": "Cast Oomph on the Luminary for Sword Dance.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Mordegon's Staff",
+   "tips": [
+    {
+     "t": "Ignore the Staves unless you use attacks that hit all enemies.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    },
+    {
+     "t": "Cast Boom with Veronica while the Staves are out.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Jasper Corrupted",
+   "tips": [
+    {
+     "t": "Use Sword Dance with the Luminary: Jasper has only around 2055 HP.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    },
+    {
+     "t": "Attack with the Luminary to pierce the Orb's cloak.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    },
+    {
+     "t": "Keep Sylvando on healing.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Bathysfear",
+   "tips": [
+    {
+     "t": "Cast Sap: it has high defense.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Keep HP above 300.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Have Hendrik use Forbearance against Ready Blade.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Merking",
+   "tips": [
+    {
+     "t": "Malicious version: focus the Merking: he revives fallen Mermaniacs with Kazing.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Malicious version: cast Immense Defense on Hendrik before he tanks.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Mermaniac",
+   "tips": [
+    {
+     "t": "Malicious version: kill Mermaniacs only with attacks that hit all of them.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Malicious version: heal often, since each Kacrack hits the party for around 80.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Arachtagon",
+   "tips": [
+    {
+     "t": "Keep Acceleratle up so it cannot act four times in a row.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Cast Oomph on Veronica for Sizzle: it is weak to fire.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Keep magic water on Sylvando for Hustle Dance.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Malicious version: Re-Vamp Jade twice before Multifeet.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Grey Gordon",
+   "tips": [
+    {
+     "t": "Malicious version: focus Grey Gordon to stop the summons.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    },
+    {
+     "t": "Malicious version: use Pink Tornado and Kaboomle on the summoned monsters.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__a-tour-of-erdrea"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Shadow Jasper",
+   "tips": [
+    {
+     "t": "Equip dark protection on Hendrik.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__an-old-friend"
+     ]
+    },
+    {
+     "t": "Heal with Moreheal if needed.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__an-old-friend"
+     ]
+    },
+    {
+     "t": "Use Parallax if Hendrik has an axe.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__an-old-friend"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Blind Hatred",
+   "tips": [
+    {
+     "t": "Kill his Shadows as fast as possible.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Have Hendrik use Immense Defense and Forbearance.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Pass Sylvando's turns to Jade with Ladies First.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Blind Hatred's Shadow",
+   "tips": [
+    {
+     "t": "Defeat it quickly: it has 900 HP and focused hits for over 250.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Sheer Decadence",
+   "tips": [
+    {
+     "t": "Open with Veronica's Magic Burst.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Use Gigagash while both bosses are alive.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "All-consuming Greed",
+   "tips": [
+    {
+     "t": "Keep Hendrik tanking with Immense Defense and Forbearance.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Keep Serena in as healer for Omniheal.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Abject Terror",
+   "tips": [
+    {
+     "t": "Hit Abject Terror with magic: it is weak to it.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Bring both bosses low together: they Kazing each other.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Darkest Despair",
+   "tips": [
+    {
+     "t": "Hit Darkest Despair with physical attacks.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    },
+    {
+     "t": "Use Jade's Pink Tornado on it.",
+     "src": [
+      "gg:walkthrough__act-iii-post-game__the-drustan-trials"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Grand Master Pang",
+   "tips": [
+    {
+     "t": "Cast Snooze on Pang.",
+     "src": [
+      "gg:walkthrough__character-interludes__lord-robert-and-the-kingdom-of-dreams"
+     ]
+    },
+    {
+     "t": "Use Zammle as your main attack.",
+     "src": [
+      "gg:walkthrough__character-interludes__lord-robert-and-the-kingdom-of-dreams"
+     ]
+    },
+    {
+     "t": "Defend after her second charge.",
+     "src": [
+      "gg:walkthrough__character-interludes__lord-robert-and-the-kingdom-of-dreams"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Boodica",
+   "tips": [
+    {
+     "t": "Defeat her two hand men first.",
+     "src": [
+      "gg:walkthrough__character-interludes__jade-journeys-forth"
+     ]
+    },
+    {
+     "t": "Have Sinderella cast Oomph to boost Multithrust.",
+     "src": [
+      "gg:walkthrough__character-interludes__jade-journeys-forth"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Sinderella",
+   "tips": [
+    {
+     "t": "Target Sinderella first: her Midheal drags the fight out.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Defend the round after both are pepped up.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Whambelina",
+   "tips": [
+    {
+     "t": "Defeat Sinderella before Whambelina.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Use Falcon Slash if the Luminary uses swords.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Golden Boy",
+   "tips": [
+    {
+     "t": "Defeat Sterling Sylva before him.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    },
+    {
+     "t": "Defend the round after both are pepped up.",
+     "src": [
+      "gg:walkthrough__act-i__search-for-the-rainbough"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Tricky Devil",
+   "tips": [
+    {
+     "t": "Keep HP above 20: Sizz hits both characters.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    },
+    {
+     "t": "Use regular attacks.",
+     "src": [
+      "gg:walkthrough__act-i__the-manglegrove"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Grim Gryphon",
+   "tips": [
+    {
+     "t": "Put them to sleep with Erik's Sleeper Hit.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Cast Sizz on the sleeping gryphons.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    },
+    {
+     "t": "Use Scorched Earth if both party members are pepped up.",
+     "src": [
+      "gg:walkthrough__act-i__the-kingsbarrow"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Wrongo Bongo",
+   "tips": [
+    {
+     "t": "Cast Buff on Veronica and Serena.",
+     "src": [
+      "gg:tickington__altar-of-origins"
+     ]
+    },
+    {
+     "t": "Focus Wrongo Bongo before its adds.",
+     "src": [
+      "gg:tickington__altar-of-origins"
+     ]
+    }
+   ]
+  },
+  {
+   "boss": "Roseguardin",
+   "tips": [
+    {
+     "t": "Keep HP high: its desperate attack ignores Kabuff.",
+     "src": [
+      "gg:tickington__altar-of-the-chosen__roses-room"
+     ]
+    },
+    {
+     "t": "Dispatch the Chillanodons quickly.",
+     "src": [
+      "gg:tickington__altar-of-the-chosen__roses-room"
+     ]
+    }
+   ]
+  }
+ ],
+ "no_source": {
+  "Heliodorian Soldier": "The cached GamerGuides pages only mention Heliodorian Soldiers patrolling the Hekswood and give no fight strategy."
+ }
+}

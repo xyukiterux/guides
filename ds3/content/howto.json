@@ -1,0 +1,128 @@
+{
+ "sections": [
+  {
+   "id": "howto-level", "title": "How to level up",
+   "need": "You'll need: souls and the shrine bonfire lit with the Coiled Sword.",
+   "steps": [
+    {"t": "Travel to the [[Firelink Shrine]] bonfire.", "s": ["Bonfire (Dark Souls III)"]},
+    {"t": "Talk to the [[Fire Keeper]] and choose Level Up.", "s": ["Fire Keeper (Dark Souls III)"]},
+    {"t": "Add points to one stat at a time. Each level costs more souls than the last one.", "s": ["Level Up", "Fire Keeper (Dark Souls III)"]},
+    {"advice": true, "t": "Stop adding to a stat when it reaches its soft cap (table on the Builds page) unless your build needs more.", "s": ["fx:Vigor", "fx:Endurance", "fx:Attunement"]},
+    {"t": "If you die, go back to where you died and touch your bloodstain to get your souls back. Die again first and they are gone.", "s": ["Soul (Dark Souls III)"]}
+   ],
+   "check": "The stat you raised shows its new value on the status screen."
+  },
+  {
+   "id": "howto-estus", "title": "How to get more Estus",
+   "need": "You'll need: Estus Shards or Undead Bone Shards from the world. 11 Estus Shards and 10 Undead Bone Shards exist per playthrough.",
+   "steps": [
+    {"t": "Pick up every [[Estus Shard]]. A full set of 11 takes your flasks to 15 charges in total.", "s": ["Estus Shard"]},
+    {"t": "Give each shard to [[Blacksmith Andre]] in [[Firelink Shrine]].", "s": ["Estus Shard", "Estus Flask (Dark Souls III)"]},
+    {"t": "Ask Andre to split the charges between the [[Estus Flask]] (HP) and the [[Ashen Estus Flask]] (FP). Casters need more Ashen charges.", "s": ["Estus Flask (Dark Souls III)"]},
+    {"t": "Burn each [[Undead Bone Shard]] in the shrine bonfire. Every shard makes each sip heal more, up to +10.", "s": ["Undead Bone Shard"]},
+    {"t": "If you want even more healing per sip, wear the [[Estus Ring]]: it increases the HP recovered by each Estus sip by 20%.", "s": ["Estus Flask (Dark Souls III)"]}
+   ],
+   "check": "The flask icon shows the new number of charges after you rest."
+  },
+  {
+   "id": "howto-upgrade", "title": "How to upgrade a weapon",
+   "need": "You'll need: titanite of the right kind, souls, and the weapon on you.",
+   "steps": [
+    {"t": "Bring the weapon to [[Blacksmith Andre]] in [[Firelink Shrine]] and choose Reinforce Weapon.", "s": ["Blacksmith Andre"]},
+    {"t": "Use [[Titanite Shard]] to reach +3.", "s": ["Titanite Shard (Dark Souls III)"]},
+    {"t": "Use [[Large Titanite Shard]] to reach +6.", "s": ["Large Titanite Shard (Dark Souls III)"]},
+    {"t": "Use [[Titanite Chunk]] to reach +9.", "s": ["Titanite Chunk (Dark Souls III)"]},
+    {"t": "Use one [[Titanite Slab]] to go from +9 to +10.", "s": ["Titanite Slab (Dark Souls III)"]},
+    {"t": "If the weapon came from a boss soul, use [[Titanite Scale]] to reach +4 and a [[Titanite Slab]] for +5.", "s": ["Titanite Scale", "Titanite Slab (Dark Souls III)"]},
+    {"t": "If the weapon cannot be infused (a soulbound weapon, which ordinary titanite cannot reinforce either), use [[Twinkling Titanite]] to reach +4 and a [[Titanite Slab]] for +5.", "s": ["Twinkling Titanite (Dark Souls III)", "Titanite Slab (Dark Souls III)"]},
+    {"t": "If you run out of shards, give the Handmaid more ashes: she sells unlimited [[Titanite Shard]] for 800 souls once she has the [[Dreamchaser's Ashes]], and [[Large Titanite Shard]] for 4000 souls once she has the [[Easterner's Ashes]].", "s": ["Titanite Shard (Dark Souls III)", "Large Titanite Shard (Dark Souls III)"]}
+   ],
+   "check": "The weapon's name shows the new +level and its attack rating went up."
+  },
+  {
+   "id": "howto-infuse", "title": "How to infuse a weapon",
+   "need": "You'll need: a coal given to Andre, the matching gem, and a weapon that can be infused.",
+   "steps": [
+    {"t": "Give [[Farron Coal]] to [[Blacksmith Andre]] to unlock Heavy, Sharp and Poison infusions. It is in [[Road of Sacrifices]], guarded by a Black Knight.", "s": ["Farron Coal"]},
+    {"t": "Give [[Sage's Coal]] to unlock Crystal, Blessed and Deep infusions. It is in [[Farron Keep]], in a small round building guarded by a Darkwraith.", "s": ["Sage's Coal", "Infusion (Dark Souls III)"]},
+    {"t": "Give [[Giant's Coal]] to unlock Lightning, Simple and Chaos infusions. It is in [[Anor Londo]], on the Giant Blacksmith's remains.", "s": ["Giant's Coal"]},
+    {"t": "Give [[Profaned Coal]] to unlock Dark, Blood and Hollow infusions. It is in [[Irithyll Dungeon]], in the cell with several Wretches opposite Karla's cell.", "s": ["Profaned Coal"]},
+    {"t": "Choose Infuse Weapon at Andre.", "s": ["Infusion (Dark Souls III)", "Blacksmith Andre"]},
+    {"t": "Pick the gem: [[Heavy Gem]] for Strength, [[Sharp Gem]] for Dexterity, [[Refined Gem]] for both, [[Crystal Gem]] for Intelligence, [[Blessed Gem]] for Faith.", "s": ["Infusion (Dark Souls III)"]},
+    {"t": "For Intelligence and Faith together, a [[Dark Gem]] or [[Chaos Gem]] infusion soft-caps at 30 Intelligence and 30 Faith, so stop at 30 in each for that weapon.", "s": ["Intelligence (Dark Souls III)", "Faith (Dark Souls III)"]},
+    {"advice": true, "t": "Compare the attack rating before you confirm. If the number goes down, cancel: your stats do not suit that infusion yet.", "s": ["Infusion (Dark Souls III)", "Blacksmith Andre"]}
+   ],
+   "check": "The weapon's name now starts with the infusion (for example Heavy Long Sword)."
+  },
+  {
+   "id": "howto-boss", "title": "How to prepare for a boss",
+   "need": "You'll need: the boss card open (weaknesses, HP and strategy are on it).",
+   "steps": [
+    {"t": "Rest at the nearest bonfire so your flasks are full.", "s": ["Bonfire (Dark Souls III)"]},
+    {"advice": true, "t": "Open the boss card and read the Weak line. Switch to a weapon or buff that deals that damage type.", "s": ["Boss (Dark Souls III)"]},
+    {"t": "Use an [[Ember]] before the fog wall. It restores all your HP, raises your maximum HP by 30% and makes summoning signs visible.", "s": ["Ember", "Host of Embers"]},
+    {"t": "While embered, look for white summon signs on the ground (players lay them with the [[White Sign Soapstone]]) and summon that player as a phantom (a helper in your world) for the area boss. NPC helpers for each boss are on its card under Summons.", "s": ["Ember", "White Sign Soapstone (Dark Souls III)", "Host of Embers"]},
+    {"advice": true, "t": "Walk through the fog and watch the first attacks before you swing. Many bosses pause to recover after an attack (the wiki says this of Iudex Gundyr): hit once or twice in that gap, then back off.", "s": ["Iudex Gundyr"]},
+    {"advice": true, "t": "If you die, check the strategy on the card for the attack that hit you, then try again.", "s": ["Boss (Dark Souls III)"]}
+   ],
+   "check": "The boss drops its soul and a new bonfire lights in the arena."
+  },
+  {
+   "id": "howto-parry", "title": "How to parry and riposte",
+   "need": "You'll need: a shield or weapon with the Parry skill in your left hand.",
+   "steps": [
+    {"t": "Equip a shield whose skill is Parry. Shields that can parry have a small shield icon in the corner. The [[Buckler]] and the [[Target Shield]] have a longer parry window.", "s": ["Parry and Riposte (Dark Souls III)"]},
+    {"t": "Press the left strong attack button (L2 on PlayStation, LT on Xbox) just before the enemy's attack hits you.", "s": ["Parry and Riposte (Dark Souls III)"]},
+    {"t": "When the enemy staggers, walk up to it and press the right weak attack button (R1 on PlayStation, RB on Xbox) to riposte.", "s": ["Parry and Riposte (Dark Souls III)"]},
+    {"t": "Some enemies cannot be parried. Break their poise (their resistance to being interrupted) with hits instead: they stagger and can be riposted.", "s": ["Parry and Riposte (Dark Souls III)"]}
+   ],
+   "check": "The riposte plays a short critical-hit animation and takes a large bite of HP."
+  },
+  {
+   "id": "howto-transpose", "title": "How to turn boss souls into weapons and spells",
+   "need": "You'll need: the Transposing Kiln and a boss soul.",
+   "steps": [
+    {"t": "Beat [[Curse-rotted Greatwood]] in [[Undead Settlement]]. It drops the [[Transposing Kiln]].", "s": ["Transposing Kiln"]},
+    {"t": "Give the kiln to [[Ludleth of Courland]], who sits on the second throne in [[Firelink Shrine]].", "s": ["Ludleth of Courland", "Transposing Kiln"]},
+    {"t": "Choose Transpose and pick a boss soul. Each soul lists the weapons, rings or spells it can become; the soul's card shows them too.", "s": ["Ludleth of Courland"]},
+    {"t": "Do not use a boss soul for souls if you might want its item: once the soul is used it is gone for this playthrough.", "s": ["Ludleth of Courland"]},
+    {"t": "If you kneel at the final bonfire after placing the last Cinder of a Lord, Ludleth burns away. Transpose what you want before that, or wait for the next playthrough.", "s": ["Ludleth of Courland"]}
+   ],
+   "check": "The new item is in your inventory and the soul is gone."
+  },
+  {
+   "id": "howto-respec", "title": "How to reset your stats",
+   "need": "You'll need: access to Rosaria's Bed Chamber in Cathedral of the Deep and one Pale Tongue per reset.",
+   "steps": [
+    {"t": "Reach Rosaria's Bed Chamber in [[Cathedral of the Deep]] and talk to [[Rosaria, Mother of Rebirth]].", "s": ["Rosaria, Mother of Rebirth", "Dark Souls III"]},
+    {"t": "Join [[Rosaria's Fingers]] if she asks. If you are doing [[Sirris of the Sunless Realms]]'s quest, finish it first: offering a [[Pale Tongue]] to Rosaria fails Sirris's quest.", "s": ["Ringfinger Leonhard", "Sirris of the Sunless Realms"]},
+    {"t": "Offer a [[Pale Tongue]] to Rosaria.", "s": ["Rosaria, Mother of Rebirth"]},
+    {"t": "Choose rebirth. You can then reallocate your stats and change your appearance.", "s": ["Rosaria, Mother of Rebirth"]},
+    {"t": "Rosaria allows rebirth up to five times per playthrough, so plan the new stats against the soft caps table before you reallocate.", "s": ["Rosaria, Mother of Rebirth"]}
+   ],
+   "check": "Your soul level is the same but the points are where you put them."
+  },
+  {
+   "id": "howto-ng", "title": "How to start New Game Plus",
+   "need": "You'll need: the Soul of Cinder defeated.",
+   "steps": [
+    {"t": "Beat [[Soul of Cinder]] and choose an ending (see Endings).", "s": ["New Game Plus (Dark Souls III)"]},
+    {"t": "Say no when the game offers New Game Plus if you still want to explore. You go back to [[Firelink Shrine]].", "s": ["New Game Plus (Dark Souls III)"]},
+    {"t": "Collect anything that only appears after the ending first. For example [[Yuria of Londor]] leaves her armor and weapon after the Usurpation of Fire.", "s": ["New Game Plus (Dark Souls III)"]},
+    {"t": "Start New Game Plus from the shrine bonfire when you are ready. You keep your level, stats, gear and covenant standing; keys and story items reset.", "s": ["New Game Plus (Dark Souls III)", "Dark Souls III"]}
+   ],
+   "check": "The game restarts at the Cemetery of Ash with your character and enemies are stronger."
+  },
+  {
+   "id": "howto-hollow", "title": "How to avoid (or cure) Hollowing",
+   "need": "Only matters if you leveled with Yoel of Londor.",
+   "steps": [
+    {"t": "If you do not want the Londor ending, never choose Draw Out True Strength with [[Yoel of Londor]]. Each use gives a Dark Sigil.", "s": ["Hollowing"]},
+    {"t": "If you already have Dark Sigils, expect your Hollowing to rise each time you die. At 15 your character looks Hollow; it is cosmetic.", "s": ["Hollowing"]},
+    {"t": "To clear the Hollowing level for now, use a [[Purging Stone]]. The sigils stay, so it comes back.", "s": ["Hollowing"]},
+    {"t": "To remove the sigils for good, give the [[Fire Keeper Soul]] to the [[Fire Keeper]] and ask her to heal them. Doing this fails the Londor quest.", "s": ["Hollowing", "Yoel of Londor"]}
+   ],
+   "check": "Your Hollowing is back to zero on the status screen."
+  }
+ ]
+}

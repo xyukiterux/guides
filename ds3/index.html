@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dark Souls III Guide</title>
+<meta name="description" content="Dark Souls III guide with both DLCs: area order and bonfires, every boss with strategy, NPC quests with missable points, builds from wiki data, every weapon, ring, spell and item.">
+<meta name="theme-color" content="#100e0c">
+<meta property="og:title" content="Dark Souls III Guide">
+<meta property="og:description" content="Area order, every boss, NPC quests and missables, builds, and a card for every weapon, ring, spell and item. Base game, Ashes of Ariandel and The Ringed City.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Cinzel";src:url("fonts/cinzel.woff2") format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("fonts/garamond.woff2") format("woff2");font-weight:400 800;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("fonts/garamond-italic.woff2") format("woff2");font-weight:400 800;font-style:italic;font-display:swap}
+:root{
+  --bg:#100e0c;--ash:#1a1714;--panel:#1e1a17;--panel2:#262119;--well:#0c0a09;
+  --line:rgba(214,196,168,.10);--line2:rgba(214,196,168,.20);
+  --paper:#e8e0d2;--muted:#b1a796;--dim:#8a8176;
+  --ember:#e0782e;--ember2:#f2a24b;--glow:rgba(224,120,46,.18);
+  --blood:#cf5a4b;--frost:#9cc0d6;--moss:#a7b77d;--gold:#d8b26a;
+  --head:"Cinzel","Trajan Pro","Optima",Georgia,serif;
+  --body:"EB Garamond","Garamond","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --ui:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:4px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--paper);font:19px/1.6 var(--body);
+  background:
+   radial-gradient(1200px 520px at 50% 108%,rgba(224,120,46,.16),transparent 65%),
+   radial-gradient(900px 500px at 100% -10%,rgba(160,150,135,.08),transparent 60%),
+   repeating-linear-gradient(115deg,rgba(255,255,255,.012) 0 2px,transparent 2px 7px),
+   var(--bg);background-attachment:fixed}
+a{color:var(--ember2)}
+button,input,select{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--head);font-weight:600;letter-spacing:.06em;margin:0 0 .45em;line-height:1.2;color:#f1e7d6}
+h2{font-size:1.75rem;text-transform:uppercase}
+h3{font-size:1.15rem}
+h4{font-size:1rem;letter-spacing:.08em}
+p{margin:.4em 0}
+.shell{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:20px 16px 40px;border-right:1px solid var(--line2);
+  background:linear-gradient(180deg,rgba(26,23,20,.96),rgba(14,12,10,.96))}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--paper)}
+.brand svg{flex:none}
+.brand b{display:block;font-family:var(--head);font-size:1.2rem;letter-spacing:.12em;font-weight:700}
+.brand small{display:block;color:var(--ember2);letter-spacing:.2em;font:600 1rem var(--ui);text-transform:uppercase}
+#checked{font:1rem/1.45 var(--ui);color:var(--muted);margin:12px 2px 14px}
+#checked a{color:var(--frost)}
+.search{position:relative}
+.search input{width:100%;padding:10px 12px 10px 36px;border-radius:var(--r);border:1px solid var(--line2);background:var(--well);font:16px var(--ui);outline:none}
+.search input:focus{border-color:var(--ember);box-shadow:0 0 0 3px var(--glow)}
+.search svg{position:absolute;left:12px;top:13px;opacity:.6}
+.results{position:absolute;left:0;right:0;top:46px;background:var(--panel2);border:1px solid var(--line2);border-radius:var(--r);max-height:64vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font:16px var(--ui);display:flex;align-items:center;gap:9px}
+.results div img{width:26px;height:26px;object-fit:contain;flex:none}
+.results .rt{display:flex;flex-direction:column;min-width:0}
+.results div i{font-style:normal;color:var(--dim);font-size:1rem}
+.tablewrap.scrolls{box-shadow:inset -14px 0 12px -10px rgba(224,120,46,.45)}
+.swipe{margin:6px 0 4px;font:16px var(--ui);color:var(--ember2)}
+@media (min-width:901px){.results{right:auto;width:max(100%,440px)}}
+.results div:hover,.results div.sel{background:rgba(224,120,46,.12)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:12px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font:700 1rem var(--ui);letter-spacing:.22em;color:var(--ember);opacity:.85;margin:16px 10px 4px;text-transform:uppercase}
+nav a{display:flex;gap:10px;align-items:center;padding:6px 10px;border-radius:var(--r);color:var(--paper);text-decoration:none;font:16px var(--ui)}
+nav a:hover{background:rgba(255,255,255,.04)}
+nav a.on{background:linear-gradient(90deg,rgba(224,120,46,.22),rgba(224,120,46,.03));box-shadow:inset 3px 0 0 var(--ember)}
+nav a .n{margin-left:auto;font-size:1rem;color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,2.6vw,44px) 90px}
+.topbar{display:none}
+.card,.tile,.bcard{background:linear-gradient(180deg,rgba(38,33,26,.9),rgba(26,23,20,.92));border:1px solid var(--line2);border-radius:var(--r);
+  box-shadow:inset 0 1px 0 rgba(255,240,220,.04),0 10px 26px rgba(0,0,0,.35);position:relative}
+.card{padding:16px 18px;min-width:0}
+.card::before{content:"";position:absolute;left:10px;right:10px;top:-1px;height:1px;background:linear-gradient(90deg,transparent,rgba(242,162,75,.55),transparent)}
+.hero{position:relative;overflow:hidden;border-radius:var(--r);padding:clamp(22px,4vw,48px);margin-bottom:22px;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line2);isolation:isolate}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-2;filter:saturate(.75) contrast(1.05)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(16,14,12,.97) 10%,rgba(16,14,12,.55) 60%,rgba(16,14,12,.2)),linear-gradient(90deg,rgba(16,14,12,.9),transparent 75%)}
+.hero .k{color:var(--ember2);font:700 1rem var(--ui);letter-spacing:.26em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.2rem,6vw,4.4rem);margin:.15em 0 .2em;letter-spacing:.14em;text-shadow:0 3px 18px rgba(0,0,0,.8),0 0 40px rgba(224,120,46,.25)}
+.hero p{max-width:900px;color:#e3d8c6;font-size:1.12rem;margin:0}
+.embers{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.embers i{position:absolute;bottom:-10px;width:3px;height:3px;border-radius:50%;background:var(--ember2);box-shadow:0 0 8px 2px rgba(242,162,75,.7);opacity:0;animation:rise 9s linear infinite}
+@keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:.9}100%{transform:translateY(-340px) translateX(40px);opacity:0}}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.sec{margin:30px 0 14px}
+.sec h2{display:flex;align-items:center;gap:14px}
+.sec h2::after{content:"";flex:1;min-width:30px;height:1px;background:linear-gradient(90deg,var(--ember),transparent)}
+.sec>p{margin:.25em 0 0;color:var(--muted);max-width:1100px}
+.adv{color:var(--ember2);font-family:var(--ui);letter-spacing:.04em}.answer{font-size:1.08rem;margin-top:0}.muted{color:var(--muted)}.small{font-size:1.05rem}.tiny{font:1rem var(--ui)}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:1px 9px;border-radius:2px;font:600 1rem var(--ui);border:1px solid var(--line2);background:rgba(10,9,8,.5);color:#dccfb9;white-space:normal;letter-spacing:.02em;max-width:100%;overflow-wrap:anywhere}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill.ember{color:#1a0f06;background:var(--ember2);border-color:var(--ember2)}
+.pill.weak{color:var(--ember2);border-color:rgba(242,162,75,.5)}
+.pill.res{color:var(--frost);border-color:rgba(156,192,214,.4)}
+.pill.imm{color:var(--dim)}
+.pill.dlc{color:var(--frost);border-color:rgba(156,192,214,.45)}
+.pill.opt{color:var(--moss);border-color:rgba(167,183,125,.45)}
+.note{border-left:3px solid var(--ember);background:rgba(224,120,46,.07);padding:10px 14px;border-radius:0 var(--r) var(--r) 0;color:#e3d8c6;margin:12px 0}
+.warn{border-left-color:var(--blood);background:rgba(207,90,75,.09)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
+.tabs button{padding:6px 14px;border-radius:2px;border:1px solid var(--line2);background:rgba(30,26,23,.8);cursor:pointer;font:16px var(--ui)}
+.tabs button.on{background:var(--ember);color:#1a0f06;border-color:var(--ember);font-weight:700;box-shadow:0 0 16px var(--glow)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input,.filters select{background:var(--well);border:1px solid var(--line2);border-radius:var(--r);padding:8px 11px;font:16px var(--ui);min-width:0}
+.filters input{flex:1 1 220px;max-width:420px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line2);border-radius:var(--r);background:rgba(14,12,10,.7)}
+table{width:100%;border-collapse:collapse;font:16px/1.45 var(--ui)}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:rgba(38,33,26,.95);font-weight:700;white-space:nowrap;color:var(--ember2);text-transform:uppercase;letter-spacing:.06em;font-size:1rem}
+tr:hover td{background:rgba(255,255,255,.02)}
+td.l{cursor:pointer;color:var(--ember2)}
+.igrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 10px;cursor:pointer;text-align:center;font:16px/1.25 var(--ui);transition:border-color .15s,box-shadow .15s}
+.tile:hover,.tile:focus-visible{border-color:var(--ember);box-shadow:0 0 0 1px var(--ember),0 12px 26px rgba(0,0,0,.4),0 0 22px var(--glow);outline:none}
+.tile img{width:84px;height:84px;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(0,0,0,.6))}
+.tile b{font-weight:600}
+.tile .m{color:var(--muted);font-size:1rem}
+.bgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.bcard{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--paper);cursor:pointer}
+.bcard:hover{border-color:var(--ember);box-shadow:0 0 0 1px var(--ember),0 0 24px var(--glow)}
+.bcard img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 25%;display:block;background:var(--well);filter:saturate(.85)}
+.bcard .t{padding:10px 14px 14px;min-width:0}
+.bcard b{font-family:var(--head);font-size:1.05rem;letter-spacing:.05em;display:block;line-height:1.25}
+.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:8px}
+.steps>li{position:relative;padding:12px 16px 12px 58px;min-height:48px}
+.steps>li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:12px;width:30px;height:30px;transform:rotate(45deg);border:1px solid var(--ember);background:rgba(224,120,46,.14);display:grid;place-items:center}
+.steps>li::after{counter-increment:none;content:counter(s);position:absolute;left:14px;top:12px;width:30px;height:30px;display:grid;place-items:center;font:700 1rem var(--head);color:var(--ember2)}
+.src{display:inline-block;margin-left:6px;font:1rem var(--ui);color:var(--dim)}
+.src summary{display:inline;cursor:pointer;list-style:none;color:var(--dim);border:1px solid var(--line2);border-radius:2px;padding:0 6px}
+.src summary::-webkit-details-marker{display:none}
+.src[open] summary{color:var(--ember2);border-color:var(--ember)}
+.src a{color:var(--frost)}
+.lk,[data-e]{color:var(--ember2);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(242,162,75,.35);text-underline-offset:2px}
+.bcard[data-e],.tile[data-e],.chip[data-e],img[data-e]{text-decoration:none;color:var(--paper)}
+.wiki{font-size:1rem}
+.wiki table{margin:8px 0;font-size:1rem}
+.wiki h4{margin-top:14px;color:var(--ember2)}
+.wiki h5{font:700 1rem var(--ui);margin:10px 0 4px;color:var(--muted)}
+.wiki ul,.wiki ol{padding-left:1.3em;margin:.3em 0}
+.wiki li{margin:.15em 0}
+details.more{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+details.more>summary{cursor:pointer;font:700 1rem var(--ui);color:var(--ember2);letter-spacing:.04em;list-style:none;padding:6px 0}
+details.more>summary::before{content:"+ ";}
+details.more[open]>summary::before{content:"− ";}
+details.more>summary::-webkit-details-marker{display:none}
+.sgrid{border:1px solid var(--line2);border-radius:var(--r);background:rgba(14,12,10,.7);margin:8px 0}
+.sg-row{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:4px 10px;padding:7px 10px;border-bottom:1px solid var(--line);align-items:center}
+.sg-row:last-child{border-bottom:0}
+.sg-l{font:700 16px var(--ui);color:var(--muted)}
+.sg-c{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:4px 6px;font:16px var(--ui)}
+@media (min-width:641px){.sg-c{gap:4px 16px;grid-template-columns:repeat(auto-fill,minmax(60px,1fr))}}
+.sg-c span{display:block;color:var(--ember2);font-weight:700;font-size:1rem}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 16px;font:16px var(--ui);margin:8px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.stat{padding:10px 14px;min-width:120px;flex:1 1 120px}
+.stat b{display:block;font:700 1.4rem var(--head);color:var(--ember2)}
+.stat span{font:1rem var(--ui);color:var(--muted)}
+.stat b.txt{font:600 1rem/1.35 var(--ui)}
+.statrow{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.bhead{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px;align-items:start}
+.bhead img.big{width:100%;border-radius:var(--r);border:1px solid var(--line2);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:2px;background:rgba(10,9,8,.55);border:1px solid var(--line);cursor:pointer;font:16px var(--ui);color:var(--paper);text-decoration:none}
+.chip:hover{border-color:var(--ember)}
+.chip img{width:34px;height:34px;object-fit:cover;border-radius:2px}
+.chip.noimg{padding-left:10px}
+.route{display:flex;flex-direction:column;gap:12px}
+.rstep{display:grid;grid-template-columns:60px 220px minmax(0,1fr);gap:16px;align-items:start;padding:14px}
+.rstep .num{font:700 1.6rem var(--head);color:var(--ember2);text-align:center;padding-top:4px}
+.rstep img.area{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r);border:1px solid var(--line2);cursor:pointer}
+.miss{color:#f0b2a8}
+.miss::before{content:"Missable: ";font:700 1rem var(--ui);letter-spacing:.06em;color:var(--blood);text-transform:uppercase}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer}
+.vid .play{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#f4a65a,#a8441a);box-shadow:0 0 18px var(--glow)}
+.vid b{display:block;font:600 16px/1.3 var(--ui)}
+.modal{position:fixed;inset:0;background:rgba(6,5,4,.78);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#26211b,#16130f);border:1px solid rgba(224,120,46,.35);border-radius:var(--r);max-width:820px;width:100%;max-height:92vh;overflow:auto;padding:22px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.7)}
+.modal .box.wide{max-width:1000px}
+.modal .x{position:absolute;right:10px;top:6px;background:none;border:0;font:1.9rem var(--ui);cursor:pointer;color:var(--muted);line-height:1;padding:6px}
+.ic-head{display:flex;gap:16px;align-items:center;margin-bottom:8px;padding-right:34px}
+.ic-head img{width:110px;height:110px;object-fit:contain;border-radius:var(--r);background:radial-gradient(circle,rgba(224,120,46,.12),rgba(10,9,8,.6));padding:6px;border:1px solid var(--line2);flex:none}
+.ic-head img.wideimg{width:200px;height:auto;aspect-ratio:16/10;object-fit:cover}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.isec>h4{font:700 1rem var(--ui);letter-spacing:.18em;text-transform:uppercase;color:var(--ember2);margin:0 0 4px}
+.desc{font-style:italic;color:#d6cbb8}
+.creators{border:1px solid rgba(224,120,46,.4);background:rgba(224,120,46,.06)}
+.tierrow{display:grid;grid-template-columns:76px 1fr;border:1px solid var(--line2);border-radius:var(--r);overflow:hidden;margin-bottom:10px}
+.tierrow .lab{display:grid;place-items:center;font:700 2rem var(--head);color:#1a0f06;background:var(--ember2)}
+.tierrow .lab.A{background:#c9874a}.tierrow .lab.B{background:#9a8466}
+.tierrow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px;background:rgba(14,12,10,.6)}
+footer{margin-top:44px;color:var(--dim);font:1rem/1.5 var(--ui);border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--frost)}
+:focus-visible{outline:2px solid var(--ember2);outline-offset:2px}
+::selection{background:var(--ember);color:#1a0f06}
+*{scrollbar-color:rgba(224,120,46,.45) transparent}
+@media (max-width:1000px){.rstep{grid-template-columns:44px 160px minmax(0,1fr)}.bhead{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:fixed;inset:0 auto 0 0;width:min(320px,88vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 14px;background:rgba(16,14,12,.96);border-bottom:1px solid var(--line2)}
+  .topbar button{background:var(--panel2);border:1px solid var(--line2);border-radius:var(--r);padding:7px 12px;cursor:pointer;font:16px var(--ui)}
+  .topbar b{font-family:var(--head);letter-spacing:.1em}
+  main{padding:16px 14px 80px}
+  .rstep{grid-template-columns:1fr;gap:8px}
+  .rstep .num{text-align:left}
+  .rstep img.area{max-width:100%}
+  .igrid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+  .tile img{width:68px;height:68px}
+  .ic-head{flex-direction:column;align-items:flex-start}
+  .ic-head img.wideimg{width:100%}
+  h2{font-size:1.4rem}
+}
+@media (max-width:640px){
+  .sg-row{grid-template-columns:1fr}
+  table.stack thead{display:none}
+  table.stack tr{display:block;border-bottom:1px solid var(--line2);padding:6px 0}
+  table.stack td{display:block;border:0;padding:3px 12px}
+  table.stack td[data-label]::before{content:attr(data-label) ": ";font:700 1rem var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--ember2)}
+  th,td{padding:6px 7px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><button id="menuBtn" aria-label="Open sections" aria-expanded="false">Sections</button><b>Dark Souls III</b></div>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home" aria-label="Dark Souls III guide home">
+    <svg width="40" height="44" viewBox="0 0 40 44" aria-hidden="true"><ellipse cx="20" cy="39" rx="15" ry="4" fill="#3a2414"/><path d="M20 22c-6 6-7 11-4 16h8c3-5 2-10-4-16z" fill="#e0782e"/><path d="M20 28c-3 3-3 6-1 10h2c2-4 2-7-1-10z" fill="#f6c27a"/><rect x="18.6" y="2" width="2.8" height="30" fill="#cfc6b8"/><rect x="13" y="8" width="14" height="2.6" fill="#cfc6b8"/></svg>
+    <span><b>DARK SOULS III</b><small>Guide &middot; with both DLCs</small></span></a>
+  <div id="checked"></div>
+  <div class="search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search bosses, weapons, NPCs…" autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav" aria-label="Sections"></nav>
+</aside>
+<main id="main"><p class="muted">Loading the guide…</p></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box"><button class="x" aria-label="Close">×</button><div id="mbody"></div></div></div>
+<noscript><p style="padding:20px">This guide needs JavaScript.</p></noscript>
+<script src="data/core.js?v=2026-11-19-f2aae1c399"></script>
+<script>
+(function(){
+'use strict';
+const D=window.DS3||{entities:[],index:[],content:{},meta:{}};
+const $=s=>document.querySelector(s), main=$('#main');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const n0=x=>(x==null||x==='')?'—':(typeof x==='number'?x.toLocaleString('en-US'):esc(x));
+const M=D.meta||{}, C=D.content||{}, P=M.patch||{}, BAL=M.balance||{};
+const dict=pairs=>Object.assign(Object.create(null),Object.fromEntries(pairs));
+const E=dict(D.entities.map(e=>[e.id,e]));
+const IX=dict(D.index.map(e=>[e.id,e]));
+const KIND={weapon:'Weapon',armor:'Armor set',ring:'Ring',spell:'Spell',item:'Item',boss:'Boss',npc:'NPC',class:'Class',covenant:'Covenant',location:'Area'};
+const ICON_ERR="this.style.visibility='hidden'";
+const img=(e,cls='')=>e&&e.img?`<img class="${cls}" src="${esc(e.img)}" alt="" loading="lazy" onerror="${ICON_ERR}">`:'';
+
+// ---------- lazy data chunks (script tags work from file:// too)
+const CH=Object.create(null), WAIT=Object.create(null);
+window.DS3_CHUNK=(name,items)=>{CH[name]=items;items.forEach(e=>{E[e.id]=e;});(WAIT[name]||[]).forEach(f=>f());WAIT[name]=[];};
+function need(names){return Promise.all(names.map(n=>CH[n]?Promise.resolve():new Promise((ok,bad)=>{
+  if(WAIT[n]){WAIT[n].push(ok);return;} WAIT[n]=[ok];
+  const s=document.createElement('script');s.src='data/'+n+'.js?v=2026-11-19-f2aae1c399';s.onerror=()=>bad(new Error('could not load data/'+n+'.js'));document.head.appendChild(s);})));}
+const ALL_CHUNKS=['weapons','armor','rings','spells','items'];
+
+// ---------- header line
+$('#checked').innerHTML=`Last checked against <a href="${esc(M.wiki)}" target="_blank" rel="noopener">the Dark Souls Wiki</a> and the <a href="${esc(P.url||'#')}" target="_blank" rel="noopener">official patch notes</a> on ${esc(M.pulled)}; YouTube searched on ${esc(M.videos_searched||'?')}. Game version ${esc(P.version||'?')} (patch ${esc(P.date||'?')}), base game + Ashes of Ariandel + The Ringed City.`;
+
+const src=(L)=>!L||!L.length?'':`<details class="src"><summary>Source</summary> ${L.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(', ')}</details>`;
+const T=x=>x||''; // content text is pre-escaped by build.py with card links
+
+// ---------- navigation
+const HOW=(C.howto&&C.howto.sections)||[];
+const NAV=[
+ ['Start',[['home','Home'],['start','Start here / come back']]],
+ ['Play well',HOW.map(s=>[s.id,s.title.replace(/^How to /,'').replace(/^./,c=>c.toUpperCase())])],
+ ['Progress',[['route','Area order & bonfires'],['bosses','Bosses',count('boss')],['quests','NPC quests & missables'],['dlc','DLC order'],['endings','Endings']]],
+ ['Builds',[['builds','Builds & soft caps'],['tiers','Priority & creator tier'],['classes','Starting classes',count('class')]]],
+ ['Reference',[['weapons','Weapons & shields',cnt('weapon')],['armor','Armor sets',cnt('armor')],['rings','Rings',cnt('ring')],['spells','Spells',cnt('spell')],['items','Items & materials',cnt('item')],['merchants','Merchants & ashes'],['covenants','Covenants',count('covenant')],['areas','Areas',count('location')],['npcs','All NPCs',count('npc')]]],
+ ['More',[['videos','Videos'],['sources','Sources & method']]],
+];
+function count(k){return D.entities.filter(e=>e.kind===k).length;}
+function cnt(k){return (M.counts||{})[k]||0;}
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t,n])=>`<a href="#${id}" class="${cur===id?'on':''}">${esc(t)}${n?`<span class="n">${n}</span>`:''}</a>`).join('')).join('');}
+
+const R=Object.create(null), NEEDS=Object.create(null);
+
+// ---------- home
+R.home=()=>{const c=M.counts||{};
+ const embers=Array.from({length:18},(_,i)=>`<i style="left:${(i*53)%100}%;animation-delay:${(i*0.7)%9}s;animation-duration:${7+(i%5)}s"></i>`).join('');
+ return `<section class="hero"><img class="bg" src="card.jpg" alt=""><div class="embers">${embers}</div>
+ <span class="k">FromSoftware · 2016 · Field guide for the Unkindled</span><h1>DARK SOULS III</h1>
+ <p>Area order with every bonfire, ${D.meta.boss_fights} boss fights (${count('boss')} boss pages) with strategy, NPC quests with the points you can miss, builds from the game data, and a card for each of ${n0((c.weapon||0)+(c.armor||0)+(c.ring||0)+(c.spell||0)+(c.item||0))} weapons, armor sets, rings, spells and items. Base game, Ashes of Ariandel and The Ringed City.</p>
+ <p class="tiny" style="margin-top:12px;color:#cbbfa9">Updated ${esc(M.updated||M.pulled)} (wiki ${esc(M.pulled)}, videos ${esc(M.videos_searched||'?')}) · game version ${esc(P.version)} · search with the box in the side menu (Sections on a phone): try “Pontiff” or “Titanite Slab”.</p></section>
+ <div class="grid">${[
+  ['start','Start here','New run, or back after a break: what to do in the first hour.'],
+  ['route','Area order','Where to go next, the boss of each area and every bonfire.'],
+  ['bosses','Bosses',`${D.meta.boss_fights} fights on ${count('boss')} boss pages: HP, weaknesses, drops, strategy, videos.`],
+  ['quests','NPC quests',`${(C.quests&&C.quests.npcs||[]).length} questlines in order, with what you can lose.`],
+  ['builds','Builds','8 archetypes: soft caps, class, infusion, rings, weapons that fit.'],
+  ['howto-upgrade','Upgrade a weapon','Titanite by level and where to buy more.'],
+  ['weapons','Every weapon',`${n0(c.weapon)} weapons, shields and catalysts with stats and where to find them.`],
+  ['items','Items & materials',`${n0(c.item)} items: titanite, gems, coals, ashes, key items.`]
+ ].map(([r,t,s])=>`<a class="card" href="#${r}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="muted small">${s}</p><span class="lk tiny">Open</span></a>`).join('')}</div>
+ <div class="sec"><h2>What is in this guide</h2><p>Every fact comes from the Dark Souls Wiki's data (pulled ${esc(M.pulled)}, ${n0(M.pages)} pages); nothing is written from memory. Each step has a Source button. Videos play here when you are online.</p></div>
+ <div class="tablewrap"><table class="stack"><thead><tr><th>Section</th><th>Count</th><th>What you get</th></tr></thead><tbody>
+ ${[['Bosses',count('boss'),'HP (NG and NG+), souls, weak/resists/immune, drops, wiki strategy, summons, videos'],['NPC quests',(C.quests&&C.quests.npcs||[]).length,'step-by-step order, missable points in red, full wiki questline'],['Areas',count('location'),(D.bonfires||0)+' bonfires with where each one is'],['Weapons, shields, catalysts',c.weapon,'attack, scaling, requirements, weight, skill, where to get it'],['Armor sets',c.armor,'defence, weight, poise, where to get it'],['Rings',c.ring,'effect and where to get it'],['Spells',c.spell,'FP, slots, requirements, who sells it'],['Items',c.item,'upgrade materials, gems, coals, Umbral Ashes, key items, consumables'],['Boss soul transpositions',D.transpositions,'which soul becomes which item at Ludleth']].map(r=>`<tr><td><b>${r[0]}</b></td><td data-label="Count">${n0(r[1])}</td><td class="muted">${r[2]}</td></tr>`).join('')}
+ </tbody></table></div>`;};
+
+// ---------- start / come back
+R.start=()=>{const S=C.start||{};
+ const block=b=>`<div class="card"><h3>${T(b.title)}</h3><p class="muted small">${T(b.intro)}</p><ol class="steps">${b.steps.map(s=>`<li class="card">${T(s.t)}${src(s.s)}</li>`).join('')}</ol><p class="note small"><b>Check:</b> ${T(b.check)}</p></div>`;
+ return `<div class="sec"><h2>Start here</h2><p>Two short paths. Pick the one that fits you.</p></div><div class="grid two">${block(S.new)}${block(S.back)}</div>`;};
+
+// ---------- how-to pages
+HOW.forEach(s=>{R[s.id]=()=>`<div class="sec"><span class="pill">How-to</span><h2 style="margin-top:8px">${T(s.title)}</h2><p>${T(s.need)}</p></div>
+ <ol class="steps">${s.steps.map(p=>`<li class="card">${T(p.t)}${src(p.s)}</li>`).join('')}</ol>
+ ${s.check?`<p class="note"><b>Check:</b> ${T(s.check)}</p>`:''}`;});
+
+// ---------- route
+function entChip(id){const e=E[id]||IX[id];if(!e)return '';return `<span class="chip${e.img?'':' noimg'}" data-e="${esc(id)}">${img(e)}${esc(e.name||e.n)}</span>`;}
+function resolveName(n){const k=String(n).toLowerCase();const x=D.index.find(e=>e.n.toLowerCase()===k);return x?x.id:null;}
+function bonfireList(loc){const L=loc&&loc.bonfire_list||[];return L.length?`<details class="more"><summary>Bonfires (${L.length})</summary><ul class="small">${L.map(b=>`<li><b>${esc(b.name)}</b>${b.where?` <span class="muted">— ${esc(b.where)}</span>`:''}</li>`).join('')}</ul></details>`:'';}
+function routeStep(r,i){const id=resolveName(r.area), a=E[id]||{};
+ return `<div class="rstep card"><div class="num">${i+1}</div><div>${a.img?`<img class="area" src="${esc(a.img)}" alt="${esc(a.name)}" data-e="${esc(id)}" onerror="${ICON_ERR}">`:''}</div>
+ <div><h3 style="margin-bottom:4px"><span data-e="${esc(id)}">${esc(r.area)}</span> ${r.optional?'<span class="pill opt">Optional</span>':''} ${r.dlc?`<span class="pill dlc">${esc(r.dlc)}</span>`:''}</h3>
+ ${(r.bosses||[]).length?`<div class="chips" style="margin:6px 0">${r.bosses.map(b=>{const bid=resolveName(b);const be=E[bid];return be?`<a class="chip" href="#boss/${esc(bid)}">${img(be)}${esc(be.name)}${be.optional?' <span class="pill opt">optional</span>':''}</a>`:'';}).join('')}</div>`:''}
+ <p>${T(r.t)}${src(r.s)}</p>${bonfireList(a)}</div></div>`;}
+R.route=()=>{const Rt=C.route||{steps:[]};return `<div class="sec"><h2>Area order &amp; bonfires</h2><p>${T(Rt.intro)}</p></div><div class="route">${Rt.steps.map(routeStep).join('')}</div>
+ <p class="note">DLC areas are on the <a href="#dlc">DLC order</a> page. Endings are on <a href="#endings">Endings</a>.</p>`;};
+R.dlc=()=>{const d=(C.route||{}).dlc||{steps:[]};return `<div class="sec"><h2>DLC order</h2><p>${T(d.intro)}</p></div><div class="route">${d.steps.map(routeStep).join('')}</div>`;};
+R.endings=()=>{const L=(C.route||{}).endings||[];return `<div class="sec"><h2>Endings</h2><p>Four endings. All of them start by beating the Soul of Cinder at the Kiln of the First Flame.</p></div>
+ <div class="grid two">${L.map(x=>`<div class="card"><h3>${esc(x.name)}</h3><p>${T(x.t)}${src(x.s)}</p></div>`).join('')}</div>`;};
+
+// ---------- bosses
+let BF='all';
+function weakPills(w){return ['Weak','Resists','Immune'].map(k=>(w[k]||[]).map(x=>`<span class="pill ${k==='Weak'?'weak':k==='Resists'?'res':'imm'}">${k==='Weak'?'Weak to':k==='Resists'?'Resists':'Immune'}: ${esc(x)}</span>`).join('')).join('');}
+const DLCN={aoa:'Ashes of Ariandel',trc:'The Ringed City'};
+function hpShort(v){if(typeof v==='number'||v==null)return n0(v);const m=/^[\d,]+/.exec(String(v));return m?m[0]+(String(v).length>m[0].length?'+':''):esc(v);}
+function bossCard(b){const p=b.parts[0]||{};return `<a class="bcard" href="#boss/${esc(b.id)}">${img(b)}<span class="t"><b>${esc(b.name)}</b>
+ <span class="pills">${b.dlc?`<span class="pill dlc">${DLCN[b.dlc]}</span>`:''}${b.optional?'<span class="pill opt">Optional</span>':''}<span class="pill">HP ${hpShort(p.hp)}</span></span>
+ <span class="tiny muted">${esc(p.loc||'')}</span></span></a>`;}
+const BOSSORDER=()=>{const o=[];[...(C.route||{}).steps||[],...((C.route||{}).dlc||{}).steps||[]].forEach(r=>(r.bosses||[]).forEach(b=>{const id=resolveName(b);if(id&&!o.includes(id))o.push(id);}));return o;};
+R.bosses=()=>{const ord=BOSSORDER();const all=D.entities.filter(e=>e.kind==='boss').sort((a,b)=>{const x=ord.indexOf(a.id),y=ord.indexOf(b.id);return (x<0?99:x)-(y<0?99:y);});
+ const L=all.filter(b=>BF==='all'||(BF==='main'&&!b.optional&&!b.dlc)||(BF==='optional'&&b.optional)||(BF===b.dlc));
+ return `<div class="sec"><h2>Bosses</h2><p>${all.length} boss pages from the wiki, ${D.meta.boss_fights} fights (${esc(D.meta.same_fight)}). In area order. Tap one for HP, weaknesses, drops, strategy and videos.</p></div>
+ <div class="tabs" data-set="BF">${[['all','All'],['main','Main game'],['optional','Optional'],['aoa','Ashes of Ariandel'],['trc','The Ringed City']].map(([v,t])=>`<button data-v="${v}" class="${BF===v?'on':''}">${t}</button>`).join('')}</div>
+ <div class="bgrid">${L.map(bossCard).join('')}</div>`;};
+function vidCard(v){return `<div class="vid card" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" role="button" tabindex="0"><span class="play"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} · ${esc(v.date)}${v.duration?' · '+Math.round(v.duration/60)+' min':''}</span></span></div>`;}
+function firstP(h){const m=/<p>[\s\S]*?<\/p>/.exec(h||'');return m?m[0]:'';}
+R.boss=(id)=>{const b=E[id];if(!b||b.kind!=='boss')return `<p>Boss not found. <a href="#bosses">All bosses</a></p>`;
+ const parts=b.parts||[];
+ return `<p class="tiny"><a href="#bosses">Bosses</a> / ${esc(b.name)}</p>
+ <div class="bhead"><div>${img(b,'big')}</div><div>
+ <div class="pills">${b.dlc?`<span class="pill dlc">${DLCN[b.dlc]}</span>`:''}${b.optional?'<span class="pill opt">Optional</span>':'<span class="pill">Required</span>'}</div>
+ <h2 style="font-size:2rem;margin:.2em 0">${esc(b.name)}</h2>
+ ${parts.map(p=>`<div class="card" style="margin-bottom:10px">${parts.length>1?`<h3>${esc(p.name)}</h3>`:''}
+  <div class="statrow">${[[p.hp,'HP (NG)'],[p.hp_ng,'HP (NG+)'],[p.souls,'souls (NG)']].map(([v,l])=>`<div class="stat card"><b class="${typeof v==='number'?'':'txt'}">${n0(v)}</b><span>${l}</span></div>`).join('')}</div>
+  <div class="pills">${weakPills(p.weak||{})||'<span class="muted small">No weaknesses listed on the wiki.</span>'}</div>
+  <p class="small"><b>Where:</b> ${(p.loc_ids||[]).map(x=>`<span data-e="${esc(x)}">${esc((E[x]||{}).name||x)}</span>`).join(', ')||esc(p.loc)}</p>
+  <p class="small"><b>Drops:</b> ${p.drops.map((d,i)=>{const di=(p.drop_ids||[])[i];return di?`<span data-e="${esc(di)}">${esc(d)}</span>`:esc(d);}).join(', ')}</p></div>`).join('')}
+ </div></div>
+ <div class="sec"><h2>Strategy</h2><p>The short version first, written from the boss's wiki page; open Full strategy for the wiki's text on every phase.</p></div>
+ <div class="card wiki">${(()=>{const q=((C.bosses||{}).bosses||[]).find(x=>x.id===b.id);return q?`<p class="answer">${T(q.t)}</p>${src(q.s)}`:firstP(b.strategy)||'<p class="muted">No strategy text.</p>';})()}
+  <details class="more"><summary>Full strategy</summary>${b.strategy}</details>
+  ${b.summons?`<details class="more"><summary>Summons (NPC helpers)</summary>${b.summons}</details>`:''}
+  ${b.location?`<details class="more"><summary>How to reach the fight</summary>${b.location}</details>`:''}
+  ${b.drops?`<details class="more"><summary>Drops (full)</summary>${b.drops}</details>`:''}
+  <p class="tiny" style="margin-top:10px">Source: <a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name)} on the Dark Souls Wiki</a></p></div>
+ <div class="sec"><h2>Videos</h2><p>${(b.videos||[]).length?`Found by a YouTube search: title names the boss, one per channel, newest first; from the last three years (since ${esc(M.recent_from)}) when at least two match, else after the last balance update (${esc(BAL.title)}, ${esc(BAL.date)}). Picked by that rule, not watched.`:'No video matched the search rule. <a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query='+encodeURIComponent('Dark Souls 3 '+b.name+' boss guide')+'">Search YouTube</a>'}</p></div>
+ <div class="grid wide">${(b.videos||[]).map(vidCard).join('')}</div>`;};
+
+// ---------- quests
+R.quests=()=>{const Q=C.quests||{npcs:[]};
+ return `<div class="sec"><h2>NPC quests &amp; missables</h2><p>${T(Q.intro)}</p></div>
+ <div class="grid two">${Q.npcs.map(q=>{const n=E[q.id]||{};return `<div class="card" id="q-${esc(q.id)}"><div style="display:flex;gap:12px;align-items:center">${n.img?`<img src="${esc(n.img)}" alt="" style="width:64px;height:64px;object-fit:cover;border-radius:2px;border:1px solid var(--line2)" onerror="${ICON_ERR}">`:''}
+  <div><h3 style="margin:0"><span data-e="${esc(q.id)}">${esc(n.name||q.npc)}</span></h3><p class="tiny muted" style="margin:2px 0 0">Reward: ${esc(q.reward||'')}</p></div></div>
+  <ol class="small" style="padding-left:1.3em">${q.steps.map(t=>typeof t==='string'?`<li>${T(t)}</li>`:`<li>${T(t.t)}${src(t.s)}</li>`).join('')}</ol>
+  ${q.missable.length?`<ul class="small" style="padding-left:1.1em;list-style:none">${q.missable.map(t=>`<li class="miss">${T(t)}</li>`).join('')}</ul>`:''}
+  ${src(q.s)}
+  ${n.quest||n.locs?`<details class="more"><summary>Full questline (wiki)</summary><div class="wiki">${n.quest||n.locs}</div></details>`:''}</div>`;}).join('')}</div>`;};
+
+// ---------- builds
+NEEDS.builds=ALL_CHUNKS;NEEDS.tiers=['weapons','rings','spells'];NEEDS.classes=['weapons','armor','spells'];
+function capTable(){const caps=(C.builds||{}).caps||[];return `<div class="tablewrap"><table class="stack"><thead><tr><th>Stat</th><th>Soft cap</th><th>What happens</th></tr></thead><tbody>${caps.map(c=>`<tr><td><b>${esc(c.stat)}</b></td><td data-label="Soft cap">${esc(c.cap)}</td><td>${T(c.t)}${src(c.s)}</td></tr>`).join('')}</tbody></table></div>`;}
+function hpTable(){const v=(D.caps||[]).find(x=>x.stat==='Vigor');if(!v)return '';const pick=[10,15,17,20,25,27,28,30,35,40,45,50,60,70,99];const rows=v.rows.filter(r=>pick.includes(r.level));
+ return `<details class="more"><summary>Vigor: HP at each level (wiki table)</summary><div class="tablewrap"><table><thead><tr><th>Vigor</th><th>HP</th><th>+HP for that level</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.level}</td><td>${r.value}</td><td>${r.gain==null?'—':'+'+r.gain}</td></tr>`).join('')}</tbody></table></div><p class="tiny">From the table on <a href="https://darksouls.fandom.com/wiki/Vigor_(Dark_Souls_III)" target="_blank" rel="noopener">Vigor (Dark Souls III)</a>.</p></details>`;}
+function creatorsBox(b){const L=b.creators||[];const win=M.window_60d;
+ if(!L.length)return `<div class="card creators"><h4 style="margin:0 0 4px">Creators (${esc(win)} to ${esc(M.videos_searched)})</h4><p class="small muted">No recent source: fewer than two different creators named the same weapon or ring for this archetype in build videos uploaded in this window (${(b.recent_videos||[]).length} video${(b.recent_videos||[]).length===1?'':'s'} found). Nothing is ranked.</p>${(b.recent_videos||[]).length?`<details class="src"><summary>Videos checked</summary> ${b.recent_videos.map(v=>`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.channel)} (${esc(v.date)})</a>`).join(', ')}</details>`:''}</div>`;
+ return `<div class="card creators"><h4 style="margin:0 0 4px">Named by 2+ creators (${esc(win)} to ${esc(M.videos_searched)})</h4><div class="chips">${L.map(m=>`<span>${entChip(m.id)} <details class="src"><summary>Sources (${m.videos.length})</summary> ${m.videos.map(v=>`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.channel)}, ${esc(v.date)}</a>`).join('; ')}</details></span>`).join('')}</div><p class="tiny muted">A mention in a video title or description; not a ranking.</p></div>`;}
+R.builds=()=>{const B=C.builds||{builds:[]};
+ return `<div class="sec"><h2>Builds &amp; soft caps</h2><p>${T(B.intro)}</p></div>
+ <div class="card"><h3>Soft caps</h3><p class="small muted">A soft cap is where each extra level starts giving much less.</p>${capTable()}${hpTable()}</div>
+ <div class="tabs" id="btabs">${B.builds.map((b,i)=>`<button data-bj="${esc(b.id)}" class="${i===0?'on':''}">${esc(b.name)}</button>`).join('')}</div>
+ ${B.builds.map((b,i)=>buildBlock(b,i)).join('')}`;};
+function buildBlock(b,i){const cl=E[b.class.id]||{};const gem=E[b.infuse.id]||{};
+ return `<section class="bblock" id="b-${esc(b.id)}" ${i?'hidden':''}>
+ <div class="grid two"><div class="card"><h3>${esc(b.name)}</h3><p>${T(b.idea.t)}${src(b.idea.s)}</p>
+  <p><b>Stats:</b> ${T(b.stats.t)}${src(b.stats.s)}</p>
+  <p><b>Starting class:</b> ${entChip(b.class.id)} <span class="small muted">has the most points in ${Object.entries(b.class.points).map(([k,v])=>esc(k)+' '+v).join(' and ')} at level ${b.class.level} (from the class pages).</span></p>
+  <p><b>Infusion:</b> ${entChip(b.infuse.id)} ${T(b.infuse.t)}${src(b.infuse.s)}</p></div>
+  <div>${creatorsBox(b)}<div class="card" style="margin-top:12px"><h3>Rings that boost it</h3><p class="tiny muted">Chosen by their effect text on the wiki; tap for where to find each.</p>
+  ${b.rings.map(r=>{const e=E[r.id]||{};return `<div style="display:flex;gap:10px;align-items:center;margin:6px 0">${entChip(r.id)}<span class="small muted">${esc(e.effect||'')}</span></div>`;}).join('')}</div></div></div>
+ <div class="sec"><h3>Weapons that fit (${b.weapon_total} in the data, best scaling first)</h3><p class="small">Base scaling letters at +0 from the wiki (S best, E lowest). Infusing changes them. Tap a weapon for its stats and where to find it.</p></div>
+ <div class="igrid">${b.weapon_ids.map(id=>tile(E[id])).join('')}</div>
+ ${b.spell_ids&&b.spell_ids.length?`<div class="sec"><h3>${esc(b.name)} spells, lowest requirement first</h3></div><div class="igrid">${b.spell_ids.map(id=>tile(E[id])).join('')}</div>`:''}
+ ${b.videos&&b.videos.length?`<div class="sec"><h3>Build guides</h3><p class="small muted">General guides, newest first: from the last three years (since ${esc(M.recent_from)}) when at least two match, else after the last balance update (${esc(BAL.date)}). Picked by the search rule and not watched. Titles are the creators' own words; a "best" in a title is not this guide's claim.</p></div><div class="grid wide">${b.videos.map(vidCard).join('')}</div>`:''}
+ </section>`;}
+
+// ---------- tiers
+R.tiers=()=>{const B=(C.builds||{}).builds||[];const agg=Object.create(null);
+ B.forEach(b=>(b.creators||[]).forEach(m=>{const a=agg[m.id]||(agg[m.id]={id:m.id,ch:{},v:[]});m.videos.forEach(v=>{if(!a.ch[v.channel]){a.ch[v.channel]=1;a.v.push(v);}});}));
+ const L=Object.values(agg).map(a=>({...a,n:a.v.length})).sort((a,b)=>b.n-a.n);
+ const tier=n=>n>=4?'S':n===3?'A':'B';
+ const rows=['S','A','B'].map(t=>{const x=L.filter(a=>tier(a.n)===t);return `<div class="tierrow"><div class="lab ${t}">${t}</div><div class="its">${x.map(a=>`<span>${entChip(a.id)} <details class="src"><summary>${a.n} creators</summary> ${a.v.map(v=>`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.channel)}, ${esc(v.date)}</a>`).join('; ')}</details></span>`).join('')||'<span class="muted small">none</span>'}</div></div>`;}).join('');
+ return `<div class="sec"><h2>Priority &amp; creator tier</h2><p>Dark Souls III has no official or stats-site tier list (no match data is published for it). This page does not rank anything by opinion.</p></div>
+ <div class="grid two">${['level','upgrade'].map(k=>{const b=(C.priority||{})[k];return b?`<div class="card"><h3>${T(b.title)}</h3><ol class="small" style="padding-left:1.3em">${b.steps.map(x=>`<li>${T(x.t)}${src(x.s)}</li>`).join('')}</ol>${b.note?`<p class="tiny muted">${T(b.note)}</p>`:''}</div>`:'';}).join('')}</div>
+ <div class="sec"><h2>Creator mention tier</h2><p><b>Whose rating:</b> nobody's opinion; a count. <b>What the letters mean:</b> S = named by 4 or more different YouTube creators in build videos uploaded ${esc(M.window_60d)} to ${esc(M.videos_searched)}; A = 3 creators; B = 2. A weapon or ring named by one creator is not listed. Open a Source button for the videos and dates.</p></div>
+ ${L.length?rows:`<p class="note">No recent source: in the window ${esc(M.window_60d)} to ${esc(M.videos_searched)} no weapon or ring was named by two or more different creators. The search checked the upload date of ${n0(M.pool_checked)} Dark Souls 3 build and weapon videos; ${n0(M.pool_in_window)} were uploaded in the window. Nothing is ranked until recent videos exist. Every checked video, with its upload date and the search that found it, is listed in <code>data/raw/videos.json</code> (<code>pool_checked_list</code>).</p>`}`;};
+
+// ---------- classes
+R.classes=()=>{const L=D.entities.filter(e=>e.kind==='class').sort((a,b)=>a.stats.Level-b.stats.Level);const S=['Level','Vigor','Attunement','Endurance','Vitality','Strength','Dexterity','Intelligence','Faith','Luck'];
+ return `<div class="sec"><h2>Starting classes</h2><p>Starting level and stats from each class page. Any class can become any build; the class only decides where you start.</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Class</th>${S.map(s=>`<th title="${s}">${s==='Level'?'Lv':s.slice(0,3)}</th>`).join('')}</tr></thead><tbody>${L.map(c=>`<tr><td class="l" data-e="${esc(c.id)}">${esc(c.name)}</td>${S.map(s=>{const mx=Math.max(...L.map(x=>x.stats[s]||0));return `<td style="${c.stats[s]===mx&&s!=='Level'?'color:var(--ember2);font-weight:700':''}">${c.stats[s]}</td>`;}).join('')}</tr>`).join('')}</tbody></table></div>
+ <p class="tiny muted">Highest value in each column in orange. Lv = soul level at the start (lower means fewer wasted points).</p>
+ <div class="bgrid" style="margin-top:16px">${L.map(c=>`<div class="bcard" data-e="${esc(c.id)}" role="button" tabindex="0">${img(c)}<span class="t"><b>${esc(c.name)}</b><span class="small muted">${esc(c.quote)}</span></span></div>`).join('')}</div>`;};
+
+// ---------- lists
+function tile(e){if(!e)return '';const sub=e.kind==='weapon'?e.wtype:e.kind==='spell'?e.school+(e.fp?' · '+e.fp+' FP':''):e.kind==='ring'?'':e.kind==='armor'?(e.weight!=null?e.weight+' weight':''):e.sub||'';
+ return `<div class="tile" data-e="${esc(e.id)}" role="button" tabindex="0">${img(e)}<b>${esc(e.name)}</b><span class="m">${esc(sub)}${e.dlc?' · '+(e.dlc==='aoa'?'AoA':'TRC'):''}</span></div>`;}
+const LS=Object.create(null);
+function listPage(kind,title,intro,opts){const st=LS[kind]||(LS[kind]={q:'',f:'all',g:'all',sc:'',dlc:'all'});
+ let L=Object.values(E).filter(e=>e.kind===kind);
+ const q=st.q.toLowerCase();
+ L=L.filter(e=>(!q||(e.name+' '+(e.effect||'')+' '+(e.usage||'')+' '+(e.wtype||'')+' '+(e.skill||'')).toLowerCase().includes(q))&&(st.f==='all'||opts.fv(e)===st.f)&&(st.dlc==='all'||(st.dlc==='base'?!e.dlc:e.dlc===st.dlc)));
+ if(opts.extra)L=opts.extra(L,st);
+ L.sort((a,b)=>a.name.localeCompare(b.name));
+ const fvals=[...new Set(Object.values(E).filter(e=>e.kind===kind).map(opts.fv).filter(Boolean))].sort();
+ return `<div class="sec"><h2>${title}</h2><p>${intro}</p></div>
+ <div class="filters" data-list="${kind}"><input type="search" data-k="q" placeholder="Filter by name or effect" value="${esc(st.q)}" aria-label="Filter">
+ ${fvals.length>1?`<select data-k="f" aria-label="${esc(opts.flabel)}"><option value="all">${esc(opts.flabel)}: all</option>${fvals.map(v=>`<option ${st.f===v?'selected':''} value="${esc(v)}">${esc(v)}</option>`).join('')}</select>`:''}
+ ${opts.extraUI?opts.extraUI(st):''}
+ <select data-k="dlc" aria-label="Game part"><option value="all">Base + DLC</option><option ${st.dlc==='base'?'selected':''} value="base">Base game only</option><option ${st.dlc==='aoa'?'selected':''} value="aoa">Ashes of Ariandel only</option><option ${st.dlc==='trc'?'selected':''} value="trc">The Ringed City only</option></select>
+ <span class="tiny muted">${L.length} shown</span></div>
+ <div class="igrid">${L.map(tile).join('')||'<p class="muted">Nothing matches.</p>'}</div>`;}
+const LET={S:6,A:5,B:4,C:3,D:2,E:1,'-':0};
+NEEDS.weapons=['weapons'];R.weapons=()=>listPage('weapon','Weapons, shields &amp; catalysts',`Every weapon page in the wiki's Dark Souls III weapon categories (${cnt('weapon')}). Stats are at +0. DLC tag = only found in that DLC.`,
+ {fv:e=>e.wtype,flabel:'Type',extraUI:st=>`<select data-k="g" aria-label="Group"><option value="all">Any group</option>${[['melee','Melee'],['shield','Shields'],['catalyst','Catalysts'],['ranged','Bows & crossbows']].map(([v,t])=>`<option ${st.g===v?'selected':''} value="${v}">${t}</option>`).join('')}</select>
+ <select data-k="sc" aria-label="Scaling"><option value="">Any scaling</option>${['str','dex','int','fth'].map(s=>`<option ${st.sc===s?'selected':''} value="${s}">${({str:'Strength',dex:'Dexterity',int:'Intelligence',fth:'Faith'})[s]} C or better</option>`).join('')}</select>`,
+  extra:(L,st)=>L.filter(e=>(st.g==='all'||e.group===st.g)&&(!st.sc||(LET[e.scale[st.sc]]||0)>=3))});
+NEEDS.armor=['armor'];R.armor=()=>listPage('armor','Armor sets',`${cnt('armor')} full sets with combined defence, weight and poise.`,{fv:e=>e.weight_class||'Light / medium',flabel:'Weight'});
+NEEDS.rings=['rings'];R.rings=()=>listPage('ring','Rings',`${cnt('ring')} rings with their effect and where to find them.`,{fv:e=>null,flabel:''});
+NEEDS.spells=['spells'];R.spells=()=>listPage('spell','Spells',`${cnt('spell')} sorceries, miracles and pyromancies with cost, slots and requirements.`,{fv:e=>e.school,flabel:'School'});
+NEEDS.items=['items'];R.items=()=>listPage('item','Items &amp; materials',`${cnt('item')} items: upgrade materials, gems, coals, Umbral Ashes, key items, boss souls and consumables.`,{fv:e=>e.sub,flabel:'Kind'});
+R.covenants=()=>`<div class="sec"><h2>Covenants</h2><p>Join one at a time; switch in the equipment menu. Rewards come at 10 and 30 offerings of the covenant's item.</p></div>
+ <div class="grid two">${D.entities.filter(e=>e.kind==='covenant').map(c=>`<div class="card"><div style="display:flex;gap:12px;align-items:center">${c.img?`<img src="${esc(c.img)}" alt="" style="width:72px;height:72px;object-fit:contain" onerror="${ICON_ERR}">`:''}<h3 style="margin:0"><span data-e="${esc(c.id)}">${esc(c.name)}</span></h3></div>
+ ${c.join?`<div class="isec"><h4>How to join</h4><div class="wiki">${c.join}</div></div>`:''}${c.benefits?`<details class="more"><summary>Benefits</summary><div class="wiki">${c.benefits}</div></details>`:''}${c.rewards?`<details class="more"><summary>Rewards</summary><div class="wiki">${c.rewards}</div></details>`:''}</div>`).join('')}</div>
+ <p class="tiny muted">From each covenant's wiki page and <a href="https://darksouls.fandom.com/wiki/Covenants_(Dark_Souls_III)" target="_blank" rel="noopener">Covenants (Dark Souls III)</a>.</p>`;
+NEEDS.merchants=['items'];
+R.merchants=()=>{const M_=D.entities.filter(e=>e.kind==='npc'&&e.merchant);const ash=Object.values(E).filter(e=>e.kind==='item'&&e.sub==='Merchant ashes').sort((a,b)=>a.name.localeCompare(b.name));
+ return `<div class="sec"><h2>Merchants &amp; Umbral Ashes</h2><p>Give an Umbral Ash to the Shrine Handmaid and she adds new items to her shop. Each card says where the ash is; open Unlocks for the items it adds.</p></div>
+ <div class="grid">${ash.map(a=>`<div class="card"><div style="display:flex;gap:10px;align-items:center">${img(a)?`<img src="${esc(a.img)}" alt="" style="width:56px;height:56px;object-fit:contain" onerror="${ICON_ERR}">`:''}<h3 style="margin:0;font-size:1.05rem"><span data-e="${esc(a.id)}">${esc(a.name)}</span></h3></div>
+  <div class="wiki small" style="margin-top:6px"><b>Where:</b> ${a.avail||'<span class="muted">see card</span>'}</div>
+  ${a.use?`<details class="more"><summary>Unlocks</summary><div class="wiki small">${a.use}</div></details>`:''}</div>`).join('')}</div>
+ <div class="sec"><h2>Merchants</h2><p>Shops from each merchant's wiki page. Open a shop for its full list and prices.</p></div>
+ <div class="grid two">${M_.map(n=>`<div class="card"><div style="display:flex;gap:12px;align-items:center">${n.img?`<img src="${esc(n.img)}" alt="" style="width:64px;height:64px;object-fit:cover;border-radius:2px" onerror="${ICON_ERR}">`:''}<div><h3 style="margin:0"><span data-e="${esc(n.id)}">${esc(n.name)}</span></h3><p class="tiny muted" style="margin:0">${esc(n.where||n.first||'')}</p></div></div>
+ ${n.wares?`<details class="more"><summary>Shop</summary><div class="wiki">${n.wares}</div></details>`:'<p class="small muted">Shop list: see the questline on the card.</p>'}</div>`).join('')}</div>`;};
+
+R.areas=()=>`<div class="sec"><h2>Areas</h2><p>${count('location')} areas. Tap one for its description, bonfires, bosses and neighbours. The play order is on <a href="#route">Area order</a>.</p></div>
+ <div class="bgrid">${D.entities.filter(e=>e.kind==='location').sort((a,b)=>a.name.localeCompare(b.name)).map(a=>`<div class="bcard" data-e="${esc(a.id)}" role="button" tabindex="0">${img(a)}<span class="t"><b>${esc(a.name)}</b><span class="tiny muted">${(a.bonfire_list||[]).length} bonfires${a.dlc?' · '+DLCN[a.dlc]:''}</span></span></div>`).join('')}</div>`;
+R.npcs=()=>`<div class="sec"><h2>All NPCs</h2><p>${count('npc')} characters with a Dark Souls III infobox on the wiki. Quest steps and missables for the important ones are on <a href="#quests">NPC quests</a>.</p></div>
+ <div class="igrid">${D.entities.filter(e=>e.kind==='npc').sort((a,b)=>a.name.localeCompare(b.name)).map(n=>`<div class="tile" data-e="${esc(n.id)}" role="button" tabindex="0">${img(n)}<b>${esc(n.name)}</b><span class="m">${n.merchant?'Merchant':''}</span></div>`).join('')}</div>`;
+
+// ---------- videos
+const VT={start:'Getting started',return:'Coming back / tips',route:'Area order / route',npcs:'NPC questlines',covenants:'Covenants',endings:'Endings',aoa:'Ashes of Ariandel',trc:'The Ringed City',infusion:'Infusion',stats:'Stats & soft caps',upgrades:'Upgrades & titanite'};
+R.videos=()=>{const T_=D.video_topics||{};const bos=D.entities.filter(e=>e.kind==='boss');
+ return `<div class="sec"><h2>Videos</h2><p><b>Picked by a rule, not watched.</b> These are YouTube search results from ${esc(M.videos_searched)}; this guide has not reviewed them, and a title that says "best" is the creator's claim. They play here when you are online (youtube-nocookie.com).</p><details class="more"><summary>How the videos are picked</summary><p>The title names Dark Souls 3 and the topic, longer than 2 minutes, one per channel, newest first. Videos from the last three years (since ${esc(M.recent_from)}) are used when at least two match; else topic videos go back to ${esc((M.videos_min||'').replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'))} (patch 1.15.2), then to the last balance update (${esc(BAL.date)}). The last patch is from ${esc(P.date)}, so few new guides are made; these are the newest that matched.</p></details></div>
+ ${Object.keys(VT).map(k=>`<div class="sec"><h3>${VT[k]}</h3></div>${(T_[k]||[]).length?`<div class="grid wide">${T_[k].map(vidCard).join('')}</div>`:'<p class="muted small">No video matched the search rule.</p>'}`).join('')}
+ <div class="sec"><h2>Boss videos</h2></div>${bos.map(b=>`<div class="sec"><h3><a class="lk" href="#boss/${esc(b.id)}">${esc(b.name)}</a></h3></div>${(b.videos||[]).length?`<div class="grid wide">${b.videos.map(vidCard).join('')}</div>`:'<p class="muted small">No video matched the search rule.</p>'}`).join('')}`;};
+
+// ---------- sources
+R.sources=()=>{const c=M.counts||{};return `<div class="sec"><h2>Sources &amp; method</h2><p>Everything is built from these pulls (cached in data/raw/ next to the build script, with a fetch log of every URL and time).</p></div>
+ <div class="tablewrap"><table><thead><tr><th>Source</th><th>Pulled</th></tr></thead><tbody>${(D.sources||[]).map(s=>`<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td>${esc(s.date)}</td></tr>`).join('')}
+ <tr><td><a href="https://darksouls3.wiki.fextralife.com/Stats" target="_blank" rel="noopener">Fextralife Dark Souls 3 wiki: the 9 stat pages (soft caps in words only)</a></td><td>${esc(M.pulled)}</td></tr></tbody></table></div>
+ <div class="grid two" style="margin-top:14px"><div class="card"><h3>Counts</h3><dl class="kv">${Object.entries(c).map(([k,v])=>`<dt>${esc(KIND[k]||k)}</dt><dd>${v}</dd>`).join('')}<dt>Bonfires</dt><dd>${D.bonfires}</dd><dt>Transpositions</dt><dd>${D.transpositions}</dd><dt>Wiki pages read</dt><dd>${M.pages}</dd></dl></div>
+ <div class="card"><h3>How it is checked</h3><ul class="small"><li>Every name in double brackets in the hand-written steps must be a card in the wiki data. Every number must appear in one page the step cites, in a sentence about the same thing, and a list of numbers (like 2, 6, 12 and 15) must not end differently in a cited page. The build stops if one does not.</li><li>At least half the content words of each hand-written line must appear in the pages it cites. Lines that are general advice rather than a fact from a page are labelled Advice.</li><li>Every boss has a short, answer-first summary written from its own wiki page; the wiki's full text is behind Full strategy.</li><li>No wiki markup (quote marks, brackets, braces) may reach the built data.</li><li>Every card must have a picture on disk.</li><li>Creator claims need two or more different channels inside the date window.</li><li>Boss, NPC, area, covenant and item text is the wiki's own text, cleaned and linked; the hand-written parts are the steps, the area notes, the quest summaries and the build frames.</li></ul></div>
+ <div class="card"><h3>What is not verified or missing</h3><ul class="small"><li>Wiki text is community-written; numbers are as the wiki has them on ${esc(M.pulled)} and were not re-measured in game.</li><li>The second Dexterity soft cap differs between the two wikis (60 or 80); both are shown.</li><li>Armor is listed as full sets only (not single pieces).</li><li>Videos are picked by a rule, not watched.</li><li>Non-boss enemies and mini-bosses have no cards.</li><li>PvP is not covered: online play depends on the servers.</li></ul></div>
+ <div class="card"><h3>Game version</h3><p class="small">Latest post in the official Steam feed: <a href="${esc(P.url)}" target="_blank" rel="noopener">${esc(P.title)}</a> (${esc(P.date)}). The last balance (regulation) update in the same feed: <a href="${esc(BAL.url)}" target="_blank" rel="noopener">${esc(BAL.title)}</a> (${esc(BAL.date)}).</p></div></div>
+ <p class="small muted">Fan-made. Not affiliated with FromSoftware or Bandai Namco. Pictures come from the Dark Souls Wiki and the Steam store (list in assets/manifest.json); text from the wiki is CC BY-SA. Fonts: Cinzel and EB Garamond (SIL Open Font License, in fonts/).</p>`;};
+
+// ---------- cards (modal)
+const STATN={str:'Str',dex:'Dex',int:'Int',fth:'Fth'};
+const DMGN=[['phys','Phys'],['mag','Magic'],['fire','Fire'],['ltn','Ltng'],['dark','Dark']];
+// a row label plus labelled value cells that wrap onto the next line on a narrow screen (no sideways scrolling in cards)
+function sgrid(rows){return `<div class="sgrid">${rows.map(([lab,cells])=>`<div class="sg-row"><div class="sg-l">${esc(lab)}</div><div class="sg-c">${cells.map(([h,v])=>`<div><span>${esc(h)}</span>${v}</div>`).join('')}</div></div>`).join('')}</div>`;}
+function usedIn(id){const out=[];((C.builds||{}).builds||[]).forEach(b=>{if((b.weapon_ids||[]).includes(id)||(b.rings||[]).some(r=>r.id===id)||(b.spell_ids||[]).includes(id)||b.infuse.id===id)out.push(b.name);});return out;}
+function cardHtml(e){if(!e)return '<p>Not found.</p>';const k=e.kind;let body='';
+ const wide=['location','class','covenant','boss'].includes(k);
+ const head=`<div class="ic-head">${e.img?`<img class="${wide?'wideimg':''}" src="${esc(e.img)}" alt="" onerror="${ICON_ERR}">`:''}<div><h2 style="margin:0;font-size:1.5rem">${esc(e.name)}</h2><div class="pills"><span class="pill ember">${esc(KIND[k]||k)}</span>${e.wtype?`<span class="pill">${esc(e.wtype)}</span>`:''}${e.sub?`<span class="pill">${esc(e.sub)}</span>`:''}${e.school?`<span class="pill">${esc(e.school)}</span>`:''}${e.dlc?`<span class="pill dlc">${DLCN[e.dlc]}</span>`:''}${e.boss_weapon?'<span class="pill">Boss soul weapon</span>':''}</div></div></div>`;
+ if(k==='weapon'){const a=e.atk,s=e.scale,r=e.req;
+  body+=`<div class="isec"><h4>Stats at +0</h4>${sgrid([['Attack',DMGN.map(([x,l])=>[l,n0(a[x])])]].concat((e.group==='shield'||/shield/i.test(e.wtype||''))&&e.defs?[['Block %',DMGN.map(([x,l])=>[l,n0(e.defs[x])])]]:[]))}
+  ${sgrid([['Needs',Object.keys(STATN).map(x=>[STATN[x],n0(r[x])])],['Scaling',Object.keys(STATN).map(x=>[STATN[x],`<b>${esc(s[x])}</b>`])]])}
+  <dl class="kv"><dt>Skill</dt><dd>${esc(e.skill||'—')}${e.fp&&/\d/.test(e.fp)?` <span class="muted">(${esc(e.fp)} FP)</span>`:''}</dd><dt>Damage type</dt><dd>${esc(e.dmg_type||'—')}</dd><dt>Weight</dt><dd>${n0(e.weight)}</dd><dt>Stability</dt><dd>${n0(e.stability)}</dd>${['bld','psn','fst'].filter(x=>e.aux[x]>0).map(x=>`<dt>${({bld:'Bleed',psn:'Poison',fst:'Frost'})[x]}</dt><dd>${e.aux[x]}</dd>`).join('')}${e.cast&&e.cast!=='N/A'?`<dt>Spell buff</dt><dd>${n0(e.cast)}</dd>`:''}${e.buy?`<dt>Buy price</dt><dd>${n0(e.buy)} souls</dd>`:''}</dl></div>`;}
+ if(k==='armor')body+=`<div class="isec"><h4>Full set</h4>${sgrid([['Absorption',[['phys','Phys'],['strike','Strike'],['slash','Slash'],['thrust','Thrust'],['mag','Magic'],['fire','Fire'],['ltn','Ltng'],['dark','Dark']].map(([x,l])=>[l,n0(e.defs[x])])]])}<dl class="kv"><dt>Weight</dt><dd>${n0(e.weight)}</dd><dt>Poise</dt><dd>${n0(e.poise)}</dd><dt>Bleed / Poison / Frost / Curse res.</dt><dd>${['bld','psn','fst','cur'].map(x=>n0(e.res[x])).join(' / ')}</dd></dl></div>`;
+ if(k==='ring')body+=`<div class="isec"><h4>Effect</h4><p><b>${esc(e.effect)}</b></p><dl class="kv"><dt>Weight</dt><dd>${n0(e.weight)}</dd></dl></div>`;
+ if(k==='spell')body+=`<div class="isec"><h4>Cast</h4><dl class="kv"><dt>FP</dt><dd>${esc(e.fp||'—')}</dd><dt>Slots</dt><dd>${n0(e.slots)}</dd><dt>Intelligence</dt><dd>${n0(e.req.int)}</dd><dt>Faith</dt><dd>${n0(e.req.fth)}</dd>${e.buy?`<dt>Buy price</dt><dd>${n0(e.buy)} souls</dd>`:''}</dl></div>${e.use?`<details class="more"><summary>How it works</summary><div class="wiki">${e.use}</div></details>`:''}`;
+ if(k==='item')body+=`<div class="isec"><h4>Use</h4><p><b>${esc(e.usage||'—')}</b></p><dl class="kv">${e.buy?`<dt>Buy price</dt><dd>${n0(e.buy)} souls</dd>`:''}${e.held?`<dt>Max held</dt><dd>${n0(e.held)}</dd>`:''}</dl></div>${e.use?`<details class="more"><summary>More on its use</summary><div class="wiki">${e.use}</div></details>`:''}`;
+ if(e.transposes)body+=`<div class="isec"><h4>Transposes into (Ludleth)</h4><p>${e.transposes.map(t=>`<span data-e="${esc(t.item)}">${esc((E[t.item]||IX[t.item]||{}).name||(IX[t.item]||{}).n||t.item)}</span>${t.cost?` <span class="muted small">(${esc(t.cost)})</span>`:''}`).join(', ')}</p></div>`;
+ if(e.from_soul)body+=`<div class="isec"><h4>Made from a boss soul</h4><p>${e.from_soul.map(t=>`<span data-e="${esc(t.soul)}">${esc((E[t.soul]||IX[t.soul]||{}).name||(IX[t.soul]||{}).n||t.soul)}</span>${t.cost?' + '+esc(t.cost):''} at <span data-e="ludleth-of-courland">Ludleth of Courland</span>`).join('; ')}</p></div>`;
+ if(e.desc&&typeof e.desc==='string'&&!/^</.test(e.desc))body+=`<div class="isec"><h4>Item description</h4>${e.desc.split('\n').map(x=>`<p class="desc small">${esc(x)}</p>`).join('')}</div>`;
+ if(['weapon','armor','ring','spell','item'].includes(k))body+=`<div class="isec"><h4>How to get it</h4><div class="wiki small">${e.avail||'<p class="muted">The wiki page lists no location for it. Open the wiki link below.</p>'}</div></div>`;
+ if(e.notes)body+=`<details class="more"><summary>Notes</summary><div class="wiki small">${e.notes}</div></details>`;
+ if(k==='class'){const S=['Level','Vigor','Attunement','Endurance','Vitality','Strength','Dexterity','Intelligence','Faith','Luck'];
+  body+=`${e.quote?`<p class="desc">${esc(e.quote)}</p>`:''}<div class="isec"><h4>Starting stats</h4><dl class="kv">${S.map(s=>`<dt>${s}</dt><dd>${e.stats[s]}</dd>`).join('')}</dl></div><div class="isec"><h4>Starting gear</h4><p>${Object.values(e.equip).map(n=>{const id=resolveName(n);return id?`<span data-e="${esc(id)}">${esc(n)}</span>`:esc(n);}).join(', ')}</p></div>${e.desc?`<details class="more"><summary>About this class</summary><div class="wiki small">${e.desc}</div></details>`:''}`;}
+ if(k==='npc')body+=`<dl class="kv">${e.first?`<dt>First met</dt><dd>${esc(e.first)}</dd>`:''}${e.where?`<dt>Found in</dt><dd>${esc(e.where)}</dd>`:''}</dl>${e.desc?`<div class="wiki small">${e.desc}</div>`:''}${(C.quests&&C.quests.npcs||[]).some(q=>q.id===e.id)?`<p><a class="lk" href="#quests" data-close>Quest steps and missables</a></p>`:''}${e.quest?`<details class="more"><summary>Questline (wiki)</summary><div class="wiki small">${e.quest}</div></details>`:''}${e.locs?`<details class="more"><summary>Where to find them</summary><div class="wiki small">${e.locs}</div></details>`:''}${e.wares?`<details class="more"><summary>Shop</summary><div class="wiki small">${e.wares}</div></details>`:''}${e.drops&&typeof e.drops==='string'?`<details class="more"><summary>Drops</summary><div class="wiki small">${e.drops}</div></details>`:''}`;
+ if(k==='covenant')body+=`${e.desc?`<div class="wiki small">${e.desc}</div>`:''}${e.join?`<div class="isec"><h4>How to join</h4><div class="wiki small">${e.join}</div></div>`:''}${e.benefits?`<details class="more"><summary>Benefits</summary><div class="wiki small">${e.benefits}</div></details>`:''}${e.rewards?`<details class="more"><summary>Rewards</summary><div class="wiki small">${e.rewards}</div></details>`:''}`;
+ if(k==='location')body+=`${e.desc?`<div class="wiki small">${e.desc}</div>`:''}${(e.bosses||[]).length?`<div class="isec"><h4>Bosses</h4><div class="chips">${e.bosses.map(b=>`<a class="chip" href="#boss/${esc(b)}" data-close>${img(E[b])}${esc(E[b].name)}</a>`).join('')}</div></div>`:''}${(e.bonfire_list||[]).length?`<div class="isec"><h4>Bonfires (${e.bonfire_list.length})</h4><ul class="small">${e.bonfire_list.map(b=>`<li><b>${esc(b.name)}</b>${b.where?` <span class="muted">— ${esc(b.where)}</span>`:''}</li>`).join('')}</ul></div>`:''}${(e.adj||[]).length?`<div class="isec"><h4>Leads to</h4><p>${e.adj.map(a=>`<span data-e="${esc(a)}">${esc(E[a].name)}</span>`).join(', ')}</p></div>`:''}`;
+ if(k==='boss')body+=`<p><a class="lk" href="#boss/${esc(e.id)}" data-close>Open the boss page</a></p>`;
+ const u=usedIn(e.id);if(u.length)body+=`<div class="isec"><h4>Used in builds</h4><p>${u.map(n=>`<a class="lk" href="#builds" data-close>${esc(n)}</a>`).join(', ')}</p></div>`;
+ return head+body+`<p class="tiny" style="margin-top:14px">Source: <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)} on the Dark Souls Wiki</a></p>`;}
+function openCard(id){const x=IX[id];if(!x){openModal('<p>Not found.</p>');return;}
+ if(x.k==='boss'){closeModal();location.hash='boss/'+id;return;}
+ (x.c==='core'?Promise.resolve():need([x.c])).then(()=>openModal(cardHtml(E[id]),['location','class','covenant'].includes(x.k))).catch(err=>openModal(`<p class="note warn">${esc(err.message)}</p>`));}
+
+// ---------- search
+const IDX=D.index.map(e=>({t:e.n,k:KIND[e.k]+(e.x?' · '+e.x:''),id:e.id,img:e.img,x:e.x||''}));
+NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({t,k:'Section',go:id,x:g})));
+HOW.forEach(s=>IDX.push({t:s.title.replace(/<[^>]+>/g,''),k:'How-to',go:s.id,x:s.steps.map(p=>p.t.replace(/<[^>]+>/g,'')).join(' ')}));
+((C.quests||{}).npcs||[]).forEach(q=>IDX.push({t:(IX[q.id]||{}).n+' quest',k:'Quest & missables',go:'quests',x:q.steps.map(t=>typeof t==='string'?t:t.t).join(' ').replace(/<[^>]+>/g,'')}));
+const norm=s=>String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+IDX.forEach(e=>{e._t=norm(e.t);e._x=norm(e.x);});
+let hits=[],sel=0;
+function doSearch(q){const r=$('#res');q=norm(q);if(!q){r.classList.remove('on');return;}const words=q.split(' ');
+ hits=IDX.map(e=>{let sc=0;if(e._t===q)sc=100;else if(e._t.startsWith(q))sc=60;else if(e._t.includes(q))sc=40;else if(words.every(w=>e._t.includes(w)))sc=25;else if(words.every(w=>e._t.includes(w)||e._x.includes(w)))sc=10;return [sc,e];}).filter(a=>a[0]>0).sort((a,b)=>b[0]-a[0]||a[1].t.length-b[1].t.length).slice(0,16).map(a=>a[1]);
+ sel=0;r.innerHTML=hits.length?hits.map((e,i)=>`<div class="${i===0?'sel':''}" data-i="${i}" role="option">${e.img?`<img src="${esc(e.img)}" alt="" onerror="${ICON_ERR}">`:''}<span class="rt"><span>${esc(e.t)}</span><i>${esc(e.k)}</i></span></div>`).join(''):'<div class="none">No match. Try a boss, weapon, ring or NPC name.</div>';r.classList.add('on');}
+function goHit(e){if(!e)return;$('#res').classList.remove('on');$('#q').value='';$('#q').blur();$('#side').classList.remove('open');if(e.id)openCard(e.id);else location.hash=e.go;}
+$('#q').addEventListener('input',e=>doSearch(e.target.value));
+$('#q').addEventListener('keydown',e=>{const r=$('#res');if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...r.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){goHit(hits[sel]);}else if(e.key==='Escape'){r.classList.remove('on');}});
+$('#res').addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#res').classList.remove('on');});
+
+// ---------- modal
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;scrollHints($('#mbody'));$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;$('#modal .x').focus();}
+// a table wider than the screen scrolls inside its box: say so above it, so cut-off columns are not missed
+function scrollHints(root){requestAnimationFrame(()=>root.querySelectorAll('.tablewrap').forEach(t=>{const over=t.scrollWidth>t.clientWidth+1;const h=t.previousElementSibling&&t.previousElementSibling.classList.contains('swipe')?t.previousElementSibling:null;
+ if(over&&!h)t.insertAdjacentHTML('beforebegin','<p class="swipe">Swipe the table sideways for more columns.</p>');else if(!over&&h)h.remove();t.classList.toggle('scrolls',over);}));}
+addEventListener('resize',()=>scrollHints(document));
+document.addEventListener('toggle',e=>{if(e.target.tagName==='DETAILS')scrollHints(e.target);},true);
+function closeModal(){if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+function playVideo(id,title){openModal(`<h3 style="margin-right:34px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;border-radius:4px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+
+// ---------- clicks + routing
+document.addEventListener('click',e=>{
+ const cl=e.target.closest('[data-close]');if(cl){closeModal();return;}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const en=e.target.closest('[data-e]');if(en&&!e.target.closest('a[href]')){e.preventDefault();openCard(en.dataset.e);return;}
+ const bj=e.target.closest('[data-bj]');if(bj){document.querySelectorAll('[data-bj]').forEach(b=>b.classList.toggle('on',b===bj));document.querySelectorAll('.bblock').forEach(s=>{s.hidden=s.id!=='b-'+bj.dataset.bj;});return;}
+ const b=e.target.closest('.tabs[data-set] button');if(b){if(b.parentNode.dataset.set==='BF')BF=b.dataset.v;render(false);}
+});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[role=button][data-e],[role=button][data-vid]')){e.preventDefault();e.target.click();}});
+main.addEventListener('input',e=>{const f=e.target.closest('[data-list]');if(!f)return;const st=LS[f.dataset.list];st[e.target.dataset.k]=e.target.value;const pos=e.target.selectionStart;const key=e.target.dataset.k;render(false);const n=main.querySelector(`[data-list] [data-k="${key}"]`);if(n){n.focus();if(pos!=null&&n.setSelectionRange)try{n.setSelectionRange(pos,pos);}catch(_){}}});
+$('#menuBtn').addEventListener('click',()=>{const o=$('#side').classList.toggle('open');$('#menuBtn').setAttribute('aria-expanded',o);});
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#side').classList.remove('open');});
+
+function footer(){return `<footer>${$('#checked').innerHTML}<br>Fan-made guide · not affiliated with FromSoftware or Bandai Namco · <a href="#sources">sources &amp; method</a></footer>`;}
+let token=0;
+function render(top=true){const h=decodeURIComponent(location.hash.slice(1))||'home';const [r,arg]=h.split('/');
+ const own=typeof R[r]==='function';const cur=own?r:'home';const f=own?R[r]:R.home;const my=++token;
+ $('#nav').innerHTML=navHtml(r==='boss'?'bosses':cur);
+ const draw=()=>{if(my!==token)return;try{main.innerHTML=f(arg)+footer();scrollHints(main);}catch(err){main.innerHTML=`<p class="note warn">This section failed to draw: ${esc(err.message)}. <a href="#home">Home</a></p>`;console.error(err);}
+  if(top)window.scrollTo(0,0);document.title=(r==='boss'&&E[arg]?E[arg].name+' · ':own&&r!=='home'?(NAV.flatMap(g=>g[1]).find(x=>x[0]===r)||[0,''])[1]+' · ':'')+'Dark Souls III Guide';};
+ const n=own?NEEDS[r]:null;
+ if(n&&n.some(c=>!CH[c])){main.innerHTML='<p class="muted">Loading…</p>';need(n).then(draw).catch(err=>{main.innerHTML=`<p class="note warn">${esc(err.message)}</p>`;});}else draw();}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+})();
+</script>
+</body>
+</html>

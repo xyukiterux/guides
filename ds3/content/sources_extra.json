@@ -1,0 +1,18 @@
+{
+ "no_picture_ok": [],
+ "boss_video_keys": {
+  "Vordt of the Boreal Valley": "Vordt",
+  "Yhorm the Giant": "Yhorm",
+  "Aldrich, Devourer of Gods": "Aldrich",
+  "Dancer of the Boreal Valley": "Dancer",
+  "Oceiros, the Consumed King": "Oceiros",
+  "The Nameless King": "Nameless King",
+  "Lorian, Elder Prince and Lothric, Younger Prince": "Twin Princes",
+  "Champion's Gravetender and Gravetender Greatwolf": "Gravetender",
+  "Father Ariandel": "Sister Friede",
+  "Spear of the Church": "Halflight"
+ },
+ "same_fight": {
+  "Father Ariandel": "Sister Friede"
+ }
+}

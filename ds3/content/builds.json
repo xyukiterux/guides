@@ -1,0 +1,161 @@
+{
+ "intro": "Built from wiki data: soft caps from two wikis, the infusion from the Infusion page, rings chosen by their effect text, and every weapon whose base scaling fits. Which rings make the list and the stat targets are the guide's own choice, read off those pages. The Creators box names an item only when two or more creators named it recently.",
+ "caps": [
+  {"stat": "Vigor", "cap": "27, then 50", "t": "Vigor levels 11 to 27 give 23 to 44 HP each; levels 28 to 49 give 5 to 19 HP; levels 50 to 99 give only 1 to 3 HP. The biggest gain in the wiki table, 44 HP per level, is at 16 and 17 Vigor.", "s": ["Vigor (Dark Souls III)", "fx:Vigor"]},
+  {"stat": "Attunement", "cap": "35", "t": "FP per point is highest up to 35 Attunement, then drops. Slots come at 10, 14, 18 and more.", "s": ["Attunement (Dark Souls III)", "fx:Attunement"]},
+  {"stat": "Endurance", "cap": "40", "t": "Stamina grows until 40 Endurance; past 40 you need 5 or more levels for each extra point.", "s": ["Endurance (Dark Souls III)", "fx:Endurance"]},
+  {"stat": "Vitality", "cap": "none for equip load", "t": "Each level adds 1.0 to maximum equip load all the way to 99. Raise it only until your armor and weapons fit.", "s": ["fx:Vitality"]},
+  {"stat": "Strength", "cap": "40, then 60", "t": "Damage per point drops after 40 and again after 60. Two-handing multiplies Strength by 1.5, so 27 reaches the 40 cap.", "s": ["fx:Strength", "Parameter Bonus (Dark Souls III)"]},
+  {"stat": "Dexterity", "cap": "40 (second cap: 60 or 80)", "t": "Both wikis put the first Dexterity soft cap at 40. The second Dexterity soft cap differs between them, 80 on the Dark Souls Wiki (as of the 1.32 regulation) and 60 on Fextralife. Casting speed stops improving at 50.", "s": ["Dexterity (Dark Souls III)", "fx:Dexterity"]},
+  {"stat": "Intelligence", "cap": "40 (Fextralife) / minor cap 45, gains until 60 (Dark Souls Wiki); 30 for Dark or Chaos infusions", "t": "Weapons with innate Magic damage and Crystal or Simple infusions soft-cap at 40 Intelligence. Weapons infused with a Chaos Gem or Dark Gem soft-cap at 30 Intelligence, along with 30 Faith. For staves the two wikis differ: Fextralife gives spell damage a soft cap at 40 and a sharper cap at 60; the Dark Souls Wiki says staves keep gaining until 60 Intelligence, with a minor soft cap at 45. Dark catalysts such as the [[Izalith Staff]] and [[Sunless Talisman]] improve up to 45 Intelligence and 45 Faith.", "s": ["Intelligence (Dark Souls III)", "fx:Intelligence"]},
+  {"stat": "Faith", "cap": "40 for weapons; catalysts 40, 45 or 60 (Fextralife) / gains until 60, slower past 45 (Dark Souls Wiki); 30 for Dark or Chaos infusions", "t": "Lightning weapons and weapons infused with a Lightning Gem or Blessed Gem soft-cap at 40 Faith. Infusions with a Chaos Gem or Dark Gem soft-cap at 30 Faith alongside 30 Intelligence. For miracle catalysts the two wikis differ: Fextralife gives a miracle soft cap of 40, 45 or 60 depending on the catalyst; the Dark Souls Wiki says talismans and chimes improve up until 60 Faith, and most fall off after 45 Faith. Dark catalysts use 45 Faith and 45 Intelligence.", "s": ["Faith (Dark Souls III)", "fx:Faith"]},
+  {"stat": "Luck", "cap": "50 for bleed build-up (Fextralife); no damage soft cap given", "t": "Luck raises item discovery and bleed build-up on regular and Blood-infused weapons. Fextralife says bleed build-up has its best gains between 25 and 50 Luck, where 50 is the hard cap. Hollow-infused weapons scale with Luck; neither wiki gives a soft cap for that damage.", "s": ["fx:Luck", "Parameter Bonus (Dark Souls III)"]}
+ ],
+ "builds": [
+  {
+   "id": "strength",
+   "name": "Strength",
+   "key": ["Strength"],
+   "filter": {
+    "scale": {"str": "C"},
+    "group": "melee"
+   },
+   "idea": {"t": "Big weapons, heavy hits that break an enemy's poise and stagger it. Two-hand to get the 1.5 Strength bonus.", "s": ["fx:Strength"]},
+   "stats": {"t": "Vigor 27 first, Endurance toward 40, Strength 40, then Vigor toward 50.", "s": ["fx:Vigor", "fx:Endurance", "fx:Strength"]},
+   "infuse": {"gem": "Heavy Gem", "t": "Heavy raises Strength scaling and removes Dexterity scaling ([[Farron Coal]]).", "s": ["Infusion (Dark Souls III)", "Farron Coal"]},
+   "rings": [
+    {"e": "Knight's Ring"},
+    {"e": "Havel's Ring"},
+    {"e": "Pontiff's Right Eye"},
+    {"e": "Lloyd's Sword Ring"},
+    {"e": "Chloranthy Ring"}
+   ]
+  },
+  {
+   "id": "dexterity",
+   "name": "Dexterity",
+   "key": ["Dexterity"],
+   "filter": {
+    "scale": {"dex": "C"},
+    "group": "melee"
+   },
+   "idea": {"t": "Fast weapons, katanas and curved swords; more hits per stamina bar.", "s": ["fx:Dexterity"]},
+   "stats": {"t": "Vigor 27, Endurance toward 40, Dexterity 40, then Vigor toward 50.", "s": ["fx:Vigor", "fx:Endurance", "fx:Dexterity"]},
+   "infuse": {"gem": "Sharp Gem", "t": "Sharp raises Dexterity scaling and lowers Strength scaling ([[Farron Coal]]).", "s": ["Infusion (Dark Souls III)", "Farron Coal"]},
+   "rings": [
+    {"e": "Hunter's Ring"},
+    {"e": "Pontiff's Right Eye"},
+    {"e": "Hornet Ring"},
+    {"e": "Carthus Milkring"},
+    {"e": "Chloranthy Ring"}
+   ]
+  },
+  {
+   "id": "quality",
+   "name": "Quality (Strength + Dexterity)",
+   "key": ["Strength", "Dexterity"],
+   "filter": {
+    "scale": {"str": "D", "dex": "D"},
+    "group": "melee"
+   },
+   "idea": {"t": "Strength and Dexterity together. A Refined infusion equalizes a weapon's scaling with Strength and Dexterity.", "s": ["Infusion (Dark Souls III)"]},
+   "stats": {"t": "Vigor 27, Endurance toward 40, Strength 40 and Dexterity 40.", "s": ["fx:Vigor", "fx:Endurance", "fx:Strength", "fx:Dexterity"]},
+   "infuse": {"gem": "Refined Gem", "t": "Refined evens out Strength and Dexterity scaling but lowers base damage more than Heavy or Sharp ([[Farron Coal]]).", "s": ["Infusion (Dark Souls III)", "Farron Coal"]},
+   "rings": [
+    {"e": "Knight's Ring"},
+    {"e": "Hunter's Ring"},
+    {"e": "Pontiff's Right Eye"},
+    {"e": "Lloyd's Sword Ring"},
+    {"e": "Chloranthy Ring"}
+   ]
+  },
+  {
+   "id": "sorcery",
+   "name": "Sorcery (Intelligence)",
+   "key": ["Intelligence"],
+   "filter": {
+    "scale": {"int": "C"},
+    "group": "catalyst"
+   },
+   "school": "Sorcery",
+   "idea": {"t": "Ranged magic damage from a staff. Spells come from [[Orbeck of Vinheim]], [[Yoel of Londor]] and [[Karla]].", "s": ["Orbeck of Vinheim", "Yoel of Londor", "Karla"]},
+   "stats": {"t": "Vigor 27, Attunement up to 35 for FP, Intelligence 40.", "s": ["fx:Vigor", "fx:Attunement", "fx:Intelligence"]},
+   "infuse": {"gem": "Crystal Gem", "t": "Crystal adds Magic damage and Intelligence scaling to your melee backup weapon ([[Sage's Coal]]).", "s": ["Infusion (Dark Souls III)", "Sage's Coal"]},
+   "rings": [
+    {"e": "Bellowing Dragoncrest Ring"},
+    {"e": "Young Dragon Ring"},
+    {"e": "Magic Clutch Ring"},
+    {"e": "Scholar Ring"},
+    {"e": "Sage Ring"}
+   ]
+  },
+  {
+   "id": "faith",
+   "name": "Faith (Miracles)",
+   "key": ["Faith"],
+   "filter": {
+    "scale": {"fth": "C"},
+    "group": "catalyst"
+   },
+   "school": "Miracle",
+   "idea": {"t": "Lightning spears, heals and buffs. [[Irina of Carim]] sells miracles.", "s": ["Irina of Carim"]},
+   "stats": {"t": "Vigor 27, Attunement up to 35, Faith 40.", "s": ["fx:Vigor", "fx:Attunement", "fx:Faith"]},
+   "infuse": {"gem": "Blessed Gem", "t": "Blessed adds Faith scaling and slow HP recovery while held ([[Sage's Coal]]).", "s": ["Infusion (Dark Souls III)", "Sage's Coal"]},
+   "rings": [
+    {"e": "Ring of the Sun's First Born"},
+    {"e": "Morne's Ring"},
+    {"e": "Lightning Clutch Ring"},
+    {"e": "Priestess Ring"},
+    {"e": "Lingering Dragoncrest Ring"}
+   ]
+  },
+  {
+   "id": "pyromancy",
+   "name": "Pyromancy",
+   "key": ["Intelligence", "Faith"],
+   "filter": {"wtype": "Pyromancy Flame"},
+   "school": "Pyromancy",
+   "idea": {"t": "Fire spells cast from a Pyromancy Flame; they use both Intelligence and Faith. [[Cornyx of the Great Swamp]] teaches them.", "s": ["fx:Faith", "Cornyx of the Great Swamp"]},
+   "stats": {"t": "Vigor 27, Attunement up to 35. Intelligence and Faith toward 40 each for the Pyromancy Flame. A Chaos-infused weapon soft-caps at 30 Intelligence and 30 Faith, so stop there if you fight with one.", "s": ["fx:Vigor", "fx:Attunement", "Intelligence (Dark Souls III)", "Faith (Dark Souls III)"]},
+   "infuse": {"gem": "Chaos Gem", "t": "Chaos adds Fire damage with Intelligence and Faith scaling, soft-capped at 30 in each ([[Giant's Coal]]).", "s": ["Giant's Coal", "Intelligence (Dark Souls III)"]},
+   "rings": [
+    {"e": "Witch's Ring"},
+    {"e": "Great Swamp Ring"},
+    {"e": "Fire Clutch Ring"},
+    {"e": "Scholar Ring"},
+    {"e": "Priestess Ring"}
+   ]
+  },
+  {
+   "id": "hex",
+   "name": "Dark (Hexer)",
+   "key": ["Intelligence", "Faith"],
+   "filter": {"atk": "dark", "group": "melee"},
+   "idea": {"t": "Dark damage from Intelligence and Faith together. Dark catalysts such as the [[Izalith Staff]] and [[Sunless Talisman]] improve up to 45 in both; weapons infused with a Dark Gem soft-cap at 30 in both.", "s": ["Intelligence (Dark Souls III)"]},
+   "stats": {"t": "Vigor 27, Attunement up to 35. For a Dark-infused weapon, Intelligence 30 and Faith 30: the Dark Gem infusion soft-caps there. Go toward 45 Intelligence and 45 Faith only for a dark catalyst.", "s": ["fx:Vigor", "fx:Attunement", "Intelligence (Dark Souls III)", "Faith (Dark Souls III)"]},
+   "infuse": {"gem": "Dark Gem", "t": "Dark adds Dark damage with Intelligence and Faith scaling, soft-capped at 30 in each ([[Profaned Coal]]).", "s": ["Infusion (Dark Souls III)", "Profaned Coal", "Intelligence (Dark Souls III)"]},
+   "rings": [
+    {"e": "Dark Clutch Ring"},
+    {"e": "Scholar Ring"},
+    {"e": "Priestess Ring"},
+    {"e": "Dusk Crown Ring"}
+   ]
+  },
+  {
+   "id": "bleed",
+   "name": "Bleed (Luck)",
+   "key": ["Luck", "Dexterity"],
+   "filter": {"aux": "bld", "group": "melee"},
+   "idea": {"t": "Fast weapons that build up bleed; Blood-infused weapons build bleed faster with Luck.", "s": ["fx:Luck", "Infusion (Dark Souls III)"]},
+   "stats": {"t": "Vigor 27, Endurance toward 40, the weapon's Dexterity or Strength requirement, then Luck.", "s": ["fx:Vigor", "fx:Endurance", "fx:Luck"]},
+   "infuse": {"gem": "Blood Gem", "t": "Blood adds bleed build-up that scales with Luck ([[Profaned Coal]]).", "s": ["Infusion (Dark Souls III)", "Profaned Coal", "fx:Luck"]},
+   "rings": [
+    {"e": "Pontiff's Right Eye"},
+    {"e": "Hornet Ring"},
+    {"e": "Hunter's Ring"},
+    {"e": "Covetous Gold Serpent Ring"},
+    {"e": "Chloranthy Ring"}
+   ]
+  }
+ ]
+}
