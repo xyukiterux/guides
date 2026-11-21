@@ -179,7 +179,7 @@ function home(){
  const picks=['1174','1102','1155','1173','1001','1169'].map(k=>byKey.get(k)).filter(Boolean);main.append(el('div',{class:'roster home-roster'},picks.map(card)));
  main.append(el('div',{class:'section-head'},el('h2',{},'More to explore')));
  main.append(grid(newUnitPanel(),panel(el('h3',{},'Coffee and cells'),text('24 coffee recipes and the equipment cells.','muted'),el('div',{class:'actions'},link('Coffee','#coffee','button'),link('Cells','#cells','button'))),panel(el('h3',{},D.counts.videos+' creator videos'),text('Search by topic, creator or title.','muted'),link('Video library →','#videos')),panel(el('h3',{},Object.keys(profile.owned).length?'Your collection':'Mark what you own'),text('Mark your characters and stars, then build teams from them.','muted'),link('Open your account →','#account'))));
- main.append(brief('Guide updated November 20, 2026. Prices as of October 19: check the in-game shop before you spend.',['Teams and boss tips: research of October 26, 2026. Game data: EU build of September 22, 2026.','Banners, prices and availability change by server, so confirm them in your game.',el('p',{},'The old full articles are on the ',link('Sources page','#sources'),'.')]));
+ main.append(brief('Guide updated November 21, 2026. Prices as of October 19: check the in-game shop before you spend.',['Teams and boss tips: research of October 26, 2026. Game data: EU build of September 22, 2026.','Banners, prices and availability change by server, so confirm them in your game.',el('p',{},'The old full articles are on the ',link('Sources page','#sources'),'.')]));
 }
 
 /* ---------- Search: pages, rule topics and cards, characters, bosses, modes, teams, recipes, tables, videos ---------- */
