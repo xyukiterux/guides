@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Princess Connect Steps</title>
+<style>
+:root{--bg:#fff8f3;--card:#ffffff;--ink:#2b2130;--muted:#6f6475;--pink:#e2557f;--gold:#c99a2e;--blue:#3d7bd9;--green:#2e9d6b;--red:#d2453a;--line:#f0dfe4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1520;--card:#271e2d;--ink:#f4eaf2;--muted:#b7a9bb;--line:#3b2e42;--pink:#ff7da3;--gold:#e9c063;--blue:#7fb0ff;--green:#5fd39f;--red:#ff7a6e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif}
+header{background:linear-gradient(135deg,#f6a2bb,#f7d58a 60%,#9fc3ff);color:#2b2130;padding:28px 16px}
+header h1{margin:0;font-size:clamp(26px,4vw,40px);letter-spacing:.5px}
+header p{margin:6px 0 0;max-width:900px}
+nav{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;padding:8px 16px;z-index:2}
+nav a{white-space:nowrap;text-decoration:none;color:var(--pink);font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--line)}
+main{padding:16px;max-width:1400px;margin:0 auto}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0}
+h2{margin:0 0 10px;color:var(--pink)}
+h3{margin:16px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:12px;padding:12px}
+.tile>b:first-of-type{display:block}
+.big{font-size:28px;font-weight:800;color:var(--gold)}
+.do{border-left:5px solid var(--green)}.skip{border-left:5px solid var(--red)}.info{border-left:5px solid var(--blue)}
+ol li,ul li{margin:4px 0}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.wrap{overflow-x:auto}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;color:#fff;background:var(--pink)}
+.tag.g{background:var(--green)}.tag.r{background:var(--red)}.tag.b{background:var(--blue)}.tag.y{background:var(--gold)}
+.jp{color:var(--muted);font-size:.92em}
+.note{color:var(--muted);font-size:14px}
+.verdict{background:linear-gradient(90deg,rgba(226,85,127,.12),rgba(201,154,46,.12));border:2px solid var(--pink)}
+footer{padding:16px;color:var(--muted);font-size:13px;max-width:1400px;margin:0 auto}
+footer a{color:var(--blue)}
+.step{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0}
+.step input{width:22px;height:22px;margin-top:3px;flex:none;accent-color:var(--pink)}
+.step.done{opacity:.55}
+.num{font-weight:800;color:var(--pink);flex:none;min-width:28px}
+.why{color:var(--muted);font-size:14px;margin-top:4px}
+.prog{font-weight:700;color:var(--gold)}
+</style>
+</head>
+<body>
+<header>
+<h1>Princess Connect! Re:Dive (JP): Step-by-Step</h1>
+<p>Follow the numbered steps in order and tick each one off. Your ticks save in this browser. Built 2026-11-22 from your own account (MuMu "Gacha" emulator, guest "Yukiteru", player level 15, stuck at 2-12) plus current Japanese guide sites. The grey Japanese text is the button you press.</p>
+<p class="prog" id="prog"></p>
+</header>
+<nav>
+<a href="#a">A. Tonight: beat 2-12</a><a href="#b">B. Pull plan</a><a href="#c">C. Next 3 days</a><a href="#d">D. Week 1</a><a href="#e">E. Weeks 2-4</a><a href="#invest">Who to invest</a><a href="#daily">Daily</a><a href="#gotchas">Gotchas</a><a href="#sources">Sources</a>
+</nav>
+<main>
+<section id="loop" class="verdict">
+<h2>Your daily loop (about 10 minutes, once a day)</h2>
+<p>The game is gated by daily resets (5:00 AM JST = 3:00 PM ET). Do this once a day, in this order, then log off. Stamina refills about 1 every 5 minutes; log in once or twice a day so it never sits full.</p>
+<ol>
+<li><b>Home: Missions</b> <span class="jp">ミッション → すべて受け取る</span> and <b>Presents</b> <span class="jp">プレゼント → すべて受け取る</span>. Free jewels and stamina.</li>
+<li><b>Guild House</b> <span class="jp">ギルドハウス → 一括受取</span>: free stamina and mana.</li>
+<li><b>Mana shop</b> (the + next to mana): buy the cheap sets with free jewels only (first 10 cost 10 jewels each; stop when the price jumps).</li>
+<li><b>Quest → Extra:</b> EXP quest and Mana quest (2 runs each, skip tickets), <b>Dungeon</b> once (7 floors, easy, big mana + coins), <b>Sanctuary</b> 5 runs with skip tickets.</li>
+<li><b>Hard stages:</b> open a character's missing gear → <span class="jp">入手方法 → まとめてクエストスキップ</span>, tick the stages that drop it, skip 3 each. This is how gear and rank-ups come.</li>
+<li><b>Spend the rest of the stamina</b> on the next main-story stage with Auto Progress <span class="jp">オート進行</span>, or on an event if one is running (events give far more per stamina).</li>
+<li><b>Upgrade:</b> Character list → <span class="jp">まとめて強化</span> for levels; on each core character press <span class="jp">まとめて装備</span> (with "use ore" ticked) and rank up when it lights up.</li>
+<li><b>Arena + Princess Arena:</b> use the free fights; <b>Clan Battle</b> 3 attacks on battle days.</li>
+<li><b>Gacha:</b> only when a guide step says so (next: save for the next Princess Fes). Never press paid buttons.</li>
+</ol>
+<p><b>Best team right now:</b> Aglaia, Hatsune &amp; Shiori, Grace, Shinatsu, Pecorine (power ~26,000). Picking these 5 is what broke the 9-10 wall.</p>
+</section>
+
+
+<section class="verdict">
+<h2>Where you are right now</h2>
+<div class="grid">
+<div class="tile"><b>Your best pull</b>You pulled <b>Grace</b> <span class="jp">グレイス</span> ★3 in the first Special Fes 10-pull. She is Fes-only and on GameWith's SS list. She is a front-line <b>physical booster</b>: she speeds up your physical attackers and refills their skill gauge (TP).</div>
+<div class="tile"><b>Also new</b><b>Inori</b> <span class="jp">イノリ</span> ★3 is a physical attacker who stuns. You also got several ★1/★2 characters.</div>
+<div class="tile"><b>Why 2-12 is hard</b>Your team is level 13 at rank 1 with empty gear, and Grace and Inori are still level 1. You have <b>230,725 mana</b> sitting unused. This is an upgrade problem, not a "you need new characters" problem.</div>
+<div class="tile"><b>Jewels</b>2,670 free jewels left, 0 paid. The Special Fes closes <b>Wed 11/25, 6:33 PM ET</b> (11/26 08:33 JST).</div>
+</div>
+</section>
+
+<section id="a">
+<h2>A. Tonight: build the team and beat 2-12</h2>
+<label class="step"><input type="checkbox" data-id="a1"><span class="num">1</span><span><b>Close any pack or age pop-up with キャンセル.</b> The age check <span class="jp">年齢確認</span> only shows up when you try to buy jewels; it sets a spending limit. You aren't buying, so press Cancel. Pack ads ("7-day stamina pack" and others) also get Cancel.</span></label>
+<label class="step"><input type="checkbox" data-id="a2"><span class="num">2</span><span><b>Set the team.</b> <span class="jp">クエスト → (any stage) → パーティ編成</span>, or <span class="jp">キャラ → マイパーティ</span>. Put in these 5: <b>Nozomi, Pecorine, Grace, Inori, Kokkoro</b>.<div class="why">Why: all five are physical, so Grace's speed and TP boost reaches the whole team. Nozomi and Pecorine take hits up front, Grace boosts, Inori stuns and hits, and Kokkoro buffs. Kyaru is magic and Yui is a healer: they go on the bench for now.</div></span></label>
+<label class="step"><input type="checkbox" data-id="a3"><span class="num">3</span><span><b>Auto-enhance all 5.</b> For each one: <span class="jp">キャラ → tap her → おまかせ強化 → OK</span>. This levels her to your player level, equips every piece you own and levels skills, all with mana. Do <b>Grace and Inori first</b> (level 1 → 15).</span></label>
+<label class="step"><input type="checkbox" data-id="a4"><span class="num">4</span><span><b>Rank up whoever can.</b> When all 6 gear slots light up, press <span class="jp">ランクアップ</span>. Rank 2 unlocks a skill and is the biggest early jump. Gear you're missing: tap the empty slot, then <span class="jp">入手方法</span> to see which stage drops it.</span></label>
+<label class="step"><input type="checkbox" data-id="a5"><span class="num">5</span><span><b>Borrow a friend's character.</b> Friend borrowing unlocked at 2-9. On the party screen before a fight, take the highest-power character offered (it costs a little mana). Once your brother is on your friend list, borrow his best.</span></label>
+<label class="step"><input type="checkbox" data-id="a6"><span class="num">6</span><span><b>Fight 2-12 with AUTO and x2 speed on.</b> If you lose: farm 2-x stages that drop your missing gear (step 4), rank up again, then retry. You have 400+ stamina banked, so burn it.</span></label>
+<label class="step"><input type="checkbox" data-id="a7"><span class="num">7</span><span><b>Still losing?</b> Send me a screenshot of the loss screen and the team's power <span class="jp">戦力</span>. I'll look at the enemy and change the lineup. One option: swap Kokkoro for Yui for healing.</span></label>
+</section>
+
+<section id="b">
+<h2>B. Pull plan (my decision)</h2>
+<p>I checked every banner that's live: the gacha tab on 11-22 plus GameWith's ratings. Here is the plan for your jewels.</p>
+<label class="step"><input type="checkbox" data-id="b1" checked><span class="num">1</span><span><b>Done: Special Fes 10-pull #1 → Grace + Inori.</b></span></label>
+<label class="step"><input type="checkbox" data-id="b2"><span class="num">2</span><span><b>Special Fes 10-pull #2 now</b> with the <b>blue 1,500 button</b> (free jewels) on <span class="jp">スペシャルフェス</span>. You have 2,670, so this leaves 1,170.<div class="why">Why: double ★3 odds (6%), Fes-only characters that are hard to get later, and the banner disappears Wednesday. Every name on it that matters is on the tier list below.</div></span></label>
+<label class="step"><input type="checkbox" data-id="b3"><span class="num">3</span><span><b>Each time you reach 1,500 free jewels before Wed 6:33 PM ET, do one more 10-pull there.</b> Jewels come from story first clears, missions and presents, so push the story (Part C).</span></label>
+<label class="step"><input type="checkbox" data-id="b4"><span class="num">4</span><span><b>After Wednesday: save everything.</b> Don't pull the collab pickups (Lucky Lilac or Daring Tact, until 11/30) or the prize gacha. Your next good target is a <b>Princess Fes</b> <span class="jp">プリンセスフェス</span>. I'll update this step when the next one is announced.</span></label>
+<label class="step"><input type="checkbox" data-id="b5"><span class="num">5</span><span><b>Never press the orange or paid buttons:</b> <span class="jp">有償 50</span> once a day, <span class="jp">有償 750</span> half price, Limited Start Dash (Klejitta, 1,500 paid). They cost real money.</span></label>
+<h3>What a new pull changes (GameWith Special Fes list, 11-03)</h3>
+<div class="wrap"><table>
+<tr><th>If you get…</th><th>Tier</th><th>What to do</th></tr>
+<tr><td>Tia, Eris, Violet, Nephinera, Fio</td><td><span class="tag y">SSS</span></td><td>She goes straight into the team and becomes the top investment. Send me a screenshot and I'll rebuild the five.</td></tr>
+<tr><td>Shefi (Vardrache), Pecorine (Astraea), Arachne, Aira</td><td><span class="tag">SS+</span></td><td>Same as above. Pecorine (Astraea) and Violet are front-line tanks.</td></tr>
+<tr><td>Aglaia (rate-up), Kyaru (New Year), Anemone, Shinatsu, Kokkoro (嚮導幼君)</td><td><span class="tag b">SS</span></td><td>Strong, but each one works best in a specific team. Aglaia's permanent buff needs an all-light team. I'll tell you where she fits.</td></tr>
+<tr><td>Anything else / duplicates</td><td>-</td><td>Duplicates turn into Goddess Stones <span class="jp">女神の秘石</span>. They buy memory pieces in the shop.</td></tr>
+</table></div>
+</section>
+
+<section id="c">
+<h2>C. The next 3 days (until the Fes closes)</h2>
+<label class="step"><input type="checkbox" data-id="c1"><span class="num">1</span><span><b>Push the main story</b> <span class="jp">クエスト → メインクエスト</span> as far as you can. Each new stage gives first-clear jewels and raises your player level, and player level is your characters' level cap.</span></label>
+<label class="step"><input type="checkbox" data-id="c2"><span class="num">2</span><span><b>Claim the S-Dash missions as you go</b> <span class="jp">マイページ → Sダッシュミッション → すべて受け取る</span>. Finishing all 7 steps of part 1 gives a <b>Start Dash character exchange ticket</b> plus 200 memory pieces. Part 2 has more rewards.</span></label>
+<label class="step"><input type="checkbox" data-id="c3"><span class="num">3</span><span><b>When the exchange ticket arrives, don't pick yet.</b> Send me a screenshot of the list. Its contents changed in 2026, and the sites don't agree on what's in it. Guide sites rate these near the top: Kururu, Summer Homare, Eriko (Commander), Summer Nea, Suzume (Spring). I'll choose from what's actually on your list and what fits Grace's physical team.</span></label>
+<label class="step"><input type="checkbox" data-id="c4"><span class="num">4</span><span><b>Redo step A3 (auto-enhance) every time your player level goes up.</b> Your characters can only level as high as you are.</span></label>
+<label class="step"><input type="checkbox" data-id="c5"><span class="num">5</span><span><b>Protect the account.</b> <span class="jp">メニュー → データ引き継ぎ → 引き継ぎ用パスワード設定</span>. Write down the ID and password somewhere safe. It's a guest account, so without this, losing the emulator loses everything. No email needed.</span></label>
+<label class="step"><input type="checkbox" data-id="c6"><span class="num">6</span><span><b>Don't spend jewels on stamina refills yet.</b> Every jewel goes to the Fes until Wednesday.</span></label>
+</section>
+
+<section id="d">
+<h2>D. Week 1 (after the story opens things up)</h2>
+<label class="step"><input type="checkbox" data-id="d1"><span class="num">1</span><span><b>2-12 unlocks the dungeon and story events.</b> Do the dungeon <span class="jp">ダンジョン</span> once a day. Dungeon coins buy memory pieces.</span></label>
+<label class="step"><input type="checkbox" data-id="d2"><span class="num">2</span><span><b>At 3-1, join your brother's clan</b> <span class="jp">ギルドハウス/クラン → 検索</span>. Ask him for the clan name or ID. Add him as a friend <span class="jp">フレンド</span> too.</span></label>
+<label class="step"><input type="checkbox" data-id="d3"><span class="num">3</span><span><b>Clan Battle runs 11/25 05:00 to 11/29 23:59 JST</b> (training mode opened 11/22). You get 3 attacks a day, and each uses a different 5 characters. Just use all 3 daily attacks with whoever you have. GameWith calls it mid-to-late content: "doing your 3 hits is enough" at the start. Rewards scale with the clan's rank, so even 500 jewels is free money.</span></label>
+<label class="step"><input type="checkbox" data-id="d4"><span class="num">4</span><span><b>At 2-5 and later, use Explore</b> <span class="jp">探索</span> every day for mana and EXP potions.</span></label>
+<label class="step"><input type="checkbox" data-id="d5"><span class="num">5</span><span><b>At 4-6, the Arena opens.</b> Use your 5 attempts a day. A rank climb gives jewels, sometimes hundreds at once. Set your defense team to your best 5. Front tanks plus an area attacker is the usual advice.</span></label>
+<label class="step"><input type="checkbox" data-id="d6"><span class="num">6</span><span><b>Hard quests</b> <span class="jp">HARD</span>: 3 runs a day per stage. Run the stages that drop <b>Grace</b> and <b>Inori</b> memory pieces, then whoever's next on the invest list.</span></label>
+</section>
+
+<section id="e">
+<h2>E. Weeks 2-4</h2>
+<label class="step"><input type="checkbox" data-id="e1"><span class="num">1</span><span><b>Stamina refills: up to 3 a day</b> (120 jewels total for the day). This starts only after the Fes is over. GameWith's advice is "at least 3 refills a day", because player level gates everything early on.</span></label>
+<label class="step"><input type="checkbox" data-id="e2"><span class="num">2</span><span><b>Coin shops</b> (dungeon, arena, clan): buy <b>memory pieces first</b>, gear later. Refreshing them is cheap only for the first 3 times each day (10 coins).</span></label>
+<label class="step"><input type="checkbox" data-id="e3"><span class="num">3</span><span><b>Normal shop:</b> buy potions and refining stones only when you're short. Don't refresh it with mana early on.</span></label>
+<label class="step"><input type="checkbox" data-id="e4"><span class="num">4</span><span><b>Goddess Stone shop:</b> spend them on memory pieces for your top 2 (Grace, then your best attacker).</span></label>
+<label class="step"><input type="checkbox" data-id="e5"><span class="num">5</span><span><b>From Rank 4 up, rank up only when the next set of gear is nearly ready.</b> Spend gear on your top 5, never on spares.</span></label>
+<label class="step"><input type="checkbox" data-id="e6"><span class="num">6</span><span><b>Read character stories</b> <span class="jp">絆 → キャラストーリー</span> when bond ranks unlock. They give free stats and jewels.</span></label>
+</section>
+
+<section id="invest">
+<h2>Who to invest in (memory pieces, gear, stars)</h2>
+<div class="wrap"><table>
+<tr><th>#</th><th>Character</th><th>Why</th></tr>
+<tr><td>1</td><td><b>Grace</b> ★3</td><td>Fes-only, SS. Her boost scales the whole physical team.</td></tr>
+<tr><td>2</td><td><b>Inori</b> ★3</td><td>Your physical damage plus stun.</td></tr>
+<tr><td>3</td><td><b>Pecorine</b></td><td>Main front-liner. You already got her pieces from S-Dash.</td></tr>
+<tr><td>4</td><td><b>Nozomi</b> ★3</td><td>Tank, already ★3.</td></tr>
+<tr><td>5</td><td><b>Kokkoro</b></td><td>Physical support. You got her pieces from S-Dash too.</td></tr>
+<tr><td>Bench</td><td>Kyaru, Yui, the ★1/★2 pulls</td><td>Level them only for clan battle's 3 different teams.</td></tr>
+</table></div>
+<p><b>Stars (★):</b> raise them at <span class="jp">キャラ → 才能開花</span> with that character's memory pieces <span class="jp">メモリーピース</span>, in the order above. Don't spread pieces across 20 characters. ★6 (Princess Orbs, chapter 18-5) is months away, so ignore it.</p>
+<p class="note">This order changes the moment you pull an SSS/SS+ character. Send me a screenshot and I'll update it.</p>
+</section>
+
+<section id="daily">
+<h2>Daily routine (about 10-15 minutes)</h2>
+<ol>
+<li>Presents <span class="jp">プレゼント</span>, missions <span class="jp">ミッション</span>, and the guild house pickup.</li>
+<li>Spend all stamina: the story first; once it's stuck, hard quests for pieces.</li>
+<li>Dungeon once, Explore tries, Arena 5 fights.</li>
+<li>Clan battle 3 attacks (on clan battle days).</li>
+<li>Normal gacha with friend points (free). Never press a paid button.</li>
+<li>Caravan dice: 1 from login plus 1 from stamina use. Fine to stock up to 99.</li>
+</ol>
+</section>
+
+<section id="gotchas">
+<h2>Gotchas</h2>
+<div class="grid">
+<div class="tile skip"><b>Two jewel types</b><span class="jp">無償</span> (free, blue buttons) and <span class="jp">有償</span> (paid, orange "half price" and "once a day" buttons).</div>
+<div class="tile skip"><b>The Fes clock</b>The Special Fes is gone for good after Wed 6:33 PM ET.</div>
+<div class="tile skip"><b>Spreading too thin</b>Five strong characters beat twenty weak ones.</div>
+<div class="tile skip"><b>Macros and bots</b>Cygames' terms ban macros by name. Use the built-in AUTO, x2 speed and skip tickets.</div>
+<div class="tile info"><b>Rank vs gear</b>Ranking up uses up the 6 equipped pieces. Above Rank 4, wait until the next set is close.</div>
+<div class="tile info"><b>Age check</b>Shows only when buying jewels. Press Cancel.</div>
+</div>
+</section>
+
+<section id="sources">
+<h2>Sources and confidence</h2>
+<ul>
+<li>Your account screens, 2026-11-22: banners, roster, pull results, S-Dash. <b>High confidence.</b></li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/180842">GameWith: Special Fes</a> (2026-11-03): rules and tier list.</li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/578773">GameWith: Aglaia</a> (2026-11-18).</li>
+<li><a href="https://games.appmatch.jp/?p=230569">appmatch: Grace</a>: physical booster, Fes-only. <b>Medium confidence</b>; a single source.</li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/93067">GameWith: beginner tips</a> (2025-08): unlocks, team shape, rank advice.</li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/94346">GameWith: jewel uses</a> (2025-08): 3 stamina refills a day.</li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/144937">GameWith: shops</a> (2026-08).</li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/513395">GameWith: Start Dash missions</a> (2026-11-10). The ticket list was read from an image summary, so it's unverified. That's why step C3 says to send a screenshot first.</li>
+<li><a href="https://gamewith.jp/pricone-re/article/show/95382">GameWith: Clan Battle</a> (2026-09-26): dates and 3 attacks a day.</li>
+</ul>
+<p class="note">Not verified: the exact Start Dash ticket list, and the next Princess Fes date. Both have a "send me a screenshot" step.</p>
+</section>
+</main>
+<footer>Progress report: <a href="report/">where the account is now</a>.</footer>
+<script>
+(function(){
+  var KEY='priconne_steps_v1', st={};
+  try{ st=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){}
+  var boxes=document.querySelectorAll('.step input');
+  function paint(){
+    var done=0;
+    boxes.forEach(function(b){ b.closest('.step').classList.toggle('done',b.checked); if(b.checked)done++; });
+    document.getElementById('prog').textContent=done+' of '+boxes.length+' steps done';
+  }
+  boxes.forEach(function(b){
+    var id=b.dataset.id;
+    if(id in st) b.checked=st[id];
+    b.addEventListener('change',function(){ st[id]=b.checked; try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){} paint(); });
+  });
+  paint();
+})();
+</script>
+</body>
+</html>
