@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gacha Picks</title>
+<meta name="description" content="A shortlist of gacha games to choose from: ones that feel like Tokyo Ghoul: Break the Chains and Princess Connect, ones to play with friends, and the most free-to-play friendly.">
+<meta name="theme-color" content="#0e1117">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1117;--p:#171c25;--p2:#1e2530;--l:rgba(255,255,255,.09);--ink:#ecebe6;--mu:#9a9c9f;--ai:#7c9be0;--ok:#8fbf8a;--gold:#e3b35c;--warn:#e06b5a;--pink:#f0a9c0}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;background:radial-gradient(900px 500px at 10% -10%,rgba(240,169,192,.13),transparent 60%),radial-gradient(800px 500px at 100% 110%,rgba(124,155,224,.12),transparent 60%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--ai)}
+.w{margin:0 auto;max-width:1500px;padding:clamp(24px,4vw,48px) clamp(16px,4vw,48px) 60px}
+.bubble{font-family:"Fredoka","Arial Rounded MT Bold",system-ui,sans-serif;font-weight:700;color:#fff;text-shadow:0 3px 0 rgba(0,0,0,.35),0 0 24px var(--c,#f0a9c0)}
+h1{font-size:clamp(2.3rem,7vw,4rem);margin:0;line-height:1.05}
+h2{font-size:clamp(1.5rem,3.5vw,2.1rem);margin:40px 0 6px}
+.sub{color:var(--mu);max-width:760px;margin:10px 0 0;font-size:1.05rem}
+.back{display:inline-block;margin-bottom:14px;color:var(--mu);text-decoration:none;font-size:.9rem}
+.back:hover{color:var(--ink)}
+.stamp{margin-top:14px;font-size:.82rem;color:var(--mu)}
+/* top picks */
+.top{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:16px}
+.tp{background:var(--p);border:1px solid var(--l);border-radius:20px;padding:18px 20px;border-top:4px solid var(--c)}
+.tp .k{color:var(--c);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.tp b{display:block;font:700 1.45rem "Fredoka",system-ui,sans-serif;margin:4px 0}
+.tp p{margin:0;color:#d4d6dc;font-size:.93rem}
+/* controls */
+.bar{position:sticky;top:0;z-index:5;margin:22px 0 14px;padding:12px 0;background:linear-gradient(var(--bg) 75%,transparent);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{border:1px solid var(--l);background:var(--p);color:var(--ink);border-radius:999px;padding:7px 14px;font:600 .88rem system-ui,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--pink);color:#141820;border-color:transparent}
+.chip:focus-visible,select:focus-visible,.star:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+select{border:1px solid var(--l);background:var(--p);color:var(--ink);border-radius:999px;padding:7px 12px;font:600 .88rem system-ui,sans-serif}
+.count{color:var(--mu);font-size:.85rem;margin-left:auto}
+/* cards */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr))}
+.card{position:relative;background:var(--p);border:1px solid var(--l);border-radius:20px;padding:18px 20px 16px;display:flex;flex-direction:column;gap:10px}
+.card.mine{box-shadow:0 0 0 2px var(--gold)}
+.hd{display:flex;gap:12px;align-items:flex-start}
+.hd .t{flex:1;min-width:0}
+.hd h3{margin:0;font:700 1.35rem "Fredoka",system-ui,sans-serif;line-height:1.15}
+.meta{color:var(--mu);font-size:.82rem;margin-top:2px}
+.star{border:1px solid var(--l);background:var(--p2);color:var(--mu);border-radius:12px;padding:6px 10px;font-size:.82rem;cursor:pointer;white-space:nowrap}
+.card.mine .star{background:var(--gold);color:#141820;border-color:transparent;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.74rem;padding:3px 9px;border-radius:999px;background:var(--p2);color:#cfd2d8;border:1px solid var(--l)}
+.tag.v{color:var(--ok);border-color:rgba(143,191,138,.35)}
+.tag.m{color:var(--gold);border-color:rgba(227,179,92,.35)}
+.rates{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.86rem;align-items:center}
+.rates span:nth-child(odd){color:var(--mu)}
+.dots{letter-spacing:3px;color:var(--pink)}
+.dots i{font-style:normal;color:#3a414d}
+.card p{margin:0;font-size:.93rem;color:#d4d6dc}
+.card p.watch{color:#c9b9a8}
+.card p.watch b{color:var(--warn)}
+.src{font-size:.8rem;color:var(--mu)}
+.empty{color:var(--mu);padding:30px 0}
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--l);border-radius:16px;margin-top:14px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.88rem}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--l)}
+th{background:var(--p2);color:var(--mu);font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.note{margin-top:30px;padding:14px 16px;border:1px solid var(--l);border-radius:14px;color:var(--mu);font-size:.88rem;background:rgba(255,255,255,.02)}
+.note ul{margin:6px 0 0;padding-left:20px}
+.f{margin-top:26px;color:#6c7076;font-size:.78rem}
+@media (max-width:700px){.bar{position:static;background:none;padding:0}.count{margin-left:0;width:100%}}
+</style>
+</head>
+<body><div class="w">
+<a class="back" href="../">← All guides</a>
+<h1 class="bubble">Gacha Picks</h1>
+<p class="sub">A shortlist to choose from. It starts with games that feel like <b>Tokyo Ghoul: Break the Chains</b> and <b>Princess Connect</b> (anime characters, auto or semi-auto battles, dailies, guild bosses). After that come the big polished ones, the ones you can play with friends, and the ones that are kindest to free players.</p>
+<p class="stamp">Checked 22 Nov 2026 against the sources at the bottom. A green <b style="color:var(--ok)">checked</b> tag means a 2025–26 source confirms the game is still running. A gold <b style="color:var(--gold)">from memory</b> tag means I didn't find a fresh source for it this time. The dot ratings are my own judgement, not a site's score.</p>
+
+<h2 class="bubble" style="--c:#e3b35c">If you only read one thing</h2>
+<div class="top">
+  <div class="tp" style="--c:#f0a9c0"><span class="k">Closest to Princess Connect</span><b>Blue Archive</b><p>Cute chibi auto-battles, a huge cast, lots of story, daily routine and raid bosses. Free players do well. Runs on phone and Steam.</p></div>
+  <div class="tp" style="--c:#e0475a"><span class="k">Closest to Tokyo Ghoul</span><b>Bleach: Brave Souls</b><p>Anime license, dark shonen cast, and quests friends can actually play together. Over ten years old and still getting updates.</p></div>
+  <div class="tp" style="--c:#7c9be0"><span class="k">Runner-up, anime license</span><b>Seven Deadly Sins: Grand Cross</b><p>Turn-based card battles with anime-quality cutscenes, guild bosses and lots of anime collabs. 70M+ downloads, 7th anniversary in 2026.</p></div>
+</div>
+
+<div class="bar" role="toolbar" aria-label="Filter games">
+  <button class="chip" data-f="all" aria-pressed="true">All</button>
+  <button class="chip" data-f="like" aria-pressed="false">Like TG / PriConne</button>
+  <button class="chip" data-f="friends" aria-pressed="false">Play with friends</button>
+  <button class="chip" data-f="f2p" aria-pressed="false">Most F2P friendly</button>
+  <button class="chip" data-f="big" aria-pressed="false">Big and polished</button>
+  <button class="chip" data-f="mine" aria-pressed="false">★ My shortlist</button>
+  <select id="sort" aria-label="Sort by">
+    <option value="like">Sort: most like TG / PriConne</option>
+    <option value="friends">Sort: best with friends</option>
+    <option value="f2p">Sort: most F2P friendly</option>
+    <option value="name">Sort: A–Z</option>
+  </select>
+  <span class="count" id="count"></span>
+</div>
+<div class="grid" id="grid"></div>
+
+<h2 class="bubble" style="--c:#7c9be0">Side by side</h2>
+<div class="tw"><table id="tbl"><thead><tr><th>Game</th><th>Style</th><th>Like TG / PriConne</th><th>With friends</th><th>F2P</th><th>Platforms</th></tr></thead><tbody></tbody></table></div>
+
+<div class="note"><b>Good to know</b>
+<ul>
+<li><b>Princess Connect! Re:Dive</b> outside Japan shut down on 30 April 2023. The Japanese version is still running, so the JP account is the only way to play it.</li>
+<li>Almost every gacha is a <b>solo game</b>. "With friends" usually means a guild boss, borrowing a friend's character, or comparing pulls. Only Wuthering Waves, Genshin, Bleach: Brave Souls and Tower of Fantasy let you play the same fight together live.</li>
+<li>Free-to-play tip for any of them: don't pull on every banner. Save for characters you actually want, because pity carries over in most games.</li>
+</ul></div>
+
+<div class="note"><b>Sources</b>
+<ul>
+<li><a href="https://hostedgg.com/blog/best-free-to-play-gacha-games-2026">HostedGG: best F2P gacha games 2026</a> · <a href="https://hostedgg.com/blog/best-multiplayer-coop-gacha-games-2026">best co-op gacha 2026</a> · <a href="https://hostedgg.com/blog/best-anime-gacha-games-2026">best anime gacha 2026</a></li>
+<li><a href="https://www.playnforge.com/best-gacha-games/">PlayNForge: 22 best gacha games 2026</a> · <a href="https://beebom.com/best-gacha-games">Beebom: 15 best gacha games 2026</a> · <a href="https://fandomwire.com/best-gacha-games-ranked/">FandomWire: ranked</a> · <a href="https://www.pcgamer.com/games/best-gacha-games/">PC Gamer</a></li>
+<li><a href="https://finalboss.io/12-anime-mobile-games-i-actually-recommend-in">FinalBoss: 12 anime mobile games for 2026</a> · <a href="https://www.topuplive.com/news/10-best-anime-gacha-games-2026.html">TopUpLive: 10 best anime gacha 2026</a></li>
+<li>Blue Archive: <a href="https://www.animenewsnetwork.com/press-release/2026-05-28/blue-archive-ex-decagrammaton-chapter-3-update-introduces-new-event-story-unique-students-and-more/.237888">May 2026 update (ANN)</a></li>
+<li>Seven Deadly Sins: Grand Cross: <a href="https://www.animenewsnetwork.com/press-release/2026-01-05/netmarble-announces-2026-new-year-festival-infinite-sunshine-for-the-seven-deadly-sins-grand-cross/.232791">2026 festival (ANN)</a> · <a href="https://www.gamedeveloper.com/press-release/netmarble-brings-gachiakuta-to-t-he-seven-deadly-sins-grand-cross-with-new-collaboration-update">Gachiakuta collab, June 2026</a></li>
+<li>Bleach: Brave Souls: <a href="https://www.animenewsnetwork.com/press-release/2025-11-03/new-characters-announced-at-bleach-brave-souls-10th-anniversary-fest/.230605">10th anniversary (ANN, Nov 2025)</a></li>
+<li>Princess Connect global shutdown: <a href="https://www.animenewsnetwork.com/news/2023-03-31/princess-connect-re-dive-game-global-version-ends-service-on-april-30/.196639">ANN, March 2023</a></li>
+</ul></div>
+<p class="f">Fan-made list. Not affiliated with any game publisher. Game names belong to their owners.</p>
+</div>
+
+<script>
+// like = feels like TG:BTC / PriConne, fr = with friends, f2p = free-player friendliness (1-5, my judgement)
+var G = [
+ {id:"ba",n:"Blue Archive",by:"Nexon / Yostar",pl:"Phone, PC (Steam)",st:"Auto/semi-auto chibi battles, school-life story",like:5,fr:2,f2p:5,ok:1,big:0,
+  why:"The closest thing to Princess Connect you can play in English: chibi squads that auto-battle, a huge cast with their own stories, café and daily routine, Total Assault and Grand Assault raid bosses.",
+  watch:"No live co-op. Friends means clubs and borrowing support students.",src:"Raids and events confirmed in May and July 2026 updates."},
+ {id:"bbs",n:"Bleach: Brave Souls",by:"KLab",pl:"Phone, PC (Steam), PS4",st:"3D hack-and-slash, anime license",like:5,fr:4,f2p:4,ok:1,big:0,
+  why:"The anime-license grind of Tokyo Ghoul with a dark shonen cast, plus co-op quests where friends play the same fight together, and guilds.",
+  watch:"Over ten years old, so there are hundreds of characters and a lot of power creep. The co-op and guild details are from memory.",src:"10th anniversary fest in Nov 2025, still updating."},
+ {id:"7ds",n:"Seven Deadly Sins: Grand Cross",by:"Netmarble",pl:"Phone, PC",st:"Turn-based card battles, anime cutscenes",like:5,fr:3,f2p:3,ok:1,big:0,
+  why:"Feels the most like Tokyo Ghoul: anime license, lots of collabs (Fire Force, Gachiakuta, Tower of God), a Knighthood (guild) boss and PvP, and cutscenes that look like the anime.",
+  watch:"Heavy power creep, and the newest units matter a lot in PvP.",src:"70M+ downloads, 7th-anniversary campaign through June 2026."},
+ {id:"pcr",n:"Princess Connect! Re:Dive (JP)",by:"Cygames",pl:"Phone, PC (DMM), Japan only",st:"Auto side-scrolling battles, anime cutscenes",like:5,fr:3,f2p:4,ok:1,big:0,mine:1,
+  why:"The original. Clan Battles are the friend part. Already set up on your JP account.",
+  watch:"Japanese only: the English version shut down on 30 April 2023.",src:"Global shutdown confirmed (ANN 2023); JP is still running."},
+ {id:"nikke",n:"Goddess of Victory: Nikke",by:"Shift Up / Level Infinite",pl:"Phone, PC",st:"Semi-idle cover shooter, squad and gear grind",like:4,fr:3,f2p:4,ok:1,big:1,
+  why:"Tokyo Ghoul-style progression (teams, gear, daily grind, idle rewards) with Union (guild) raids. Its pull rates are often called some of the most forgiving.",
+  watch:"Lots of fan service. Late-game progress slows down a lot.",src:"Named in 2026 F2P roundups."},
+ {id:"slr",n:"Solo Leveling: Arise",by:"Netmarble",pl:"Phone, PC",st:"Action RPG, anime license",like:4,fr:2,f2p:3,ok:1,big:1,
+  why:"The best-reviewed anime-license gacha right now: you play Sung Jinwoo and power up hunters and weapons.",
+  watch:"Mostly solo. Weapon banners and hunter banners split your pulls.",src:"Named in 2026 anime-gacha roundups."},
+ {id:"e7",n:"Epic Seven",by:"Smilegate",pl:"Phone, PC",st:"Turn-based, hand-drawn 2D animation",like:4,fr:3,f2p:4,ok:0,big:0,
+  why:"Anime art, team building and Guild Wars, close to Tokyo Ghoul's guild war loop. Known for regular free pulls.",
+  watch:"PvP is very gear-heavy. I didn't check its 2026 state.",src:"From memory, no fresh source."},
+ {id:"dokkan",n:"Dragon Ball Z: Dokkan Battle",by:"Bandai Namco",pl:"Phone",st:"Puzzle battles, huge team building",like:3,fr:1,f2p:4,ok:1,big:0,
+  why:"The mobile anime-license classic: huge collection, generous with Dragon Stones, and you can play in short sessions.",
+  watch:"Solo, and almost all the depth is in team building. Phone only.",src:"Named in 2026 anime-mobile roundups."},
+ {id:"uma",n:"Umamusume: Pretty Derby",by:"Cygames",pl:"Phone, PC (Steam)",st:"Training sim with racing",like:3,fr:2,f2p:4,ok:1,big:1,
+  why:"Made by Cygames like PriConne, with the same charm and production quality. Each run is a training session for one character.",
+  watch:"It's a sim, not a battler. Club and borrowing a friend's support card are the social parts.",src:"Listed among the best gacha of 2026."},
+ {id:"hsr",n:"Honkai: Star Rail",by:"HoYoverse",pl:"Phone, PC, PlayStation",st:"Turn-based RPG, big story",like:3,fr:1,f2p:4,ok:1,big:1,
+  why:"Named over and over as a top pick for polish, story and free-player value. Has auto-battle, and it's easy to start with a friend and compare pulls.",
+  watch:"Fully solo. Friends can only lend a support character.",src:"2026 roundups (Beebom, PlayNForge, FandomWire)."},
+ {id:"zzz",n:"Zenless Zone Zero",by:"HoYoverse",pl:"Phone, PC, PlayStation, Xbox",st:"Fast action, stylish",like:2,fr:1,f2p:4,ok:1,big:1,
+  why:"Combat in short, slick runs. PlayNForge rates its F2P viability \"High\".",
+  watch:"Solo. You play it actively, so it's not an auto-battle game.",src:"PlayNForge 2026."},
+ {id:"ww",n:"Wuthering Waves",by:"Kuro Games",pl:"Phone, PC, PlayStation",st:"Open-world action",like:2,fr:4,f2p:4,ok:1,big:1,
+  why:"The best top-tier gacha for playing together: live co-op in the open world and in combat, the best combat of the big ones, and generous pity.",
+  watch:"You play it actively, so it's not an auto-battle game, and it needs a decent PC or phone.",src:"PlayNForge F2P 8/10; HostedGG co-op list."},
+ {id:"gi",n:"Genshin Impact",by:"HoYoverse",pl:"Phone, PC, PlayStation",st:"Open world",like:2,fr:4,f2p:3,ok:1,big:1,
+  why:"The biggest, most polished world, with 4-player co-op for bosses, domains and exploring.",
+  watch:"Story and progression are solo. HostedGG calls it one of the strictest with free pulls.",src:"HostedGG 2026."},
+ {id:"limbus",n:"Limbus Company",by:"Project Moon",pl:"PC (Steam), phone",st:"Turn-based strategy, dark story",like:2,fr:1,f2p:5,ok:1,big:0,
+  why:"HostedGG ranks it the most generous gacha for free pulls and pity fairness. Very strong writing.",
+  watch:"Heavy, dark story, and the combat system takes a while to learn. Solo.",src:"HostedGG F2P 2026."},
+ {id:"r1999",n:"Reverse: 1999",by:"Bluepoch",pl:"Phone, PC",st:"Turn-based card battles",like:3,fr:1,f2p:5,ok:1,big:0,
+  why:"A generous economy without cutting corners on quality. Fully voiced, with a striking art style.",
+  watch:"Solo. The 1920s-style story isn't for everyone.",src:"2026 F2P roundups."},
+ {id:"ark",n:"Arknights",by:"Hypergryph / Yostar",pl:"Phone, PC",st:"Tower defense",like:3,fr:1,f2p:5,ok:0,big:0,
+  why:"Long known as one of the fairest gachas for free players, with deep strategy and auto-repeat for cleared stages.",
+  watch:"Tower defense, not a battler. Solo. I didn't check its 2026 state.",src:"From memory, no fresh source."},
+ {id:"tof",n:"Tower of Fantasy",by:"Hotta / Level Infinite",pl:"Phone, PC, PlayStation",st:"Light MMO, open world",like:1,fr:5,f2p:3,ok:1,big:0,
+  why:"The gacha most built for playing together: a shared world with other players around.",
+  watch:"Older and less hyped now.",src:"HostedGG co-op 2026."}
+];
+var MAX=5, filt="all", sortBy="like", mine={};
+try{ mine = JSON.parse(localStorage.getItem("gacha-mine")||"{}")||{}; }catch(e){ mine={}; }
+G.forEach(function(g){ if(!(g.id in mine) && g.mine) mine[g.id]=1; });
+function save(){ try{ localStorage.setItem("gacha-mine", JSON.stringify(mine)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function dots(n){ var s=""; for(var i=0;i<MAX;i++) s += i<n ? "●" : "<i>●</i>"; return '<span class="dots" aria-label="'+n+' out of 5">'+s+'</span>'; }
+function pass(g){
+  if(filt==="like") return g.like>=4;
+  if(filt==="friends") return g.fr>=3;
+  if(filt==="f2p") return g.f2p>=5;
+  if(filt==="big") return g.big;
+  if(filt==="mine") return !!mine[g.id];
+  return true;
+}
+function order(a,b){
+  if(sortBy==="name") return a.n.localeCompare(b.n);
+  var k = sortBy==="friends" ? "fr" : sortBy;
+  return (b[k]-a[k]) || (b.like+b.fr+b.f2p - a.like-a.fr-a.f2p) || a.n.localeCompare(b.n);
+}
+function render(){
+  var list = G.filter(pass).sort(order), h="";
+  list.forEach(function(g){
+    var on = !!mine[g.id];
+    h += '<article class="card'+(on?' mine':'')+'"><div class="hd"><div class="t"><h3>'+esc(g.n)+'</h3><div class="meta">'+esc(g.by)+' · '+esc(g.pl)+'</div></div>'+
+      '<button class="star" data-id="'+g.id+'" aria-pressed="'+on+'">'+(on?'★ On my list':'☆ Shortlist')+'</button></div>'+
+      '<div class="tags"><span class="tag">'+esc(g.st)+'</span>'+(g.ok?'<span class="tag v">checked</span>':'<span class="tag m">from memory</span>')+'</div>'+
+      '<div class="rates"><span>Like TG / PriConne</span>'+dots(g.like)+'<span>With friends</span>'+dots(g.fr)+'<span>F2P friendly</span>'+dots(g.f2p)+'</div>'+
+      '<p>'+esc(g.why)+'</p><p class="watch"><b>Watch out:</b> '+esc(g.watch)+'</p><div class="src">'+esc(g.src)+'</div></article>';
+  });
+  document.getElementById("grid").innerHTML = h || '<p class="empty">Nothing here yet. Tap ☆ Shortlist on a game to add it.</p>';
+  document.getElementById("count").textContent = list.length+" of "+G.length+" games";
+}
+function table(){
+  var rows = G.slice().sort(function(a,b){ return b.like-a.like || a.n.localeCompare(b.n); }).map(function(g){
+    return '<tr><td>'+esc(g.n)+'</td><td>'+esc(g.st)+'</td><td>'+dots(g.like)+'</td><td>'+dots(g.fr)+'</td><td>'+dots(g.f2p)+'</td><td>'+esc(g.pl)+'</td></tr>';
+  }).join("");
+  document.querySelector("#tbl tbody").innerHTML = rows;
+}
+document.querySelector(".bar").addEventListener("click",function(e){
+  var b = e.target.closest(".chip"); if(!b) return;
+  filt = b.getAttribute("data-f");
+  document.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c===b ? "true" : "false"); });
+  render();
+});
+document.getElementById("sort").addEventListener("change",function(e){ sortBy = e.target.value; render(); });
+document.getElementById("grid").addEventListener("click",function(e){
+  var b = e.target.closest(".star"); if(!b) return;
+  var id = b.getAttribute("data-id");
+  if(mine[id]) mine[id]=0; else mine[id]=1;
+  save(); render();
+});
+render(); table();
+</script>
+</body>
+</html>
