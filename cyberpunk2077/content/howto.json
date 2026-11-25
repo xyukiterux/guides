@@ -1,0 +1,1280 @@
+{
+ "_note": "Hand-written steps. Every step names the wiki pages it comes from in src (page titles under data/raw/wiki/ref or data/raw/wiki/pages, or data:<group> for the pulled card data). build.py fails if a number in a step is not in its sources, if a [[name]] is neither a card nor in the sources, or if a capitalised word outside [[ ]] is not in the sources (UI labels in ui_words are allowed).",
+ "ui_words": [
+  "Character",
+  "Cyberware",
+  "Perks",
+  "Builds",
+  "Missables",
+  "Endings",
+  "Quests",
+  "Reference",
+  "Vehicles",
+  "If",
+  "Open",
+  "Save",
+  "Choose",
+  "Pick",
+  "Buy",
+  "Raise",
+  "Put",
+  "Spend",
+  "Treat",
+  "Plan",
+  "Check",
+  "Finish",
+  "Visit",
+  "Collect",
+  "Install",
+  "Loot",
+  "Level",
+  "Use",
+  "Get",
+  "Wait",
+  "Take",
+  "Call",
+  "Kill",
+  "Go",
+  "Read",
+  "Start",
+  "Do",
+  "Accept",
+  "Let",
+  "Answer",
+  "Leave",
+  "Inside",
+  "At",
+  "Then",
+  "Before",
+  "After",
+  "When",
+  "Look",
+  "Keep",
+  "Return",
+  "Reset",
+  "Complete",
+  "Side",
+  "Spare",
+  "Surrender",
+  "Carry",
+  "Refuse",
+  "Fulfill",
+  "Skip",
+  "Sell",
+  "Drive",
+  "Steal",
+  "Win",
+  "Enter",
+  "Cross",
+  "Talk",
+  "Find",
+  "Note",
+  "Earn",
+  "Equip",
+  "Fill",
+  "Craft",
+  "Upgrade",
+  "Swap",
+  "Learn",
+  "Each",
+  "Every",
+  "The",
+  "This",
+  "Your",
+  "You",
+  "For",
+  "On",
+  "In",
+  "To",
+  "A",
+  "An",
+  "Its",
+  "It",
+  "Help",
+  "Toss",
+  "Save",
+  "Back",
+  "Tab",
+  "New",
+  "Game",
+  "Not",
+  "Only",
+  "All",
+  "Some",
+  "Most",
+  "With",
+  "Without",
+  "Both",
+  "Either",
+  "Up",
+  "Out",
+  "Free",
+  "Ask",
+  "Stay",
+  "Follow",
+  "Unlock",
+  "Unlocks",
+  "Activate",
+  "Slots",
+  "Shards",
+  "Builds",
+  "Page",
+  "Table",
+  "Tables",
+  "Section",
+  "Guide",
+  "Steps",
+  "Step",
+  "Mark",
+  "Turn",
+  "Weapons",
+  "Iconic"
+ ],
+ "sections": [
+  {
+   "id": "start",
+   "group": "Start",
+   "title": "How to come back after a break",
+   "kind": "howto",
+   "need": "Your save, the game updated, and some time before you pick up a job.",
+   "steps": [
+    {
+     "t": "Update the game to [[Update 2.5]]: it came out on October 22, 2026 on PC, Mac (not yet on the Mac App Store), PlayStation 5 and Xbox Series X|S.",
+     "src": [
+      "Update 2.5"
+     ]
+    },
+    {
+     "t": "If your save is from before [[Patch 2.0]], spend your perk points again in the **Character** menu: that patch refunded every spent perk point and lets you reset your attributes once.",
+     "src": [
+      "Patch 2.0"
+     ]
+    },
+    {
+     "t": "Pick one build on the **Builds** page.",
+     "src": []
+    },
+    {
+     "t": "In the **Character** menu, buy the first three perks of that build: a perk unlocks when its attribute reaches the perk's level (4, 9, 15 or 20).",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "At a [[Ripperdoc]], fill every empty cyberware slot your capacity allows: you start with 24 capacity at level 1, increasing by 3 each time you level up.",
+     "src": [
+      "Cyberpunk 2077 Stats",
+      "Ripperdoc"
+     ]
+    },
+    {
+     "t": "Collect the 14 [[Perk Shard]] pickups listed on the **Missables** page (each gives 1 perk point; one of them is bought at the Black Market in the stadium).",
+     "src": [
+      "Perk Shard"
+     ]
+    },
+    {
+     "t": "If you own [[Phantom Liberty]] and have not started it, follow **How to start Phantom Liberty**.",
+     "src": [
+      "Phantom Liberty"
+     ]
+    },
+    {
+     "h": "For Clampdown, a new side job in [[Update 2.5]]:",
+     "src": [
+      "Update 2.5"
+     ]
+    },
+    {
+     "t": "Finish [[The Heist]].",
+     "src": [
+      "Update 2.5"
+     ]
+    },
+    {
+     "t": "Finish two gigs for Wakako.",
+     "src": [
+      "Update 2.5"
+     ]
+    },
+    {
+     "t": "Wait for her message: it starts [[Clampdown]].",
+     "src": [
+      "Update 2.5"
+     ]
+    },
+    {
+     "h": "For Welcome to Paradise, the other new side job in Update 2.5:",
+     "src": [
+      "Update 2.5"
+     ]
+    },
+    {
+     "t": "After [[The Heist]], reach Street Cred 15: the job unlocks.",
+     "src": [
+      "Update 2.5"
+     ]
+    }
+   ],
+   "check": "The **Character** menu shows no unspent perk points and the ripperdoc screen shows your capacity almost full."
+  },
+  {
+   "id": "attributes",
+   "group": "Character",
+   "title": "How to spend attribute points",
+   "kind": "howto",
+   "need": "A new character, or unspent attribute points.",
+   "steps": [
+    {
+     "t": "At character creation, put your 7 free points into the attribute your build needs most: each attribute is given 3 points by default and can go up to 6 during creation.",
+     "src": [
+      "Cyberpunk 2077 Character Customization"
+     ]
+    },
+    {
+     "t": "After creation, raise attributes up to 20: you get one attribute point and one perk point on each level up.",
+     "src": [
+      "Cyberpunk 2077 Character Customization"
+     ]
+    },
+    {
+     "t": "Raise your build's main attribute first, to the level of the next perk you want (4, 9, 15 or 20).",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Treat attribute points as permanent: since [[Patch 2.0]] you can refund each perk on its own for free, but attribute points stay where you put them (old saves got one attribute reset with that patch).",
+     "src": [
+      "Patch 2.0"
+     ]
+    },
+    {
+     "t": "If you have spare points, choose the attribute whose per-point bonus you want: Body +2 Health, Reflexes +0.5% Crit Chance, Technical Ability +2 Armor, Intelligence +1 RAM per 4 points, Cool +1.25% Crit Damage.",
+     "src": [
+      "Cyberpunk 2077 Attributes"
+     ]
+    },
+    {
+     "t": "Plan for the level cap: 50 in the base game, 60 with [[Phantom Liberty]].",
+     "src": [
+      "Cyberpunk 2077 Character Customization"
+     ]
+    }
+   ],
+   "check": "Your main attribute reaches the level of the highest perk your build needs."
+  },
+  {
+   "id": "perks",
+   "group": "Character",
+   "title": "How to buy perks in the right order",
+   "kind": "howto",
+   "need": "Unspent perk points and a build from the **Builds** page.",
+   "steps": [
+    {
+     "t": "In the **Character** menu, select the attribute tree of your build's next perk.",
+     "src": []
+    },
+    {
+     "t": "If the perk is greyed out, raise that attribute to the perk's level first (4, 9, 15 or 20; shown on each perk card).",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Buy the perk listed under **Needs** on the perk card before the perk itself.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Buy the perks in the order the build lists them; each perk is listed after the perk it needs.",
+     "src": []
+    },
+    {
+     "t": "Level your skills to earn extra perk points: each of the five skills gives bonus Perk points at levels 15 and 35.",
+     "src": [
+      "Cyberpunk 2077 Character Customization"
+     ]
+    },
+    {
+     "t": "If you change build, refund perks one at a time in the **Character** menu: since [[Patch 2.0]] each refund is free.",
+     "src": [
+      "Patch 2.0"
+     ]
+    }
+   ],
+   "check": "Every perk in your build shows as bought and no perk point is left over."
+  },
+  {
+   "id": "skills",
+   "group": "Character",
+   "title": "How to level the five skills",
+   "kind": "howto",
+   "need": "Nothing; skills level from what you do.",
+   "steps": [
+    {
+     "t": "To level Headhunter (Cool), neutralize enemies with Pistols, Revolvers, Sniper Rifles and throwable weapons, attack while undetected, and do Takedowns.",
+     "src": [
+      "Cyberpunk 2077 Skills",
+      "Cyberpunk 2077 Character Customization"
+     ]
+    },
+    {
+     "t": "To level Netrunner (Intelligence), quickhack enemies, devices and vehicles, upload daemons to Access Points, and kill with Smart weapons or Monowire.",
+     "src": [
+      "Cyberpunk 2077 Skills",
+      "Cyberpunk 2077 Achievements",
+      "Cyberpunk 2077 Attributes"
+     ],
+     "n": "You upload daemons with a Breach Protocol; the [[Eye In The Sky]] perk highlights nearby Access Points."
+    },
+    {
+     "t": "To level Shinobi (Reflexes), neutralize enemies with Assault Rifles, SMGs and Blades, and dash, dodge, vault and climb.",
+     "src": [
+      "Cyberpunk 2077 Skills"
+     ]
+    },
+    {
+     "t": "To level Solo (Body), neutralize enemies with Shotguns, LMGs, HMGs and Blunt Weapons, and pass Body Attribute checks.",
+     "src": [
+      "Cyberpunk 2077 Skills"
+     ]
+    },
+    {
+     "t": "To level Engineer (Technical Ability), neutralize enemies with Tech weapons, grenades and Bolt shots, and craft, upgrade and disassemble items.",
+     "src": [
+      "Cyberpunk 2077 Skills",
+      "Patch 2.0"
+     ],
+     "n": "Bolt shots are a Tech weapon ability that you unlock in the perk tree."
+    },
+    {
+     "t": "Check the skill tables on the **Reference** page: skills unlock new passive buffs every 5 levels and can be leveled up to a max of 60.",
+     "src": [
+      "Patch 2.0",
+      "Cyberpunk 2077 Skills"
+     ]
+    }
+   ],
+   "check": "Each skill you use reaches the levels that give bonus Perk points (15 and 35), and you have spent those points."
+  },
+  {
+   "id": "capacity",
+   "group": "Cyberware",
+   "title": "How to raise your cyberware capacity",
+   "kind": "howto",
+   "need": "Access to a ripperdoc. Capacity limits how much cyberware you can install.",
+   "steps": [
+    {
+     "t": "Level up: each level adds 3 capacity, up to a base of 201 at level 60.",
+     "src": [
+      "Cyberpunk 2077 Stats"
+     ]
+    },
+    {
+     "t": "Loot every [[Cyberware Capacity Shard]] enemies drop; each tier needs a minimum level (level 2, 9, 17 or 25 or higher, from Tier 2 to Tier 5).",
+     "src": [
+      "Cyberware Capacity Shard"
+     ]
+    },
+    {
+     "t": "Finish the [[Psycho Killer]] gig for its reward cache: it holds a Tier 4 or Tier 5 variant of the shard.",
+     "src": [
+      "Cyberware Capacity Shard"
+     ]
+    },
+    {
+     "t": "In [[Dog Eat Dog]], open the cache in the parking garage of the stadium before you leave: that shard is missable.",
+     "src": [
+      "Cyberware Capacity Shard"
+     ]
+    },
+    {
+     "t": "Level the Engineer skill to 10 (+5 capacity) and to 30 (+10 capacity), +15 in total.",
+     "src": [
+      "Cyberpunk 2077 Skills",
+      "Cyberpunk 2077 Stats"
+     ]
+    },
+    {
+     "t": "Buy [[Renaissance Punk]]: +4 Cyberware Capacity for each attribute at 9 or higher.",
+     "src": [
+      "data:perks",
+      "Cyberpunk 2077 Cyberware"
+     ],
+     "n": "That is the perk card's wording. The wiki's Cyberware page says +4 for each attribute over 9, max +20; so the two pages disagree on the lowest attribute level that counts."
+    },
+    {
+     "t": "At Technical Ability 20, buy [[Edgerunner]] (+50).",
+     "src": [
+      "Cyberpunk 2077 Stats",
+      "data:perks"
+     ]
+    },
+    {
+     "t": "If you still need room, install the [[Chrome Compressor]] operating system (+70).",
+     "src": [
+      "Cyberpunk 2077 Stats"
+     ]
+    }
+   ],
+   "check": "Capacity is capped at 450; the most you can reach is 430 with the Chrome Compressor installed, or 360 without it."
+  },
+  {
+   "id": "slots",
+   "group": "Cyberware",
+   "title": "How to fill every cyberware slot",
+   "kind": "howto",
+   "need": "Eurodollars and a ripperdoc.",
+   "steps": [
+    {
+     "t": "At a ripperdoc, fill the base slots: Frontal Cortex 3, Operating System 1, Arms 1, Face 1, Skeleton 2, Hands 1, Nervous System 3, Circulatory System 3, Integumentary System 3, Legs 1.",
+     "src": [
+      "Cyberpunk 2077 Cyberware"
+     ]
+    },
+    {
+     "t": "Buy [[License To Chrome]] to unlock a third Skeleton slot.",
+     "src": [
+      "Cyberpunk 2077 Cyberware",
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Buy [[Ambidextrous]] to unlock a second Hands slot.",
+     "src": [
+      "Cyberpunk 2077 Cyberware",
+      "data:perks"
+     ]
+    },
+    {
+     "t": "If you play [[Phantom Liberty]], finish [[Birds with Broken Wings]] to unlock a second Face slot.",
+     "src": [
+      "Cyberpunk 2077 Cyberware"
+     ]
+    },
+    {
+     "t": "Install at least one implant in all 10 slot types to unlock the Full Body Conversion achievement.",
+     "src": [
+      "Cyberpunk 2077 Cyberware"
+     ]
+    }
+   ],
+   "check": "No slot on the ripperdoc screen is empty."
+  },
+  {
+   "id": "about-damage",
+   "group": "Cyberware",
+   "title": "About armor, crits and healing",
+   "kind": "explanation",
+   "paras": [
+    {
+     "t": "Armor comes mostly from cyberware. Every 10 points of Armor cut incoming damage per second by about 1 point. You can hold up to 2000 Armor, but the reduction stops growing at 1500 Armor, which gives 50% damage reduction.",
+     "src": [
+      "Cyberpunk 2077 Stats"
+     ]
+    },
+    {
+     "t": "A Critical Hit deals 50% more damage, plus your Crit Damage bonus. A headshot adds 100% damage by default.",
+     "src": [
+      "Cyberpunk 2077 Stats"
+     ]
+    },
+    {
+     "t": "Out of combat, Health refills on its own up to 60% of the maximum. Food gives Nourishment, which doubles that regeneration; drinks give Hydration, which speeds up Stamina regeneration. The [[Painkiller]] perk lets Health regenerate in combat.",
+     "src": [
+      "Cyberpunk 2077 Stats"
+     ]
+    },
+    {
+     "t": "Mitigation is a chance to take less damage from a hit. By default the chance is 0%; a mitigated hit is reduced by your Mitigation Strength, 50% by default.",
+     "src": [
+      "Cyberpunk 2077 Stats"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pl-start",
+   "group": "Phantom Liberty",
+   "title": "How to start Phantom Liberty",
+   "kind": "howto",
+   "need": "The Phantom Liberty expansion installed.",
+   "steps": [
+    {
+     "t": "If you start a new game and only want the expansion story, choose **Skip ahead to Phantom Liberty**: the game completes the earlier main story jobs (such as [[The Heist]]) for you.",
+     "src": [
+      "Cyberpunk 2077 Character Customization"
+     ]
+    },
+    {
+     "t": "On an existing save, finish these main jobs: [[The Heist]], [[Playing for Time]], [[Automatic Love]], [[The Space in Between]], [[Disasterpiece]], [[Double Life]], [[M'ap Tann Pèlen]], [[I Walk the Line]], [[Transmission]] and [[Never Fade Away (quest)]].",
+     "src": [
+      "page:Phantom Liberty (quest)"
+     ]
+    },
+    {
+     "t": "Wait for Songbird to call you; the job [[Phantom Liberty (quest)]] then leads into [[Dog Eat Dog]].",
+     "src": [
+      "page:Phantom Liberty (quest)"
+     ]
+    },
+    {
+     "t": "In [[Dog Eat Dog]], take the Perk Shard, the BARGHEST helmet and the Cyberware Capacity Shard before you leave the stadium: all three are missable.",
+     "src": [
+      "page:Dog Eat Dog"
+     ]
+    }
+   ],
+   "check": "The journal shows [[Dog Eat Dog]] as active and you can enter [[Dogtown]]."
+  },
+  {
+   "id": "relic",
+   "group": "Phantom Liberty",
+   "title": "How to unlock the Relic perk tree",
+   "kind": "howto",
+   "need": "Phantom Liberty, started.",
+   "steps": [
+    {
+     "t": "Play [[Dog Eat Dog]] until Songbird gives you the new Militech combat software: the Relic tree unlocks. Songbird gives you the first 3 points when she first contacts you.",
+     "src": [
+      "Relic (attribute)"
+     ]
+    },
+    {
+     "t": "Play on to [[Birds with Broken Wings]], where Songbird gives you 3 more points.",
+     "src": [
+      "Relic (attribute)"
+     ]
+    },
+    {
+     "t": "Find the nine Operational Data Terminals in [[Dogtown]] (listed on the **Reference** page) for the remaining nine points.",
+     "src": [
+      "Relic (attribute)"
+     ]
+    },
+    {
+     "t": "Spend the 15 points on the Relic perks your build uses (the Relic perk cards say which cyberware each one improves).",
+     "src": [
+      "Relic (attribute)",
+      "data:perks"
+     ]
+    }
+   ],
+   "check": "You have gathered all 15 Relic Points."
+  },
+  {
+   "id": "money-cars",
+   "group": "World",
+   "title": "How to raise Street Cred and buy cars",
+   "kind": "howto",
+   "need": "Access to any computer terminal.",
+   "steps": [
+    {
+     "t": "Do gigs from fixers and other jobs to raise [[Street Cred]] (the maximum level is 50).",
+     "src": [
+      "Street Cred"
+     ]
+    },
+    {
+     "t": "Check your vendor discount: Street Cred discounts add up to a total of 15% at all vendors, in steps from level 5 to level 50.",
+     "src": [
+      "Street Cred"
+     ]
+    },
+    {
+     "t": "Open the [[AUTOFIXER]] netpage on any computer terminal to buy vehicles; higher Street Cred unlocks better cars there.",
+     "src": [
+      "AUTOFIXER",
+      "Street Cred"
+     ]
+    },
+    {
+     "t": "If you own [[Phantom Liberty]], do the repeatable side job Just Another Story (steal and deliver a marked car) for an AUTOFIXER discount shard.",
+     "src": [
+      "AUTOFIXER"
+     ]
+    },
+    {
+     "t": "Look on the **Vehicles** page for cars you can get for free from quests instead of buying them.",
+     "src": [
+      "data:vehicles"
+     ]
+    }
+   ],
+   "check": "The car shows in your garage list when you call a vehicle."
+  },
+  {
+   "id": "iconics",
+   "group": "World",
+   "title": "How to get and keep iconic weapons",
+   "kind": "howto",
+   "need": "Nothing; most iconics come from quests and the open world.",
+   "steps": [
+    {
+     "t": "On the **Weapons** page, tick **Iconic only**.",
+     "src": []
+    },
+    {
+     "t": "On each card, read **How to get it**: most iconic weapons can only be obtained once from a single source.",
+     "src": [
+      "Cyberpunk 2077 Iconics"
+     ]
+    },
+    {
+     "t": "Pick up iconics that a main job gives before you finish that job: the **Missables** page lists them, and its Note says which ones Phantom Liberty lets you buy later from Herold Lowe.",
+     "src": [
+      "data:quests",
+      "data:weapons"
+     ]
+    },
+    {
+     "t": "Upgrade iconics instead of replacing them: crafting components upgrade cyberware and iconic weapons to a higher tier.",
+     "src": [
+      "Crafting"
+     ]
+    },
+    {
+     "t": "Keep picking up iconics: acquiring an iconic weapon unlocks the crafting spec for its next quality, up to Legendary.",
+     "src": [
+      "Crafting"
+     ]
+    }
+   ],
+   "check": "The iconic shows a higher tier after the upgrade at the crafting screen."
+  },
+  {
+   "id": "pnr",
+   "group": "Story",
+   "title": "How to finish the story without losing anything",
+   "kind": "howto",
+   "need": "All the side jobs you care about done or in your journal.",
+   "steps": [
+    {
+     "t": "Finish the side jobs you want before [[Nocturne Op55N1]]: once you take the elevator into Embers (the restaurant where you meet Hanako), every other job in the journal is marked as failed.",
+     "src": [
+      "Cyberpunk 2077 Main Jobs",
+      "Nocturne Op55N1"
+     ]
+    },
+    {
+     "t": "Start [[Nocturne Op55N1]]: the game makes a Point of No Return save on its own.",
+     "src": [
+      "Cyberpunk 2077 Main Jobs"
+     ]
+    },
+    {
+     "t": "Play any ending; after the epilogue the game returns you to the Point of No Return save.",
+     "src": [
+      "Cyberpunk 2077 Main Jobs"
+     ]
+    },
+    {
+     "t": "Check your inventory: ending rewards such as the [[Access Token]] are added to that save.",
+     "src": [
+      "Cyberpunk 2077 Endings",
+      "Access Token"
+     ]
+    },
+    {
+     "t": "Load the Point of No Return save again to play another ending.",
+     "src": [
+      "Cyberpunk 2077 Main Jobs"
+     ]
+    }
+   ],
+   "check": "After the credits you are back on the rooftop save with the ending's rewards in your inventory."
+  },
+  {
+   "id": "end-devil",
+   "group": "Endings",
+   "title": "How to get The Devil ending (Arasaka)",
+   "kind": "howto",
+   "need": "Takemura must survive [[Search and Destroy]] for the achievement.",
+   "steps": [
+    {
+     "t": "In [[Search and Destroy]], after the floor collapses, do not leave the building: Takemura is missing, and you can still go back and save him.",
+     "src": [
+      "Search and Destroy"
+     ]
+    },
+    {
+     "t": "From the room you wake up in, jump up several floors to reach Takemura (needed for The Devil achievement).",
+     "src": [
+      "Search and Destroy",
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "On the rooftop in [[Nocturne Op55N1]], call Hanako for help.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Take the omega-blockers (pills).",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Last Caress]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Totalimmortal]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Where is My Mind?]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Choose \"[Sign Contract] I want to live\" (V becomes an engram) or \"[Refuse to Sign] I'm going back to Earth\".",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "The Devil achievement unlocks after the credits. If Takemura died, Anders Hellman makes the offer instead and the achievement does not unlock."
+  },
+  {
+   "id": "end-star",
+   "group": "Endings",
+   "title": "How to get The Star ending (Aldecaldos)",
+   "kind": "howto",
+   "need": "Panam's side jobs available.",
+   "steps": [
+    {
+     "t": "Complete Panam's side job [[Queen of the Highway]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "On the rooftop in [[Nocturne Op55N1]], call Panam for help.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Take the omega-blockers (pills).",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[We Gotta Live Together]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Forward to Death]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Belly of the Beast]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Changes]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Inside Mikoshi, you play as V: enter the well, so V goes back to their own body (Johnny keeping the body is Temperance).",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[All Along the Watchtower]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "The Star achievement unlocks: V leaves Night City with the Aldecaldos."
+  },
+  {
+   "id": "end-sun",
+   "group": "Endings",
+   "title": "How to get The Sun ending (Afterlife legend)",
+   "kind": "howto",
+   "need": "Rogue's side jobs available.",
+   "steps": [
+    {
+     "t": "At the end of [[Chippin' In (quest)]], answer \"A hard road, but looks like we made it.\"",
+     "src": [
+      "Blistering Love"
+     ]
+    },
+    {
+     "t": "Then answer \"Johnny, no need to bare your soul to me.\"",
+     "n": "Other answers lead to Holdin' On instead of Blistering Love; the secret-ending lines also work.",
+     "src": [
+      "Blistering Love"
+     ]
+    },
+    {
+     "t": "Complete Rogue's side job [[Blistering Love]], which Johnny gives you after Chippin' In.",
+     "src": [
+      "Blistering Love",
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "On the rooftop in [[Nocturne Op55N1]], follow Johnny's plan to go ask Rogue for help.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Take the pseudoendotrizine (pills).",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[For Whom the Bell Tolls]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Knockin' on Heaven's Door]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Play [[Changes]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Inside Mikoshi, you play as Johnny: cross the bridge, so Johnny leaves and V keeps the body.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Path of Glory]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "The Sun achievement unlocks: V becomes a legend of the Afterlife."
+  },
+  {
+   "id": "end-temperance",
+   "group": "Endings",
+   "title": "How to get the Temperance ending (Johnny keeps the body)",
+   "kind": "howto",
+   "need": "Panam's or Rogue's path unlocked (see The Star or The Sun).",
+   "steps": [
+    {
+     "t": "Unlock Panam's or Rogue's path: complete Panam's [[Queen of the Highway]] or Rogue's [[Blistering Love]] side job.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "On the rooftop in [[Nocturne Op55N1]], ask Panam or Rogue for help.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Inside Mikoshi, let Johnny keep your body: cross the bridge as V, or enter the well as Johnny.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[New Dawn Fades]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "The Temperance achievement unlocks: Johnny Silverhand keeps V's body."
+  },
+  {
+   "id": "end-secret",
+   "group": "Endings",
+   "title": "How to get the secret ending (Don't Fear the Reaper)",
+   "kind": "howto",
+   "need": "A save before the talk with Johnny at the Northern Oil Fields at the end of Chippin' In. If V dies during the run, the game ends.",
+   "steps": [
+    {
+     "t": "At the end of [[Chippin' In (quest)]], when Johnny says \"But I've managed one thing for now. Not to fuck this up, what we have.\", answer \"Nah, fucked that up too.\"",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "When Johnny says \"Ahem. Is it too late to ask for a second chance?\", answer \"What do you want from me?\"",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "When Johnny says \"At least, so it seemed... till now.\", answer \"Ok. But as second chances go, this is your last.\"",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Start [[Nocturne Op55N1]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "On Misty's rooftop, talk to Johnny.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Do not pick anyone to call: wait about five minutes until Johnny offers one more option.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Accept it to start [[(Don't Fear) The Reaper]], an assault on Arasaka Tower with Johnny alone.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Survive the assault: if V dies at any point, the credits roll and the game is over.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Upload Alt.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Connect to Mikoshi.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "h": "For The Sun (V keeps the body):",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Inside Mikoshi, enter the well as V.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Path of Glory]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "h": "For Temperance (Johnny keeps the body):",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Inside Mikoshi, cross the bridge as V.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[New Dawn Fades]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "The credits show the secret variant of The Sun or Temperance."
+  },
+  {
+   "id": "end-tower",
+   "group": "Endings",
+   "title": "How to get The Tower ending (Phantom Liberty)",
+   "kind": "howto",
+   "need": "Phantom Liberty, and a choice in Firestarter that decides which of two routes you take.",
+   "steps": [
+    {
+     "t": "In [[Firestarter]], choose to help Songbird escape or to surrender her to Reed.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "h": "If you helped Songbird escape:",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Near the end of [[The Killing Moon]], call Reed, or take So Mi to the shuttle.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "When Reed appears, let him take her away.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Through Pain to Heaven]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Later, accept Reed's offer.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "h": "If you surrendered her to Reed:",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Black Steel In The Hour of Chaos]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "In [[Somewhat Damaged]], spare Songbird.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Four Score and Seven]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Later, accept Reed's offer.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "h": "Then, on either route:",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Call Reed in [[Who Wants to Live Forever]] or on the rooftop in [[Nocturne Op55N1]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Finish [[Things Done Changed]].",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "The Tower achievement unlocks: V survives and starts a new life."
+  },
+  {
+   "id": "end-pacifist",
+   "group": "Endings",
+   "title": "How to get the Path of Least Resistance ending",
+   "kind": "howto",
+   "need": "A save before the rooftop in Nocturne Op55N1. This ending kills V and has no rewards.",
+   "steps": [
+    {
+     "t": "On Misty's rooftop in [[Nocturne Op55N1]], choose the first dialogue option.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "When Johnny asks if you are sure, choose \"Could also just put all this to rest\".",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Choose \"[Toss pills] I know exactly what we're gonna do.\"",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    },
+    {
+     "t": "Talk with Johnny until the scene moves to the view of Night City.",
+     "src": [
+      "Cyberpunk 2077 Endings"
+     ]
+    }
+   ],
+   "check": "A gunshot is heard and the credits roll; load your last save before the rooftop to play another ending."
+  }
+ ],
+ "choices": {
+  "_note": "Choices that change what happens later. Each row cites the page it comes from.",
+  "rows": [
+   {
+    "quest": "The Pickup",
+    "choice": "Make the deal with Meredith Stout (Militech), or pay Maelstrom with your own cash",
+    "effect": "A deal with Meredith, with Maelstrom made hostile, is the only way to unlock Venus in Furs in Act 2; if Royce is killed, Brick will later retake control of Maelstrom",
+    "src": [
+     "page:The Pickup"
+    ]
+   },
+   {
+    "quest": "The Heist",
+    "choice": "Where Jackie's body goes: to his family, to Viktor Vektor, or ask Delamain to wait",
+    "effect": "In Heroes: if V sent Jackie's body to his family or told Delamain to wait, Mama Welles asks V to join the ofrenda at El Coyote Cojo; if V sent Jackie's body to Viktor Vektor, Mama Welles sends a package with the key to Jackie's ARCH",
+    "src": [
+     "Heroes"
+    ]
+   },
+   {
+    "quest": "With a Little Help from My Friends",
+    "choice": "Tell Saul about Panam's plan, or keep it to yourself",
+    "effect": "Telling Saul about Panam's plan will cause V and Panam's relationship to end, making Queen of the Highway and The Star ending unavailable",
+    "src": [
+     "With a Little Help from My Friends"
+    ]
+   },
+   {
+    "quest": "Pyramid Song",
+    "choice": "Romance Judy (feminine V) or not",
+    "effect": "Not getting intimate with Judy during this mission makes it the last time she appears in the game, apart from the video message during the end credits",
+    "src": [
+     "Pyramid Song"
+    ]
+   },
+   {
+    "quest": "Chippin' In (quest)",
+    "choice": "Answer \"A hard road, but looks like we made it.\" then \"Johnny, no need to bare your soul to me.\" (or the three secret-ending lines)",
+    "effect": "Starts Blistering Love (the quest for Rogue's ending); other options lead to Holdin' On. The Secret Ending dialogue options also start this quest, and V has to pick three specific dialogue options to get the secret ending",
+    "src": [
+     "Blistering Love",
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Queen of the Highway",
+    "choice": "Complete Panam's side job",
+    "effect": "Needed for The Star ending (call Panam on the rooftop)",
+    "src": [
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Blistering Love",
+    "choice": "Complete Rogue's side job",
+    "effect": "Unlocks The Sun ending with Rogue",
+    "src": [
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Search and Destroy",
+    "choice": "Save Takemura",
+    "effect": "Needed for The Devil achievement; if Takemura does not survive, there will be no support from Arasaka troops in that ending, and Oda will not show up",
+    "src": [
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Play It Safe",
+    "choice": "Spare Oda",
+    "effect": "Oda can show up in The Devil ending (if Takemura is alive)",
+    "src": [
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Heroes",
+    "choice": "Complete it",
+    "effect": "Mama Welles leaves a message during the credits that depends on your ending",
+    "src": [
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Nocturne Op55N1",
+    "choice": "Who you call on the rooftop (Hanako, Panam, Rogue, or wait for Johnny)",
+    "effect": "Picks the ending path; V's romantic interest may appear depending on who you choose to call",
+    "src": [
+     "Cyberpunk 2077 Endings"
+    ]
+   },
+   {
+    "quest": "Firestarter",
+    "choice": "Side with Songbird or with Reed",
+    "effect": "By choosing Songbird's path, you are locked from the main course of action in the ending with Solomon Reed, and vice versa",
+    "src": [
+     "Cyberpunk 2077: Phantom Liberty Endings"
+    ]
+   },
+   {
+    "quest": "Black Steel In The Hour of Chaos",
+    "choice": "Call Mr. Hands when you look for a netrunner and hire his netrunner; later accept Yoko Tsuru's deal and inform Hands about the MaxTac convoy",
+    "effect": "Sometime after finishing Leave in Silence, Hands will call V: he has left a gift in their apartment, the [[MaxTac Mantis Blades]]",
+    "src": [
+     "Cyberpunk 2077: Phantom Liberty Endings",
+     "data:cyberware"
+    ]
+   },
+   {
+    "quest": "Somewhat Damaged",
+    "choice": "Fulfill or refuse Songbird's request",
+    "effect": "King of Cups (fulfill) or King of Pentacles (refuse)",
+    "src": [
+     "Cyberpunk 2077: Phantom Liberty Endings"
+    ]
+   },
+   {
+    "quest": "The Killing Moon",
+    "choice": "When Reed confronts you: kill him, or surrender So Mi to him",
+    "effect": "King of Wands (kill Reed) or King of Swords (surrender So Mi)",
+    "src": [
+     "Cyberpunk 2077: Phantom Liberty Endings"
+    ]
+   }
+  ]
+ }
+}

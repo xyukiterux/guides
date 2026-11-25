@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noai, noimageai, noarchive"><meta name="googlebot" content="noarchive">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyberpunk 2077 Field Guide</title>
+<meta name="description" content="Cyberpunk 2077 and Phantom Liberty guide for Update 2.5: perks, builds with perk order, cyberware, iconic weapons, quests, endings, missables and vehicles, from the game wiki's data.">
+<meta name="theme-color" content="#07080b">
+<meta property="og:title" content="Cyberpunk 2077 Field Guide">
+<meta property="og:description" content="Builds with perk order, every perk, cyberware, iconic weapon, quest and vehicle card, endings and missables. Update 2.5 + Phantom Liberty.">
+<meta property="og:image" content="card.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<style>
+@font-face{font-family:"Rajdhani";font-weight:600;font-display:swap;src:url("assets/fonts/Rajdhani-SemiBold.woff2") format("woff2")}
+@font-face{font-family:"Rajdhani";font-weight:700;font-display:swap;src:url("assets/fonts/Rajdhani-Bold.woff2") format("woff2")}
+:root{
+  --bg:#07080b;--panel:#0e1016;--panel2:#141720;--well:#0a0b10;--line:rgba(232,230,220,.10);--line2:rgba(232,230,220,.18);
+  --text:#ebe9df;--muted:#a9adb8;--dim:#7d8290;--yellow:#fcee0a;--cyan:#00e5ff;--red:#ff3b5c;--green:#4fe08a;--violet:#b98cff;
+  --head:"Rajdhani","Bahnschrift","Arial Narrow","Segoe UI",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"Cascadia Mono","Consolas","SFMono-Regular",monospace;
+  --cut:12px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font:16px/1.6 var(--body);
+  background:
+   linear-gradient(rgba(0,229,255,.035) 1px,transparent 1px) 0 0/100% 46px,
+   linear-gradient(90deg,rgba(0,229,255,.035) 1px,transparent 1px) 0 0/46px 100%,
+   radial-gradient(900px 520px at 100% -10%,rgba(252,238,10,.09),transparent 65%),
+   radial-gradient(800px 600px at -10% 110%,rgba(0,229,255,.08),transparent 65%),var(--bg);background-attachment:fixed}
+a{color:var(--cyan);overflow-wrap:anywhere}
+a:hover{color:var(--yellow)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--yellow);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;letter-spacing:.03em;margin:0 0 .4em;line-height:1.15}
+h2{font-size:1.9rem;text-transform:uppercase}
+h3{font-size:1.25rem}
+p{margin:.4em 0}
+.shell{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+.shell>div{min-width:0}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 16px 40px;border-right:1px solid rgba(252,238,10,.22);
+  background:linear-gradient(180deg,rgba(14,16,22,.96),rgba(7,8,11,.96))}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--text)}
+.brand .mk{width:42px;height:42px;flex:none;background:var(--yellow);clip-path:polygon(0 0,78% 0,100% 22%,100% 100%,22% 100%,0 78%);display:grid;place-items:center;color:#07080b;font:700 1.15rem var(--head)}
+.brand b{display:block;font:700 1.3rem/1 var(--head);text-transform:uppercase;letter-spacing:.06em}
+.brand small{display:block;color:var(--cyan);font:600 .78rem var(--head);letter-spacing:.22em;text-transform:uppercase;margin-top:3px}
+#checked{font-size:1rem;color:var(--muted);margin:12px 0 14px;line-height:1.5;border-left:2px solid var(--cyan);padding-left:9px}
+#checked a{color:var(--cyan)}
+.search{position:relative}
+.search input{width:100%;padding:11px 12px 11px 36px;border:1px solid var(--line2);background:var(--well);color:var(--text);font:inherit;outline:none;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%)}
+.search input:focus{border-color:var(--yellow)}
+.search svg{position:absolute;left:12px;top:15px;opacity:.8;z-index:1;pointer-events:none}
+.results{position:absolute;left:0;right:0;top:48px;background:#11131a;border:1px solid var(--yellow);max-height:62vh;overflow:auto;z-index:40;display:none;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.results.on{display:block}
+.results div{padding:8px 12px;cursor:pointer;font-size:.92rem;display:flex;align-items:center;gap:9px}
+.results div img{width:28px;height:28px;object-fit:contain;flex:none}
+.results div i{margin-left:auto;font-style:normal;color:var(--dim);font-size:.78rem;white-space:nowrap}
+.results div:hover,.results div.sel{background:rgba(252,238,10,.10)}
+.results .none{color:var(--muted);cursor:default}
+nav{margin-top:14px;display:flex;flex-direction:column;gap:1px}
+nav .grp{font:700 .78rem var(--head);letter-spacing:.24em;color:var(--yellow);margin:16px 8px 4px;text-transform:uppercase}
+nav .grp::before{content:"// ";color:var(--cyan)}
+nav a{display:flex;gap:10px;align-items:center;padding:7px 10px;color:var(--text);text-decoration:none;font-size:.95rem;border-left:2px solid transparent}
+nav a:hover{background:rgba(0,229,255,.07);color:var(--text)}
+nav a.on{background:linear-gradient(90deg,rgba(252,238,10,.18),transparent);border-left-color:var(--yellow)}
+nav a .n{margin-left:auto;font:600 .8rem var(--head);color:var(--dim)}
+main{min-width:0;padding:26px clamp(16px,2.6vw,44px) 90px}
+.topbar{display:none}
+.panel,.tile,.card{background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.01)),var(--panel);border:1px solid var(--line2);
+  clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,var(--cut) 100%,0 calc(100% - var(--cut)))}
+.panel{padding:16px 18px;min-width:0}
+.hero{position:relative;overflow:hidden;min-height:300px;padding:clamp(20px,4vw,46px);margin-bottom:24px;display:flex;flex-direction:column;justify-content:flex-end;
+  border:1px solid rgba(252,238,10,.45);clip-path:polygon(0 0,calc(100% - 26px) 0,100% 26px,100% 100%,26px 100%,0 calc(100% - 26px));isolation:isolate}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(7,8,11,.96) 6%,rgba(7,8,11,.55) 55%,rgba(7,8,11,.15)),linear-gradient(90deg,rgba(7,8,11,.9),transparent 75%)}
+.hero .k{font:700 .85rem var(--head);letter-spacing:.3em;color:var(--cyan);text-transform:uppercase}
+.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);text-transform:uppercase;margin:.08em 0 .1em;color:var(--yellow);text-shadow:3px 3px 0 rgba(255,59,92,.55),-2px -1px 0 rgba(0,229,255,.45)}
+.hero p{max-width:820px;color:#dcdad0;font-size:1.06rem}
+.stripe{height:8px;margin:0 0 18px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 12px,#07080b 12px 24px);opacity:.85}
+.sec{margin:30px 0 12px}
+.sec h2{display:flex;align-items:center;gap:14px}
+.sec h2::after{content:"";flex:1;height:2px;min-width:30px;background:linear-gradient(90deg,var(--yellow),transparent)}
+.sec .code{font:600 .8rem var(--mono);color:var(--cyan);letter-spacing:.1em}
+.sec p.lead{color:var(--muted);margin:.2em 0 0;max-width:1100px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))}
+.muted{color:var(--muted)}.small{font-size:1rem}.tiny{font-size:.8rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:1px 9px;font:600 .82rem var(--head);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);color:#d8d6cc;white-space:nowrap;background:rgba(0,0,0,.35)}
+.pill.y{color:#07080b;background:var(--yellow);border-color:var(--yellow)}
+.pill.c{color:var(--cyan);border-color:rgba(0,229,255,.5)}
+.pill.r{color:var(--red);border-color:rgba(255,59,92,.55)}
+.pill.g{color:var(--green);border-color:rgba(79,224,138,.5)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.fight{padding-left:22px;margin:6px 0}.fight li{margin:6px 0}
+.note{border-left:3px solid var(--yellow);background:rgba(252,238,10,.06);padding:10px 14px;color:#dddbd1;margin:12px 0}
+.note.c{border-left-color:var(--cyan);background:rgba(0,229,255,.06)}
+.note.r{border-left-color:var(--red);background:rgba(255,59,92,.07)}
+.tiles{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+.tile{display:flex;gap:10px;align-items:center;padding:10px 12px;cursor:pointer;text-align:left;font-size:.92rem;line-height:1.3;border-top:2px solid var(--c,var(--line2));min-width:0;width:100%}
+.tile:hover{border-color:var(--yellow);background:linear-gradient(180deg,rgba(252,238,10,.08),rgba(255,255,255,.01)),var(--panel)}
+.tile img,.tile .ph{width:48px;height:48px;object-fit:contain;flex:none;background:var(--well)}
+.tile b{display:block;font-weight:600;overflow-wrap:break-word;hyphens:manual}
+.tile span{min-width:0}
+.tile .s{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
+.tile.k-weapon img{width:84px;height:48px;background:radial-gradient(circle at 50% 50%,#2a2f3c,#12141b)}
+.tile.k-weapon .ph{width:84px}
+.ic-head.k-weapon img{width:160px;background:radial-gradient(circle at 50% 50%,#2a2f3c,#12141b)}
+.chip img{background:#1b1f29}
+/* weapon pictures are often a dark blade on a transparent background: light backdrop + a thin light outline */
+.k-weapon img{filter:drop-shadow(0 0 .6px #f2f0e6) drop-shadow(0 0 .6px #f2f0e6)}
+.tile.k-weapon img,.ic-head.k-weapon img,.chip.k-weapon img{background:radial-gradient(circle at 50% 50%,#7b8396,#3a4152 70%,#252a35)}
+.k-boss{--c:#ff5fa2}
+.topver{display:none}
+.k-perk{--c:var(--yellow)}.k-cyberware{--c:var(--cyan)}.k-weapon{--c:var(--red)}.k-quickhack{--c:var(--violet)}.k-quest{--c:var(--green)}.k-vehicle{--c:#ff9f43}.k-attribute{--c:var(--yellow)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 12px}
+.tabs button{padding:6px 13px;border:1px solid var(--line2);background:var(--panel);cursor:pointer;font:600 .92rem var(--head);letter-spacing:.06em;text-transform:uppercase}
+.tabs button:hover{border-color:var(--cyan)}
+.tabs button.on{background:var(--yellow);color:#07080b;border-color:var(--yellow)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 14px}
+.filters input[type=search]{background:var(--well);color:var(--text);border:1px solid var(--line2);padding:9px 12px;font:inherit;min-width:min(100%,260px)}
+.filters label{font-size:.9rem;color:var(--muted);display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.count{font:600 .9rem var(--head);color:var(--dim);letter-spacing:.08em}
+.tablewrap{overflow-x:auto;border:1px solid var(--line2);background:rgba(10,11,16,.75)}
+table{width:100%;border-collapse:collapse;font-size:1rem}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#151821;font:700 .88rem var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);white-space:nowrap}
+tr:hover td{background:rgba(0,229,255,.03)}
+.lk{color:var(--cyan);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(0,229,255,.4);text-underline-offset:2px;background:none;border:0;padding:0;font:inherit;text-align:left}
+.lk:hover{color:var(--yellow)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:8px;max-width:1200px}
+.steps li{position:relative;padding:12px 16px 12px 58px}
+.steps li.branch{padding:10px 0 0;counter-reset:s;font:700 1.05rem var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+.steps li.branch::before{content:none}
+.steps li[data-n]:not(.branch)::before{content:attr(data-n)}
+.steps li:not(.branch)::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;left:14px;top:11px;font:700 1.3rem var(--head);color:var(--yellow)}
+.stepnote{display:block;color:var(--muted);margin-top:4px}
+.src{display:block;font-size:.78rem;color:var(--dim);margin-top:3px}
+.src a{color:var(--dim)}
+.src a:hover{color:var(--cyan)}
+.need{color:var(--muted);font-size:1rem}
+.need b,.check b{color:var(--cyan);font:700 .85rem var(--head);letter-spacing:.14em;text-transform:uppercase;margin-right:6px}
+.check{margin-top:10px}
+details.more{margin-top:8px}
+details.more summary{cursor:pointer;color:var(--cyan);font:600 .92rem var(--head);letter-spacing:.08em;text-transform:uppercase;list-style:none;display:inline-flex;gap:6px;align-items:center}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::before{content:"+";display:inline-grid;place-items:center;width:18px;height:18px;border:1px solid var(--cyan);font-size:.9rem;line-height:1}
+details.more[open] summary::before{content:"-"}
+.srcbtn{font:600 .74rem var(--head);letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(0,229,255,.5);color:var(--cyan);background:none;padding:0 6px;cursor:pointer;margin-left:6px}
+.srcbtn:hover{background:rgba(0,229,255,.1)}
+.srcbox{display:none;margin:6px 0 2px;padding:8px 10px;border:1px dashed rgba(0,229,255,.4);font-size:1rem;background:rgba(0,229,255,.04)}
+.srcbox.on{display:block}
+.srcbox li{margin:2px 0}
+.plan{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0}
+.plan .a{padding:10px 14px;min-width:150px}
+.plan .a b{display:block;font:700 1.8rem/1 var(--head);color:var(--yellow)}
+.plan .a span{font:600 .85rem var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.order{list-style:none;padding:0;margin:8px 0;display:grid;gap:6px;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.order li{display:grid;grid-template-columns:30px 40px 1fr;gap:10px;align-items:center;padding:8px 10px}
+.order li .i{font:700 1rem var(--head);color:var(--dim)}
+.order li img{width:40px;height:40px;object-fit:contain}
+h4.raise{font:700 1rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin:16px 0 4px}
+h4.raise::before{content:"> ";color:var(--yellow)}
+.agree{font-size:.78rem;color:var(--dim)}
+.agree.yes{color:var(--green)}
+.trow{display:grid;grid-template-columns:80px 1fr;margin-bottom:10px;border:1px solid var(--line2)}
+.trow .lab{display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 2.4rem/1 var(--head);color:#07080b;padding:8px}
+.trow .lab small{font:700 .68rem var(--head);letter-spacing:.06em;text-align:center;margin-top:4px}
+.trow .its{display:flex;flex-wrap:wrap;gap:8px;padding:10px;min-width:0}
+.tS{background:var(--red)}.tA{background:var(--yellow)}.tB{background:var(--cyan)}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:5px 10px 5px 5px;background:var(--well);border:1px solid var(--line2);cursor:pointer;font-size:.9rem;color:var(--text);max-width:100%}
+.chip:hover{border-color:var(--yellow)}
+.pit{display:flex;flex-wrap:wrap;align-items:flex-start;gap:4px;max-width:100%}
+.pit .srcbox{flex-basis:100%}
+.pit .srcbtn{margin:0;align-self:stretch}
+.chip img{width:34px;height:34px;object-fit:contain;flex:none}
+.chip i{font-style:normal;font-size:.78rem;color:var(--muted)}
+.vid{display:flex;gap:12px;align-items:center;padding:12px;cursor:pointer;text-align:left;width:100%}
+.vid .play{flex:none;width:52px;height:52px;display:grid;place-items:center;background:var(--red);clip-path:polygon(0 0,80% 0,100% 20%,100% 100%,20% 100%,0 80%)}
+.vid b{display:block;font-size:.95rem;line-height:1.3}
+.statrow{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{padding:10px 16px;min-width:130px}
+.stat b{display:block;font:700 1.9rem/1.1 var(--head);color:var(--yellow)}
+.stat span{font:600 .82rem var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.qlist{display:flex;flex-direction:column;gap:6px}
+.qrow{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:8px 12px;cursor:pointer;width:100%;text-align:left}
+.qrow img{width:44px;height:44px;object-fit:cover}
+.qrow .m{font-size:.8rem;color:var(--muted);text-align:right}
+.modal{position:fixed;inset:0;background:rgba(3,4,6,.78);display:none;align-items:center;justify-content:center;z-index:60;padding:14px}
+.modal.on{display:flex}
+.modal .box{background:linear-gradient(180deg,#151821,#0c0e13);border:1px solid var(--yellow);max-width:760px;width:100%;max-height:92vh;overflow:auto;padding:22px;position:relative;
+  clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px))}
+.modal .box.wide{max-width:980px}
+.modal .box:focus{outline:none}
+.modal .x{position:absolute;right:12px;top:8px;background:none;border:0;font-size:1.9rem;cursor:pointer;color:var(--muted);line-height:1}
+.modal .x:hover{color:var(--yellow)}
+.ic-head{display:flex;gap:16px;align-items:center;margin-bottom:10px;padding-right:34px}
+.ic-head img{width:96px;height:96px;object-fit:contain;background:var(--well);border-bottom:3px solid var(--c,var(--yellow));flex:none}
+.ic-head h2{font-size:1.7rem;margin:0}
+.ic-head.wide{flex-direction:column;align-items:stretch}
+.ic-head.wide img.big{width:100%;height:auto;max-height:300px;aspect-ratio:auto}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;font-size:.95rem;margin:10px 0}
+.kv dt{color:var(--muted)}.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.isec{border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+.isec h4{font:700 .85rem var(--head);letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin:0 0 4px}
+.pre{white-space:pre-line}
+footer{margin-top:44px;color:var(--dim);font-size:.85rem;border-top:1px solid var(--line);padding-top:12px}
+.loading{color:var(--muted);padding:20px 0}
+@media (max-width:900px){
+  .shell{grid-template-columns:minmax(0,1fr)}
+  aside{position:fixed;inset:0 auto 0 0;width:min(310px,88vw);z-index:50;transform:translateX(-102%);transition:transform .2s}
+  aside.open{transform:none;box-shadow:20px 0 50px rgba(0,0,0,.6)}
+  .topbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:30;padding:10px 14px;background:rgba(7,8,11,.95);border-bottom:1px solid rgba(252,238,10,.3)}
+  .topbar button{background:var(--yellow);color:#07080b;border:0;padding:6px 12px;cursor:pointer;font:700 .95rem var(--head);letter-spacing:.08em;text-transform:uppercase}
+  .topbar b{font:700 1.1rem var(--head);text-transform:uppercase;letter-spacing:.06em}
+  .topver{display:block;padding:4px 14px;font-size:1rem;color:var(--muted);border-bottom:1px solid var(--line);background:rgba(7,8,11,.9)}
+  main{padding:14px 14px 80px}
+  h2{font-size:1.55rem}
+  .hero{min-height:240px}
+  .trow{grid-template-columns:52px 1fr}.trow .lab{font-size:1.6rem}.trow .lab small{display:none}
+  .ic-head img{width:72px;height:72px}
+  .qrow{grid-template-columns:40px 1fr}.qrow .m{grid-column:2;text-align:left}
+  .kv{grid-template-columns:1fr}.kv dt{margin-top:4px}
+  table{font-size:1rem}
+}
+/* phones: wide tables become one block per row, each cell under its column name (no sideways scrolling inside the box) */
+@media (max-width:600px){
+  .tablewrap.stack{overflow-x:visible}
+  .stack thead{display:none}
+  .stack table,.stack tbody,.stack tr,.stack td{display:block;width:100%}
+  .stack tr{border-bottom:1px solid var(--line2);padding:6px 0}
+  .stack td{border:0;padding:3px 12px;overflow-wrap:anywhere}
+  .stack td::before{content:attr(data-l);display:block;font:700 .74rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--yellow)}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside id="side">
+  <a class="brand" href="#home"><span class="mk">77</span><span><b>Cyberpunk 2077</b><small>Field guide</small></span></a>
+  <div id="checked">Loading version line...</div>
+  <div class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fcee0a" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="q" type="search" placeholder="Search perks, cyberware, weapons, quests..." autocomplete="off" aria-label="Search the guide">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <nav id="nav" aria-label="Sections"></nav>
+</aside>
+<div>
+  <div class="topbar"><button id="menuBtn" aria-label="Open the section list">Menu</button><b>CP2077 Field Guide</b></div>
+  <div class="topver" id="topver"></div>
+  <main id="main"><p class="loading">Loading the guide...</p></main>
+</div>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Details"><div class="box" tabindex="-1"><button class="x" aria-label="Close">&times;</button><div id="mbody"></div></div></div>
+<script src="data/core.js?v=2026-11-18-790201"></script>
+<script>
+"use strict";
+const D=window.CP;let C=null;const CB=Object.create(null);
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const has=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+const KIND={perk:'Perk',cyberware:'Cyberware',weapon:'Weapon',quickhack:'Quickhack',quest:'Quest',vehicle:'Vehicle',attribute:'Attribute',boss:'Boss'};
+const ATTRS=['Body','Reflexes','Technical Ability','Intelligence','Cool','Relic'];
+const M=D.meta;
+function card(id){return has(CB,id)?CB[id]:null}
+function img(c,cls){return c&&c.img?`<img src="${esc(c.img)}" alt="" loading="lazy" ${cls?`class="${cls}"`:''} onerror="this.style.visibility='hidden'">`:'<span class="ph"></span>'}
+function lnk(t){return esc(t).replace(/\{\{([^|{}]+)\|([^{}]+)\}\}/g,(m,id,l)=>`<button class="lk" data-card="${id}">${l}</button>`).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');}
+function srcLine(src){if(!src||!src.length)return '';return `<span class="src">Source: ${src.map(s=>`<a href="${esc(s.url)}" ${s.url[0]==='#'?'':'target="_blank" rel="noopener"'}>${esc(s.title)}</a>`).join(', ')}</span>`;}
+function fmtN(n){return n==null?'':Number(n).toLocaleString('en-US')}
+
+/* ---------- version line ---------- */
+(function(){const p=M.patch_news;$('#checked').innerHTML=`Game version: <b>${esc(M.patch)}</b>${p?` (<a href="${esc(p.url)}" target="_blank" rel="noopener">official, ${esc(p.date)}</a>)`:''} with Phantom Liberty. Last checked against the <a href="https://cyberpunk.fandom.com/wiki/Cyberpunk_Wiki" target="_blank" rel="noopener">Cyberpunk Wiki</a> on ${esc(M.checked.wiki)}${M.checked.wiki_last>M.checked.wiki?` (newest pages ${esc(M.checked.wiki_last)})`:''}, CD PROJEKT RED's Steam announcements on ${esc(M.checked.steam)} and YouTube on ${esc(M.checked.videos)}.`;
+ $('#topver').textContent=`${M.patch}${p?' (PC/console '+p.date+')':''} + Phantom Liberty · last checked ${M.checked.last}`;})();
+
+/* ---------- navigation ---------- */
+const HOWTO=Object.create(null);D.howto.forEach(s=>HOWTO[s.id]=s);
+const BUILD=Object.create(null);D.builds.forEach(b=>BUILD[b.id]=b);
+const NAV=[
+ ['Start',[['home','Home'],['howto/start','Come back after a break'],['update','What is new in 2.5']]],
+ ['Play well',[['howto/attributes','Spend attribute points'],['howto/perks','Buy perks in order'],['howto/skills','Level the skills'],['howto/capacity','Raise cyberware capacity'],['howto/slots','Fill every cyberware slot'],['howto/about-damage','About armor and crits'],['howto/iconics','Get iconic weapons'],['howto/money-cars','Street Cred and cars']]],
+ ['Builds',[['builds','All builds'],...D.builds.map(b=>['build/'+b.id,b.name]),['priority','Priority list']]],
+ ['Story',[['quests','Main quest order'],['side','Side jobs'],['gigs','Gigs by district'],['choices','Choices that matter'],['endings','Endings'],['howto/pnr','Point of no return'],['missables','Missables']]],
+ ['Phantom Liberty',[['howto/pl-start','Start Phantom Liberty'],['howto/relic','Relic perk tree'],['pl','Phantom Liberty quests']]],
+ ['Reference',[['perks','Perks'],['cyberware','Cyberware'],['weapons','Weapons'],['quickhacks','Quickhacks'],['vehicles','Vehicles'],['bosses','Bosses and cyberpsychos'],['ref','Tables']]],
+ ['More',[['videos','Videos'],['sources','Sources and method']]]];
+function navHtml(cur){return NAV.map(([g,l])=>`<div class="grp">${g}</div>`+l.map(([id,t])=>`<a href="#${id}" class="${cur===id?'on':''}">${esc(t)}</a>`).join('')).join('');}
+
+/* ---------- small renderers ---------- */
+function sec(code,title,lead){return `<div class="sec"><span class="code">${esc(code)}</span><h2>${esc(title)}</h2>${lead?`<p class="lead">${lead}</p>`:''}</div>`;}
+function tile(c,sub){if(!c)return '';return `<button class="tile k-${c.kind}" data-card="${esc(c.id)}">${img(c)}<span><b>${esc(c.name)}</b><span class="s">${esc(sub==null?tileSub(c):sub)}</span></span></button>`;}
+function tileSub(c){switch(c.kind){case 'perk':return c.attribute+(c.level?' '+c.level:'');case 'cyberware':return (c.subtype||c.slot)+(c.capacity?' · cap '+c.capacity:'');case 'weapon':return (c.iconic?'Iconic · ':'')+c.type+(c.technology?' · '+c.technology:'');case 'quickhack':return c.type+(c.ram?' · RAM '+c.ram:'');case 'quest':return c.type+(c.district?' · '+c.district:'');case 'vehicle':return c.type+(c.cost?' · '+fmtN(c.cost)+' €$':'');case 'boss':return c.type+(c.pl?' · Phantom Liberty':'');default:return KIND[c.kind]||''}}
+function chip(c,extra){if(!c)return '';return `<button class="chip k-${c.kind}" data-card="${esc(c.id)}">${img(c)}<span>${esc(c.name)}${extra?`<br><i>${extra}</i>`:''}</span></button>`;}
+function vidCard(id){const v=D.videos[id];if(!v)return '';return `<button class="vid panel" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}"><span class="play"><svg width="20" height="20" viewBox="0 0 24 24" fill="#07080b" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span><b>${esc(v.title)}</b><span class="tiny muted">${esc(v.channel)} · ${esc(v.date)}${v.duration?' · '+Math.round(v.duration/60)+' min':''}</span></span></button>`;}
+function vidList(ids,empty){return ids&&ids.length?`<div class="grid three">${ids.map(vidCard).join('')}</div>`:`<p class="muted">${empty||'No video found in the search window.'}</p>`;}
+function table(t){return `<div class="tablewrap stack"><table><thead><tr>${t.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map((x,i)=>`<td data-l="${esc(t.cols[i]||'')}">${esc(x).split(' ; ').join('<br>')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>${srcLine(t.src.map(s=>({title:s,url:'https://cyberpunk.fandom.com/wiki/'+encodeURIComponent(s.replace(/ /g,'_'))})))}`;}
+function nSteps(s){return (s.steps||[]).filter(p=>!p.h).length}
+function T(id){return D.tables.find(t=>t.id===id)}
+function needCards(){return C?null:`<p class="loading">Loading the cards...</p>`}
+
+/* ---------- pages ---------- */
+function home(){
+ const n=M.counts,iconic=n['weapon-iconic']||0;
+ return `<section class="hero"><img class="bg" src="assets/keyart.jpg" alt=""><span class="k">${esc(M.patch)} · Phantom Liberty · updated ${esc(M.checked.last)}</span><h1>Cyberpunk 2077</h1><p>Everything to get good again: how to spend points, five builds with their perk order, every perk, cyberware, iconic weapon, quest and vehicle as a card, the choices that change the ending, and what you can miss.</p></section>
+ <div class="stripe"></div>
+ <div class="grid three">
+  <a class="panel" href="#howto/start" style="text-decoration:none;color:inherit"><span class="pill y">Start here</span><h3 style="margin-top:8px">Coming back after a break?</h3><p class="muted">${nSteps(HOWTO.start)} steps: patch, respec, ripperdoc, perk shards, then pick up where you left off.</p></a>
+  <a class="panel" href="#builds" style="text-decoration:none;color:inherit"><span class="pill c">Builds</span><h3 style="margin-top:8px">Netrunner, blades, guns, stealth, tank</h3><p class="muted">Attribute plan and perk order checked against the perk tree, with recent creator videos.</p></a>
+  <a class="panel" href="#endings" style="text-decoration:none;color:inherit"><span class="pill r">Endings</span><h3 style="margin-top:8px">Every ending and how to unlock it</h3><p class="muted">The Devil, The Star, The Sun, Temperance, the secret ending and The Tower.</p></a>
+ </div>
+ <div class="statrow">${[['Perks',n.perk],['Cyberware',n.cyberware],['Iconic weapons',iconic],['Quests and gigs',n.quest],['Bosses',n.boss],['Vehicles',n.vehicle],['How-to guides',D.howto.length]].map(([l,v])=>`<div class="stat panel"><b>${fmtN(v)}</b><span>${l}</span></div>`).join('')}</div>
+ ${sec('01','What is in this guide','Answers first, details behind a button. Every number in the steps comes from the Cyberpunk Wiki pages linked under it.')}
+ <div class="grid">${NAV.slice(1).map(([g,l])=>`<div class="panel"><h3>${esc(g)}</h3>${l.map(([id,t])=>`<div><a href="#${id}">${esc(t)}</a></div>`).join('')}</div>`).join('')}</div>`;
+}
+function update(){return sec('2.5','What is new in Update 2.5',`Released ${esc(M.patch_news?M.patch_news.date:'')} (official announcement). The main additions, from the wiki's patch-notes page (fixes are on the wiki page linked below):`)+M.update25.filter(g=>g.items.length).map(g=>`<h3 style="margin-top:18px">${esc(g.h)}</h3><ul class="panel" style="padding-left:34px">${g.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`).join('')+(M.patch_news?`<p class="small"><a href="${esc(M.patch_news.url)}" target="_blank" rel="noopener">Read the official patch announcement</a> · <a href="https://cyberpunk.fandom.com/wiki/Update_2.5" target="_blank" rel="noopener">Full patch notes on the wiki</a></p>`:'')+sec('VID','Videos about 2.5','')+vidList((D.video_topics.find(t=>t.key==='update-2-5')||{}).videos);}
+function howtoPage(s){
+ let k=0;const steps=s.steps?`<ol class="steps">${s.steps.map(p=>p.h?(k=0,`<li class="branch">${lnk(p.h)}</li>`):`<li class="panel" data-n="${String(++k).padStart(2,'0')}">${lnk(p.t)}${p.n?`<span class="stepnote">${lnk(p.n)}</span>`:''}${srcLine(p.src)}</li>`).join('')}</ol>`:'';
+ const paras=s.paras?s.paras.map(p=>`<div class="panel" style="margin:10px 0;max-width:1200px"><p>${lnk(p.t)}</p>${srcLine(p.src)}</div>`).join(''):'';
+ const rel=s.group==='Endings'?`<p class="small"><a href="#endings">All endings</a> · <a href="#choices">Choices that matter</a></p>`:'';
+ return sec(s.kind==='explanation'?'ABOUT':'HOW-TO',s.title,'')+(s.need?`<p class="need"><b>You need</b>${lnk(s.need)}</p>`:'')+steps+paras+(s.check?`<p class="check note c"><b>Check</b>${lnk(s.check)}</p>`:'')+rel;
+}
+function buildsPage(){return sec('BUILDS','Builds','Five guide builds: this guide\'s picks from the perk text in the wiki data, not a ranking and not taken from one creator. The build checks that each perk comes after the perk it needs. Each pick shows how many creators with a recent (last 60 days) video of that build type name it; a pick needs 2 to count as backed.')+`<div class="grid two">${D.builds.map(b=>`<a class="panel" href="#build/${b.id}" style="text-decoration:none;color:inherit"><h3>${esc(b.name)}</h3><p>${lnk(b.answer)}</p><div class="pills">${b.plan.map(p=>`<span class="pill c">${esc(p.attr)} ${p.to}</span>`).join('')}<span class="pill">${b.points} attribute points</span><span class="pill r">Guide pick · ${b.backed} of ${b.picks} picks backed by 2+ creators</span></div></a>`).join('')}</div>`;}
+function agreeTag(nv,b){const of=b?` of the ${b.pool.length} ${esc(b.short)} creators`:' recent creators';return nv>=2?`<span class="agree yes">named by ${nv}${of}</span>`:'';}
+function buildPage(b){
+ const n=needCards();if(n)return n;
+ let groups=[],i=0;const SP=Object.create(null);b.steps.forEach(x=>SP[x.perk]=x);
+ b.perks.forEach(id=>{const p=card(id);if(!p)return;const st=SP[id];if(st||!groups.length)groups.push({h:st?`Raise ${st.attr} to ${st.to}`:'Start',lv:st?st.char_level:null,items:[]});
+  i++;const nv=(b.agree[p.id]||[]).length;const nl=(p.levels||[]).length;groups[groups.length-1].items.push(`<li class="panel"><span class="i">${String(i).padStart(2,'0')}</span>${img(p)}<span><button class="lk" data-card="${esc(p.id)}">${esc(p.name)}</button><br><span class="tiny muted">${esc(p.attribute)} ${p.level||''}${nl>1?' · '+nl+' levels':''}</span> ${agreeTag(nv,b)}</span></li>`);});
+ const list=groups.map(g=>`<h4 class="raise">${esc(g.h)}${g.lv?` <span class="tiny muted" style="text-transform:none;letter-spacing:0">earliest at character level ${g.lv}</span>`:''}</h4><ol class="order">${g.items.join('')}</ol>`);
+ const named=[...b.perks,...b.relic,...b.cyberware].filter(id=>(b.agree[id]||[]).length>=2).map(id=>card(id)).filter(Boolean);
+ const srcs=b.pool.map(v=>D.videos[v]).filter(Boolean);
+ return sec('BUILD',b.name,lnk(b.answer))+
+ `<div class="note r"><span class="pill r">Guide pick</span> The build as a whole is this guide's pick from the perk and cyberware text, not a ranked or tested build (no recent source rates it). <b>${b.backed} of its ${b.picks} picks</b> are named by 2 or more of the ${b.pool.length} creators with a matching build video in the last 60 days; only those carry a "named by" tag below; every other pick is a guide pick with no recent source. <button class="srcbtn" data-src="bs-${b.id}">Sources</button></div>`+creatorNote(b,named)+
+ `<div class="plan">${b.plan.map(p=>`<div class="a panel"><b>${p.to}</b><span>${esc(p.attr)}</span></div>`).join('')}<div class="a panel"><b>${b.points}</b><span>points above the starting 3</span></div></div>
+ <div class="srcbox" id="bs-${b.id}"><b>Perk data:</b> Cyberpunk Wiki perk pages (attribute level and required perk on each card). <b>Recent creator videos checked</b>: every build video uploaded on or after ${esc(M.build_min?M.build_min.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'):'?')} whose title matches this build type and that is a build video (the title or description says build, loadout or perks, or the description lists 10 or more game items), one per creator: ${srcs.length?'<ul>'+srcs.map(v=>`<li><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> (${esc(v.channel)}, ${esc(v.date)})</li>`).join('')+'</ul>':'none found. '}A pick counts as "named" when its exact name is in the video's title or description; that shows the creator uses it, not that it is the best choice.</div>
+ <p class="small muted">Every attribute starts at 3. The plan is the highest perk level the build needs in each attribute. Points to spend beyond it are yours to choose.</p>
+ <h3 style="margin-top:22px">How to play it</h3><ol class="steps">${b.play.map(p=>`<li class="panel">${lnk(p.t)}${srcLine(p.src)}</li>`).join('')}</ol>
+ <h3 style="margin-top:22px">Perk order (${b.perks.length} perks)</h3><p class="small muted">In levelling order: perks are grouped under the attribute raise that unlocks them, and each perk comes after the perk it needs. "Earliest at character level" assumes the 7 points at character creation (an attribute can go up to 6 there) and 1 attribute point per level up. Perks with several levels show how many.</p>${list.join('')}
+ <h3 style="margin-top:22px">Relic perks (Phantom Liberty)</h3><div class="tiles">${b.relic.map(id=>tile(card(id),'Relic'+((b.agree[id]||[]).length>=2?' · named by '+(b.agree[id]||[]).length+' of the '+b.pool.length+' '+b.short+' creators':''))).join('')}</div>
+ <h3 style="margin-top:22px">Cyberware</h3><div class="tiles">${b.cyberware.map(id=>{const c=card(id);return c?tile(c,(c.subtype||c.slot)+' · cap '+c.capacity+((b.agree[id]||[]).length>=2?' · named by '+(b.agree[id]||[]).length+' of the '+b.pool.length+' '+b.short+' creators':'')):''}).join('')}</div>
+ <h3 style="margin-top:22px">Iconic weapons that fit (${b.weapons.length})</h3><p class="small muted">All iconic weapons in the data with ${esc(Object.entries(b.weapon_rule).map(([k,v])=>k+' '+v.join(' / ')).join(', '))}. Open a card for where to get it.</p><div class="tiles">${b.weapons.map(id=>tile(card(id))).join('')}</div>
+ <h3 style="margin-top:22px">Recent videos</h3>${vidList(b.videos,'No creator video for this build was found in the last 60 days.')}`;
+}
+function creatorNote(b,named){const x=b.closest,v=x&&D.videos[x.video],cl=c=>`<button class="lk" data-card="${esc(c.id)}">${esc(c.name)}</button>`;
+ if(!b.pool.length)return `<div class="note c"><b>Recent creator check:</b> no recent creator video for this build type was found.</div>`;
+ const one=[...b.perks,...b.relic,...b.cyberware].filter(id=>(b.agree[id]||[]).length===1).map(id=>card(id)).filter(Boolean);
+ return `<div class="note c"><b>Recent creator check:</b> ${named.length?'backed: '+named.map(cl).join(', ')+'. ':''}${one.length?'Named by 1 creator (needs 2): '+one.map(cl).join(', ')+'. ':''}`+
+ (v?`<b>One creator's version:</b> <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> (${esc(v.channel)}, ${esc(v.date)}) names ${x.ids.length} of these picks; it is one build, not a second source. `:'No single recent video names two or more of these picks. ')+
+ `These counts use only the ${esc(b.short)} videos; the <a href="#priority">Priority list</a> counts all ${M.n_build_videos} build creators, so a pick can be rated there and still show 1 here.</div>`;}
+function priorityPage(){
+ const n=needCards();if(n)return n;
+ const rows=['S','A','B'].filter(t=>D.priority.some(x=>x.tier===t)).map(t=>{const its=D.priority.filter(x=>x.tier===t);return `<div class="trow"><div class="lab t${t}">${t}<small>${t==='S'?'5+ creators':t==='A'?'3-4':'2 creators'}</small></div><div class="its">${its.length?its.map(x=>{const c=card(x.id);return `<div class="pit">`+chip(c,`${KIND[c.kind]} · ${x.n} creators`)+`<button class="srcbtn" data-src="pv-${x.id}">Source</button><div class="srcbox" id="pv-${x.id}"><ul>${x.videos.map(v=>D.videos[v]).filter(Boolean).map(v=>`<li><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> (${esc(v.channel)}, ${esc(v.date)})</li>`).join('')}</ul></div></div>`}).join(''):'<span class="muted small">Nothing reached this level.</span>'}</div></div>`;}).join('');
+ return sec('PRIORITY','Priority list: what recent build videos name',`How many of the <b>${M.n_build_videos}</b> creators with a recent build video name each iconic weapon, cyberware or perk. The count is the rating, not this guide's opinion.`)+
+ `<div class="note">Letters: ${Object.entries(D.tiers).map(([k,v])=>`<b>${k}</b> = ${esc(v)}`).join(' · ')}.</div><details class="more" style="margin-bottom:14px"><summary>How this is counted</summary><p>Cyberpunk 2077 is single-player, so there is no win-rate tier list. A video counts if it was uploaded on or after ${esc(M.build_min?M.build_min.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'):'?')} (the last 60 days) and is a build: its title or description says build, loadout or perks, or its description lists 10 or more game items. Weapon rankings and showcases do not count (they are listed on the Sources page). One video per creator. An item is shown when at least 2 different creators name it in a title or description, and a letter only appears when something reached it. Common words (for example "Focus", "Order") only count when they appear in a list or chapter line of the description.</p></details>`+rows;
+}
+function gridPage(kind,title,code,lead,filters,tabsHtml){
+ const n=needCards();if(n)return n;
+ return sec(code,title,lead)+`<div class="filters"><input type="search" id="iq" placeholder="Filter by name or effect" value="${esc(ST.q)}" aria-label="Filter">${filters||''}<span class="count" id="cnt"></span></div>${tabsHtml||''}<div class="tiles" id="grid"></div>`;
+}
+const ST={q:'',tab:'All',iconic:false,free:false,pl:false};
+function listCards(kind){
+ let L=C.filter(c=>c.kind===kind);const q=ST.q.toLowerCase();
+ if(q)L=L.filter(c=>(c.name+' '+(c.effects||'')+' '+((c.levels||[]).join(' '))+' '+(c.modifier||'')+' '+(c.type||'')+' '+(c.slot||'')+' '+((c.abilities||[]).join(' '))).toLowerCase().includes(q));
+ return L;
+}
+function drawGrid(kind){
+ let L=listCards(kind);
+ if(kind==='perk'){if(ST.tab!=='All')L=L.filter(c=>c.attribute===ST.tab);L.sort((a,b)=>ATTRS.indexOf(a.attribute)-ATTRS.indexOf(b.attribute)||(a.level||0)-(b.level||0)||a.name.localeCompare(b.name));}
+ if(kind==='cyberware'){if(ST.tab!=='All')L=L.filter(c=>c.slot===ST.tab);L.sort((a,b)=>a.slot.localeCompare(b.slot)||a.name.localeCompare(b.name));}
+ if(kind==='weapon'){if(ST.iconic)L=L.filter(c=>c.iconic);if(ST.tab!=='All')L=L.filter(c=>c.technology===ST.tab);L.sort((a,b)=>a.type.localeCompare(b.type)||a.name.localeCompare(b.name));}
+ if(kind==='quickhack'){if(ST.tab!=='All')L=L.filter(c=>c.type===ST.tab);L.sort((a,b)=>a.type.localeCompare(b.type)||a.name.localeCompare(b.name));}
+ if(kind==='boss'){if(ST.tab!=='All')L=L.filter(c=>c.type===ST.tab);L.sort((a,b)=>a.type.localeCompare(b.type)||a.name.localeCompare(b.name));}
+ if(kind==='vehicle'){if(ST.tab!=='All')L=L.filter(c=>c.type===ST.tab);if(ST.free)L=L.filter(c=>c.free);if(ST.pl)L=L.filter(c=>c.pl);L.sort((a,b)=>a.name.localeCompare(b.name));}
+ const g=$('#grid');if(!g)return;g.innerHTML=L.map(c=>tile(c)).join('')||'<p class="muted">Nothing matches.</p>';$('#cnt').textContent=L.length+' shown';
+}
+function tabs(vals){return `<div class="tabs" id="tabs">${['All',...vals].map(v=>`<button data-tab="${esc(v)}" class="${ST.tab===v?'on':''}">${esc(v)}</button>`).join('')}</div>`;}
+function uniq(kind,f){return [...new Set(C.filter(c=>c.kind===kind).map(f).filter(Boolean))].sort();}
+function perksPage(){const n=needCards();if(n)return n;return gridPage('perk','Perks','PERKS',`All ${M.counts.perk} perks of the 2.x perk trees and the Phantom Liberty Relic tree. A perk unlocks when its attribute reaches the perk's level (4, 9, 15 or 20) and you own the perk it needs. <a href="#howto/attributes">How to spend attribute points</a>.`,'',`<h3>Attributes</h3><div class="tiles" style="margin-bottom:14px">${ATTRS.map(a=>C.find(c=>c.kind==='attribute'&&c.name.replace(/ \(attribute\)$/,'')===a)).filter(Boolean).map(c=>tile(c,c.effects)).join('')}</div><h3>Perk trees</h3>`+tabs(ATTRS));}
+function cyberPage(){const n=needCards();if(n)return n;return gridPage('cyberware','Cyberware','CYBERWARE',`${M.counts.cyberware} implants. Capacity is the cost against your cyberware capacity (see <a href="#howto/capacity">how to raise it</a>). Ranges such as 10-25% grow with the implant's tier.`,'',tabs(uniq('cyberware',c=>c.slot)));}
+function weaponsPage(){const n=needCards();if(n)return n;return gridPage('weapon','Weapons','WEAPONS',`${(M.counts.weapon||0)+(M.counts['weapon-iconic']||0)} weapons, ${M.counts['weapon-iconic']} of them iconic (unique; most can only be obtained once). Stats are the wiki's listed values.`,`<label><input type="checkbox" id="fic" ${ST.iconic?'checked':''}> Iconic only</label>`,tabs(uniq('weapon',c=>c.technology)));}
+function qhPage(){const n=needCards();if(n)return n;return gridPage('quickhack','Quickhacks','QUICKHACKS',`${M.counts.quickhack} quickhacks. RAM cost and upload time are per tier where the wiki lists several values.`,'',tabs(uniq('quickhack',c=>c.type)));}
+function vehPage(){const n=needCards();if(n)return n;return gridPage('vehicle','Vehicles','VEHICLES',`${M.counts.vehicle} cars and motorcycles. Most are bought on the AUTOFIXER netpage; "free" means the wiki lists a non-purchase way to get it (open the card for how).`,`<label><input type="checkbox" id="ffree" ${ST.free?'checked':''}> Free only</label><label><input type="checkbox" id="fpl" ${ST.pl?'checked':''}> Phantom Liberty</label>`,tabs(uniq('vehicle',c=>c.type)));}
+function giverText(c){if(!c.giver)return '';return /^automatic$/i.test(c.giver)?'Starts automatically':(c.gig?'Fixer: ':'Giver: ')+c.giver;}
+function bossPage(){const n=needCards();if(n)return n;return gridPage('boss','Bosses and cyberpsychos','BOSSES',`${M.counts.boss} fights: the bosses in the wiki's enemies list (base game and Phantom Liberty) and the cyberpsychos of the Psycho Killer job. Each card shows the abilities and equipment the wiki's character page lists, the quests you fight it in, and what those quest pages say about the fight. The wiki has no health numbers for bosses.`,'',tabs(uniq('boss',c=>c.type)));}
+function gigsPage(){
+ const n=needCards();if(n)return n;
+ const G=C.filter(c=>c.gig);const ds=[...new Set(G.map(c=>c.district||'Other'))].sort();
+ return sec('GIGS','Gigs by district',`${G.length} gigs: fixer jobs from the wiki's gig list, grouped by district and fixer. Gigs are the main way to raise Street Cred; open a card for the objective, target and rewards.`)+`<div class="tabs">${ds.map(d=>`<a class="pill c" href="#gigs" data-jump="g-${esc(d.replace(/\W+/g,''))}" style="text-decoration:none">${esc(d)} (${G.filter(c=>(c.district||'Other')===d).length})</a>`).join('')}</div>`+
+ ds.map(d=>{const R=G.filter(c=>(c.district||'Other')===d);const fx=[...new Set(R.map(c=>c.giver||''))].sort();return `<h3 id="g-${esc(d.replace(/\W+/g,''))}" style="margin-top:22px">${esc(d)}</h3>`+fx.map(f=>`<p class="small muted" style="margin:10px 0 4px">${f?'Fixer: '+esc(f):'No fixer listed'}</p><div class="qlist">${R.filter(c=>(c.giver||'')===f).sort((a,b)=>a.name.localeCompare(b.name)).map(c=>qrow(c.id,c.gig_type)).join('')}</div>`).join('');}).join('');
+}
+function qrow(id,extra){const c=card(id);if(!c)return '';return `<button class="qrow panel" data-card="${esc(c.id)}">${img(c)}<span><b>${esc(c.name)}</b><br><span class="tiny muted">${esc(giverText(c))}${c.district?' · '+esc(c.district):''}</span></span><span class="m">${[extra,c.xp?'XP '+esc(c.xp):''].filter(Boolean).join(' · ')}${c.rewards&&c.rewards.some(r=>/missable/i.test(r))?' <span class="pill r">missable loot</span>':''}</span></button>`;}
+function questsPage(listName,title,code,lead,filter){
+ const n=needCards();if(n)return n;
+ const rows=D.order.filter(o=>o.list===listName&&(!filter||filter(o)));const acts=[...new Set(rows.map(o=>o.act))];
+ return sec(code,title,lead)+acts.map(a=>{const R=rows.filter(o=>o.act===a);const groups=[...new Set(R.map(o=>o.group||''))];return `<h3 style="margin-top:22px">${esc(a)}</h3>`+groups.map(g=>(g?`<p class="small muted" style="margin:10px 0 4px">${esc(g)}</p>`:'')+`<div class="qlist">${R.filter(o=>(o.group||'')===g).map(o=>qrow(o.id,o.optional?'optional':'')).join('')}</div>`).join('');}).join('');
+}
+function choicesPage(){return sec('CHOICES','Choices that matter','Choices that change what happens later, from the wiki quest and ending pages (each row names its page). Open the quest for its card.')+`<div class="tablewrap stack"><table><thead><tr><th>Quest</th><th>Choice</th><th>What it changes</th><th>Source</th></tr></thead><tbody>${D.choices.map(r=>`<tr><td data-l="Quest">${r.quest?`<button class="lk" data-card="${esc(r.quest)}">${esc(r.quest_name)}</button>`:esc(r.quest_name)}</td><td data-l="Choice">${lnk(r.choice)}</td><td data-l="What it changes">${lnk(r.effect)}</td><td data-l="Source">${r.src.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(', ')}</td></tr>`).join('')}</tbody></table></div>`;}
+function endingsPage(){
+ const E=D.howto.filter(s=>s.group==='Endings');
+ return sec('ENDINGS','Endings','The base game has four main endings plus a secret variant and a suicide ending; Phantom Liberty adds The Tower. The base-game endings start from the rooftop in Nocturne Op55N1; The Tower can also start in Who Wants to Live Forever.')+`<div class="note r">Start with <a href="#howto/pnr">how to finish the story without losing anything</a>: once you take the elevator into Embers (the restaurant where you meet Hanako), every other job is marked as failed.</div><div class="grid two">${E.map(s=>`<a class="panel" href="#howto/${s.id}" style="text-decoration:none;color:inherit"><h3>${esc(s.title.replace(/^How to get (the )?/i,'').replace(/^./,x=>x.toUpperCase()))}</h3><p class="small muted">${lnk(s.need||'')}</p><span class="pill y">${nSteps(s)} steps</span></a>`).join('')}</div>`+
+ sec('PL','Phantom Liberty endings','Four outcomes, decided in Firestarter, The Killing Moon and Somewhat Damaged.')+table(T('pl-endings'))+sec('LOOT','Ending rewards','')+table(T('ending-rewards'))+`<div style="margin-top:12px"></div>`+table(T('pl-ending-rewards'))+sec('VID','Videos','')+vidList((D.video_topics.find(t=>t.key==='endings')||{}).videos);
+}
+function missPage(){
+ const n=needCards();if(n)return n;
+ return sec('MISSABLE','Missables',`Loot the wiki marks as missable in each quest's rewards, in story order. Grab it during that quest. ${D.missables.filter(m=>m.later).length} of them can still be got later, ${D.missables.filter(m=>/Herold Lowe/.test(m.note)).length} from Herold Lowe at the EBM Petrochem Stadium (Phantom Liberty): the Note quotes the item card's "How to get it" text.`)+
+ `<div class="tablewrap stack"><table><thead><tr><th>Item</th><th>Quest</th><th>Story part</th><th>Note</th></tr></thead><tbody>${D.missables.map(m=>`<tr><td data-l="Item">${m.card?`<button class="lk" data-card="${esc(m.card)}">${esc(m.item)}</button>`:esc(m.item)}</td><td data-l="Quest"><button class="lk" data-card="${esc(m.quest)}">${esc(m.quest_name)}</button></td><td data-l="Story part">${esc(m.act||'')}</td>${m.note?`<td class="muted" data-l="Note">${m.later?'<span class="pill g">can get later</span> ':''}${esc(m.note)}</td>`:'<td></td>'}</tr>`).join('')}</tbody></table></div>${srcLine([{title:'quest infoboxes (reward_item field) on the Cyberpunk Wiki',url:'#sources'}])}`+
+ sec('SHARDS','Perk Shards','Each gives one perk point.')+table(T('perk-shards'))+sec('CAPACITY','Cyberware Capacity Shards','')+table(T('capacity-shards'))+sec('VID','Videos','')+vidList((D.video_topics.find(t=>t.key==='missables')||{}).videos);
+}
+function refPage(){return sec('TABLES','Tables','Pulled straight from the wiki pages named under each table.')+['skill-headhunter','skill-netrunner','skill-shinobi','skill-solo','skill-engineer','street-cred','relic-terminals','capacity-shards'].map(id=>{const t=T(id);return t?`<h3 style="margin-top:22px">${esc(t.title)}</h3>`+table(t):''}).join('');}
+const ymd=s=>s?String(s).replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'):'';
+function videosPage(){const shown=D.video_topics.filter(t=>t.videos.length),empty=D.video_topics.filter(t=>!t.videos.length);
+ return sec('VIDEOS','Videos',`Recent guides for each topic, picked by a rule (not hand-reviewed). They play from youtube-nocookie.com and need internet.`)+`<details class="more"><summary>How they were picked</summary><p>YouTube search, last run ${esc(M.videos_searched||'?')}. The title matches the topic, the video is longer than 3 minutes, one per channel, newest first. Build videos are from the last 60 days. Other topics go back to Update 2.3 (2025-07-16); perks, endings and Phantom Liberty go back to Patch 2.0 (2023-09-21), when today's perk trees and the expansion arrived. Each heading shows its window.</p></details>`+shown.map(t=>`<h3 style="margin-top:22px">${esc(t.name)} <span class="tiny muted" style="font-family:var(--body);letter-spacing:0">uploaded since ${esc(ymd(M.video_min[t.key]))}</span></h3>`+vidList(t.videos)).join('')+(empty.length?`<p class="small muted" style="margin-top:22px">No video in the search window for: ${empty.map(t=>esc(t.name)).join(', ')}.</p>`:'');}
+function sourcesPage(){
+ const n=M.counts;
+ return sec('METHOD','Sources and method','')+`<div class="grid two">${D.sources.map(s=>`<div class="panel"><h3>${esc(s.name)}</h3><p class="small muted">${esc(s.what)} · pulled ${esc(s.date)}</p><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a></div>`).join('')}</div>
+ <h3 style="margin-top:22px">Counts</h3><div class="tablewrap"><table><tbody>${Object.entries(n).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${fmtN(v)}</td></tr>`).join('')}<tr><td>how-to guides / steps</td><td>${D.howto.length} / ${D.howto.reduce((a,s)=>a+nSteps(s),0)}</td></tr><tr><td>quests in the story order</td><td>${D.order.length}</td></tr><tr><td>missable items</td><td>${D.missables.length}</td></tr><tr><td>videos</td><td>${Object.keys(D.videos).length}</td></tr></tbody></table></div>
+ <h3 style="margin-top:22px">How it is checked</h3><ul class="panel" style="padding-left:34px"><li>Every number in a how-to step, build line or choice row must appear in the wiki page that line cites; the build stops if not.</li><li>Every linked name must be a card in the pulled data or appear in the cited page; every capitalised word must appear in the cited page.</li><li>Every perk in a build must exist and come after the perk it needs; every cyberware and Relic perk must exist.</li><li>Every card has a picture on disk; quests and vehicles without their own picture show a related page's picture (quest giver, area or base model) and say so.</li></ul>
+ <h3 style="margin-top:22px">What is not verified or missing</h3><ul class="panel" style="padding-left:34px"><li>The wiki is community-written; where its pages lag behind a patch, so does this guide. Stats on weapon cards are the wiki's listed values, which change with level and tier.</li><li>Builds are this guide's picks from perk text, not a ranking. "Named by recent videos" means the name is in the video's title or description, not that the video recommends it.</li><li>The priority list is based on ${M.n_build_videos} creators' recent videos; it is a count of names, not a measure of strength, and is small.</li>${(M.not_build_videos||[]).length?`<li>Found by the build searches but not counted, because they are not build videos (no "build", "loadout" or "perks" in the title or description, and no gear list): ${M.not_build_videos.map(v=>`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> (${esc(v.channel)}, ${esc(v.date)})`).join('; ')}.</li>`:''}<li>No video was found for some topics in the search window (shown on the Videos page).</li><li>Minor jobs and clothing are not carded. Boss cards show abilities and equipment from the wiki's character pages, and the sentences about the fight from the pages of the quests you fight the boss in (a quest counts as a fight when its infobox lists the boss as an enemy or the page says to defeat it). The wiki has no health numbers, and some fights have no such sentences. ${(M.boss_skipped||[]).length?'Not carded, because the wiki page is missing or lists no abilities, equipment or quests: '+esc(M.boss_skipped.join(', '))+'.':''}</li></ul>`;
+}
+
+/* ---------- card modal ---------- */
+function kv(rows){rows=rows.filter(r=>r[1]!=null&&r[1]!=='');return rows.length?`<dl class="kv">${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>`:'';}
+function usedIn(id){const B=D.builds.filter(b=>b.perks.includes(id)||b.cyberware.includes(id)||b.relic.includes(id)||b.weapons.includes(id));return B.length?`<div class="isec"><h4>Used in builds</h4>${B.map(b=>`<a href="#build/${b.id}">${esc(b.name)}</a>`).join(' · ')}</div>`:'';}
+function qlink(p){return p.id?`<button class="lk" data-card="${esc(p.id)}">${esc(p.page.replace(/ \(quest\)$/,''))}</button>`:esc(p.page)}
+function cardHtml(c){
+ let body='';
+ if(c.kind==='perk')body=kv([['Tree',esc(c.attribute)],['Attribute level',c.level||''],['Needs',c.needs.map(n=>{const p=C.find(x=>x.kind==='perk'&&x.name===n.replace(/ \(perk\)$/,''));return p?`<button class="lk" data-card="${esc(p.id)}">${esc(p.name)}</button>`:esc(n)}).join(', ')],['Applies to',esc(c.condition)]])+`<div class="isec"><h4>Effect by level</h4>${c.levels.map((l,i)=>`<p class="pre"><b>${c.levels.length>1?'Level '+(i+1)+': ':''}</b>${esc(l)}</p>`).join('')}</div>`;
+ if(c.kind==='cyberware')body=kv([['Slot',esc(c.slot+(c.subtype?' ('+c.subtype+')':''))],['Base quality',esc(c.quality)],['Capacity cost',esc(c.capacity)],['Armor',esc(c.armor)],['RAM',esc(c.ram)],['Quickhack slots',esc(c.qh_slots)],['Attribute bonus from',esc(c.attribute)],['Maker',esc(c.manufacturer)],['Where',esc(c.source)]])+`<div class="isec"><h4>What it does</h4><p class="pre">${esc(c.effects)}</p></div>`+(c.how?`<details class="more"><summary>How to get it</summary><p class="pre small">${esc(c.how)}</p></details>`:'');
+ if(c.kind==='weapon')body=kv([['Type',esc(c.type)],['Technology',esc(c.technology)],['Quality',esc(c.quality)],['Maker',esc(c.manufacturer)],[(c.found||[]).every(f=>f.label)?'Found in':'Where (wiki)',(c.found||[]).map(f=>(f.label?f.label+': ':'')+(f.id?`<button class="lk" data-card="${esc(f.id)}">${esc(f.name)}</button>`:esc(f.name))+(f.tag?` (${esc(f.tag)})`:'')).join('; ')],['Mod slots',esc(c.mods)]])+(c.modifier?`<div class="isec"><h4>Iconic effect</h4><p>${esc(c.modifier)}</p></div>`:'')+(Object.keys(c.stats).length?`<details class="more"><summary>Stats (wiki listed values)</summary>${kv(Object.entries(c.stats).map(([k,v])=>[k,esc(v)]))}</details>`:'')+(c.how?`<details class="more" ${c.iconic?'open':''}><summary>How to get it</summary><p class="pre small">${esc(c.how)}</p></details>`:'');
+ if(c.kind==='quickhack')body=kv([['Type',esc(c.type)],['Base quality',esc(c.quality)],['RAM cost',esc(c.ram)],['Upload time (s)',esc(c.upload)],['Duration (s)',esc(c.duration)],['Where',esc(c.source)]])+`<div class="isec"><h4>What it does</h4><p class="pre">${esc(c.effects)}</p></div>`+(c.how?`<details class="more"><summary>How to get it</summary><p class="pre small">${esc(c.how)}</p></details>`:'');
+ if(c.kind==='quest')body=kv([['Type',esc(c.type)+(c.gig_type?' · '+esc(c.gig_type):'')+(c.pl?' · Phantom Liberty':'')],['Story part',esc((c.act||'')+(c.group?' / '+c.group:''))],[c.gig?'Fixer':'Quest giver',/^automatic$/i.test(c.giver||'')?'starts automatically':esc(c.giver)],['Objective',esc(c.objective)],['Target',esc(c.target)],['District',esc(c.district+(c.where.length?' ('+c.where.join(', ')+')':''))],['Locations',esc(c.locations.join(', '))],['Enemies',esc(c.enemies.join(', '))],['Comes after',c.prev.map(qlink).join(', ')],['Leads to',c.next.map(qlink).join(', ')],['XP',esc(c.xp)],['Street Cred',esc(c.cred)],['Eddies',esc(c.eddies)]])+(c.rewards.length?`<div class="isec"><h4>Rewards</h4><ul>${c.rewards.map(r=>`<li>${esc(r)}${/missable/i.test(r)?' <span class="pill r">missable</span>':''}</li>`).join('')}</ul></div>`:'')+(D.choices.filter(x=>x.quest===c.id).map(x=>`<div class="isec"><h4>Choice that matters</h4><p><b>${lnk(x.choice)}</b>: ${lnk(x.effect)}</p></div>`).join(''));
+ if(c.kind==='vehicle')body=kv([['Type',esc(c.type+(c.group?' · '+c.group:''))],['Maker',esc(c.manufacturer)],['Price',c.cost?fmtN(c.cost)+' €$':''],['Street Cred to buy',esc(c.cred)],['Horsepower',esc(c.hp)],['Top speed',esc(c.top_speed)],['Drivetrain',esc(c.drivetrain)],['Seats',esc(c.seats)],['Phantom Liberty',c.pl?'yes':'']])+(c.how?`<div class="isec"><h4>How to get it</h4><p class="pre small">${esc(c.how)}</p></div>`:`<div class="isec"><h4>How to get it</h4><p class="small muted">The wiki lists no price and no way to get this vehicle; it may be driven only by NPCs or in quests.</p></div>`);
+ if(c.kind==='boss'){const F=new Set((c.fought||[]).map(q=>q.page)),also=c.quests.filter(q=>!F.has(q.page));body=kv([['Type',esc(c.type)+(c.pl?' · Phantom Liberty':'')],['Also known as',esc((c.aka||[]).join(', '))],['Role',esc(c.role)],['Affiliation',esc(c.affiliation)],['Place of death (wiki)',esc(c.place)],
+  ...(F.size?[['Fought in',c.fought.map(qlink).join(', ')],['Also appears in',also.map(qlink).join(', ')]]:[[c.quest_src==='section'?'Quests':'Quests the wiki page names',c.quests.map(qlink).join(', ')]])])
+  +((c.fight||[]).length?`<div class="isec"><h4>The fight (from the quest pages)</h4><ul class="fight">${c.fight.map(x=>`<li>${esc(x.t)} <span class="muted small">(${qlink({page:x.quest,id:x.quest_id})})</span></li>`).join('')}</ul></div>`:'')
+  +(c.abilities.length?`<div class="isec"><h4>Abilities (what to expect in the fight)</h4><div class="pills">${c.abilities.map(a=>`<span class="pill c">${esc(a)}</span>`).join('')}</div>${c.ability_note?`<p class="small">${esc(c.ability_note)}</p>`:''}</div>`:'')
+  +`<div class="isec"><h4>Equipment</h4>${Object.keys(c.equipment).length?kv(Object.entries(c.equipment).map(([k,v])=>[k,v.map(x=>x.id?`<button class="lk" data-card="${esc(x.id)}">${esc(x.name)}</button>`:esc(x.name)).join(', ')])):'<p class="muted">The wiki lists none.</p>'}</div>`
+  +`<p class="small muted">The wiki lists no health or weakness numbers for bosses; this card shows what the character page lists${(c.fight||[]).length?', and what the quest pages say about the fight':''}.</p>`;}
+ if(c.kind==='attribute')body=kv([['Effect',esc(c.effects)],['Skill',esc(c.skill)]])+`<p><a href="#perks">See its perks</a></p>`;
+ return `<div class="ic-head k-${c.kind}${c.img_large?' wide':''}">${c.img_large?`<img class="big" src="${esc(c.img_large)}" alt="" onerror="this.src='${esc(c.img)}'">`:img(c)}<div><span class="pill c">${esc(KIND[c.kind])}</span><h2>${esc(c.name)}</h2>${c.caption?`<p class="small muted" style="margin:4px 0 0">${esc(c.caption)}</p>`:''}</div></div>${body}${usedIn(c.id)}<div class="isec small muted">${c.img_note?`Picture: ${esc(c.img_note)}. `:''}Source: <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.page)} on the Cyberpunk Wiki</a></div>`;
+}
+let lastFocus=null;
+function openModal(html,wide){lastFocus=document.activeElement;$('#mbody').innerHTML=html;$('#modal .box').classList.toggle('wide',!!wide);$('#modal').classList.add('on');$('#modal .box').scrollTop=0;$('#modal .box').focus();}
+function closeModal(){if(!$('#modal').classList.contains('on'))return;$('#modal').classList.remove('on');$('#mbody').innerHTML='';if(lastFocus&&document.body.contains(lastFocus))lastFocus.focus();}
+function openCard(id){if(!C){pendingCard=id;return;}const c=card(id);if(c)openModal(cardHtml(c));}
+function playVideo(id,title){openModal(`<h3 style="margin-right:34px">${esc(title)}</h3><div style="position:relative;aspect-ratio:16/9;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p class="small"><a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">Open on YouTube</a> <span class="muted">(needs internet)</span></p>`,true);}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.closest('.x'))closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+/* ---------- search ---------- */
+let IDX=[],hits=[],sel=0;
+function norm(s){return String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim()}
+function buildIndex(){
+ IDX=[];NAV.forEach(([g,l])=>l.forEach(([id,t])=>IDX.push({n:norm(t),t,go:id,k:'Section'})));
+ D.howto.forEach(s=>IDX.push({n:norm(s.title),t:s.title,go:'howto/'+s.id,k:'How-to'}));
+ D.tables.forEach(t=>IDX.push({n:norm(t.title),t:t.title,go:t.id.startsWith('ending')||t.id.startsWith('pl-')?'endings':t.id==='perk-shards'||t.id==='capacity-shards'?'missables':'ref',k:'Table'}));
+ if(C)C.forEach(c=>IDX.push({n:norm(c.name),t:c.name,card:c.id,k:KIND[c.kind],img:c.img}));
+}
+function doSearch(q){const r=$('#res');q=norm(q);if(!q){r.classList.remove('on');hits=[];return;}
+ const words=q.split(' ');hits=IDX.map(e=>{if(!words.every(w=>e.n.includes(w)))return null;const s=e.n===q?0:e.n.startsWith(q)?1:2;return [s,e];}).filter(Boolean).sort((a,b)=>a[0]-b[0]||a[1].t.length-b[1].t.length).slice(0,30).map(x=>x[1]);sel=0;
+ r.innerHTML=hits.length?hits.map((e,i)=>`<div data-i="${i}" class="${i===0?'sel':''}" role="option">${e.img?`<img src="${esc(e.img)}" alt="">`:''}<span>${esc(e.t)}</span><i>${esc(e.k)}</i></div>`).join(''):`<div class="none">Nothing found${C?'':' (cards still loading)'}</div>`;r.classList.add('on');}
+function goHit(e){if(!e)return;$('#res').classList.remove('on');$('#q').value='';$('#q').blur();$('#side').classList.remove('open');if(e.card)openCard(e.card);else location.hash=e.go;}
+$('#q').addEventListener('input',e=>doSearch(e.target.value));
+$('#q').addEventListener('keydown',e=>{const r=$('#res');if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!hits.length)return;sel=(sel+(e.key==='ArrowDown'?1:hits.length-1))%hits.length;[...r.children].forEach((c,i)=>c.classList.toggle('sel',i===sel));}else if(e.key==='Enter'){e.preventDefault();goHit(hits[sel]);}else if(e.key==='Escape'){r.classList.remove('on');}});
+$('#res').addEventListener('mousedown',e=>{const d=e.target.closest('[data-i]');if(d){e.preventDefault();goHit(hits[+d.dataset.i]);}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#res').classList.remove('on');});
+
+/* ---------- events ---------- */
+document.addEventListener('click',e=>{
+ const j=e.target.closest('[data-jump]');if(j){e.preventDefault();const el=document.getElementById(j.dataset.jump);if(el)el.scrollIntoView();return;}
+ const s=e.target.closest('[data-src]');if(s){e.preventDefault();const b=document.getElementById(s.dataset.src);if(b)b.classList.toggle('on');return;}
+ const c=e.target.closest('[data-card]');if(c){e.preventDefault();openCard(c.dataset.card);return;}
+ const v=e.target.closest('[data-vid]');if(v){playVideo(v.dataset.vid,v.dataset.title);return;}
+ const t=e.target.closest('[data-tab]');if(t){ST.tab=t.dataset.tab;document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b===t));drawGrid(CUR);return;}
+});
+const main=$('#main');
+main.addEventListener('input',e=>{if(e.target.id==='iq'){ST.q=e.target.value;drawGrid(CUR);}});
+main.addEventListener('change',e=>{if(e.target.id==='fic'){ST.iconic=e.target.checked;drawGrid(CUR);}if(e.target.id==='ffree'){ST.free=e.target.checked;drawGrid(CUR);}if(e.target.id==='fpl'){ST.pl=e.target.checked;drawGrid(CUR);}});
+$('#menuBtn').addEventListener('click',()=>$('#side').classList.toggle('open'));
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#side').classList.remove('open');});
+
+/* ---------- router ---------- */
+let CUR=null,pendingCard=null;
+const ROUTES={home,update,builds:buildsPage,priority:priorityPage,perks:perksPage,cyberware:cyberPage,weapons:weaponsPage,quickhacks:qhPage,vehicles:vehPage,
+ quests:()=>questsPage('main','Main quest order','STORY','Main jobs in the order the wiki lists them, act by act. The prologue depends on your lifepath. Phantom Liberty jobs are listed under their own heading.'),
+ side:()=>questsPage('side','Side jobs','SIDE JOBS','Side jobs grouped by the character they belong to. Romance and story-character jobs unlock endings and epilogue messages (see Choices that matter).'),
+ pl:()=>questsPage('main','Phantom Liberty quests','PHANTOM LIBERTY','The expansion\'s main jobs. The route splits in Firestarter.',o=>o.act==='Phantom Liberty'),
+ choices:choicesPage,endings:endingsPage,missables:missPage,ref:refPage,videos:videosPage,sources:sourcesPage,bosses:bossPage,gigs:gigsPage};
+const GRID={perks:'perk',cyberware:'cyberware',weapons:'weapon',quickhacks:'quickhack',vehicles:'vehicle',bosses:'boss'};
+function render(top=true){
+ let h='';try{h=decodeURIComponent(location.hash.slice(1))}catch(e){h=''}
+ h=h||'home';const [r,arg]=h.split('/');let html,navKey=h;
+ if(r!==CUR){ST.q='';ST.tab='All';}
+ if(r==='howto'&&arg&&has(HOWTO,arg))html=howtoPage(HOWTO[arg]);
+ else if(r==='build'&&arg&&has(BUILD,arg))html=buildPage(BUILD[arg]);
+ else if(r==='card'&&arg){html=home();navKey='home';setTimeout(()=>openCard(arg),0);}
+ else if(has(ROUTES,r))html=ROUTES[r]();
+ else{html=sec('404','Page not found','')+`<p>That section does not exist. <a href="#home">Go to the home page</a> or use the search.</p>`;}
+ CUR=r;
+ main.innerHTML=html+`<footer>${$('#checked').innerHTML}<br>Fan-made guide. Game data and pictures: Cyberpunk Wiki (CC BY-SA) and CD PROJEKT RED. Not affiliated with CD PROJEKT RED.</footer>`;
+ $('#nav').innerHTML=navHtml(navKey);
+ if(has(GRID,r)&&C)drawGrid(GRID[r]);
+ if(top)window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',()=>{closeModal();render();});
+render();
+buildIndex();
+/* cards load after the first screen */
+(function(){const s=document.createElement('script');s.src='data/cards.js?v=2026-11-18-790201';s.onload=()=>{C=window.CPC;C.forEach(c=>CB[c.id]=c);buildIndex();render(false);if(pendingCard){const p=pendingCard;pendingCard=null;openCard(p);}};s.onerror=()=>{main.insertAdjacentHTML('afterbegin','<p class="note r">The card data (data/cards.js) did not load. Check that the data folder is next to index.html.</p>');};document.body.appendChild(s);})();
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

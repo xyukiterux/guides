@@ -1,0 +1,435 @@
+{
+ "_note": "Guide picks. Each perk, Relic perk and cyberware name must exist in the pulled wiki data, and each perk must come after the perk it needs (build.py checks both). The attribute plan, perk effects, cyberware effects and matching iconic weapons are filled in from the data at build time. Which recent creator videos name each pick is computed from their titles and descriptions.",
+ "builds": [
+  {
+   "id": "netrunner",
+   "name": "Netrunner",
+   "video": "build-netrunner",
+   "match": "netrunn|quickhack|hacker",
+   "answer": "Hack from cover with a cyberdeck: Intelligence to 20 for the RAM and Overclock perks, Technical Ability for cyberware, a point in Cool for crouched defence.",
+   "perks": [
+    "Optimization",
+    "Encryption",
+    "Proximate Propagation",
+    "Embedded Exploit",
+    "Eye In The Sky",
+    "Hack Queue",
+    "Icepick",
+    "Speculation",
+    "System Overwhelm",
+    "Overclock",
+    "Sublimation",
+    "Queue Acceleration",
+    "Queue Hack Root",
+    "Blood Daemon",
+    "Spillover",
+    "Queue Mastery",
+    "Feline Footwork",
+    "All Things Cyber",
+    "Renaissance Punk",
+    "License To Chrome"
+   ],
+   "relic": [
+    "Vulnerability Analytics",
+    "Machine Learning"
+   ],
+   "cyberware": [
+    "NetWatch Netdriver",
+    "Camillo RAM Manager",
+    "Memory Boost",
+    "RAM Upgrade",
+    "Kiroshi Clairvoyant Optics",
+    "Smart Link",
+    "Feen-X",
+    "RAM Recoup",
+    "Pain Editor",
+    "Optical Camo",
+    "Blood Pump",
+    "Heal-On-Kill",
+    "Lynx Paws"
+   ],
+   "weapons": {
+    "technology": [
+     "Smart"
+    ]
+   },
+   "play": [
+    {
+     "t": "Install a cyberdeck such as [[NetWatch Netdriver]]: it lets you quickhack enemies and devices while scanning.",
+     "src": [
+      "page:NetWatch Netdriver"
+     ]
+    },
+    {
+     "t": "Open each fight from cover with [[Ping]]: it reveals enemies and devices connected to the local network.",
+     "src": [
+      "page:Ping"
+     ]
+    },
+    {
+     "t": "Queue more than one quickhack on a target once you have [[Hack Queue]] and [[Queue Acceleration]] (each gives +1 Max RAM, the cyberdeck resource that every quickhack costs).",
+     "src": [
+      "data:perks",
+      "Cyberpunk 2077 Quickhacks"
+     ]
+    },
+    {
+     "t": "When RAM runs out, activate [[Overclock]]: for 14 sec. you can keep hacking and each RAM unit over your max costs 10 Health; the cooldown is 30 sec.",
+     "src": [
+      "page:Overclock"
+     ]
+    }
+   ],
+   "short": "netrunner-build"
+  },
+  {
+   "id": "blades",
+   "name": "Blades and Sandevistan",
+   "video": "build-blades",
+   "match": "katana|blade|sandevistan|sword|samurai|mantis",
+   "answer": "Close in fast and cut with katanas, knives or Mantis Blades: Reflexes to 20 for the blade and dash perks, Body for Adrenaline Rush, a Sandevistan to slow time.",
+   "perks": [
+    "Slippery",
+    "Dash",
+    "Lead And Steel",
+    "Bullet Deflect",
+    "Bullet Time",
+    "Mad Dash",
+    "Mean Streak",
+    "Air Dash",
+    "Finisher: Bladerunner",
+    "Flash Of Steel",
+    "Going The Distance",
+    "Opportunist",
+    "Slaughterhouse",
+    "Painkiller",
+    "Adrenaline Rush",
+    "Juggernaut",
+    "All Things Cyber"
+   ],
+   "relic": [
+    "Jailbreak",
+    "Spatial Mapping",
+    "Vulnerability Analytics"
+   ],
+   "cyberware": [
+    "Militech Apogee",
+    "Mantis Blades",
+    "Stabber",
+    "Adreno-trigger",
+    "Microrotors",
+    "Adrenaline Booster",
+    "Dense Marrow",
+    "Epimorphic Skeleton",
+    "Pain Editor",
+    "Peripheral Inverse",
+    "Leeroy Ligament System",
+    "Kiroshi Cockatrice Optics",
+    "Axolotl"
+   ],
+   "weapons": {
+    "technology": [
+     "Blade"
+    ]
+   },
+   "play": [
+    {
+     "t": "Install a Sandevistan such as [[Militech Apogee]]: it slows time by 85% while you are not slowed (max duration 6 sec.).",
+     "src": [
+      "page:Militech Apogee"
+     ]
+    },
+    {
+     "t": "Activate the Sandevistan on demand when a fight starts; since [[Patch 2.0]], pressing the activation button again mid-usage stops it early.",
+     "src": [
+      "Sandevistan"
+     ]
+    },
+    {
+     "t": "Dash toward enemies: [[Mad Dash]] gives +100% Dash range toward enemies.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Block bullets with a blade while your Stamina is above 33%: [[Bullet Deflect]] deflects them.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Finish weakened enemies with [[Finisher: Bladerunner]].",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Use the +25% Movement Speed and Attack Speed from [[Flash Of Steel]] to reach the next enemy.",
+     "src": [
+      "data:perks"
+     ]
+    }
+   ],
+   "short": "blade-build"
+  },
+  {
+   "id": "guns",
+   "name": "Pistols and revolvers",
+   "video": "build-guns",
+   "match": "pistol|revolver|gun|headshot|rifle|smg|power weapon|tech weapon",
+   "answer": "Aim for the head with pistols and revolvers: Cool to 20 for the Deadeye perks, Reflexes for shooting on the move, Technical Ability for cyberware.",
+   "perks": [
+    "Focus",
+    "Head To Head",
+    "Rinse And Reload",
+    "Deep Breath",
+    "Deadeye",
+    "Quick Draw",
+    "High Noon",
+    "California Reaper",
+    "Long Shot",
+    "Nerves Of Tungsten-Steel",
+    "Double Trouble",
+    "Two Right Hands",
+    "Slippery",
+    "Multitasker",
+    "Muscle Memory",
+    "Dash",
+    "Painkiller",
+    "All Things Cyber"
+   ],
+   "relic": [
+    "Vulnerability Analytics",
+    "Machine Learning"
+   ],
+   "cyberware": [
+    "Militech Falcon",
+    "Ballistic Coprocessor",
+    "Kiroshi Cockatrice Optics",
+    "Kerenzikov",
+    "Defenzikov",
+    "Kerenzikov Boost System",
+    "Axolotl",
+    "Newton Module",
+    "Clutch Padding",
+    "Heal-On-Kill",
+    "Blood Pump",
+    "Para Bellum",
+    "Epimorphic Skeleton",
+    "Pain Editor",
+    "Leeroy Ligament System"
+   ],
+   "weapons": {
+    "type": [
+     "Pistol",
+     "Revolver"
+    ]
+   },
+   "play": [
+    {
+     "t": "Aim down sights for headshots: [[Focus]] gives +10% Headshot and Weakspot damage.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Keep killing while Focus is active: with [[Head To Head]], a ranged kill resets its duration.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "If you want two guns at once, buy [[Double Trouble]]: it unlocks dual wield for Power Pistols and Power Revolvers only, and each weapon deals −37.5% damage.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Install [[Kerenzikov]]: it lets you aim and perform ranged attacks while sliding, dodging or Dashing.",
+     "src": [
+      "page:Kerenzikov"
+     ]
+    }
+   ],
+   "short": "pistol and revolver build"
+  },
+  {
+   "id": "stealth",
+   "name": "Stealth and throwing knives",
+   "video": "build-stealth",
+   "match": "stealth|ninja|assassin|throwing|knife|knives|sniper|ghost",
+   "answer": "Stay unseen and kill with knives, axes and silenced guns: Cool to 20 for Ninjutsu and the throwing perks, Optical Camo, Intelligence 9 for trace protection.",
+   "perks": [
+    "Killer Instinct",
+    "Gag Order",
+    "Quick Getaway",
+    "Feline Footwork",
+    "Blind Spot",
+    "Scorpion Sting",
+    "Neurotoxin",
+    "Accelerated Toxin Absorption",
+    "Juggler",
+    "Sleight Of Hand",
+    "Finisher: Act Of Mercy",
+    "Pounce",
+    "Ninjutsu",
+    "Shinobi Sprint",
+    "Creeping Death",
+    "Vanishing Act",
+    "Style Over Substance",
+    "Optimization",
+    "Embedded Exploit",
+    "Shadowrunner",
+    "All Things Cyber"
+   ],
+   "relic": [
+    "Emergency Cloaking",
+    "Sensory Protocol"
+   ],
+   "cyberware": [
+    "Arasaka Shadow",
+    "Optical Camo",
+    "Lynx Paws",
+    "Synaptic Accelerator",
+    "Tyrosine Injector",
+    "Stabber",
+    "Handle Wrap",
+    "Kiroshi Clairvoyant Optics",
+    "Black Mamba",
+    "Heal-On-Kill",
+    "Newton Module",
+    "Scarab",
+    "Bionic Joints",
+    "Subdermal Armor"
+   ],
+   "weapons": {
+    "technology": [
+     "Thrown"
+    ]
+   },
+   "play": [
+    {
+     "t": "Stay out of combat for the bonus: [[Killer Instinct]] gives +25% damage with knives, axes and silenced guns outside of combat.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Crouch to move: [[Feline Footwork]] gives +15% Movement Speed and +15% Mitigation Chance when crouched.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Equip [[Optical Camo]]: −30-90% visibility to enemies for 4-7 sec.",
+     "src": [
+      "page:Optical Camo"
+     ]
+    },
+    {
+     "t": "If you are spotted, pop camo in combat: the Relic perk [[Emergency Cloaking]] makes enemies lose track of you (Optical Camo must be in the Combat Gadget quickslot).",
+     "src": [
+      "data:perks"
+     ]
+    }
+   ],
+   "short": "stealth-build"
+  },
+  {
+   "id": "tank",
+   "name": "Tank: shotguns, Gorilla Arms and Berserk",
+   "video": "build-tank",
+   "match": "tank|body|shotgun|berserk|gorilla|juggernaut|unkillable|immortal|lmg|hmg|brawler",
+   "answer": "This build fights up close: shotguns, plus Gorilla Arms while Berserk is active. Body to 20 for Adrenaline Rush and the shotgun perks, Technical Ability to 20 for Edgerunner and more cyberware.",
+   "perks": [
+    "Painkiller",
+    "Comeback Kid",
+    "Die! Die! Die!",
+    "Like A Feather",
+    "Bullet Ballet",
+    "Don't Stop Me Now",
+    "Adrenaline Rush",
+    "Juggernaut",
+    "Calm Mind",
+    "Unstoppable Force",
+    "Spontaneous Obliteration",
+    "Rush Of Blood",
+    "Close-Quarters Carnage",
+    "Pain To Gain",
+    "Onslaught",
+    "Glutton For War",
+    "Health Freak",
+    "Borrowed Time",
+    "All Things Cyber",
+    "Renaissance Punk",
+    "License To Chrome",
+    "Edgerunner"
+   ],
+   "relic": [
+    "Jailbreak",
+    "Limiter Removal",
+    "Vulnerability Analytics"
+   ],
+   "cyberware": [
+    "Militech Berserk",
+    "Gorilla Arms",
+    "Blood Pump",
+    "Second Heart",
+    "Heal-On-Kill",
+    "Pain Editor",
+    "Peripheral Inverse",
+    "Painducer",
+    "Rara Avis",
+    "Epimorphic Skeleton",
+    "Para Bellum",
+    "NeoFiber",
+    "Revulsor",
+    "Axolotl",
+    "Immovable Force",
+    "Kiroshi Cockatrice Optics"
+   ],
+   "weapons": {
+    "type": [
+     "Shotgun",
+     "Double-Barrel Shotgun",
+     "Light Machine Gun",
+     "Heavy Machine Gun"
+    ]
+   },
+   "play": [
+    {
+     "t": "Buy [[Painkiller]] first: it unlocks slow Health regen in combat.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Fight at low Stamina on purpose: [[Die! Die! Die!]] gives +12.5% Crit Chance at low Stamina with Shotguns, LMGs and HMGs.",
+     "src": [
+      "data:perks"
+     ]
+    },
+    {
+     "t": "Install [[Second Heart]]: +100% Health when your Health reaches 0.",
+     "src": [
+      "page:Second Heart"
+     ]
+    },
+    {
+     "t": "When you are surrounded, activate [[Militech Berserk]]: while it is active you are invulnerable to all damage, but you can use melee weapons only and no items.",
+     "src": [
+      "page:Militech Berserk"
+     ]
+    },
+    {
+     "t": "Fight with [[Gorilla Arms]] while Berserk is active.",
+     "src": [
+      "page:Militech Berserk",
+      "page:Gorilla Arms"
+     ]
+    }
+   ],
+   "short": "tank-build"
+  }
+ ]
+}
